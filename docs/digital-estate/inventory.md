@@ -8,16 +8,16 @@ ms.date: 12/10/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 616bf15db1fac01966573cd5822717c59286434b
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 6b6bbfef4f9e404433119d412cd4bf625cd3b480
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70829287"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023493"
 ---
 # <a name="gather-inventory-data-for-a-digital-estate"></a>Coletar dados de inventário para uma propriedade digital
 
-O desenvolvimento de um inventário é a primeira etapa no [planejamento de imóveis](index.md). Nesse processo, uma lista de ativos de ti que dão suporte a funções de negócios específicas são coletadas para análise e racionalização posteriores. Este artigo pressupõe que uma abordagem de baixo para a análise é mais apropriada para o planejamento. Para saber mais, confira [Abordagens para planejamento de propriedade digital](./approach.md).
+O desenvolvimento de um inventário é a primeira etapa no [planejamento de imóveis](./index.md). Nesse processo, uma lista de ativos de ti que dão suporte a funções de negócios específicas são coletadas para análise e racionalização posteriores. Este artigo pressupõe que uma abordagem de baixo para a análise é mais apropriada para o planejamento. Para saber mais, confira [Abordagens para planejamento de propriedade digital](./approach.md).
 
 ## <a name="take-inventory-of-a-digital-estate"></a>Faça o inventário de um espaço digital
 
@@ -38,4 +38,4 @@ Um inventário é raramente concluído em sua primeira iteração. É altamente 
 Depois que um inventário é compilado e validado, ele pode ser racionalizado. A racionalização de inventário é a próxima etapa para o planejamento de imóveis.
 
 > [!div class="nextstepaction"]
-> [Racionalizar a propriedade digital](rationalize.md)
+> [Racionalizar a propriedade digital](./rationalize.md)

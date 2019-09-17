@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 6dfee69d20afac27c735f2ff77abbadc2816ca26
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 10cb7b2f0396c3236039486977389b2eb001f206
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70828338"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023592"
 ---
 # <a name="software-defined-networking-cloud-dmz"></a>Rede definida pelo software: DMZ de nuvem
 
@@ -37,7 +37,7 @@ A implantação de uma DMZ de nuvem inclui as seguintes suposições:
 
 Suas equipes de adoção de nuvem devem considerar os seguintes problemas ao analisar a implementação de uma arquitetura de rede virtual DMZ da nuvem:
 
-- Conectar redes locais com redes em nuvem aumenta a complexidade dos requisitos de segurança. Embora as conexões entre redes de nuvem e o ambiente local estejam protegidas, você ainda precisa garantir que os recursos de nuvem estejam protegidos. Todos os IPs públicos criados para acessar cargas de trabalho baseadas em nuvem precisam ser devidamente protegidos usando uma [DMZ voltada](/azure/architecture/reference-architectures/dmz/secure-vnet-dmz) para o público ou o [Firewall do Azure](/azure/firewall).
+- Conectar redes locais com redes em nuvem aumenta a complexidade dos requisitos de segurança. Embora as conexões entre redes de nuvem e o ambiente local estejam protegidas, você ainda precisa garantir que os recursos de nuvem estejam protegidos. Todos os IPs públicos criados para acessar cargas de trabalho baseadas em nuvem precisam ser devidamente protegidos usando uma [DMZ voltada](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz) para o público ou o [Firewall do Azure](https://docs.microsoft.com/azure/firewall).
 - A arquitetura de DMZ de Nuvem normalmente é utilizada como um ponto de partida, enquanto a conectividade é mais protegida e a política de segurança é alinhada entre as redes locais e na nuvem, permitindo uma adoção mais ampla de uma arquitetura de rede híbrida em grande escala. No entanto, ele também pode se aplicar a implantações isoladas com segurança, identidade e necessidades de conectividade específicas que a abordagem de DMZ da nuvem atenda.
 
 ## <a name="learn-more"></a>Saiba mais

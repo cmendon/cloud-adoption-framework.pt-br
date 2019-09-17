@@ -9,16 +9,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 12373dea4bffaaa1b4894e4a34f291d190caab7e
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 40962b8c658c40e4a27e3c025bc42b3aa5acd0f3
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70829365"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023609"
 ---
 # <a name="cloud-rationalization"></a>Racionalização de nuvem
 
-A racionalização na nuvem é o processo de avaliação de ativos para determinar a melhor maneira de migrar ou modernizar cada ativo na nuvem. Para obter mais informações sobre o processo de racionalização, consulte [o que é um espaço digital?](index.md).
+A racionalização na nuvem é o processo de avaliação de ativos para determinar a melhor maneira de migrar ou modernizar cada ativo na nuvem. Para obter mais informações sobre o processo de racionalização, consulte [o que é um espaço digital?](./index.md).
 
 ## <a name="rationalization-context"></a>Contexto de racionalização
 
@@ -161,4 +161,4 @@ Fatores de análise qualitativa:
 Coletivamente, você pode aplicar esses cinco RS de racionalização a um espaço digital para ajudá-lo a tomar decisões de racionalização sobre o estado futuro de cada aplicativo.
 
 > [!div class="nextstepaction"]
-> [O que é uma propriedade digital?](index.md)
+> [O que é uma propriedade digital?](./index.md)

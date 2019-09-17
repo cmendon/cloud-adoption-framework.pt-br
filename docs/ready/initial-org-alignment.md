@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: governance
-ms.openlocfilehash: a3e819cdd726e3df6edb4cbe0c20a7d652fde152
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 5e425a61f6b9da7fed044d06ac9323306d728261
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70819160"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71021969"
 ---
 # <a name="initial-organization-alignment"></a>Alinhamento inicial da organização
 
@@ -43,7 +43,7 @@ Por exemplo, uma equipe de estratégia da nuvem pode ser gerenciada pelo CTO (Di
 
 Também é importante formar duas outras equipes de alto nível: uma de governança e uma de segurança. Essas equipes são responsáveis pelo design, implementação e manutenção de auditorias das políticas de segurança e governança da empresa. A equipe de governança requer membros que tenham trabalhado com proteção de ativos, gerenciamento de custos, política de grupo e tópicos relacionados. A equipe de segurança requer membros que estejam familiarizados com os padrões de segurança atuais do setor, assim como com os requisitos de segurança da empresa.
 
-![Equipe de estratégia de nuvem, com as equipes de segurança e governança](../_images/getting-started-overview-1.png)
+![Equipe de estratégia de nuvem, com as equipes de segurança e governança](../_images/ready/getting-started-overview-1.png)
 
 A equipe de governança é responsável por projetar e implementar o modelo de governança da empresa na nuvem, bem como implantar e manter os ativos de infraestrutura compartilhada que fazem parte da transformação digital. Esses ativos incluem o hardware, software e recursos da nuvem necessários para conectar a rede local à rede virtual na nuvem.
 
@@ -53,9 +53,9 @@ A equipe de segurança é responsável por projetar e implementar a política de
 
 Na próxima etapa do processo de transformação digital da sua empresa, os membros da equipe de estratégia de nuvem deverão aprender como a tecnologia de nuvem mudará a maneira como a empresa faz negócios. Trata-se da preparação e do planejamento para as mudanças na empresa, no pessoal e na tecnologia. Isso é importante para que os membros da equipe de estratégia de nuvem reconheçam o que há de novo e de diferente na nuvem em comparação às infraestruturas locais.
 
-![As equipes de segurança, governança e estratégia de nuvem aprendem as melhores práticas para operar na nuvem.](../_images/getting-started-overview-2.png)
+![As equipes de segurança, governança e estratégia de nuvem aprendem as melhores práticas para operar na nuvem.](../_images/ready/getting-started-overview-2.png)
 
-O ponto de partida para entender a nuvem é aprender [como o Azure funciona](../getting-started/what-is-azure.md) em um alto nível. Em seguida, saiba mais sobre os conceitos básicos da [governança no Azure](../governance/resource-consistency/what-is-governance.md) na preparação para [entender o gerenciamento de acesso de recurso](../governance/resource-consistency/azure-resource-access.md).
+O ponto de partida para entender a nuvem é aprender [como o Azure funciona](../getting-started/what-is-azure.md) em um alto nível. Em seguida, saiba mais sobre os conceitos básicos da [governança no Azure](../govern/resource-consistency/what-is-governance.md) na preparação para [entender o gerenciamento de acesso de recurso](../govern/resource-consistency/resource-access-management.md).
 
 Para o aprendizado avançado, a equipe de governança deve revisar os conceitos e guias de design na seção de governança da tabela de conteúdos. As seções de infraestrutura e cargas de trabalho são úteis para aprender mais sobre arquiteturas típicas e cargas de trabalho na nuvem.
 
@@ -93,7 +93,7 @@ Agora que as metas da transformação digital foram enumeradas, priorizadas, e s
 
 As equipes usam as listas priorizadas e trabalham em cada solução de alto nível para planejar cada solução. O processo de planejamento envolve a especificação de nova infraestrutura e novas cargas de trabalho. Também podem ocorrer alterações nas funções das pessoas e nos processos que elas seguem. Nesse estágio, também é importante que cada uma das equipes de design inclua as equipes de governança e segurança para revisão de cada projeto. Todos os projetos devem cumprir as políticas e os procedimentos definidos pelas equipes de segurança e governança, e essas equipes devem ser incluídas na aprovação de cada projeto.
 
-![a equipe de estratégia da nuvem entrega soluções de alto nível para as equipes de projeto e implementação.](../_images/getting-started-overview-3.png)
+![a equipe de estratégia da nuvem entrega soluções de alto nível para as equipes de projeto e implementação.](../_images/ready/getting-started-overview-3.png)
 
 A elaboração de cada solução é uma tarefa não trivial. Conforme os projetos são criados, eles devem ser considerados no contexto de outros projetos de solução de outras equipes. Por exemplo, se vários dos designs resultarem em uma migração de serviços de aplicativos existentes do local para a nuvem, pode ser mais eficiente agrupá-los e projetar uma estratégia geral de migração. Em outro exemplo, pode não ser possível migrar alguns aplicativos locais e serviços existentes, e a solução pode ser substituí-los por novos serviços de desenvolvimento ou de terceiros. Nesse caso, pode ser mais eficiente agrupar esses juntos e determinar a sobreposição entre eles para determinar se um serviço de terceiros pode ser usado para mais de uma solução.
 

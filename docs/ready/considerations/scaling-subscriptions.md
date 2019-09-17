@@ -8,12 +8,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 0f2bf93d8659804db3bdcd41caa832310fe2f46c
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: e795074526db2b5aec88052dc15aa9fa4140a91f
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70905348"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025154"
 ---
 # <a name="scaling-with-multiple-azure-subscriptions"></a>Dimensionamento com várias assinaturas do Azure
 
@@ -39,7 +39,7 @@ Outras situações podem exigir outras assinaturas. Tenha em mente o seguinte co
 
 - Assinaturas têm limites diferentes para diferentes tipos de recurso. Por exemplo, o número de redes virtuais em uma assinatura é limitado. Quando uma assinatura se aproximar de qualquer um de seus limites, você precisará criar outra assinatura e colocar novos recursos lá.
 
-  Para saber mais, confira [Assinatura e limites de serviço, cotas e restrições do Azure](/azure/azure-subscription-service-limits).
+  Para saber mais, confira [Assinatura e limites de serviço, cotas e restrições do Azure](https://docs.microsoft.com/azure/azure-subscription-service-limits).
 
 - Cada assinatura pode implementar suas próprias políticas para tipos de recursos implantáveis e regiões com suporte.
 
@@ -59,7 +59,7 @@ Outras situações podem exigir outras assinaturas. Tenha em mente o seguinte co
 
 Você também pode optar por criar assinaturas adicionais por outros motivos técnicos ou empresariais específicos da sua organização. Pode haver alguns custos adicionais para entrada e saída de dados entre assinaturas.
 
-Você pode mover muitos tipos de recursos de uma assinatura para outra ou usar implantações automatizadas para migrar recursos para outra assinatura. Para saber mais, confira [Mover recursos do Azure para outro grupo de recursos ou assinatura](/azure/azure-resource-manager/resource-group-move-resources).
+Você pode mover muitos tipos de recursos de uma assinatura para outra ou usar implantações automatizadas para migrar recursos para outra assinatura. Para saber mais, confira [Mover recursos do Azure para outro grupo de recursos ou assinatura](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-move-resources).
 
 ## <a name="managing-multiple-subscriptions"></a>Gerenciar várias assinaturas
 
@@ -76,7 +76,7 @@ O Azure fornece quatro níveis de escopo de gerenciamento: grupos de gerenciamen
 
 Ao confiar nesse modelo de herança, você pode organizar as assinaturas em sua hierarquia para que cada uma delas siga as políticas apropriadas e os controles de segurança.
 
-![Os quatro níveis de escopo para organizar seus recursos do Azure](/azure/architecture/cloud-adoption/ready/azure-readiness-guide/media/organize-resources/scope-levels.png)
+![Os quatro níveis de escopo para organizar seus recursos do Azure](../../ready/azure-readiness-guide/media/organize-resources/scope-levels.png)
 
 Qualquer acesso ou atribuição de política no grupo de gerenciamento raiz se aplica a todos os recursos no diretório. Considere cuidadosamente quais itens você define nesse escopo. Inclua apenas as atribuições que você deve ter.
 
@@ -86,26 +86,26 @@ Quando você move uma assinatura para um grupo de gerenciamento existente, ela h
 
 ![Exemplo de uma hierarquia do grupo de gerenciamento](../../_images/ready/management-group-hierarchy.png)
 
-Para saber mais, confira [Organizar seus recursos com grupos de gerenciamento do Azure](/azure/governance/management-groups).
+Para saber mais, confira [Organizar seus recursos com grupos de gerenciamento do Azure](https://docs.microsoft.com/azure/governance/management-groups).
 
 ## <a name="tips-for-creating-new-subscriptions"></a>Dicas para criar assinaturas
 
 - Identifique quem será responsável pela criação de assinaturas.
 - Decida quais recursos estarão em uma assinatura por padrão.
 - Decida como deve ser a aparência de todas as assinaturas padrão. As considerações incluem acesso RBAC, políticas, marcas e recursos de infraestrutura.
-- Se possível, [use uma entidade de serviço](/azure/azure-resource-manager/grant-access-to-create-subscription) para criar assinaturas. Defina um grupo de segurança que possa solicitar novas assinaturas por meio de um fluxo de trabalho automatizado.
+- Se possível, [use uma entidade de serviço](https://docs.microsoft.com/azure/azure-resource-manager/grant-access-to-create-subscription) para criar assinaturas. Defina um grupo de segurança que possa solicitar novas assinaturas por meio de um fluxo de trabalho automatizado.
 - Se você for um cliente EA (Contrato Enterprise), peça ao Suporte do Azure para bloquear a criação de assinaturas que não são EA para sua organização.
 
 ## <a name="related-resources"></a>Recursos relacionados
 
 - [Conceitos fundamentais do Azure](./fundamental-concepts.md).
-- [Organizar seus recursos com grupos de gerenciamento do Azure](/azure/governance/management-groups).
-- [Elevar o acesso para gerenciar todas as assinaturas e grupos de gerenciamento do Azure](/azure/role-based-access-control/elevate-access-global-admin).
-- [Mover recursos do Azure para outro grupo de recursos ou assinatura](/azure/azure-resource-manager/resource-group-move-resources).
+- [Organizar seus recursos com grupos de gerenciamento do Azure](https://docs.microsoft.com/azure/governance/management-groups).
+- [Elevar o acesso para gerenciar todas as assinaturas e grupos de gerenciamento do Azure](https://docs.microsoft.com/azure/role-based-access-control/elevate-access-global-admin).
+- [Mover recursos do Azure para outro grupo de recursos ou assinatura](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-move-resources).
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Examine as [convenções de nomenclatura e de marcação recomendadas](./name-and-tag.md) a serem seguidas ao implantar os recursos do Azure.
+Examine as [convenções de nomenclatura e de marcação recomendadas](./naming-and-tagging.md) a serem seguidas ao implantar os recursos do Azure.
 
 > [!div class="nextstepaction"]
-> [Convenções de nomenclatura e de marcação recomendadas](./name-and-tag.md)
+> [Convenções de nomenclatura e de marcação recomendadas](./naming-and-tagging.md)

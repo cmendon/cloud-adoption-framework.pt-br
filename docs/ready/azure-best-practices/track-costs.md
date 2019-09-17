@@ -8,16 +8,16 @@ ms.date: 09/05/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 4b181faf89d8196c3bbecd153e92e6f44d076166
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: e026ac8c46fd8c39d2c6ff36c3612fed2bed7e82
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70906161"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022187"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>Controlar os custos em unidades de negócios, ambientes ou projetos
 
-[A criação de uma organização sensível ao custo](../../organization/cost-conscious-organization.md) exige visibilidade e acesso (ou escopo) definido corretamente a dados relacionados ao custo. Este artigo de melhores práticas descreve as decisões e abordagens de implementação para criar mecanismos de acompanhamento.
+[A criação de uma organização sensível ao custo](../../organize/cost-conscious-organization.md) exige visibilidade e acesso (ou escopo) definido corretamente a dados relacionados ao custo. Este artigo de melhores práticas descreve as decisões e abordagens de implementação para criar mecanismos de acompanhamento.
 
 ![Descrição do processo sensível ao custo](../../_images/ready/cost-optimization-process.png)
 
@@ -35,16 +35,16 @@ A marcação é uma das principais maneiras de entender os dados de um relatóri
 
 A primeira etapa para acompanhar com precisão as informações de custo em unidades de negócios, ambientes e projetos é definir um padrão de marcação. A segunda etapa é garantir que o padrão de marcação seja aplicado de forma consistente. Os artigos a seguir podem ajudar a realizar cada uma dessas etapas:
 
-- [Desenvolver padrões de nomenclatura e marcação](../considerations/name-and-tag.md)
-- [Estabelecer um MVP de governança para impor os padrões de marcação](../../governance/journeys/complex-enterprise/index.md)
+- [Desenvolver padrões de nomenclatura e marcação](../considerations/naming-and-tagging.md)
+- [Estabelecer um MVP de governança para impor os padrões de marcação](../../govern/guides/complex/index.md)
 
 ### <a name="resource-organization"></a>Organização do recurso
 
-Há várias abordagens para a organização de ativos. Esta seção descreve uma melhor prática com base nas necessidades de uma empresa de grande porte que tem suas estruturas de custo espalhadas em unidades de negócios, geografias e organizações de TI. Uma melhor prática semelhante para organizações menores e menos complexas está disponível em [Percurso de governança para empresas de pequeno e médio porte](../../governance/journeys/standard-enterprise/index.md).
+Há várias abordagens para a organização de ativos. Esta seção descreve uma melhor prática com base nas necessidades de uma empresa de grande porte que tem suas estruturas de custo espalhadas em unidades de negócios, geografias e organizações de TI. Uma melhor prática semelhante para organizações menores e menos complexas está disponível em [Percurso de governança para empresas de pequeno e médio porte](../../govern/guides/standard/index.md).
 
 Para uma empresa de grande porte, o modelo a seguir de grupos de gerenciamento, assinaturas e grupos de recursos criará uma hierarquia que permite a cada equipe ter o nível certo de visibilidade para executar suas tarefas. Quando a empresa precisa de controles de custo para evitar o estouro do orçamento, ela pode aplicar ferramentas de governança como o Azure Blueprints ou o Azure Policy às assinaturas dentro dessa estrutura para bloquear rapidamente erros de custo futuros.
 
-![Diagrama de organização de recursos para uma empresa de grande porte](../../_images/governance/large-enterprise-resource-organization.png)
+![Diagrama de organização de recursos para uma empresa de grande porte](../../_images/govern/large-enterprise-resource-organization.png)
 
 No diagrama anterior, a raiz da hierarquia do grupo de gerenciamento contém um nó para cada unidade de negócios. Neste exemplo, a empresa multinacional precisa de visibilidade sobre as unidades de negócios regionais e, portanto, cria um nó de geografia em cada uma das unidades de negócios da hierarquia.
 
@@ -60,7 +60,7 @@ O diagrama mostra melhores práticas, mas não inclui as seguintes opções:
 O restante deste artigo pressupõe o uso da abordagem de melhores práticas do diagrama anterior. No entanto, os artigos a seguir podem ajudá-lo a aplicar a abordagem a uma organização de recursos que melhor se adapte à sua empresa:
 
 - [Dimensionamento com várias assinaturas do Azure](../considerations/scaling-subscriptions.md)
-- [Como implantar um MVP de governança para controlar padrões de ambiente bem gerenciados](../../governance/journeys/complex-enterprise/index.md)
+- [Como implantar um MVP de governança para controlar padrões de ambiente bem gerenciados](../../govern/guides/complex/index.md)
 
 ## <a name="provide-the-right-level-of-cost-access"></a>Fornecer o nível certo de acesso ao custo
 
@@ -75,39 +75,39 @@ Como uma melhor prática geral, sugerimos um modelo de privilégios mínimos ao 
 
 O Gerenciamento de Custos do Azure é compatível com as seguintes funções internas para cada escopo:
 
-- [Proprietário](/azure/role-based-access-control/built-in-roles#owner). Pode exibir os custos e gerenciar tudo, inclusive a configuração de custos.
-- [Colaborador](/azure/role-based-access-control/built-in-roles#contributor). Pode exibir os custos e gerenciar tudo (inclusive a configuração de custos), com exceção do controle de acesso.
-- [Leitor](/azure/role-based-access-control/built-in-roles#reader). Pode exibir tudo, inclusive os dados e a configuração de custos, mas não pode fazer nenhuma alteração.
-- [Colaborador do Gerenciamento de Custos](/azure/role-based-access-control/built-in-roles#cost-management-contributor). Pode exibir os custos e gerenciar a configuração de custos.
-- [Leitor do Gerenciamento de Custos](/azure/role-based-access-control/built-in-roles#cost-management-reader) Pode exibir os dados e a configuração de custos.
+- [Proprietário](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner). Pode exibir os custos e gerenciar tudo, inclusive a configuração de custos.
+- [Colaborador](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor). Pode exibir os custos e gerenciar tudo (inclusive a configuração de custos), com exceção do controle de acesso.
+- [Leitor](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#reader). Pode exibir tudo, inclusive os dados e a configuração de custos, mas não pode fazer nenhuma alteração.
+- [Colaborador do Gerenciamento de Custos](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor). Pode exibir os custos e gerenciar a configuração de custos.
+- [Leitor do Gerenciamento de Custos](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-reader) Pode exibir os dados e a configuração de custos.
 
-Como uma melhor prática geral, os membros de todas as equipes devem ser designados com a função de Colaborador do Gerenciamento de Custos. Essa função concede acesso para criar e gerenciar orçamentos e exportações a fim de monitorar e gerar relatórios de custos com mais eficiência. No entanto, os membros da [equipe de estratégia de nuvem](../../organization/cloud-strategy.md) devem ser designados apenas com a função de Leitor de Gerenciamento de Custos. Isso porque eles não participam da definição de orçamentos na ferramenta de Gerenciamento de Custos do Azure.
+Como uma melhor prática geral, os membros de todas as equipes devem ser designados com a função de Colaborador do Gerenciamento de Custos. Essa função concede acesso para criar e gerenciar orçamentos e exportações a fim de monitorar e gerar relatórios de custos com mais eficiência. No entanto, os membros da [equipe de estratégia de nuvem](../../organize/cloud-strategy.md) devem ser designados apenas com a função de Leitor de Gerenciamento de Custos. Isso porque eles não participam da definição de orçamentos na ferramenta de Gerenciamento de Custos do Azure.
 
 ### <a name="scope"></a>Escopo
 
 As configurações de escopo e função a seguir criarão a visibilidade necessária sobre o gerenciamento de custos. Essa melhor prática pode exigir pequenas alterações para se alinhar às decisões da organização de ativos.
 
-- [Equipe de adoção da nuvem](../../organization/cloud-adoption.md). As responsabilidades por alterações de otimização contínuas exigem acesso de Colaborador do Gerenciamento de Custos no nível do grupo de recursos.
+- [Equipe de adoção da nuvem](../../organize/cloud-adoption.md). As responsabilidades por alterações de otimização contínuas exigem acesso de Colaborador do Gerenciamento de Custos no nível do grupo de recursos.
 
-  - **Ambiente de trabalho**. No mínimo, a equipe de adoção da nuvem já deve ter acesso de [Colaborador](/azure/role-based-access-control/built-in-roles#contributor) a todos os grupos de recursos afetados ou pelo menos aos grupos relacionados a atividades de desenvolvimento/teste ou de implantação contínua. Nenhuma configuração de escopo adicional é necessária.
-  - **Ambientes de produção**. Quando a separação adequada de responsabilidade tiver sido estabelecida, a equipe do Cloud Adoption provavelmente não continuará a ter acesso aos grupos de recursos relacionados aos seus projetos. Os grupos de recursos que dão suporte às instâncias de produção de suas cargas de trabalho precisarão de escopo adicional para proporcionar à equipe visibilidade sobre o impacto de suas decisões a respeito dos custos de produção. A definição do escopo do [Colaborador do Gerenciamento de Custos](/azure/role-based-access-control/built-in-roles#cost-management-contributor) como grupos de recursos de produção para esta equipe permitirá que a equipe monitore os custos e defina os orçamentos com base no uso e no investimento contínuo em cargas de trabalho compatíveis.
+  - **Ambiente de trabalho**. No mínimo, a equipe de adoção da nuvem já deve ter acesso de [Colaborador](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor) a todos os grupos de recursos afetados ou pelo menos aos grupos relacionados a atividades de desenvolvimento/teste ou de implantação contínua. Nenhuma configuração de escopo adicional é necessária.
+  - **Ambientes de produção**. Quando a separação adequada de responsabilidade tiver sido estabelecida, a equipe do Cloud Adoption provavelmente não continuará a ter acesso aos grupos de recursos relacionados aos seus projetos. Os grupos de recursos que dão suporte às instâncias de produção de suas cargas de trabalho precisarão de escopo adicional para proporcionar à equipe visibilidade sobre o impacto de suas decisões a respeito dos custos de produção. A definição do escopo do [Colaborador do Gerenciamento de Custos](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor) como grupos de recursos de produção para esta equipe permitirá que a equipe monitore os custos e defina os orçamentos com base no uso e no investimento contínuo em cargas de trabalho compatíveis.
 
-- [Equipe de Estratégia de Nuvem](../../organization/cloud-strategy.md). As responsabilidades por acompanhar os custos em vários projetos e unidades de negócios exigem acesso de Leitor do Gerenciamento de Custos no nível da raiz da hierarquia do grupo de gerenciamento.
+- [Equipe de Estratégia de Nuvem](../../organize/cloud-strategy.md). As responsabilidades por acompanhar os custos em vários projetos e unidades de negócios exigem acesso de Leitor do Gerenciamento de Custos no nível da raiz da hierarquia do grupo de gerenciamento.
 
-  - Atribua acesso de [Leitor do Gerenciamento de Custos](/azure/role-based-access-control/built-in-roles#cost-management-reader) a essa equipe no grupo de gerenciamento. Isso proporcionará visibilidade contínua sobre todas as implantações associadas às assinaturas controladas por aquela hierarquia do grupo de gerenciamento.
+  - Atribua acesso de [Leitor do Gerenciamento de Custos](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-reader) a essa equipe no grupo de gerenciamento. Isso proporcionará visibilidade contínua sobre todas as implantações associadas às assinaturas controladas por aquela hierarquia do grupo de gerenciamento.
 
-- [Equipe de governança de nuvem](../../organization/cloud-governance.md). As responsabilidades por gerenciamento de custos, alinhamento de orçamentos e geração de relatórios em todos os esforços de adoção exigem acesso de Colaborador do Gerenciamento de Custos no nível da raiz da hierarquia do grupo de gerenciamento.
+- [Equipe de governança de nuvem](../../organize/cloud-governance.md). As responsabilidades por gerenciamento de custos, alinhamento de orçamentos e geração de relatórios em todos os esforços de adoção exigem acesso de Colaborador do Gerenciamento de Custos no nível da raiz da hierarquia do grupo de gerenciamento.
 
-  - Em um ambiente bem gerenciado, a equipe de governança de nuvem provavelmente já tem um grau mais alto de acesso, tornando desnecessária a atribuição de escopo adicional para o [Colaborador do Gerenciamento de Custos](/azure/role-based-access-control/built-in-roles#cost-management-contributor).
+  - Em um ambiente bem gerenciado, a equipe de governança de nuvem provavelmente já tem um grau mais alto de acesso, tornando desnecessária a atribuição de escopo adicional para o [Colaborador do Gerenciamento de Custos](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor).
 
-- [Centro de excelência em nuvem](../../organization/cloud-center-excellence.md). A responsabilidade pelo gerenciamento de custos relacionados a serviços compartilhados exige acesso de Colaborador do Gerenciamento de Custos no nível da assinatura. Além disso, essa equipe pode exigir acesso de Colaborador do Gerenciamento de Custos para grupos de recursos ou assinaturas que contêm ativos implantados por automações do CCoE para entender como essas automações afetam os custos.
+- [Centro de excelência em nuvem](../../organize/cloud-center-of-excellence.md). A responsabilidade pelo gerenciamento de custos relacionados a serviços compartilhados exige acesso de Colaborador do Gerenciamento de Custos no nível da assinatura. Além disso, essa equipe pode exigir acesso de Colaborador do Gerenciamento de Custos para grupos de recursos ou assinaturas que contêm ativos implantados por automações do CCoE para entender como essas automações afetam os custos.
 
-  - **Serviços compartilhados**. Quando um Centro de Excelência em Nuvem está envolvido, a melhor prática sugere que os ativos gerenciados pelo CCoE têm suporte de uma assinatura de serviço compartilhado centralizado dentro de um modelo de hub/spoke. Nesse cenário, o CCoE provavelmente tem acesso de Colaborador ou Proprietário a essa assinatura, tornando desnecessária a atribuição de escopo adicional para o [Colaborador do Gerenciamento de Custos](/azure/role-based-access-control/built-in-roles#cost-management-contributor).
-  - **Automação/controles do CCoE**. O CCoE normalmente fornece controles e scripts de implantação automatizados para equipes de adoção da nuvem. O CCoE tem a responsabilidade de entender como esses aceleradores afetam os custos. Para obter essa visibilidade, a equipe precisa de acesso de [Colaborador de Gerenciamento de Custos](/azure/role-based-access-control/built-in-roles#cost-management-contributor) a quaisquer grupos de recursos ou assinaturas que executam esses aceleradores.
+  - **Serviços compartilhados**. Quando um Centro de Excelência em Nuvem está envolvido, a melhor prática sugere que os ativos gerenciados pelo CCoE têm suporte de uma assinatura de serviço compartilhado centralizado dentro de um modelo de hub/spoke. Nesse cenário, o CCoE provavelmente tem acesso de Colaborador ou Proprietário a essa assinatura, tornando desnecessária a atribuição de escopo adicional para o [Colaborador do Gerenciamento de Custos](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor).
+  - **Automação/controles do CCoE**. O CCoE normalmente fornece controles e scripts de implantação automatizados para equipes de adoção da nuvem. O CCoE tem a responsabilidade de entender como esses aceleradores afetam os custos. Para obter essa visibilidade, a equipe precisa de acesso de [Colaborador de Gerenciamento de Custos](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor) a quaisquer grupos de recursos ou assinaturas que executam esses aceleradores.
 
 - **Equipe de operações de nuvem**. A responsabilidade pelo gerenciamento dos custos contínuos de ambientes de produção requer acesso de Colaborador do Gerenciamento de Custos a todas as assinaturas de produção.
 
-  - A recomendação geral coloca os ativos de produção e não produto em assinaturas separadas que são governadas por nós da hierarquia do grupo de gerenciamento associada a ambientes de produção. Em um ambiente bem gerenciado, os membros da equipe de operações provavelmente já têm acesso de Proprietário ou Colaborador às assinaturas de produção, tornando desnecessária a função de [Colaborador do Gerenciamento de Custos](/azure/role-based-access-control/built-in-roles#cost-management-contributor).
+  - A recomendação geral coloca os ativos de produção e não produto em assinaturas separadas que são governadas por nós da hierarquia do grupo de gerenciamento associada a ambientes de produção. Em um ambiente bem gerenciado, os membros da equipe de operações provavelmente já têm acesso de Proprietário ou Colaborador às assinaturas de produção, tornando desnecessária a função de [Colaborador do Gerenciamento de Custos](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor).
 
 ## <a name="additional-cost-management-resources"></a>Recursos adicionais de gerenciamento de custos
 
@@ -119,17 +119,17 @@ Para obter mais informações sobre como começar a usar o Gerenciamento de Cust
 
 ### <a name="use-azure-cost-management"></a>Usar o Gerenciamento de Custos do Azure
 
-- [Crie e gerencie orçamentos](/azure/cost-management/tutorial-acm-create-budgets)
-- [Exportar dados de custo](/azure/cost-management/tutorial-export-acm-data)
-- [Otimizar os custos com base em recomendações](/azure/cost-management/tutorial-acm-opt-recommendations)
-- [Usar alertas de custo para monitorar o uso e os gastos](/azure/cost-management/cost-mgt-alerts-monitor-usage-spending)
+- [Crie e gerencie orçamentos](https://docs.microsoft.com/azure/cost-management/tutorial-acm-create-budgets)
+- [Exportar dados de custo](https://docs.microsoft.com/azure/cost-management/tutorial-export-acm-data)
+- [Otimizar os custos com base em recomendações](https://docs.microsoft.com/azure/cost-management/tutorial-acm-opt-recommendations)
+- [Usar alertas de custo para monitorar o uso e os gastos](https://docs.microsoft.com/azure/cost-management/cost-mgt-alerts-monitor-usage-spending)
 
 ### <a name="use-azure-cost-management-to-govern-aws-costs"></a>Usar o Gerenciamento de Custos do Azure para controlar os custos do AWS
 
-- [Integração dos relatórios de Custos e Uso do AWS](/azure/cost-management/aws-integration-set-up-configure)
-- [Gerenciar custos do AWS](/azure/cost-management/aws-integration-manage)
+- [Integração dos relatórios de Custos e Uso do AWS](https://docs.microsoft.com/azure/cost-management/aws-integration-set-up-configure)
+- [Gerenciar custos do AWS](https://docs.microsoft.com/azure/cost-management/aws-integration-manage)
 
 ### <a name="establish-access-roles-and-scope"></a>Estabelecer acesso, funções e escopo
 
-- [Compreensão do escopo do gerenciamento de custos](/azure/cost-management/understand-work-scopes)
-- [Definição do escopo de um grupo de recursos](/azure/role-based-access-control/quickstart-assign-role-user-portal)
+- [Compreensão do escopo do gerenciamento de custos](https://docs.microsoft.com/azure/cost-management/understand-work-scopes)
+- [Definição do escopo de um grupo de recursos](https://docs.microsoft.com/azure/role-based-access-control/quickstart-assign-role-user-portal)

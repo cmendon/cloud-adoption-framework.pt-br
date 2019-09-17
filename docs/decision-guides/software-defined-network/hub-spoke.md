@@ -9,25 +9,25 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: f47bf0256e00eafe37ebf71ed2da9b64f0b07484
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: d2337ea5fdcd18fc2f56c60c64a35ee878710e65
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70829534"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023561"
 ---
 # <a name="software-defined-networking-hub-and-spoke"></a>Rede definida pelo software: Hub e spoke
 
 O modelo de rede hub e spoke organiza a sua infraestrutura de rede de nuvem baseada no Azure em várias redes virtuais conectadas. Esse modelo permite a você gerenciar requisitos comuns de comunicação ou segurança com mais eficiência e lidar com possíveis limitações de assinatura.
 
-No modelo hub e spoke, o _hub_ é uma rede virtual que atua como um local central para gerenciar a conectividade externa e hospedagem de serviços usados por várias cargas de trabalho. Os _spokes_ são as redes virtuais que hospedam as cargas de trabalho e conectam-se ao hub central por meio do [emparelhamento de rede virtual](/azure/virtual-network/virtual-network-peering-overview).
+No modelo hub e spoke, o _hub_ é uma rede virtual que atua como um local central para gerenciar a conectividade externa e hospedagem de serviços usados por várias cargas de trabalho. Os _spokes_ são as redes virtuais que hospedam as cargas de trabalho e conectam-se ao hub central por meio do [emparelhamento de rede virtual](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview).
 
 Passando dentro ou fora de redes de spoke de carga de trabalho, todo o tráfego é roteado por meio da rede de hub em que ele pode ser roteado, inspecionado ou de alguma forma gerenciado por regras de IT centralmente gerenciadas ou processos.
 
 Esse modelo tem como objetivo abordar cada uma das seguintes preocupações:
 
 - **Economia de custos e eficiência de gerenciamento.** A centralização de serviços que podem ser compartilhados por diversas cargas de trabalho, tais como soluções de virtualização de rede (NVAs) e servidores DNS em um local permite que a TI minimize recursos redundantes e esforço de gerenciamento em várias cargas de trabalho.
-- **Superando limites de assinaturas.** Grandes cargas de trabalho baseadas em nuvem podem exigir o uso de mais recursos que são permitidos em uma única assinatura do Azure (consulte [limites de assinatura](/azure/azure-subscription-service-limits)). Redes virtuais de carga de trabalho de emparelhamento de assinaturas diferentes para um hub central podem superar esses limites.
+- **Superando limites de assinaturas.** Grandes cargas de trabalho baseadas em nuvem podem exigir o uso de mais recursos que são permitidos em uma única assinatura do Azure (consulte [limites de assinatura](https://docs.microsoft.com/azure/azure-subscription-service-limits)). Redes virtuais de carga de trabalho de emparelhamento de assinaturas diferentes para um hub central podem superar esses limites.
 - **Separação de preocupações.** A capacidade de implantar cargas de trabalho individuais entre as equipes de TI centrais e as equipes de cargas de trabalho.
 
 O diagrama a seguir mostra um hub de exemplo e arquitetura de spoke incluindo conectividade híbrida gerenciada centralmente.
@@ -47,7 +47,7 @@ Implementar uma arquitetura de rede virtual hub e spoke pressupõe o seguinte:
 
 ## <a name="global-hub-and-spoke"></a>Hub e spoke global
 
-As arquiteturas hub e spoke são normalmente implementadas com redes virtuais implantadas à mesma região do Azure para minimizar a latência entre as redes. Porém, organizações grandes com um alcance global podem precisar implantar cargas de trabalho através de várias regiões para disponibilidade, recuperação de desastres ou requisitos regulatórios. O modelo Hub e spoke pode usar o [emparelhamento de rede virtual global](/azure/virtual-network/virtual-network-peering-overview) do Azure para estender o gerenciamento centralizado e os serviços compartilhados entre regiões e dar suporte a cargas de trabalho distribuídas em todo o mundo.
+As arquiteturas hub e spoke são normalmente implementadas com redes virtuais implantadas à mesma região do Azure para minimizar a latência entre as redes. Porém, organizações grandes com um alcance global podem precisar implantar cargas de trabalho através de várias regiões para disponibilidade, recuperação de desastres ou requisitos regulatórios. O modelo Hub e spoke pode usar o [emparelhamento de rede virtual global](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview) do Azure para estender o gerenciamento centralizado e os serviços compartilhados entre regiões e dar suporte a cargas de trabalho distribuídas em todo o mundo.
 
 ## <a name="learn-more"></a>Saiba mais
 

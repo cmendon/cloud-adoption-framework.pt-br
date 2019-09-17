@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 44296faa9b5be56988babe9e0a847564d51148c3
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 3bfb26e97d35bc3ace4b150045633ac2773d647f
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70833395"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025459"
 ---
 # <a name="business-change-plan"></a>Plano de alteração do negócio
 
@@ -25,7 +25,7 @@ Os planos de adoção dos usuários concentram-se em como os usuários adotarão
 
 Embora as abordagens possam variar, os temas gerais estão presentes na maioria dos planos de adoção de usuários. Esses temas normalmente são baseados em uma abordagem de controle de risco e de facilitação que se alinha à mudança incremental. A Matriz Eason, ilustrada na figura abaixo, representa os acionadores por trás desses temas em um espectro de tipos de adoção.
 
-![Matriz Eason de preocupações de adoção dos usuários](../../../_images/eason-matrix.jpg)
+![Matriz Eason de preocupações de adoção dos usuários](../../../_images/migrate/eason-matrix.jpg)
 
 *Matriz Eason de tipos de adoção dos usuários.*
 
@@ -37,8 +37,8 @@ Um plano de alteração do negócio vai além da alteração técnica e assume q
 
 **Questões de upstream.** As questões de upstream examinam os impactos ou as alterações que ocorrem antes da adoção do usuário:
 
-- O [resultado comercial](../../../business-strategy/business-outcomes/index.md) esperado foi quantificado?
-- O impacto nos negócios é mapeado de acordo com [métricas de aprendizagem](../../../business-strategy/learning-metrics.md) definidas?
+- O [resultado comercial](../../../strategy/business-outcomes/index.md) esperado foi quantificado?
+- O impacto nos negócios é mapeado de acordo com [métricas de aprendizagem](../../../strategy/learning-metrics.md) definidas?
 - Quais equipes e processos de negócios aproveitam essa solução técnica?
 - Na empresa, quem pode alinhar melhor os usuários avançados para os testes e comentários?
 - Os líderes de negócios afetados estavam envolvidos na priorização e no planejamento da migração?

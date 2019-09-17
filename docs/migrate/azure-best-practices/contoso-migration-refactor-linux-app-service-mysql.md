@@ -8,12 +8,12 @@ ms.date: 10/11/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 494bb830337540c79554905ef4e2e6f2c9c9ccd1
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: e504d4032fc019af43ec7cb1e8513504196559a2
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70820395"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024208"
 ---
 # <a name="refactor-a-linux-app-to-multiple-regions-using-azure-app-service-traffic-manager-and-azure-database-for-mysql"></a>Refatorar um aplicativo do Linux para várias regiões usando o Serviço de Aplicativo do Azure, o Gerenciador de Tráfego e o Banco de Dados do Azure para MySQL
 
@@ -87,7 +87,7 @@ A Contoso concluirá o processo de migração da seguinte maneira:
 --- | --- | ---
 [Serviço de Aplicativo do Azure](https://azure.microsoft.com/services/app-service) | O serviço executa e dimensiona aplicativos usando o serviço PaaS do Azure para sites. | O preço é baseado no tamanho das instâncias e nos recursos necessários. [Saiba mais](https://azure.microsoft.com/pricing/details/app-service/windows).
 [Gerenciador de Tráfego](https://azure.microsoft.com/services/traffic-manager) | Um balanceador carga que usa o DNS para direcionar os usuários ao Azure ou a sites e serviços externos. | O preço é calculado com base no número de consultas DNS recebidas e no número de pontos de extremidade monitorados. | [Saiba mais](https://azure.microsoft.com/pricing/details/traffic-manager).
-[Banco de Dados do Azure para MySQL](/azure/mysql) | O banco de dados baseia-se no mecanismo do servidor MySQL de software livre. Ele fornece um banco de dados MySQL comunitário pronto para empresas e totalmente gerenciado, como um serviço para o desenvolvimento e para a implantação de aplicativos. | O preço é calculado com base nos requisitos de computação, de armazenamento e de backup. [Saiba mais](https://azure.microsoft.com/pricing/details/mysql).
+[Banco de Dados do Azure para MySQL](https://docs.microsoft.com/azure/mysql) | O banco de dados baseia-se no mecanismo do servidor MySQL de software livre. Ele fornece um banco de dados MySQL comunitário pronto para empresas e totalmente gerenciado, como um serviço para o desenvolvimento e para a implantação de aplicativos. | O preço é calculado com base nos requisitos de computação, de armazenamento e de backup. [Saiba mais](https://azure.microsoft.com/pricing/details/mysql).
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
@@ -98,7 +98,7 @@ Aqui está o que a Contoso precisa para executar esse cenário.
 **Requisitos** | **Detalhes**
 --- | ---
 **Assinatura do Azure** | A Contoso criou assinaturas anteriormente nesta série de artigos. Se você não tiver uma assinatura do Azure, crie uma [conta gratuita](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Se você criar uma conta gratuita, será o administrador da assinatura e poderá executar todas as ações.<br/><br/> Se você usar uma assinatura existente e não for o administrador, será necessário trabalhar com o administrador para receber permissões de Proprietário ou de Colaborador.
-**Infraestrutura do Azure** | A Contoso configura a infraestrutura do Azure conforme descrito em [Infraestrutura do Azure para migração](contoso-migration-infrastructure.md).
+**Infraestrutura do Azure** | A Contoso configura a infraestrutura do Azure conforme descrito em [Infraestrutura do Azure para migração](./contoso-migration-infrastructure.md).
 
 <!-- markdownlint-enable MD033 -->
 
@@ -138,8 +138,8 @@ Os administradores da Contoso provisionam dois aplicativos Web (um em cada regi�
 
 **Precisa de mais ajuda?**
 
-- Saiba mais sobre os [aplicativos Web do Serviço de Aplicativo do Azure](/azure/app-service/overview).
-- Saiba mais sobre o [Serviço de Aplicativo do Azure no Linux](/azure/app-service/containers/app-service-linux-intro).
+- Saiba mais sobre os [aplicativos Web do Serviço de Aplicativo do Azure](https://docs.microsoft.com/azure/app-service/overview).
+- Saiba mais sobre o [Serviço de Aplicativo do Azure no Linux](https://docs.microsoft.com/azure/app-service/containers/app-service-linux-intro).
 
 ## <a name="step-2-set-up-traffic-manager"></a>Etapa 2: Configurar o Gerenciador de Tráfego
 
@@ -159,8 +159,8 @@ Os administradores da Contoso configuram o Gerenciador de Tráfego para direcion
 
 **Precisa de mais ajuda?**
 
-- Saiba mais sobre o [Gerenciador de Tráfego](/azure/traffic-manager/traffic-manager-overview).
-- Saiba mais sobre [rotear tráfego para um ponto de extremidade prioritário](/azure/traffic-manager/traffic-manager-configure-priority-routing-method).
+- Saiba mais sobre o [Gerenciador de Tráfego](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview).
+- Saiba mais sobre [rotear tráfego para um ponto de extremidade prioritário](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-configure-priority-routing-method).
 
 ## <a name="step-3-provision-azure-database-for-mysql"></a>Etapa 3: Provisionar o Banco de Dados do Azure para MySQL
 
@@ -284,7 +284,7 @@ Como a etapa final do processo de migração, os administradores da Contoso conf
     ![Configurar aplicativo](./media/contoso-migration-refactor-linux-app-service-mysql/configure-app4.png)
 
 5. Eles, então, repetem as etapas acima para o aplicativo Web secundário (**osticket-cus**).
-6. Após a configuração do site, ele estará acessível por meio do perfil do Gerenciador de Tráfego. O nome DNS é o novo local do aplicativo osTicket. [Saiba mais](/azure/app-service/app-service-web-tutorial-custom-domain#map-a-cname-record).
+6. Após a configuração do site, ele estará acessível por meio do perfil do Gerenciador de Tráfego. O nome DNS é o novo local do aplicativo osTicket. [Saiba mais](https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-custom-domain#map-a-cname-record).
 
     ![Configurar aplicativo](./media/contoso-migration-refactor-linux-app-service-mysql/configure-app5.png)
 
@@ -327,14 +327,14 @@ Com o aplicativo em execução, a Contoso precisa operacionalizar e proteger tot
 
 ### <a name="security"></a>Segurança
 
-A equipe de segurança da Contoso examinou o aplicativo para determinar quaisquer problemas de segurança. Ela identificou que a comunicação entre o aplicativo osTicket e que a instância de banco de dados do MySQL não está configurada para SSL. Ela precisa fazer isso para fazer com que o tráfego de banco de dados não possa ser atacado. [Saiba mais](/azure/mysql/howto-configure-ssl).
+A equipe de segurança da Contoso examinou o aplicativo para determinar quaisquer problemas de segurança. Ela identificou que a comunicação entre o aplicativo osTicket e que a instância de banco de dados do MySQL não está configurada para SSL. Ela precisa fazer isso para fazer com que o tráfego de banco de dados não possa ser atacado. [Saiba mais](https://docs.microsoft.com/azure/mysql/howto-configure-ssl).
 
 ### <a name="backups"></a>Backups
 
 - Os aplicativos Web osTicket não contêm dados de estado e, portanto, não é necessário realizar o backup deles.
-- Eles não precisam configurar o backup do banco de dados. O Banco de Dados do Azure para MySQL cria backups do servidor e o armazena automaticamente. Ela escolheu usar a redundância geográfica para o banco de dados e, portanto, ele é resiliente e está pronto para a produção. Os backups podem ser usados para restaurar o servidor pontualmente. [Saiba mais](/azure/mysql/concepts-backup).
+- Eles não precisam configurar o backup do banco de dados. O Banco de Dados do Azure para MySQL cria backups do servidor e o armazena automaticamente. Ela escolheu usar a redundância geográfica para o banco de dados e, portanto, ele é resiliente e está pronto para a produção. Os backups podem ser usados para restaurar o servidor pontualmente. [Saiba mais](https://docs.microsoft.com/azure/mysql/concepts-backup).
 
 ### <a name="licensing-and-cost-optimization"></a>Licenciamento e otimização de custo
 
 - Não há nenhum problema de licenciamento para a implantação PaaS.
-- A Contoso habilitará o Gerenciamento de Custos do Azure licenciado pela Cloudyn, uma subsidiária da Microsoft. É uma solução de gerenciamento de custo de várias nuvens que ajuda você a usar e gerenciar o Azure e outros recursos de nuvem. [Saiba mais](/azure/cost-management/overview) sobre o Gerenciamento de Custos do Azure.
+- A Contoso habilitará o Gerenciamento de Custos do Azure licenciado pela Cloudyn, uma subsidiária da Microsoft. É uma solução de gerenciamento de custo de várias nuvens que ajuda você a usar e gerenciar o Azure e outros recursos de nuvem. [Saiba mais](https://docs.microsoft.com/azure/cost-management/overview) sobre o Gerenciamento de Custos do Azure.

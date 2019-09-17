@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: d98d24e6b2645adf03a94a41b0391b89d5eb2852
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: cbe5de4242baedfa704bd90baa7fa3ca0f0aa026
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70821162"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025123"
 ---
 # <a name="rebuild-an-on-premises-app-on-azure"></a>Recompilar um aplicativo local no Azure
 
@@ -109,7 +109,7 @@ Veja o que a Contoso precisa para esse cenário:
 **Requisitos** | **Detalhes**
 --- | ---
 **Assinatura do Azure** | A Contoso já criou assinaturas em um artigo anterior. Se você não tiver uma assinatura do Azure, crie uma [conta gratuita](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Se você criar uma conta gratuita, será o administrador da assinatura e poderá executar todas as ações.<br/><br/> Se você usar uma assinatura existente e não for o administrador, será necessário trabalhar com o administrador para receber permissões de Proprietário ou de Colaborador.
-**Infraestrutura do Azure** | [ Saiba como ](contoso-migration-infrastructure.md) a Contoso configurou uma infraestrutura do Azure.
+**Infraestrutura do Azure** | [ Saiba como ](./contoso-migration-infrastructure.md) a Contoso configurou uma infraestrutura do Azure.
 **Pré-requisitos de desenvolvedor** | A Contoso precisa das ferramentas a seguir em uma estação de trabalho de desenvolvedor:<br/><br/> - [Visual Studio 2017 Community Edition: Versão 15.5](https://www.visualstudio.com)<br/><br/> Carga de trabalho .NET habilitada.<br/><br/> [Git](https://git-scm.com)<br/><br/> [PowerShell do Azure](https://azure.microsoft.com/downloads)<br/><br/> [CLI do Azure](/cli/azure/install-azure-cli?view=azure-cli-latest)<br/><br/> [Docker CE (Windows 10) ou Docker EE (Windows Server)](https://docs.docker.com/docker-for-windows/install) configurado para usar Contêineres do Windows.
 
 <!-- markdownlint-enable MD033 -->
@@ -150,7 +150,7 @@ Os administradores da Contoso provisionam da seguinte maneira:
     ![AKS](./media/contoso-migration-rebuild/aks2.png)
 4. Eles escolhem **Exibir** > **Terminal Integrado** para abrir o terminal integrado do Visual Studio Code.
     ![AKS](./media/contoso-migration-rebuild/aks3.png)
-5. No terminal integrado do PowerShell, eles entram no Azure usando o comando Connect-AzureRmAccount. [Saiba mais](/powershell/azure/get-started-azureps) sobre como começar a trabalhar com o PowerShell.
+5. No terminal integrado do PowerShell, eles entram no Azure usando o comando Connect-AzureRmAccount. [Saiba mais](https://docs.microsoft.com/powershell/azure/get-started-azureps) sobre como começar a trabalhar com o PowerShell.
     ![AKS](./media/contoso-migration-rebuild/aks4.png)
 6. Eles autenticam a CLI do Azure executando o comando **az login** e seguindo as instruções para autenticar usando o navegador da Web. [Saiba mais](/cli/azure/authenticate-azure-cli?view=azure-cli-latest) sobre o logon com a CLI do Azure.
     ![AKS](./media/contoso-migration-rebuild/aks5.png)
@@ -585,22 +585,22 @@ Com os recursos migrados para o Azure, agora a Contoso precisa operacionalizar e
 
 ### <a name="security"></a>Segurança
 
-- A Contoso precisa garantir que os novos bancos de dados estejam seguros. [Saiba mais](/azure/sql-database/sql-database-security-overview).
+- A Contoso precisa garantir que os novos bancos de dados estejam seguros. [Saiba mais](https://docs.microsoft.com/azure/sql-database/sql-database-security-overview).
 - O aplicativo precisa ser atualizado para usar SSL com certificados. A instância de contêiner deve ser reimplantada para responder em 443.
-- A Contoso deve considerar o uso do Key Vault para proteger os segredos dos aplicativos do Service Fabric. [Saiba mais](/azure/service-fabric/service-fabric-application-secret-management).
+- A Contoso deve considerar o uso do Key Vault para proteger os segredos dos aplicativos do Service Fabric. [Saiba mais](https://docs.microsoft.com/azure/service-fabric/service-fabric-application-secret-management).
 
 ### <a name="backups-and-disaster-recovery"></a>Backup e recuperação de desastre
 
-- A Contoso precisa examinar os requisitos de backup do Banco de Dados SQL do Azure. [Saiba mais](/azure/sql-database/sql-database-automated-backups).
-- A Contoso deve considerar implementar grupos de failover do SQL para fornecer failover regional ao banco de dados. [Saiba mais](/azure/sql-database/sql-database-geo-replication-overview).
-- A Contoso pode usar a replicação geográfica para o SKU Premium do ACR. [Saiba mais](/azure/container-registry/container-registry-geo-replication).
-- O Cosmos DB faz backup automaticamente. A Contoso pode [saber mais](/azure/cosmos-db/online-backup-and-restore) sobre esse processo.
+- A Contoso precisa examinar os requisitos de backup do Banco de Dados SQL do Azure. [Saiba mais](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups).
+- A Contoso deve considerar implementar grupos de failover do SQL para fornecer failover regional ao banco de dados. [Saiba mais](https://docs.microsoft.com/azure/sql-database/sql-database-geo-replication-overview).
+- A Contoso pode usar a replicação geográfica para o SKU Premium do ACR. [Saiba mais](https://docs.microsoft.com/azure/container-registry/container-registry-geo-replication).
+- O Cosmos DB faz backup automaticamente. A Contoso pode [saber mais](https://docs.microsoft.com/azure/cosmos-db/online-backup-and-restore) sobre esse processo.
 
 ### <a name="licensing-and-cost-optimization"></a>Licenciamento e otimização de custo
 
-- Depois que todos os recursos estiverem implantados, a Contoso deverá atribuir marcações ao Azure com base no seu [planejamento de infraestrutura](contoso-migration-infrastructure.md#set-up-tagging).
+- Depois que todos os recursos estiverem implantados, a Contoso deverá atribuir marcações ao Azure com base no seu [planejamento de infraestrutura](./contoso-migration-infrastructure.md#set-up-tagging).
 - Todo o licenciamento se baseia no custo dos serviços de PaaS que a Contoso está consumindo. Isso será deduzido do EA.
-- A Contoso habilitará o Gerenciamento de Custos do Azure licenciado pela Cloudyn, uma subsidiária da Microsoft. É uma solução de gerenciamento de custo de várias nuvens que ajuda você a usar e gerenciar o Azure e outros recursos de nuvem. [Saiba mais](/azure/cost-management/overview) sobre o Gerenciamento de Custos do Azure.
+- A Contoso habilitará o Gerenciamento de Custos do Azure licenciado pela Cloudyn, uma subsidiária da Microsoft. É uma solução de gerenciamento de custo de várias nuvens que ajuda você a usar e gerenciar o Azure e outros recursos de nuvem. [Saiba mais](https://docs.microsoft.com/azure/cost-management/overview) sobre o Gerenciamento de Custos do Azure.
 
 ## <a name="conclusion"></a>Conclusão
 

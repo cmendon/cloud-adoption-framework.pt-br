@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: d4f420274b27646e94c64c2e5347bff50124c9dd
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 2309b56bec38383f9fe80e78e66e01a090701c3c
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70829339"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023807"
 ---
 # <a name="approaches-to-digital-estate-planning"></a>Abordagens para planejamento de propriedade digital
 
@@ -62,4 +62,4 @@ Geralmente, essa abordagem pressupõe um modelo de implantação IaaS como linha
 Após a seleção de uma abordagem, o inventário pode ser coletado.
 
 > [!div class="nextstepaction"]
-> [Coletar dados de inventário](inventory.md)
+> [Coletar dados de inventário](./inventory.md)

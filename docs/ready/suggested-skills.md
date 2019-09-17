@@ -8,12 +8,12 @@ ms.date: 05/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 2d5444b340dbb0252f3aaf70b9cfca88126234e4
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 3936307ec1062d36e890b65d8687ad0acbb5b129
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70819147"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025105"
 ---
 # <a name="skills-readiness-path-during-the-ready-phase-of-a-migration-journey"></a>Caminho de preparação de habilidades durante a fase de "prontidão" de um percurso de migração
 
@@ -24,7 +24,7 @@ Durante a fase de prontidão de um percurso de migração, o objetivo é prepara
 Dependendo das motivações e dos resultados dos negócios associados a um esforço de adoção de nuvem, os líderes podem precisar estabelecer novas estruturas organizacionais ou equipes virtuais (V-teams) para facilitar várias funções. Os artigos a seguir ajudam a desenvolver as habilidades necessárias para estruturar essas equipes de acordo com os resultados desejados:
 
 - [Alinhamento inicial da organização](./index.md): visão geral do alinhamento da organização e de várias estruturas de equipe para facilitar metas específicas.
-- [Separação de silos e esferas de atuação](../organization/fiefdoms-silos.md): entenda dois antipadrões organizacionais comuns e maneiras de orientar a equipe à colaboração produtiva.
+- [Separação de silos e esferas de atuação](../organize/fiefdoms-silos.md): entenda dois antipadrões organizacionais comuns e maneiras de orientar a equipe à colaboração produtiva.
 
 ## <a name="environmental-technical-readiness-learning-paths"></a>Roteiros de aprendizagem para preparação ambiental (técnica)
 

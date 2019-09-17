@@ -8,12 +8,12 @@ ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3296a471540c921d465859d0dfd800a91996f721
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 00b2ee80709c36658a58f23b2848fdf1b64d856d
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70831354"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024385"
 ---
 # <a name="make-the-switch-from-mainframes-to-azure"></a>Fazer a transição dos mainframes para Azure
 
@@ -48,7 +48,7 @@ Por comparação, o Azure oferece contratos de nível de compromisso de serviço
 
 O Azure fornece disponibilidade adicional ao replicar dados de vários dispositivos de armazenamento, localmente ou em outras regiões geográficas. Caso ocorra uma falha com base no Azure, recursos de computação podem acessar dados replicados no nível do local ou regional.
 
-Quando você usa a plataforma do Azure como um recurso de serviço (PaaS), como [Banco de Dados SQL do Azure](/azure/sql-database/sql-database-technical-overview) e [Banco de Dados do Azure Cosmos](/azure/cosmos-db/introduction), o Azure pode tratar automaticamente de failovers. Quando você usa a IaaS (infraestrutura como serviço) do Azure, o failover depende de uma funcionalidade específica do sistema, como SQL Server recursos de Always On, instâncias de clustering de failover e grupos de disponibilidade.
+Quando você usa a plataforma do Azure como um recurso de serviço (PaaS), como [Banco de Dados SQL do Azure](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview) e [Banco de Dados do Azure Cosmos](https://docs.microsoft.com/azure/cosmos-db/introduction), o Azure pode tratar automaticamente de failovers. Quando você usa a IaaS (infraestrutura como serviço) do Azure, o failover depende de uma funcionalidade específica do sistema, como SQL Server recursos de Always On, instâncias de clustering de failover e grupos de disponibilidade.
 
 ## <a name="scalability"></a>Escalabilidade
 
@@ -60,7 +60,7 @@ Um CF também oferece computação rigidamente acoplada, enquanto os recursos de
 
 Os clientes de mainframe normalmente mantêm sites de recuperação de desastres ou fazer uso ou um provedor de mainframe independentes para contingências de desastres. Sincronização com um site de recuperação de desastres geralmente é feita por meio de cópias offline de dados. Ambas as opções incorrem em custos altos.
 
-Redundância geográfica automatizada também está disponível por meio de facilidade acoplamento de mainframe, embora com grande despesa, e geralmente é reservado para sistemas de missão crítica. Em contraste, o Azure tem opções fáceis de implementar e econômicas para [backup](/azure/backup/backup-introduction-to-azure-backup), [recuperação](/azure/site-recovery/site-recovery-overview), e [redundância](/azure/storage/common/storage-redundancy) nos níveis locais ou regionais ou por meio de redundância geográfica.
+Redundância geográfica automatizada também está disponível por meio de facilidade acoplamento de mainframe, embora com grande despesa, e geralmente é reservado para sistemas de missão crítica. Em contraste, o Azure tem opções fáceis de implementar e econômicas para [backup](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup), [recuperação](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview), e [redundância](https://docs.microsoft.com/azure/storage/common/storage-redundancy) nos níveis locais ou regionais ou por meio de redundância geográfica.
 
 ## <a name="storage"></a>Armazenamento
 
@@ -73,7 +73,7 @@ Tipos de armazenamento físico para mainframes incluem:
 - **Armazenamento central:** Localizado diretamente no processador de mainframe, isso também é conhecido como processador ou armazenamento real.
 - **Armazenamento auxiliar:** Localizados separadamente do mainframe, esse tipo inclui o armazenamento em DASDs e também é conhecido como armazenamento de paginação.
 
-A nuvem oferece uma variedade de opções flexíveis e escalonáveis, e você pagará apenas essas opções que você precisa. O [Armazenamento do Azure](/azure/storage/common/storage-introduction) oferece um armazenamento de objetos altamente escalonável para objetos de dados, um serviço de sistema de arquivos para a nuvem, armazenamento de mensagens confiáveis e armazenamento de NoSQL. Para VMs, discos gerenciados e discos não gerenciados fornecem armazenamento em disco persistente e seguro.
+A nuvem oferece uma variedade de opções flexíveis e escalonáveis, e você pagará apenas essas opções que você precisa. O [Armazenamento do Azure](https://docs.microsoft.com/azure/storage/common/storage-introduction) oferece um armazenamento de objetos altamente escalonável para objetos de dados, um serviço de sistema de arquivos para a nuvem, armazenamento de mensagens confiáveis e armazenamento de NoSQL. Para VMs, discos gerenciados e discos não gerenciados fornecem armazenamento em disco persistente e seguro.
 
 ## <a name="mainframe-development-and-testing"></a>Desenvolvimento de mainframe e teste
 
@@ -88,4 +88,4 @@ Quando as soluções são desenvolvidas e testadas no Azure e estão prontas par
 ## <a name="next-steps"></a>Próximas etapas
 
 > [!div class="nextstepaction"]
-> [Migração de aplicativos de mainframe](application-strategies.md)
+> [Migração de aplicativos de mainframe](./application-strategies.md)

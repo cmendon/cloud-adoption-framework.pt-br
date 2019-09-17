@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit
-ms.openlocfilehash: 8fccc60eb9944aca6801deb79310ebf07e10b109
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 9b6c526f407a50327aad8dd2fb2639cb7172cb8d
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70819459"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025213"
 ---
 # <a name="deploy-a-migration-landing-zone"></a>Implantar uma zona de aterrissagem de migração
 
@@ -33,7 +33,7 @@ A imagem a seguir mostra o blueprint da zona de acesso de migração da Cloud Ad
 ![Alinhamento do blueprint](../../_images/ready/blueprint-overview.png)
 
 - A letra A fica dentro de uma linha curva que marca o escopo deste blueprint. Esse escopo passa a ideia de que esse blueprint abrange uma complexidade de arquitetura limitada, mas que se baseia em requisitos de conformidade relativamente intermediários.
-- Os clientes que têm um alto grau de complexidade e requisitos de conformidade rigorosos podem ser melhor atendidos usando um blueprint estendido de um parceiro ou um dos [exemplos de blueprint baseados em padrões](/azure/governance/blueprints/samples/).
+- Os clientes que têm um alto grau de complexidade e requisitos de conformidade rigorosos podem ser melhor atendidos usando um blueprint estendido de um parceiro ou um dos [exemplos de blueprint baseados em padrões](https://docs.microsoft.com/azure/governance/blueprints/samples/).
 - A maioria das necessidades dos clientes se enquadrará em algum lugar entre esses dois extremos. A letra B representa o processo descrito nos artigos de [considerações sobre a zona de acesso](../considerations/index.md). Para clientes neste espaço, você pode usar os guias de decisão encontrados nesses artigos para identificar os nós a serem adicionados ao blueprint da zona de acesso de migração da Cloud Adoption Framework. Essa abordagem permite que você personalize o blueprint para atender às suas necessidades.
 
 ## <a name="use-this-blueprint"></a>Usar este blueprint
@@ -67,7 +67,7 @@ As decisões a seguir são representadas no blueprint da zona de acesso.
 |Grupos de recursos|N/A – projetado para uma única assinatura de produção.|[Dimensionamento de assinaturas](../considerations/scaling-subscriptions.md)         |
 |Dados|N/D|[Escolher a opção correta do SQL Server no Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json)         |
 |Armazenamento|N/D|[Diretrizes do Armazenamento do Azure](../considerations/storage-guidance.md)         |
-|Padrões de nomenclatura e marcação|N/D|[Melhores práticas de nomenclatura e marcação](../considerations/name-and-tag.md)         |
+|Padrões de nomenclatura e marcação|N/D|[Melhores práticas de nomenclatura e marcação](../considerations/naming-and-tagging.md)         |
 |Gerenciamento de custos|N/D|[Acompanhando os custos](../azure-best-practices/track-costs.md)|
 |Computação|N/D|[Opções de computação](../considerations/compute-decisions.md)|
 

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: e0f83c51d3b335d4a4385fd39351d6ab6fa3a78d
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: a2186172248dcaf3006fc7fe0d55fa8174910c6a
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70906386"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025006"
 ---
 # <a name="rehost-an-on-premises-linux-app-to-azure-vms"></a>Hospede novamente um aplicativo Linux local para VMs do Azure
 
@@ -69,8 +69,8 @@ A Contoso avalia o design proposto reunindo uma lista de prós e contras.
 
 **Consideração** | **Detalhes**
 --- | ---
-**Prós** | As duas VMs do aplicativo serão movidas para o Azure sem alterações, simplificando a migração.<br/><br/> Como a Contoso está usando o método "lift and shift" para as duas VMs do aplicativo, não é necessário usar nenhuma ferramenta de configuração ou de migração especial para o banco de dados do aplicativo.<br/><br/> A Contoso manterá o controle total sobre as VMs do aplicativo no Azure. <br/><br/> As VMs do aplicativo executam o Ubuntu 16.04-TLS, que é uma distribuição endossada do Linux. [Saiba mais](/azure/virtual-machines/linux/endorsed-distros).
-**Contras** | A camada da Web e de dados do aplicativo continuará sendo um ponto único de failover. <br/><br/> A Contoso precisará continuar dando suporte ao aplicativo como VMs do Azure, em vez de mover para um serviço gerenciado, como o Serviço de Aplicativo do Azure e o Banco de Dados do Azure para MySQL.<br/><br/> A Contoso está ciente de que, se mantiver as coisas simples com uma migração de VM lift and shift, não estará aproveitando por completo os recursos fornecidos pelo [Banco de Dados do Azure para MySQL](/azure/mysql/overview) (alta disponibilidade interna, desempenho previsível, dimensionamento simples, backups automáticos e segurança interna).
+**Prós** | As duas VMs do aplicativo serão movidas para o Azure sem alterações, simplificando a migração.<br/><br/> Como a Contoso está usando o método "lift and shift" para as duas VMs do aplicativo, não é necessário usar nenhuma ferramenta de configuração ou de migração especial para o banco de dados do aplicativo.<br/><br/> A Contoso manterá o controle total sobre as VMs do aplicativo no Azure. <br/><br/> As VMs do aplicativo executam o Ubuntu 16.04-TLS, que é uma distribuição endossada do Linux. [Saiba mais](https://docs.microsoft.com/azure/virtual-machines/linux/endorsed-distros).
+**Contras** | A camada da Web e de dados do aplicativo continuará sendo um ponto único de failover. <br/><br/> A Contoso precisará continuar dando suporte ao aplicativo como VMs do Azure, em vez de mover para um serviço gerenciado, como o Serviço de Aplicativo do Azure e o Banco de Dados do Azure para MySQL.<br/><br/> A Contoso está ciente de que, se mantiver as coisas simples com uma migração de VM lift and shift, não estará aproveitando por completo os recursos fornecidos pelo [Banco de Dados do Azure para MySQL](https://docs.microsoft.com/azure/mysql/overview) (alta disponibilidade interna, desempenho previsível, dimensionamento simples, backups automáticos e segurança interna).
 
 <!-- markdownlint-enable MD033 -->
 
@@ -79,16 +79,17 @@ A Contoso avalia o design proposto reunindo uma lista de prós e contras.
 A Contoso migrará da seguinte maneira:
 
 - Como primeira etapa, a Contoso prepara e configura os componentes do Azure para a Migração de Servidor das Migrações para Azure e prepara a infraestrutura do VMware local.
-- Eles já têm a [infraestrutura do Azure](contoso-migration-infrastructure.md) estabelecida, portanto, a Contoso precisa apenas adicionar e configurar a replicação das VMs usando a ferramenta de Migração de Servidor das Migrações para Azure. 
+- Eles já têm a [infraestrutura do Azure](./contoso-migration-infrastructure.md) estabelecida, portanto, a Contoso precisa apenas adicionar e configurar a replicação das VMs usando a ferramenta de Migração de Servidor das Migrações para Azure. 
 - Com tudo preparado, a Contoso pode iniciar a replicação das VMs.
 - Depois que a replicação estiver habilitada e funcionando, a Contoso migrará a VM efetuando failover para o Azure.
 
-![Processo de migração](./media/contoso-migration-rehost-linux-vm/migraton-process-az-migrate.png)
+![Processo de migração](./media/contoso-migration-rehost-linux-vm/migration-process-az-migrate.png)
+
 ### <a name="azure-services"></a>Serviços do Azure
 
 **Serviço** | **Descrição** | **Custo**
 --- | --- | ---
-[Migração de Servidor das Migrações para Azure](/azure/migrate/contoso-migration-rehost-linux-vm) | O serviço orquestra e gerencia a migração de seus aplicativos e cargas de trabalho locais, bem como de instâncias de VM do AWS/GCP. | Durante a replicação para o Azure, são gerados encargos do Armazenamento do Azure. As VMs do Azure são criadas e incorrem em encargos quando ocorre failover. [Saiba mais](https://azure.microsoft.com/pricing/details/azure-migrate/) sobre encargos e preços.
+[Migração de Servidor das Migrações para Azure](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-linux-vm) | O serviço orquestra e gerencia a migração de seus aplicativos e cargas de trabalho locais, bem como de instâncias de VM do AWS/GCP. | Durante a replicação para o Azure, são gerados encargos do Armazenamento do Azure. As VMs do Azure são criadas e incorrem em encargos quando ocorre failover. [Saiba mais](https://azure.microsoft.com/pricing/details/azure-migrate/) sobre encargos e preços.
 
 
 ## <a name="prerequisites"></a>Pré-requisitos
@@ -99,10 +100,10 @@ Veja o que a Contoso precisa para esse cenário.
 
 **Requisitos** | **Detalhes**
 --- | ---
-**Assinatura do Azure** | A Contoso criou assinaturas em um artigo anterior nesta série. Se você não tiver uma assinatura do Azure, crie uma [conta gratuita](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Se você criar uma conta gratuita, será o administrador da assinatura e poderá executar todas as ações.<br/><br/> Se você usar uma assinatura existente e não for o administrador, será necessário trabalhar com o administrador para receber permissões de Proprietário ou de Colaborador.<br/><br/> Se forem necessárias permissões mais granulares, leia [este artigo](/azure/site-recovery/site-recovery-role-based-linked-access-control).
-**Infraestrutura do Azure** |  [ Saiba como ](contoso-migration-infrastructure.md) a Contoso configurou uma infraestrutura do Azure.<br/><br/> Saiba mais sobre os [pré-requisitos](/azure/migrate/contoso-migration-rehost-linux-vm#prerequisites) específicos necessários para a Migração de Servidor das Migrações para Azure.
+**Assinatura do Azure** | A Contoso criou assinaturas em um artigo anterior nesta série. Se você não tiver uma assinatura do Azure, crie uma [conta gratuita](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Se você criar uma conta gratuita, será o administrador da assinatura e poderá executar todas as ações.<br/><br/> Se você usar uma assinatura existente e não for o administrador, será necessário trabalhar com o administrador para receber permissões de Proprietário ou de Colaborador.<br/><br/> Se forem necessárias permissões mais granulares, leia [este artigo](https://docs.microsoft.com/azure/site-recovery/site-recovery-role-based-linked-access-control).
+**Infraestrutura do Azure** |  [ Saiba como ](./contoso-migration-infrastructure.md) a Contoso configurou uma infraestrutura do Azure.<br/><br/> Saiba mais sobre os [pré-requisitos](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-linux-vm#prerequisites) específicos necessários para a Migração de Servidor das Migrações para Azure.
 **Servidores locais** | O servidor vCenter local deve estar executando a versão 5.5, 6.0 ou 6.5<br/><br/> Um host ESXi que executa a versão 5.5, 6.0 ou 6.5<br/><br/> Uma ou mais VMs do VMware em execução no host ESXi.
-**VMs locais** | [Examine os computadores Linux](/azure/virtual-machines/linux/endorsed-distros) endossados para execução no Azure.
+**VMs locais** | [Examine os computadores Linux](https://docs.microsoft.com/azure/virtual-machines/linux/endorsed-distros) endossados para execução no Azure.
 
 <!-- markdownlint-enable MD033 -->
 
@@ -126,7 +127,7 @@ Aqui estão os componentes do Azure que a Contoso precisa para migrar as máquin
 
 Eles configuram estes da seguinte forma:
 
-1. Configurar uma rede – a Contoso já configurou uma rede que pode ser usada para a Migração de Servidor das Migrações para Azure quando [implantou a infraestrutura do Azure](contoso-migration-infrastructure.md)
+1. Configurar uma rede – a Contoso já configurou uma rede que pode ser usada para a Migração de Servidor das Migrações para Azure quando [implantou a infraestrutura do Azure](./contoso-migration-infrastructure.md)
 
     - O aplicativo SmartHotel360 é um aplicativo de produção e as VMs serão migradas para a rede de produção do Azure (VNET-PROD-EUS2) na região primária do leste dos EUA 2.
     - As duas máquinas virtuais serão colocadas no grupo de recursos ContosoRG, que é usado para recursos de produção.
@@ -140,7 +141,7 @@ Eles configuram estes da seguinte forma:
 
 **Precisa de mais ajuda?**
 
-[Saiba mais](/azure/migrate/) sobre como configurar a ferramenta de Migração de Servidor das Migrações para Azure. 
+[Saiba mais](https://docs.microsoft.com/azure/migrate/) sobre como configurar a ferramenta de Migração de Servidor das Migrações para Azure. 
 
 
 ### <a name="prepare-to-connect-to-azure-vms-after-failover"></a>Preparar para conectar VMs do Azure após o failover
@@ -153,7 +154,7 @@ Após o failover no Azure, a Contoso deseja ser capaz de se conectar às VMs rep
 
 **Precisa de mais ajuda?**
 
-- [Saiba mais](/azure/migrate/contoso-migration-rehost-linux-vm#prepare-vms-for-migration) sobre a preparação de VMs para migração
+- [Saiba mais](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-linux-vm#prepare-vms-for-migration) sobre a preparação de VMs para migração
 
 ## <a name="step-3-replicate-the-on-premises-vms"></a>Etapa 3: Replicar as VMs locais
 
@@ -277,8 +278,8 @@ Como a etapa final no processo de migração, os administradores da Contoso atua
 
 **Precisa de mais ajuda?**
 
-- [Saiba mais](/azure/migrate/tutorial-migrate-vmware#run-a-test-migration) sobre como executar failovers de teste.
-- [Saiba mais](/azure/migrate/tutorial-migrate-vmware#migrate-vms) sobre a migração de VMs para o Azure. 
+- [Saiba mais](https://docs.microsoft.com/azure/migrate/tutorial-migrate-vmware#run-a-test-migration) sobre como executar failovers de teste.
+- [Saiba mais](https://docs.microsoft.com/azure/migrate/tutorial-migrate-vmware#migrate-vms) sobre a migração de VMs para o Azure. 
 
 ## <a name="clean-up-after-migration"></a>Limpar após a migração
 
@@ -303,17 +304,17 @@ A equipe de segurança da Contoso examine o OSTICKETWEB e OSTICKETMYSQLVMs para 
 - A equipe revisa os NSGs (grupos de segurança de rede) para que as VMs controlem o acesso. Os NSGs são usados para garantir que somente o tráfego permitido para o aplicativo pode passar.
 - A equipe também planeja proteger os dados nos discos da VM usando a criptografia de disco e o Azure Key Vault.
 
-[Leia mais](/azure/security/azure-security-best-practices-vms) sobre as práticas recomendadas de segurança para máquinas virtuais.
+[Leia mais](https://docs.microsoft.com/azure/security/azure-security-best-practices-vms) sobre as práticas recomendadas de segurança para máquinas virtuais.
 
 ### <a name="bcdr"></a>BCDR
 
 Para continuidade dos negócios e recuperação de desastres, a Contoso executa as seguintes ações:
 
-- **Manter os dados seguros.** A Contoso faz backup dos dados nas VMs usando o serviço de Backup do Azure. [Saiba mais](/azure/backup/backup-introduction-to-azure-backup?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json).
-- **Manter os aplicativos em funcionamento.** A Contoso replica as VMs do aplicativo no Azure para uma região secundária usando o Site Recovery. [Saiba mais](/azure/site-recovery/azure-to-azure-quickstart).
+- **Manter os dados seguros.** A Contoso faz backup dos dados nas VMs usando o serviço de Backup do Azure. [Saiba mais](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json).
+- **Manter os aplicativos em funcionamento.** A Contoso replica as VMs do aplicativo no Azure para uma região secundária usando o Site Recovery. [Saiba mais](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart).
 
 ### <a name="licensing-and-cost-optimization"></a>Licenciamento e otimização de custo
 
-- Após a implantação de recursos, a Contoso atribui marcas do Azure conforme definido durante a [implantação de infraestrutura do Azure](contoso-migration-infrastructure.md#set-up-tagging).
+- Após a implantação de recursos, a Contoso atribui marcas do Azure conforme definido durante a [implantação de infraestrutura do Azure](./contoso-migration-infrastructure.md#set-up-tagging).
 - A Contoso não tem nenhum problema de licenciamento com os servidores do Ubuntu.
-- A Contoso habilitará o Gerenciamento de Custos do Azure licenciado pela Cloudyn, uma subsidiária da Microsoft. É uma solução de gerenciamento de custos em várias nuvens que ajuda a usar e gerenciar o Azure e outros recursos de nuvem. [Saiba mais](/azure/cost-management/overview) sobre o Gerenciamento de Custos do Azure.
+- A Contoso habilitará o Gerenciamento de Custos do Azure licenciado pela Cloudyn, uma subsidiária da Microsoft. É uma solução de gerenciamento de custos em várias nuvens que ajuda a usar e gerenciar o Azure e outros recursos de nuvem. [Saiba mais](https://docs.microsoft.com/azure/cost-management/overview) sobre o Gerenciamento de Custos do Azure.

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: c1fb4224c7a8865785b795ad8f28bfa04779ce89
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: e46c045d51bd4961f1cf355352cb84b110a81d81
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70829352"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023527"
 ---
 # <a name="align-cost-models-with-the-digital-estate-to-forecast-cloud-costs"></a>Alinhar os modelos de custo com a propriedade digital para prever os custos de nuvem
 
@@ -22,9 +22,9 @@ Depois de racionalizar um espaço digital, você pode alinhá-lo aos modelos de 
 
 As ferramentas de preços do Azure ajudam você a gerenciar os gastos de nuvem com transparência e precisão, para que você possa aproveitar ao máximo o Azure e outras nuvens. Ela fornece ferramentas para monitorar, alocar e otimizar os gastos com a nuvem e capacitar clientes para acelerar investimentos futuros com confiança.
 
-- [Migrações para Azure](/azure/migrate/migrate-overview): As migrações para Azure talvez sejam a abordagem mais econômica para o alinhamento do modelo de custo. Essa ferramenta permite [inventário](inventory.md) de propriedade digital, [racionalização limitada](rationalize.md) e cálculos de custo em uma única ferramenta.
+- [Migrações para Azure](https://docs.microsoft.com/azure/migrate/migrate-overview): As migrações para Azure talvez sejam a abordagem mais econômica para o alinhamento do modelo de custo. Essa ferramenta permite [inventário](./inventory.md) de propriedade digital, [racionalização limitada](./rationalize.md) e cálculos de custo em uma única ferramenta.
 
-- [Calculadora de custo total de propriedade (TCO)](https://azure.com/tco): Reduza o custo total de propriedade da sua infraestrutura local com a plataforma de nuvem do Azure. Use a calculadora de TCO do Azure para calcular as economias de custo possíveis ao migrar suas cargas de trabalho do aplicativo para o Azure. Forneça uma breve descrição do seu ambiente local para obter um relatório instantâneo.
+- [Calculadora de custo total de propriedade (TCO)](https://azure.microsoft.com/pricing/tco/calculator/): Reduza o custo total de propriedade da sua infraestrutura local com a plataforma de nuvem do Azure. Use a calculadora de TCO do Azure para calcular as economias de custo possíveis ao migrar suas cargas de trabalho do aplicativo para o Azure. Forneça uma breve descrição do seu ambiente local para obter um relatório instantâneo.
 
 - [Calculadora de Preços do Azure](https://azure.microsoft.com/pricing): Estime sua fatura mensal esperada usando nossa calculadora de preços. Acompanhe quando quiser o uso real e a fatura da conta usando o portal de cobrança. Configure alertas automáticos de cobrança por email para notificá-lo se seus gastos estiverem acima da quantia configurada.
 

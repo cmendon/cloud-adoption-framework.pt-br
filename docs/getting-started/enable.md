@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 layout: LandingPage
-ms.openlocfilehash: f36e524fea15df572df8ef74c6b5c81f5fa08932
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 5e1b1c24b076c56fdf6e42a8340589ee58bd69dc
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70829235"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023453"
 ---
 # <a name="enable-success-across-any-cloud-adoption-journey"></a>Habilite o sucesso em qualquer jornada de adoção de nuvem
 
@@ -22,12 +22,12 @@ A estrutura de adoção do Microsoft Cloud para o Azure é fornecida como uma fe
 
 Durante esse Framework, a habilitação é um tema principal. A lista de verificação a seguir contém uma série de tópicos que devem ser inseridos em qualquer esforço de adoção de nuvem para garantir que a jornada seja um sucesso nos olhos de ti e da empresa:
 
-- **Intenção** Estabelecendo [resultados](../business-strategy/business-outcomes/index.md)claros de negócios, um [plano de imóveis digital](../digital-estate/index.md)definido e [os registros](../migrate/migration-considerations/prerequisites/migration-backlog-review.md)posteriores de adoção bem compreendidos.
+- **Intenção** Estabelecendo [resultados](../strategy/business-outcomes/index.md)claros de negócios, um [plano de imóveis digital](../digital-estate/index.md)definido e [os registros](../migrate/migration-considerations/prerequisites/migration-backlog-review.md)posteriores de adoção bem compreendidos.
 - **Pronto:** Garanta a prontidão da equipe por meio de [planos de aprendizado e habilidades](../ready/technical-skills.md).
 - **Executados** Defina um modelo operacional gerenciável para guiar as atividades durante e muito tempo após a adoção.
-  - **[Organizar](../organization/index.md):** Alinhe pessoas e equipes para fornecer operações e adoção adequadas de nuvem.
-  - **Indicadores** Alinhe as [disciplinas de governança](../governance/index.md) adequadas para aplicar consistentemente o gerenciamento de custos, a mitigação de riscos, a conformidade e as linhas de base de segurança em toda a adoção da nuvem.
-  - **Gerenciar:** [Operações](../operations/index.md) contínuas do portfólio de ti para minimizar as interrupções nos processos de negócios e garantir a estabilidade do portfólio de ti.
+  - **[Organizar](../organize/index.md):** Alinhe pessoas e equipes para fornecer operações e adoção adequadas de nuvem.
+  - **Indicadores** Alinhe as [disciplinas de governança](../govern/index.md) adequadas para aplicar consistentemente o gerenciamento de custos, a mitigação de riscos, a conformidade e as linhas de base de segurança em toda a adoção da nuvem.
+  - **Gerenciar:** [Gerenciamento operacional](../manage/index.md) contínuo do portfólio de ti para minimizar as interrupções nos processos de negócios e garantir a estabilidade do portfólio de ti.
   - **Support** Alinhe [as opções de parceria e suporte](../migrate/migration-considerations/assess/partnership-options.md)adequadas.
 
 ## <a name="additional-tools"></a>Ferramentas adicionais
@@ -38,7 +38,7 @@ Além da estrutura de adoção de nuvem, a Microsoft aborda tópicos adicionais 
 
 <ul class="panelContent cardsH">
 <li style="display: flex; flex-direction: column;">
-    <a href="../governance/journeys/index.md" style="display: flex; flex-direction: column; flex: 1 0 auto;">
+    <a href="../govern/guides/index.md" style="display: flex; flex-direction: column; flex: 1 0 auto;">
         <div class="cardSize" style="flex: 1 0 auto; display: flex;">
             <div class="cardPadding" style="display: flex;">
                 <div class="card">

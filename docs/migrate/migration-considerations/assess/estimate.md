@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 09492fea252ac9b07372c2def75d61df62e727ec
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 2bbafffd50cba58fc5304489f31521e6da8a8345
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70819485"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025430"
 ---
 # <a name="estimate-cloud-costs"></a>Estimar os custos de nuvem
 
@@ -23,7 +23,7 @@ Durante a migração, há vários fatores que podem afetar as decisões e as ati
 
 O tamanho de sua propriedade digital afeta diretamente as decisões de migração. As migrações que envolvem menos de 250 VMs podem ser estimadas com muito mais facilidade do que uma migração que envolve mais de 10 mil VMs. É altamente recomendável que você selecione uma carga de trabalho menor como sua primeira migração. Isso dá à sua equipe a oportunidade de saber como estimar os custos de um esforço de migração simples antes de tentar estimar migrações de carga de trabalho maiores e mais complicadas.
 
-No entanto, observe que migrações menores e de carga de trabalho única ainda podem envolver uma quantidade muito variada de ativos de suporte. Se a migração envolver menos de mil VMs, provavelmente uma ferramenta como as [Migrações para Azure](/azure/migrate/migrate-overview) será suficiente para coletar dados no inventário e prever custos. Outras opções de ferramentas para estimativa de custos são descritas no artigo sobre [cálculos de custo da propriedade digital](../../../digital-estate/calculate.md).
+No entanto, observe que migrações menores e de carga de trabalho única ainda podem envolver uma quantidade muito variada de ativos de suporte. Se a migração envolver menos de mil VMs, provavelmente uma ferramenta como as [Migrações para Azure](https://docs.microsoft.com/azure/migrate/migrate-overview) será suficiente para coletar dados no inventário e prever custos. Outras opções de ferramentas para estimativa de custos são descritas no artigo sobre [cálculos de custo da propriedade digital](../../../digital-estate/calculate.md).
 
 Para propriedades digitais com mais de mil unidades, ainda é possível detalhar uma estimativa para quatro ou cinco iterações acionáveis, tornando o processo de estimativa gerenciável. Para propriedades maiores ou quando for necessário um grau mais alto de precisão de previsão, uma abordagem mais abrangente, como a descrita na seção "[Propriedade digital](../../../digital-estate/index.md)" da Cloud Adoption Framework, provavelmente será necessária.
 

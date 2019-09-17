@@ -8,12 +8,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 8f1d622401eff58710e016b690292e81d9b7f1d7
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: 47148153d63137e6281b37bcb2be28e63bc6586c
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70905280"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025167"
 ---
 # <a name="azure-fundamental-concepts"></a>Conceitos fundamentais do Azure
 
@@ -69,7 +69,7 @@ Ao criar uma assinatura do Azure, você pode associá-la a um locatário existen
 
 Uma conta de email pode ser associada a várias assinaturas do Azure. O administrador da conta pode transferir uma assinatura para outra conta.
 
-Para uma descrição detalhada das funções definidas no Azure, confira [Funções de administrador da assinatura clássica, funções RBAC do Azure e funções de administrador do Azure AD](/azure/role-based-access-control/rbac-and-directory-admin-roles).
+Para uma descrição detalhada das funções definidas no Azure, confira [Funções de administrador da assinatura clássica, funções RBAC do Azure e funções de administrador do Azure AD](https://docs.microsoft.com/azure/role-based-access-control/rbac-and-directory-admin-roles).
 
 ## <a name="subscriptions-and-regions"></a>Assinaturas e regiões
 
@@ -84,13 +84,13 @@ Uma assinatura não é vinculada a uma região específica do Azure. No entanto,
 
 Os recursos a seguir fornecem informações detalhadas sobre os conceitos discutidos neste artigo:
 
-- [Como funciona o Azure?](/azure/architecture/cloud-adoption/getting-started/what-is-azure)
-- [Gerenciamento de acesso aos recursos no Azure](../../governance/resource-consistency/azure-resource-access.md)
-- [Visão geral do Azure Resource Manager](/azure/azure-resource-manager/resource-group-overview)
-- [RBAC (Controle de acesso baseado em função) para recursos do Azure](/azure/role-based-access-control/overview)
-- [O que é o Active Directory do Azure?](/azure/active-directory/fundamentals/active-directory-whatis)
-- [Associar ou adicionar uma assinatura do Azure ao seu locatário do Azure Active Directory](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)
-- [Topologias para o Azure AD Connect](/azure/active-directory/hybrid/plan-connect-topologies)
+- [Como funciona o Azure?](../../getting-started/what-is-azure.md)
+- [Gerenciamento de acesso aos recursos no Azure](../../govern/resource-consistency/resource-access-management.md)
+- [Visão geral do Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview)
+- [RBAC (Controle de acesso baseado em função) para recursos do Azure](https://docs.microsoft.com/azure/role-based-access-control/overview)
+- [O que é o Active Directory do Azure?](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)
+- [Associar ou adicionar uma assinatura do Azure ao seu locatário do Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)
+- [Topologias para o Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-topologies)
 - [Assinaturas, licenças, contas e locatários para ofertas de nuvem da Microsoft](/office365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings)
 
 ## <a name="next-steps"></a>Próximas etapas

@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 83518d5b6bfdd0572161847e505569dc63da60a7
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: 7c35d64e3106c2a34670d4dc05614de087f5d5c3
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70906019"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023408"
 ---
 # <a name="getting-started-with-a-cloud-migration-journey"></a>Introdução a uma jornada de migração na nuvem
 
@@ -70,7 +70,7 @@ As migrações de nuvem geralmente são consideradas um único projeto dentro de
 
 Estratégia e planejamento de nuvem é uma metodologia que se concentra em alinhar resultados de negócios, prioridades e restrições para estabelecer uma estratégia de migração e um plano claros. O plano resultante (ou a pendência de migração) descreve a abordagem de migração e modernização em todo o portfólio de ti, que pode abranger data centers inteiros, várias cargas de trabalho ou diversas coleções de infraestrutura, aplicativos e dados. O gerenciamento adequado do portfólio de ti entre os esforços de implementação na nuvem ajudará a impulsionar os resultados de negócios desejados.
 
-![Visão geral do Cloud Adoption Framework](../_images/cloud-adoption-framework-overview.png)
+![Visão geral do Cloud Adoption Framework](../_images/caf-overview.png)
 
 **Introdução:** O restante deste artigo prepara o leitor para a aplicação adequada da estratégia de nuvem e da metodologia de planejamento da estrutura de adoção de nuvem. Ele também descreve recursos adicionais e links que podem ajudar o leitor a adotar essa abordagem para orientar os esforços de implementação na nuvem.
 
@@ -80,14 +80,14 @@ A metodologia de planejamento e estratégia de nuvem da estrutura de adoção de
 
 Conforme ilustrado na imagem acima, essa estrutura alinha decisões estratégicas a um pequeno número de processos contidos, que operam dentro de um modelo iterativo. Enquanto descrito em um documento linear, espera-se que cada um dos processos a seguir seja maduro em paralelo com iterações da implementação da nuvem. Os links para cada processo ajudarão a definir o estado final e o meio de desenvolvimento para o estado final desejado:
 
-- **[Plano](../business-strategy/index.md):** Quando a implementação técnica é alinhada com objetivos de negócios claros, é muito mais fácil medir e alinhar o sucesso entre vários esforços de implementação de nuvem, independentemente das decisões técnicas.
+- **[Plano](../strategy/index.md):** Quando a implementação técnica é alinhada com objetivos de negócios claros, é muito mais fácil medir e alinhar o sucesso entre vários esforços de implementação de nuvem, independentemente das decisões técnicas.
 - **[Pronto](../ready/index.md):** Preparar os negócios, a cultura, as pessoas e o ambiente para alterações futuras leva a um sucesso em cada esforço e acelera a implementação e a alteração de projetos.
 - **Adotar:** Garanta a implementação adequada das alterações desejadas, em processos de negócios e de ti, para obter resultados de negócios.
   - **[Migrar](../migrate/index.md):** Execução iterativa da [metodologia de implementação de nuvem](#cloud-implementation) aderir ao processo testado de avaliar, migrar, otimizar e proteger & gerenciar para criar um processo repetível para migrar cargas de trabalho.
 - **[Operar](../operating-model/index.md):** Defina um modelo operacional gerenciável para guiar as atividades durante e muito tempo após a adoção.
-  - **[Organizar](../organization/index.md):** Alinhe pessoas e equipes para fornecer operações e adoção adequadas de nuvem.
-  - **[Controlar](../governance/index.md):** Alinhe políticas corporativas a riscos tangíveis, atenuadas por meio de políticas, processos e ferramentas de governança baseadas em nuvem.
-  - **[Gerenciar](../operations/index.md):** Expanda as operações de ti para garantir que as soluções baseadas em nuvem possam ser operadas por meio de processos seguros e econômicos usando as ferramentas de operações modernas e de primeira nuvem.
+  - **[Organizar](../organize/index.md):** Alinhe pessoas e equipes para fornecer operações e adoção adequadas de nuvem.
+  - **[Controlar](../govern/index.md):** Alinhe políticas corporativas a riscos tangíveis, atenuadas por meio de políticas, processos e ferramentas de governança baseadas em nuvem.
+  - **[Gerenciar](../manage/index.md):** Expanda as operações de ti para garantir que as soluções baseadas em nuvem possam ser operadas por meio de processos seguros e econômicos usando as ferramentas de operações modernas e de primeira nuvem.
 
 Ao longo dessa experiência de migração, essa estrutura será usada para abordar a ambiguidade, gerenciar alterações e orientar equipes entre funções com a realização de resultados comerciais.
 
@@ -140,6 +140,6 @@ A estrutura de adoção de nuvem é uma solução de ciclo de vida. Ele foi proj
 >
 > [Migrar](../migrate/index.md)
 >
-> [Executados](../operations/index.md)
+> [Gerenciar](../manage/index.md)
 >
-> [Indicadores](../governance/index.md)
+> [Indicadores](../govern/index.md)

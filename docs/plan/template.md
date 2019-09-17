@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 91c1433f300efc3950cb54852a00b5020a992e8f
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: f7634f15735c68296a96d997d3bf8e915d03e6b7
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70833720"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022303"
 ---
 # <a name="cloud-adoption-plan-and-azure-devops"></a>Plano de adoção de nuvem e DevOps do Azure
 
@@ -59,7 +59,7 @@ A exibição mais clara do plano de adoção de nuvem vem da exibição da pend�
 
 ## <a name="align-the-cloud-adoption-plan"></a>Alinhar o plano de adoção de nuvem
 
-As páginas de visão geral das fases de estratégia e planejamento do ciclo de vida de adoção de nuvem fazem referência ao [modelo de estratégia e planejamento da estrutura de adoção de nuvem](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx). Esse modelo organiza as decisões e os pontos de dados que alinharão o modelo para o plano de adoção de nuvem com seus planos específicos de adoção. Se você ainda não fez isso, talvez queira concluir os exercícios relacionados à [estratégia](../business-strategy/index.md) e ao [planejamento](../plan/index.md) antes de alinhar seu novo projeto.
+As páginas de visão geral das fases de estratégia e planejamento do ciclo de vida de adoção de nuvem fazem referência ao [modelo de estratégia e planejamento da estrutura de adoção de nuvem](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx). Esse modelo organiza as decisões e os pontos de dados que alinharão o modelo para o plano de adoção de nuvem com seus planos específicos de adoção. Se você ainda não fez isso, talvez queira concluir os exercícios relacionados à [estratégia](../strategy/index.md) e ao [planejamento](../plan/index.md) antes de alinhar seu novo projeto.
 
 Os artigos a seguir dão suporte ao alinhamento do plano de adoção de nuvem:
 

@@ -8,12 +8,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b7d2ac8d624115c9d843ded8a045cd68f4050650
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: c5600fb06aefb40764117639b7d856f753c3372e
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70825855"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024982"
 ---
 # <a name="best-practices-for-securing-and-managing-workloads-migrated-to-azure"></a>Melhores práticas para proteger e gerenciar cargas de trabalho migradas para o Azure
 
@@ -58,10 +58,10 @@ Além de avaliações e recomendações, a Central de Segurança do Azure fornec
 
 **Saiba mais:**
 
-- [Saiba mais](/azure/security-center/security-center-intro) sobre a Central de Segurança do Azure.
-- [Saiba mais](/azure/security-center/security-center-just-in-time) sobre acesso à VM Just-In-Time.
-- [Saiba mais sobre](/azure/security-center/security-center-adaptive-application) como aplicar controles de aplicativo adaptáveis.
-- [Introdução](/azure/security-center/security-center-file-integrity-monitoring) ao Monitoramento de Integridade de Arquivo.
+- [Saiba mais](https://docs.microsoft.com/azure/security-center/security-center-intro) sobre a Central de Segurança do Azure.
+- [Saiba mais](https://docs.microsoft.com/azure/security-center/security-center-just-in-time) sobre acesso à VM Just-In-Time.
+- [Saiba mais sobre](https://docs.microsoft.com/azure/security-center/security-center-adaptive-application) como aplicar controles de aplicativo adaptáveis.
+- [Introdução](https://docs.microsoft.com/azure/security-center/security-center-file-integrity-monitoring) ao Monitoramento de Integridade de Arquivo.
 
 ## <a name="best-practice-encrypt-data"></a>Melhor prática: Criptografar dados
 
@@ -92,12 +92,12 @@ Ao contrário do IaaS, na qual você gerencia suas próprias VMs e infraestrutur
 
 **Saiba mais:**
 
-- [Saiba mais sobre](/azure/security/azure-security-disk-encryption-overview) Azure Disk Encryption para VMs IaaS.
-- [Habilitar](/azure/security/azure-security-disk-encryption-windows) criptografia para VMs IaaS do Windows.
-- [Saiba mais](/azure/storage/common/storage-service-encryption) sobre a Criptografia do Serviço de Armazenamento do Azure para dados em repouso.
-- [Leia](/azure/sql-database/sql-database-always-encrypted-azure-key-vault) uma visão geral do Always Encrypted.
-- [Leia sobre](/azure/sql-database/transparent-data-encryption-azure-sql?view=sql-server-2017) TDE para o Banco de Dados SQL do Azure.
-- [Saiba mais](/azure/sql-database/transparent-data-encryption-byok-azure-sql) sobre TDE com Bring Your Own Key.
+- [Saiba mais sobre](https://docs.microsoft.com/azure/security/azure-security-disk-encryption-overview) Azure Disk Encryption para VMs IaaS.
+- [Habilitar](https://docs.microsoft.com/azure/security/azure-security-disk-encryption-windows) criptografia para VMs IaaS do Windows.
+- [Saiba mais](https://docs.microsoft.com/azure/storage/common/storage-service-encryption) sobre a Criptografia do Serviço de Armazenamento do Azure para dados em repouso.
+- [Leia](https://docs.microsoft.com/azure/sql-database/sql-database-always-encrypted-azure-key-vault) uma visão geral do Always Encrypted.
+- [Leia sobre](https://docs.microsoft.com/azure/sql-database/transparent-data-encryption-azure-sql?view=sql-server-2017) TDE para o Banco de Dados SQL do Azure.
+- [Saiba mais](https://docs.microsoft.com/azure/sql-database/transparent-data-encryption-byok-azure-sql) sobre TDE com Bring Your Own Key.
 
 ## <a name="best-practice-protect-vms-with-antimalware"></a>Melhor prática: proteger VMs com antimalware
 
@@ -112,7 +112,7 @@ As VMs mais antigas migradas do Azure podem não ter o nível apropriado de anti
 
 **Saiba mais:**
 
-- [Saiba mais](/azure/security/azure-security-antimalware) sobre o Microsoft Antimalware.
+- [Saiba mais](https://docs.microsoft.com/azure/security/azure-security-antimalware) sobre o Microsoft Antimalware.
 
 ## <a name="best-practice-secure-web-apps"></a>Melhor prática: proteger aplicativos Web
 
@@ -141,11 +141,11 @@ O Azure fornece algumas soluções:
 
 **Saiba mais:**
 
-- [Obtenha uma visão geral](/azure/key-vault/key-vault-overview) do Azure Key Vault.
-- [Saiba mais sobre](/azure/application-gateway/waf-overview) o firewall do aplicativo Web.
-- [Obtenha uma introdução](/azure/app-service/environment/intro) aos Ambientes do Serviço de Aplicativo.
-- [Saiba como](/azure/key-vault/tutorial-web-application-keyvault) configurar um aplicativo Web para ler segredos do Key Vault.
-- [Saiba mais sobre](/azure/application-gateway/waf-overview) o firewall do aplicativo Web.
+- [Obtenha uma visão geral](https://docs.microsoft.com/azure/key-vault/key-vault-overview) do Azure Key Vault.
+- [Saiba mais sobre](https://docs.microsoft.com/azure/application-gateway/waf-overview) o firewall do aplicativo Web.
+- [Obtenha uma introdução](https://docs.microsoft.com/azure/app-service/environment/intro) aos Ambientes do Serviço de Aplicativo.
+- [Saiba como](https://docs.microsoft.com/azure/key-vault/tutorial-web-application-keyvault) configurar um aplicativo Web para ler segredos do Key Vault.
+- [Saiba mais sobre](https://docs.microsoft.com/azure/application-gateway/waf-overview) o firewall do aplicativo Web.
 
 ## <a name="best-practice-review-subscriptions-and-resource-permissions"></a>Melhor prática: rever assinaturas e permissões de recurso
 
@@ -161,9 +161,9 @@ O Azure fornece algumas soluções:
 
 **Saiba mais:**
 
-- [Sobre](/azure/role-based-access-control/overview) RBAC.
-- [Aprenda](/azure/role-based-access-control/role-assignments-portal) a gerenciar o acesso usando o RBAC e o portal do Azure.
-- [Saiba mais sobre](/azure/role-based-access-control/custom-roles) funções personalizadas.
+- [Sobre](https://docs.microsoft.com/azure/role-based-access-control/overview) RBAC.
+- [Aprenda](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal) a gerenciar o acesso usando o RBAC e o portal do Azure.
+- [Saiba mais sobre](https://docs.microsoft.com/azure/role-based-access-control/custom-roles) funções personalizadas.
 
 ## <a name="best-practice-review-audit-and-security-logs"></a>Melhor prática: rever logs de auditoria e de segurança
 
@@ -180,17 +180,17 @@ O Azure AD (Azure Active Directory) fornece logs de atividade que aparecem no Az
 
 **Saiba mais:**
 
-- [Saiba mais](/azure/active-directory/reports-monitoring/concept-activity-logs-azure-monitor) sobre logs de atividades do Azure AD no Azure Monitor.
-- [Saiba como](/azure/active-directory/reports-monitoring/concept-audit-logs) auditar relatórios de atividade no portal do Azure AD.
+- [Saiba mais](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-activity-logs-azure-monitor) sobre logs de atividades do Azure AD no Azure Monitor.
+- [Saiba como](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-audit-logs) auditar relatórios de atividade no portal do Azure AD.
 
 ## <a name="best-practice-evaluate-other-security-features"></a>Melhor prática: avaliar outros recursos de segurança
 
 O Azure oferece outros recursos de segurança que fornecem opções avançadas de segurança. Algumas dessas melhores práticas exigem licenças complementares e opções premium.
 
-- **Implementar AUs (unidades administrativas) do Azure AD.** a delegação de tarefas administrativas para a equipe de suporte pode ser difícil com apenas o controle de acesso do Azure básico. Dar acesso à equipe de suporte para administrar todos os grupos no Azure AD pode não ser a abordagem ideal para a segurança da organização. O uso de AUs permite separar recursos do Azure em contêineres de maneira semelhante às UOs (unidades organizacionais ) locais. Para usar a AU, o administrador da AU deve ter uma licença do Azure AD premium. [Saiba mais](/azure/active-directory/users-groups-roles/directory-administrative-units).
-- **Usar a autenticação multifator.** Se você tiver uma licença do Azure AD premium, poderá habilitar e impor a autenticação multifator em suas contas de administrador. O phishing é a maneira mais comum de comprometer as credenciais de conta. Quando um ator mal-intencionado obtém credenciais de conta do administrador, é impossível impedi-lo de realizar ações com graves consequências, como excluir todos os grupos de recursos. Você pode estabelecer a autenticação multifator de várias maneiras, inclusive com email, um aplicativo autenticador e mensagens de SMS. Como administrador, você pode selecionar a opção menos intrusiva. A autenticação multifator integra-se às políticas de acesso condicional e à análise de ameaças para exigir aleatoriamente uma resposta ao desafio de autenticação multifator. Saiba mais sobre as [diretrizes de segurança](/azure/active-directory/authentication/multi-factor-authentication-security-best-practices) e [como configurar a autenticação multifator](/azure/active-directory/authentication/multi-factor-authentication-security-best-practices).
-- **Implementar acesso condicional.** na maioria das organizações de pequeno e médio porte, os administradores do Azure e a equipe de suporte provavelmente estão localizados em uma mesma área geográfica. Nesse caso, a maioria dos logons virão das mesmas áreas. Se os endereços IP desses locais são razoavelmente estáticos, faz sentido que você não consiga ver logons de administrador fora dessas áreas. Mesmo em uma situação em que um ator mal-intencionado remoto tenha comprometido credenciais de administrador, você poderá implementar recursos de segurança, como acesso condicional, combinados com autenticação multifator para impedir o logon de locais remotos ou locais falsificados de endereços IP aleatórios. [Saiba mais](/azure/active-directory/conditional-access/overview) sobre o acesso condicional e [reveja as melhores práticas](/azure/active-directory/conditional-access/best-practices) para acesso condicional no Azure AD.
-- **Rever permissões de aplicativo empresarial.** Ao longo do tempo, os administradores selecionam links da Microsoft e de terceiros sem saber seu impacto na organização. Os links podem apresentar telas de consentimento que atribuem permissões aos aplicativos do Azure e podem permitir acesso de leitura de dados do Azure AD, ou mesmo acesso completo para gerenciar sua assinatura inteira do Azure. Você deve examinar os aplicativos aos quais seus administradores e usuários deram permissão para acessar recursos do Azure regularmente. Verifique se esses aplicativos têm somente as permissões necessárias. Além disso, a cada trimestre ou semestre, você pode enviar um email para os usuários com um link para as páginas de aplicativo, informando a quais aplicativos eles concederam acesso aos dados organizacionais. [Saiba mais](/azure/active-directory/manage-apps/application-types) sobre os tipos de aplicativo e [como controlar](/azure/active-directory/manage-apps/remove-user-or-group-access-portal) as atribuições de aplicativo no Azure AD.
+- **Implementar AUs (unidades administrativas) do Azure AD.** a delegação de tarefas administrativas para a equipe de suporte pode ser difícil com apenas o controle de acesso do Azure básico. Dar acesso à equipe de suporte para administrar todos os grupos no Azure AD pode não ser a abordagem ideal para a segurança da organização. O uso de AUs permite separar recursos do Azure em contêineres de maneira semelhante às UOs (unidades organizacionais ) locais. Para usar a AU, o administrador da AU deve ter uma licença do Azure AD premium. [Saiba mais](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-administrative-units).
+- **Usar a autenticação multifator.** Se você tiver uma licença do Azure AD premium, poderá habilitar e impor a autenticação multifator em suas contas de administrador. O phishing é a maneira mais comum de comprometer as credenciais de conta. Quando um ator mal-intencionado obtém credenciais de conta do administrador, é impossível impedi-lo de realizar ações com graves consequências, como excluir todos os grupos de recursos. Você pode estabelecer a autenticação multifator de várias maneiras, inclusive com email, um aplicativo autenticador e mensagens de SMS. Como administrador, você pode selecionar a opção menos intrusiva. A autenticação multifator integra-se às políticas de acesso condicional e à análise de ameaças para exigir aleatoriamente uma resposta ao desafio de autenticação multifator. Saiba mais sobre as [diretrizes de segurança](https://docs.microsoft.com/azure/active-directory/authentication/multi-factor-authentication-security-best-practices) e [como configurar a autenticação multifator](https://docs.microsoft.com/azure/active-directory/authentication/multi-factor-authentication-security-best-practices).
+- **Implementar acesso condicional.** na maioria das organizações de pequeno e médio porte, os administradores do Azure e a equipe de suporte provavelmente estão localizados em uma mesma área geográfica. Nesse caso, a maioria dos logons virão das mesmas áreas. Se os endereços IP desses locais são razoavelmente estáticos, faz sentido que você não consiga ver logons de administrador fora dessas áreas. Mesmo em uma situação em que um ator mal-intencionado remoto tenha comprometido credenciais de administrador, você poderá implementar recursos de segurança, como acesso condicional, combinados com autenticação multifator para impedir o logon de locais remotos ou locais falsificados de endereços IP aleatórios. [Saiba mais](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) sobre o acesso condicional e [reveja as melhores práticas](https://docs.microsoft.com/azure/active-directory/conditional-access/best-practices) para acesso condicional no Azure AD.
+- **Rever permissões de aplicativo empresarial.** Ao longo do tempo, os administradores selecionam links da Microsoft e de terceiros sem saber seu impacto na organização. Os links podem apresentar telas de consentimento que atribuem permissões aos aplicativos do Azure e podem permitir acesso de leitura de dados do Azure AD, ou mesmo acesso completo para gerenciar sua assinatura inteira do Azure. Você deve examinar os aplicativos aos quais seus administradores e usuários deram permissão para acessar recursos do Azure regularmente. Verifique se esses aplicativos têm somente as permissões necessárias. Além disso, a cada trimestre ou semestre, você pode enviar um email para os usuários com um link para as páginas de aplicativo, informando a quais aplicativos eles concederam acesso aos dados organizacionais. [Saiba mais](https://docs.microsoft.com/azure/active-directory/manage-apps/application-types) sobre os tipos de aplicativo e [como controlar](https://docs.microsoft.com/azure/active-directory/manage-apps/remove-user-or-group-access-portal) as atribuições de aplicativo no Azure AD.
 
 ## <a name="managed-migrated-workloads"></a>Cargas de trabalho migradas gerenciadas
 
@@ -219,7 +219,7 @@ Ter grupos de recursos com nomes significativos que os administradores e os memb
 
 **Saiba mais:**
 
-- [Saiba mais sobre](/azure/architecture/best-practices/naming-conventions) convenções de nomenclatura.
+- [Saiba mais sobre](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions) convenções de nomenclatura.
 
 ## <a name="best-practice-implement-delete-locks-for-resource-groups"></a>Melhor prática: implementar bloqueios de exclusão em grupos de recursos
 
@@ -231,7 +231,7 @@ A pior coisa que poderia acontecer é você perder um grupo de recursos porque o
 
 **Saiba mais:**
 
-- [Saiba mais sobre](/azure/azure-resource-manager/resource-group-lock-resources) como bloquear recursos para evitar alterações inesperadas.
+- [Saiba mais sobre](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-lock-resources) como bloquear recursos para evitar alterações inesperadas.
 
 ## <a name="best-practice-understand-resource-access-permissions"></a>Melhor prática: entender permissões de acesso de recurso
 
@@ -260,8 +260,8 @@ Muitas vezes, usar apenas um nome de grupo de recursos relacionado aos recursos 
 
 **Saiba mais:**
 
-- [Saiba mais sobre](/azure/azure-resource-manager/resource-group-using-tags) marcação e limitações de marca.
-- [Reveja](/azure/azure-resource-manager/resource-group-using-tags#powershell) exemplos do PowerShell e da CLI para configurar a marcação e aplicar marcas de um grupo de recursos a seus recursos.
+- [Saiba mais sobre](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags) marcação e limitações de marca.
+- [Reveja](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags#powershell) exemplos do PowerShell e da CLI para configurar a marcação e aplicar marcas de um grupo de recursos a seus recursos.
 - [Leia](https://www.azurefieldnotes.com/2016/07/18/azure-resource-tagging-best-practices) as melhores práticas de marcação do Azure.
 
 ## <a name="best-practice-implement-blueprints"></a>Melhor prática: implementar blueprints
@@ -273,7 +273,7 @@ Assim como um blueprint permite que engenheiros e arquitetos desenhem os parâme
 
 **Saiba mais:**
 
-- [Leia](/azure/governance/blueprints/overview) sobre blueprints.
+- [Leia](https://docs.microsoft.com/azure/governance/blueprints/overview) sobre blueprints.
 - [Reveja](https://azure.microsoft.com/blog/customizing-azure-blueprints-to-accelerate-ai-in-healthcare) um exemplo de blueprint usado para acelerar a Inteligência Artificial nos serviços de saúde.
 
 ## <a name="best-practice-review-azure-reference-architectures"></a>Melhor prática: Rever arquiteturas de referência do Azure
@@ -285,8 +285,8 @@ O Ambiente do Serviço de Aplicativo do Azure fornece um ambiente totalmente iso
 
 **Saiba mais:**
 
-- [Saiba mais sobre](/azure/architecture/reference-architectures) arquiteturas de referência do Azure.
-- [Reveja](/azure/architecture/example-scenario) os cenários de exemplo do Azure.
+- [Saiba mais sobre](https://docs.microsoft.com/azure/architecture/reference-architectures) arquiteturas de referência do Azure.
+- [Reveja](https://docs.microsoft.com/azure/architecture/example-scenario) os cenários de exemplo do Azure.
 
 ## <a name="best-practice-manage-resources-with-azure-management-groups"></a>Melhor prática: organizar recursos com grupos de gerenciamento do Azure
 
@@ -305,7 +305,7 @@ O diagrama a seguir mostra um exemplo de criação de uma hierarquia para govern
 
 **Saiba mais:**
 
-- [Saiba mais](/azure/governance/management-groups/index) sobre como organizar recursos em grupos de gerenciamento.
+- [Saiba mais](https://docs.microsoft.com/azure/governance/management-groups/index) sobre como organizar recursos em grupos de gerenciamento.
 
 ## <a name="best-practice-deploy-azure-policy"></a>Melhor prática: implantar o Azure Policy
 
@@ -321,8 +321,8 @@ O Azure Policy é um serviço no Azure que você pode usar para criar, atribuir 
 
 **Saiba mais:**
 
-- [Obtenha uma visão geral](/azure/governance/policy/overview) do Azure Policy.
-- [Saiba mais sobre](/azure/governance/policy/tutorials/create-and-manage)como criar e gerenciar políticas para impor conformidade.
+- [Obtenha uma visão geral](https://docs.microsoft.com/azure/governance/policy/overview) do Azure Policy.
+- [Saiba mais sobre](https://docs.microsoft.com/azure/governance/policy/tutorials/create-and-manage)como criar e gerenciar políticas para impor conformidade.
 
 ## <a name="best-practice-implement-a-bcdr-strategy"></a>Melhor prática: implementar uma estratégia de BCDR
 
@@ -359,15 +359,15 @@ Você pode usar o Backup do Azure para fazer backup de VMs de duas maneiras.
 - **Backup direto em um cofre dos Serviços de Recuperação.** você pode fazer backup de VMs IaaS implantando um cofre dos Serviços de Recuperação do Backup do Azure. Isso fornece um local único para controlar e gerenciar backups, bem como opções de backup e restauração granulares. O Backup ocorre até três vezes por dia, no nível de arquivo/pasta. Ele não tem reconhecimento de aplicativo e não tem suporte para Linux. Instale o agente MARS (Serviços de Recuperação do Microsoft Azure) em cada VM em que você deseja realizar o backup usando esse método.
 - **Proteja a VM no Servidor de Backup do Azure.** O Servidor de Backup do Azure é fornecido gratuitamente com o Backup do Azure. O backup da VM é feito no armazenamento local do Servidor de Backup do Azure. Depois disso, você faz o backup do Servidor de Backup do Azure no Azure em um cofre. O backup tem reconhecimento de aplicativo com granularidade completa sobre a frequência e a retenção de backup. Você pode fazer backup no nível do aplicativo, por exemplo, ao fazer backup do SQL Server ou do SharePoint.
 
-Para segurança, o Backup do Azure criptografa os dados em trânsito usando AES 256 e os envia por HTTPS para o Azure. Os dados de backup em repouso no Azure são criptografados com [SSE (Criptografia do Serviço de Armazenamento)](/azure/storage/common/storage-service-encryption?toc=%2fazure%2fstorage%2fqueues%2ftoc.json) e os dados para armazenamento e transmissão.
+Para segurança, o Backup do Azure criptografa os dados em trânsito usando AES 256 e os envia por HTTPS para o Azure. Os dados de backup em repouso no Azure são criptografados com [SSE (Criptografia do Serviço de Armazenamento)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption?toc=%2fazure%2fstorage%2fqueues%2ftoc.json) e os dados para armazenamento e transmissão.
 
 ![Backup do Azure](./media/migrate-best-practices-security-management/iaas-backup.png)
 *Backup do Azure*
 
 **Saiba mais:**
 
-- [Saiba mais sobre](/azure/backup/backup-introduction-to-azure-backup) diferentes tipos de backups.
-- [Planejar uma infraestrutura de backup](/azure/backup/backup-azure-vms-introduction) para VMs do Azure.
+- [Saiba mais sobre](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup) diferentes tipos de backups.
+- [Planejar uma infraestrutura de backup](https://docs.microsoft.com/azure/backup/backup-azure-vms-introduction) para VMs do Azure.
 
 #### <a name="storage-snapshots"></a>Instantâneos de armazenamento
 
@@ -380,11 +380,11 @@ As VMs do Azure são armazenadas como blobs de páginas no Armazenamento do Azur
 
 **Saiba mais:**
 
-- [Saiba mais sobre](/azure/storage/blobs/storage-blobs-introduction) o Armazenamento de Blobs do Azure.
-- [Saiba](/azure/storage/blobs/storage-blob-snapshots) como criar um instantâneo de blob.
+- [Saiba mais sobre](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction) o Armazenamento de Blobs do Azure.
+- [Saiba](https://docs.microsoft.com/azure/storage/blobs/storage-blob-snapshots) como criar um instantâneo de blob.
 - [Reveja um cenário de exemplo](https://azure.microsoft.com/blog/microsoft-azure-block-blob-storage-backup) para o backup de armazenamento de blobs.
-- [Leia sobre](/azure/storage/blobs/storage-blob-soft-delete) exclusão reversível.
-- [Recuperação de desastre e failover forçado (versão prévia) no Armazenamento do Azure](/azure/storage/common/storage-disaster-recovery-guidance?toc=%2fazure%2fstorage%2fblobs%2ftoc.json)
+- [Leia sobre](https://docs.microsoft.com/azure/storage/blobs/storage-blob-soft-delete) exclusão reversível.
+- [Recuperação de desastre e failover forçado (versão prévia) no Armazenamento do Azure](https://docs.microsoft.com/azure/storage/common/storage-disaster-recovery-guidance?toc=%2fazure%2fstorage%2fblobs%2ftoc.json)
 
 #### <a name="third-party-backup"></a>Backup de terceiros
 
@@ -406,8 +406,8 @@ O Site Recovery replica as VMs de uma região primária para uma região secund�
 
 **Saiba mais:**
 
-- [Reveja](/azure/virtual-machines/virtual-machines-disaster-recovery-guidance) os cenários de recuperação de desastre para VMs do Azure.
-- [Saiba como](/azure/site-recovery/azure-to-azure-replicate-after-migration) configurar a recuperação de desastre para uma VM do Azure após a migração.
+- [Reveja](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-disaster-recovery-guidance) os cenários de recuperação de desastre para VMs do Azure.
+- [Saiba como](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-replicate-after-migration) configurar a recuperação de desastre para uma VM do Azure após a migração.
 
 ## <a name="best-practice-use-managed-disks-and-availability-sets"></a>Melhor prática: usar discos gerenciados e conjuntos de disponibilidade
 
@@ -425,9 +425,9 @@ Os discos gerenciados do Azure simplificam o gerenciamento de discos para VMs Ia
 
 **Saiba mais:**
 
-- [Obtenha uma visão geral](/azure/virtual-machines/windows/managed-disks-overview) sobre discos gerenciados.
-- [Saiba mais sobre](/azure/virtual-machines/windows/convert-unmanaged-to-managed-disks) como converter discos gerenciados.
-- [Saiba como](/azure/virtual-machines/windows/manage-availability) gerenciar a disponibilidade de VMs Windows no Azure.
+- [Obtenha uma visão geral](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview) sobre discos gerenciados.
+- [Saiba mais sobre](https://docs.microsoft.com/azure/virtual-machines/windows/convert-unmanaged-to-managed-disks) como converter discos gerenciados.
+- [Saiba como](https://docs.microsoft.com/azure/virtual-machines/windows/manage-availability) gerenciar a disponibilidade de VMs Windows no Azure.
 
 ## <a name="best-practice-monitor-resource-usage-and-performance"></a>Melhor prática: monitorar o desempenho e o uso de recursos
 
@@ -446,10 +446,10 @@ Esses dois casos tem resoluções diferentes, mas para ambos você precisa de um
 
 **Saiba mais:**
 
-- [Saiba mais](/azure/azure-monitor/overview) sobre o Azure Monitor.
-- [Obtenha as melhores práticas](/azure/architecture/best-practices/monitoring) para monitoramento e diagnóstico.
-- [Saiba mais sobre](/azure/architecture/best-practices/auto-scaling) dimensionamento automático.
-- [Saiba como](/azure/security-center/security-center-export-data-to-siem) rotear dados do Azure para uma ferramenta SIEM.
+- [Saiba mais](https://docs.microsoft.com/azure/azure-monitor/overview) sobre o Azure Monitor.
+- [Obtenha as melhores práticas](https://docs.microsoft.com/azure/architecture/best-practices/monitoring) para monitoramento e diagnóstico.
+- [Saiba mais sobre](https://docs.microsoft.com/azure/architecture/best-practices/auto-scaling) dimensionamento automático.
+- [Saiba como](https://docs.microsoft.com/azure/security-center/security-center-export-data-to-siem) rotear dados do Azure para uma ferramenta SIEM.
 
 ## <a name="best-practice-enable-diagnostic-logging"></a>Melhor prática: Habilitar log de diagnósticos
 
@@ -464,8 +464,8 @@ Os recursos do Azure geram um número razoável de métricas de registro em log 
 
 **Saiba mais:**
 
-- [Saiba mais sobre](/azure/monitoring-and-diagnostics/monitoring-overview-of-diagnostic-logs) como coletar e consumir dados de log.
-- [Saiba o que tem suporte](/azure/monitoring-and-diagnostics/monitoring-diagnostic-logs-schema) para registro em log de diagnóstico.
+- [Saiba mais sobre](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-of-diagnostic-logs) como coletar e consumir dados de log.
+- [Saiba o que tem suporte](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-diagnostic-logs-schema) para registro em log de diagnóstico.
 
 ## <a name="best-practice-set-up-alerts-and-playbooks"></a>Melhor prática: configurar alertas e guias estratégicos
 
@@ -481,8 +481,8 @@ Com o log de diagnóstico habilitado para os recursos do Azure, você pode come�
 
 **Saiba mais:**
 
-- [Saiba mais](/azure/monitoring-and-diagnostics/monitoring-overview-alerts) sobre os alertas.
-- [Saiba mais sobre](/azure/security-center/security-center-playbooks) guias estratégicos de segurança que respondem a alertas da Central de Segurança.
+- [Saiba mais](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-alerts) sobre os alertas.
+- [Saiba mais sobre](https://docs.microsoft.com/azure/security-center/security-center-playbooks) guias estratégicos de segurança que respondem a alertas da Central de Segurança.
 
 ## <a name="best-practice-use-the-azure-dashboard"></a>Melhor prática: usar o painel do Azure
 
@@ -496,8 +496,8 @@ O portal do Azure é um console unificado e baseado na Web que permite compilar,
 
 **Saiba mais:**
 
-- [Saiba como](/azure/azure-portal/azure-portal-dashboards) criar um painel.
-- [Saiba mais sobre](/azure/azure-portal/azure-portal-dashboards-structure) estrutura de painéis.
+- [Saiba como](https://docs.microsoft.com/azure/azure-portal/azure-portal-dashboards) criar um painel.
+- [Saiba mais sobre](https://docs.microsoft.com/azure/azure-portal/azure-portal-dashboards-structure) estrutura de painéis.
 
 ## <a name="best-practice-understand-support-plans"></a>Melhor prática: entender os planos de suporte
 
@@ -528,9 +528,9 @@ Manter as VMs do Azure atualizadas com o sistema operacional e as atualizações
 
 **Saiba mais:**
 
-- [Saiba mais sobre](/azure/automation/automation-update-management) gerenciamento de atualizações no Azure.
-- [Saiba como](/azure/automation/oms-solution-updatemgmt-sccmintegration) integrar o Configuration Manager com o gerenciamento de atualizações.
-- [Perguntas frequentes](/sccm/core/understand/configuration-manager-on-azure) sobre o Configuration Manager no Azure.
+- [Saiba mais sobre](https://docs.microsoft.com/azure/automation/automation-update-management) gerenciamento de atualizações no Azure.
+- [Saiba como](https://docs.microsoft.com/azure/automation/oms-solution-updatemgmt-sccmintegration) integrar o Configuration Manager com o gerenciamento de atualizações.
+- [Perguntas frequentes](https://docs.microsoft.com/sccm/core/understand/configuration-manager-on-azure) sobre o Configuration Manager no Azure.
 
 ## <a name="implement-a-change-management-process"></a>Implementar um processo de gerenciamento de alterações
 
@@ -552,12 +552,12 @@ O Azure tem uma solução de controle de alterações na Automação do Azure:
 
 **Saiba mais:**
 
-- [Saiba mais sobre](/azure/automation/automation-change-tracking) Controle de Alterações.
-- [Saiba mais sobre](/azure/automation/automation-intro) recursos da Automação do Azure.
+- [Saiba mais sobre](https://docs.microsoft.com/azure/automation/automation-change-tracking) Controle de Alterações.
+- [Saiba mais sobre](https://docs.microsoft.com/azure/automation/automation-intro) recursos da Automação do Azure.
 
 ## <a name="next-steps"></a>Próximas etapas
 
 Examine outras melhores práticas:
 
-- [Melhores práticas](migrate-best-practices-networking.md) de rede após a migração.
-- [Melhores práticas](migrate-best-practices-costs.md) de gerenciamento de custos após a migração.
+- [Melhores práticas](./migrate-best-practices-networking.md) de rede após a migração.
+- [Melhores práticas](./migrate-best-practices-costs.md) de gerenciamento de custos após a migração.

@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: e58dd50417ec6377774f07ee613a5fc69f74f0ea
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: b2491d349628d2c9640097ddd2c94b79505a0921
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70833564"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024782"
 ---
 # <a name="multiple-datacenters"></a>Vários datacenters
 
@@ -37,7 +37,7 @@ A maior mudança no processo de avaliação, ao expandir o escopo para lidar com
 
 ### <a name="suggested-action-during-the-assess-process"></a>Ação sugerida durante o processo de avaliação
 
-**Avaliar dependências entre datacenters:** as [ferramentas de visualização de dependência nas Migrações para Azure](/azure/migrate/concepts-dependency-visualization) podem ajudar a identificar dependências. O uso desse conjunto de ferramentas antes da migração é uma melhor prática geral. No entanto, ao lidar com a complexidade global, ela se torna uma etapa necessária para o processo de avaliação. Por meio do [agrupamento de dependências](/azure/migrate/how-to-create-group-machine-dependencies), a visualização pode ajudar a identificar os endereços IP e as portas de ativos necessários para dar suporte à carga de trabalho.
+**Avaliar dependências entre datacenters:** as [ferramentas de visualização de dependência nas Migrações para Azure](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization) podem ajudar a identificar dependências. O uso desse conjunto de ferramentas antes da migração é uma melhor prática geral. No entanto, ao lidar com a complexidade global, ela se torna uma etapa necessária para o processo de avaliação. Por meio do [agrupamento de dependências](https://docs.microsoft.com/azure/migrate/how-to-create-group-machine-dependencies), a visualização pode ajudar a identificar os endereços IP e as portas de ativos necessários para dar suporte à carga de trabalho.
 
 > [!IMPORTANT]
 > Duas observações importantes: Primeiro, é necessário um especialista no assunto com compreensão do posicionamento dos ativos e dos esquemas de endereços IP para identificar os ativos que residem em um datacenter secundário. Depois, é importante avaliar as dependências de downstream e os clientes no visual para entender as dependências bidirecionais.

@@ -9,16 +9,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 7bb9eb697beb44aa5bf4e9eec736a5be4b575eb7
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 5cee6318edd04e219b33bce6b72a78c7aa21ba4f
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70829248"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023428"
 ---
 # <a name="rationalize-the-digital-estate"></a>Racionalizar a propriedade digital
 
-A racionalização de nuvem é o processo de avaliação de ativos para determinar a melhor abordagem para hospedá-los na nuvem. Depois de determinar uma [abordagem](approach.md) e agregar um [inventário](inventory.md), a racionalização de nuvem pode começar. A racionalização de [nuvem](rationalize.md) aborda as opções de racionalização mais comuns.
+A racionalização de nuvem é o processo de avaliação de ativos para determinar a melhor abordagem para hospedá-los na nuvem. Depois de determinar uma [abordagem](./approach.md) e agregar um [inventário](./inventory.md), a racionalização de nuvem pode começar. A racionalização de [nuvem](./rationalize.md) aborda as opções de racionalização mais comuns.
 
 ## <a name="traditional-view-of-rationalization"></a>Visão tradicional de racionalização
 
@@ -30,7 +30,7 @@ A racionalização de nuvem é o processo de avaliação de ativos para determin
 
 **Análise qualitativa:** O próximo conjunto de decisões requer inteligência humana na forma de análise qualitativa. Muitas vezes, as perguntas que aparecem aqui são exclusivas para a solução e só podem ser respondidas por participantes de negócios e usuários avançados. Essas decisões normalmente atrasam o processo, reduzindo as coisas consideravelmente. Essa análise geralmente consome 40 a 80 horas de FTE por aplicativo.
 
-Para obter diretrizes sobre como criar uma lista de perguntas qualitativas de análise, consulte [abordagens para planejamento de imóveis digital](approach.md).
+Para obter diretrizes sobre como criar uma lista de perguntas qualitativas de análise, consulte [abordagens para planejamento de imóveis digital](./approach.md).
 
 **Decisão de racionalização:** Nas mãos de uma equipe experiente de racionalização, os dados qualitativos e quantitativos criam decisões claras. Infelizmente, as equipes com alto grau de experiência em racionalização são caras de se contratar ou precisam de meses de treinamento.
 
@@ -60,7 +60,7 @@ Em um processo de racionalização incremental, uma solução sem agente pode se
 
 ### <a name="quantitative-analysis-streamline-decisions"></a>Análise quantitativa: Decisões simplificadas
 
-Independentemente da abordagem para a descoberta de inventário, a análise quantitativa pode impulsionar as decisões e suposições iniciais. Isso é verdade principalmente ao tentar identificar a primeira carga de trabalho ou quando o objetivo da racionalização é uma comparação geral de custos. Em um processo de racionalização incremental, a equipe de estratégia de nuvem e as equipes de adoção de nuvem limitam os [cinco RS de racionalização](5-rs-of-rationalization.md) a duas decisões concisas e aplicam apenas esses fatores quantitativos. Isso simplifica a análise e reduz a quantidade de dados iniciais necessários para a alteração da unidade.
+Independentemente da abordagem para a descoberta de inventário, a análise quantitativa pode impulsionar as decisões e suposições iniciais. Isso é verdade principalmente ao tentar identificar a primeira carga de trabalho ou quando o objetivo da racionalização é uma comparação geral de custos. Em um processo de racionalização incremental, a equipe de estratégia de nuvem e as equipes de adoção de nuvem limitam os [cinco RS de racionalização](./5-rs-of-rationalization.md) a duas decisões concisas e aplicam apenas esses fatores quantitativos. Isso simplifica a análise e reduz a quantidade de dados iniciais necessários para a alteração da unidade.
 
 Por exemplo, se uma organização estiver no meio de uma migração de IaaS para a nuvem, você poderá assumir que a maioria das cargas de trabalho será desativada ou rehospedada.
 
@@ -116,7 +116,7 @@ A primeira carga de trabalho é normalmente implantada em um ambiente experiment
 
 ### <a name="qualitative-analysis"></a>Análise qualitativa
 
-As equipes de adoção de nuvem e a equipe de estratégia de nuvem podem trabalhar em conjunto para analisar essa carga de trabalho pequena. Essa colaboração cria uma oportunidade controlada para criar e testar critérios de análise qualitativas. A população menor cria uma oportunidade para pesquisar os usuários afetados e para concluir uma análise qualitativa detalhada em uma semana ou menos. Para fatores de análise qualitativas comuns, consulte o destino de lógica específica no [5 RS de racionalização](5-rs-of-rationalization.md).
+As equipes de adoção de nuvem e a equipe de estratégia de nuvem podem trabalhar em conjunto para analisar essa carga de trabalho pequena. Essa colaboração cria uma oportunidade controlada para criar e testar critérios de análise qualitativas. A população menor cria uma oportunidade para pesquisar os usuários afetados e para concluir uma análise qualitativa detalhada em uma semana ou menos. Para fatores de análise qualitativas comuns, consulte o destino de lógica específica no [5 RS de racionalização](./5-rs-of-rationalization.md).
 
 ### <a name="migration"></a>Migração
 
@@ -161,4 +161,4 @@ Em alguns casos, o modelo financeiro pode ser muito rígido para tomar uma decis
 A saída de um esforço de racionalização é uma lista de pendências priorizada de todos os ativos afetados pela transformação escolhida. Essa lista de pendências agora está pronta para servir como base para modelos de custo dos serviços de nuvem.
 
 > [!div class="nextstepaction"]
-> [Alinhar modelos de custo com a propriedade digital](calculate.md)
+> [Alinhar modelos de custo com a propriedade digital](./calculate.md)

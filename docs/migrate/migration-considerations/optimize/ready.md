@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7d3e7f408e38634a9472ce75542d9e0ae1fdc38b
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: b7f526cbf2b7efba981058d5614b4378adc8c6f6
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70825478"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022637"
 ---
 # <a name="prepare-a-migrated-application-for-production-promotion"></a>Preparar um aplicativo migrado para promoção de produção
 
@@ -21,7 +21,7 @@ Depois que uma carga de trabalho é promovida, o tráfego do usuário de produç
 
 ## <a name="validate-the-business-change-plan"></a>Validar o plano de mudança empresarial
 
-A transformação ocorre quando os usuários ou clientes empresariais tiram proveito de uma solução técnica para executar processos que conduzem os negócios. A preparação é uma boa oportunidade para validar o [plano de mudança empresarial](business-change-plan.md) e garantir um treinamento adequado para as equipes empresariais e técnicas envolvidas. Em particular, certifique-se de que os seguintes aspectos relacionados à tecnologia do plano de mudança estejam conectados corretamente:
+A transformação ocorre quando os usuários ou clientes empresariais tiram proveito de uma solução técnica para executar processos que conduzem os negócios. A preparação é uma boa oportunidade para validar o [plano de mudança empresarial](./business-change-plan.md) e garantir um treinamento adequado para as equipes empresariais e técnicas envolvidas. Em particular, certifique-se de que os seguintes aspectos relacionados à tecnologia do plano de mudança estejam conectados corretamente:
 
 - O treinamento do usuário final foi concluído (ou pelo menos planejado).
 - Todas as janelas de interrupção foram comunicadas e aprovadas.

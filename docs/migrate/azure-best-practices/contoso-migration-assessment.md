@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 021dccdbabc7d2c51b26e98b7bc6380f3a2aa8d3
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 5e6d77a86d1e3d928913e47c5781411f1973b3cc
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70821071"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025030"
 ---
 # <a name="assess-on-premises-workloads-for-migration-to-azure"></a>avalie as cargas de trabalho locais para migração para o Azure
 
@@ -24,7 +24,7 @@ Este artigo mostra como a empresa fictícia Contoso avalia um aplicativo local p
 
 Como a Contoso considera a migração para o Azure, a empresa deseja executar uma avaliação financeira e técnica para determinar se as cargas de trabalho locais são ideais para migração na nuvem. Especificamente, a equipe da Contoso deseja avaliar a compatibilidade do banco de dados e de máquina para migração. Além disso, deseja estimar a capacidade e os custos de execução dos recursos da Contoso no Azure.
 
-Para começar e reconhecer melhor as tecnologias envolvidas, a Contoso avalia dois dos aplicativos locais, resumidos na tabela a seguir. A empresa avalia cenários de migração que hospedam novamente e refatoram os aplicativos para migração. Saiba mais sobre a nova hospedagem e refatoração na [visão geral de exemplos de migração](contoso-migration-overview.md).
+Para começar e reconhecer melhor as tecnologias envolvidas, a Contoso avalia dois dos aplicativos locais, resumidos na tabela a seguir. A empresa avalia cenários de migração que hospedam novamente e refatoram os aplicativos para migração. Saiba mais sobre a nova hospedagem e refatoração na [visão geral de exemplos de migração](./contoso-migration-overview.md).
 
 <!-- markdownlint-disable MD033 -->
 
@@ -74,8 +74,8 @@ A Contoso usa ferramentas da Microsoft para a avaliação de migração. As ferr
 Tecnologia | Descrição | Custo
 --- | --- | ---
 [Assistente de migração de dados](/sql/dma/dma-overview?view=ssdt-18vs2017) | A Contoso usa o Assistente de Migração de Dados para avaliar e detectar problemas de compatibilidade que possam afetar a funcionalidade de banco de dados no Azure. O Assistente de Migração de Dados avalia a paridade de recursos entre origens e destinos de SQL. O assistente recomenda melhorias de desempenho e confiabilidade. | O Assistente de Migração de Dados é uma ferramenta gratuita que pode ser baixada.
-[Migrações para Azure](/azure/migrate/migrate-overview) | A Contoso usa o serviço de Migrações para Azure para avaliar as VMs do VMware. As Migrações para Azure avaliam a adequação de migração das máquinas. Também fornecem estimativas de custos e dimensionamento para execução no Azure. | A partir de maio de 2018, as Migrações para Azure serão um serviço gratuito.
-[Mapa do Serviço](/azure/operations-management-suite/operations-management-suite-service-map) | As Migrações para Azure usam Mapa do Serviço para mostrar dependências entre os computadores que a empresa deseja migrar. | O Mapa do Serviço faz parte dos logs do Azure Monitor. Atualmente, a Contoso pode usar Mapa do Serviço por 180 dias sem incorrer em encargos.
+[Migrações para Azure](https://docs.microsoft.com/azure/migrate/migrate-overview) | A Contoso usa o serviço de Migrações para Azure para avaliar as VMs do VMware. As Migrações para Azure avaliam a adequação de migração das máquinas. Também fornecem estimativas de custos e dimensionamento para execução no Azure. | A partir de maio de 2018, as Migrações para Azure serão um serviço gratuito.
+[Mapa do Serviço](https://docs.microsoft.com/azure/operations-management-suite/operations-management-suite-service-map) | As Migrações para Azure usam Mapa do Serviço para mostrar dependências entre os computadores que a empresa deseja migrar. | O Mapa do Serviço faz parte dos logs do Azure Monitor. Atualmente, a Contoso pode usar Mapa do Serviço por 180 dias sem incorrer em encargos.
 
 Nesse cenário, a Contoso baixa e executa o Assistente de Migração de Dados para avaliar o banco de dados do SQL Server local para o aplicativo de viagem. A Contoso usa as Migrações para Azure com o mapeamento de dependência para avaliar as VMs do aplicativo antes da migração para Azure.
 
@@ -110,8 +110,8 @@ A Contoso e outros usuários devem atender aos seguintes pré-requisitos para a 
 - Pelo menos duas VMs VMware locais, uma delas executando um banco de dados do SQL Server.
 - Permissões para instalar agentes de migrar do Azure em cada VM.
 - As VMs devem ter conectividade direta com a Internet.
-  - Você pode restringir o acesso à Internet aos [URLs obrigatórios](/azure/migrate/concepts-collector).
-  - Se suas VMs não tiverem conectividade com a Internet, o [Gateway de Log Analytics do Azure](/azure/azure-monitor/platform/gateway) deverá ser instalado nelas e o tráfego de agentes será direcionado por meio dela.
+  - Você pode restringir o acesso à Internet aos [URLs obrigatórios](https://docs.microsoft.com/azure/migrate/concepts-collector).
+  - Se suas VMs não tiverem conectividade com a Internet, o [Gateway de Log Analytics do Azure](https://docs.microsoft.com/azure/azure-monitor/platform/gateway) deverá ser instalado nelas e o tráfego de agentes será direcionado por meio dela.
 - O FQDN da VM que está executando a instância do SQL Server, para a avaliação do banco de dados.
 - O Firewall do Windows em execução na VM do SQL Server deve permitir conexões externas na porta TCP 1433 (padrão). Esta configuração permite que o Assistente de Migração de Dados seja conectado.
 
@@ -218,7 +218,7 @@ A Contoso verifica se há permissões para criar uma VM importando um arquivo no
 
 ### <a name="verify-ports"></a>Verificar portas
 
-A avaliação da Contoso usa o mapeamento de dependência. O mapeamento de dependência requer que um agente seja instalado nas VMs que serão avaliadas. O agente deve poder conectar-se ao Azure da porta TCP 443 em cada VM. Saiba mais sobre [requisitos de conexão](/azure/log-analytics/log-analytics-concept-hybrid).
+A avaliação da Contoso usa o mapeamento de dependência. O mapeamento de dependência requer que um agente seja instalado nas VMs que serão avaliadas. O agente deve poder conectar-se ao Azure da porta TCP 443 em cada VM. Saiba mais sobre [requisitos de conexão](https://docs.microsoft.com/azure/log-analytics/log-analytics-concept-hybrid).
 
 ## <a name="step-4-discover-vms"></a>Etapa 4: Descobrir VMs
 
@@ -279,7 +279,7 @@ Antes de implantar a VM, a Contoso verifica se o arquivo OVA é seguro:
     **Exemplo:**
 
     ```C:\>CertUtil -HashFile C:\AzureMigrate\AzureMigrate.ova SHA256```
-3. O hash gerado deve corresponder aos valores de hash listados na seção [Verificar segurança](/azure/migrate/tutorial-assess-vmware#verify-security) do tutorial [Avaliar VMs do VMware para migração](/azure/migrate/tutorial-assess-vmware).
+3. O hash gerado deve corresponder aos valores de hash listados na seção [Verificar segurança](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware#verify-security) do tutorial [Avaliar VMs do VMware para migração](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware).
 
 ### <a name="create-the-collector-appliance"></a>Criar o dispositivo coletor
 
@@ -449,7 +449,7 @@ Agora, a Contoso pode verificar dependências de máquina e criar um grupo. Em s
 
 2. Para exibir a avaliação, a Contoso seleciona **Gerenciar** > **Avaliações**.
 
-A Contoso usa as configurações de avaliação padrão, mas é possível [personalizar configurações](/azure/migrate/how-to-modify-assessment).
+A Contoso usa as configurações de avaliação padrão, mas é possível [personalizar configurações](https://docs.microsoft.com/azure/migrate/how-to-modify-assessment).
 
 ### <a name="analyze-the-vm-assessment"></a>Analisar a avaliação de VMs
 
@@ -519,4 +519,4 @@ Nesse cenário, a Contoso avalia o banco de dados do aplicativo SmartHotel360 us
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Depois que a Contoso avaliar essa carga de trabalho como possível candidata à migração, ela poderá começar a preparar sua infraestrutura local e a infraestrutura do Azure para migração. Confira o artigo [implantar a infraestrutura do Azure](contoso-migration-infrastructure.md) na seção de melhores práticas de migração do Cloud Adoption Framework para obter um exemplo de como a Contoso realiza esses processos.
+Depois que a Contoso avaliar essa carga de trabalho como possível candidata à migração, ela poderá começar a preparar sua infraestrutura local e a infraestrutura do Azure para migração. Confira o artigo [implantar a infraestrutura do Azure](./contoso-migration-infrastructure.md) na seção de melhores práticas de migração do Cloud Adoption Framework para obter um exemplo de como a Contoso realiza esses processos.

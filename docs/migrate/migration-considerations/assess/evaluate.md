@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b6e395839d00130c43e74f1c4071ef55d27a7286
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 186aa4d4dc5218e2166e7dfb4c9834917e647a02
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70825699"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024656"
 ---
 # <a name="evaluate-workload-readiness"></a>Avaliar a preparação da carga de trabalho
 
@@ -27,16 +27,16 @@ Este artigo não se destina a capturar todas as atividades de avaliação possí
 
 ## <a name="common-infrastructure-evaluation-activities"></a>Atividades comuns de avaliação de infraestrutura
 
-- Requisitos do VMware: [Examine os requisitos do Azure Site Recovery para o VMware](/azure/site-recovery/vmware-physical-azure-support-matrix).
-- Requisitos do Hyper-V: [Examine os requisitos do Azure Site Recovery para Hyper-V](/azure/site-recovery/hyper-v-azure-support-matrix).
+- Requisitos do VMware: [Examine os requisitos do Azure Site Recovery para o VMware](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix).
+- Requisitos do Hyper-V: [Examine os requisitos do Azure Site Recovery para Hyper-V](https://docs.microsoft.com/azure/site-recovery/hyper-v-azure-support-matrix).
 
 Documente discrepâncias na configuração de host, configuração de VM replicada, requisitos de armazenamento ou configuração de rede.
 
 ## <a name="common-database-evaluation-activities"></a>Atividades comuns de avaliação de banco de dados
 
 - Documente os Objetivos de Ponto de Recuperação e de Tempo de Recuperação da implantação de banco de dados atual. Eles são usados em [atividades de arquitetura](./architect.md) para auxiliar na tomada de decisões.
-- Documente os requisitos para configuração de alta disponibilidade. Para obter assistência para entender os requisitos do SQL Server, confira o [Guia de Soluções de Alta Disponibilidade do SQL Server](/sql/sql-server/failover-clusters/high-availability-solutions-sql-server).
-- Avalie a compatibilidade de PaaS. O [Guia de Migração de Dados do Azure](https://datamigration.microsoft.com) mapeia bancos de dados locais para soluções de PaaS do Azure compatíveis, como o [Cosmos DB](/azure/cosmos-db) ou o [Azure DB](/azure/sql-database) para [MySQL](/azure/mysql), [Postgres](/azure/postgresql) ou [MariaDB](/azure/mariadb).
+- Documente os requisitos para configuração de alta disponibilidade. Para obter assistência para entender os requisitos do SQL Server, confira o [Guia de Soluções de Alta Disponibilidade do SQL Server](https://docs.microsoft.com/sql/sql-server/failover-clusters/high-availability-solutions-sql-server).
+- Avalie a compatibilidade de PaaS. O [Guia de Migração de Dados do Azure](https://datamigration.microsoft.com) mapeia bancos de dados locais para soluções de PaaS do Azure compatíveis, como o [Cosmos DB](https://docs.microsoft.com/azure/cosmos-db) ou o [Azure DB](https://docs.microsoft.com/azure/sql-database) para [MySQL](https://docs.microsoft.com/azure/mysql), [Postgres](https://docs.microsoft.com/azure/postgresql) ou [MariaDB](https://docs.microsoft.com/azure/mariadb).
 - Quando a compatibilidade de PaaS é uma opção sem a necessidade de qualquer correção, confira a equipe responsável pelas [atividades de arquitetura](./architect.md). As migrações de PaaS podem produzir economias e reduções de tempo significativas no TCO (custo total de propriedade) da maioria das soluções de nuvem.
 - Quando a compatibilidade de PaaS é uma opção, mas a correção é necessária, confira as equipes responsáveis pelas [atividades de arquitetura](./architect.md) e [de correção](../migrate/remediate.md). Em muitos cenários, as vantagens das migrações de PaaS para soluções de banco de dados podem superar o aumento no tempo de correção.
 - Documente o tamanho e a taxa de alteração de cada banco de dados a ser migrado.

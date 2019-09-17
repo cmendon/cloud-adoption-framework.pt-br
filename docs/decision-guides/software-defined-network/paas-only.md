@@ -9,18 +9,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 9613e4be1173687e5f40409c34799c26480b0702
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 704dbb16be57c4203199ca972aa61b520eece3ca
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70829443"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023556"
 ---
 # <a name="software-defined-networking-paas-only"></a>Rede definida pelo software: PaaS-only
 
 Quando você implementa uma plataforma como um recurso de serviço (PaaS), o processo de implantação cria automaticamente uma rede subjacente assumida com um número limitado de controles na rede, incluindo balanceamento de carga, bloqueio de porta e conexões com outros serviços PaaS.
 
-No Azure, vários tipos de recursos de PaaS podem ser [implantados](/azure/virtual-network/virtual-network-for-azure-services) ou [conectados a](/azure/virtual-network/virtual-network-service-endpoints-overview) uma rede virtual, permitindo que esses recursos integrem sua infraestrutura de rede virtual existente. Outros serviços, como [ambientes de serviço de aplicativo](/azure/app-service/environment/intro), [Serviços Kubernetess do Azure](/azure/aks/intro-kubernetes)e [Service Fabric](/azure/service-fabric/service-fabric-overview) devem ser implantados na rede virtual. No entanto, em muitos casos, uma única arquitetura de rede de PaaS, contando apenas com os recursos de rede nativa padrão fornecidos pelos recursos de PaaS, é suficiente para atender aos requisitos de conectividade e gerenciamento de tráfego de uma carga de trabalho.
+No Azure, vários tipos de recursos de PaaS podem ser [implantados](https://docs.microsoft.com/azure/virtual-network/virtual-network-for-azure-services) ou [conectados a](https://docs.microsoft.com/azure/virtual-network/virtual-network-service-endpoints-overview) uma rede virtual, permitindo que esses recursos integrem sua infraestrutura de rede virtual existente. Outros serviços, como [ambientes de serviço de aplicativo](https://docs.microsoft.com/azure/app-service/environment/intro), [Serviços Kubernetess do Azure](https://docs.microsoft.com/azure/aks/intro-kubernetes)e [Service Fabric](https://docs.microsoft.com/azure/service-fabric/service-fabric-overview) devem ser implantados na rede virtual. No entanto, em muitos casos, uma única arquitetura de rede de PaaS, contando apenas com os recursos de rede nativa padrão fornecidos pelos recursos de PaaS, é suficiente para atender aos requisitos de conectividade e gerenciamento de tráfego de uma carga de trabalho.
 
 Se você estiver considerando uma arquitetura de rede somente de PaaS, certifique-se de que validar as suposições necessárias se alinha suas necessidades.
 

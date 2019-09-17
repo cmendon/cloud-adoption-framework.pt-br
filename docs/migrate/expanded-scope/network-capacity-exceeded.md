@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: eb6a5adeac25293539edd5d97c816fad2865345c
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 9b1078cbb6b7ca40b7a38ea56ae803fd61e67449
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70825738"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024758"
 ---
 # <a name="storage-requirements-exceed-network-capacity-during-a-migration-effort"></a>Os requisitos de armazenamento excedem a capacidade de rede durante um esforço de migração
 
@@ -29,11 +29,11 @@ A maior parte do esforço necessário na expansão do escopo ocorrerá durante o
 
 **Transferência offline de armazenamentos de dados independentes:** A figura no diagrama a seguir oferece exemplos de transferências de dados online e offline com o Azure Data Box. Essas abordagens podem ser usadas no envio de grandes volumes de dados para a nuvem antes da migração da carga de trabalho. Em uma transferência de dados offline, os dados de origem são copiados para o Azure Data Box e são enviados fisicamente à Microsoft para serem transferidos para uma conta de armazenamento do Azure como um arquivo ou um blob. Antes de outros esforços de migração, esse processo pode ser usado para enviar dados que não estão diretamente vinculados a uma carga de trabalho específica. Isso reduz a quantidade de dados que precisam ser enviados pela rede em uma tentativa para concluir uma migração dentro das restrições da rede.
 
-Essa abordagem pode ser usada para transferir HDFS de dados, backups, arquivos mortos, servidores de arquivos, aplicativos, etc... As diretrizes técnicas existentes explicam como usar essa abordagem para transferir dados de [um repositório HDFS](/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster) ou de discos usando [SMB](/azure/databox/data-box-deploy-copy-data), [NFS](/azure/databox/data-box-deploy-copy-data-via-nfs), [REST](/azure/databox/data-box-deploy-copy-data-via-rest) ou o [serviço de cópia de dados](/azure/databox/data-box-deploy-copy-data-via-copy-service) para o Data Box.
+Essa abordagem pode ser usada para transferir HDFS de dados, backups, arquivos mortos, servidores de arquivos, aplicativos, etc... As diretrizes técnicas existentes explicam como usar essa abordagem para transferir dados de [um repositório HDFS](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster) ou de discos usando [SMB](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data), [NFS](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-nfs), [REST](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-rest) ou o [serviço de cópia de dados](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-copy-service) para o Data Box.
 
 Também há [soluções de parceiros terceiros](https://azuremarketplace.microsoft.com/campaigns/databox/azure-data-box) que usam o Azure Data Box em uma migração do tipo "Propagação e feed" em que um grande volume de dados é movido por meio de uma transferência offline, mas, em seguida, é sincronizado em menor escala na rede.
 
-![Transferência de dados online e offline com o Azure Data Box](../../_images/migration/databox.png)
+![Transferência de dados online e offline com o Azure Data Box](../../_images/migrate/databox.png)
 
 ## <a name="assess-process-changes"></a>Avaliar alterações no processo
 
@@ -58,13 +58,13 @@ Se usar mecanismos de transferência offline, os [processos de replicação](../
 
 ### <a name="suggested-action-during-the-migrate-process"></a>Ação sugerida durante o processo de migração
 
-**Armazenamento de cópia:** Essa abordagem pode ser usada para transferir HDFS de dados, backups, arquivos mortos, servidores de arquivos, aplicativos, etc... As diretrizes técnicas existentes explicam como usar essa abordagem para transferir dados de [um repositório HDFS](/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster) ou de discos usando [SMB](/azure/databox/data-box-deploy-copy-data), [NFS](/azure/databox/data-box-deploy-copy-data-via-nfs), [REST](/azure/databox/data-box-deploy-copy-data-via-rest) ou o [serviço de cópia de dados](/azure/databox/data-box-deploy-copy-data-via-copy-service) para o Data Box.
+**Armazenamento de cópia:** Essa abordagem pode ser usada para transferir HDFS de dados, backups, arquivos mortos, servidores de arquivos, aplicativos, etc... As diretrizes técnicas existentes explicam como usar essa abordagem para transferir dados de [um repositório HDFS](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster) ou de discos usando [SMB](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data), [NFS](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-nfs), [REST](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-rest) ou o [serviço de cópia de dados](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-copy-service) para o Data Box.
 
 Há também [soluções de parceiros terceiros](https://azuremarketplace.microsoft.com/campaigns/databox/azure-data-box) que usam o Azure Data Box em uma migração do tipo "propagação e sincronização" em que um grande volume de dados é movido por meio de uma transferência offline, mas, em seguida, é sincronizado em menor escala na rede.
 
-**Envie o dispositivo:** Após os dados serem copiados, o dispositivo poderá ser [enviado à Microsoft](/azure/databox/data-box-deploy-picked-up). Depois de recebidos e importados, os dados ficam disponíveis em uma conta de armazenamento do Azure.
+**Envie o dispositivo:** Após os dados serem copiados, o dispositivo poderá ser [enviado à Microsoft](https://docs.microsoft.com/azure/databox/data-box-deploy-picked-up). Depois de recebidos e importados, os dados ficam disponíveis em uma conta de armazenamento do Azure.
 
-**Restaure o ativo:** [Verifique se os dados](/azure/databox/data-box-deploy-picked-up#verify-data-upload-to-azure) estão disponíveis na conta de armazenamento. Após a verificação, os dados podem ser usados como um blob ou nos Arquivos do Azure. Se os dados forem um arquivo VHD/VHDX, o arquivo poderá ser convertido em discos gerenciados. Esses discos gerenciados podem ser usados para instanciar uma máquina virtual que criará uma réplica do ativo local original.
+**Restaure o ativo:** [Verifique se os dados](https://docs.microsoft.com/azure/databox/data-box-deploy-picked-up#verify-data-upload-to-azure) estão disponíveis na conta de armazenamento. Após a verificação, os dados podem ser usados como um blob ou nos Arquivos do Azure. Se os dados forem um arquivo VHD/VHDX, o arquivo poderá ser convertido em discos gerenciados. Esses discos gerenciados podem ser usados para instanciar uma máquina virtual que criará uma réplica do ativo local original.
 
 **Sincronização:** Se a sincronização de desvio for um requisito para um ativo migrado, uma das [soluções de parceiros terceiros](https://azuremarketplace.microsoft.com/campaigns/databox/azure-data-box) poderá ser usada para sincronizar os arquivos até que o ativo seja restaurado.
 

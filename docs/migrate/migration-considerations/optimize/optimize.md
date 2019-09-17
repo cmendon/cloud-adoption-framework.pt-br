@@ -8,12 +8,12 @@ ms.date: 5/19/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3709b37e1604ff966d043c142e86a1dbb78ecffb
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 13a18db6a074f73b962d29f4d5963571a49869d4
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70825491"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022642"
 ---
 # <a name="benchmark-and-resize-cloud-assets"></a>Parâmetros de comparação e redimensionamento de ativos de nuvem
 
@@ -36,7 +36,7 @@ Durante a migração, use suposições realistas ao experimentar o dimensionamen
 
 ## <a name="benchmark-and-optimize-with-azure-cost-management"></a>Avaliações e otimizações com o Gerenciamento de Custos do Azure
 
-O [Gerenciamento de Custos do Azure](/azure/cost-management/overview) licenciado pela Cloudyn, uma subsidiária da Microsoft, gerencia os gastos da nuvem com transparência e precisão. Esse serviço monitora, avalia, aloca e otimiza os custos da nuvem.
+O [Gerenciamento de Custos do Azure](https://docs.microsoft.com/azure/cost-management/overview) licenciado pela Cloudyn, uma subsidiária da Microsoft, gerencia os gastos da nuvem com transparência e precisão. Esse serviço monitora, avalia, aloca e otimiza os custos da nuvem.
 
 Os dados históricos podem ajudar a gerenciar custos analisando o uso e os custos ao longo do tempo para identificar tendências, que então são usadas para prever gastos futuros. O Gerenciamento de Custo também inclui relatórios de custos previstos úteis. A alocação de custos gerencia os custos analisando-os de acordo com a política de marcação. Use a alocação de custos para showback/estornar ao mostrar a utilização de recursos e os custos associados para influenciar os comportamentos de consumo ou cobrar os clientes de locatários. O controle de acesso ajuda a gerenciar os custos garantindo que os usuários e as equipes acessem somente os dados necessários do Gerenciamento de Custos. Os alertas ajudam a gerenciar os custos pela notificação automática quando ocorrem gastos incomuns ou excessivos. Os alertas podem notificar outros stakeholders automaticamente sobre anomalias de gastos e riscos de excesso de gastos. Vários relatórios dão suporte a alertas com base no orçamento e nos limites de custo.
 

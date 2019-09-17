@@ -8,12 +8,12 @@ ms.date: 05/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 30f50a6f4d965834de1de354b3149c559f071f72
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: d98d8ea586d76c583ab22670ac310a9f5bf36fc1
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70833551"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024716"
 ---
 # <a name="skills-readiness-path-during-the-migrate-phase-of-a-migration-journey"></a>Caminho de preparação de habilidades durante a fase de "migração" de um percurso de migração
 
@@ -23,16 +23,16 @@ Há quatro processos distintos que são concluídos iterativamente durante a fas
 
 ## <a name="prerequisites-skilling-resources"></a>Pré-requisitos de recursos de habilidade
 
-A implementação de processos de "Migração" será criada com base nas habilidades adquiridas durante as fases "[Planejar](../../business-strategy/suggested-skills.md)" e "[Pronto](../../organization/suggested-skills.md)" do percurso de migração.
+A implementação de processos de "Migração" será criada com base nas habilidades adquiridas durante as fases "[Planejar](../../strategy/suggested-skills.md)" e "[Pronto](../../organize/suggested-skills.md)" do percurso de migração.
 
 ## <a name="assess-skilling-resources"></a>Avaliar recursos de habilidade
 
 As seguintes ferramentas podem auxiliar a equipe na execução de atividades de avaliação:
 
 - [Equilibrar o portfólio](./balance-the-portfolio.md): verifique o equilíbrio e as alocações de investimento adequadas em um portfólio de aplicativos.
-- [Criar uma justificativa comercial](../../business-strategy/cloud-migration-business-case.md): crie e entenda a justificativa comercial que orienta o esforço de migração na nuvem.
+- [Criar uma justificativa comercial](../../strategy/cloud-migration-business-case.md): crie e entenda a justificativa comercial que orienta o esforço de migração na nuvem.
 - [Racionalizar a propriedade digital](../../digital-estate/rationalize.md): racionalize os ativos na propriedade digital.
-- [Avaliação do portfólio de aplicativos](/learn/modules/app-and-infra-migration-and-modernization): Critérios para tomar decisões relacionadas a opções de migração ou de inovação no portfólio de aplicativos.
+- [Avaliação do portfólio de aplicativos](https://docs.microsoft.com/learn/modules/app-and-infra-migration-and-modernization): Critérios para tomar decisões relacionadas a opções de migração ou de inovação no portfólio de aplicativos.
 - [Avaliar e planejar a Migração do Microsoft Azure](https://www.pluralsight.com/courses/microsoft-azure-migration-assessing-planning): curso da Pluralsight para auxiliar na avaliação das cargas de trabalho locais
 
 Durante os processos de avaliação, os arquitetos serão chamados para arquitetar soluções para cada carga de trabalho. Os seguintes recursos de habilidades podem preparar os arquitetos para essas tarefas:
@@ -45,7 +45,7 @@ Durante os processos de avaliação, os arquitetos serão chamados para arquitet
 
 O tutorial a seguir pode preparar a equipe para atividades de migração:
 
-- [Migrar para o Azure](/azure/site-recovery/migrate-tutorial-on-premises-azure): usar o Azure Site Recovery para migrar VMs para o Azure.
+- [Migrar para o Azure](https://docs.microsoft.com/azure/site-recovery/migrate-tutorial-on-premises-azure): usar o Azure Site Recovery para migrar VMs para o Azure.
 - [Hospedar novamente cargas de trabalho no Azure](https://aka.ms/rehostcourse): curso da Pluralsight que ensina aos espectadores como hospedar novamente as cargas de trabalho no Azure
 - [Migrar servidores físicos e virtuais para o Azure](https://app.pluralsight.com/library/courses/microsoft-azure-migrating-physical-virtual-servers/table-of-contents): curso da Pluralsight para migrar servidores para o Azure
 - [Importar e exportar dados para o Azure](https://app.pluralsight.com/library/courses/microsoft-azure-import-export-data/table-of-contents): curso da Pluralsight sobre a movimentação de dados do Azure e para ele

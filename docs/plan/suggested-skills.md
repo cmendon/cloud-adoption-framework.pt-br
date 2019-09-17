@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 9be3818dd12dff913aae6a2eef86587d869ce5a1
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: fd046fadbc7be08aa1064427fbef5b9e38f55a8c
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70828689"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025310"
 ---
 # <a name="getting-started-on-a-skills-readiness-path"></a>Introdução ao caminho de preparação de habilidades
 
@@ -24,7 +24,7 @@ hospedado na nuvem*Figura 1 – mapeamento de habilidades para funções de ti e
 
 A estrutura de adoção de nuvem orienta os leitores por todo o ciclo de vida de adoção. Em toda essa estrutura, os leitores recebem oportunidades para criar as habilidades necessárias. Para ajudá-lo a começar a usar essa jornada, os artigos de preparação para as habilidades estão incluídos na seguinte estrutura de tópicos para facilitar o acesso. Cada um dos links a seguir é mapeado para as habilidades necessárias para ser bem-sucedido em cada uma dessas fases de adoção.
 
-- **[Estratégia](../business-strategy/suggested-skills.md):** Desenvolva as habilidades necessárias para preparar um plano de migração acionável. Isso inclui justificativas de negócios e outras habilidades de planejamento de negócios necessárias.
+- **[Estratégia](../strategy/suggested-skills.md):** Desenvolva as habilidades necessárias para preparar um plano de migração acionável. Isso inclui justificativas de negócios e outras habilidades de planejamento de negócios necessárias.
 - **[Plano](./suggested-skills.md):** Desenvolva as habilidades necessárias para preparar um plano de migração acionável. Isso inclui justificativas de negócios e outras habilidades de planejamento de negócios necessárias.
 - **[Pronto](../ready/suggested-skills.md):** Desenvolva as habilidades necessárias para preparar os negócios, a cultura, as pessoas e o ambiente para alterações futuras.
 

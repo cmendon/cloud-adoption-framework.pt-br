@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: d77a17af60c8ed4540b2c40ddf8d75a4e4f6f306
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: e7582df81e305ab602c8172b5e93531eb8112432
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70833733"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022277"
 ---
 # <a name="prioritize-and-define-workloads-for-a-cloud-adoption-plan"></a>Priorizar e definir cargas de trabalho para um plano de adoção de nuvem
 
@@ -44,7 +44,7 @@ Se você decidir que uma racionalização de imóveis digital não é necessári
 
 No artigo anterior, [plano de adoção de nuvem e DevOps do Azure](./template.md), você criou um plano de adoção de nuvem no Azure DevOps.
 
-Agora você pode representar as cargas de trabalho na potência de 10 listas em seu plano de adoção de nuvem. A maneira mais fácil de fazer isso é por meio da edição em massa no Microsoft Excel. Para preparar sua estação de trabalho para edição em massa, confira [Adicionar ou modificar itens em massa com o Excel](/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops).
+Agora você pode representar as cargas de trabalho na potência de 10 listas em seu plano de adoção de nuvem. A maneira mais fácil de fazer isso é por meio da edição em massa no Microsoft Excel. Para preparar sua estação de trabalho para edição em massa, confira [Adicionar ou modificar itens em massa com o Excel](https://docs.microsoft.com/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops).
 
 A etapa 5 deste artigo indica que você selecionou a **lista de entrada**. Em vez disso, selecione **lista de consulta**. Em seguida, na lista suspensa **selecionar uma consulta** , selecione a consulta do **modelo de carga de trabalho** . Essa consulta carrega todos os esforços relacionados à migração de uma única carga de trabalho em sua planilha.
 

@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 19265b154a239fb4a01d8b4f468eab7e5e4f04cd
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: e670391bd475445b195e73f996fe999d32953232
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70828676"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022331"
 ---
 # <a name="prerequisites-checklist-for-an-effective-cloud-adoption-plan"></a>Lista de verificação de pré-requisitos para um plano de adoção de nuvem eficaz
 
@@ -21,7 +21,7 @@ Um plano é tão eficaz quanto os dados que são colocados nele. Para que um pla
 
 ## <a name="strategic-inputs"></a>Entradas estratégicas
 
-As entradas estratégicas precisas garantem que o trabalho que está sendo feito contribui para a realização de resultados de negócios. A [seção de estratégia da estrutura de adoção de nuvem](../business-strategy/index.md) fornece uma série de exercícios para desenvolver uma estratégia clara. As saídas desses exercícios alimentam o plano de adoção de nuvem. Antes de desenvolver o plano, verifique se os seguintes itens estão bem definidos como resultado desses exercícios:
+As entradas estratégicas precisas garantem que o trabalho que está sendo feito contribui para a realização de resultados de negócios. A [seção de estratégia da estrutura de adoção de nuvem](../strategy/index.md) fornece uma série de exercícios para desenvolver uma estratégia clara. As saídas desses exercícios alimentam o plano de adoção de nuvem. Antes de desenvolver o plano, verifique se os seguintes itens estão bem definidos como resultado desses exercícios:
 
 - **Limpar motivações**: Por que estamos adotando a nuvem?
 - **Resultados de negócios definidos**: Quais resultados esperamos ver na adoção da nuvem?

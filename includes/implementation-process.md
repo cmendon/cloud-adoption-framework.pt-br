@@ -8,9 +8,9 @@ As decisões a seguir são provenientes de equipes fora da equipe de governança
 ### <a name="identity-baseline"></a>Linha de base de identidade
 
 A Linha de Base da Identidade é o ponto de partida fundamental para toda a governança. A identidade deverá ser estabelecida antes de tentar aplicar a governança. Em seguida, a estratégia de identidade estabelecida será aplicada pelas soluções de governança.
-Neste guia de governança, a equipe de gerenciamento de identidade implementa o padrão de **[sincronização de diretórios](/azure/architecture/cloud-adoption/decision-guides/identity/overview#directory-synchronization)** :
+Neste guia de governança, a equipe de gerenciamento de identidade implementa o padrão de **[sincronização de diretórios](../../../../decision-guides/identity/index.md#directory-synchronization)** :
 
-- O RBAC será fornecido pelo AD (Azure Active Directory), usando a sincronização de diretório ou o "Mesmo Logon" que foi implementado durante a migração da empresa para o Office 365. Para obter as diretrizes de implementação, consulte [Arquitetura de referência para integração do Azure AD](/azure/architecture/reference-architectures/identity/azure-ad).
+- O RBAC será fornecido pelo AD (Azure Active Directory), usando a sincronização de diretório ou o "Mesmo Logon" que foi implementado durante a migração da empresa para o Office 365. Para obter as diretrizes de implementação, consulte [Arquitetura de referência para integração do Azure AD](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/azure-ad).
 - O locatário do Azure AD também governará a autenticação e o acesso de ativos implantados no Azure.
 
 No MVP de governança, a equipe de governança impedirá a aplicação do locatário replicado por meio de ferramentas de governança de assinatura, discutidas posteriormente neste artigo. Em iterações futuras, a equipe de governança também pode impor ferramentas avançadas no Azure AD para estender esse recurso.
@@ -19,9 +19,9 @@ No MVP de governança, a equipe de governança impedirá a aplicação do locat�
 
 A Rede Definida pelo Software é um aspecto inicial importante da Linha de Base de Segurança. Estabelecer o MVP de governança depende de decisões antecipadas da equipe de Gerenciamento de Segurança para definir como as redes podem ser configuradas com segurança.
 
-Devido à falta de requisitos, a segurança de ti está jogando em segurança e exigiu um padrão de **[DMZ de nuvem](/azure/architecture/cloud-adoption/decision-guides/software-defined-network/cloud-dmz)** . Isso significa que a governança das implantações do Azure será muito leve.
+Devido à falta de requisitos, a segurança de ti está reproduzindo segurança e requer um padrão de **[DMZ de nuvem](../../../../decision-guides/software-defined-network/cloud-dmz.md)** . Isso significa que a governança das implantações do Azure será muito leve.
 
-- As assinaturas do Azure podem se conectar a um datacenter existente via VPN, mas devem seguir todas as políticas de governança de ti locais existentes relativas à conexão de uma zona desmilitarizada a recursos protegidos. Para obter diretrizes sobre a implementação de conectividade VPN, consulte [Arquitetura de referência de VPN](/azure/architecture/reference-architectures/hybrid-networking/vpn).
+- As assinaturas do Azure podem se conectar a um datacenter existente via VPN, mas devem seguir todas as políticas de governança de ti locais existentes relativas à conexão de uma zona desmilitarizada a recursos protegidos. Para obter diretrizes sobre a implementação de conectividade VPN, consulte [Arquitetura de referência de VPN](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/vpn).
 - Decisões relacionadas a sub-rede, firewall e roteamento estão sendo adiadas para cada cliente potencial de carga de trabalho/aplicativo.
 - Uma análise adicional será necessária antes da liberação de dados protegidos ou cargas de trabalho críticas.
 
@@ -32,14 +32,14 @@ A equipe de governança de nuvem convidou proativamente membros das equipes de r
 ### <a name="security-baseline-encryption"></a>Linha de Base de Segurança: Criptografia
 
 A criptografia é outra decisão fundamental dentro da disciplina de Linha de Base de Segurança. Como a empresa atualmente ainda não armazena dados protegidos na nuvem, a Equipe de Segurança decidiu um padrão menos agressivo de criptografia.
-Neste ponto, um **[padrão de nuvem nativa para criptografia](/azure/architecture/cloud-adoption/decision-guides/encryption/overview#key-management)** é sugerido, mas não é necessário para qualquer equipe de desenvolvimento.
+Neste ponto, um **[padrão de nuvem nativa para criptografia](../../../../decision-guides/encryption/index.md#key-management)** é sugerido, mas não é necessário para qualquer equipe de desenvolvimento.
 
 - Nenhum requisito de governança foi definido relacionado ao uso de criptografia porque a atual política corporativa não permite dados protegidos ou críticos na nuvem.
 - Serão necessárias análises adicionais antes de liberar dados protegidos ou cargas de trabalho críticas.
 
 ## <a name="policy-enforcement"></a>Imposição de política
 
-A primeira decisão ser tomada em relação à Aceleração de Implantação é o padrão da imposição. Nesta narra, a equipe de governança decidiu implementar o padrão de **[imposição automatizada](/azure/architecture/cloud-adoption/decision-guides/policy-enforcement/overview#automated-enforcement)** .
+A primeira decisão ser tomada em relação à Aceleração de Implantação é o padrão da imposição. Nesta narra, a equipe de governança decidiu implementar o padrão de **[imposição automatizada](../../../../decision-guides/policy-enforcement/index.md#automated-enforcement)** .
 
 - A Central de Segurança do Azure será disponibilizada às equipes de segurança e identidade para monitorar os riscos de segurança. As duas equipes também têm probabilidade de usar a central de segurança para identificar novos riscos e aprimorar a política corporativa.
 - O RBAC é obrigatório em todas as assinaturas para governar a imposição de autenticação.

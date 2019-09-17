@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d1b07e5bc0dd578527e4e4c8c7271fad5fa967c9
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 4bc84ad8bd2d0a0521399c1762585db6f9a5a6ab
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70825374"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025427"
 ---
 # <a name="decisions-that-affect-migrations"></a>Decisões que afetam migrações
 
@@ -49,7 +49,7 @@ Esta seção da Cloud Adoption Framework estabelece a teoria para ajudar os leit
 
 ## <a name="effort"></a>Esforço
 
-O esforço de migração pode variar muito dependendo do tamanho e das complexidades das cargas de trabalho envolvidas. Uma migração de carga de trabalho menor envolvendo algumas centenas de VMs (máquinas virtuais) é um processo tático, potencialmente implementado com ferramentas automatizadas, como as [Migrações para Azure](/azure/migrate/migrate-overview). Por outro lado, uma grande migração empresarial de dezenas de milhares de cargas de trabalho requer um processo altamente estratégico e pode envolver refatoração, recompilação e substituição extensivas de aplicativos existentes que integram funcionalidades de PaaS (plataforma como serviço) e SaaS (software como serviço). [Identificar e equilibrar o escopo](../../expanded-scope/balance-the-portfolio.md) de suas migrações planejadas é essencial.
+O esforço de migração pode variar muito dependendo do tamanho e das complexidades das cargas de trabalho envolvidas. Uma migração de carga de trabalho menor envolvendo algumas centenas de VMs (máquinas virtuais) é um processo tático, potencialmente implementado com ferramentas automatizadas, como as [Migrações para Azure](https://docs.microsoft.com/azure/migrate/migrate-overview). Por outro lado, uma grande migração empresarial de dezenas de milhares de cargas de trabalho requer um processo altamente estratégico e pode envolver refatoração, recompilação e substituição extensivas de aplicativos existentes que integram funcionalidades de PaaS (plataforma como serviço) e SaaS (software como serviço). [Identificar e equilibrar o escopo](../../expanded-scope/balance-the-portfolio.md) de suas migrações planejadas é essencial.
 
 Antes de tomar decisões que possam ter um impacto de longo prazo sobre o programa de migração atual, é vital que você crie consenso quanto às decisões a seguir.
 

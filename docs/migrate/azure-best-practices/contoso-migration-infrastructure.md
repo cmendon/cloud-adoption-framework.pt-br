@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: d8328560830fe817cb4691632b6c0e38f55d9953
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: c367bb500cf9271603cab07ac07649607bfc04a4
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70906401"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024353"
 ---
 # <a name="deploy-a-migration-infrastructure"></a>Implantar uma infraestrutura de migração
 
@@ -41,9 +41,9 @@ Antes de a Contoso poder migrar para o Azure, é fundamental preparar uma infrae
 Antes de começar olhando para a infraestrutura, você talvez queira ler algumas informações básicas sobre os recursos do Azure que discutimos neste artigo:
 
 - Há várias opções disponíveis para a compra de acesso ao Azure, incluindo o modelo de Pagamento Conforme o Uso, o EA (Contrato Enterprise), o Licenciamento Open de revendedores ou Parceiros da Microsoft, conhecidos como CSPs (Provedores de Soluções na Nuvem). Saiba mais sobre [opções de compra](https://azure.microsoft.com/pricing/purchase-options)e leia sobre como [assinaturas do Azure são organizadas](https://azure.microsoft.com/blog/organizing-subscriptions-and-resource-groups-within-the-enterprise).
-- Obtenha uma visão geral da [identidade e do gerenciamento de acesso do Azure](https://www.microsoft.com/trustcenter/security/identity). Em particular, saiba mais sobre o [Azure Active Directory e sobre como estender o Active Directory local para a nuvem](/azure/active-directory/identity-fundamentals). Há um livro eletrônico útil para download sobre [de identidade e acesso de gerenciamento (IAM) em um ambiente híbrido](https://azure.microsoft.com/resources/hybrid-cloud-identity).
-- O Azure fornece uma poderosa infraestrutura de rede com as opções para conectividade híbrida. Obter uma visão geral de [controle de acesso de rede e a rede](/azure/security/security-network-overview).
-- Obter uma introdução à [segurança do Azure](/azure/security/azure-security)e leia sobre como criar um plano para [governança](/azure/security/governance-in-azure).
+- Obtenha uma visão geral da [identidade e do gerenciamento de acesso do Azure](https://www.microsoft.com/trustcenter/security/identity). Em particular, saiba mais sobre o [Azure Active Directory e sobre como estender o Active Directory local para a nuvem](https://docs.microsoft.com/azure/active-directory/identity-fundamentals). Há um livro eletrônico útil para download sobre [de identidade e acesso de gerenciamento (IAM) em um ambiente híbrido](https://azure.microsoft.com/resources/hybrid-cloud-identity).
+- O Azure fornece uma poderosa infraestrutura de rede com as opções para conectividade híbrida. Obter uma visão geral de [controle de acesso de rede e a rede](https://docs.microsoft.com/azure/security/security-network-overview).
+- Obter uma introdução à [segurança do Azure](https://docs.microsoft.com/azure/security/azure-security)e leia sobre como criar um plano para [governança](https://docs.microsoft.com/azure/security/governance-in-azure).
 
 ## <a name="on-premises-architecture"></a>Arquitetura local
 
@@ -77,12 +77,12 @@ A Contoso acompanha um [EA (Contrato Enterprise)](https://azure.microsoft.com/pr
 Depois de pagar pelo Azure, a Contoso precisa descobrir como gerenciar as assinaturas do Azure. A Contoso tem um Contrato Enterprise e, portanto, nenhum limite no número de assinaturas do Azure que podem ser configuradas.
 
 - Um Registro Enterprise do Azure define como uma empresa modela e usa os serviços do Azure e define uma estrutura de controle central.
-- Como primeira etapa, a Contoso definiu uma estrutura conhecida como um scaffold corporativo para seu Registro Enterprise. A Contoso usou [este artigo](/azure/azure-resource-manager/resource-manager-subscription-governance) para ajudar a entender e criar um scaffold.
+- Como primeira etapa, a Contoso definiu uma estrutura conhecida como um scaffold corporativo para seu Registro Enterprise. A Contoso usou [este artigo](https://docs.microsoft.com/azure/azure-resource-manager/resource-manager-subscription-governance) para ajudar a entender e criar um scaffold.
 - Por enquanto, a Contoso decidiu usar uma abordagem funcional para gerenciar assinaturas.
   - Dentro de empresa, ela usará um único departamento de TI que controlará o orçamento do Azure. Esse será o único grupo com assinaturas.
   - A Contoso estenderá esse modelo no futuro para que outros grupos corporativos possam participar como departamentos no Registro Enterprise.
   - Dentro do departamento de TI, a Contoso estruturou duas assinaturas, Produção e Desenvolvimento.
-  - Se a Contoso exigir assinaturas adicionais no futuro, ela precisará gerenciar o acesso, as políticas e a conformidade dessas assinaturas. A Contoso fará isso introduzindo [grupos de gerenciamento do Azure](/azure/azure-resource-manager/management-groups-overview), como uma camada adicional acima de assinaturas.
+  - Se a Contoso exigir assinaturas adicionais no futuro, ela precisará gerenciar o acesso, as políticas e a conformidade dessas assinaturas. A Contoso fará isso introduzindo [grupos de gerenciamento do Azure](https://docs.microsoft.com/azure/azure-resource-manager/management-groups-overview), como uma camada adicional acima de assinaturas.
 
   ![Estrutura do Enterprise](./media/contoso-migration-infrastructure/enterprise-structure.png)
 
@@ -116,7 +116,7 @@ Dar e controlar o acesso do usuário aos recursos do Azure com o IAM (gerenciame
 - Ela cria um Active Directory baseado no Azure para fazer isso.
 - A Contoso não tem o Office 365 implantado, portanto, ela precisa provisionar um novo Azure AD.
 - O Office 365 usa o AD do Azure para gerenciamento de usuário. Se a Contoso estivesse usando o Office 365, ela já teria um locatário do Azure Active Directory e poderia usá-lo como o diretório primário.
-- [Saiba mais](https://support.office.com/article/understanding-office-365-identity-and-azure-active-directory-06a189e7-5ec6-4af2-94bf-a22ea225a7a9) sobre o Azure AD para Office 365 e saiba [como adicionar uma assinatura](/azure/active-directory/active-directory-how-subscriptions-associated-directory) a um locatário existente do Azure AD.
+- [Saiba mais](https://support.office.com/article/understanding-office-365-identity-and-azure-active-directory-06a189e7-5ec6-4af2-94bf-a22ea225a7a9) sobre o Azure AD para Office 365 e saiba [como adicionar uma assinatura](https://docs.microsoft.com/azure/active-directory/active-directory-how-subscriptions-associated-directory) a um locatário existente do Azure AD.
 
 ### <a name="create-an-azure-ad"></a>Criar um Azure AD
 
@@ -196,9 +196,9 @@ No futuro, a Contoso adicionará outros grupos de recursos com base nas necessid
 A Contoso deseja fornecer uma identidade comum para acessar recursos locais e na nuvem. Para fazer isso, ela integrará o Active Directory local ao Azure AD. Com esse modelo:
 
 - Usuários e organizações podem aproveitar uma única identidade para acesso a aplicativos locais e na nuvem serviços como o Office 365 e milhares de outros sites na internet.
-- Os administradores podem usar os grupos no Active Directory para implementar o [Controle de Acesso Baseado em Função (RBAC)](/azure/role-based-access-control/role-assignments-portal) no Azure.
+- Os administradores podem usar os grupos no Active Directory para implementar o [Controle de Acesso Baseado em Função (RBAC)](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal) no Azure.
 
-Para facilitar a integração, a Contoso usa a [ferramenta Azure AD Connect](/azure/active-directory/connect/active-directory-aadconnect). Quando você instala e configura a ferramenta em um controlador de domínio, ele sincroniza as identidades do Active Directory locais para o Azure Active Directory.
+Para facilitar a integração, a Contoso usa a [ferramenta Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect). Quando você instala e configura a ferramenta em um controlador de domínio, ele sincroniza as identidades do Active Directory locais para o Azure Active Directory.
 
 ### <a name="download-the-tool"></a>Baixar a ferramenta
 
@@ -222,7 +222,7 @@ Para facilitar a integração, a Contoso usa a [ferramenta Azure AD Connect](/az
 
 Observe que:
 
-- A Contoso tem uma conexão direta para o Azure. Se seu Active Directory local estiver protegido por proxy, leia este [artigo](/azure/active-directory/connect/active-directory-aadconnect-troubleshoot-connectivity).
+- A Contoso tem uma conexão direta para o Azure. Se seu Active Directory local estiver protegido por proxy, leia este [artigo](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-troubleshoot-connectivity).
 
 - Após a primeira sincronização, os objetos do Active Directory locais ficam visíveis no diretório do Azure Active Directory.
 
@@ -234,7 +234,7 @@ Observe que:
 
 ### <a name="set-up-rbac"></a>Configurar o RBAC
 
-O [controle de acesso baseado em função (RBAC)](/azure/role-based-access-control/role-assignments-portal) do Azure permite o gerenciamento de acesso refinado para o Azure. Usando o RBAC, é possível conceder apenas a quantidade de acesso de que os usuários precisam para executar tarefas. Você atribui a função RBAC apropriada a usuários, grupos e aplicativos em um nível de escopo. O escopo de uma atribuição de função pode ser uma assinatura, um grupo de recursos ou um único recurso.
+O [controle de acesso baseado em função (RBAC)](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal) do Azure permite o gerenciamento de acesso refinado para o Azure. Usando o RBAC, é possível conceder apenas a quantidade de acesso de que os usuários precisam para executar tarefas. Você atribui a função RBAC apropriada a usuários, grupos e aplicativos em um nível de escopo. O escopo de uma atribuição de função pode ser uma assinatura, um grupo de recursos ou um único recurso.
 
 Agora, os administradores da Contoso atribuem funções aos grupos do Active Directory que eles sincronizaram no local.
 
@@ -254,7 +254,7 @@ Recursos do Azure são implantados dentro de regiões.
 - As regiões são organizadas em geografias e os requisitos de residência, soberania, conformidade e resiliência de dados são respeitados dentro dos limites geográficos.
 - Uma região é composta por um conjunto de datacenters. Esses datacenters são implantados em um perímetro definido por latência e conectados por meio de uma rede regional dedicada de baixa latência.
 - Cada região do Azure é associada a uma região diferente para garantir a resiliência.
-- Leia sobre [regiões do Azure](https://azure.microsoft.com/global-infrastructure/regions)e entenda [como as regiões são emparelhadas](/azure/best-practices-availability-paired-regions).
+- Leia sobre [regiões do Azure](https://azure.microsoft.com/global-infrastructure/regions)e entenda [como as regiões são emparelhadas](https://docs.microsoft.com/azure/best-practices-availability-paired-regions).
 
 A Contoso escolheu o Leste dos EUA 2 (localizado na Virgínia) como a região primária e o EUA Central (localizado em Iowa) como a região secundária. Há duas razões para isso:
 
@@ -276,7 +276,7 @@ Os conjuntos de disponibilidade ajudam a proteger aplicativos e dados de uma fal
 - Os domínios de falha representam o hardware subjacente com uma fonte de energia comum e um comutador de rede no datacenter. As VMs em um conjunto de disponibilidade são distribuídas por diferentes domínios de falha para minimizar interrupções causadas por um único hardware ou falha de rede.
 - Os domínios de atualização representam o hardware subjacente que pode sofrer manutenção ou ser reiniciado ao mesmo tempo. Os conjuntos de disponibilidade também distribuem VMs em vários domínios de atualização para garantir que pelo menos uma instância seja executada o tempo todo.
 
-A Contoso implementará conjuntos de disponibilidade sempre que as cargas de trabalho da VM exigirem alta disponibilidade. [Saiba mais](/azure/virtual-machines/windows/manage-availability).
+A Contoso implementará conjuntos de disponibilidade sempre que as cargas de trabalho da VM exigirem alta disponibilidade. [Saiba mais](https://docs.microsoft.com/azure/virtual-machines/windows/manage-availability).
 
 **Zonas de disponibilidade**:
 
@@ -287,7 +287,7 @@ As zonas de disponibilidade ajudam a proteger aplicativos e dados contra falhas 
 - Há no mínimo três zonas separadas em todas as regiões habilitadas.
 - A separação física de zonas dentro de uma região protege aplicativos e dados contra falhas no datacenter.
 
-A Contoso implantará zonas de disponibilidade à medida que os aplicativos exigem escalabilidade, alta disponibilidade e resiliência. [Saiba mais](/azure/availability-zones/az-overview).
+A Contoso implantará zonas de disponibilidade à medida que os aplicativos exigem escalabilidade, alta disponibilidade e resiliência. [Saiba mais](https://docs.microsoft.com/azure/availability-zones/az-overview).
 
 ### <a name="set-up-backup"></a>Configurar backup
 
@@ -299,9 +299,9 @@ O Backup do Azure permite fazer backup e restaurar discos da VM do Azure.
 - Os backups são consistentes com os aplicativos, garantindo que os dados sejam transacionalmente consistentes e que os aplicativos sejam inicializados após a restauração.
 - O Backup do Azure oferece suporte ao armazenamento com redundância local (LRS) para replicar várias cópias de seus dados de backup em um datacenter, no caso de uma falha de hardware local.
 - No caso de uma indisponibilidade regional, o Backup do Azure também oferece suporte ao armazenamento com redundância geográfica (GRS), replicando seus dados de backup para uma região secundária emparelhada.
-- O Backup do Azure criptografa os dados em trânsito usando o AES 256. Os dados de backup em repouso são criptografados usando a [ Criptografia do Serviço de Armazenamento (SSE)](/azure/storage/common/storage-service-encryption?toc=%2fazure%2fstorage%2fqueues%2ftoc.json).
+- O Backup do Azure criptografa os dados em trânsito usando o AES 256. Os dados de backup em repouso são criptografados usando a [ Criptografia do Serviço de Armazenamento (SSE)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption?toc=%2fazure%2fstorage%2fqueues%2ftoc.json).
 
-A Contoso usará o Backup do Azure com GRS em todas as VMs de produção, para garantir o backup dos dados de carga de trabalho e pode ser restaurado rapidamente em caso de interrupção ou parada. [Saiba mais](/azure/backup/backup-introduction-to-azure-backup).
+A Contoso usará o Backup do Azure com GRS em todas as VMs de produção, para garantir o backup dos dados de carga de trabalho e pode ser restaurado rapidamente em caso de interrupção ou parada. [Saiba mais](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup).
 
 ### <a name="set-up-disaster-recovery"></a>Configurar recuperação de desastre
 
@@ -313,7 +313,7 @@ O Azure Site Recovery ajuda a garantir a continuidade dos negócios mantendo os 
 - Caso haja uma indisponibilidade na região principal, seu aplicativo ou serviço passará a usar instâncias de VMs replicadas na região secundária, minimizando possíveis interrupções.
 - Quando as operações retornarem ao normal, seus aplicativos ou serviços poderão fazer failback para as VMs na região primária.
 
-A Contoso implementará o Azure Site Recovery para todas as VMs de produção usadas em cargas de trabalho críticas, garantindo o mínimo de parada durante uma interrupção na região principal. [Saiba mais](/azure/site-recovery/site-recovery-overview)
+A Contoso implementará o Azure Site Recovery para todas as VMs de produção usadas em cargas de trabalho críticas, garantindo o mínimo de parada durante uma interrupção na região principal. [Saiba mais](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview)
 
 ## <a name="step-4-design-a-network-infrastructure"></a>Etapa 4: Projetar uma infraestrutura de rede
 
@@ -325,7 +325,7 @@ Com o design de região implementado, a Contoso está pronta para considerar uma
 
 ### <a name="plan-hybrid-network-connectivity"></a>Planejar a conectividade de rede híbrida
 
-A Contoso considerou [inúmeras arquiteturas](/azure/architecture/reference-architectures/hybrid-networking) para redes híbridas entre o Azure e o datacenter local. [Leia mais](/azure/architecture/reference-architectures/hybrid-networking/considerations) sobre opções de comparação.
+A Contoso considerou [inúmeras arquiteturas](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking) para redes híbridas entre o Azure e o datacenter local. [Leia mais](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/considerations) sobre opções de comparação.
 
 Como um lembrete, a infraestrutura de rede local da Contoso atualmente é composta pelo datacenter em Nova York e branches locais na parte leste dos EUA. Todos os locais têm uma conexão de classe de negócios para a internet. Cada uma das filiais é conectada posteriormente ao datacenter através de um túnel VPN IPSec pela internet.
 
@@ -336,8 +336,8 @@ Aqui está como a Contoso decidiu implementar conectividade híbrida:
 1. Configure uma nova conexão de VPN site a site entre o datacenter da Contoso em Nova York e as duas regiões do Azure no Leste dos EUA 2 e centro dos EUA.
 2. Roteará o tráfego do Branch office associado para redes virtuais do Azure por meio do data center principal da Contoso.
 3. À medida que a Contoso expandir a implantação do Azure, ela estabelecerá uma conexão ExpressRoute entre o datacenter e as regiões do Azure. Quando isso acontecer, a Contoso reterá a conexão VPN site a site apenas para fins de failover.
-    - [ Saiba mais ](/azure/architecture/reference-architectures/hybrid-networking/considerations) sobre como escolher entre uma solução híbrida de VPN e ExpressRoute.
-    - Verifique os [ locais do ExpressRoute e suporte ](/azure/expressroute/expressroute-locations-providers).
+    - [ Saiba mais ](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/considerations) sobre como escolher entre uma solução híbrida de VPN e ExpressRoute.
+    - Verifique os [ locais do ExpressRoute e suporte ](https://docs.microsoft.com/azure/expressroute/expressroute-locations-providers).
 
 **Somente VPN:**
 
@@ -349,7 +349,7 @@ Aqui está como a Contoso decidiu implementar conectividade híbrida:
 
 ### <a name="design-the-azure-network-infrastructure"></a>Projetar a infraestrutura de rede do Azure
 
-É essencial que a Contoso coloque as redes em funcionamento de forma a tornar a implantação híbrida segura e escalonável. Para fazer isso, a Contoso está adotando uma abordagem de longo prazo e está projetando VNETs (redes virtuais) para serem resilientes e preparadas para uso empresarial. [ Saiba mais ](/azure/virtual-network/virtual-network-vnet-plan-design-arm) sobre o planejamento de VNets.
+É essencial que a Contoso coloque as redes em funcionamento de forma a tornar a implantação híbrida segura e escalonável. Para fazer isso, a Contoso está adotando uma abordagem de longo prazo e está projetando VNETs (redes virtuais) para serem resilientes e preparadas para uso empresarial. [ Saiba mais ](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm) sobre o planejamento de VNets.
 
 Para conectar as duas regiões, a Contoso decidiu implementar um modelo de rede de hub a hub:
 
@@ -364,7 +364,7 @@ O Azure fornece emparelhamento de rede para conectar VNets e hubs. O emparelhame
 - O tráfego entre as VNets é mantido na rede backbone da Microsoft. Nenhuma Internet pública, gateways ou criptografia é necessária na comunicação entre as VNets.
 - O emparelhamento fornece uma conexão padrão de baixa latência e alta largura de banda entre recursos em diferentes VNets.
 
-[ Saiba mais ](/azure/virtual-network/virtual-network-peering-overview) sobre o emparelhamento de rede.
+[ Saiba mais ](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview) sobre o emparelhamento de rede.
 
 #### <a name="hub-to-hub-across-regions"></a>Hub a hub entre regiões
 
@@ -404,7 +404,7 @@ Com uma topologia de rede e de roteamento em vigor, a Contoso está pronta para 
 - A Contoso implementará uma rede privada de Classe A no Azure (0.0.0.0 a 127.255.255.255). Isso funciona, uma vez que, localmente, ela tem um espaço de endereço privado Classe B 172.160.0/16, de modo que ela pode ter certeza de que não haverá sobreposição entre os intervalos de endereços.
 - Ela implantará VNets nas regiões primárias e secundárias.
 - A Contoso usará uma convenção de nomenclatura que inclui o prefixo **VNET** e a abreviação da região **EUS2** ou **CUS**. Usando este padrão, as redes de hub serão denominadas **VNET-HUB-EUS2** (Leste dos EUA 2) e **VNET-HUB-CUS** (EUA Central).
-- A Contoso não tem uma [solução do IPAM](/windows-server/networking/technologies/ipam/ipam-top), portanto, ela precisa planejar o roteamento de rede sem o NAT.
+- A Contoso não tem uma [solução do IPAM](https://docs.microsoft.com/windows-server/networking/technologies/ipam/ipam-top), portanto, ela precisa planejar o roteamento de rede sem o NAT.
 
 #### <a name="virtual-networks-in-east-us-2"></a>Redes virtuais no leste dos EUA 2
 
@@ -554,7 +554,7 @@ Para que as redes de produção da Contoso em ambas as regiões vejam umas às o
 
 ### <a name="set-up-dns"></a>Configurar DNS
 
-Quando você implanta recursos em redes virtuais, você tem algumas opções para a resolução de nomes de domínio. Você pode usar a resolução de nomes fornecida pelo Azure ou fornecer servidores DNS para resolução. O tipo de resolução de nomes usado depende de como seus recursos precisam se comunicar entre si. Obtenha [ mais informações ](/azure/virtual-network/virtual-networks-name-resolution-for-vms-and-role-instances#azure-provided-name-resolution) sobre o serviço DNS do Azure.
+Quando você implanta recursos em redes virtuais, você tem algumas opções para a resolução de nomes de domínio. Você pode usar a resolução de nomes fornecida pelo Azure ou fornecer servidores DNS para resolução. O tipo de resolução de nomes usado depende de como seus recursos precisam se comunicar entre si. Obtenha [ mais informações ](https://docs.microsoft.com/azure/virtual-network/virtual-networks-name-resolution-for-vms-and-role-instances#azure-provided-name-resolution) sobre o serviço DNS do Azure.
 
 Os administradores da Contoso decidiram que o serviço DNS do Azure não é uma boa opção no ambiente híbrido. Em vez disso, eles usarão os servidores DNS locais.
 
@@ -584,7 +584,7 @@ Após atualizar as configurações de rede, os administradores da Contoso estar�
 2. Eles criam conjuntos de disponibilidade em cada local para a VM. Os conjuntos de disponibilidade fazem o seguinte:
 
     - Verifique se o tecido do Azure separa as VMs em infraestruturas diferentes na Região do Azure.
-    - Permite que a Contoso seja elegível para o SLA de 99,95% para VMs no Azure. [Saiba mais](/azure/virtual-machines/windows/tutorial-availability-sets).
+    - Permite que a Contoso seja elegível para o SLA de 99,95% para VMs no Azure. [Saiba mais](https://docs.microsoft.com/azure/virtual-machines/windows/tutorial-availability-sets).
 
     ![Grupo de disponibilidade](./media/contoso-migration-infrastructure/availability-group.png)
 
@@ -638,7 +638,7 @@ O Active Directory é um serviço crítico na rede e deve ser configurado corret
 
 ## <a name="step-5-plan-for-governance"></a>Etapa 5: Planejar a governança
 
-O Azure fornece uma variedade de controles de governança entre os serviços e a plataforma do Azure. [ Leia mais ](/azure/security/governance-in-azure) para entender as opções.
+O Azure fornece uma variedade de controles de governança entre os serviços e a plataforma do Azure. [ Leia mais ](https://docs.microsoft.com/azure/security/governance-in-azure) para entender as opções.
 
 À medida que configuram o controle de identidade e de acesso, a Contoso já começou a implementar alguns aspectos de governança e segurança. Em geral, há três áreas que ela precisa considerar:
 
@@ -650,7 +650,7 @@ O Azure fornece uma variedade de controles de governança entre os serviços e a
 
 O serviço de Política do Azure avalia seus recursos, procurando aqueles que não estão em conformidade com as definições de política que você tem em vigor. Por exemplo, pode haver uma política que permita apenas determinados tipos de VMs ou exija que os recursos tenham uma marca específica.
 
-As políticas elaboram as definições e atribuições de políticas específicas de acordo com o escopo no qual estas devem ser aplicadas. O escopo pode variar de um grupo de gerenciamento para um grupo de recursos. [ Aprenda ](/azure/governance/policy/tutorials/create-and-manage) sobre como criar e gerenciar políticas.
+As políticas elaboram as definições e atribuições de políticas específicas de acordo com o escopo no qual estas devem ser aplicadas. O escopo pode variar de um grupo de gerenciamento para um grupo de recursos. [ Aprenda ](https://docs.microsoft.com/azure/governance/policy/tutorials/create-and-manage) sobre como criar e gerenciar políticas.
 
 A Contoso deseja começar com duas políticas:
 
@@ -696,7 +696,7 @@ A Contoso implementará os bloqueios da seguinte maneira:
 - Qualquer componente de produção ou failover deve estar em um grupo de recursos que tenha um bloqueio ReadOnly. Isso significa que, para modificar ou excluir itens de produção, o bloqueio deve ser removido.
 - Grupos de recursos que não são de produção terão bloqueios CanNotDelete. Isso significa que os usuários autorizados podem ler ou modificar um recurso, mas não podem excluí-lo.
 
-[ Saiba mais ](/azure/azure-resource-manager/resource-group-lock-resources) sobre bloqueios.
+[ Saiba mais ](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-lock-resources) sobre bloqueios.
 
 ### <a name="set-up-tagging"></a>Configurar a marcação
 
@@ -728,9 +728,9 @@ A segurança é crucial na nuvem, e o Azure fornece uma ampla variedade de ferra
 
 Há alguns aspectos que a Contoso deve considerar:
 
-- **Central de Segurança do Azure:** A Central de Segurança do Azure fornece um gerenciamento de segurança unificado e proteção avançada contra ameaças nas cargas de trabalho de nuvem híbrida. Com a Central de Segurança, é possível aplicar políticas de segurança em suas cargas de trabalho, limitar a exposição a ameaças e detectar e responder a ataques. [Saiba mais](/azure/security-center/security-center-intro).
-- **Grupos de segurança de rede (NSGs):** Um NSG é um filtro (firewall) que contém uma lista de regras de segurança que, quando aplicadas, permitem ou negam o tráfego de rede aos recursos conectados ao Azure VNets. [Saiba mais](/azure/virtual-network/security-overview).
-- **Criptografia de dados:** O Azure Disk Encryption é uma capacidade que ajuda você a criptografar seus discos de máquina virtual IaaS Windows e Linux. [Saiba mais](/azure/security/azure-security-encryption-atrest).
+- **Central de Segurança do Azure:** A Central de Segurança do Azure fornece um gerenciamento de segurança unificado e proteção avançada contra ameaças nas cargas de trabalho de nuvem híbrida. Com a Central de Segurança, é possível aplicar políticas de segurança em suas cargas de trabalho, limitar a exposição a ameaças e detectar e responder a ataques. [Saiba mais](https://docs.microsoft.com/azure/security-center/security-center-intro).
+- **Grupos de segurança de rede (NSGs):** Um NSG é um filtro (firewall) que contém uma lista de regras de segurança que, quando aplicadas, permitem ou negam o tráfego de rede aos recursos conectados ao Azure VNets. [Saiba mais](https://docs.microsoft.com/azure/virtual-network/security-overview).
+- **Criptografia de dados:** O Azure Disk Encryption é uma capacidade que ajuda você a criptografar seus discos de máquina virtual IaaS Windows e Linux. [Saiba mais](https://docs.microsoft.com/azure/security/azure-security-encryption-atrest).
 
 ### <a name="work-with-the-azure-security-center"></a>Trabalhar com o Centro de Segurança do Azure
 

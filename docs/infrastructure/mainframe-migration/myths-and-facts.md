@@ -8,12 +8,12 @@ ms.date: 12/27/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7a3e1c7cd0003191838f08569b18de4626745745
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 42981c9d3e8a87579033fbd0bd01c912d79c937f
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70830990"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024392"
 ---
 # <a name="mainframe-myths-and-facts"></a>Mitos e fatos a respeito de mainframe
 
@@ -46,4 +46,4 @@ Por comparação, o Azure oferece uma plataforma alternativa capaz de fornecer r
 ## <a name="next-steps"></a>Próximas etapas
 
 > [!div class="nextstepaction"]
-> [Faça a mudança de mainframes para o Azure](migration-strategies.md)
+> [Faça a mudança de mainframes para o Azure](./migration-strategies.md)

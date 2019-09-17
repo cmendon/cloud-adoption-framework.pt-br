@@ -8,12 +8,12 @@ ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 39b52cc79041a5d4df445c416ae7bf8cb8c14879
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: 47460a4099011cd96a75af9e8f99e3a6cccabb0c
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70906322"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024424"
 ---
 # <a name="mainframe-application-migration"></a>Migração de aplicativos de mainframe
 
@@ -51,7 +51,7 @@ Ambientes de lote baseados em nuvem usam a computação paralela e redes de alta
 
 ### <a name="data-ingestion-systems"></a>Sistemas de ingestão de dados
 
-Os mainframes ingerem lotes grandes de dados de varejo, serviços financeiros, fabricação e outras soluções para o processamento. Com o Azure, você pode usar os utilitários de linha de comando simples, como [AzCopy](/azure/storage/common/storage-use-azcopy) para cópia de dados de local de armazenamento. Você também pode usar o serviço do [Azure Data Factory](/azure/data-factory/introduction), permitindo a ingestão de dados de armazenamentos de dados diferentes para criar e agendar fluxos de trabalho orientados a dados.
+Os mainframes ingerem lotes grandes de dados de varejo, serviços financeiros, fabricação e outras soluções para o processamento. Com o Azure, você pode usar os utilitários de linha de comando simples, como [AzCopy](https://docs.microsoft.com/azure/storage/common/storage-use-azcopy) para cópia de dados de local de armazenamento. Você também pode usar o serviço do [Azure Data Factory](https://docs.microsoft.com/azure/data-factory/introduction), permitindo a ingestão de dados de armazenamentos de dados diferentes para criar e agendar fluxos de trabalho orientados a dados.
 
 Além dos ambientes de emulação, o Azure fornece plataforma como serviço (PaaS) e análise de serviços que podem melhorar os ambientes existentes do mainframe.
 
@@ -63,7 +63,7 @@ Os monitores TP estão disponíveis de vários fornecedores e executados em máq
 
 ![Migração de "deslocamento e mudança" de um ambiente de mainframe para o Azure usando o software de emulação](../../_images/mainframe-migration/mainframe-vs-azure.png)
 
-No Azure, ambientes de emulação são usados para executar o Gerenciador de TP e os trabalhos em lotes que usam JCL. Na camada de dados, o DB2 é substituído pelo [Banco de Dados SQL do Azure](/azure/sql-database/sql-database-technical-overview), embora o banco de dados Oracle, DB2 LUW ou Microsoft SQL Server também possa ser usado. Um emulador dá suporte a IMS, VSAM e SEQ. Ferramentas de gerenciamento do sistema de mainframe são substituídas por serviços do Azure e o software de outros fornecedores, que são executados em máquinas virtuais.
+No Azure, ambientes de emulação são usados para executar o Gerenciador de TP e os trabalhos em lotes que usam JCL. Na camada de dados, o DB2 é substituído pelo [Banco de Dados SQL do Azure](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview), embora o banco de dados Oracle, DB2 LUW ou Microsoft SQL Server também possa ser usado. Um emulador dá suporte a IMS, VSAM e SEQ. Ferramentas de gerenciamento do sistema de mainframe são substituídas por serviços do Azure e o software de outros fornecedores, que são executados em máquinas virtuais.
 
 O manuseio de tela e a funcionalidade de entrada de formulário são comumente implementados usando servidores da web, que podem ser combinados com APIs de banco de dados, como ADO, ODBC e JDBC para acesso a dados e transações. A linha exata de componentes de IaaS do Azure para usar depende do sistema operacional que você preferir. Por exemplo:
 
@@ -75,7 +75,7 @@ O manuseio de tela e a funcionalidade de entrada de formulário são comumente i
 
 Operações em lote no Azure são diferentes do ambiente de lote típico em mainframes. Trabalhos em lotes de mainframes são normalmente seriais por natureza e dependem dos IOPS fornecidos pelo backbone de mainframe por desempenho. Ambientes de lote baseados em nuvem usam a computação paralela e redes de alta velocidade para o desempenho.
 
-Para otimizar o desempenho do lote usando o Azure, considere as opções de [computar](/azure/virtual-machines/windows/overview), [armazenar](/azure/storage/blobs/storage-blobs-introduction), [rede](https://azure.microsoft.com/blog/maximize-your-vm-s-performance-with-accelerated-networking-now-generally-available-for-both-windows-and-linux), e [monitoramento](/azure/azure-monitor/overview) da seguinte maneira.
+Para otimizar o desempenho do lote usando o Azure, considere as opções de [computar](https://docs.microsoft.com/azure/virtual-machines/windows/overview), [armazenar](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction), [rede](https://azure.microsoft.com/blog/maximize-your-vm-s-performance-with-accelerated-networking-now-generally-available-for-both-windows-and-linux), e [monitoramento](https://docs.microsoft.com/azure/azure-monitor/overview) da seguinte maneira.
 
 ### <a name="compute"></a>Computação
 
@@ -93,7 +93,7 @@ Use:
 
 Use:
 
-- [SSD Premium do Azure](/azure/virtual-machines/windows/premium-storage) ou [ultra SSD do Azure](/azure/virtual-machines/windows/disks-ultra-ssd) para o IOPS máximo disponível.
+- [SSD Premium do Azure](https://docs.microsoft.com/azure/virtual-machines/windows/premium-storage) ou [ultra SSD do Azure](https://docs.microsoft.com/azure/virtual-machines/windows/disks-ultra-ssd) para o IOPS máximo disponível.
 
 - Particionamento com vários discos para mais IOPS por tamanho de armazenamento.
 
@@ -101,11 +101,11 @@ Use:
 
 ### <a name="networking"></a>Rede
 
-- Use [Rede Acelerada do Azure](/azure/virtual-network/create-vm-accelerated-networking-powershell) para minimizar a latência.
+- Use [Rede Acelerada do Azure](https://docs.microsoft.com/azure/virtual-network/create-vm-accelerated-networking-powershell) para minimizar a latência.
 
 ### <a name="monitoring"></a>Monitorando
 
-- Use ferramentas de monitoramento, [Azure Monitor](/azure/azure-monitor/overview), [Azure Application Insights](/azure/application-insights/app-insights-overview) e até mesmo os logs do Azure permitem que os administradores monitorem qualquer sobre o desempenho das execuções de lote e ajudar a eliminar gargalos.
+- Use ferramentas de monitoramento, [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview), [Azure Application Insights](https://docs.microsoft.com/azure/application-insights/app-insights-overview) e até mesmo os logs do Azure permitem que os administradores monitorem qualquer sobre o desempenho das execuções de lote e ajudar a eliminar gargalos.
 
 ## <a name="migrate-development-environments"></a>Migrar os ambientes de desenvolvimento
 
@@ -125,7 +125,7 @@ Arquitetura distribuída da nuvem se baseiam em um conjunto diferente de ferrame
 
 ## <a name="migrate-databases-and-data"></a>Migre bancos de dados e dados
 
-A migração de aplicativo geralmente envolve a nova hospedagem da camada de dados. Você pode migrar SQL Server, software livre e outros bancos de dados relacionais para soluções totalmente gerenciadas no Azure, como [instância gerenciada do banco de dados SQL do Azure](/azure/sql-database/sql-database-managed-instance), [serviço de banco de dados do Azure para PostgreSQL](/azure/postgresql/overview)e [banco de dados do Azure para MySQL](/azure/mysql/overview) com [ Serviço de migração de banco de dados do Azure](/azure/dms/dms-overview).
+A migração de aplicativo geralmente envolve a nova hospedagem da camada de dados. Você pode migrar SQL Server, software livre e outros bancos de dados relacionais para soluções totalmente gerenciadas no Azure, como [instância gerenciada do banco de dados SQL do Azure](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance), [serviço de banco de dados do Azure para PostgreSQL](https://docs.microsoft.com/azure/postgresql/overview)e [banco de dados do Azure para MySQL](https://docs.microsoft.com/azure/mysql/overview) com [ Serviço de migração de banco de dados do Azure](https://docs.microsoft.com/azure/dms/dms-overview).
 
 Por exemplo, você pode migrar se a camada de dados de mainframe usa:
 
@@ -159,7 +159,7 @@ Além disso, cada camada também pode fornecer serviços de recuperação de des
 
 A figura a seguir mostra uma possível implantação do Azure usando um site principal e um secundário. No site primário, as VMs de produção, preparo e teste são implantadas com alta disponibilidade. O site secundário é feito para backup e recuperação de desastres.
 
-![A figura a seguir mostra uma possível implantação do Azure usando um site principal e um secundário](../../_images/mainframe-migration/migration-backup-DR.png)
+![A figura a seguir mostra uma possível implantação do Azure usando um site principal e um secundário](../../_images/mainframe-migration/migration-backup-dr.png)
 
 ## <a name="perform-a-staged-mainframe-to-azure"></a>Executar um mainframe preparado para o Azure
 
@@ -167,7 +167,7 @@ Migrar soluções de um mainframe para o Azure pode envolver uma migração *pre
 
 Um cenário comum é mover um aplicativo no Azure enquanto mantém os dados usados pelo aplicativo no mainframe. Software específico é usado para permitir que os aplicativos no Azure acessem dados de mainframe. Felizmente, uma ampla gama de soluções fornece integração entre o Azure e os ambientes existentes de mainframe, suporte para cenários híbridos e migração ao longo do tempo. Parceiros da Microsoft, fornecedores independentes de software e integradores de sistema podem ajudá-lo em seu percurso.
 
-Uma opção é o [Microsoft Host Integration Server](/host-integration-server), uma solução que fornece a DRDA (arquitetura de banco de dados relacional distribuída) necessária para que aplicativos no Azure acessem dados no DB2 que permanecem no mainframe. Outras opções para integração com o mainframe no Azure incluem soluções da IBM, Attunity, Codit, outros fornecedores e opções de software livre.
+Uma opção é o [Microsoft Host Integration Server](https://docs.microsoft.com/host-integration-server), uma solução que fornece a DRDA (arquitetura de banco de dados relacional distribuída) necessária para que aplicativos no Azure acessem dados no DB2 que permanecem no mainframe. Outras opções para integração com o mainframe no Azure incluem soluções da IBM, Attunity, Codit, outros fornecedores e opções de software livre.
 
 ## <a name="partner-solutions"></a>Soluções de parceiro
 
@@ -179,8 +179,8 @@ O Azure fornece uma infraestrutura comprovada, altamente disponível e escaloná
 
 Para obter mais informações, consulte os seguintes recursos:
 
-- [Introdução ao Azure](/azure)
+- [Introdução ao Azure](https://docs.microsoft.com/azure)
 
 - [Implantar o IBM DB2 pureScale no Azure](https://azure.microsoft.com/resources/deploy-ibm-db2-purescale-on-azure)
 
-- [Documentação do Host Integration Server](/host-integration-server)
+- [Documentação do Host Integration Server](https://docs.microsoft.com/host-integration-server)

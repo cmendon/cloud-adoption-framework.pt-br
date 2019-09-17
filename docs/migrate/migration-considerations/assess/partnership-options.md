@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b19353ebe22faf089ff56b5ee84289928a8eaca7
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: 01d41b3b1486ea563ab1c0b100559e80ad3a03f6
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70905621"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022666"
 ---
 # <a name="understand-partnership-options"></a>Entender as opções de parceria
 
@@ -34,10 +34,10 @@ Se uma organização estiver planejando uma migração do Azure sozinha, a Micro
 
 - **Ferramentas de avaliação e de migração.** O Azure oferece uma ampla variedade de ferramentas para serem usadas em diferentes estágios de sua transformação de nuvem, incluindo a avaliação da infraestrutura existente. Para saber mais, confira a seção "Avaliar" no capítulo "Migração" a seguir.
 - **[Microsoft Cloud Adoption Framework](../../index.md).** Esta estrutura apresenta uma abordagem estruturada para a adoção e a migração de nuvem. Ela é baseada em práticas comprovadas entre muitas participações do cliente com suporte da Microsoft e é organizada como uma série de etapas, desde a arquitetura e o design até a implementação. Para cada etapa, as diretrizes de suporte ajudam você com o design da arquitetura do seu aplicativo.
-- **[Padrões de design na nuvem](/azure/architecture/patterns).** O Azure oferece alguns padrões de design na nuvem úteis para criar cargas de trabalho confiáveis, escalonáveis e seguras na nuvem. Cada padrão descreve o problema que o padrão aborda, as considerações para a aplicação do padrão e um exemplo com base no Azure. A maioria dos padrões inclui exemplos de código ou snippets de código que mostram como implementar o padrão no Azure. No entanto, eles são relevantes para qualquer sistema distribuído, se hospedados no Azure ou em outras plataformas de nuvem.
-- **[Conceitos básicos de nuvem](/azure/architecture/guide).** Os conceitos básicos ajudam a ensinar as abordagens básicas à implementação dos conceitos principais. Este guia ajuda os técnicos a pensarem em soluções que vão além de um único serviço do Azure.
-- **[Cenários de exemplo](/azure/architecture/example-scenario).** O guia oferece referências de implementações de clientes reais, descrevendo as ferramentas, abordagens e processos que clientes anteriores seguiram para alcançar metas empresariais específicas.
-- **[Arquiteturas de referência](/azure/architecture/reference-architectures).** As arquiteturas de referência são organizadas por cenário, com arquiteturas relacionadas agrupadas juntos. Cada arquitetura inclui as práticas recomendadas, junto com as considerações sobre escalabilidade, disponibilidade, capacidade de gerenciamento e segurança. Mais também incluem uma solução implantável.
+- **[Padrões de design na nuvem](https://docs.microsoft.com/azure/architecture/patterns).** O Azure oferece alguns padrões de design na nuvem úteis para criar cargas de trabalho confiáveis, escalonáveis e seguras na nuvem. Cada padrão descreve o problema que o padrão aborda, as considerações para a aplicação do padrão e um exemplo com base no Azure. A maioria dos padrões inclui exemplos de código ou snippets de código que mostram como implementar o padrão no Azure. No entanto, eles são relevantes para qualquer sistema distribuído, se hospedados no Azure ou em outras plataformas de nuvem.
+- **[Conceitos básicos de nuvem](https://docs.microsoft.com/azure/architecture/guide).** Os conceitos básicos ajudam a ensinar as abordagens básicas à implementação dos conceitos principais. Este guia ajuda os técnicos a pensarem em soluções que vão além de um único serviço do Azure.
+- **[Cenários de exemplo](https://docs.microsoft.com/azure/architecture/example-scenario).** O guia oferece referências de implementações de clientes reais, descrevendo as ferramentas, abordagens e processos que clientes anteriores seguiram para alcançar metas empresariais específicas.
+- **[Arquiteturas de referência](https://docs.microsoft.com/azure/architecture/reference-architectures).** As arquiteturas de referência são organizadas por cenário, com arquiteturas relacionadas agrupadas juntos. Cada arquitetura inclui as práticas recomendadas, junto com as considerações sobre escalabilidade, disponibilidade, capacidade de gerenciamento e segurança. Mais também incluem uma solução implantável.
 
 ## <a name="fasttrack-for-azure"></a>FastTrack for Azure
 
@@ -76,7 +76,7 @@ Os principais estágios de um envolvimento típico do FastTrack for Azure são:
 
 ## <a name="microsoft-services-offerings-aligned-to-cloud-adoption-framework-approaches"></a>Ofertas do Serviços Microsoft alinhadas a abordagens do Cloud Adoption Framework
 
-![Abordagem do Cloud Adoption Framework dos Serviços Microsoft](../../../_images/mcs-program-approach.jpg)
+![Abordagem do Cloud Adoption Framework dos Serviços Microsoft](../../../_images/migrate/mcs-program-approach.jpg)
 
 **Avaliar:** os Serviços Microsoft usam uma [abordagem unificada e controlada por dados e por ferramentas](https://download.microsoft.com/download/C/7/C/C7CEA89D-7BDB-4E08-B998-737C13107361/Secure_Cloud_Insights_Datasheet_EN_US.pdf) composta por workshops de arquitetura, informações em tempo real do Azure, modelos de ameaça à segurança e à identidade e várias ferramentas para fornecer insights sobre desafios, riscos, recomendações e problemas para um ambiente existente do Azure com um importante resultado como o [roteiro de modernização de alto nível](https://download.microsoft.com/download/F/7/2/F72FAD7E-8BBD-4E04-8C7B-9AC4FE04A150/Cloud_Adoption_Discovery_and_Roadmap_Datasheet.pdf).
 
