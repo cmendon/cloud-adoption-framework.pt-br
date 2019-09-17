@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 96ab62dc2adf17890989160c0af4fb80636b31b9
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 7ec216152adb4ed55b2a1eab03a8a98cd2ce8332
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818158"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022606"
 ---
 # <a name="prerequisites-for-migration"></a>Pré-requisitos para migração
 
@@ -25,10 +25,10 @@ Garanta preparação técnica, cultural e empresarial antes de iniciar um plano 
 
 ## <a name="review-business-drivers"></a>Examine os condutores empresariais
 
-Antes de iniciar qualquer migração na nuvem, examine a orientação para [Planejar](../../../business-strategy/index.md) e ficar [Pronto](../../../ready/index.md) na Cloud Adoption Framework para garantir que sua organização esteja preparada para os processos de migração e adoção da nuvem. Em particular, examine os requisitos empresariais e os resultados esperados que conduzem a migração:
+Antes de iniciar qualquer migração na nuvem, examine a orientação para [Planejar](../../../strategy/index.md) e ficar [Pronto](../../../ready/index.md) na Cloud Adoption Framework para garantir que sua organização esteja preparada para os processos de migração e adoção da nuvem. Em particular, examine os requisitos empresariais e os resultados esperados que conduzem a migração:
 
 - [Introdução: migração](../../../getting-started/migrate.md)
-- [Por que estamos migrando para a nuvem?](../../../business-strategy/motivations-why-are-we-moving-to-the-cloud.md)
+- [Por que estamos migrando para a nuvem?](../../../strategy/motivations.md)
 
 ## <a name="definition-of-done"></a>Definição de *concluído*
 
@@ -56,7 +56,7 @@ Um único membro de cada equipe deve ser identificado como responsável por cada
 
 Além da responsabilidade de alto nível, há ações pelas quais uma pessoa ou grupo precisa ser diretamente responsável. A seguir estão algumas dessas responsabilidades que afetam essas atividades:
 
-- **Priorização empresarial.** Tome decisões empresariais sobre as cargas de trabalho a serem migradas e as restrições de tempo gerais. Para obter mais informações, veja [Motivações empresariais da migração na nuvem](../../../business-strategy/motivations-why-are-we-moving-to-the-cloud.md).
+- **Priorização empresarial.** Tome decisões empresariais sobre as cargas de trabalho a serem migradas e as restrições de tempo gerais. Para obter mais informações, veja [Motivações empresariais da migração na nuvem](../../../strategy/motivations.md).
 - **Prontidão para gerenciamento de alterações.** Estabeleça e comunique o plano para acompanhar alterações técnicas durante a migração. Mais informações sobre este tópico serão disponibilizadas no 3º trimestre de 2019.
 - **Alinhamento de usuário empresarial.** Estabeleça um plano para preparar a comunidade de usuários empresariais para a execução da migração. Mais informações sobre este tópico serão disponibilizadas no 3º trimestre de 2019.
 - **Inventário e análise do acervo digital.** Execução das ferramentas necessárias para inventariar e analisar o acervo digital. Confira a discussão do Cloud Adoption Framework sobre a [propriedade digital](../../../digital-estate/index.md) para obter mais informações.

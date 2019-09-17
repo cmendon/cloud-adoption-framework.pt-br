@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: ac8d65ab897ddeac94305c9d2c365281808b36c3
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: bbe9815b12226c193073bff3c2298d4124034935
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70817954"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023746"
 ---
 # <a name="software-defined-networking-decision-guide"></a>Guia de decisão de Rede Definida por Software
 
@@ -22,9 +22,9 @@ A SDN (Rede Definida pelo Software) é uma arquitetura de rede projetada para pe
 
 ## <a name="networking-decision-guide"></a>Guia de decisão de rede
 
-![Plotagem das opções de rede da menos para a mais complexa, alinhada com links de salto abaixo](../../_images/discovery-guides/discovery-guide-sdn.png)
+![Plotagem das opções de rede da menos para a mais complexa, alinhada com links de salto abaixo](../../_images/decision-guides/decision-guide-software-defined-network.png)
 
-Ir para: [Somente PaaS](paas-only.md) | [Nativo de Nuvem](cloud-native.md) | [DMZ de Nuvem](cloud-dmz.md) [Híbrido](hybrid.md) | [Modelo de Hub e spoke](hub-spoke.md) | [Saiba mais](#learn-more)
+Ir para: [Somente PaaS](./paas-only.md) | [Nativo de Nuvem](./cloud-native.md) | [DMZ de Nuvem](./cloud-dmz.md) [Híbrido](./hybrid.md) | [Modelo de Hub e spoke](./hub-spoke.md) | [Saiba mais](#learn-more)
 
 A SDN oferece várias opções com diferentes graus de complexidade e preço. O guia de descoberta acima fornece uma referência para personalizar rapidamente essas opções e alcançar melhor alinhamento com as estratégias tecnológicas e específicas do negócio.
 
@@ -53,18 +53,18 @@ Ao planejar qual arquitetura de rede virtual ou combinação de arquiteturas dev
 
 Saiba mais sobre as principais arquiteturas de rede definidas pelo software:
 
-- **[Somente PaaS](paas-only.md):** a maioria dos produtos de PaaS (plataforma como serviço) dá suporte a um conjunto limitado de recursos de rede internos e pode não exigir uma rede definida pelo software definida explicitamente para dar suporte aos requisitos de carga de trabalho.
-- **[Nativo da nuvem](cloud-native.md):** uma arquitetura nativa de nuvem dá suporte a cargas de trabalho baseadas em nuvem usando redes virtuais criadas nas funcionalidades de rede definidas por software padrão da plataforma de nuvem sem depender de recursos locais ou outros recursos externos.
-- **[DMZ de nuvem](cloud-dmz.md):** dá suporte limitado para conectividade entre suas redes locais e na nuvem, protegidas por meio da implementação de uma zona desmilitarizada que controla rigidamente o tráfego entre os dois ambientes.
-- **[Híbrida](hybrid.md):** a arquitetura de rede de nuvem híbrida permite que as redes virtuais em ambientes de nuvem confiáveis acessem recursos locais e vice-versa.
-- **[Hub e Spoke](hub-spoke.md):** A arquitetura hub e spoke permite gerenciar centralmente a conectividade externa e os serviços compartilhados, isolar as cargas de trabalho individuais e superar possíveis limites de assinatura.
+- **[Somente PaaS](./paas-only.md):** a maioria dos produtos de PaaS (plataforma como serviço) dá suporte a um conjunto limitado de recursos de rede internos e pode não exigir uma rede definida pelo software definida explicitamente para dar suporte aos requisitos de carga de trabalho.
+- **[Nativo da nuvem](./cloud-native.md):** uma arquitetura nativa de nuvem dá suporte a cargas de trabalho baseadas em nuvem usando redes virtuais criadas nas funcionalidades de rede definidas por software padrão da plataforma de nuvem sem depender de recursos locais ou outros recursos externos.
+- **[DMZ de nuvem](./cloud-dmz.md):** dá suporte limitado para conectividade entre suas redes locais e na nuvem, protegidas por meio da implementação de uma zona desmilitarizada que controla rigidamente o tráfego entre os dois ambientes.
+- **[Híbrida](./hybrid.md):** a arquitetura de rede de nuvem híbrida permite que as redes virtuais em ambientes de nuvem confiáveis acessem recursos locais e vice-versa.
+- **[Hub e Spoke](./hub-spoke.md):** A arquitetura hub e spoke permite gerenciar centralmente a conectividade externa e os serviços compartilhados, isolar as cargas de trabalho individuais e superar possíveis limites de assinatura.
 
 ## <a name="learn-more"></a>Saiba mais
 
 Para obter mais informações sobre Rede Definida por Software no Azure, veja:
 
-- [Rede Virtual do Microsoft Azure](/azure/virtual-network/virtual-networks-overview). No Azure, o recurso de SDN principal é fornecido pela Rede Virtual do Azure, que atua como um análogo de nuvem para redes locais físicas. As redes virtuais também atuam como um limite de isolamento padrão entre recursos na plataforma.
-- [Melhores práticas do Azure de segurança de rede](/azure/security/azure-security-network-security-best-practices). Recomendações da equipe de Segurança do Azure sobre como configurar as redes virtuais para minimizar as vulnerabilidades de segurança.
+- [Rede Virtual do Microsoft Azure](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview). No Azure, o recurso de SDN principal é fornecido pela Rede Virtual do Azure, que atua como um análogo de nuvem para redes locais físicas. As redes virtuais também atuam como um limite de isolamento padrão entre recursos na plataforma.
+- [Melhores práticas do Azure de segurança de rede](https://docs.microsoft.com/azure/security/azure-security-network-security-best-practices). Recomendações da equipe de Segurança do Azure sobre como configurar as redes virtuais para minimizar as vulnerabilidades de segurança.
 
 ## <a name="next-steps"></a>Próximas etapas
 

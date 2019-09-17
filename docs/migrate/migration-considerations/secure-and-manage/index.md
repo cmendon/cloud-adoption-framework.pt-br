@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 14bd697a3332466fb97043d3420d80b1dca50679
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 652637905f9de09972eed199f85245e99fb60e29
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818124"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022582"
 ---
 # <a name="secure-monitoring-and-management-tools"></a>Ferramentas de monitoramento e gerenciamento seguros
 
@@ -26,7 +26,7 @@ Após a migração ser concluída, os ativos migrados devem ser gerenciados pela
 - **Monitoramento principal.** O monitoramento principal fornece monitoramento necessário e fundamental nos recursos do Azure. Esses serviços requerem configuração mínima e coletam a telemetria fundamental utilizada pelos serviços de monitoramento Premium.
 - **Monitoramento profundo de infraestrutura e aplicativo.** Os serviços do Azure fornecem recursos avançados para coletar e analisar dados de monitoramento em um nível mais profundo. Esses serviços compilam monitoramento principal e aproveitam as vantagens da funcionalidade comum no Azure. Eles fornecem uma análise poderosa com os dados coletados para fornecer informações exclusivas sobre seus aplicativos e sua infraestrutura.
 
-Saiba mais sobre o [Azure Monitor](/azure/azure-monitor/overview) para monitoramento de ativos migrados.
+Saiba mais sobre o [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) para monitoramento de ativos migrados.
 
 ## <a name="security-monitoring"></a>Monitoramento de segurança
 
@@ -39,7 +39,7 @@ Conte com a Central de Segurança do Azure para um monitoramento de segurança u
 - **Alertas e incidentes priorizados.** Concentre-se primeiro nas ameaças mais críticas, com incidentes e alertas de segurança priorizados.
 - **Soluções de segurança integradas.** Colete, pesquise e analise dados de segurança de uma variedade de fontes, incluindo soluções de parceiros conectadas.
 
-Saiba mais sobre a [Central de Segurança do Azure](/azure/security-center) para proteger ativos migrados.
+Saiba mais sobre a [Central de Segurança do Azure](https://docs.microsoft.com/azure/security-center) para proteger ativos migrados.
 
 ## <a name="protect-assets-and-data"></a>Proteger dados e ativos
 
@@ -50,4 +50,4 @@ O Backup do Azure fornece uma maneira de proteger VMs, arquivos e dados. O Backu
 - Fazer backup de bancos de dados do SQL Server.
 - Recuperar ativos protegidos.
 
-Saiba mais sobre o [Backup do Azure](/azure/backup) para proteger ativos migrados.
+Saiba mais sobre o [Backup do Azure](https://docs.microsoft.com/azure/backup) para proteger ativos migrados.

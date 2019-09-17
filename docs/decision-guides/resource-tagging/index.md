@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: cd4d6e7a017c9a71c090110720c28701082ce792
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 4d28e0ec6dea61a96e463df8fd2717ed0a8c8f02
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70817546"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023672"
 ---
 # <a name="resource-naming-and-tagging-decision-guide"></a>Guia de decisão de marcação e nomenclatura de recurso
 
@@ -26,7 +26,7 @@ Organizar recursos baseados em nuvem é uma das tarefas mais importantes para TI
 
 ## <a name="tagging-decision-guide"></a>Guia de decisão de marcação
 
-![Opções de marcação de plotagem da menos para a mais complexa, alinhadas aos links de salto abaixo](../../_images/discovery-guides/discovery-guide-tagging.png)
+![Opções de marcação de plotagem da menos para a mais complexa, alinhadas aos links de salto abaixo](../../_images/decision-guides/decision-guide-resource-tagging.png)
 
 Ir para: [Convenções de nomenclatura de linha de base](#baseline-naming-conventions) | [Padrões de marcação de recursos](#resource-tagging-patterns) | [Saiba mais](#learn-more)
 
@@ -74,7 +74,7 @@ Os padrões comuns de marcação listados a seguir dão exemplos de como a marca
 Para obter mais informações sobre nomenclatura e marcação no Azure, consulte:
 
 - [Convenções de nomenclatura para recursos do Azure](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions). Veja esta orientação quanto às convenções de nomenclatura recomendadas para recursos do Azure.
-- [Use as marcas para organizar seus recursos do Azure](/azure/azure-resource-manager/resource-group-using-tags?toc=/azure/billing/TOC.json). Você pode aplicar marcas no Azure no grupo de recursos e no nível do recurso individual, dando a você flexibilidade na granularidade de quaisquer relatórios de estatísticas com base em marcas aplicadas.
+- [Use as marcas para organizar seus recursos do Azure](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags?toc=/azure/billing/TOC.json). Você pode aplicar marcas no Azure no grupo de recursos e no nível do recurso individual, dando a você flexibilidade na granularidade de quaisquer relatórios de estatísticas com base em marcas aplicadas.
 
 ## <a name="next-steps"></a>Próximas etapas
 

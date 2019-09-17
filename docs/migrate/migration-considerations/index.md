@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: acee0d171be547910a0fd7892c794400ae2ee101
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: f8a5b1bc61fd44752bae7989ff19779f8ad61882
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70817291"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024681"
 ---
 # <a name="cloud-adoption-framework-migration-model"></a>Modelo de migração da Cloud Adoption Framework
 
@@ -23,7 +23,7 @@ Esta seção da Cloud Adoption Framework explica os princípios por trás de seu
 
 A migração na nuvem é um esforço de gerenciamento de portfólio, inteligentemente disfarçado de implementação técnica. Durante o processo de migração, você decidirá mover alguns ativos, investir em outros e desativar ativos obsoletos ou não usados. Alguns ativos serão otimizados, refatorados ou substituídos inteiramente como parte desse processo. Cada uma dessas decisões deve estar alinhada com as motivações por trás da migração na nuvem. As migrações de maior sucesso também vão um pouco além e alinham essas decisões aos resultados empresariais desejados.
 
-O modelo de migração da Cloud Adoption Framework depende de sua organização ter concluído um processo de preparação empresarial para a adoção da nuvem. Examine a orientação de [Planejar](../../business-strategy/index.md) e [Pronto](../../ready/index.md) na Cloud Adoption Framework para determinar os condutores empresariais ou outra justificativa para uma migração na nuvem, bem como qualquer planejamento ou treinamento organizacional necessário antes de executar um processo de migração em escala.
+O modelo de migração da Cloud Adoption Framework depende de sua organização ter concluído um processo de preparação empresarial para a adoção da nuvem. Examine a orientação de [Planejar](../../strategy/index.md) e [Pronto](../../ready/index.md) na Cloud Adoption Framework para determinar os condutores empresariais ou outra justificativa para uma migração na nuvem, bem como qualquer planejamento ou treinamento organizacional necessário antes de executar um processo de migração em escala.
 
 > [!NOTE]
 > Embora seja importante o planejamento empresarial, uma mentalidade de crescimento é igualmente importante. Em paralelo a esforços mais amplos de planejamento pela equipe de estratégia de nuvem empresarial, é aconselhável que a equipe de adoção da nuvem comece a migrar uma carga de trabalho primeiro como um precursor para os esforços de migração de escala maior. Essa migração inicial permitirá que a equipe obtenha experiência prática com os problemas técnicos e empresariais envolvidos na migração.
@@ -32,7 +32,7 @@ O modelo de migração da Cloud Adoption Framework depende de sua organização 
 
 É importante estabelecer uma visão aproximada do seu estado final antes de iniciar seus esforços de migração. O diagrama a seguir mostra um ponto de partida local da infraestrutura, de aplicativos e de dados, o que define seu *acervo digital*. Durante o processo de migração, esses ativos são transferidos usando uma das cinco estratégias de migração descritas em [Os cinco Rs da racionalização](../../digital-estate/5-rs-of-rationalization.md).
 
-![Infográfico das opções de migração](../../_images/migration/migration-options.png)
+![Infográfico das opções de migração](../../_images/migrate/migration-options.png)
 
 A migração e a modernização de cargas de trabalho variam de migrações simples de *nova hospedagem* ("lift-and-shift") usando as funcionalidades de IaaS (infraestrutura como serviço) que não exigem alterações de código e aplicativo até *refatoração* com alterações mínimas e *recriação de arquitetura* para modificar e estender a funcionalidade de código e aplicativo para aproveitar as tecnologias de nuvem.
 
@@ -47,7 +47,7 @@ Estratégias nativas da nuvem e estratégias de PaaS (plataforma como serviço) 
 
 O modelo de migração da Cloud Adoption Framework baseia-se em um processo de transformação incremental de nuvem. Pressupõe que sua organização começará com um esforço de migração na nuvem inicial de escopo limitado, que comumente chamamos de primeira carga de trabalho. Esse esforço será expandido iterativamente para incluir mais cargas de trabalho conforme suas equipes de Operações refinam e aprimoram seus processos de migração.
 
-Ferramentas de migrações de nuvem, como o [Azure Site Recovery](/azure/site-recovery/site-recovery-overview), podem fazer a migração de datacenters inteiros consistindo em dezenas de milhares de VMs. No entanto, as operações de TI e empresariais existentes raramente podem lidar com uma mudança a um ritmo tão acelerado. Assim, muitas organizações dividem um esforço de migração em várias iterações, movendo uma carga de trabalho (ou uma coleção de cargas de trabalho) por iteração.
+Ferramentas de migrações de nuvem, como o [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview), podem fazer a migração de datacenters inteiros consistindo em dezenas de milhares de VMs. No entanto, as operações de TI e empresariais existentes raramente podem lidar com uma mudança a um ritmo tão acelerado. Assim, muitas organizações dividem um esforço de migração em várias iterações, movendo uma carga de trabalho (ou uma coleção de cargas de trabalho) por iteração.
 
 Os princípios por trás desse modelo incremental baseiam-se na execução de processos e pré-requisitos apresentados no seguinte infográfico.
 

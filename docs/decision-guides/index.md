@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: a1522713ccc96bdaf713d9a72b49dc4815823eb2
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 2ca59288d74b8a7578a91a160f3c3960ac3cedda
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70817971"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023855"
 ---
 # <a name="architectural-decision-guides"></a>Guias de decisão de arquitetura
 
@@ -42,11 +42,11 @@ Cada uma das categorias a seguir representa uma tecnologia de base de todas as i
 
 [Criptografia](./encryption/index.md): proteja seus dados confidenciais usando criptografia para alinhar-se aos requisitos da política de segurança e conformidade da sua organização.
 
-[Logs e relatórios](./log-and-report/index.md): Monitorar dados de log gerados pelos recursos baseados em nuvem. A análise de dados fornece insights relacionados à integridade para operações, manutenção e status de conformidade das cargas de trabalho.
+[Logs e relatórios](./logging-and-reporting/index.md): Monitorar dados de log gerados pelos recursos baseados em nuvem. A análise de dados fornece insights relacionados à integridade para operações, manutenção e status de conformidade das cargas de trabalho.
 
 ## <a name="next-steps"></a>Próximas etapas
 
 Saiba como as assinaturas e contas servem como a base de uma implantação de nuvem.
 
 > [!div class="nextstepaction"]
-> [Design de assinaturas](subscriptions/index.md)
+> [Design de assinaturas](./subscriptions/index.md)

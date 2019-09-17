@@ -8,12 +8,12 @@ ms.date: 12/10/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 082db3cb266c428d371687ebb32a4d7d52c4663a
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 9a5b7c3eb1a831b9bf15540550d1c2005114a820
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70817835"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023459"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -44,10 +44,10 @@ Uma análise do acervo digital conduz as atividades de adoção de nuvem. També
 
 Para concluir a análise de propriedade digital, execute as etapas a seguir:
 
-1. [Determinar a abordagem de análise](approach.md).
-1. [Coletar o inventário do estado atual](inventory.md).
-1. [Racionalizar os ativos no acervo digital](rationalize.md).
-1. [Alinhar os ativos às ofertas de nuvem para calcular o preço](calculate.md).
+1. [Determinar a abordagem de análise](./approach.md).
+1. [Coletar o inventário do estado atual](./inventory.md).
+1. [Racionalizar os ativos no acervo digital](./rationalize.md).
+1. [Alinhar os ativos às ofertas de nuvem para calcular o preço](./calculate.md).
 
 Modelos financeiros e listas de pendências de migração podem ser modificadas para refletir a propriedade racionalizada e precificada.
 
@@ -56,4 +56,4 @@ Modelos financeiros e listas de pendências de migração podem ser modificadas 
 Antes de iniciar o planejamento de propriedade digital, determine a abordagem a ser usada.
 
 > [!div class="nextstepaction"]
-> [Abordagens para planejamento de propriedade digital](approach.md)
+> [Abordagens para planejamento de propriedade digital](./approach.md)
