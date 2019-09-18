@@ -10,16 +10,16 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 94ab5fd4907d7c95ca0d1b0ca932aa25eea5be41
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: e38512ef75a0bb60f07467fc6a73ca90e1392fca
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818635"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025252"
 ---
 # <a name="governance-security-and-compliance-in-azure"></a>Governança, segurança e conformidade no Azure
 
-Ao estabelecer a política corporativa e planejar suas estratégias de governança, você pode usar ferramentas e serviços como o Azure Policy, o Azure Blueprints e a Central de Segurança do Azure para impor e automatizar as decisões de governança da sua organização. Antes de iniciar seu planejamento de governança, use a [ferramenta de Parâmetro de Comparação de Governança](http://aka.ms/caf/gov/assess) para identificar possíveis lacunas na abordagem de governança de nuvem da sua organização. Para obter mais informações sobre como desenvolver processos de governança, confira [Cloud Adoption Framework para diretrizes de governança do Azure](../../governance/index.md).
+Ao estabelecer a política corporativa e planejar suas estratégias de governança, você pode usar ferramentas e serviços como o Azure Policy, o Azure Blueprints e a Central de Segurança do Azure para impor e automatizar as decisões de governança da sua organização. Antes de iniciar seu planejamento de governança, use a [ferramenta de Parâmetro de Comparação de Governança](http://aka.ms/caf/gov/assess) para identificar possíveis lacunas na abordagem de governança de nuvem da sua organização. Para obter mais informações sobre como desenvolver processos de governança, confira [Cloud Adoption Framework para diretrizes de governança do Azure](../../govern/index.md).
 
 # <a name="azure-blueprintstabazureblueprints"></a>[Azure Blueprints](#tab/AzureBlueprints)
 
@@ -90,9 +90,9 @@ Para publicar artefatos de blueprint em sua assinatura:
 
 Para obter mais informações, consulte:
 
-- [Azure Blueprints](/azure/governance/blueprints)
+- [Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints)
 - [Cloud Adoption Framework: Guia de decisão sobre a consistência do recurso](../../decision-guides/resource-consistency/index.md)
-- [Exemplos de blueprints baseados em padrões](https://docs.microsoft.com/azure/governance/blueprints/samples/index#standards-based-blueprint-samples)
+- [Exemplos de blueprints baseados em padrões](https://docs.microsoft.com/azure/governance/blueprints/samples/index.md#standards-based-blueprint-samples)
 
 ::: zone-end
 
@@ -130,7 +130,7 @@ Para aplicar uma política a um grupo de recursos:
 
 Para obter mais informações, consulte:
 
-- [Azure Policy](/azure/azure-policy)
+- [Azure Policy](https://docs.microsoft.com/azure/azure-policy)
 - [Cloud Adoption Framework: guia de decisão para imposição de política](../../decision-guides/policy-enforcement/index.md)
 
 ::: zone-end
@@ -157,10 +157,10 @@ Para explorar a Central de Segurança do Azure, vá para o [portal do Azure](htt
 
 Para obter mais informações, consulte:
 
-- [Central de Segurança do Azure](/azure/security-center)
-- [Acesso à VM Just-In-Time](/azure/security-center/security-center-just-in-time#how-does-just-in-time-access-work)
+- [Central de Segurança do Azure](https://docs.microsoft.com/azure/security-center)
+- [Acesso à VM Just-In-Time](https://docs.microsoft.com/azure/security-center/security-center-just-in-time#how-does-just-in-time-access-work)
 - [Tipo de preço padrão versus gratuito](https://azure.microsoft.com/pricing/details/security-center)
-- [Cloud Adoption Framework: disciplina de governança da Linha de Base de Segurança](../../governance/security-baseline/index.md)
+- [Cloud Adoption Framework: disciplina de governança da Linha de Base de Segurança](../../govern/security-baseline/index.md)
 
 ::: zone-end
 

@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: ce8338fbcd0e21cf0875a207633ce7c9ddf2ff9e
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 4947f980bbcaa153e55af835c2e6892cf4e2dab3
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818754"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022779"
 ---
 # <a name="migrate-assets-infrastructure-apps-and-data"></a>Migrar ativos (infraestrutura, aplicativos e dados)
 
@@ -50,7 +50,7 @@ Para executar uma migração usando as Migrações para Azure, siga essas etapas
 
 ### <a name="read-more"></a>Leia mais
 
-- [Tutorial das Migrações para Azure – Migrar servidores físicos ou virtualizados para o Azure](/azure/migrate/tutorial-migrate-physical-virtual-machines)
+- [Tutorial das Migrações para Azure – Migrar servidores físicos ou virtualizados para o Azure](https://docs.microsoft.com/azure/migrate/tutorial-migrate-physical-virtual-machines)
 
 ## <a name="azure-site-recovery"></a>Azure Site Recovery
 
@@ -59,7 +59,7 @@ O serviço do Azure Site Recovery pode gerenciar a migração de recursos locais
 As etapas a seguir descrevem como usar o Site Recovery para a migração:
 
 > [!TIP]
-> Dependendo da sua situação, as etapas podem variar um pouco. Para obter mais informações, confira o artigo [Migrar máquinas locais para o Azure](/azure/site-recovery/migrate-tutorial-on-premises-azure).
+> Dependendo da sua situação, as etapas podem variar um pouco. Para obter mais informações, confira o artigo [Migrar máquinas locais para o Azure](https://docs.microsoft.com/azure/site-recovery/migrate-tutorial-on-premises-azure).
 
 ### <a name="prepare-azure-site-recovery-service"></a>Preparar o serviço do Azure Site Recovery
 
@@ -102,7 +102,7 @@ As etapas a seguir descrevem como usar o Site Recovery para a migração:
 
 Para obter mais informações, consulte:
 
-- [Migrar máquinas locais para o Azure](/azure/site-recovery/migrate-tutorial-on-premises-azure)
+- [Migrar máquinas locais para o Azure](https://docs.microsoft.com/azure/site-recovery/migrate-tutorial-on-premises-azure)
 
 ::: zone-end
 
@@ -141,8 +141,8 @@ O serviço agora está pronto para migrar os bancos de dados de fontes compatív
 
 Para obter mais informações, consulte:
 
-- [Visão geral do Serviço de Migração de Banco de Dados do Azure](/azure/dms/dms-overview)
-- [Criar uma instância do Serviço de Migração de Banco de Dados do Azure](/azure/dms/quickstart-create-data-migration-service-portal)
+- [Visão geral do Serviço de Migração de Banco de Dados do Azure](https://docs.microsoft.com/azure/dms/dms-overview)
+- [Criar uma instância do Serviço de Migração de Banco de Dados do Azure](https://docs.microsoft.com/azure/dms/quickstart-create-data-migration-service-portal)
 - [Migrações para Azure no portal do Azure](https://portal.azure.com/#blade/Microsoft_Azure_ManagementGroups/HierarchyBlade)
 - [Portal do Azure: Criar um projeto de migração](https://portal.azure.com/#create/Microsoft.AzureMigrate)
 
@@ -166,21 +166,21 @@ Para começar a usar o Assistente de Migração de Dados, siga estas etapas.
 1. Clique em **Avançar** para iniciar a avaliação.
 1. Visualize os resultados no conjunto de ferramentas do Assistente de Migração de Dados.
 
-Para uma empresa, recomendamos seguir a abordagem descrita em [Avaliar uma empresa e consolidar relatórios de avaliação com o Assistente de Migração de Dados](/sql/dma/dma-consolidatereports) para avaliar vários servidores, combinar os relatórios e usar os relatórios do Power BI para analisar os resultados.
+Para uma empresa, recomendamos seguir a abordagem descrita em [Avaliar uma empresa e consolidar relatórios de avaliação com o Assistente de Migração de Dados](https://docs.microsoft.com/sql/dma/dma-consolidatereports) para avaliar vários servidores, combinar os relatórios e usar os relatórios do Power BI para analisar os resultados.
 
 Para obter mais informações, incluindo etapas detalhadas de uso, confira:
 
-- [Visão geral do Assistente de Migração de Dados](/sql/dma/dma-overview)
-- [Avaliar uma empresa e consolidar relatórios de avaliação com o Assistente de Migração de Dados](/sql/dma/dma-consolidatereports)
-- [Analisar relatórios de avaliação consolidados criados pelo Assistente de Migração de Dados com o Power BI](/sql/dma/dma-powerbiassesreport)
+- [Visão geral do Assistente de Migração de Dados](https://docs.microsoft.com/sql/dma/dma-overview)
+- [Avaliar uma empresa e consolidar relatórios de avaliação com o Assistente de Migração de Dados](https://docs.microsoft.com/sql/dma/dma-consolidatereports)
+- [Analisar relatórios de avaliação consolidados criados pelo Assistente de Migração de Dados com o Power BI](https://docs.microsoft.com/sql/dma/dma-powerbiassesreport)
 
 ## <a name="sql-server-migration-assistant"></a>Assistente de Migração do SQL Server
 
-O Assistente de Migração do SQL Server (SSMA) é uma ferramenta projetada para automatizar a migração de banco de dados para o SQL Server do Microsoft Access, DB2, MySQL, Oracle e SAP ASE. Em geral, essas ferramentas vão coletar, avaliar para, só então, revisar, no entanto, devido às variações no processo de cada um dos sistemas de origem, recomendamos revisar a [documentação detalhada do Assistente de Migração do SQL Server](/sql/ssma/sql-server-migration-assistant).
+O Assistente de Migração do SQL Server (SSMA) é uma ferramenta projetada para automatizar a migração de banco de dados para o SQL Server do Microsoft Access, DB2, MySQL, Oracle e SAP ASE. Em geral, essas ferramentas vão coletar, avaliar para, só então, revisar, no entanto, devido às variações no processo de cada um dos sistemas de origem, recomendamos revisar a [documentação detalhada do Assistente de Migração do SQL Server](https://docs.microsoft.com/sql/ssma/sql-server-migration-assistant).
 
 Para obter mais informações, consulte:
 
-- [Visão geral do Assistente de Migração do SQL Server](/sql/ssma/sql-server-migration-assistant)
+- [Visão geral do Assistente de Migração do SQL Server](https://docs.microsoft.com/sql/ssma/sql-server-migration-assistant)
 
 ## <a name="database-experimentation-assistant"></a>Assistente para Experimentos de Banco de Dados
 
@@ -194,7 +194,7 @@ O Assistente para Experimentos de Banco de Dados contém as seguintes atividades
 
 Para obter mais informações, consulte:
 
-- [Visão geral do Assistente para Experimentos de Banco de Dados](/sql/dea/database-experimentation-assistant-overview)
+- [Visão geral do Assistente para Experimentos de Banco de Dados](https://docs.microsoft.com/sql/dea/database-experimentation-assistant-overview)
 
 # <a name="third-party-migration-toolstabthird-party-tools"></a>[Ferramentas de migração de terceiros](#tab/third-party-tools)
 
@@ -245,4 +245,4 @@ O [Azure DevOps](https://dev.azure.com) fornece toda a funcionalidade e integra�
 
 # <a name="cost-managementtabmanagecost"></a>[Gerenciamento de Custos](#tab/ManageCost)
 
-À medida que você migra recursos para o ambiente de nuvem, é importante executar uma análise de custo periódica. Isso ajuda a evitar encargos de uso inesperado, pois o processo de migração pode impor custos sobre requisitos de uso adicionais em seus serviços. Você também pode redimensionar recursos conforme necessário para equilibrar custo e carga de trabalho (discutido em mais detalhes na seção **[Otimizar e Transformar](optimize-and-transform.md)** ).
+À medida que você migra recursos para o ambiente de nuvem, é importante executar uma análise de custo periódica. Isso ajuda a evitar encargos de uso inesperado, pois o processo de migração pode impor custos sobre requisitos de uso adicionais em seus serviços. Você também pode redimensionar recursos conforme necessário para equilibrar custo e carga de trabalho (discutido em mais detalhes na seção **[Otimizar e Transformar](./optimize-and-transform.md)** ).

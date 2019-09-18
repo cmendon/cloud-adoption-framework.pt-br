@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: c95134909838f11377b16e90c5deb68850388938
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 19c3d6861ddb4ad87255233fae1a7f535538324b
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818822"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022831"
 ---
 # <a name="assess-the-digital-estate"></a>Avaliar bens digitais
 
@@ -58,8 +58,8 @@ Para começar a usar uma avaliação de migração do servidor usando as Migraç
 
 ### <a name="read-more"></a>Leia mais
 
-- [Visão geral das Migrações para Azure](/azure/migrate/migrate-services-overview)
-- [Migrar servidores físicos ou virtualizados para o Azure](/azure/migrate/tutorial-migrate-physical-virtual-machines)
+- [Visão geral das Migrações para Azure](https://docs.microsoft.com/azure/migrate/migrate-services-overview)
+- [Migrar servidores físicos ou virtualizados para o Azure](https://docs.microsoft.com/azure/migrate/tutorial-migrate-physical-virtual-machines)
 - [Migrações para Azure no portal do Azure](https://portal.azure.com/#blade/Microsoft_Azure_Migrate/AmhResourceMenuBlade/overview)
 
 ::: zone-end
@@ -68,22 +68,22 @@ Para começar a usar uma avaliação de migração do servidor usando as Migraç
 
 O Mapa do Serviço detecta automaticamente os componentes de aplicativos em sistemas Windows e Linux e mapeia a comunicação entre os serviços. Com o Mapa do Serviço é possível exibir seus servidores da maneira desejada: como sistemas interconectados que fornecem serviços críticos. O Mapa do Serviço mostra conexões entre servidores, processos, latência de conexão de entrada e saída e portas em qualquer arquitetura conectada a TCP, sem a necessidade de configuração diferente da instalação de um agente.
 
-As Migrações para Azure usam o Mapa do Serviço para aprimorar os recursos de geração de relatórios e as dependências em todo o ambiente. Veja os detalhes completos dessa integração descritos em [Visualização de dependência](/azure/migrate/concepts-dependency-visualization). Se você usar o serviço de Migração para Azure, não serão necessárias etapas adicionais para configurar e obter os benefícios do Mapa do Serviço. As instruções a seguir são fornecidas como referência, caso você deseje usar o Mapa do Serviço para outras finalidades ou projetos.
+As Migrações para Azure usam o Mapa do Serviço para aprimorar os recursos de geração de relatórios e as dependências em todo o ambiente. Veja os detalhes completos dessa integração descritos em [Visualização de dependência](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization). Se você usar o serviço de Migração para Azure, não serão necessárias etapas adicionais para configurar e obter os benefícios do Mapa do Serviço. As instruções a seguir são fornecidas como referência, caso você deseje usar o Mapa do Serviço para outras finalidades ou projetos.
 
 ### <a name="enable-dependency-visualization-using-service-map"></a>Habilitar a visualização de dependência usando o Mapa do Serviço
 
 Para usar a visualização de dependência, você precisa baixar e instalar agentes em cada computador local que você deseja analisar.
 
-- [O Microsoft Monitoring Agent (MMA)](/azure/log-analytics/log-analytics-agent-windows) precisa ser instalado em cada máquina.
-- O [agente de dependência](/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud#install-the-dependency-agent-on-windows) precisa ser instalado em cada máquina.
+- [O Microsoft Monitoring Agent (MMA)](https://docs.microsoft.com/azure/log-analytics/log-analytics-agent-windows) precisa ser instalado em cada máquina.
+- O [agente de dependência](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud#install-the-dependency-agent-on-windows) precisa ser instalado em cada máquina.
 - Além disso, se você tiver máquinas sem conectividade com a Internet, será necessário fazer o download e instalar o gateway do Log Analytics nelas.
 
 <!-- markdownlint-disable MD024 -->
 
 ### <a name="read-more"></a>Leia mais
 
-- [Usando a solução do Mapa do Serviço no Azure](/azure/azure-monitor/insights/service-map)
-- [Mapa do Serviço e Migrações para Azure: Visualização de dependências](/azure/migrate/concepts-dependency-visualization)
+- [Usando a solução do Mapa do Serviço no Azure](https://docs.microsoft.com/azure/azure-monitor/insights/service-map)
+- [Mapa do Serviço e Migrações para Azure: Visualização de dependências](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization)
 
 
 # <a name="scenarios-and-stakeholderstabscenarios"></a>[Cenários e Stakeholders](#tab/Scenarios)

@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: dbfc365f874b9ad6045454c53270275a5008935d
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 19299c5855600524f3335b00272974790d83c8fa
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818737"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022765"
 ---
 # <a name="organize-your-azure-resources"></a>Organizar seus recursos do Azure
 
@@ -76,9 +76,9 @@ Crie um grupo de recursos para armazenar recursos como aplicativos Web, bancos d
 
 Para obter mais informações, consulte:
 
-- [Noções básicas sobre o gerenciamento de acesso aos recursos no Azure](../../governance/resource-consistency/azure-resource-access.md)
-- [Organizar seus recursos com grupos de gerenciamento do Azure](/azure/azure-resource-manager/management-groups-overview)
-- [Limites do serviço da assinatura](/azure/azure-subscription-service-limits)
+- [Noções básicas sobre o gerenciamento de acesso aos recursos no Azure](../../govern/resource-consistency/resource-access-management.md)
+- [Organizar seus recursos com grupos de gerenciamento do Azure](https://docs.microsoft.com/azure/azure-resource-manager/management-groups-overview)
+- [Limites do serviço da assinatura](https://docs.microsoft.com/azure/azure-subscription-service-limits)
 
 ::: zone-end
 
@@ -124,7 +124,7 @@ Um bom padrão de nomenclatura ajuda a identificar recursos no portal, em uma fa
 
 ::: zone target="docs"
 
-Recomendamos que você revise e adote as [Diretrizes de Padrões e Práticas](/azure/architecture/best-practices/naming-conventions).
+Recomendamos que você revise e adote as [Diretrizes de Padrões e Práticas](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions).
 
 >[!TIP]
 >Evite usar caracteres especiais (`-` ou `_`) como o primeiro ou último caractere em qualquer nome. Esses caracteres fazem com que a maioria das regras de validação falhe.
@@ -151,7 +151,7 @@ Você também pode usar marcas para muitos outros fins. Usos comuns incluem:
 
 Cada recurso ou grupo de recursos pode ter um máximo de 15 pares de nome/valor de marca. Porém, essa limitação se aplica somente a marcas aplicadas diretamente ao grupo de recursos ou recurso.
 
-Para obter mais informações sobre marcação, confira [Convenções de nomenclatura para recursos do Azure no Centro de Arquitetura do Azure](../../ready/considerations/name-and-tag.md#metadata-tags)
+Para obter mais informações sobre marcação, confira [Convenções de nomenclatura para recursos do Azure no Centro de Arquitetura do Azure](../../ready/considerations/naming-and-tagging.md#metadata-tags)
 
 ::: zone target="docs"
 
@@ -166,7 +166,7 @@ Para aplicar uma marca a um grupo de recursos:
 
 ## <a name="learn-more"></a>Saiba mais
 
-Para saber mais, veja [Usar marcas para organizar os recursos do Azure](/azure/azure-resource-manager/resource-group-using-tags).
+Para saber mais, veja [Usar marcas para organizar os recursos do Azure](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags).
 
 ::: zone-end
 

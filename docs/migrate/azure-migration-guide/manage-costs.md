@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 294a426aef047bb7acd418c19574a4fd7e0b2320
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: c6b195a69622a4934f257090650a8ba6ce884025
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70905649"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024799"
 ---
 # <a name="migration-focused-cost-control-mechanisms"></a>Mecanismos de controle de custo focados na migração
 
@@ -70,8 +70,8 @@ A estimativa resultante, ilustrada abaixo, identifica os custos mensais de compu
 
 ## <a name="additional-resources"></a>Recursos adicionais
 
-- [Configurar e examinar uma avaliação com as Migrações para Azure](/azure/migrate/tutorial-assess-vmware#set-up-an-assessment)
-- Para avaliar um plano mais abrangente do gerenciamento de custos em um número maior de ativos (infraestrutura, aplicativos e dados), confira o [Modelo de governança da Estrutura de Adoção da Nuvem](../../governance/journeys/index.md). Em particular, orientações sobre a [Disciplina de Gerenciamento de Custos](../../governance/cost-management/index.md) e a [Melhoria do Gerenciamento de Custos no guia para grandes empresas](../../governance/journeys/complex-enterprise/cost-management-evolution.md).
+- [Configurar e examinar uma avaliação com as Migrações para Azure](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware#set-up-an-assessment)
+- Para avaliar um plano mais abrangente do gerenciamento de custos em um número maior de ativos (infraestrutura, aplicativos e dados), confira o [Modelo de governança da Estrutura de Adoção da Nuvem](../../govern/guides/index.md). Em particular, orientações sobre a [Disciplina de Gerenciamento de Custos](../../govern/cost-management/index.md) e a [Melhoria do Gerenciamento de Custos no guia para grandes empresas](../../govern/guides/complex/cost-management-improvement.md).
 
 # <a name="estimate-and-optimize-vm-costs-during-and-after-migrationtabestimateoptimize"></a>[Estimar e otimizar custos de VM durante e após a migração](#tab/EstimateOptimize)
 
@@ -91,7 +91,7 @@ As etapas a seguir fornecem recomendações de custo para ativos (infraestrutura
 
 O Gerenciamento de Custos do Azure pode fornecer uma visão mais holística dos hábitos de gasto, incluindo a exibição detalhada dos custos e das tendências de gastos ao longo do tempo. Para migrações grandes ou complexas, essa exibição pode fornecer os insights necessários para tomar decisões de gerenciamento de custos mais amplas.
 
-Pré-requisitos: O restante desta guia pressupõe que o leitor concluiu a configuração do Gerenciamento de Custos do Azure ao concluir o guia de Preparação para o Azure. Para obter mais detalhes sobre como configurar o Gerenciamento de Custos do Azure, confira este [artigo no guia de Preparação para o Azure](/azure/architecture/cloud-adoption/ready/azure-readiness-guide/manage-costs). Após os dados serem preenchidos, siga as próximas etapas para estimar os custos mensais com base nos dados coletados.
+Pré-requisitos: O restante desta guia pressupõe que o leitor concluiu a configuração do Gerenciamento de Custos do Azure ao concluir o guia de Preparação para o Azure. Para obter mais detalhes sobre como configurar o Gerenciamento de Custos do Azure, confira este [artigo no guia de Preparação para o Azure](../../ready/azure-readiness-guide/manage-costs.md). Após os dados serem preenchidos, siga as próximas etapas para estimar os custos mensais com base nos dados coletados.
 
 As etapas a seguir carregarão dados de análise de custo do Gerenciamento de Custos do Azure para suas assinaturas:
 
@@ -104,9 +104,9 @@ Essa análise permitirá que você examine os custos totais, o orçamento (se di
 
 ## <a name="additional-resources"></a>Recursos adicionais
 
-- Para avaliar um plano mais abrangente do gerenciamento de custos em um número maior de ativos (infraestrutura, aplicativos e dados), confira o [Modelo de governança da Estrutura de Adoção da Nuvem](../../governance/journeys/index.md). Em particular, orientações sobre a [Disciplina de Gerenciamento de Custos](../../governance/cost-management/index.md) e a [Melhoria incremental do Gerenciamento de Custos no guia para grandes empresas](../../governance/journeys/complex-enterprise/cost-management-evolution.md).
-- Para obter mais informações sobre o Assistente do Azure, confira [Reduzindo custos de serviço usando o Assistente do Azure](/azure/advisor/advisor-cost-recommendations).
-- Para obter mais informações sobre o Gerenciamento de Custos do Azure, confira [Entender e trabalhar com escopos](/azure/cost-management/understand-work-scopes) e [Explorar e analisar custos com a Análise de Custos](/azure/cost-management/quick-acm-cost-analysis).
+- Para avaliar um plano mais abrangente do gerenciamento de custos em um número maior de ativos (infraestrutura, aplicativos e dados), confira o [Modelo de governança da Estrutura de Adoção da Nuvem](../../govern/guides/index.md). Em particular, orientações sobre a [Disciplina de Gerenciamento de Custos](../../govern/cost-management/index.md) e a [Melhoria incremental do Gerenciamento de Custos no guia para grandes empresas](../../govern/guides/complex/cost-management-improvement.md).
+- Para obter mais informações sobre o Assistente do Azure, confira [Reduzindo custos de serviço usando o Assistente do Azure](https://docs.microsoft.com/azure/advisor/advisor-cost-recommendations).
+- Para obter mais informações sobre o Gerenciamento de Custos do Azure, confira [Entender e trabalhar com escopos](https://docs.microsoft.com/azure/cost-management/understand-work-scopes) e [Explorar e analisar custos com a Análise de Custos](https://docs.microsoft.com/azure/cost-management/quick-acm-cost-analysis).
 
 # <a name="tips-and-tricks-to-optimize-coststabtipstricks"></a>[Dicas e truques para otimizar custos](#tab/TipsTricks)
 
@@ -130,7 +130,7 @@ Fale com seu representante de conta Microsoft para entender como você pode apro
 
 ## <a name="azure-reservations"></a>Reservas do Azure
 
-As [Reservas do Azure](/azure/billing/billing-save-compute-costs-reservations) permitem que você pague antecipadamente por um ou três anos de máquina virtual ou pela capacidade de computação de Banco de Dados SQL. Pagar previamente permitirá obter um desconto nos recursos que você usar. As Reservas do Azure podem reduzir significativamente os custos de sua máquina virtual ou os custos de computação do Banco de Dados SQL em até 72% com base em preços pagos conforme o uso, com um compromisso antecipado de um ou três anos. As reservas fornecem um desconto de faturamento e não afetam o estado de tempo de execução de suas máquinas virtuais ou bancos de dados SQL.
+As [Reservas do Azure](https://docs.microsoft.com/azure/billing/billing-save-compute-costs-reservations) permitem que você pague antecipadamente por um ou três anos de máquina virtual ou pela capacidade de computação de Banco de Dados SQL. Pagar previamente permitirá obter um desconto nos recursos que você usar. As Reservas do Azure podem reduzir significativamente os custos de sua máquina virtual ou os custos de computação do Banco de Dados SQL em até 72% com base em preços pagos conforme o uso, com um compromisso antecipado de um ou três anos. As reservas fornecem um desconto de faturamento e não afetam o estado de tempo de execução de suas máquinas virtuais ou bancos de dados SQL.
 
 ## <a name="use-azure-hybrid-benefit"></a>Usar o Benefício Híbrido do Azure
 
@@ -138,8 +138,8 @@ Se já tiver licenças do Windows Server ou do SQL Server em suas implantações
 
 ## <a name="low-priority-vms-with-batch"></a>VMs de baixa prioridade com o Lote
 
-Para processos em segundo plano de prioridade mais baixa, o Lote oferece um meio de gerenciar as VMs de serviço em segundo plano e reduzir os custos. No entanto, é importante entender o impacto sobre o desempenho de [VMs de baixa prioridade com o Lote](/azure/batch/batch-low-pri-vms) antes de escolher essa opção com desconto.
+Para processos em segundo plano de prioridade mais baixa, o Lote oferece um meio de gerenciar as VMs de serviço em segundo plano e reduzir os custos. No entanto, é importante entender o impacto sobre o desempenho de [VMs de baixa prioridade com o Lote](https://docs.microsoft.com/azure/batch/batch-low-pri-vms) antes de escolher essa opção com desconto.
 
 ## <a name="additional-resources"></a>Recursos adicionais
 
-Para avaliar um plano mais abrangente do gerenciamento de custos em um número maior de ativos (infraestrutura, aplicativos e dados), confira o [Modelo de governança da Estrutura de Adoção da Nuvem](../../governance/journeys/index.md). Em particular, orientações sobre a [Disciplina de Gerenciamento de Custos](../../governance/cost-management/index.md) e a [Melhoria incremental do Gerenciamento de Custos no guia de governança para grandes empresas](../../governance/journeys/complex-enterprise/cost-management-evolution.md).
+Para avaliar um plano mais abrangente do gerenciamento de custos em um número maior de ativos (infraestrutura, aplicativos e dados), confira o [Modelo de governança da Estrutura de Adoção da Nuvem](../../govern/guides/index.md). Em particular, orientações sobre a [Disciplina de Gerenciamento de Custos](../../govern/cost-management/index.md) e a [Melhoria incremental do Gerenciamento de Custos no guia de governança para grandes empresas](../../govern/guides/complex/cost-management-improvement.md).
