@@ -9,18 +9,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 3c519de24d6c7ac83240d1b1e14b0a21c67f67df
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 383f2d6a2443c70c8e082183f601b8186fc98870
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70817648"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023713"
 ---
 # <a name="policy-enforcement-decision-guide"></a>Guia de decisão de imposição de política
 
 A definição da política organizacional não é eficaz, a menos que ela possa ser imposta em sua organização. Um aspecto fundamental do planejamento de qualquer migração na nuvem é determinar a melhor maneira de combinar as ferramentas fornecidas pela plataforma de nuvem com seus processos de TI existentes para maximizar a conformidade com a política em toda a propriedade de nuvem.
 
-![Gráfico com opções de aplicação de políticas, da menos para a mais complexa, alinhada aos links de salto abaixo](../../_images/discovery-guides/discovery-guide-policy-enforcement.png)
+![Gráfico com opções de aplicação de políticas, da menos para a mais complexa, alinhada aos links de salto abaixo](../../_images/decision-guides/decision-guide-policy-enforcement.png)
 
 Ir para: [Práticas recomendas da linha de base](#baseline-recommended-practices) | [Monitoramento de conformidade de política](#policy-compliance-monitoring) | [Aplicação de política](#policy-enforcement) | [Política entre organizações](#cross-organization-policy) | [Aplicação automatizada](#automated-enforcement)
 
@@ -28,7 +28,7 @@ Ir para: [Práticas recomendas da linha de base](#baseline-recommended-practices
 
 Mecanismos de imposição de política fornecidos pela plataforma no nível do recurso ou da assinatura geralmente são suficientes para acervos de nuvem menores. Implantações menores justificam um escopo de imposição maior e podem precisar aproveitar mecanismos de imposição mais sofisticados que envolvem a implantação de padrões, o agrupamento e a organização de recursos e a integração da imposição da política com sistemas de relatórios e registro em log.
 
-Os principais fatores para determinar o escopo de seus processos de imposição de política são os [requisitos de governança de nuvem](/azure/architecture/cloud-adoption/governance/overview) da sua organização, o tamanho e a natureza de seu acervo de nuvem e como sua organização é refletida no seu [design de assinatura](../subscriptions/index.md). Um aumento no tamanho de seu acervo ou uma maior necessidade de gerenciar centralmente a imposição da política podem justificar um aumento no escopo da imposição.
+Os principais fatores para determinar o escopo de seus processos de imposição de política são os [requisitos de governança de nuvem](../../govern/index.md) da sua organização, o tamanho e a natureza de seu acervo de nuvem e como sua organização é refletida no seu [design de assinatura](../subscriptions/index.md). Um aumento no tamanho de seu acervo ou uma maior necessidade de gerenciar centralmente a imposição da política podem justificar um aumento no escopo da imposição.
 
 ## <a name="baseline-recommended-practices"></a>Práticas recomendadas da linha de base
 
@@ -43,15 +43,15 @@ Inicie o seu planejamento de implantação da política de nuvem examinando como
 
 ## <a name="policy-compliance-monitoring"></a>Monitorar a conformidade da política
 
-Uma primeira etapa além de simplesmente contar com os mecanismos de imposição de política fornecidos pela plataforma do Azure é a capacidade de garantir que aplicativos e serviços baseados em nuvem cumpram a política organizacional. Isso inclui a implementação de funcionalidades de notificação para alertar as partes responsáveis se um recurso deixar de estar em conformidade. Realizar o [registro em log e criar relatórios](../log-and-report/index.md) do status de conformidade efetivamente de suas cargas de trabalho de nuvem é uma parte crítica de uma estratégia de imposição de política corporativa.
+Uma primeira etapa além de simplesmente contar com os mecanismos de imposição de política fornecidos pela plataforma do Azure é a capacidade de garantir que aplicativos e serviços baseados em nuvem cumpram a política organizacional. Isso inclui a implementação de funcionalidades de notificação para alertar as partes responsáveis se um recurso deixar de estar em conformidade. O [registro em log e os relatórios](../logging-and-reporting/index.md) efetivos do status de conformidade de suas cargas de trabalho de nuvem é uma parte crítica de uma estratégia de imposição de política corporativa.
 
-Conforme sua propriedade de nuvem cresce, ferramentas adicionais como a [Central de Segurança do Azure](/azure/security-center) pode fornecer a segurança integrada e a detecção de ameaças e ajudar a aplicar gerenciamento centralizado de políticas e alertas para seu local e ativos de nuvem.
+Conforme sua propriedade de nuvem cresce, ferramentas adicionais como a [Central de Segurança do Azure](https://docs.microsoft.com/azure/security-center) pode fornecer a segurança integrada e a detecção de ameaças e ajudar a aplicar gerenciamento centralizado de políticas e alertas para seu local e ativos de nuvem.
 
 ## <a name="policy-enforcement"></a>Aplicação de políticas
 
 No Azure, você pode aplicar as definições de configuração e as regras de criação de recursos no nível de grupo de gerenciamento, de assinatura ou de grupo de recursos para ajudar a garantir o alinhamento com a política.
 
-[O Azure Policy](/azure/governance/policy/overview) é um serviço do Azure para criar, atribuir e gerenciar políticas. Essas políticas impõem diferentes regras e efeitos sobre os recursos para que esses recursos permaneçam em conformidade com seus padrões corporativos e contratos de nível de serviço. O Azure Policy avalia seus recursos quanto a não conformidade com políticas atribuídas. Por exemplo, você talvez queira limitar o tamanho da SKU de máquinas virtuais em seu ambiente. Depois que essa política é implementada, os recursos novos e existentes são avaliados quanto à conformidade. Com a política certa, os recursos existentes podem ser colocados em conformidade.
+[O Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) é um serviço do Azure para criar, atribuir e gerenciar políticas. Essas políticas impõem diferentes regras e efeitos sobre os recursos para que esses recursos permaneçam em conformidade com seus padrões corporativos e contratos de nível de serviço. O Azure Policy avalia seus recursos quanto a não conformidade com políticas atribuídas. Por exemplo, você talvez queira limitar o tamanho da SKU de máquinas virtuais em seu ambiente. Depois que essa política é implementada, os recursos novos e existentes são avaliados quanto à conformidade. Com a política certa, os recursos existentes podem ser colocados em conformidade.
 
 ## <a name="cross-organization-policy"></a>Política entre organizações
 
@@ -61,7 +61,7 @@ Sua [design de assinatura](../subscriptions/index.md) deve levar em conta para a
 
 ## <a name="automated-enforcement"></a>Imposição automática
 
-Embora modelos de implantação padronizado entrarão em vigor em uma escala menor, [o Azure BluePrints](/azure/governance/blueprints/overview) permite a orquestração em larga escala padronizada de provisionamento e a implantação de soluções do Azure. As cargas de trabalho entre várias assinaturas podem ser implantadas com as configurações de política consistentes para todos os recursos criados.
+Embora modelos de implantação padronizado entrarão em vigor em uma escala menor, [o Azure BluePrints](https://docs.microsoft.com/azure/governance/blueprints/overview) permite a orquestração em larga escala padronizada de provisionamento e a implantação de soluções do Azure. As cargas de trabalho entre várias assinaturas podem ser implantadas com as configurações de política consistentes para todos os recursos criados.
 
 Para ambientes de TI, ao integrar recursos de nuvem e locais, talvez seja necessário usar o registro em log e relatório de sistemas para fornecer recursos de monitoramento híbrido. Seus sistemas de monitoramento operacionais personalizados ou de terceiros podem oferecer recursos de imposição de política adicionais. Para acervos de nuvem maiores ou mais maduros, considere a melhor maneira de integrar esses sistemas a seus ativos de nuvem.
 
