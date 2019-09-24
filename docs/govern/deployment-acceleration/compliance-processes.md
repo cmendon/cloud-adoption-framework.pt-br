@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Processos de conformidade de política de aceleração de implantação
 author: alexbuckgit
 ms.author: abuck
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c127a1c8bc8bce7608f0e146b36785fcee82dc0b
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: a393791aac072cb9a135c6fc11e08fc653817742
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027272"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222596"
 ---
 # <a name="deployment-acceleration-policy-compliance-processes"></a>Processos de conformidade de política de aceleração de implantação
 

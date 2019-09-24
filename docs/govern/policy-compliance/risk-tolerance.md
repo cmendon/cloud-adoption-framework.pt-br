@@ -4,16 +4,16 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Explicação dos riscos de negócios associados a uma transformação de nuvem
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: cd8bee6cf7cf0ff06cb2846b440263cc83757f5f
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 2b8bc595377b2748bd00f306659a46196115e91d
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027879"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223551"
 ---
 # <a name="evaluate-risk-tolerance"></a>Avaliar a tolerância a riscos
 
@@ -47,7 +47,7 @@ Identificar o risco é um processo bastante direto. Os riscos relacionados a ti 
 Para ajudar a reconhecer a tolerância de risco, examinaremos os dados do cliente. Se uma empresa em qualquer setor postar dados do cliente em um servidor desprotegido, o risco técnico de que os dados que estão sendo comprometidos ou roubados é praticamente o mesmo. No entanto, a tolerância da empresa para esse risco variará de forma invariável com base na natureza e no valor potencial dos dados.
 
 - As empresas do setor de saúde e finanças nos Estados Unidos são regidas por rigorosos requisitos de conformidade de terceiros. Supõe-se que os dados pessoais ou os dados relacionados à área de saúde são extremamente confidenciais. Haverá graves consequências para esses tipos de empresas, caso estejam envolvidas no cenário de riscos acima mencionado. A tolerância será extremamente baixa. Todos os dados de clientes publicados dentro ou fora da rede precisarão ser regidos por essas políticas de conformidade de terceiros.
-- Uma empresa de jogos cujos dados do cliente são limitados a um nome de usuário, tempos de jogo e pontuações altas não é tão provável que sofram conseqüências significativas, caso se envolvam no comportamento arriscado acima. Embora os dados não seguros estejam em risco, o impacto desse risco é pequeno. Portanto, a tolerância para o risco, nesse caso, é alta.
+- Uma empresa de jogos cujos dados do cliente são limitados a um nome de usuário, tempos de reprodução e pontuações altas não é tão provável que sofra conseqüências significativas além da perda de reputação, caso eles se envolvam no comportamento arriscado acima. Embora os dados não seguros estejam em risco, o impacto desse risco é pequeno. Portanto, a tolerância para o risco, nesse caso, é alta.
 - Uma empresa de médio porte que fornece serviços de limpeza de carpetes a milhares de clientes se enquadraria entre essas duas tolerâncias extremas. Lá, os dados do cliente podem ser mais robustos, contendo detalhes como endereço ou número de telefone. Ambos poderiam ser considerados dados pessoais e devem ser protegidos. No entanto, pode não haver requisitos de governança específicos exigindo a proteção dos dados. De uma perspectiva de TI, a resposta é simples, proteja os dados. De uma perspectiva corporativa, pode não ser tão simples. O corporativo precisaria de mais detalhes antes de determinar um nível de tolerância para esse risco.
 
 A próxima seção compartilha algumas perguntas de exemplo que podem ajudar a empresa a determinar um nível de tolerância a riscos para o caso de uso acima ou outros.
@@ -56,12 +56,13 @@ A próxima seção compartilha algumas perguntas de exemplo que podem ajudar a e
 
 Esta seção lista as perguntas de provocativa de conversa em três categorias: impacto de perda, probabilidade de perda e custos de correção. Quando a empresa e o parceiro de ti atendem a cada uma dessas áreas, a decisão de se empenhar no gerenciamento de riscos e na tolerância geral a um risco específico pode ser facilmente determinada.
 
-**Impacto de perda:** Perguntas para determinar o impacto de um risco. Essas perguntas podem ser difíceis (às vezes impossíveis) de responder. Quantificar o impacto é o ideal, porém, algumas vezes a própria conversa é suficiente para reconhecer a tolerância. Os intervalos também são aceitáveis, especialmente se incluem suposições que determinam esses intervalos.
+**Impacto de perda:** Perguntas para determinar o impacto de um risco. Essas perguntas podem ser difíceis de responder. Quantificar o impacto é o ideal, porém, algumas vezes a própria conversa é suficiente para reconhecer a tolerância. Os intervalos também são aceitáveis, especialmente se incluem suposições que determinam esses intervalos.
 
-- Esse risco viola os requisitos de conformidade de terceiros?
-- Esse risco viola as políticas corporativas internas?
+- Esse risco poderia violar os requisitos de conformidade de terceiros?
+- Esse risco poderia violar as políticas corporativas internas?
+- Esse risco pode causar a perda de vida, a propriedade
 - Esse risco poderia prejudicar clientes ou participação de mercado? Nesse caso, esse custo pode ser quantificado?
-- Esse risco poderia criar experiências negativas para o cliente? Essas experiências podem afetar a percepção de vendas ou receita?
+- Esse risco poderia criar experiências negativas para o cliente? Essas experiências podem afetar as vendas ou a receita?
 - Este risco poderia criar uma nova responsabilidade jurídica? Em caso afirmativo, há uma precedência para compensação por danos nesses tipos de casos?
 - Esse risco poderia interromper as operações de negócios? Em caso afirmativo, por quanto tempo as operações ficariam inativas?
 - Isso poderia resultar em operações de negócios lentas? Em caso afirmativo, qual é a velocidade e quanto tempo?
@@ -74,7 +75,7 @@ Essas perguntas básicas conduzirão a muitas outras. Após explorar um diálogo
 
 **Custos de correção de risco:** Perguntas para determinar o custo da remoção ou minimização do risco. Essas perguntas podem ser bastante diretas, especialmente quando representadas em faixa.
 
-- Há uma solução clara? Qual é o custo?
+- Há uma solução clara e o que isso custa?
 - Há opções para impedir ou minimizar esse risco? Qual é a faixa de custo para essas soluções?
 - O que é necessário do corporativo para escolher a solução clara e ideal?
 - O que é necessário do corporativo para validar os custos?

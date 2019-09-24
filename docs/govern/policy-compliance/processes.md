@@ -4,25 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Estabeleça processos para garantir a conformidade com as políticas corporativas.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: eff80cb530141a64f706d046bb9f76319f03e3c1
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: f6104a3b2f5f2e68016623029ac0e7b71a5e35f1
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030217"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222052"
 ---
 <!-- markdownlint-disable MD026 -->
 
 # <a name="establish-policy-adherence-processes"></a>Estabelecer os processos de conformidade com políticas
-
-<!---
-I've defined policies, I've provided an architecture guide. Now how do I monitor adherence to policy? If there is a violation, how do I enforce the policy?
---->
 
 Após estabelecer as declarações da política de nuvem e elaborar um guia de planejamento, será necessário criar uma estratégia para garantir que a implantação na nuvem permaneça em conformidade com os requisitos da política. Essa estratégia precisará abranger os processos de comunicação e de análise em andamento da sua equipe de governança de nuvem, estabelecer critérios para quando as violações de política exigirem ação e definir os requisitos para sistemas de monitoramento e conformidade automatizados que irão detectar violações e disparar ações de correção.
 
@@ -57,6 +53,8 @@ Planeje avaliar os novos riscos potenciais e atualizar as instruções de polít
 A conformidade com a política exige que a equipe de TI e os desenvolvedores reconheçam os requisitos da política que afetam suas áreas de responsabilidade. Planeje dedicar recursos para documentar decisões e requisitos e instruir todas as equipes relevantes sobre os guias de planejamento que dão suporte aos requisitos da política.
 
 Conforme a política for alterada, atualize regularmente a documentação e os materiais de treinamento e garanta que os esforços educacionais comuniquem os requisitos atualizados e as diretrizes para a equipe de TI relevante.
+
+Em vários estágios de sua jornada de nuvem, talvez você ache melhor consultar os parceiros e os programas de treinamento profissional para aprimorar a educação de sua equipe, tanto tecnicamente quanto de forma conceitual. Além disso, muitos acham que as certificações formais são uma adição valiosa ao seu portfólio de educação e devem ser consideradas.
 
 ### <a name="establish-escalation-paths"></a>Estabelecer caminhos de escalonamento
 

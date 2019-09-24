@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Guia empresarial Standard: Melhorar a disciplina de linha de base de segurança'
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a9b67b20f0f9169f5da7f941615612218ef29f94
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 37d47b0a190506f84ed2b973b44ca731e70ad664
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030887"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223773"
 ---
 # <a name="standard-enterprise-guide-improve-the-security-baseline-discipline"></a>Guia empresarial Standard: Melhorar a disciplina de linha de base de segurança
 
@@ -71,7 +71,7 @@ As alterações a seguir na política ajudarão a corrigir os novos riscos e a i
 
 1. Todos os ativos implantados devem ser categorizados por nível de importância e classificação de dados. As classificações devem ser revisadas pela equipe de governança de nuvem e pelo proprietário do aplicativo antes da implantação na nuvem.
 2. Aplicativos que armazenam ou acessam dados protegidos devem ser gerenciados diferentemente daqueles que não são. No mínimo, eles devem ser segmentados para evitar acesso não intencional de dados protegidos.
-3. Todos os dados protegidos devem ser criptografados quando estão em repouso.
+3. Todos os dados protegidos devem ser criptografados quando estão em repouso. Embora esse seja o padrão para todas as contas de armazenamento do Azure, outras estratégias de criptografia podem ser necessárias, incluindo a criptografia dos dados dentro da conta de armazenamento, a criptografia de VMs e a criptografia no nível do banco de dado se estiver aproveitando o SQL em uma VM (TDE e coluna criptografia).
 4. As permissões elevadas em qualquer segmento que contenha dados protegidos devem ser uma exceção. Essas exceções serão registradas com a equipe de governança de nuvem e auditadas regularmente.
 5. As sub-redes de rede que contêm dados protegidos devem ser isoladas de todas as outras sub-redes. O tráfego de rede entre as sub-redes de dados protegidos será auditado regularmente.
 6. Nenhuma sub-rede que contém os dados protegidos pode ser acessada diretamente pela Internet pública ou em datacenters. O acesso a essas sub-redes deve ser roteado por meio de sub-redes intermediárias. Todo o acesso a essas sub-redes deve vir por meio de uma solução de firewall que pode executar a verificação de pacotes e funções de bloqueio.
@@ -93,35 +93,35 @@ As alterações a seguir na política ajudarão a corrigir os novos riscos e a i
 O design do MVP de governança será alterado para incluir novas políticas do Azure e uma implementação do gerenciamento de custos do Azure. Em conjunto, essas duas alterações de design atenderão às novas declarações da política corporativa.
 
 1. As equipes de Rede e de Segurança de TI definirão os requisitos de rede. A equipe de governança de nuvem dará suporte à conversa.
-1. As equipes de Identidade e Segurança de TI definirão requisitos de identidade e farão as alterações necessárias na implementação local do Active Directory. A equipe de governança de nuvem examinará as alterações.
-1. Crie um repositório no Azure DevOps para armazenar e controlar a versão de todos os modelos do Azure Resource Manager relevantes e configurações com script.
-1. Implementação da Central de Segurança do Azure:
+2. As equipes de Identidade e Segurança de TI definirão requisitos de identidade e farão as alterações necessárias na implementação local do Active Directory. A equipe de governança de nuvem examinará as alterações.
+3. Crie um repositório no Azure DevOps para armazenar e controlar a versão de todos os modelos do Azure Resource Manager relevantes e configurações com script.
+4. Implementação da Central de Segurança do Azure:
     1. Configure a Central de Segurança do Azure para qualquer grupo de gerenciamento que contenha classificações de dados protegidos.
-    1. Defina o provisionamento automático como ativado por padrão para garantir a conformidade da aplicação de patch.
-    1. Estabeleça configurações de segurança do sistema operacional. A equipe de Segurança de TI definirá a configuração.
-    1. Dê suporte à equipe de Segurança de TI no uso inicial da Central de Segurança. Faça a transição do uso da Central de Segurança para a equipe de Segurança de TI, mas mantenha o acesso para aprimorar continuamente a governança.
-    1. Crie um modelo do Resource Manager que reflita as alterações necessárias para a configuração da Central de Segurança em uma assinatura.
-1. Atualize as políticas do Azure para todas as assinaturas:
+    2. Defina o provisionamento automático como ativado por padrão para garantir a conformidade da aplicação de patch.
+    3. Estabeleça configurações de segurança do sistema operacional. A equipe de Segurança de TI definirá a configuração.
+    4. Dê suporte à equipe de Segurança de TI no uso inicial da Central de Segurança. Faça a transição do uso da Central de Segurança para a equipe de Segurança de TI, mas mantenha o acesso para aprimorar continuamente a governança.
+    5. Crie um modelo do Resource Manager que reflita as alterações necessárias para a configuração da Central de Segurança em uma assinatura.
+5. Atualize as políticas do Azure para todas as assinaturas:
     1. Realize uma auditoria e imponha o nível de importância e a classificação de dados para todos os grupos de gerenciamento e assinaturas a fim de identificar todas as assinaturas com classificações de dados protegidos.
-    1. Realize uma auditoria e imponha o uso exclusivo de imagens aprovadas.
-1. Atualize as políticas do Azure para todas as assinaturas que contenham classificações de dados protegidos:
+    2. Realize uma auditoria e imponha o uso exclusivo de imagens aprovadas.
+6. Atualize as políticas do Azure para todas as assinaturas que contenham classificações de dados protegidos:
     1. Realize uma auditoria e imponha o uso exclusivo das funções padrão do RBAC do Azure.
-    1. Realize uma auditoria e imponha a criptografia para todas as contas de armazenamento e arquivos em repouso em nós individuais.
-    1. Realize uma auditoria e imponha a aplicação de um NSG para todas as NICs e sub-redes. As equipes de Rede e de Segurança de TI definirão o NSG.
-    1. Realize uma auditoria e imponha o uso de uma sub-rede de rede aprovada e rede virtual por adaptador de rede.
-    1. Realize uma auditoria e imponha a limitação das tabelas de roteamento definidas pelo usuário.
-    1. Aplique as políticas internas para a configuração do convidado da seguinte maneira:
+    2. Realize uma auditoria e imponha a criptografia para todas as contas de armazenamento e arquivos em repouso em nós individuais.
+    3. Realize uma auditoria e imponha a aplicação de um NSG para todas as NICs e sub-redes. As equipes de Rede e de Segurança de TI definirão o NSG.
+    4. Realize uma auditoria e imponha o uso de uma sub-rede de rede aprovada e rede virtual por adaptador de rede.
+    5. Realize uma auditoria e imponha a limitação das tabelas de roteamento definidas pelo usuário.
+    6. Aplique as políticas internas para a configuração do convidado da seguinte maneira:
         1. Realize uma auditoria para verificar se os servidores Web do Windows estão usando protocolos de comunicação segura.
-        1. Realize uma auditoria para verificar se as configurações de segurança de senha estão definidas corretamente em computadores Linux e Windows.
-1. Configuração do firewall:
+        2. Realize uma auditoria para verificar se as configurações de segurança de senha estão definidas corretamente em computadores Linux e Windows.
+7. Configuração do firewall:
     1. Identifique uma configuração do Firewall do Azure que atenda aos requisitos de segurança necessários. Como alternativa, identifique um dispositivo de terceiros que seja compatível com o Azure.
-    1. Crie um modelo do Resource Manager para implantar o firewall com as configurações necessárias.
-1. Blueprint do Azure:
+    2. Crie um modelo do Resource Manager para implantar o firewall com as configurações necessárias.
+8. Blueprint do Azure:
     1. Crie um novo blueprint chamado `protected-data`.
-    1. Adicione o firewall e os modelos da Central de Segurança do Azure ao blueprint.
-    1. Adicione as novas políticas para assinaturas de dados protegidos.
-    1. Publique o Blueprint em qualquer grupo de gerenciamento que atualmente planeja hospedar dados protegidos.
-    1. Aplique o novo blueprint a cada assinatura afetada, além dos blueprints existentes.
+    2. Adicione o firewall e os modelos da Central de Segurança do Azure ao blueprint.
+    3. Adicione as novas políticas para assinaturas de dados protegidos.
+    4. Publique o Blueprint em qualquer grupo de gerenciamento que atualmente planeja hospedar dados protegidos.
+    5. Aplique o novo blueprint a cada assinatura afetada, além dos blueprints existentes.
 
 ## <a name="conclusion"></a>Conclusão
 

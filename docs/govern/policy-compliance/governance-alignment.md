@@ -4,24 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Alinhar seu guia de design de governança de nuvem com a política corporativa
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 01/04/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: c7be14efe6723a32808ba9bd2ba01f48292305df
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: b1d5562b6e8248f371e01473d141aefecf1554b4
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027467"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223753"
 ---
-<!---
-I've established policies. How to help developers adopt these policies?
-Draft an architecture design guide.
-
-[Aspirational statement] If you're using Azure, you can use one of ours as a starting point. The choose one of the following 6 as a starting point and mold it to fit your policies.
---->
-
 # <a name="align-your-cloud-governance-design-guide-with-corporate-policy"></a>Alinhar seu guia de design de governança de nuvem com a política corporativa
 
 Depois de ter [definido as políticas de nuvem](./policy-definition.md) com base nos seus [riscos identificados](./business-risk.md), você precisará gerar orientação prática que se alinha a essas políticas para sua equipe de TI e desenvolvedores se refiram. O rascunho de um guia de design de governança de nuvem permite especificar opções estruturais, tecnológicas e de processo específicas com base nas instruções de política geradas para cada uma das [cinco disciplinas de governança](../governance-disciplines.md).

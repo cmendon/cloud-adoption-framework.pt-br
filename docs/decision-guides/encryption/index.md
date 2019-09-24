@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: e4b0ab9c886ec8868cd1f630db6c193cadaff234
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 82ad7e2c4e7e7eac375e99daa0815c8482492e15
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023903"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223905"
 ---
 # <a name="encryption-decision-guide"></a>Guia de decisão de criptografia
 
@@ -123,7 +123,7 @@ Para obter mais informações sobre a criptografia e o gerenciamento de chaves n
 - [Visão geral da criptografia do Azure](https://docs.microsoft.com/azure/security/security-azure-encryption-overview). Uma descrição detalhada de como o Azure usa a criptografia para proteger os dados em repouso e em trânsito.
 - [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/key-vault-overview). O Key Vault é o sistema de gerenciamento de chave primária para armazenar e gerenciar chaves de criptografia, segredos e certificados no Azure.
 - [Melhores práticas de segurança de dados e criptografia do Azure](https://docs.microsoft.com/azure/security/azure-security-data-encryption-best-practices). Uma discussão das melhores práticas de segurança e criptografia de dados do Azure.
-- [Computação confidencial no Azure](https://azure.microsoft.com/solutions/confidential-compute/). A iniciativa de computação confidencial do Azure fornece ferramentas e tecnologias para criar ambientes confiáveis de execução ou outros mecanismos de criptografia para proteger os dados em uso.
+- [Computação confidencial no Azure](https://azure.microsoft.com/solutions/confidential-compute). A iniciativa de computação confidencial do Azure fornece ferramentas e tecnologias para criar ambientes confiáveis de execução ou outros mecanismos de criptografia para proteger os dados em uso.
 
 ## <a name="next-steps"></a>Próximas etapas
 

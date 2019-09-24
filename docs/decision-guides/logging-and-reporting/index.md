@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 5a2ce2529073c40abf73432d562d241890a8d805
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 9d2f4a6c8541d8967f26db1a38591c7ce775d5e8
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025671"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223636"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>Guia de decisão de registro em log e relatório
 
@@ -69,7 +69,7 @@ Suposições somente&ndash;locais:
 
 ### <a name="gateway-aggregation"></a>Agregação de gateway
 
-Para cenários em que o valor dos dados telemétricos baseados em nuvem for grande ou os sistemas de monitoramento locais existentes precisarem de dados do log modificados antes de serem processados, um serviço de [agregação de gateway](https://docs.microsoft.com/azure/architecture/patterns/gateway-aggregation.md) de dados do log poderá ser necessário.
+Para cenários em que o valor dos dados telemétricos baseados em nuvem for grande ou os sistemas de monitoramento locais existentes precisarem de dados do log modificados antes de serem processados, um serviço de [agregação de gateway](/azure/architecture/patterns/gateway-aggregation) de dados do log poderá ser necessário.
 
 Um serviço de gateway é implantado no provedor de nuvem. Em seguida, aplicativos e serviços relevantes são configurados para enviar dados telemétricos para o gateway, em vez de um sistema de registro em log padrão. O gateway poderá, em seguida, processar os dados: agregando, combinando ou formatando-os antes de enviá-los ao serviço de monitoramento para ingestão e análise.
 

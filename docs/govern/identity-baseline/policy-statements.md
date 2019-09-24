@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Instruções de política de exemplo de Linha de base de identidade
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: fae5bb8283487ef7724f872fc293def2c1a80071
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 39742436ab6c4a176e40ce8188c13cca55f23521
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028909"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222140"
 ---
 # <a name="identity-baseline-sample-policy-statements"></a>Instruções de política de exemplo de Linha de base de identidade
 
@@ -67,11 +67,11 @@ As instruções de política de exemplo a seguir abordam os riscos de negócios 
 
 **Instrução da política:** A implantação de qualquer aplicativo que exija a autenticação do cliente deve usar um provedor de identidade aprovado que seja compatível com o provedor de identidade principal para usuários internos.
 
-**Possíveis opções de design:** Implemente a [Federação com o Azure Active Directory](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-fed) entre seus provedores de identidade internos e de cliente.
+**Possíveis opções de design:** Implementar a [Federação com Azure Active Directory](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-fed) entre os provedores de identidade interna e do cliente ou aproveitar [Azure Active Directory B2B](https://docs.microsoft.com/azure/active-directory/b2b/what-is-b2b)
 
 ## <a name="identity-reviews"></a>Revisões de identidade
 
-**Risco técnico:** Com o tempo, mudanças na empresa, adição de novas implantações de nuvem ou outras preocupações de segurança podem aumentar os riscos de acesso não autorizado a recursos seguros.
+**Risco técnico:** Conforme a empresa muda ao longo do tempo, a adição de novas implantações em nuvem ou outras questões de segurança pode aumentar os riscos de acesso não autorizado a recursos seguros.
 
 **Instrução da política:** Os processos de governança de nuvem devem incluir revisão trimestral com as equipes de gerenciamento de identidade para identificar atores mal-intencionados ou padrões de uso que devem ser impedidos pela configuração de ativo de nuvem.
 

@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Modelo de Aceleração de implantação
 author: alexbuckgit
 ms.author: abuck
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9543bc1b02d04eb8587949fc0c579dac6a998f7c
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 96b10c0c5494325c2cd7b46c1415dfd544932962
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71026853"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223586"
 ---
 # <a name="deployment-acceleration-template"></a>Modelo de Aceleração de implantação
 

@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Explicação dos constructos de gerenciamento de acesso de recursos no Azure: Azure Resource Manager, assinaturas, grupos de recursos e recursos'
 author: alexbuckgit
 ms.author: abuck
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 46c6de1ecaba5b8278138114b6aa27a2608bfb74
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 87e0918f4d1dad896576d322c8754bc2f6c56fb3
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029753"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223028"
 ---
 # <a name="resource-access-management-in-azure"></a>Gerenciamento de acesso aos recursos no Azure
 
@@ -33,7 +33,7 @@ No Azure, o termo _recurso_ refere-se a uma entidade gerenciada pelo Azure. Por 
 
 ## <a name="what-is-an-azure-resource-group"></a>O que é um grupo de recursos do Azure?
 
-Cada recurso no Azure deve pertencer a um [grupo de recurso](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#resource-groups). Um grupo de recursos é simplesmente um constructo lógico que agrupa vários recursos para que eles possam ser gerenciados como uma única entidade. Por exemplo, os recursos que compartilham um ciclo de vida semelhante, como os recursos para um [aplicativo de n camadas](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/n-tier) podem ser criados ou excluídos como um grupo.
+Cada recurso no Azure deve pertencer a um [grupo de recurso](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#resource-groups). Um grupo de recursos é simplesmente um constructo lógico que agrupa vários recursos para que eles possam ser gerenciados como uma única entidade _com base no ciclo de vida e na segurança_. Por exemplo, os recursos que compartilham um ciclo de vida semelhante, como os recursos para um [aplicativo de n camadas](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/n-tier) podem ser criados ou excluídos como um grupo. Coloque de outra maneira: tudo o que foi reunido, é gerenciado em conjunto e é substituído em conjunto em um grupo de recursos.
 
 ![Diagrama de um grupo de recursos que contém](../../_images/govern/design/governance-1-10.png)
 um recurso*Figura 2-um grupo de recursos contém um recurso.*
@@ -42,7 +42,7 @@ Os grupos de recursos e os recursos que eles contêm são associados a uma **ass
 
 ## <a name="what-is-an-azure-subscription"></a>O que é uma assinatura do Azure?
 
-Uma assinatura do Azure é semelhante a um grupo de recursos em que ele é um constructo lógico que agrupa os grupos de recursos e seus recursos. No entanto, uma assinatura do Azure também é associada aos controles usados pelo Azure Resource Manager. O que isso significa? Examine detalhadamente o Azure Resource Manager para saber mais sobre o relacionamento entre ele e uma assinatura do Azure.
+Uma assinatura do Azure é semelhante a um grupo de recursos em que ele é um constructo lógico que agrupa os grupos de recursos e seus recursos. No entanto, uma assinatura do Azure também é associada aos controles usados pelo Azure Resource Manager. Examine detalhadamente o Azure Resource Manager para saber mais sobre o relacionamento entre ele e uma assinatura do Azure.
 
 ![Diagrama de uma assinatura](../../_images/govern/design/governance-1-11.png)
 do Azure*Figura 3-uma assinatura do Azure.*

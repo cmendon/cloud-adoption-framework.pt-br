@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4da4899038ca86bec2f1d003f9eaaee293119a09
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ec184cc41608452c945e7665eae845a773b7cfbd
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71026470"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223668"
 ---
 # <a name="standard-enterprise-guide-initial-corporate-policy-behind-the-governance-strategy"></a>Guia empresarial Standard: Política corporativa inicial por trás da estratégia de governança
 
@@ -33,7 +33,7 @@ Nesta narra, a equipe de governança de nuvem é composta por dois administrador
 
 A tolerância a riscos atual é alta e o apetite de investir em governança de nuvem é baixo. Dessa forma, os indicadores de tolerância a atuam como um sistema de avisos antecipados para disparar mais investimento de tempo e energia. Se e quando os seguintes indicadores forem observados, você deverá melhorar iterativamente a estratégia de governança.
 
-- **Gerenciamento de custos:** A escala de implantação excede 100 ativos para a nuvem ou de gastos mensal excede 100 milhões de dólares por mês.
+- **Gerenciamento de custos:** A escala de implantação excede os limites predeterminados de número de recursos ou custo mensal.
 - **Linha de base de segurança:** Inclusão dos dados protegidos em planos de adoção definida da nuvem.
 - **Consistência de recursos:** Inclusão de todos os aplicativos críticos em planos de adoção definida da nuvem.
 

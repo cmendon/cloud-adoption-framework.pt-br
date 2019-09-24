@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Declarações da política de amostra de Consistência de Recursos
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 654ec56f2196af4d16b3e19a47ae117b9936b38f
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: f2e15ad1640bec4e289c49a1f9dcf83de7c04ec3
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029522"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221973"
 ---
 # <a name="resource-consistency-sample-policy-statements"></a>Declarações da política de amostra de Consistência de Recursos
 
@@ -74,8 +74,8 @@ As instruções de política de exemplo a seguir abordam os riscos comerciais co
 
 **Instrução da política:** As políticas a seguir serão implementadas:
 
-- As ferramentas de governança devem validar que todos os ativos relacionados a aplicativos críticos ou dados protegidos sejam incluídos no monitoramento para otimização e degradação de recursos.
-- As ferramentas de governança devem validar se o nível apropriado de dados de registro em log está sendo coletado para todos os aplicativos críticos ou dados protegidos.
+- As ferramentas de governança devem validar que todos os ativos estão incluídos no monitoramento de esgotamento de recursos, segurança, conformidade e otimização.
+- As ferramentas de governança devem validar se o nível apropriado de dados de log está sendo coletado para todos os aplicativos e dados.
 
 **Possíveis opções de design:** [Azure monitor](https://docs.microsoft.com/azure/azure-monitor/overview) é o serviço de monitoramento padrão no Azure, e o monitoramento consistente pode ser imposto por meio de [plantas do Azure](https://docs.microsoft.com/azure/governance/blueprints) ao implantar recursos.
 
@@ -85,7 +85,7 @@ As instruções de política de exemplo a seguir abordam os riscos comerciais co
 
 **Instrução da política:** Todos os aplicativos críticos e dados protegidos devem ter soluções de backup e recuperação implementadas para minimizar o impacto nos negócios decorrente de interrupções ou falhas do sistema.
 
-**Possíveis opções de design:** O serviço [Azure Site Recovery] fornece recursos de backup, recuperação e replicação destinados a minimizar a duração da interrupção em cenários de BCDR (Continuidade dos Negócios e Recuperação de Desastres).
+**Possíveis opções de design:** O serviço de [Azure site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) fornece recursos de backup, recuperação e replicação que minimizam a duração da interrupção nos cenários de continuidade dos negócios e recuperação de desastres (BCDR).
 
 ## <a name="next-steps"></a>Próximas etapas
 

@@ -4,21 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Introdução à conformidade regulatória
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: b0bc28f46671c4ccf62bba9f3fa68f14e2b79aee
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: b38b52fc6899000bf5f452425a8b6f26070af7dc
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030012"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222038"
 ---
 # <a name="introduction-to-regulatory-compliance"></a>Introdução à conformidade regulatória
 
-Este é um artigo introdutório sobre conformidade regulatória, portanto, não destina-se a implementar uma estratégia de conformidade. É apenas para conhecimento geral. Informações mais detalhadas sobre as [ofertas de conformidade do Azure](https://aka.ms/allcompliance) estão disponíveis na [central de confiabilidade da Microsoft](https://www.microsoft.com/trustcenter/default.aspx). Além disso, toda a documentação para download está disponível para determinados clientes do Azure no [portal de confiança do serviço da Microsoft](https://servicetrust.microsoft.com).
+Este é um artigo introdutório sobre conformidade regulatória, portanto, não destina-se a implementar uma estratégia de conformidade. Informações mais detalhadas sobre as [ofertas de conformidade do Azure](https://aka.ms/allcompliance) estão disponíveis na [central de confiabilidade da Microsoft](https://www.microsoft.com/trustcenter/default.aspx). Além disso, toda a documentação para download está disponível para determinados clientes do Azure no [portal de confiança do serviço da Microsoft](https://servicetrust.microsoft.com).
 
 A conformidade regulatória refere-se à disciplina e ao processo de garantir que uma empresa siga as leis impostas controlando corpos em sua geografia ou regras exigidas por padrões do setor voluntariamente adotados. Para conformidade regulatória de ti, as pessoas e os processos monitoram sistemas corporativos em um esforço para detectar e evitar violações de políticas e procedimentos estabelecidos por essas leis, regulamentos e padrões de controle. Isso, por sua vez, se aplica a uma ampla gama de processos de monitoramento e imposição. Dependendo do setor e da geografia, esses processos podem se tornar longos e complexos.
 
@@ -42,7 +42,7 @@ Dados pessoais são informações que podem ser usadas para identificar um consu
 
 ## <a name="gdpr"></a>RGPD
 
-Um dos desenvolvimentos mais importantes nesta área é a recente promulgação pela Comissão Europeia do GDPR (Regulamento Geral sobre a Proteção de Dados), concebido para reforçar a proteção de dados para as pessoas dentro da União Europeia. O GDPR exige que os dados sobre indivíduos (como "um nome, um endereço residencial, uma foto, um endereço de email, detalhes do banco, postagens em sites de rede social, informações médicas ou o endereço IP de um computador") sejam mantidos em servidores na UE e não sejam transferidos de ti. Ele também exige que as empresas notifiquem indivíduos de quaisquer violações de dados e exija que as empresas tenham um DPO (responsável pela proteção de dados). Outros países têm ou estão desenvolvendo tipos similares de regulamentos.
+Um dos desenvolvimentos mais importantes nessa área é o Regulamento Geral sobre a Proteção de Dados (GDPR), projetado para reforçar a proteção de dados para indivíduos dentro da União Europeia. O GDPR exige que os dados sobre indivíduos (como "um nome, um endereço residencial, uma foto, um endereço de email, detalhes do banco, postagens em sites de rede social, informações médicas ou o endereço IP de um computador") sejam mantidos em servidores na UE e não sejam transferidos de ti. Ele também exige que as empresas notifiquem indivíduos de quaisquer violações de dados e exija que as empresas tenham um DPO (responsável pela proteção de dados). Outros países têm ou estão desenvolvendo tipos similares de regulamentos.
 
 ## <a name="compliant-foundation-in-azure"></a>Base compatível no Azure
 

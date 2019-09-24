@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: O que é classificação de dados?
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: d293aa5b4427b8f714175b85c6bb5197b53f107a
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 86c57efed1be2760aca607197eb8d28f0151097a
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027055"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223577"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -40,7 +40,7 @@ A seguir, uma lista de classificações de usos da Microsoft. Dependendo do seu 
 
 ## <a name="tagging-data-classification-in-azure"></a>Marcação de classificação de dados no Azure
 
-Cada provedor de nuvem deve oferecer um mecanismo para gravar metadados sobre qualquer ativo. No caso do Azure, as marcas de recurso são a abordagem sugerida para armazenamento de metadados e essas marcas podem ser usadas para aplicar informações de classificação de dados a recursos implantados. Embora a marcação de ativos de nuvem por classificação não seja uma substituição para um processo de classificação de dados formal, ela fornece uma ferramenta valiosa para o gerenciamento de recursos e a aplicação de políticas.
+As marcas de recurso são a abordagem sugerida para armazenamento de metadados e essas marcas podem ser usadas para aplicar informações de classificação de dados a recursos implantados. Embora a marcação de ativos de nuvem por classificação não seja uma substituição para um processo de classificação de dados formal, ela fornece uma ferramenta valiosa para o gerenciamento de recursos e a aplicação de políticas. A [proteção de informações do Azure](https://docs.microsoft.com/azure/information-protection/what-is-information-protection) é uma excelente solução para ajudá-lo a classificar _os dados_ em si, independentemente de onde eles estiverem (no local, no Azure, em outro lugar) e devem ser considerados como parte de uma estratégia de classificação geral.
 
 Para saber mais sobre marcação de recursos no Azure, consulte o artigo em [Uso de marcas para organizar os recursos do Azure](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags).
 

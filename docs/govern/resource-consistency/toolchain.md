@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Ferramentas de consistência de recursos no Azure
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e67d172b936c37aefb6764a304aaaf8f6788ffbe
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: a09e4748dd805757d9f78e8dd927737ca9a91f7f
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027675"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222933"
 ---
 # <a name="resource-consistency-tools-in-azure"></a>Ferramentas de consistência de recursos no Azure
 
@@ -33,16 +33,16 @@ A seguir, é apresentada uma lista de ferramentas nativas do Azure que podem aju
 | Gerenciar acesso condicional aos recursos       | Sim | Sim | sim | Não  | Não  | Não | Não |
 | Configurar usuários do RBAC                         | Sim | Não  | Não  | Não  | Sim | Não | Não |
 | Atribuir funções e permissões para recursos | Sim | Sim | sim | Não  | Sim | Não | Não |
-| Definir dependência entre recursos        | Não  | Sim | sim | Não  | Não  | Não | Não |
+| Definir dependência entre recursos        | Não  | sim | sim | Não  | Não  | Não | Não |
 | Aplicar controle de acesso                         | Sim | Sim | sim | Não  | Sim | Não | Não |
 | Avaliar disponibilidade e escalabilidade          | Não  | Não  | Não  | Sim | Não  | Não | Não |
 | Aplicar marcas aos recursos                      | Sim | Sim | sim | Não  | Não  | Não | Não |
 | Atribuir regras do Azure Policy                    | Sim | Sim | sim | Não  | Não  | Não | Não |
 | Aplicar a correção automatizada                  | Não  | Não  | Não  | Sim | Não  | Não | Não |
 | Gerenciar a cobrança                               | Sim | Não  | Não  | Não  | Não  | Não | Não |
-| Preparar recursos para recuperação de desastre         | Sim | Sim | sim | Não  | Não  | Sim | Sim |
-|Recuperar dados durante uma interrupção ou violação de SLA     | Não | Não  | Não  | Não  | Não  | Sim | Sim |
-|Recuperar aplicativos e dados durante uma interrupção ou violação de SLA     | Não | Não  | Não  | Não  | Não  | Sim | Sim |
+| Preparar recursos para recuperação de desastre         | Sim | Sim | sim | Não  | Não  | sim | Sim |
+|Recuperar dados durante uma interrupção ou violação de SLA     | Não | Não  | Não  | Não  | Não  | sim | Sim |
+|Recuperar aplicativos e dados durante uma interrupção ou violação de SLA     | Não | Não  | Não  | Não  | Não  | sim | Sim |
 
 Junto com essas ferramentas de consistência de recursos e recursos, você precisará monitorar seus recursos implantados para problemas de desempenho e integridade. O [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) é o monitoramento padrão e solução de relatórios no Azure. O Azure Monitor fornece recursos para monitorar seus recursos de nuvem. Esta lista mostra qual recurso aborda os requisitos de monitoramento comuns.
 

@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Motivações de Consistência de Recursos e os riscos de negócios
 author: alexbuckgit
 ms.author: abuck
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 42510f62cb3f673698832403126901789b05e978
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: fd1eb5d9425b87d17613507d3955126ce1437edd
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029114"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222005"
 ---
 # <a name="resource-consistency-motivations-and-business-risks"></a>Motivações de Consistência de Recursos e os riscos de negócios
 
@@ -22,7 +22,7 @@ Este artigo aborda os motivos que os clientes normalmente adotam uma disciplina 
 
 <!-- markdownlint-disable MD026 -->
 
-## <a name="is-resource-consistency-relevant"></a>A Consistência de Recursos é relevante?
+## <a name="resource-consistency-relevancy"></a>Relevância de consistência de recursos
 
 Quando se trata de implantação de recursos e cargas de trabalho, a nuvem oferece maior agilidade e flexibilidade em datacenters mais tradicionais no local. No entanto, essas vantagens potenciais baseadas em nuvem também são fornecidas emparelhadas com possíveis desvantagens de gerenciamento que possam prejudicar seriamente o sucesso da sua adoção da nuvem. Quais ativos você implantou? Quais equipes possuem quais ativos? Você tem recursos suficientes que dão suporte a uma carga de trabalho? Como saber se as cargas de trabalho estão íntegras?
 

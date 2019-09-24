@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Melhoria da disciplina de Consistência de recursos
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 12a1dbd734d4159f814c093c104709b950dddad8
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 84c7a45b52c541ad9efbec4594db022947b3ff40
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71026645"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223013"
 ---
 # <a name="resource-consistency-discipline-improvement"></a>Melhoria da disciplina de Consistência de recursos
 
@@ -101,7 +101,7 @@ A migração é um processo incremental que se concentra no movimento, teste e a
 - Determinar se sua organização requer um alinhamento financeiro mais claro aos demonstrativos de perdas e ganhos para unidades de negócios.
 - Para organizações globais, implementar seus requisitos de conformidade ao SLA ou de soberania.
 - Para a agregação na nuvem, implantar uma solução de gateway em um provedor de nuvem.
-- Para ferramentas que não permitem as opções híbrida ou de gateway, unir firmemente o monitoramento a uma ferramenta de monitoramento operacional.
+- Para ferramentas que não permitem opções híbridas ou de gateway, o monitoramento está rigidamente acoplado com uma ferramenta de monitoramento operacional que abrange todos os data centers e nuvens.
 
 ## <a name="operate-and-post-implementation"></a>Operação e pós-implementação
 

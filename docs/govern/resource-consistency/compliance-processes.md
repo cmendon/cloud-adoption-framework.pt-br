@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Processos de conformidade de política de Consistência de Recursos
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5daec332aa4fdbc75e15bfd9948fe6db52935d20
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: fd44ae6fcdc84efd42ea3f79719475a32ead3111
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030664"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223710"
 ---
 # <a name="resource-consistency-policy-compliance-processes"></a>Processos de conformidade de política de Consistência de Recursos
 
@@ -60,6 +60,7 @@ Os gatilhos e ações de imposição a seguir fornecem exemplos que você pode c
 - **Recurso subprovisionado detectado.** Recursos detectados usando menos de 80% da capacidade de CPU ou memória devem ser dimensionados automaticamente para baixo ou desprovisionar os recursos para reduzir os custos.
 - **Criação de recursos não marcados.** Qualquer solicitação para criar um recurso sem marcas de metadados necessárias será rejeitada automaticamente.
 - **Interrupção de recurso crítico detectada.** A equipe de TI é notificada sobre todas as interrupções detectadas de interrupções de missão crítica. Se a interrupção não for resolvida imediatamente, a equipe irá escalonar o problema e notificar os proprietários da carga de trabalho e a equipe de governança de nuvem. A equipe de governança de nuvem controlará o problema até a resolução e a orientação da atualização se a revisão da política for necessária para evitar futuros incidentes.
+- **Descompasso de configuração.** Os recursos detectados que não estão em conformidade com as linhas de base estabelecidas devem disparar alertas e ser corrigidos automaticamente usando ferramentas de gerenciamento de configuração como a automação do Azure, chefe, Puppet, Ansible, etc.
 
 ## <a name="next-steps"></a>Próximas etapas
 

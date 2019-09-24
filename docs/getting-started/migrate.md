@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 7c35d64e3106c2a34670d4dc05614de087f5d5c3
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ab637312535f1497b8f506cb9636025460a7905b
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023408"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223060"
 ---
 # <a name="getting-started-with-a-cloud-migration-journey"></a>Introdução a uma jornada de migração na nuvem
 
@@ -84,7 +84,7 @@ Conforme ilustrado na imagem acima, essa estrutura alinha decisões estratégica
 - **[Pronto](../ready/index.md):** Preparar os negócios, a cultura, as pessoas e o ambiente para alterações futuras leva a um sucesso em cada esforço e acelera a implementação e a alteração de projetos.
 - **Adotar:** Garanta a implementação adequada das alterações desejadas, em processos de negócios e de ti, para obter resultados de negócios.
   - **[Migrar](../migrate/index.md):** Execução iterativa da [metodologia de implementação de nuvem](#cloud-implementation) aderir ao processo testado de avaliar, migrar, otimizar e proteger & gerenciar para criar um processo repetível para migrar cargas de trabalho.
-- **[Operar](../operating-model/index.md):** Defina um modelo operacional gerenciável para guiar as atividades durante e muito tempo após a adoção.
+- **[Operar](../operate/index.md):** Defina um modelo operacional gerenciável para guiar as atividades durante e muito tempo após a adoção.
   - **[Organizar](../organize/index.md):** Alinhe pessoas e equipes para fornecer operações e adoção adequadas de nuvem.
   - **[Controlar](../govern/index.md):** Alinhe políticas corporativas a riscos tangíveis, atenuadas por meio de políticas, processos e ferramentas de governança baseadas em nuvem.
   - **[Gerenciar](../manage/index.md):** Expanda as operações de ti para garantir que as soluções baseadas em nuvem possam ser operadas por meio de processos seguros e econômicos usando as ferramentas de operações modernas e de primeira nuvem.

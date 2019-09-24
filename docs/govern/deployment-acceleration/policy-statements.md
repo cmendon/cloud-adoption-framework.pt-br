@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Instruções de política de exemplo de Aceleração de implantação
 author: alexbuckgit
 ms.author: abuck
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4a2b1666332ca884dfb95b2b2372f3b5518bd635
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 4de6cced9bb387f2955d644f93523ac4f26931da
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028490"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222654"
 ---
 # <a name="deployment-acceleration-sample-policy-statements"></a>Instruções de política de exemplo de Aceleração de implantação
 
@@ -32,7 +32,7 @@ As instruções de política de exemplo a seguir abordam os riscos de negócios 
 
 **Instrução da política:** Todos os ativos implantados na nuvem devem ser implantados usando modelos ou scripts de automação sempre que possível.
 
-**Possíveis opções de design:** [Modelos do Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#template-deployment) fornecem uma abordagem de infraestrutura como código para implantar seus recursos no Azure. Os [Blocos de Construção do Azure](https://github.com/mspnp/template-building-blocks/wiki) fornecem uma ferramenta de linha de comando e o conjunto de modelos do Gerenciador de Recursos projetados para simplificar a implantação de recursos do Azure.
+**Possíveis opções de design:** [Modelos do Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#template-deployment) fornecem uma abordagem de infraestrutura como código para implantar seus recursos no Azure. Você também pode usar o [Terraform](https://docs.microsoft.com/azure/terraform/terraform-overview) como uma ferramenta de implantação consistente local e baseada em nuvem.
 
 ## <a name="lack-of-visibility-into-system-issues"></a>Falta de visibilidade em problemas de sistema
 
@@ -43,21 +43,21 @@ As instruções de política de exemplo a seguir abordam os riscos de negócios 
 - Medidas métricas principais e diagnósticos serão identificadas para todos os sistemas de produção e os componentes e ferramentas de diagnóstico e monitoramento serão aplicados a esses sistemas e monitorados regularmente pela equipe de operações.
 - As operações considerarão o uso de ferramentas de monitoramento e diagnóstico em ambientes de não produção, como preparo e QA, para identificar problemas do sistema antes que eles ocorram no ambiente de produção.
 
-**Possíveis opções de design:** [O Azure Monitor](https://docs.microsoft.com/azure/azure-monitor), que inclui também o Log Analytics e o Application Insights fornece ferramentas para coletar e analisar a telemetria para ajudar você a entender como estão o desempenho de seus aplicativos e identificar proativamente os problemas afetando-os e os recursos que eles dependem.
+**Possíveis opções de design:** [O Azure Monitor](https://docs.microsoft.com/azure/azure-monitor), que inclui também o Log Analytics e o Application Insights fornece ferramentas para coletar e analisar a telemetria para ajudar você a entender como estão o desempenho de seus aplicativos e identificar proativamente os problemas afetando-os e os recursos que eles dependem. Além disso, o [log de atividades do Azure](https://docs.microsoft.com/azure/azure-monitor/platform/activity-logs-overview) relata todas as alterações que estão sendo feitas no nível da plataforma e deve ser monitorado/auditado quanto a alterações sem conformidade.
 
 ## <a name="configuration-security-reviews"></a>Revisões de segurança de configuração
 
 **Risco técnico:** Ao longo do tempo, novas ameaças à segurança ou preocupações podem aumentar os riscos de acesso não autorizado para proteger os recursos.
 
-**Instrução da política:** Os processos de governança de nuvem devem incluir revisão trimestral com as equipes de gerenciamento de configuração para identificar atores mal-intencionados ou padrões de uso que devem ser impedidos pela configuração de ativo de nuvem.
+**Instrução da política:** Os processos de governança de nuvem devem incluir a análise mensal com as equipes de gerenciamento de configuração para identificar atores mal-intencionados ou padrões de uso que devem ser impedidos pela configuração de ativos de nuvem.
 
-**Possíveis opções de design:** Estabeleça uma reunião de revisão trimestral de segurança que inclui membros da equipe de governança e a equipe de TI responsáveis por recursos e aplicativos de nuvem de configuração. Examine as métricas e os dados de segurança existentes para estabelecer lacunas na política e nas ferramentas de aceleração de implantação atuais, e atualize a política para corrigir quaisquer riscos novos.
+**Possíveis opções de design:** Estabeleça uma reunião de revisão de segurança mensal que inclua membros da equipe de governança e a equipe de ti responsáveis por aplicativos e recursos de nuvem de configuração. Examine as métricas e os dados de segurança existentes para estabelecer lacunas na política e nas ferramentas de aceleração de implantação atuais, e atualize a política para corrigir quaisquer riscos novos.
 
 ## <a name="next-steps"></a>Próximas etapas
 
 Use os exemplos mencionados neste artigo como um ponto de partida para desenvolver políticas que abordam os riscos de negócios específicos que se alinham aos seus planos de adoção de nuvem.
 
-Para começar a desenvolver suas próprias instruções de política personalizadas relacionadas ao gerenciamento de identidade, baixe o [modelo de Linha de base de identidade](./template.md).
+Para começar a desenvolver suas próprias instruções de política personalizadas relacionadas ao gerenciamento de identidade, baixe o [modelo de Linha de base de identidade](../identity-baseline/template.md).
 
 Para acelerar a adoção dessa disciplina, escolha o [Guia de governança acionável](../guides/index.md) que esteja mais alinhado ao seu ambiente. Em seguida, modifique o design para incorporar suas decisões específicas de política corporativa.
 

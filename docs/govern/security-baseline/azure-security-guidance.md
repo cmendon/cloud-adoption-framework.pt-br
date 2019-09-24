@@ -4,23 +4,23 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Quais diretrizes de segurança a Microsoft fornece?
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6a4b256c665e0f4a86bca5a538de9ae950ccd400
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: daad23e411b48414a0eb7ca535345fbd5e64fabd
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030451"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222920"
 ---
 <!-- markdownlint-disable MD026 -->
 
-# <a name="what-security-guidance-does-microsoft-provide"></a>Quais diretrizes de segurança a Microsoft fornece?
+# <a name="microsoft-security-guidance"></a>Diretrizes de segurança da Microsoft
 
-## <a name="security-guidance-and-tools"></a>Diretrizes e ferramentas de segurança
+## <a name="tools"></a>Ferramentas
 
 A Microsoft introduziu a [Plataforma de Confiança do Serviço](https://servicetrust.microsoft.com) e o Gerenciador de Conformidade para ajudar a:
 
@@ -52,7 +52,7 @@ A **STP (Plataforma de Confiança do Serviço)** fornece informações detalhada
 
 ## <a name="unique-intelligent-insights"></a>Insights inteligentes exclusivos
 
-Na medida em que o volume e a complexidade dos sinais de segurança aumentam, determinar se esses sinais são ameaças credíveis para, em seguida, agir, demora muito tempo. A Microsoft oferece uma variedade incomparável de inteligência de segurança oferecida em escala de nuvem para ajudar a detectar e corrigir ameaças rapidamente.
+Na medida em que o volume e a complexidade dos sinais de segurança aumentam, determinar se esses sinais são ameaças credíveis para, em seguida, agir, demora muito tempo. A Microsoft oferece uma variedade incomparável de inteligência de segurança oferecida em escala de nuvem para ajudar a detectar e corrigir ameaças rapidamente. [Leia mais](https://docs.microsoft.com/azure/security-center/security-center-intro)
 
 ## <a name="azure-threat-intelligence"></a>Inteligência contra ameaças do Azure
 

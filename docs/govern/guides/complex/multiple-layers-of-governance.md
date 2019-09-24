@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a0a2674a91b963154d757eb35290b8aeead5c503
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 4efd5b3de5551297a6ef5813a5108f3ad039472c
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027886"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222310"
 ---
 # <a name="governance-guide-for-complex-enterprises-multiple-layers-of-governance"></a>Guia de governança para empresas complexas: Múltiplas camadas de governança
 
@@ -57,4 +57,3 @@ O aspecto importante de cada uma dessas ferramentas é a capacidade de aplicar v
 - **Equipes de adoção de nuvem:** Decisões e implementação detalhadas sobre aplicativos ou cargas de trabalho podem ser feitas por cada equipe de adoção de nuvem, dentro do contexto de requisitos de governança. Às vezes, a equipe também pode solicitar outros modelos de consistência de recursos do Azure para acelerar os esforços de adoção.
 
 Obtenha detalhes sobre a implementação da governança em cada nível exigirá a coordenação entre cada equipe. O MVP de governança e os aprimoramentos de governança descritos neste guia podem ajudar a alinhar essa coordenação.
-

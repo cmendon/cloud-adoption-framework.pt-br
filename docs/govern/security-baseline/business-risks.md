@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Motivações da linha de base de segurança e riscos de negócios
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a77df6b190db7f9fd5f44e233e175670ff7f4855
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 937eb35c07996e57bc51f85090f8e1fd136848f8
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029328"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222289"
 ---
 # <a name="security-baseline-motivations-and-business-risks"></a>Motivações da linha de base de segurança e riscos de negócios
 
@@ -22,7 +22,7 @@ Este artigo aborda os motivos pelos quais os clientes normalmente adotam uma dis
 
 <!-- markdownlint-disable MD026 -->
 
-## <a name="is-a-security-baseline-relevant"></a>É uma Linha de base de segurança relevante?
+## <a name="security-baseline-relevancy"></a>Relevância de linha de base de segurança
 
 A segurança é uma preocupação importante para qualquer organização de TI. As implantações de nuvem enfrentam muitos dos mesmos riscos de segurança como cargas de trabalho hospedadas em datacenters tradicionais no local. No entanto, a natureza das plataformas de nuvem pública, com a falta de propriedade direta do armazenamento de hardware físico e execução das cargas de trabalho, significa que a segurança de nuvem requer sua própria política e processos.
 

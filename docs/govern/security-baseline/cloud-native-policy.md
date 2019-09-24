@@ -4,24 +4,24 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Política de linha de base de segurança nativa da nuvem
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: aef22e31d632a585e59dd946c5c0ef71c13d46de
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 8768f1f9c1496fa53bec7e10432854d5ad16b747
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029738"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222891"
 ---
 # <a name="cloud-native-security-baseline-policy"></a>Política de linha de base de segurança nativa de nuvem
 
 A [Linha de Base de Segurança](./index.md) é uma das [Cinco Disciplinas de Governança de Nuvem](../governance-disciplines.md). Essa disciplina se concentra em tópicos de segurança geral, incluindo a proteção de rede, ativos digitais, dados, etc. Conforme descrito no [Guia de revisão de política](../policy-compliance/cloud-policy-review.md), a estrutura de adoção de nuvem inclui três níveis de política de **exemplo**: Em conformidade com o princípio de design de nuvem, empresarial e nativa para cada uma das disciplinas. Este artigo discute a política de exemplo nativa de nuvem para a disciplina de linha de base de segurança.
 
 > [!NOTE]
-> A Microsoft não está em nenhuma posição de ditar política corporativa ou de TI. Este artigo destina-se a ajudá-lo a se preparar para uma revisão de política interna. Supomos que essa política de exemplo será estendida, validada e testada com a sua política corporativa antes de usá-la. Qualquer uso dessa política de exemplo, como está, não é recomendado.
+> A Microsoft não está em nenhuma posição de ditar política corporativa ou de TI. Este artigo ajudará você a se preparar para uma revisão de política interna. Supomos que essa política de exemplo será estendida, validada e testada com a sua política corporativa antes de usá-la. Qualquer uso dessa política de exemplo como está desencorajado.
 
 ## <a name="policy-alignment"></a>Alinhamento de políticas
 
@@ -54,10 +54,10 @@ O controle de rede inclui configuração, gerenciamento e proteção dos element
 
 Uma política nativa de nuvem para controles de rede pode incluir requisitos como o seguinte:
 
-- Conexões híbridas para recursos locais (embora tecnicamente possível no Azure) podem não ser permitidas em uma política nativa de nuvem. Se uma conexão híbrida se provar necessária, um exemplo de política de segurança corporativa mais robusto seria uma referência mais relevante.
+- Conexões híbridas para recursos locais podem não ser permitidas em uma política nativa de nuvem. Se uma conexão híbrida se provar necessária, um exemplo de política de segurança corporativa mais robusto seria uma referência mais relevante.
 - Os usuários podem estabelecer conexões seguras para e dentro do Azure usando redes virtuais e grupos de segurança de rede.
-- O Firewall do Azure protege os hosts do tráfego de rede mal-intencionados por acesso à porta limitado. Um bom exemplo dessa política é um requisito para bloquear (ou não habilitar) o tráfego diretamente para uma VM pela porta do RDP-TCP/UDP 3389.
-- Serviços como o WAF (firewall do aplicativo Web) do gateway Aplicativo Azure e a proteção contra DDoS do Azure protegem aplicativos e garantem a disponibilidade para máquinas virtuais em execução no Azure. Esses recursos não devem ser desabilitados ou mal utilizados.
+- O Firewall do Azure protege os hosts do tráfego de rede mal-intencionados por acesso à porta limitado. Um bom exemplo dessa política é um requisito para bloquear (ou não habilitar) o tráfego diretamente para uma VM por SSH/RDP.
+- Serviços como o WAF (firewall do aplicativo Web) do gateway Aplicativo Azure e a proteção contra DDoS do Azure protegem aplicativos e garantem a disponibilidade para máquinas virtuais em execução no Azure. Esses recursos não devem ser desabilitados.
 
 ### <a name="data-protection"></a>Proteção de dados
 
@@ -65,8 +65,8 @@ Uma das chaves de proteção de dados na nuvem é responsável por possíveis es
 
 - Controles de criptografia de dados são criados nos serviços integrados de máquinas virtuais para armazenamento e banco de Dados SQL.
 - Como os dados se movem entre nuvens e clientes, isso pode ser protegido usando protocolos de criptografia padrão do setor.
-- O Azure Key Vault permite aos usuários do Azure proteger e controlar chaves de criptografia e outros segredos usados por aplicativos e serviços de nuvem.
-- A Proteção de Informações do Azure ajudará a classificar, rotular e proteger seus dados confidenciais em aplicativos.
+- Azure Key Vault permite que os usuários protejam e controlem chaves criptográficas, senhas, cadeias de conexão e certificados usados por aplicativos e serviços de nuvem.
+- A proteção de informações do Azure ajudará a classificar, rotular e proteger seus dados confidenciais em aplicativos.
 
 Embora esses recursos sejam criados no Azure, cada um dos itens acima requer configuração e pode aumentar os custos. O alinhamento de cada recurso nativo de nuvem com uma [estratégia de classificação de dados](../policy-compliance/data-classification.md) é altamente sugerido.
 
@@ -78,6 +78,7 @@ O monitoramento de segurança é uma estratégia proativa que audita os recursos
 - Monitoramento contínuo e avaliações de segurança para garantir a conformidade e corrigir quaisquer vulnerabilidades.
 - Ferramentas interativas e inteligência de ameaças contextuais para investigação simplificada.
 - Log extensivo e integração com as informações de segurança existentes.
+- Reduz a necessidade de soluções de segurança caras e não integradas.
 
 ### <a name="extending-cloud-native-policies"></a>Estendendo políticas nativas de nuvem
 
@@ -87,7 +88,9 @@ Mesmo com esse investimento em uma linha de base de segurança nativa de nuvem, 
 
 - **VMs seguras.** A segurança deve ser a prioridade mais alta de cada organização e fazê-lo com eficiência requer várias coisas. Você deve avaliar o estado da segurança, proteger contra ameaças à segurança e, em seguida, detectar e responder rapidamente às ameaças que ocorrem.
 - **Proteger o conteúdo da VM.** Configurar os backups automatizados regulares é essencial para proteger contra erros do usuário. No entanto, isso não é suficiente. Você também deve verificar se os backups estão protegidos contra ataques cibernéticos e estão disponíveis quando você precisar deles.
-- **Monitore VMs e aplicativos.** Esse padrão abrange várias tarefas, incluindo obter informações sobre a integridade de suas VMs, interações de compreensão entre eles e o estabelecimento de maneiras de monitorar os aplicativos que executam essas VMs. Todas essas tarefas são essenciais em manter seus aplicativos em execução o tempo todo.
+- **Monitorar aplicativos.** Esse padrão abrange várias tarefas, incluindo obter informações sobre a integridade de suas VMs, interações de compreensão entre eles e o estabelecimento de maneiras de monitorar os aplicativos que executam essas VMs. Todas essas tarefas são essenciais em manter seus aplicativos em execução o tempo todo.
+- **Acesso de dados seguro e de auditoria.** As organizações devem auditar todo o acesso a dados e aproveitar os recursos avançados de aprendizado de máquina para chamar desvios de padrões de acesso regulares.
+- **Prática de failover.** As operações de nuvem que têm tolerâncias baixas para a falha devem ser capazes de fazer failover e/ou recuperação de um incidente de segurança cibernética ou plataforma. Esses procedimentos não devem ser simplesmente documentados, mas devem ser praticado trimestralmente.
 
 ## <a name="next-steps"></a>Próximas etapas
 

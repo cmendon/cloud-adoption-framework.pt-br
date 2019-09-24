@@ -4,21 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Métricas, indicadores e tolerância a riscos da Consistência de Recursos
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e4ec7b4700f80a8ad7b46900ed0f3f869ccfbb94
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 387cc7b320e50628e2f10c25ab49f200878d3636
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027878"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222953"
 ---
 # <a name="resource-consistency-metrics-indicators-and-risk-tolerance"></a>Métricas, indicadores e tolerância a riscos da Consistência de Recursos
 
-Este artigo tem como objetivo ajudar a quantificar a tolerância a riscos de negócios no que diz respeito à Consistência de Recursos. Definir métricas e indicadores ajuda a criar um caso de negócios para investir no amadurecimento da disciplina Consistência de Recursos.
+Este artigo o ajudará a quantificar a tolerância a riscos de negócios, pois ela se relaciona com a consistência dos recursos. Definir métricas e indicadores ajuda a criar um caso de negócios para investir no amadurecimento da disciplina Consistência de Recursos.
 
 ## <a name="metrics"></a>metrics
 
@@ -33,7 +33,7 @@ Cada organização tem cenários operacionais diferentes, mas os itens a seguir 
 - **Idade do recurso.** Tempo desde que o recurso foi implantado ou modificado.
 - **VMs em condição crítica.** Número de máquinas virtuais onde um ou mais problemas críticos são detectados que precisam ser abordados para restaurar a funcionalidade normal.
 - **Alertas por severidade.** Número total de alertas em um ativo de implantado, divididos por gravidade.
-- **Links de sub-rede não íntegros.** Número de recursos com problemas de conectividade de rede.
+- **Links de rede não íntegros.** Número de recursos com problemas de conectividade de rede.
 - **Pontos de extremidade de serviço não íntegros.** Número de problemas com pontos de extremidade de rede externa.
 - **Incidentes de integridade do serviço do provedor de nuvem.** Número de interrupções ou incidentes de desempenho causados pelo provedor de nuvem.
 - **Contratos de nível de serviço.** Isso pode incluir compromissos da Microsoft para atualização e conectividade dos serviços do Azure, bem como compromissos realizados pela empresa para seus clientes internos e externos.

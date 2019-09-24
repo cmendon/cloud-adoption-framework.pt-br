@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Motivações de Gerenciamento de Custos e riscos de negócios
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 328352ac7ccd8cacbc92cc09ce0c07e2843afcf1
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 72d97057484ff757c94ab24a886d1232f01e5ee3
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030016"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223612"
 ---
 # <a name="cost-management-motivations-and-business-risks"></a>Motivações de Gerenciamento de Custos e riscos de negócios
 
@@ -37,9 +37,9 @@ A disciplina de Gerenciamento de Custos tenta abordar riscos comerciais principa
 Os riscos serão diferentes entre a organização, mas os seguintes servem como riscos comuns relacionados a custo que você pode usar como um ponto de partida para discussões em sua equipe de governança de nuvem:
 
 - **Controle de orçamento:** Controlar o orçamento não pode levar a gastos excessivos com um fornecedor de nuvem.
-- **Perda de utilização:** As precompras ou os precompromissos que não são usados podem resultar em investimentos desperdiçados.
+- **Perda de utilização:** As precompras ou os precompromissos que não são usados podem resultar em perda de investimentos.
 - **Anomalias de gastos:** Picos inesperados em qualquer direção podem ser indicadores de uso inapropriado.
-- **Ativos com provisionamento excessivo:** Quando os ativos são implantados em uma configuração que excede as necessidades de um aplicativo ou máquina virtual (VM), podem aumentar os custos e desperdício.
+- **Ativos com provisionamento excessivo:** Quando os ativos são implantados em uma configuração que excede as necessidades de um aplicativo ou VM (máquina virtual), eles podem criar resíduos.
 
 ## <a name="next-steps"></a>Próximas etapas
 

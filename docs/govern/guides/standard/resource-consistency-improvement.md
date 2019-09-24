@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ec9263b1e1ab47e2018d86093a5198cdb1ac7b67
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: bede887bcb4589b286920a79016701961a04b8b6
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030222"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222227"
 ---
 # <a name="standard-enterprise-guide-improving-resource-consistency"></a>Guia empresarial Standard: Melhorando a consistência de recursos
 
@@ -84,31 +84,31 @@ As alterações a seguir na política ajudarão a corrigir os novos riscos e a i
 Esta seção do artigo alterará o design MVP de governança para incluir novas políticas do Azure e uma implementação do gerenciamento de custos do Azure. Em conjunto, essas duas alterações de design atenderão às novas declarações da política corporativa.
 
 1. A equipe de operações de nuvem definirá as ferramentas de monitoramento operacional e as ferramentas de correção automatizadas. A equipe de governança de nuvem dará suporte a esses processos de descoberta. Nesse caso de uso, a equipe de operações de nuvem escolheu Azure Monitor como a principal ferramenta para monitorar aplicativos de missão crítica.
-1. Crie um repositório no Azure DevOps para armazenar e controlar a versão de todos os modelos do Gerenciador de Recursos relevantes e configurações com script.
-1. Implementação do Azure Vault:
-    1. Definir e implantar o Azure Vault para backup e processos de recuperação.
-    1. Criar um modelo do Gerenciador de Recursos para criação de um cofre em cada assinatura.
-1. Atualizar o Azure Policy para todas as assinaturas:
+2. Crie um repositório no Azure DevOps para armazenar e controlar a versão de todos os modelos do Gerenciador de Recursos relevantes e configurações com script.
+3. Implementação do cofre dos serviços de recuperação do Azure:
+    1. Defina e implante o cofre dos serviços de recuperação do Azure para processos de backup e recuperação.
+    2. Criar um modelo do Gerenciador de Recursos para criação de um cofre em cada assinatura.
+4. Atualizar o Azure Policy para todas as assinaturas:
     1. Realize auditoria e imponha o nível de importância e classificação de dados em todas as assinaturas para identificar todas as assinaturas com ativos de missão crítica.
-    1. Realize uma auditoria e imponha o uso de imagens aprovadas apenas.
-1. Implementação do Azure Monitor:
-    1. Depois que uma assinatura de missão crítica for identificada, crie um workspace no Azure Monitor usando o PowerShell. Esse é um processo de pré-implantação.
-    1. Durante o teste de implantação, a equipe de operações de nuvem implanta os agentes e a descoberta de testes necessários.
-1. Atualize o Azure Policy para todas as assinaturas que contêm aplicativos de missão crítica.
+    2. Realize uma auditoria e imponha o uso de imagens aprovadas apenas.
+5. Implementação do Azure Monitor:
+    1. Depois que uma carga de trabalho de missão crítica for identificada, crie um espaço Azure Monitor.
+    2. Durante o teste de implantação, a equipe de operações de nuvem implanta os agentes e a descoberta de testes necessários.
+6. Atualize o Azure Policy para todas as assinaturas que contêm aplicativos de missão crítica.
     1. Realize uma auditoria e imponha a aplicação de um NSG para todas as NICs e sub-redes. Rede e de Segurança de TI definirão o NSG.
-    1. Realize uma auditoria e imponha o uso de sub-redes e VNets para cada interface de rede.
-    1. Realize uma auditoria e imponha a limitação das tabelas de roteamento definidas pelo usuário.
-    1. Audite e imponha a implantação de agentes do Azure Monitor para todas as máquinas virtuais.
-    1. Audite e imponha que o Azure Vault existe na assinatura.
-1. Configuração do firewall:
+    2. Realize uma auditoria e imponha o uso de sub-redes e VNets para cada interface de rede.
+    3. Realize uma auditoria e imponha a limitação das tabelas de roteamento definidas pelo usuário.
+    4. Audite e imponha a implantação de agentes do Azure Monitor para todas as máquinas virtuais.
+    5. Auditar e impor que os cofres dos serviços de recuperação do Azure existam na assinatura.
+7. Configuração do firewall:
     1. Identifique uma configuração do Firewall do Azure que atenda aos requisitos de segurança. Como alternativa, identifique um dispositivo de terceiros que seja compatível com o Azure.
     1. Crie um modelo do Resource Manager para implantar o firewall com as configurações necessárias.
-1. Blueprint do Azure:
+8. Blueprint do Azure:
     1. Crie um novo blueprint do Azure chamado `protected-data`.
-    1. Adicione o firewall e os modelos Azure Vault ao blueprint.
-    1. Adicione as novas políticas para assinaturas de dados protegidos.
-    1. Publique blueprint em qualquer grupo de gerenciamento que se destina a hospedar aplicativos de missão crítica.
-    1. Aplique o novo blueprint a cada assinatura afetada, bem como os blueprints existentes.
+    2. Adicione o firewall e os modelos Azure Vault ao blueprint.
+    3. Adicione as novas políticas para assinaturas de dados protegidos.
+    4. Publique o Blueprint em qualquer grupo de gerenciamento que hospedará aplicativos de missão crítica.
+    5. Aplique o novo blueprint a cada assinatura afetada, bem como os blueprints existentes.
 
 ## <a name="conclusion"></a>Conclusão
 

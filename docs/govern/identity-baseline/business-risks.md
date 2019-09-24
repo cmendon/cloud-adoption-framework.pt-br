@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Motivações da linha de base de identidade e riscos de negócios
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9c838063c77b02af4ec86187854a15d93b2998ef
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: e4203944d6ab5de891f637034d60381290a31c46
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71026850"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222182"
 ---
 # <a name="identity-baseline-motivations-and-business-risks"></a>Motivações da linha de base de identidade e riscos de negócios
 
@@ -22,11 +22,11 @@ Este artigo aborda os motivos que os clientes normalmente adotam uma disciplina 
 
 <!-- markdownlint-disable MD026 -->
 
-## <a name="is-identity-baseline-relevant"></a>É uma Linha de base de identidade relevante?
+## <a name="identity-baseline-relevancy"></a>Relevância de linha de base de identidade
 
 Diretórios locais tradicionais são projetados para permitir que as empresas estritamente controlem permissões e políticas para os usuários, grupos e funções dentro de suas redes internas e datacenters. Geralmente, isso serve para dar suporte a implementações de único locatário, com os serviços aplicáveis somente dentro do ambiente local.
 
-Os serviços de identidade de nuvem destinam-se a expandir a autenticação de uma organização e acessar recursos de controle para a internet. Eles oferecem suporte a multilocação e podem ser usados para gerenciar usuários e política de acesso em aplicativos de nuvem e implantações. Plataformas de nuvem pública têm alguma forma de serviços de identidade nativa de nuvem com suporte a tarefas de gerenciamento e implantação e podem [variar os níveis de integração](../../decision-guides/identity/index.md) com as soluções de identidade locais existentes. Todos esses recursos podem resultar na política de identidade de nuvem que está sendo mais complicada do que suas soluções locais tradicionais exigem.
+Os serviços de identidade de nuvem expandem os recursos de controle de acesso e autenticação de uma organização para a Internet. Eles oferecem suporte a multilocação e podem ser usados para gerenciar usuários e política de acesso em aplicativos de nuvem e implantações. As plataformas de nuvem pública têm serviços de identidade nativos de nuvem que oferecem suporte a tarefas de gerenciamento e implantação e são capazes de [diferentes níveis de integração](../../decision-guides/identity/index.md) com suas soluções de identidade locais existentes. Todos esses recursos podem resultar na política de identidade de nuvem que está sendo mais complicada do que suas soluções locais tradicionais exigem.
 
 A importância da disciplina da Linha de base de identidade para sua implantação de nuvem dependerá do tamanho da sua equipe e precisará integrar sua solução de identidade baseada em nuvem com um serviço de identidade no local. As implantações de teste iniciais podem não exigir muito a respeito da organização do usuário ou de gerenciamento, mas à medida que o seu acervo de nuvem amadurece, provavelmente será necessário dar suporte ao gerenciamento centralizado e integração organizacional mais complicada.
 

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 0c17f9043dd88f401b07293a6b93e50ccefe0137
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ea4596c734e5bef03179569e537aacbca430d77e
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028693"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222321"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-identity-baseline-discipline"></a>Guia de governança para empresas complexas: Melhorar a disciplina de linha de base de identidade
 
@@ -79,14 +79,14 @@ Aqui estão as novas práticas recomendadas:
 - **Plantas de VNet híbrida segura:** O lado local da rede híbrida deve ser configurado para permitir a comunicação entre a solução a seguir e os servidores de Active Directory locais. Essa prática recomendada requer um DMZ para habilitar o Active Directory Domain Services entre os limites de rede.
 - **Modelos do Azure Resource Manager:**
     1. Defina um NSG para bloquear o tráfego externo e permitir o tráfego interno.
-    1. Implante duas máquinas virtuais Active Directory em um par de balanceamento de carga com base em uma imagem dourada. Na primeira inicialização, essa imagem executa um script do PowerShell para ingressar no domínio e registrar-se aos serviços de domínio. Para obter mais informações, consulte [Estendendo o Active Directory Domain Services (AD DS) para o Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adds-extend-domain).
+    2. Implante duas máquinas virtuais Active Directory em um par de balanceamento de carga com base em uma imagem dourada. Na primeira inicialização, essa imagem executa um script do PowerShell para ingressar no domínio e registrar-se aos serviços de domínio. Para obter mais informações, consulte [Estendendo o Active Directory Domain Services (AD DS) para o Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adds-extend-domain).
 - Azure Policy: Aplica o NSG a todos os recursos.
 - Blueprint do Azure:
     1. Criar um blueprint nomeado `active-directory-virtual-machines`.
-    1. Adicione cada um dos modelos de Active Directory e políticas ao plano gráfico.
-    1. Publique o plano gráfico em qualquer grupo de gerenciamento aplicáveis.
-    1. Aplique o plano gráfico a qualquer assinatura que exija autenticação multifator herdada ou de terceiros.
-    1. A instância do Active Directory em execução no Azure agora pode ser usada como uma extensão da solução de Active Directory local, permitindo que ele se integre à ferramenta de autenticação multifator existente e forneça a autenticação baseada em declarações, por meio de funcionalidade de Active Directory existente.
+    2. Adicione cada um dos modelos de Active Directory e políticas ao plano gráfico.
+    3. Publique o plano gráfico em qualquer grupo de gerenciamento aplicáveis.
+    4. Aplique o plano gráfico a qualquer assinatura que exija autenticação multifator herdada ou de terceiros.
+    5. A instância do Active Directory em execução no Azure agora pode ser usada como uma extensão da solução de Active Directory local, permitindo que ele se integre à ferramenta de autenticação multifator existente e forneça a autenticação baseada em declarações, por meio de funcionalidade de Active Directory existente.
 
 ## <a name="conclusion"></a>Conclusão
 

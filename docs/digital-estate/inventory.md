@@ -8,12 +8,12 @@ ms.date: 12/10/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 6b6bbfef4f9e404433119d412cd4bf625cd3b480
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 5c7473fd5966f871bbbeef7dd2e42826b42cecf3
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023493"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222610"
 ---
 # <a name="gather-inventory-data-for-a-digital-estate"></a>Coletar dados de inventário para uma propriedade digital
 
@@ -28,6 +28,9 @@ O inventário que dá suporte a um espaço digital muda dependendo da transforma
 - **Inovação de aplicativos:** O inventário durante um esforço de inovação de aplicativos habilitado para nuvem começa com o cliente. O mapeamento da experiência do cliente do início ao fim é um bom lugar para começar. Alinhar esse mapa a aplicativos, APIs, dados e outros ativos cria um inventário detalhado para análise.
 
 - **Inovação de dados:** Os esforços de inovação de dados habilitados para nuvem concentram-se no produto ou serviço. Um inventário também inclui um mapeamento das oportunidades para interromper o mercado, bem como os recursos necessários.
+
+- **Segurança:** O inventário fornece segurança à compreensão para ajudar a avaliar, proteger e monitorar os ativos da organização.
+
 
 ## <a name="accuracy-and-completeness-of-an-inventory"></a>Precisão e integridade de um inventário
 

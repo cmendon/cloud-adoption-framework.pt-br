@@ -4,21 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Modelo de Consistência de Recursos
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 372f9ca64b87b51b1404d4c47e07e7aa638191b6
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 831c40b2bf8f7e8fb64fc6cddcf8d6817376be00
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71026858"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221911"
 ---
 # <a name="resource-consistency-template"></a>Modelo de Consistência de Recursos
 
-A primeira etapa para implementar a alteração é comunicar a alteração desejada. O mesmo é aplicável ao alterar as práticas de governança. O modelo a seguir serve como um ponto de partida para documentar e comunicar instruções de política que regem o gerenciamento e as operações de ti na nuvem.
+A primeira etapa para implementar a alteração é comunicar o que é desejado. O mesmo é aplicável ao alterar as práticas de governança. O modelo a seguir serve como um ponto de partida para documentar e comunicar instruções de política que regem o gerenciamento e as operações de ti na nuvem.
 
 À medida que suas discussões progredirem, use a estrutura desse modelo como modelo para capturar os riscos de negócios, as tolerâncias de risco, os processos de conformidade e as ferramentas necessárias para definir as instruções da política de consistência de recursos de sua organização.
 

@@ -4,21 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Métricas de Linha de base de segurança, indicadores e tolerância a risco
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 2eeab224a9f025b9e93cf407626455e74d69ccd4
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: b8171839b79ffbe9e3849cf303180d1f1ee049f2
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029121"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222843"
 ---
 # <a name="security-baseline-metrics-indicators-and-risk-tolerance"></a>Métricas de Linha de base de segurança, indicadores e tolerância a risco
 
-Este artigo tem como objetivo ajudar a quantificar a tolerância a riscos de negócios no que diz respeito à Linha de base de segurança. Definir métricas e indicadores ajuda a criar um caso de negócios para investir no amadurecimento da disciplina Linha de Base de Segurança.
+Este artigo o ajudará a quantificar a tolerância a riscos de negócios, pois ela se relaciona com a linha de base de segurança. Definir métricas e indicadores ajuda a criar um caso de negócios para investir no amadurecimento da disciplina Linha de Base de Segurança.
 
 ## <a name="metrics"></a>metrics
 
