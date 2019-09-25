@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Examine as opções disponíveis para racionalizar um espaço digital.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 12/10/2018
+ms.date: 09/16/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 40962b8c658c40e4a27e3c025bc42b3aa5acd0f3
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 35709a6208de54f43cdb51aadb1e32f34a0ba844
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023609"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223859"
 ---
 # <a name="cloud-rationalization"></a>Racionalização de nuvem
 
@@ -69,7 +69,7 @@ Os drivers comuns podem incluir:
 
 - Atualizações mais rápidas e mais curtas
 - Portabilidade do código
-- Maior eficiência de nuvem (recursos, velocidade e custo)
+- Maior eficiência na nuvem (recursos, velocidade, custo, operações gerenciadas)
 
 Fatores de análise quantitativa:
 
@@ -77,6 +77,7 @@ Fatores de análise quantitativa:
 - Dependências (tráfego de rede)
 - Tráfego do usuário (exibições de página, hora na página, tempo de carregamento)
 - Plataforma de desenvolvimento (linguagens, plataforma de dados, serviços de camada intermediária)
+- Banco de dados (CPU, memória, armazenamento, versão)
 
 Fatores de análise qualitativa:
 
@@ -102,6 +103,7 @@ Fatores de análise quantitativa:
 - Dependências (tráfego de rede)
 - Tráfego do usuário (exibições de página, hora na página, tempo de carregamento)
 - Plataforma de desenvolvimento (linguagens, plataforma de dados, serviços de camada intermediária)
+- Banco de dados (CPU, memória, armazenamento, versão)
 
 Fatores de análise qualitativa:
 
@@ -125,6 +127,7 @@ Fatores de análise quantitativa:
 - Dependências (tráfego de rede)
 - Tráfego do usuário (exibições de página, hora na página, tempo de carregamento)
 - Plataforma de desenvolvimento (linguagens, plataforma de dados, serviços de camada intermediária)
+- Banco de dados (CPU, memória, armazenamento, versão)
 
 Fatores de análise qualitativa:
 
@@ -148,6 +151,7 @@ Fatores de análise quantitativa:
 - Tamanho da VM (CPU, memória, armazenamento)
 - Dependências (tráfego de rede)
 - Ativos para desativação
+- Banco de dados (CPU, memória, armazenamento, versão)
 
 Fatores de análise qualitativa:
 
