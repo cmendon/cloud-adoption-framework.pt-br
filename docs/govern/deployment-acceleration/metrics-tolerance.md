@@ -4,21 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Métricas de Aceleração de Implantação, indicadores e tolerância a riscos
 author: alexbuckgit
 ms.author: abuck
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5049b41abc03c5f59d0d750373b48a39b0638084
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: d7a7965acb7b1ace74983c7d0e1e65c3d47b2cc5
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028283"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220697"
 ---
 # <a name="deployment-acceleration-metrics-indicators-and-risk-tolerance"></a>Métricas de Aceleração de Implantação, indicadores e tolerância a riscos
 
-Este artigo tem como objetivo ajudar a quantificar a tolerância a riscos do negócios no que diz respeito à Aceleração de Implantação. Definir métricas e indicadores ajuda a criar um caso de negócios para fazer um investimento no amadurecimento da disciplina de Aceleração de Implantação.
+Este artigo o ajudará a quantificar a tolerância a riscos de negócios, pois ela se relaciona com a aceleração da implantação. Definir métricas e indicadores ajuda a criar um caso de negócios para fazer um investimento no amadurecimento da disciplina de Aceleração de Implantação.
 
 ## <a name="metrics"></a>metrics
 
@@ -34,7 +34,7 @@ Os riscos relacionados à aceleração de implantação em grande parte são rel
 
 <!-- "en-us" location is required for the URL below. -->
 
-Considere adotar um DEvOps ou cultura organizacional [DevSecOps](https://www.microsoft.com/en-us/securityengineering/devsecops) no início de sua jornada de adoção da nuvem. As organizações tradicionais de ti corporativas geralmente têm equipes de operações, segurança e desenvolvimento em silos que, em geral, não colaboram bem ou são ainda antagônicos ou hostis em direção umas às outras. Reconhecer esses desafios no início e integrar os principais stakeholders de cada uma das equipes pode ajudar a garantir a agilidade na sua adoção da nuvem permanecendo seguro e bem governado.
+As organizações tradicionais de ti corporativas geralmente têm equipes de operações, segurança e desenvolvimento em silos que, em geral, não colaboram bem ou são ainda antagônicos ou hostis em direção umas às outras. Reconhecer esses desafios no início e integrar os principais stakeholders de cada uma das equipes pode ajudar a garantir a agilidade na sua adoção da nuvem permanecendo seguro e bem governado. Portanto, deve-se considerar a adoção de uma cultura organizacional DevOps ou [DevSecOps](https://www.microsoft.com/en-us/securityengineering/devsecops) no início da sua jornada de adoção de nuvem. 
 
 Trabalhe com a sua equipe DevSecOps e com os stakeholders da empresa para identificar os [riscos de negócios](./business-risks.md) relacionados à configuração, em seguida, determine uma linha de base aceitável para tolerância a riscos de configuração. Esta seção das diretrizes da estrutura de adoção de nuvem fornece exemplos, mas os riscos e as linhas de base detalhados para sua empresa ou implantações provavelmente serão diferentes.
 

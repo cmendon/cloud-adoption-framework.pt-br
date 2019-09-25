@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Instruções de política de exemplo de Linha de base de segurança
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 253646b16d98a35c8cae8eb7f5c57aa60d55d580
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: f92f3846f0282123fab8049dd47227db0843d955
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028506"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221662"
 ---
 # <a name="security-baseline-sample-policy-statements"></a>Instruções de política de exemplo de Linha de base de segurança
 
@@ -40,7 +40,7 @@ As instruções de política de exemplo a seguir abordam os riscos de negócios 
 
 **Instrução da política:** Todos os dados protegidos devem ser criptografados quando estão em repouso.
 
-**Possível opção de design:** Consulte o artigo da [visão geral da criptografia do Azure](https://docs.microsoft.com/azure/security/security-azure-encryption-overview) para uma discussão sobre como os dados de criptografia em repouso são executados na plataforma do Azure.
+**Possível opção de design:** Consulte o artigo da [visão geral da criptografia do Azure](https://docs.microsoft.com/azure/security/security-azure-encryption-overview) para uma discussão sobre como os dados de criptografia em repouso são executados na plataforma do Azure. Controles adicionais, como a criptografia de dados de conta e o controle sobre como as configurações de conta de armazenamento podem ser alteradas, também devem ser considerados.
 
 ## <a name="network-isolation"></a>Isolamento da rede
 
@@ -56,15 +56,15 @@ As instruções de política de exemplo a seguir abordam os riscos de negócios 
 
 **Instrução da política:** Nenhuma sub-rede que contém os dados protegidos pode ser acessada diretamente pela internet pública ou em datacenters. O acesso a essas sub-redes deve ser roteado por meio de sub-redes intermediárias. Todo o acesso a essas sub-redes deve vir por meio de uma solução de firewall que pode executar a verificação de pacotes e funções de bloqueio.
 
-**Possível opção de design:** No Azure, proteger pontos de extremidade públicos implantando uma [DMZ entre a internet pública e a rede baseada em nuvem](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz).
+**Possível opção de design:** No Azure, proteger pontos de extremidade públicos implantando uma [DMZ entre a internet pública e a rede baseada em nuvem](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz). Considere a implantação, a configuração e a automação do [Firewall do Azure](https://docs.microsoft.com/azure/firewall).
 
 ## <a name="ddos-protection"></a>Proteção contra DDoS
 
 **Risco técnico:** Ataques distribuídos de negação de serviço (DDoS) podem resultar em uma interrupção de negócios.
 
-**Instrução da política:** Implante mecanismos automatizados de mitigação de DDoS para todos os pontos de extremidade de rede acessível publicamente.
+**Instrução da política:** Implante mecanismos automatizados de mitigação de DDoS para todos os pontos de extremidade de rede acessível publicamente. Nenhum site voltado para o público apoiado por IaaS deve ser exposto à Internet sem DDoS.
 
-**Possível opção de design:** Use a [Proteção contra DDoS do Azure](https://docs.microsoft.com/azure/virtual-network/ddos-protection-overview) para minimizar as interrupções causadas por ataques de DDoS.
+**Possível opção de design:** Use a [proteção contra DDoS do Azure](https://docs.microsoft.com/azure/virtual-network/ddos-protection-overview) padrão para minimizar as interrupções causadas por ataques de DDoS.
 
 ## <a name="secure-on-premises-connectivity"></a>Conectividade local segura
 
@@ -88,7 +88,7 @@ As instruções de política de exemplo a seguir abordam os riscos de negócios 
 
 **Instrução da política:** As tendências e explorações potenciais que podem afetar as implantações de nuvem devem ser revisadas regularmente pela equipe de segurança para que sejam fornecidas atualizações às ferramentas de Linha de base de segurança usadas na nuvem.
 
-**Possível opção de design:** Estabeleça uma reunião de análise de segurança regular que inclua membros relevantes da equipe de TI e de governança. Examine as métricas e os dados de segurança existentes para estabelecer lacunas na política atual e nas ferramentas de linha de base de segurança, e atualize a política para corrigir quaisquer riscos novos.
+**Possível opção de design:** Estabeleça uma reunião de análise de segurança regular que inclua membros relevantes da equipe de TI e de governança. Examine as métricas e os dados de segurança existentes para estabelecer lacunas na política atual e nas ferramentas de linha de base de segurança, e atualize a política para corrigir quaisquer riscos novos. Aproveite o [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) e a [central de segurança do Azure](https://docs.microsoft.com/azure/security-center/security-center-intro) para obter informações acionáveis sobre ameaças emergentes específicas às suas implantações.
 
 ## <a name="next-steps"></a>Próximas etapas
 

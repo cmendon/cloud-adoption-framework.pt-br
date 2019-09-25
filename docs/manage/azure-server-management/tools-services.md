@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 854653882b8a07662da092ee4ec0006644000f56
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: dbb00a411eb7905ad557e1acdc2a98d4d03cff49
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027063"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221413"
 ---
 # <a name="azure-server-management-tools-and-services"></a>Ferramentas e serviços de gerenciamento do servidor do Azure
 
@@ -96,4 +96,4 @@ Para saber mais sobre os preços dos serviços de gerenciamento do Azure, acesse
 - [Serviço de Sincronização de Arquivos do Azure](https://azure.microsoft.com/pricing/details/storage/blobs)
 
 > [!NOTE]
-> A solução de Gerenciamento de Atualizações do Azure é gratuita, mas há um pequeno custo relacionado à ingestão de dados. Como regra geral, os primeiros 5 GB por mês de ingestão de dados são gratuitos. Em geral, observamos que cada computador usa cerca de 25 MB por mês. Cerca de 200 máquinas por mês são cobertas gratuitamente. Para cada servidor adicional, multiplique o número de servidores adicionais por 25 MB por mês. Multiplique isso pelo custo de armazenamento para a quantidade total de armazenamento necessária. [Os custos de armazenamento estão disponíveis aqui](https://azure.microsoft.com/pricing/details/storage/). Cada servidor adicional deve ter um impacto nominal no custo.
+> A solução de Gerenciamento de Atualizações do Azure é gratuita, mas há um pequeno custo relacionado à ingestão de dados. Como regra geral, os primeiros 5 GB por mês de ingestão de dados são gratuitos. Em geral, observamos que cada computador usa cerca de 25 MB por mês. Cerca de 200 máquinas por mês são cobertas gratuitamente. Para cada servidor adicional, multiplique o número de servidores adicionais por 25 MB por mês. Multiplique isso pelo custo de armazenamento para a quantidade total de armazenamento necessária. [Os custos de armazenamento estão disponíveis aqui](https://azure.microsoft.com/pricing/details/storage). Cada servidor adicional deve ter um impacto nominal no custo.

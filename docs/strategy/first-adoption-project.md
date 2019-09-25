@@ -8,12 +8,12 @@ ms.date: 5/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 7db1ed24f23ff9ba931e556356c04b6bb127092a
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 590875a336b8af23723ab122e2af8f2290404ab3
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027052"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224142"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -63,7 +63,7 @@ Exemplos adicionais de primeiros projetos de adoção incluem:
 - **Desenvolvimento/teste:** Remova o desenvolvimento/teste de ambientes locais para dar aos desenvolvedores controle, agilidade e capacidade de autoatendimento.
 - **Aplicativos simples (menos de cinco):** Modernizar e migrar um aplicativo simples para obter rapidamente experiência de desenvolvedor e operações.
 - **Laboratórios de desempenho:** Quando você precisar de desempenho em grande escala em uma configuração de laboratório, use a nuvem para provisionar de forma rápida e econômica esses laboratórios por um curto período de tempo.
-- **Plataforma de dados:** Criação de um data Lake com computação escalonável para cargas de trabalho de análise, relatório ou aprendizado de máquina.
+- **Plataforma de dados:** Criação de um data Lake com computação escalonável para análises, relatórios ou cargas de trabalho de aprendizado de máquina e migração para bancos de dados gerenciados usando métodos de despejo/restauração ou serviços de migração de dados.
 
 ## <a name="next-steps"></a>Próximas etapas
 

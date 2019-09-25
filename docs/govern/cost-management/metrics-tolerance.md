@@ -4,21 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Explicação sobre o Gerenciamento de Custos em relação a governança de nuvem
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: be1d4456ac8924c87241089c637fa3aacc38fb47
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 575eace59b33163c1f0020b005bda2ceeb14dc9b
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030015"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220952"
 ---
 # <a name="cost-management-metrics-indicators-and-risk-tolerance"></a>Métricas de Gerenciamento de Custos, indicadores e tolerância a risco
 
-Este artigo tem como objetivo ajudar a quantificar a tolerância a riscos de negócios no que diz respeito ao Gerenciamento de Custos. Definir métricas e indicadores ajuda a criar um caso de negócios para fazer um investimento no amadurecimento da disciplina de Gerenciamento de Custos.
+Este artigo o ajudará a quantificar a tolerância a riscos de negócios, pois ela se relaciona com o gerenciamento de custos. Definir métricas e indicadores ajuda a criar um caso de negócios para fazer um investimento no amadurecimento da disciplina de Gerenciamento de Custos.
 
 ## <a name="metrics"></a>metrics
 

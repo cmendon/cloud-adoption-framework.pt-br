@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 3bc125145afce529507a341eae6b818cceee9330
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 1d4538230ae99fd7c22f53e2873645c9b112e46a
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024026"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224129"
 ---
 # <a name="rehost-an-on-premises-app-to-azure-vms"></a>Hospedar novamente um aplicativo local para VMs do Azure
 
@@ -95,7 +95,7 @@ A Contoso migrará o front-end do aplicativo e as VMs do banco de dados para VMs
 
 **Serviço** | **Descrição** | **Custo**
 --- | --- | ---
-[Migração de Servidor das Migrações para Azure](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-vm) | O serviço orquestra e gerencia a migração de seus aplicativos e cargas de trabalho locais, bem como de instâncias de VM do AWS/GCP. | Durante a replicação para o Azure, são gerados encargos do Armazenamento do Azure. As VMs do Azure são criadas e incorrem em encargos quando ocorre failover. [Saiba mais](https://azure.microsoft.com/pricing/details/azure-migrate/) sobre encargos e preços.
+[Migração de Servidor das Migrações para Azure](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-vm) | O serviço orquestra e gerencia a migração de seus aplicativos e cargas de trabalho locais, bem como de instâncias de VM do AWS/GCP. | Durante a replicação para o Azure, são gerados encargos do Armazenamento do Azure. As VMs do Azure são criadas e incorrem em encargos quando ocorre failover. [Saiba mais](https://azure.microsoft.com/pricing/details/azure-migrate) sobre encargos e preços.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
@@ -144,7 +144,7 @@ Eles configuram estes da seguinte forma:
 
 **Precisa de mais ajuda?**
 
-[Saiba mais](https://docs.microsoft.com/azure/migrate/) sobre como configurar a ferramenta de Migração de Servidor das Migrações para Azure.
+[Saiba mais](https://docs.microsoft.com/azure/migrate) sobre como configurar a ferramenta de Migração de Servidor das Migrações para Azure.
 
 ### <a name="prepare-to-connect-to-azure-vms-after-failover"></a>Preparar para conectar VMs do Azure após o failover
 
@@ -200,8 +200,8 @@ Com a descoberta concluída, é possível começar a replicação de VMs do VMwa
 
 7. Em **Benefício Híbrido do Azure**:
 
-    - Selecione **Não** se não desejar aplicar o Benefício Híbrido do Azure. Clique em **Avançar**.
-    - Selecione **Sim** se você tiver computadores Windows Server cobertos com assinaturas ativas do Software Assurance ou do Windows Server e quiser aplicar o benefício aos computadores que estão sendo migrados. Clique em **Avançar**.
+    - Selecione **Não** se não desejar aplicar o Benefício Híbrido do Azure. Em seguida, clique em **Próximo**.
+    - Selecione **Sim** se você tiver computadores Windows Server cobertos com assinaturas ativas do Software Assurance ou do Windows Server e quiser aplicar o benefício aos computadores que estão sendo migrados. Em seguida, clique em **Próximo**.
 
 8. Em **Computação**, examine o nome da VM, o tamanho, o tipo de disco do sistema operacional e o conjunto de disponibilidade. As VMs devem estar em conformidade com os [requisitos do Azure](https://docs.microsoft.com/azure/migrate/migrate-support-matrix-vmware#agentless-migration-vmware-vm-requirements).
 
@@ -209,7 +209,7 @@ Com a descoberta concluída, é possível começar a replicação de VMs do VMwa
     - **Disco do SO**: especifique o disco do sistema operacional (inicialização) para a VM. O disco do sistema operacional é o disco que tem o carregador de inicialização e o instalador do sistema operacional.
     - **Conjunto de disponibilidade**: se a VM deve estar em um conjunto de disponibilidade do Azure após a migração, especifique-o. O conjunto precisa estar no grupo de recursos de destino especificado para a migração.
 
-9. Em **Discos**, especifique se os discos de VM devem ser replicados no Azure e selecione o tipo de disco (discos gerenciados Premium ou HDD/SSD Standard) no Azure. Clique em **Avançar**.
+9. Em **Discos**, especifique se os discos de VM devem ser replicados no Azure e selecione o tipo de disco (discos gerenciados Premium ou HDD/SSD Standard) no Azure. Em seguida, clique em **Próximo**.
     - Você pode excluir discos da replicação.
     - Se você excluir os discos, eles não estarão presentes na VM do Azure após a migração.
 

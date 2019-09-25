@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 651144a519103c1a35f6a189af88e2f3690ecbfc
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 9992d4ee6fbd955eea44e13a7f4f31c5836ce83a
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028484"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220658"
 ---
 # <a name="governance-guide-for-complex-enterprises-prescriptive-guidance-explained"></a>Guia de governança para empresas complexas: Diretrizes prescritivas explicadas
 
@@ -59,13 +59,17 @@ A decisão sobre qual design de assinatura usar determina como as assinaturas do
 
 ### <a name="resource-consistency"></a>Consistência de recursos
 
-Decisões de consistência de recursos determinam as ferramentas, os processos e os esforços necessários para garantir que os recursos do Azure sejam implantados, configurados e gerenciados de forma consistente em uma assinatura. Nesta narração, a **[consistência hierárquica](../../../decision-guides/resource-consistency/index.md#hierarchical-consistency)** foi escolhida como o padrão de consistência do recurso primário.
+Decisões de consistência de recursos determinam as ferramentas, os processos e os esforços necessários para garantir que os recursos do Azure sejam implantados, configurados e gerenciados de forma consistente em uma assinatura. Nesta narração, a **[consistência da implantação](../../../decision-guides/resource-consistency/index.md#deployment-consistency)** foi escolhida como o padrão de consistência do recurso primário.
 
-- Grupos de recursos devem ser criados para cada aplicativo. Grupos de gerenciamento são criados para cada arquétipo de aplicativo. O Azure Policy deve ser aplicado a todas as assinaturas no grupo de gerenciamento associado.
-- Como parte do processo de implantação, os modelos de Consistência de recursos para todos os ativos devem ser armazenados o controle de origem.
-- Cada grupo de recursos deve associar a um aplicativo ou carga de trabalho específica.
-- A hierarquia do grupo de gerenciamento do Azure definida deve representar a responsabilidade de cobrança e a propriedade de aplicativo usando grupos aninhados.
-- Uma ampla implementação do Azure Policy pode exceder os compromissos de tempo da equipe e pode não fornecer muito valor neste momento. No entanto, uma política padrão simples deve ser criada e aplicada a cada grupo de para impor as primeiras poucas declarações de política de governança de nuvem. Isso serve para definir a implementação de requisitos de governança específicos. Essas implementações poderão então ser aplicadas em todos os ativos implantados.
+- Os grupos de recursos são criados para aplicativos que usam a abordagem do ciclo de vida: tudo que é criado, mantido e desativado juntos deve residir em um único grupo de recursos. Para obter mais informações sobre grupos de recursos, consulte [aqui](../../../decision-guides/resource-consistency/index.md#basic-grouping).
+- O Azure Policy deve ser aplicado a todas as assinaturas do grupo de gerenciamento associado.
+- Como parte do processo de implantação, os modelos de Consistência de recursos do Azure do grupo de recursos devem ser armazenados no controle do código-fonte.
+- Cada grupo de recursos é associado a uma carga de trabalho ou aplicativo específico com base na abordagem do ciclo de vida descrita acima.
+- Os grupos de gerenciamento do Azure permitem a atualização de designs de governança conforme a política corporativa amadurece.
+- Uma ampla implementação do Azure Policy pode exceder os compromissos de tempo da equipe e pode não ser de grande utilidade no momento. No entanto, uma política padrão simples deve ser criada e aplicada a cada grupo de gerenciamento para impor o pequeno número de instruções de políticas de governança de nuvem atual. Essa política definirá a implementação de requisitos de governança específicos. Essas implementações poderão então ser aplicadas em todos os ativos implantados.
+
+>[!IMPORTANT]
+>Sempre que um recurso em um grupo de recursos não compartilhar mais o mesmo ciclo de vida, ele deverá ser movido para outro grupo de recursos. Os exemplos incluem bancos de dados e componentes de rede comuns. Embora eles possam atender ao aplicativo que está sendo desenvolvido, eles também podem atender a outras finalidades e, portanto, devem existir em outros grupos de recursos.
 
 ### <a name="resource-tagging"></a>Marcação de recursos
 
@@ -122,7 +126,7 @@ Se qualquer um dos padrões escolhidos neste guia de governança não se alinhar
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Depois que este guia for implementado, cada equipe de adoção da nuvem poderá continuar com uma base sólida sobre governança. A equipe de governança de nuvem trabalhará em paralelo para atualizar continuamente as políticas corporativas e as disciplinas de governança.
+Depois que este guia for implementado, cada equipe de adoção da nuvem poderá continuar com uma base sólida sobre governança. Ao mesmo tempo, a equipe de governança de nuvem trabalhará para atualizar continuamente as políticas corporativas e as disciplinas de governança.
 
 As duas equipes usarão os indicadores de tolerância para identificar o próximo conjunto de aprimoramentos necessários para continuar a dar suporte à adoção na nuvem. A próxima etapa para essa empresa é a melhoria incremental de sua linha de base de governança para dar suporte a aplicativos com requisitos de autenticação multifator herdados ou de terceiros.
 

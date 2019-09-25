@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: a3a1ae1f49fea514ce2ab194f7e959e428b37ad6
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 242c8a1a054507c3b1134b1126ea95e3ead74d84
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030464"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221362"
 ---
 # <a name="automate-onboarding"></a>Automatizar a integração
 
@@ -21,7 +21,7 @@ Para melhorar a eficiência da implantação dos serviços de gerenciamento do s
 
 ## <a name="onboarding-by-using-automation"></a>Integração usando automação
 
-Este guia tem um repositório GitHub de suporte de código de exemplo, [CloudAdoptionFramework](https://aka.ms/CAF/manage/automation-samples), que fornece scripts de exemplo e modelos de Azure Resource Manager para ajudá-lo a automatizar a implantação dos serviços de gerenciamento do servidor do Azure.
+Este guia tem um repositório GitHub de suporte de código de exemplo, [CloudAdoptionFramework](https://aka.ms/caf/manage/automation-samples), que fornece scripts de exemplo e modelos de Azure Resource Manager para ajudá-lo a automatizar a implantação dos serviços de gerenciamento do servidor do Azure.
 
 Esses arquivos de exemplo ilustram como usar Azure PowerShell cmdlets para automatizar as seguintes tarefas:
 
@@ -33,7 +33,7 @@ Esses arquivos de exemplo ilustram como usar Azure PowerShell cmdlets para autom
 
 4. Habilite Gerenciamento de Atualizações e Controle de Alterações e inventário para o espaço de trabalho.
 
-5. Integrar VMs do Azure usando Azure Policy (uma política instala o agente Log Analytics e Dependency Agent nas VMs do Azure).
+5. Integrar VMs do Azure usando Azure Policy (uma política instala o agente de Log Analytics e o agente de dependência nas VMs do Azure).
 
 6. Integre servidores locais instalando o agente de Log Analytics neles.
 

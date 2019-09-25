@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Aperfeiçoamento da disciplina de Aceleração de implantação
 author: alexbuckgit
 ms.author: abuck
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7cff2c0cbf8fea06ea7ebdfaaade1c8538802639
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: e23dc632df009468c5ec87c9a2862ffacf4b2729
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028491"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220755"
 ---
 # <a name="deployment-acceleration-discipline-improvement"></a>Aperfeiçoamento da disciplina de Aceleração de implantação
 
@@ -52,6 +52,7 @@ Esta fase de maturidade de governança une os resultados de negócios e as estra
 
 - Para novos aplicativos baseados em nuvem, introduza implantações totalmente automatizadas no início do processo de desenvolvimento. Esse investimento melhorará a confiabilidade de seus processos de testes e garantirá a consistência em seus ambientes de desenvolvimento, garantia de qualidade e produção.
 - Armazenar todos os artefatos de implantação como modelos de implantação ou scripts de configuração usando uma plataforma de controle de código-fonte como GitHub ou Azure DevOps.
+- Armazene todos os segredos, senhas, certificados e cadeias de conexão no [Azure Key Vault](https://docs.microsoft.com/azure/key-vault)
 - Considerar um teste do piloto antes de implementar sua [cadeia de ferramentas de Aceleração de implantação](./toolchain.md), garantindo que ele simplifica a suas implantações tanto quanto possível. Aplique comentários dos testes piloto durante a fase de pré-implantação, repetindo conforme necessário.
 - Avaliar a arquitetura lógica e física de seus aplicativos e identifique oportunidades para automatizar a implantação de recursos do aplicativo ou aprimorar as partes da arquitetura usando outros recursos baseados em nuvem.
 - Atualizar o documento das Diretrizes de Arquitetura para incluir a implantação e planos de adoção de usuário e distribuir para os stakeholders.

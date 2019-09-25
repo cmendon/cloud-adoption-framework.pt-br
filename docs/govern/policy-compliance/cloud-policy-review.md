@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Saiba como conduzir uma revisão de política de nuvem.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 167613bd304505bc53128c2864250e5cae80b281
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 7ce392797cf21d9f69ae791eb2db6a6d38c38dfc
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027265"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223842"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -31,7 +31,7 @@ Conforme as empresas amadurecem as políticas corporativas de TI, as dependênci
 As transformações na nuvem criam um ponto de inflexão natural para reconsiderar as decisões herdadas da política do passado. Recursos técnicos e processos padrão consideravelmente alteram na nuvem, como fazem os riscos herdados. Usando o exemplo anterior, a política de backup em fita foi originada do risco de um único ponto de falha, mantendo os dados em um local e a necessidade comercial de minimizar o perfil de risco, reduzindo esse risco. Em uma implantação de nuvem, há várias opções que fornecem a mesma mitigação de riscos, com muito muitos objetivos de tempo de recuperação inferiores (RTO). Por exemplo:
 
 - Uma solução nativa de nuvem pode habilitar a replicação geográfica do banco de dados SQL do Azure.
-- Uma solução híbrida poderia usar Azure Site Recovery para replicar uma carga de trabalho de IaaS para vários datacenters.
+- Uma solução híbrida poderia usar Azure Site Recovery para replicar uma carga de trabalho de IaaS no Azure.
 
 Ao executar uma transformação de nuvem, as políticas geralmente controlam muitas das ferramentas, serviços e processos disponíveis para as equipes de adoção da nuvem. Se essas políticas se baseiam em tecnologias herdadas, elas podem atrapalhar os esforços da equipe para conduzir mudanças. Na pior das hipóteses, políticas importantes são inteiramente ignoradas pela equipe de migração para habilitar soluções alternativas. Nenhum deles é um resultado aceitável.
 
@@ -43,8 +43,8 @@ Para cada uma dessas disciplinas, o processo de revisão segue essas etapas:
 
 1. Políticas de revisão local existentes relacionadas à disciplina específica, procurando dois pontos de dados principais: dependências de legado e riscos comerciais identificados.
 2. Avalie cada risco aos negócios fazendo uma pergunta simples: "O risco de negócios ainda existe em um modelo de nuvem?"
-3. Se o risco ainda existir, reescreva a política ao documentar a mitigação necessária, e não a solução técnica.
-4. Examine a política atualizada com as equipes de adoção da nuvem para entender as soluções possíveis para a atenuação necessária.
+3. Se o risco ainda existir, reescreva a política ao documentar a mitigação de negócios necessária, não a solução técnica.
+4. Examine a política atualizada com as equipes de adoção de nuvem para entender as possíveis soluções técnicas para a mitigação necessária.
 
 ## <a name="example-of-a-policy-review-for-a-legacy-policy"></a>Exemplo de uma revisão de política para uma política de legado
 
@@ -55,6 +55,7 @@ Para fornecer um exemplo do processo, vamos usar novamente a política de backup
   - Um risco de negócios assumido associado ao armazenamento de backups no mesmo local físico que o equipamento de produção.
 - O risco ainda existe? Sim. Até mesmo na nuvem, uma dependência em um único recurso cria algum risco. Há uma probabilidade menor desse risco afetar o negócio que estava presente na solução no local, mas ainda existe o risco.
 - Regravação da política. Em caso de desastre de todo o datacenter, deve existir uma maneira de restaurar os sistemas de produção dentro de 24 horas de interrupção em um datacenter diferente e um local geográfico diferente.
+  - Também é importante considerar que a linha do tempo especificada no requisito acima pode ter sido definida por restrições técnicas que não estão mais presentes na nuvem. Certifique-se de entender as restrições técnicas e os recursos da nuvem antes de simplesmente aplicar um RTO/RPO herdado.
 - Examine com as equipes de adoção da nuvem. Dependendo da solução que está sendo implementada, há vários meios de aderir a esta política de Consistência de Recursos.
 
 ## <a name="next-steps"></a>Próximas etapas

@@ -4,16 +4,16 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Entender os riscos de negócios durante a migração na nuvem
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 26f110e808039fe17ac4186cdafa9e6a200f6fee
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 078ba561384c07cee6ce3a174d1663f7590e228c
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027468"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220406"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -35,7 +35,7 @@ Durante uma transformação, existem os mesmos riscos relativos.
 
 - Durante a experimentação inicial, alguns ativos são implantados com pouco ou nenhum dado relevante. O risco é pequeno.
 - Quando a primeira carga de trabalho é implementada, o risco aumenta um pouco. Esse risco é facilmente corrigido escolhendo um aplicativo inerentemente de baixo risco com uma pequena base de usuários.
-- À medida que mais cargas de trabalho tornam-se online, os riscos alteram a cada liberação. Novos aplicativos são ativados, os riscos alteram.
+- À medida que mais cargas de trabalho tornam-se online, os riscos alteram a cada liberação. Novos aplicativos são ativados e os riscos mudam.
 - Quando uma empresa coloca os primeiros 10 a 20 aplicativos online, o perfil de risco é muito diferente quando o milésimo aplicativo entra em produção na nuvem.
 
 Os ativos acumulados no imóvel local tradicional provavelmente se acumularam ao longo do tempo. A maturidade das equipes de negócios e de TI provavelmente estava crescendo de maneira semelhante. Esse crescimento paralelo pode tender a criar alguma bagagem política desnecessária.
@@ -54,10 +54,10 @@ Por outro lado, uma abordagem do MVP pode permitir que a equipe defina um ponto 
 
 A seguir estão alguns exemplos básicos de riscos de negócios que podem ser incluídos como parte de um MVP:
 
-- Todos os ativos correm o risco de serem encerrados (por erro, engano ou manutenção).
+- Todos os ativos correm o risco de serem excluídos (por erro, engano ou manutenção).
 - Todos os ativos correm o risco de gerar muito gastos.
-- Todos os ativos podem ser comprometidos por senhas fracas.
-- Qualquer ativo com todas as portas abertas expostas à Internet corre o risco de comprometimento.
+- Todos os ativos podem ser comprometidos por senhas fracas ou configurações inseguras.
+- Qualquer ativo com portas abertas expostas à Internet correm o risco de comprometimento.
 
 Os exemplos acima servem para estabelecer os riscos empresariais de MVP como uma teoria. A lista atual será exclusiva para todos os ambientes.
 Depois que o MVP de risco de negócios for estabelecido, ele poderá ser convertido em [políticas](./index.md) para corrigir cada risco.

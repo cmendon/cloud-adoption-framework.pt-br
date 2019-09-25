@@ -4,16 +4,16 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Como um diretor de segurança da informação pode se preparar para a nuvem?
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 10/03/2018
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 935012e6b2de78e4698a7d484da25cf888d00071
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: afde9af7da83bfd8d95847542d5f7236d318121e
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027264"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220448"
 ---
 # <a name="ciso-cloud-readiness-guide"></a>Guia de preparação da nuvem CISO
 

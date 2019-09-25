@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: 055c50ca2a934000b7e8d11927bc5ba1d4f95494
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: d545b977a4c98692ba8503d5512b8cb0d0b7dd0d
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71026462"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224182"
 ---
 # <a name="build-a-business-justification-for-cloud-migration"></a>Criar uma justificativa de negócios para a migração de nuvem
 
@@ -22,7 +22,7 @@ As migrações para a nuvem podem gerar retorno sobre o investimento (ROI) antec
 
 ## <a name="dispelling-cloud-migration-myths"></a>Dissipando mitos sobre a migração para a nuvem
 
-**Mito: a nuvem sempre é mais barata.** Normalmente, acredita-se que operar um datacenter na nuvem é sempre mais barato do que operar um no local. Embora essa suposição geralmente seja verdadeira, nem sempre é o caso. Às vezes, os custos operacionais de nuvem são maiores. Esses custos mais altos geralmente são causados por controle de baixo custo, arquiteturas de sistema desalinhadas, duplicação de processo, configurações do sistema atípicos ou maior custo de equipe. Felizmente, você pode mitigar muitos desses problemas para criar um ROI inicial. Seguir as diretrizes de [criação da justificativa de negócios](#building-the-business-justification) pode ajudá-lo a detectar e evitar esses inalinhamentos. A grafia dos outros mitos descritos aqui também pode ajudar.
+**Mito: A nuvem é sempre mais barata.** Normalmente, acredita-se que operar um datacenter na nuvem é sempre mais barato do que operar um no local. Embora essa suposição geralmente seja verdadeira, nem sempre é o caso. Às vezes, os custos operacionais de nuvem são maiores. Esses custos mais altos geralmente são causados por controle de baixo custo, arquiteturas de sistema desalinhadas, duplicação de processo, configurações do sistema atípicos ou maior custo de equipe. Felizmente, você pode mitigar muitos desses problemas para criar um ROI inicial. Seguir as diretrizes de [criação da justificativa de negócios](#building-the-business-justification) pode ajudá-lo a detectar e evitar esses inalinhamentos. A grafia dos outros mitos descritos aqui também pode ajudar.
 
 **Mito: tudo deve ir para a nuvem.** Na verdade, alguns drivers de negócios podem levá-lo a escolher uma solução híbrida. Antes de finalizar um modelo de negócios, é inteligente concluir uma análise quantitativa de primeira rodada, conforme descrito nos artigos de [imóveis digitais](../digital-estate/5-rs-of-rationalization.md). Para obter mais informações sobre os drivers quantitativos individuais envolvidos na racionalização, consulte [o 5 RS de racionalização](../digital-estate/5-rs-of-rationalization.md). As duas abordagens usarão dados de inventário obtidos facilmente e uma breve análise quantitativa para identificar as cargas de trabalho ou aplicativos que poderiam resultar em custos mais altos na nuvem. Essas abordagens também podem identificar dependências ou padrões de tráfego que exigiriam uma solução híbrida.
 

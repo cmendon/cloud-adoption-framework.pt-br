@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Diretrizes para configurar controles de governança do Azure para várias equipes, várias cargas de trabalho e vários ambientes.
 author: alexbuckgit
 ms.author: abuck
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: d9b1dddff5cadd9219e6dffad87690145214b162
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: d6a21e852ff44a9036f2fbb9d0d0e60a0f4c930f
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71026644"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223946"
 ---
 # <a name="governance-design-for-multiple-teams"></a>Design de governança para várias equipes
 
@@ -26,16 +26,17 @@ Esses requisitos são:
   - A pessoa em sua organização responsável pela propriedade de **assinaturas**.
   - O indivíduo em sua organização responsável pela **infraestrutura de recursos compartilhados** usada para conectar sua rede local a uma rede virtual do Azure.
   - Duas pessoas na sua organização responsáveis pelo gerenciamento de uma **carga de trabalho**.
-- Suporte para vários **ambientes**. Um ambiente é um agrupamento lógico de recursos, como máquinas virtuais, redes virtuais e serviços de roteamento de tráfego de rede. Esses grupos de recursos têm requisitos de segurança e gerenciamento semelhantes e, normalmente, são usados para uma finalidade específica, como teste ou produção. Neste exemplo, o requisito é para três ambientes:
+- Suporte para vários **ambientes**. Um ambiente é um agrupamento lógico de recursos, como máquinas virtuais, redes virtuais e serviços de roteamento de tráfego de rede. Esses grupos de recursos têm requisitos de segurança e gerenciamento semelhantes e, normalmente, são usados para uma finalidade específica, como teste ou produção. Neste exemplo, o requisito é para quatro ambientes:
   - Um **ambiente de infraestrutura compartilhada** que inclui recursos compartilhados por cargas de trabalho em outros ambientes. Por exemplo, uma rede virtual com uma sub-rede do gateway que fornece conectividade para locais.
   - Um **ambiente de produção** com as políticas de segurança mais restritivas. Pode incluir cargas de trabalho voltadas para o ambiente interno ou externo.
-  - Um **ambiente de desenvolvimento** para o trabalho de verificação de conceito e teste. Esse ambiente tem políticas de segurança, conformidade e custo que diferem no ambiente de produção.
+  - Um **ambiente não de produção** para desenvolvimento e teste de trabalho. Esse ambiente tem políticas de segurança, conformidade e custo que diferem no ambiente de produção. No Azure, isso assume a forma de uma assinatura Desenvolvimento/Teste Enterprise.
+  - Um **ambiente de área restrita** para prova de conceito e fins educacionais. Esse ambiente é normalmente atribuído por funcionário que participa de atividades de desenvolvimento e tem controles de segurança operacionais e de procedimentos estritos em vigor para evitar dados corporativos do pouso aqui. No Azure, eles assumem a forma de assinaturas do Visual Studio. Essas assinaturas também _não_ devem estar vinculadas ao Azure Active Directory empresarial.
 - Um **modelo de permissões de privilégio mínimo** no qual os usuários não têm permissões por padrão. O modelo deve oferecer suporte ao seguinte:
-  - Um único usuário confiável no escopo de assinatura com permissão para atribuir direitos de acesso de recursos.
-  - Por padrão, todos os proprietários de carga de trabalho têm seu acesso negado aos recursos. Os direitos de acesso do recurso são concedidos explicitamente pelo usuário único confiável no escopo da assinatura.
-  - Acesso de gerenciamento para os recursos de infraestrutura compartilhada limitado ao proprietário da infraestrutura compartilhada.
-  - Acesso de gerenciamento para cada carga de trabalho restrito ao proprietário da carga de trabalho.
-  - A empresa não deseja ter que gerenciar funções independentemente em cada um dos três ambientes e, portanto, requer o uso de apenas [funções internas](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles) disponíveis no RBAC (controle de acesso baseado em função) do Azure. Se a empresa usava funções RBAC personalizadas, será necessário um processo adicional para sincronizar funções personalizadas entre os três ambientes.
+  - Um único usuário confiável (uma conta de quase serviço) no escopo da assinatura com permissão para atribuir direitos de acesso ao recurso.
+  - Por padrão, todos os proprietários de carga de trabalho têm seu acesso negado aos recursos. Os direitos de acesso ao recurso são concedidos explicitamente pelo único usuário confiável no escopo do grupo de recursos.
+  - Acesso de gerenciamento para os recursos de infraestrutura compartilhada limitados aos proprietários da infraestrutura compartilhada.
+  - Acesso de gerenciamento para cada carga de trabalho restrita ao proprietário da carga de trabalho (em produção) e níveis crescentes de controle conforme o desenvolvimento aumenta de desenvolvimento para teste até a produção.
+  - A empresa não deseja ter que gerenciar funções independentemente em cada um dos três ambientes principais e, portanto, requer o uso de apenas [funções internas](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles) disponíveis no RBAC (controle de acesso baseado em função) do Azure. Se a empresa absolutamente requer funções RBAC personalizadas, processos adicionais seriam necessários para sincronizar funções personalizadas entre os três ambientes.
 - Custo de controle por nome de proprietário de carga de trabalho, ambiente ou ambos.
 
 ## <a name="identity-management"></a>Gerenciamento de identidades
@@ -54,7 +55,7 @@ Quando sua organização se inscreveu para uma conta do Azure, pelo menos um **p
 As identidades de usuário do proprietário da conta do Azure e do administrador global do Azure AD são armazenadas em um sistema de identidade altamente seguro que é gerenciado pela Microsoft. O proprietário da conta do Azure está autorizado a criar, atualizar e excluir assinaturas. O administrador global do Microsoft Azure Active Directory está autorizado a realizar várias ações no Microsoft Azure Active Directory, mas para este guia de design vamos nos concentrar na criação e exclusão de identidade de usuário.
 
 > [!NOTE]
-> Sua organização talvez já tenha um locatário existente do Azure AD, se houver um existente do Office 365 ou a licença do Intune associada à sua conta.
+> Sua organização talvez já tenha um locatário do Azure AD existente se houver uma licença existente do Office 365, do Intune ou do Dynamics associada à sua conta.
 
 O proprietário da conta do Azure tem permissão para criar, atualizar e excluir assinaturas:
 
@@ -134,11 +135,11 @@ Se compararmos cada exemplo aos requisitos, podemos ver que ambos os exemplos d�
 
 Agora que criamos um modelo de permissões de privilégios mínimos, vamos dar uma olhada em algumas aplicações desses modelos de controle. Lembre-se de que os requisitos devem dar suporte aos três ambientes a seguir:
 
-1. **Infraestrutura compartilhada:** Um único grupo de recursos compartilhados por todas as cargas de trabalho. Estes são recursos como gateways de rede, firewalls e serviços de segurança.
-2. **Desenvolver** Vários grupos de recursos que representam várias cargas de trabalho prontas de não produção. Esses recursos são usados para verificação de conceito, teste e outras atividades de desenvolvedor. Esses recursos podem ter um modelo de governança mais flexível para permitir maior agilidade do desenvolvedor.
-3. **Produção** Vários grupos de recursos que representam várias cargas de trabalho de produção. Esses recursos são usados para hospedar os artefatos de aplicativo voltados para o público e o privado. Esses recursos normalmente têm o controle mais completa e modelos de segurança para proteger os recursos, o código do aplicativo e dados contra acesso não autorizado.
+1. **Infraestrutura compartilhada:** Um grupo de recursos compartilhados por todas as cargas de trabalho. Estes são recursos como gateways de rede, firewalls e serviços de segurança.
+2. **Produção** Vários grupos de recursos que representam várias cargas de trabalho de produção. Esses recursos são usados para hospedar os artefatos de aplicativo voltados para o público e o privado. Esses recursos normalmente têm o controle mais completa e modelos de segurança para proteger os recursos, o código do aplicativo e dados contra acesso não autorizado.
+3. **Não produção:** Vários grupos de recursos que representam várias cargas de trabalho prontas de não produção. Esses recursos são usados para desenvolvimento e teste esses recursos podem ter um modelo de governança mais relaxado para permitir maior agilidade do desenvolvedor. A segurança nesses grupos deve aumentar o nível mais próximo de "produção" que um processo de desenvolvimento de aplicativos obtém.
 
-Para cada um desses três ambientes, temos um requisito para controlar dados de custo por **proprietário da carga de trabalho**, **ambiente**, ou ambos. Ou seja, gostaríamos de saber o custo em andamento da **infraestrutura compartilhada**, os custos incorridos por indivíduos em ambos os ambientes de **desenvolvimento** e **produção** e, finalmente, o custo geral de **desenvolvimento** e **produção**.
+Para cada um desses três ambientes, temos um requisito para controlar dados de custo por **proprietário da carga de trabalho**, **ambiente**, ou ambos. Ou seja, você desejará saber o custo contínuo da **infraestrutura compartilhada**, os custos incorridos por indivíduos nos ambientes de **produção** e de **não produção** e, finalmente, o custo geral de **não produção** e  **produção**.
 
 Você já aprendeu que os recursos estão no escopo em dois níveis: **assinatura** e **grupo de recursos**. Portanto, a primeira decisão é como organizar os ambientes por **assinatura**. Há apenas duas possibilidades: uma única assinatura ou várias assinaturas.
 

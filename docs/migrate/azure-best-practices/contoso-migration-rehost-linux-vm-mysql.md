@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: c96ad14ab98dd5a6da1b81eb2f4add6281732da7
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 8056ef1a53a47bc79e106f0fcd4fcf768e3a5126
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024202"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224301"
 ---
 # <a name="rehost-an-on-premises-linux-app-to-azure-vms-and-azure-database-for-mysql"></a>Mudança de host de um aplicativo local em Linux para VMs do Azure e no Banco de Dados do Azure para MySQL
 
@@ -129,7 +129,7 @@ Os administradores da Contoso criam uma conta de armazenamento e um cofre da seg
 
 2. Com a rede e a conta de armazenamento prontas, eles criam um cofre (ContosoMigrationVault) e colocam-no grupo de recursos **ContosoFailoverRG**, na região Leste dos EUA 2 primária.
 
-    ![Cofre dos Serviços de Recuperação](./media/contoso-migration-rehost-linux-vm-mysql/asr-vault.png)
+    ![Cofre de Serviços de Recuperação](./media/contoso-migration-rehost-linux-vm-mysql/asr-vault.png)
 
 **Precisa de mais ajuda?**
 
@@ -420,7 +420,7 @@ Como etapa final no processo de migração, os administradores da Contoso atuali
 
 4. Por fim, ela atualiza os registros DNS para **OSTICKETWEB** em um dos controladores de domínio da Contoso.
 
-    ![Atualizar DNS](./media/contoso-migration-rehost-linux-vm-mysql/update-dns.png)
+    ![Atualizar o DNS](./media/contoso-migration-rehost-linux-vm-mysql/update-dns.png)
 
 ## <a name="clean-up-after-migration"></a>Limpar após a migração
 
@@ -432,7 +432,7 @@ Agora, a Contoso precisa fazer o seguinte:
 - Remover as VMs locais de trabalhos de backup locais.
 - Atualizar a documentação interna para mostrar novos locais e endereços IP.
 - Examinar todos os recursos que interagem com as VMs locais e atualizar as configurações ou documentação relevantes para refletir a nova configuração.
-- A Contoso usou o serviço Migrações para Azure com mapeamento de dependências a fim de avaliar a VM **OSTICKETWEB** para migração. Agora, ela deve remover da VM os agentes (Microsoft Monitoring Agent/agente de dependência) instalados para essa finalidade.
+- A Contoso usou o serviço Migrações para Azure com mapeamento de dependências a fim de avaliar a VM **OSTICKETWEB** para migração. Agora eles devem remover os agentes (o Microsoft Monitoring Agent e o Microsoft Dependency Agent) instalados para essa finalidade, da VM.
 
 ## <a name="review-the-deployment"></a>Revisar a implantação
 

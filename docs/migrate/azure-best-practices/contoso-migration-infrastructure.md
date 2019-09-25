@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: c367bb500cf9271603cab07ac07649607bfc04a4
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 35a7d62236203dd916d99aea8bf67853c86df10a
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024353"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224159"
 ---
 # <a name="deploy-a-migration-infrastructure"></a>Implantar uma infraestrutura de migração
 
@@ -496,7 +496,7 @@ As VNets no centro dos EUA estão resumidas na tabela a seguir.
 
 #### <a name="subnets-in-the-central-us-production-network-vnet-prod-cus"></a>Sub-redes na rede de produção central dos EUA (VNET-PROD-CUS)
 
-Paralelamente à rede de produção na região primária do leste dos EUA 2, há uma rede de produção na região central dos EUA.
+Em paralelo com a rede de produção na região principal leste dos EUA 2, há uma rede de produção na região de EUA Central secundária.
 
 **Sub-rede** | **CIDR** | **Endereços** | **Na Sub-rede**
 --- | --- | --- | ---
@@ -778,7 +778,7 @@ A Contoso criou um modelo de como será a aparência para seus aplicativos.
 
 Os NSGs associados aos ASGs serão configurados com o menor privilégio para garantir que apenas os pacotes permitidos possam fluir de uma parte da rede para seu destino.
 
-**Ação** | **Nome** | **Source** | **Destino** | **Porta**
+**Ação** | **Name** | **Fonte** | **Destino** | **Porta**
 --- | --- | --- | --- | ---
 Allow | AllowiInternetToFE | VNET-HUB-EUS1/IB-TrustZone | APP1-FE 80, 443
 Allow | AllowWebToApp | APP1-FE | APP1-APP | 80, 443

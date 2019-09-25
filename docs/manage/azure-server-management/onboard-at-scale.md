@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 56a989e975625c9d8f0f3db80dab9043dca3a479
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: a5b1d551f52ae8800e9a29d4c8a92c14965645cc
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028933"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221505"
 ---
 # <a name="configure-azure-management-services-at-scale"></a>Configurar os serviços de gerenciamento do Azure em escala
 
@@ -30,7 +30,7 @@ A integração dos serviços de gerenciamento do Azure aos seus servidores envol
 
 Todas as soluções de gerenciamento discutidas em [serviços e ferramentas de gerenciamento do Azure](./tools-services.md) exigem que o agente de log Analytics seja instalado em VMS (máquinas virtuais) do Azure e em servidores locais. Você pode carregar suas VMs do Azure em escala usando Azure Policy. Atribua a política para garantir que o agente esteja instalado em todas as suas VMs do Azure e conectado ao espaço de trabalho do Log Analytics correto.
 
-O Azure Policy tem uma iniciativa de [diretiva](https://docs.microsoft.com/azure/governance/policy/index.md#initiative-definition) interna que inclui o agente de log Analytics e o [Microsoft Dependency Agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-onboard#the-microsoft-dependency-agent), que é exigido pelo Azure monitor para VMs.
+O Azure Policy tem uma iniciativa de [diretiva](/azure/governance/policy/index#initiative-definition) interna que inclui o agente de log Analytics e o [Microsoft Dependency Agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-onboard#the-microsoft-dependency-agent), que é exigido pelo Azure monitor para VMs.
 
 <!-- TODO: Add these when available.
 - [Preview]: Enable Azure Monitor for virtual machine scale sets.

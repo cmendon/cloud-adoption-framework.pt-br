@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: d1953e190e2581d96db443be00aad74a6b94d5f9
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 2616193b01b252a74ad17a241d97bfd0ebc4860c
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028083"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223791"
 ---
 # <a name="small-to-medium-enterprise-guide-multicloud-improvement"></a>Guia empresarial de pequeno a médio porte: Melhoria em nuvem
 
@@ -22,7 +22,7 @@ Este artigo avança na narração adicionando controles para a adoção de nuvem
 
 ## <a name="advancing-the-narrative"></a>Aprimorando a narração
 
-A Microsoft reconhece que os clientes estão adotando várias nuvens para fins específicos. O cliente fictício neste guia não é exceção. Paralelamente ao percurso de adoção do Azure, o sucesso da empresa resultou na aquisição de uma empresa de pequeno porte, mas complementar. Essa empresa está executando todas as suas operações de TI em um provedor de nuvem diferente.
+A Microsoft reconhece que os clientes podem adotar várias nuvens para fins específicos. O cliente fictício neste guia não é exceção. Em paralelo com a jornada de adoção do Azure, o sucesso dos negócios levou à aquisição de um negócio pequeno, mas complementar. Essa empresa está executando todas as suas operações de TI em um provedor de nuvem diferente.
 
 Este artigo descreve as mudanças decorrentes da integração com a nova organização. Para fins da narração, supomos que essa empresa concluiu cada uma das iterações de governança descritas neste guia de governança.
 
@@ -65,23 +65,23 @@ As seguintes alterações na política ajudarão a corrigir os novos riscos e a 
 Esta seção do artigo alterará o design MVP de governança para incluir novas políticas do Azure e uma implementação do gerenciamento de custos do Azure. Juntas, essas alterações de design atenderão às novas instruções de política corporativa.
 
 1. Conectar as redes. Esta etapa é executada pelas equipes de segurança de rede e de ti e com suporte da equipe de governança de nuvem. Adicionar uma conexão do provedor de MPLS/baseado em linha à nova nuvem irá integrar as redes. Adicionar tabelas de roteamento e configurações de firewall irá controlar o acesso e o tráfego entre os ambientes.
-1. Consolidar provedores de identidade. Dependendo das cargas de trabalho que estão sendo hospedadas na nuvem secundária, há uma variedade de opções para a consolidação do provedor de identidade. Seguem alguns exemplos:
+2. Consolidar provedores de identidade. Dependendo das cargas de trabalho que estão sendo hospedadas na nuvem secundária, há uma variedade de opções para a consolidação do provedor de identidade. Seguem alguns exemplos:
     1. Para aplicativos que se autenticam usando o OAuth 2, os usuários do Active Directory na nuvem secundária simplesmente podem ser replicados para o locatário existente do Active Directory Domain Services. Isso garante que todos os usuários podem ser autenticados no locatário.
-    1. Por outro lado, a federação permite UOs fluam para o Active Directory local, em seguida, para a instância do Active Directory Domain Services.
-1. Adicionar ativos ao Azure Site Recovery.
+    2. Por outro lado, a federação permite UOs fluam para o Active Directory local, em seguida, para a instância do Active Directory Domain Services.
+3. Adicionar ativos ao Azure Site Recovery.
     1. Azure Site Recovery foi projetado desde o início como uma ferramenta híbrida ou de nuvem.
-    1. As VMs na nuvem secundária poderão ser protegidas pelos mesmos processos do Azure Site Recovery usados para proteger ativos locais.
-1. Adicione ativos ao gerenciamento de custos do Azure.
+    2. As VMs na nuvem secundária poderão ser protegidas pelos mesmos processos do Azure Site Recovery usados para proteger ativos locais.
+4. Adicione ativos ao gerenciamento de custos do Azure.
     1. O gerenciamento de custos do Azure foi projetado desde o início como uma ferramenta de nuvem.
-    1. Máquinas virtuais na nuvem secundária podem ser compatíveis com o Gerenciamento de Custos do Azure para alguns provedores de nuvem. Custos adicionais podem ser aplicados.
-1. Adicione ativos para o Azure Monitor.
+    2. Máquinas virtuais na nuvem secundária podem ser compatíveis com o Gerenciamento de Custos do Azure para alguns provedores de nuvem. Custos adicionais podem ser aplicados.
+5. Adicione ativos para o Azure Monitor.
     1. O Azure Monitor foi projetado como uma ferramenta de nuvem híbrida desde o início.
-    1. Máquinas virtuais na nuvem secundária podem ser compatíveis com os agentes do Azure Monitor, permitindo que sejam incluídos no Azure Monitor para monitoramento operacional.
-1. Adote as ferramentas de imposição de governança.
+    2. Máquinas virtuais na nuvem secundária podem ser compatíveis com os agentes do Azure Monitor, permitindo que sejam incluídos no Azure Monitor para monitoramento operacional.
+6. Adote as ferramentas de imposição de governança.
     1. A imposição de governança é específica da nuvem.
-    1. As políticas corporativas estabelecidas no guia de governança não são específicas da nuvem. Embora a implementação possa variar da nuvem para nuvem, as políticas podem ser aplicadas ao provedor secundário.
+    2. As políticas corporativas estabelecidas no guia de governança não são específicas da nuvem. Embora a implementação possa variar da nuvem para nuvem, as políticas podem ser aplicadas ao provedor secundário.
 
-À medida que a adoção de nuvem cresce, as alterações de design acima continuarão a ser amadurecedas.
+A adoção de várias nuvens deve estar contida em onde é necessário com base em necessidades técnicas ou em requisitos de negócios específicos. À medida que a adoção de várias nuvens cresce, isso aumenta a complexidade e os riscos de segurança.
 
 ## <a name="conclusion"></a>Conclusão
 

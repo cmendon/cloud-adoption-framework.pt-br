@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 3659f5e965e5a80c3b490f8b106a4cc30f1711a9
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: badf03f3616de8e6612221282aa24996f0b6e8f8
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027889"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221137"
 ---
 # <a name="cloud-monitoring-guide-monitoring-strategy-for-cloud-deployment-models"></a>Guia de monitoramento de nuvem: Estratégia de monitoramento para modelos de implantação em nuvem
 
@@ -35,7 +35,7 @@ A tabela a seguir resume a abordagem recomendada para monitorar cada camada da p
 
 <!-- markdownlint-disable MD033 -->
 
-Camada | Recurso | Escopo | Método
+Camada | Resource | Escopo | Método
 ---|---|---|----
 Aplicativo | Aplicativo baseado na Web em execução em .NET, .NET Core, Java, JavaScript e plataforma node. js em uma VM do Azure, serviços de Azure App, Service Fabric do Azure, Azure Functions e serviços de nuvem do Azure | Monitore um aplicativo Web ao vivo para detectar automaticamente anomalias de desempenho, identificar exceções de código e problemas e coletar telemetria de usabilidade. |  Application Insights
 Contêineres | Instâncias de contêiner do Azure/serviço kubernetes do Azure | Monitore a capacidade, a disponibilidade e o desempenho das cargas de trabalho em execução em contêineres e instâncias de contêiner. | Azure Monitor para contêineres
@@ -50,7 +50,7 @@ Locatário do Azure|Active Directory do Azure || Habilite o log de diagnóstico 
 
 ## <a name="hybrid-cloud-monitoring"></a>Monitoramento de nuvem híbrida
 
-Atualmente, esta seção está em desenvolvimento para fornecer um conjunto abrangente de recomendações destinadas a resolver seu interesse para esse modelo de nuvem e será disponibilizada em breve.  
+Esta seção está em desenvolvimento no momento para fornecer um conjunto abrangente de recomendações que abordam seu interesse para esse modelo de nuvem e serão disponibilizadas em breve.  
 
 ## <a name="private-cloud-monitoring"></a>Monitoramento de nuvem privada
 

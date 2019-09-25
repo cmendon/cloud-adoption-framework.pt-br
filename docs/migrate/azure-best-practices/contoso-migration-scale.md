@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 52e78e6f1e9dd5ee19b9def9a1b9cb4cbcc869ae
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: fbb1e57d1073286d9b92db96dbf923eb28612f49
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023986"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224088"
 ---
 # <a name="scale-a-migration-to-azure"></a>Dimensionar uma migração para o Azure
 
@@ -212,7 +212,7 @@ A Contoso está usando principalmente algumas ferramentas e serviços do Azure p
 - [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview): Orquestra a recuperação de desastre e migra VMs locais para o Azure.
 - [Serviço de Migração de Banco de Dados do Azure](https://docs.microsoft.com/azure/dms/dms-overview): Migra bancos de dados locais, como SQL Server, MySQL e Oracle, para o Azure.
 
-#### <a name="azure-site-recovery"></a>do Azure Site Recovery
+#### <a name="azure-site-recovery"></a>Azure Site Recovery
 
 O Azure Site Recovery é o principal serviço do Azure para orquestrar a recuperação de desastres e a migração de dentro do Azure e de sites locais para o Azure.
 
@@ -225,7 +225,7 @@ A Contoso já [concluiu uma POC](./contoso-migration-rehost-vm.md) para ver como
 
 A Contoso planeja executar várias migrações "lift-and-shift". Para garantir que isso funcione, o Site Recovery replicará lotes de cerca de 100 VMs por vez. Para descobrir como isso vai funcionar, a Contoso precisa executar o planejamento de capacidade para a migração do Site Recovery proposta.
 
-- A Contoso precisa coletar informações sobre os volumes de tráfego. Em particular:
+- A Contoso precisa coletar informações sobre os volumes de tráfego. Especificamente:
   - A Contoso precisa determinar a taxa de alteração para VMs que deseja replicar.
   - A Contoso também precisa considerar a conectividade de rede do site local para o Azure.
 - Em resposta aos requisitos de capacidade e volume, a Contoso precisa alocar largura de banda suficiente com base na taxa de alteração diária de dados para as VMs necessárias para atender a seu RPO (objetivo de ponto de recuperação).

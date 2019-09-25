@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 8cc3c5564d51a096f2794ec62e50c19a2a8e740c
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 8f9bd9d7dadbd880265cc441b1e927ab835165cb
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029322"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223840"
 ---
 # <a name="standard-enterprise-guide-prescriptive-guidance-explained"></a>Guia empresarial Standard: Diretrizes prescritivas explicadas
 
@@ -61,7 +61,7 @@ A decisão sobre qual design de assinatura usar determina como as assinaturas do
 
 Decisões de consistência de recursos determinam as ferramentas, os processos e os esforços necessários para garantir que os recursos do Azure sejam implantados, configurados e gerenciados de forma consistente em uma assinatura. Nesta narração, a **[consistência da implantação](../../../decision-guides/resource-consistency/index.md#deployment-consistency)** foi escolhida como o padrão de consistência do recurso primário.
 
-- Os grupos de recursos são criados para aplicativos que usam a abordagem do ciclo de vida: tudo o que é criado juntos é mantido em conjunto e os rearos juntos podem residir em um único grupo de recursos.
+- Os grupos de recursos são criados para aplicativos que usam a abordagem do ciclo de vida: tudo que é criado, mantido e desativado juntos deve residir em um único grupo de recursos. Para obter mais informações sobre grupos de recursos, consulte [aqui](../../../decision-guides/resource-consistency/index.md#basic-grouping).
 - O Azure Policy deve ser aplicado a todas as assinaturas do grupo de gerenciamento associado.
 - Como parte do processo de implantação, os modelos de Consistência de recursos do Azure do grupo de recursos devem ser armazenados no controle do código-fonte.
 - Cada grupo de recursos é associado a uma carga de trabalho ou aplicativo específico com base na abordagem do ciclo de vida descrita acima.
@@ -116,7 +116,7 @@ Se qualquer um dos padrões selecionados neste guia de governança não se alinh
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Depois que este guia for implementado, cada equipe de adoção da nuvem poderá continuar o trabalho com uma base sólida sobre governança. A equipe de governança de nuvem trabalhará em paralelo para atualizar continuamente as políticas corporativas e as disciplinas de governança.
+Depois que este guia for implementado, cada equipe de adoção da nuvem poderá continuar o trabalho com uma base sólida sobre governança. Ao mesmo tempo, a equipe de governança de nuvem trabalhará para atualizar continuamente as políticas corporativas e as disciplinas de governança.
 
 As duas equipes usarão os indicadores de tolerância para identificar o próximo conjunto de aprimoramentos necessários para continuar a dar suporte à adoção na nuvem. Para a empresa fictícia neste guia, a próxima etapa é melhorar a linha de base de segurança para dar suporte à movimentação de dados protegidos para a nuvem.
 

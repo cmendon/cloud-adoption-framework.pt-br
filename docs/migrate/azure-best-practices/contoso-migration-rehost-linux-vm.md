@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: a2186172248dcaf3006fc7fe0d55fa8174910c6a
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 579f6eb761a6e59ab179e99c4c607f87897b4215
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025006"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224177"
 ---
 # <a name="rehost-an-on-premises-linux-app-to-azure-vms"></a>Hospede novamente um aplicativo Linux local para VMs do Azure
 
@@ -79,7 +79,7 @@ A Contoso avalia o design proposto reunindo uma lista de prós e contras.
 A Contoso migrará da seguinte maneira:
 
 - Como primeira etapa, a Contoso prepara e configura os componentes do Azure para a Migração de Servidor das Migrações para Azure e prepara a infraestrutura do VMware local.
-- Eles já têm a [infraestrutura do Azure](./contoso-migration-infrastructure.md) estabelecida, portanto, a Contoso precisa apenas adicionar e configurar a replicação das VMs usando a ferramenta de Migração de Servidor das Migrações para Azure. 
+- Eles já têm a [infraestrutura do Azure](./contoso-migration-infrastructure.md) estabelecida, portanto, a Contoso precisa apenas adicionar e configurar a replicação das VMs usando a ferramenta de Migração de Servidor das Migrações para Azure.
 - Com tudo preparado, a Contoso pode iniciar a replicação das VMs.
 - Depois que a replicação estiver habilitada e funcionando, a Contoso migrará a VM efetuando failover para o Azure.
 
@@ -89,8 +89,7 @@ A Contoso migrará da seguinte maneira:
 
 **Serviço** | **Descrição** | **Custo**
 --- | --- | ---
-[Migração de Servidor das Migrações para Azure](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-linux-vm) | O serviço orquestra e gerencia a migração de seus aplicativos e cargas de trabalho locais, bem como de instâncias de VM do AWS/GCP. | Durante a replicação para o Azure, são gerados encargos do Armazenamento do Azure. As VMs do Azure são criadas e incorrem em encargos quando ocorre failover. [Saiba mais](https://azure.microsoft.com/pricing/details/azure-migrate/) sobre encargos e preços.
-
+[Migração de Servidor das Migrações para Azure](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-linux-vm) | O serviço orquestra e gerencia a migração de seus aplicativos e cargas de trabalho locais, bem como de instâncias de VM do AWS/GCP. | Durante a replicação para o Azure, são gerados encargos do Armazenamento do Azure. As VMs do Azure são criadas e incorrem em encargos quando ocorre failover. [Saiba mais](https://azure.microsoft.com/pricing/details/azure-migrate) sobre encargos e preços.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
@@ -113,7 +112,7 @@ Veja o que a Contoso precisa para esse cenário.
 
 > [!div class="checklist"]
 >
-> - **Etapa 1: Preparar o Azure para a Migração de Servidor das Migrações para Azure.** Eles adicionam a ferramenta de Migração de Servidor ao projeto das Migrações para Azure. 
+> - **Etapa 1: Preparar o Azure para a Migração de Servidor das Migrações para Azure.** Eles adicionam a ferramenta de Migração de Servidor ao projeto das Migrações para Azure.
 > - **Etapa 2: Preparar o VMware local para a Migração de Servidor das Migrações para Azure.** Eles preparam contas para a descoberta de VMs e se preparam para a conexão com VMs do Azure após o failover.
 > - **Etapa 3: Replicar as VMs.** Configuram a replicação e começam a replicar as VMs para armazenamento do Azure.
 > - **Etapa 4: Migrar as VMs com a Migração de Servidor das Migrações para Azure.** Executam um failover de teste para certificar-se de que tudo está funcionando e, em seguida, executam um failover completo para migrar as VMs para o Azure.
@@ -123,26 +122,24 @@ Veja o que a Contoso precisa para esse cenário.
 Aqui estão os componentes do Azure que a Contoso precisa para migrar as máquinas virtuais para o Azure:
 
 - Uma rede virtual na qual as VMs do Azure serão localizadas quando forem criadas durante o failover.
-- A ferramenta de Migração de Servidor das Migrações para Azure provisionada. 
+- A ferramenta de Migração de Servidor das Migrações para Azure provisionada.
 
 Eles configuram estes da seguinte forma:
 
-1. Configurar uma rede – a Contoso já configurou uma rede que pode ser usada para a Migração de Servidor das Migrações para Azure quando [implantou a infraestrutura do Azure](./contoso-migration-infrastructure.md)
+1. **Configurar uma rede:** A contoso já configurou uma rede que pode ser para migração de servidor de migrações para Azure quando [implantou a infraestrutura do Azure](./contoso-migration-infrastructure.md)
 
     - O aplicativo SmartHotel360 é um aplicativo de produção e as VMs serão migradas para a rede de produção do Azure (VNET-PROD-EUS2) na região primária do leste dos EUA 2.
     - As duas máquinas virtuais serão colocadas no grupo de recursos ContosoRG, que é usado para recursos de produção.
     - A VM do front-end do aplicativo (WEBVM) migrará para a sub-rede de front-end (PROD-FE-EUS2), na rede de produção.
     - A VM do banco de dados do aplicativo (SQLVM) será migrada para a sub-rede do banco de dados (PROD-DB-EUS2), na rede de produção.
 
-
-2. Provisionar a ferramenta de Migração de Servidor das Migrações para Azure – com a rede e a conta de armazenamento prontas, a Contoso cria um cofre dos Serviços de Recuperação (ContosoMigrationVault) e coloca-o no grupo de recursos ContosoFailoverRG na região Leste dos EUA 2 primária.
+2. **Provisione a ferramenta de migração de servidor de migrações para Azure:** Com a conta de armazenamento e a rede prontos, a Contoso agora cria um cofre de Serviços de Recuperação (ContosoMigrationVault) e coloca-o no grupo de recursos ContosoFailoverRG na região Leste dos EUA 2 primária.
 
     ![Ferramenta de Migração de Servidor das Migrações para Azure](./media/contoso-migration-rehost-linux-vm/server-migration-tool.png)
 
 **Precisa de mais ajuda?**
 
-[Saiba mais](https://docs.microsoft.com/azure/migrate/) sobre como configurar a ferramenta de Migração de Servidor das Migrações para Azure. 
-
+[Saiba mais](https://docs.microsoft.com/azure/migrate) sobre como configurar a ferramenta de Migração de Servidor das Migrações para Azure.
 
 ### <a name="prepare-to-connect-to-azure-vms-after-failover"></a>Preparar para conectar VMs do Azure após o failover
 
@@ -158,7 +155,6 @@ Após o failover no Azure, a Contoso deseja ser capaz de se conectar às VMs rep
 
 ## <a name="step-3-replicate-the-on-premises-vms"></a>Etapa 3: Replicar as VMs locais
 
-
 Antes que os administradores da Contoso possam executar uma migração para o Azure, eles precisam configurar e habilitar a replicação.
 
 Com a descoberta concluída, é possível começar a replicação de VMs do VMware no Azure.
@@ -168,7 +164,7 @@ Com a descoberta concluída, é possível começar a replicação de VMs do VMwa
     ![Replicar VMs](./media/contoso-migration-rehost-linux-vm/select-replicate.png)
 
 2. Em **Replicar**, > **Configurações de origem** > **Seus computadores estão virtualizados?** , selecione **Sim, com o VMware vSphere**.
-3. Em **Dispositivo local**, selecione o nome do dispositivo de Migrações para Azure que você configurou > **OK**. 
+3. Em **Dispositivo local**, selecione o nome do dispositivo de Migrações para Azure que você configurou > **OK**.
 
     ![Configurações de origem](./media/contoso-migration-rehost-linux-vm/source-settings.png)
 
@@ -181,31 +177,26 @@ Com a descoberta concluída, é possível começar a replicação de VMs do VMwa
 
 5. Em **Máquinas virtuais**, pesquise as VMs conforme necessário e marque cada VM que você deseja migrar. Em seguida, clique em **Próximo: configurações de destino**.
 
-
 6. Em **Configurações de destino**, selecione a assinatura e a região de destino para a qual você migrará e especifique o grupo de recursos no qual as VMs do Azure residirão após a migração. Em **Rede Virtual**, selecione a VNet/sub-rede do Azure na qual as VMs do Azure serão ingressadas após a migração.
 7. Em **Benefício Híbrido do Azure**:
 
-    - Selecione **Não** se não desejar aplicar o Benefício Híbrido do Azure. Clique em **Avançar**.
-    - Selecione **Sim** se você tiver computadores Windows Server cobertos com assinaturas ativas do Software Assurance ou do Windows Server e quiser aplicar o benefício aos computadores que estão sendo migrados. Clique em **Avançar**.
-
+    - Selecione **Não** se não desejar aplicar o Benefício Híbrido do Azure. Em seguida, clique em **Próximo**.
+    - Selecione **Sim** se você tiver computadores Windows Server cobertos com assinaturas ativas do Software Assurance ou do Windows Server e quiser aplicar o benefício aos computadores que estão sendo migrados. Em seguida, clique em **Próximo**.
 
 8. Em **Computação**, examine o nome da VM, o tamanho, o tipo de disco do sistema operacional e o conjunto de disponibilidade. As VMs devem estar em conformidade com os [requisitos do Azure](https://docs.microsoft.com/azure/migrate/migrate-support-matrix-vmware#agentless-migration-vmware-vm-requirements).
 
-    - **Tamanho da VM**: se você estiver usando recomendações de avaliação, o menu suspenso de tamanho da VM conterá o tamanho recomendado. Caso contrário, as Migrações para Azure escolherão um tamanho com base na correspondência mais próxima na assinatura do Azure. Como alternativa, escolha um tamanho manual em **Tamanho da VM do Azure**. 
-    - **Disco do SO**: especifique o disco do sistema operacional (inicialização) para a VM. O disco do sistema operacional é o disco que tem o carregador de inicialização e o instalador do sistema operacional. 
+    - **Tamanho da VM**: se você estiver usando recomendações de avaliação, o menu suspenso de tamanho da VM conterá o tamanho recomendado. Caso contrário, as Migrações para Azure escolherão um tamanho com base na correspondência mais próxima na assinatura do Azure. Como alternativa, escolha um tamanho manual em **Tamanho da VM do Azure**.
+    - **Disco do SO**: especifique o disco do sistema operacional (inicialização) para a VM. O disco do sistema operacional é o disco que tem o carregador de inicialização e o instalador do sistema operacional.
     - **Conjunto de disponibilidade**: se a VM deve estar em um conjunto de disponibilidade do Azure após a migração, especifique-o. O conjunto precisa estar no grupo de recursos de destino especificado para a migração.
 
-9. Em **Discos**, especifique se os discos de VM devem ser replicados no Azure e selecione o tipo de disco (discos gerenciados Premium ou HDD/SSD Standard) no Azure. Clique em **Avançar**.
+9. Em **Discos**, especifique se os discos de VM devem ser replicados no Azure e selecione o tipo de disco (discos gerenciados Premium ou HDD/SSD Standard) no Azure. Em seguida, clique em **Próximo**.
     - Você pode excluir discos da replicação.
-    - Se você excluir os discos, eles não estarão presentes na VM do Azure após a migração. 
-
+    - Se você excluir os discos, eles não estarão presentes na VM do Azure após a migração.
 
 10. Em **Examinar e iniciar a replicação**, examine as configurações e clique em **Replicar** para iniciar a replicação inicial dos servidores.
 
 > [!NOTE]
 > É possível atualizar configurações de replicação a qualquer momento antes que a replicação seja iniciada em **Gerenciar** > **Replicando computadores**. Não é possível alterar as configurações após o início da replicação.
-
-
 
 ## <a name="step-4-migrate-the-vms"></a>Etapa 4: Migrar as VMs
 
@@ -228,7 +219,6 @@ Os administradores da Contoso executam um failover de teste rápido e, em seguid
 
     ![Limpar migração](./media/contoso-migration-rehost-linux-vm/clean-up.png)
 
-
 ### <a name="migrate-the-vms"></a>Migrar as VMs
 
 Agora os administradores da Contoso podem executar um failover completo para concluir a migração.
@@ -243,8 +233,6 @@ Agora os administradores da Contoso podem executar um failover completo para con
     - Se você não quiser desligar a VM, selecione **Não**
 4. Um trabalho de migração é iniciado para a VM. Acompanhe o trabalho nas notificações do Azure.
 5. Após a conclusão do trabalho, você poderá exibir e gerenciar a VM na página **Máquinas Virtuais**.
-
-
 
 ### <a name="connect-the-vm-to-the-database"></a>Conectar a VM ao banco de dados
 
@@ -272,14 +260,14 @@ Como a etapa final no processo de migração, os administradores da Contoso atua
 
 4. Por fim, eles atualizar os registros DNS para **OSTICKETWEB** e **OSTICKETMYSQL**, em um dos controladores de domínio Contoso.
 
-    ![Atualizar DNS](./media/contoso-migration-rehost-linux-vm-mysql/update-dns.png)
+    ![Atualizar o DNS](./media/contoso-migration-rehost-linux-vm-mysql/update-dns.png)
 
-    ![Atualizar DNS](./media/contoso-migration-rehost-linux-vm-mysql/update-dns.png)
+    ![Atualizar o DNS](./media/contoso-migration-rehost-linux-vm-mysql/update-dns.png)
 
 **Precisa de mais ajuda?**
 
 - [Saiba mais](https://docs.microsoft.com/azure/migrate/tutorial-migrate-vmware#run-a-test-migration) sobre como executar failovers de teste.
-- [Saiba mais](https://docs.microsoft.com/azure/migrate/tutorial-migrate-vmware#migrate-vms) sobre a migração de VMs para o Azure. 
+- [Saiba mais](https://docs.microsoft.com/azure/migrate/tutorial-migrate-vmware#migrate-vms) sobre a migração de VMs para o Azure.
 
 ## <a name="clean-up-after-migration"></a>Limpar após a migração
 
@@ -291,7 +279,7 @@ Agora, a Contoso precisa fazer uma limpeza, da seguinte maneira:
 - Remover as VMs locais de trabalhos de backup locais.
 - Atualizar sua documentação interna para mostrar o novo local e endereços IP para OSTICKETWEB e OSTICKETMYSQL.
 - Examinar todos os recursos que interagem com as máquinas virtuais e atualizar configurações relevantes ou documentação para refletir a nova configuração.
-- Contoso usado o serviço de migração do Azure com o mapeamento de dependência para avaliar as máquinas virtuais para migração. Os administradores devem remover o Microsoft Monitoring Agent, e o Dependency Agent que foi instalado para essa finalidade, da VM.
+- Contoso usado o serviço de migração do Azure com o mapeamento de dependência para avaliar as máquinas virtuais para migração. Os administradores devem remover o Microsoft Monitoring Agent e o Microsoft Dependency Agent que eles instalaram para essa finalidade, da VM.
 
 ## <a name="review-the-deployment"></a>Revisar a implantação
 

@@ -8,12 +8,12 @@ ms.date: 09/22/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: b65f0ea129888440fbfa7598a6bc7790ad91b177
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 6e5a9b00ff7cb6a2f8b16ee62f9e61f4ecae3906
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028684"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223991"
 ---
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Andaime do Azure Enterprise: Governança de assinatura prescritiva
 
@@ -79,7 +79,7 @@ Embora cada um desses padrões tenha o seu lugar, o padrão de **unidade de neg�
 
 ### <a name="azure-management-groups"></a>Grupos de gerenciamento do Azure
 
-A Microsoft agora fornece outra maneira de modelar sua hierarquia: [Grupos de gerenciamento do Azure](https://docs.microsoft.com/azure/azure-resource-manager/management-groups-overview). Os grupos de gerenciamento são muito mais flexíveis do que os departamentos e as contas, e podem ser aninhados até seis níveis. Os grupos de gerenciamento permitem criar uma hierarquia separada da sua hierarquia de cobrança, exclusivamente para o gerenciamento eficiente de recursos. Os grupos de gerenciamento podem espelhar sua hierarquia de cobrança; e as empresas começam desse modo muitas vezes. No entanto, o poder dos grupos de gerenciamento é quando você os utiliza para modelar sua organização, agrupando as assinaturas relacionadas (independentemente de sua localização na hierarquia de cobrança) e atribuindo funções, políticas e iniciativas comuns. Eis alguns exemplos:
+A Microsoft agora fornece outra maneira de modelar sua hierarquia: [Grupos de gerenciamento do Azure](https://docs.microsoft.com/azure/azure-resource-manager/management-groups-overview). Os grupos de gerenciamento são muito mais flexíveis do que os departamentos e as contas, e podem ser aninhados até seis níveis. Os grupos de gerenciamento permitem criar uma hierarquia separada da sua hierarquia de cobrança, exclusivamente para o gerenciamento eficiente de recursos. Os grupos de gerenciamento podem espelhar sua hierarquia de cobrança; e as empresas começam desse modo muitas vezes. No entanto, o poder dos grupos de gerenciamento é quando você os utiliza para modelar sua organização, agrupando as assinaturas relacionadas (independentemente de sua localização na hierarquia de cobrança) e atribuindo funções, políticas e iniciativas comuns. Alguns exemplos incluem:
 
 - **Produção versus não produto.** Algumas empresas criam grupos de gerenciamento para identificar suas assinaturas de produção e não produções. Os grupos de gerenciamento permitem que esses clientes gerenciem mais facilmente funções e políticas. Por exemplo, a assinatura de não produção pode permitir o acesso de "colaborador" de desenvolvedores, mas em produção, eles têm apenas acesso "leitor".
 - **Serviços internos vs. serviços externos.** As empresas geralmente têm requisitos, políticas e funções diferentes para serviços internos versus serviços voltados para o cliente.
@@ -168,7 +168,7 @@ Uma das primeira e mais importantes perguntas que você se faz ao começar a usa
 
 Para proteger o acesso aos seus recursos, primeiro você configurará seu provedor de identidade e, em seguida, configurará funções e acesso. O Azure Active Directory (Azure AD), conectado ao seu Active Directory local, é a base da identidade do Azure Identity. Dito isso, o Azure AD *não* é o mesmo local Active Directory, e é importante entender o que é um locatário do Azure AD e como ele se relaciona com o registro do Azure. Examine as [informações](../govern/resource-consistency/resource-access-management.md) disponíveis para obter uma base sólida sobre o Azure AD e o Active Directory local. Para conectar e sincronizar seu Active Directory com o Azure AD, instale e configure a [ferramenta de Azure ad Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) local.
 
-![Diagrama da arquitetura](../_images/reference/ad-architecture.png)
+![Diagrama da arquitetura do AD](../_images/reference/ad-architecture.png)
 
 Quando o Azure foi inicialmente lançado, os controles de acesso para uma assinatura eram básicos: Administrador ou Coadministrador. O acesso a uma assinatura no modelo Clássico implicava acesso a todos os recursos no portal. Essa falta de um controle refinado levou à proliferação de assinaturas para fornecer um nível de controle de acesso razoável para uma Inscrição no Azure. Essa proliferação de assinaturas não é mais necessária. Com o RBAC (controle de acesso baseado em função), você pode atribuir usuários a funções padrão que fornecem acesso comum, como "proprietário", "colaborador" ou "leitor", ou até mesmo criar suas próprias funções.
 

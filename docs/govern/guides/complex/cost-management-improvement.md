@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f8b78ab958f732920d7282ade80e9da421e5b0e5
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 5dbb92053e12ec9aee795c54271ab45d56d6722c
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028486"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220175"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-cost-management-discipline"></a>Guia de governança para empresas complexas: Melhorar a disciplina de gerenciamento de custos
 
@@ -66,14 +66,14 @@ As alterações a seguir na política ajudarão a corrigir os novos riscos e a i
 Esta seção do artigo melhorará o design do MVP de governança para incluir novas políticas do Azure e uma implementação do gerenciamento de custos do Azure. Em conjunto, essas duas alterações de design atenderão às novas declarações da política corporativa.
 
 1. Faça alterações na Enterprise Portal do Azure para cobrar o administrador do departamento pela implantação canadense.
-1. Implemente o Gerenciamento de Custos do Azure.
+2. Implemente o Gerenciamento de Custos do Azure.
     1. Estabeleça o nível correto de acesso para se alinhar ao padrão de assinatura e ao padrão de agrupamento de recursos. Supondo que o alinhamento com o MVP de governança definido nos artigos anteriores, isso exigiria o acesso ao **escopo da conta de registro** para a equipe de governança de nuvem em execução em relatórios de alto nível. Equipes adicionais fora da governança, como a equipe de compras canadense, exigirá acesso ao **Escopo do Grupo de Recursos**.
-    1. Estabelecer um orçamento no Gerenciamento de Custos do Azure.
-    1. Examinar e agir em recomendações iniciais. É recomendável ter um processo recorrente para oferecer suporte ao processo de geração de relatórios.
-    1. Configurar e executar Relatórios de Gerenciamento de Custos do Azure, tanto iniciais como recorrentes.
-1. Atualize o Azure Policy.
+    2. Estabelecer um orçamento no Gerenciamento de Custos do Azure.
+    3. Examinar e agir em recomendações iniciais. É recomendável ter um processo recorrente para oferecer suporte ao processo de geração de relatórios.
+    4. Configurar e executar Relatórios de Gerenciamento de Custos do Azure, tanto iniciais como recorrentes.
+3. Atualize o Azure Policy.
     1. Audite a marcação, grupo de gerenciamento, assinatura e valores de grupo de recursos para identificar qualquer desvio.
-    1. Estabeleça as opções de tamanho de SKU para limitar as implantações para SKUs listadas na documentação de planejamento de implantação.
+    2. Estabeleça as opções de tamanho de SKU para limitar as implantações para SKUs listadas na documentação de planejamento de implantação.
 
 ## <a name="conclusion"></a>Conclusão
 

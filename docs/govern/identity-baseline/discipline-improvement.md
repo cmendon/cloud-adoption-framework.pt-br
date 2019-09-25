@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Melhoria da disciplina de Linha de base de identidade
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c044e4af0560fe21229cb1790ce0eff6340d2a58
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 256242f90e45719994a12cdb209202a18bba830c
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027057"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220478"
 ---
 # <a name="identity-baseline-discipline-improvement"></a>Melhoria da disciplina de Linha de base de identidade
 
@@ -46,7 +46,7 @@ Esta fase de maturidade de governança une os resultados de negócios e as estra
 - Definir funções e atribuições que regem a identidade e acesso de gerenciamento na nuvem.
 - Definir seus grupos locais e mapear para as funções correspondentes com base em nuvem.
 - Provedores de identidade de inventário (incluindo identidades controladas por banco de dados usados por aplicativos personalizados).
-- Considerar as opções para consolidação ou integração de provedores de identidade em que existe a eliminação de duplicação, para simplificar a solução geral de identidade.
+- Consolide e integre provedores de identidade em que existam duplicação, para simplificar a solução de identidade geral e reduzir o risco.
 - Avaliar a compatibilidade híbrida de provedores de identidade existentes.
 - Para provedores de identidade que não são compatíveis híbridos, avalie as opções de consolidação ou a substituição.
 
@@ -98,7 +98,7 @@ A migração é um processo incremental que se concentra no movimento, teste e a
 - Valide e refine sua [estratégia de identidade híbrida](../../decision-guides/identity/index.md).
 - Certificar-se de que cada aplicativo ou carga de trabalho se alinha com a estratégia de identidade antes do lançamento.
 - Validar esse logon único (SSO) e o SSO contínuo está funcionando conforme o esperado para seus aplicativos.
-- Reduzir ou eliminar o número de armazenamentos de identidade alternativa, quando possível.
+- Reduza ou elimine o número de repositórios de identidades alternativos.
 - Analisar a necessidade de quaisquer armazenamentos de identidade no aplicativo ou no banco de dados. Identifica que fora de um provedor de identidade adequado (primários ou terceiros) podem representar risco para o aplicativo e os usuários.
 - Habilitar acesso condicional para [aplicativos federados no local](https://docs.microsoft.com/azure/active-directory/active-directory-device-registration-on-premises-setup).
 - Distribuir a identidade entre regiões globais em vários hubs com a sincronização entre regiões.
@@ -120,6 +120,7 @@ Depois que a transformação for concluída, a governança e as operações deve
 **Atividades potenciais:**
 
 - Realizar auditorias periódicas de políticas de identidade e práticas de conformidade.
+- Garanta que contas de usuário confidenciais (CEO, CFO, VP, etc.) estejam sempre habilitadas para a autenticação multifator e a detecção de logon anômala.
 - Verificar atores mal-intencionados e violações de dados regularmente, especialmente as relacionadas a fraude de identidade, como aquisições potenciais de conta de administrador.
 - Configurar uma ferramenta de monitoramento e emissão de relatório.
 - Considerar a integração mais de perto com sistemas de segurança e prevenção de fraudes.

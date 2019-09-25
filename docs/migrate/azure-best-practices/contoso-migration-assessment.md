@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 5e6d77a86d1e3d928913e47c5781411f1973b3cc
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: b3ec947b841c36bcd28bdbd02615182fd25a158a
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025030"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221460"
 ---
 # <a name="assess-on-premises-workloads-for-migration-to-azure"></a>avalie as cargas de trabalho locais para migração para o Azure
 
@@ -242,8 +242,8 @@ Configure um novo projeto das Migrações para Azure, conforme descrito a seguir
 
 6. Em **Detalhes do Projeto*, especifique o nome do projeto e a geografia em que deseja criá-lo. Estados Unidos, Ásia, Europa, Austrália, Reino Unido, Canadá, Índia e Japão têm suporte.
 
-    * A geografia do projeto é usada apenas para armazenar os metadados coletados das VMs locais.
-    * Você pode selecionar qualquer região de destino ao executar uma migração.
+    - A geografia do projeto é usada apenas para armazenar os metadados coletados das VMs locais.
+    - Você pode selecionar qualquer região de destino ao executar uma migração.
 
 7. Clique em **Avançar**.
 
@@ -312,14 +312,13 @@ Agora, a Contoso executa o coletor para descobrir VMs. Atualmente, o coletor dá
 
     ![Coletor de Migrações para Azure - verificar os pré-requisitos](./media/contoso-migration-assessment/collector-verify-prereqs-v2.png)
 
-6. Faça logon na conta do **Azure**, selecione a assinatura e migre o projeto criado anteriormente. Insira também um nome para o **dispositivo** para que você possa identificá-lo no portal do Azure. 
-7. Em **Especificar detalhes do vCenter Server**, a Contoso insere o nome (FQDN) ou endereço IP da instância do vCenter Server e as credenciais somente leitura usadas para a descoberta.
-8. A Contoso seleciona um escopo para descoberta de VM. O coletor somente pode descobrir VMs dentro do escopo especificado. O escopo pode ser definido para uma pasta, datacenter ou cluster específico. 
+5. Faça logon na conta do **Azure**, selecione a assinatura e migre o projeto criado anteriormente. Insira também um nome para o **dispositivo** para que você possa identificá-lo no portal do Azure.
+6. Em **Especificar detalhes do vCenter Server**, a Contoso insere o nome (FQDN) ou endereço IP da instância do vCenter Server e as credenciais somente leitura usadas para a descoberta.
+7. A Contoso seleciona um escopo para descoberta de VM. O coletor somente pode descobrir VMs dentro do escopo especificado. O escopo pode ser definido para uma pasta, datacenter ou cluster específico.
 
     ![Especificar detalhes do vCenter Server](./media/contoso-migration-assessment/collector-connect-vcenter.png)
 
-
-8. Agora, o coletor começará a descobrir e coletar informações sobre o ambiente da Contoso. 
+8. Agora, o coletor começará a descobrir e coletar informações sobre o ambiente da Contoso.
 
     ![Exibir andamento da coleta](./media/contoso-migration-assessment/migrate-disccovery.png)
 
@@ -349,8 +348,8 @@ Para manter uma cópia das VMs antes de modificá-las, a Contoso faz um instant�
 
 1. Em **Computadores**, a Contoso seleciona o computador. Na coluna **Dependências**, a Contoso seleciona **Exige instalação**.
 2. No painel **Descobrir computadores**, a Contoso:
-    - Baixa o MMA (Microsoft Monitoring Agent) e Dependency Agent para cada VM do Windows.
-    - Baixa o MMA e Dependency Agent para cada VM do Linux.
+    - Baixa o Microsoft Monitoring Agent (MMA) e o Microsoft Dependency Agent para cada VM do Windows.
+    - Baixa o MMA e o agente de dependência para cada VM do Linux.
 3. A Contoso copia a chave e ID do workspace. A Contoso precisa da chave e ID do workspace quando instala o MMA.
 
     ![Download do agente](./media/contoso-migration-assessment/download-agents.png)
@@ -375,10 +374,10 @@ A Contoso executa a instalação em cada VM.
 
 #### <a name="install-the-dependency-agent-on-windows-vms"></a>Instale o agente de dependência em VMs do Windows
 
-1. A Contoso clica duas vezes no Dependency Agent baixado.
+1. A contoso clica duas vezes no agente de dependência baixado.
 2. A Contoso aceita os termos de licença e aguarda a conclusão da instalação.
 
-    ![Configuração do Dependency Agent - Instalação](./media/contoso-migration-assessment/dependency-agent.png)
+    ![Instalação do Dependency Agent-instalando](./media/contoso-migration-assessment/dependency-agent.png)
 
 ### <a name="install-the-agents-on-linux-vms"></a>Instalar os agentes em VMs do Linux
 
@@ -389,9 +388,11 @@ A Contoso executa a instalação em cada VM.
 1. A Contoso instala a biblioteca ctypes do Python em cada VM usando o comando a seguir:
 
     `sudo apt-get install python-ctypeslib`
+
 2. A Contoso deve executar o comando para instalar o agente MMA como raiz. Para tornar-se raiz, a Contoso executa o comando a seguir e insere a senha raiz:
 
     `sudo -i`
+
 3. Contoso instala o MMA:
     - A Contoso insere a ID do workspace e digita o comando.
     - Os comandos são para a versão de 64 bits.
@@ -404,11 +405,11 @@ A Contoso executa a instalação em cada VM.
 
 #### <a name="install-the-dependency-agent-on-linux-vms"></a>Instalar o Dependency Agent em VMs do Linux
 
-Depois que o MMA é instalado, a Contoso instala o Dependency Agent nas VMs do Linux:
+Após a instalação do MMA, a contoso instala o Dependency Agent nas VMs do Linux:
 
-1. O Dependency Agent é instalado em computadores Linux usando InstallDependencyAgent-Linux64.bin, um script de shell que tem um binário autoextraível. A Contoso executa o arquivo usando sh ou adiciona permissões de execução ao próprio arquivo.
+1. O Dependency Agent é instalado em computadores Linux usando Installdependencyagent-Linux64. bin, um script de shell que tem um binário de extração automática. A Contoso executa o arquivo usando sh ou adiciona permissões de execução ao próprio arquivo.
 
-2. A Contoso instala o Dependency Agent do Linux como raiz:
+2. A contoso instala o agente de dependência do Linux como raiz:
 
     ```console
     wget --content-disposition https://aka.ms/dependencyagentlinux -O InstallDependencyAgent-Linux64.bin && sudo sh InstallDependencyAgent-Linux64.bin -s

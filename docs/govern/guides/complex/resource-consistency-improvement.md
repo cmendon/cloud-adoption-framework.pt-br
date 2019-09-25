@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Guia de governança para empresas complexas: Melhorar a disciplina de consistência do recurso'
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 09/05/2019
+ms.date: 09/19/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7e10f9262e7b29df98e2341cbae0ef05f85cd954
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 9875fb2ebc6948d22ac6eaf350f9784b61fd4dc3
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028282"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223819"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-resource-consistency-discipline"></a>Guia de governança para empresas complexas: Melhorar a disciplina de consistência do recurso
 
@@ -65,7 +65,7 @@ As alterações a seguir na política ajudarão a corrigir os novos riscos e a i
 5. Ferramentas de governança devem validar que o nível apropriado de dados de log está sendo coletado para todos os aplicativos de missão crítica ou dados protegidos.
 6. O processo de governança deve validar o backup, recuperação e o cumprimento de SLA são implementados corretamente para aplicativos de missão crítica e dados protegidos.
 7. As ferramentas de governança devem limitar a implantação da VM somente a imagens aprovadas.
-8. Ferramentas de governança devem impor que as atualizações automáticas estejam **impedidas** em todos os ativos implantados que dão suporte a aplicativos de missão crítica. As violações devem ser revisadas com as equipes de gerenciamento operacional e corrigidas de acordo com as políticas de operações. Os ativos que não são automaticamente atualizados devem ser incluídos em processos que pertencem às operações de TI.
+8. Ferramentas de governança devem impor que as atualizações automáticas estejam **impedidas** em todos os ativos implantados que dão suporte a aplicativos de missão crítica. As violações devem ser examinadas com as equipes de gerenciamento operacional e corrigidas de acordo com as políticas de operações. Os ativos que não são atualizados automaticamente devem ser incluídos em processos de propriedade de operações de ti para atualizar esses servidores de forma rápida e eficiente.
 9. Ferramentas de governança devem validar a marcação relacionadas à classificação de custo, nível de importância, SLA, aplicativos e dados. Todos os valores devem ser alinhados aos valores predefinidos gerenciados pela equipe de governança de nuvem.
 10. Os processos de governança devem incluir auditorias no momento da implantação e em ciclos regulares para garantir a consistência em todos os ativos.
 11. Tendências e explorações que podem afetar as implantações de nuvem devem ser revisadas regularmente pela equipe de segurança para que sejam fornecidas atualizações às ferramentas de Linha de Base de Segurança usadas na nuvem.
@@ -85,25 +85,25 @@ Seguindo a experiência desse exemplo fictício, supõe-se que as alterações d
 
 1. Como uma dependência externa, a equipe de operações de nuvem precisará definir ferramentas de monitoramento operacional, ferramentas de continuidade de negócios e recuperação de desastres (BCDR) e ferramentas de correção automatizadas. Em seguida, a equipe de governança de nuvem pode dar suporte aos processos de descoberta necessários.
     1. Nesse caso de uso, a equipe de operações de nuvem escolheu Azure Monitor como a principal ferramenta para monitorar aplicativos de missão crítica.
-    1. A equipe também escolheu o Azure Site Recovery como as principais ferramentas de BCDR.
-1. Implementação de Azure Site Recovery.
-    1. Definir e implantar o Azure Vault para backup e processos de recuperação.
-    1. Crie um modelo de gerenciamento de recursos do Azure para a criação de um cofre em cada assinatura.
-1. Implementação de Azure Monitor.
-    1. Depois que uma assinatura de missão crítica for identificada, um espaço de trabalho do Log Analytics pode ser criado usando o PowerShell. Esse é um processo de pré-implantação.
+    2. A equipe também escolheu o Azure Site Recovery como as principais ferramentas de BCDR.
+2. Implementação de Azure Site Recovery.
+    1. Defina e implante o cofre de Azure Site Recovery para processos de backup e recuperação.
+    2. Crie um modelo de gerenciamento de recursos do Azure para a criação de um cofre em cada assinatura.
+3. Implementação de Azure Monitor.
+    1. Depois que uma assinatura de missão crítica é identificada, um espaço de trabalho do log Analytics pode ser criado.
 
 **Assinatura de adoção de nuvem individual:** O exemplo a seguir garantirá que cada assinatura seja detectável pela solução de monitoramento e pronta para ser incluída nas práticas BCDR.
 
 1. Azure Policy para nós de missão crítica:
     1. Realize uma auditoria e imponha o uso das funções apenas.
-    1. Realize uma auditoria e imponha o aplicativo de criptografia para todas as contas de armazenamento.
-    1. Realize uma auditoria e imponha o uso de uma sub-rede de rede aprovada e rede virtual por adaptador de rede.
-    1. Realize uma auditoria e imponha a limitação das tabelas de roteamento definidas pelo usuário.
-    1. Realize uma auditoria e imponha a implantação dos agentes do Log Analytics para máquinas virtuais Windows ou Linux.
+    2. Realize uma auditoria e imponha o aplicativo de criptografia para todas as contas de armazenamento.
+    3. Realize uma auditoria e imponha o uso de uma sub-rede de rede aprovada e rede virtual por adaptador de rede.
+    4. Realize uma auditoria e imponha a limitação das tabelas de roteamento definidas pelo usuário.
+    5. Realize uma auditoria e imponha a implantação dos agentes do Log Analytics para máquinas virtuais Windows ou Linux.
 2. Blueprint do Azure:
     1. Criar um blueprint nomeado `mission-critical-workloads-and-protected-data`. Este blueprint aplicará ativos, além do blueprint dos dados protegidos.
-    1. Adicione as novas políticas do Azure para o blueprint.
-    1. Aplique o blueprint para qualquer assinatura que é esperada para hospedar um aplicativo de missão crítica.
+    2. Adicione as novas políticas do Azure para o blueprint.
+    3. Aplique o blueprint para qualquer assinatura que é esperada para hospedar um aplicativo de missão crítica.
 
 ## <a name="conclusion"></a>Conclusão
 

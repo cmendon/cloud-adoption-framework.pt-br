@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 9726cc5bea1d8f7852dbb8831fc211dda2f4f4f7
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ac1fe4cac44d4a1f830be1faba7f2d50ddbd98f0
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028081"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224348"
 ---
 # <a name="cloud-center-of-excellence"></a>Centro de excelência de nuvem
 
@@ -32,7 +32,7 @@ O CCoE requer colaboração entre cada um dos seguintes recursos:
 
 ## <a name="impact-and-cultural-change"></a>Impacto e alteração cultural
 
-Quando essa função é corretamente estruturada e com suporte, os participantes podem acelerar os esforços de inovação e de migração e, ao mesmo tempo, reduzir o custo geral da alteração e aumentar a agilidade dos negócios. Quando implementada com êxito, essa função pode produzir reduções perceptíveis no tempo de colocação no mercado. Conforme as práticas de equipe amadurecem, os aumentos nos indicadores de qualidade podem ser vistos, incluindo confiabilidade, eficiência de desempenho, segurança, facilidade de manutenção e satisfação do cliente. Esses ganhos em eficiência, agilidade e qualidade são especialmente vitais se a empresa planeja implementar esforços de migração em larga escala na nuvem ou se quiser usar a nuvem para gerar inovações associadas à diferenciação do mercado.
+Quando essa função é corretamente estruturada e com suporte, os participantes podem acelerar os esforços de inovação e de migração e, ao mesmo tempo, reduzir o custo geral da alteração e aumentar a agilidade dos negócios. Quando implementada com êxito, essa função pode produzir reduções perceptíveis no tempo de colocação no mercado. Conforme as práticas de equipe amadurecem, os indicadores de qualidade melhorarão, incluindo confiabilidade, eficiência de desempenho, segurança, facilidade de manutenção e satisfação do cliente. Esses ganhos em eficiência, agilidade e qualidade são especialmente vitais se a empresa planeja implementar esforços de migração em larga escala na nuvem ou se quiser usar a nuvem para gerar inovações associadas à diferenciação do mercado.
 
 Quando for bem-sucedido, um modelo CCoE criará uma mudança cultural significativa nele. A premissa fundamental de uma abordagem CCoE é que ela serve como um corretor, parceiro ou representante para a empresa. Esse modelo é uma mudança de paradigma para longe da exibição tradicional de ti como uma unidade de operações ou uma camada de abstração entre os ativos de negócios e de ti.
 

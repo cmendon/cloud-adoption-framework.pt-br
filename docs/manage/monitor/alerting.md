@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 76fb8084aad799d3bbfdaf3bd2ef4330fd080ac0
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 554bfdaf0a21fac50cafe9c510c4fd83c6702b81
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028931"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221384"
 ---
 # <a name="cloud-monitoring-guide-alerting"></a>Guia de monitoramento de nuvem: Alertas
 
@@ -94,7 +94,7 @@ Dito isso, há algumas notas de rodapé importantes para essa regra.
 
 A telemetria do **sistema operacional convidado** tem um número de caminhos para entrar no sistema.
 
-- A maneira mais rápida de alertar sobre esses dados é importá-lo como métricas personalizadas. Faça isso usando a extensão Diagnóstico do Azure e, em seguida, usando um alerta de métrica. No entanto, as métricas personalizadas estão atualmente em visualização e são [mais caras do que outras opções](https://azure.microsoft.com/pricing/details/monitor/).
+- A maneira mais rápida de alertar sobre esses dados é importá-lo como métricas personalizadas. Faça isso usando a extensão Diagnóstico do Azure e, em seguida, usando um alerta de métrica. No entanto, as métricas personalizadas estão atualmente em visualização e são [mais caras do que outras opções](https://azure.microsoft.com/pricing/details/monitor).
 
 - O método mais barato, mas mais lento, é enviá-lo para o repositório Kusto do Azure logs. A execução do agente de Log Analytics na VM é a melhor maneira de obter todos os dados de log e de métrica do sistema operacional convidado nesse armazenamento.
 
@@ -113,9 +113,9 @@ Se você não estiver usando Azure Monitor para VMs, explore os recursos a segui
 
 - [Limites dinâmicos](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-dynamic-thresholds). Os limites dinâmicos examinam a atividade do recurso durante um período de tempo e criam limites de "comportamento normal" superior e inferior. Quando a métrica que está sendo monitorada cair fora desses limites, você receberá um alerta.
 
-- [Alertas de multiassinaturas](https://azure.microsoft.com/blog/monitor-at-scale-in-azure-monitor-with-multi-resource-metric-alerts/). Você pode criar um alerta de métrica que usa a combinação de duas entradas diferentes de dois tipos de recursos diferentes. Por exemplo, se você quiser acionar um alerta quando a CPU de uma VM estiver acima de 90% e o número de mensagens em uma determinada fila do barramento de serviço do Azure alimentando essa VM exceder uma determinada quantidade, você poderá fazer isso sem criar uma consulta de log. Isso só funciona para dois sinais. Se você tiver uma consulta mais complexa, alimentar os dados de métrica no repositório de log de Azure Monitor e usar uma consulta de log.
+- [Alertas de multiassinaturas](https://azure.microsoft.com/blog/monitor-at-scale-in-azure-monitor-with-multi-resource-metric-alerts). Você pode criar um alerta de métrica que usa a combinação de duas entradas diferentes de dois tipos de recursos diferentes. Por exemplo, se você quiser acionar um alerta quando a CPU de uma VM estiver acima de 90% e o número de mensagens em uma determinada fila do barramento de serviço do Azure alimentando essa VM exceder uma determinada quantidade, você poderá fazer isso sem criar uma consulta de log. Isso só funciona para dois sinais. Se você tiver uma consulta mais complexa, alimentar os dados de métrica no repositório de log de Azure Monitor e usar uma consulta de log.
 
-- [Alertas de multirecursos](https://azure.microsoft.com/blog/monitor-at-scale-in-azure-monitor-with-multi-resource-metric-alerts/). Azure Monitor permite uma única regra de alerta de métrica que se aplica a todos os recursos da VM. Esse recurso pode poupar tempo porque você não precisa criar alertas individuais para cada VM. Os preços para esse tipo de alerta são os mesmos. Se você criou 50 alertas para monitorar o uso de CPU para 50 VMs ou um alerta que monitora o uso da CPU para todas as 50 VMs, ele custa o mesmo valor. Você também pode usar esses tipos de alertas em combinação com limites dinâmicos.
+- [Alertas de multirecursos](https://azure.microsoft.com/blog/monitor-at-scale-in-azure-monitor-with-multi-resource-metric-alerts). Azure Monitor permite uma única regra de alerta de métrica que se aplica a todos os recursos da VM. Esse recurso pode poupar tempo porque você não precisa criar alertas individuais para cada VM. Os preços para esse tipo de alerta são os mesmos. Se você criou 50 alertas para monitorar o uso de CPU para 50 VMs ou um alerta que monitora o uso da CPU para todas as 50 VMs, ele custa o mesmo valor. Você também pode usar esses tipos de alertas em combinação com limites dinâmicos.
 
 Usados juntos, esses recursos podem poupar tempo, minimizando as notificações de alerta e o gerenciamento dos alertas subjacentes.
 

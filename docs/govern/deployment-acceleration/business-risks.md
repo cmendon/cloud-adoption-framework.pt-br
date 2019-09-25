@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Saiba mais sobre a disciplina de Aceleração de implantação como parte de uma estratégia de governança de nuvem.
 author: alexbuckgit
 ms.author: abuck
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: feaf5a7f0f2622c2b2289fe81315ea9ccf2ada4e
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: d827b4de1c938180579303e60c6808d65fcd14a8
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030889"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220727"
 ---
 # <a name="deployment-acceleration-motivations-and-business-risks"></a>Motivações de aceleração de implantação e os riscos de negócios
 
@@ -22,7 +22,7 @@ Este artigo aborda os motivos que os clientes normalmente adotam uma disciplina 
 
 <!-- markdownlint-disable MD026 -->
 
-## <a name="is-deployment-acceleration-relevant"></a>A aceleração de implantação é relevante?
+## <a name="deployment-acceleration-relevancy"></a>Relevância de aceleração da implantação
 
 Em sistemas locais normalmente são implantados usando imagens de linha de base ou scripts de instalação. A configuração adicional é geralmente necessária, o que pode envolver várias etapas ou intervenção humana. Esses processos manuais são propensos a erro e geralmente resultam em "descompassos de configuração", que exigem tarefas demoradas de solução de problemas e correção.
 

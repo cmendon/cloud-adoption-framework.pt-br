@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Explicação das ferramentas que podem facilitar a melhoria da linha de base de segurança no Azure.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5d64befe7973201bc9727e0bef2b4f7a2e99052b
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 3bf3eea5486fbd349094663dc5f37527f5042bb5
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030661"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221689"
 ---
 # <a name="security-baseline-tools-in-azure"></a>Ferramentas de Linha de Base de Segurança no Azure
 
@@ -31,8 +31,8 @@ A lista a seguir das ferramentas do Azure pode ajudar a amadurecer as políticas
 | Gerenciar serviços de identidade híbrida                            | Não                              | Não              | Sim      | Não           | Não                    | Não            |
 | Restringir tipos de recursos permitidos                         | Não                              | Não              | Não       | Sim          | Não                    | Não            |
 | Impor restrições geo-regionais                          | Não                              | Não              | Não       | Sim          | Não                    | Não            |
-| Monitorar a integridade da segurança de redes e recursos          | Não                              | Não              | Não       | Não           | Sim                   | Sim           |
-| Detectar atividade mal-intencionada                                  | Não                              | Não              | Não       | Não           | Sim                   | Sim           |
+| Monitorar a integridade da segurança de redes e recursos          | Não                              | Não              | Não       | Não           | sim                   | Sim           |
+| Detectar atividade mal-intencionada                                  | Não                              | Não              | Não       | Não           | sim                   | Sim           |
 | Detectar vulnerabilidades antecipadamente                        | Não                              | Não              | Não       | Não           | Sim                   | Não            |
 | Configurar backup e recuperação de desastre                     | Sim                             | Não              | Não       | Não           | Não                    | Não            |
 

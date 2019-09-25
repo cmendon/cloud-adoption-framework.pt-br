@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 58dcbc125f0f4b65b4f4e4f2b292bbe1a4890ec0
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: dc045d26dd855240700341748c189a985f1f6758
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029323"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220545"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>Guia de governança para empresas complexas: Melhorar a disciplina de linha de base de segurança
 
@@ -105,26 +105,26 @@ As novas práticas recomendadas enquadram-se em duas categorias: TI corporativa 
 **Estabelecendo um hub de ti corporativo e uma assinatura do spoke para centralizar a linha de base de segurança:** Nesta prática recomendada, a capacidade de governança existente é encapsulada por uma [topologia de Hub e spoke com serviços compartilhados](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services), com algumas adições importantes da equipe de governança de nuvem.
 
 1. Repositório de Azure DevOps. Crie um repositório no Azure DevOps para armazenar e controlar a versão de todos os modelos do Azure Resource Manager relevantes e configurações com script.
-1. Modelo de Hub e spoke:
+2. Modelo de Hub e spoke:
     1. As diretrizes na [topologia hub e spoke com](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services) arquitetura de referência de serviços compartilhados podem ser usadas para gerar modelos do Resource Manager para os ativos necessários em um hub de ti corporativo.
-    1. Ao usar esses modelos, essa estrutura pode ser feita repetidamente, como parte de uma estratégia de governança central.
-    1. Além da arquitetura de referência atual, é recomendável que um modelo de grupo de segurança de rede seja criado, capturando quaisquer requisitos de bloqueio de porta ou de lista de permissões para a VNet para hospedar o firewall. Esse grupo de segurança de rede é diferente dos grupos anteriores, pois será o primeiro grupo de segurança de rede a permitir o tráfego público em uma VNet.
-1. Crie políticas do Azure. Crie uma política chamada `Hub NSG Enforcement` para impor a configuração do grupo de segurança de rede atribuído a qualquer VNet criada nesta assinatura. Aplique as Políticas internas para configuração do convidado, conforme a seguir:
+    2. Ao usar esses modelos, essa estrutura pode ser feita repetidamente, como parte de uma estratégia de governança central.
+    3. Além da arquitetura de referência atual, é recomendável que um modelo de grupo de segurança de rede seja criado, capturando quaisquer requisitos de bloqueio de porta ou de lista de permissões para a VNet para hospedar o firewall. Esse grupo de segurança de rede é diferente dos grupos anteriores, pois será o primeiro grupo de segurança de rede a permitir o tráfego público em uma VNet.
+3. Crie políticas do Azure. Crie uma política chamada `Hub NSG Enforcement` para impor a configuração do grupo de segurança de rede atribuído a qualquer VNet criada nesta assinatura. Aplique as Políticas internas para configuração do convidado, conforme a seguir:
     1. Realize uma auditoria para verificar se os servidores Web do Windows estão usando protocolos de comunicação segura.
-    1. Realize uma auditoria para verificar se as configurações de segurança de senha estão definidas corretamente em computadores Linux e Windows.
-1. Blueprint de TI corporativa
+    2. Realize uma auditoria para verificar se as configurações de segurança de senha estão definidas corretamente em computadores Linux e Windows.
+4. Blueprint de TI corporativa
     1. Crie um novo blueprint do Azure nomeado `corporate-it-subscription`.
-    1. Adicione os modelos Hub e spoke e `Hub NSG Enforcement` a política.
-1. Expandindo na hierarquia do grupo de gerenciamento inicial.
+    2. Adicione os modelos Hub e spoke e `Hub NSG Enforcement` a política.
+5. Expandindo na hierarquia do grupo de gerenciamento inicial.
     1. Para cada grupo de gerenciamento que solicitou suporte para dados protegidos, o `corporate-it-subscription-blueprint` blueprint fornece uma solução acelerada de hub.
-    1. Como os grupos de gerenciamento neste exemplo fictício incluem uma hierarquia regional, além de uma hierarquia de unidade de negócios, este projeto será implantado em cada região.
-    1. Para cada região na hierarquia de grupo de gerenciamento, crie uma assinatura nomeada `Corporate IT Subscription`.
-    1. Aplique o `corporate-it-subscription-blueprint` blueprint para cada instância regional.
-    1. Isso estabelecerá um hub para cada unidade de negócios em cada região. Observação: É possível obter mais economia de custos, simplesmente compartilhando hubs entre unidades de negócios em cada região.
-1. Integre GPO (objetos de política de grupo) por meio de DSC (Desired State Configuration):
+    2. Como os grupos de gerenciamento neste exemplo fictício incluem uma hierarquia regional, além de uma hierarquia de unidade de negócios, este projeto será implantado em cada região.
+    3. Para cada região na hierarquia de grupo de gerenciamento, crie uma assinatura nomeada `Corporate IT Subscription`.
+    4. Aplique o `corporate-it-subscription-blueprint` blueprint para cada instância regional.
+    5. Isso estabelecerá um hub para cada unidade de negócios em cada região. Observação: É possível obter mais economia de custos, simplesmente compartilhando hubs entre unidades de negócios em cada região.
+6. Integre GPO (objetos de política de grupo) por meio de DSC (Desired State Configuration):
     1. Converter o GPO em DSC – o [projeto de gerenciamento de linha de base da Microsoft](https://github.com/Microsoft/BaselineManagement) no GitHub pode acelerar esse esforço. * Certifique-se de armazenar a DSC no repositório em paralelo aos modelos do Resource Manager.
-    1. Implante a Configuração de Estado de Automação do Azure nas instâncias da assinatura de TI Corporativa. A Automação do Azure pode ser usada para aplicar a DSC para VMs (máquinas virtuais) implantadas em assinaturas com suporte no grupo de gerenciamento.
-    1. O roteiro atual planeja habilitar políticas de configuração de convidado personalizadas. Quando esse recurso for liberado, o uso da Automação do Azure nessa prática recomendada não será mais necessário.
+    2. Implante a Configuração de Estado de Automação do Azure nas instâncias da assinatura de TI Corporativa. A Automação do Azure pode ser usada para aplicar a DSC para VMs (máquinas virtuais) implantadas em assinaturas com suporte no grupo de gerenciamento.
+    3. O roteiro atual planeja habilitar políticas de configuração de convidado personalizadas. Quando esse recurso for liberado, o uso da Automação do Azure nessa prática recomendada não será mais necessário.
 
 **Aplicando governança adicional a uma assinatura de adoção de nuvem (spoke):** Com base no `Corporate IT Subscription`, pequenas mudanças no MVP de governança aplicadas a cada assinatura dedicada ao suporte de arquétipos de aplicativo podem produzir uma melhoria rápida.
 
@@ -132,38 +132,38 @@ Em alterações iterativas anteriores à prática recomendada, definimos grupos 
 
 1. Modelo de emparelhamento de rede. Esse modelo irá emparelhar a VNet em cada assinatura com a VNet de Hub na assinatura de TI Corporativa.
     1. A arquitetura de referência da seção anterior, do [Hub e da topologia do spoke com serviços compartilhados](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services), gerou um modelo do Resource Manager para habilitar o emparelhamento VNet.
-    1. Esse modelo pode ser usado como um guia para modificar o modelo DMZ da iteração de governança anterior.
-    1. Essencialmente, agora estamos adicionando emparelhamento VNet para a VNet de DMZ que foi previamente conectada ao dispositivo de borda local pela VPN (rede virtual privada).
-    1. *** Também é recomendável que a VPN seja removida desse modelo para garantir que nenhum tráfego seja roteado diretamente para o datacenter local, sem passar pela assinatura de TI corporativa e pela solução de Firewall.
-    1. [Configuração de rede](https://docs.microsoft.com/azure/automation/automation-dsc-overview#network-planning) adicional será exigida pela Automação do Azure para aplicar a DSC às VMs hospedadas.
-1. Modifique o grupo de segurança de rede. Bloquear todo o tráfego local público **e** direto no grupo de segurança de rede. Somente o tráfego de entrada deve ser proveniente do par de VNet na assinatura de TI corporativa.
+    2. Esse modelo pode ser usado como um guia para modificar o modelo DMZ da iteração de governança anterior.
+    3. Agora estamos adicionando o emparelhamento VNet à VNet da DMZ que foi conectada anteriormente ao dispositivo de borda local pela VPN.
+    4. *** Também é recomendável que a VPN seja removida desse modelo para garantir que nenhum tráfego seja roteado diretamente para o datacenter local, sem passar pela assinatura de TI corporativa e pela solução de Firewall. Você também pode definir essa VPN como um circuito de failover no caso de um circuito de ExpressRoute outge.
+    5. [Configuração de rede](https://docs.microsoft.com/azure/automation/automation-dsc-overview#network-planning) adicional será exigida pela Automação do Azure para aplicar a DSC às VMs hospedadas.
+2. Modifique o grupo de segurança de rede. Bloquear todo o tráfego local público **e** direto no grupo de segurança de rede. Somente o tráfego de entrada deve ser proveniente do par de VNet na assinatura de TI corporativa.
     1. Na iteração anterior, um grupo de segurança de rede foi criado, bloqueando todo o tráfego público e listando todo o tráfego interno. Agora, queremos mudar um pouco esse grupo de segurança de rede.
-    1. A nova configuração de grupo de segurança de rede deve bloquear todo o tráfego público, juntamente com todo o tráfego do datacenter local.
-    1. O tráfego entrando nessa VNet deve ser proveniente somente da VNet no outro lado do par de VNet.
-1. Implementação da Central de Segurança do Azure:
+    2. A nova configuração de grupo de segurança de rede deve bloquear todo o tráfego público, juntamente com todo o tráfego do datacenter local.
+    3. O tráfego entrando nessa VNet deve ser proveniente somente da VNet no outro lado do par de VNet.
+3. Implementação da Central de Segurança do Azure:
     1. Configure a Central de Segurança do Azure para qualquer grupo de gerenciamento que contenha classificações de dados protegidos.
-    1. Defina o provisionamento Automático para ativado por padrão para garantir a conformidade da aplicação de patch.
-    1. Estabeleça configurações de segurança do sistema operacional Segurança de TI para definir a configuração.
-    1. Suporte à Segurança de TI no uso inicial da Central de Segurança do Azure. Fazer a transição do uso da central de segurança para a segurança de ti, mas manter o acesso para fins de aperfeiçoamento contínuo de governança.
-    1. Crie um modelo do Resource Manager que reflita as alterações necessárias para a configuração da Central de Segurança do Azure em uma assinatura.
-1. Atualizar o Azure Policy para todas as assinaturas.
+    2. Defina o provisionamento Automático para ativado por padrão para garantir a conformidade da aplicação de patch.
+    3. Estabeleça configurações de segurança do sistema operacional Segurança de TI para definir a configuração.
+    4. Suporte à Segurança de TI no uso inicial da Central de Segurança do Azure. Fazer a transição do uso da central de segurança para a segurança de ti, mas manter o acesso para fins de aperfeiçoamento contínuo de governança.
+    5. Crie um modelo do Resource Manager que reflita as alterações necessárias para a configuração da Central de Segurança do Azure em uma assinatura.
+4. Atualizar o Azure Policy para todas as assinaturas.
     1. Realize uma auditoria e imponha a criticidade e a classificação de dados em todos os grupos e assinaturas de gerenciamento para identificar quaisquer assinaturas com classificações de dados protegidas.
-    1. Realize uma auditoria e imponha o uso apenas de imagens aprovadas do sistema operacional.
-    1. Realize uma auditoria e imponha as configurações de convidado com base nos requisitos de segurança para cada nó.
-1. Atualize o Azure Policy para todas as assinaturas que contenham classificações de dados protegidos.
+    2. Realize uma auditoria e imponha o uso apenas de imagens aprovadas do sistema operacional.
+    3. Realize uma auditoria e imponha as configurações de convidado com base nos requisitos de segurança para cada nó.
+5. Atualize o Azure Policy para todas as assinaturas que contenham classificações de dados protegidos.
     1. Realize uma auditoria e imponha apenas o uso de funções padrão
-    1. Realize uma auditoria e imponha o aplicativo de criptografia para todas as contas de armazenamento e arquivos em repouso nos nós individuais.
-    1. Auditar e impor o aplicativo da nova versão do grupo de segurança de rede DMZ.
-    1. Realize uma auditoria e imponha o uso de uma sub-rede de rede aprovada e VNet por adaptador de rede
-    1. Realize uma auditoria e imponha a limitação das tabelas de roteamento definidas pelo usuário.
-1. Blueprint do Azure:
+    2. Realize uma auditoria e imponha o aplicativo de criptografia para todas as contas de armazenamento e arquivos em repouso nos nós individuais.
+    3. Auditar e impor o aplicativo da nova versão do grupo de segurança de rede DMZ.
+    4. Realize uma auditoria e imponha o uso de uma sub-rede de rede aprovada e VNet por adaptador de rede
+    5. Realize uma auditoria e imponha a limitação das tabelas de roteamento definidas pelo usuário.
+6. Blueprint do Azure:
     1. Crie um novo blueprint do Azure nomeado `protected-data`.
-    1. Adicione os modelos de par VNet, grupo de segurança de rede e central de segurança do Azure ao plano gráfico.
-    1. Verifique se o modelo para Active Directory da iteração anterior **não** está incluído no plano gráfico. Todas as dependências do Active Directory serão fornecidas pela assinatura de TI corporativa.
-    1. Encerre todas as VMs Active Directory existentes implantadas na iteração anterior.
-    1. Adicione as novas políticas para assinaturas de dados protegidos.
-    1. Publique o blueprint em qualquer grupo de gerenciamento destinado a hospedar dados protegidos.
-    1. Aplique o novo blueprint a cada assinatura afetada junto com blueprints atuais.
+    2. Adicione os modelos de par VNet, grupo de segurança de rede e central de segurança do Azure ao plano gráfico.
+    3. Verifique se o modelo para Active Directory da iteração anterior **não** está incluído no plano gráfico. Todas as dependências do Active Directory serão fornecidas pela assinatura de TI corporativa.
+    4. Encerre todas as VMs Active Directory existentes implantadas na iteração anterior.
+    5. Adicione as novas políticas para assinaturas de dados protegidos.
+    6. Publique o Blueprint em qualquer grupo de gerenciamento que hospedará dados protegidos.
+    7. Aplique o novo blueprint a cada assinatura afetada junto com blueprints atuais.
 
 ## <a name="conclusion"></a>Conclusão
 

@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 7b450165c1356e5297a3424ea8f699dced0422a4
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 75aa65f9a39576eb807e7b147c2c4a658f693619
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028685"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224297"
 ---
 # <a name="skills-readiness-path-during-the-ready-phase-of-a-migration"></a>Caminho de preparação de habilidades durante a fase "pronto" de uma migração
 
@@ -44,9 +44,9 @@ Durante a fase pronta, a equipe técnica precisa criar uma zona de aterrissagem 
 
 Durante a fase pronta, os arquitetos precisam projetar soluções que abranjam todos os ambientes do Azure. Os recursos a seguir podem prepará-los para estas tarefas:
 
-- [Bases para arquitetura de nuvem](https://app.pluralsight.com/library/courses/cloud-architecture-foundations/): Um curso da PluralSight para ajudar a arquitetar as soluções básicas corretas.
-- [Arquitetura do Microsoft Azure](https://app.pluralsight.com/library/courses/cloud-architecture-foundations/): Um curso da PluralSight para os arquitetos de aterramento na arquitetura do Azure.
-- [Criar migrações para o Microsoft Azure](https://app.pluralsight.com/library/courses/cloud-architecture-foundations/): Um curso da PluralSight para ajudar os arquitetos a projetar uma solução de migração.
+- [Bases para arquitetura de nuvem](https://app.pluralsight.com/library/courses/cloud-architecture-foundations): Um curso da PluralSight para ajudar a arquitetar as soluções básicas corretas.
+- [Arquitetura do Microsoft Azure](https://app.pluralsight.com/library/courses/cloud-architecture-foundations): Um curso da PluralSight para os arquitetos de aterramento na arquitetura do Azure.
+- [Criar migrações para o Microsoft Azure](https://app.pluralsight.com/library/courses/cloud-architecture-foundations): Um curso da PluralSight para ajudar os arquitetos a projetar uma solução de migração.
 
 ## <a name="deeper-skills-exploration"></a>Exploração de habilidades mais profundas
 
@@ -75,4 +75,4 @@ Veja a seguir alguns exemplos de caminhos de aprendizado específicos de funçã
 
 - [Os desenvolvedores](/learn/browse/?roles=developer&term=infrastructure) podem usar os recursos de aprendizado para ajudar durante as atividades de arquitetura, governança e modernização.
 
-Para outros roteiros de aprendizagem, navegue no [catálogo do Learn](/learn/browse/). Use o filtro de funções para alinhar os caminhos de aprendizado com sua função.
+Para outros roteiros de aprendizagem, navegue no [catálogo do Learn](/learn/browse). Use o filtro de funções para alinhar os caminhos de aprendizado com sua função.
