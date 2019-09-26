@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 19299c5855600524f3335b00272974790d83c8fa
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: fc0f91ac6c2a4476786935555c4c4305f33a0980
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022765"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224055"
 ---
 # <a name="organize-your-azure-resources"></a>Organizar seus recursos do Azure
 
@@ -66,7 +66,7 @@ Use as assinaturas para gerenciar os custos e os recursos criados por usuários,
 
 Crie um grupo de recursos para armazenar recursos como aplicativos Web, bancos de dados e contas de armazenamento que compartilham o mesmo ciclo de vida, permissões e políticas.
 
-1. Vá para [Grupos de Recursos](https://portal.azure.com/#create/Microsoft.ResourceGroup).
+1. Vá para [Grupos de recursos](https://portal.azure.com/#create/Microsoft.ResourceGroup).
 1. Selecione **Adicionar**.
 1. Selecione a **Assinatura** sob a qual você deseja que seu grupo de recursos seja criado.
 1. Insira um nome para o **Grupo de recursos**.
