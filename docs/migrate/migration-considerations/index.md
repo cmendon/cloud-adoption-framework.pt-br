@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: f8a5b1bc61fd44752bae7989ff19779f8ad61882
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 99e5deee6551d7e4db3a0404c6dd0e81deffe35d
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024681"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224035"
 ---
 # <a name="cloud-adoption-framework-migration-model"></a>Modelo de migração da Cloud Adoption Framework
 
@@ -26,7 +26,7 @@ A migração na nuvem é um esforço de gerenciamento de portfólio, inteligente
 O modelo de migração da Cloud Adoption Framework depende de sua organização ter concluído um processo de preparação empresarial para a adoção da nuvem. Examine a orientação de [Planejar](../../strategy/index.md) e [Pronto](../../ready/index.md) na Cloud Adoption Framework para determinar os condutores empresariais ou outra justificativa para uma migração na nuvem, bem como qualquer planejamento ou treinamento organizacional necessário antes de executar um processo de migração em escala.
 
 > [!NOTE]
-> Embora seja importante o planejamento empresarial, uma mentalidade de crescimento é igualmente importante. Em paralelo a esforços mais amplos de planejamento pela equipe de estratégia de nuvem empresarial, é aconselhável que a equipe de adoção da nuvem comece a migrar uma carga de trabalho primeiro como um precursor para os esforços de migração de escala maior. Essa migração inicial permitirá que a equipe obtenha experiência prática com os problemas técnicos e empresariais envolvidos na migração.
+> Embora seja importante o planejamento empresarial, uma mentalidade de crescimento é igualmente importante. Em paralelo com esforços mais amplos de planejamento de negócios pela equipe de estratégia de nuvem, é aconselhável que a equipe de adoção da nuvem comece a migrar uma carga de trabalho primeiro como um precursor para os esforços de migração de escala maior. Essa migração inicial permitirá que a equipe obtenha experiência prática com os problemas técnicos e empresariais envolvidos na migração.
 
 ## <a name="envision-an-end-state"></a>Vislumbrar um estado final
 

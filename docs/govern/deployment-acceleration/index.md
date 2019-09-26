@@ -4,18 +4,18 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Explicação de Implantação de aceleração em relação a governança de nuvem.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 55dc7554e72f5ca1e2a19a29cf93f8b075b93c9b
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: f96ada5b1c43694d0ea1af10524f3c344db62356
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025745"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222716"
 ---
 # <a name="deployment-acceleration-discipline-overview"></a>Visão geral da disciplina de Aceleração de implantação
 
@@ -54,7 +54,7 @@ As seis etapas a seguir ajudarão você a definir políticas de governança para
                     </div>
                     <div class="cardText" style="padding-left:0px;">
                         <h3>Modelo de Aceleração de implantação</h3>
-                        <p class="x-hidden-focus">Baixe o modelo para documentar uma disciplina de Aceleração de implantação</p>
+                        <p class="x-hidden-focus">Baixar o modelo para documentar uma disciplina de Aceleração de Implantação</p>
                     </div>
                 </div>
             </div>

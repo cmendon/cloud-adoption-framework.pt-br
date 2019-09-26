@@ -4,18 +4,18 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Visão geral da disciplina de Linha de Base de Segurança
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 3d193a2fd71ffcda2b117d722603b08c27144aa3
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 1338fb14ed39915dc9e55c855dd5bbf00ba7a6eb
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025941"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221757"
 ---
 # <a name="security-baseline-discipline-overview"></a>Visão geral da disciplina de Linha de Base de Segurança
 
@@ -54,7 +54,7 @@ As seis etapas a seguir oferecem exemplos e opções em potencial a serem consid
                     </div>
                     <div class="cardText" style="padding-left:0px;">
                         <h3>Modelo de Linha de Base de Segurança</h3>
-                        <p class="x-hidden-focus">Baixe o modelo para documentar uma disciplina de Linha de Base de Segurança</p>
+                        <p class="x-hidden-focus">Baixar o modelo para documentar uma disciplina de Linha de Base de Segurança</p>
                     </div>
                 </div>
             </div>
@@ -72,7 +72,7 @@ As seis etapas a seguir oferecem exemplos e opções em potencial a serem consid
                     </div>
                     <div class="cardText" style="padding-left:0px;">
                         <h3>Riscos dos negócios</h3>
-                        <p class="x-hidden-focus">Reconheça os motivos e riscos normalmente associados à disciplina de Linha de Base de Segurança.</p>
+                        <p class="x-hidden-focus">Reconhecer os motivos e riscos normalmente associados à disciplina de Linha de Base de Segurança.</p>
                     </div>
                 </div>
             </div>
@@ -90,7 +90,7 @@ As seis etapas a seguir oferecem exemplos e opções em potencial a serem consid
                         </div>
                     </div>
                     <div class="cardText" style="padding-left:0px;">
-                        <h3>Indicadores e métricas</h3>
+                        <h3>Indicadores e Métricas</h3>
                         <p class="x-hidden-focus">Indicadores para reconhecer se é o momento certo para investir na disciplina de Linha de Base de Segurança.</p>
                     </div>
                 </div>
@@ -109,7 +109,7 @@ As seis etapas a seguir oferecem exemplos e opções em potencial a serem consid
                         </div>
                     </div>
                     <div class="cardText" style="padding-left:0px;">
-                        <h3>Processos de adesão às políticas</h3>
+                        <h3>Processos de conformidade de política</h3>
                         <p class="x-hidden-focus">Processos sugeridos para dar suporte à conformidade com políticas na disciplina Linha de Base de Segurança.</p>
                     </div>
                 </div>
@@ -148,7 +148,7 @@ As seis etapas a seguir oferecem exemplos e opções em potencial a serem consid
                     </div>
                     <div class="cardText" style="padding-left:0px;">
                         <h3>Cadeia de ferramentas</h3>
-                        <p class="x-hidden-focus">Os Serviços do Azure que podem ser implementados para dar suporte à disciplina de Linha de Base de Segurança.</p>
+                        <p class="x-hidden-focus">Os serviços do Azure que podem ser implementados para dar suporte à disciplina de Linha de Base de Segurança.</p>
                     </div>
                 </div>
             </div>

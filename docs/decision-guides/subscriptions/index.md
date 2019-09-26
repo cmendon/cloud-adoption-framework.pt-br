@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Saiba mais sobre assinaturas de plataforma de nuvem como um serviço principal nas migrações do Azure.
 author: alexbuckgit
 ms.author: abuck
-ms.date: 06/07/2019
+ms.date: 09/19/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 209de4c03474a956edf629c9c24f6b29f492284b
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: a5774cc1f22265c532bc9d885aab354cc1b2d297
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023628"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221018"
 ---
 # <a name="subscription-decision-guide"></a>Guia de decisão da assinatura
 
@@ -67,13 +67,8 @@ Conforme uma organização adiciona novas cargas de trabalho à nuvem, a proprie
 Cada organização categorizará seus aplicativos de forma diferente, em geral, separando as assinaturas com base em serviços ou aplicativos específicos ou de acordo com arquétipos de aplicativo. Essa categorização costuma ser desenvolvida para dar suporte a cargas de trabalho que provavelmente consomem a maior parte dos limites de recurso de uma assinatura ou separar cargas de trabalho críticas a fim de garantir que elas não estejam competindo com outras cargas de trabalho abaixo desses limites. Algumas cargas de trabalho que podem justificar uma assinatura separada de acordo com esse padrão incluem:
 
 - Cargas de trabalho críticas.
-- Aplicativos que têm dados protegidos.
-- Aplicativos experimentais.
-- Aplicativos sujeitos a requisitos regulatórios (como HIPAA ou FedRAMP).
-- Cargas de trabalho em lotes.
-- Cargas de trabalho de Big Data, como o Hadoop.
-- Cargas de trabalho em contêineres que usam orquestradores de implantação, como o Kubernetes.
-- Cargas de trabalho de análise.
+- Aplicativos que fazem parte do COGS (“Custo dos produtos vendidos”) em sua empresa. Exemplo: cada instância do widget da Empresa X contém um módulo do Azure IoT que envia telemetria. Isso pode exigir uma assinatura dedicada para fins de contabilidade/governança como parte do COGS.
+- Aplicativos sujeitos a requisitos regulatórios, como HIPAA ou FedRAMP.
 
 ### <a name="functional-pattern"></a>Padrão funcional
 
@@ -97,7 +92,7 @@ As hierarquias de grupos de gerenciamento podem ter até seis níveis de profund
 
 - [Gerenciamento de acesso aos recursos no Azure](../../govern/resource-consistency/resource-access-management.md)
 - [Várias camadas de governança em empresas de grande porte](../../govern/guides/complex/multiple-layers-of-governance.md)
-- [Várias regiões geográficas](../../migrate/expanded-scope/multiple-regions.md)
+- [Várias regiões geográficas](../regions/index.md)
 
 ## <a name="next-steps"></a>Próximas etapas
 

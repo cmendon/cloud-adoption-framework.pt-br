@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: b4418b86e5fc77e4ae292351a6773b1808ce5e38
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 18d6d5d70d504e6575e54c4b00767a585f8ef43a
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025859"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222402"
 ---
 # <a name="standard-enterprise-governance-guide"></a>Guia de governança para empresas padrão
 
@@ -41,8 +41,9 @@ Todos os aplicativos devem ser implantados na área apropriada do grupo de geren
 
 1. Um grupo de gerenciamento para cada tipo de ambiente (por exemplo, produção, desenvolvimento e teste).
 2. Duas assinaturas, uma para produção e outra para não produção.
-3. Grupos de recursos apropriados com o RBAC aplicado nessas assinaturas.
-4. A [nomenclatura consistente](../../../ready/considerations/naming-and-tagging.md) deve ser aplicada em cada nível dessa hierarquia de agrupamento.
+3. A [nomenclatura consistente](../../../ready/considerations/naming-and-tagging.md) deve ser aplicada em cada nível dessa hierarquia de agrupamento.
+4. Os grupos de recursos devem ser implantados de uma maneira que considere seu ciclo de vida de conteúdo: tudo o que é desenvolvido em conjunto é gerenciado em conjunto e o que é desativado junto fica junto. Para saber mais sobre melhores práticas de grupo de recursos, [confira aqui](../../../decision-guides/resource-consistency/index.md).
+5. A [seleção de região](../../../decision-guides/regions/index.md) é incrivelmente importante e deve ser considerada para que a rede, o monitoramento e a auditoria possam estar em vigor para failover/failback, assim como a confirmação de que os [SKUs necessários estão disponíveis nas regiões preferenciais](https://azure.microsoft.com/global-infrastructure/services).
 
 Veja um exemplo desse padrão em uso:
 

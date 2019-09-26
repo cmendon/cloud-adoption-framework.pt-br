@@ -4,18 +4,18 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Visão geral da disciplina de Consistência de recursos
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 652405257f50b0ee5f1edb5d634c999feeecf72e
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 5e7da35bb2b88c8f24abf09f8d3d2a708f732c1c
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71026308"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222096"
 ---
 # <a name="resource-consistency-discipline-overview"></a>Visão geral da disciplina de Consistência de recursos
 
@@ -54,7 +54,7 @@ As seis etapas a seguir oferecem exemplos e opções em potencial a serem consid
                     </div>
                     <div class="cardText" style="padding-left:0px;">
                         <h3>Modelo de consistência de recursos</h3>
-                        <p class="x-hidden-focus">Baixe o modelo para documentar uma disciplina de Consistência de recursos</p>
+                        <p class="x-hidden-focus">Baixe o modelo para documentar uma disciplina de Consistência de Recursos</p>
                     </div>
                 </div>
             </div>
@@ -91,7 +91,7 @@ As seis etapas a seguir oferecem exemplos e opções em potencial a serem consid
                     </div>
                     <div class="cardText" style="padding-left:0px;">
                         <h3>Indicadores e Métricas</h3>
-                        <p class="x-hidden-focus">Indicadores para reconhecer se é o momento certo para investir na disciplina de Consistência de recursos.</p>
+                        <p class="x-hidden-focus">Indicadores para reconhecer se é o momento certo para investir na disciplina de Consistência de Recursos.</p>
                     </div>
                 </div>
             </div>
@@ -110,7 +110,7 @@ As seis etapas a seguir oferecem exemplos e opções em potencial a serem consid
                     </div>
                     <div class="cardText" style="padding-left:0px;">
                         <h3>Processos de conformidade de política</h3>
-                        <p class="x-hidden-focus">Processos sugeridos para apoiar a conformidade com a política na disciplina de Consistência de recursos.</p>
+                        <p class="x-hidden-focus">Processos sugeridos para apoiar a conformidade com a política na disciplina de Consistência de Recursos.</p>
                     </div>
                 </div>
             </div>
@@ -148,7 +148,7 @@ As seis etapas a seguir oferecem exemplos e opções em potencial a serem consid
                     </div>
                     <div class="cardText" style="padding-left:0px;">
                         <h3>Cadeia de ferramentas</h3>
-                        <p class="x-hidden-focus">Os serviços do Azure que podem ser implementados para dar suporte à disciplina de Consistência de recursos.</p>
+                        <p class="x-hidden-focus">Os serviços do Azure que podem ser implementados para dar suporte à disciplina de Consistência de Recursos.</p>
                     </div>
                 </div>
             </div>

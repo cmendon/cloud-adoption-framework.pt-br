@@ -4,18 +4,18 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Explicação sobre o conceito de Linha de base de identidade em relação a governança de nuvem
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 888e9e7381f5dba0dd2b3797bb4cc06e79a2c9b8
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 7b670f2159784fdb948c95ea45b70adfd6a5fe2d
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025627"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222251"
 ---
 # <a name="identity-baseline-discipline-overview"></a>Visão geral da disciplina de Linha de Base de Identidade
 
@@ -26,7 +26,7 @@ A Linha de Base de Identidade é uma das [Cinco Disciplinas de Governança de Nu
 
 Esta seção da Cloud Adoption Framework descreve a abordagem ao desenvolvimento de uma disciplina de Linha de Base de Identidade como parte da estratégia de governança de nuvem. O principal público-alvo dessas diretrizes são os arquitetos de nuvem da organização e outros membros da equipe de governança de nuvem. No entanto, as decisões, políticas e os processos que surgem dessa disciplina devem envolver participação e discussões com membros relevantes das equipes de TI responsáveis pela implementação e gerenciamento das soluções de gerenciamento de identidade da sua organização.
 
-Se a organização não tiver experiência interna em Linha de base de identidade e segurança, considere contratar consultores externos como parte dessa disciplina. Além disso, considere contratar os [Serviços de Consultoria Microsoft](https://www.microsoft.com/enterprise/services), o serviço de adoção de nuvem [Microsoft FastTrack](https://azure.microsoft.com/programs/azure-fasttrack) ou outros especialistas externos em adoção de nuvem para discutir questões relacionadas a essa disciplina.
+Se a organização não tiver experiência interna em Linha de base de identidade e segurança, considere contratar consultores externos como parte dessa disciplina. Além disso, considere contratar os [Serviços de Consultoria Microsoft](https://www.microsoft.com/enterprise/services), o serviço de adoção de nuvem [Microsoft FastTrack](https://azure.microsoft.com/programs/azure-fasttrack) ou outros parceiros externos de adoção de nuvem para discutir questões relacionadas a essa disciplina.
 
 ## <a name="policy-statements"></a>Declarações de políticas
 
@@ -54,7 +54,7 @@ As seis etapas a seguir oferecem exemplos e opções em potencial a serem consid
                     </div>
                     <div class="cardText" style="padding-left:0px;">
                         <h3>Modelo de Linha de base de identidade</h3>
-                        <p class="x-hidden-focus">Baixe o modelo para documentar uma disciplina de Linha de Base de Identidade</p>
+                        <p class="x-hidden-focus">Baixar o modelo para documentar uma disciplina de Linha de Base de Identidade</p>
                     </div>
                 </div>
             </div>
@@ -72,7 +72,7 @@ As seis etapas a seguir oferecem exemplos e opções em potencial a serem consid
                     </div>
                     <div class="cardText" style="padding-left:0px;">
                         <h3>Riscos dos negócios</h3>
-                        <p class="x-hidden-focus">Reconheça os motivos e riscos normalmente associados à disciplina de Linha de Base de Identidade.</p>
+                        <p class="x-hidden-focus">Reconhecer os motivos e riscos normalmente associados à disciplina de Linha de Base de Identidade.</p>
                     </div>
                 </div>
             </div>
@@ -148,7 +148,7 @@ As seis etapas a seguir oferecem exemplos e opções em potencial a serem consid
                     </div>
                     <div class="cardText" style="padding-left:0px;">
                         <h3>Cadeia de ferramentas</h3>
-                        <p class="x-hidden-focus">Os Serviços do Azure que podem ser implementados para dar suporte à disciplina de Linha de Base de Identidade.</p>
+                        <p class="x-hidden-focus">Os serviços do Azure que podem ser implementados para dar suporte à disciplina de Linha de Base de Identidade.</p>
                     </div>
                 </div>
             </div>

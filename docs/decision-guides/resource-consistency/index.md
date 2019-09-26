@@ -2,19 +2,19 @@
 title: Guia de decisão de consistência de recursos
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Saiba mais sobre a consistência de recursos ao planejar a migração do Azure.
-author: rotycenh
-ms.author: v-tyhopk
-ms.date: 02/11/2019
+author: doodlemania2
+ms.author: dermar
+ms.date: 09/19/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 04d0a1e2ed63145baf94010fdf071a271461e7d0
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 58fc2c1f3ac08fb38fcbd71e6dc1d91db768284e
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023786"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221115"
 ---
 # <a name="resource-consistency-decision-guide"></a>Guia de decisão de consistência de recursos
 
@@ -32,16 +32,22 @@ Conforme a importância desses fatores aumenta, os benefícios de garantir consi
 
 No Azure, [grupos de recursos](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#resource-groups) são um mecanismo de organização de recursos de núcleo para agrupar logicamente os recursos dentro de uma assinatura.
 
-Os grupos de recursos atuam como contêineres para recursos com um ciclo de vida comum ou restrições de gerenciamento compartilhadas como política ou requisitos de controle de acesso a função (RBAC). Os grupos de recursos não podem ser aninhados e os recursos podem pertencer apenas a um grupo de recursos. Algumas ações podem agir em todos os recursos em um grupo de recursos. Por exemplo, a exclusão de um grupo de recursos remove todos os recursos daquele grupo. Os padrões comuns para a criação de grupos de recursos geralmente são divididos em duas categorias:
+Os grupos de recursos atuam como contêineres para recursos com um ciclo de vida comum E restrições de gerenciamento compartilhadas como política ou requisitos de RBAC (controle de acesso a função). os grupos de recursos não podem ser aninhados e os recursos podem pertencer apenas a um grupo de recursos. Todas as ações do painel de controle agem em todos os recursos em um grupo de recursos. Por exemplo, a exclusão de um grupo de recursos também exclui todos os recursos daquele grupo. O padrão preferencial do gerenciamento de grupo de recursos é considerar:
 
-- **Cargas de trabalho de TI tradicionais:** Geralmente, agrupadas por itens no mesmo ciclo de vida, como um aplicativo. O agrupamento por aplicativo permite o gerenciamento individual de aplicativo.
-- **Cargas de trabalho TI Agile:** Tendem a se concentrar nos aplicativos de nuvem voltados para o cliente. Esses grupos de recursos muitas vezes refletem as camadas da implantação (como camada da Web ou camada de aplicativo) e gerenciamento.
+1. O conteúdo do grupo de recursos foi desenvolvido em conjunto?
+1. O conteúdo do grupo de recursos é gerenciado, atualizado e monitorado em conjunto e feito de acordo com as mesmas pessoas ou equipes?
+1. O conteúdo do grupo de recursos foi desativado em conjunto?
+
+Se você respondeu _NÃO_ a nenhum dos pontos acima, o recurso em questão deve ser colocado em outro lugar, em outro grupo de recursos.
+
+> [!IMPORTANT]
+> os grupos de recursos também são específicos da região; no entanto, é comum que os recursos estejam em regiões diferentes dentro do mesmo grupo de recursos, pois eles são gerenciados juntos, conforme descrito acima. Confira [aqui](../regions/index.md) para obter mais informações sobre a seleção de região.
 
 ## <a name="deployment-consistency"></a>Consistência de implantação
 
 Ao desenvolver o mecanismo de agrupamento de recurso de base, a plataforma do Azure fornece um sistema para usar os modelos para implantar seus recursos no ambiente de nuvem. Você pode usar modelos para criar organização consistente e convenções de nomenclatura ao implantar cargas de trabalho, impor esses aspectos do seu design de implantação e gerenciamento de recursos.
 
-Os [Modelos do Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#template-deployment) permitem que você implante repetidamente seus recursos em um estado consistente usando uma estrutura de grupo de recursos e configuração predeterminada. Modelos do Gerenciador de Recursos ajudam a definir um conjunto de padrões como base para suas implantações.
+Os [Modelos do Azure Resource Manager](/azure/azure-resource-manager/template-deployment-overview) permitem que você implante repetidamente seus recursos em um estado consistente usando uma estrutura de grupo de recursos e configuração predeterminada. Modelos do Gerenciador de Recursos ajudam a definir um conjunto de padrões como base para suas implantações.
 
 Por exemplo, você pode ter um modelo padrão para a implantação de uma carga de trabalho de servidor Web que contém duas máquinas virtuais como servidores Web combinadas com um balanceador de carga para distribuir o tráfego entre os servidores. Então você pode reutilizar esse modelo para criar um conjunto estruturalmente idêntico de máquinas virtuais e balanceadores de carga sempre que esse tipo de carga de trabalho for necessário, alterando apenas o nome da implantação e os endereços IP envolvidos.
 

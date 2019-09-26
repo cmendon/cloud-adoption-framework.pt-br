@@ -8,12 +8,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: f9926fd59133303960338ac4e8b45cc9007dad51
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: a3c824b3f36a3252de0c43ff420096c48eda5fc1
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70816220"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224246"
 ---
 # <a name="landing-zone-considerations"></a>Considerações sobre zonas de aterrissagem
 
@@ -48,5 +48,5 @@ Os artigos a seguir ajudarão a tomar decisões relacionadas à governança da z
 - **Requisitos de custos**. Com base na motivação para os esforços de adoção da nuvem e nos compromissos operacionais de uma organização feitos em relação a esse ambiente, várias configurações de gerenciamento de custos podem precisar ser alteradas para essa zona de aterrissagem.
 - **Decisões de monitoramento**. Dependendo dos requisitos operacionais dessa zona de aterrissagem, várias ferramentas de monitoramento podem ser implantadas. O artigo sobre decisões de monitoramento pode ajudar você a determinar as ferramentas mais apropriadas a serem implantadas.
 - **Como usar o controle de acesso baseado em função**. O [RBAC (controle de acesso baseado em função)](../azure-best-practices/roles.md) do Azure oferece gerenciamento de acesso refinado baseado em grupo para os recursos organizados em torno das funções de usuário.
-- **Decisões de política**. As amostras do Azure Blueprints fornecem blueprints de conformidade pré-criados, cada um com iniciativas de política predefinidas. As decisões de política ajudam a embasar a seleção do melhor blueprint ou da melhor iniciativa de política de acordo com seus requisitos e suas restrições.
+- **Decisões de política**. As [amostras do Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints/samples) fornecem blueprints de conformidade pré-criados, cada um com iniciativas de política predefinidas. As decisões de política ajudam a embasar a seleção do melhor blueprint ou da melhor iniciativa de política de acordo com seus requisitos e suas restrições.
 - **[Criar uma consistência de nuvem híbrida](../../infrastructure/misc/hybrid-consistency.md)** . Crie soluções de nuvem híbrida que fornecem os benefícios da inovação na nuvem à sua organização, mantendo muitas das conveniências do gerenciamento local.

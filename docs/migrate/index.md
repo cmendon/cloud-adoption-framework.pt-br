@@ -9,16 +9,16 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 layout: LandingPage
-ms.openlocfilehash: 982451c9043f775c2e211d9b166ca2d094479ca9
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 3734a9b692dd345f45ee6a2987abf773b3391c63
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70816390"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224382"
 ---
 # <a name="cloud-migration-in-the-cloud-adoption-framework"></a>Migração na nuvem na Cloud Adoption Framework
 
-Qualquer [plano de adoção da nuvem](../plan/index.md) em escala empresarial incluirá cargas de trabalho que não garantem investimentos significativos na criação de uma lógica de negócios. Essas cargas de trabalho podem ser movidas para a nuvem por quaisquer abordagens: lift-and-shift, lift-and-optimize ou modernização. Cada uma delas é considerada uma migração. Os exercícios a seguir ajudarão a estabelecer os processos iterativos para avaliar, migrar, otimizar, proteger e gerenciar essas cargas de trabalho.
+Qualquer [plano de adoção da nuvem](../plan/index.md) em escala empresarial incluirá cargas de trabalho que não garantem investimentos significativos na criação de uma lógica de negócios. Essas cargas de trabalho podem ser movidas para a nuvem por inúmeras abordagens: lift-and-shift, lift-and-optimize ou modernização. Cada uma dessas abordagens é considerada uma migração. Os exercícios a seguir ajudarão a estabelecer os processos iterativos para avaliar, migrar, otimizar, proteger e gerenciar essas cargas de trabalho.
 
 ## <a name="getting-started"></a>Introdução
 
@@ -126,7 +126,7 @@ A migração é uma atividade intensa de processo. Conforme os esforços de migr
 
 ## <a name="iterative-migration-process"></a>Processo iterativo de migração
 
-Em seu núcleo, a migração para a nuvem consiste em quatro fases simples: Avaliar, Migrar, Otimizar e Proteger e Gerenciar. Esta seção da CAF ensina os leitores a maximizar o retorno de cada fase do processo e alinhar essas fases com seu plano de adoção da nuvem. O seguinte gráfico ilustra essas fases em uma abordagem iterativa:
+Em seu núcleo, a migração para a nuvem consiste em quatro fases simples: Avaliar, Migrar, Otimizar e Proteger e Gerenciar. Esta seção do Cloud Adoption Framework ensina os leitores a maximizar o retorno de cada fase do processo e alinhar essas fases ao seu plano de adoção da nuvem. O seguinte gráfico ilustra essas fases em uma abordagem iterativa:
 
 ![Modelo de migração da Cloud Adoption Framework](../_images/operational-transformation-migrate.png)
 
