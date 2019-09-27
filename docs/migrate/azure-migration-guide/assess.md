@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 19c3d6861ddb4ad87255233fae1a7f535538324b
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 78c82a2cb8793f8b5f0b90b1958fb4a83e3da935
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022831"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224395"
 ---
 # <a name="assess-the-digital-estate"></a>Avaliar bens digitais
 
@@ -75,7 +75,7 @@ As Migrações para Azure usam o Mapa do Serviço para aprimorar os recursos de 
 Para usar a visualização de dependência, você precisa baixar e instalar agentes em cada computador local que você deseja analisar.
 
 - [O Microsoft Monitoring Agent (MMA)](https://docs.microsoft.com/azure/log-analytics/log-analytics-agent-windows) precisa ser instalado em cada máquina.
-- O [agente de dependência](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud#install-the-dependency-agent-on-windows) precisa ser instalado em cada máquina.
+- O [Microsoft Dependency Agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud#install-the-dependency-agent-on-windows) precisa ser instalado em cada computador.
 - Além disso, se você tiver máquinas sem conectividade com a Internet, será necessário fazer o download e instalar o gateway do Log Analytics nelas.
 
 <!-- markdownlint-disable MD024 -->
@@ -84,7 +84,6 @@ Para usar a visualização de dependência, você precisa baixar e instalar agen
 
 - [Usando a solução do Mapa do Serviço no Azure](https://docs.microsoft.com/azure/azure-monitor/insights/service-map)
 - [Mapa do Serviço e Migrações para Azure: Visualização de dependências](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization)
-
 
 # <a name="scenarios-and-stakeholderstabscenarios"></a>[Cenários e Stakeholders](#tab/Scenarios)
 

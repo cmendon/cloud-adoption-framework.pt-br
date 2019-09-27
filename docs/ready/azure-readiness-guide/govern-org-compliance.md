@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: e38512ef75a0bb60f07467fc6a73ca90e1392fca
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 99d8520b74f00372d5cbf22f81669a6c27d22431
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025252"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224278"
 ---
 # <a name="governance-security-and-compliance-in-azure"></a>Governança, segurança e conformidade no Azure
 
@@ -69,7 +69,7 @@ Para publicar artefatos de blueprint em sua assinatura:
 1. Vá para **Blueprints – Definições de blueprint**.
 1. Selecione o blueprint criado nas etapas anteriores.
 1. Examine a definição do blueprint e selecione **Publicar blueprint**.
-1. Forneça uma **Versão** (por exemplo, 1.0) e qualquer **Nota de alteração**, em seguida, selecione **Publicar**.
+1. Forneça uma **Versão** (como _1.0_) e as **Notas de alterações**. Em seguida, selecione **Publicar**.
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints]" submitText="Blueprint definitions" :::
 
@@ -80,7 +80,7 @@ Para publicar artefatos de blueprint em sua assinatura:
 1. Vá para [Blueprints – Definições de blueprint](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints).
 1. Selecione o blueprint criado nas etapas anteriores.
 1. Examine a definição do blueprint e selecione **Publicar blueprint**.
-1. Forneça uma **Versão** (por exemplo, 1.0) e qualquer **Nota de alteração**, em seguida, selecione **Publicar**.
+1. Forneça uma **Versão** (como _1.0_) e as **Notas de alterações**. Em seguida, selecione **Publicar**.
 
 ::: zone-end
 
@@ -92,7 +92,7 @@ Para obter mais informações, consulte:
 
 - [Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints)
 - [Cloud Adoption Framework: Guia de decisão sobre a consistência do recurso](../../decision-guides/resource-consistency/index.md)
-- [Exemplos de blueprints baseados em padrões](https://docs.microsoft.com/azure/governance/blueprints/samples/index.md#standards-based-blueprint-samples)
+- [Exemplos de blueprints baseados em padrões](/azure/governance/blueprints/samples/index#standards-based-blueprint-samples)
 
 ::: zone-end
 

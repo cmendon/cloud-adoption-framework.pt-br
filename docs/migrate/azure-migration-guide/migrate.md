@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 4947f980bbcaa153e55af835c2e6892cf4e2dab3
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: d14ee6491e4fc804d6545c6708f1d27a44c83501
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022779"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224064"
 ---
 # <a name="migrate-assets-infrastructure-apps-and-data"></a>Migrar ativos (infraestrutura, aplicativos e dados)
 
@@ -196,6 +196,14 @@ Para obter mais informações, consulte:
 
 - [Visão geral do Assistente para Experimentos de Banco de Dados](https://docs.microsoft.com/sql/dea/database-experimentation-assistant-overview)
 
+## <a name="cosmos-db-data-migration-tool"></a>Ferramenta de Migração de Dados do Cosmos DB
+
+A ferramenta de Migração de Dados do Azure Cosmos DB pode importar dados de várias fontes em coleções e tabelas do Azure Cosmos DB. Você pode importar de arquivos JSON, arquivos CSV, SQL, MongoDB, Armazenamento de Tabelas do Azure, Amazon DynamoDB e até mesmo coleções da API de SQL do Azure Cosmos DB. A ferramenta de Migração de Dados também pode ser usada ao migrar de uma coleção de partição única para uma coleção de várias partições na API do SQL.
+
+Para obter mais informações, consulte:
+
+- [Ferramenta de Migração de Dados do Cosmos DB](https://docs.microsoft.com/en-us/azure/cosmos-db/import-data)
+
 # <a name="third-party-migration-toolstabthird-party-tools"></a>[Ferramentas de migração de terceiros](#tab/third-party-tools)
 
 Várias ferramentas de migração de terceiros e serviços ISV podem ajudar você durante o processo de migração. Cada um oferece benefícios e vantagens diferentes. Essas ferramentas incluem:
@@ -224,16 +232,28 @@ O Movere é uma solução de descoberta que fornece os dados e as informações 
 
 [Saiba mais](https://www.movere.io)
 
+## <a name="cosmos-db-partners"></a>Parceiros do Cosmos DB
+
+É possível escolher entre uma variedade de ferramentas e experientes parceiros integradores de sistemas para dar suporte às migrações do Azure Cosmos DB para seus requisitos de bancos de dados NoSQL.
+
+[Saiba mais](https://docs.microsoft.com/en-us/azure/cosmos-db/partners-migration-cosmosdb#migration-tools)
+
 Visite o [Centro de Migração do Azure](https://azure.microsoft.com/migration/support) para descobrir organizações que oferecem soluções de tecnologia de parceiros prontas para uso que se ajustam aos seus cenários de migração e saber mais sobre ferramentas adicionais de migração de terceiros e serviços de suporte.
+
+Visite o [Guia de Migração de Banco de Dados do Azure](https://datamigration.microsoft.com) para ver uma variedade de opções de migração de banco de dados e diretrizes passo a passo com os parceiros e nativos.
 
 # <a name="project-management-toolstabproject-management-tools"></a>[Ferramentas de gerenciamento de projetos](#tab/project-management-tools)
 
-Projetos que não são rastreados e gerenciados têm mais chances de ter problemas. Para garantir um resultado bem-sucedido, achamos importante usar uma ferramenta de gerenciamento de projetos. Existem muitas ferramentas diferentes disponíveis e os gerentes de projeto em sua organização já devem ter um favorito. A Microsoft oferece as seguintes ferramentas de gerenciamento de projetos, que podem funcionar juntas para fornecer recursos mais amplos:
+Projetos que não são rastreados e gerenciados têm mais chances de ter problemas. Para garantir um resultado bem-sucedido, achamos importante usar uma ferramenta de gerenciamento de projetos. Existem muitas ferramentas diferentes disponíveis e os gerentes de projeto em sua organização já devem ter um favorito.
+
+O Azure DevOps é a ferramenta sugerida para gerenciamento de projetos durante uma migração na nuvem. Para acelerar o uso do Azure DevOps, o Cloud Adoption Framework inclui uma ferramenta para implantar automaticamente um modelo de projeto. Esse modelo inclui as tarefas normalmente executadas durante um esforço de migração. Implante o modelo usando [estas instruções](https://docs.microsoft.com/azure/architecture/cloud-adoption/plan/template). É possível modificar o modelo para refletir as [cargas de trabalho](https://docs.microsoft.com/azure/architecture/cloud-adoption/plan/workloads) e os [ativos](https://docs.microsoft.com/azure/architecture/cloud-adoption/plan/assets) a serem migrados.
+
+A Microsoft também oferece as seguintes ferramentas de gerenciamento de projetos, que podem funcionar juntas para fornecer funcionalidades mais amplas:
 
 - [Microsoft Planner](https://tasks.office.com): Uma maneira simples e visual de organizar o trabalho em equipe.
 - [Microsoft Project](https://products.office.com/project/project-and-portfolio-management-software): Gerenciamento de projetos e portfólios, gerenciamento de capacidade de recursos, gerenciamento financeiro, gerenciamento de horários e cronogramas.
 - [Microsoft Teams](https://products.office.com/microsoft-teams): Colaboração em equipe e ferramenta de comunicação. Além disso, o Teams é integrado ao Planner e outras ferramentas para aprimorar ainda mais a colaboração.
-- [Azure DevOps](https://dev.azure.com): Com o Azure DevOps, você pode gerenciar sua infraestrutura como código ou usar os itens e quadros corporativos para executar o gerenciamento de projetos. Conforme seus projetos tomam forma, sua organização pode aproveitar as vantagens do CI/CD.
+- [Azure DevOps](https://dev.azure.com): o modelo de planejamento do Cloud Adoption Framework não é necessário para usar o Azure DevOps. É possível usar o serviço sem o modelo para gerenciar sua infraestrutura como código ou usar os itens de trabalho e quadros para realizar o gerenciamento de projetos. Conforme seus projetos tomam forma, sua organização pode aproveitar as vantagens do CI/CD.
 
 E essas não são as únicas ferramentas disponíveis. Muitas outras ferramentas de terceiros são amplamente usadas na comunidade de gerenciamento de projetos.
 
