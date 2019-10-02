@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Saiba como implantar uma zona de acesso de migração no Azure.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 5/19/2019
+ms.date: 09/27/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit
-ms.openlocfilehash: f642ea80ac0147f46a93b7c48f38757f456b7436
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 329274859f50aa83ebb90e79597fa1ffe0973ab8
+ms.sourcegitcommit: 1dccf1aed8e98aa0f58c4f86d90c65f5fa5ac84d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223931"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71811099"
 ---
 # <a name="deploy-a-migration-landing-zone"></a>Implantar uma zona de aterrissagem de migração
 
@@ -75,7 +75,7 @@ As decisões a seguir são representadas no blueprint da zona de acesso.
 
 Saiba mais e baixe um exemplo de referência da estrutura de adoção da nuvem migrar gráfico de zona de aterrissagem para implantação ou personalização nos [exemplos de plantas do Azure](https://docs.microsoft.com/azure/governance/blueprints/samples).
 
-Os exemplos de blueprint também estão disponíveis no portal. Para obter detalhes sobre como implantar um blueprint, confira [Azure Blueprints](./govern-org-compliance.md?tabs=azureblueprints#create-a-blueprint).
+Os exemplos de blueprint também estão disponíveis no portal. Para obter detalhes de como criar um plano gráfico, consulte [plantas do Azure](./govern-org-compliance.md?tabs=azureblueprints#create-a-blueprint).
 
 Para diretrizes sobre a personalização que deve ser feita nesse blueprint ou na zona de acesso resultante, confira os artigos sobre [considerações de zona de acesso](../considerations/index.md).
 
