@@ -1,7 +1,7 @@
 ---
-title: 'Guia empresarial Standard: Melhorando a consistência de recursos'
+title: 'Guia de governança empresarial padrão: Melhorando a consistência de recursos'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 'Guia empresarial Standard: Melhorando a consistência de recursos'
+description: 'Guia de governança empresarial padrão: Melhorando a consistência de recursos'
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: bede887bcb4589b286920a79016701961a04b8b6
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: d501f976613eae869228dfd75e4612f974997558
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222227"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967442"
 ---
-# <a name="standard-enterprise-guide-improving-resource-consistency"></a>Guia empresarial Standard: Melhorando a consistência de recursos
+# <a name="standard-enterprise-governance-guide-improving-resource-consistency"></a>Guia de governança empresarial padrão: Melhorando a consistência de recursos
 
 Este artigo avança na narração adicionando controles de consistência de recursos para dar suporte a aplicativos de missão crítica.
 

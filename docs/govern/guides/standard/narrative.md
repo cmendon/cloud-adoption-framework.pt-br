@@ -1,5 +1,5 @@
 ---
-title: 'Guia empresarial Standard: A narrativa por trás da estratégia de governança'
+title: 'Guia de governança empresarial padrão: A narrativa por trás da estratégia de governança'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Essa narração estabelece um caso de uso para governança durante uma jornada de adoção de nuvem padrão da empresa.
 author: BrianBlanchard
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 434a4d0238a4633210d31013e9787c3a0a92fc7a
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: be679c1265907f2b4a6be86d82ce287dc94d4b70
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029117"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967467"
 ---
-# <a name="standard-enterprise-guide-the-narrative-behind-the-governance-strategy"></a>Guia empresarial Standard: A narrativa por trás da estratégia de governança
+# <a name="standard-enterprise-governance-guide-the-narrative-behind-the-governance-strategy"></a>Guia de governança empresarial padrão: A narrativa por trás da estratégia de governança
 
 A seguinte narração descreve o caso de uso para governança durante uma [jornada de adoção de nuvem padrão da empresa](./index.md). Antes de implementar a jornada, é importante entender as suposições e a lógica que se refletem nesta narração. Em seguida, você pode melhorar o alinhamento da estratégia de governança para a jornada da sua própria organização.
 
@@ -52,7 +52,7 @@ As seguintes alterações estão previstas nos próximos vários anos:
 - O CIO está examinando a política em dados pessoais e dados financeiros para permitir os objetivos de estado futuro.
 - As equipes de BI e o desenvolvimento de aplicativos desejam liberar soluções com base em nuvem para produção nos próximos 24 meses com base na visão do compromisso com o cliente e novos produtos.
 - Este ano, a equipe de TI concluirá a retirada das cargas de trabalho de recuperação de desastre do datacenter de recuperação de desastre, migrando 2.000 VMs para a nuvem. Isso é esperado para produzir uma economia de custo estimado de 25 milhões de dólares nos próximos cinco anos.
-    ![Custos locais versus custos do Azure demonstrando um retorno de $25M USD nos próximos cinco anos](../../../_images/govern/calculator-small-to-medium-enterprise.png)
+    custos ![On versus custos do Azure demonstrando um retorno de $25M USD nos próximos cinco anos, @ no__t-1
 - A empresa planeja alterar a forma como ela faz investimentos reposicionando as despesas de capital confirmadas como uma despesa operacional dentro dela. Essa alteração fornecerá maior controle de custo e habilitará a TI para acelerar outros esforços planejados.
 
 ## <a name="next-steps"></a>Próximas etapas

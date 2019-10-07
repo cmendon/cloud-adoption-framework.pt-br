@@ -8,12 +8,12 @@ ms.date: 09/05/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: e026ac8c46fd8c39d2c6ff36c3612fed2bed7e82
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 67313af2166fbd8dab0f66abb8c6477079a049ad
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022187"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967754"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>Controlar os custos em unidades de negócios, ambientes ou projetos
 
@@ -40,7 +40,7 @@ A primeira etapa para acompanhar com precisão as informações de custo em unid
 
 ### <a name="resource-organization"></a>Organização do recurso
 
-Há várias abordagens para a organização de ativos. Esta seção descreve uma melhor prática com base nas necessidades de uma empresa de grande porte que tem suas estruturas de custo espalhadas em unidades de negócios, geografias e organizações de TI. Uma melhor prática semelhante para organizações menores e menos complexas está disponível em [Percurso de governança para empresas de pequeno e médio porte](../../govern/guides/standard/index.md).
+Há várias abordagens para a organização de ativos. Esta seção descreve uma melhor prática com base nas necessidades de uma empresa de grande porte que tem suas estruturas de custo espalhadas em unidades de negócios, geografias e organizações de TI. Uma prática recomendada semelhante para uma organização menor e menos complexa está disponível no [Guia de governança empresarial padrão](../../govern/guides/standard/index.md).
 
 Para uma empresa de grande porte, o modelo a seguir de grupos de gerenciamento, assinaturas e grupos de recursos criará uma hierarquia que permite a cada equipe ter o nível certo de visibilidade para executar suas tarefas. Quando a empresa precisa de controles de custo para evitar o estouro do orçamento, ela pode aplicar ferramentas de governança como o Azure Blueprints ou o Azure Policy às assinaturas dentro dessa estrutura para bloquear rapidamente erros de custo futuros.
 

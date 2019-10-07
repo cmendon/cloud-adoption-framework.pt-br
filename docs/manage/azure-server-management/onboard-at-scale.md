@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: a5b1d551f52ae8800e9a29d4c8a92c14965645cc
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 7144e772da10cd6c7d581fba61c11677524b60c2
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221505"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967292"
 ---
 # <a name="configure-azure-management-services-at-scale"></a>Configurar os serviços de gerenciamento do Azure em escala
 
@@ -30,7 +30,7 @@ A integração dos serviços de gerenciamento do Azure aos seus servidores envol
 
 Todas as soluções de gerenciamento discutidas em [serviços e ferramentas de gerenciamento do Azure](./tools-services.md) exigem que o agente de log Analytics seja instalado em VMS (máquinas virtuais) do Azure e em servidores locais. Você pode carregar suas VMs do Azure em escala usando Azure Policy. Atribua a política para garantir que o agente esteja instalado em todas as suas VMs do Azure e conectado ao espaço de trabalho do Log Analytics correto.
 
-O Azure Policy tem uma iniciativa de [diretiva](/azure/governance/policy/index#initiative-definition) interna que inclui o agente de log Analytics e o [Microsoft Dependency Agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-onboard#the-microsoft-dependency-agent), que é exigido pelo Azure monitor para VMs.
+O Azure Policy tem uma iniciativa de [diretiva](/azure/governance/policy/concepts/definition-structure#initiatives) interna que inclui o agente de log Analytics e o [Microsoft Dependency Agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-onboard#the-microsoft-dependency-agent), que é exigido pelo Azure monitor para VMs.
 
 <!-- TODO: Add these when available.
 - [Preview]: Enable Azure Monitor for virtual machine scale sets.
@@ -71,7 +71,7 @@ Depois de concluir o assistente, a atribuição de política será implantada no
 > [!NOTE]
 > Crie o [espaço de trabalho log Analytics necessário e a conta de automação do Azure](./prerequisites.md#create-a-workspace-and-automation-account) antes de integrar os servidores aos serviços de gerenciamento do Azure.
 
-Para servidores locais, você precisará baixar e instalar o [agente de log Analytics e o agente de dependência da Microsoft](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud) manualmente e configurá-los para se conectar ao espaço de trabalho correto. Faça isso especificando a ID do espaço de trabalho e as informações de chave, que você pode encontrar acessando seu espaço de trabalho do log Analytics na portal do Azure e selecionando **configurações** > configurações**avançadas**.
+Para servidores locais, você precisará baixar e instalar o [agente de log Analytics e o agente de dependência da Microsoft](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud) manualmente e configurá-los para se conectar ao espaço de trabalho correto. Faça isso especificando a ID do espaço de trabalho e as informações de chave, que você pode encontrar acessando o espaço de trabalho Log Analytics na portal do Azure e selecionando **configurações** > **Configurações avançadas**.
 
 ![Captura de tela das configurações avançadas do espaço de trabalho do Log Analytics no portal do Azure](./media/onboarding-on-premises.png)
 
@@ -95,7 +95,7 @@ As soluções de Gerenciamento de Atualizações, Controle de Alterações e inv
 
 É recomendável habilitar a solução de Gerenciamento de Atualizações para todos os servidores. Gerenciamento de Atualizações é gratuito para VMs do Azure e servidores locais. Se você habilitar Gerenciamento de Atualizações por meio de sua conta de automação, uma [configuração de escopo](https://docs.microsoft.com/azure/automation/automation-onboard-solutions-from-automation-account#scope-configuration) será criada no espaço de trabalho. Você precisará atualizar manualmente o escopo para incluir computadores cobertos pelo serviço de atualização.
 
-Para abranger todos os servidores existentes, bem como servidores futuros, você precisa remover a configuração de escopo. Para fazer isso, exiba sua conta de automação na portal do Azure e selecione **Gerenciamento de atualizações** > **gerenciar máquina** > **habilitar em todos os computadores disponíveis e futuros**. Habilitar essa configuração permite que todas as VMs do Azure conectadas ao espaço de trabalho usem Gerenciamento de Atualizações.
+Para abranger todos os servidores existentes, bem como servidores futuros, você precisa remover a configuração de escopo. Para fazer isso, exiba sua conta de automação na portal do Azure e selecione **Gerenciamento de Atualizações** > **gerenciar máquina** > **habilitar em todos os computadores disponíveis e futuros**. Habilitar essa configuração permite que todas as VMs do Azure conectadas ao espaço de trabalho usem Gerenciamento de Atualizações.
 
 ![Captura de tela de Gerenciamento de Atualizações no portal do Azure](./media/onboarding-configuration1.png)
 
@@ -148,7 +148,7 @@ O [log de atividades do Azure](https://docs.microsoft.com/azure/azure-monitor/pl
 
 Para adicionar esta solução:
 
-1. No portal do Azure, abra **todos os serviços** e selecione **Gerenciamento +**  > **soluções**de governança.
+1. No portal do Azure, abra **todos os serviços** e selecione **gerenciamento + governança** > **soluções**.
 2. No modo de exibição **soluções** , selecione **Adicionar**.
 3. Procure **análise do log de atividades** e selecione-o.
 4. Selecione **Criar**.
@@ -161,14 +161,14 @@ A solução de Integridade do Agente Log Analytics do Azure fornece informaçõe
 
 Para adicionar esta solução:
 
-1. No portal do Azure, abra **todos os serviços** e selecione **Gerenciamento +**  > **soluções**de governança.
+1. No portal do Azure, abra **todos os serviços** e selecione **gerenciamento + governança** > **soluções**.
 2. No modo de exibição **soluções** , selecione **Adicionar**.
 3. Pesquise a **integridade do agente de log Analytics do Azure** e selecione-o.
 4. Selecione **Criar**.
 
 Você precisará especificar o **nome do espaço** de trabalho do espaço de trabalho que você criou na seção anterior em que a solução está habilitada.
 
-Após a conclusão da criação, a instância de recurso do espaço de trabalho exibe **AgentHealthAssessment** quando você seleciona **Exibir** > **soluções**.
+Após a conclusão da criação, a instância de recurso do espaço de trabalho exibe **AgentHealthAssessment** quando você seleciona **Exibir** **soluções** > .
 
 ### <a name="antimalware-assessment"></a>Avaliação Antimalware
 
@@ -176,14 +176,14 @@ A solução Avaliação de Antimalware ajuda a identificar servidores infectados
 
 Para adicionar esta solução:
 
-1. No portal do Azure, abra **todos os serviços** e selecione **Gerenciamento +**  > **soluções**de governança.
+1. No portal do Azure, abra **todos os serviços** e selecione **gerenciamento + governança** > **soluções**.
 2. No modo de exibição **soluções** , selecione **Adicionar**.
 3. Procure **avaliação de antimalware** e selecione-o.
 4. Selecione **Criar**.
 
 Você precisará especificar o **nome do espaço** de trabalho do espaço de trabalho que você criou na seção anterior em que a solução está habilitada.
 
-Após a conclusão da criação, a instância de recurso do espaço de trabalho exibe o antimalware quando você seleciona **Exibir** > **soluções**.
+Após a conclusão da criação, a instância de recurso do espaço de trabalho exibe o **Antimalware** quando você seleciona **Exibir** **soluções** > .
 
 ### <a name="azure-monitor-for-vms"></a>Azure Monitor para VMs
 

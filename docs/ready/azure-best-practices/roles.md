@@ -11,12 +11,12 @@ ms.subservice: ready
 manager: BrianBlanchard
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 98f456bf9af0ab5a7533acf9a9d49f445b7fe37b
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 62d6ab27e127f9d954989465838cd7c328db0573
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224317"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967766"
 ---
 # <a name="role-based-access-control"></a>Controle de acesso baseado em função
 
@@ -28,7 +28,7 @@ Para obter uma visão geral das práticas de RBAC recomendadas como parte de uma
 
 Ao usar o [controle de acesso baseado em função](https://docs.microsoft.com/azure/role-based-access-control/overview), você pode separar as tarefas dentro da sua equipe e conceder apenas o acesso suficiente para que atores específicos do Azure AD (Azure Active Directory) – como usuários, grupos, entidades de serviço ou identidades gerenciadas – executem seus trabalhos. Em vez de conceder a todos acesso irrestrito à assinatura ou aos recursos do Azure, você pode limitar as permissões para cada conjunto de recursos.
 
-As [definições de função do RBAC](https://docs.microsoft.com/azure/role-based-access-control/role-definitions) listam as operações que são permitidas ou não aos usuários ou grupos a quem cada função foi atribuída. O [escopo](/azure/role-based-access-control/index#scope) de uma função especifica a quais recursos as permissões definidas se aplicam. O escopo pode ser especificado em vários níveis: grupo de gerenciamento, assinatura, grupo de recursos ou recursos. Os escopos são estruturados em uma relação pai/filho.
+As [definições de função do RBAC](https://docs.microsoft.com/azure/role-based-access-control/role-definitions) listam as operações que são permitidas ou não aos usuários ou grupos a quem cada função foi atribuída. O [escopo](/azure/role-based-access-control/overview#scope) de uma função especifica a quais recursos as permissões definidas se aplicam. O escopo pode ser especificado em vários níveis: grupo de gerenciamento, assinatura, grupo de recursos ou recursos. Os escopos são estruturados em uma relação pai/filho.
 
 ![Hierarquia de escopo do RBAC](../../_images/azure-best-practices/rbac-scope.png)
 

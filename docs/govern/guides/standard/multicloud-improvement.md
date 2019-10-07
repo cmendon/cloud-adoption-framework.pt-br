@@ -1,7 +1,7 @@
 ---
-title: 'Guia empresarial Standard: Melhoria em nuvem'
+title: 'Guia de governança empresarial padrão: Melhoria em nuvem'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 'Guia empresarial Standard: Melhoria em nuvem'
+description: 'Guia de governança empresarial padrão: Melhoria em nuvem'
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 2616193b01b252a74ad17a241d97bfd0ebc4860c
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 3a14603574430272004d9fe40654409409dd563e
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223791"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967319"
 ---
-# <a name="small-to-medium-enterprise-guide-multicloud-improvement"></a>Guia empresarial de pequeno a médio porte: Melhoria em nuvem
+# <a name="standard-enterprise-governance-guide-multicloud-improvement"></a>Guia de governança empresarial padrão: Melhoria em nuvem
 
 Este artigo avança na narração adicionando controles para a adoção de nuvem.
 

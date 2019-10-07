@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4de6cced9bb387f2955d644f93523ac4f26931da
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 1a4a82893535228e84defc8918be6e5fa884ca16
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222654"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967684"
 ---
 # <a name="deployment-acceleration-sample-policy-statements"></a>Instruções de política de exemplo de Aceleração de implantação
 
@@ -32,7 +32,7 @@ As instruções de política de exemplo a seguir abordam os riscos de negócios 
 
 **Instrução da política:** Todos os ativos implantados na nuvem devem ser implantados usando modelos ou scripts de automação sempre que possível.
 
-**Possíveis opções de design:** [Modelos do Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#template-deployment) fornecem uma abordagem de infraestrutura como código para implantar seus recursos no Azure. Você também pode usar o [Terraform](https://docs.microsoft.com/azure/terraform/terraform-overview) como uma ferramenta de implantação consistente local e baseada em nuvem.
+**Possíveis opções de design:** [Modelos do Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/template-deployment-overview) fornecem uma abordagem de infraestrutura como código para implantar seus recursos no Azure. Você também pode usar o [Terraform](https://docs.microsoft.com/azure/terraform/terraform-overview) como uma ferramenta de implantação consistente local e baseada em nuvem.
 
 ## <a name="lack-of-visibility-into-system-issues"></a>Falta de visibilidade em problemas de sistema
 

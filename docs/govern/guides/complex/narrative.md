@@ -9,16 +9,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 0d1aaa76f36125819ebb8f5c6225dc74bb60aabf
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: acc82a629adf32cd9a7bfe638b0ad176f1de7933
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030445"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967667"
 ---
 # <a name="governance-guide-for-complex-enterprises-the-supporting-narrative"></a>Guia de governança para empresas complexas: A narração de suporte
 
-A seguinte narração estabelece um caso de uso para [governança durante a jornada de adoção de nuvem de grande porte](./index.md). Antes de agir sobre as recomendações no guia, é importante entender as suposições e os motivos que se refletem nesta narração. Em seguida, você pode alinhar melhor a estratégia de governança à jornada de adoção de nuvem da sua própria organização.
+A seguinte narração estabelece um caso de uso para [governança durante a jornada de adoção de nuvem de uma empresa complexa](./index.md). Antes de agir sobre as recomendações no guia, é importante entender as suposições e os motivos que se refletem nesta narração. Em seguida, você pode alinhar melhor a estratégia de governança à jornada de adoção de nuvem da sua própria organização.
 
 ## <a name="back-story"></a>Histórico
 
@@ -58,7 +58,7 @@ As seguintes alterações estão previstas nos próximos vários anos:
 - O CIO deseja usar a migração de nuvem como uma função de força para melhorar a consistência e a estabilidade entre unidades de negócios e geografias. No entanto, o estado futuro deve respeitar quaisquer requisitos de conformidade externos que exijam desvio de abordagens padrão por equipes de ti específicas.
 - Se os experimentos iniciais no desenvolvimento de aplicativos e BI mostram os principais indicadores de sucesso, cada um gostaria de lançar soluções de produção em pequena escala para a nuvem de versão nos próximos 24 meses.
 - A CIO e o CFO haviam atribuído um arquiteto e Vice-presidente de infraestrutura para criar um estudo de viabilidade e análise de custo. Esses esforços determinarão se a empresa pode e deve mover 5.000 ativos para a nuvem nos próximos 36 meses. Uma migração bem-sucedida permitiria que o CIO eliminasse dois data centers, reduzindo os custos em mais de 100 milhões de dólares durante o plano de cinco anos. Se três ou quatro datacenters podem enfrentar resultados semelhantes, o orçamento estará em branco novamente, fornecendo o orçamento da CIO para dar suporte a iniciativas mais inovadoras.
-    ![Custos locais versus custos do Azure demonstrando um retorno de US $100 milhões nos próximos cinco anos](../../../_images/govern/calculator-enterprise.png)
+    custos ![On versus custos do Azure demonstrando um retorno de US $100 milhões nos próximos cinco anos, @ no__t-1
 - Junto com essa economia de custos, a empresa planeja alterar o gerenciamento de alguns investimentos em ti Reposicionando a despesa de capital confirmada como uma despesa operacional dentro dela. Essa alteração fornecerá maior controle de custo que poderá usar para acelerar as outras iniciativas planejadas.
 
 ## <a name="next-steps"></a>Próximas etapas
