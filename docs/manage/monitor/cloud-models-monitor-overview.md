@@ -4,23 +4,23 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Escolha quando usar Azure Monitor ou System Center Operations Manager no Microsoft Azure
 author: MGoedtel
 ms.author: magoedte
-ms.date: 07/31/2019
+ms.date: 10/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: badf03f3616de8e6612221282aa24996f0b6e8f8
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 5988cbb16e47a603af85eac97078b7dc0a00e295
+ms.sourcegitcommit: d37c4443e9acaa381ea74ee3fc50e3b99f13f22a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221137"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72001895"
 ---
 # <a name="cloud-monitoring-guide-monitoring-strategy-for-cloud-deployment-models"></a>Guia de monitoramento de nuvem: Estratégia de monitoramento para modelos de implantação em nuvem
 
 Este artigo inclui nossa estratégia de monitoramento recomendada para cada um dos modelos de implantação de nuvem, com base nos seguintes critérios:
 
-- Você precisa de compromisso contínuo com Operations Manager ou outra plataforma de monitoramento corporativo. Isso ocorre devido à integração com seus processos de operações de ti, conhecimento e experiência, ou porque determinada funcionalidade ainda não está disponível em Azure Monitor.
+- Você precisa manter seu compromisso com Operations Manager ou outra plataforma de monitoramento corporativo devido à integração com seus processos de operações de ti, conhecimento e experiência ou alguma funcionalidade ainda não está disponível no Azure Monitor.
 - Você precisa monitorar cargas de trabalho locais e na nuvem pública ou apenas na nuvem.
 - Sua estratégia de migração de nuvem inclui modernizar operações de ti e migrar para nossos serviços de monitoramento de nuvem e soluções.
 - Você pode ter sistemas críticos que são gapped ou isolados fisicamente, hospedados em uma nuvem privada ou em hardware físico, e precisam ser monitorados.
@@ -29,7 +29,7 @@ Nossa estratégia inclui suporte para monitoramento de infraestrutura (cargas de
 
 ## <a name="azure-cloud-monitoring"></a>Monitoramento de nuvem do Azure
 
-O Azure Monitor é o serviço de plataforma que fornece uma única fonte para monitorar os recursos do Azure. Ele foi projetado para soluções de nuvem criadas no Azure e que dão suporte a um recurso comercial baseado em cargas de trabalho de VM ou arquiteturas complexas que usam microserviços e outros recursos de plataforma. Ele monitora todas as camadas da pilha, começando com serviços de locatário, como Azure Active Directory Domain Services, e eventos de nível de assinatura e integridade de serviço do Azure. Ele também monitora recursos de infraestrutura, como VMs, armazenamento e recursos de rede, e, na camada superior, seu aplicativo. Monitorar cada uma dessas dependências e coletar os sinais certos que cada um pode emitir oferece a observação de aplicativos e a principal infraestrutura de que você precisa.
+Azure Monitor é o serviço da plataforma nativa do Azure que fornece uma única fonte para monitorar os recursos do Azure. Ele foi projetado para soluções de nuvem criadas no Azure e que dão suporte a um recurso comercial baseado em cargas de trabalho de VM ou arquiteturas complexas que usam microserviços e outros recursos de plataforma. Ele monitora todas as camadas da pilha, começando com serviços de locatário, como Azure Active Directory Domain Services, e eventos de nível de assinatura e integridade de serviço do Azure. Ele também monitora recursos de infraestrutura, como VMs, armazenamento e recursos de rede, e, na camada superior, seu aplicativo. Monitorar cada uma dessas dependências e coletar os sinais certos que cada um pode emitir oferece a observação de aplicativos e a principal infraestrutura de que você precisa.
 
 A tabela a seguir resume a abordagem recomendada para monitorar cada camada da pilha.
 
@@ -37,11 +37,9 @@ A tabela a seguir resume a abordagem recomendada para monitorar cada camada da p
 
 Camada | Resource | Escopo | Método
 ---|---|---|----
-Aplicativo | Aplicativo baseado na Web em execução em .NET, .NET Core, Java, JavaScript e plataforma node. js em uma VM do Azure, serviços de Azure App, Service Fabric do Azure, Azure Functions e serviços de nuvem do Azure | Monitore um aplicativo Web ao vivo para detectar automaticamente anomalias de desempenho, identificar exceções de código e problemas e coletar telemetria de usabilidade. |  Application Insights
-Contêineres | Instâncias de contêiner do Azure/serviço kubernetes do Azure | Monitore a capacidade, a disponibilidade e o desempenho das cargas de trabalho em execução em contêineres e instâncias de contêiner. | Azure Monitor para contêineres
-Sistema operacional convidado | Sistema operacional de VM Linux e Windows | Monitore a capacidade, a disponibilidade e o desempenho. Mapeie as dependências hospedadas em cada VM, incluindo a visibilidade de conexões de rede ativas entre servidores, latência de conexão de entrada e saída e portas em qualquer arquitetura conectada a TCP. | Azure Monitor para VMs
-Recursos do Azure – PaaS | Serviços de banco de dados do Azure (por exemplo, SQL ou mySQL) | Banco de dados do Azure para métricas de desempenho do SQL. | Habilite o log de diagnóstico para transmitir dados SQL para logs de Azure Monitor.
-Recursos do Azure – IaaS | 1. Armazenamento do Azure<br/> 2. Gateway de Aplicativo do Azure<br/> 3. Azure Key Vault<br/> 4. Grupos de segurança de rede<br/> 5. Gerenciador de Tráfego do Azure | 1. Capacidade, disponibilidade e desempenho.<br/> 2. Logs de diagnóstico e desempenho (atividade, acesso, desempenho e firewall).<br/> 3. Monitore como e quando os cofres de chaves são acessados e por quem.<br/> 4. Monitore eventos quando as regras são aplicadas e o contador de regras de quantas vezes uma regra é aplicada para negar ou permitir.<br/>5. Monitore a disponibilidade do status do ponto de extremidade. | 1. Métricas de armazenamento para armazenamento de BLOBs.<br/> 2. Habilite o log de diagnóstico e configure o streaming para Azure Monitor logs.<br/> 3. Habilite o log de diagnóstico e configure o streaming para Azure Monitor logs e habilite a [solução de análise de Azure Key Vault](https://docs.microsoft.com/azure/azure-monitor/insights/azure-key-vault). <br/> 4. Habilite o log de diagnóstico de grupos de segurança de rede e configure o streaming para Azure Monitor logs.<br/> 5. Habilite o log de diagnóstico dos pontos de extremidade do Gerenciador de tráfego e configure o streaming para Azure Monitor logs.
+Aplicativo | Aplicativo baseado na Web em execução em .NET, .NET Core, Java, JavaScript e plataforma node. js em uma VM do Azure, serviços de Azure App, Service Fabric do Azure, Azure Functions e serviços de nuvem do Azure | Monitore um aplicativo Web ao vivo para detectar automaticamente anomalias de desempenho, identificar exceções de código e problemas e coletar análises de comportamento do usuário. |  Azure Monitor (Application Insights)
+Recursos do Azure – PaaS | 1. Serviços de banco de dados do Azure (por exemplo, SQL ou mySQL) | 1. Banco de dados do Azure para métricas de desempenho do SQL. | 1. Habilite o log de diagnóstico para transmitir dados SQL para logs de Azure Monitor.
+Recursos do Azure – IaaS | 1. Armazenamento do Azure<br/> 2. Gateway de Aplicativo do Azure<br/> 3. Grupos de segurança de rede<br/> 4. Gerenciador de Tráfego do Azure<br/> 5. Máquina Virtual<br/> 6. Instâncias de contêiner do Azure/serviço kubernetes do Azure | 1. Capacidade, disponibilidade e desempenho.<br/> 2. Logs de diagnóstico e desempenho (atividade, acesso, desempenho e firewall).<br/> 3. Monitore eventos quando as regras são aplicadas e o contador de regras de quantas vezes uma regra é aplicada para negar ou permitir.<br/> 4. Monitore a disponibilidade do status do ponto de extremidade.<br/> 5. Monitore a capacidade, a disponibilidade e o desempenho no sistema operacional da VM convidada. Mapeie dependências de aplicativo hospedadas em cada VM, incluindo a visibilidade de conexões de rede ativas entre servidores, latência de conexão de entrada e saída e portas em qualquer arquitetura conectada a TCP.<br/> 6. Monitore a capacidade, a disponibilidade e o desempenho das cargas de trabalho em execução em contêineres e instâncias de contêiner. | 1. Métricas de armazenamento para armazenamento de BLOBs.<br/> 2. Habilite o log de diagnóstico e configure o streaming para Azure Monitor logs.<br/> 3. Habilite o log de diagnóstico de grupos de segurança de rede e configure o streaming para Azure Monitor logs.<br/> 4. Habilite o log de diagnóstico dos pontos de extremidade do Gerenciador de tráfego e configure o streaming para Azure Monitor logs.<br/> 5. Habilitar o Azure Monitor para VMs<br/> 6. Habilitar Azure Monitor para contêineres
 Rede| Comunicação entre sua máquina virtual e um ou mais pontos de extremidade (outra VM, um nome de domínio totalmente qualificado, um identificador de recurso uniforme ou um endereço IPv4). | Monitore a acessibilidade, a latência e as alterações de topologia de rede que ocorrem entre a VM e o ponto de extremidade. | Observador de Rede do Azure
 Assinatura do Azure | Integridade do serviço do Azure e integridade básica do recurso | <li> Ações administrativas executadas em um serviço ou recurso.<br/><li> A integridade do serviço com um serviço do Azure está em um estado degradado ou indisponível.<br/><li> Problemas de integridade detectados com um recurso do Azure da perspectiva do serviço do Azure.<br/><li> Operações executadas com o dimensionamento automático do Azure indicando uma falha ou exceção. <br/><li> Operações executadas com Azure Policy indicando que ocorreu uma ação permitida ou negada.<br/><li> Registro de alertas gerados pela central de segurança do Azure. |Entregue no log de atividades para monitoramento e alertas usando Azure Resource Manager.
 Locatário do Azure|Active Directory do Azure || Habilite o log de diagnóstico e configure o streaming para Azure Monitor logs.
@@ -50,11 +48,124 @@ Locatário do Azure|Active Directory do Azure || Habilite o log de diagnóstico 
 
 ## <a name="hybrid-cloud-monitoring"></a>Monitoramento de nuvem híbrida
 
-Esta seção está em desenvolvimento no momento para fornecer um conjunto abrangente de recomendações que abordam seu interesse para esse modelo de nuvem e serão disponibilizadas em breve.  
+Para muitas organizações, a nuvem deve ser abordada gradualmente, em que o modelo de nuvem híbrida é a primeira etapa mais comum na jornada. Você seleciona cuidadosamente o subconjunto apropriado de aplicativos e a infraestrutura para começar sua migração, evitando interrupções em seus negócios. No entanto, como oferecemos duas plataformas de monitoramento que dão suporte a esse modelo de nuvem, os tomadores de decisão de ti são confusos quanto à qual é a melhor opção para dar suporte às metas operacionais de ti e de negócios. Vamos examinar vários fatores para resolver as incertezas e fornecer uma compreensão de qual plataforma deve ser considerada.
+
+Alguns dos principais aspectos técnicos a serem considerados são:
+
+* Você precisa coletar dados de recursos do Azure que dão suporte à carga de trabalho e encaminhá-los para suas ferramentas existentes ou de provedor de serviços gerenciados.
+
+* Você precisa manter seu investimento atual em System Center Operations Manager e configurá-lo para monitorar os recursos de IaaS e PaaS em execução no Azure. Opcionalmente, como você está monitorando dois ambientes com características diferentes, com base em seus requisitos, você determina a integração com o Azure Monitor dá suporte à sua estratégia.
+
+* Como parte de sua estratégia de modernização para padronizar uma única ferramenta para reduzir o custo e a complexidade, você se compromete a Azure Monitor para monitorar os recursos no Azure e em sua rede corporativa.
+
+A tabela a seguir resume os requisitos que Azure Monitor e System Center Operations Manager dão suporte ao monitoramento do modelo de nuvem híbrida com base em um conjunto comum de critérios.
+
+|Requisito | Azure Monitor | Operations Manager |
+|:--|:---|:---|
+|Requisitos de infraestrutura | **Não** | **Sim**<br> Requer no mínimo um servidor de gerenciamento e um SQL Server para hospedar o banco de dados operacional e o data warehouse de relatórios banco de dados. Torna-se mais complexo quando HA/DR são necessários, computadores em vários sites, sistemas não confiáveis e outras considerações de design complexas.|
+|Conectividade limitada-sem Internet<br> ou rede isolada | **Não** | **Sim** | 
+|Acesso limitado à Internet controlado por conectividade | **Sim** | **Sim** |
+|Conectividade limitada – com frequência desconectada | **Sim** | **Sim** |
+|Monitoramento de integridade configurável | **Não** | **Sim** |
+| Teste de disponibilidade do aplicativo Web (rede isolada) | **Sim, limitado**<br> Azure Monitor tem suporte limitado nessa área e requer exceções de firewall personalizadas. | **Sim** | 
+| Teste de disponibilidade do aplicativo Web (distribuído globalmente) | **Não** | **Sim** |
+|Monitorar cargas de trabalho de VM | **Sim, limitado**<br> Pode coletar logs de erros do IIS e SQL Server, eventos do Windows e contadores de desempenho. Requer a criação de consultas personalizadas, alertas e visualizações. | **Sim**<br> Dá suporte ao monitoramento da maioria das cargas de trabalho de servidor com pacotes de gerenciamento disponíveis. Requer o Log Analytics agente do Windows ou agente de Operations Manager na VM, relatando de volta para o grupo de gerenciamento na rede corporativa.|
+|Monitorar IaaS do Azure | **Sim** | **Sim**<br> Dá suporte ao monitoramento da maior parte da infraestrutura da rede corporativa. Rastreia o estado de disponibilidade, as métricas e os alertas para VMs do Azure, SQL e armazenamento por meio do pacote de gerenciamento do Azure.|
+|Monitorar o PaaS do Azure | **Sim** | **Sim, limitado**<br> Com base no que tem suporte no pacote de gerenciamento do Azure. | 
+|Monitoramento de serviço do Azure | **Sim**<br> | **Sim**<br> Embora não haja nenhum monitoramento nativo da integridade do serviço do Azure fornecido hoje por meio de um pacote de gerenciamento, você pode criar fluxos de trabalho personalizados para consultar alertas de integridade do serviço do Azure. Use a API REST do Azure para obter alertas por meio de suas notificações existentes.|
+|Monitoramento de aplicativos Web moderno | **Sim** | **Não** |
+|Monitoramento de aplicativo Web herdado | **Sim, o limitado varia de acordo com o SDK**<br> Dá suporte ao monitoramento de versões mais antigas de aplicativos Web .NET e Java. | **Sim, limitado** |
+|Monitorar contêineres do serviço kubernetes do Azure | **Sim** | **Não** |
+|Monitorar contêineres Docker/Windows | **Sim** | **Não** | 
+|Monitoramento de desempenho de rede | **Sim** | **Sim, limitado**<br> Dá suporte a verificações de disponibilidade e coleta estatísticas básicas de dispositivos de rede usando o protocolo SNMP da rede corporativa.|
+|Análise de dados interativa | **Sim** | **Não**<br> O depende de SQL Server Reporting Services relatórios predefinidos ou personalizados, soluções de visualização de terceiros ou uma implementação de Power BI personalizada. Há limitações de escala e desempenho com o data warehouse de Operations Manager. Integre-se com os logs de Azure Monitor como uma alternativa para os requisitos de agregação de dados. A integração é obtida com a configuração do conector de Log Analytics.| 
+|Diagnóstico de ponta a ponta, análise de causa raiz e solução de problemas oportuna | **Sim** | **Sim, limitado**<br> Dá suporte a diagnóstico de ponta a ponta e solução de problemas somente para infraestrutura e aplicativos locais. O usa outros componentes do System Center ou soluções de parceiros.|
+|Visualizações interativas (painéis) | **Sim** | **Sim, limitado**<br> Fornece painéis essenciais com seu console Web do HTLM5 ou uma experiência avançada de soluções de parceiros, como enquadradas e Savision. |
+|Integração com ferramentas de ti/DevOps | **Sim** | **Sim, limitado** |
+
+### <a name="collect-and-stream-monitoring-data-to-third-party-or-on-premises-tools"></a>Coletar e transmitir dados de monitoramento para ferramentas de terceiros ou locais
+
+Para coletar métricas e logs da infraestrutura do Azure e recursos de plataforma, você precisa habilitar os logs de diagnóstico do Azure para esses recursos. Além disso, com as VMs do Azure, você pode coletar métricas e logs do sistema operacional convidado habilitando a extensão de Diagnóstico do Azure. Para encaminhar os dados de diagnóstico emitidos de seus recursos do Azure para suas ferramentas locais ou provedor de serviços gerenciados, configure os [hubs de eventos](https://docs.microsoft.com/azure/azure-monitor/platform/diagnostic-logs-stream-event-hubs) para transmitir os dados para eles. 
+
+### <a name="monitor-with-system-center-operations-manager"></a>Monitorar com System Center Operations Manager
+
+Embora System Center Operations Manager tenha sido originalmente projetado como uma solução local para monitorar entre aplicativos, cargas de trabalho e infraestrutura em execução em seu ambiente de ti, ele evoluiu para incluir recursos de monitoramento de nuvem e se integra ao Azure, Office 365 e Amazon Web Services (AWS). Ele é capaz de monitorar esses diversos ambientes com pacotes de gerenciamento projetados e atualizados para dar suporte a eles.  
+
+Para clientes que fizeram investimentos significativos em Operations Manager para obter um monitoramento abrangente que esteja totalmente integrado com seus processos e ferramentas de gerenciamento de serviços de TI, ou clientes novos no Azure, é compreensível que você questione:
+
+* Operations Manager pode continuar a agregar valor e faz sentido comercial?
+
+* Se os recursos do Operations Manager fizerem o ajuste certo para nossa organização de ti?
+
+* A integração do Operations Manager com o Azure Monitor fornece a solução de monitoramento abrangente e econômica que precisamos? 
+
+Se você já investiu em Operations Manager, não precisa se concentrar em planejar uma migração para substituí-la imediatamente. Com o Azure ou outros provedores de nuvem existentes como uma extensão de sua própria rede local, Operations Manager pode monitorar as VMs convidadas e os recursos do Azure como se estivessem em sua rede corporativa. Isso requer uma conexão de rede confiável entre sua rede e a rede virtual do Azure com largura de banda suficiente. 
+
+Para monitorar as cargas de trabalho em execução no Azure, você precisa de:
+
+* O [pacote de gerenciamento do Azure](https://www.microsoft.com/download/details.aspx?id=50013) para coletar métricas de desempenho emitidas pelos serviços do Azure, como funções Web e de trabalho, Application insights testes de disponibilidade (webtestes), barramento de serviço etc. O pacote de gerenciamento usa a API REST do Azure para monitorar a disponibilidade e o desempenho desses recursos. Alguns tipos de serviço do Azure não têm nenhuma métrica ou nenhum monitor predefinido no pacote de gerenciamento, mas ainda podem ser monitorados por meio das relações definidas no pacote de gerenciamento do Azure para serviços descobertos.
+
+* O [pacote de gerenciamento do banco de dados SQL do Azure](https://www.microsoft.com/download/details.aspx?id=38829) para monitorar a disponibilidade e o desempenho de bancos de dados SQL do Azure e servidores de banco de dados SQL do Azure usando a API REST do Azure e consultas T-SQL para SQL Server exibições do sistema.
+
+* Para monitorar o SO convidado e as cargas de trabalho em execução na VM, como SQL Server, IIS ou Apache Tomcat, você precisará baixar e importar o pacote de gerenciamento que dá suporte ao aplicativo, serviço e sistema operacional.
+
+O conhecimento é definido no pacote de gerenciamento, que descreve como monitorar as dependências individuais e os componentes do. Ambos os pacotes de gerenciamento do Azure exigem a execução de um conjunto de etapas de configuração no Azure e Operations Manager para começar a monitorar esses recursos. 
+
+Na camada de aplicativo, o Operations Manager oferece recursos básicos de monitoramento do desempenho de aplicativos para algumas versões herdadas do .NET e do Java. Se determinados aplicativos em seu ambiente de nuvem híbrida operam em modo offline ou isolado de rede, de forma que eles não possam se comunicar com um serviço de nuvem pública, Operations Manager APM (monitoramento do desempenho de aplicativos) pode ser uma opção viável para certos cenários limitados. Para aplicativos que não são executados em plataformas herdadas, hospedados localmente e em qualquer nuvem pública que permite a comunicação por meio de um firewall (direto ou por meio de um proxy) para o Azure, use Azure Monitor Application Insights. Isso oferece monitoramento de nível de código profundo, com suporte de primeira classe para ASP.NET, ASP.NET Core, Java, JavaScript e node. js.
+
+Para qualquer aplicativo Web que possa ser acessado externamente, você deve habilitar um tipo de transações sintéticas conhecido como [monitoramento de disponibilidade]( https://docs.microsoft.com/azure/azure-monitor/app/monitor-web-app-availability). É importante saber se seu aplicativo ou um ponto de extremidade HTTP/HTTPS crítico do qual seu aplicativo depende, está disponível e respondendo. Application Insights monitoramento de disponibilidade permite que você execute testes de vários data centers do Azure e forneça informações sobre a integridade do seu aplicativo a partir de uma perspectiva global.
+
+Embora Operations Manager seja capaz de monitorar recursos hospedados no Azure, há várias vantagens em incluir Azure Monitor, pois seus pontos fortes superam as limitações no Operations Manager e estabelecem uma base sólida para dar suporte à migração eventual a partir dele. Aqui, examinamos cada um deles com nossa recomendação para incluir Azure Monitor em sua estratégia de monitoramento híbrido.  
+
+#### <a name="disadvantage-of-using-operations-manager-by-itself"></a>Desvantagem de usar o Operations Manager por si só
+
+1. Analisar dados de monitoramento em Operations Manager geralmente é executado usando exibições predefinidas definidas em pacotes de gerenciamento que são acessados no console do, de relatórios do SQL Server Reporting Services (SSRS) ou exibições personalizadas criadas pelo usuário final. Executar a análise ad hoc dos dados não é possível prontos para uso. Operations Manager os relatórios são inflexíveis, o data warehouse que fornece retenção de longo prazo dos dados de monitoramento não é dimensionado nem funciona bem, e a experiência em escrever instruções T-SQL, desenvolver uma solução de Power BI ou usar soluções de terceiros é necessário para dar suporte aos requisitos para as diferentes pessoas na organização de ti. 
+
+2. O alerta no Operations Manager não oferece suporte a expressões complexas e inclui a lógica de correlação em um esforço para ajudar a reduzir o ruído de alerta e os alertas de grupo em um esforço para mostrar a relação entre eles para ajudar a identificar a causa raiz do lo. 
+
+#### <a name="advantage-of-operations-manager--azure-monitor"></a>Vantagem do Operations Manager + Azure Monitor
+
+1. Os logs de Azure Monitor é a solução para contornar as limitações de Operations Manager e complementam o banco de dados data warehouse do Operations Manager a fim de coletar registros importantes de desempenho e de log. Azure Monitor oferece melhor análise, desempenho ao consultar grandes volumes de dados e retenção do que o Operations Manager data warehouse. Sua linguagem de consulta permite que você crie consultas muito mais complexas e sofisticadas, com uma capacidade de executar consultas em terabytes de dados em segundos. Você pode transformar seus dados rapidamente em gráficos de pizza, gráficos de horas e muitas outras visualizações. Não é mais restrita ao trabalhar com relatórios no Operations Manager com base em SQL Server Reporting Services, consultas SQL personalizadas ou outras soluções alternativas para analisar esses dados.
+
+2. Forneça uma experiência de alerta aprimorada implementando a solução de gerenciamento de alertas Azure Monitor. Os alertas gerados no grupo de gerenciamento Operations Manager podem ser encaminhados para o espaço de trabalho Azure Monitor logs Analytics. Você pode configurar a assinatura responsável por encaminhar alertas de Operations Manager para Azure Monitor logs para apenas encaminhar determinados alertas. Por exemplo, você pode encaminhar apenas alertas que atendam aos seus critérios de consulta no suporte ao gerenciamento de problemas para tendências e investigação da causa raiz de falhas ou problemas, por meio de um único painel de vidro. Além disso, você pode correlacionar outros dados de log de Application Insights ou outras fontes, para obter informações que ajudem a melhorar a experiência do usuário, aumentar o tempo de atividade e reduzir a hora de resolver incidentes.
+
+3. Monitore a infraestrutura e os aplicativos nativos de nuvem, de uma arquitetura simples ou de várias camadas no Azure e use Operations Manager para monitorar a infraestrutura local. Isso inclui uma ou mais VMs, várias VMs colocadas em um conjunto de disponibilidade ou conjunto de dimensionamento de máquinas virtuais, ou um aplicativo em contêiner implantado no AKS (serviço kubernetes do Azure) em execução em contêineres do Windows Server ou Linux.
+
+4. Use a solução Verificação de Integridade do System Center Operations Manager para avaliar proativamente o risco e a integridade de seu grupo de gerenciamento de System Center Operations Manager em um intervalo regular. Isso pode substituir ou complementar qualquer funcionalidade personalizada que você tenha adicionado ao seu grupo de gerenciamento.
+
+5. Com o recurso de mapa do Azure Monitor para VMs, ele permite que você monitore as métricas de conectividade padrão de conexões de rede entre as VMs do Azure e as VMs locais. Essas métricas incluem tempo de resposta, solicitações por minuto, taxa de transferência de tráfego e links. Você pode identificar conexões com falha, solucionar problemas, executar a validação de migração, executar análise de segurança e verificar a arquitetura geral do serviço. O MAP pode descobrir automaticamente os componentes de aplicativos em sistemas Windows e Linux e mapear a comunicação entre os serviços. Isso ajuda a identificar conexões e dependências das quais você não conhece, planejar e validar a migração para o Azure e minimizar a especulação durante a resolução de incidentes.
+
+6. Usando Monitor de Desempenho de Rede, monitore a conectividade de rede entre:
+
+   - Sua rede corporativa e o Azure.
+
+   - Aplicativos multicamadas de missão crítica e micro-serviços.
+
+   - Locais de usuário e aplicativos baseados na Web (HTTP/HTTPs).
+
+   Essa estratégia fornece visibilidade da camada de rede, sem a necessidade de SNMP. Ele também pode apresentar em um mapa de topologia interativo, a topologia de salto a salto de rotas entre o ponto de extremidade de origem e de destino. É uma opção melhor do que tentar realizar o mesmo resultado com o monitoramento de rede no Operations Manager ou outras ferramentas de monitoramento de rede usadas no momento em seu ambiente.
+
+### <a name="monitor-with-azure-monitor"></a>Monitorar com o Azure Monitor
+
+Embora uma migração para a nuvem apresente vários desafios, ela também inclui uma série de oportunidades. Ele permite que sua organização migre de uma ou mais ferramentas de monitoramento de empresa locais para não apenas reduzir as despesas de capital e custos operacionais, mas também se beneficiar das vantagens que uma plataforma de monitoramento de nuvem, como a Azure Monitor fornece em escala de nuvem. Examine os requisitos de monitoramento e alerta, a configuração de ferramentas de monitoramento existentes, as cargas de trabalho que estão em transição para a nuvem e configure Azure Monitor quando o plano for finalizado. 
+
+- Monitore a infraestrutura híbrida e os aplicativos, de uma arquitetura simples ou de várias camadas, na qual os componentes são hospedados entre o Azure, outro provedor de nuvem e sua rede corporativa. Isso inclui uma ou mais VMs, várias VMs colocadas em um conjunto de disponibilidade ou conjunto de dimensionamento de máquinas virtuais, ou um aplicativo em contêiner implantado no AKS (serviço kubernetes do Azure) em execução em contêineres do Windows Server ou Linux. 
+
+- Habilite Azure Monitor para VMs, Azure Monitor para contêineres e Application Insights para detectar e diagnosticar problemas entre infraestrutura e aplicativos. Para obter uma análise mais completa e correlação de dados coletados de vários componentes ou dependências que dão suporte ao aplicativo, você precisa usar logs de Azure Monitor.
+
+- Crie alertas inteligentes que podem ser aplicados a um conjunto principal de aplicativos e componentes de serviço, ajude a reduzir o ruído de alerta com limites dinâmicos para sinais complexos e utilize a agregação de alertas com base em algoritmos de aprendizado de máquina para ajudar a identificar rapidamente o lo.
+
+ - Defina uma biblioteca de consultas e painéis para dar suporte aos requisitos para as diferentes pessoas na organização de ti.
+
+- Definir padrões e métodos para habilitar o monitoramento em recursos híbridos e de nuvem, uma linha de base de monitoramento para cada recurso, limites de alerta, etc.  
+
+- Configure o RBAC (controle de acesso baseado em função) para que você conceda aos usuários e grupos apenas a quantidade de acesso de que eles precisam para trabalhar com dados de monitoramento de recursos que eles são responsáveis por gerenciar. 
+
+- Inclua automação e autoatendimento para permitir que cada equipe crie, habilite e ajuste suas configurações de monitoramento e alerta conforme necessário. 
 
 ## <a name="private-cloud-monitoring"></a>Monitoramento de nuvem privada
 
-Você pode obter o monitoramento holístico de Azure Stack com System Center Operations Manager. Especificamente, você pode monitorar as cargas de trabalho em execução no locatário, no nível de recurso, nas máquinas virtuais e na infraestrutura que hospeda Azure Stack (servidores físicos e comutadores de rede). Você também pode obter um monitoramento holístico com uma combinação de [recursos de monitoramento de infraestrutura](https://docs.microsoft.com/azure/azure-stack/azure-stack-monitor-health) incluídos no Azure Stack. Esses recursos ajudam a exibir a integridade e os alertas de uma região Azure Stack e o [serviço de Azure monitor](https://docs.microsoft.com/azure/azure-stack/user/azure-stack-metrics-azure-data) no Azure Stack, que fornece métricas de infraestrutura de nível básico e logs para a maioria dos serviços.
+Você pode obter o monitoramento holístico de Azure Stack com System Center Operations Manager. Especificamente, você pode monitorar as cargas de trabalho em execução no locatário, no nível de recurso, nas máquinas virtuais e na infraestrutura que hospeda Azure Stack (servidores físicos e comutadores de rede). Você também pode obter um monitoramento holístico com uma combinação de [recursos de monitoramento de infraestrutura](/azure/azure-stack/azure-stack-monitor-health) incluídos no Azure Stack. Esses recursos ajudam a exibir a integridade e os alertas de uma região Azure Stack e o [serviço de Azure monitor](/azure/azure-stack/user/azure-stack-metrics-azure-data) no Azure Stack, que fornece métricas de infraestrutura de nível básico e logs para a maioria dos serviços.
 
 Se você já investiu em Operations Manager, use o pacote de gerenciamento do Azure Stack para monitorar a disponibilidade e o estado de integridade de implantações de Azure Stack. Isso inclui regiões, provedores de recursos, atualizações, execuções de atualização, unidades de escala, nós de unidade, funções de infraestrutura e suas instâncias (entidades lógicas compostas pelos recursos de hardware). Ele usa as APIs REST de provedor de recursos de integridade e atualização para se comunicar com Azure Stack. Para monitorar servidores físicos e dispositivos de armazenamento, use o pacote de gerenciamento de fornecedores de OEM (por exemplo, fornecido pela Lenovo, Hewlett Packard ou Dell). Operations Manager pode monitorar nativamente os comutadores de rede para coletar estatísticas básicas usando o protocolo SNMP. O monitoramento das cargas de trabalho de locatário é possível com o pacote de gerenciamento do Azure seguindo duas etapas básicas. Configure a assinatura que você deseja monitorar e, em seguida, adicione os monitores para essa assinatura.
 
