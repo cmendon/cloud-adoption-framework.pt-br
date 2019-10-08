@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: b5d5bca79d08a0084026c027a242086cefb0100f
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: c7d019cc7264ba972252b6182d4f2c10d7b91f43
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025895"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967597"
 ---
 # <a name="cloud-governance-guides"></a>Guias de governança de nuvem
 
@@ -76,27 +76,27 @@ Para iniciar um percurso de governança, escolha uma das duas opções abaixo. A
 
 ### <a name="business-characteristics"></a>Características de negócios
 
-| Característica | Organização padrão                                                                              | Empresa complexa                                                                                               |
-|--------------------------------------------|---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Geografia (país ou região geopolítica) | Os clientes ou funcionários residem, em grande parte, em uma região                                                      | Os clientes ou os funcionários residem em várias regiões ou exigem nuvens soberanas.                                                             |
-| Unidades de negócios afetadas                    | Unidades de negócios que compartilham uma infraestrutura de TI comum                                                                                    | Várias unidades de negócios que não compartilham uma infraestrutura de TI comum                                                                                        |
-| Orçamento de TI                                  | Orçamento de TI único                                                                                        | Orçamento alocado entre as unidades de negócios e as moedas                                                                         |
-| Investimentos em TI                             | Os investimentos orientados por despesa de capital são planejados anualmente e costumam cobrir apenas uma manutenção básica. | Os investimentos orientados por despesa de capital são planejados anualmente e costumam incluir manutenção e um ciclo de atualização de três a cinco anos. |
+| Característica | Organização padrão | Empresa complexa |
+|---|---|---|
+| Geografia (país ou região geopolítica) | Os clientes ou funcionários residem, em grande parte, em uma região | Os clientes ou os funcionários residem em várias regiões ou exigem nuvens soberanas. |
+| Unidades de negócios afetadas | Unidades de negócios que compartilham uma infraestrutura de TI comum | Várias unidades de negócios que não compartilham uma infraestrutura de TI comum |
+| Orçamento de TI | Orçamento de TI único | Orçamento alocado entre as unidades de negócios e as moedas |
+| Investimentos em TI | Os investimentos orientados por despesa de capital são planejados anualmente e costumam cobrir apenas uma manutenção básica. | Os investimentos orientados por despesa de capital são planejados anualmente e costumam incluir manutenção e um ciclo de atualização de três a cinco anos. |
 
 ### <a name="current-state-before-adopting-cloud-governance"></a>O estado atual antes da adoção da governança de nuvem
 
-| Estado | Empresa padrão                                                                               | Empresa complexa                                                                                                          |
-|---------------------------------------------|----------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
-| Datacenter ou provedores de hospedagem terceirizados | Menos de cinco datacenters                                                                                  | Mais de cinco datacenters                                                                                                   |
-| Rede                                  | Sem WAN ou 1 &ndash; 2 provedores de WAN                                                                             | Rede complexa ou WAN global                                                                                             |
-| Identidade                                    | Floresta única, domínio único. | Várias florestas e vários domínios complexos.  |
+| Estado | Empresa padrão | Empresa complexa |
+|---|---|---|
+| Datacenter ou provedores de hospedagem terceirizados | Menos de cinco datacenters | Mais de cinco datacenters |
+| Rede | Sem WAN ou 1 &ndash; 2 provedores de WAN | Rede complexa ou WAN global |
+| Identidade | Floresta única, domínio único. | Várias florestas e vários domínios complexos. |
 
 ### <a name="desired-future-state-after-incremental-improvement-of-cloud-governance"></a>Estado futuro desejado após a melhoria incremental da governança de nuvem
 
-| Estado | Organização padrão                                                                        | Empresa complexa                                                                                        |
-|----------------------------------------------|---------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Gerenciamento de Custos – contabilização da nuvem           | Modelo de análise. A cobrança é centralizada entre a TI.                                                | Modelo de estorno. A cobrança pode ser distribuída entre as aquisições da TI.                                  |
-| Linha de base de segurança – dados protegidos           | Dados financeiros e IP da empresa. Dados de cliente limitados. Sem requisitos de conformidade de terceiros.     | Várias coleções de dados financeiros e pessoais de clientes. Talvez seja preciso considerar a conformidade a terceiros. |
+| Estado | Organização padrão | Empresa complexa |
+|---|---|---|
+| Gerenciamento de Custos – contabilização da nuvem | Modelo de análise. A cobrança é centralizada entre a TI. | Modelo de estorno. A cobrança pode ser distribuída entre as aquisições da TI. |
+| Linha de base de segurança – dados protegidos | Dados financeiros e IP da empresa. Dados de cliente limitados. Sem requisitos de conformidade de terceiros. | Várias coleções de dados financeiros e pessoais de clientes. Talvez seja preciso considerar a conformidade a terceiros. |
 
 ## <a name="azure-virtual-datacenter"></a>Datacenter Virtual do Azure
 
@@ -124,6 +124,6 @@ Para obter mais informações, visite a seção [Datacenter Virtual do Azure](..
 Escolha um destes guias:
 
 > [!div class="nextstepaction"]
-> [Guia de governança padrão](./standard/index.md)
+> [Guia de governança corporativa padrão](./standard/index.md)
 >
 > [Guia de governança para empresas complexas](./complex/index.md)

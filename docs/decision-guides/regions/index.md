@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 041e1ccaf6ec0e928b6868f4e8c90849c8d4dea8
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 8323a8bded4f2cc1d24407fa3326abf3b96ef810
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224585"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967705"
 ---
 # <a name="azure-regions"></a>Regiões do Azure
 
@@ -110,7 +110,7 @@ Essa abordagem é orientada por informações quantificáveis. Como tal, a abord
 Quando o escopo de uma migração inclui várias regiões, as seguintes considerações de preparação devem ser avaliadas pela equipe de adoção da nuvem:
 
 - A soberania de dados pode exigir a localização de alguns ativos, mas há muitos ativos que podem não ser controlados por essas restrições de conformidade. Itens como registro em log, relatórios, roteamento de rede, identidade e outros serviços de TI central podem estar qualificados para serem hospedados como serviços compartilhados em várias assinaturas ou até mesmo em várias regiões. É recomendável que a equipe de adoção de nuvem avalie um modelo de serviço de compartilhamento para esses serviços, conforme descrito na [arquitetura de referência para uma topologia de hub e spoke com serviços compartilhados](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services)
-- Ao implantar várias instâncias de ambientes semelhantes, um alocador de ambiente poderia criar consistência, melhorar a governança e acelerar a implantação. O [grande percurso de governança empresarial](../../govern/guides/complex/index.md) estabelece uma abordagem que cria um ambiente dimensionado em várias regiões.
+- Ao implantar várias instâncias de ambientes semelhantes, um alocador de ambiente poderia criar consistência, melhorar a governança e acelerar a implantação. O [guia de governança para empresas complexas](../../govern/guides/complex/index.md) estabelece uma abordagem que cria um ambiente dimensionado em várias regiões.
 
 Quando a equipe se sentir confortável com a abordagem de linha de base e a preparação estiver alinhada, haverá alguns pré-requisitos controlados por dados a serem considerados:
 
