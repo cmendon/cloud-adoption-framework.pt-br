@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: c6b195a69622a4934f257090650a8ba6ce884025
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 7a5f3b3f9a50cf4a989d268788279f132a42efb7
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024799"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967206"
 ---
 # <a name="migration-focused-cost-control-mechanisms"></a>Mecanismos de controle de custo focados na migração
 
@@ -71,7 +71,7 @@ A estimativa resultante, ilustrada abaixo, identifica os custos mensais de compu
 ## <a name="additional-resources"></a>Recursos adicionais
 
 - [Configurar e examinar uma avaliação com as Migrações para Azure](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware#set-up-an-assessment)
-- Para avaliar um plano mais abrangente do gerenciamento de custos em um número maior de ativos (infraestrutura, aplicativos e dados), confira o [Modelo de governança da Estrutura de Adoção da Nuvem](../../govern/guides/index.md). Em particular, orientações sobre a [Disciplina de Gerenciamento de Custos](../../govern/cost-management/index.md) e a [Melhoria do Gerenciamento de Custos no guia para grandes empresas](../../govern/guides/complex/cost-management-improvement.md).
+- Para avaliar um plano mais abrangente do gerenciamento de custos em um número maior de ativos (infraestrutura, aplicativos e dados), confira o [Modelo de governança da Estrutura de Adoção da Nuvem](../../govern/guides/index.md). Em particular, diretrizes sobre a [Disciplina de Gerenciamento de Custos](../../govern/cost-management/index.md) e a [Melhoria do Gerenciamento de Custos no guia de governança para empresas complexas](../../govern/guides/complex/cost-management-improvement.md).
 
 # <a name="estimate-and-optimize-vm-costs-during-and-after-migrationtabestimateoptimize"></a>[Estimar e otimizar custos de VM durante e após a migração](#tab/EstimateOptimize)
 
@@ -104,7 +104,7 @@ Essa análise permitirá que você examine os custos totais, o orçamento (se di
 
 ## <a name="additional-resources"></a>Recursos adicionais
 
-- Para avaliar um plano mais abrangente do gerenciamento de custos em um número maior de ativos (infraestrutura, aplicativos e dados), confira o [Modelo de governança da Estrutura de Adoção da Nuvem](../../govern/guides/index.md). Em particular, orientações sobre a [Disciplina de Gerenciamento de Custos](../../govern/cost-management/index.md) e a [Melhoria incremental do Gerenciamento de Custos no guia para grandes empresas](../../govern/guides/complex/cost-management-improvement.md).
+- Para avaliar um plano mais abrangente do gerenciamento de custos em um número maior de ativos (infraestrutura, aplicativos e dados), confira o [Modelo de governança da Estrutura de Adoção da Nuvem](../../govern/guides/index.md). Em particular, diretrizes sobre a [Disciplina de Gerenciamento de Custos](../../govern/cost-management/index.md) e a [Melhoria incremental do Gerenciamento de Custos no guia de governança para empresas complexas](../../govern/guides/complex/cost-management-improvement.md).
 - Para obter mais informações sobre o Assistente do Azure, confira [Reduzindo custos de serviço usando o Assistente do Azure](https://docs.microsoft.com/azure/advisor/advisor-cost-recommendations).
 - Para obter mais informações sobre o Gerenciamento de Custos do Azure, confira [Entender e trabalhar com escopos](https://docs.microsoft.com/azure/cost-management/understand-work-scopes) e [Explorar e analisar custos com a Análise de Custos](https://docs.microsoft.com/azure/cost-management/quick-acm-cost-analysis).
 
@@ -142,4 +142,4 @@ Para processos em segundo plano de prioridade mais baixa, o Lote oferece um meio
 
 ## <a name="additional-resources"></a>Recursos adicionais
 
-Para avaliar um plano mais abrangente do gerenciamento de custos em um número maior de ativos (infraestrutura, aplicativos e dados), confira o [Modelo de governança da Estrutura de Adoção da Nuvem](../../govern/guides/index.md). Em particular, orientações sobre a [Disciplina de Gerenciamento de Custos](../../govern/cost-management/index.md) e a [Melhoria incremental do Gerenciamento de Custos no guia de governança para grandes empresas](../../govern/guides/complex/cost-management-improvement.md).
+Para avaliar um plano mais abrangente do gerenciamento de custos em um número maior de ativos (infraestrutura, aplicativos e dados), confira o [Modelo de governança da Estrutura de Adoção da Nuvem](../../govern/guides/index.md). Em particular, diretrizes sobre a [Disciplina de Gerenciamento de Custos](../../govern/cost-management/index.md) e as [Melhorias incrementais do Gerenciamento de Custos no guia de governança para empresas complexas](../../govern/guides/complex/cost-management-improvement.md).
