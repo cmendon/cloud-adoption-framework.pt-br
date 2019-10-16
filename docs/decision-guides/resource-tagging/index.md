@@ -2,19 +2,19 @@
 title: Guia de decisão de marcação e nomenclatura de recurso
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Saiba mais sobre a organização de recursos e a marcação como um serviço principal em migrações do Azure.
-author: rotycenh
-ms.author: v-tyhopk
+author: alexbuckgit
+ms.author: abuck
 ms.date: 02/11/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 4d28e0ec6dea61a96e463df8fd2717ed0a8c8f02
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ef226d55d6b16c69b35c57734de25efec6abaa00
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023672"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72378024"
 ---
 # <a name="resource-naming-and-tagging-decision-guide"></a>Guia de decisão de marcação e nomenclatura de recurso
 
@@ -40,7 +40,7 @@ Esquemas de marcação que incluem um foco alinhado aos negócios, como contabil
 
 Uma convenção de nomenclatura padronizada é o ponto de partida para organizar seus recursos hospedados na nuvem. Um sistema de nomenclatura adequadamente estruturado permite que você identifique rapidamente os recursos de gerenciamento e fins de contabilização. Se você tiver convenções de nomenclatura de TI existentes em outras partes da sua organização, considere se as suas convenções de nomenclatura de nuvem devem ser alinhadas a elas ou se você deve estabelecer padrões separados baseados em nuvem.
 
-Observe também que os tipos de recursos do Azure diferentes têm diferentes [requisitos de nomenclatura](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions#naming-rules-and-restrictions). As convenções de nomenclatura devem ser compatíveis com esses requisitos de nomenclatura.
+Observe também que os tipos de recursos do Azure diferentes têm diferentes [requisitos de nomenclatura](../../ready/considerations/naming-and-tagging.md). As convenções de nomenclatura devem ser compatíveis com esses requisitos de nomenclatura.
 
 ## <a name="resource-tagging-patterns"></a>Padrões de marcação de recursos
 

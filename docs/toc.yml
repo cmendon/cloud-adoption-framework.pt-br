@@ -92,24 +92,24 @@
       items:
         - name: Visão geral
           href: ready/index.md
-        - name: Guia de preparação para o Azure
+        - name: Guia de instalação do Azure
           items:
             - name: Antes de começar
-              href: ready/azure-readiness-guide/index.md
+              href: ready/azure-setup-guide/index.md
             - name: Organizar os seus recursos
-              href: ready/azure-readiness-guide/organize-resources.md
+              href: ready/azure-setup-guide/organize-resources.md
             - name: Gerenciar acesso
-              href: ready/azure-readiness-guide/manage-access.md
+              href: ready/azure-setup-guide/manage-access.md
             - name: Gerenciar os custos e a cobrança
-              href: ready/azure-readiness-guide/manage-costs.md
+              href: ready/azure-setup-guide/manage-costs.md
             - name: 'Planejar governança, segurança e conformidade'
-              href: ready/azure-readiness-guide/govern-org-compliance.md
+              href: ready/azure-setup-guide/govern-org-compliance.md
             - name: Usar monitoramento e relatórios
-              href: ready/azure-readiness-guide/monitoring-reporting.md
+              href: ready/azure-setup-guide/monitoring-reporting.md
             - name: Permanecendo atualizado com o Azure
-              href: ready/azure-readiness-guide/staying-current.md
+              href: ready/azure-setup-guide/staying-current.md
             - name: Implantar uma zona de aterrissagem de migração
-              href: ready/azure-readiness-guide/migration-landing-zone.md
+              href: ready/azure-setup-guide/migration-landing-zone.md
         - name: Considerações sobre zonas de aterrissagem
           items:
             - name: Visão geral
@@ -404,196 +404,196 @@
           items:
             - name: Visão geral
               href: innovate/index.md
+    - name: Administrar
+      items:
+        - name: Visão geral
+          href: govern/index.md
+        - name: Metodologia
+          href: govern/methodology.md
+        - name: Parâmetro de comparação
+          href: govern/benchmark.md
+        - name: Base de governança inicial
+          href: govern/initial-foundation.md
+        - name: Melhorias na base de governança
+          href: govern/foundation-improvements.md
+        - name: Guias de governança
+          items:
+            - name: Visão geral
+              href: govern/guides/index.md
+            - name: Guia de governança corporativa padrão
+              items:
+                - name: Visão geral
+                  href: govern/guides/standard/index.md
+                - name: Narrativa
+                  href: govern/guides/standard/narrative.md
+                - name: Política corporativa inicial
+                  href: govern/guides/standard/initial-corporate-policy.md
+                - name: Diretrizes prescritivas
+                  href: govern/guides/standard/prescriptive-guidance.md
+                - name: Melhorar a disciplina de linha de base de segurança
+                  href: govern/guides/standard/security-baseline-improvement.md
+                - name: Melhorar a disciplina de consistência de recursos
+                  href: govern/guides/standard/resource-consistency-improvement.md
+                - name: Melhorar a disciplina de gerenciamento de custos
+                  href: govern/guides/standard/cost-management-improvement.md
+                - name: Cenários multinuvem
+                  href: govern/guides/standard/multicloud-improvement.md
+            - name: Guia de governança para empresas complexas
+              items:
+                - name: Visão geral
+                  href: govern/guides/complex/index.md
+                - name: Narrativa
+                  href: govern/guides/complex/narrative.md
+                - name: Política corporativa inicial
+                  href: govern/guides/complex/initial-corporate-policy.md
+                - name: Diretrizes prescritivas
+                  href: govern/guides/complex/prescriptive-guidance.md
+                - name: Melhorar a disciplina de linha de base de identidade
+                  href: govern/guides/complex/identity-baseline-improvement.md
+                - name: Melhorar a disciplina de linha de base de segurança
+                  href: govern/guides/complex/security-baseline-improvement.md
+                - name: Melhorar a disciplina de consistência de recursos
+                  href: govern/guides/complex/resource-consistency-improvement.md
+                - name: Melhorar a disciplina de gerenciamento de custos
+                  href: govern/guides/complex/cost-management-improvement.md
+                - name: Cenários multinuvem
+                  href: govern/guides/complex/multicloud-improvement.md
+                - name: Múltiplas camadas de governança
+                  href: govern/guides/complex/multiple-layers-of-governance.md
+        - name: Considerações de governança
+          items:
+            - name: Avaliar a política corporativa
+              href: govern/corporate-policy.md
+            - name: Política corporativa e conformidade prontas para nuvem
+              items:
+                - name: Tornar a política corporativa pronta para nuvem
+                  href: govern/policy-compliance/index.md
+                - name: Entenda os riscos comerciais
+                  href: govern/policy-compliance/business-risk.md
+                - name: Avaliar a tolerância a riscos
+                  href: govern/policy-compliance/risk-tolerance.md
+                - name: Definir política corporativa
+                  href: govern/policy-compliance/policy-definition.md
+                - name: Alinhar o design com a política
+                  href: govern/policy-compliance/governance-alignment.md
+                - name: Estabelecer os processos de conformidade com políticas
+                  href: govern/policy-compliance/processes.md
+                - name: Conformidade normativa
+                  href: govern/policy-compliance/regulatory-compliance.md
+                - name: Preparação de segurança na nuvem
+                  href: govern/policy-compliance/cloud-security-readiness.md
+                - name: Revisar a política de nuvem
+                  href: govern/policy-compliance/cloud-policy-review.md
+                - name: Classificação de dados
+                  href: govern/policy-compliance/data-classification.md
+        - name: Disciplinas da governança de nuvem
+          href: govern/governance-disciplines.md
+        - name: Implementar disciplinas de governança de nuvem
+          items:
+            - name: Gerenciamento de custo
+              items:
+                - name: Visão geral do gerenciamento de custos
+                  href: govern/cost-management/index.md
+                - name: Baixe o modelo
+                  href: govern/cost-management/template.md
+                - name: Entenda os riscos comerciais
+                  href: govern/cost-management/business-risks.md
+                - name: Indicadores e métricas de tolerância a riscos
+                  href: govern/cost-management/metrics-tolerance.md
+                - name: Exemplo de políticas de gerenciamento de custo
+                  href: govern/cost-management/policy-statements.md
+                - name: Processos de conformidade de política
+                  href: govern/cost-management/compliance-processes.md
+                - name: Melhorar o gerenciamento de custos
+                  href: govern/cost-management/discipline-improvement.md
+                - name: Ferramentas do Azure para gerenciamento de custos
+                  href: govern/cost-management/toolchain.md
+            - name: Linha de base de segurança
+              items:
+                - name: Visão geral da linha de base de segurança
+                  href: govern/security-baseline/index.md
+                - name: Baixe o modelo
+                  href: govern/security-baseline/template.md
+                - name: Entenda os riscos comerciais
+                  href: govern/security-baseline/business-risks.md
+                - name: Indicadores e métricas de tolerância a riscos
+                  href: govern/security-baseline/metrics-tolerance.md
+                - name: Exemplo de políticas de linha de base de segurança
+                  href: govern/security-baseline/policy-statements.md
+                - name: Processos de conformidade de política
+                  href: govern/security-baseline/compliance-processes.md
+                - name: Melhorar a linha de base de segurança
+                  href: govern/security-baseline/discipline-improvement.md
+                - name: Linha de base de segurança nativa da nuvem
+                  href: govern/security-baseline/cloud-native-policy.md
+                - name: Diretrizes adicionais de segurança do Azure
+                  href: govern/security-baseline/azure-security-guidance.md
+                - name: Ferramentas do Azure para a linha de base de segurança
+                  href: govern/security-baseline/toolchain.md
+            - name: Linha de base de identidade
+              items:
+                - name: Visão geral da linha de base de identidade
+                  href: govern/identity-baseline/index.md
+                - name: Baixe o modelo
+                  href: govern/identity-baseline/template.md
+                - name: Entenda os riscos comerciais
+                  href: govern/identity-baseline/business-risks.md
+                - name: Indicadores e métricas de tolerância a riscos
+                  href: govern/identity-baseline/metrics-tolerance.md
+                - name: Exemplo de políticas de linha de base de identidade
+                  href: govern/identity-baseline/policy-statements.md
+                - name: Processos de conformidade de política
+                  href: govern/identity-baseline/compliance-processes.md
+                - name: Melhorar a linha de base de identidade
+                  href: govern/identity-baseline/discipline-improvement.md
+                - name: Ferramentas do Azure para linha de base de identidade
+                  href: govern/identity-baseline/toolchain.md
+            - name: Consistência de recursos
+              items:
+                - name: Visão geral de consistência de recursos
+                  href: govern/resource-consistency/index.md
+                - name: Baixe o modelo
+                  href: govern/resource-consistency/template.md
+                - name: Entenda os riscos comerciais
+                  href: govern/resource-consistency/business-risks.md
+                - name: Indicadores e métricas de tolerância a riscos
+                  href: govern/resource-consistency/metrics-tolerance.md
+                - name: Exemplo de políticas de consistência de recursos
+                  href: govern/resource-consistency/policy-statements.md
+                - name: Processos de conformidade de política
+                  href: govern/resource-consistency/compliance-processes.md
+                - name: Melhorar consistência de recursos
+                  href: govern/resource-consistency/discipline-improvement.md
+                - name: Ferramentas do Azure para consistência de recursos
+                  href: govern/resource-consistency/toolchain.md
+                - name: Gerenciamento de acesso aos recursos
+                  href: govern/resource-consistency/resource-access-management.md
+                - name: Design de governança para uma carga de trabalho simples
+                  href: govern/resource-consistency/governance-simple-workload.md
+                - name: Design de governança para várias equipes
+                  href: govern/resource-consistency/governance-multiple-teams.md
+            - name: Aceleração de implantação
+              items:
+                - name: Visão geral da aceleração de implantação
+                  href: govern/deployment-acceleration/index.md
+                - name: Baixe o modelo
+                  href: govern/deployment-acceleration/template.md
+                - name: Entenda os riscos comerciais
+                  href: govern/deployment-acceleration/business-risks.md
+                - name: Indicadores e métricas de tolerância a riscos
+                  href: govern/deployment-acceleration/metrics-tolerance.md
+                - name: Exemplo de políticas de aceleração de implantação
+                  href: govern/deployment-acceleration/policy-statements.md
+                - name: Processos de conformidade de política
+                  href: govern/deployment-acceleration/compliance-processes.md
+                - name: Melhorar a aceleração de implantação
+                  href: govern/deployment-acceleration/discipline-improvement.md
+                - name: Ferramentas do Azure para a aceleração de implantação
+                  href: govern/deployment-acceleration/toolchain.md
     - name: Operar
       items:
         - name: Visão geral
           href: operate/index.md
-        - name: Administrar
-          items:
-            - name: Visão geral
-              href: govern/index.md
-            - name: Metodologia
-              href: govern/methodology.md
-            - name: Parâmetro de comparação
-              href: govern/benchmark.md
-            - name: Base de governança inicial
-              href: govern/initial-foundation.md
-            - name: Melhorias na base de governança
-              href: govern/foundation-improvements.md
-            - name: Guias de governança
-              items:
-                - name: Visão geral
-                  href: govern/guides/index.md
-                - name: Guia de governança corporativa padrão
-                  items:
-                    - name: Visão geral
-                      href: govern/guides/standard/index.md
-                    - name: Narrativa
-                      href: govern/guides/standard/narrative.md
-                    - name: Política corporativa inicial
-                      href: govern/guides/standard/initial-corporate-policy.md
-                    - name: Diretrizes prescritivas
-                      href: govern/guides/standard/prescriptive-guidance.md
-                    - name: Melhorar a disciplina de linha de base de segurança
-                      href: govern/guides/standard/security-baseline-improvement.md
-                    - name: Melhorar a disciplina de consistência de recursos
-                      href: govern/guides/standard/resource-consistency-improvement.md
-                    - name: Melhorar a disciplina de gerenciamento de custos
-                      href: govern/guides/standard/cost-management-improvement.md
-                    - name: Cenários multinuvem
-                      href: govern/guides/standard/multicloud-improvement.md
-                - name: Guia de governança para empresas complexas
-                  items:
-                    - name: Visão geral
-                      href: govern/guides/complex/index.md
-                    - name: Narrativa
-                      href: govern/guides/complex/narrative.md
-                    - name: Política corporativa inicial
-                      href: govern/guides/complex/initial-corporate-policy.md
-                    - name: Diretrizes prescritivas
-                      href: govern/guides/complex/prescriptive-guidance.md
-                    - name: Melhorar a disciplina de linha de base de identidade
-                      href: govern/guides/complex/identity-baseline-improvement.md
-                    - name: Melhorar a disciplina de linha de base de segurança
-                      href: govern/guides/complex/security-baseline-improvement.md
-                    - name: Melhorar a disciplina de consistência de recursos
-                      href: govern/guides/complex/resource-consistency-improvement.md
-                    - name: Melhorar a disciplina de gerenciamento de custos
-                      href: govern/guides/complex/cost-management-improvement.md
-                    - name: Cenários multinuvem
-                      href: govern/guides/complex/multicloud-improvement.md
-                    - name: Múltiplas camadas de governança
-                      href: govern/guides/complex/multiple-layers-of-governance.md
-            - name: Considerações de governança
-              items:
-                - name: Avaliar a política corporativa
-                  href: govern/corporate-policy.md
-                - name: Política corporativa e conformidade prontas para nuvem
-                  items:
-                    - name: Tornar a política corporativa pronta para nuvem
-                      href: govern/policy-compliance/index.md
-                    - name: Entenda os riscos comerciais
-                      href: govern/policy-compliance/business-risk.md
-                    - name: Avaliar a tolerância a riscos
-                      href: govern/policy-compliance/risk-tolerance.md
-                    - name: Definir política corporativa
-                      href: govern/policy-compliance/policy-definition.md
-                    - name: Alinhar o design com a política
-                      href: govern/policy-compliance/governance-alignment.md
-                    - name: Estabelecer os processos de conformidade com políticas
-                      href: govern/policy-compliance/processes.md
-                    - name: Conformidade normativa
-                      href: govern/policy-compliance/regulatory-compliance.md
-                    - name: Preparação de segurança na nuvem
-                      href: govern/policy-compliance/cloud-security-readiness.md
-                    - name: Revisar a política de nuvem
-                      href: govern/policy-compliance/cloud-policy-review.md
-                    - name: Classificação de dados
-                      href: govern/policy-compliance/data-classification.md
-                - name: Disciplinas da governança de nuvem
-                  href: govern/governance-disciplines.md
-                - name: Implementar disciplinas de governança de nuvem
-                  items:
-                    - name: Gerenciamento de custo
-                      items:
-                        - name: Visão geral do gerenciamento de custos
-                          href: govern/cost-management/index.md
-                        - name: Baixe o modelo
-                          href: govern/cost-management/template.md
-                        - name: Entenda os riscos comerciais
-                          href: govern/cost-management/business-risks.md
-                        - name: Indicadores e métricas de tolerância a riscos
-                          href: govern/cost-management/metrics-tolerance.md
-                        - name: Exemplo de políticas de gerenciamento de custo
-                          href: govern/cost-management/policy-statements.md
-                        - name: Processos de conformidade de política
-                          href: govern/cost-management/compliance-processes.md
-                        - name: Melhorar o gerenciamento de custos
-                          href: govern/cost-management/discipline-improvement.md
-                        - name: Ferramentas do Azure para gerenciamento de custos
-                          href: govern/cost-management/toolchain.md
-                    - name: Linha de base de segurança
-                      items:
-                        - name: Visão geral da linha de base de segurança
-                          href: govern/security-baseline/index.md
-                        - name: Baixe o modelo
-                          href: govern/security-baseline/template.md
-                        - name: Entenda os riscos comerciais
-                          href: govern/security-baseline/business-risks.md
-                        - name: Indicadores e métricas de tolerância a riscos
-                          href: govern/security-baseline/metrics-tolerance.md
-                        - name: Exemplo de políticas de linha de base de segurança
-                          href: govern/security-baseline/policy-statements.md
-                        - name: Processos de conformidade de política
-                          href: govern/security-baseline/compliance-processes.md
-                        - name: Melhorar a linha de base de segurança
-                          href: govern/security-baseline/discipline-improvement.md
-                        - name: Linha de base de segurança nativa da nuvem
-                          href: govern/security-baseline/cloud-native-policy.md
-                        - name: Diretrizes adicionais de segurança do Azure
-                          href: govern/security-baseline/azure-security-guidance.md
-                        - name: Ferramentas do Azure para a linha de base de segurança
-                          href: govern/security-baseline/toolchain.md
-                    - name: Linha de base de identidade
-                      items:
-                        - name: Visão geral da linha de base de identidade
-                          href: govern/identity-baseline/index.md
-                        - name: Baixe o modelo
-                          href: govern/identity-baseline/template.md
-                        - name: Entenda os riscos comerciais
-                          href: govern/identity-baseline/business-risks.md
-                        - name: Indicadores e métricas de tolerância a riscos
-                          href: govern/identity-baseline/metrics-tolerance.md
-                        - name: Exemplo de políticas de linha de base de identidade
-                          href: govern/identity-baseline/policy-statements.md
-                        - name: Processos de conformidade de política
-                          href: govern/identity-baseline/compliance-processes.md
-                        - name: Melhorar a linha de base de identidade
-                          href: govern/identity-baseline/discipline-improvement.md
-                        - name: Ferramentas do Azure para linha de base de identidade
-                          href: govern/identity-baseline/toolchain.md
-                    - name: Consistência de recursos
-                      items:
-                        - name: Visão geral de consistência de recursos
-                          href: govern/resource-consistency/index.md
-                        - name: Baixe o modelo
-                          href: govern/resource-consistency/template.md
-                        - name: Entenda os riscos comerciais
-                          href: govern/resource-consistency/business-risks.md
-                        - name: Indicadores e métricas de tolerância a riscos
-                          href: govern/resource-consistency/metrics-tolerance.md
-                        - name: Exemplo de políticas de consistência de recursos
-                          href: govern/resource-consistency/policy-statements.md
-                        - name: Processos de conformidade de política
-                          href: govern/resource-consistency/compliance-processes.md
-                        - name: Melhorar consistência de recursos
-                          href: govern/resource-consistency/discipline-improvement.md
-                        - name: Ferramentas do Azure para consistência de recursos
-                          href: govern/resource-consistency/toolchain.md
-                        - name: Gerenciamento de acesso aos recursos
-                          href: govern/resource-consistency/resource-access-management.md
-                        - name: Design de governança para uma carga de trabalho simples
-                          href: govern/resource-consistency/governance-simple-workload.md
-                        - name: Design de governança para várias equipes
-                          href: govern/resource-consistency/governance-multiple-teams.md
-                    - name: Aceleração de implantação
-                      items:
-                        - name: Visão geral da aceleração de implantação
-                          href: govern/deployment-acceleration/index.md
-                        - name: Baixe o modelo
-                          href: govern/deployment-acceleration/template.md
-                        - name: Entenda os riscos comerciais
-                          href: govern/deployment-acceleration/business-risks.md
-                        - name: Indicadores e métricas de tolerância a riscos
-                          href: govern/deployment-acceleration/metrics-tolerance.md
-                        - name: Exemplo de políticas de aceleração de implantação
-                          href: govern/deployment-acceleration/policy-statements.md
-                        - name: Processos de conformidade de política
-                          href: govern/deployment-acceleration/compliance-processes.md
-                        - name: Melhorar a aceleração de implantação
-                          href: govern/deployment-acceleration/discipline-improvement.md
-                        - name: Ferramentas do Azure para a aceleração de implantação
-                          href: govern/deployment-acceleration/toolchain.md
         - name: Organizar
           items:
             - name: Como gerenciar o alinhamento da organização
@@ -681,7 +681,7 @@
     - name: Referência
       items:
         - name: Roteiro da Cloud Adoption Framework
-          href: reference/roadmap.md
+          href: reference/index.md
         - name: Guias de decisão
           items:
             - name: Visão geral
