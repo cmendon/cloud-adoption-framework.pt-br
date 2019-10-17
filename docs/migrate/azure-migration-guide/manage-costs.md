@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 7a5f3b3f9a50cf4a989d268788279f132a42efb7
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: 38e412bda80e68b0c5cb7e53ad52c078fa39f8fb
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967206"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72378425"
 ---
 # <a name="migration-focused-cost-control-mechanisms"></a>Mecanismos de controle de custo focados na migração
 
@@ -91,7 +91,7 @@ As etapas a seguir fornecem recomendações de custo para ativos (infraestrutura
 
 O Gerenciamento de Custos do Azure pode fornecer uma visão mais holística dos hábitos de gasto, incluindo a exibição detalhada dos custos e das tendências de gastos ao longo do tempo. Para migrações grandes ou complexas, essa exibição pode fornecer os insights necessários para tomar decisões de gerenciamento de custos mais amplas.
 
-Pré-requisitos: O restante desta guia pressupõe que o leitor concluiu a configuração do Gerenciamento de Custos do Azure ao concluir o guia de Preparação para o Azure. Para obter mais detalhes sobre como configurar o Gerenciamento de Custos do Azure, confira este [artigo no guia de Preparação para o Azure](../../ready/azure-readiness-guide/manage-costs.md). Após os dados serem preenchidos, siga as próximas etapas para estimar os custos mensais com base nos dados coletados.
+Pré-requisitos: O restante desta guia pressupõe que o leitor concluiu a configuração do Gerenciamento de Custos do Azure ao concluir o Guia de Configuração do Azure. Para ver mais detalhes sobre como configurar o Gerenciamento de Custos do Azure, confira este [artigo no Guia de Configuração do Azure](../../ready/azure-setup-guide/manage-costs.md). Após os dados serem preenchidos, siga as próximas etapas para estimar os custos mensais com base nos dados coletados.
 
 As etapas a seguir carregarão dados de análise de custo do Gerenciamento de Custos do Azure para suas assinaturas:
 

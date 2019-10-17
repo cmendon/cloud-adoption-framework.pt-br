@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 layout: LandingPage
-ms.openlocfilehash: 3734a9b692dd345f45ee6a2987abf773b3391c63
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: c112c1d340de944502ac16159977ffa12b5b095d
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224382"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72378256"
 ---
 # <a name="cloud-migration-in-the-cloud-adoption-framework"></a>Migração na nuvem na Cloud Adoption Framework
 
@@ -57,7 +57,7 @@ Confirme se uma zona de aterrissagem foi implantada e está pronta para hospedar
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>Migrar sua primeira carga de trabalho</h3>
-Aproveite o Guia de Migração do Azure para orientar a migração da primeira carga de trabalho. Isso ajudará você a se familiarizar com as ferramentas e as abordagens necessárias para dimensionar os esforços de adoção.
+Aproveite o Guia de Migração do Azure para orientar a migração da sua primeira carga de trabalho. Isso ajudará você a se familiarizar com as ferramentas e as abordagens necessárias para dimensionar os esforços de adoção.
                         </div>
                     </div>
                 </div>

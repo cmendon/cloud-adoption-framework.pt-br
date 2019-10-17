@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7ec216152adb4ed55b2a1eab03a8a98cd2ce8332
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 96752e360442c2532ce48d61dd69b84ae3641ddd
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022606"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72378408"
 ---
 # <a name="prerequisites-for-migration"></a>Pré-requisitos para migração
 
@@ -60,7 +60,7 @@ Além da responsabilidade de alto nível, há ações pelas quais uma pessoa ou 
 - **Prontidão para gerenciamento de alterações.** Estabeleça e comunique o plano para acompanhar alterações técnicas durante a migração. Mais informações sobre este tópico serão disponibilizadas no 3º trimestre de 2019.
 - **Alinhamento de usuário empresarial.** Estabeleça um plano para preparar a comunidade de usuários empresariais para a execução da migração. Mais informações sobre este tópico serão disponibilizadas no 3º trimestre de 2019.
 - **Inventário e análise do acervo digital.** Execução das ferramentas necessárias para inventariar e analisar o acervo digital. Confira a discussão do Cloud Adoption Framework sobre a [propriedade digital](../../../digital-estate/index.md) para obter mais informações.
-- **Preparação para a nuvem.** Avalie o ambiente de implantação de destino para garantir que ele esteja em conformidade com os requisitos dos primeiros candidatos da carga de trabalho. Consulte o [guia de preparação do Azure](../../../ready/azure-readiness-guide/index.md) para obter mais informações.
+- **Preparação para a nuvem.** Avalie o ambiente de implantação de destino para garantir que ele esteja em conformidade com os requisitos dos primeiros candidatos da carga de trabalho. Confira o [guia de configuração do Azure](../../../ready/azure-setup-guide/index.md) para obter mais informações.
 
 Os artigos restantes desta série ajudam na execução de cada um.
 

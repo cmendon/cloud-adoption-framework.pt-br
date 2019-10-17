@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 layout: LandingPage
-ms.openlocfilehash: fa7777f0c6be9c3cd93cfb24cac4ee8e87bee553
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: d5fada848418093b4d1ac7ae3ccc08b492544567
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70816152"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72378329"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -30,7 +30,7 @@ Os exercícios a seguir ajudam a orientar o processo de criação de uma zona de
 
 <ul class="panelContent cardsF">
     <li style="display: flex; flex-direction: column;">
-        <a href="./azure-readiness-guide/index.md">
+        <a href="./azure-setup-guide/index.md">
             <div class="cardSize">
                 <div class="cardPadding" style="padding-bottom:10px;">
                     <div class="card" style="padding-bottom:10px;">
@@ -40,8 +40,8 @@ Os exercícios a seguir ajudam a orientar o processo de criação de uma zona de
                             </div>
                         </div>
                         <div class="cardText" style="padding-left:0px;">
-                            <h3>Guia de Preparação para o Azure</h3>
-Examine o Guia de Preparação do Azure para se familiarizar com as ferramentas e as abordagens necessárias na criação da zona de aterrissagem.
+                            <h3>Guia de instalação do Azure</h3>
+Examine o Guia de Configuração do Azure para se familiarizar com as ferramentas e as abordagens necessárias para criar uma zona de destino.
                         </div>
                     </div>
                 </div>
@@ -49,7 +49,7 @@ Examine o Guia de Preparação do Azure para se familiarizar com as ferramentas 
         </a>
     </li>
     <li style="display: flex; flex-direction: column;">
-        <a href="./azure-readiness-guide/migration-landing-zone.md">
+        <a href="./azure-setup-guide/migration-landing-zone.md">
             <div class="cardSize">
                 <div class="cardPadding" style="padding-bottom:10px;">
                     <div class="card" style="padding-bottom:10px;">
@@ -111,7 +111,7 @@ Valide as modificações de zona de aterrissagem em relação às seções sobre
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Para se preparar para a adoção da nuvem, examine o [Guia de Preparação do Azure](./azure-readiness-guide/index.md).
+Para se preparar para a adoção da nuvem, examine o [Guia de Configuração do Azure](./azure-setup-guide/index.md).
 
 > [!div class="nextstepaction"]
-> [Guia de Preparação para o Azure](./azure-readiness-guide/index.md)
+> [Guia de Configuração do Azure](./azure-setup-guide/index.md)
