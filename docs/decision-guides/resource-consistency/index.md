@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 58fc2c1f3ac08fb38fcbd71e6dc1d91db768284e
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: c32bbb180bc7b78a74681dc4a2554fd449bb21dc
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221115"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547873"
 ---
 # <a name="resource-consistency-decision-guide"></a>Guia de decisão de consistência de recursos
 
@@ -32,7 +32,7 @@ Conforme a importância desses fatores aumenta, os benefícios de garantir consi
 
 No Azure, [grupos de recursos](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#resource-groups) são um mecanismo de organização de recursos de núcleo para agrupar logicamente os recursos dentro de uma assinatura.
 
-Os grupos de recursos atuam como contêineres para recursos com um ciclo de vida comum E restrições de gerenciamento compartilhadas como política ou requisitos de RBAC (controle de acesso a função). os grupos de recursos não podem ser aninhados e os recursos podem pertencer apenas a um grupo de recursos. Todas as ações do painel de controle agem em todos os recursos em um grupo de recursos. Por exemplo, a exclusão de um grupo de recursos também exclui todos os recursos daquele grupo. O padrão preferencial do gerenciamento de grupo de recursos é considerar:
+Os grupos de recursos atuam como contêineres para recursos com um ciclo de vida comum E restrições de gerenciamento compartilhadas como política ou requisitos de RBAC (controle de acesso a função). Os grupos de recursos não podem ser aninhados e os recursos podem pertencer apenas a um grupo de recursos. Todas as ações do painel de controle agem em todos os recursos em um grupo de recursos. Por exemplo, a exclusão de um grupo de recursos também exclui todos os recursos daquele grupo. O padrão preferencial do gerenciamento de grupo de recursos é considerar:
 
 1. O conteúdo do grupo de recursos foi desenvolvido em conjunto?
 1. O conteúdo do grupo de recursos é gerenciado, atualizado e monitorado em conjunto e feito de acordo com as mesmas pessoas ou equipes?
@@ -47,7 +47,7 @@ Se você respondeu _NÃO_ a nenhum dos pontos acima, o recurso em questão deve 
 
 Ao desenvolver o mecanismo de agrupamento de recurso de base, a plataforma do Azure fornece um sistema para usar os modelos para implantar seus recursos no ambiente de nuvem. Você pode usar modelos para criar organização consistente e convenções de nomenclatura ao implantar cargas de trabalho, impor esses aspectos do seu design de implantação e gerenciamento de recursos.
 
-Os [Modelos do Azure Resource Manager](/azure/azure-resource-manager/template-deployment-overview) permitem que você implante repetidamente seus recursos em um estado consistente usando uma estrutura de grupo de recursos e configuração predeterminada. Modelos do Gerenciador de Recursos ajudam a definir um conjunto de padrões como base para suas implantações.
+Os [Modelos do Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/template-deployment-overview) permitem que você implante repetidamente seus recursos em um estado consistente usando uma estrutura de grupo de recursos e configuração predeterminada. Modelos do Gerenciador de Recursos ajudam a definir um conjunto de padrões como base para suas implantações.
 
 Por exemplo, você pode ter um modelo padrão para a implantação de uma carga de trabalho de servidor Web que contém duas máquinas virtuais como servidores Web combinadas com um balanceador de carga para distribuir o tráfego entre os servidores. Então você pode reutilizar esse modelo para criar um conjunto estruturalmente idêntico de máquinas virtuais e balanceadores de carga sempre que esse tipo de carga de trabalho for necessário, alterando apenas o nome da implantação e os endereços IP envolvidos.
 
