@@ -8,13 +8,13 @@ ms.date: 09/27/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.custom: fasttrack-edit
-ms.openlocfilehash: cb4b14da5b7f9e934a6597fb0fc4e1c8b3d656ff
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.custom: fasttrack-edit, setup
+ms.openlocfilehash: 0eee9746f4d2ee5fcf078774e070ffc25d430f38
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548914"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72379179"
 ---
 # <a name="deploy-a-migration-landing-zone"></a>Implantar uma zona de aterrissagem de migração
 
@@ -60,12 +60,12 @@ As decisões a seguir são representadas no plano gráfico de zona de aterrissag
 |Ferramentas de migração|Azure Site Recovery serão implantados e um projeto de migrações para Azure será criado.|[Guia de decisão das ferramentas de migração](../../decision-guides/migrate-decision-guide/index.md)|
 |Log e monitoramento|O espaço de trabalho de informações operacionais e a conta de armazenamento de diagnóstico serão provisionados.|         |
 |Rede|Uma rede virtual será criada com sub-redes para gateway, firewall, Jumpbox e zona de aterrissagem.|[Decisões de rede](../considerations/network-decisions.md)|
-|Identidade|Supõe-se que a assinatura já esteja associada a uma instância de Azure Active Directory.|[Práticas recomendadas de gerenciamento de identidade](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)         |
+|Identidade|Supõe-se que a assinatura já esteja associada a uma instância de Azure Active Directory.|[Práticas recomendadas de gerenciamento de identidade](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json)         |
 |Política|Atualmente, este projeto pressupõe que nenhuma política do Azure seja aplicada.|         |
 |Design de assinatura|N/A-projetado para uma única assinatura de produção.|[Dimensionando assinaturas](../considerations/scaling-subscriptions.md)|
 |Grupos de gerenciamento|N/A-projetado para uma única assinatura de produção.|[Dimensionando assinaturas](../considerations/scaling-subscriptions.md)         |
 |Grupos de recursos|N/A-projetado para uma única assinatura de produção.|[Dimensionando assinaturas](../considerations/scaling-subscriptions.md)         |
-|Dados|N/D|[Escolha a opção de SQL Server correta no Azure e nas](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas?toc=https://docs.microsoft.com/azure/architecture/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json) [diretrizes do Azure Data Store](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
+|Dados|N/D|[Escolha a opção de SQL Server correta no Azure e nas](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas?toc=https://docs.microsoft.com/azure/architecture/toc.json&bc=https://docs.microsoft.com/azure/architecture/bread/toc.json) [diretrizes do Azure Data Store](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
 |Armazenamento|N/D|[Diretrizes de armazenamento do Azure](../considerations/storage-guidance.md)         |
 |Padrões de nomenclatura e marcação|N/D|[Práticas recomendadas de nomenclatura e marcação](../considerations/naming-and-tagging.md)         |
 |Gerenciamento de custos|N/D|[Controlando os custos](../azure-best-practices/track-costs.md)|

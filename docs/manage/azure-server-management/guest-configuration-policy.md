@@ -8,16 +8,16 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: c43d07c6cfdea0152559d7a13fec7dde148b1530
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 16d67f628ff99f971d2d79127b25698987cc8977
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221575"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547274"
 ---
 # <a name="guest-configuration-policy"></a>Política de configuração de convidado
 
-A extensão de [configuração de convidado](/azure/governance/policy/concepts/guest-configuration) Azure Policy permite que você audite as definições de configuração em uma máquina virtual. Atualmente, a configuração de convidado tem suporte apenas em VMs do Azure.
+A extensão de [configuração de convidado](https://docs.microsoft.com/azure/governance/policy/concepts/guest-configuration) Azure Policy permite que você audite as definições de configuração em uma máquina virtual. Atualmente, a configuração de convidado tem suporte apenas em VMs do Azure.
 
 Você pode encontrar a lista de políticas de configuração de convidado pesquisando a categoria "configuração de convidado" na página do portal de Azure Policy. Você também pode encontrar a lista executando este cmdlet em uma janela do PowerShell:
 
@@ -66,7 +66,7 @@ Você pode usar o seguinte script do PowerShell de exemplo para implantar essas 
 
 ```
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Saiba como [habilitar o controle de alterações e os alertas](./enable-tracking-alerting.md) para alterações críticas de arquivo, serviço, software e registro.
 

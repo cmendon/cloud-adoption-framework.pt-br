@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 8b0aebe00d987ac49ba965fc1982c1615372ba92
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 3d8d6b656f6bfe8072b53dccc05a67479aa36f24
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030895"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548570"
 ---
-# <a name="cloud-monitoring-guide-collecting-the-right-data"></a>Guia de monitoramento de nuvem: Coletando os dados corretos
+# <a name="cloud-monitoring-guide-collecting-the-right-data"></a>Guia de monitoramento de nuvem: coletando os dados certos
 
 Este artigo descreve algumas considerações para coletar dados de monitoramento em um aplicativo de nuvem.
 
@@ -47,7 +47,7 @@ Para gerar uma resolução mais rápida do incidente, considere as seguintes rec
 
 Adotar esse conjunto de princípios de orientação oferece informações quase em tempo real, bem como um melhor gerenciamento do seu serviço.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 > [!div class="nextstepaction"]
 > [Estratégia de alerta](./alerting.md)

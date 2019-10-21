@@ -8,14 +8,14 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 17538d7c49278a00a5927b0110a2591a03d59e5c
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: ac4ece6c5daec788d116e67c79429572722fc618
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221472"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548233"
 ---
-# <a name="phase-1-prerequisite-planning-for-azure-server-management-services"></a>Fase 1: Planejamento de pré-requisitos para os serviços de gerenciamento de servidor do Azure
+# <a name="phase-1-prerequisite-planning-for-azure-server-management-services"></a>Fase 1: planejamento de pré-requisitos para os serviços de gerenciamento de servidor do Azure
 
 Nesta fase, você se familiarizará com o conjunto de serviços do Azure Server Management e planejará como implantar os recursos necessários para implementar essas soluções de gerenciamento.
 
@@ -48,10 +48,10 @@ Os exemplos abordados nesta diretriz pressupõem uma implantação que ainda nã
 
 Ao preparar os espaços de trabalho e as contas que você cria para serviços de gerenciamento de integração, consulte as seguintes discussões sobre problemas:
 
-- **Geografia do Azure e conformidade regulatória**. As regiões do Azure sãoorganizadas em geografias. Uma [Geografia do Azure](https://azure.microsoft.com/global-infrastructure/geographies) garante que os requisitos de residência de dados, soberania, conformidade e resiliência sejam respeitados dentro dos limites geográficos. Se suas cargas de trabalho estiverem sujeitas à soberania de dados ou outros requisitos de conformidade, as contas de espaço de trabalho e de automação deverão ser implantadas em regiões na mesma Geografia do Azure que os recursos de carga que eles dão suporte.
+- **Geografia do Azure e conformidade regulatória**. As regiões do Azure são organizadas em *geografias*. Uma [Geografia do Azure](https://azure.microsoft.com/global-infrastructure/geographies) garante que os requisitos de residência de dados, soberania, conformidade e resiliência sejam respeitados dentro dos limites geográficos. Se suas cargas de trabalho estiverem sujeitas à soberania de dados ou outros requisitos de conformidade, as contas de espaço de trabalho e de automação deverão ser implantadas em regiões na mesma Geografia do Azure que os recursos de carga que eles dão suporte.
 - **Número de espaços de trabalho**. Como princípio de orientação, crie o número mínimo de espaços de trabalho necessários por geografia do Azure. É recomendável pelo menos um espaço de trabalho para cada Geografia do Azure onde os recursos de computação ou armazenamento estão localizados. Esse alinhamento inicial ajuda a evitar problemas regulatórios futuros ao migrar dados para geografias diferentes.
 - **Retenção de dados e limitação**. Talvez você também precise tomar as políticas de retenção de dados ou os requisitos de data capping em consideração ao criar espaços de trabalho ou contas de automação. Para obter mais informações sobre esses princípios e considerações adicionais ao planejar seus espaços de trabalho, consulte [gerenciar dados de log e espaços de trabalho no Azure monitor](https://docs.microsoft.com/azure/azure-monitor/platform/manage-access).
-- **Mapeamento de região**. Só há suporte para a vinculação de um espaço de trabalho Log Analytics e uma conta de automação do Azure entre determinadas regiões do Azure. Por exemplo, se o espaço de trabalho Log Analytics estiver hospedado na região lesteus, a conta de automação vinculada deverá ser criada na região *EastUS2* para ser usada com os serviços de gerenciamento. Se você tiver uma conta de automação que foi criada em outra região, ela não será capaz de vincular a um espaço detrabalho no lesteus. A escolha da região de implantação pode afetar significativamente os requisitos de Geografia do Azure. Consulte a [tabela de mapeamento de região](https://docs.microsoft.com/azure/automation/how-to/region-mappings) para decidir qual região deve hospedar seus espaços de trabalho e contas de automação.
+- **Mapeamento de região**. Só há suporte para a vinculação de um espaço de trabalho Log Analytics e uma conta de automação do Azure entre determinadas regiões do Azure. Por exemplo, se o espaço de trabalho Log Analytics estiver hospedado na região *lesteus* , a conta de automação vinculada deverá ser criada na região *EastUS2* para ser usada com os serviços de gerenciamento. Se você tiver uma conta de automação que foi criada em outra região, ela não será capaz de vincular a um espaço de trabalho no *lesteus*. A escolha da região de implantação pode afetar significativamente os requisitos de Geografia do Azure. Consulte a [tabela de mapeamento de região](https://docs.microsoft.com/azure/automation/how-to/region-mappings) para decidir qual região deve hospedar seus espaços de trabalho e contas de automação.
 - **Hospedagem múltipla do espaço de trabalho**. O Log Analytics Agent dá suporte a hospedagem múltipla em alguns cenários, mas o agente enfrenta várias limitações e problemas ao executar nessa configuração. A menos que a Microsoft tenha recomendado usar a hospedagem múltipla para seu cenário, não recomendamos configurar a hospedagem múltipla no agente de Log Analytics.
 
 ## <a name="resource-placement-examples"></a>Exemplos de posicionamento de recursos
@@ -93,7 +93,7 @@ Para criar um Log Analytics espaço de trabalho por meio do portal do Azure, con
 >
 > Você também pode criar contas Executar como usando o [PowerShell](https://docs.microsoft.com/azure/automation/manage-runas-account#create-run-as-account-using-powershell).
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Saiba como integrar [seus servidores](./onboarding-overview.md) aos serviços de gerenciamento do Azure.
 

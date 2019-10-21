@@ -8,12 +8,12 @@ ms.date: 5/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 590875a336b8af23723ab122e2af8f2290404ab3
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 46c7d77aecc93f5c129f098145bfec97820995a2
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224142"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72378071"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -49,15 +49,15 @@ Para dar suporte aos critérios anteriores, essa lista fornece um exemplo de um 
 
 - **Eventos comerciais críticos:** Quando um evento crítico de negócios é a principal motivação, a implementação de uma ferramenta como [Azure site Recovery](../migrate/azure-migration-guide/migrate.md?tabs=Tools#azure-site-recovery) pode ser um bom primeiro projeto. Durante a migração, você pode usar essa ferramenta para migrar rapidamente os ativos do datacenter. Mas, durante o primeiro projeto, você pode usá-lo puramente como uma ferramenta de recuperação de desastres, reduzindo as dependências dos ativos de recuperação de desastres no datacenter.
 
-- **Motivações de migração:** Quando a migração é a principal motivação, é recomendável começar com a migração de uma carga de trabalho não crítica. O [Guia de preparação do Azure](../ready/azure-readiness-guide/index.md) e o [Guia de migração do Azure](../migrate/azure-migration-guide/index.md) podem fornecer diretrizes para a migração da sua primeira carga de trabalho.
+- **Motivações de migração:** Quando a migração é a principal motivação, é recomendável começar com a migração de uma carga de trabalho não crítica. O [Guia de instalação do Azure](../ready/azure-setup-guide/index.md) e o [Guia de migração do Azure](../migrate/azure-migration-guide/index.md) podem fornecer diretrizes para a migração da sua primeira carga de trabalho.
 
 - **Motivações de inovação:** Quando a inovação é a principal motivação, a criação de um ambiente de desenvolvimento/teste direcionado pode ser um ótimo primeiro projeto.
 
 Exemplos adicionais de primeiros projetos de adoção incluem:
 
 - **Recuperação de desastres e continuidade dos negócios (DRBC):** Além Azure Site Recovery, você pode implementar várias estratégias DRBC como um primeiro projeto.
-- **Não produção** Implantar uma instância de não produção de uma carga de trabalho.
-- **Operação** O armazenamento frio pode encarregar os recursos do datacenter. Mover esses dados para a nuvem é um rápido ganho sólido.
+- Não **produção:** Implantar uma instância de não produção de uma carga de trabalho.
+- **Arquivo morto:** O armazenamento frio pode encarregar os recursos do datacenter. Mover esses dados para a nuvem é um rápido ganho sólido.
 - **Fim do suporte (EOS):** A migração de ativos que atingiram o fim do suporte é outra vitória rápida que cria habilidades técnicas. Ele também pode fornecer alguma redução de custos de contratos de suporte caros ou custos de licenciamento.
 - **VDI (Virtual Desktop interface):** A criação de áreas de trabalho virtuais para funcionários remotos pode fornecer um rápido ganho. Em alguns casos, esse primeiro projeto de adoção também pode reduzir a dependência em redes privadas caras em favor da conectividade de Internet pública de mercadoria.
 - **Desenvolvimento/teste:** Remova o desenvolvimento/teste de ambientes locais para dar aos desenvolvedores controle, agilidade e capacidade de autoatendimento.
@@ -65,7 +65,7 @@ Exemplos adicionais de primeiros projetos de adoção incluem:
 - **Laboratórios de desempenho:** Quando você precisar de desempenho em grande escala em uma configuração de laboratório, use a nuvem para provisionar de forma rápida e econômica esses laboratórios por um curto período de tempo.
 - **Plataforma de dados:** Criação de um data Lake com computação escalonável para análises, relatórios ou cargas de trabalho de aprendizado de máquina e migração para bancos de dados gerenciados usando métodos de despejo/restauração ou serviços de migração de dados.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Depois que o primeiro projeto de adoção de nuvem começou, a equipe de estratégia de nuvem pode transformar sua atenção no [plano de adoção de nuvem](../plan/index.md)de longo prazo.
 

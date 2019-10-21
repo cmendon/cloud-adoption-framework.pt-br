@@ -1,6 +1,6 @@
 ---
 title: Alinhando as responsabilidades entre as equipes
-titleSuffix: Microsoft Cloud adoption Framework for Azure
+titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Aprenda a alinhar as responsabilidades entre as equipes.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 818d2fa74c480b8aee36c4d268ae7a83cb93fab3
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 40ccd0c17a55a87c84d40abd749bf8e61f891e6c
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027080"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549083"
 ---
 # <a name="align-responsibilities-across-teams"></a>Alinhar responsabilidades entre equipes
 
@@ -51,15 +51,15 @@ A última linha de cada tabela (exceto a primeira) contém um link para o recurs
 |Equipe de adoção de nuvem|Accountable|Accountable|Accountable|Accountable|Consultada|Consultada|Consultada|Informado|
 |Equipe de governança de nuvem|Consultada|Informado|Informado|Informado|Accountable|Accountable|Accountable|Accountable|
 ||||||||||
-|Recurso de nuvem alinhado|[Adoção de nuvem](./cloud-adoption.md)|[Estratégia de nuvem](./cloud-strategy.md)|[Estratégia de nuvem](./cloud-strategy.md)|[Operações de nuvem](./cloud-operations.md)|-[Governança de nuvem](./cloud-governance.md)[CCOE](./cloud-center-of-excellence.md)|-[Plataforma de nuvem](./cloud-platform.md)[CCOE](./cloud-center-of-excellence.md)|-[Plataforma de nuvem](./cloud-platform.md)[CCOE](./cloud-center-of-excellence.md)|-[Automação de nuvem](./cloud-automation.md)[do CCOE](./cloud-center-of-excellence.md)|
+|Recurso de nuvem alinhado|[Adoção de nuvem](./cloud-adoption.md)|[Estratégia de nuvem](./cloud-strategy.md)|[Estratégia de nuvem](./cloud-strategy.md)|[Operações de nuvem](./cloud-operations.md)|[CCoE](./cloud-center-of-excellence.md) -[governança de nuvem](./cloud-governance.md)|Plataforma de[nuvem](./cloud-platform.md) [CCOE](./cloud-center-of-excellence.md) -|Plataforma de[nuvem](./cloud-platform.md) [CCOE](./cloud-center-of-excellence.md) -|Automação de[nuvem](./cloud-automation.md) do [CCOE](./cloud-center-of-excellence.md) -|
 
-## <a name="central-it"></a>Central de TI
+## <a name="central-it"></a>TI central
 
 | |Entrega da solução  |Alinhamento de negócios  |Gerenciamento de alterações  |Operações de solução  |Governança |Maturidade da plataforma  |Operações de plataforma  |Automação de plataforma  |
 |---------|---------|---------|---------|---------|---------|---------|---------|---------|
 |Equipe de adoção de nuvem  |Accountable|Accountable|Responsabiliza    |Responsabiliza|Informado   |Informado   |Informado   |Informado   |
 |Equipe de governança de nuvem|Consultada  |Informado   |Informado   |Informado   |Accountable|Consultada  |Responsabiliza|Informado   |
-|Central de TI           |Consultada  |Informado   |Accountable   |Accountable   |Responsabiliza  |Accountable|Accountable|Accountable|
+|TI central           |Consultada  |Informado   |Accountable   |Accountable   |Responsabiliza  |Accountable|Accountable|Accountable|
 ||||||||||
 |Recurso de nuvem alinhado|[Adoção de nuvem](./cloud-adoption.md)|[Estratégia de nuvem](./cloud-strategy.md)|[Estratégia de nuvem](./cloud-strategy.md)|[Operações de nuvem](./cloud-operations.md)|[Governança de nuvem](./cloud-governance.md)|[TI central](./central-it.md)|[TI central](./central-it.md)|[TI central](./central-it.md)|
 
@@ -71,7 +71,7 @@ A última linha de cada tabela (exceto a primeira) contém um link para o recurs
 |Equipe de adoção de nuvem  |Accountable|Consultada  |Responsabiliza|Accountable|Informado   |Informado   |Informado   |Informado   |
 |CCoE modelo RACI      |Consultada  |Informado   |Informado   |Informado   |Accountable|Accountable|Accountable|Accountable|
 ||||||||||
-|Recurso de nuvem alinhado|[Adoção de nuvem](./cloud-adoption.md)|[Estratégia de nuvem](./cloud-strategy.md)|[Estratégia de nuvem](./cloud-strategy.md)|[Operações de nuvem](./cloud-operations.md)|-[Governança de nuvem](./cloud-governance.md)[CCOE](./cloud-center-of-excellence.md)|-[Plataforma de nuvem](./cloud-platform.md)[CCOE](./cloud-center-of-excellence.md)|-[Plataforma de nuvem](./cloud-platform.md)[CCOE](./cloud-center-of-excellence.md)|-[Automação de nuvem](./cloud-automation.md)[do CCOE](./cloud-center-of-excellence.md)|
+|Recurso de nuvem alinhado|[Adoção de nuvem](./cloud-adoption.md)|[Estratégia de nuvem](./cloud-strategy.md)|[Estratégia de nuvem](./cloud-strategy.md)|[Operações de nuvem](./cloud-operations.md)|[CCoE](./cloud-center-of-excellence.md) -[governança de nuvem](./cloud-governance.md)|Plataforma de[nuvem](./cloud-platform.md) [CCOE](./cloud-center-of-excellence.md) -|Plataforma de[nuvem](./cloud-platform.md) [CCOE](./cloud-center-of-excellence.md) -|Automação de[nuvem](./cloud-automation.md) do [CCOE](./cloud-center-of-excellence.md) -|
 
 ## <a name="operational-alignment"></a>Alinhamento operacional
 
@@ -82,7 +82,7 @@ A última linha de cada tabela (exceto a primeira) contém um link para o recurs
 |Equipe de operações de nuvem|Consultada  |Consultada  |Responsabiliza|Accountable|Consultada  |Informado   |Accountable|Consultada  |
 |CCoE modelo RACI      |Consultada  |Informado   |Informado   |Informado   |Accountable|Accountable|Responsabiliza|Accountable|
 ||||||||||
-|Recurso de nuvem alinhado|[Adoção de nuvem](./cloud-adoption.md)|[Estratégia de nuvem](./cloud-strategy.md)|[Estratégia de nuvem](./cloud-strategy.md)|[Operações de nuvem](./cloud-operations.md)|-[Governança de nuvem](./cloud-governance.md)[CCOE](./cloud-center-of-excellence.md)|-[Plataforma de nuvem](./cloud-platform.md)[CCOE](./cloud-center-of-excellence.md)|-[Plataforma de nuvem](./cloud-platform.md)[CCOE](./cloud-center-of-excellence.md)|-[Automação de nuvem](./cloud-automation.md)[do CCOE](./cloud-center-of-excellence.md)|
+|Recurso de nuvem alinhado|[Adoção de nuvem](./cloud-adoption.md)|[Estratégia de nuvem](./cloud-strategy.md)|[Estratégia de nuvem](./cloud-strategy.md)|[Operações de nuvem](./cloud-operations.md)|[CCoE](./cloud-center-of-excellence.md) -[governança de nuvem](./cloud-governance.md)|Plataforma de[nuvem](./cloud-platform.md) [CCOE](./cloud-center-of-excellence.md) -|Plataforma de[nuvem](./cloud-platform.md) [CCOE](./cloud-center-of-excellence.md) -|Automação de[nuvem](./cloud-automation.md) do [CCOE](./cloud-center-of-excellence.md) -|
 
 ## <a name="cloud-center-of-excellence-ccoe"></a>Cloud Center of Excellence (CCoE)
 
@@ -95,9 +95,9 @@ A última linha de cada tabela (exceto a primeira) contém um link para o recurs
 |Equipe da plataforma de nuvem  |Consultada  |Informado   |Informado   |Consultada  |Consultada  |Accountable|Responsabiliza|Responsabiliza|
 |Equipe de automação de nuvem|Consultada  |Informado   |Informado   |Informado   |Consultada  |Responsabiliza|Responsabiliza|Accountable|
 ||||||||||
-|Recurso de nuvem alinhado|[Adoção de nuvem](./cloud-adoption.md)|[Estratégia de nuvem](./cloud-strategy.md)|[Estratégia de nuvem](./cloud-strategy.md)|[Operações de nuvem](./cloud-operations.md)|-[Governança de nuvem](./cloud-governance.md)[CCOE](./cloud-center-of-excellence.md)|-[Plataforma de nuvem](./cloud-platform.md)[CCOE](./cloud-center-of-excellence.md)|-[Plataforma de nuvem](./cloud-platform.md)[CCOE](./cloud-center-of-excellence.md)|-[Automação de nuvem](./cloud-automation.md)[do CCOE](./cloud-center-of-excellence.md)|
+|Recurso de nuvem alinhado|[Adoção de nuvem](./cloud-adoption.md)|[Estratégia de nuvem](./cloud-strategy.md)|[Estratégia de nuvem](./cloud-strategy.md)|[Operações de nuvem](./cloud-operations.md)|[CCoE](./cloud-center-of-excellence.md) -[governança de nuvem](./cloud-governance.md)|Plataforma de[nuvem](./cloud-platform.md) [CCOE](./cloud-center-of-excellence.md) -|Plataforma de[nuvem](./cloud-platform.md) [CCOE](./cloud-center-of-excellence.md) -|Automação de[nuvem](./cloud-automation.md) do [CCOE](./cloud-center-of-excellence.md) -|
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Para controlar as decisões sobre a estrutura da organização ao longo do tempo, baixe e modifique o [modelo de planilha RACI](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx). Copie e modifique o exemplo alinhado mais próximo das matrizes RACI neste artigo.
 

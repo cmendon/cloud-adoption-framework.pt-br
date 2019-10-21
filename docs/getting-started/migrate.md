@@ -4,16 +4,16 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Introdução a uma jornada de migração na nuvem
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2019
+ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: ab637312535f1497b8f506cb9636025460a7905b
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: af93f71b1e4e9eb3249720fd14c88482a8402789
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223060"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547831"
 ---
 # <a name="getting-started-with-a-cloud-migration-journey"></a>Introdução a uma jornada de migração na nuvem
 
@@ -52,7 +52,7 @@ Preparar todos os participantes no esforço de migração com um reconhecimento 
 
 A estrutura de adoção de nuvem estabelece um constructo de alto nível de plano, pronto e adotado para agrupar os tipos de esforço necessários em qualquer adoção de nuvem. Esse resumo executivo se baseia nesse fluxo de alto nível para estabelecer processos iterativos que podem facilitar o aumento/deslocamento/otimização de esforços e esforços de modernização em uma única abordagem em todas as atividades **de** migração na nuvem.
 
-Essa abordagem consiste em duas metodologias ou áreas de foco: Estratégia de nuvem & planejamento e implementação de nuvem. A [motivação](#motivations) ou o resultado comercial desejado para uma migração na nuvem geralmente determina quanto uma equipe deve investir em [estratégia e planejamento](#cloud-strategy-and-planning) e [implementação](#cloud-implementation). Essas motivações também podem influenciar as decisões para executar cada uma sequencialmente ou em paralelo.
+Essa abordagem consiste em duas metodologias ou áreas de foco: estratégia de nuvem & planejamento e implementação de nuvem. A [motivação](#motivations) ou o resultado comercial desejado para uma migração na nuvem geralmente determina quanto uma equipe deve investir em [estratégia e planejamento](#cloud-strategy-and-planning) e [implementação](#cloud-implementation). Essas motivações também podem influenciar as decisões para executar cada uma sequencialmente ou em paralelo.
 
 ## <a name="cloud-implementation"></a>Implementação de nuvem
 
@@ -64,13 +64,13 @@ O foco desse esforço é a migração ou a modernização de cargas de trabalho.
 
 As migrações de nuvem geralmente são consideradas um único projeto dentro de um programa mais amplo para simplificar as operações de ti, os custos ou a complexidade. A metodologia de implementação de nuvem ajuda a alinhar os esforços técnicos dentro de uma série de migrações de carga de trabalho a valores de negócios de nível mais alto descritos na estratégia e no plano de nuvem.
 
-**Introdução:** Para começar a usar uma implementação de nuvem, o guia de [migração do Azure](../migrate/azure-migration-guide/index.md) e o [Guia de preparação do Azure](../ready/azure-readiness-guide/index.md) descrevem as ferramentas e os processos de alto nível necessários para serem bem-sucedidos na execução de uma implementação de nuvem. Migrar sua primeira carga de trabalho usando esses guias ajudará a equipe a superar as curvas de aprendizado iniciais no início do processo de planejamento. Posteriormente, considerações adicionais devem ser dadas à [lista de verificação de escopo expandido](../migrate/expanded-scope/index.md), [práticas recomendadas de migração](../migrate/azure-best-practices/index.md) e consideração de [migração](../migrate/migration-considerations/index.md)para alinhar as diretrizes de linha de base com as restrições exclusivas, processos e equipe do seu esforço. estruturas e objetivos.
+**Introdução:** Para começar a usar uma implementação de nuvem, o guia de [migração do Azure](../migrate/azure-migration-guide/index.md) e o [Guia de instalação do Azure](../ready/azure-setup-guide/index.md) descrevem as ferramentas e os processos de alto nível necessários para serem bem-sucedidos na execução de uma implementação de nuvem. Migrar sua primeira carga de trabalho usando esses guias ajudará a equipe a superar as curvas de aprendizado iniciais no início do processo de planejamento. Posteriormente, considerações adicionais devem ser dadas à [lista de verificação de escopo expandido](../migrate/expanded-scope/index.md), [práticas recomendadas de migração](../migrate/azure-best-practices/index.md) e consideração de [migração](../migrate/migration-considerations/index.md)para alinhar as diretrizes de linha de base com as restrições exclusivas, processos e equipe do seu esforço. estruturas e objetivos.
 
 ## <a name="cloud-strategy-and-planning"></a>Estratégia e planejamento de nuvem
 
 Estratégia e planejamento de nuvem é uma metodologia que se concentra em alinhar resultados de negócios, prioridades e restrições para estabelecer uma estratégia de migração e um plano claros. O plano resultante (ou a pendência de migração) descreve a abordagem de migração e modernização em todo o portfólio de ti, que pode abranger data centers inteiros, várias cargas de trabalho ou diversas coleções de infraestrutura, aplicativos e dados. O gerenciamento adequado do portfólio de ti entre os esforços de implementação na nuvem ajudará a impulsionar os resultados de negócios desejados.
 
-![Visão geral do Cloud Adoption Framework](../_images/caf-overview.png)
+![Visão geral da estrutura de adoção de nuvem](../_images/caf-overview.png)
 
 **Introdução:** O restante deste artigo prepara o leitor para a aplicação adequada da estratégia de nuvem e da metodologia de planejamento da estrutura de adoção de nuvem. Ele também descreve recursos adicionais e links que podem ajudar o leitor a adotar essa abordagem para orientar os esforços de implementação na nuvem.
 
@@ -82,12 +82,12 @@ Conforme ilustrado na imagem acima, essa estrutura alinha decisões estratégica
 
 - **[Plano](../strategy/index.md):** Quando a implementação técnica é alinhada com objetivos de negócios claros, é muito mais fácil medir e alinhar o sucesso entre vários esforços de implementação de nuvem, independentemente das decisões técnicas.
 - **[Pronto](../ready/index.md):** Preparar os negócios, a cultura, as pessoas e o ambiente para alterações futuras leva a um sucesso em cada esforço e acelera a implementação e a alteração de projetos.
-- **Adotar:** Garanta a implementação adequada das alterações desejadas, em processos de negócios e de ti, para obter resultados de negócios.
-  - **[Migrar](../migrate/index.md):** Execução iterativa da [metodologia de implementação de nuvem](#cloud-implementation) aderir ao processo testado de avaliar, migrar, otimizar e proteger & gerenciar para criar um processo repetível para migrar cargas de trabalho.
-- **[Operar](../operate/index.md):** Defina um modelo operacional gerenciável para guiar as atividades durante e muito tempo após a adoção.
-  - **[Organizar](../organize/index.md):** Alinhe pessoas e equipes para fornecer operações e adoção adequadas de nuvem.
-  - **[Controlar](../govern/index.md):** Alinhe políticas corporativas a riscos tangíveis, atenuadas por meio de políticas, processos e ferramentas de governança baseadas em nuvem.
-  - **[Gerenciar](../manage/index.md):** Expanda as operações de ti para garantir que as soluções baseadas em nuvem possam ser operadas por meio de processos seguros e econômicos usando as ferramentas de operações modernas e de primeira nuvem.
+- **Adote:** Garanta a implementação adequada das alterações desejadas, em processos de negócios e de ti, para obter resultados de negócios.
+  - **[Migrar](../migrate/index.md):** execução iterativa da [metodologia de implementação de nuvem](#cloud-implementation) aderir ao processo testado de avaliar, migrar, otimizar e proteger & gerenciar para criar um processo repetível para migrar cargas de trabalho.
+  - **[Inovar](../innovate/index.md):** Conduza valor de negócios por meio de atividades de inovação que desbloqueiam novas habilidades técnicas e recursos de negócios expandidos.
+- **[Controle](../govern/index.md):** Alinhe políticas corporativas a riscos tangíveis, atenuadas por meio de políticas, processos e ferramentas de governança baseadas em nuvem.
+- **[Gerenciar](../manage/index.md):** Expanda as operações de ti para garantir que as soluções baseadas em nuvem possam ser operadas por meio de processos seguros e econômicos usando as ferramentas de operações modernas e de primeira nuvem.
+- **[Organizar](../organize/index.md):** Alinhe pessoas e equipes para fornecer operações e adoção adequadas de nuvem.
 
 Ao longo dessa experiência de migração, essa estrutura será usada para abordar a ambiguidade, gerenciar alterações e orientar equipes entre funções com a realização de resultados comerciais.
 
@@ -110,11 +110,11 @@ Durante a implementação da estratégia de nuvem e planejar a equipe de ti, con
 
 ### <a name="common-workload-examples"></a>Exemplos comuns de carga de trabalho
 
-A estratégia de nuvem e o planejamento geralmente visam uma ampla coleção de cargas de trabalho e aplicativos. No portfólio, os tipos de aplicativos comuns ou de carga de trabalho normalmente são migrados. A seguir, estão alguns exemplos:
+A estratégia de nuvem e o planejamento geralmente visam uma ampla coleção de cargas de trabalho e aplicativos. No portfólio, os tipos de aplicativos comuns ou de carga de trabalho normalmente são migrados. Veja a seguir alguns exemplos:
 
 - Aplicativos de linha de negócios
 - Aplicativos voltados para o cliente
-- Aplicativo de terceiros
+- Aplicativos de terceiros
 - Plataformas de análise de dados
 - Soluções distribuídas globalmente
 - Soluções altamente escalonáveis
@@ -129,17 +129,23 @@ As tecnologias migradas para a nuvem se expandem constantemente à medida que os
 - SAP no Azure
 - Análise (data warehouse, Data Lake)
 
-## <a name="next-steps-lifecycle-solution"></a>Próximas etapas: Solução de ciclo de vida
+## <a name="next-steps-lifecycle-solution"></a>Próximas etapas: solução de ciclo de vida
 
 A estrutura de adoção de nuvem é uma solução de ciclo de vida. Ele foi projetado para ajudar os leitores que estão apenas começando sua jornada e também com leitores que estão profundamente em sua migração. Dessa forma, o conteúdo é bem específico ao contexto e ao público. As próximas etapas são mais bem alinhadas ao processo de alto nível que o leitor gostaria de melhorar em seguida.
 
 > [!div class="nextstepaction"]
+> [Estratégia](../strategy/index.md)
+>
 > [Plano](../plan/index.md)
 >
-> [Pronto](../ready/index.md)
+> [Esteja](../ready/index.md)
 >
 > [Migrar](../migrate/index.md)
 >
-> [Gerenciar](../manage/index.md)
+> [Inova](../innovate/index.md)
 >
 > [Indicadores](../govern/index.md)
+>
+> [Gerenciar](../manage/index.md)
+>
+> [Organizar](../organize/index.md)

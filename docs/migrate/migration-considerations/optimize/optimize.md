@@ -1,52 +1,52 @@
 ---
-title: Parâmetros de comparação e redimensionamento de ativos de nuvem
+title: Benchmark e redimensionamento de ativos de nuvem
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Parâmetros de comparação e redimensionamento de ativos de nuvem
+description: Benchmark e redimensionamento de ativos de nuvem
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 5/19/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 13a18db6a074f73b962d29f4d5963571a49869d4
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 53ff6f0d32b80ef9c89d4ebd0234dd3442412907
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022642"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548432"
 ---
-# <a name="benchmark-and-resize-cloud-assets"></a>Parâmetros de comparação e redimensionamento de ativos de nuvem
+# <a name="benchmark-and-resize-cloud-assets"></a>Benchmark e redimensionamento de ativos de nuvem
 
-O monitoramento do uso e dos gastos é extremamente importante para as infraestruturas de nuvem. As organizações pagam pelos recursos que consomem ao longo do tempo. Quando o uso excede os limites do contrato, excedentes de custos inesperados podem ocorrer rapidamente. Os relatórios do Gerenciamento de Custos monitoraram os gastos para analisar e acompanhar o uso da nuvem, seus custos e tendências. Usando os relatórios ao longo do tempo, é possível detectar anomalias que diferem das tendências normais. As ineficiências da implantação de nuvem ficam visíveis nos relatórios de otimização. Observe as ineficiências em relatórios de análise de custos.
+O monitoramento do uso e do gasto é extremamente importante para as infraestruturas de nuvem. As organizações pagam pelos recursos que consomem ao longo do tempo. Quando o uso excede os limites do contrato, as excedentes de custos inesperados podem se acumular rapidamente. Os relatórios de gerenciamento de custos monitoram gastos para analisar e acompanhar o uso, os custos e as tendências da nuvem. Usando relatórios de horas extras, detecte anomalias que diferem das tendências normais. As ineficiências na implantação na nuvem são visíveis em relatórios de otimização. Anote as ineficiências em relatórios de análise de custo.
 
-Nos modelos locais tradicionais de TI, a requisição dos sistemas de TI é dispendiosa e consome tempo. Os processos geralmente exigem longos ciclos de análise de gastos de capital e podem até mesmo necessitar de um processo de planejamento anual. Dessa forma, é comum comprar mais do que o necessário. É igualmente comum que os administradores de TI então provisionem ativos em preparação para as demandas futuras antecipadas.
+Nos modelos locais de ti tradicionais, a requisição dos sistemas de ti é dispendiosa e consome tempo. Os processos geralmente exigem ciclos de análise de gastos de capital longos e podem até mesmo exigir um processo de planejamento anual. Como tal, é uma prática comum comprar mais do que o necessário. É igualmente comum que os administradores de ti, em seguida, provisionem ativos em preparação para demandas futuras antecipadas.
 
-Na nuvem, os modelos de provisionamento e contabilidade eliminam os atrasos de tempo que levam à compra excessiva. Quando um ativo precisa de recursos adicionais, é possível aumentar ou diminuir seu pedido quase instantaneamente. Ou seja, é possível reduzir o tamanho de ativos com segurança para minimizar o consumo de recursos e custos. Durante a comparação e a otimização, a equipe de adoção da nuvem procura encontrar o equilíbrio entre desempenho e custos, provisionando ativos para que não sejam maiores nem menores do que o necessário para atender às demandas de produção.
+Na nuvem, os modelos de contabilidade e provisionamento eliminam os atrasos de tempo que levam à supercompra. Quando um ativo precisa de recursos adicionais, ele pode ser expandido ou reduzido quase instantaneamente. Isso significa que os ativos podem ser reduzidos de tamanho com segurança para minimizar os recursos e os custos consumidos. Durante o benchmark e a otimização, a equipe de adoção de nuvem procura encontrar o equilíbrio entre desempenho e custos, Provisionando ativos para não serem maiores e não menores do que o necessário para atender às demandas de produção.
 
 <!-- markdownlint-disable MD026 -->
 
-## <a name="should-assets-be-optimized-during-or-after-the-migration"></a>É necessário otimizar os ativos durante ou após a migração?
+## <a name="should-assets-be-optimized-during-or-after-the-migration"></a>Os ativos devem ser otimizados durante ou após a migração?
 
-Quando é necessário otimizar um ativo&mdash;durante ou após a migração? A resposta simples é *nos dois momentos*. No entanto, isso não é totalmente exato. Para explicar, dê uma olhada em dois cenários básicos para otimizar o dimensionamento de recursos:
+Quando um ativo deve ser otimizado &mdash;during ou após a migração? A resposta simples é a *ambas*. No entanto, isso não é totalmente preciso. Para explicar, dê uma olhada em dois cenários básicos para otimizar o dimensionamento de recursos:
 
-- **Redimensionamento planejado.** Geralmente, quando um ativo é claramente superdimensionado e subutilizado, deve ser redimensionado durante a implantação. Determinar se um ativo foi redimensionado com êxito nesse caso requer o teste de aceitação do usuário após a migração. Se um usuário avançado não tiver perdas de desempenho ou de funcionalidade durante o teste, você poderá concluir que o ativo foi dimensionado com êxito.
-- **Otimização.** Nos casos em que a necessidade de otimização não fica clara, as equipes de TI devem usar uma abordagem controlada por dados no gerenciamento de tamanho de recursos. Usando avaliações de desempenho de ativos, uma equipe de TI pode tomar decisões instruídas sobre o tamanho, os serviços, a escala e a arquitetura mais apropriados para uma solução. Em seguida, ela pode redimensionar e testar o teorias de desempenho após a migração.
+- **Redimensionamento planejado.** Geralmente, um ativo é claramente superdimensionado e subutilizado e deve ser redimensionado durante a implantação. Determinar se um ativo foi redimensionado com êxito nesse caso requer o teste de aceitação do usuário após a migração. Se um usuário avançado não tiver perdas de desempenho ou de funcionalidade durante o teste, você poderá concluir que o ativo foi dimensionado com êxito.
+- **Otimização.** Nos casos em que a necessidade de otimização não é clara, as equipes de ti devem usar uma abordagem controlada por dados para o gerenciamento de tamanho de recursos. Usando benchmarks do desempenho do ativo, uma equipe de ti pode tomar decisões instruídas sobre o tamanho, os serviços, a escala e a arquitetura mais apropriados de uma solução. Em seguida, eles podem redimensionar e testar o desempenho teorias após a migração.
 
-Durante a migração, use suposições realistas ao experimentar o dimensionamento. No entanto, a verdadeira otimização dos recursos exige dados baseados no desempenho real de um ambiente de nuvem. Para que a verdadeira otimização ocorra, primeiro a equipe de TI deve implementar abordagens para monitorar o desempenho e a utilização de recursos.
+Durante a migração, use palpites instruídos e experimente o dimensionamento. No entanto, a verdadeira otimização dos recursos exige dados com base no desempenho real em um ambiente de nuvem. Para que a verdadeira otimização ocorra, a equipe de ti deve primeiro implementar abordagens para monitorar o desempenho e a utilização de recursos.
 
-## <a name="benchmark-and-optimize-with-azure-cost-management"></a>Avaliações e otimizações com o Gerenciamento de Custos do Azure
+## <a name="benchmark-and-optimize-with-azure-cost-management"></a>Benchmark e otimizar com o gerenciamento de custos do Azure
 
-O [Gerenciamento de Custos do Azure](https://docs.microsoft.com/azure/cost-management/overview) licenciado pela Cloudyn, uma subsidiária da Microsoft, gerencia os gastos da nuvem com transparência e precisão. Esse serviço monitora, avalia, aloca e otimiza os custos da nuvem.
+O [Gerenciamento de custos do Azure](https://docs.microsoft.com/azure/cost-management/overview) licenciado pela Cloudyn, uma subsidiária da Microsoft, gerencia os gastos com a nuvem com transparência e precisão. Esse serviço monitora, realiza a localização de parâmetros de comparação e otimiza os custos de nuvem.
 
-Os dados históricos podem ajudar a gerenciar custos analisando o uso e os custos ao longo do tempo para identificar tendências, que então são usadas para prever gastos futuros. O Gerenciamento de Custo também inclui relatórios de custos previstos úteis. A alocação de custos gerencia os custos analisando-os de acordo com a política de marcação. Use a alocação de custos para showback/estornar ao mostrar a utilização de recursos e os custos associados para influenciar os comportamentos de consumo ou cobrar os clientes de locatários. O controle de acesso ajuda a gerenciar os custos garantindo que os usuários e as equipes acessem somente os dados necessários do Gerenciamento de Custos. Os alertas ajudam a gerenciar os custos pela notificação automática quando ocorrem gastos incomuns ou excessivos. Os alertas podem notificar outros stakeholders automaticamente sobre anomalias de gastos e riscos de excesso de gastos. Vários relatórios dão suporte a alertas com base no orçamento e nos limites de custo.
+Os dados históricos podem ajudar a gerenciar custos analisando o uso e os custos ao longo do tempo para identificar tendências, que são então usadas para prever gastos futuros. O gerenciamento de custos também inclui relatórios de custo projetados úteis. A alocação de custos gerencia os custos analisando os custos com base nas políticas de marcação. Use a alocação de custos para reversão/estorno para mostrar a utilização de recursos e os custos associados para influenciar os comportamentos de consumo ou cobrar os clientes de locatários. O controle de acesso ajuda a gerenciar os custos, garantindo que os usuários e as equipes acessem apenas os dados de gerenciamento de custos de que precisam. O alerta ajuda a gerenciar os custos por meio de notificação automática quando ocorrem gastos incomuns ou em caso de perda. Os alertas também podem notificar outros participantes automaticamente para gastar anomalias e engastando riscos. Vários relatórios dão suporte a alertas com base no orçamento e nos limites de custo.
 
 ## <a name="improve-efficiency"></a>Melhorar a eficiência
 
-Determine o uso ideal das VMs, identifique ou remova as VMs ociosas e os discos desanexados com o Gerenciamento de Custos. Usando as informações contidas nos relatórios de ineficiência e otimização de dimensionamento, crie um plano para reduzir ou remover as VMs ociosas.
+Determine o uso ideal da VM, identifique as VMs ociosas ou remova as VMs ociosas e os discos desconectados com o gerenciamento de custos. Usando informações em relatórios de otimização de dimensionamento e ineficiência, crie um plano para diminuir ou remova as VMs ociosas.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
-Depois que uma carga de trabalho for testada e otimizada, é a hora de [preparar a carga de trabalho para promoção](./ready.md).
+Depois que uma carga de trabalho é testada e otimizada, é hora de [preparar a carga de trabalho para promoção](./ready.md).
 
 > [!div class="nextstepaction"]
-> [Preparando uma carga de trabalho migrada para a promoção da produção](./ready.md)
+> [Obtendo uma carga de trabalho migrada pronta para promoção de produção](./ready.md)

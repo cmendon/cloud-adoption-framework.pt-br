@@ -1,7 +1,7 @@
 ---
-title: Aperfeiçoamento da disciplina de Aceleração de implantação
+title: Melhoria da disciplina de aceleração de implantação
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Aperfeiçoamento da disciplina de Aceleração de implantação
+description: Melhoria da disciplina de aceleração de implantação
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
@@ -9,96 +9,96 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e23dc632df009468c5ec87c9a2862ffacf4b2729
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: b1b4395efd909a0f4456a39a6b2b933d25e4f002
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220755"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547774"
 ---
-# <a name="deployment-acceleration-discipline-improvement"></a>Aperfeiçoamento da disciplina de Aceleração de implantação
+# <a name="deployment-acceleration-discipline-improvement"></a>Melhoria da disciplina de aceleração de implantação
 
-A disciplina de Aceleração de implantação se concentra no estabelecimento de políticas que garantem que os recursos são implantados e configurados de forma consistente e repetidamente e permanecer em conformidade em todo seu ciclo de vida. Dentro das Cinco disciplinas de Governança de nuvem, a Aceleração de implantação inclui decisões sobre automatizar implantações, controlar o código-fonte de artefatos de implantação, monitorar os recursos implantados para manter o estado desejado e auditar qualquer problema de conformidade.
+A disciplina de aceleração da implantação concentra-se no estabelecimento de políticas que garantem que os recursos sejam implantados e configurados de forma consistente e repetida, e permaneçam em conformidade em todo o ciclo Dentro das cinco disciplinas de governança de nuvem, a aceleração de implantação inclui decisões relacionadas à automação de implantações, ao controle de origem de artefatos de implantação, ao monitoramento de recursos implantados para manter o estado desejado e à auditoria de qualquer conformidade edições.
 
-Este artigo descreve algumas tarefas possíveis que sua empresa pode realizar para desenvolver melhor e maturar a disciplina de Aceleração de implantação. Essas tarefas podem ser divididas entre as fases de planejamento, criação, adoção e operacional para a implementação de uma solução de nuvem, que depois são iteradas para permitir o desenvolvimento de uma [abordagem incremental para a governança de nuvem](../guides/index.md#an-incremental-approach-to-cloud-governance).
+Este artigo descreve algumas tarefas potenciais pelas quais sua empresa pode se envolver para desenvolver melhor e amadurecer a disciplina de aceleração de implantação. Essas tarefas podem ser divididas em fases de planejamento, criação, adoção e operação de implementação de uma solução de nuvem, que são então iteradas para permitir o desenvolvimento de uma [abordagem incremental para governança de nuvem](../guides/index.md#an-incremental-approach-to-cloud-governance).
 
 ![Quatro fases de adoção](../../_images/govern/adoption-phases.png)
 
 *Figura 1-fases de adoção da abordagem incremental para governança de nuvem.*
 
-É impossível para qualquer pessoa documentar os requisitos a serem levados em consideração de todas as empresas. Portanto, este artigo descreve as atividades de exemplo potenciais e mínimas sugeridas para cada fase do processo de amadurecimento da governança. O objetivo inicial dessas atividades é ajudá-lo a criar um [MVP de política](../guides/index.md#an-incremental-approach-to-cloud-governance) e estabelecer uma estrutura para aperfeiçoamento da política incremental. Sua equipe de governança de nuvem precisará decidir quanto investir nessas atividades para melhorar seus recursos de governança de linha de base de identidade.
+É impossível para qualquer documento considerar os requisitos de todas as empresas. Como tal, este artigo descreve as atividades de exemplo mínimas e potenciais do sugerido para cada fase do processo de desenvolvimento de governança. O objetivo inicial dessas atividades é ajudá-lo a criar um [MVP de política](../guides/index.md#an-incremental-approach-to-cloud-governance) e estabelecer uma estrutura para aperfeiçoamento da política incremental. Sua equipe de governança de nuvem precisará decidir quanto investir nessas atividades para melhorar seus recursos de governança de linha de base de identidade.
 
 > [!CAUTION]
-> Nem as atividades mínimas ou potenciais descritas neste artigo estão alinhadas a políticas corporativas específicas ou a requisitos de conformidade de terceiros. Essas diretrizes foram projetadas para ajudar a facilitar as conversas que levarão ao alinhamento de ambos os requisitos com um modelo de governança de nuvem.
+> Nem as atividades mínimas ou potenciais descritas neste artigo estão alinhadas a políticas corporativas específicas ou a requisitos de conformidade de terceiros. Estas diretrizes foram projetadas para ajudar a facilitar as conversas que levarão ao alinhamento dos dois requisitos com um modelo de governança de nuvem.
 
 ## <a name="planning-and-readiness"></a>Planejamento e preparação
 
-Esta fase de maturidade de governança une os resultados de negócios e as estratégias realizáveis. Durante esse processo, a equipe de liderança define métricas específicas, mapeia essas métricas ao estado digital e começa a planejar o esforço global de migração.
+Essa fase de maturidade de governança preenche a divisão entre resultados de negócios e estratégias acionáveis. Durante esse processo, a equipe de liderança define métricas específicas, mapeia essas métricas para o espaço digital e começa a planejar o esforço geral de migração.
 
-**Atividades mínimas sugeridas:**
+**Mínimo de atividades sugeridas:**
 
-- Avaliar suas opções [cadeia de ferramentas de Aceleração de implantação](./toolchain.md) e implementar uma estratégia híbrida que é apropriada para sua organização.
-- Desenvolver um documento com o esboço das Diretrizes de arquitetura e distribuí-lo aos principais stakeholders.
-- Treinar e envolver as pessoas e equipes afetadas pelo desenvolvimento das Diretrizes de arquitetura.
-- Treinar a equipe de TI para entender os princípios e estratégias de DevSecOps e a importância de implantações totalmente automatizadas na disciplina de aceleração de implantação e as equipes de desenvolvimento.
+- Avalie suas opções de [ferramentas de aceleração de implantação](./toolchain.md) e implemente uma estratégia híbrida apropriada para sua organização.
+- Desenvolva um documento de diretrizes de arquitetura de rascunho e distribua para as principais partes interessadas.
+- Instrua e envolva as pessoas e equipes afetadas pelo desenvolvimento de diretrizes de arquitetura.
+- Treine as equipes de desenvolvimento e a equipe de ti para entender os princípios e as estratégias do DevSecOps e a importância das implantações totalmente automatizadas na disciplina de aceleração da implantação.
 
 **Atividades potenciais:**
 
-- Definir funções e atribuições que controlarão a aceleração de implantação na nuvem.
+- Defina as funções e atribuições que controlarão a aceleração da implantação na nuvem.
 
 ## <a name="build-and-predeployment"></a>Compilação e pré-implantação
 
-**Atividades mínimas sugeridas:**
+**Mínimo de atividades sugeridas:**
 
-- Para novos aplicativos baseados em nuvem, introduza implantações totalmente automatizadas no início do processo de desenvolvimento. Esse investimento melhorará a confiabilidade de seus processos de testes e garantirá a consistência em seus ambientes de desenvolvimento, garantia de qualidade e produção.
-- Armazenar todos os artefatos de implantação como modelos de implantação ou scripts de configuração usando uma plataforma de controle de código-fonte como GitHub ou Azure DevOps.
+- Para novos aplicativos baseados em nuvem, apresente implantações totalmente automatizadas no início do processo de desenvolvimento. Esse investimento melhorará a confiabilidade dos seus processos de teste e garantirá a consistência em seus ambientes de desenvolvimento, controle de qualidade e produção.
+- Armazene todos os artefatos de implantação, como modelos de implantação ou scripts de configuração usando uma plataforma de controle de origem, como GitHub ou Azure DevOps.
 - Armazene todos os segredos, senhas, certificados e cadeias de conexão no [Azure Key Vault](https://docs.microsoft.com/azure/key-vault)
-- Considerar um teste do piloto antes de implementar sua [cadeia de ferramentas de Aceleração de implantação](./toolchain.md), garantindo que ele simplifica a suas implantações tanto quanto possível. Aplique comentários dos testes piloto durante a fase de pré-implantação, repetindo conforme necessário.
-- Avaliar a arquitetura lógica e física de seus aplicativos e identifique oportunidades para automatizar a implantação de recursos do aplicativo ou aprimorar as partes da arquitetura usando outros recursos baseados em nuvem.
-- Atualizar o documento das Diretrizes de Arquitetura para incluir a implantação e planos de adoção de usuário e distribuir para os stakeholders.
-- Continuar a instruir as pessoas e equipes mais afetadas pelas diretrizes de arquitetura.
+- Considere um teste piloto antes de implementar seu [ferramentas de aceleração de implantação](./toolchain.md), garantindo que ele simplifique suas implantações o máximo possível. Aplique comentários dos testes piloto durante a fase de pré-implantação, repetindo conforme necessário.
+- Avalie a arquitetura lógica e física de seus aplicativos e identifique oportunidades para automatizar a implantação de recursos do aplicativo ou melhorar partes da arquitetura usando outros recursos baseados em nuvem.
+- Atualize o documento de diretrizes de arquitetura para incluir os planos de implantação e adoção de usuário, e distribua para as principais partes interessadas.
+- Continue a treinar as pessoas e as equipes mais afetadas pelas diretrizes de arquitetura.
 
 **Atividades potenciais:**
 
-- Definir uma integração contínua e pipeline de implantação contínua (CI/CD) para gerenciar totalmente a liberação de atualizações para seu aplicativo por meio de seus ambientes de desenvolvimento, garantia de qualidade e produção.
+- Defina um pipeline de CI/CD (integração contínua e implantação contínua) para gerenciar totalmente a liberação de atualizações para seu aplicativo por meio de ambientes de desenvolvimento, de qualidade e de produção.
 
-## <a name="adopt-and-migrate"></a>Adotar e migrar
+## <a name="adopt-and-migrate"></a>Adote e migre
 
-A migração é um processo incremental que se concentra no movimento, teste e adoção de aplicativos ou cargas de trabalho em um estado digital existente.
+A migração é um processo incremental que se concentra na movimentação, no teste e na adoção de aplicativos ou cargas de trabalho em um espaço digital existente.
 
-**Atividades mínimas sugeridas:**
+**Mínimo de atividades sugeridas:**
 
-- Migrar sua [cadeia de ferramentas de Aceleração de implantação](./toolchain.md) do desenvolvimento à produção.
-- Atualizar o documento com o esboço das Diretrizes de Arquitetura e distribuí-lo aos principais stakeholders.
-- Desenvolver materiais e documentações educativas, comunicações de conscientização, incentivos e outros programas para ajudar a conduzir a adoção de TI.
+- Migre seu [ferramentas de aceleração de implantação](./toolchain.md) de desenvolvimento para produção.
+- Atualize o documento de diretrizes de arquitetura e distribua para as principais partes interessadas.
+- Desenvolva materiais educacionais e documentação, comunicações de conscientização, incentivos e outros programas para ajudar a impulsionar o desenvolvedor e a adoção de ti.
 
 **Atividades potenciais:**
 
 - Valide se as práticas recomendadas definidas durante as fases de compilação e pré-implantação foram executadas corretamente.
-- Certificar-se de que cada aplicativo ou carga de trabalho se alinha com a estratégia de aceleração de implantação antes do lançamento.
+- Verifique se cada aplicativo ou carga de trabalho se alinha com a estratégia de aceleração de implantação antes do lançamento.
 
-## <a name="operate-and-post-implementation"></a>Operação e pós-implementação
+## <a name="operate-and-post-implementation"></a>Operar e pós-implementação
 
-Depois que a transformação for concluída, a governança e as operações devem ser mantidas para o ciclo de vida natural de um aplicativo ou uma carga de trabalho. Essa fase de maturidade de governança se concentra em atividades que normalmente ocorrem depois que a solução é implementada e que o ciclo de transformação começa a se estabilizar.
+Depois que a transformação for concluída, a governança e as operações deverão residir para o ciclo de vida natural de um aplicativo ou carga de trabalho. Essa fase de maturidade de governança se concentra nas atividades que normalmente vêm depois que a solução é implementada e o ciclo de transformação começa a estabilizar.
 
-**Atividades mínimas sugeridas:**
+**Mínimo de atividades sugeridas:**
 
-- Personalizar sua [cadeia de ferramentas de Aceleração de implantação](./toolchain.md) com base em alterações às necessidades de identidade de mudança da empresa.
-- Automatizar as notificações e relatórios para alertar você sobre possíveis problemas de configuração ou programas mal-intencionados.
-- Monitorar e informar sobre o uso de recursos e o aplicativo.
-- Relatar a respeito das métricas de pós-implantação e distribuir aos stakeholders.
-- Revisar as Diretrizes de Arquitetura para orientar futuros processos de adoção.
-- Continuar a se comunicar e treinar as pessoas e equipes afetadas regularmente para garantir aderência contínua às diretrizes de arquitetura.
+- Personalize seu [ferramentas de aceleração de implantação](./toolchain.md) com base nas alterações nas necessidades de identidade dinâmicas de sua organização.
+- Automatize notificações e relatórios para alertar sobre possíveis problemas de configuração ou ameaças mal-intencionadas.
+- Monitorar e relatar o uso de aplicativos e recursos.
+- Relate as métricas pós-implantação e distribua para os participantes.
+- Revise as diretrizes de arquitetura para orientar processos futuros de adoção.
+- Continue a se comunicar com o e treinar as pessoas e equipes afetadas regularmente para garantir a adesão contínua às diretrizes de arquitetura.
 
 **Atividades potenciais:**
 
-- Configurar o monitoramento de configuração de estado desejado e ferramenta de relatório.
-- Revisar regularmente as ferramentas de configuração e scripts para melhorar os processos e identificar problemas comuns.
-- Trabalhar com equipes de desenvolvimento, operações e segurança para ajudar a práticas recomendadas de DevSecOps maduras e dividir silos organizacionais que levam a ineficiências.
+- Configure uma ferramenta de monitoramento e relatório de configuração de estado desejado.
+- Examine regularmente as ferramentas e os scripts de configuração para melhorar os processos e identificar problemas comuns.
+- Trabalhe com equipes de desenvolvimento, operações e segurança para ajudar as práticas DevSecOpss maduras e dividir os silos organizacionais que levam a ineficiências.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
-Agora que você entende o conceito de governança de identidade de nuvem, examine a [cadeia de ferramentas da Linha de base de identidade](./toolchain.md) para identificar as ferramentas do Azure e recursos que você precisará ao desenvolver a disciplina de governança da Linha de base de identidade na plataforma do Azure.
+Agora que você entendeu o conceito de governança de identidade de nuvem, examine o [ferramentas de linha de base de identidade](./toolchain.md) para identificar as ferramentas e os recursos do Azure que você precisará ao desenvolver a disciplina de governança de linha de base de identidade na plataforma Azure.
 
 > [!div class="nextstepaction"]
-> [Cadeia de ferramentas de linha de base de identidade para o Azure](./toolchain.md)
+> [Ferramentas de linha de base de identidade para o Azure](./toolchain.md)

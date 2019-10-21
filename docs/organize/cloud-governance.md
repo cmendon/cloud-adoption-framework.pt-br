@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 33942811554556b1f67dc6515a8c679b09bfa983
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 4613a8f4a4bdfc065f6c8e48eda609f6d1703130
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223994"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549104"
 ---
 # <a name="cloud-governance-capabilities"></a>Recursos de governança de nuvem
 
@@ -27,7 +27,7 @@ Dependendo dos resultados de negócios desejados, as habilidades necessárias pa
 - Governança de ti
 - Arquitetura empresarial
 - Operações de ti
-- Infraestrutura de TI
+- Infraestrutura de ti
 - Rede
 - Identidade
 - Virtualização
@@ -85,7 +85,7 @@ Outra diferença fundamental entre um responsável pela nuvem e uma governança 
 
 **Guardião de nuvem:** À medida que as práticas de governança solidificam e se tornam aceitas pelas equipes de adoção de nuvem, a função dos arquitetos de nuvem que se especializa em governança muda um pouco, assim como a função da equipe de governança de nuvem. Em geral, as práticas mais maduras têm a atenção de outros especialistas no assunto que podem ajudar a fortalecer as proteções fornecidas pelas implementações de governança.
 
-Embora seja sutil, a diferença entre essas duas classificações deve ser considerada durante o estabelecimento de uma cultura de TI focada em governança. O trabalho de um guardião da nuvem é "arrumar a bagunça" feita pelos arquitetos de nuvem inovadores, além do atrito natural existente entre essas duas funções que, na prática, têm objetivos opostos. Por outro lado, um guardião ajuda a proteger a nuvem para que outros arquitetos possam trabalhar com mais rapidez e menos complicações.
+Embora a diferença seja sutil, é uma distinção importante ao criar uma cultura de ti focada em governança. Um dos responsáveis pela nuvem limpa as bagunças feitas pelos arquitetos de nuvem inovadores, e as duas funções têm objetivos naturais e opostos. Um guardião de nuvem ajuda a manter a nuvem segura, de modo que outros arquitetos de nuvem podem se mover mais rapidamente com menos confusão.
 
 Os guardiões de nuvem começam a usar abordagens de governança mais avançadas para acelerar a implantação da plataforma e ajudar as equipes a fazer o autoatendimento de suas necessidades ambientais, para que elas possam se mover mais rapidamente. Exemplos dessas funções mais avançadas são vistos nos aprimoramentos incrementais para o MVP de governança, como [a melhoria da linha de base de segurança](../govern/guides/complex/security-baseline-improvement.md).
 
@@ -97,7 +97,7 @@ Esses profissionais de governança que compartilham seus scripts estruturados aj
 
 Todas as empresas são exclusivas e, portanto, suas necessidades de governança. Escolha o nível de maturidade que se adapta à sua organização e use a estrutura de adoção de nuvem para orientar as práticas, os processos e as ferramentas para ajudá-lo a chegar lá.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 À medida que a governança de nuvem amadurece, as equipes serão capacitadas a adotar a nuvem em ritmos mais rápidos. Os esforços contínuos de adoção na nuvem tendem a disparar a maturidade nas operações de ti. Esse amadurecimento também pode exigir o desenvolvimento de [recursos de operações de nuvem](./cloud-operations.md).
 

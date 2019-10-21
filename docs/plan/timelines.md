@@ -8,18 +8,18 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 4e095dd90711f201935e88ea5f2712e881a8574b
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: c5bafd4504a0df9570bf65846a5a077e54e158ca
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70828728"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549037"
 ---
 # <a name="timelines-in-a-cloud-adoption-plan"></a>Linhas do tempo em um plano de adoção de nuvem
 
 No artigo anterior desta série, as cargas de trabalho e tarefas foram atribuídas a [versões e iterações](./iteration-paths.md). Essas atribuições alimentam as estimativas de linha do tempo neste artigo.
 
-As estruturas de divisão de trabalho (EDT) são comumente usadas em ferramentas de gerenciamento de projeto sequenciais. Elas representam como as tarefas dependentes serão concluídas durante um período de tempo. Essas estruturas funcionam bem quando as tarefas são sequenciais por natureza. As interdependências nas tarefas encontradas na adoção da nuvem tornam difícil o gerenciamento dessas estruturas. Para preencher essa lacuna, você pode estimar as linhas do tempo com base em atribuições de caminho de iteração ocultando a complexidade.
+As estruturas de divisão de trabalho (EDT) são comumente usadas em ferramentas de gerenciamento de projeto sequenciais. Elas representam como as tarefas dependentes serão concluídas ao longo do tempo. Essas estruturas funcionam bem quando as tarefas são sequenciais por natureza. As interdependências nas tarefas encontradas na adoção da nuvem tornam difícil o gerenciamento dessas estruturas. Para preencher essa lacuna, você pode estimar as linhas do tempo com base em atribuições de caminho de iteração ocultando a complexidade.
 
 ## <a name="estimate-timelines"></a>Estimar linhas do tempo
 

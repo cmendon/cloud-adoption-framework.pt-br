@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 554bfdaf0a21fac50cafe9c510c4fd83c6702b81
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 0157cf5c50cd676478b28889b565c7f3f6952e32
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221384"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548609"
 ---
-# <a name="cloud-monitoring-guide-alerting"></a>Guia de monitoramento de nuvem: Alertas
+# <a name="cloud-monitoring-guide-alerting"></a>Guia de monitoramento de nuvem: alertas
 
 Há anos, as organizações de ti lutaram para combater os fadiga de alertas criados pelas ferramentas de monitoramento implantadas na empresa. Muitos sistemas geram um alto volume de alertas frequentemente considerados sem sentido, enquanto outros são relevantes, mas são ignorados ou ignorados. Como resultado, as operações de ti e de desenvolvedores lutaram para atender à qualidade de nível de serviço prometida para clientes internos ou externos. É essencial entender o estado da sua infraestrutura e dos aplicativos para garantir a confiabilidade. Você precisa identificar as causas rapidamente, para minimizar a degradação e a interrupção do serviço, ou diminuir o efeito ou reduzir o número de incidentes.
 
@@ -81,7 +81,7 @@ As [soluções de gerenciamento](https://docs.microsoft.com/azure/azure-monitor/
 
 Solução| Tipo de dados | Comportamento do alerta
 :---|:---|:---
-Azure Monitor para contêineres | Os dados de desempenho médio calculados de nós e pods são gravados no repositório de métricas. | Crie alertas de métrica se você quiser ser alertado com base na variação do desempenho de utilização medido, agregado ao longo de um período de tempo.
+Azure Monitor para contêineres | Os dados de desempenho médio calculados de nós e pods são gravados no repositório de métricas. | Crie alertas de métrica se você quiser ser alertado com base na variação do desempenho de utilização medido, agregado ao longo do tempo.
 || Dados de desempenho calculados que usam percentils de nós, controladores, contêineres e pods são gravados no repositório de logs. Os logs de contêiner e as informações de inventário também são gravados no repositório de logs. | Crie alertas de consulta de log se desejar ser alertado com base na variação da utilização medida de clusters e contêineres. Os alertas de consulta de log também podem ser configurados com base em contagens de fase de Pod e contagens de nós de status.
 Azure Monitor para VMs | Os critérios de integridade são métricas gravadas no repositório de métricas. | Os alertas são gerados quando o estado de integridade muda de íntegro para condição não íntegra. Dá suporte apenas a grupos de ação configurados para enviar notificações por SMS ou email.
 || Os dados do log de desempenho do sistema operacional convidado e do mapa são gravados no repositório de logs. | Criar alertas de consulta de log.
@@ -92,7 +92,7 @@ A latência é uma das decisões mais críticas que impulsionam alertas e resolu
 
 Dito isso, há algumas notas de rodapé importantes para essa regra.
 
-A telemetria do **sistema operacional convidado** tem um número de caminhos para entrar no sistema.
+A **telemetria do sistema operacional convidado** tem um número de caminhos para entrar no sistema.
 
 - A maneira mais rápida de alertar sobre esses dados é importá-lo como métricas personalizadas. Faça isso usando a extensão Diagnóstico do Azure e, em seguida, usando um alerta de métrica. No entanto, as métricas personalizadas estão atualmente em visualização e são [mais caras do que outras opções](https://azure.microsoft.com/pricing/details/monitor).
 
@@ -106,7 +106,7 @@ A telemetria do **sistema operacional convidado** tem um número de caminhos par
 
 Se você usar uma solução como Azure Monitor para VMs e encontrar os critérios de integridade padrão que monitoram a utilização de desempenho aceitável, não crie alertas de consulta de log ou métricas de sobreposição com base nos mesmos contadores de desempenho.
 
-Se você não estiver usando Azure Monitor para VMs, explore os recursos a seguir para tornar seu trabalho de criação de alertas e gerenciamento de notificações mais fácil:  
+Se você não estiver usando Azure Monitor para VMs, explore os recursos a seguir para tornar seu trabalho de criação de alertas e gerenciamento de notificações mais fácil:
 
 > [!NOTE]
 > Esses recursos se aplicam somente a alertas de métricas; ou seja, os alertas com base nos dados que estão sendo enviados para o banco de dado de métricas de Azure Monitor. Eles não se aplicam aos outros tipos de alertas. Conforme mencionado anteriormente, o objetivo principal dos alertas de métrica é a velocidade. Se receber um alerta em menos de 5 minutos não for uma preocupação principal, você poderá usar um alerta de consulta de log.

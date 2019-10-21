@@ -9,18 +9,18 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 54e08a42a64d06005620b450b1458288316df74e
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: d1d59b105dd6d75b0c5b5ed12d711473fd4995c8
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224023"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549107"
 ---
 # <a name="central-it-capabilities"></a>Recursos centrais de ti
 
 À medida que a adoção de nuvem é dimensionada, os recursos de governança de nuvem sozinhos podem não ser suficientes para controlar os esforços de adoção. Quando a adoção é gradual, as equipes tendem a desenvolver proorgânicamente as habilidades e os processos necessários para estar prontos para a nuvem ao longo do tempo.
 
-No entanto, quando uma equipe de adoção de nuvem aproveita a nuvem para atingir um resultado comercial de alto perfil, a adoção gradual raramente é o caso. O sucesso segue o sucesso. Isso também é verdadeiro para a adoção da nuvem, mas acontece em escala de nuvem. Quando a adoção de nuvem se expande de uma equipe para várias equipes em um período de tempo relativamente curto, o suporte adicional da equipe de ti existente é necessário. No entanto, esses membros da equipe podem não ter o treinamento e a experiência necessários para dar suporte à nuvem usando ferramentas de ti nativas de nuvem. Isso geralmente orienta a formação de uma equipe de ti central que governa a nuvem.
+No entanto, quando uma equipe de adoção de nuvem aproveita a nuvem para atingir um resultado comercial de alto perfil, a adoção gradual raramente é o caso. O sucesso segue o sucesso. Isso também é verdadeiro para a adoção da nuvem, mas acontece em escala de nuvem. Quando a adoção de nuvem se expande de uma equipe para várias equipes relativamente rapidamente, é necessário ter suporte adicional da equipe de ti existente. No entanto, esses membros da equipe podem não ter o treinamento e a experiência necessários para dar suporte à nuvem usando ferramentas de ti nativas de nuvem. Isso geralmente orienta a formação de uma equipe de ti central que governa a nuvem.
 
 > [!CAUTION]
 > Embora essa seja uma etapa de maturidade comum, ela pode apresentar um alto risco de adoção, potencialmente bloqueando os esforços de inovação e de migração, se não forem gerenciados com eficiência. Consulte a seção de risco abaixo para saber como reduzir o risco de centralizar se tornar um antipadrão cultural.
@@ -33,7 +33,7 @@ As habilidades necessárias para fornecer recursos de ti centralizados podem ser
 - Arquitetos empresariais
 - Operações de ti
 - Governança de ti
-- Infraestrutura de TI
+- Infraestrutura de ti
 - Rede
 - Identidade
 - Virtualização
@@ -105,19 +105,19 @@ Esta narração de exemplo ilustra a abordagem adotada por uma equipe de ti cent
 
 A contoso, a LLC adotou um modelo de ti central para o suporte dos recursos de nuvem da empresa. Para fornecer esse modelo, eles implementaram controles rígidos para vários serviços compartilhados, como conexões de rede de entrada. Essa mudança inteligente reduziu a exposição de seu ambiente de nuvem e forneceu um único dispositivo de "interrupção" para bloquear todo o tráfego em caso de violação. Suas políticas de linha de base de segurança preparam que todo o tráfego de entrada deve vir por um dispositivo compartilhado gerenciado pela equipe de ti central.
 
-No entanto, uma de suas equipes de adoção de nuvem agora requer um ambiente com uma conexão de rede de entrada dedicada e especialmente configurada para aproveitar uma tecnologia de nuvem específica. Uma equipe de ti central inmaturo simplesmente recusaria a solicitação e priorizaria seus processos existentes em relação às necessidades de adoção. A equipe de ti central da Contoso é diferente. Eles identificaram rapidamente uma solução simples de quatro partes para esse dilema: Classificação, negociação, isolamento e automação.
+No entanto, uma de suas equipes de adoção de nuvem agora requer um ambiente com uma conexão de rede de entrada dedicada e especialmente configurada para aproveitar uma tecnologia de nuvem específica. Uma equipe de ti central inmaturo simplesmente recusaria a solicitação e priorizaria seus processos existentes em relação às necessidades de adoção. A equipe de ti central da Contoso é diferente. Eles identificaram rapidamente uma solução simples de quatro partes para esse dilema: classificação, negociação, isolamento e automação.
 
-**Classificação** Como a equipe de adoção de nuvem estava nos primeiros estágios da criação de uma nova solução e não tinha dados confidenciais ou necessidades de suporte de missão crítica, os ativos no ambiente foram classificados como baixo risco e não crítico. A classificação efetiva é um sinal de maturidade na ti central. Classificar todos os ativos e ambientes permite políticas mais claras.
+**Classificação:** Como a equipe de adoção de nuvem estava nos primeiros estágios da criação de uma nova solução e não tinha dados confidenciais ou necessidades de suporte de missão crítica, os ativos no ambiente foram classificados como baixo risco e não crítico. A classificação efetiva é um sinal de maturidade na ti central. Classificar todos os ativos e ambientes permite políticas mais claras.
 
-**Negociação** A classificação sozinha não é suficiente. Os serviços compartilhados foram implementados para operar ativos confidenciais e críticos de forma consistente. A alteração das regras deve comprometer as políticas de governança e de conformidade projetadas para os ativos que precisam de mais proteção. A capacitação da adoção não pode acontecer com o custo de estabilidade, segurança ou governança. Isso levou a uma negociação com a equipe de adoção para responder a perguntas específicas. Uma equipe de DevOps voltada para a empresa pode fornecer gerenciamento de operações para esse ambiente? Essa solução exigiria acesso direto a outros recursos internos? Se a equipe de adoção de nuvem estiver confortável com essas compensações, o tráfego de entrada poderá ser possível.
+**Negociação:** A classificação sozinha não é suficiente. Os serviços compartilhados foram implementados para operar ativos confidenciais e críticos de forma consistente. A alteração das regras deve comprometer as políticas de governança e de conformidade projetadas para os ativos que precisam de mais proteção. A capacitação da adoção não pode acontecer com o custo de estabilidade, segurança ou governança. Isso levou a uma negociação com a equipe de adoção para responder a perguntas específicas. Uma equipe de DevOps voltada para a empresa pode fornecer gerenciamento de operações para esse ambiente? Essa solução exigiria acesso direto a outros recursos internos? Se a equipe de adoção de nuvem estiver confortável com essas compensações, o tráfego de entrada poderá ser possível.
 
-**Isolado** Como a empresa pode fornecer seu próprio gerenciamento contínuo de operações e, como a solução não depende do tráfego direto para outros ativos internos, ela pode ser isoladosda em uma nova assinatura. Essa assinatura também é adicionada a um nó separado da nova hierarquia do grupo de gerenciamento.
+**Isolamento:** Como a empresa pode fornecer seu próprio gerenciamento contínuo de operações e, como a solução não depende do tráfego direto para outros ativos internos, ela pode ser isoladosda em uma nova assinatura. Essa assinatura também é adicionada a um nó separado da nova hierarquia do grupo de gerenciamento.
 
 **Automação:** Outro sinal de maturidade nesta equipe são seus princípios de automação. A equipe usa Azure Policy para automatizar a imposição de políticas. Eles também usam plantas do Azure para automatizar a implantação de componentes comuns da plataforma e impor a adesão à linha de base de identidade definida. Para essa assinatura e quaisquer outras no novo grupo de gerenciamento, as políticas e os modelos são ligeiramente diferentes. As políticas que bloqueiam a largura de banda de entrada foram levantadas. Eles foram substituídos por requisitos para rotear o tráfego por meio da assinatura de serviços compartilhados, como qualquer tráfego de entrada, para impor o isolamento de tráfego. Como as ferramentas locais de gerenciamento de operações não podem acessar essa assinatura, os agentes para essa ferramenta não são mais necessários. Todas as outras guardrails de governança exigidas por outras assinaturas na hierarquia do grupo de gerenciamento ainda são impostas, garantindo guardrails suficientes.
 
 A abordagem criativa desenvolvida da equipe de ti central da Contoso fornecia uma solução que não comprometeva a governança ou a conformidade, mas ainda foi incentivada a adoção. Essa abordagem de agente, em vez de alcançar abordagens nativas de nuvem para ser centralizada, é a primeira etapa para a criação de uma verdadeira CCoE (Cloud Center of Excellence). A adoção dessa abordagem para desenvolver rapidamente as políticas existentes permitirá o controle centralizado quando necessário e o guardrails de governança quando mais flexibilidade for aceitável. O balanceamento dessas duas considerações reduz os riscos associados à ti central na nuvem.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 À medida que a ti central amadurece na nuvem, a próxima etapa de maturidade é normalmente um acoplamento mais flexível das [operações de nuvem](./cloud-operations.md). A disponibilidade de ferramentas de gerenciamento de operações nativas de nuvem e custos operacionais menores para soluções de PaaS-First geralmente leva a equipes de negócios (ou mais especificamente, DevOps equipes dentro da empresa) assumindo a responsabilidade pelas operações de nuvem.
 
