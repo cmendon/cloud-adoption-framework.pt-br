@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 96752e360442c2532ce48d61dd69b84ae3641ddd
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: ce4cf827f391c5fb15f6b9e78997dd0f02e1751b
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378408"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72683790"
 ---
 # <a name="prerequisites-for-migration"></a>Pré-requisitos para migração
 
@@ -57,8 +57,8 @@ Um único membro de cada equipe deve ser identificado como responsável por cada
 Além da responsabilidade de alto nível, há ações pelas quais uma pessoa ou grupo precisa ser diretamente responsável. A seguir estão algumas dessas responsabilidades que afetam essas atividades:
 
 - **Priorização empresarial.** Tome decisões empresariais sobre as cargas de trabalho a serem migradas e as restrições de tempo gerais. Para obter mais informações, veja [Motivações empresariais da migração na nuvem](../../../strategy/motivations.md).
-- **Prontidão para gerenciamento de alterações.** Estabeleça e comunique o plano para acompanhar alterações técnicas durante a migração. Mais informações sobre este tópico serão disponibilizadas no 3º trimestre de 2019.
-- **Alinhamento de usuário empresarial.** Estabeleça um plano para preparar a comunidade de usuários empresariais para a execução da migração. Mais informações sobre este tópico serão disponibilizadas no 3º trimestre de 2019.
+- **Prontidão para gerenciamento de alterações.** Estabeleça e comunique o plano para acompanhar alterações técnicas durante a migração.
+- **Alinhamento de usuário empresarial.** Estabeleça um plano para preparar a comunidade de usuários empresariais para a execução da migração.
 - **Inventário e análise do acervo digital.** Execução das ferramentas necessárias para inventariar e analisar o acervo digital. Confira a discussão do Cloud Adoption Framework sobre a [propriedade digital](../../../digital-estate/index.md) para obter mais informações.
 - **Preparação para a nuvem.** Avalie o ambiente de implantação de destino para garantir que ele esteja em conformidade com os requisitos dos primeiros candidatos da carga de trabalho. Confira o [guia de configuração do Azure](../../../ready/azure-setup-guide/index.md) para obter mais informações.
 
