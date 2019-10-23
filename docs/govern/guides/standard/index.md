@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 492415da236ad54b66d6aeb6b1571f623793db0a
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: 059e60e44ccf393bb731005bd4a579f3e3e41951
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967614"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547586"
 ---
 # <a name="standard-enterprise-governance-guide"></a>Guia de governança corporativa padrão
 
@@ -22,7 +22,7 @@ ms.locfileid: "71967614"
 
 Esse guia de governança segue as experiências de uma empresa fictícia por vários estágios de maturidade de governança. Ela se baseia em experiências de clientes reais. As melhores práticas baseiam-se nas restrições e necessidades da empresa fictícia.
 
-Como um ponto de partida rápido, esta visão geral define um produto mínimo viável (MVP) para um controle com base em uma diretriz prescritiva. Também fornece links para algumas melhorias de governança que adicionam ainda mais melhores práticas conforme novos negócios ou riscos técnicos surgem.
+Como um ponto de partida rápido, esta visão geral define um produto mínimo viável (MVP) para um controle com base em práticas recomendadas. Também fornece links para algumas melhorias de governança que adicionam ainda mais práticas recomendadas conforme novos negócios ou riscos técnicos surgem.
 
 > [!WARNING]
 > Este MVP é um ponto de partida de linha de base, com base em um conjunto de suposições. Até mesmo esse conjunto mínimo de práticas recomendadas tem como base as políticas corporativas orientadas por riscos comerciais exclusivos e as tolerâncias de risco. Para ver se essas suposições se aplicam a você, leia a [narrativa mais longa](./narrative.md) que acompanha este artigo.
@@ -82,7 +82,7 @@ Ao longo do tempo, esse controle MVP será usado para aprimorar as práticas de 
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Agora que você está familiarizado com a governança MVP e tem uma ideia das melhorias de governança a seguir, leia a narrativa de suporte para obter contexto adicional.
+Agora que você está familiarizado com o MVP de governança e tem uma ideia das melhorias de governança a seguir, leia a narrativa de suporte para obter contexto adicional.
 
 > [!div class="nextstepaction"]
 > [Leia a narrativa de suporte](./narrative.md)

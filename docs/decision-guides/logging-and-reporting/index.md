@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 9d2f4a6c8541d8967f26db1a38591c7ce775d5e8
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 082b9ccdcc94548b46a5a220cfe83768f7c4cbf6
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223636"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547897"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>Guia de decisão de registro em log e relatório
 
@@ -58,7 +58,7 @@ Pode ser necessário um esforço novo desenvolvimento substancial para aplicativ
 
 Para dar suporte a essa abordagem, os recursos de nuvem precisarão se comunicar diretamente com os sistemas locais por meio de uma combinação de [rede híbrida](../software-defined-network/hybrid.md) e [serviços de domínio hospedados na nuvem](../identity/index.md#cloud-hosted-domain-services). Dessa forma, a rede virtual na nuvem funcionará como uma extensão da rede do ambiente local. Consequentemente, as cargas de trabalho hospedadas na nuvem poderão comunicar-se diretamente com o sistema de registro em log e relatórios local.
 
-Essa abordagem converte o investimento existente em ferramentas de monitoramento com modificações limitadas para todos os aplicativos ou serviços implantados na nuvem. Geralmente, essa é a abordagem mais rápida para dar suporte ao monitoramento durante uma migração "lift-and-shift". Porém, não captura dados do log produzidos por recursos de PaaS e SaaS baseados em nuvem e omitirá todos os logs relacionados a VM gerados pela própria plataforma de nuvem, como o status da VM. Como resultado, esse padrão deverá ser uma solução temporária até que uma solução de monitoramento híbrido mais abrangente seja implementada.
+Essa abordagem converte o investimento existente em ferramentas de monitoramento com modificações limitadas para todos os aplicativos ou serviços implantados na nuvem. Geralmente, essa é a abordagem mais rápida para dar suporte ao monitoramento durante uma migração "lift-and-shift". Porém, ele não capturará dados de log produzidos por recursos de PaaS e SaaS baseados em nuvem e omitirá todos os logs relacionados à VM gerados pela plataforma de nuvem propriamente dita, tais como o status da VM. Como resultado, esse padrão deverá ser uma solução temporária até que uma solução de monitoramento híbrido mais abrangente seja implementada.
 
 Suposições somente&ndash;locais:
 
@@ -69,7 +69,7 @@ Suposições somente&ndash;locais:
 
 ### <a name="gateway-aggregation"></a>Agregação de gateway
 
-Para cenários em que o valor dos dados telemétricos baseados em nuvem for grande ou os sistemas de monitoramento locais existentes precisarem de dados do log modificados antes de serem processados, um serviço de [agregação de gateway](/azure/architecture/patterns/gateway-aggregation) de dados do log poderá ser necessário.
+Para cenários em que o valor dos dados telemétricos baseados em nuvem for grande ou os sistemas de monitoramento locais existentes precisarem de dados do log modificados antes de serem processados, um serviço de [agregação de gateway](https://docs.microsoft.com/azure/architecture/patterns/gateway-aggregation) de dados do log poderá ser necessário.
 
 Um serviço de gateway é implantado no provedor de nuvem. Em seguida, aplicativos e serviços relevantes são configurados para enviar dados telemétricos para o gateway, em vez de um sistema de registro em log padrão. O gateway poderá, em seguida, processar os dados: agregando, combinando ou formatando-os antes de enviá-los ao serviço de monitoramento para ingestão e análise.
 

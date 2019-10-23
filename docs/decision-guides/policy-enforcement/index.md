@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 383f2d6a2443c70c8e082183f601b8186fc98870
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 5dba9732220d5219b7d58a60ba93aec68792a24f
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023713"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547869"
 ---
 # <a name="policy-enforcement-decision-guide"></a>Guia de decisão de imposição de política
 
@@ -22,7 +22,7 @@ A definição da política organizacional não é eficaz, a menos que ela possa 
 
 ![Gráfico com opções de aplicação de políticas, da menos para a mais complexa, alinhada aos links de salto abaixo](../../_images/decision-guides/decision-guide-policy-enforcement.png)
 
-Ir para: [Práticas recomendas da linha de base](#baseline-recommended-practices) | [Monitoramento de conformidade de política](#policy-compliance-monitoring) | [Aplicação de política](#policy-enforcement) | [Política entre organizações](#cross-organization-policy) | [Aplicação automatizada](#automated-enforcement)
+Ir para: [Melhores práticas de linha de base](#baseline-best-practices) | [Monitoramento de conformidade de política](#policy-compliance-monitoring) | [Aplicação de política](#policy-enforcement) | [Política entre organizações](#cross-organization-policy) | [Aplicação automatizada](#automated-enforcement)
 
 À medida que o seu acervo de nuvem cresce, você se depara com uma necessidade correspondente de manter e impor políticas em uma matriz maior de recursos e assinaturas. Conforme seu acervo fica cada vez maior e os requisitos de política da sua organização aumentam, o escopo de seus processos de imposição de política precisa ser expandido para garantir uma adesão consistente à política e uma rápida detecção de violações.
 
@@ -30,7 +30,7 @@ Mecanismos de imposição de política fornecidos pela plataforma no nível do r
 
 Os principais fatores para determinar o escopo de seus processos de imposição de política são os [requisitos de governança de nuvem](../../govern/index.md) da sua organização, o tamanho e a natureza de seu acervo de nuvem e como sua organização é refletida no seu [design de assinatura](../subscriptions/index.md). Um aumento no tamanho de seu acervo ou uma maior necessidade de gerenciar centralmente a imposição da política podem justificar um aumento no escopo da imposição.
 
-## <a name="baseline-recommended-practices"></a>Práticas recomendadas da linha de base
+## <a name="baseline-best-practices"></a>Melhores práticas de linha de base
 
 Para implantações de nuvem simples e de assinatura única, muitas políticas corporativas podem ser impostas usando funcionalidades nativas de recursos e assinaturas no Azure. O uso consistente dos padrões discutidos em todos os [guias de decisão](../index.md) da Cloud Adoption Framework pode ajudar a estabelecer um nível de linha de base da política de conformidade sem investimento específico na imposição de política. Esses recursos incluem:
 
@@ -43,7 +43,7 @@ Inicie o seu planejamento de implantação da política de nuvem examinando como
 
 ## <a name="policy-compliance-monitoring"></a>Monitorar a conformidade da política
 
-Uma primeira etapa além de simplesmente contar com os mecanismos de imposição de política fornecidos pela plataforma do Azure é a capacidade de garantir que aplicativos e serviços baseados em nuvem cumpram a política organizacional. Isso inclui a implementação de funcionalidades de notificação para alertar as partes responsáveis se um recurso deixar de estar em conformidade. O [registro em log e os relatórios](../logging-and-reporting/index.md) efetivos do status de conformidade de suas cargas de trabalho de nuvem é uma parte crítica de uma estratégia de imposição de política corporativa.
+Uma primeira etapa além de simplesmente contar com os mecanismos de imposição de política fornecidos pela plataforma do Azure é garantir a capacidade de verificar se os aplicativos e serviços baseados em nuvem estão em conformidade com a política organizacional. Isso inclui a implementação de funcionalidades de notificação para alertar as partes responsáveis se um recurso deixar de estar em conformidade. O [registro em log e os relatórios](../logging-and-reporting/index.md) efetivos do status de conformidade de suas cargas de trabalho de nuvem é uma parte crítica de uma estratégia de imposição de política corporativa.
 
 Conforme sua propriedade de nuvem cresce, ferramentas adicionais como a [Central de Segurança do Azure](https://docs.microsoft.com/azure/security-center) pode fornecer a segurança integrada e a detecção de ameaças e ajudar a aplicar gerenciamento centralizado de políticas e alertas para seu local e ativos de nuvem.
 

@@ -1,35 +1,122 @@
 ---
-title: Inovação da nuvem
+title: Inovação de nuvem na Cloud Adoption Framework
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Introdução ao conteúdo de Inovação da Nuvem
+description: Leia sobre a inovação de nuvem na Cloud Adoption Framework.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2019
-ms.topic: guide
+ms.date: 10/14/2019
+ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 4dbdaeecc094afd90df078a59774d886fd909924
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+layout: LandingPage
+ms.openlocfilehash: f3ede236dc0abc59dbf6e250c319185dda4e11e6
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70816594"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72545134"
 ---
-# <a name="innovation-in-the-cloud-adoption-framework"></a>Inovação na Cloud Adoption Framework
+# <a name="cloud-innovation-in-the-cloud-adoption-framework"></a>Inovação de nuvem na Cloud Adoption Framework
 
-A nuvem cria novas oportunidades para os clientes inovarem.
+Todo portfólio de TI tem uma pequena coleção de cargas de trabalho e ideias que poderiam melhorar significativamente a posição da empresa no mercado. Embora a maioria dos esforços de adoção de nuvem se concentre na migração e na modernização de cargas de trabalho existentes, o maior valor de negócios derivado da adoção de nuvem vem de atividades de inovação que desbloqueiam novas habilidades técnicas e capacidades de negócios expandidas. Esta seção da Cloud Adoption Framework concentra-se na parte do portfólio que impulsiona o maior retorno sobre o investimento.
 
-> [!NOTE]
-> No terceiro trimestre de 2019, a Cloud Adoption Framework se expandirá para incluir orientação sobre as abordagens de modernização e nativas da nuvem para promover inovações em todo o portfólio de aplicativos e acervo digital.
+## <a name="getting-started"></a>Introdução
 
-## <a name="application-modernization-and-innovation"></a>Inovação e modernização de aplicativos
+Para se preparar para essa fase do ciclo de vida de adoção da nuvem, a estrutura sugere os seguintes exercícios:
 
-Aplicativos e dados nativos da nuvem aceleram os ciclos de desenvolvimento e experimentação. Aplicativos mais antigos podem aproveitar muitos dos mesmos benefícios nativos da nuvem ao modernizar a solução ou os componentes da solução. Abordagens modernas de DevOps e SDLC que usam a tecnologia de nuvem reduzem o tempo da ideia até a alteração do produto. Combinadas, essas ferramentas convidam o cliente para o processo para criar loops de comentários mais curtos e experiências melhores para os clientes.
+<!-- markdownlint-disable MD033 -->
 
-## <a name="data-platform-modernization-and-innovation"></a>Inovação e modernização de plataforma de dados
+<ul class="panelContent cardsF">
+    <li style="display: flex; flex-direction: column;">
+        <a href="./business-value.md">
+            <div class="cardSize">
+                <div class="cardPadding" style="padding-bottom:10px;">
+                    <div class="card" style="padding-bottom:10px;">
+                        <div class="cardImageOuter">
+                            <div class="cardImage">
+                                <img alt="" src="../_images/icons/1.png" data-linktype="external">
+                            </div>
+                        </div>
+                        <div class="cardText" style="padding-left:0px;">
+                            <h3>Consenso sobre o valor comercial</h3>
+Antes de decidir sobre soluções técnicas, é importante alinhar o valor comercial desejado. Esse valor deve ser mapeado para a estratégia de nuvem. Nessa metodologia incremental, o valor comercial é representado por uma hipótese sobre as necessidades do cliente.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li style="display: flex; flex-direction: column;">
+        <a href="./innovation-guide/index.md">
+            <div class="cardSize">
+                <div class="cardPadding" style="padding-bottom:10px;">
+                    <div class="card" style="padding-bottom:10px;">
+                        <div class="cardImageOuter">
+                            <div class="cardImage">
+                                <img alt="" src="../_images/icons/2.png" data-linktype="external">
+                            </div>
+                        </div>
+                        <div class="cardText" style="padding-left:0px;">
+                            <h3>Guia de inovação do Azure</h3>
+Muitas ferramentas nativas de nuvem disponíveis no Azure podem acelerar o desenvolvimento de soluções inovadoras. Dependendo da hipótese do cliente, várias combinações de ferramentas podem ser aplicadas. É recomendável criar um MVP (produto mínimo viável) com ferramentas básicas.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li style="display: flex; flex-direction: column;">
+        <a href="./best-practices/index.md">
+            <div class="cardSize">
+                <div class="cardPadding" style="padding-bottom:10px;">
+                    <div class="card" style="padding-bottom:10px;">
+                        <div class="cardImageOuter">
+                            <div class="cardImage">
+                                <img alt="" src="../_images/icons/3.png" data-linktype="external">
+                            </div>
+                        </div>
+                        <div class="cardText" style="padding-left:0px;">
+                            <h3>Práticas recomendadas</h3>
+Valide se as decisões arquitetônicas seguem as práticas recomendadas para cada ferramenta na cadeia de ferramentas. Essas práticas recomendadas ajudam a acelerar o desenvolvimento de soluções e a fornecer uma referência para designs de arquitetura sólidos.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li style="display: flex; flex-direction: column;">
+        <a href="./considerations/adoption.md">
+            <div class="cardSize">
+                <div class="cardPadding" style="padding-bottom:10px;">
+                    <div class="card" style="padding-bottom:10px;">
+                        <div class="cardImageOuter">
+                            <div class="cardImage">
+                                <img alt="" src="../_images/icons/4.png" data-linktype="external">
+                            </div>
+                        </div>
+                        <div class="cardText" style="padding-left:0px;">
+                            <h3>Loops de comentários</h3>
+Durante cada iteração de desenvolvimento, as soluções em desenvolvimento fornecem uma maneira para as equipes aprenderem junto com os clientes. Loops de comentários rápidos e precisos com clientes ajudam a testar, medir e aprender a reduzir o impacto do tempo de comercialização. Saiba como o Azure e o GitHub aceleram os loops de comentários.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+</ul>
+<!-- markdownlint-enable MD033 -->
 
-A nuvem permite novas formas de dados em plataformas comuns. Aumentar a velocidade, a veracidade, a variedade e o volume de dados permite que os profissionais de dados desenvolvam insights e previsões em conjuntos de dados mais amplos. Ferramentas de ingestão expandidas, como IoT e Azure Data Factory, permitem que equipes mais amplas integrem dados bidirecionalmente a produtos físicos e virtuais.
+## <a name="methodology-summary"></a>Resumo da metodologia
 
-## <a name="infrastructure-modernization-and-innovation"></a>Inovação e modernização de infraestrutura
+A [seção de considerações sobre a metodologia de inovação](./considerations/index.md) estabelece uma linguagem comum para inovação em desenvolvimento de aplicativos, DevOps, TI e equipes de negócios. Os exercícios acima tornam essa metodologia acionável durante o desenvolvimento de soluções inovadoras.
 
-Abordagens modernas à implantação de infraestrutura, às operações e à governança estão rapidamente fechando as lacunas entre desenvolvimento e operações. Estabelecer as fábricas de ambiente com modelos comuns para vários padrões de aplicativo permite às equipes de TI e operações acelerar a implantação enquanto reduz os riscos. A integração de operações libera o DevOps da manutenção de desvios de configuração, da implementação de linha de base de segurança, do monitoramento operacional e de outros serviços de TI. A modernização e a inovação no portfólio de TI produzem maior alinhamento com DevOps, acelerando as inovações em todo o portfólio de aplicativos e acervo digital.
+![A metodologia de inovação da Cloud Adoption Framework](../_images/innovate/innovate-methodology.png)
+
+Essa metodologia se baseia em metodologias simples existentes para criar um diálogo voltado para a nuvem sobre a adoção pelo cliente e um modelo científico para a criação de valor comercial. Ele também alinha os serviços do Azure existentes com processos de decisão gerenciáveis, facilitando a localização das opções técnicas certas para atender a uma necessidade ou hipótese específica do cliente.
+
+## <a name="next-steps"></a>Próximas etapas
+
+O primeiro exercício durante a inovação na nuvem é [formar consenso pelo valor comercial](./business-value.md).
+
+> [!div class="nextstepaction"]
+> [Formar consenso para o valor comercial](./business-value.md)

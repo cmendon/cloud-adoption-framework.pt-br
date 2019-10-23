@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 8323a8bded4f2cc1d24407fa3326abf3b96ef810
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: 65c7d342aa201f06e3b38ed25e933ba7d6a471b1
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967705"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547850"
 ---
 # <a name="azure-regions"></a>Regiões do Azure
 
@@ -52,8 +52,8 @@ Qualquer implantação robusta de nuvem requer uma rede bem considerada que leva
     > Não tente usar o GRS do Azure para backups ou recuperação de VMs. Em vez disso, use o [Backup do Azure](https://azure.microsoft.com/services/backup) e o [Azure Site Recovery](https://azure.microsoft.com/services/site-recovery) junto com o [Managed Disks](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview) para dar suporte à sua resiliência de carga de trabalho IaaS.
 2. O Backup do Azure e o Azure Site Recovery funcionam em conjunto com seu design de rede para facilitar a resiliência regional para suas necessidades de IaaS e backup de dados. Verifique se a rede foi otimizada para que as transferências de dados permaneçam no backbone da Microsoft e usem o [Emparelhamento VNet](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview), se possível. Algumas organizações maiores com implantações globais podem usar o [ExpressRoute Premium](https://docs.microsoft.com/azure/expressroute/expressroute-introduction) para rotear o tráfego entre regiões que podem economizar encargos de saída regionais.
 3. Os grupos de recursos do Azure são constructos específicos regionais. Contudo, é normal que os recursos dentro de um grupo de recursos abranjam várias regiões. Ao fazer isso, é importante considerar que, no caso de uma falha regional, as operações do painel de controle em um grupo de recursos falharão na região afetada, mesmo que os recursos em outras regiões (nesse grupo de recursos) continuem a funcionar. Isso pode afetar a rede e o design do grupo de recursos.
-4. Muitos serviços PaaS no Azure dão suporte a [Pontos de Extremidade de Serviços](https://docs.microsoft.com/azure/virtual-network/virtual-network-service-endpoints-overview) e/ou a um [Link Privado](https://docs.microsoft.com/azure/private-link/private-link-overview). Essas duas soluções afetam suas considerações de rede substancialmente ao considerar a resiliência, migração e governança regionais.
-5. Muitos serviços PaaS dependem de suas próprias soluções de resiliência regional. Por exemplo, o Banco de Dados SQL do Azure permite que você replique facilmente para N regiões adicionais como o CosmosDB faz. Alguns serviços não transmitem nenhuma dependência de região como o DNS do Azure. Enquanto você considera quais serviços você usará em seu processo de adoção, entenda claramente as funcionalidades de failover e as etapas de recuperação que podem ser necessárias para cada serviço do Azure.
+4. Muitos serviços PaaS no Azure dão suporte a [Pontos de Extremidade de Serviços](https://docs.microsoft.com/azure/virtual-network/virtual-network-service-endpoints-overview) ou a um [Link Privado](https://docs.microsoft.com/azure/private-link/private-link-overview). Essas duas soluções afetam suas considerações de rede substancialmente ao considerar a resiliência, migração e governança regionais.
+5. Muitos serviços PaaS dependem de suas próprias soluções de resiliência regional. Por exemplo, o Banco de Dados SQL do Azure permite que você replique facilmente para N regiões adicionais como o Cosmos DB faz. Alguns serviços não transmitem nenhuma dependência de região como o DNS do Azure. Enquanto você considera quais serviços você usará em seu processo de adoção, entenda claramente as funcionalidades de failover e as etapas de recuperação que podem ser necessárias para cada serviço do Azure.
 6. Além de implantar em várias regiões para dar suporte à recuperação de desastre, muitas organizações optam por implantar em um padrão Ativo-Ativo para que nenhum failover seja necessário. Isso tem o benefício adicional de fornecer balanceamento de carga global e mais aumentos de desempenho de rede e tolerância a falhas. Para usar esse padrão, seus aplicativos devem dar suporte à execução de Ativo-Ativo em várias regiões.
 
 > [!WARNING]
@@ -63,9 +63,9 @@ Após considerar a topologia de rede que será necessária para mantê-lo em ope
 
 - Considere uma implementação mais eficiente de preparação e governança.
 - Faça o inventário das geografias afetadas. Compile uma lista de regiões e países afetados.
-- Documente os requisitos de soberania de dados: Os países identificados têm requisitos de conformidade que controlam a soberania de dados?
-- Documente a base de usuários: Os funcionários, parceiros ou clientes no país identificado serão afetados pela migração na nuvem?
-- Documente datacenters e ativos: Há ativos no país identificado que possam ser incluídos no esforço de migração?
+- Documente os requisitos de soberania de dados. Os países identificados têm requisitos de conformidade que controlam a soberania de dados?
+- Documente a base de usuários. Os funcionários, parceiros ou clientes no país identificado serão afetados pela migração na nuvem?
+- Documente datacenters e ativos. Há ativos no país identificado que possam ser incluídos no esforço de migração?
 - Documente os requisitos de failover e disponibilidade do SKU regional.
 
 Alinhe as alterações no processo de migração para abordar o inventário inicial.

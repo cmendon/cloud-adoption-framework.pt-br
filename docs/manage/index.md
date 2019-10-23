@@ -1,48 +1,146 @@
 ---
-title: Introdução ao gerenciamento operacional
+title: Gerenciamento de nuvem
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Compreenda o gerenciamento operacional dentro do Cloud Adoption Framework.
+description: Gerenciamento de nuvem na Cloud Adoption Framework
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 05/19/2019
-ms.topic: article
+ms.date: 10/07/2019
+ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.custom: manage
-ms.openlocfilehash: 96f87583f50783fa0c6a8c947aa8b34ae440fc95
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+layout: LandingPage
+ms.openlocfilehash: 2ae964d2b145a9d241cc647b939771f219b0379e
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221427"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547301"
 ---
-# <a name="establishing-operational-management-practices-in-the-cloud"></a>Estabelecimento de práticas de gerenciamento operacional na nuvem
+# <a name="cloud-management-in-the-cloud-adoption-framework"></a>Gerenciamento de nuvem na Cloud Adoption Framework
 
-A adoção da nuvem é um catalisador para habilitar o valor comercial. No entanto, o verdadeiro valor comercial é obtido por meio de operações em andamento e estáveis dos ativos de tecnologia implantados na nuvem. Esta seção do Cloud Adoption Framework orienta o leitor por várias transições em gerenciamento operacional na nuvem.
+A oferta de uma [estratégia de nuvem](../strategy/index.md) requer planejamento, preparação e adoção sólidos. Mas é a operação contínua dos ativos digitais que fornece resultados de negócios tangíveis. Sem um plano para operações confiáveis e bem gerenciadas das soluções de nuvem, esses esforços resultarão em pouco valor. Os exercícios a seguir ajudarão a desenvolver as abordagens técnicas e de negócios necessárias para fornecer gerenciamento de nuvem que capacita operações contínuas.
 
-## <a name="actionable-best-practices"></a>Melhores práticas acionáveis
+## <a name="getting-started"></a>Introdução
 
-Soluções de gerenciamento de operações modernas oferecem uma exibição de operações em várias nuvens. Ativos gerenciados por meio das práticas recomendadas a seguir podem residir na nuvem, em um data center existente ou até mesmo em um provedor de nuvem concorrente. No momento, a estrutura inclui duas práticas recomendadas de referência para amadurecer o gerenciamento de operações na nuvem:
+Para se preparar para essa fase do ciclo de vida de adoção da nuvem, a estrutura sugere os seguintes exercícios:
 
-- [Gerenciamento do Servidor do Azure](./azure-server-management/index.md): este guia de integração para incorporar as ferramentas e os serviços nativos da nuvem necessários para gerenciar operações.
-- [Monitoramento híbrido](./monitor/index.md): Muitos clientes já fizeram um investimento substancial no System Center Operations Manager. Para esses clientes, este guia de monitoramento híbrido ajuda a comparar e contrastar as ferramentas de relatório nativas de nuvem com as ferramentas do Operations Manager. Essa comparação tornará mais fácil decidir quais ferramentas usar para fins de gerenciamento operacional.
+<!-- markdownlint-disable MD033 -->
+<ul class="panelContent cardsF">
+    <li style="display: flex; flex-direction: column;">
+        <a href="./azure-management-guide/index.md">
+            <div class="cardSize">
+                <div class="cardPadding" style="padding-bottom:10px;">
+                    <div class="card" style="padding-bottom:10px;">
+                        <div class="cardImageOuter">
+                            <div class="cardImage">
+                                <img alt="" src="../_images/icons/1.png" data-linktype="external">
+                            </div>
+                        </div>
+                        <div class="cardText" style="padding-left:0px;">
+                            <h3>Estabelecer uma linha de base de gerenciamento</h3>
+Defina as classificações de criticalidade, as ferramentas de gerenciamento de nuvem e os processos necessários para fornecer seu compromisso mínimo com o gerenciamento de operações.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li style="display: flex; flex-direction: column;">
+        <a href="./considerations/business-alignment.md">
+            <div class="cardSize">
+                <div class="cardPadding" style="padding-bottom:10px;">
+                    <div class="card" style="padding-bottom:10px;">
+                        <div class="cardImageOuter">
+                            <div class="cardImage">
+                                <img alt="" src="../_images/icons/2.png" data-linktype="external">
+                            </div>
+                        </div>
+                        <div class="cardText" style="padding-left:0px;">
+                            <h3>Definir compromissos de negócios</h3>
+Documente as cargas de trabalho compatíveis para estabelecer compromissos operacionais com o negócio e entre em acordo sobre investimentos em gerenciamento de nuvem para cada carga de trabalho.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li style="display: flex; flex-direction: column;">
+        <a href="./best-practices.md">
+            <div class="cardSize">
+                <div class="cardPadding" style="padding-bottom:10px;">
+                    <div class="card" style="padding-bottom:10px;">
+                        <div class="cardImageOuter">
+                            <div class="cardImage">
+                                <img alt="" src="../_images/icons/3.png" data-linktype="external">
+                            </div>
+                        </div>
+                        <div class="cardText" style="padding-left:0px;">
+                            <h3>Expandir a linha de base de gerenciamento</h3>
+Com base nos compromissos de negócios e nas decisões de operações, aproveite as práticas recomendadas incluídas para implementar as ferramentas de gerenciamento de nuvem necessárias.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li style="display: flex; flex-direction: column;">
+        <a href="./design-principles.md">
+            <div class="cardSize">
+                <div class="cardPadding" style="padding-bottom:10px;">
+                    <div class="card" style="padding-bottom:10px;">
+                        <div class="cardImageOuter">
+                            <div class="cardImage">
+                                <img alt="" src="../_images/icons/4.png" data-linktype="external">
+                            </div>
+                        </div>
+                        <div class="cardText" style="padding-left:0px;">
+                            <h3>Operações avançadas e princípios de design</h3>
+As plataformas ou cargas de trabalho que exigem um nível mais alto de compromisso de negócios podem exigir uma análise mais profunda da arquitetura para satisfazer os compromissos de resiliência e de confiabilidade assumidos.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+</ul>
+<!-- markdownlint-enable MD033 -->
 
-## <a name="cloud-operations"></a>Operações de nuvem
+## <a name="scalable-cloud-management-methodology"></a>Metodologia de gerenciamento de nuvem escalonável
 
-Ambas essas melhores práticas levam a uma metodologia de estado futuro para o gerenciamento de operações.
+As etapas acima criam abordagens acionáveis para fornecer a metodologia de gerenciamento da Cloud Adoption Framework.
 
-![Metodologia de Gerenciamento da CAF](../_images/manage/caf-manage.png)
+![Metodologia de gerenciamento na Cloud Adoption Framework](../_images/manage/caf-manage.png)
 
-**Alinhamento de negócios:** Na metodologia de Gerenciamento, todas as cargas de trabalho são classificadas por importância e valor comercial. Essa classificação pode ser então medida por meio de uma análise de impacto, que calcula o valor perdido associado com a degradação do desempenho ou interrupções de negócios. Usando esse impacto tangível de receita, as equipes de operações de nuvem podem trabalhar com a empresa para estabelecer um compromisso que equilibra custo e desempenho.
+## <a name="creating-a-balanced-cloud-portfolio"></a>Criar um portfólio de nuvem equilibrado
 
-**Disciplinas de operações de nuvem:** Depois que os negócios estão alinhados, é muito mais fácil acompanhar e relatar as disciplinas adequadas das operações em nuvem para cada carga de trabalho. A tomada de decisões ao longo de cada disciplina pode, então, orientar compromissos que são facilmente compreendidos pela empresa. Essa abordagem colaborativa transforma o stakeholder da empresa em um parceiro na busca do equilíbrio correto entre custo e desempenho.
+Conforme descrito no artigo [alinhamento de negócios](./considerations/business-alignment.md), nem todas as cargas de trabalho são críticas. Em qualquer portfólio, há vários graus de necessidades de gerenciamento operacional. Os esforços de alinhamento de negócios auxiliam na captura do impacto nos negócios e na negociação dos custos de gerenciamento com a empresa para garantir os processos e as ferramentas de gerenciamento operacional mais adequados.
 
-- **Inventário e visibilidade:** no mínimo, o gerenciamento de operações requer um meio para fazer inventário de ativos e criar visibilidade sobre o estado da execução de cada ativo.
-- **Conformidade operacional:** o gerenciamento regular de configuração, dimensionamento, custo e desempenho de ativos é essencial para manter as expectativas de desempenho.
-- **Proteger e recuperar:** Minimizar interrupções operacionais e agilizar a recuperação são ações que, individualmente, ajudam a evitar perdas de desempenho e a impactos sobre a receita. Detecção e recuperação são aspectos essenciais desta disciplina.
-- **Operações de plataforma:** Todos os ambientes de TI contêm um conjunto de plataformas comumente usadas. Essas plataformas podem incluir armazenamentos de dados como SQL Server ou HDInsight. Outras plataformas comuns podem incluir soluções de contêiner, como Kubernetes ou AKS. Independentemente das plataformas, a maturidade de operações de plataforma enfatiza a personalização de operações com base em como essas plataformas comuns são implantadas, configuradas e usadas por cargas de trabalho.
-- **Operações de carga de trabalho:** no nível mais alto de maturidade operacional, as equipes de operações de nuvem são capazes de ajustar as operações para cargas de trabalho que são cruciais para o sucesso dos negócios. Para essas cargas de trabalho críticas, os dados disponíveis podem ajudar a automatizar a correção, o dimensionamento ou a proteção de cargas de trabalho com base em sua utilização.
+## <a name="objective-of-this-content"></a>Objetivo deste conteúdo
 
-Diretrizes adicionais, tais como a [Estrutura de verificação do design (codinome: Princípios de design de nuvem)](https://docs.microsoft.com/azure/architecture/reliability) podem ajudar a tomar decisões arquiteturais detalhadas sobre cada carga de trabalho dentro das disciplinas acima.
+As diretrizes nesta seção do Cloud Adoption Framework atendem a duas finalidades:
 
-Esta seção do Cloud Adoption Framework agregará a cada um desses tópicos, amadurecendo as operações na nuvem em sua organização.
+- Fornecer exemplos de abordagens de gerenciamento de operações acionáveis que representam as experiências comuns normalmente encontradas pelos clientes.
+- Ajudá-lo a criar soluções de gerenciamento personalizadas com base nos compromissos de negócios.
+
+Este conteúdo destina-se para uso pela equipe de operações de nuvem. Também é relevante para os arquitetos de nuvem que precisam desenvolver uma base sólida de princípios de criação em nuvem ou operações de nuvem.
+
+## <a name="intended-audience"></a>Público-alvo
+
+O conteúdo na Cloud Adoption Framework afeta os negócios, a tecnologia e a cultura das empresas. Esta seção da Cloud Adoption Framework interage intensamente com as equipes de operações de TI, governança de TI, finanças, líderes de linha de negócios, rede, identidade e adoção de nuvem. Várias dependências desse pessoal exigem uma abordagem facilitadora por parte dos arquitetos de nuvem que usam essa diretriz. A facilitação com essas equipes raramente é um esforço único.
+
+O arquiteto de nuvem serve como o líder de ideias e facilitador para reunir esses públicos. O conteúdo nesta coleção de guias foi projetado para ajudar o arquiteto de nuvem a facilitar a conversa certa, com o público correto, para orientar decisões necessárias. A transformação empresarial capacitada pela nuvem depende do arquiteto de nuvem para ajudar a guiar as decisões em toda a empresa e na TI.
+
+**Especialização de arquiteto de nuvem nesta seção:** Cada seção da Cloud Adoption Framework representa especialização ou variante diferente da função de arquiteto de nuvem. Esta seção da Cloud Adoption Framework foi projetada para arquitetos de nuvem aficionados por operações e gerenciamento de soluções de implantação. Nessa estrutura, esses especialistas são chamados frequentemente de *operações de nuvem* ou coletivamente como a *equipe de operações de nuvem*.
+
+## <a name="use-this-guide"></a>Use este guia
+
+Se você quiser seguir este guia do início ao fim, este conteúdo ajudará a desenvolver uma estratégia robusta de operações de nuvem. A diretriz orienta você na teoria e implementação de uma estratégia.
+
+<!-- For a crash course on the theory and quick access to Azure implementation, get started with the [governance guides overview](./guide/index.md). Using this guidance, you can start small and iteratively improve your governance needs in parallel with cloud adoption efforts. -->
+
+## <a name="next-steps"></a>Próximas etapas
+
+Aplique a metodologia para [estabelecer compromissos comerciais claros](./considerations/business-alignment.md).
+
+> [!div class="nextstepaction"]
+> [Estabelecer compromissos comerciais claros](./considerations/business-alignment.md)
