@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Saiba mais sobre as seleções de região da plataforma de nuvem.
 author: doodlemania2
 ms.author: dermar
-ms.date: 09/19/2019
+ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 65c7d342aa201f06e3b38ed25e933ba7d6a471b1
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 14ebb2d3f253a7cf80b005595584202537e46cc1
+ms.sourcegitcommit: 910efd3e686bd6b9bf93951d84253b43d4cc82b5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547850"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72769397"
 ---
 # <a name="azure-regions"></a>Regiões do Azure
 
@@ -44,7 +44,7 @@ Quando as empresas operam em várias regiões geográficas, embora seja essencia
 
 Qualquer implantação robusta de nuvem requer uma rede bem considerada que leva em conta as regiões do Azure. Depois de considerar as características acima para em quais regiões implantar, a rede deve ser implantada. Embora uma discussão exaustiva sobre a rede esteja além do escopo deste artigo, alguns pontos devem ser considerados:
 
-1. As regiões do Azure são implantadas em pares. No caso de uma falha catastrófica de uma região, outra região no mesmo limite geopolítico* será designada como sua região emparelhada. Deve-se considerar a implantação em regiões emparelhadas como a estratégia de resiliência primária e secundária. *O Azure Brasil é uma exceção notável cuja região emparelhada é o Centro-Sul dos EUA. Para saber mais, confira [aqui](https://docs.microsoft.com/en-us/azure/best-practices-availability-paired-regions).
+1. As regiões do Azure são implantadas em pares. No caso de uma falha catastrófica de uma região, outra região no mesmo limite geopolítico* será designada como sua região emparelhada. Deve-se considerar a implantação em regiões emparelhadas como a estratégia de resiliência primária e secundária. *O Azure Brasil é uma exceção notável cuja região emparelhada é o Centro-Sul dos EUA. Para saber mais, consulte [Regiões emparelhadas do Azure](https://docs.microsoft.com/azure/best-practices-availability-paired-regions).
     1. O Armazenamento do Azure dá suporte ao [GRS (Armazenamento com Redundância Geográfica)](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs), o que significa que três cópias de seus dados são armazenadas em sua região primária e três cópias adicionais são armazenadas na região emparelhada. Não é possível alterar o emparelhamento de armazenamento para o GRS.
     1. Os serviços que dependem do GRS do Armazenamento do Azure podem aproveitar essa funcionalidade de região emparelhada. Para fazer isso, seus aplicativos e a rede devem ser orientados a dar suporte a isso.
     1. Se você não planeja usar o GRS para dar suporte às suas necessidades de resiliência regionais, é aconselhável que você _NÃO_ use a região emparelhada como sua secundária. No caso de uma falha regional, haverá pressão intensa em recursos na região emparelhada conforme os recursos forem migrados. Evitar essa pressão pode proporcionar uma velocidade adicional durante sua recuperação recuperando-se para um site alternativo.
