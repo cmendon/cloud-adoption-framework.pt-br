@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 4613a8f4a4bdfc065f6c8e48eda609f6d1703130
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 33572e5de14c4d59e6281124cf488ca0e0c36aef
+ms.sourcegitcommit: 15898374495761bfb76cee719e0f9189856884e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549104"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888848"
 ---
 # <a name="cloud-governance-capabilities"></a>Recursos de governança de nuvem
 
@@ -63,7 +63,7 @@ A funcionalidade de governança de nuvem geralmente é fornecida por uma equipe 
 Veja a seguir os participantes que irão participar frequentemente das atividades de governança de nuvem:
 
 - Os líderes do gerenciamento central e dos colaboradores diretos nas principais funções que foram apontados para representar os negócios ajudarão a avaliar as tolerâncias de risco.
-- Os recursos de governança de nuvem são oferecidos fornecidos são uma extensão do [recurso de estratégia de nuvem](./cloud-strategy.md). Assim como se espera que o CIO e os líderes de negócios participem dos recursos de estratégia de nuvem, seus subordinados diretos devem participar das atividades de governança de nuvem.
+- Os recursos de governança de nuvem são fornecidos por uma extensão do [recurso de estratégia de nuvem](./cloud-strategy.md). Assim como se espera que o CIO e os líderes de negócios participem dos recursos de estratégia de nuvem, seus subordinados diretos devem participar das atividades de governança de nuvem.
 - Os funcionários de negócios que são membros da unidade de negócios que trabalham junto com a liderança da linha de negócios devem ser capacitados a tomar decisões relacionadas a riscos corporativos e técnicos.
 - Os funcionários de ti (tecnologia da informação) e de segurança da informação (IS) que entendem os aspectos técnicos da transformação na nuvem podem servir em uma capacidade rotativa em vez de serem um provedor consistente de recursos de governança de nuvem.
 
@@ -85,7 +85,7 @@ Outra diferença fundamental entre um responsável pela nuvem e uma governança 
 
 **Guardião de nuvem:** À medida que as práticas de governança solidificam e se tornam aceitas pelas equipes de adoção de nuvem, a função dos arquitetos de nuvem que se especializa em governança muda um pouco, assim como a função da equipe de governança de nuvem. Em geral, as práticas mais maduras têm a atenção de outros especialistas no assunto que podem ajudar a fortalecer as proteções fornecidas pelas implementações de governança.
 
-Embora a diferença seja sutil, é uma distinção importante ao criar uma cultura de ti focada em governança. Um dos responsáveis pela nuvem limpa as bagunças feitas pelos arquitetos de nuvem inovadores, e as duas funções têm objetivos naturais e opostos. Um guardião de nuvem ajuda a manter a nuvem segura, de modo que outros arquitetos de nuvem podem se mover mais rapidamente com menos confusão.
+Embora seja sutil, a diferença entre essas duas classificações deve ser considerada durante o estabelecimento de uma cultura de TI focada em governança. O trabalho de um guardião da nuvem é "arrumar a bagunça" feita pelos arquitetos de nuvem inovadores, além do atrito natural existente entre essas duas funções que, na prática, têm objetivos opostos. Por outro lado, um guardião ajuda a proteger a nuvem para que outros arquitetos possam trabalhar com mais rapidez e menos complicações.
 
 Os guardiões de nuvem começam a usar abordagens de governança mais avançadas para acelerar a implantação da plataforma e ajudar as equipes a fazer o autoatendimento de suas necessidades ambientais, para que elas possam se mover mais rapidamente. Exemplos dessas funções mais avançadas são vistos nos aprimoramentos incrementais para o MVP de governança, como [a melhoria da linha de base de segurança](../govern/guides/complex/security-baseline-improvement.md).
 

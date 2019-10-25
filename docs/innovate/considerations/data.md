@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: c0ef1165fc416814e0563ec29c4ad5901a83b032
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: 80cd8c74f283436d9f32ce647c27bb7c67d3c92c
+ms.sourcegitcommit: 15898374495761bfb76cee719e0f9189856884e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683266"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888884"
 ---
 # <a name="democratize-data"></a>Dados do democratize
 
@@ -47,7 +47,7 @@ O compartilhamento de dados pode produzir rapidamente um MVP que pode ser usado 
 A governança de dados é um tópico abrangente que pode exigir sua própria estrutura dedicada. Isso está fora do escopo da estrutura de [adoção da nuvem](../../index.md). No entanto, há alguns aspectos da governança de dados que devem ser considerados, assim como a hipótese do cliente é validada. Veja a seguir alguns exemplos dessas perguntas:
 
 - **Os dados compartilhados são confidenciais?** Os [dados devem ser classificados](../../govern/policy-compliance/data-classification.md) antes de qualquer compartilhamento público para proteger os interesses dos clientes e da empresa.
-- **Se os dados forem confidenciais, eles foram protegidos?** A proteção de dados confidenciais deve ser um requisito para qualquer dado de democratizado. A carga de trabalho de exemplo focada na [proteção de soluções de dados](https://docs.microsoft.com/azure/architecture/data-guide/scenarios/securing-data-solutions.md) fornece algumas referências para proteger os dados.
+- **Se os dados forem confidenciais, eles foram protegidos?** A proteção de dados confidenciais deve ser um requisito para qualquer dado de democratizado. A carga de trabalho de exemplo focada na [proteção de soluções de dados](https://docs.microsoft.com/azure/architecture/data-guide/scenarios/securing-data-solutions) fornece algumas referências para proteger os dados.
 - **Os dados estão catalogados?** Capturar detalhes sobre os dados que estão sendo compartilhados ajudará no gerenciamento de dados de longo prazo. As ferramentas para documentar dados, como o catálogo de dados do Azure, podem tornar esse processo muito mais fácil na nuvem. A orientação sobre a [anotação de dados](https://docs.microsoft.com/azure/data-catalog/data-catalog-how-to-annotate) e a [documentação de fontes de dados](https://docs.microsoft.com/azure/data-catalog/data-catalog-how-to-documentation) pode ajudar a acelerar o processo.
 
 Quando democratization de dados é importante para uma hipótese voltada para o cliente, a governança de dados compartilhados deve estar em algum lugar no plano de lançamento para proteger clientes, consumidores de dados e a empresa.
