@@ -8,12 +8,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: e795074526db2b5aec88052dc15aa9fa4140a91f
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: be35763ea3beeec5977073dab8ef98c2e441b537
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025154"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548799"
 ---
 # <a name="scaling-with-multiple-azure-subscriptions"></a>Dimensionamento com várias assinaturas do Azure
 
@@ -67,7 +67,7 @@ Se você tiver apenas algumas assinaturas, gerenciá-las de forma independente �
 
 Os grupos de gerenciamento permitem o gerenciamento eficiente de acesso, políticas e conformidade para as assinaturas de uma organização. Cada grupo de gerenciamento é um contêiner para uma ou mais assinaturas.
 
-Os grupos de gerenciamento são organizados em uma única hierarquia. Você define essa hierarquia em seu locatário do Azure AD (Azure Active Directory) para alinhar com a estrutura e as necessidades da sua organização. O nível superior é denominado o *grupo de gerenciamento raiz*. Você pode definir até seis níveis de grupos de gerenciamento em sua hierarquia. Cada assinatura está contida apenas por um grupo de gerenciamento.
+Os grupos de gerenciamento são organizados em uma única hierarquia. Você define essa hierarquia em seu locatário do Azure Active Directory (AD do Azure) para alinhar com a estrutura e as necessidades da sua organização. O nível superior é denominado o *grupo de gerenciamento raiz*. Você pode definir até seis níveis de grupos de gerenciamento em sua hierarquia. Cada assinatura está contida apenas por um grupo de gerenciamento.
 
 O Azure fornece quatro níveis de escopo de gerenciamento: grupos de gerenciamento, assinatura, grupos de recursos e recursos. Qualquer acesso ou política aplicada em um nível na hierarquia é herdado pelos níveis abaixo dela. Um proprietário de recurso ou proprietário de assinatura não pode alterar uma política herdada. Essa limitação ajuda a melhorar a governança.
 
@@ -76,7 +76,7 @@ O Azure fornece quatro níveis de escopo de gerenciamento: grupos de gerenciamen
 
 Ao confiar nesse modelo de herança, você pode organizar as assinaturas em sua hierarquia para que cada uma delas siga as políticas apropriadas e os controles de segurança.
 
-![Os quatro níveis de escopo para organizar seus recursos do Azure](../../ready/azure-readiness-guide/media/organize-resources/scope-levels.png)
+![Os quatro níveis de escopo para organizar seus recursos do Azure](../../ready/azure-setup-guide/media/organize-resources/scope-levels.png)
 
 Qualquer acesso ou atribuição de política no grupo de gerenciamento raiz se aplica a todos os recursos no diretório. Considere cuidadosamente quais itens você define nesse escopo. Inclua apenas as atribuições que você deve ter.
 
