@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 082b9ccdcc94548b46a5a220cfe83768f7c4cbf6
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 3254cf195c001f7ce575bf067cd434649293b970
+ms.sourcegitcommit: f7ec7828687f433ff8b69b91817cbec7b074662c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547897"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72915039"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>Guia de decisão de registro em log e relatório
 
@@ -26,7 +26,7 @@ Ir para: [Planejar a infraestrutura de monitoramento](#planning-your-monitoring-
 
 O ponto de inflexão ao determinar uma estratégia de identidade e registro em log de nuvem baseia-se principalmente nos investimentos existentes feitos pela organização nos processos operacionais e, até certo ponto, nos requisitos necessários para dar suporte a uma estratégia de multinuvem.
 
-Há várias maneiras de registrar e relatar atividades na nuvem. O registro em log nativo e centralizado em nuvem são duas opções comuns de SaaS (software como serviço) orientadas pelo design de assinatura e pelo número de assinaturas.
+Há várias maneiras de registrar e relatar atividades na nuvem. Os registros em log centralizado e nativo de nuvem são duas opções comuns de serviço gerenciado, orientadas pelo design de assinatura e pelo número de assinaturas.
 
 ## <a name="planning-your-monitoring-infrastructure"></a>Planejar a infraestrutura de monitoramento
 
