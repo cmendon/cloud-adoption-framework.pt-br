@@ -10,7 +10,7 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.openlocfilehash: 5faaaf5b4c6b4c766c47dc6331723bed31e02d8e
 ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 10/17/2019
 ms.locfileid: "72557200"

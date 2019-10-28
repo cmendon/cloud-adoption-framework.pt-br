@@ -10,7 +10,7 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.openlocfilehash: 4af94af91874ac666f45a917eed003b3cf881c51
 ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 10/17/2019
 ms.locfileid: "72558214"
@@ -108,7 +108,7 @@ O caminho sugerido para migração e sincronização usa uma combinação das tr
 
 Escolher a melhor orientação para migração usando o DMS é contingente na plataforma de origem e de destino de sua escolha. A tabela a seguir descreve os tutoriais para cada uma das abordagens padrão para migrar um banco de dados SQL usando DMS.
 
-|Fonte  |Escolha o destino  |Ferramenta  |Tipo de migração  |Diretriz  |
+|Fonte  |Destino  |Ferramenta  |Tipo de migração  |Diretrizes  |
 |---------|---------|---------|---------|---------|
 |SQL Server|Banco de Dados SQL do Azure|DMS|Off-line|[Tutorial](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-azure-sql)|
 |SQL Server|Banco de Dados SQL do Azure|DMS|Online|[Tutorial](https://docs.microsoft.com/azure/dms/tutorial-sql-server-azure-sql-online)|
@@ -120,7 +120,7 @@ Escolher a melhor orientação para migração usando o DMS é contingente na pl
 
 Depois de mover os bancos de dados de um SQL Server para o DMS, o esquema e os dados podem ser rehospedados em várias soluções PaaS. No entanto, outros serviços necessários ainda podem estar em execução nesse servidor. Os três tutoriais a seguir ajudarão a mover o SSIS, o SSAS e o SSRS para os serviços de PaaS equivalentes no Azure.
 
-|Fonte  |Escolha o destino  |Ferramenta  |Tipo de migração  |Diretriz  |
+|Fonte  |Destino  |Ferramenta  |Tipo de migração  |Diretrizes  |
 |---------|---------|---------|---------|---------|
 |Serviço de integração do SQL Server|Data Factory Integration Runtime|Fábrica de dados do Azure|Off-line|[Tutorial](https://docs.microsoft.com/azure/data-factory/create-azure-ssis-integration-runtime)|
 |SQL Server Analysis Service-modelo de tabela|Azure Analysis Services|SSDT|Off-line|[Tutorial](https://docs.microsoft.com/azure/analysis-services/analysis-services-deploy)|
@@ -132,7 +132,7 @@ Depois de migrar bancos de dados e serviços para instâncias de PaaS, ainda pod
 
 Essa abordagem pode ser usada para migrar bancos de dados no SQL Server ou outros serviços em execução no SQL Server de origem.
 
-|Fonte  |Escolha o destino  |Ferramenta  |Tipo de migração  |Diretriz  |
+|Fonte  |Destino  |Ferramenta  |Tipo de migração  |Diretrizes  |
 |---------|---------|---------|---------|---------|
 |SQL Server de instância única|SQL Server na IaaS|Variado|Off-line|[Tutorial](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-migrate-sql)|
 
