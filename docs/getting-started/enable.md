@@ -1,7 +1,7 @@
 ---
-title: Habilitar o sucesso do cliente em qualquer jornada de adoção de nuvem
+title: Habilitar o sucesso do cliente durante uma jornada de adoção da nuvem
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Habilitar o sucesso do cliente em qualquer jornada de adoção de nuvem
+description: Habilitar o sucesso do cliente durante uma jornada de adoção da nuvem
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
@@ -9,26 +9,26 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 layout: LandingPage
-ms.openlocfilehash: 5e1b1c24b076c56fdf6e42a8340589ee58bd69dc
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ea9d6b17627883f63e0814b66ed5cb657555995d
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023453"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048333"
 ---
-# <a name="enable-success-across-any-cloud-adoption-journey"></a>Habilite o sucesso em qualquer jornada de adoção de nuvem
+# <a name="enable-success-during-a-cloud-adoption-journey"></a>Habilitar o sucesso durante uma jornada de adoção de nuvem
 
-A estrutura de adoção do Microsoft Cloud para o Azure é fornecida como uma ferramenta de autoatendimento gratuita para orientar os leitores por meio de vários esforços de adoção de nuvem. O foco desse conteúdo é ajudar os clientes a obterem sucesso ao perceber as metas de negócios que podem ser habilitadas pelo Azure. No entanto, esse conteúdo também respeita que o leitor pode estar abordando os desafios de negócios, de cultura ou técnicos que podem ser amplos por natureza e pode às vezes exigir uma posição neutra de nuvem. Assim, cada seção desta orientação começa com uma abordagem do Azure primeiro, mas segue com a teoria neutra de nuvem que pode ser dimensionada entre decisões técnicas e de negócios.
+A estrutura de adoção de nuvem é uma ferramenta gratuita de autoatendimento que orienta os leitores por meio de vários esforços de adoção de nuvem. A estrutura ajuda os clientes a obterem sucesso na realização de objetivos de negócios que podem ser habilitados pelo Microsoft Azure. No entanto, esse conteúdo também reconhece que o leitor pode estar abordando grandes desafios de negócios, de cultura ou técnicos e que às vezes pode exigir uma posição neutra de nuvem. Portanto, cada seção desta orientação começa com uma abordagem do Azure-First e, em seguida, segue com a teoria neutra de nuvem que pode ser dimensionada em várias decisões técnicas e de negócios.
 
-Durante esse Framework, a habilitação é um tema principal. A lista de verificação a seguir contém uma série de tópicos que devem ser inseridos em qualquer esforço de adoção de nuvem para garantir que a jornada seja um sucesso nos olhos de ti e da empresa:
+Durante esse Framework, a habilitação é um tema principal. A lista de verificação a seguir relaciona princípios fundamentais de adoção de nuvem que garantem que uma jornada de adoção seja considerada bem-sucedida tanto pela ti quanto pela empresa:
 
-- **Intenção** Estabelecendo [resultados](../strategy/business-outcomes/index.md)claros de negócios, um [plano de imóveis digital](../digital-estate/index.md)definido e [os registros](../migrate/migration-considerations/prerequisites/migration-backlog-review.md)posteriores de adoção bem compreendidos.
+- **Plano:** Estabelecendo [resultados](../strategy/business-outcomes/index.md)claros de negócios, um [plano de imóveis digital](../digital-estate/index.md)claramente definido e registros posteriores de [adoção](../migrate/migration-considerations/prerequisites/migration-backlog-review.md)bem compreendidos.
 - **Pronto:** Garanta a prontidão da equipe por meio de [planos de aprendizado e habilidades](../ready/technical-skills.md).
-- **Executados** Defina um modelo operacional gerenciável para guiar as atividades durante e muito tempo após a adoção.
+- **Operar:** Defina um modelo operacional gerenciável para guiar as atividades durante e muito tempo após a adoção.
   - **[Organizar](../organize/index.md):** Alinhe pessoas e equipes para fornecer operações e adoção adequadas de nuvem.
-  - **Indicadores** Alinhe as [disciplinas de governança](../govern/index.md) adequadas para aplicar consistentemente o gerenciamento de custos, a mitigação de riscos, a conformidade e as linhas de base de segurança em toda a adoção da nuvem.
+  - **Controle:** Alinhe as [disciplinas de governança](../govern/index.md) adequadas para aplicar consistentemente o gerenciamento de custos, a mitigação de riscos, a conformidade e as linhas de base de segurança em toda a adoção da nuvem.
   - **Gerenciar:** [Gerenciamento operacional](../manage/index.md) contínuo do portfólio de ti para minimizar as interrupções nos processos de negócios e garantir a estabilidade do portfólio de ti.
-  - **Support** Alinhe [as opções de parceria e suporte](../migrate/migration-considerations/assess/partnership-options.md)adequadas.
+  - **Suporte:** Alinhe [as opções de parceria e suporte](../migrate/migration-considerations/assess/partnership-options.md)adequadas.
 
 ## <a name="additional-tools"></a>Ferramentas adicionais
 
@@ -124,7 +124,7 @@ Além da estrutura de adoção de nuvem, a Microsoft aborda tópicos adicionais 
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Centro de Arquitetura do Azure</h3>
+                        <h3>Centro de arquitetura do Azure</h3>
                         <p>Soluções de arquitetura, arquiteturas de referência, cenários de exemplo, práticas recomendadas e padrões de design de nuvem para auxiliar na arquitetura de soluções em execução no Azure.</p>
                     </div>
                 </div>
@@ -155,7 +155,7 @@ Além da estrutura de adoção de nuvem, a Microsoft aborda tópicos adicionais 
 
 <!-- markdownlint-enable MD033 -->
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Munido da compreensão dos principais aspectos da estrutura de adoção da nuvem, a probabilidade de sucesso em um esforço de [migração](./migrate.md) ou [inovação](./innovate.md) será muito maior.
 

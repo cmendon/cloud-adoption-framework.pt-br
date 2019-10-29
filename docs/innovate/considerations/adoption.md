@@ -8,16 +8,16 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 48d7872b04f610326e0e0f38d9f89e15cf1c9692
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.openlocfilehash: 75590b73aff96e3d90ca5103e0ec15e6ad0f0a1e
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72980157"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73047737"
 ---
 # <a name="create-customer-partnerships-through-the-build-measure-learn-feedback-loop"></a>Criar parcerias de clientes por meio do loop de comentários de compilação-medida-aprendizado
 
-A verdadeira inovação vem do trabalho pesado de criar soluções que demonstram a empatia do cliente, da medição do impacto dessas mudanças no cliente e da aprendizagem ao cliente. O mais importante é que ele vem da repetição contínua desse ciclo.
+A verdadeira inovação vem do trabalho pesado de criar soluções que demonstram a empatia do cliente, da medição do impacto dessas mudanças no cliente e da aprendizagem ao cliente. O mais importante é que ele provém de comentários em várias iterações.
 
 Se a última década tiver ensinado qualquer coisa sobre inovação, é que as antigas regras de negócios mudaram. Grande, o Wealthy se encarregava não ter mais uma suspensão sem interrupção no mercado. O primeiro ou o melhor para o mercado são sempre os vencedores. Ter a melhor ideia não leva ao mercado predominância. Em um ambiente de negócios com alteração rápida, os líderes de mercado são os mais ágeis. Aqueles que podem se adaptar às condições em constante mudança.
 

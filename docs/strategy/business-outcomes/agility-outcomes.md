@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 3fb87179de2dac492b506f8aba610cc52d69a751
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 6e1743fbac07c27bfafdf679ff7aae056545b6eb
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548711"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048080"
 ---
 # <a name="examples-of-agility-outcomes"></a>Exemplos de resultados de agilidade 
 
@@ -33,9 +33,9 @@ Para os encarregados e o upicios, a agilidade dos negócios pode ser a diferenç
 
 Durante os esforços de inovação habilitada para a nuvem, o tempo de colocação no mercado é uma medida importante da capacidade de lidar com mudanças de mercado. Em muitos casos, um líder de negócios pode ter orçamentos existentes para a criação de um aplicativo ou o lançamento de um novo produto. A comunicação clara de um benefício de tempo para o mercado pode motivar esse líder para redirecionar o orçamento para sua jornada de transformação.
 
-- **Exemplo 1**: a divisão européia de uma empresa baseada em EUA precisa estar em conformidade com as REGULAMENTAções GDPRs protegendo os dados do cliente em um banco de dado que dá suporte a operações do Reino Unido. A versão existente do SQL não dá suporte à segurança em nível de linha necessária. Uma atualização in-loco seria muito prejudicial. Usando o SQL do Azure para replicar e atualizar o banco de dados, o cliente adiciona a medida de conformidade necessária em questão de semanas.
+- **Exemplo 1:** A divisão européia de uma empresa baseada em EUA precisa estar em conformidade com as normas GDPRs protegendo os dados do cliente em um banco de dado que dá suporte a operações do Reino Unido. A versão existente do SQL não dá suporte à segurança em nível de linha necessária. Uma atualização in-loco seria muito prejudicial. Usando o SQL do Azure para replicar e atualizar o banco de dados, o cliente adiciona a medida de conformidade necessária em questão de semanas.
 
-- **Exemplo 2**: uma empresa de logística descobriu um segmento não tocado do mercado, mas precisa de uma nova versão de seu aplicativo principal para capturar essa participação no mercado. Seu concorrente maior fez a mesma descoberta. Com a execução de um esforço de inovação de aplicativos habilitado para nuvem, a empresa adota o obsessão de clientes e uma abordagem de desenvolvimento orientada por DevOps para superar seus concorrentes mais lentos e herdados em _x_ meses. Esse salto na entrada no mercado protegeu a base de clientes.
+- **Exemplo 2:** Uma empresa de logística descobriu um segmento inexplorado do mercado, mas precisa de uma nova versão de seu aplicativo principal para capturar essa participação no mercado. Seu concorrente maior fez a mesma descoberta. Com a execução de um esforço de inovação de aplicativos habilitado para nuvem, a empresa adota o obsessão de clientes e uma abordagem de desenvolvimento orientada por DevOps para superar seus concorrentes mais lentos e herdados em _x_ meses. Esse salto na entrada no mercado protegeu a base de clientes.
 
 **Aurora Health Care**: o sistema de saúde transforma serviços online em uma experiência digital amigável. Para transformar seus serviços digitais, a Aurora Health Care migrou seus sites para a plataforma Microsoft Azure e adotou uma estratégia de inovação contínua.
 
@@ -48,7 +48,7 @@ Durante os esforços de inovação habilitada para a nuvem, o tempo de colocaç�
 
 Quando a empresa exige novos serviços de ti ou escala para serviços existentes, a aquisição e o provisionamento de novos hardwares ou recursos virtuais podem levar semanas. Após a migração na nuvem, ele pode habilitar o provisionamento de autoatendimento com mais facilidade, permitindo que a empresa seja dimensionada em horas.
 
-- **Exemplo**: uma empresa de bens empacotados do consumidor requer a criação e a divisão de centenas de clusters de banco de dados por ano para atender às demandas operacionais dos negócios. Os hosts virtuais locais podem ser provisionados rapidamente, mas o processo de recuperação de ativos virtuais é lento e requer um tempo significativo da equipe. Como tal, o ambiente local herdado sofre de inchar e raramente pode acompanhar a demanda. Após a migração na nuvem, ele pode fornecer com mais facilidade o autoprovisionamento de recursos com script, com uma abordagem de estorno para cobrança. Juntos, isso permite que a empresa se movimente tão rapidamente quanto precisa, mas que ainda poderá ser contabilizada pelo custo dos recursos que demandam. Fazer isso na nuvem limita as implantações apenas ao orçamento da empresa.
+- **Exemplo:** Uma empresa de bens empacotados do consumidor requer a criação e a divisão de centenas de clusters de banco de dados por ano para atender às demandas operacionais dos negócios. Os hosts virtuais locais podem ser provisionados rapidamente, mas o processo de recuperação de ativos virtuais é lento e requer um tempo significativo da equipe. Como tal, o ambiente local herdado sofre de inchar e raramente pode acompanhar a demanda. Após a migração na nuvem, ele pode fornecer com mais facilidade o autoprovisionamento de recursos com script, com uma abordagem de estorno para cobrança. Juntos, isso permite que a empresa se movimente tão rapidamente quanto precisa, mas que ainda poderá ser contabilizada pelo custo dos recursos que demandam. Fazer isso na nuvem limita as implantações apenas ao orçamento da empresa.
 
 ## <a name="next-steps"></a>Próximos passos
 

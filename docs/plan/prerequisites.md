@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 118279ca768507471dbdddf9f499a592d34a477e
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 0933474aef96d01862f0f230073e275ac262cd83
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549045"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048500"
 ---
 # <a name="prerequisites-checklist-for-an-effective-cloud-adoption-plan"></a>Lista de verificação de pré-requisitos para um plano de adoção de nuvem eficaz
 
@@ -23,9 +23,9 @@ Um plano é tão eficaz quanto os dados que são colocados nele. Para que um pla
 
 As entradas estratégicas precisas garantem que o trabalho que está sendo feito contribui para a realização de resultados de negócios. A [seção de estratégia da estrutura de adoção de nuvem](../strategy/index.md) fornece uma série de exercícios para desenvolver uma estratégia clara. As saídas desses exercícios alimentam o plano de adoção de nuvem. Antes de desenvolver o plano, verifique se os seguintes itens estão bem definidos como resultado desses exercícios:
 
-- **Limpar motivações**: por que estamos adotando a nuvem?
-- Resultados de **negócios definidos**: que resultado esperamos ver na adoção da nuvem?
-- **Justificativa de negócios**: como o negócio medirá o sucesso?
+- **Limpar motivações:** Por que estamos adotando a nuvem?
+- **Resultados de negócios definidos:** Quais resultados esperamos ver na adoção da nuvem?
+- **Justificativa de negócios:** Como o negócio medirá o sucesso?
 
 Todos os membros da equipe que implementam o plano de adoção de nuvem devem ser capazes de responder a essas três perguntas estratégicas. Gerentes e líderes que podem ser responsáveis pela implementação do plano devem entender as métricas por trás de cada pergunta e qualquer progresso para concretizar essas métricas.
 
@@ -33,9 +33,9 @@ Todos os membros da equipe que implementam o plano de adoção de nuvem devem se
 
 As entradas táticas precisas garantem que o trabalho possa ser planejado de forma precisa e gerenciado com eficiência. A [seção de plano da estrutura de adoção de nuvem](./index.md) fornece uma série de exercícios para desenvolver artefatos de planejamento antes de desenvolver seu plano. Esses artefatos fornecem respostas para as seguintes perguntas:
 
-- **Racionalização de imóveis digitais**: quais são as 10 principais cargas de trabalho de prioridade no plano de adoção? Quantas cargas de trabalho adicionais provavelmente estarão no plano? Quantos ativos estão sendo considerados candidatos à adoção da nuvem? Os esforços iniciais se concentram mais em atividades de migração ou inovação?
-- **Alinhamento da organização**: quem fará o trabalho técnico no plano de adoção? Quem é responsável pela adesão aos requisitos de governança e de conformidade?
-- **Preparação para habilidades**: quantas pessoas estão alocadas para executar as tarefas necessárias? Quão bem suas habilidades estão alinhadas aos esforços de adoção da nuvem? Os parceiros estão alinhados para dar suporte à implementação técnica?
+- **Racionalização de imóveis digitais:** Quais são as 10 principais cargas de trabalho de prioridade no plano de adoção? Quantas cargas de trabalho adicionais provavelmente estarão no plano? Quantos ativos estão sendo considerados candidatos à adoção da nuvem? Os esforços iniciais se concentram mais em atividades de migração ou inovação?
+- **Alinhamento da organização:** Quem fará o trabalho técnico no plano de adoção? Quem é responsável pela adesão aos requisitos de governança e de conformidade?
+- **Preparação para as habilidades:** Quantas pessoas estão alocadas para executar as tarefas necessárias? Quão bem suas habilidades estão alinhadas aos esforços de adoção da nuvem? Os parceiros estão alinhados para dar suporte à implementação técnica?
 
 Essas perguntas são essenciais para a precisão do plano de adoção da nuvem. No mínimo, as perguntas sobre a racionalização digital de imóveis devem ser respondidas para criar um plano. Para fornecer cronogramas precisos, as perguntas sobre a organização e as habilidades também são importantes.
 

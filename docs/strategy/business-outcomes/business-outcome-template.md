@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 3874b1af74d7604e3e5c5dd3376b11c43ce24e05
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 8703734cbb287003edfd38ddac4395ac0e437332
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027682"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048394"
 ---
 # <a name="how-to-use-the-business-outcome-template"></a>Como usar o modelo de resultado comercial
 
@@ -51,17 +51,17 @@ A descoberta é um princípio fundamental da arquitetura empresarial. Se a desco
 
 *Figura 3 – cinco áreas de foco na descoberta: participantes, resultados, Drivers, KPIs e recursos.*
 
-**Participantes**: Quem na organização provavelmente verá o maior valor em um resultado comercial específico? Quem tem mais probabilidade de dar suporte a essa transformação, especialmente quando as coisas ficam difíceis ou demoradas? Quem tem a maior stake no sucesso dessa transformação? Essa pessoa é um participante potencial.
+**Participantes:** Quem na organização provavelmente verá o maior valor em um resultado comercial específico? Quem tem mais probabilidade de dar suporte a essa transformação, especialmente quando as coisas ficam difíceis ou demoradas? Quem tem a maior stake no sucesso dessa transformação? Essa pessoa é um participante potencial.
 
-**Resultados de negócios**: Um resultado comercial é um resultado conciso, definido e observável ou alteração no desempenho de negócios, com suporte de uma medida específica. Como o Stakeholder quer mudar os negócios? Como a empresa será afetada? Qual é o valor dessa transformação?
+**Resultados de negócios:** Um resultado comercial é um resultado conciso, definido e observável ou alteração no desempenho de negócios, com suporte de uma medida específica. Como o Stakeholder quer mudar os negócios? Como a empresa será afetada? Qual é o valor dessa transformação?
 
-**Drivers de negócios**: Os drivers de negócios capturam o desafio atual que está impedindo que a empresa atinja os resultados desejados. Eles também podem capturar novas oportunidades que a empresa pode aproveitar com a solução certa. Como você descreveria os desafios atuais ou o estado futuro dos negócios? Quais funções comerciais seriam alteradas para atender aos resultados desejados?
+**Drivers de negócios:** Os drivers de negócios capturam o desafio atual que está impedindo que a empresa atinja os resultados desejados. Eles também podem capturar novas oportunidades que a empresa pode aproveitar com a solução certa. Como você descreveria os desafios atuais ou o estado futuro dos negócios? Quais funções comerciais seriam alteradas para atender aos resultados desejados?
 
-**KPIs**: Como essa alteração será medida? Como o negócio sabe se eles são bem-sucedidos? Com que frequência este KPI será observado? Entender cada KPI ajuda a habilitar a alteração incremental e a experimentação.
+**KPIs:** Como essa alteração será medida? Como o negócio sabe se eles são bem-sucedidos? Com que frequência este KPI será observado? Entender cada KPI ajuda a habilitar a alteração incremental e a experimentação.
 
-**Recursos**: Quando você define qualquer jornada de transformação, como os recursos técnicos irão acelerar a realização do resultado comercial? Quais aplicativos devem ser incluídos na transformação para atingir os objetivos de negócios? Como vários aplicativos ou cargas de trabalho são priorizados para fornecer recursos? Como as partes da solução precisam ser expandidas ou rearquitetadas para atender a cada um dos resultados? As abordagens de execução (ou linhas do tempo) podem ser reorganizadas para priorizar resultados comerciais de alto impacto?
+**Recursos:** Quando você define qualquer jornada de transformação, como os recursos técnicos irão acelerar a realização do resultado comercial? Quais aplicativos devem ser incluídos na transformação para atingir os objetivos de negócios? Como vários aplicativos ou cargas de trabalho são priorizados para fornecer recursos? Como as partes da solução precisam ser expandidas ou rearquitetadas para atender a cada um dos resultados? As abordagens de execução (ou linhas do tempo) podem ser reorganizadas para priorizar resultados comerciais de alto impacto?
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Saiba mais sobre como [alinhar seus esforços técnicos](../learning-metrics.md) a métricas de aprendizagem significativas.
 

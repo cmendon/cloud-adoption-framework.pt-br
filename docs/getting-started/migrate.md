@@ -1,27 +1,27 @@
 ---
-title: Introdução a uma jornada de migração na nuvem
+title: Iniciar uma jornada de migração na nuvem no Azure
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Introdução a uma jornada de migração na nuvem
+description: Comece uma jornada de migração na nuvem no Azure.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: af93f71b1e4e9eb3249720fd14c88482a8402789
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 8870f5ebeab855ec841ed00d109245a1efdeff20
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547831"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048311"
 ---
-# <a name="getting-started-with-a-cloud-migration-journey"></a>Introdução a uma jornada de migração na nuvem
+# <a name="begin-a-cloud-migration-journey-in-azure"></a>Iniciar uma jornada de migração na nuvem no Azure
 
-Saiba como usar o Microsoft Cloud a estrutura de adoção do Azure para iniciar uma jornada de migração na nuvem. Essa estrutura fornece diretrizes abrangentes para a transição de cargas de trabalho de aplicativo herdadas usando tecnologias inovadoras baseadas em nuvem.
+Use o Microsoft Cloud a estrutura de adoção do Azure para iniciar uma jornada de migração na nuvem. Essa estrutura fornece diretrizes abrangentes para a transição de cargas de trabalho de aplicativo herdadas para a nuvem usando tecnologias inovadoras baseadas em nuvem.
 
 ## <a name="executive-summary"></a>Resumo executivo
 
-A estrutura de adoção de nuvem ajuda os clientes a empreender uma jornada de adoção de nuvem simplificada. Essa estrutura contém informações detalhadas que abrangem uma jornada de adoção de nuvem de ponta a ponta, começando com resultados de negócios direcionados e alinhando a prontidão e as avaliações da nuvem com os objetivos de negócios claramente definidos. Esses resultados são obtidos por meio de um caminho definido para a adoção da nuvem. Com a adoção baseada em migração, o caminho definido se concentra em grande parte da conclusão de uma migração de cargas de trabalho locais para a nuvem. Às vezes, essa jornada inclui modernização de cargas de trabalho para aumentar o retorno do investimento do esforço de migração.
+A estrutura de adoção de nuvem ajuda os clientes a empreender uma jornada de adoção de nuvem simplificada. Essa estrutura contém informações detalhadas sobre uma jornada de adoção de nuvem de ponta a ponta, começando com resultados de negócios direcionados e, em seguida, alinhando a preparação e as avaliações da nuvem com os objetivos de negócios claramente definidos. Esses resultados são obtidos por meio de um caminho definido para a adoção da nuvem. Com a adoção baseada em migração, o caminho definido se concentra em grande parte da migração de cargas de trabalho locais para a nuvem. Às vezes, essa jornada inclui modernização de cargas de trabalho para aumentar o retorno do investimento do esforço de migração.
 
 Essa estrutura foi projetada principalmente para arquitetos de nuvem e as equipes de estratégia de nuvem que lideram os esforços de adoção de nuvem. No entanto, muitos tópicos nessa estrutura são relevantes para outras funções em toda a empresa e ti. Os arquitetos de nuvem geralmente servem como facilitadores para envolver cada uma das funções relevantes. Este resumo executivo foi projetado para preparar as várias funções antes de facilitar as conversas.
 
@@ -70,7 +70,7 @@ As migrações de nuvem geralmente são consideradas um único projeto dentro de
 
 Estratégia e planejamento de nuvem é uma metodologia que se concentra em alinhar resultados de negócios, prioridades e restrições para estabelecer uma estratégia de migração e um plano claros. O plano resultante (ou a pendência de migração) descreve a abordagem de migração e modernização em todo o portfólio de ti, que pode abranger data centers inteiros, várias cargas de trabalho ou diversas coleções de infraestrutura, aplicativos e dados. O gerenciamento adequado do portfólio de ti entre os esforços de implementação na nuvem ajudará a impulsionar os resultados de negócios desejados.
 
-![Visão geral da estrutura de adoção de nuvem](../_images/caf-overview.png)
+![Visão geral do Cloud Adoption Framework](../_images/caf-overview.png)
 
 **Introdução:** O restante deste artigo prepara o leitor para a aplicação adequada da estratégia de nuvem e da metodologia de planejamento da estrutura de adoção de nuvem. Ele também descreve recursos adicionais e links que podem ajudar o leitor a adotar essa abordagem para orientar os esforços de implementação na nuvem.
 
@@ -110,11 +110,11 @@ Durante a implementação da estratégia de nuvem e planejar a equipe de ti, con
 
 ### <a name="common-workload-examples"></a>Exemplos comuns de carga de trabalho
 
-A estratégia de nuvem e o planejamento geralmente visam uma ampla coleção de cargas de trabalho e aplicativos. No portfólio, os tipos de aplicativos comuns ou de carga de trabalho normalmente são migrados. Veja a seguir alguns exemplos:
+A estratégia de nuvem e o planejamento geralmente visam uma ampla coleção de cargas de trabalho e aplicativos. No portfólio, os tipos de aplicativos comuns ou de carga de trabalho normalmente são migrados. Seguem alguns exemplos:
 
 - Aplicativos de linha de negócios
 - Aplicativos voltados para o cliente
-- Aplicativos de terceiros
+- Aplicativo de terceiros
 - Plataformas de análise de dados
 - Soluções distribuídas globalmente
 - Soluções altamente escalonáveis
@@ -142,7 +142,7 @@ A estrutura de adoção de nuvem é uma solução de ciclo de vida. Ele foi proj
 >
 > [Migrar](../migrate/index.md)
 >
-> [Inova](../innovate/index.md)
+> [Inove](../innovate/index.md)
 >
 > [Indicadores](../govern/index.md)
 >

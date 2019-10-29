@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: f0349afd5507300588df9b10628d3b28b25827c3
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 45c4f22613a559add109c1fbfd608452911d0c86
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030885"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73047937"
 ---
 # <a name="examples-of-customer-engagement-outcomes"></a>Exemplos de resultados do compromisso com o cliente
 
@@ -29,7 +29,7 @@ Veja a seguir exemplos e resultados relacionados ao envolvimento do cliente:
 
 Durante as transformações de fanático do cliente, como um esforço de inovação de aplicativos habilitado para nuvem, os clientes respondem do envolvimento direto e a capacidade de ver suas necessidades atendidas rapidamente pela equipe de desenvolvimento. O tempo do ciclo é um termo de seis sigma que se refere à duração desde o início até o término de uma função. Para líderes de negócios que são clientes fanático e estão investindo muito para melhorar o envolvimento do cliente, o tempo de ciclo pode ser um grande resultado comercial.
 
-- **Exemplo**: Uma empresa de serviços que fornece serviços B2B (entre empresas) está tentando manter a participação no mercado em um mercado competitivo. Os clientes que saíram de um provedor de serviços concorrentes afirmaram que sua solução técnica excessivamente complexa interfere em seus processos de negócios e é o principal motivo para a saída. Nesse caso, o tempo de ciclo é imperativo. Hoje, leva 12 meses para que um recurso passe da solicitação para o lançamento. Se ele for priorizado pela equipe executiva, esse ciclo poderá ser reduzido para seis a nove meses. Por meio de um esforço de inovação de aplicativos habilitado para nuvem, modelos de aplicativos nativos de nuvem e integração do Azure DevOps, a equipe conseguiu cortar o tempo de ciclo de um mês, permitindo que as equipes de desenvolvimento de negócios e aplicativos interajam mais diretamente com utilizam.
+- **Exemplo:** Uma empresa de serviços que fornece serviços B2B (entre empresas) está tentando manter a participação no mercado em um mercado competitivo. Os clientes que saíram de um provedor de serviços concorrentes afirmaram que sua solução técnica excessivamente complexa interfere em seus processos de negócios e é o principal motivo para a saída. Nesse caso, o tempo de ciclo é imperativo. Hoje, leva 12 meses para que um recurso passe da solicitação para o lançamento. Se ele for priorizado pela equipe executiva, esse ciclo poderá ser reduzido para seis a nove meses. Por meio de um esforço de inovação de aplicativos habilitado para nuvem, modelos de aplicativos nativos de nuvem e integração do Azure DevOps, a equipe conseguiu cortar o tempo de ciclo de um mês, permitindo que as equipes de desenvolvimento de negócios e aplicativos interajam mais diretamente com utilizam.
 
 > **ExakTime**
 >
@@ -40,7 +40,7 @@ Durante as transformações de fanático do cliente, como um esforço de inovaç
 > Vice-Presidente de desenvolvimento de software  
 > ExakTime
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Saiba mais sobre os [resultados de desempenho](./performance-outcomes.md).
 

@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 74fd1f02455d822ae8f8266bc3f6deb5935c09fe
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 027b685b2c75edc59e03cca9f9d2614422684bf0
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70833759"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048279"
 ---
 # <a name="plan-for-cloud-adoption"></a>Planejar a adoção da nuvem
 
@@ -35,14 +35,14 @@ Os modelos de aquisição da nuvem alteram as principais dependências que torna
 
 Esta série de artigos percorre cada etapa da tradução da estratégia e do esforço para um plano de adoção acionável de nuvem:
 
-1. **Pré-requisitos**: Confirme se todas as etapas de pré-requisito foram concluídas antes de criar seu plano.
-2. **Definir e priorizar cargas de trabalho**: Priorize suas primeiras 10 cargas de trabalho para estabelecer uma pendência de adoção inicial.
-3. **Alinhar ativos**: Identifique quais ativos (propostos ou existentes) são necessários para dar suporte às cargas de trabalho priorizadas.
-4. Revisar a racionalização: Revise as decisões de racionalização para refinar decisões de caminho de adoção: Migre ou inovar.
-5. **Definir iterações e versões**: As iterações são os blocos de tempo alocados para o trabalho. As *versões* são a definição do trabalho a ser feito antes de disparar uma alteração nos processos de produção.
-6. **Estimar linhas do tempo:** Estabelecer cronogramas aproximados para fins de planejamento de versão, com base nas estimativas iniciais.
+1. **Pré-requisitos:** Confirme se todas as etapas de pré-requisito foram concluídas antes de criar seu plano.
+2. **Definir e priorizar cargas de trabalho:** Priorize suas primeiras 10 cargas de trabalho para estabelecer uma pendência de adoção inicial.
+3. **Alinhar ativos:** Identifique quais ativos (propostos ou existentes) são necessários para dar suporte às cargas de trabalho priorizadas.
+4. **Revisar a racionalização:** Revise as decisões de racionalização para refinar decisões de caminho de adoção: migrar ou inovar.
+5. **Definir iterações e versões:** as *iterações* são os blocos de tempo alocados para o trabalho. As *versões* são a definição do trabalho a ser feito antes de disparar uma alteração nos processos de produção.
+6. **Estimar linhas** do tempo: Estabelecer cronogramas aproximados para fins de planejamento de versão, com base nas estimativas iniciais.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Antes de criar seu plano de adoção de nuvem, certifique-se de que todos os [pré-requisitos necessários](./prerequisites.md) estejam em vigor.
 

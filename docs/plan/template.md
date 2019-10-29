@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 9988141c1f0133a0a18c11c46e09d7285d988e5e
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 3bd26321eca1747e5ed579e4394b0a4b7b713294
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549177"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048210"
 ---
 # <a name="cloud-adoption-plan-and-azure-devops"></a>Plano de adoção de nuvem e DevOps do Azure
 
@@ -45,10 +45,10 @@ Para preparar sua estação de trabalho para edição em massa, confira [Adicion
 
 O plano de adoção de nuvem organiza as atividades por tipo de atividade:
 
-- **Epics**: um *Epic* representa uma fase geral do ciclo de vida de adoção da nuvem.
-- **Recursos**: os recursos são usados para organizar objetivos específicos em cada fase. Por exemplo, a migração de uma carga de trabalho específica seria um recurso.
-- **Histórias de usuários**: histórias de usuários agrupam trabalho em coleções lógicas de atividades com base em uma meta específica.
-- **Tarefas**: as tarefas são o trabalho real a ser feito.
+- **Epics:** Um *Epic* representa uma fase geral do ciclo de vida de adoção da nuvem.
+- **Recursos do:** Os recursos são usados para organizar objetivos específicos em cada fase. Por exemplo, a migração de uma carga de trabalho específica seria um recurso.
+- **Histórias de usuários:** As histórias de usuário agrupam o trabalho em coleções lógicas de atividades com base em uma meta específica.
+- **Tarefas:** As tarefas são o trabalho real a ser feito.
 
 Em cada camada, as atividades são então sequenciadas com base em dependências. As atividades são vinculadas a artigos na estrutura de adoção de nuvem para esclarecer o objetivo ou a tarefa em questão.
 

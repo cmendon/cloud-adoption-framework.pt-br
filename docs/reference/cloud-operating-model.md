@@ -9,16 +9,16 @@ ms.service: cloud-adoption-framework
 ms.subservice: reference
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 8d9bce8b12b3054c2f4a6aa0421e1d30d5011860
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 8408b657a3896cbb9376d0364dbd752ed90b9306
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027261"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048133"
 ---
 # <a name="cloud-operating-model-is-now-part-of-the-microsoft-cloud-adoption-framework-for-azure"></a>O modelo operacional de nuvem agora faz parte da estrutura de adoção Microsoft Cloud para o Azure
 
-No início de 2018, a Microsoft lançou o COM (modelo operacional de nuvem). O COM foi um guia que ajudou os clientes a entender o **que** e o **porquê** da transformação digital. Isso ajudou os clientes a ter uma noção de todas as áreas que precisavam ser abordadas: estratégia de negócios, estratégia de cultura e estratégia tecnológica. O que não foi incluído no COM eram os específicos _como_, quais clientes deixaram de perguntar: "onde vamos para cá?"
+No início de 2018, a Microsoft lançou o COM (Modelo Operacional de Nuvem). O COM foi um guia que ajudou os clientes a entender o **que** e o **porquê** da transformação digital. Isso ajudou os clientes a ter uma noção de todas as áreas que precisavam ser abordadas: estratégia de negócios, estratégia de cultura e estratégia tecnológica. O que não foi incluído no COM eram os específicos _como_, quais clientes deixaram de perguntar: "onde vamos para cá?"
 
 Em outubro de 2018, começamos a analisar todos os modelos que proliferaram na Comunidade da Microsoft, encontramos aproximadamente 60 modelos de adoção de nuvem diferentes. Uma equipe multimicrosoft foi estabelecida para trazer tudo junto como um "produto" de engenharia dedicado com implementações definidas em serviços, vendas e marketing. Esse esforço culminau na criação de um único modelo, a estrutura de adoção Microsoft Cloud para o Azure, projetada para ajudar os clientes a entender o **que** e **por que** e fornecer orientações unificadas sobre **como** ajudá-los a acelerar seus adoção da nuvem. O objetivo deste projeto é criar uma abordagem da Microsoft para a adoção da nuvem.
 
@@ -26,9 +26,9 @@ Em outubro de 2018, começamos a analisar todos os modelos que proliferaram na C
 
 Para uma abordagem semelhante à COM, os leitores devem começar com um dos seguintes:
 
-- [Introdução à migração na nuvem](../getting-started/migrate.md)
-- [Introdução à inovação habilitada para a nuvem](../getting-started/innovate.md)
-- [Habilitando o êxito da adoção](../getting-started/enable.md)
+- [Iniciar uma jornada de migração na nuvem](../getting-started/migrate.md)
+- [Inovar por meio da adoção de nuvem](../getting-started/innovate.md)
+- [Habilitar a adoção de nuvem bem-sucedida](../getting-started/enable.md)
 
 As diretrizes fornecidas anteriormente no COM ainda são relevantes para a estrutura de adoção de nuvem. A experiência é diferente, mas a estrutura da estrutura de adoção de nuvem é simplesmente uma expansão dessas diretrizes. Para fazer a transição do COM para a estrutura de adoção de nuvem, é importante compreender o escopo e a estrutura. As duas seções a seguir descrevem essa transição.
 
@@ -45,7 +45,7 @@ O COM estabeleceu um escopo composto pelos seguintes componentes:
 Os escopos de alto nível do modelo operacional de nuvem e da estrutura de adoção de nuvem são semelhantes. Os negócios, a cultura e a tecnologia são refletidos em todas as diretrizes e em cada metodologia dentro da estrutura de adoção de nuvem.
 
 > [!NOTE]
-> O escopo da estrutura de adoção de nuvem tem dois pontos de clareza significativos. Na estrutura de adoção de nuvem, a estratégia de negócios vai além da documentação&mdash;dos custos de nuvem, trata-se de entender as motivações, os resultados desejados, os retornos e os custos de nuvem para criar planos acionáveis e desmarcar justificativas comerciais. Na estrutura de adoção de nuvem, a estratégia de pessoas vai além do treinamento para incluir abordagens que criam uma maturidade cultural demonstrável. Algumas áreas no roteiro incluem demonstrações do impacto do gerenciamento ágil, integração DevOps, cliente empatia e obsessão e abordagens de desenvolvimento de produtos de Lean Manufacturing.
+> O escopo da estrutura de adoção de nuvem tem dois pontos de clareza significativos. Na estrutura de adoção de nuvem, a estratégia de negócios vai além da documentação dos custos de nuvem&mdash;trata-se de compreender as motivações, os resultados desejados, os retornos e os custos de nuvem para criar planos acionáveis e desmarcar justificativas comerciais. Na estrutura de adoção de nuvem, a estratégia de pessoas vai além do treinamento para incluir abordagens que criam uma maturidade cultural demonstrável. Algumas áreas no roteiro incluem demonstrações do impacto do gerenciamento ágil, integração DevOps, cliente empatia e obsessão e abordagens de desenvolvimento de produtos de Lean Manufacturing.
 
 ## <a name="structure"></a>Estrutura
 
@@ -59,18 +59,18 @@ No nível executivo, a estrutura de adoção de nuvem foi simplificada nas três
 
 As três fases de adoção são:
 
-- **Intenção** Desenvolva o plano de negócios para orientar a adoção de nuvem em alinhamento com os resultados de negócios desejados.
+- **Plano:** Desenvolva o plano de negócios para orientar a adoção de nuvem em alinhamento com os resultados de negócios desejados.
 - **Pronto:** Prepare as pessoas, a organização e o ambiente técnico para a execução do plano de adoção.
-- **Adotar:** Estratégia técnica necessária para executar um plano de adoção específico, em alinhamento com uma jornada de adoção específica, para obter resultados de negócios.
+- **Adote:** Estratégia técnica necessária para executar um plano de adoção específico, em alinhamento com uma jornada de adoção específica, para obter resultados de negócios.
 
 As três fases da adoção de nuvem foram mapeadas para duas viagens específicas:
 
 - [Migrar](../getting-started/migrate.md): Mova as cargas de trabalho existentes para a nuvem.
-- [Inovar](../getting-started/innovate.md): Modernizar as cargas de trabalho existentes e criar novos produtos e serviços.
+- [Inovar](../getting-started/innovate.md): modernizar as cargas de trabalho existentes e criar novos produtos e serviços.
 
 Recursos adicionais necessários para uma adoção de nuvem bem-sucedida podem ser encontrados na [habilitação do êxito da adoção](../getting-started/enable.md).
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Para retomar sua jornada em que o COM parou, escolha uma das seguintes jornadas de adoção de nuvem:
 

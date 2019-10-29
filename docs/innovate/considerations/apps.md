@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: a72715defa4685ba2a2020fa264484ff0f949efd
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.openlocfilehash: 5f26cf77f918c12c46c653c6fc91ebc972d0db64
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72980178"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73047551"
 ---
 # <a name="engage-through-applications"></a>Envolver aplicativos
 
@@ -25,15 +25,18 @@ Em alguns casos, os dados sozinhos são suficientes para impulsionar a alteraç�
 
 ## <a name="shared-code"></a>Código compartilhado
 
-As equipes que respondem com mais rapidez e precisão aos comentários dos clientes, alterações no mercado e oportunidades para inovar normalmente levam a seus respectivos mercados em inovação. O primeiro princípio dos aplicativos inovadores é resumido na [visão geral da mentalidade de crescimento](./learn.md#growth-mindset): "compartilhar o código". Ao longo do tempo, a inovação sai de um foco cultural. Para sustentar a inovação, várias perspectivas e contribuições são necessárias.
+As equipes que respondem com mais rapidez e precisão aos comentários dos clientes, alterações no mercado e oportunidades para inovar normalmente levam a seus respectivos mercados em inovação. O primeiro princípio dos aplicativos inovadores é resumido na [visão geral da mentalidade de crescimento](./learn.md#growth-mindset): "compartilhar o código". Ao longo do tempo, a inovação surge de um foco cultural. Para sustentar a inovação, várias perspectivas e contribuições são necessárias.
 
-Para estar pronto para a inovação, todo o desenvolvimento de aplicativos deve começar com um repositório de código compartilhado. A ferramenta mais amplamente adotada para gerenciar repositórios de código é o [GitHub](https://guides.github.com/), que permite criar um repositório de código compartilhado com apenas alguns cliques. Como alternativa, o recurso [Azure Repos](/azure/devops/repos/get-started/what-is-repos?view=azure-devops) do Azure DevOps pode ser usado para criar um repositório do [git](/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git) ou do [Team Foundation](/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc) .
+Para estar pronto para a inovação, todo o desenvolvimento de aplicativos deve começar com um repositório de código compartilhado. A ferramenta mais amplamente adotada para gerenciar repositórios de código é o [GitHub](https://guides.github.com/), que permite criar um repositório de código compartilhado rapidamente. Como alternativa, [Azure Repos](/azure/devops/repos/get-started/what-is-repos?view=azure-devops) é um conjunto de ferramentas de controle de versão no Azure DevOps Services que você pode usar para gerenciar seu código. Azure Repos fornece dois tipos de controle de versão:
+
+- [Git](/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git): controle de versão distribuído
+- [Controle de versão do Team Foundation (TFVC)](/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc): controle de versão centralizado
 
 ## <a name="citizen-developers"></a>Desenvolvedores do cidadão
 
 Os desenvolvedores profissionais são um componente vital da inovação. Quando uma hipótese comprova precisamente em escala, os desenvolvedores profissionais precisam estabilizar e preparar a solução para escala. A maioria dos princípios mencionados neste artigo exige suporte de desenvolvedores profissionais. Infelizmente, as tendências atuais sugerem que há uma demanda maior para desenvolvedores profissionais do que para desenvolvedores. Além disso, o custo e o ritmo da inovação podem ser menos favoráveis quando o desenvolvimento profissional é considerado necessário. Em resposta a esses desafios, os desenvolvedores do cidadão fornecem uma maneira de dimensionar os esforços de desenvolvimento e acelerar o teste de hipótese inicial.
 
-O uso de desenvolvedores do cidadão pode ser viável e eficaz quando as primeiras expressões podem ser validadas por meio de ferramentas como o [PowerApps](https://docs.microsoft.com/powerapps/powerapps-overview) para interfaces de aplicativo, o [Construtor de ia](/powerapps/use-ai-builder) para processos e previsões, [Microsoft Flow](https://docs.microsoft.com/flow) para fluxos de trabalho e [energia BI](https://docs.microsoft.com/power-bi) para consumo de dados.
+O uso de desenvolvedores do cidadão pode ser viável e eficaz quando as primeiras expressões podem ser validadas por meio de ferramentas como o [PowerApps](https://docs.microsoft.com/powerapps/powerapps-overview) para interfaces de aplicativo, o [Construtor de ia](https://docs.microsoft.com//powerapps/use-ai-builder) para processos e previsões, [Microsoft Flow](https://docs.microsoft.com/flow) para fluxos de trabalho e [energia BI](https://docs.microsoft.com/power-bi) para consumo de dados.
 
 > [!NOTE]
 > Quando você depende de desenvolvedores do cidadão para testar as mesmas, é aconselhável ter alguns desenvolvedores profissionais disponíveis para fornecer suporte, revisão e orientação. Depois que uma hipótese é validada em escala, um processo para fazer a transição do aplicativo para um modelo de programação mais robusto acelerará os retornos na inovação. Ao envolver desenvolvedores profissionais em definições de processos no início, você pode perceber transições mais claras posteriormente.

@@ -10,12 +10,12 @@ ms.subservice: reference
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: bfa693155bb017f377b3a19c95c8cdb98ae3baa0
-ms.sourcegitcommit: 910efd3e686bd6b9bf93951d84253b43d4cc82b5
+ms.openlocfilehash: 718c93b560b38eaae6556e549a0c6f6bb97b807b
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72769440"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048256"
 ---
 # <a name="virtual-datacenters-a-network-perspective"></a>Data centers virtuais: uma perspectiva de rede
 
@@ -321,17 +321,17 @@ Componentes de carga de trabalho são o local em que seus aplicativos reais e se
 
 As possibilidades de carga de trabalho são infinitas. A seguir estão apenas alguns dos tipos de carga de trabalho possíveis:
 
-**Aplicativos LOB internos**: aplicativos de linha de negócios são aplicativos de computador críticos para a operação em andamento de uma empresa. Aplicativos de LOB têm algumas características em comum:
+**Aplicativos LOB internos:** Aplicativos de linha de negócios são aplicativos de computador críticos para a operação em andamento de uma empresa. Aplicativos de LOB têm algumas características em comum:
 
-- **Interativo** por natureza. Os dados são inseridos, e os resultados ou os relatórios são retornados.
-- **Controlado por dados**&mdash;dados intensivos com acesso frequente aos bancos de dados ou outro armazenamento.
-- **Integrado**&mdash;oferecem integração a outros sistemas dentro ou fora da organização.
+- **Interativo por natureza:** Os dados são inseridos e os resultados ou relatórios são retornados.
+- **Controlado por dados:** Cargas de trabalho com uso intensivo de dados com acesso frequente a bancos de dados ou outro armazenamento.
+- **Integrado:** As cargas de trabalho oferecem integração com outros sistemas dentro ou fora da organização.
 
 **Sites voltados para o cliente (Internet ou face interna)** : a maioria dos aplicativos que interagem com a Internet são sites da Web. O Azure oferece a capacidade de executar um site em uma VM IaaS ou de um site de [aplicativos Web do Azure][WebApps] (PaaS). Os Aplicativos Web do Azure dão suporte à integração com VNETs que permitem a implantação dos aplicativos Web na zona de rede de um spoke. Sites internos não precisam expor um ponto de extremidade de Internet público porque os recursos podem ser acessados por meio de endereços privados não roteáveis para a Internet da VNet privada.
 
-**Big data/Analytics**: quando os dados precisam ser escalados verticalmente para um grande volume, os bancos de dados podem não ser dimensionados corretamente. A tecnologia Hadoop oferece um sistema para executar consultas distribuídas em paralelo em um grande número de nós. Os clientes têm a opção de executar cargas de trabalho de dados em VMs IaaS ou PaaS ([HDInsight][HDI]). O HDInsight dá suporte à implantação em uma VNet baseada em local, pode ser implantado em um cluster em um spoke de um datacenter virtual.
+**Big data e análise:** Quando os dados precisam ser escalados verticalmente para um grande volume, os bancos de dados podem não ser dimensionados corretamente. A tecnologia Hadoop oferece um sistema para executar consultas distribuídas em paralelo em um grande número de nós. Os clientes têm a opção de executar cargas de trabalho de dados em VMs IaaS ou PaaS ([HDInsight][HDI]). O HDInsight dá suporte à implantação em uma VNet baseada em local, pode ser implantado em um cluster em um spoke de um datacenter virtual.
 
-**Eventos e mensagens**: os [hubs de eventos do Azure][EventHubs] são um serviço de ingestão de telemetria de hiperescala que coleta, transforma e armazena milhões de eventos. Como uma plataforma de streaming distribuída, oferece baixa latência e tempo de retenção configurável, permitindo a ingestão de grandes quantidades de telemetria no Azure e a leitura de dados de vários aplicativos. Com Hubs de Evento, um único fluxo pode dar suporte a pipelines tanto em tempo real quanto em lote.
+**Eventos e mensagens:** os [hubs de eventos do Azure][EventHubs] são um serviço de ingestão de telemetria de hiperescala que coleta, transforma e armazena milhões de eventos. Como uma plataforma de streaming distribuída, oferece baixa latência e tempo de retenção configurável, permitindo a ingestão de grandes quantidades de telemetria no Azure e a leitura de dados de vários aplicativos. Com Hubs de Evento, um único fluxo pode dar suporte a pipelines tanto em tempo real quanto em lote.
 
 Você pode implementar um serviço de mensagens de nuvem altamente confiável entre aplicativos e serviços por meio [do barramento de serviço do Azure][ServiceBus]. Ele oferece um sistema de mensagens agenciado e assíncrono entre o cliente e o servidor, recursos de mensagens PEPS (primeiro a entrar, primeiro a sair) e de publicação e assinatura.
 
