@@ -10,16 +10,18 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: d14ee6491e4fc804d6545c6708f1d27a44c83501
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 345811e62442341091cf91b3e52870ec454784bf
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224064"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549248"
 ---
 # <a name="migrate-assets-infrastructure-apps-and-data"></a>Migrar ativos (infraestrutura, aplicativos e dados)
 
 Nesta fase da jornada, você usa a saída da fase de avaliação para iniciar a migração do ambiente. Este guia ajuda a identificar as ferramentas apropriadas para alcançar um "estado finalizado", incluindo ferramentas nativas, de terceiros e de gerenciamento de projetos.
+
+<!-- markdownlint-disable MD025 -->
 
 # <a name="native-migration-toolstabtools"></a>[Ferramentas de migração nativas](#tab/Tools)
 
@@ -44,7 +46,7 @@ Para executar uma migração usando as Migrações para Azure, siga essas etapas
 1. Selecione **Adicionar uma ferramenta** para iniciar o projeto de migração.
 1. Selecione a assinatura, o grupo de recursos e a região onde a migração será hospedada.
 1. Clique em **Selecionar ferramenta de avaliação** > **Migrações para Azure: Avaliação de Servidor** >  **Avançar**.
-1. Selecione **Revisar + adicionar ferramenta(s)** e confirme a configuração. Clique em **Adicionar ferramenta(s)** para iniciar o trabalho de criação do projeto de migração e registrar as soluções selecionadas.
+1. Selecione **Examinar + adicionar ferramentas** e verifique a configuração. Clique em **Adicionar ferramentas** para iniciar o trabalho para criar o projeto de migração e registrar as soluções selecionadas.
 
 <!-- TODO: TBA -->
 
@@ -202,7 +204,9 @@ A ferramenta de Migração de Dados do Azure Cosmos DB pode importar dados de v�
 
 Para obter mais informações, consulte:
 
-- [Ferramenta de Migração de Dados do Cosmos DB](https://docs.microsoft.com/en-us/azure/cosmos-db/import-data)
+- [Ferramenta de Migração de Dados do Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/import-data)
+
+<!-- markdownlint-disable MD025 -->
 
 # <a name="third-party-migration-toolstabthird-party-tools"></a>[Ferramentas de migração de terceiros](#tab/third-party-tools)
 
@@ -236,7 +240,7 @@ O Movere é uma solução de descoberta que fornece os dados e as informações 
 
 É possível escolher entre uma variedade de ferramentas e experientes parceiros integradores de sistemas para dar suporte às migrações do Azure Cosmos DB para seus requisitos de bancos de dados NoSQL.
 
-[Saiba mais](https://docs.microsoft.com/en-us/azure/cosmos-db/partners-migration-cosmosdb#migration-tools)
+[Saiba mais](https://docs.microsoft.com/azure/cosmos-db/partners-migration-cosmosdb#migration-tools)
 
 Visite o [Centro de Migração do Azure](https://azure.microsoft.com/migration/support) para descobrir organizações que oferecem soluções de tecnologia de parceiros prontas para uso que se ajustam aos seus cenários de migração e saber mais sobre ferramentas adicionais de migração de terceiros e serviços de suporte.
 

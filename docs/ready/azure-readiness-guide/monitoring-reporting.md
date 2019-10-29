@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: dc2df86dae7e820527d5f4b1d26fa69366b55b59
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 5cb88bba1b82bf4255fb13f9ac9d415018316dec
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022068"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548890"
 ---
 # <a name="monitoring-and-reporting-in-azure"></a>Monitoramento e relatórios no Azure
 
@@ -139,7 +139,7 @@ A Central de Segurança do Azure é oferecida em duas camadas de serviço: gratu
 
 **Experimente o nível Standard gratuitamente pelos primeiros 30 dias.**
 
-Depois de ativar e configurar as políticas de segurança para os recursos de uma assinatura, você pode exibir o estado de segurança de seus recursos e todos os problemas na seção **Prevenção**. Você também pode exibir uma lista desses problemas no bloco **Recomendações** .
+Depois de ativar e configurar as políticas de segurança para os recursos de uma assinatura, você poderá exibir o estado de segurança de seus recursos e todos os problemas na seção **Prevenção**. Você também pode exibir uma lista desses problemas no bloco **Recomendações** .
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Security/SecurityMenuBlade/SecurityMenuBlade/0]" submitText="Explore Azure Security Center" :::
 

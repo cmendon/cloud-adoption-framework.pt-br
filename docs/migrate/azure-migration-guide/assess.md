@@ -10,18 +10,20 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 78c82a2cb8793f8b5f0b90b1958fb4a83e3da935
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 0d1918f60f6bfe2a6d458b83b5838a8776af51a7
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224395"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549261"
 ---
 # <a name="assess-the-digital-estate"></a>Avaliar bens digitais
 
 Em uma migração ideal, todos os ativos (infraestrutura, aplicativo ou dados) seriam compatíveis com uma plataforma de nuvem e prontos para migração. Mas na realidade, nem tudo deve ser migrado para a nuvem. Além disso, nem todo recurso é compatível com plataformas de nuvem. Antes de migrar uma carga de trabalho para a nuvem, é importante avaliar a carga de trabalho e cada ativo relacionado (infraestrutura, aplicativos e dados).
 
 Os recursos desta seção ajudarão você a avaliar seu ambiente para determinar sua adequação à migração e quais métodos devem ser considerados.
+
+<!-- markdownlint-disable MD025 -->
 
 # <a name="toolstabtools"></a>[Ferramentas](#tab/Tools)
 
@@ -39,7 +41,7 @@ Para começar a usar uma avaliação de migração do servidor usando as Migraç
 
 1. Selecione **Migrações para Azure**.
 1. Em **Visão Geral**, clique em **Avaliar emigrar servidores**.
-1. Selecione **Adicionar ferramenta(s)** .
+1. Selecione **Adicionar ferramentas**.
 1. Em **Descobrir, avaliar e migrar servidores**, clique em **Adicionar ferramentas**.
 1. Em **Migrar projeto**, selecione sua assinatura do Azure e crie um grupo de recursos, caso não tenha um.
 1. Em **Detalhes do Projeto**, especifique o nome do projeto e a geografia em que deseja criar o projeto e clique em **Avançar**.

@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 38e412bda80e68b0c5cb7e53ad52c078fa39f8fb
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: 219f5868f8fa8f3f5d26fa4c3c63db7786479a2c
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378425"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72683833"
 ---
 # <a name="migration-focused-cost-control-mechanisms"></a>Mecanismos de controle de custo focados na migração
 
@@ -31,7 +31,7 @@ As ferramentas neste artigo incluem:
 > - Gerenciamento de Custos do Azure
 > - Assistente do Azure
 
-Os processos descritos neste artigo também podem exigir uma parceria com gerentes de TI, de finanças ou com proprietários de aplicativos de linha de negócios. Para obter orientações sobre parcerias com essas funções, confira no artigo sobre Cloud Adoption Framework como estabelecer uma organização com consciência de custo (ele estará disponível no terceiro trimestre de 2019).
+Os processos descritos neste artigo também podem exigir uma parceria com gerentes de TI, de finanças ou com proprietários de aplicativos de linha de negócios.
 
 <!-- markdownlint-disable MD024 MD025 -->
 
@@ -54,14 +54,14 @@ Essas calculadoras de custo manuais podem ser usadas individualmente para prever
 
 As Migrações para Azure calculam **estimativas de custo mensal** com base em dados capturados pelo coletor e pelo mapa do serviço. As etapas a seguir carregam as estimativas de custo:
 
-1. Navegue até a folha Avaliação das Migrações para Azure no portal.
-1. Na página **Visão geral** do projeto, selecione **+Criar avaliação**.
-1. Clique em **Exibir tudo** para examinar as propriedades da avaliação.
-1. Crie o grupo e especifique um nome de grupo.
-1. Selecione as máquinas que deseja adicionar ao grupo.
-1. Clique em **Criar avaliação**, para criar o grupo e a avaliação.
-1. Depois que a avaliação é criada, é possível exibi-la em Visão geral > Painel.
-1. Na seção Detalhes da Avaliação na navegação da folha, selecione **Detalhes de custo**.
+1. Navegue até a Avaliação das Migrações para Azure no portal.
+2. Na página **Visão geral** do projeto, selecione **+Criar avaliação**.
+3. Clique em **Exibir tudo** para examinar as propriedades da avaliação.
+4. Crie o grupo e especifique um nome de grupo.
+5. Selecione as máquinas que deseja adicionar ao grupo.
+6. Clique em **Criar avaliação**, para criar o grupo e a avaliação.
+7. Depois que a avaliação é criada, é possível exibi-la em Visão geral > Painel.
+8. Na seção Detalhes da Avaliação da navegação do portal, selecione **Detalhes de custo**.
 
 A estimativa resultante, ilustrada abaixo, identifica os custos mensais de computação e armazenamento, que geralmente representam a maior parte dos custos de nuvem.
 
@@ -83,9 +83,9 @@ Dentro de 24 horas da migração de ativos (infraestrutura, aplicativos e dados)
 
 As etapas a seguir fornecem recomendações de custo para ativos (infraestrutura, aplicativos e dados) em suas assinaturas atuais:
 
-1. Navegue até a folha **Assistente do Azure** no portal. Para fazer isso, selecione **Assistente** no painel de navegação esquerdo do portal do Azure. Se não vir o Assistente no painel esquerdo, selecione **Todos os serviços**. No painel do menu de serviços, em **Monitoramento e Gerenciamento**, selecione **Assistente**.
-1. O painel Assistente exibirá um resumo das suas recomendações para todas as assinaturas selecionadas. Você pode escolher as assinaturas para as quais você deseja que as recomendações sejam exibidas usando a lista suspensa de filtro de assinatura.
-1. Para ver as recomendações de custo, selecione a guia Custo.
+1. Navegue até **Assistente do Azure** no portal. Para fazer isso, selecione **Assistente** no painel de navegação esquerdo do portal do Azure. Se não vir o Assistente no painel esquerdo, selecione **Todos os serviços**. No painel do menu de serviços, em **Monitoramento e Gerenciamento**, selecione **Assistente**.
+2. O painel Assistente exibirá um resumo das suas recomendações para todas as assinaturas selecionadas. Você pode escolher as assinaturas para as quais você deseja que as recomendações sejam exibidas usando a lista suspensa de filtro de assinatura.
+3. Para ver as recomendações de custo, selecione a guia Custo.
 
 ## <a name="azure-cost-management"></a>Gerenciamento de Custos do Azure
 
@@ -95,10 +95,10 @@ Pré-requisitos: O restante desta guia pressupõe que o leitor concluiu a config
 
 As etapas a seguir carregarão dados de análise de custo do Gerenciamento de Custos do Azure para suas assinaturas:
 
-1. Navegue até a folha **Gerenciamento de Custos + Cobrança** no portal. Se não vir Gerenciamento de Custos + Cobrança no painel esquerdo, clique em **Todos os serviços**. No painel do menu de serviço, em **Monitoramento e Gerenciamento**, clique em **Gerenciamento de Custos + Cobrança**.
-1. Na folha Gerenciamento de Custos + Cobrança, selecione **Gerenciamento de Custos** no painel de navegação esquerdo para que a folha aberta comece a analisar e otimizar os custos da nuvem.
-1. Na folha Gerenciamento de Custos, selecione **Análise de custo**.
-    1. Use o item **Escopo** para alterar para um escopo diferente na análise de custo.
+1. Navegue até **Gerenciamento de Custos + Cobrança** no portal. Se não vir Gerenciamento de Custos + Cobrança no painel esquerdo, clique em **Todos os serviços**. No painel do menu de serviço, em **Monitoramento e Gerenciamento**, clique em **Gerenciamento de Custos + Cobrança**.
+2. Em Gerenciamento de Custos + Cobrança, selecione **Gerenciamento de Custos** no painel de navegação esquerdo para começar a analisar e otimizar os custos da nuvem.
+3. Em Gerenciamento de Custos, selecione **Análise de custo**.
+    a. Use o item **Escopo** para alterar para um escopo diferente na análise de custo.
 
 Essa análise permitirá que você examine os custos totais, o orçamento (se disponível) e os custos acumulados. Cada cálculo pode ser exibido por serviço, por recurso e com o passar do tempo. O mais importante é que os custos podem ser analisados segundo marcas. Nomear e marcar adequadamente os ativos (infraestrutura, aplicativos e dados) é o ponto de partida fundamental de todos os processos sólidos de governança e gerenciamento de custos. Marcações adequadas permitem um melhor gerenciamento dos custos e impactos mais claros do desempenho e das otimizações de custo.
 
