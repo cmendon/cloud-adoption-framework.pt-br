@@ -9,16 +9,16 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 layout: LandingPage
-ms.openlocfilehash: 3f66a3ef43c16c9a331fabdaf718c85f9f131d8a
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: 5a53b72747d20e8b7b2d3ca25a6ffc29b46e1203
+ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72682705"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72979883"
 ---
 # <a name="cloud-management-in-the-cloud-adoption-framework"></a>Gerenciamento de nuvem na Cloud Adoption Framework
 
-A oferta de uma [estratégia de nuvem](../strategy/index.md) requer planejamento, preparação e adoção sólidos. Mas é a operação contínua dos ativos digitais que fornece resultados de negócios tangíveis. Sem um plano para operações confiáveis e bem gerenciadas das soluções de nuvem, esses esforços resultarão em pouco valor. Os exercícios a seguir ajudarão a desenvolver as abordagens técnicas e de negócios necessárias para fornecer gerenciamento de nuvem que capacita operações contínuas.
+A oferta de uma [estratégia de nuvem](../strategy/index.md) requer planejamento, preparação e adoção sólidos. Mas é a operação contínua dos ativos digitais que fornece resultados de negócios tangíveis. Sem um plano para operações confiáveis e bem gerenciadas das soluções de nuvem, esses esforços resultarão em pouco valor. Os exercícios a seguir ajudam a desenvolver as abordagens técnicas e de negócios necessárias para fornecer gerenciamento de nuvem que capacita operações contínuas.
 
 ## <a name="getting-started"></a>Introdução
 
@@ -76,7 +76,7 @@ Documente as cargas de trabalho compatíveis para estabelecer compromissos opera
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>Expandir a linha de base de gerenciamento</h3>
-Com base nos compromissos de negócios e nas decisões de operações, aproveite as práticas recomendadas incluídas para implementar as ferramentas de gerenciamento de nuvem necessárias.
+Com base nos compromissos de negócios e nas decisões de operações, use as melhores práticas incluídas para implementar as ferramentas de gerenciamento de nuvem necessárias.
                         </div>
                     </div>
                 </div>
@@ -95,7 +95,7 @@ Com base nos compromissos de negócios e nas decisões de operações, aproveite
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>Operações avançadas e princípios de design</h3>
-As plataformas ou cargas de trabalho que exigem um nível mais alto de compromisso de negócios podem exigir uma análise mais profunda da arquitetura para satisfazer os compromissos de resiliência e de confiabilidade assumidos.
+As plataformas ou cargas de trabalho que requerem um nível mais alto de compromisso de negócios podem exigir uma análise mais profunda da arquitetura para satisfazer os compromissos de resiliência e de confiabilidade assumidos.
                         </div>
                     </div>
                 </div>
@@ -107,7 +107,7 @@ As plataformas ou cargas de trabalho que exigem um nível mais alto de compromis
 
 ## <a name="scalable-cloud-management-methodology"></a>Metodologia de gerenciamento de nuvem escalonável
 
-As etapas acima criam abordagens acionáveis para fornecer a metodologia de gerenciamento da Cloud Adoption Framework.
+As etapas anteriores criam abordagens acionáveis para fornecer a metodologia de gerenciamento da Cloud Adoption Framework.
 
 ![Metodologia de gerenciamento na Cloud Adoption Framework](../_images/manage/caf-manage.png)
 
@@ -120,7 +120,7 @@ Conforme descrito no artigo [alinhamento de negócios](./considerations/business
 As diretrizes nesta seção do Cloud Adoption Framework atendem a duas finalidades:
 
 - Fornecer exemplos de abordagens de gerenciamento de operações acionáveis que representam as experiências comuns normalmente encontradas pelos clientes.
-- Ajudá-lo a criar soluções de gerenciamento personalizadas com base nos compromissos de negócios.
+- Ajudar a criar soluções de gerenciamento personalizadas com base nos compromissos de negócios.
 
 Este conteúdo destina-se para uso pela equipe de operações de nuvem. Também é relevante para os arquitetos de nuvem que precisam desenvolver uma base sólida de princípios de criação em nuvem ou operações de nuvem.
 
@@ -140,7 +140,7 @@ Se você quiser seguir este guia do início ao fim, este conteúdo ajudará a de
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Aplique a metodologia para [estabelecer compromissos comerciais claros](./considerations/business-alignment.md).
+Aplique a metodologia para estabelecer compromissos empresariais claros.
 
 > [!div class="nextstepaction"]
 > [Estabelecer compromissos comerciais claros](./considerations/business-alignment.md)
