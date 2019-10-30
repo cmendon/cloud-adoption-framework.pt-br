@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 0d1918f60f6bfe2a6d458b83b5838a8776af51a7
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 39c756c1d90cc9baf7927b2a0ba02814a82f6031
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549261"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058812"
 ---
 # <a name="assess-the-digital-estate"></a>Avaliar bens digitais
 
@@ -58,7 +58,7 @@ Para começar a usar uma avaliação de migração do servidor usando as Migraç
 
 ::: zone target="docs"
 
-### <a name="read-more"></a>Leia mais
+### <a name="learn-more"></a>Saiba mais
 
 - [Visão geral das Migrações para Azure](https://docs.microsoft.com/azure/migrate/migrate-services-overview)
 - [Migrar servidores físicos ou virtualizados para o Azure](https://docs.microsoft.com/azure/migrate/tutorial-migrate-physical-virtual-machines)
@@ -82,7 +82,7 @@ Para usar a visualização de dependência, você precisa baixar e instalar agen
 
 <!-- markdownlint-disable MD024 -->
 
-### <a name="read-more"></a>Leia mais
+### <a name="learn-more"></a>Saiba mais
 
 - [Usando a solução do Mapa do Serviço no Azure](https://docs.microsoft.com/azure/azure-monitor/insights/service-map)
 - [Mapa do Serviço e Migrações para Azure: Visualização de dependências](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization)
@@ -104,7 +104,7 @@ A lista completa de stakeholders varia para cada projeto de migração. É melho
 
 O estabelecimento de uma equipe central de estratégia em nuvem, criada pensando nesses principais stakeholders de alto nível, pode ajudar a preparar sua organização para a adoção da nuvem e orientar seus esforços gerais de migração para a nuvem. Essa equipe será responsável por entender as tecnologias de nuvem e os processos de migração, identificando a justificativa comercial das migrações e determinando as melhores soluções de alto nível para os esforços de migração. Ela também ajudará a identificar e trabalhar com aplicativos específicos e parceiros comerciais para garantir uma migração bem-sucedida.
 
-Para obter mais informações sobre como preparar sua organização para esforços de migração para a nuvem confira o artigo da Estrutura de Adoção de Nuvem no [alinhamento inicial da organização](../../ready/initial-org-alignment.md).
+Para obter mais informações sobre como preparar sua organização para esforços de migração para a nuvem confira o artigo da Estrutura de Adoção de Nuvem no [alinhamento inicial da organização](../../plan/initial-org-alignment.md).
 
 # <a name="timelinestabtimelines"></a>[Linhas do tempo](#tab/Timelines)
 
