@@ -8,14 +8,14 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: e67d3e0ed1e13fc4c7a5cfdca1bb2f6c138601ba
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 58891a3afcafc9ac160f90027c35aa459ca7636a
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548731"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048014"
 ---
-<!-- markdownlint-disable -->
+<!-- markdownlint-disable MD026 -->
 
 # <a name="what-business-outcomes-are-associated-with-transformation-journeys"></a>Que resultados empresariais estão associados a jornadas de transformação?
 
@@ -29,42 +29,42 @@ Para saber mais sobre os resultados empresariais e o modelo de resultados empres
 
 Eis alguns resultados empresariais que tendem a dar início a conversas com várias personas:
 
-- **Liderança em Finanças**: aumentar a lucratividade e, ao mesmo tempo, conduzir a conformidade.
-- **Marketing**: adquirir e reter clientes, desenvolver reputação.
-- **Vendas**: acelerar as vendas, melhorar o valor de tempo de vida do cliente.
-- **RH**: reter, recrutar e capacitar os funcionários.
+- **Liderança em finanças**: aumentar a lucratividade e, ao mesmo tempo, conduzir a conformidade.
+- **Marketing:** adquirir e reter clientes, desenvolver reputação.
+- **Vendas:** acelerar as vendas, melhorar o valor de tempo de vida do cliente.
+- **Recursos Humanos:** reter, recrutar e capacitar os funcionários.
 
-# <a name="sample-outcomes-by-category"></a>Exemplos de resultados por categoria
+## <a name="sample-outcomes-by-category"></a>Exemplos de resultados por categoria
 
 Falar sobre resultados empresariais pode parecer um idioma estrangeiro para muitas pessoas com mentalidade técnica. Para ajudar a facilitar a tradução, a Microsoft organizou um conjunto de exemplos de resultados dos negócios na [estrutura de resultados dos negócios](../index.md). Use estas amostras para ajudar a inspirar e demonstrar os resultados empresariais que são baseados em percursos de transformação reais.
 
 Para ajudá-lo a encontrar os resultados empresariais com mais facilidade, nós os separamos nas categorias a seguir. Essa abordagem tende a impulsionar conversas sobre a criação de consenso entre todas as unidades de negócios.
 
-## <a name="fiscal-outcomes"></a>Resultados fiscais
+### <a name="fiscal-outcomes"></a>Resultados fiscais
 
 O desempenho financeiro ou fiscal é o resultado empresarial mais claro para muitos líderes empresariais, mas não é o único.
 
 Exiba exemplos de [resultados fiscais](./fiscal-outcomes.md).
 
-## <a name="agility-outcomes"></a>Resultados de agilidade
+### <a name="agility-outcomes"></a>Resultados de agilidade
 
 O ambiente empresarial em constante mudança cobra caro pelo tempo. A capacidade de responder e promover mudanças de mercado com rapidez é a medida fundamental da agilidade empresarial.
 
 Exiba exemplos de [resultados de agilidade](./agility-outcomes.md).
 
-## <a name="reach-outcomes"></a>Resultados de alcance
+### <a name="reach-outcomes"></a>Resultados de alcance
 
 Em um mercado em constante redução, o alcance global (capacidade de dar suporte a usuários e clientes globais) pode ser medido pela conformidade em regiões geográficas relevantes para os negócios.
 
 Exiba resultados relacionados a [alcance global](./reach-outcomes.md).
 
-## <a name="customer-engagement-outcomes"></a>Resultados de participação do cliente
+### <a name="customer-engagement-outcomes"></a>Resultados de participação do cliente
 
 Mercados sociais estão redefinindo o conceito de vencedores e perdedores a um ritmo inédito. Responder às necessidades do usuário é uma medida crucial da participação do cliente.
 
 Leia mais sobre [resultados de participação do cliente](./engagement-outcomes.md).
 
-## <a name="performance-outcomes"></a>Resultados de desempenho
+### <a name="performance-outcomes"></a>Resultados de desempenho
 
 Desempenho e confiabilidade são presumidos. Quando qualquer um deles falta, os danos à reputação podem ser intensos e duradouros.
 
