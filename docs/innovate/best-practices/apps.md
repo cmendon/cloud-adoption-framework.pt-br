@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 86e1cbe87b81bcd68ff2a7e6ad6a4652674c9c5f
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: f930f1b0f228b3969b89319962706104176717cc
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683460"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058623"
 ---
 # <a name="tools-to-engage-via-apps-in-azure"></a>Ferramentas para se envolver por meio de aplicativos no Azure
 
@@ -31,9 +31,9 @@ Para este artigo, suponha que todas as invenções que resultam em um aplicativo
 - **Experiências inteligentes:** Crie experiências modernas usando plataformas de nuvem para impulsionar loops rápidos de implantação e de comentários curtos. Expanda aplicativos Web para Turbine Intelligence ou até mesmo integre bots.
 - **Nativo de nuvem:** Crie uma nova invenção que naturalmente aproveita os recursos de nuvem.
 
-Cada caminho resulta em vantagens e desvantagens de curto e longo prazo. Quando as equipes de governança de nuvem, operações de nuvem e Cloud Center de excelência estão preparados para dar suporte a cada abordagem, a adoção pode ser acelerada com impacto mínimo sobre operações de negócios sustentáveis.
+Cada caminho resulta em vantagens e desvantagens de curto e longo prazo. Quando a equipe de governança de nuvem, a equipe de operações de nuvem e o Cloud Center da equipe de excelência estão preparados para dar suporte a cada abordagem, a adoção pode ser acelerada com impacto mínimo sobre operações de negócios sustentáveis.
 
-## <a name="toolchain"></a>Ferramentas
+## <a name="toolchain"></a>Cadeia de ferramentas
 
 Dependendo do caminho realizado pela equipe de adoção da nuvem, o Azure fornece ferramentas para acelerar a capacidade da equipe de criar com o cliente empatia. A lista a seguir de ofertas do Azure é agrupada com base nos caminhos de decisão acima. Essas ofertas incluem:
 

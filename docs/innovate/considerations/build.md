@@ -8,12 +8,12 @@ ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: ec0df5b7cae458f8f67ec1c62c6598fee9134a04
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.openlocfilehash: 25cc7cac212bffda6d7fa3514de7bb274fc1c17e
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72980097"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058608"
 ---
 # <a name="build-with-customer-empathy"></a>Criar com empatia do cliente
 
@@ -58,13 +58,13 @@ Durante cada iteração de um loop de comentários de compilação-medida-aprend
 
 Um MVP é a menor unidade de esforço (invenção, engenharia, desenvolvimento de aplicativos ou arquitetura de dados) necessária para criar uma solução suficiente para aprender _com o cliente_. O objetivo de cada MVP é testar algumas ou todas as mesmas, e receber comentários diretamente do cliente. A saída não é um aplicativo bonito com todos os recursos necessários para alterar seu setor. A saída desejada de cada iteração é uma oportunidade de aprendizado&mdash;uma chance de testar mais profundamente uma hipótese.
 
-_Timeboxing_ é uma maneira padrão de garantir que um produto permaneça mínimo. Por exemplo, certifique-se de que sua equipe de desenvolvimento pense que a solução pode ser criada em uma única iteração para permitir testes rápidos. Para entender melhor usando a velocidade, as iterações e as versões para definir o que significa mínimo, consulte [velocidade de planejamento, iterações, versão e caminhos de iteração](../../plan/iteration-paths.md).
+_Timeboxing_ é uma maneira padrão de garantir que um produto permaneça enxuto. Por exemplo, certifique-se de que sua equipe de desenvolvimento pense que a solução pode ser criada em uma única iteração para permitir testes rápidos. Para entender melhor usando a velocidade, as iterações e as versões para definir o que significa mínimo, consulte [velocidade de planejamento, iterações, versão e caminhos de iteração](../../plan/iteration-paths.md).
 
 ### <a name="reduce-complexity-and-delay-technical-spikes"></a>Reduza a complexidade e adie os picos técnicos
 
 As [disciplinas de invenção](./invention.md) encontradas na [metodologia inovar](./index.md) descrevem a funcionalidade que muitas vezes é necessária para fornecer uma inovação madurada ou uma solução MVP pronta para o dimensionamento. Use essas disciplinas como um guia de longo prazo para a inclusão de recursos. Da mesma forma, use-os como um guia de preventiva durante o teste inicial do valor do cliente e da empatia em sua solução.
 
-A amplitude de recursos e as diferentes disciplinas de inovação não podem ser criadas em uma única iteração. Pode levar várias versões para uma solução MVP incluir a complexidade de várias disciplinas. Dependendo do investimento em desenvolvimento, pode haver várias equipes paralelas trabalhando em diferentes disciplinas para testar várias. Embora seja inteligente manter o alinhamento da arquitetura entre essas equipes, não é recomendável tentar criar soluções complexas e integradas até que as mesmas pessoas de valor possam ser validadas.
+A amplitude de recursos e as diferentes disciplinas de invenção não podem ser criadas em uma única iteração. Pode levar várias versões para uma solução MVP incluir a complexidade de várias disciplinas. Dependendo do investimento em desenvolvimento, pode haver várias equipes paralelas trabalhando em diferentes disciplinas para testar várias. Embora seja inteligente manter o alinhamento da arquitetura entre essas equipes, não é recomendável tentar criar soluções complexas e integradas até que as mesmas pessoas de valor possam ser validadas.
 
 A complexidade é melhor detectada na frequência ou no volume de *picos técnicos*. Os picos técnicos são esforços para criar soluções técnicas que não podem ser facilmente testadas com os clientes. Quando o valor do cliente e o empatia do cliente são não testados, os picos técnicos representam um risco de inovação e devem ser minimizados. Para os tipos de soluções testadas e maduras encontradas em um esforço de migração, os picos técnicos podem ser comuns em toda a adoção. No entanto, eles atrasam o teste de hipóteses em esforços de inovação e devem ser adiados sempre que possível.
 
@@ -84,7 +84,7 @@ Normalmente, uma solução MVP consiste em uma solução de dados ou aplicativo 
 - Um processo manual que recria os benefícios do aplicativo a seguir.
 - Um wireframe ou vídeo detalhado o suficiente para permitir que o cliente interaja.
 
-Desenvolver um MVP não deve exigir grandes quantidades de investimento em desenvolvimento. Preferivelmente, o investimento deve ser tão restrito quanto possível para minimizar o número de subprocessos que estão sendo testados ao mesmo tempo. Em seguida, em cada iteração e em cada versão, a solução é intencionalmente aprimorada em direção a uma solução pronta para dimensionamento que representa várias disciplinas de inovação.
+Desenvolver um MVP não deve exigir grandes quantidades de investimento em desenvolvimento. Preferivelmente, o investimento deve ser tão restrito quanto possível para minimizar o número de subprocessos que estão sendo testados ao mesmo tempo. Em seguida, em cada iteração e em cada versão, a solução é intencionalmente aprimorada em direção a uma solução pronta para dimensionamento que representa várias disciplinas de invenção.
 
 ### <a name="accelerate-mvp-development"></a>Acelere o desenvolvimento do MVP
 

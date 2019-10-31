@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 8c052b5a9c3745a1d253b533086a9fdf4d86eae9
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: 5459d775051b831112029fe1502a62a13c21e1c2
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967806"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058773"
 ---
 # <a name="governance-design-for-multiple-teams"></a>Design de governança para várias equipes
 
@@ -29,24 +29,24 @@ Esses requisitos são:
 - Suporte para vários **ambientes**. Um ambiente é um agrupamento lógico de recursos, como máquinas virtuais, redes virtuais e serviços de roteamento de tráfego de rede. Esses grupos de recursos têm requisitos de segurança e gerenciamento semelhantes e, normalmente, são usados para uma finalidade específica, como teste ou produção. Neste exemplo, o requisito é para quatro ambientes:
   - Um **ambiente de infraestrutura compartilhada** que inclui recursos compartilhados por cargas de trabalho em outros ambientes. Por exemplo, uma rede virtual com uma sub-rede do gateway que fornece conectividade para locais.
   - Um **ambiente de produção** com as políticas de segurança mais restritivas. Pode incluir cargas de trabalho voltadas para o ambiente interno ou externo.
-  - Um **ambiente não de produção** para desenvolvimento e teste de trabalho. Esse ambiente tem políticas de segurança, conformidade e custo que diferem no ambiente de produção. No Azure, isso assume a forma de uma assinatura Desenvolvimento/Teste Enterprise.
+  - Um **ambiente de pré-produção** para desenvolvimento e teste de trabalho. Esse ambiente tem políticas de segurança, conformidade e custo que diferem no ambiente de produção. No Azure, isso assume a forma de uma assinatura Desenvolvimento/Teste Enterprise.
   - Um **ambiente de área restrita** para prova de conceito e fins educacionais. Esse ambiente é normalmente atribuído por funcionário que participa de atividades de desenvolvimento e tem controles de segurança operacionais e de procedimentos estritos em vigor para evitar dados corporativos do pouso aqui. No Azure, eles assumem a forma de assinaturas do Visual Studio. Essas assinaturas também _não_ devem estar vinculadas ao Azure Active Directory empresarial.
 - Um **modelo de permissões de privilégio mínimo** no qual os usuários não têm permissões por padrão. O modelo deve oferecer suporte ao seguinte:
-  - Um único usuário confiável (uma conta de quase serviço) no escopo da assinatura com permissão para atribuir direitos de acesso ao recurso.
+  - Um único usuário confiável (Tratado como uma conta de serviço) no escopo da assinatura com permissão para atribuir direitos de acesso ao recurso.
   - Por padrão, todos os proprietários de carga de trabalho têm seu acesso negado aos recursos. Os direitos de acesso ao recurso são concedidos explicitamente pelo único usuário confiável no escopo do grupo de recursos.
   - Acesso de gerenciamento para os recursos de infraestrutura compartilhada limitados aos proprietários da infraestrutura compartilhada.
   - Acesso de gerenciamento para cada carga de trabalho restrita ao proprietário da carga de trabalho (em produção) e níveis crescentes de controle conforme o desenvolvimento aumenta de desenvolvimento para teste até a produção.
   - A empresa não deseja ter que gerenciar funções independentemente em cada um dos três ambientes principais e, portanto, requer o uso de apenas [funções internas](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles) disponíveis no RBAC (controle de acesso baseado em função) do Azure. Se a empresa absolutamente requer funções RBAC personalizadas, processos adicionais seriam necessários para sincronizar funções personalizadas entre os três ambientes.
 - Custo de controle por nome de proprietário de carga de trabalho, ambiente ou ambos.
 
-## <a name="identity-management"></a>Gerenciamento de identidades
+## <a name="identity-management"></a>Gerenciamento de identidade
 
 Antes de podermos projetar o gerenciamento de identidades para o seu modelo de controle, é importante entender as quatro áreas principais que englobam:
 
-- **Administrar** Os processos e as ferramentas para criar, editar e excluir a identidade do usuário.
+- **Administração:** Os processos e as ferramentas para criar, editar e excluir a identidade do usuário.
 - **Autenticação:** Verificando a identidade do usuário validando as credenciais, como um nome de usuário e uma senha.
-- **Authorization:** Determinar quais recursos um usuário autenticado pode acessar ou quais operações eles têm permissão para executar.
-- **Auditoria** Revisão periódica de logs e outras informações para descobrir problemas de segurança relacionados à identidade do usuário. Isso inclui a revisão de padrões de uso suspeito, periodicamente revisando as permissões de usuário para verificar se que elas estão corretas e outras funções.
+- **Autorização:** Determinar quais recursos um usuário autenticado pode acessar ou quais operações eles têm permissão para executar.
+- **Auditoria:** Revisão periódica de logs e outras informações para descobrir problemas de segurança relacionados à identidade do usuário. Isso inclui a revisão de padrões de uso suspeito, periodicamente revisando as permissões de usuário para verificar se que elas estão corretas e outras funções.
 
 Há apenas um serviço confiável para o Azure para identidade, que é o Azure Active Directory (Azure AD). Vamos adicionar usuários ao e Microsoft Azure Active Directory usá-lo para todas as funções listadas acima. Mas, antes de examinarmos como configuraremos o Microsoft Azure Active Directory, é importante entender as contas com privilégios que são usadas para gerenciar o acesso a esses serviços.
 
@@ -59,11 +59,13 @@ As identidades de usuário do proprietário da conta do Azure e do administrador
 
 O proprietário da conta do Azure tem permissão para criar, atualizar e excluir assinaturas:
 
-conta ![Azure com o Gerenciador de contas do Azure e o administrador global do Azure AD @ no__t-1*Figura 1-uma conta do Azure com um gerente de conta e um administrador global do Azure AD.*
+![conta do Azure com o Gerenciador de contas do Azure e o administrador global do Azure AD](../../_images/govern/design/governance-3-0.png)
+*Figura 1-uma conta do Azure com um gerente de conta e um administrador global do Azure AD.*
 
 O **administrador global** do Azure AD tem permissão para criar contas de usuário:
 
-conta do ![Azure com o Gerenciador de contas do Azure e o administrador global do Azure AD @ no__t-1*Figura 2-o administrador global do Azure ad cria as contas de usuário necessárias no locatário.*
+![conta do Azure com o Gerenciador de contas do Azure e o administrador global do Azure AD](../../_images/govern/design/governance-3-0a.png)
+*Figura 2 – o administrador global do Azure ad cria as contas de usuário necessárias no locatário.*
 
 As duas primeiras contas, **proprietário de carga de trabalho do app1** e **proprietário de carga de trabalho do app2** são associadas a um indivíduo em sua organização responsável por gerenciar uma carga de trabalho. A conta **operações de rede** pertence à pessoa responsável pelos recursos de infraestrutura compartilhada. Por fim, a conta do **proprietário da assinatura** está associada à pessoa responsável pela propriedade de assinaturas.
 
@@ -80,35 +82,37 @@ Portanto, para criar um modelo de acesso de privilégios mínimos, você precisa
 Vamos dar uma olhada em dois modelos de permissão de exemplo para entender esse conceito um pouco melhor. No primeiro exemplo, o modelo confia somente no administrador de serviço para criar grupos de recursos. No segundo exemplo, o modelo atribui a função de proprietário interno para o proprietário de cada carga de trabalho no escopo da assinatura.
 
 Em ambos os exemplos, há um administrador de serviço de assinatura que é atribuído à função de proprietário interna no escopo da assinatura. Lembre-se de que a função de proprietário interna concede todas as permissões, incluindo o gerenciamento de acesso a recursos.
-administrador do serviço ![subscription com a função de proprietário @ no__t-1*Figura 3-uma assinatura com um administrador de serviços atribuiu a função de proprietário interna.*
+![administrador do serviço de assinatura com a função de proprietário](../../_images/govern/design/governance-2-1.png)
+*Figura 3-uma assinatura com um administrador de serviços atribuiu a função de proprietário interna.*
 
 1. No primeiro exemplo, temos o **proprietário da carga de trabalho A** sem permissões no escopo de assinatura — ele não tem direitos de gerenciamento de acesso de recursos por padrão. Esse usuário deseja implantar e gerenciar os recursos para sua carga de trabalho. Eles devem contatar o **administrador de serviço** para solicitar a criação de um grupo de recursos.
     ![criação de solicitações de proprietário de carga de trabalho do grupo de recursos A](../../_images/govern/design/governance-2-2.png)
-2. O **administrador de serviço** examina a solicitação e cria o **grupo de recursos A**. Neste ponto, o **proprietário da carga de trabalho A** ainda não tem permissão para fazer nada.
+2. O **administrador de serviços** revisa sua solicitação e cria **o grupo de recursos A**. Neste ponto, **o proprietário da carga de trabalho** ainda não tem permissão para fazer nada.
     ![administrador de serviço cria o grupo de recursos A](../../_images/govern/design/governance-2-3.png)
 3. O **administrador de serviço** adiciona **proprietário da carga de trabalho A** para **do grupo de recursos A** e atribui o [função colaborador interna](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor). A função de colaborador concede todas as permissões no **grupo de recursos A**, exceto o gerenciamento de permissão de acesso.
     ![O administrador de serviços adiciona o proprietário da carga de trabalho a para o grupo de recursos a](../../_images/govern/design/governance-2-4.png)
-4. Vamos supor que o **proprietário da carga de trabalho A** tenha um requisito para um par de membros da equipe para exibir o CPU e o tráfego de rede de dados como parte do planejamento de capacidade para a carga de trabalho de monitoramento. Como o **proprietário da carga de trabalho A** é atribuído à função de colaborador, ele não tem permissão para adicionar um usuário ao **grupo de recursos A**. Eles devem enviar esta solicitação para o **administrador de serviços**.
+4. Vamos supor que o **proprietário da carga de trabalho A** tenha um requisito para um par de membros da equipe para exibir o CPU e o tráfego de rede de dados como parte do planejamento de capacidade para a carga de trabalho de monitoramento. Como o **proprietário da carga de trabalho** a recebe a função de colaborador, ele não tem permissão para adicionar um usuário ao **grupo de recursos a**. Eles devem enviar essa solicitação ao **administrador de serviços**.
     ![o proprietário da carga de trabalho solicita que colaboradores de carga de trabalho sejam adicionados ao grupo de recursos](../../_images/govern/design/governance-2-5.png)
-5. O **administrador de serviço** examina a solicitação e adiciona os dois **colaborador da carga de trabalho** usuários **do grupo de recursos A**. Nenhum desses dois usuários exige a permissão para gerenciar recursos, portanto, eles recebem a [função de leitor interna](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor).
+5. O **administrador de serviços** revisa a solicitação e adiciona os dois usuários de **colaborador de carga de trabalho** ao **grupo de recursos a**. Nenhum desses dois usuários exigem permissão para gerenciar recursos, portanto, eles recebem a [função de leitor interna](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor).
     ![o administrador de serviço adiciona colaboradores da carga de trabalho ao grupo de recursos A](../../_images/govern/design/governance-2-6.png)
 6. Em seguida, o **proprietário da carga de trabalho B** também requer um grupo de recursos conter os recursos para sua carga de trabalho. Assim como acontece com **proprietário da carga de trabalho A**, **proprietário da carga de trabalho B** inicialmente não tem permissão para realizar qualquer ação no escopo de assinatura para que eles devem enviar uma solicitação para o **administrador de serviços**.
     ![criação de solicitações de proprietário de carga de trabalho B do grupo de recursos B](../../_images/govern/design/governance-2-7.png)
-7. O **administrador de serviço** examina a solicitação e cria o **grupo de recursos B**.  ![Administrador de Serviços cria o grupo de recursos B](../../_images/govern/design/governance-2-8.png)
+7. O **administrador de serviços** revisa a solicitação e cria o **grupo de recursos B**.  ![administrador de serviço cria o grupo de recursos B](../../_images/govern/design/governance-2-8.png)
 8. Em seguida, o **administrador do serviço** adiciona o proprietário da **carga de trabalho b** ao **grupo de recursos b** e atribui a função de colaborador interna.
     ![O administrador de serviços adiciona o proprietário da carga de trabalho B ao grupo de recursos B](../../_images/govern/design/governance-2-9.png)
 
 Neste ponto, cada um dos proprietários da carga de trabalho é isolado em seu próprio grupo de recursos. Nenhum dos proprietários da carga de trabalho ou membros da equipe tem acesso de gerenciamento para os recursos em outro grupo de recursos.
 
-![subscription com os grupos de recursos A e B @ no__t-1*Figura 4-uma assinatura com dois proprietários de carga de trabalho isoladas com seu próprio grupo de recursos.*
+![assinatura com os grupos de recursos A e B](../../_images/govern/design/governance-2-10.png)
+*Figura 4-uma assinatura com dois proprietários de carga de trabalho isoladas com seu próprio grupo de recursos.*
 
-Esse modelo é um modelo de privilégios mínimos @ no__t-0each usuário recebe a permissão correta no escopo de gerenciamento de recursos correto.
+Esse modelo é um modelo de privilégios mínimos&mdash;cada usuário recebe a permissão correta no escopo de gerenciamento de recursos correto.
 
 No entanto, considere a possibilidade de que todas as tarefas neste exemplo sejam executadas pelo **administrador de serviço**. Enquanto esse é um exemplo simples e não parece ser um problema porque não havia apenas dois proprietários da carga de trabalho, é fácil imaginar que os tipos de problemas que possam resultar de uma organização de grande porte. Por exemplo, o **administrador de serviço** pode se tornar um afunilamento com uma grande lista de pendências de solicitações que resultar em atrasos.
 
 Vamos dar uma olhada no segundo exemplo que reduz o número de tarefas executadas pelo **administrador de serviço**.
 
-1. Nesse modelo, o **proprietário da carga de trabalho** a recebe a função de proprietário interna no escopo da assinatura, permitindo que eles criem seu próprio grupo **de recursos: grupo de recursos A**.  ![O administrador de serviços adiciona um proprietário da carga de trabalho A à assinatura](../../_images/govern/design/governance-2-11.png)
+1. Nesse modelo, o **proprietário da carga de trabalho** a recebe a função de proprietário interna no escopo da assinatura, permitindo que eles criem seu próprio grupo **de recursos: grupo de recursos A**.  ![administrador de serviço adiciona a assinatura do proprietário de carga de trabalho a a](../../_images/govern/design/governance-2-11.png)
 2. Quando **o grupo de recursos a** é criado, o **proprietário da carga de trabalho a** é adicionado por padrão e herda a função de proprietário interna do escopo da assinatura.
     ![O proprietário da carga de trabalho A cria o grupo de recursos A](../../_images/govern/design/governance-2-12.png)
 3. A função de proprietário interna concede ao **proprietário da carga de trabalho uma** permissão para gerenciar o acesso ao grupo de recursos. O **proprietário da carga de trabalho a** adiciona dois **colaboradores de carga de trabalho** e atribui a função de leitor interna a cada um deles.
@@ -120,7 +124,8 @@ Vamos dar uma olhada no segundo exemplo que reduz o número de tarefas executada
 
 Observe que, neste modelo, o **administrador de serviço** executou ações menos do que no primeiro exemplo, devido a delegação de acesso de gerenciamento para cada um dos proprietários da carga de trabalho individuais.
 
-![subscription com grupos de recursos A e B @ no__t-1*Figura 5-uma assinatura com um administrador de serviços e dois proprietários de carga de trabalho, todos atribuídos à função de proprietário interna.*
+![assinatura com grupos de recursos A e B](../../_images/govern/design/governance-2-16.png)
+*Figura 5-uma assinatura com um administrador de serviços e dois proprietários de carga de trabalho, todos atribuídos à função de proprietário interna.*
 
 No entanto, porque ambos **proprietário da carga de trabalho A** e **proprietário da carga de trabalho B** são atribuídos à função de proprietário interno no escopo de assinatura, eles terão cada herdadas a função de proprietário interno para cada um dos outros recursos grupo. Isso significa que não só têm acesso total aos recursos do outro, eles também são capazes de delegar acesso de gerenciamento para cada um dos outros grupos de recursos. Por exemplo, **proprietário da carga de trabalho B** tem direitos para adicionar qualquer outro usuário para **do grupo de recursos A** e pode atribuir qualquer função a eles, incluindo a função de proprietário interno.
 
@@ -130,11 +135,11 @@ Se compararmos cada exemplo aos requisitos, podemos ver que ambos os exemplos d�
 
 Agora que criamos um modelo de permissões de privilégios mínimos, vamos dar uma olhada em algumas aplicações desses modelos de controle. Lembre-se de que os requisitos devem dar suporte aos três ambientes a seguir:
 
-1. **Infraestrutura compartilhada:** Um grupo de recursos compartilhados por todas as cargas de trabalho. Estes são recursos como gateways de rede, firewalls e serviços de segurança.
-2. **Produção** Vários grupos de recursos que representam várias cargas de trabalho de produção. Esses recursos são usados para hospedar os artefatos de aplicativo voltados para o público e o privado. Esses recursos normalmente têm o controle mais completa e modelos de segurança para proteger os recursos, o código do aplicativo e dados contra acesso não autorizado.
-3. **Não produção:** Vários grupos de recursos que representam várias cargas de trabalho prontas de não produção. Esses recursos são usados para desenvolvimento e teste esses recursos podem ter um modelo de governança mais relaxado para permitir maior agilidade do desenvolvedor. A segurança nesses grupos deve aumentar o nível mais próximo de "produção" que um processo de desenvolvimento de aplicativos obtém.
+1. **Ambiente de infraestrutura compartilhada:** Um grupo de recursos compartilhados por todas as cargas de trabalho. Estes são recursos como gateways de rede, firewalls e serviços de segurança.
+2. **Ambiente de produção:** Vários grupos de recursos que representam várias cargas de trabalho de produção. Esses recursos são usados para hospedar os artefatos de aplicativo voltados para o público e o privado. Esses recursos normalmente têm o controle mais completa e modelos de segurança para proteger os recursos, o código do aplicativo e dados contra acesso não autorizado.
+3. **Ambiente de pré-produção:** Vários grupos de recursos que representam várias cargas de trabalho prontas de não produção. Esses recursos são usados para desenvolvimento e teste esses recursos podem ter um modelo de governança mais relaxado para permitir maior agilidade do desenvolvedor. A segurança nesses grupos deve aumentar o nível mais próximo de "produção" que um processo de desenvolvimento de aplicativos obtém.
 
-Para cada um desses três ambientes, temos um requisito para controlar dados de custo por **proprietário da carga de trabalho**, **ambiente**, ou ambos. Ou seja, você desejará saber o custo contínuo da **infraestrutura compartilhada**, os custos incorridos por indivíduos nos ambientes de **produção** e de **não produção** e, finalmente, o custo geral de **não produção** e  **produção**.
+Para cada um desses três ambientes, temos um requisito para controlar dados de custo por **proprietário da carga de trabalho**, **ambiente**, ou ambos. Ou seja, você desejará saber o custo contínuo da **infraestrutura compartilhada**, os custos incorridos por indivíduos na pré-produção **e nos ambientes de** **produção** e, finalmente, o custo geral de **pré-produção** eambientes de produção.
 
 Você já aprendeu que os recursos estão no escopo em dois níveis: **assinatura** e **grupo de recursos**. Portanto, a primeira decisão é como organizar os ambientes por **assinatura**. Há apenas duas possibilidades: uma única assinatura ou várias assinaturas.
 
@@ -142,11 +147,12 @@ Antes de examinarmos exemplos de cada um desses modelos, vamos examinar a estrut
 
 Lembre-se dos requisitos de que temos um indivíduo na organização que é responsável por assinaturas, e esse usuário possui a conta do **proprietário da assinatura** no locatário do Microsoft Azure Active Directory. No entanto, essa conta não tem permissão para criar assinaturas. Somente o **Proprietário da Conta do Azure** tem permissão para fazer isso:
 
-![An proprietário da conta do Azure cria uma assinatura @ no__t-1*Figura 6-um proprietário da conta do Azure cria uma assinatura.*
+![um proprietário de conta do Azure cria uma assinatura](../../_images/govern/design/governance-3-0b.png)
+*Figura 6-um proprietário de conta do Azure cria uma assinatura.*
 
 Quando a assinatura tiver sido criada, o **proprietário da conta do Azure** pode adicionar o **proprietário da assinatura** de conta para a assinatura com o **proprietário** função:
 
-![The proprietário da conta do Azure adiciona a conta de usuário do proprietário da assinatura à assinatura com a função proprietário. ](../../_images/govern/design/governance-3-0c.png)
+![o proprietário da conta do Azure adiciona a conta de usuário do proprietário da assinatura à assinatura com a função proprietário.](../../_images/govern/design/governance-3-0c.png)
 *Figura 7-o proprietário da conta do Azure adiciona a conta de usuário do **proprietário da assinatura** à assinatura com a função **proprietário** .*
 
 O **proprietário da assinatura** agora pode criar **grupos de recursos** e delegar o gerenciamento de acesso de recursos.
@@ -159,25 +165,25 @@ Primeiro vamos examinar um modelo de gerenciamento de recursos de exemplo usando
 Vamos começar avaliando a primeira opção. Usaremos o modelo de permissões, discutido na seção anterior, com um administrador de serviço de assinatura único que cria grupos de recursos e adiciona os usuários a eles com a função de **colaborador** interno ou de **leitor**.
 
 1. O primeiro grupo de recursos implantados representa o ambiente de **infraestrutura compartilhada**. O **proprietário da assinatura** cria um grupo de recursos para os recursos de infraestrutura compartilhada denominada `netops-shared-rg`.
-    ![Creating um grupo de recursos @ no__t-1
+    ![criar um grupo de recursos](../../_images/govern/design/governance-3-0d.png)
 2. O **proprietário da assinatura** adiciona a conta de **usuário operações de rede** ao grupo de recursos e atribui a função **colaborador**.
-    ![Adding um usuário de operações de rede @ no__t-1
+    ![adicionar um usuário de operações de rede](../../_images/govern/design/governance-3-0e.png)
 3. O **usuário de operações de rede** cria um [gateway VPN](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways) e o configura para se conectar ao dispositivo de VPN local. O usuário **operações de rede** também se aplica a um par de [marcas](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags) para cada um dos recursos: *environment:shared* e *managedBy:netOps*. Quando o **administrador de serviço de assinatura** exportar um custo de relatório, os custos serão alinhados com cada uma dessas marcas. Isso permite que o **administrador de serviço de assinatura** dinamizar os custos usando a marca *environment* e a marca *managedBy*. Observe o contador de **limites de recursos** no lado superior direito da figura. Cada assinatura do Azure tem [limites de serviço](https://docs.microsoft.com/azure/azure-subscription-service-limits), e para ajudá-lo a entender o efeito desses limites Seguiremos o limite de rede virtual para cada assinatura. Há um limite de 1000 redes virtuais por assinatura e depois que a primeira rede virtual é implantada agora há 999 disponíveis.
-    ![Creating um gateway de VPN @ no__t-1
+    ![criar um gateway de VPN](../../_images/govern/design/governance-3-1.png)
 4. Dois ou mais grupos de recursos são implantados. O primeiro é denominado `prod-rg`. Este grupo de recursos está alinhado ao ambiente de produção. O segundo é denominado `dev-rg`e é alinhado ao ambiente de desenvolvimento. Todos os recursos associados às cargas de trabalho de produção são implantados para o ambiente de produção e todos os recursos associados às cargas de trabalho de desenvolvimento e ambiente são implantados para o ambiente de desenvolvimento. Neste exemplo, só implantaremos duas cargas de trabalho para cada um desses dois ambientes para não encontramos qualquer limite de serviço de assinatura do Azure. No entanto, considere que cada grupo de recursos tem um limite de 800 recursos por grupo de recursos. Se você continuar a adicionar as cargas de trabalho para cada grupo de recursos, eventualmente esse limite será atingido.
-    grupos de recursos ![Creating @ no__t-1
+    ![criar grupos de recursos](../../_images/govern/design/governance-3-2.png)
 5. O primeiro **proprietário da carga de trabalho** envia uma solicitação para o **administrador de serviço de assinatura** e é adicionado a cada um dos grupos de recursos dos ambientes de desenvolvimento e de produção com a função **colaborador**. Como você aprendeu anteriormente, o **colaborador** função permite que o usuário execute qualquer operação que não seja a atribuição de uma função para outro usuário. O primeiro **proprietário da carga de trabalho** agora pode criar os recursos associados à sua carga de trabalho.
-    colaboradores ![Adding @ no__t-1
+    ![adicionar colaboradores](../../_images/govern/design/governance-3-3.png)
 6. O primeiro **proprietário da carga de trabalho** cria uma rede virtual em cada dois grupos de recursos com um par de máquinas virtuais em cada um. O primeiro **proprietário da carga de trabalho** se aplica às marcas *environment* e *managedBy* para todos os recursos. Observe que o contador de limite do serviço do Azure está agora em 997 redes virtuais restantes.
-    redes virtuais ![Creating @ no__t-1
+    ![criar redes virtuais](../../_images/govern/design/governance-3-4.png)
 7. Nenhuma das redes virtuais não tem conectividade com o local quando é criada. Nesse tipo de arquitetura, cada rede virtual deve ser emparelhada para a *hub-vnet* no ambiente de **infraestrutura compartilhada**. O emparelhamento de rede virtual cria uma conexão entre duas redes virtuais separadas e permite o tráfego de rede entre eles. Observe que o emparelhamento de rede virtual não é inerentemente transitiva. Um emparelhamento deve ser especificado em cada uma das duas redes virtuais que estão conectadas e se apenas uma das redes virtuais Especifica um emparelhamento a conexão está incompleta. Para ilustrar o efeito disso, o primeiro **proprietário da carga de trabalho** Especifica um emparelhamento entre **prod-vnet** e **hub-vnet**. O emparelhamento primeiro é criado, mas nenhum tráfego flui, já que o emparelhamento complementar do **hub-vnet** para **prod-vnet** ainda não foi especificado. A primeira **proprietário da carga de trabalho** contatos a **operações de rede** solicitações nesse complementares emparelhamento de conexão e usuário.
-    ![Creating uma conexão de emparelhamento @ no__t-1
+    ![criar uma conexão de emparelhamento](../../_images/govern/design/governance-3-5.png)
 8. O usuário **operações de rede** examina a solicitação, a aprova e então especifica o emparelhamento nas configurações para o **hub-vnet**. A conexão de emparelhamento agora está concluída e o tráfego de rede flui entre as duas redes virtuais.
-    ![Creating uma conexão de emparelhamento @ no__t-1
+    ![criar uma conexão de emparelhamento](../../_images/govern/design/governance-3-6.png)
 9. Agora, um segundo **proprietário da carga de trabalho** envia uma solicitação para o **administrador de serviço de assinatura** e é adicionado à existente **produção** e **desenvolvimento**  grupos de recurso de ambiente com o **colaborador** função. O segundo **proprietário da carga de trabalho** tem as mesmas permissões em todos os recursos como o primeiro **proprietário da carga de trabalho** em cada grupo de recursos.
-    colaboradores ![Adding @ no__t-1
+    ![adicionar colaboradores](../../_images/govern/design/governance-3-7.png)
 10. O segundo **proprietário da carga de trabalho** cria uma sub-rede na rede virtual **prod-vnet** e então adicionada duas máquinas virtuais. O segundo **proprietário da carga de trabalho** se aplica às marcas *environment* e *managedBy* para cada recurso.
-    sub-redes ![Creating @ no__t-1
+    ![criar sub-redes](../../_images/govern/design/governance-3-8.png)
 
 Esse modelo de gerenciamento de recursos de exemplo nos permite gerenciar recursos nos três ambientes necessários. Os recursos de infraestrutura compartilhada estão protegidos porque há apenas um usuário na assinatura com a permissão para acessar esses recursos. Cada um dos proprietários da carga de trabalho é capaz de utilizar os recursos de infraestrutura de compartilhamento sem ter qualquer permissão nos próprios recursos compartilhados. No entanto, esse modelo de gerenciamento falha no requisito para o isolamento de carga de trabalho — cada um dos dois **proprietários de carga de trabalho** é capaz de acessar os recursos de carga de trabalho do outro.
 
@@ -190,15 +196,15 @@ Isso significa que o **proprietário de carga de trabalho do app2** teve permiss
 Em seguida, vamos examinar uma única assinatura com vários grupos de recursos para diferentes ambientes e cargas de trabalho. Observe que no exemplo anterior, os recursos para cada ambiente foram facilmente identificáveis porque estavam no mesmo grupo de recursos. Agora que não temos mais esse agrupamento, precisamos contar com uma convenção de nomenclatura do grupo de recursos para fornecer essa funcionalidade.
 
 1. Os recursos de **infraestrutura compartilhada** ainda terão um grupo de recursos separado nesse modelo para que ele permaneça igual. Cada carga de trabalho exige dois grupos de recursos, um para cada um dos ambientes de **desenvolvimento** e de **produção**. Para a primeira carga de trabalho, o **proprietário da assinatura** cria dois grupos de recursos. O primeiro é chamado de **App1-prod-RG** e o segundo é chamado **de App1-dev-RG**. Como discutido anteriormente, essa convenção de nomenclatura identifica os recursos como sendo associados à primeira carga de trabalho, **app1**, e o ambiente de **desenvolvimento** ou de **produção**. Novamente, o proprietário da *assinatura* adiciona o **proprietário da carga de trabalho do App1** ao grupo de recursos com a função de **colaborador** .
-    colaboradores ![Adding @ no__t-1
+    ![adicionar colaboradores](../../_images/govern/design/governance-3-12.png)
 2. Semelhante ao primeiro exemplo, **proprietário de carga de trabalho do app1** implanta uma rede virtual denominada **app1-prod-vnet** para o **produção** ambiente e outro nomeado**app1-dev-vnet** para o **desenvolvimento** ambiente. Novamente, o **proprietário de carga de trabalho do app1** envia uma solicitação para o usuário **operações de rede** para criar uma conexão de emparelhamento. Observe que o **proprietário de carga de trabalho do app1** adiciona as mesmas marcas como no primeiro exemplo e o limite de contador foi reduzido para 997 redes virtuais restantes na assinatura.
-    ![Creating uma conexão de emparelhamento @ no__t-1
+    ![criar uma conexão de emparelhamento](../../_images/govern/design/governance-3-13.png)
 3. Agora, o **proprietário da assinatura** cria dois grupos de recursos para o **proprietário de carga de trabalho do app2**. Seguir as mesmas convenções de **proprietário de carga de trabalho do app1**, os grupos de recursos são nomeados como **app2-prod-rg** e **app2-dev-rg**. O **proprietário da assinatura** adiciona **proprietário de carga de trabalho do app2** para cada um dos grupos de recursos com a função **colaborador**.
-    colaboradores ![Adding @ no__t-1
+    ![adicionar colaboradores](../../_images/govern/design/governance-3-14.png)
 4. O *proprietário da carga de trabalho de app2* implanta redes virtuais e máquinas virtuais para os grupos de recursos com as mesmas convenções de nomenclatura. As marcas são adicionadas e o contador de limite foi reduzido para 995 redes virtuais restantes na *assinatura*.
-    redes virtuais ![Deploying e VMs @ no__t-1
+    ![implantar redes virtuais e VMs](../../_images/govern/design/governance-3-15.png)
 5. O *proprietário da carga de trabalho do app2* envia uma solicitação para o usuário *operações de rede* para o mesmo nível a *app2-prod-vnet* com o *hub vnet*. O usuário de *operações de rede* cria a conexão de emparelhamento.
-    ![Creating uma conexão de emparelhamento @ no__t-1
+    ![criar uma conexão de emparelhamento](../../_images/govern/design/governance-3-16.png)
 
 O modelo de gerenciamento resultante é semelhante ao primeiro exemplo, com várias diferenças importantes:
 
@@ -210,9 +216,9 @@ O modelo de gerenciamento resultante é semelhante ao primeiro exemplo, com vár
 Agora vamos dar uma olhada em um modelo de gerenciamento de recursos usando várias assinaturas. Nesse modelo, cada um dos três ambientes para uma assinatura separada será alinhar: uma **serviços compartilhados** assinatura, **produção** assinatura e, finalmente, uma assinatura de **desenvolvimento**. As considerações para este modelo são semelhantes a um modelo usando uma única assinatura em que temos que decidir como alinhar grupos de recursos para cargas de trabalho. Já determinamos que criar um grupo de recursos para cada carga de trabalho satisfaz o requisito de isolamento de carga de trabalho, portanto, ficaremos com esse modelo nesse exemplo.
 
 1. Nesse modelo, há três *assinaturas*: *infraestrutura compartilhada*, *produção* e *desenvolvimento*. Cada uma dessas três assinaturas requer um *proprietário da assinatura* e, no exemplo simples, vamos usar a mesma conta de usuário para todos os três. O *infraestrutura compartilhada* recursos são gerenciados da mesma forma para os dois primeiros exemplos acima, e a primeira carga de trabalho está associada a *app1-rg* no *produção* ambiente e o recurso de mesmo nome de grupo no *desenvolvimento* ambiente. O *proprietário de carga de trabalho do app1* é adicionado a cada grupo de recursos com a função *colaborador*.
-    colaboradores ![Adding @ no__t-1
+    ![adicionar colaboradores](../../_images/govern/design/governance-3-17.png)
 2. Assim como acontece com os exemplos anteriores, *proprietário de carga de trabalho do app1* cria os recursos e as solicitações de conexão de emparelhamento com o *infraestrutura compartilhada* rede virtual. O *proprietário de carga de trabalho do app1* adiciona somente a marca *managedBy* porque não há mais necessidade para a marca *environment*. Ou seja, os recursos para cada ambiente agora são agrupados na mesma *assinatura* e a marca *environment* fica redundante. O contador de limites será diminuído para 999 redes virtuais restantes.
-    ![Creating uma conexão de emparelhamento @ no__t-1
+    ![criar uma conexão de emparelhamento](../../_images/govern/design/governance-3-18.png)
 3. Por fim, o *proprietário da assinatura* repete o processo para a carga de trabalho segundo, adicionando os grupos de recursos com o *app2 proprietário da carga de trabalho* no * função de colaborador. O contador de limite para cada uma das assinaturas do ambiente é reduzido para 998 redes virtuais restantes.
 
 Esse modelo de gerenciamento tem os benefícios do segundo exemplo acima. No entanto, a principal diferença é que os limites são um problema devido ao fato de que eles estão espalhados por duas *assinaturas*. A desvantagem é que os dados de custo controlados por marcas devem ser agregados em todas as três *assinaturas*.
@@ -262,7 +268,7 @@ Agora que você já implementou o seu modelo de controle, poderá implantar seus
 
 [Funções internas para recursos do Azure](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles)
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 > [!div class="nextstepaction"]
 > [Saiba mais sobre como implantar uma infraestrutura básica](../../infrastructure/virtual-machines/basic-workload.md)

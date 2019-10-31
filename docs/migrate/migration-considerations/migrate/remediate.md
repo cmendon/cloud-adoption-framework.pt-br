@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 54621d366f0ae0a3e2e3504532ace183bc7f49c4
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 5fede95558e32b4cbc07be3ef60635e8c13eda97
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70833447"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058861"
 ---
 # <a name="remediate-assets-prior-to-migration"></a>Corrigir ativos antes da migração
 
@@ -21,7 +21,7 @@ Durante o processo de avaliação da migração, a equipe busca identificar as c
 
 ## <a name="common-remediation-tasks"></a>Tarefas de correção comuns
 
-Em qualquer ambiente corporativo, a dívida técnica existe. Algumas são saudáveis e esperadas. As decisões de arquitetura que foram bem adequadas para um ambiente local podem não ser totalmente adequadas para uma plataforma de nuvem. Em ambos os casos, as tarefas de correção comuns podem ser necessárias para preparar os ativos para a migração. A seguir, estão alguns exemplos:
+Em qualquer ambiente corporativo, a dívida técnica existe. Algumas são saudáveis e esperadas. As decisões de arquitetura que foram bem adequadas para um ambiente local podem não ser totalmente adequadas para uma plataforma de nuvem. Em ambos os casos, as tarefas de correção comuns podem ser necessárias para preparar os ativos para a migração. Seguem alguns exemplos:
 
 - **Atualizações secundárias do host.** Às vezes é necessário atualizar um host antigo antes da replicação.
 - **Atualizações secundárias do sistema operacional convidado.** É bem provável que um sistema operacional precise da aplicação de um patch ou atualização antes da replicação.
@@ -31,7 +31,7 @@ Em qualquer ambiente corporativo, a dívida técnica existe. Algumas são saudá
 - **Alterações de configurações de aplicativos.** Os aplicativos migrados podem exigir alterações em variáveis, como caminhos de rede para ativos dependentes, alterações de contas de serviço ou atualizações de endereços IP dependentes.
 - **Alterações secundárias em caminhos de rede.** Pode ser necessário modificar os padrões de roteamento para rotear corretamente o tráfego do usuário para os novos ativos.
     > [!NOTE]
-    > Esse não é o roteamento da produção para os novos ativos, mas sim a configuração para permitir o roteamento adequado para os ativos em geral.
+    > Isso não é o roteamento de produção para os novos ativos, mas sim a configuração para permitir o roteamento adequado para os ativos em geral.
 
 ## <a name="large-scale-remediation-tasks"></a>Tarefas de correção em grande escala
 
@@ -57,7 +57,7 @@ Se essas perguntas não produzirem respostas favoráveis, pode valer a pena cons
 - **Automação.** Dependendo dos requisitos das cargas de trabalho e de correção, pode ser mais lucrativo gerar o script da implantação para novos ativos usando uma abordagem de DevOps.
 - **Recompilação.** Quando os custos de correção são muito altos e o valor comercial é igualmente alto, uma carga de trabalho pode ser uma boa candidata para a recompilação ou a uma nova arquitetura.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Depois de concluir a correção, as [atividades de replicação](./replicate.md) estarão prontas.
 
