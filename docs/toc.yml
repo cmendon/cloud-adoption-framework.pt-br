@@ -127,6 +127,12 @@
           href: ready/azure-best-practices/roles.md
         - name: Criar consistência de nuvem híbrida
           href: infrastructure/misc/hybrid-consistency.md
+    - name: Escopo expandido
+      items:
+        - name: Zonas de destino do Terraform
+          href: ready/expanded-scope/terraform-landing-zone.md
+        - name: Segurança de limite de rede
+          href: reference/networking-vdc.md
     - name: Práticas recomendadas
       items:
         - name: Visão geral
@@ -437,8 +443,6 @@
                   href: migrate/azure-best-practices/migrate-best-practices-security-management.md
                 - name: Melhores práticas adicionais
                   items:
-                    - name: Melhores práticas de segurança de limites do Azure
-                      href: reference/networking-vdc.md
                     - name: Melhores práticas de segurança do banco de dados do Azure
                       href: 'https://docs.microsoft.com/azure/security/fundamentals/database-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                     - name: Melhores práticas de segurança de dados e criptografia do Azure

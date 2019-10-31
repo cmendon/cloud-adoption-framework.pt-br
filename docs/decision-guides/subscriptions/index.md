@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 000d1aba1ec496e7b6583c84351e2d6ca29b3e1f
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: a6ee53355313a0f0c277d7b1c69e77494cdf8e1c
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683512"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058716"
 ---
 # <a name="subscription-decision-guide"></a>Guia de decisão da assinatura
 
@@ -26,7 +26,7 @@ Cada recurso do Azure, como uma máquina virtual ou um banco de dados, está ass
 
 Alguns exemplos básicos do uso de grupos de gerenciamento para separar diferentes cargas de trabalho incluem:
 
-- **Produção versus não produção:** algumas empresas criam grupos de gerenciamento para separar suas assinaturas de produção e não produção. Os grupos de gerenciamento permitem que esses clientes gerenciem mais facilmente funções e políticas. Por exemplo, uma assinatura não de produção pode permitir aos desenvolvedores ter acesso de **colaborador**, porém, em produção, eles têm apenas acesso de **leitor**.
+- **Cargas de trabalho de produção versus cargas de trabalho de não produção:** algumas empresas criam grupos de gerenciamento para separar suas assinaturas de produção e não produção. Os grupos de gerenciamento permitem que esses clientes gerenciem mais facilmente funções e políticas. Por exemplo, uma assinatura não de produção pode permitir aos desenvolvedores ter acesso de **colaborador**, porém, em produção, eles têm apenas acesso de **leitor**.
 - **Serviços internos vs. externos:** Assim como ocorre com cargas de trabalho produção versus não produção, as empresas costumam ter requisitos' políticas e funções diferentes para serviços internos e externos voltados ao cliente.
 
 Este guia de decisão ajuda você a considerar diferentes abordagens para organizar sua hierarquia de grupos de gerenciamento.

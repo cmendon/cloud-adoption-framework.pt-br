@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 58891a3afcafc9ac160f90027c35aa459ca7636a
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: faa1728dd72828478a167cf09535bdf9f2ac1a82
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048014"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058867"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -62,13 +62,13 @@ Exiba resultados relacionados a [alcance global](./reach-outcomes.md).
 
 Mercados sociais estão redefinindo o conceito de vencedores e perdedores a um ritmo inédito. Responder às necessidades do usuário é uma medida crucial da participação do cliente.
 
-Leia mais sobre [resultados de participação do cliente](./engagement-outcomes.md).
+Saiba mais sobre os [resultados de participação do cliente](./engagement-outcomes.md).
 
 ### <a name="performance-outcomes"></a>Resultados de desempenho
 
 Desempenho e confiabilidade são presumidos. Quando qualquer um deles falta, os danos à reputação podem ser intensos e duradouros.
 
-Leia mais sobre [resultados de desempenho](./performance-outcomes.md).
+Saiba mais sobre os [resultados de desempenho](./performance-outcomes.md).
 
 Cada um dos resultados empresariais listados nas categorias anteriores pode ajudar a facilitar uma conversa focada entre os membros da equipe técnica e empresarial. No entanto, você não deve limitar suas conversas a esses exemplos genéricos. Compreender as necessidades exclusivas da sua própria empresa e criar resultados apropriados maximiza o valor de uma transformação de nuvem.
 
