@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ea7d9c51ced367734b28fd550ec1caa69ffe1f27
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 1f0db9ecd49973c769d74a5357e56406e3bce3cf
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058678"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239700"
 ---
 # <a name="standard-enterprise-governance-guide"></a>Guia de governança corporativa padrão
 
@@ -41,7 +41,7 @@ Todos os aplicativos devem ser implantados na área apropriada do grupo de geren
 
 1. Um grupo de gerenciamento para cada tipo de ambiente (por exemplo, produção, desenvolvimento e teste).
 2. Duas assinaturas: uma para cargas de trabalho de produção e outra para cargas de trabalho de não produção.
-3. A [nomenclatura consistente](../../../ready/considerations/naming-and-tagging.md) deve ser aplicada em cada nível dessa hierarquia de agrupamento.
+3. A [nomenclatura consistente](../../../ready/azure-best-practices/naming-and-tagging.md) deve ser aplicada em cada nível dessa hierarquia de agrupamento.
 4. Os grupos de recursos devem ser implantados de uma maneira que considere seu ciclo de vida de conteúdo: tudo o que é desenvolvido em conjunto é gerenciado em conjunto e o que é desativado junto fica junto. Para saber mais sobre melhores práticas de grupo de recursos, [confira aqui](../../../decision-guides/resource-consistency/index.md).
 5. A [seleção de região](../../../decision-guides/regions/index.md) é incrivelmente importante e deve ser considerada para que a rede, o monitoramento e a auditoria possam estar em vigor para failover/failback, assim como a confirmação de que os [SKUs necessários estão disponíveis nas regiões preferenciais](https://azure.microsoft.com/global-infrastructure/services).
 

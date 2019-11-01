@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: be75f4315d90c09c277846f8608ca0552f1d9853
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: c2e7d5a3b442e6094ccc08fefbadab6102b09fcc
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058699"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239738"
 ---
 # <a name="governance-guide-for-complex-enterprises"></a>Guia de governança para empresas complexas
 
@@ -41,7 +41,7 @@ Todos os aplicativos devem ser implantados na área apropriada do grupo de geren
 
 1. Defina um grupo de gerenciamento para cada unidade de negócios com uma hierarquia detalhada que reflete a geografia e, em seguida, o tipo de ambiente (por exemplo, ambientes de produção ou pré-produção).
 2. Crie uma assinatura de produção e não produção para cada combinação única de geografia ou unidade de negócios discreta. Tome cuidado se for criar várias assinaturas. Confira [aqui](../../../decision-guides/subscriptions/index.md) para saber mais.
-3. Aplique uma [nomenclatura consistente](../../../ready/considerations/naming-and-tagging.md) em cada nível dessa hierarquia de agrupamento.
+3. Aplique uma [nomenclatura consistente](../../../ready/azure-best-practices/naming-and-tagging.md) em cada nível dessa hierarquia de agrupamento.
 4. Os grupos de recursos devem ser implantados de uma maneira que considere seu ciclo de vida de conteúdo: tudo o que é desenvolvido em conjunto é gerenciado em conjunto e o que é desativado junto fica junto. Para saber mais sobre melhores práticas de grupo de recursos, [confira aqui](../../../decision-guides/resource-consistency/index.md).
 5. A [seleção de região](../../../decision-guides/regions/index.md) é incrivelmente importante e deve ser considerada para que a rede, o monitoramento e a auditoria possam estar em vigor para failover/failback, assim como a confirmação de que os [SKUs necessários estão disponíveis nas regiões preferenciais](https://azure.microsoft.com/global-infrastructure/services).
 
