@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: reference
 keywords: Azure
 layout: LandingPage
-ms.openlocfilehash: f77d42b9f55e5a8585e663b416f0d354e2de78de
-ms.sourcegitcommit: d37c4443e9acaa381ea74ee3fc50e3b99f13f22a
+ms.openlocfilehash: a07b9609c67d08c445e1f373d1db05c87b791748
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72001865"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239742"
 ---
 # <a name="azure-virtual-datacenter"></a>Datacenter Virtual do Azure
 
@@ -29,22 +29,22 @@ ms.locfileid: "72001865"
 <tr>
     <td style="width: 64px; vertical-align: middle;"><a href="https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/archive/vdc/Azure_Virtual_Datacenter.pdf"><img src="../_images/vdc/virtual-datacenter.svg" alt="Virtual Datacenter e-book" /></a></td>
     <td>
-        <h3><a href="https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/archive/vdc/Azure_Virtual_Datacenter.pdf">Datacenter Virtual do Azure: Conceitos</a></h3>
+        <h3><a href="https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/archive/vdc/Azure_Virtual_Datacenter.pdf">Datacenter Virtual do Azure: conceitos</a></h3>
         <p>Este livro eletrônico mostra como implantar cargas de trabalho empresariais na plataforma de nuvem do Azure, respeitando simultaneamente suas políticas de segurança e de rede existentes.</p>
     </td>
 </tr>
 <tr>
     <td style="width: 64px; vertical-align: middle;"><a href="./networking-vdc.md"><img src="../_images/vdc/vdc-network.png" alt="Network Perspective" /></a></td>
     <td>
-        <h3><a href="./networking-vdc.md">Datacenter Virtual do Azure: Uma perspectiva de rede</a></h3>
+        <h3><a href="./networking-vdc.md">Datacenter Virtual do Azure: uma perspectiva de rede</a></h3>
         <p>Este artigo online apresenta uma visão geral de padrões e designs de rede que podem ser usados para resolver as preocupações de desempenho, escala e segurança da arquitetura que muitos clientes têm quando pensam em uma transição em massa para a nuvem.</p>
     </td>
 </tr>
 <tr>
     <td style="width: 64px; vertical-align: middle;"><a href="https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/archive/vdc/Azure_Virtual_Datacenter_Lift_and_Shift_Guide.pdf"><img src="../_images/vdc/vdc-lift-and-shift.png" alt="Lift and Shift Guide" /></a></td>
     <td>
-        <h3><a href="https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/archive/vdc/Azure_Virtual_Datacenter_Lift_and_Shift_Guide.pdf">Datacenter Virtual do Azure: Guia de Lift-and-Shift </a></h3>
-        <p>Este white paper discute o processo que a equipe de ti empresarial e os tomadores de decisões podem usar para identificar e planejar a migração de aplicativos e servidores para o Azure usando uma abordagem de "deslocamento e mudança", minimizando os custos de desenvolvimento adicionais ao mesmo tempo em que otimiza a nuvem opções de hospedagem.</p>
+        <h3><a href="https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/archive/vdc/Azure_Virtual_Datacenter_Lift_and_Shift_Guide.pdf">Datacenter Virtual do Azure: guia de deslocamento e comparação</a></h3>
+        <p>Este white paper discute o processo que a equipe de ti empresarial e os tomadores de decisões podem usar para identificar e planejar a migração de aplicativos e servidores para o Azure usando uma abordagem de comparação de precisão e deslocamento, minimizando os custos de desenvolvimento adicionais e otimizando a nuvem opções de hospedagem.</p>
     </td>
 </tr>
 </table>

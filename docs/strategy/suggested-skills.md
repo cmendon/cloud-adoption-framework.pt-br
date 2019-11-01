@@ -8,12 +8,12 @@ ms.date: 05/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: f9dc2a7276a8845ad19ce4196822b730e7a6502d
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: a35579cbb26f292e349cd2d1101596bdd4a94b86
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029125"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240027"
 ---
 # <a name="skills-readiness-path-during-the-plan-phase-of-a-migration-journey"></a>Caminho de preparação de habilidades durante a fase de plano de uma jornada de migração
 
@@ -58,7 +58,7 @@ Durante a fase pronta, a equipe técnica cria uma zona de aterrissagem de migra�
 - [Crie uma conta do Azure](/learn/modules/create-an-azure-account). a primeira etapa para usar o Azure é criar uma conta. Sua conta contém os serviços do Azure que você provisiona e manipula suas configurações pessoais, como identidade, cobrança e preferências.
 - [Portal do Azure](/learn/modules/tour-azure-portal). Conheça os recursos e os serviços do portal do Azure e personalize o portal.
 - [Introdução ao Azure](/learn/modules/welcome-to-azure). comece a trabalhar com o Azure criando e configurando sua primeira máquina virtual na nuvem.
-- [Introdução à segurança no Azure](/learn/modules/intro-to-security-in-azure). Aprenda os conceitos básicos para proteger sua infraestrutura e seus dados ao trabalhar na nuvem. Entenda quais responsabilidades são suas e do que o Azure cuida para você.
+- [Introdução à segurança no Azure](/learn/modules/intro-to-security-in-azure). Aprenda os conceitos básicos para proteger sua infraestrutura e seus dados quando você trabalha na nuvem. Entenda quais responsabilidades são suas e do que o Azure cuida para você.
 - [Gerencie recursos no Azure](/learn/paths/manage-resources-in-azure). saiba como trabalhar com a linha de comando e o portal da Web do Azure para criar, gerenciar e controlar recursos baseados em nuvem.
 - [Crie uma VM](/learn/modules/create-windows-virtual-machine-in-azure). crie uma máquina virtual usando o portal do Azure.
 - [Rede do Azure](/learn/modules/intro-to-azure-networking). Aprenda os conceitos básicos da rede do Azure e como a rede do Azure ajuda a melhorar a resiliência e a reduzir a latência.
@@ -81,24 +81,16 @@ Além dessas opções iniciais para o desenvolvimento de habilidades, uma varied
 
 A Microsoft e os parceiros oferecem várias opções para ajudar todos os públicos a desenvolver suas habilidades com os serviços do Azure:
 
-- [Microsoft Virtual Academy](https://mva.microsoft.com/product-training/microsoft-azure). oferece treinamento das pessoas que ajudaram a criar o Azure. De uma visão geral básica ao treinamento técnico aprofundado, esses cursos ajudam os implementadores de ti a aprender a usar o Azure para seus negócios.
-- [Microsoft IT Pro Cloud Essentials](https://www.microsoft.com/azureessentials). fornece uma assinatura anual gratuita que inclui serviços de nuvem, educação e benefícios de suporte. O IT Pro Cloud Essentials fornece implementadores de ti com experiência prática, oportunidades educacionais direcionadas e acesso a especialistas em áreas mais importantes para aumentar o conhecimento e criar um caminho para o avanço da carreira.
 - [Centro de profissionais de ti da Microsoft](https://www.microsoft.com/itpro). serve como um recurso online gratuito para ajudar a mapear seu caminho de carreira na nuvem. Saiba o que os especialistas do setor sugerem para sua função de nuvem e quais são as habilidades necessárias para chegar lá. Siga um currículo de aprendizagem em seu próprio ritmo para criar as habilidades de que você mais precisa para se manter relevante.
 
 É recomendável transformar o conhecimento do Azure em reconhecimento oficial com [treinamento e exames de certificação Microsoft Azure](https://www.microsoft.com/learning/azure-certification.aspx).
 
 ## <a name="microsoft-learn"></a>Microsoft Learn
 
-O Microsoft Learn é uma nova abordagem para o aprendizado. A preparação para as novas responsabilidades que vêm com a adoção da nuvem não é fácil. O Microsoft Learn oferece uma abordagem mais recompensadora para o aprendizado prático que ajuda você a atingir suas metas mais rapidamente. Ganhe pontos e níveis e obtenha mais!
+O Microsoft Learn é uma nova abordagem para o aprendizado. A preparação para as novas habilidades e responsabilidades que acompanham a adoção da nuvem não é fácil. O Microsoft Learn oferece uma abordagem mais recompensadora para o aprendizado prático que ajuda você a atingir suas metas mais rapidamente. Ganhe pontos, níveis e alcance mais!
 
-Aqui estão alguns exemplos de caminhos de aprendizado específicos de função no Microsoft Learn:
+Aqui está um exemplo de roteiros de aprendizado personalizados que se alinham com a estratégia parte da estrutura de adoção de nuvem. 
 
-[Os usuários empresariais](/learn/browse/?roles=business-user) podem experimentar uma curva de aprendizado acentuada quando solicitado a participar do planejamento, do teste e da adoção de tecnologia baseada em nuvem. Microsoft Learn módulos focados na adoção de modelos de nuvem e ferramentas podem ajudar esses usuários a gerenciar seus negócios por meio de serviços baseados em nuvem.
+[Aprenda o valor comercial de Microsoft Azure](/learn/paths/learn-business-value-of-azure/): essa experiência de aprendizado levará você em uma jornada que começará mostrando como a transformação digital e o poder da nuvem podem transformar seus negócios. Abordaremos como Microsoft Azure serviços de nuvem podem capacitar sua organização em uma plataforma de nuvem confiável. Finalmente, vamos concluir ilustrando como tornar essa jornada real para sua organização. 
 
-Os arquitetos de [soluções](/learn/browse/?roles=solution-architect) podem interagir com centenas de módulos e caminhos de aprendizado. Os tópicos disponíveis variam de serviços fundamentais de infraestrutura a transformação avançada de dados.
-
-[Os administradores](/learn/browse/?roles=administrator) podem interagir com módulos que se concentram em conceitos básicos do Azure, configurando contêineres e até mesmo administração avançada na nuvem.
-
-Os [desenvolvedores](/learn/browse/?roles=developer&term=infrastructure) desempenham uma função importante na migração de ativos para a nuvem. Os desenvolvedores podem aprender sobre maneiras de ajudar durante a arquitetura, a governança e as atividades de modernização.
-
-Para descobrir outros caminhos de aprendizado, procure o [Catálogo de aprendizado](/learn/browse). Use o filtro de funções para alinhar os caminhos de aprendizado com sua função.
+Para descobrir outros caminhos de aprendizado, procure o [Catálogo de aprendizado](/learn/browse). Use o filtro de **Funções** para alinhar os roteiros de aprendizagem com sua função.

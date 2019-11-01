@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: e7582df81e305ab602c8172b5e93531eb8112432
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 8e58c0e95517d49e9c8685539407127880b5d090
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022277"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240185"
 ---
 # <a name="prioritize-and-define-workloads-for-a-cloud-adoption-plan"></a>Priorizar e definir cargas de trabalho para um plano de adoção de nuvem
 
@@ -29,7 +29,7 @@ No contexto de uma adoção de nuvem, uma carga de trabalho é uma coleção de 
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-As entradas estratégicas da lista de verificação de pré-requisitos tornam as tarefas a seguir muito mais fáceis de realizar. Para obter ajuda com a coleta dos dados discutidos neste artigo, examine a [lista de verificação de pré-requisitos](./prerequisites.md).
+As entradas estratégicas da lista de pré-requisitos facilitam muito a realização das tarefas a seguir. Para obter ajuda com a coleta dos dados discutidos neste artigo, examine os [pré-requisitos](./prerequisites.md).
 
 ## <a name="initial-workload-prioritization"></a>Priorização de carga de trabalho inicial
 
@@ -75,7 +75,7 @@ Depois que as prioridades iniciais tiverem sido definidas e as cargas de trabalh
 | Equipes de negócios | Quais equipes de negócios serão afetadas pelas alterações? |         |
 | Participantes comerciais | Há executivos cujos negócios serão afetados pelas alterações? |         |
 | Resultados dos negócios | Como a empresa vai medir o sucesso desse esforço? |         |
-| metrics | Quais métricas serão usadas para acompanhar o sucesso? |         |
+| Métricas | Quais métricas serão usadas para acompanhar o sucesso? |         |
 | Conformidade | Há algum requisito de conformidade de terceiros para essa carga de trabalho? |         |
 | Proprietários do aplicativo | Quem é responsável pelo impacto nos negócios de todos os aplicativos associados a essa carga de trabalho? |         |
 | Períodos de congelamento de negócios | Há algum tempo durante o qual a empresa não permitirá alterações? |         |
@@ -91,7 +91,7 @@ Depois que as prioridades iniciais tiverem sido definidas e as cargas de trabalh
 | Importância | Liste a criticalidade do aplicativo atual. |         |
 | Classificação de dados | Liste a classificação de sensibilidade de dados. |         |
 | Geografias operacionais | Listar qualquer região geográfica na qual a carga de trabalho seja ou deve ser hospedada. |         |
-| Aplicativos | Especifique uma lista inicial ou contagem de todos os aplicativos incluídos nessa carga de trabalho. |         |
+| aplicativos | Especifique uma lista inicial ou contagem de todos os aplicativos incluídos nessa carga de trabalho. |         |
 | VMs | Especifique uma lista inicial ou a contagem de quaisquer VMs ou servidores incluídos na carga de trabalho. |         |
 | Fontes de dados | Especifique uma lista inicial ou a contagem de quaisquer fontes de dados incluídas na carga de trabalho. |         |
 | Dependências | Listar quaisquer dependências de ativos não incluídas na carga de trabalho. |         |
@@ -103,9 +103,9 @@ Com base nos dados montados, a equipe de estratégia de nuvem e a equipe de ado�
 
 Após uma análise, ambas as equipes devem estar confortáveis com a confirmação das prioridades resultantes. Esse conjunto de prioridades documentadas, validadas e confirmadas é a pendência de adoção de nuvem priorizada.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
-Para qualquer carga de trabalho na pendência de adoção de nuvem priorizada, a equipe agora está pronta para alinhar os [ativos](./assets.md).
+Para qualquer carga de trabalho na pendência de adoção de nuvem priorizada, a equipe agora está pronta para [alinhar os ativos](./assets.md).
 
 > [!div class="nextstepaction"]
 > [Alinhar ativos para cargas de trabalho priorizadas](./assets.md)

@@ -1,21 +1,21 @@
 ---
-title: Lista de verificação de pré-requisitos para um plano de adoção de nuvem eficaz
+title: Pré-requisitos para um plano de adoção de nuvem eficaz
 titleSuffix: Microsoft Cloud Adoption Framework
-description: Lista de verificação de pré-requisitos para um plano de adoção de nuvem eficaz
+description: Entenda os pré-requisitos para um plano de adoção de nuvem eficaz.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 0933474aef96d01862f0f230073e275ac262cd83
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 6689945769c7eb31ba306567e2a09e51456d47cc
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048500"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240227"
 ---
-# <a name="prerequisites-checklist-for-an-effective-cloud-adoption-plan"></a>Lista de verificação de pré-requisitos para um plano de adoção de nuvem eficaz
+# <a name="prerequisites-for-an-effective-cloud-adoption-plan"></a>Pré-requisitos para um plano de adoção de nuvem eficaz
 
 Um plano é tão eficaz quanto os dados que são colocados nele. Para que um plano de adoção de nuvem seja eficaz, há duas categorias de entrada: *estratégica* e *tática*. As seções a seguir descrevem os pontos mínimos de dados necessários em cada categoria.
 

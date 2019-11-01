@@ -8,12 +8,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 7b635ea417502a175b7fe308e5faeee1ff8a65a5
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 894c4c7431533aa29ad7fcc1cd08046651987f10
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048411"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239785"
 ---
 # <a name="azure-fundamental-concepts"></a>Conceitos fundamentais do Azure
 
@@ -95,7 +95,7 @@ Os recursos a seguir fornecem informações detalhadas sobre os conceitos discut
 
 ## <a name="next-steps"></a>Próximos passos
 
-Agora que você entendeu conceitos fundamentais do Azure, saiba como [dimensionar com várias assinaturas do Azure](./scaling-subscriptions.md).
+Agora que você entendeu conceitos fundamentais do Azure, saiba como [dimensionar com várias assinaturas do Azure](../azure-best-practices/scaling-subscriptions.md).
 
 > [!div class="nextstepaction"]
-> [Dimensionar com várias assinaturas do Azure](./scaling-subscriptions.md)
+> [Dimensionar com várias assinaturas do Azure](../azure-best-practices/scaling-subscriptions.md)

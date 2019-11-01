@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: e6187bc926aacd9a09e67b8cd2bfe94e5a4a42dd
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: 83165e21882b4979d0fb3b104fa4f2c12aed326c
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72682621"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239457"
 ---
 # <a name="predict-and-influence"></a>Prever e influenciar
 
@@ -78,7 +78,7 @@ Saiba mais sobre as interações em uma [solução de realidade ajustada](./devi
 
 ## <a name="next-steps"></a>Próximos passos
 
-Com base no conhecimento adquirido em relação às [disciplinas de inovação](./invention.md) na [metodologia inovar](./index.md) , você sabe ter as ferramentas técnicas necessárias para [criar com o empatia](./build.md).
+Com base no conhecimento adquirido em relação às [disciplinas de invenção](./invention.md) na [metodologia inovar](./index.md) , você sabe ter as ferramentas técnicas necessárias para [criar com o empatia](./build.md).
 
 > [!div class="nextstepaction"]
 > [Compilar com empatia](./build.md)

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 574fa1ede2d7ddeb0fe41f05c8519e9b16ba6c51
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 15bce39a8ffee6c3f35a8de3d205f863374ae3ff
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058490"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239176"
 ---
 # <a name="rehost-an-on-premises-app-on-an-azure-vm-and-sql-database-managed-instance"></a>Hospedar novamente um aplicativo local em uma Instância Gerenciada do Banco de Dados SQL e VM do Azure
 
@@ -78,7 +78,7 @@ Como parte do processo de criação da solução, a Contoso realizou uma compara
 
 - O objetivo da Instância Gerenciada é entregar quase 100% de compatibilidade com a versão mais recente do SQL Server local. A Microsoft recomenda a Instância gerenciada para clientes que estão executando o SQL Server localmente ou na VM IaaS que desejam migrar seus aplicativos para um serviço totalmente gerenciado com o mínimo de alterações no design.
 - A Contoso está planejando migrar um grande número de aplicativos do local para IaaS. Muitos deles são fornecidos pelo ISV. A Contoso percebe que usar a Instância Gerenciada ajudará a garantir a compatibilidade do banco de dados para esses aplicativos, em vez de usar o Banco de Dados SQL que pode não ser compatível.
-- A Contoso pode simplesmente fazer uma migração "lift and shift" para a Instância Gerenciada usando o Serviço de Migração de Dados totalmente automatizado. Com esse serviço em vigor, a Contoso pode reutilizá-lo para futuras migrações de banco de dados.
+- A Contoso pode simplesmente fazer uma migração de comparação de precisão e de deslocamento para Instância Gerenciada usando o serviço de migração de banco de dados do Azure totalmente automatizado. Com esse serviço em vigor, a Contoso pode reutilizá-lo para futuras migrações de banco de dados.
 - O SQL Managed Instance suporta o SQL Server Agent, que é um problema importante para o aplicativo SmartHotel360. A Contoso precisa dessa compatibilidade, caso contrário, será necessário recriar os planos de manutenção exigidos pelo aplicativo.
 - Com o Software Assurance, a Contoso pode trocar suas licenças existentes por tarifas com desconto em uma Instância Gerenciada do Banco de Dados SQL usando o Benefício Híbrido do Azure para SQL Server. Isso pode permitir que a Contoso economize até 30% na Instância Gerenciada.
 - O SQL Instância Gerenciada está totalmente contido na rede virtual e, portanto, fornece maior isolamento e segurança para os dados da contoso. A Contoso pode obter os benefícios da nuvem pública, enquanto mantém o ambiente isolado da Internet pública.
@@ -103,7 +103,7 @@ A Contoso migrará as camadas da Web e de dados de seu aplicativo SmartHotel360 
 
 1. A Contoso já tem a infraestrutura do Azure implantada, portanto, basta adicionar alguns componentes específicos do Azure para esse cenário.
 2. A camada de dados será migrada usando o Serviço de Migração de Dados do Azure. Esse serviço conecta-se à VM do SQL Server local em uma conexão VPN site a site entre o datacenter da Contoso e o Azure. Em seguida, o serviço migra o banco de dados.
-3. A camada Web será migrada usando uma migração "lift and shift" usando o Site Recovery. O processo envolve a preparação do ambiente VMware local, a configuração e habilitação da replicação e a migração das VMs, fazendo com que elas sejam reprovadas no Azure.
+3. A camada da Web será migrada usando uma migração de comparação de precisão e deslocamento usando Site Recovery. O processo envolve a preparação do ambiente VMware local, a configuração e habilitação da replicação e a migração das VMs, fazendo com que elas sejam reprovadas no Azure.
 
      ![Arquitetura de migração](media/contoso-migration-rehost-vm-sql-managed-instance/migration-architecture.png)
 

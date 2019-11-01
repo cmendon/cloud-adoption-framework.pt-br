@@ -11,12 +11,12 @@ ms.subservice: ready
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 3ac29e353f04370daf36e4c780fde8a14be45a37
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 92aa03c07a6652f15a0400a025b8911a4d0d07dd
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022205"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240182"
 ---
 # <a name="perimeter-networks"></a>Redes de perímetro
 
@@ -42,19 +42,19 @@ As redes de perímetro usam os seguintes recursos e serviços do Azure:
 
 Normalmente, suas equipes de TI e de segurança central são responsáveis por definir os requisitos de operação das redes de perímetro.
 
-![Exemplo de rede hub e spoke][7]
+![Exemplo de uma topologia de rede de Hub e spoke][7]
 
-O diagrama anterior mostra um exemplo de [rede hub e spoke](./hub-spoke-network-topology.md) que implementa a imposição de dois perímetros com acesso à Internet e uma rede local. Ambos os perímetros residem no hub DMZ. No hub DMZ, a rede de perímetro para a Internet pode ser expandida para dar suporte a muitas LOBs (linhas de negócios), usando vários farms de WAFs e instâncias do Firewall do Azure que ajudam a proteger as redes virtuais spoke. O hub também permite a conectividade via VPN ou Azure ExpressRoute, conforme necessário.
+O diagrama anterior mostra um hub de exemplo [e uma topologia de rede spoke](./hub-spoke-network-topology.md) que implementa a imposição de dois perímetros com acesso à Internet e a uma rede local. Ambos os perímetros residem no hub DMZ. No hub DMZ, a rede de perímetro para a Internet pode ser expandida para dar suporte a muitas LOBs (linhas de negócios), usando vários farms de WAFs e instâncias do Firewall do Azure que ajudam a proteger as redes virtuais spoke. O hub também permite a conectividade via VPN ou Azure ExpressRoute, conforme necessário.
 
-## <a name="virtual-networks"></a>Redes Virtuais
+## <a name="virtual-networks"></a>Redes virtuais
 
 Redes de perímetro geralmente são criadas em uma [rede virtual][virtual-networks] com várias sub-redes para hospedar os diferentes tipos de serviços que filtram e inspecionam o tráfego de ou para a Internet por meio de NVAs, WAFs e instâncias do Gateway de Aplicativo do Azure.
 
-## <a name="user-defined-routes"></a>Rotas definidas pelo usuário
+## <a name="user-defined-routes"></a>Rotas definidas pelo usuários
 
 Usando [rotas definidas pelo usuário][user-defined-routes], os clientes podem implantar firewalls, IDSs /IPSs e outras soluções de virtualização. Os clientes podem, então, encaminhar o tráfego de rede por meio dessas soluções de segurança para a imposição, auditoria e inspeção das políticas de limites de segurança. As rotas definidas pelo usuário podem ser criadas para garantir que o tráfego passe pelas VMs, NVAs e balanceadores de carga personalizados especificados.
 
-Em um exemplo de rede hub e spoke, garantir que o tráfego gerado por máquinas virtuais que residem no spoke passe pelos dispositivos virtuais corretos no hub requer uma rota definida pelo usuário, definida nas sub-redes do spoke. Essa rota define o endereço IP de front-end do balanceador de carga interno como o próximo salto. O balanceador de carga interno distribui o tráfego interno para as soluções de virtualização (pool de back-end do balanceador de carga).
+Em um exemplo de rede hub e spoke, garantir que o tráfego gerado por máquinas virtuais que residem no spoke passe pelos dispositivos virtuais corretos no Hub requer uma rota definida pelo usuário definida nas sub-redes do spoke. Essa rota define o endereço IP de front-end do balanceador de carga interno como o próximo salto. O balanceador de carga interno distribui o tráfego interno para as soluções de virtualização (pool de back-end do balanceador de carga).
 
 ## <a name="azure-firewall"></a>Firewall do Azure
 
@@ -80,7 +80,7 @@ O [Azure Load Balancer][ALB] oferece um serviço de Camada 4 (TCP, UDP) de alta 
 
 O Azure Load Balancer também pode investigar a integridade das diferentes instâncias do servidor. Quando uma instância não responde a uma investigação, o balanceador de carga interrompe o envio de tráfego para a instância não íntegra.
 
-Como exemplo de uso de uma rede hub e spoke, você pode implantar um balanceador de carga externo no hub e nos spokes. No hub, o balanceador de carga encaminha com eficiência o tráfego para os serviços nos spokes. Nos spokes, os balanceadores de carga gerenciam o tráfego do aplicativo.
+Como exemplo de uso de uma topologia de rede hub e spoke, você pode implantar um balanceador de carga externo no Hub e nos spokes. No hub, o balanceador de carga encaminha com eficiência o tráfego para os serviços nos spokes. Nos spokes, os balanceadores de carga gerenciam o tráfego do aplicativo.
 
 ## <a name="azure-front-door-service"></a>Azure Front Door Service
 
@@ -88,7 +88,7 @@ O [Azure Front Door Service][AFD] é a plataforma de aceleração de aplicativos
 
 O Azure Front Door Service oferece a seu aplicativo automação de manutenção de selo/regional unificada, automação de BCDR, informações unificadas de cliente/usuário, insights de serviço e cache. A plataforma oferece desempenho, confiabilidade e SLAs de suporte. Ela também oferece certificações de conformidade e práticas de segurança auditáveis desenvolvidas, operadas e com suporte nativo do Azure.
 
-## <a name="application-gateway"></a>Application Gateway
+## <a name="application-gateway"></a>Gateway de Aplicativo
 
 O [Gateway de Aplicativo do Azure][AppGW] é uma solução de virtualização dedicada que fornece um ADC (controlador de entrega de aplicativos) gerenciado. Ele oferece vários recursos de balanceamento de carga de camada 7 ao seu aplicativo.
 

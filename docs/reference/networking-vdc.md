@@ -10,12 +10,12 @@ ms.subservice: reference
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 718c93b560b38eaae6556e549a0c6f6bb97b807b
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: cbd72c04c7d938aae41e20fae82a29b731f4b256
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048256"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240091"
 ---
 # <a name="virtual-datacenters-a-network-perspective"></a>Data centers virtuais: uma perspectiva de rede
 
@@ -378,7 +378,7 @@ Como ele usa o DNS, o Gerenciador de Tráfego serve apenas para uso com pontos d
 
 ### <a name="summary"></a>Resumo
 
-Um datacenter virtual é uma abordagem para a migração do datacenter para criar uma arquitetura escalonável no Azure que maximize o uso de recursos de nuvem, reduza os custos e simplifique a governança do sistema. Um datacenter virtual é baseado em uma topologia de rede hub e spoke, fornecendo serviços compartilhados comuns no Hub e permitindo aplicativos e cargas de trabalho específicos nos spokes. Um datacenter virtual também corresponde à estrutura de funções da empresa, em que departamentos diferentes, como ti central, DevOps e operações e manutenção, funcionam juntos ao mesmo tempo em que executam suas funções específicas. Um datacenter virtual atende aos requisitos para uma migração de "deslocamento e mudança", mas também fornece muitas vantagens para implantações de nuvem nativas.
+Um datacenter virtual é uma abordagem para a migração do datacenter para criar uma arquitetura escalonável no Azure que maximize o uso de recursos de nuvem, reduza os custos e simplifique a governança do sistema. Um datacenter virtual é baseado em uma topologia de rede hub e spoke, fornecendo serviços compartilhados comuns no Hub e permitindo aplicativos e cargas de trabalho específicos nos spokes. Um datacenter virtual também corresponde à estrutura de funções da empresa, em que departamentos diferentes, como ti central, DevOps e operações e manutenção, funcionam juntos ao mesmo tempo em que executam suas funções específicas. Um datacenter virtual atende aos requisitos de uma migração de comparação e de deslocamento, mas também fornece muitas vantagens para as implantações de nuvem nativas.
 
 ## <a name="references"></a>Referências
 
@@ -388,7 +388,7 @@ Os seguintes recursos foram discutidos neste documento. Siga os links para saber
 
 |Recursos de rede|Balanceamento de carga|Conectividade|
 |-|-|-|
-|[Redes Virtuais do Azure][VNet]</br>[Grupos de segurança de rede][network-security-groups]</br>[Logs do grupo de segurança de rede][nsg-log]</br>[Rotas definidas pelo usuário][user-defined-routes]</br>[Soluções de virtualização de rede][NVA]</br>[Endereços IP Públicos][PIP]</br>[DDoS do Azure][DDoS]</br>[Firewall do Azure][AzFW]</br>[DNS do Azure][DNS]|[Porta frontal do Azure][AFD]</br>[Azure Load Balancer (L3)][ALB]</br>[Gateway de aplicativo (L7)][AppGW]</br>[Firewall do aplicativo Web] WAF</br>[Gerenciador de Tráfego do Azure][traffic-manager]</br></br></br></br></br> |[Emparelhamento VNet][VNetPeering]</br>[Rede virtual privada][VPN]</br>[WAN virtual][vWAN]</br>[ExpressRoute][ExR]</br>[ExpressRoute Direct][ExRD]</br></br></br></br></br>
+|[Redes Virtuais do Azure][VNet]</br>[Grupos de segurança de rede][network-security-groups]</br>[Logs do grupo de segurança de rede][nsg-log]</br>[Rotas definidas pelo usuário][user-defined-routes]</br>[Soluções de virtualização de rede][NVA]</br>[Endereços IP Públicos][PIP]</br>[DDoS do Azure][DDoS]</br>[Firewall do Azure][AzFW]</br>[DNS do Azure][DNS]|[Azure Front Door][AFD]</br>[Azure Load Balancer (L3)][ALB]</br>[Gateway de aplicativo (L7)][AppGW]</br>[Firewall do aplicativo Web] WAF</br>[Gerenciador de Tráfego do Azure][traffic-manager]</br></br></br></br></br> |[Emparelhamento VNet][VNetPeering]</br>[Rede virtual privada][VPN]</br>[WAN virtual][vWAN]</br>[ExpressRoute][ExR]</br>[ExpressRoute Direct][ExRD]</br></br></br></br></br>
 
 |Identidade</br>|Monitoramento</br>|Práticas recomendadas</br>|
 |-|-|-|

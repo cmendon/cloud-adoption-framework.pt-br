@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 35709a6208de54f43cdb51aadb1e32f34a0ba844
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 91ea4b076740bb745a32f2197d9ddc14970d75f0
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223859"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73238805"
 ---
 # <a name="cloud-rationalization"></a>Racionalização de nuvem
 
@@ -24,11 +24,11 @@ A racionalização na nuvem é o processo de avaliação de ativos para determin
 
 A "cinco RS de racionalização" listada neste artigo são uma ótima maneira de identificar um estado futuro potencial para qualquer carga de trabalho considerada como um candidato à nuvem. No entanto, esse processo de rotulação deve ser colocado no contexto correto antes de tentar racionalizar um ambiente. Examine os mitos a seguir para fornecer esse contexto:
 
-- **Mito: É fácil tomar decisões de racionalização no início do processo.** A racionalização precisa exige um profundo conhecimento da carga de trabalho e dos ativos associados (aplicativos, VMs e dados). O mais importante é que as decisões de racionalização precisas levam tempo. É recomendável usar um [processo de racionalização incremental](./rationalize.md#incremental-rationalization).
+- **Mito: é fácil tomar decisões de racionalização no início do processo.** A racionalização precisa exige um profundo conhecimento da carga de trabalho e dos ativos associados (aplicativos, VMs e dados). O mais importante é que as decisões de racionalização precisas levam tempo. É recomendável usar um [processo de racionalização incremental](./rationalize.md#incremental-rationalization).
 
-- **Mito: A adoção da nuvem precisa aguardar que todas as cargas de trabalho sejam racionalizadas.** Racionalizar um portfólio de ti inteiro ou até mesmo um único datacenter pode atrasar a realização do valor comercial em meses ou até mesmo anos. A racionalização completa deve ser evitada quando possível. Em vez disso, use o [poder de 10 abordagens para liberar o planejamento](./rationalize.md#release-planning) para tomar decisões inteligentes sobre as próximas 10 cargas de trabalho que são destinadas à adoção da nuvem.
+- **Mito: a adoção de nuvem precisa aguardar que todas as cargas de trabalho sejam racionalizadas.** Racionalizar um portfólio de ti inteiro ou até mesmo um único datacenter pode atrasar a realização do valor comercial em meses ou até mesmo anos. A racionalização completa deve ser evitada quando possível. Em vez disso, use o [poder de 10 abordagens para liberar o planejamento](./rationalize.md#release-planning) para tomar decisões inteligentes sobre as próximas 10 cargas de trabalho que são destinadas à adoção da nuvem.
 
-- **Mito: A justificativa de negócios tem que esperar que todas as cargas de trabalho sejam racionalizadas.** Para desenvolver uma justificativa de negócios para um esforço de adoção de nuvem, faça algumas suposições básicas no nível do portfólio. Quando as motivações estão alinhadas à inovação, suponha a rearquitetura. Quando as motivações estiverem alinhadas à migração, suponha que o rehospede. Essas suposições podem acelerar o processo de justificativa de negócios. As suposições são desafiadas e os Orçamentos refinados durante a fase de avaliação dos ciclos de adoção de cada carga de trabalho.
+- **Mito: a justificativa de negócios precisa esperar que todas as cargas de trabalho sejam racionalizadas.** Para desenvolver uma justificativa de negócios para um esforço de adoção de nuvem, faça algumas suposições básicas no nível do portfólio. Quando as motivações estão alinhadas à inovação, suponha a rearquitetura. Quando as motivações estiverem alinhadas à migração, suponha que o rehospede. Essas suposições podem acelerar o processo de justificativa de negócios. As suposições são desafiadas e os Orçamentos refinados durante a fase de avaliação dos ciclos de adoção de cada carga de trabalho.
 
 Agora, examine os cinco RS de racionalização a seguir para se familiarizar com o processo de longo prazo. Ao desenvolver seu plano de adoção de nuvem, escolha a opção que melhor se alinha com suas motivações, resultados de negócios e ambiente de estado atual. A meta na racionalização de imóveis é definir uma linha de base, não para racionalizar cada carga de trabalho.
 
@@ -38,7 +38,7 @@ Os cinco RS de racionalização listados aqui descrevem as opções mais comuns 
 
 ## <a name="rehost"></a>Hospedar novamente
 
-Também conhecida como migração de "deslocamento e mudança", um esforço de rehospedagem move um ativo de estado atual para o provedor de nuvem escolhido, com alteração mínima na arquitetura geral.
+Também conhecida como migração de comparação de _precisão e deslocamento_ , um esforço de rehospedagem move um ativo de estado atual para o provedor de nuvem escolhido, com alteração mínima na arquitetura geral.
 
 Os drivers comuns podem incluir:
 
@@ -85,7 +85,7 @@ Fatores de análise qualitativa:
 - Opções/linhas do tempo de intermitência
 - Dependências de processo comercial
 
-## <a name="rearchitect"></a>Recriação da arquitetura
+## <a name="rearchitect"></a>Recriação de arquitetura
 
 Alguns aplicativos de envelhecimento não são compatíveis com os provedores de nuvem devido às decisões arquitetônicas que foram feitas quando o aplicativo foi criado. Nesses casos, o aplicativo pode precisar ser rearquitetado antes da transformação.
 
@@ -111,14 +111,14 @@ Fatores de análise qualitativa:
 - Custos operacionais
 - Possíveis loops de comentários e investimentos DevOpss.
 
-## <a name="rebuild"></a>Recompilar
+## <a name="rebuild"></a>Recriação
 
 Em alguns cenários, o Delta que deve ser superado para carregar um aplicativo pode ser muito grande para justificar um investimento adicional. Isso é especialmente verdadeiro para aplicativos que atendem anteriormente às necessidades de um negócio, mas que agora não têm suporte ou estão desalinhados com os processos de negócios atuais. Nesse caso, uma nova base de código é criada para se alinhar com uma abordagem [nativa de nuvem](https://azure.microsoft.com/overview/cloudnative) .
 
 Os drivers comuns podem incluir:
 
-- Acelerar a inovação
-- Compilar aplicativos mais rápido
+- Acelere a inovação
+- Crie aplicativos mais rápido
 - Reduzir o custo operacional
 
 Fatores de análise quantitativa:
@@ -135,7 +135,7 @@ Fatores de análise qualitativa:
 - Processos de negócio limitados pela funcionalidade
 - Possíveis ganhos de custo, experiência ou receita
 
-## <a name="replace"></a>Substituir
+## <a name="replace"></a>Substitua
 
 As soluções são normalmente implementadas usando a melhor tecnologia e abordagem disponíveis no momento. Às vezes, aplicativos SaaS (software como serviço) podem fornecer toda a funcionalidade necessária para o aplicativo hospedado. Nesses cenários, uma carga de trabalho pode ser agendada para substituição futura, removendo-a efetivamente do esforço de transformação.
 
@@ -160,7 +160,7 @@ Fatores de análise qualitativa:
 - Esquemas de dados
 - Processos personalizados ou automatizados
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Coletivamente, você pode aplicar esses cinco RS de racionalização a um espaço digital para ajudá-lo a tomar decisões de racionalização sobre o estado futuro de cada aplicativo.
 

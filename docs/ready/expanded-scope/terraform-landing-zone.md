@@ -8,16 +8,16 @@ ms.date: 10/16/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 51751ab0033505e34c02c17db363bc985b83e44d
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 99d5e42f8c7e506ba28617022f2a8076c9501979
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058164"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239765"
 ---
 # <a name="use-terraform-to-build-your-landing-zones"></a>Use o Terraform para criar suas zonas de aterrissagem
 
-O Azure fornece serviços nativos para implantar suas zonas de aterrissagem. Outras ferramentas de terceiros também podem ajudar com esse esforço. Uma dessas ferramentas que os clientes e parceiros geralmente usam para implantar zonas de aterrissagem é de Hashicorp Terraform. Esta seção mostra como usar uma zona de aterrissagem de protótipo para implantar recursos fundamentais de log, contabilidade e segurança para uma assinatura do Azure.
+O Azure fornece serviços nativos para implantar suas zonas de aterrissagem. Outras ferramentas de terceiros também podem ajudar com esse esforço. Uma dessas ferramentas que os clientes e parceiros geralmente usam para implantar zonas de aterrissagem é a Terraform da Hashicorp. Esta seção mostra como usar uma zona de aterrissagem de protótipo para implantar recursos fundamentais de log, contabilidade e segurança para uma assinatura do Azure.
 
 ## <a name="purpose-of-the-landing-zone"></a>Finalidade da zona de aterrissagem
 
@@ -56,7 +56,7 @@ As seguintes suposições ou restrições foram consideradas quando esta zona de
 - **Limites de assinatura:** Esse esforço de adoção é improvável de exceder [os limites de assinatura](https://docs.microsoft.com/azure/azure-subscription-service-limits). Dois indicadores comuns são um excesso de 25.000 VMs ou 10.000 vCPUs.
 - **Conformidade:** Nenhum requisito de conformidade de terceiros é necessário para essa zona de aterrissagem.
 - **Complexidade da arquitetura:** A complexidade da arquitetura não exige assinaturas de produção adicionais.
-- **Serviços compartilhados:** Não há nenhum serviço compartilhado existente no Azure que exija que essa assinatura seja tratada como um spoke em uma arquitetura Hub e spoke.
+- **Serviços compartilhados:** Não há nenhum serviço compartilhado existente no Azure que exija que essa assinatura seja tratada como um spoke em uma arquitetura de Hub e spoke.
 
 Se essas suposições corresponderem ao seu ambiente atual, esse plano gráfico poderá ser uma boa maneira de começar a criar sua zona de aterrissagem.
 
@@ -67,17 +67,17 @@ As decisões a seguir são representadas na zona de aterrissagem Terraform:
 | Componente | Decisões | Abordagens alternativas |
 | --- | --- | --- |
 |Log e monitoramento | Azure Monitor Log Analytics espaço de trabalho será usado. Uma conta de armazenamento de diagnóstico, bem como o Hub de eventos, será provisionada. |         |
-|Rede | N/A-rede será implementada em outra zona de aterrissagem. |[Decisões de rede](../considerations/network-decisions.md) |
+|Rede | N/A-rede será implementada em outra zona de aterrissagem. |[Decisões de rede](../considerations/networking-options.md) |
 |Identidade | Supõe-se que a assinatura já esteja associada a uma instância do Azure Active Directory. | [Melhores práticas de gerenciamento de identidades](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices) |
 | Política | Essa zona de aterrissagem atualmente supõe que nenhuma política do Azure será aplicada. | |
-|Design de assinatura | N/A – projetado para uma única assinatura de produção. | [Dimensionamento de assinaturas](../considerations/scaling-subscriptions.md) |
-| Grupos de gerenciamento | N/A – projetado para uma única assinatura de produção. |[Dimensionamento de assinaturas](../considerations/scaling-subscriptions.md) |
-| Grupos de recursos | N/A – projetado para uma única assinatura de produção. | [Dimensionamento de assinaturas](../considerations/scaling-subscriptions.md) |
+|Design de assinatura | N/A – projetado para uma única assinatura de produção. | [Dimensionamento de assinaturas](../azure-best-practices/scaling-subscriptions.md) |
+| Grupos de gerenciamento | N/A – projetado para uma única assinatura de produção. |[Dimensionamento de assinaturas](../azure-best-practices/scaling-subscriptions.md) |
+| Grupos de recursos | N/A – projetado para uma única assinatura de produção. | [Dimensionamento de assinaturas](../azure-best-practices/scaling-subscriptions.md) |
 | Dados | N/D | [Escolha a opção de SQL Server correta no Azure e nas](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) [diretrizes do Azure Data Store](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
-|Armazenamento|N/D|[Diretrizes do Armazenamento do Azure](../considerations/storage-guidance.md) |
-| Padrões de nomenclatura | Quando o ambiente for criado, um prefixo exclusivo também será criado. Os recursos que exigem um nome global exclusivo (como contas de armazenamento) usam esse prefixo. O nome personalizado será anexado com um sufixo aleatório. O uso de marca é obrigatório conforme descrito na tabela a seguir. | [Melhores práticas de nomenclatura e marcação](../considerations/naming-and-tagging.md) |
+|Armazenamento|N/D|[Diretrizes do Armazenamento do Azure](../considerations/storage-options.md) |
+| Padrões de nomenclatura | Quando o ambiente for criado, um prefixo exclusivo também será criado. Os recursos que exigem um nome global exclusivo (como contas de armazenamento) usam esse prefixo. O nome personalizado será anexado com um sufixo aleatório. O uso de marca é obrigatório conforme descrito na tabela a seguir. | [Melhores práticas de nomenclatura e marcação](../azure-best-practices/naming-and-tagging.md) |
 | Gerenciamento de custos | N/D | [Acompanhando os custos](../azure-best-practices/track-costs.md) |
-| Computação | N/D | [Opções de computação](../considerations/compute-decisions.md) |
+| Computação | N/D | [Opções de computação](../considerations/compute-options.md) |
 
 ### <a name="tagging-standards"></a>Padrões de marcação
 

@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 3e1f2c1b54a55a740376ba1d1c45c13dc9e7e26d
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: aae20779a4009692ebf52602341d81939dee01ea
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029116"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239535"
 ---
 # <a name="establish-an-initial-cloud-governance-foundation"></a>Estabelecer uma base de governança de nuvem inicial
 
@@ -25,7 +25,7 @@ Este artigo fornece duas opções para estabelecer uma base inicial para governa
 
 ## <a name="already-using-the-cloud-adoption-framework"></a>Já está usando a estrutura de adoção de nuvem
 
-Se você esteve acompanhando a estrutura de adoção de nuvem, talvez já tenha implantado um MVP de governança. A orientação é um aspecto principal de qualquer modelo operacional. Ele está presente durante cada fase do ciclo de vida de adoção da nuvem. Dessa forma, a [estrutura de adoção de nuvem](../index.md) fornece diretrizes que injetam governança em atividades relacionadas à implementação do seu [plano de adoção de nuvem](../plan/index.md). Um exemplo dessa integração de governança é usar plantas para implantar uma ou mais zonas de chegada presentes nas diretrizes [prontas](../ready/index.md) . Outro exemplo é a orientação para [expandir assinaturas](../ready/considerations/scaling-subscriptions.md). Se você seguiu uma dessas recomendações, as seguintes seções do MVP são simplesmente uma análise das decisões de implantação existentes. Após uma revisão rápida, vá à frente para [a solução de governança inicial e aplique os controles de práticas recomendadas](./foundation-improvements.md).
+Se você esteve acompanhando a estrutura de adoção de nuvem, talvez já tenha implantado um MVP de governança. A orientação é um aspecto principal de qualquer modelo operacional. Ele está presente durante cada fase do ciclo de vida de adoção da nuvem. Dessa forma, a [estrutura de adoção de nuvem](../index.md) fornece diretrizes que injetam governança em atividades relacionadas à implementação do seu [plano de adoção de nuvem](../plan/index.md). Um exemplo dessa integração de governança é usar plantas para implantar uma ou mais zonas de chegada presentes nas diretrizes [prontas](../ready/index.md) . Outro exemplo é a orientação para [expandir assinaturas](../ready/azure-best-practices/scaling-subscriptions.md). Se você seguiu uma dessas recomendações, as seguintes seções do MVP são simplesmente uma análise das decisões de implantação existentes. Após uma revisão rápida, vá à frente para [a solução de governança inicial e aplique os controles de práticas recomendadas](./foundation-improvements.md).
 
 ## <a name="establish-an-initial-governance-foundation"></a>Estabelecer uma base de governança inicial
 
@@ -65,7 +65,7 @@ A seguir estão dois exemplos diferentes de fundamentos de governança iniciais 
 </ul>
 <!-- markdownlint-enable MD033 -->
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Quando uma base de governança estiver em vigor, aplique recomendações adequadas para melhorar a solução e proteger contra riscos tangíveis.
 

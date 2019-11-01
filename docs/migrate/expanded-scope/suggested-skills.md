@@ -8,16 +8,16 @@ ms.date: 05/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d98d8ea586d76c583ab22670ac310a9f5bf36fc1
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ffef26fd2ff6261133f5b63a8c13b5f4cd4364f5
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024716"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240253"
 ---
-# <a name="skills-readiness-path-during-the-migrate-phase-of-a-migration-journey"></a>Caminho de preparação de habilidades durante a fase de "migração" de um percurso de migração
+# <a name="skills-readiness-for-cloud-migration"></a>Preparação de habilidades para migração na nuvem
 
-Durante uma migração na nuvem, é provável que os funcionários e até mesmo alguns parceiros de integração de sistemas ou parceiros de serviços gerenciados precisem desenvolver novas habilidades para serem eficazes durante os esforços de migração.
+Durante uma migração de nuvem, é provável que os funcionários, bem como alguns parceiros de integração de sistemas ou parceiros de serviços gerenciados, precisem desenvolver novas habilidades para serem eficazes durante os esforços de migração.
 
 Há quatro processos distintos que são concluídos iterativamente durante a fase de "Migração" de qualquer percurso de migração. As seções a seguir alinham as habilidades necessárias para cada um desses processos com referências a dois pré-requisitos para recursos de habilidade.
 
@@ -29,41 +29,41 @@ A implementação de processos de "Migração" será criada com base nas habilid
 
 As seguintes ferramentas podem auxiliar a equipe na execução de atividades de avaliação:
 
-- [Equilibrar o portfólio](./balance-the-portfolio.md): verifique o equilíbrio e as alocações de investimento adequadas em um portfólio de aplicativos.
-- [Criar uma justificativa comercial](../../strategy/cloud-migration-business-case.md): crie e entenda a justificativa comercial que orienta o esforço de migração na nuvem.
-- [Racionalizar a propriedade digital](../../digital-estate/rationalize.md): racionalize os ativos na propriedade digital.
-- [Avaliação do portfólio de aplicativos](https://docs.microsoft.com/learn/modules/app-and-infra-migration-and-modernization): Critérios para tomar decisões relacionadas a opções de migração ou de inovação no portfólio de aplicativos.
-- [Avaliar e planejar a Migração do Microsoft Azure](https://www.pluralsight.com/courses/microsoft-azure-migration-assessing-planning): curso da Pluralsight para auxiliar na avaliação das cargas de trabalho locais
+- [Equilibre o portfólio](./balance-the-portfolio.md): garanta o equilíbrio e as alocações de investimento adequadas em um portfólio de aplicativos.
+- [Crie uma justificativa de negócios](../../strategy/cloud-migration-business-case.md): Crie e entenda a justificativa de negócios que conduz o esforço de migração de nuvem.
+- [Racionalizar o espaço digital](../../digital-estate/rationalize.md): racionalizar os ativos no estado digital.
+- [Avaliação do portfólio de aplicativos](https://docs.microsoft.com/learn/modules/app-and-infra-migration-and-modernization): critérios para tomar decisões relacionadas a opções de migração ou inovação no portfólio de aplicativos.
+- [Avaliando e planejando a migração de Microsoft Azure](https://www.pluralsight.com/courses/microsoft-azure-migration-assessing-planning): curso Pluralsight para auxiliar na avaliação de cargas de trabalho locais
 
 Durante os processos de avaliação, os arquitetos serão chamados para arquitetar soluções para cada carga de trabalho. Os seguintes recursos de habilidades podem preparar os arquitetos para essas tarefas:
 
-- [Bases para Arquitetura de Nuvem](https://app.pluralsight.com/library/courses/cloud-architecture-foundations): curso da Pluralsight para ajudar a arquitetar as soluções básicas corretas
-- [Arquitetura do Microsoft Azure](https://app.pluralsight.com/library/courses/cloud-architecture-foundations): curso da Pluralsight para arquitetos de aterramento na arquitetura do Azure
-- [Criar migrações para o Microsoft Azure](https://app.pluralsight.com/library/courses/cloud-architecture-foundations): curso da Pluralsight para ajudar os arquitetos a criar uma solução de migração
+- [Base para a arquitetura de nuvem](https://app.pluralsight.com/library/courses/cloud-architecture-foundations): curso Pluralsight para ajudar a arquitetar as soluções fundamentais corretas
+- [Arquitetura de Microsoft Azure](https://app.pluralsight.com/library/courses/cloud-architecture-foundations): curso Pluralsight para arquitetos de aterramento na arquitetura do Azure
+- [Projetando migrações para Microsoft Azure](https://app.pluralsight.com/library/courses/cloud-architecture-foundations): curso Pluralsight para ajudar arquitetos a projetar uma solução de migração
 
 ## <a name="migrate-skilling-resources"></a>Migrar recursos de habilidades
 
 O tutorial a seguir pode preparar a equipe para atividades de migração:
 
-- [Migrar para o Azure](https://docs.microsoft.com/azure/site-recovery/migrate-tutorial-on-premises-azure): usar o Azure Site Recovery para migrar VMs para o Azure.
-- [Hospedar novamente cargas de trabalho no Azure](https://aka.ms/rehostcourse): curso da Pluralsight que ensina aos espectadores como hospedar novamente as cargas de trabalho no Azure
-- [Migrar servidores físicos e virtuais para o Azure](https://app.pluralsight.com/library/courses/microsoft-azure-migrating-physical-virtual-servers/table-of-contents): curso da Pluralsight para migrar servidores para o Azure
-- [Importar e exportar dados para o Azure](https://app.pluralsight.com/library/courses/microsoft-azure-import-export-data/table-of-contents): curso da Pluralsight sobre a movimentação de dados do Azure e para ele
+- [Migrar para o Azure](https://docs.microsoft.com/azure/site-recovery/migrate-tutorial-on-premises-azure): usando Azure site Recovery para migrar VMs para o Azure.
+- [Rehospedar cargas de trabalho para o Azure](https://aka.ms/rehostcourse): curso Pluralsight que ensina aos espectadores como hospedar novamente as cargas de trabalho para o Azure
+- [Migrando servidores físicos e virtuais para o Azure](https://app.pluralsight.com/library/courses/microsoft-azure-migrating-physical-virtual-servers/table-of-contents): curso Pluralsight para migrar servidores para o Azure
+- [Importar e exportar dados para o Azure](https://app.pluralsight.com/library/courses/microsoft-azure-import-export-data/table-of-contents): curso Pluralsight sobre a movimentação de dados de e para o Azure
 
 ## <a name="optimize-and-promote-process-changes"></a>Otimizar e promover alterações no processo
 
 As ferramentas a seguir podem ajudar a equipe a otimizar os recursos e promover a produção:
 
 - [Custo e dimensionamento](../azure-best-practices/migrate-best-practices-costs.md): ajuste o dimensionamento para alinhar custos e orçamentos.
-- [Promover uma carga de trabalho](../azure-best-practices/migrate-best-practices-networking.md): altere a configuração da rede para reencaminhar os usuários de produção para cargas de trabalho migradas.
+- [Promover uma carga de trabalho](../azure-best-practices/migrate-best-practices-networking.md): altere a configuração de rede para redirecionar os usuários de produção para cargas de trabalho migradas.
 
 ## <a name="secure-and-manage-process-changes"></a>Proteger e gerenciar alterações no processo
 
 As ferramentas a seguir podem ajudar a equipe a encontrar maneiras de proteger e gerenciar ativos migrados:
 
-- [Proteger e gerenciar cargas de trabalho no Azure](../azure-best-practices/migrate-best-practices-security-management.md): melhores práticas para proteger e gerenciar cargas de trabalho no Azure.
+- [Proteger e gerenciar cargas de trabalho no Azure](../azure-best-practices/migrate-best-practices-security-management.md): práticas recomendadas para proteger e gerenciar cargas de trabalho no Azure.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Retorne à [lista de verificação de escopo expandido](./index.md) para verificar se o método de migração está totalmente alinhado.
 

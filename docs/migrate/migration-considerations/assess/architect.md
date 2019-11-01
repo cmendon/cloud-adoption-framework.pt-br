@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d62b2f5957dc5cee19f462e3c7d74c85672eadfe
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 151698c836add7c46c389cc94c76b942e52b0341
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70819498"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240235"
 ---
 # <a name="architect-workloads-prior-to-migration"></a>Arquitetar cargas de trabalho antes da migração
 
@@ -23,7 +23,7 @@ Este artigo expande o processo de avaliação revisando as atividades associadas
 
 As suposições a seguir são típicas para qualquer esforço de migração:
 
-- **IaaS.** Normalmente, supõe-se que a migração de cargas de trabalho envolve principalmente a movimentação de máquinas virtuais de um datacenter físico para um datacenter na nuvem por meio de uma migração de IaaS, exigindo o mínimo de redesenvolvimento ou de reconfiguração. Isso é conhecido como migração “lift-and-shift”. (Seguem as exceções.)
+- **IaaS.** Normalmente, supõe-se que a migração de cargas de trabalho envolve principalmente a movimentação de máquinas virtuais de um datacenter físico para um datacenter na nuvem por meio de uma migração de IaaS, exigindo o mínimo de redesenvolvimento ou de reconfiguração. Isso é conhecido como migração de comparação de _precisão e deslocamento_ . (Seguem as exceções.)
 - **Consistência da arquitetura.** As alterações na arquitetura fundamental durante uma migração aumentam consideravelmente a complexidade. Depurar um sistema alterado em uma nova plataforma introduz muitas variáveis que podem ser difíceis de isolar. Por esse motivo, as cargas de trabalho devem ser submetidas apenas a alterações secundárias durante a migração e as alterações devem ser testadas detalhadamente.
 - **Teste de desativação.** As migrações e a hospedagem de ativos consomem despesas operacionais e de capital possíveis. Supõe-se que as cargas de trabalho que estão sendo migradas foram revisadas para validar o uso contínuo. A opção de desativar ativos não utilizados gera economias de custos imediatas.
 - **Redimensionar ativos.** Supõe-se que alguns ativos locais estão usando totalmente os recursos alocados. Antes da migração, supõe-se que os ativos serão redimensionados para se adequar melhor aos requisitos de uso reais.
@@ -39,7 +39,7 @@ As suposições discriminadas podem criar empecilhos que poderiam retardar o pro
 
 ## <a name="accelerating-business-value"></a>Acelerar o valor empresarial
 
-Alguns cenário poderiam exigir uma arquitetura diferente da estratégia de nova hospedagem de IaaS presumida. A seguir, estão alguns exemplos:
+Alguns cenário poderiam exigir uma arquitetura diferente da estratégia de nova hospedagem de IaaS presumida. Seguem alguns exemplos:
 
 - Alternativas do PaaS. As implantações do PaaS podem reduzir os custos de hospedagem e o tempo necessário para migrar determinadas cargas de trabalho. Para obter uma lista de abordagens que podem se beneficiar de uma conversão de PaaS, confira o artigo sobre [como avaliar ativos](./evaluate.md).
 - Implantações com script/DevOps. Se uma carga de trabalho tiver uma implantação DevOps existente ou outras formas de implantação com script, o custo de alterar esses scripts poderá ser menor do que o custo de migrar o ativo.
@@ -47,9 +47,9 @@ Alguns cenário poderiam exigir uma arquitetura diferente da estratégia de nova
 
 Em cada um desses cenários discriminados, uma arquitetura alternativa poder ser a melhor solução possível.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Depois que a nova arquitetura é definida, [estimativas de custo precisas podem ser calculadas](./estimate.md).
 
 > [!div class="nextstepaction"]
-> [Estimar custos de nuvem](./estimate.md)
+> [Estimar os custos de nuvem](./estimate.md)
