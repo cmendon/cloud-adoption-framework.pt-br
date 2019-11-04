@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 222768f457f566d1ba19f8c53814110595e03bf3
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: 94b1f2784875553bb27f32189e6d7d723de42634
+ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72379111"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72980188"
 ---
 # <a name="organize-your-azure-resources"></a>Organizar seus recursos do Azure
 
@@ -159,7 +159,7 @@ Você também pode usar marcas para muitos outros fins. Usos comuns incluem:
 - **Automação:** Talvez você tenha scripts que são executados regularmente que podem realizar uma ação com base em um valor de tag, como "ShutdownTime" ou "DeprovisionDate".
 - **Cobrança:** as marcas podem aparecer na sua fatura. Você pode usá-las para ajudar a segmentar sua fatura, como "CostCenter" ou "BillTo".
 
-Cada recurso ou grupo de recursos pode ter um máximo de 15 pares de nome e valor de tag. Essa limitação se aplica somente a marcas aplicadas diretamente ao grupo de recursos ou recurso.
+Cada recurso ou grupo de recursos pode ter um máximo de 50 pares de nome e valor de tag. Essa limitação se aplica somente a marcas aplicadas diretamente ao grupo de recursos ou recurso.
 
 Para obter mais recomendações e exemplos de marcação, confira a [orientação sobre marcação](../considerations/naming-and-tagging.md) da Cloud Adoption Framework.
 

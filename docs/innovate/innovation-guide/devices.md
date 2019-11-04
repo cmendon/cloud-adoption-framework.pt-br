@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: f38c207c89cbe4d37958292c552165f39e2bd383
-ms.sourcegitcommit: 910efd3e686bd6b9bf93951d84253b43d4cc82b5
+ms.openlocfilehash: 8f7882a28dc135763584c8f2af4f5d834160f3ba
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72769280"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73047566"
 ---
 ::: zone target="docs"
 
@@ -29,9 +29,9 @@ ms.locfileid: "72769280"
 
 ::: zone-end
 
-Inove por meio de dispositivos de borda perceptivos e com conexão intermitente. Coordene milhões desses dispositivos, adquira e processe dados ilimitados e aproveite um número cada vez maior de experiências multissensioriais e multidispositivo. Para dispositivos na borda da rede, o Azure fornece uma estrutura para a criação de soluções comerciais de imersão e efetivas. A computação ubíqua, habilitada pelo Azure em combinação com a tecnologia de IA (inteligência artificial), permite que você crie todos os tipos de aplicativos e sistemas inteligentes possíveis de imaginar.
+Inove por meio de dispositivos de borda perceptivos e com conexão intermitente. Coordene milhões desses dispositivos, adquira e processe dados ilimitados e aproveite um número cada vez maior de experiências multissensioriais e multidispositivo. Para dispositivos na borda da rede, o Azure fornece uma estrutura para a criação de soluções comerciais de imersão e efetivas. Com a computação ubíqua, habilitada pelo Azure em combinação com a tecnologia de IA (inteligência artificial), é possível criar todos os tipos de aplicativos e sistemas inteligentes possíveis de imaginar.
 
-Os clientes do Azure utilizam um conjunto em expansão contínua de sistemas e dispositivos conectados que coletam e analisam dados – perto de seus usuários, dos dados ou de ambos. Os usuários obtêm insights e experiências em tempo real, fornecidos por aplicativos com reconhecimento de contexto e elevada capacidade de resposta. Ao mover partes da carga de trabalho para a borda, esses dispositivos podem gastar menos tempo enviando mensagens para a nuvem e reagir mais rapidamente aos eventos espaciais.
+Os clientes do Azure utilizam um conjunto em expansão contínua de sistemas e dispositivos conectados que coletam e analisam dados &mdash; perto de seus usuários, dos dados ou de ambos. Os usuários obtêm insights e experiências em tempo real, fornecidos por aplicativos com reconhecimento de contexto e elevada capacidade de resposta. Ao mover partes da carga de trabalho para a borda, esses dispositivos podem gastar menos tempo enviando mensagens para a nuvem e reagir mais rapidamente aos eventos espaciais.
 
 > [!div class="checklist"]
 >
@@ -49,7 +49,9 @@ Os clientes do Azure utilizam um conjunto em expansão contínua de sistemas e d
 
 <!-- markdownlint-enable MD025 -->
 
-Arquitete soluções que exercitam a comunicação bidirecional com dispositivos IoT na escala dos bilhões. Use dados telemétricos prontos para uso do dispositivo para a nuvem a fim de entender o estado de seus dispositivos e definir rotas de mensagens para outros serviços do Azure, apenas por meio de configuração. Fazendo uso das mensagens da nuvem para o dispositivo, envie comandos e notificações de maneira confiável para seus dispositivos conectados e acompanhe a entrega de mensagem com recibos de confirmação. Reenvie automaticamente as mensagens de dispositivos conforme necessário para ajustar-se à conectividade intermitente.
+Arquitete soluções que exercitam a comunicação bidirecional com dispositivos IoT na escala dos bilhões. Use dados telemétricos prontos para uso do dispositivo para a nuvem a fim de entender o estado de seus dispositivos e definir rotas de mensagens para outros serviços do Azure, apenas por meio de configuração. Fazendo uso das mensagens da nuvem para dispositivo, é possível enviar comandos e notificações de maneira confiável para seus dispositivos conectados e acompanhar a entrega de mensagem com recibos de confirmação. Além disso, você reenviará automaticamente as mensagens de dispositivos conforme necessário para ajustar-se à conectividade intermitente.
+
+Aqui estão alguns recursos que você encontrará:
 
 - Canal de **comunicação com segurança avançada** para enviar e receber dados de dispositivos IoT.
 - **Gerenciamento de dispositivo interno** e provisionamento para conectar e gerenciar dispositivos IoT em escala.
@@ -66,16 +68,18 @@ Arquitete soluções que exercitam a comunicação bidirecional com dispositivos
 
 ::: zone target="chromeless"
 
-<!-- markdownlint-disable DOCSMD001 -->
-
 ### <a name="action"></a>Ação
 
-Para criar um Hub IoT:
+Para criar um hub IoT:
 
 1. Acesse o **Hub IoT**.
-2. Clique em **Criar um Hub IoT**.
+2. Selecione **Criar Hub IoT**.
+
+<!-- markdownlint-disable DOCSMD001 -->
 
 ::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Devices%2FIotHubs]" submitText="Go to IoT Hub" :::
+
+<!-- markdownlint-enable DOCSMD001 -->
 
 O Serviço de Provisionamento de Dispositivos no Hub IoT é um serviço auxiliar do Hub IoT que habilita o provisionamento just-in-time e sem toque.
 
@@ -86,7 +90,9 @@ O Serviço de Provisionamento de Dispositivos no Hub IoT é um serviço auxiliar
 Para criar Serviços de Provisionamento de Dispositivos no Hub IoT:
 
 1. Acesse os **Serviços de Provisionamento de Dispositivos no Hub IoT**.
-2. Clique em **Criar Serviço de Provisionamento de Dispositivos**.
+2. Selecione **Criar Serviço de Provisionamento de Dispositivos**.
+
+<!-- markdownlint-disable DOCSMD001 -->
 
 ::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Devices%2FProvisioningServices]" submitText="Go to Device Provisioning Services" :::
 
@@ -102,7 +108,7 @@ Crie experiências reutilizáveis, altamente escalonáveis e com reconhecimento 
 
 **Modelos de objeto de Gêmeos Digitais do Azure:** Uma ontologia que descreve as regiões, os locais, os andares, os escritórios, as zonas, as salas de conferência e as salas de foco de um prédio inteligente ou ainda que descreve várias estações de energia, subestações, recursos de energia e clientes de uma grade de energia pode ser modelada usando modelos de objeto de Gêmeos Digitais e ontologias.
 
-**Grafo de inteligência espacial:** O grafo hierárquico de espaços, dispositivos e pessoas definido no modelo de objeto de Gêmeos Digitais que dá suporte a herança, filtragem, passagem, escalabilidade e extensibilidade. É possível gerenciar e interagir com o grafo espacial com uma coleção de APIs REST hospedadas no Azure.
+**Grafo de inteligência espacial:** O grafo hierárquico de espaços, dispositivos e pessoas definido no modelo de objeto de Gêmeos Digitais que dá suporte a herança, filtragem, passagem, escalabilidade e extensibilidade. É possível gerenciar e interagir com o grafo espacial por meio da coleção de APIs REST hospedadas no Azure.
 
 ::: zone target="docs"
 
@@ -112,16 +118,16 @@ Crie experiências reutilizáveis, altamente escalonáveis e com reconhecimento 
 
 ::: zone target="chromeless"
 
-<!-- markdownlint-disable DOCSMD001 -->
-
 ### <a name="action"></a>Ação
 
 Para criar Gêmeos Digitais do Azure:
 
 1. No painel esquerdo, selecione **Criar um recurso**.
-2. Pesquise por gêmeos digitais e selecione **Gêmeos Digitais**.
+2. Pesquise por **gêmeos digitais** e depois selecione **Gêmeos Digitais**.
 3. Selecione **Criar** para iniciar o processo de implantação.
-4. Clique no botão abaixo para examinar os Gêmeos Digitais existentes.
+4. Para examinar as Gêmeos Digitais existentes, selecione este botão:
+
+<!-- markdownlint-disable DOCSMD001 -->
 
 ::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.IoTSpaces%2FGraph]" submitText="Go to Digital Twins" :::
 
@@ -149,14 +155,14 @@ Além das funcionalidades de localização tradicionais, tais como proximidade, 
 
 ::: zone target="chromeless"
 
-<!-- markdownlint-disable DOCSMD001 -->
-
 ### <a name="action"></a>Ação
 
 Para usar a inteligência de localização:
 
 1. Acesse **Contas do Azure Mapas**.
-2. Clique em **Criar contas do Azure Mapas**.
+2. Selecione **Criar contas do Azure Mapas**.
+
+<!-- markdownlint-disable DOCSMD001 -->
 
 ::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Maps%2Faccounts]" submitText="Go to Azure Maps Account" :::
 
@@ -166,13 +172,13 @@ Para usar a inteligência de localização:
 
 ## <a name="spatial-experiencestabspatial"></a>[Experiências espaciais](#tab/spatial)
 
-Âncoras Espaciais do Azure permite aos desenvolvedores trabalhar com plataformas de realidade misturada para perceber espaços, designar pontos precisos de interesse e lembrar-se dos pontos de interesse de dispositivos com suporte.
+O Âncoras Espaciais do Azure permite aos desenvolvedores trabalhar com plataformas de realidade misturada para perceber espaços, designar pontos precisos de interesse e lembrar-se dos pontos de interesse de dispositivos compatíveis.
 
 **Adicione contexto ao mundo real:** Forneça a seus usuários um melhor entendimento sobre seus dados, bem como onde e quando eles são necessários, ao colocar seu conteúdo digital em pontos de interesse físicos e conectá-lo a esses pontos de interesse.
 
 **Compartilhe hologramas entre dispositivos:** Acelere decisões e resultados ao levar o ambiente 3D a sua equipe e clientes em um dispositivo de escolha deles. O recurso Âncoras Espaciais torna mais fácil para pessoas no mesmo lugar participarem de aplicativos de realidade misturada multiusuário.
 
-**Experiências envolventes:** Conecte as âncoras espaciais entre si ao criar relações entre elas e forneça uma experiência de usuário que possa incluir dois ou mais pontos de interesse com os quais um usuário precisa interagir para concluir uma tarefa. Seu aplicativo pode permitir que um usuário coloque um artefato virtual no mundo real. Em uma configuração industrial, um usuário pode receber informações contextuais sobre um computador apontando uma câmera de dispositivos com suporte para ele.
+**Experiências envolventes:** Conecte as âncoras espaciais pela criação de relações entre elas e forneça uma experiência de usuário que possa incluir dois ou mais pontos de interesse com os quais um usuário precisa interagir para concluir uma tarefa. Seu aplicativo pode permitir que um usuário coloque um artefato virtual no mundo real. Em uma configuração industrial, um usuário pode receber informações contextuais sobre um computador apontando uma câmera de dispositivos com suporte para ele.
 
 O recurso Âncoras Espaciais do Azure é composto por um serviço gerenciado e os SDKs do cliente para plataformas de dispositivos com suporte.
 
@@ -184,14 +190,14 @@ O recurso Âncoras Espaciais do Azure é composto por um serviço gerenciado e o
 
 ::: zone target="chromeless"
 
-<!-- markdownlint-disable DOCSMD001 -->
-
 ### <a name="action"></a>Ação
 
 Para usar as experiências espaciais:
 
 1. Acesse **Contas de Âncoras Espaciais**.
-2. Clique em **Criar contas de âncoras espaciais**.
+2. Selecione **Criar contas de âncoras espaciais**.
+
+<!-- markdownlint-disable DOCSMD001 -->
 
 ::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.MixedReality%2FspatialAnchorsAccounts]" submitText="Go to Spatial Anchors Accounts" :::
 
@@ -215,14 +221,14 @@ O processo de renderização usa computação intensiva. Pode haver muitos quadr
 
 ::: zone target="chromeless"
 
-<!-- markdownlint-disable DOCSMD001 -->
-
 ### <a name="action"></a>Ação
 
 Para usar o Remote Rendering:
 
 1. Acesse **Contas do Lote**.
-2. Clique em **Criar contas do Lote**.
+2. Selecione **Criar contas do Lote**.
+
+<!-- markdownlint-disable DOCSMD001 -->
 
 ::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Batch%2FbatchAccounts]" submitText="Go to Azure Batch" :::
 
