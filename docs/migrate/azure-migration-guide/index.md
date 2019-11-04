@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 221259ce6550f42aad6e8dbb0a1dd2144bbdb6b4
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 9f9ad2db240ad9453a8e337bdbc23f0122ebb9c5
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048514"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239984"
 ---
 ::: zone target="docs"
 
@@ -42,7 +42,7 @@ Antes fazer a migração dos recursos do Azure, é necessário escolher o métod
 
 Este guia o conduz pelos fundamentos de migrar aplicativos e recursos do ambiente local para o Azure. Ele é projetado para escopos de migração com complexidade mínima. Para determinar a adequação desse guia para migração, veja a guia **Quando usar este guia**.
 
-Quando você faz a migração para o Azure, é possível migrar seus aplicativos no estado em que se encontram usando soluções de máquina virtual baseadas em IaaS (conhecidas como migração do tipo "lift-and-shift" ou "nova hospedagem") ou ter a flexibilidade de usar serviços gerenciados e outros recursos nativos de nuvem para modernizar seus aplicativos. Veja a guia **Opções de migração** para obter mais informações sobre essas opções. À medida que você desenvolve sua estratégia de migração, pode considerar:
+Quando você faz a migração para o Azure, é possível migrar seus aplicativos no estado em que se encontram usando soluções de máquina virtual baseadas em IaaS (conhecidas como migração do tipo _lift-and-shift_ ou _nova hospedagem_) ou ter a flexibilidade de usar serviços gerenciados e outros recursos nativos de nuvem para modernizar seus aplicativos. Veja a guia **Opções de migração** para obter mais informações sobre essas opções. À medida que você desenvolve sua estratégia de migração, pode considerar:
 
 - Meus aplicativos migrados vão funcionar na nuvem?
 - Qual é a melhor estratégia (em relação a tecnologia, ferramentas e migrações) para meu aplicativo? Veja o [Guia de decisão das ferramentas de migração](../../decision-guides/migrate-decision-guide/index.md) da Microsoft Cloud Adoption Framework para obter mais informações.

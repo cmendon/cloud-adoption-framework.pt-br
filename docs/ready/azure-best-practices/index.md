@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 67b65affee2a2ac351ab603a52b0b6202d41458f
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: d55635078be0c32496a0237df1b2a67aecc5e574
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548995"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240158"
 ---
 # <a name="best-practices-for-azure-readiness"></a>Melhores práticas de Preparação para o Azure
 
@@ -24,32 +24,32 @@ Uma grande parte da preparação para a nuvem é equipar os funcionários com as
 Use as diretrizes a seguir ao organizar e implantar seus ativos no ambiente do Azure:
 
 - [Conceitos fundamentais do Azure](../considerations/fundamental-concepts.md). Conheça os conceitos fundamentais e os termos usados no Azure. Saiba também como esses conceitos se relacionam entre si.
-- [Convenções de nomenclatura e marcação recomendadas](../considerations/naming-and-tagging.md). Examine as recomendações detalhadas para nomear e marcar seus recursos. Essas recomendações dão suporte aos esforços de adoção de nuvem corporativa.
-- [Dimensionamento com várias assinaturas do Azure](../considerations/scaling-subscriptions.md). Compreenda as estratégias de dimensionamento com várias assinaturas do Azure.
+- [Convenções de nomenclatura e marcação recomendadas](../azure-best-practices/naming-and-tagging.md). Examine as recomendações detalhadas para nomear e marcar seus recursos. Essas recomendações dão suporte aos esforços de adoção de nuvem corporativa.
+- [Dimensionamento com várias assinaturas do Azure](../azure-best-practices/scaling-subscriptions.md). Compreenda as estratégias de dimensionamento com várias assinaturas do Azure.
 - [Organizar seus recursos com grupos de gerenciamento do Azure](https://docs.microsoft.com/azure/governance/management-groups/?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json). Saiba como os grupos de gerenciamento do Azure podem gerenciar recursos, funções, políticas e a implantação em várias assinaturas.
-- [Criar uma consistência de nuvem híbrida](../../infrastructure/misc/hybrid-consistency.md). Crie soluções de nuvem híbrida que fornecem os benefícios da inovação na nuvem, mantendo muitas das conveniências do gerenciamento local.
+- [Criar uma consistência de nuvem híbrida](../considerations/hybrid-consistency.md). Crie soluções de nuvem híbrida que fornecem os benefícios da inovação na nuvem, mantendo muitas das conveniências do gerenciamento local.
 
 ## <a name="networking"></a>Rede
 
 Use as diretrizes a seguir para preparar sua infraestrutura de rede de nuvem para dar suporte às suas cargas de trabalho:
 
-- [Decisões de rede](../considerations/network-decisions.md). Escolha os serviços, as ferramentas e as arquiteturas de rede que darão suporte aos requisitos de carga de trabalho, governança e conectividade de sua organização.
+- [Decisões de rede](../considerations/networking-options.md). Escolha os serviços, as ferramentas e as arquiteturas de rede que darão suporte aos requisitos de carga de trabalho, governança e conectividade de sua organização.
 - [Planejamento de rede virtual](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json). Saiba como planejar redes virtuais com base em seus requisitos de isolamento, conectividade e localização.
 - [Melhores práticas de segurança de rede](https://docs.microsoft.com/azure/security/azure-security-network-security-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json). Conheça as melhores práticas para resolver problemas comuns de segurança de rede usando funcionalidades internas do Azure.
 - [Redes de perímetro](./perimeter-networks.md). Também conhecidas como DMZs (zonas desmilitarizadas), as redes de perímetro permitem a conectividade segura entre as redes de nuvem e as redes locais ou do datacenter físico, juntamente com qualquer conectividade com a Internet.
-- [Topologia de rede hub e spoke](./hub-spoke-network-topology.md). Hub e spoke é um modelo de rede para o gerenciamento eficiente dos requisitos comuns de comunicação ou segurança para cargas de trabalho complicadas. Também aborda as possíveis limitações da assinatura do Azure.
+- [Topologia de rede de hub e spoke](./hub-spoke-network-topology.md). Hub e spoke é um modelo de rede para o gerenciamento eficiente dos requisitos comuns de comunicação ou segurança para cargas de trabalho complicadas. Também aborda as possíveis limitações da assinatura do Azure.
 
 ## <a name="identity-and-access-control"></a>Identidade e controle de acesso
 
 Use as diretrizes a seguir ao projetar sua infraestrutura de identidade e controle de acesso para melhorar a segurança e a eficiência do gerenciamento de suas cargas de trabalho:
 
 - [Melhores práticas de segurança do controle de acesso e gerenciamento de identidades do Azure](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json). Conheça as melhores práticas de gerenciamento de identidades e controle de acesso usando funcionalidades internas do Azure.
-- [Melhores práticas de controle de acesso baseado em função](./roles.md). O RBAC (controle de acesso baseado em função) do Azure oferece gerenciamento de acesso refinado baseado em grupo para os recursos organizados em torno das funções de usuário.
+- [Melhores práticas de controle de acesso baseado em função](../considerations/roles.md). O RBAC (controle de acesso baseado em função) do Azure oferece gerenciamento de acesso refinado baseado em grupo para os recursos organizados em torno das funções de usuário.
 - [Como proteger o acesso privilegiado em implantações híbridas e de nuvem no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-admin-roles-secure?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json). Use o Azure Active Directory para garantir que as contas do administrador e o acesso administrativo de sua organização sejam seguros em seu ambiente de nuvem e local.
 
 ## <a name="storage"></a>Armazenamento
 
-- [Diretrizes do Armazenamento do Azure](../considerations/storage-guidance.md). Selecione a solução ideal do Armazenamento do Azure para dar suporte aos seus cenários de uso.
+- [Diretrizes do Armazenamento do Azure](../considerations/storage-options.md). Selecione a solução ideal do Armazenamento do Azure para dar suporte aos seus cenários de uso.
 - [Guia de segurança do Armazenamento do Azure](https://docs.microsoft.com/azure/storage/common/storage-security-guide?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json). Saiba mais sobre os recursos de segurança do Armazenamento do Azure.
 
 ## <a name="databases"></a>Bancos de dados

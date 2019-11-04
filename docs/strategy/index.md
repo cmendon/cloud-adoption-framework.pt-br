@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 layout: LandingPage
-ms.openlocfilehash: 1c112665ed11ba0f4e9ca205a5eec6bb719e95f9
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 6e051b5272535ccb9fe080176e04859ccf20470c
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71026194"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240059"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -98,7 +98,7 @@ Desenvolva um caso comercial para validar o modelo financeiro que dá suporte à
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>Escolha o primeiro projeto certo</h3>
-Seu primeiro projeto de nuvem ajudará a alinhar as motivações com o esforço técnico. Este artigo pode ajudá-lo a escolher seu primeiro projeto com sabedoria.
+Seu primeiro projeto de adoção de nuvem ajudará a alinhar as motivações com o esforço técnico. Este artigo pode ajudá-lo a escolher seu primeiro projeto com sabedoria.
                         </div>
                     </div>
                 </div>

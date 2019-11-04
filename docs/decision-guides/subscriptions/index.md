@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: a6ee53355313a0f0c277d7b1c69e77494cdf8e1c
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 4f024a95afcb993bd0fe314737ee4d2f97daffb0
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058716"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73238779"
 ---
 # <a name="subscription-decision-guide"></a>Guia de decisão da assinatura
 
@@ -22,7 +22,7 @@ Um design de assinatura eficaz ajuda as organizações a estabelecer uma estrutu
 
 Cada recurso do Azure, como uma máquina virtual ou um banco de dados, está associado a uma assinatura. A adoção do Azure começa com a criação de uma assinatura do Azure, a associação dessa assinatura a uma conta e a implantação de recursos na assinatura. Para obter uma visão geral desses conceitos, confira [Conceitos fundamentais do Azure](../../ready/considerations/fundamental-concepts.md).
 
-À medida que sua propriedade digital cresce no Azure, provavelmente, você precisará criar assinaturas adicionais para atender às suas necessidades. O Azure permite que você defina uma hierarquia de grupos de gerenciamento para organizar suas assinaturas e aplicar com facilidade a política certa aos recursos certos. Para obter mais informações, confira [Dimensionamento com várias assinaturas do Azure](../../ready/considerations/scaling-subscriptions.md).
+À medida que sua propriedade digital cresce no Azure, provavelmente, você precisará criar assinaturas adicionais para atender às suas necessidades. O Azure permite que você defina uma hierarquia de grupos de gerenciamento para organizar suas assinaturas e aplicar com facilidade a política certa aos recursos certos. Para obter mais informações, confira [Dimensionamento com várias assinaturas do Azure](../../ready/azure-best-practices/scaling-subscriptions.md).
 
 Alguns exemplos básicos do uso de grupos de gerenciamento para separar diferentes cargas de trabalho incluem:
 
