@@ -10,7 +10,7 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.openlocfilehash: c14445dcdeaba16a01d5adbdab0a2c47feb57915
 ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 10/17/2019
 ms.locfileid: "72558006"
