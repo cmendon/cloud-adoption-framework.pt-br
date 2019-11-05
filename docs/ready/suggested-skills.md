@@ -8,12 +8,12 @@ ms.date: 05/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 6da4db02744c1ca670588c4496524073d71b3eae
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 1a2da8e65e6b1fda5995fa5fb207239e36b7d8a7
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73240075"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566701"
 ---
 # <a name="skills-readiness-path-during-the-ready-phase-of-a-migration-journey"></a>Caminho de preparação de habilidades durante a fase de "prontidão" de um percurso de migração
 
@@ -30,16 +30,16 @@ Dependendo das motivações e dos resultados dos negócios associados a um esfor
 
 Durante a fase de prontidão, a equipe técnica é acionada para criar uma zona de aterrissagem para a migração capaz de hospedar, operar e controlar as cargas de trabalho que foram migradas para a nuvem. O desenvolvimento das habilidades necessárias pode ser acelerado com os seguintes caminhos de aprendizagem:
 
-- [Criar uma conta do Azure](/learn/modules/create-an-azure-account): a primeira etapa para usar o Azure é criar uma conta. Sua conta contém os serviços do Azure que você provisiona e manipula suas configurações pessoais, como identidade, cobrança e preferências.
-- [Portal do Azure](/learn/modules/tour-azure-portal): Conheça os recursos e serviços do portal do Azure e personalize o Portal.
-- [Introdução ao Azure](/learn/modules/welcome-to-azure): comece a usar o Azure criando e configurando sua primeira máquina virtual na nuvem.
-- [Introdução à segurança no Azure](/learn/modules/intro-to-security-in-azure): discuta os conceitos básicos para proteger sua infraestrutura e dados quando você trabalha na nuvem. Entenda quais responsabilidades são suas e do que o Azure cuida para você.
-- [Gerenciar recursos no Azure](/learn/paths/manage-resources-in-azure): saiba como trabalhar com a linha de comando do Azure e o portal da Web para criar, gerenciar e controlar recursos baseados em nuvem.
-- [Criar uma VM](/learn/modules/create-windows-virtual-machine-in-azure): Crie uma máquina virtual usando o portal do Azure.
-- [Rede do Azure](/learn/modules/intro-to-azure-networking): Aprenda algumas das noções básicas de rede do Azure e como a rede do Azure ajuda a melhorar a resiliência e a reduzir a latência.
-- [Opções de computação do Azure](/learn/modules/intro-to-azure-compute): examine os serviços de computação do Azure.
-- [Proteger recursos com RBAC (controle de acesso baseado em função)](/learn/modules/secure-azure-resources-with-rbac): Use o RBAC para proteger recursos.
-- [Opções de armazenamento de dados](/learn/modules/intro-to-data-in-azure/index): benefícios do armazenamento de dados do Azure.
+- [Criar uma conta do Azure](https://docs.microsoft.com/learn/modules/create-an-azure-account): a primeira etapa para usar o Azure é criar uma conta. Sua conta contém os serviços do Azure que você provisiona e manipula suas configurações pessoais, como identidade, cobrança e preferências.
+- [Portal do Azure](https://docs.microsoft.com/learn/modules/tour-azure-portal): Conheça os recursos e serviços do portal do Azure e personalize o Portal.
+- [Introdução ao Azure](https://docs.microsoft.com/learn/modules/welcome-to-azure): comece a usar o Azure criando e configurando sua primeira máquina virtual na nuvem.
+- [Introdução à segurança no Azure](https://docs.microsoft.com/learn/modules/intro-to-security-in-azure): discuta os conceitos básicos para proteger sua infraestrutura e dados quando você trabalha na nuvem. Entenda quais responsabilidades são suas e do que o Azure cuida para você.
+- [Gerenciar recursos no Azure](https://docs.microsoft.com/learn/paths/manage-resources-in-azure): saiba como trabalhar com a linha de comando do Azure e o portal da Web para criar, gerenciar e controlar recursos baseados em nuvem.
+- [Criar uma VM](https://docs.microsoft.com/learn/modules/create-windows-virtual-machine-in-azure): Crie uma máquina virtual usando o portal do Azure.
+- [Rede do Azure](https://docs.microsoft.com/learn/modules/intro-to-azure-networking): Aprenda algumas das noções básicas de rede do Azure e como a rede do Azure ajuda a melhorar a resiliência e a reduzir a latência.
+- [Opções de computação do Azure](https://docs.microsoft.com/learn/modules/intro-to-azure-compute): examine os serviços de computação do Azure.
+- [Proteger recursos com RBAC (controle de acesso baseado em função)](https://docs.microsoft.com/learn/modules/secure-azure-resources-with-rbac): Use o RBAC para proteger recursos.
+- [Opções de armazenamento de dados](https://docs.microsoft.com/learn/modules/intro-to-data-in-azure/index): benefícios do armazenamento de dados do Azure.
 
 Durante a fase de prontidão, os arquitetos são acionados para arquitetar soluções que abrangem todos os ambientes do Azure. Os seguintes recursos de criação de habilidades podem preparar os arquitetos para essas tarefas:
 
@@ -65,14 +65,16 @@ O Microsoft Learn é uma nova abordagem para o aprendizado. A preparação para 
 
 Os exemplos a seguir são alguns caminhos de aprendizado personalizados em Microsoft Learn que se alinham à parte pronta da estrutura de adoção da nuvem:
 
-[Conceitos básicos do Azure](learn/paths/azure-for-the-data-engineer/): Aprenda conceitos de nuvem, como alta disponibilidade, escalabilidade, elasticidade, agilidade, tolerância a falhas e recuperação de desastres.  Entenda os benefícios da computação em nuvem no Azure e como ela pode poupar tempo e dinheiro. Compare e contraste as estratégias básicas para fazer a transição para a nuvem do Azure. Explore a amplitude dos serviços disponíveis no Azure, incluindo computação, rede, armazenamento e segurança. 
+[Conceitos básicos do Azure](https://docs.microsoft.com/learn/paths/azure-for-the-data-engineer): Aprenda conceitos de nuvem, como alta disponibilidade, escalabilidade, elasticidade, agilidade, tolerância a falhas e recuperação de desastres.  Entenda os benefícios da computação em nuvem no Azure e como ela pode poupar tempo e dinheiro. Compare e contraste as estratégias básicas para fazer a transição para a nuvem do Azure. Explore a amplitude dos serviços disponíveis no Azure, incluindo computação, rede, armazenamento e segurança.
 
-[Gerenciar recursos no Azure](learn/paths/azure-for-the-data-engineer/): saiba como trabalhar com a linha de comando do Azure e o portal da Web para criar, gerenciar e controlar recursos baseados em nuvem.
+[Gerenciar recursos no Azure](https://docs.microsoft.com/learn/paths/azure-for-the-data-engineer): saiba como trabalhar com a linha de comando do Azure e o portal da Web para criar, gerenciar e controlar recursos baseados em nuvem.
 
-[Administrar recursos de infraestrutura no Azure](learn/paths/administer-infrastructure-resources-in-azure/): saiba como criar, gerenciar, proteger e dimensionar recursos de máquinas virtuais.
+[Administrar recursos de infraestrutura no Azure](https://docs.microsoft.com/learn/paths/administer-infrastructure-resources-in-azure): saiba como criar, gerenciar, proteger e dimensionar recursos de máquinas virtuais.
 
-[Armazenar dados no Azure](learn/paths/store-data-in-azure/): o Azure fornece várias maneiras de armazenar dados: não estruturados, de arquivamento, relacionais e muito mais. Aprenda as noções básicas do gerenciamento de armazenamento no Azure, como criar uma conta de armazenamento e como escolher o modelo certo para os dados que você deseja armazenar na nuvem.
+[Armazenar dados no Azure](https://docs.microsoft.com/learn/paths/store-data-in-azure): o Azure fornece várias maneiras de armazenar dados: não estruturados, de arquivamento, relacionais e muito mais. Aprenda as noções básicas do gerenciamento de armazenamento no Azure, como criar uma conta de armazenamento e como escolher o modelo certo para os dados que você deseja armazenar na nuvem.
 
-[Arquitetar excelentes soluções no Azure](learn/paths/architect-great-solutions-in-azure/): Aprenda a projetar e criar soluções seguras, escalonáveis e de alto desempenho no Azure examinando os princípios básicos encontrados em todas as boas arquiteturas.
+[Arquitetar excelentes soluções no Azure](https://docs.microsoft.com/learn/paths/architect-great-solutions-in-azure): Aprenda a projetar e criar soluções seguras, escalonáveis e de alto desempenho no Azure examinando os princípios básicos encontrados em todas as boas arquiteturas.
 
-Para outros roteiros de aprendizagem, navegue no [catálogo do Learn](/learn/browse). Use o filtro de **Funções** para alinhar os roteiros de aprendizagem com sua função.
+## <a name="learn-more"></a>Saiba mais
+
+Para outros caminhos de aprendizado, procure o [catálogo Microsoft Learn](https://docs.microsoft.com/learn/browse). Use o filtro de **Funções** para alinhar os roteiros de aprendizagem com sua função.

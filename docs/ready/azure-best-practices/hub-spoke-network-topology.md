@@ -11,12 +11,12 @@ ms.subservice: ready
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 4bd368bacd68a44d0b825eb0e2ad0b91b07b3b48
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 166c45feddd1b6e1ccc17b5301b99e91a3d18e0e
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239912"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566777"
 ---
 # <a name="hub-and-spoke-network-topology"></a>Topologia de rede hub e spoke
 
@@ -34,7 +34,7 @@ Ativos de nuvem menores podem não se beneficiar da estrutura e dos recursos adi
 > - [Implementar uma topologia de rede hub e spoke no Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/hub-spoke)
 > - [Implementar uma topologia de rede de Hub e spoke com serviços compartilhados no Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services)
 
-## <a name="overview"></a>Visão Geral
+## <a name="overview"></a>Visão geral
 
 ![Exemplos de uma topologia de rede de Hub e spoke][1]
 
@@ -61,7 +61,7 @@ Os spokes também podem separar e habilitar diferentes grupos na sua organizaç�
 
 No Azure, cada componente, seja qual for o tipo, é implantado em uma assinatura do Azure. O isolamento dos componentes do Azure em diferentes assinaturas do Azure pode atender aos requisitos de diferentes linhas de negócios, como configurar níveis diferenciados de acesso e autorização.
 
-Uma única implementação de Hub e spoke pode ser dimensionada verticalmente para um grande número de spokes. Mas, assim como acontece com todos os sistemas de TI, há limites de plataformas. A implantação de hub está limitada a uma assinatura específica do Azure, que tem restrições e limites. Um exemplo é um número máximo de emparelhamentos de rede virtual. Consulte [assinatura do Azure e limites de serviço, cotas e restrições] [limites] para obter detalhes).
+Uma única implementação de Hub e spoke pode ser dimensionada verticalmente para um grande número de spokes. Mas, assim como acontece com todos os sistemas de TI, há limites de plataformas. A implantação de hub está limitada a uma assinatura específica do Azure, que tem restrições e limites. Um exemplo é um número máximo de emparelhamentos de rede virtual. Para saber mais, confira [Assinatura e limites de serviço, cotas e restrições do Azure](https://docs.microsoft.com/azure/azure-subscription-service-limits).
 
 Em casos em que limites podem ser um problema, a arquitetura pode ser expandida ainda mais estendendo o modelo de um único hub e spoke para um cluster de hubs e spokes. É possível interconectar vários hubs em uma ou mais regiões do Azure usando emparelhamento de rede virtual, Azure ExpressRoute, WAN Virtual ou VPN site a site.
 

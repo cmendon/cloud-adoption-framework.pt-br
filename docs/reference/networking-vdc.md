@@ -10,16 +10,16 @@ ms.subservice: reference
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: cbd72c04c7d938aae41e20fae82a29b731f4b256
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: e5729e592fe0e602d24e2e37831c782fada73128
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73240091"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566697"
 ---
 # <a name="virtual-datacenters-a-network-perspective"></a>Data centers virtuais: uma perspectiva de rede
 
-## <a name="overview"></a>Visão Geral
+## <a name="overview"></a>Visão geral
 
 A migração de aplicativos locais para o Azure fornece às organizações os benefícios de uma infraestrutura segura e econômica, mesmo se os aplicativos forem migrados com o mínimo de alterações. No entanto, para aproveitar ao máximo a agilidade com a computação em nuvem, as empresas precisam evoluir suas arquiteturas para aproveitarem os recursos do Azure.
 
@@ -35,7 +35,7 @@ No início, a nuvem era, essencialmente, uma plataforma de hospedagem de aplicat
 
 As soluções de nuvem eram projetadas para hospedar aplicativos únicos relativamente isolados no espectro público. Essa abordagem funcionou bem por alguns anos. Depois, os benefícios das soluções de nuvem tornaram-se evidentes, e cargas de trabalho em grande escala passaram a ser hospedadas na nuvem. Abordar a segurança, a confiabilidade, o desempenho e as preocupações de custos das implantações em uma ou mais regiões se tornou vital durante todo o ciclo de vida do serviço de nuvem.
 
-O diagrama de implantação de nuvem a seguir mostra um exemplo de falha de segurança na **caixa vermelha**. A **caixa amarela** mostra espaço para otimizar dispositivos de rede virtual entre cargas de trabalho.
+O diagrama de implantação em nuvem a seguir mostra um exemplo de uma lacuna de segurança, realçada na caixa vermelha. A caixa amarela mostra espaço para otimizar dispositivos de rede virtual entre cargas de trabalho.
 
 ![0][0]
 
@@ -87,13 +87,13 @@ As organizações empresariais podem exigir uma combinação exigente de serviç
 
 Um serviço de diretório é uma infraestrutura de informações compartilhadas que localiza, gerencia, administra e organiza itens cotidianos e recursos de rede. Esses recursos podem incluir volumes, pastas, arquivos, impressoras, usuários, grupos, dispositivos e outros objetos. Cada recurso na rede é considerado um objeto pelo servidor de diretório. Informações sobre um recurso são armazenadas como uma coleção de atributos associados a tal recurso ou objeto.
 
-Todos os serviços comerciais do Microsoft Online dependem do Azure Active Directory (Azure AD) para entrada e outras necessidades de identidade. O Azure Active Directory é uma solução de nuvem de gerenciamento de acesso de identidade altamente disponível que combina os serviços principais de diretório, controle de identidade avançado e gerenciamento de acesso do aplicativo. O Azure AD pode ser integrado ao Active Directory local para habilitar o logon único para todos os aplicativos hospedados localmente e baseados em nuvem (local). Os atributos do usuário do Active Directory local podem ser sincronizados automaticamente com o Azure AD.
+Todos os serviços comerciais do Microsoft Online dependem do Azure Active Directory (Azure AD) para entrada e outras necessidades de identidade. O Azure Active Directory é uma solução de nuvem de gerenciamento de acesso e identidade abrangente e altamente disponível que combina os serviços principais de diretório, governança avançada de identidades e gerenciamento do acesso de aplicativos. O Azure AD pode ser integrado ao Active Directory local para habilitar o logon único para todos os aplicativos hospedados localmente e baseados em nuvem (local). Os atributos do usuário do Active Directory local podem ser sincronizados automaticamente com o Azure AD.
 
 Um único administrador global não é necessário para atribuir todas as permissões em uma implementação de datacenter virtual. Em vez disso, cada departamento específico, grupo de usuários ou serviços no serviço de diretório pode ter as permissões necessárias para gerenciar seus próprios recursos em uma implementação de datacenter virtual. Estruturar permissões requer balanceamento. Um número excessivo de permissões pode prejudicar a eficiência de desempenho, enquanto permissões de menos ou não exigentes podem aumentar os riscos de segurança. O RBAC (controle de acesso baseado em função) do Azure ajuda a resolver esse problema, oferecendo gerenciamento de acesso refinado para recursos em uma implementação de datacenter virtual.
 
 #### <a name="security-infrastructure"></a>Infraestrutura de segurança
 
-A infraestrutura de segurança refere-se à diferenciação de tráfego em um segmento de rede virtual específico da implementação do datacenter virtual. Essa infraestrutura especifica como a entrada e a saída são controladas em uma implementação de datacenter virtual. O Azure é baseado em uma arquitetura multilocatário que impede tráfego não autorizado e não intencional entre implantações usando isolamento de VNet, ACLs (listas de controle de acesso), balanceadores de carga, filtros de IP e políticas de fluxo de tráfego. O recurso NAT (conversão de endereços de rede) separa o tráfego de rede interno do tráfego externo.
+A infraestrutura de segurança refere-se à diferenciação de tráfego em um segmento de rede virtual específico da implementação do datacenter virtual. Essa infraestrutura especifica como a entrada e a saída são controladas em uma implementação de datacenter virtual. O Azure é baseado em uma arquitetura multilocatário que impede tráfego não autorizado e não intencional entre implantações usando isolamento de VNet, ACLs (listas de controle de acesso), balanceadores de carga, filtros de IP e políticas de fluxo de tráfego. NAT (conversão de endereços de rede) separa o tráfego de rede interno do tráfego externo.
 
 A malha do Azure aloca recursos de infraestrutura a cargas de trabalho de locatário e gerencia comunicações para e de VMs (máquinas virtuais). O hipervisor do Azure impõe a separação de memória e processo entre VMs e encaminha com segurança o tráfego de rede a locatários do sistema operacional convidado.
 
@@ -231,7 +231,7 @@ Os componentes de rede de perímetro fornecem os seguintes recursos:
 
 - [Redes virtuais][VNet], [rotas definidas pelo usuário][user-defined-routes] e [grupos de segurança de rede][network-security-groups]
 - [Dispositivos de rede virtual][NVA]
-- [Balanceador de carga do Azure][ALB]
+- [Azure Load Balancer][ALB]
 - [Aplicativo Azure gateway][AppGW] com o [Firewall do aplicativo Web (WAF)][AppGWWAF]
 - [IPs públicos][PIP]
 - [Porta frontal do Azure][AFD] com [WAF (firewall do aplicativo Web)][AFDWAF]
@@ -263,7 +263,7 @@ O [**Azure Load Balancer**][ALB] oferece um serviço de camada 4 de alta disponi
 
 Azure Load Balancer também pode investigar a integridade das várias instâncias de servidor e quando uma instância não responde a uma investigação, o balanceador de carga para de enviar tráfego para a instância não íntegra. Em um datacenter virtual, um balanceador de carga externo é implantado no Hub e nos spokes. No hub, o balanceador de carga é usado para rotear o tráfego com eficiência para os serviços nos spokes e, nestes, os balanceadores de carga são usados para gerenciar o tráfego de aplicativo.
 
-O AFD ( [**Azure front door**][AFD] ) é a plataforma de aceleração de aplicativos Web altamente disponível e escalonável da Microsoft, Load Balancer http global, proteção de aplicativo e rede de distribuição de conteúdo. Em execução em mais de 100 locais na borda da rede global da Microsoft, o AFD permite que você crie, opere e escale horizontalmente o seu aplicativo Web dinâmico e o conteúdo estático. O AFD oferece a seu aplicativo desempenho do usuário final de alto nível, automação de manutenção de carimbo/regional unificada, automação de BCDR, informações unificadas de cliente/usuário, insights de serviço e caching. A plataforma oferece SLAs de desempenho, confiabilidade e suporte, certificações de conformidade e práticas de segurança auditáveis desenvolvidas, operadas e com suporte nativo pelo Azure.
+O [AFD (Azure front door)][AFD] é a plataforma de aceleração de aplicativos Web altamente disponível e escalonável da Microsoft, Load Balancer http global, proteção de aplicativo e rede de distribuição de conteúdo. Em execução em mais de 100 locais na borda da rede global da Microsoft, o AFD permite que você crie, opere e escale horizontalmente o seu aplicativo Web dinâmico e o conteúdo estático. O AFD oferece a seu aplicativo desempenho do usuário final de alto nível, automação de manutenção de carimbo/regional unificada, automação de BCDR, informações unificadas de cliente/usuário, insights de serviço e caching. A plataforma oferece SLAs de desempenho, confiabilidade e suporte, certificações de conformidade e práticas de segurança auditáveis desenvolvidas, operadas e com suporte nativo pelo Azure.
 
 [**Gateway de aplicativo**][AppGW] Microsoft Azure gateway de aplicativo é um dispositivo virtual dedicado que fornece o ADC (controlador de entrega de aplicativos) como um serviço, oferecendo vários recursos de balanceamento de carga de camada 7 para seu aplicativo. Ele permite que você otimize a produtividade do Web farm descarregando a terminação SSL com uso intensivo de CPU para o Gateway de Aplicativo. Ele também fornece outros recursos de roteamento de camada 7, incluindo distribuição round robin do tráfego de entrada, afinidade de sessão, roteamento com base no caminho de URL e a capacidade de hospedar vários sites por trás de um único Gateway de Aplicativo baseado em cookie. Um WAF (firewall do aplicativo Web) também é fornecido como parte da SKU do WAF do gateway de aplicativo. Essa SKU oferece proteção para aplicativos Web contra explorações e vulnerabilidades comuns da Web. O Gateway de Aplicativo pode ser configurado como um gateway voltado para a Internet, um gateway apenas interno ou uma combinação de ambos.
 
@@ -327,7 +327,7 @@ As possibilidades de carga de trabalho são infinitas. A seguir estão apenas al
 - **Controlado por dados:** Cargas de trabalho com uso intensivo de dados com acesso frequente a bancos de dados ou outro armazenamento.
 - **Integrado:** As cargas de trabalho oferecem integração com outros sistemas dentro ou fora da organização.
 
-**Sites voltados para o cliente (Internet ou face interna)** : a maioria dos aplicativos que interagem com a Internet são sites da Web. O Azure oferece a capacidade de executar um site em uma VM IaaS ou de um site de [aplicativos Web do Azure][WebApps] (PaaS). Os Aplicativos Web do Azure dão suporte à integração com VNETs que permitem a implantação dos aplicativos Web na zona de rede de um spoke. Sites internos não precisam expor um ponto de extremidade de Internet público porque os recursos podem ser acessados por meio de endereços privados não roteáveis para a Internet da VNet privada.
+**Sites voltados para o cliente (Internet ou face interna):** A maioria dos aplicativos que interagem com a Internet são sites da Web. O Azure oferece a capacidade de executar um site em uma VM IaaS ou de um site de [aplicativos Web do Azure][WebApps] (PaaS). Os Aplicativos Web do Azure dão suporte à integração com VNETs que permitem a implantação dos aplicativos Web na zona de rede de um spoke. Sites internos não precisam expor um ponto de extremidade de Internet público porque os recursos podem ser acessados por meio de endereços privados não roteáveis para a Internet da VNet privada.
 
 **Big data e análise:** Quando os dados precisam ser escalados verticalmente para um grande volume, os bancos de dados podem não ser dimensionados corretamente. A tecnologia Hadoop oferece um sistema para executar consultas distribuídas em paralelo em um grande número de nós. Os clientes têm a opção de executar cargas de trabalho de dados em VMs IaaS ou PaaS ([HDInsight][HDI]). O HDInsight dá suporte à implantação em uma VNet baseada em local, pode ser implantado em um cluster em um spoke de um datacenter virtual.
 
@@ -337,7 +337,7 @@ Você pode implementar um serviço de mensagens de nuvem altamente confiável en
 
 ![10][10]
 
-### <a name="making-a-virtual-datacenter-highly-available-multiple-virtual-datacenters"></a>Tornando um datacenter virtual altamente disponível: vários data centers virtuais
+### <a name="make-a-virtual-datacenter-highly-available-multiple-virtual-datacenters"></a>Tornar um datacenter virtual altamente disponível: vários data centers virtuais
 
 Até agora, este artigo se concentrou no design de um único datacenter virtual, descrevendo os componentes básicos e a arquitetura que contribuem para a resiliência. Os recursos do Azure, como Azure Load Balancer, NVAs, conjuntos de disponibilidade, conjuntos de dimensionamento, juntamente com outros mecanismos contribuem para um sistema que permite que você crie níveis sólidos de SLA em seus serviços de produção.
 
@@ -386,13 +386,13 @@ Os seguintes recursos foram discutidos neste documento. Siga os links para saber
 
 <!-- markdownlint-disable MD033 -->
 
-|Recursos de rede|Balanceamento de carga|Conectividade|
+|Recursos de rede|Balanceamento de Carga|Conectividade|
 |-|-|-|
-|[Redes Virtuais do Azure][VNet]</br>[Grupos de segurança de rede][network-security-groups]</br>[Logs do grupo de segurança de rede][nsg-log]</br>[Rotas definidas pelo usuário][user-defined-routes]</br>[Soluções de virtualização de rede][NVA]</br>[Endereços IP Públicos][PIP]</br>[DDoS do Azure][DDoS]</br>[Firewall do Azure][AzFW]</br>[DNS do Azure][DNS]|[Azure Front Door][AFD]</br>[Azure Load Balancer (L3)][ALB]</br>[Gateway de aplicativo (L7)][AppGW]</br>[Firewall do aplicativo Web] WAF</br>[Gerenciador de Tráfego do Azure][traffic-manager]</br></br></br></br></br> |[Emparelhamento VNet][VNetPeering]</br>[Rede virtual privada][VPN]</br>[WAN virtual][vWAN]</br>[ExpressRoute][ExR]</br>[ExpressRoute Direct][ExRD]</br></br></br></br></br>
+|[Redes Virtuais do Azure][VNet]</br>[Grupos de segurança de rede][network-security-groups]</br>[Logs do grupo de segurança de rede][nsg-log]</br>[Rotas definidas pelo usuário][user-defined-routes]</br>[Soluções de virtualização de rede][NVA]</br>[Endereços IP Públicos][PIP]</br>[DDoS do Azure][DDoS]</br>[Firewall do Azure][AzFW]</br>[DNS do Azure][DNS]|[Porta frontal do Azure][AFD]</br>[Azure Load Balancer (L3)][ALB]</br>[Gateway de aplicativo (L7)][AppGW]</br>[Firewall do aplicativo Web] WAF</br>[Gerenciador de Tráfego do Azure][traffic-manager]</br></br></br></br></br> |[Emparelhamento VNet][VNetPeering]</br>[Rede virtual privada][VPN]</br>[WAN virtual][vWAN]</br>[ExpressRoute][ExR]</br>[ExpressRoute Direct][ExRD]</br></br></br></br></br>
 
-|Identidade</br>|Monitoramento</br>|Práticas recomendadas</br>|
+|Identidade</br>|Monitoramento</br>|Práticas Recomendadas</br>|
 |-|-|-|
-|[Azure Active Directory][azure-ad]</br>[Autenticação Multifator][multi-factor-authentication]</br>[Controles de acesso de base de função][RBAC]</br>[Funções padrão do Azure AD][Roles]</br></br></br> |[Observador de Rede][NetWatch]</br>[Azure Monitor][Monitor]</br>[Logs de Atividades][ActLog]</br>[Logs de Diagnóstico][DiagLog]</br>[Microsoft Operations Management Suite][OMS]</br>[Monitor de Desempenho de Rede][NPM]|[Práticas recomendadas de redes de perímetro][DMZ]</br>[Gerenciamento de assinatura][SubMgmt]</br>[Gerenciamento de grupo de recursos][RGMgmt]</br>[Limites de assinatura do Azure][limits] </br></br></br>|
+|[Active Directory do Azure][azure-ad]</br>[Autenticação Multifator][multi-factor-authentication]</br>[Controles de acesso de base de função][RBAC]</br>[Funções padrão do Azure AD][Roles]</br></br></br> |[Observador de Rede][NetWatch]</br>[Azure Monitor][Monitor]</br>[Logs de Atividades][ActLog]</br>[Logs de Diagnóstico][DiagLog]</br>[Microsoft Operations Management Suite][OMS]</br>[Monitor de Desempenho de Rede][NPM]|[Práticas recomendadas de redes de perímetro][DMZ]</br>[Gerenciamento de assinatura][SubMgmt]</br>[Gerenciamento de grupo de recursos][RGMgmt]</br>[Limites de assinatura do Azure][limits] </br></br></br>|
 
 |Outros serviços do Azure|
 |-|

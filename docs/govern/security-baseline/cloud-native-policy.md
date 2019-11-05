@@ -9,16 +9,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9c9676684ebec0a34fcc2dc845935c598814ea52
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 19559e34f396561a25761e2b452133f84580fe85
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73047856"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565965"
 ---
 # <a name="cloud-native-security-baseline-policy"></a>Política de linha de base de segurança nativa de nuvem
 
-A [Linha de Base de Segurança](./index.md) é uma das [Cinco Disciplinas de Governança de Nuvem](../governance-disciplines.md). Essa disciplina se concentra em tópicos gerais de segurança, incluindo a proteção da rede, ativos digitais, dados etc. Conforme descrito no [Guia de revisão de política](../policy-compliance/cloud-policy-review.md), a estrutura de adoção de nuvem inclui três níveis de política de **exemplo**: a nuvem nativa, a empresa e a conformidade com o princípio de design de nuvem para cada uma das disciplinas. Este artigo discute a política de exemplo nativa de nuvem para a disciplina de linha de base de segurança.
+A [Linha de Base de Segurança](./index.md) é uma das [Cinco Disciplinas de Governança de Nuvem](../governance-disciplines.md). Essa disciplina se concentra em tópicos gerais de segurança, incluindo a proteção da rede, ativos digitais, dados etc. Conforme descrito no [Guia de revisão de política](../policy-compliance/cloud-policy-review.md), a estrutura de adoção de nuvem inclui três níveis de política de exemplo: a nuvem nativa, a empresa e a conformidade com o princípio de design de nuvem para cada uma das disciplinas. Este artigo discute a política de exemplo nativa de nuvem para a disciplina de linha de base de segurança.
 
 > [!NOTE]
 > A Microsoft não está em nenhuma posição de ditar política corporativa ou de TI. Este artigo ajudará você a se preparar para uma revisão de política interna. Supomos que essa política de exemplo será estendida, validada e testada com a sua política corporativa antes de usá-la. Qualquer uso dessa política de exemplo como está desencorajado.
@@ -82,7 +82,8 @@ O monitoramento de segurança é uma estratégia proativa que audita os recursos
 
 ### <a name="extending-cloud-native-policies"></a>Estendendo políticas nativas de nuvem
 
-Usar a nuvem pode reduzir essa carga de segurança. A Microsoft fornece a segurança física para datacenters do Azure e ajuda a proteger a plataforma de nuvem contra ameaças de infraestrutura como um ataque de DDoS. Considerando que a Microsoft tem milhares de especialistas em segurança cibernética trabalhando na segurança todos os dias, os recursos para detectar, impedir ou mitigar os ataques cibernéticos são consideráveis. Na verdade, enquanto as organizações se preocupavam com a proteção da nuvem, a maior parte agora compreende que o nível de investimento em pessoas e infraestrutura especializada feita por fornecedores como a Microsoft torna a nuvem mais segura do que a mais local datacenters.
+Usar a nuvem pode reduzir essa carga de segurança. A Microsoft fornece a segurança física para datacenters do Azure e ajuda a proteger a plataforma de nuvem contra ameaças de infraestrutura como um ataque de DDoS. Considerando que a Microsoft tem milhares de especialistas em segurança cibernética trabalhando na segurança todos os dias, os recursos para detectar, impedir ou mitigar os ataques cibernéticos são consideráveis. Na verdade, embora as organizações tenham usado a preocupação se a nuvem fosse segura, a maioria agora entende que o nível de investimento em pessoas e infraestruturas especializadas feitas por fornecedores como a Microsoft torna a nuvem mais segura do que a maioria dos data centers locais.
+Usar a nuvem pode reduzir essa carga de segurança. A Microsoft fornece a segurança física para datacenters do Azure e ajuda a proteger a plataforma de nuvem contra ameaças de infraestrutura como um ataque de DDoS. Considerando que a Microsoft tem milhares de especialistas em segurança cibernética trabalhando na segurança todos os dias, os recursos para detectar, impedir ou mitigar os ataques cibernéticos são consideráveis. Na verdade, embora as organizações tenham usado a preocupação se a nuvem fosse segura, a maioria agora entende que o nível de investimento em pessoas e infraestruturas especializadas feitas por fornecedores como a Microsoft torna a nuvem mais segura do que a maioria dos data centers locais.
 
 Mesmo com esse investimento em uma linha de base de segurança nativa de nuvem, é recomendável que qualquer diretiva de linha de base de segurança estenda as políticas nativas de nuvem padrão. Veja a seguir exemplos de políticas estendidas que devem ser consideradas, mesmo em um ambiente nativo de nuvem:
 
@@ -92,7 +93,7 @@ Mesmo com esse investimento em uma linha de base de segurança nativa de nuvem, 
 - **Acesso de dados seguro e de auditoria.** As organizações devem auditar todo o acesso a dados e aproveitar os recursos avançados de aprendizado de máquina para chamar desvios de padrões de acesso regulares.
 - **Prática de failover.** As operações de nuvem que têm tolerâncias baixas para a falha devem ser capazes de fazer failover ou de uma recuperação de um incidente de segurança cibernética ou plataforma. Esses procedimentos não devem ser simplesmente documentados, mas devem ser praticado trimestralmente.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Agora que você analisou a política de linha de base de segurança de exemplo para soluções nativas de nuvem, retorne ao [Guia de revisão de política](../policy-compliance/cloud-policy-review.md) para começar a criar esse exemplo para criação de suas próprias políticas para adoção de nuvem.
 

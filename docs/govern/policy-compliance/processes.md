@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f6104a3b2f5f2e68016623029ac0e7b71a5e35f1
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 57f94fde4e7f4863a3ddca710d523d9c027571d0
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222052"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566128"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -83,7 +83,7 @@ Alguns exemplos de gatilhos e ações de violação:
 | Linha de base de segurança | Detectar atividade suspeita de logon de usuário. | Notifique a equipe de segurança de TI e desabilite a conta do usuário suspeita. |
 | Consistência de recursos | A utilização da CPU para a carga de trabalho é maior que 90%. | Notifique a equipe de operações de TI e dimensione recursos adicionais para lidar com a carga. |
 
-## <a name="monitoring-and-compliance-automation"></a>Monitoramento e automação de conformidade
+## <a name="automation-of-monitoring-and-compliance"></a>Automação de monitoramento e conformidade
 
 Após definir os gatilhos de violação de conformidade e as ações, você poderá iniciar o planejamento de como melhor utilizar as ferramentas de relatório e registro em log e outros recursos da plataforma de nuvem para ajudar a automatizar a estratégia de monitoramento e conformidade da política.
 

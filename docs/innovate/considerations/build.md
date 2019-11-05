@@ -8,18 +8,18 @@ ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 25cc7cac212bffda6d7fa3514de7bb274fc1c17e
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: d1f9b53a152ee85d8817fcfdc9cfc613a89a585b
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058608"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565746"
 ---
 # <a name="build-with-customer-empathy"></a>Criar com empatia do cliente
 
 "A necessidade é a mãe da invenção". Esse provérbio captura a indelibility do espírito humano e nossa unidade natural para inventar. Conforme explicado no dicionário Oxford em inglês, "quando a necessidade de algo se torna imperativa, você é forçado a encontrar maneiras de obtê-lo ou obtê-lo". Algumas delas negaria essas realidades universais sobre a invenção. No entanto, conforme descrito em [inovação na economia digital](./index.md), a inovação exige um equilíbrio entre a *invenção* e a *adoção*.
 
-Continuando com a analogia, a inovação vem de uma família mais estendida. *O cliente empatia é o orgulho pai da inovação.* A criação de uma solução que impulsiona a inovação exige uma necessidade do cliente legítima&mdash;uma que mantenha o cliente voltado para resolver os desafios críticos. Essas soluções baseiam-se no que um cliente precisa em vez de seu desejado ou Whims. Para encontrar as necessidades reais dos clientes, começamos com o empatia &mdash;a compreensão profunda da experiência do cliente. O empatia é uma habilidade subdesenvolvida para muitos engenheiros, gerentes de produtos e até mesmo líderes de negócios. Felizmente, as diversas interações e o ritmo rápido da função de arquiteto de nuvem já começaram a promover essa habilidade.
+Continuando com a analogia, a inovação vem de uma família mais estendida. *O cliente empatia é o orgulho pai da inovação.* A criação de uma solução que impulsiona a inovação exige uma necessidade do cliente legítima&mdash;uma que mantenha o cliente voltado para resolver os desafios críticos. Essas soluções baseiam-se no que um cliente precisa em vez de seu desejado ou Whims. Para encontrar as necessidades reais dos clientes, começamos com o empatia&mdash;uma profunda compreensão da experiência do cliente. O empatia é uma habilidade subdesenvolvida para muitos engenheiros, gerentes de produtos e até mesmo líderes de negócios. Felizmente, as diversas interações e o ritmo rápido da função de arquiteto de nuvem já começaram a promover essa habilidade.
 
 Por que o empatia tão importante? Desde o primeiro lançamento de um produto viável mínimo (MVP) até a disponibilidade geral de uma solução de nível de mercado, o cliente empatia nos ajuda a entender e compartilhar a experiência do cliente. O empatia nos ajuda a criar uma solução melhor. Mais importante, ele nos posiciona melhor em soluções de inventação que incentivam a adoção. Em uma economia digital, as pessoas que podem entendar mais prontamente com as necessidades do cliente podem criar um futuro mais brilhante que redefine e conduz o mercado.
 
@@ -106,7 +106,7 @@ Há muitos requisitos legais, de conformidade e do setor que podem exigir uma ab
 
 Alguns dos conceitos neste artigo se baseiam nos tópicos discutidos na [*inicialização de Lean*](http://theleanstartup.com/book) (Eric Ries, coroa Business, 2011).
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Depois de criar uma solução MVP, você pode medir o valor de empatia e o valor de escala. Saiba como [medir o impacto do cliente](./measure.md).
 

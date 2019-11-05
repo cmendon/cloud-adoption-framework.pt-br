@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3bfb26e97d35bc3ace4b150045633ac2773d647f
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 2050c210bad9434e688ec4ef7c2e700cccf39f2c
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025459"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564607"
 ---
 # <a name="business-change-plan"></a>Plano de alteração do negócio
 
@@ -31,7 +31,7 @@ Embora as abordagens possam variar, os temas gerais estão presentes na maioria 
 
 Geralmente esses temas baseiam-se na suposição de que a introdução de novas soluções para os usuários deve se concentrar principalmente no controle de riscos e na facilitação da alteração. Além disso, a TI precisa se concentrar principalmente nos riscos dessa mudança de tecnologia e facilitação.
 
-## <a name="creating-business-change-plans"></a>Criação de planos de alteração do negócio
+## <a name="create-business-change-plans"></a>Criar planos de mudança de negócios
 
 Um plano de alteração do negócio vai além da alteração técnica e assume que cada lançamento em um esforço de migração aciona algum nível de mudança no processo de negócios. Ele abrange para o que no upstream e no downstream das alterações técnicas. As questões a seguir ajudam os participantes a pensar a adoção do usuário por uma perspectiva de alteração do negócio a fim de maximizar o impacto nos negócios:
 
@@ -67,4 +67,4 @@ Após documentar e planejar a alteração do negócio, é possível começar os 
 
 ## <a name="references"></a>Referências
 
-- Eason, K. (1988) _Information technology and organizational change_, Nova York: Taylor e Francis.
+- Eason, K. (1988) _tecnologia da informação e alteração organizacional_, Nova York: Taylor e Francis.

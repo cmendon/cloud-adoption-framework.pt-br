@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 9e6e078859bb580794477328099b66d14009bdca
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 5bb3e37073c3c5d7f401f6d6c706314172eecf88
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221398"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565256"
 ---
 # <a name="create-update-schedules"></a>Criar agendas de atualização
 
@@ -21,20 +21,20 @@ Você pode gerenciar agendas de atualização usando o portal do Azure ou os nov
 
 Para criar um agendamento de atualização por meio do portal do Azure, consulte [agendar uma implantação de atualização](https://docs.microsoft.com/azure/automation/automation-tutorial-update-management#schedule-an-update-deployment).
 
-O módulo AZ. Automation agora dá suporte à configuração do gerenciamento de atualizações usando Azure PowerShell. A [versão 1.7.0](https://www.powershellgallery.com/packages/Az/1.7.0) do módulo adiciona suporte para o cmdlet [New-AzAutomationUpdateManagementAzureQuery](/powershell/module/az.automation/new-azautomationupdatemanagementazurequery?view=azps-1.7.0) , que permite que você use marcas, local e pesquisas salvas para configurar agendamentos de atualização para um grupo de computadores flexível.
+O módulo AZ. Automation agora dá suporte à configuração do gerenciamento de atualizações usando Azure PowerShell. A [versão 1.7.0](https://www.powershellgallery.com/packages/Az/1.7.0) do módulo adiciona suporte para o cmdlet [New-AzAutomationUpdateManagementAzureQuery](https://docs.microsoft.com/powershell/module/az.automation/new-azautomationupdatemanagementazurequery?view=azps-1.7.0) . Esse cmdlet permite que você use marcas, local e pesquisas salvas para configurar agendamentos de atualização para um grupo flexível de computadores.
 
 ## <a name="example-script"></a>Script de exemplo
 
-O script de exemplo a seguir ilustra o uso de marcação e consulta para criar grupos dinâmicos de computadores aos quais você pode aplicar agendas de atualização. Ele executa as seguintes ações. Você pode consultar as implementações das ações específicas ao criar seus próprios scripts.
+O script de exemplo nesta seção ilustra o uso de marcação e consulta para criar grupos dinâmicos de computadores aos quais você pode aplicar agendas de atualização. Ele executa as seguintes ações. Você pode consultar as implementações das ações específicas ao criar seus próprios scripts.
 
-- Cria uma agenda de atualização da automação do Azure que é executada a cada sábado às 8:00
+- Cria uma agenda de atualização da automação do Azure que é executada a cada sábado às 8:00.
 - Cria uma consulta para computadores que correspondem a estes critérios:
-  - Implantado `westus`no `eastus`, ou `eastus2` no local do Azure
-  - Ter uma `Owner` marca aplicada a eles com um valor definido como`JaneSmith`
-  - Ter uma `Production` marca aplicada a eles com um valor definido como`true`
-- Aplica o agendamento de atualização às máquinas consultadas e define uma janela de atualização de duas horas
+  - Implantado no `westus`, `eastus`ou `eastus2` local do Azure
+  - Ter uma marca `Owner` aplicada a elas com um valor definido como `JaneSmith`
+  - Ter uma marca `Production` aplicada a elas com um valor definido como `true`
+- Aplica o agendamento de atualização às máquinas consultadas e define uma janela de atualização de duas horas.
 
-Antes de executar o script de exemplo, você precisará entrar usando o cmdlet [Connect-AzAccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) . Ao iniciar o script, você precisará fornecer as seguintes informações:
+Antes de executar o script de exemplo, você precisará entrar usando o cmdlet [Connect-AzAccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) . Ao iniciar o script, forneça as seguintes informações:
 
 - A ID da assinatura de destino
 - O grupo de recursos de destino
@@ -105,11 +105,11 @@ Antes de executar o script de exemplo, você precisará entrar usando o cmdlet [
         -Duration (New-TimeSpan -Hours 2) `
         -AzureQuery $AzureQueries `
         -IncludedUpdateClassification Security,Critical
-    ```
+```
 
-## Next steps
+## <a name="next-steps"></a>Próximas etapas
 
-See examples of how to implement [common policies in Azure](./common-policies.md) that can help manage your servers.
+Veja exemplos de como implementar [políticas comuns no Azure](./common-policies.md) que podem ajudar a gerenciar seus servidores.
 
 > [!div class="nextstepaction"]
-> [Common policies in Azure](./common-policies.md)
+> [Políticas comuns no Azure](./common-policies.md)

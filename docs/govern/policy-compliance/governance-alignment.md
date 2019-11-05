@@ -8,12 +8,12 @@ ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: b1d5562b6e8248f371e01473d141aefecf1554b4
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 6b3fd0ca16bf54e5eaf026037ba1f59c2043f4e7
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223753"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566142"
 ---
 # <a name="align-your-cloud-governance-design-guide-with-corporate-policy"></a>Alinhar seu guia de design de governança de nuvem com a política corporativa
 
@@ -27,7 +27,7 @@ Enquanto os guias de design de nuvem devem levar em consideração alguns dos de
 
 <!-- markdownlint-enable MD033 -->
 
-## <a name="using-the-actionable-governance-guides"></a>Usando os guias de governança acionáveis
+## <a name="use-the-actionable-governance-guides"></a>Usar os guias de governança acionáveis
 
 Se você estiver planejando usar a plataforma do Azure para sua adoção de nuvem, a estrutura de adoção de nuvem fornece [guias de governança acionáveis](../guides/index.md) que ilustram a abordagem incremental do modelo de governança da estrutura de adoção da nuvem. Esses guias de narração abrangem uma variedade de cenários de adoção comuns, incluindo os riscos de negócios, os requisitos de tolerância e as instruções de política que entraram em criar um MVP (produto viável) mínimo de governança. Esses guias representam uma síntese da experiência do cliente do mundo real do processo de adoção da nuvem no Azure.
 
@@ -38,4 +38,4 @@ Enquanto cada adoção de nuvem tiver metas exclusivas, prioridades e desafios, 
 Com a diretriz de design no local, estabeleça processos de adesão da política para garantir a conformidade de política.
 
 > [!div class="nextstepaction"]
-> [Estabelecer os processos de conformidade com políticas](./processes.md)
+> [Estabelecer os processos de conformidade com as políticas](./processes.md)

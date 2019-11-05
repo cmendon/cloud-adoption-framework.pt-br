@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 5f26cf77f918c12c46c653c6fc91ebc972d0db64
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: b62dde42255d1a0e9f484e5bcfcd83bbff1ebf7e
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73047551"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565766"
 ---
 # <a name="engage-through-applications"></a>Envolver aplicativos
 
@@ -27,16 +27,16 @@ Em alguns casos, os dados sozinhos são suficientes para impulsionar a alteraç�
 
 As equipes que respondem com mais rapidez e precisão aos comentários dos clientes, alterações no mercado e oportunidades para inovar normalmente levam a seus respectivos mercados em inovação. O primeiro princípio dos aplicativos inovadores é resumido na [visão geral da mentalidade de crescimento](./learn.md#growth-mindset): "compartilhar o código". Ao longo do tempo, a inovação surge de um foco cultural. Para sustentar a inovação, várias perspectivas e contribuições são necessárias.
 
-Para estar pronto para a inovação, todo o desenvolvimento de aplicativos deve começar com um repositório de código compartilhado. A ferramenta mais amplamente adotada para gerenciar repositórios de código é o [GitHub](https://guides.github.com/), que permite criar um repositório de código compartilhado rapidamente. Como alternativa, [Azure Repos](/azure/devops/repos/get-started/what-is-repos?view=azure-devops) é um conjunto de ferramentas de controle de versão no Azure DevOps Services que você pode usar para gerenciar seu código. Azure Repos fornece dois tipos de controle de versão:
+Para estar pronto para a inovação, todo o desenvolvimento de aplicativos deve começar com um repositório de código compartilhado. A ferramenta mais amplamente adotada para gerenciar repositórios de código é o [GitHub](https://guides.github.com), que permite criar um repositório de código compartilhado rapidamente. Como alternativa, [Azure Repos](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops) é um conjunto de ferramentas de controle de versão no Azure DevOps Services que você pode usar para gerenciar seu código. Azure Repos fornece dois tipos de controle de versão:
 
-- [Git](/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git): controle de versão distribuído
-- [Controle de versão do Team Foundation (TFVC)](/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc): controle de versão centralizado
+- [Git](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git): controle de versão distribuído
+- [Controle de versão do Team Foundation (TFVC)](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc): controle de versão centralizado
 
 ## <a name="citizen-developers"></a>Desenvolvedores do cidadão
 
 Os desenvolvedores profissionais são um componente vital da inovação. Quando uma hipótese comprova precisamente em escala, os desenvolvedores profissionais precisam estabilizar e preparar a solução para escala. A maioria dos princípios mencionados neste artigo exige suporte de desenvolvedores profissionais. Infelizmente, as tendências atuais sugerem que há uma demanda maior para desenvolvedores profissionais do que para desenvolvedores. Além disso, o custo e o ritmo da inovação podem ser menos favoráveis quando o desenvolvimento profissional é considerado necessário. Em resposta a esses desafios, os desenvolvedores do cidadão fornecem uma maneira de dimensionar os esforços de desenvolvimento e acelerar o teste de hipótese inicial.
 
-O uso de desenvolvedores do cidadão pode ser viável e eficaz quando as primeiras expressões podem ser validadas por meio de ferramentas como o [PowerApps](https://docs.microsoft.com/powerapps/powerapps-overview) para interfaces de aplicativo, o [Construtor de ia](https://docs.microsoft.com//powerapps/use-ai-builder) para processos e previsões, [Microsoft Flow](https://docs.microsoft.com/flow) para fluxos de trabalho e [energia BI](https://docs.microsoft.com/power-bi) para consumo de dados.
+O uso de desenvolvedores do cidadão pode ser viável e eficaz quando as primeiras expressões podem ser validadas por meio de ferramentas como o [PowerApps](https://docs.microsoft.com/powerapps/powerapps-overview) para interfaces de aplicativo, o [Construtor de ia](https://docs.microsoft.com/powerapps/use-ai-builder) para processos e previsões, [Microsoft Flow](https://docs.microsoft.com/flow) para fluxos de trabalho e [energia BI](https://docs.microsoft.com/power-bi) para consumo de dados.
 
 > [!NOTE]
 > Quando você depende de desenvolvedores do cidadão para testar as mesmas, é aconselhável ter alguns desenvolvedores profissionais disponíveis para fornecer suporte, revisão e orientação. Depois que uma hipótese é validada em escala, um processo para fazer a transição do aplicativo para um modelo de programação mais robusto acelerará os retornos na inovação. Ao envolver desenvolvedores profissionais em definições de processos no início, você pode perceber transições mais claras posteriormente.
@@ -83,11 +83,11 @@ Estender uma solução é uma forma comum de modernização. Essa abordagem pode
 
 - A lógica de negócios existente deve atender (ou chegar perto de cumprir) a necessidade do cliente existente.
 - Uma experiência aprimorada atende melhor às necessidades de um cliente específico coorte.
-- A lógica de negócios exigida pela solução MVP (produto viável) mínima foi centralizada, geralmente por meio de um design de [N camadas](/azure/architecture/guide/architecture-styles/n-tier), de serviços da Web, de API ou de [microserviços](/azure/architecture/guide/architecture-styles/microservices) . Essa abordagem consiste em encapsular a solução existente em uma nova experiência hospedada na nuvem. No Azure, essa solução provavelmente residiria em serviços Azure Apps.
+- A lógica de negócios exigida pela solução MVP (produto viável) mínima foi centralizada, geralmente por meio de um design de [N camadas](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/n-tier), de serviços da Web, de API ou de [microserviços](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/microservices) . Essa abordagem consiste em encapsular a solução existente em uma nova experiência hospedada na nuvem. No Azure, essa solução provavelmente residiria em serviços Azure Apps.
 
 ### <a name="rebuild-an-existing-solution"></a>Recompilar uma solução existente
 
-Se um aplicativo não puder ser estendido facilmente, pode ser necessário refatorar a solução. Nessa abordagem, a carga de trabalho é migrada para a nuvem. Depois que o aplicativo é migrado, partes dele são modificados ou duplicados, como serviços Web ou [microservices](/azure/architecture/guide/architecture-styles/microservices), que são implantados em paralelo à solução existente. A solução baseada em serviço paralela poderia ser tratada como uma solução estendida. Essa solução simplesmente encapsularia a solução existente com uma nova experiência hospedada na nuvem. No Azure, essa solução provavelmente residiria em serviços Azure Apps.
+Se um aplicativo não puder ser estendido facilmente, pode ser necessário refatorar a solução. Nessa abordagem, a carga de trabalho é migrada para a nuvem. Depois que o aplicativo é migrado, partes dele são modificados ou duplicados, como serviços Web ou [microservices](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/microservices), que são implantados em paralelo com a solução existente. A solução baseada em serviço paralela poderia ser tratada como uma solução estendida. Essa solução simplesmente encapsularia a solução existente com uma nova experiência hospedada na nuvem. No Azure, essa solução provavelmente residiria em serviços Azure Apps.
 
 > [!CAUTION]
 > Refatorar ou rearquitetar soluções ou centralizar a lógica de negócios pode disparar rapidamente um [pico técnico](./build.md#reduce-complexity-and-delay-technical-spikes)demorado em vez de uma fonte de valor do cliente. Trata-se de um risco de inovação, especialmente na validação da hipótese. Com um pouco de criatividade no design de uma solução, deve haver um caminho para o MVP que não exige refatoração de soluções existentes. É prudente atrasar a refatoração até que a hipótese inicial possa ser validada em escala.
@@ -98,7 +98,7 @@ Além das abordagens modernas e inovadoras para a criação de aplicativos, houv
 
 O tipo de modelo de gerenciamento operacional de autoatendimento encontrado em um Cloud Center de excelência permite controles mais rígidos e iterações mais rápidas dentro do ambiente da solução. Essas metas são realizadas transferindo o controle operacional e a responsabilidade para a equipe de negócios.
 
-Se você pretende dimensionar ou atender à demanda global de uma solução existente, você pode encontrar essa abordagem suficiente para validar uma hipótese do cliente. Depois que uma solução é migrada e ligeiramente modernizada, a equipe de negócios pode dimensioná-la para testar uma variedade de outras. Normalmente, elas envolvem coortes de clientes que se preocupam com desempenho, distribuição global e outras necessidades de clientes impedidas por operações de ti.
+Se você estiver tentando dimensionar ou atender à demanda global de uma solução existente, essa abordagem poderá ser suficiente para validar uma hipótese do cliente. Depois que uma solução é migrada e ligeiramente modernizada, a equipe de negócios pode dimensioná-la para testar uma variedade de outras. Normalmente, elas envolvem coortes de clientes que se preocupam com desempenho, distribuição global e outras necessidades de clientes impedidas por operações de ti.
 
 ## <a name="reduce-overhead-and-management"></a>Reduzir a sobrecarga e o gerenciamento
 
@@ -108,7 +108,7 @@ Para se preparar para as muitas iterações necessárias para fornecer uma solu�
 
 Em paralelo, o Azure fornece opções de dados de transação sem servidor que também reduzem a sobrecarga. A [lista de produtos de banco](https://docs.microsoft.com/azure/#pivot=products&panel=databases) de dados fornece opções para hospedagem de dados sem a necessidade de uma plataforma de dados completa.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Dependendo da hipótese e da solução, os princípios neste artigo podem ajudar a criar aplicativos que atendam às definições de MVP e contrate usuários. Em seguida, veja os princípios para [capacitar a adoção](./ci-cd.md), que oferece maneiras de obter o aplicativo e os dados em mãos de clientes com mais rapidez e eficiência.
 

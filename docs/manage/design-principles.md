@@ -8,18 +8,18 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 8ea3610ed65ae45d924ca65ef26d249ed8343d0b
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.openlocfilehash: 8daab86846ef0c3dbc93a5382f76080f678c1a08
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72979979"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565001"
 ---
 # <a name="apply-design-principles-and-advanced-operations"></a>Aplicar princípios de design e operações avançadas
 
 As três primeiras disciplinas de gerenciamento de nuvem descrevem uma linha de base de gerenciamento. No mínimo, uma linha de base de gerenciamento deve incluir um compromisso de negócios padrão para minimizar interrupções de negócios e acelerar a recuperação se o serviço for interrompido. A maioria das linhas de base de gerenciamento inclui um foco disciplinado na manutenção de "inventário e visibilidade", "conformidade operacional" e "proteção e recuperação".
 
-A finalidade de uma linha de base de gerenciamento é criar uma oferta consistente que forneça um nível mínimo de compromisso de negócios para todas as cargas de trabalho com suporte. Essa linha de base de ofertas de gerenciamento comuns e reproduzíveis permite que a equipe forneça um grau de gerenciamento operacional altamente otimizado, com um desvio mínimo. Mas essa oferta padrão pode não fornecer um compromisso suficientemente avançado com os negócios. 
+A finalidade de uma linha de base de gerenciamento é criar uma oferta consistente que forneça um nível mínimo de compromisso de negócios para todas as cargas de trabalho com suporte. Essa linha de base de ofertas de gerenciamento comuns e reproduzíveis permite que a equipe forneça um grau de gerenciamento operacional altamente otimizado, com um desvio mínimo. Mas essa oferta padrão pode não fornecer um compromisso suficientemente avançado com os negócios.
 
 O diagrama na próxima seção ilustra três maneiras de ir além da linha de base de gerenciamento.
 
@@ -45,8 +45,8 @@ Para cargas de trabalho que garantem um investimento maior para atender a um com
 
 Há duas áreas de especialização:
 
-- **Especialização de plataforma**: investir em operações contínuas de uma plataforma compartilhada, distribuindo o investimento entre várias cargas de trabalho.
-- **Especialização de carga de trabalho**: investir em operações contínuas de uma carga de trabalho específica, geralmente reservada para cargas de trabalho de missão crítica.
+- **Especialização de plataforma:** Investir em operações contínuas de uma plataforma compartilhada, distribuindo o investimento entre várias cargas de trabalho.
+- **Especialização de carga de trabalho:** Invista em operações contínuas de uma carga de trabalho específica, geralmente reservada para cargas de trabalho de missão crítica.
 
 ### <a name="central-it-or-cloud-center-of-excellence-ccoe"></a>TI central ou centro de excelência em nuvem (CCoE)
 
@@ -54,12 +54,13 @@ As decisões entre a especialização de plataforma e a especialização de carg
 
 A especialização de carga de trabalho geralmente dispara uma alteração cultural. Ti tradicional e central de ti os dois processos de compilação que podem fornecer suporte em escala. O suporte a escala é mais atingível para serviços repetíveis encontrados em uma linha de base de gerenciamento, linha de base aprimorada ou até mesmo operações de plataforma. A especialização de carga de trabalho não é geralmente dimensionada. Essa falta de escala dificulta para uma organização de ti centralizada fornecer o suporte necessário sem alcançar as limitações de escala organizacional.
 
-Como alternativa, a abordagem do Cloud Center of Excellence é dimensionada pela delegação proposital de responsabilidade e centralização seletiva. A especialização de carga de trabalho tende a se alinhar melhor à abordagem de responsabilidade delegada de um CCoE. 
+Como alternativa, a abordagem do Cloud Center of Excellence é dimensionada pela delegação proposital de responsabilidade e centralização seletiva. A especialização de carga de trabalho tende a se alinhar melhor à abordagem de responsabilidade delegada de um CCoE.
 
 O alinhamento natural das funções em um CCoE é descrito da seguinte maneira:
-- A equipe da plataforma de nuvem ajuda a criar plataformas comuns que dão suporte a várias equipes de adoção de nuvem. 
-- A equipe de automação de nuvem estende essas plataformas para ativos implantáveis em um catálogo de serviços. 
-- O gerenciamento de nuvem fornece a linha de base de gerenciamento centralmente e ajuda a dar suporte ao uso do catálogo de serviços. 
+
+- A equipe da plataforma de nuvem ajuda a criar plataformas comuns que dão suporte a várias equipes de adoção de nuvem.
+- A equipe de automação de nuvem estende essas plataformas para ativos implantáveis em um catálogo de serviços.
+- O gerenciamento de nuvem fornece a linha de base de gerenciamento centralmente e ajuda a dar suporte ao uso do catálogo de serviços.
 - Mas a unidade de negócios (na forma de uma equipe de DevOps de negócios ou de adoção de nuvem) tem a responsabilidade de operações cotidianas da carga de trabalho, do pipeline ou do desempenho.
 
 Para o alinhamento das áreas de gerenciamento, os modelos de ti central e CCoE geralmente podem ser fornecidos na especialização da plataforma, com uma alteração cultural mínima. A oferta da especialização de carga de trabalho pode ser um pouco mais complexa para as equipes de ti central.
@@ -68,10 +69,10 @@ Para o alinhamento das áreas de gerenciamento, os modelos de ti central e CCoE 
 
 Em cada especialização, o processo de quatro etapas a seguir é fornecido em uma abordagem iterativa disciplinada. Essa abordagem requer parceria entre a adoção da nuvem, a plataforma de nuvem, a automação de nuvem e os especialistas em gerenciamento de nuvem para criar um loop de comentários viável e informado.
 
-- **Melhorar o design do sistema**: melhorar o design de sistemas comuns (plataformas) ou cargas de trabalho específicas para minimizar efetivamente as interrupções.
-- **Automatizar a correção**: algumas melhorias não são econômicas. Nesses casos, pode fazer mais sentido automatizar a correção e reduzir o impacto das interrupções.
-- **Dimensionar a solução**: à medida que o design de sistemas e a correção automatizada são aprimorados, você pode dimensionar essas alterações em todo o ambiente por meio do catálogo de serviços.
-- **Aperfeiçoamento contínuo**: você pode usar várias ferramentas de monitoramento para descobrir melhorias incrementais para abordar na próxima etapa do design, da automação e da escala do sistema.
+- **Melhorar o design do sistema:** Aprimore o design de sistemas comuns (plataformas) ou cargas de trabalho específicas para minimizar efetivamente as interrupções.
+- **Automatizar a correção:** Algumas melhorias não são econômicas. Nesses casos, pode fazer mais sentido automatizar a correção e reduzir o impacto das interrupções.
+- **Dimensionar a solução:** À medida que o design de sistemas e a correção automatizada são aprimorados, você pode dimensionar essas alterações em todo o ambiente por meio do catálogo de serviços.
+- **Aperfeiçoamento contínuo:** Você pode usar várias ferramentas de monitoramento para descobrir melhorias incrementais para abordar na próxima etapa do design, da automação e da escala do sistema.
 
 ### <a name="improve-system-design"></a>Melhorar o design do sistema
 
@@ -79,11 +80,11 @@ Melhorar o design do sistema é a abordagem mais eficaz para melhorar as operaç
 
 A estrutura da arquitetura do Azure concentra-se na melhoria em cinco pilares do design do sistema:
 
-- **Escalabilidade**: dimensionar os ativos de plataforma comuns para lidar com o aumento da carga.
-- **Disponibilidade**: diminuindo as interrupções de negócios melhorando o potencial de tempo de atividade.
-- **Resiliência**: melhorando os tempos de recuperação para reduzir a duração das interrupções.
-- **Segurança**: proteger aplicativos e dados de ameaças externas.
-- **Gerenciamento**: processos de operações específicos para esses ativos de plataforma comuns.
+- **Escalabilidade:** Dimensionamento dos ativos de plataforma comuns para lidar com o aumento da carga.
+- **Disponibilidade:** Diminuindo as interrupções de negócios, melhorando o potencial de tempo de atividade.
+- **Resiliência:** Melhorar os tempos de recuperação para reduzir a duração das interrupções.
+- **Segurança:** Proteção de aplicativos e dados de ameaças externas.
+- **Gerenciamento:** Processos de operações específicos para esses ativos de plataforma comuns.
 
 A maioria das interrupções de negócios equivale a alguma forma de dívida técnica ou deficiência na arquitetura. Para implantações existentes, as melhorias de design de sistemas podem ser exibidas como pagamentos em relação à dívida técnica existente. Para novas implantações, as melhorias de design de sistemas podem ser vistas como evitar a dívida técnica. A próxima seção, "correção automatizada", analisa maneiras de abordar a dívida técnica que não pode ou não ser resolvida.
 
@@ -107,7 +108,7 @@ Para obter informações sobre como publicar em um catálogo de serviços, consu
 
 ### <a name="continuous-improvement"></a>Aperfeiçoamento contínuo
 
-A especialização de plataforma e as operações de plataforma dependem de loops de comentários fortes entre a adoção, a plataforma, a automação e as equipes de gerenciamento. O aterramento desses loops de comentários nos dados permite que cada equipe tome decisões inteligentes. Para que as operações de plataforma obtenham compromissos de negócios de longo prazo, é importante aproveitar as informações específicas para a plataforma centralizada. Como os contêineres e SQL Server são as duas plataformas mais comuns gerenciadas centralmente, considere a introdução à coleta de dados de melhoria contínua revisando os seguintes artigos: 
+A especialização de plataforma e as operações de plataforma dependem de loops de comentários fortes entre a adoção, a plataforma, a automação e as equipes de gerenciamento. O aterramento desses loops de comentários nos dados permite que cada equipe tome decisões inteligentes. Para que as operações de plataforma obtenham compromissos de negócios de longo prazo, é importante aproveitar as informações específicas para a plataforma centralizada. Como os contêineres e SQL Server são as duas plataformas mais comuns gerenciadas centralmente, considere a introdução à coleta de dados de melhoria contínua revisando os seguintes artigos:
 
 - [Desempenho do contêiner](https://docs.microsoft.com/azure/azure-monitor/insights/container-insights-overview)
 - [Desempenho do banco de dados PaaS](https://docs.microsoft.com/azure/azure-monitor/insights/azure-sql)

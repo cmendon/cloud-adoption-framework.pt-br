@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3bf3eea5486fbd349094663dc5f37527f5042bb5
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 7f4062c08ef1c9fec72e515453e8acc8cedfc513
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221689"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565905"
 ---
 # <a name="security-baseline-tools-in-azure"></a>Ferramentas de Linha de Base de Segurança no Azure
 
@@ -22,7 +22,7 @@ A [Linha de Base de Segurança](./index.md) é uma das [Cinco Disciplinas de Gov
 
 A lista a seguir das ferramentas do Azure pode ajudar a amadurecer as políticas e os processos que dão suporte à linha de base de segurança.
 
-| Ferramenta | [Portal do Azure](https://azure.microsoft.com/features/azure-portal) / [Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview)  | [Cofre da Chave do Azure](https://docs.microsoft.com/azure/key-vault)  | [Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) | [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) | [Central de Segurança do Azure](https://docs.microsoft.com/azure/security-center/security-center-intro) | [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) |
+| Ferramenta | [Portal do Azure](https://azure.microsoft.com/features/azure-portal) e [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview)  | [Cofre de Chaves do Azure](https://docs.microsoft.com/azure/key-vault)  | [Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) | [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) | [Central de Segurança do Azure](https://docs.microsoft.com/azure/security-center/security-center-intro) | [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) |
 |------------------------------------------------------------|---------------------------------|-----------------|----------|--------------|-----------------------|---------------|
 | Aplicar controles de acesso a recursos e criação de recursos   | Sim                             | Não              | Sim      | Não           | Não                    | Não            |
 | Redes virtuais seguras                                    | Sim                             | Não              | Não       | Sim          | Não                    | Não            |
@@ -31,8 +31,8 @@ A lista a seguir das ferramentas do Azure pode ajudar a amadurecer as políticas
 | Gerenciar serviços de identidade híbrida                            | Não                              | Não              | Sim      | Não           | Não                    | Não            |
 | Restringir tipos de recursos permitidos                         | Não                              | Não              | Não       | Sim          | Não                    | Não            |
 | Impor restrições geo-regionais                          | Não                              | Não              | Não       | Sim          | Não                    | Não            |
-| Monitorar a integridade da segurança de redes e recursos          | Não                              | Não              | Não       | Não           | sim                   | Sim           |
-| Detectar atividade mal-intencionada                                  | Não                              | Não              | Não       | Não           | sim                   | Sim           |
+| Monitorar a integridade da segurança de redes e recursos          | Não                              | Não              | Não       | Não           | Sim                   | Sim           |
+| Detectar atividade mal-intencionada                                  | Não                              | Não              | Não       | Não           | Sim                   | Sim           |
 | Detectar vulnerabilidades antecipadamente                        | Não                              | Não              | Não       | Não           | Sim                   | Não            |
 | Configurar backup e recuperação de desastre                     | Sim                             | Não              | Não       | Não           | Não                    | Não            |
 

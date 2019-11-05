@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 17087228df93164a697b86c7c3934278a55bf91b
-ms.sourcegitcommit: f7ec7828687f433ff8b69b91817cbec7b074662c
+ms.openlocfilehash: fee983ba2379bb84d56f23139bba987a56e5c54d
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72915013"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564701"
 ---
 # <a name="rationalize-the-digital-estate"></a>Racionalizar a propriedade digital
 
@@ -28,7 +28,7 @@ A racionalização de nuvem é o processo de avaliação de ativos para determin
 
 **Análise quantitativa:** Na árvore de decisão, as perguntas quantitativas orientam a primeira camada de decisões. As perguntas comuns incluem o seguinte: o ativo está em uso hoje? Nesse caso, ele está otimizado e dimensionado corretamente? Quais dependências existem entre os ativos? Essas perguntas são essenciais para a classificação do inventário.
 
-**Análise qualitativa:** O próximo conjunto de decisões requer inteligência humana na forma de análise qualitativa. Muitas vezes, as perguntas que aparecem aqui são exclusivas para a solução e só podem ser respondidas por participantes de negócios e usuários avançados. Essas decisões normalmente atrasam o processo, reduzindo as coisas consideravelmente. Essa análise geralmente consome 40 a 80 horas de FTE por aplicativo.
+**Análise qualitativa:** O próximo conjunto de decisões requer inteligência humana na forma de análise qualitativa. Muitas vezes, as perguntas que aparecem aqui são exclusivas para a solução e podem ser respondidas somente por participantes de negócios e usuários avançados. Essas decisões normalmente atrasam o processo, reduzindo as coisas consideravelmente. Essa análise geralmente consome 40 a 80 horas de FTE por aplicativo.
 
 Para obter diretrizes sobre como criar uma lista de perguntas qualitativas de análise, consulte [abordagens para planejamento de imóveis digital](./approach.md).
 
@@ -156,7 +156,7 @@ Ao longo do tempo, a combinação da equipe de adoção da nuvem e da equipe de 
 
 Em alguns casos, o modelo financeiro pode ser muito rígido para tomar uma decisão sem racionalização adicional. Nesses casos, talvez você precise de uma abordagem mais tradicional para a racionalização.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 A saída de um esforço de racionalização é uma lista de pendências priorizada de todos os ativos afetados pela transformação escolhida. Essa lista de pendências agora está pronta para servir como base para modelos de custo dos serviços de nuvem.
 

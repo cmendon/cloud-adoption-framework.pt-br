@@ -8,12 +8,12 @@ ms.date: 10/16/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 99d5e42f8c7e506ba28617022f2a8076c9501979
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: deebe6db08d573872f67d79f734d1f65a85c6904
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239765"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73561697"
 ---
 # <a name="use-terraform-to-build-your-landing-zones"></a>Use o Terraform para criar suas zonas de aterrissagem
 
@@ -21,11 +21,11 @@ O Azure fornece serviços nativos para implantar suas zonas de aterrissagem. Out
 
 ## <a name="purpose-of-the-landing-zone"></a>Finalidade da zona de aterrissagem
 
-A zona de aterrissagem da estrutura de adoção de nuvem para Terraform tem um conjunto limitado de responsabilidades e recursos para impor registro em log, contabilidade e segurança. Projetamos essa zona de aterrissagem usam componentes padrão conhecidos como módulos Terraform para impor a consistência entre os recursos implantados no ambiente.
+A zona de aterrissagem da estrutura de adoção de nuvem para Terraform tem um conjunto limitado de responsabilidades e recursos para impor registro em log, contabilidade e segurança. Essa zona de aterrissagem usa componentes padrão conhecidos como módulos Terraform para impor a consistência entre os recursos implantados no ambiente.
 
-## <a name="using-standard-modules"></a>Usando módulos padrão
+## <a name="use-standard-modules"></a>Usar módulos padrão
 
-A reutilização de componentes é um princípio fundamental de infraestrutura como código. Os módulos são fundamentais para definir padrões e consistência em toda a implantação de recursos em e entre ambientes. O conjunto de módulos usado para implantar essa primeira zona de aterrissagem está disponível no [registro](https://registry.terraform.io/search?q=aztfmod)oficial do Terraform.
+A reutilização de componentes é um princípio fundamental da infraestrutura como código. Os módulos são fundamentais para definir padrões e consistência em toda a implantação de recursos em e entre ambientes. Os módulos usados para implantar essa primeira zona de aterrissagem estão disponíveis no [registro](https://registry.terraform.io/search?q=aztfmod)oficial do Terraform.
 
 ## <a name="architecture-diagram"></a>Diagrama da arquitetura
 
@@ -33,17 +33,17 @@ A primeira zona de aterrissagem implanta os seguintes componentes em sua assinat
 
 ![Zona de aterrissagem de fundação usando Terraform](../../_images/ready/foundations-terraform-landingzone.png)
 
-## <a name="capabilities"></a>Capacidades
+## <a name="capabilities"></a>Funcionalidades
 
 Os componentes implantados e sua finalidade incluem o seguinte:
 
 | Componente | responsabilidade |
 |---------|---------|
 | Grupos de recursos | Principais grupos de recursos necessários para a base |
-| Log de atividades | Auditar todas as atividades de assinatura e arquivamento: </br> -Conta de armazenamento </br> -Hubs de eventos |  
-| Log de diagnóstico | Todo o log de operações é mantido por um número específico de dias: </br> -Conta de armazenamento </br> -Hubs de eventos |
-| Log Analytics | Armazena todos os logs de operações </br> Implante soluções comuns para análise profunda de práticas recomendadas de aplicativo: </br> - NetworkMonitoring </br> - ADAssessment </br> - ADReplication </br> - AgentHealthAssessment </br> - DnsAnalytics </br> - KeyVaultAnalytics
-| Central de Segurança | Métricas e alertas de higiene de segurança enviados para email e número de telefone |
+| Log de atividades | Auditar todas as atividades de assinatura e arquivamento: </br> -Conta de armazenamento </br> -Hubs de eventos do Azure |  
+| Log de diagnósticos | Todos os logs de operação são mantidos por um número específico de dias: </br> -Conta de armazenamento </br> -Hubs de eventos |
+| Log Analytics | Armazena todos os logs de operação </br> Implante soluções comuns para análise profunda de práticas recomendadas de aplicativo: </br> - NetworkMonitoring </br> - ADAssessment </br> - ADReplication </br> - AgentHealthAssessment </br> - DnsAnalytics </br> - KeyVaultAnalytics
+| Central de Segurança do Azure | Métricas e alertas de higiene de segurança enviados para email e número de telefone |
 
 ## <a name="use-this-blueprint"></a>Usar este blueprint
 
@@ -58,7 +58,7 @@ As seguintes suposições ou restrições foram consideradas quando esta zona de
 - **Complexidade da arquitetura:** A complexidade da arquitetura não exige assinaturas de produção adicionais.
 - **Serviços compartilhados:** Não há nenhum serviço compartilhado existente no Azure que exija que essa assinatura seja tratada como um spoke em uma arquitetura de Hub e spoke.
 
-Se essas suposições corresponderem ao seu ambiente atual, esse plano gráfico poderá ser uma boa maneira de começar a criar sua zona de aterrissagem.
+Se essas suposições corresponderem ao seu ambiente atual, essa especificação técnica poderá ser uma boa maneira de começar a criar sua zona de aterrissagem.
 
 ## <a name="design-decisions"></a>Decisões de design
 
@@ -66,8 +66,8 @@ As decisões a seguir são representadas na zona de aterrissagem Terraform:
 
 | Componente | Decisões | Abordagens alternativas |
 | --- | --- | --- |
-|Log e monitoramento | Azure Monitor Log Analytics espaço de trabalho será usado. Uma conta de armazenamento de diagnóstico, bem como o Hub de eventos, será provisionada. |         |
-|Rede | N/A-rede será implementada em outra zona de aterrissagem. |[Decisões de rede](../considerations/networking-options.md) |
+|Log e monitoramento | Azure Monitor Log Analytics espaço de trabalho é usado. Uma conta de armazenamento de diagnóstico, bem como o Hub de eventos, é provisionado. |         |
+|Rede | N/A-a rede é implementada em outra zona de aterrissagem. |[Decisões de rede](../considerations/networking-options.md) |
 |Identidade | Supõe-se que a assinatura já esteja associada a uma instância do Azure Active Directory. | [Melhores práticas de gerenciamento de identidades](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices) |
 | Política | Essa zona de aterrissagem atualmente supõe que nenhuma política do Azure será aplicada. | |
 |Design de assinatura | N/A – projetado para uma única assinatura de produção. | [Dimensionamento de assinaturas](../azure-best-practices/scaling-subscriptions.md) |
@@ -75,32 +75,32 @@ As decisões a seguir são representadas na zona de aterrissagem Terraform:
 | Grupos de recursos | N/A – projetado para uma única assinatura de produção. | [Dimensionamento de assinaturas](../azure-best-practices/scaling-subscriptions.md) |
 | Dados | N/D | [Escolha a opção de SQL Server correta no Azure e nas](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) [diretrizes do Azure Data Store](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
 |Armazenamento|N/D|[Diretrizes do Armazenamento do Azure](../considerations/storage-options.md) |
-| Padrões de nomenclatura | Quando o ambiente for criado, um prefixo exclusivo também será criado. Os recursos que exigem um nome global exclusivo (como contas de armazenamento) usam esse prefixo. O nome personalizado será anexado com um sufixo aleatório. O uso de marca é obrigatório conforme descrito na tabela a seguir. | [Melhores práticas de nomenclatura e marcação](../azure-best-practices/naming-and-tagging.md) |
-| Gerenciamento de custos | N/D | [Acompanhando os custos](../azure-best-practices/track-costs.md) |
+| Padrões de nomenclatura | Quando o ambiente é criado, um prefixo exclusivo também é criado. Os recursos que exigem um nome global exclusivo (como contas de armazenamento) usam esse prefixo. O nome personalizado é acrescentado com um sufixo aleatório. O uso de marca é obrigatório conforme descrito na tabela a seguir. | [Melhores práticas de nomenclatura e marcação](../azure-best-practices/naming-and-tagging.md) |
+| Gerenciamento de custo | N/D | [Acompanhando os custos](../azure-best-practices/track-costs.md) |
 | Computação | N/D | [Opções de computação](../considerations/compute-options.md) |
 
 ### <a name="tagging-standards"></a>Padrões de marcação
 
 O seguinte conjunto de marcas mínimas deve estar presente em todos os recursos e grupos de recursos:
 
-| Nome da marca | Descrição | Chave | Exemplo de valor |
+| Nome da marca | DESCRIÇÃO | Chave | Valor de exemplo |
 |--|--|--|--|
 | Unidade de negócios | Divisão de nível superior da sua empresa que tem a assinatura ou a carga de trabalho à qual o recurso pertence. | BusinessUnit | Finanças, MARKETING, {nome do produto}, CORP, compartilhado |
-| Centro de custo | O centro de custo de contabilidade associado a este recurso.| CostCenter | NUMBER |
-| Recuperação de desastres | Nível de importância empresarial do aplicativo, da carga de trabalho ou do serviço. | Recovery | HABILITADO PARA DR, NÃO HABILITADO PARA DR |
+| Centro de custo | O centro de custo de contabilidade associado a este recurso.| CostCenter | Número |
+| Recuperação de desastre | Nível de importância empresarial do aplicativo, da carga de trabalho ou do serviço. | Recovery | HABILITADO PARA DR, NÃO HABILITADO PARA DR |
 | Ambiente | Ambiente de implantação do aplicativo, da carga de trabalho ou do serviço. |  Variável | Prod, dev, QA, estágio, teste, treinamento |
 | Nome do proprietário | Proprietário do aplicativo, da carga de trabalho ou do serviço.| Proprietário | email |
-| DeploymentType | Define como os recursos são mantidos. | deploymentType | Manual, Terraform |
-| Versão | Versão do Blueprint implantada | version | v 0,1 |
+| Tipo de implantação | Define como os recursos são mantidos. | deploymentType | Manual, Terraform |
+| Versão | Versão do Blueprint implantada. | version | v 0,1 |
 | Nome do Aplicativo | Nome do aplicativo, serviço ou carga de trabalho associado ao recurso. | ApplicationName | "nome do aplicativo" |
 
 ## <a name="customize-and-deploy-your-first-landing-zone"></a>Personalizar e implantar sua primeira zona de aterrissagem
 
-Você pode [clonar sua zona de aterrissagem do Terraform Foundation](https://github.com/microsoft/CloudAdoptionFramework/tree/master/ready). É fácil começar a usar a zona de aterrissagem modificando as variáveis Terraform. Em nosso exemplo, usamos **blueprint_foundations. sandbox. auto. tfvars**, portanto, Terraform definirá automaticamente os valores nesse arquivo para você.
+Você pode [clonar sua zona de aterrissagem do Terraform Foundation](https://github.com/microsoft/CloudAdoptionFramework/tree/master/ready). É fácil começar a usar a zona de aterrissagem modificando as variáveis Terraform. Em nosso exemplo, usamos **blueprint_foundations. sandbox. auto. tfvars**, de modo que Terraform define automaticamente os valores nesse arquivo para você.
 
 Vamos examinar as diferentes seções variáveis.
 
-Nesse primeiro objeto, criamos dois grupos de recursos na região `southeastasia`, denominado "-Hub-núcleo-s" e "-Hub-núcleo-seg", juntamente com um prefixo adicionado no tempo de execução.
+Nesse primeiro objeto, criamos dois grupos de recursos na região `southeastasia` chamada `-hub-core-sec` e `-hub-operations` juntamente com um prefixo adicionado no tempo de execução.
 
 ```hcl
 resource_groups_hub = {
@@ -115,7 +115,7 @@ resource_groups_hub = {
 }
 ```
 
-Em seguida, especificamos as regiões nas quais podemos definir as bases. Aqui, `southeastasia` será usado para implantar todos os recursos.
+Em seguida, especificamos as regiões nas quais podemos definir as bases. Aqui, `southeastasia` é usado para implantar todos os recursos.
 
 ```hcl
 location_map = {
@@ -124,14 +124,14 @@ location_map = {
 }
 ```
 
-Em seguida, especificamos o período de retenção para os logs de operações e os logs de assinatura do Azure. Esses dados serão armazenados em contas de armazenamento separadas e em um hub de eventos, cujos nomes são gerados aleatoriamente, pois eles devem ser exclusivos.
+Em seguida, especificamos o período de retenção para os logs de operações e os logs de assinatura do Azure. Esses dados são armazenados em contas de armazenamento separadas e em um hub de eventos, cujos nomes são gerados aleatoriamente, pois eles devem ser exclusivos.
 
 ```hcl
 azure_activity_logs_retention = 365
 azure_diagnostics_logs_retention = 60
 ```
 
-No tags_hub, especificamos o conjunto mínimo de marcas que serão aplicadas a todos os recursos criados.
+No tags_hub, especificamos o conjunto mínimo de marcas que são aplicadas a todos os recursos criados.
 
 ```hcl
 tags_hub = {
@@ -144,7 +144,7 @@ tags_hub = {
 }
 ```
 
-Em seguida, especificamos o nome do log Analytics e um conjunto de soluções que analisarão a implantação. Aqui, reguardamos o monitoramento de rede, Avaliação do AD e replicação, Análise de DNS e Análise do Key Vault.
+Em seguida, especificamos o nome do log Analytics e um conjunto de soluções que analisam a implantação. Aqui, retidamos o monitoramento de rede, a avaliação de Active Directory (AD) e a replicação, Análise de DNS e Análise do Key Vault.
 
 ```hcl
 
@@ -189,20 +189,20 @@ security_center = {
 }
 ```
 
-## <a name="getting-started"></a>Introdução
+## <a name="get-started"></a>Introdução
 
-Depois de examinar a configuração, você pode implantar a configuração da mesma forma que implantaria um ambiente Terraform. No entanto, recomendamos que você use o Rover, que é um contêiner do Docker que permite a implantação do Windows, Linux ou MacOS. Você pode começar a usar o [repositório GitHub do Rover](https://github.com/aztfmod/rover).
+Depois de examinar a configuração, você pode implantar a configuração da mesma forma que implantaria um ambiente Terraform. Recomendamos que você use o Rover, que é um contêiner do Docker que permite a implantação do Windows, do Linux ou do MacOS. Você pode começar a usar o [repositório GitHub do Rover](https://github.com/aztfmod/rover).
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
-A zona de aterrissagem base estabelece a base para um ambiente complexo de forma decomposta. Esta edição fornece um conjunto de recursos muito simples que podem ser estendidos por:
+A zona de aterrissagem base estabelece a base para um ambiente complexo de forma decomposta. Esta edição fornece um conjunto de recursos simples que podem ser estendidos por:
 
 - Adicionar outros módulos ao plano gráfico.
 - Dispor zonas de aterrissagem adicionais sobre ela.
 
-As zonas de aterrissagem em camadas são uma boa prática para desacoplar os sistemas, o controle de versão de cada componente que você está usando e permitir a inovação e a estabilidade rápidas para sua implantação de infraestrutura como código.
+As zonas de aterrissagem em camadas são uma boa prática para desacoplar os sistemas, o controle de versão de cada componente que você está usando e permitindo uma inovação e estabilidade rápidas para sua implantação de infraestrutura como código.
 
-Arquiteturas de referência futuras demonstrarão esse conceito para uma topologia de Hub e spoke.
+As arquiteturas de referência futuras demonstrarão esse conceito para uma topologia hub e spoke.
 
 > [!div class="nextstepaction"]
-> [Examine o exemplo de zona de aterrissagem de base usando Terraform](https://github.com/microsoft/CloudAdoptionFramework/tree/master/ready)
+> [Examinar o exemplo de zona de aterrissagem de Terraform de base](https://github.com/microsoft/CloudAdoptionFramework/tree/master/ready)

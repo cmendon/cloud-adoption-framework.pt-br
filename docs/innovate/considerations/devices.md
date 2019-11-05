@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: c226c765390805bf4b9ae52ebaf74d337286b90e
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 309ea099eee5fcec5700a48afc4376dbc30805f9
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73047680"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565661"
 ---
 # <a name="ambient-experiences-interact-with-devices"></a>Experiências de ambiente: interagir com dispositivos
 
@@ -46,7 +46,7 @@ No primeiro estágio da experiência de ambiente, o usuário sai do computador. 
 
 Quando os clientes são móveis e alteram os locais com frequência, isso pode representar a forma mais relevante de experiência de ambiente para uma solução específica. Na última década, a inovação foi disparada com frequência pela integração de soluções existentes com uma experiência móvel.
 
-Azure App serviços é um ótimo exemplo dessa abordagem. Durante as iterações iniciais, o [recurso de aplicativo Web dos serviços de Azure app](/azure/app-service/overview) pode ser usado para testar a hipótese. Como as mesmas se tornam mais complexas, o [recurso de aplicativo móvel dos serviços Azure app](/azure/app-service-mobile/) pode estender o aplicativo Web para ser executado em uma variedade de plataformas móveis.
+Azure App serviços é um ótimo exemplo dessa abordagem. Durante as iterações iniciais, o [recurso de aplicativo Web dos serviços de Azure app](https://docs.microsoft.com/azure/app-service/overview) pode ser usado para testar a hipótese. Como as mesmas se tornam mais complexas, o [recurso de aplicativo móvel dos serviços Azure app](https://docs.microsoft.com/azure/app-service-mobile) pode estender o aplicativo Web para ser executado em uma variedade de plataformas móveis.
 
 ## <a name="mixed-reality"></a>Realidade misturada
 
@@ -68,7 +68,7 @@ Essa experiência é ideal quando alguma forma de dispositivo está consistente 
 Exemplos de realidade integrada no Azure podem incluir:
 
 - As [soluções de IOT (Internet das coisas do Azure)](https://docs.microsoft.com/azure/iot-fundamentals), uma coleção de serviços no Azure que cada um auxilia no gerenciamento de dispositivos e no fluxo de dados desses dispositivos para a nuvem e vice-versa para os usuários finais.
-- [Azure Sphere](/azure-sphere), uma combinação de hardware e software. Azure Sphere é uma maneira segura de permitir que um dispositivo existente transmita dados com segurança entre o dispositivo e as soluções de IoT do Azure.
+- [Azure Sphere](https://docs.microsoft.com/azure-sphere), uma combinação de hardware e software. Azure Sphere é uma maneira segura de permitir que um dispositivo existente transmita dados com segurança entre o dispositivo e as soluções de IoT do Azure.
 - [Kit de desenvolvedores de Kinect do Azure](https://docs.microsoft.com/azure/Kinect-dk), sensores de ia com visão avançada do computador e modelos de fala. Esses sensores podem coletar dados visuais e de áudio dos arredores imediatos e alimentar essas entradas em sua solução.
 
 Você pode usar todas essas três ferramentas para coletar dados de arredores naturais e no ponto de necessidade do cliente. A partir daí, sua solução pode responder a essas entradas de dados para resolver a necessidade, às vezes antes que o cliente esteja até mesmo ciente de que um gatilho para essa necessidade ocorreu.
@@ -81,13 +81,13 @@ Os assistentes virtuais e os auto-falantes inteligentes oferecem ótimos exemplo
 
 Os pisos de fábrica em todo o mundo fornecem exemplos adicionais de realidade ajustada. Durante os estágios iniciais da realidade integrada, os sensores em dispositivos detectaram condições como o superaquecimento e, em seguida, alertava um humano sendo por meio de um aplicativo. Na realidade ajustada, o cliente ainda pode estar envolvido, mas o loop de comentários é mais rígido. Em uma fábrica de realidade ajustada, um dispositivo pode detectar superaquecimento em uma máquina vital em algum lugar ao longo da linha do assembly. Em outro lugar no andar, um segundo dispositivo reduz um pouco a produção para permitir que a máquina seja fria e, em seguida, retome o ritmo completo quando a condição for resolvida. Nessa situação, o cliente é um participante de segunda mão. O cliente usa seu aplicativo para definir as regras e entender como essas regras afetam a produção, mas não são necessárias para o loop de comentários.
 
-Os serviços do Azure descritos nas [soluções de IOT (azure Internet das coisas)](https://docs.microsoft.com/azure/iot-fundamentals), [Azure Sphere](/azure-sphere)e kit de [desenvolvedores de Kinect do Azure](https://docs.microsoft.com/azure/Kinect-dk) podem ser componentes de uma solução de realidade ajustada. O aplicativo original e a lógica de negócios servirão como o intermediário entre a entrada ambiental e a alteração que deve ser feita no ambiente físico.
+Os serviços do Azure descritos nas [soluções de IOT (azure Internet das coisas)](https://docs.microsoft.com/azure/iot-fundamentals), [Azure Sphere](https://docs.microsoft.com/azure-sphere)e kit de [desenvolvedores de Kinect do Azure](https://docs.microsoft.com/azure/Kinect-dk) podem ser componentes de uma solução de realidade ajustada. O aplicativo original e a lógica de negócios servirão como o intermediário entre a entrada ambiental e a alteração que deve ser feita no ambiente físico.
 
 Uma teledigital é outro exemplo da realidade ajustada. Este termo refere-se a uma representação digital de um dispositivo físico, apresentada por meio de formatos de computadores, móveis ou de realidade mista. Ao contrário de modelos 3D menos sofisticados, uma teledigital reflete os dados coletados de um dispositivo real no ambiente físico. Essa solução permite que o usuário interaja com a representação digital de maneiras que nunca poderiam ser feitas no mundo real. Nessa abordagem, os dispositivos físicos ajustam um ambiente de realidade misturada. No entanto, a solução ainda coleta dados de uma solução de realidade integrada e usa esses dados para moldar a realidade dos arredores atuais do cliente.
 
 No Azure, as gêmeos digitais são criadas e acessadas por meio de um serviço chamado [Azure digital gêmeos](https://docs.microsoft.com/azure/digital-twins/about-digital-twins).
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Agora que você tem uma compreensão mais profunda das interações de dispositivos e da experiência ambiente ideal para sua solução, você está pronto para explorar a disciplina final de inovação, [previsão e influência](./predict.md).
 

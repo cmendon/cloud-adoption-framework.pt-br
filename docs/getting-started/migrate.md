@@ -8,12 +8,12 @@ ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 8870f5ebeab855ec841ed00d109245a1efdeff20
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: cdfe247470626a142d31ab6357f771fb39ced55f
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048311"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564677"
 ---
 # <a name="begin-a-cloud-migration-journey-in-azure"></a>Iniciar uma jornada de migração na nuvem no Azure
 
@@ -36,7 +36,7 @@ As migrações na nuvem podem ajudar as empresas a alcançar seus resultados com
 
 |Eventos comerciais críticos | Motivações de migração | Motivações de inovação |
 |---------|---------|---------|
-| Saída do datacenter<br/><br/>Fusões, aquisição ou divestiture<br/><br/>Reduções em despesas de capital<br/><br/>Fim do suporte para tecnologias de missão crítica<br/><br/>Resposta às alterações de conformidade regulatória<br/><br/>Atender aos novos requisitos de soberania de dados<br/><br/>Reduzir as interrupções e melhorar a estabilidade da ti|Redução de custos<br/><br/>Redução no fornecedor ou na complexidade técnica<br/><br/>Otimização de operações internas<br/><br/>Aumentar a agilidade dos negócios<br/><br/>Preparar-se para novos recursos técnicos<br/><br/>Dimensionar para atender às demandas de mercado<br/><br/>Dimensionar para atender às demandas geográficas|Preparar-se para novos recursos técnicos<br/><br/>Crie novos recursos técnicos<br/><br/>Dimensionar para atender às demandas de mercado<br/><br/>Dimensionar para atender às demandas geográficas<br/><br/>Melhorar experiências/compromissos do cliente<br/><br/>Transformar produtos ou serviços<br/><br/>Interromper o mercado com novos produtos ou serviços|
+| Saída do datacenter<br/><br/>Fusões, aquisição ou divestiture<br/><br/>Reduções em despesas de capital<br/><br/>Fim do suporte para tecnologias de missão crítica<br/><br/>Resposta às alterações de conformidade regulatória<br/><br/>Atender aos novos requisitos de soberania de dados<br/><br/>Reduzir as interrupções e melhorar a estabilidade da ti|Economia de custos<br/><br/>Redução no fornecedor ou na complexidade técnica<br/><br/>Otimização de operações internas<br/><br/>Aumentar a agilidade dos negócios<br/><br/>Preparar-se para novos recursos técnicos<br/><br/>Dimensionar para atender às demandas de mercado<br/><br/>Dimensionar para atender às demandas geográficas|Preparar-se para novos recursos técnicos<br/><br/>Crie novos recursos técnicos<br/><br/>Dimensionar para atender às demandas de mercado<br/><br/>Dimensionar para atender às demandas geográficas<br/><br/>Melhorar as experiências e os compromissos do cliente<br/><br/>Transformar produtos ou serviços<br/><br/>Interromper o mercado com novos produtos ou serviços|
 
 <!-- markdownlint-enable MD033 -->
 
@@ -50,7 +50,7 @@ Preparar todos os participantes no esforço de migração com um reconhecimento 
 
 ## <a name="migration-approach"></a>Abordagem de migração
 
-A estrutura de adoção de nuvem estabelece um constructo de alto nível de plano, pronto e adotado para agrupar os tipos de esforço necessários em qualquer adoção de nuvem. Esse resumo executivo se baseia nesse fluxo de alto nível para estabelecer processos iterativos que podem facilitar o aumento/deslocamento/otimização de esforços e esforços de modernização em uma única abordagem em todas as atividades **de** migração na nuvem.
+A estrutura de adoção de nuvem estabelece um constructo de alto nível de plano, pronto e adotado para agrupar os tipos de esforço necessários em qualquer adoção de nuvem. Esse resumo executivo baseia-se nesse fluxo de alto nível para estabelecer processos iterativos que podem facilitar a otimização de desvios e a retomada em uma única abordagem em todas as atividades de migração na nuvem.
 
 Essa abordagem consiste em duas metodologias ou áreas de foco: estratégia de nuvem & planejamento e implementação de nuvem. A [motivação](#motivations) ou o resultado comercial desejado para uma migração na nuvem geralmente determina quanto uma equipe deve investir em [estratégia e planejamento](#cloud-strategy-and-planning) e [implementação](#cloud-implementation). Essas motivações também podem influenciar as decisões para executar cada uma sequencialmente ou em paralelo.
 
@@ -138,7 +138,7 @@ A estrutura de adoção de nuvem é uma solução de ciclo de vida. Ele foi proj
 >
 > [Plano](../plan/index.md)
 >
-> [Esteja](../ready/index.md)
+> [Pronto](../ready/index.md)
 >
 > [Migrar](../migrate/index.md)
 >

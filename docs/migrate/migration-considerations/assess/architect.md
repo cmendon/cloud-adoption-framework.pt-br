@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 151698c836add7c46c389cc94c76b942e52b0341
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 77931f6315c43d963947cbdaf628b8bfa514749c
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73240235"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566820"
 ---
 # <a name="architect-workloads-prior-to-migration"></a>Arquitetar cargas de trabalho antes da migração
 
@@ -37,7 +37,7 @@ As suposições discriminadas podem criar empecilhos que poderiam retardar o pro
 - **Pagamento de dívida técnica.** Algumas cargas de trabalho obsoletas contêm uma grande quantidade de dívidas técnicas. Isso pode levar a desafios de longo prazo aumentando os custos de hospedagem com qualquer provedor de nuvem. Quando a dívida técnica aumenta de forma anormal os custos de hospedagem, arquiteturas alternativas devem ser avaliadas.
 - **Padrões de tráfego do usuário.** As soluções existentes podem depender de padrões de roteamento de rede existentes. Esses padrões podem desacelerar o desempenho consideravelmente. Além disso, a introdução de novas soluções de WAN (rede de longa distância) pode levar semanas ou até mesmo meses. Prepare-se, no início do processo de arquitetura, para esses obstáculos considerando padrões de tráfego e alterações nos principais serviços de infraestrutura.
 
-## <a name="accelerating-business-value"></a>Acelerar o valor empresarial
+## <a name="accelerate-business-value"></a>Acelere o valor comercial
 
 Alguns cenário poderiam exigir uma arquitetura diferente da estratégia de nova hospedagem de IaaS presumida. Seguem alguns exemplos:
 
@@ -47,9 +47,9 @@ Alguns cenário poderiam exigir uma arquitetura diferente da estratégia de nova
 
 Em cada um desses cenários discriminados, uma arquitetura alternativa poder ser a melhor solução possível.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Depois que a nova arquitetura é definida, [estimativas de custo precisas podem ser calculadas](./estimate.md).
 
 > [!div class="nextstepaction"]
-> [Estimar os custos de nuvem](./estimate.md)
+> [Estimar custos de nuvem](./estimate.md)

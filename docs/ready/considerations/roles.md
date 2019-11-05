@@ -11,14 +11,14 @@ ms.subservice: ready
 manager: BrianBlanchard
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 6aa17f3ffb16afae0b27bcccbee84ddf9ad2c5f0
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 47933f12bea00ff1ea9052125147287ffc9381d6
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73243130"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73561770"
 ---
-# <a name="role-based-access-control"></a>Controle de acesso baseado em funções
+# <a name="role-based-access-control"></a>Controle de acesso baseado em função
 
 Direitos e privilégios de acesso baseados em grupo são uma boa prática. Lidar com grupos em vez de usuários individuais simplifica a manutenção de políticas de acesso, fornece gerenciamento de acesso consistente entre equipes e reduz erros de configuração. Atribuir e remover usuários de grupos, conforme apropriado, ajuda a manter os privilégios dos usuários sempre atualizados. O [RBAC (controle de acesso baseado em função)](https://docs.microsoft.com/azure/role-based-access-control/overview) do Azure oferece gerenciamento de acesso refinado para os recursos organizados em torno das funções de usuário.
 
@@ -41,7 +41,7 @@ Ao planejar sua estratégia de controle de acesso, use um modelo de acesso com p
 > [!NOTE]
 > Quanto mais específicas ou detalhadas forem as permissões definidas, maior será a probabilidade de que seus controles de acesso se tornem complexos e difíceis de gerenciar. A probabilidade de que isso seja verdadeiro aumenta à medida que a propriedade digital da sua nuvem cresce de tamanho. Evite permissões específicas para cada recurso. Em vez disso, [use grupos de gerenciamento](https://docs.microsoft.com/azure/governance/management-groups) para controle de acesso no âmbito de toda a empresa e [grupos de recursos](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#resource-groups) para controle de acesso no âmbito de assinaturas. Evite também permissões específicas para cada usuário. Em vez disso, atribua acesso a [grupos do Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-manage-groups).
 
-## <a name="using-built-in-rbac-roles"></a>Como usar funções internas do RBAC
+## <a name="use-built-in-rbac-roles"></a>Usar funções RBAC internas
 
 O Azure fornece várias definições de funções internas, com três funções principais para fornecer acesso:
 
@@ -59,7 +59,7 @@ Para outro exemplo de como usar as funções internas para gerenciar o acesso a 
 
 Para obter uma lista completa das funções internas disponíveis, confira [Funções internas para recursos do Azure](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles).
 
-## <a name="using-custom-roles"></a>Como usar funções personalizadas
+## <a name="use-custom-roles"></a>Usar funções personalizadas
 
 Embora as funções internas do Azure sejam compatíveis com uma ampla variedade de cenários de controle de acesso, elas podem não atender a todas as necessidades de sua organização ou equipe. Por exemplo, se você tiver um único grupo de usuários responsável por gerenciar máquinas virtuais e recursos do Banco de Dados SQL do Azure, talvez queira criar uma função personalizada para otimizar o gerenciamento dos controles de acesso necessários.
 
@@ -80,7 +80,7 @@ A tabela a seguir ilustra um padrão comum para dividir as responsabilidades de 
 | Operações de segurança | SecOps | Fornece supervisão geral de segurança.<br/><br/> Estabelece e impõe a política de segurança, como a criptografia em repouso.<br/><br/> Gerencia as chaves de criptografia.<br/><br/> Gerencia as regras de firewall. |
 | Operações de rede | NetOps | Gerencia a configuração e as operações de rede em redes virtuais, como rotas e emparelhamentos. |
 | Operações de sistema | SysOps | Especifica as opções de infraestrutura de armazenamento e computação e mantém os recursos que foram implantados. |
-| Desenvolvimento, teste e operações | Operações de Desenvolvimento | Compila e implanta recursos e aplicativos de carga de trabalho.<br/><br/> Opera recursos e aplicativos para atender aos SLAs (contratos de nível de serviço) e a outros padrões de qualidade. |
+| Desenvolvimento, teste e operações | DevOps | Compila e implanta recursos e aplicativos de carga de trabalho.<br/><br/> Opera recursos e aplicativos para atender aos SLAs (contratos de nível de serviço) e a outros padrões de qualidade. |
 
 <!-- markdownlint-enable MD033 -->
 

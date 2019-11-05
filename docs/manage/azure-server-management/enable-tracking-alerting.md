@@ -8,18 +8,18 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 93449f754e3908e092fa64c55ad62fc604b4ba5b
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 32f0a5f9b5d0fabe9e1989e54293b74aeb130b96
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030237"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565426"
 ---
 # <a name="enable-tracking-and-alerting-for-critical-changes"></a>Habilitar acompanhamento e alertas para alterações críticas
 
 O Azure Controle de Alterações e o inventário fornecem alertas sobre o estado de configuração do ambiente híbrido e sobre quaisquer alterações no ambiente. Você pode monitorar as alterações de arquivo crítico, de serviço, de software e de registro que podem afetar os servidores implantados.
 
-Por padrão, o serviço de inventário de automação do Azure não monitora arquivos ou configurações do registro. A solução fornece uma lista de chaves do registro que recomendamos para o monitoramento. Para ver essa lista, acesse sua conta de automação no portal do Azure e selecione**configurações de edição**de **inventário** > :
+Por padrão, o serviço de inventário de automação do Azure não monitora arquivos ou configurações do registro. A solução fornece uma lista de chaves do registro que recomendamos para o monitoramento. Para ver essa lista, acesse sua conta de automação no portal do Azure e selecione **inventário** > **Editar configurações**.
 
 ![Captura de tela da exibição de inventário da automação do Azure no portal do Azure](./media/change-tracking1.png)
 
@@ -81,7 +81,7 @@ Detectar se os arquivos de driver são alterados, adicionados ou removidos. Úti
 
 ### <a name="specific-software-version-is-or-isnt-installed-on-a-machine"></a>A versão específica do software é ou não está instalada em um computador
 
-Útil para avaliar a segurança. Observe que essa consulta faz `ConfigurationData`referência, que contém os logs de inventário e relata o último estado de configuração relatado, não as alterações.
+Útil para avaliar a segurança. Observe que essa consulta faz referência a `ConfigurationData`, que contém os logs de inventário e relata o último estado de configuração relatado, não as alterações.
 
   ```kusto
   ConfigurationData | where SoftwareName contains "Monitoring Agent" and CurrentVersion != "8.0.11081.0"

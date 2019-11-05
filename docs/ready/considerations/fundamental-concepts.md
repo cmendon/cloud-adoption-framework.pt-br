@@ -8,12 +8,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 894c4c7431533aa29ad7fcc1cd08046651987f10
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 30dd36841171ebc0e239a8e59f94d290cc5782c7
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239785"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73561762"
 ---
 # <a name="azure-fundamental-concepts"></a>Conceitos fundamentais do Azure
 
@@ -91,9 +91,9 @@ Os recursos a seguir fornecem informações detalhadas sobre os conceitos discut
 - [O que é o Active Directory do Azure?](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)
 - [Associar ou adicionar uma assinatura do Azure ao seu locatário do Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)
 - [Topologias para o Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-topologies)
-- [Assinaturas, licenças, contas e locatários para ofertas de nuvem da Microsoft](/office365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings)
+- [Assinaturas, licenças, contas e locatários para ofertas de nuvem da Microsoft](https://docs.microsoft.com/office365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings)
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Agora que você entendeu conceitos fundamentais do Azure, saiba como [dimensionar com várias assinaturas do Azure](../azure-best-practices/scaling-subscriptions.md).
 

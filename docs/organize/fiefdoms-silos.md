@@ -9,14 +9,14 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 170054f07cb7e8282b3abd582e484a730aca1280
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: beac1a3d459bd0f8654a9c746bc25981ad366fb0
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030437"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566750"
 ---
-# <a name="organizational-antipatterns-silos-and-fiefdoms"></a>Antipadrões organizacionais: Silos e fiefdoms
+# <a name="organizational-antipatterns-silos-and-fiefdoms"></a>Antipadrão organizacional: silos e fiefdoms
 
 O sucesso em qualquer alteração importante nas práticas de negócios, na cultura ou nas operações de tecnologia exige uma mentalidade de crescimento. No coração da mentalidade de crescimento há uma aceitação de alteração e a capacidade de liderar apesar da ambiguidade.
 
@@ -64,7 +64,7 @@ Os membros da equipe em um silo de ti provavelmente se definirão por seu alinha
 
 Esse antipadrão geralmente surge de uma paixão comum para uma solução específica. Em seguida, os silos de ti são reforçados pelas habilidades avançadas da equipe como resultado do investimento nessa solução específica. Essa habilidade superior pode ser um acelerador para os esforços de adoção da nuvem se a resistência a alterações puder ser superada. Ele também poderá se tornar um bloqueador principal se os silos forem divididos ou se os membros da equipe não puderem avaliar as opções com precisão. Felizmente, os silos de ti geralmente podem ser superados sem nenhuma alteração significativa no gráfico organizacional.
 
-### <a name="addressing-resistance-from-it-silos"></a>Lidando com a resistência de silos de ti
+### <a name="address-resistance-from-it-silos"></a>Resistência de endereço dos silos de ti
 
 Os silos de ti podem ser abordados pelas seguintes abordagens. A melhor abordagem dependerá da causa raiz da resistência.
 
@@ -88,7 +88,7 @@ Considere também as versões baseadas em nuvem da solução que a equipe do sil
 
 Para que a educação seja um investimento, alguns retornos devem vir como resultado da despesa. No Exchange para o investimento, a equipe pode demonstrar a solução proposta ao restante das equipes envolvidas na adoção da nuvem. Eles também podem fornecer documentação dos riscos tangíveis, das abordagens de gerenciamento de riscos e das políticas desejadas na adoção da solução proposta. Cada uma delas envolverá essas equipes na solução e ajudará a aproveitar seus conhecimentos tribals.
 
-**Desative os empecilhos em aumentos de velocidade:** Os silos de ti podem diminuir ou interromper qualquer transformação. A experimentação e a iteração encontrarão uma maneira, mas somente se o projeto continuar sendo movido. Concentre-se na tomada de obstáculos em apenas aumentos de velocidade. Defina as políticas com as quais todos podem estar temporariamente confortáveis no Exchange para progressão contínua.
+**Desative os empecilhos em** aumentos de velocidade: Os silos de ti podem diminuir ou interromper qualquer transformação. A experimentação e a iteração encontrarão uma maneira, mas somente se o projeto continuar sendo movido. Concentre-se na tomada de obstáculos em apenas aumentos de velocidade. Defina as políticas com as quais todos podem estar temporariamente confortáveis no Exchange para progressão contínua.
 
 Por exemplo, se a segurança de ti for o obstáculo porque sua solução de segurança não pode monitorar comprometimentos de dados protegidos na nuvem, estabelecer políticas de classificação de dados. Impeça a implantação de dados classificados na nuvem até que uma solução de concordância possa ser encontrada. Convide a segurança de ti em experimentação com soluções híbridas ou nativas de nuvem para monitorar dados protegidos.
 
@@ -112,16 +112,18 @@ Fiefdoms são especialmente comuns em organizações que experimentaram a ti dow
 
 Em geral, fiefdoms são o resultado de um gerente de linha que temores a perda da equipe e a base de energia associada. Geralmente, esses líderes têm uma noção de responsabilidade para sua equipe e sentem a necessidade de proteger seus subordinados contra consequências negativas. Frases como "abrigar a equipe contra alterações" e "proteger a equipe contra interrupções de processo" podem ser indicadores de um gerente superprotegido que pode precisar de mais suporte da liderança.
 
-### <a name="addressing-resistance-from-it-fiefdoms"></a>Lidando com a resistência do fiefdoms de ti
+### <a name="address-resistance-from-it-fiefdoms"></a>Resistência de endereço do fiefdoms de ti
 
-Ele fiefdoms pode demonstrar algum crescimento seguindo as abordagens para [resolver a resistência do silo de ti](#addressing-resistance-from-it-silos). Antes de tentar resolver a resistência de um fiefdom de ti, recomendamos que você trate a equipe como um silo de ti primeiro. Se esses tipos de abordagens falharem em produzir qualquer alteração significativa, a equipe resistente pode estar sofrendo de um antipadrão de ti fiefdom. A causa raiz do fiefdoms de ti é um pouco mais complexa de abordar, pois essa resistência tende a vir do gerente de linha direto (ou um líder mais alto do organograma). Os desafios que são controlados por silos de ti normalmente são mais simples de superar.
+Ele fiefdoms pode demonstrar algum crescimento seguindo as abordagens para [resolver a resistência do silo de ti](#address-resistance-from-it-silos). Antes de tentar resolver a resistência de um fiefdom de ti, recomendamos que você trate a equipe como um silo de ti primeiro. Se esses tipos de abordagens falharem em produzir qualquer alteração significativa, a equipe resistente pode estar sofrendo de um antipadrão de ti fiefdom. A causa raiz do fiefdoms de ti é um pouco mais complexa de abordar, pois essa resistência tende a vir do gerente de linha direto (ou um líder mais alto do organograma). Os desafios que são controlados por silos de ti normalmente são mais simples de superar.
 
-Quando a resistência contínua da ti fiefdoms bloqueia os esforços de adoção da nuvem, pode ser prudente um esforço combinado para avaliar a situação com os líderes de ti existentes. Os líderes de ti devem considerar cuidadosamente as informações da [equipe de estratégia de nuvem](./cloud-strategy.md), [do Cloud Center of Excellence](./cloud-center-of-excellence.md)e da equipe de governança de [nuvem](./cloud-governance.md) antes de tomar decisões.
+Quando a resistência contínua da ti fiefdoms bloqueia os esforços de adoção da nuvem, pode ser prudente um esforço combinado para avaliar a situação com os líderes de ti existentes. Os líderes de ti devem considerar cuidadosamente as informações da [equipe de estratégia de nuvem](./cloud-strategy.md), [do Cloud Center of Excellence](./cloud-center-of-excellence.md)e da [equipe de governança de nuvem](./cloud-governance.md) antes de tomar decisões.
 
 > [!NOTE]
-> Os líderes de ti nunca devem fazer alterações no gráfico organizacional levemente. Eles também devem validar e analisar os comentários de cada uma das equipes de suporte. No entanto, os esforços de transformação como a adoção de nuvem tendem a ampliar os problemas subjacentes que foram despercebidos ou não solucionados muito antes desse esforço. Quando fiefdoms estão impedindo o sucesso da empresa, as alterações de liderança são uma provável necessidade.
+> Os líderes de ti nunca devem fazer alterações no gráfico organizacional levemente. Eles também devem validar e analisar os comentários de cada uma das equipes de suporte. No entanto, os esforços transformados como a adoção da nuvem tendem a ampliar os problemas subjacentes que foram despercebidos ou não solucionados muito antes desse esforço. Quando fiefdoms estão impedindo o sucesso da empresa, as alterações de liderança são uma provável necessidade.
 >
 > Felizmente, a remoção do líder de um fiefdom geralmente não termina com o rescisão. Esses líderes fortes e apaixonados geralmente podem se mover para uma função de gerenciamento após um breve período de reflexão. Com o suporte certo, essa alteração pode ser íntegra para o líder do fiefdom e da equipe atual.
+
+<!-- -->
 
 > [!CAUTION]
 > Para os gerentes de ti fiefdoms, proteger a equipe contra riscos é um valor de liderança clara. No entanto, há uma boa linha entre proteção e isolamento. Quando a equipe está impedida de participar de alterações de condução, ela pode ter consequências psicológicas e profissionais na equipe. O desejo de resistir à alteração pode ser forte, especialmente durante os horários da alteração visível.

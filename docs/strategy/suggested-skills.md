@@ -8,12 +8,12 @@ ms.date: 05/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: a35579cbb26f292e349cd2d1101596bdd4a94b86
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: ce3949a6d778ed61eea74fbd8a1aa955a477d3d8
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73240027"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73561647"
 ---
 # <a name="skills-readiness-path-during-the-plan-phase-of-a-migration-journey"></a>Caminho de preparação de habilidades durante a fase de plano de uma jornada de migração
 
@@ -55,16 +55,16 @@ Converta o caso comercial e o espaço digital Racionalizado em um plano de migra
 
 Durante a fase pronta, a equipe técnica cria uma zona de aterrissagem de migração capaz de hospedar, operar e governar cargas de trabalho que foram migradas para a nuvem. Esses roteiros de aprendizagem podem ajudá-lo a desenvolver as habilidades necessárias:
 
-- [Crie uma conta do Azure](/learn/modules/create-an-azure-account). a primeira etapa para usar o Azure é criar uma conta. Sua conta contém os serviços do Azure que você provisiona e manipula suas configurações pessoais, como identidade, cobrança e preferências.
-- [Portal do Azure](/learn/modules/tour-azure-portal). Conheça os recursos e os serviços do portal do Azure e personalize o portal.
-- [Introdução ao Azure](/learn/modules/welcome-to-azure). comece a trabalhar com o Azure criando e configurando sua primeira máquina virtual na nuvem.
-- [Introdução à segurança no Azure](/learn/modules/intro-to-security-in-azure). Aprenda os conceitos básicos para proteger sua infraestrutura e seus dados quando você trabalha na nuvem. Entenda quais responsabilidades são suas e do que o Azure cuida para você.
-- [Gerencie recursos no Azure](/learn/paths/manage-resources-in-azure). saiba como trabalhar com a linha de comando e o portal da Web do Azure para criar, gerenciar e controlar recursos baseados em nuvem.
-- [Crie uma VM](/learn/modules/create-windows-virtual-machine-in-azure). crie uma máquina virtual usando o portal do Azure.
-- [Rede do Azure](/learn/modules/intro-to-azure-networking). Aprenda os conceitos básicos da rede do Azure e como a rede do Azure ajuda a melhorar a resiliência e a reduzir a latência.
-- [Opções de computação do Azure](/learn/modules/intro-to-azure-compute). Saiba mais sobre os serviços de computação do Azure.
-- [Proteger os recursos com o RBAC](/learn/modules/secure-azure-resources-with-rbac). use o RBAC para proteger recursos.
-- [Opções de armazenamento de dados](/learn/modules/intro-to-data-in-azure/index). Saiba mais sobre os benefícios do armazenamento de dados do Azure.
+- [Crie uma conta do Azure](https://docs.microsoft.com/learn/modules/create-an-azure-account). a primeira etapa para usar o Azure é criar uma conta. Sua conta contém os serviços do Azure que você provisiona e manipula suas configurações pessoais, como identidade, cobrança e preferências.
+- [Portal do Azure](https://docs.microsoft.com/learn/modules/tour-azure-portal). Conheça os recursos e os serviços do portal do Azure e personalize o portal.
+- [Introdução ao Azure](https://docs.microsoft.com/learn/modules/welcome-to-azure). comece a trabalhar com o Azure criando e configurando sua primeira máquina virtual na nuvem.
+- [Introdução à segurança no Azure](https://docs.microsoft.com/learn/modules/intro-to-security-in-azure). Aprenda os conceitos básicos para proteger sua infraestrutura e seus dados quando você trabalha na nuvem. Entenda quais responsabilidades são suas e do que o Azure cuida para você.
+- [Gerencie recursos no Azure](https://docs.microsoft.com/learn/paths/manage-resources-in-azure). saiba como trabalhar com a linha de comando e o portal da Web do Azure para criar, gerenciar e controlar recursos baseados em nuvem.
+- [Crie uma VM](https://docs.microsoft.com/learn/modules/create-windows-virtual-machine-in-azure). crie uma máquina virtual usando o portal do Azure.
+- [Rede do Azure](https://docs.microsoft.com/learn/modules/intro-to-azure-networking). Aprenda os conceitos básicos da rede do Azure e como a rede do Azure ajuda a melhorar a resiliência e a reduzir a latência.
+- [Opções de computação do Azure](https://docs.microsoft.com/learn/modules/intro-to-azure-compute). Saiba mais sobre os serviços de computação do Azure.
+- [Proteger os recursos com o RBAC](https://docs.microsoft.com/learn/modules/secure-azure-resources-with-rbac). use o RBAC para proteger recursos.
+- [Opções de armazenamento de dados](https://docs.microsoft.com/learn/modules/intro-to-data-in-azure/index). Saiba mais sobre os benefícios do armazenamento de dados do Azure.
 
 ## <a name="organizational-skills"></a>Habilidades organizacionais
 
@@ -89,8 +89,10 @@ A Microsoft e os parceiros oferecem várias opções para ajudar todos os públi
 
 O Microsoft Learn é uma nova abordagem para o aprendizado. A preparação para as novas habilidades e responsabilidades que acompanham a adoção da nuvem não é fácil. O Microsoft Learn oferece uma abordagem mais recompensadora para o aprendizado prático que ajuda você a atingir suas metas mais rapidamente. Ganhe pontos, níveis e alcance mais!
 
-Aqui está um exemplo de roteiros de aprendizado personalizados que se alinham com a estratégia parte da estrutura de adoção de nuvem. 
+Aqui está um exemplo de roteiros de aprendizado personalizados que se alinham com a estratégia parte da estrutura de adoção de nuvem.
 
-[Aprenda o valor comercial de Microsoft Azure](/learn/paths/learn-business-value-of-azure/): essa experiência de aprendizado levará você em uma jornada que começará mostrando como a transformação digital e o poder da nuvem podem transformar seus negócios. Abordaremos como Microsoft Azure serviços de nuvem podem capacitar sua organização em uma plataforma de nuvem confiável. Finalmente, vamos concluir ilustrando como tornar essa jornada real para sua organização. 
+[Aprenda o valor comercial de Microsoft Azure](https://docs.microsoft.com/learn/paths/learn-business-value-of-azure): essa experiência de aprendizado levará você em uma jornada que começará mostrando como a transformação digital e o poder da nuvem podem transformar seus negócios. Abordaremos como Microsoft Azure serviços de nuvem podem capacitar sua organização em uma plataforma de nuvem confiável. Finalmente, vamos concluir ilustrando como tornar essa jornada real para sua organização.
 
-Para descobrir outros caminhos de aprendizado, procure o [Catálogo de aprendizado](/learn/browse). Use o filtro de **Funções** para alinhar os roteiros de aprendizagem com sua função.
+## <a name="learn-more"></a>Saiba mais
+
+Para descobrir outros caminhos de aprendizado, procure o [catálogo Microsoft Learn](https://docs.microsoft.com/learn/browse). Use o filtro de **Funções** para alinhar os roteiros de aprendizagem com sua função.

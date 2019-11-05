@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: fd44ae6fcdc84efd42ea3f79719475a32ead3111
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: ebff4e0bbeb7f74a61b81527e0dbc62874ffbe6c
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223710"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566036"
 ---
 # <a name="resource-consistency-policy-compliance-processes"></a>Processos de conformidade de política de Consistência de Recursos
 
@@ -26,21 +26,21 @@ Plataformas de nuvem fornecem uma matriz de ferramentas de gerenciamento e recur
 
 A seguir, é apresentado um conjunto de exemplos de processos normalmente envolvidos na disciplina de Consistência de Recurso. Use esses exemplos como ponto de partida ao planejar os processos que permitirão continuar a atualizar a política de Consistência de Recurso com base nas alterações dos negócios e no feedback das equipes de TI encarregadas de transformar as diretrizes de governança em ações.
 
-**Avaliação e planejamento inicial de riscos:** Como parte da sua adoção inicial da disciplina de Consistência de Recursos, identifique seus riscos comerciais principais e as tolerâncias relacionadas às operações e ao gerenciamento de TI. Use essas informações para discutir riscos técnicos específicos com membros de suas equipes de ti e proprietários de carga de trabalho para desenvolver um conjunto de linha de base de políticas de consistência de recursos projetado para corrigir esses riscos, estabelecendo sua estratégia de governança inicial.
+**Avaliação e planejamento inicial de riscos:** Como parte da adoção inicial da disciplina de consistência de recursos, identifique seus principais riscos e tolerâncias de negócios relacionados às operações e ao gerenciamento de ti. Use essas informações para discutir riscos técnicos específicos com membros de suas equipes de ti e proprietários de carga de trabalho para desenvolver um conjunto de linha de base de políticas de consistência de recursos projetado para corrigir esses riscos, estabelecendo sua estratégia de governança inicial.
 
-**Planejamento de implantação**: Antes de implantar qualquer ativo, execute uma revisão para identificar novos riscos operacionais. Estabeleça requisitos de recursos e padrões de demanda esperada e identifique as necessidades de escalabilidade e possíveis oportunidades de otimização do uso. Certifique-se também que os planos de backup e recuperação estão em vigor.
+**Planejamento da implantação:** Antes de implantar qualquer ativo, execute uma revisão para identificar novos riscos operacionais. Estabeleça requisitos de recursos e padrões de demanda esperada e identifique as necessidades de escalabilidade e possíveis oportunidades de otimização do uso. Certifique-se também que os planos de backup e recuperação estão em vigor.
 
 **Teste de implantação:** Como parte da implantação, a equipe de governança de nuvem, em cooperação com suas equipes de operações de nuvem, será responsável por revisar a implantação para validar a conformidade da política de consistência de recursos.
 
-**Planejamento anual**: Anualmente, realize uma análise de alto nível da estratégia de Consistência de recurso. Explore os planos de expansão corporativa futura ou prioridades e atualizar as estratégias de adoção de nuvem para identificar potencial aumento de risco ou outras necessidades de Consistência de Recurso. Além disso, use esse tempo para revisar as melhores práticas mais recentes para a Consistência de Recurso e integre esses a suas políticas e reveja os processos.
+**Planejamento anual:** Anualmente, execute uma revisão de alto nível da estratégia de consistência de recursos. Explore os planos de expansão corporativa futura ou prioridades e atualizar as estratégias de adoção de nuvem para identificar potencial aumento de risco ou outras necessidades de Consistência de Recurso. Além disso, use esse tempo para revisar as melhores práticas mais recentes para a Consistência de Recurso e integre esses a suas políticas e reveja os processos.
 
-**Análise e planejamento trimestral:** Trimestralmente, execute uma análise de dados operacionais e relatórios de incidentes para identificar quaisquer alterações necessárias na política de consistência de recurso. Como parte desse processo, revise as alterações no uso de recursos e desempenho para identificar os ativos que requerem aumentar ou diminuir em alocação de recursos e identificam quaisquer ativos que são candidatos à desativação ou cargas de trabalho.
+**Análise e planejamento trimestral:** Em uma base trimestral, execute uma revisão dos dados operacionais e dos relatórios de incidentes para identificar as alterações necessárias na política de consistência de recursos. Como parte desse processo, revise as alterações no uso de recursos e desempenho para identificar os ativos que requerem aumentar ou diminuir em alocação de recursos e identificam quaisquer ativos que são candidatos à desativação ou cargas de trabalho.
 
 Esse processo de planejamento também é um bom momento para avaliar a associação atual de sua equipe de governança de nuvem para as lacunas de conhecimento relacionadas à política nova ou alteração e aos riscos relacionados à consistência de recursos como uma disciplina. Convide a equipe de TI relevante a participar das análises e planejamentos como consultores temporários ou membros permanentes da sua equipe.
 
 **Educação e treinamento:** Em uma base Bimonthly, ofereça sessões de treinamento para garantir que a equipe de ti e os desenvolvedores estejam atualizados sobre os requisitos e as diretrizes mais recentes da política de consistência de recursos. Como parte desse processo, revise e atualize todas as documentações ou outros recursos de treinamento para garantir que estejam em sincronia com as últimas declarações da política corporativa.
 
-**Revisões mensais de auditoria e relatórios:** Mensalmente, realize uma auditoria em todas as implantações na nuvem para garantir o alinhamento contínuo com a política de Consistência de recurso. Revise as atividades relacionadas com a equipe de TI e identifique quaisquer problemas de conformidade que ainda não são tratados como parte do processo de monitoramento e imposição em andamento. O resultado dessa análise é um relatório para a equipe de estratégia de nuvem e cada equipe de adoção da nuvem para comunicar o desempenho geral e a adesão à política. O relatório também é armazenado para fins de auditoria e legais.
+**Revisões mensais de auditoria e relatórios:** Mensalmente, execute uma auditoria em todas as implantações de nuvem para garantir seu alinhamento contínuo com a política de consistência de recursos. Revise as atividades relacionadas com a equipe de TI e identifique quaisquer problemas de conformidade que ainda não são tratados como parte do processo de monitoramento e imposição em andamento. O resultado dessa análise é um relatório para a equipe de estratégia de nuvem e cada equipe de adoção da nuvem para comunicar o desempenho geral e a adesão à política. O relatório também é armazenado para fins de auditoria e legais.
 
 ## <a name="ongoing-monitoring-processes"></a>Processos de monitoramento contínuo
 
@@ -50,7 +50,7 @@ Certifique-se de que as equipes de TI implementaram sistemas de monitoramento au
 
 ## <a name="violation-triggers-and-enforcement-actions"></a>Gatilhos de violação e ações de imposição
 
-Como a conformidade da política de consistência de recursos pode levar à interrupção do serviço crítico ou a riscos de sobreexecuções de custos significativos, a equipe de governança de nuvem deve ter visibilidade em incidentes de não conformidade. Verifique se a equipe de ti tem caminhos de escalonamento claros para relatar esses problemas aos membros da equipe de governança mais adequados para identificar e verificar se os problemas de política são mitigados depois de detectados.
+Como a conformidade da política de consistência de recursos pode levar à interrupção do serviço crítico ou a riscos de sobreexecuções de custos significativos, a equipe de governança de nuvem deve ter visibilidade em incidentes de não conformidade. Verifique se a equipe de ti tem caminhos de escalonamento claros para relatar esses problemas aos membros da equipe de governança mais adequados para identificar e verificar se os problemas de política são mitigados quando detectados.
 
 Quando violações forem detectadas, será necessário realizar ações para realinhar a política o mais rápido possível. A equipe de TI pode automatizar a maioria dos gatilhos de violação, usando as ferramentas descritas na [cadeia de Consistência de recurso do Azure](./toolchain.md).
 

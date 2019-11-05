@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5459d775051b831112029fe1502a62a13c21e1c2
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 04e78b51bcea5aea8d8db719b7d88865696d781b
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058773"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566027"
 ---
 # <a name="governance-design-for-multiple-teams"></a>Design de governança para várias equipes
 
@@ -225,7 +225,7 @@ Esse modelo de gerenciamento tem os benefícios do segundo exemplo acima. No ent
 
 Portanto, você pode selecionar qualquer um desses dois modelos de gerenciamento de recursos de exemplo, dependendo da prioridade de seus requisitos. Se você antecipar que sua organização não atinja os limites de serviço para uma única assinatura, poderá usar uma única assinatura com vários grupos de recursos. Por outro lado, se sua organização prevê várias cargas de trabalho, pode ser melhor ter várias assinaturas para cada ambiente.
 
-## <a name="implementing-the-resource-management-model"></a>Implementação do modelo de gerenciamento de recursos
+## <a name="implement-the-resource-management-model"></a>Implementar o modelo de gerenciamento de recursos
 
 Você aprendeu sobre vários modelos diferentes para controlar o acesso aos recursos do Azure. Agora vamos examinar as etapas necessárias para implementar o modelo de gerenciamento de recursos com uma assinatura para cada uma da **infraestrutura compartilhada**, **produção**, e **desenvolvimento** ambientes do guia de design. Teremos um **proprietário da assinatura** para todos os três ambientes. Cada carga de trabalho será isolada em um **grupo de recursos** com um **proprietário da carga de trabalho** adicionado com a função **colaborador**.
 
@@ -268,7 +268,7 @@ Agora que você já implementou o seu modelo de controle, poderá implantar seus
 
 [Funções internas para recursos do Azure](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles)
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 > [!div class="nextstepaction"]
 > [Saiba mais sobre como implantar uma infraestrutura básica](../../infrastructure/virtual-machines/basic-workload.md)

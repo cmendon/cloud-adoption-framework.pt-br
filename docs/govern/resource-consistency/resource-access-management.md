@@ -1,7 +1,7 @@
 ---
 title: Gerenciamento de acesso aos recursos no Azure
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 'Explicação dos constructos de gerenciamento de acesso de recursos no Azure: Azure Resource Manager, assinaturas, grupos de recursos e recursos'
+description: 'Explicação das construções de gerenciamento de acesso a recursos no Azure: Azure Resource Manager, assinaturas, grupos de recursos e recursos'
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 87e0918f4d1dad896576d322c8754bc2f6c56fb3
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: a429aa445a7188a98593ec27892fb6ded8f9eb45
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223028"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565982"
 ---
 # <a name="resource-access-management-in-azure"></a>Gerenciamento de acesso aos recursos no Azure
 
@@ -28,15 +28,15 @@ Comece examinando mais detalhadamente como os recursos são implantados no Azure
 
 No Azure, o termo _recurso_ refere-se a uma entidade gerenciada pelo Azure. Por exemplo, máquinas virtuais, redes virtuais e contas de armazenamento são todas consideradas recursos do Azure.
 
-![Diagrama de um recurso](../../_images/govern/design/governance-1-9.png)
-*Figura 1-um recurso.*
+![diagrama de um recurso](../../_images/govern/design/governance-1-9.png)
+*Figura 1 – um recurso.*
 
 ## <a name="what-is-an-azure-resource-group"></a>O que é um grupo de recursos do Azure?
 
 Cada recurso no Azure deve pertencer a um [grupo de recurso](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#resource-groups). Um grupo de recursos é simplesmente um constructo lógico que agrupa vários recursos para que eles possam ser gerenciados como uma única entidade _com base no ciclo de vida e na segurança_. Por exemplo, os recursos que compartilham um ciclo de vida semelhante, como os recursos para um [aplicativo de n camadas](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/n-tier) podem ser criados ou excluídos como um grupo. Coloque de outra maneira: tudo o que foi reunido, é gerenciado em conjunto e é substituído em conjunto em um grupo de recursos.
 
-![Diagrama de um grupo de recursos que contém](../../_images/govern/design/governance-1-10.png)
-um recurso*Figura 2-um grupo de recursos contém um recurso.*
+![diagrama de um grupo de recursos que contém um recurso](../../_images/govern/design/governance-1-10.png)
+*Figura 2-um grupo de recursos contém um recurso.*
 
 Os grupos de recursos e os recursos que eles contêm são associados a uma **assinatura** do Azure.
 
@@ -44,30 +44,30 @@ Os grupos de recursos e os recursos que eles contêm são associados a uma **ass
 
 Uma assinatura do Azure é semelhante a um grupo de recursos em que ele é um constructo lógico que agrupa os grupos de recursos e seus recursos. No entanto, uma assinatura do Azure também é associada aos controles usados pelo Azure Resource Manager. Examine detalhadamente o Azure Resource Manager para saber mais sobre o relacionamento entre ele e uma assinatura do Azure.
 
-![Diagrama de uma assinatura](../../_images/govern/design/governance-1-11.png)
-do Azure*Figura 3-uma assinatura do Azure.*
+![diagrama de uma assinatura do Azure](../../_images/govern/design/governance-1-11.png)
+*Figura 3-uma assinatura do Azure.*
 
 ## <a name="what-is-azure-resource-manager"></a>O que é o Azure Resource Manager?
 
 Em [Como funciona o Azure?](../../getting-started/what-is-azure.md) você aprendeu que o Azure inclui um "front-end" com muitos serviços que orquestram todas as funções do Azure. Um desses serviços é o [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager), que hospeda a API RESTful usada pelos clientes para gerenciar recursos.
 
-![Diagrama de Azure Resource Manager](../../_images/govern/design/governance-1-12.png)
+![diagrama de Azure Resource Manager](../../_images/govern/design/governance-1-12.png)
 *Figura 4-Azure Resource Manager.*
 
 A figura a seguir mostra três clientes: [PowerShell](https://docs.microsoft.com/powershell/azure/overview), o [portal do Azure](https://portal.azure.com)e o [CLI do Azure](https://docs.microsoft.com/cli/azure):
 
-![Diagrama de clientes do Azure conectando-se](../../_images/govern/design/governance-1-13.png)
-à API Azure Resource Manager*Figura 5-os clientes do Azure se conectam à API RESTful Azure Resource Manager.*
+![diagrama de clientes do Azure conectando-se à API do Azure Resource Manager](../../_images/govern/design/governance-1-13.png)
+*Figura 5-os clientes do Azure se conectam à API RESTful do Azure Resource Manager.*
 
 Embora esses clientes conectem o Azure Resource Manager usando a API RESTful, o Azure Resource Manager não inclui a funcionalidade para gerenciar recursos diretamente. Em vez disso, a maioria dos tipos de recursos no Azure têm seus próprios [ **provedores de recursos**](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#terminology).
 
-![Provedores](../../_images/govern/design/governance-1-14.png)
-de recursos do Azure*Figura 6-provedores de recursos do Azure.*
+![provedores de recursos do Azure](../../_images/govern/design/governance-1-14.png)
+*Figura 6 – provedores de recursos do Azure.*
 
 Quando um cliente faz uma solicitação para gerenciar um recurso específico, o Azure Resource Manager conecta o provedor de recursos daquele tipo de recurso para concluir a solicitação. Por exemplo, se um cliente fizer uma solicitação para gerenciar um recurso de máquina virtual, o Azure Resource Manager conectará o provedor de recursos **Microsoft.Compute**.
 
-![Azure Resource Manager se conectando ao provedor](../../_images/govern/design/governance-1-15.png)
-de recursos Microsoft. Compute *, Figura 7-Azure Resource Manager conecta-se ao provedor de recursos **Microsoft. Compute** para gerenciar o recurso especificado na solicitação do cliente.*
+![Azure Resource Manager se conectando ao provedor de recursos Microsoft. Compute](../../_images/govern/design/governance-1-15.png)
+*Figura 7-Azure Resource Manager se conecta ao provedor de recursos **Microsoft. Compute** para gerenciar o recurso especificado na solicitação do cliente.*
 
 O Azure Resource Manager requer que o cliente especifique um identificador para a assinatura e o grupo de recursos para gerenciar o recurso da máquina virtual.
 
@@ -80,31 +80,31 @@ O primeiro controle é que uma solicitação deve ser feita por um usuário vali
 
 No Azure AD, os usuários são segmentados em **locatários**. Um locatário é um constructo lógico que representa uma instância segura e dedicada do Azure AD geralmente associada a uma organização. Cada assinatura está associada a um locatário do Azure Active Directory.
 
-![Um locatário do Azure ad associado a uma](../../_images/govern/design/governance-1-17.png)
-assinatura*Figura 9-um locatário do Azure ad associado a uma assinatura.*
+![um locatário do Azure AD associado a uma assinatura](../../_images/govern/design/governance-1-17.png)
+*Figura 9-um locatário do Azure ad associado a uma assinatura.*
 
 Cada solicitação de cliente para gerenciar um recurso em uma assinatura específica exige que o usuário tenha uma conta associada ao locatário do Azure AD.
 
 O próximo controle é uma verificação de que o usuário tem permissão suficiente para fazer a solicitação. As permissões são atribuídas aos usuários que usam o [controle de acesso baseado em função (RBAC)](https://docs.microsoft.com/azure/role-based-access-control).
 
-![Usuários atribuídos a funções RBAC](../../_images/govern/design/governance-1-18.png)
-*Figura 10. Cada usuário no locatário é atribuído a uma ou mais funções RBAC.*
+![usuários atribuídos às funções RBAC](../../_images/govern/design/governance-1-18.png)
+*Figura 10. Cada usuário no locatário recebe uma ou mais funções RBAC.*
 
 Uma função RBAC especifica um conjunto de permissões que um usuário pode executar em um recurso específico. Quando a função é atribuída ao usuário, essas permissões são aplicadas. Por exemplo, a [função de **proprietário** interna](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner) permite que um usuário realize qualquer ação em um recurso.
 
 O próximo controle é uma verificação de que a solicitação será permitida sob as configurações especificadas da [política de recursos do Azure](https://docs.microsoft.com/azure/governance/policy). As políticas de recursos do Azure especificam as operações permitidas para um recurso específico. Por exemplo, uma política de recursos do Azure pode especificar que os usuários só têm permissão para implantar um tipo específico de máquina virtual.
 
-![Política de recursos do Azure](../../_images/govern/design/governance-1-19.png)
-*Figura 11. Políticas de recursos do Azure.*
+![a política de recursos do Azure](../../_images/govern/design/governance-1-19.png)
+*Figura 11. Política de recursos do Azure.*
 
-O próximo controle é uma verificação de que a solicitação não excede um [limite de assinatura do Azure](https://docs.microsoft.com/azure/azure-subscription-service-limits). Por exemplo, cada assinatura tem um limite de 980 grupos de recursos por assinatura. Se uma solicitação é recebida para implantar um grupo de recursos adicionais depois que o limite for atingido, ela será negada.
+O próximo controle é uma verificação de que a solicitação não excede um [limite de assinatura do Azure](https://docs.microsoft.com/azure/azure-subscription-service-limits). Por exemplo, cada assinatura tem um limite de 980 grupos de recursos por assinatura. Se uma solicitação for recebida para implantar um grupo de recursos adicional quando o limite for atingido, ele será negado.
 
-![Limites de recursos do Azure](../../_images/govern/design/governance-1-20.png)
+![limites de recursos do Azure](../../_images/govern/design/governance-1-20.png)
 *Figura 12. Limites de recursos do Azure.*
 
 O controle final é uma verificação de que a solicitação está dentro do compromisso financeiro associado à assinatura. Por exemplo, se a solicitação for implantar uma máquina virtual, o Azure Resource Manager verificará se a assinatura tem informações de pagamento suficientes.
 
-![Um compromisso financeiro associado a uma assinatura](../../_images/govern/design/governance-1-21.png)
+![um compromisso financeiro associado a uma assinatura](../../_images/govern/design/governance-1-21.png)
 *Figura 13. Um compromisso financeiro é associado a uma assinatura.*
 
 ## <a name="summary"></a>Resumo

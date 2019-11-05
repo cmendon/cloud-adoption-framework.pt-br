@@ -8,18 +8,18 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 8828b79aa27083b3b3e0a0188ac9e538089c52cf
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: ea3bcdc521a043affb71375442b9d5f6fe542fa1
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058575"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565685"
 ---
 # <a name="empower-adoption"></a>Capacitar a adoção
 
 O teste final da inovação é a reação do cliente à sua invenção. A hipótese é verdadeira? Os clientes usam a solução? Ele é dimensionado para atender às necessidades do percentual de usuários desejado? O mais importante é que eles continuam voltando? Nenhuma dessas perguntas pode ser solicitada até que a solução MVP (produto viável) mínima tenha sido implantada. Neste artigo, nos concentraremos na disciplina de capacitar a adoção.
 
-## <a name="reducing-friction-to-adoption"></a>Reduzindo o conflito à adoção
+## <a name="reduce-friction-that-affects-adoption"></a>Reduzir o conflito que afeta a adoção
 
 Há alguns pontos principais de conflitos na adoção que podem ser minimizados por meio de uma combinação de tecnologia e processos. Para leitores com conhecimento dos processos de CI (integração contínua) e de implantação contínua (CD) ou DevOps, o seguinte parecerá muito familiar. Este artigo pretende estabelecer um ponto de partida para as equipes de adoção de nuvem, que impulsionarão os loops de inovação e de comentários. A longo prazo, esse ponto de partida pode estimular abordagens mais robustas de CI/CD ou DevOps à medida que os produtos e as equipes amadurecem.
 
@@ -95,7 +95,7 @@ Ao [medir o impacto do cliente](./measure.md), é importante entender como os cl
 
 No Azure, [Azure monitor](https://docs.microsoft.com/azure/azure-monitor/overview) fornece as ferramentas e a interface para coletar e examinar dados de experiências do cliente. Você pode aplicar essas observações e ideias para refinar a pendência usando [Azure boards](https://docs.microsoft.com/azure/devops/boards).
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Depois de ter obtido uma compreensão das ferramentas e dos processos necessários para capacitar a adoção, é hora de examinar uma disciplina de inovação mais avançada: [interagir com dispositivos](./devices.md). Essa disciplina pode ajudar a reduzir as barreiras entre experiências físicas e digitais, tornando sua solução ainda mais fácil de adotar.
 

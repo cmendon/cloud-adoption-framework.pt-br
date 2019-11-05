@@ -8,12 +8,12 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4496d272ec4c23feb84157e2eba40935b1d16370
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: df31cb73ec601c52f0f925d09a56f0af7aaf1513
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73240036"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565234"
 ---
 # <a name="best-practices-to-set-up-networking-for-workloads-migrated-to-azure"></a>Melhores práticas para configurar a rede para as cargas de trabalho migradas para o Azure
 
@@ -278,7 +278,7 @@ Para otimizar o roteamento dos usuários dos escritórios, você precisa saber q
 
 - [Saiba mais sobre](https://docs.microsoft.com/azure/expressroute/expressroute-optimize-routing) otimizar o roteamento.
 
-## <a name="securing-vnets"></a>Proteger VNets
+## <a name="secure-vnets"></a>Proteger VNets
 
 A responsabilidade de proteger VNets é compartilhada entre você e a Microsoft. A Microsoft fornece muitos recursos de rede, bem como serviços que ajudam a proteger recursos. Ao planejar a segurança de VNets, as melhores práticas que você deve seguir incluem a implementação de uma rede de perímetro, o uso de grupos de segurança e filtragem, a proteção do acesso aos recursos e endereços IP e a implementação da proteção contra ataques.
 
@@ -512,7 +512,7 @@ Firewalls de NVA | Como no Firewall do Azure, os farms de firewall da NVA têm u
 
 - [Saiba mais sobre](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-hybrid) o uso de NVAs em uma VNet do Azure.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Examine outras melhores práticas:
 

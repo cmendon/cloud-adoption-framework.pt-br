@@ -8,22 +8,22 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 7b77181dd8ef6efe655b56489e5d4e6b210382b6
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 0bf778b89ed91069b9387f7bbdc5f27f05480e0c
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71029330"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565322"
 ---
-# <a name="phase-3-ongoing-management-and-security"></a>Fase 3: Gerenciamento e segurança contínuos
+# <a name="phase-3-ongoing-management-and-security"></a>Fase 3: gerenciamento e segurança contínuos
 
-Depois de ter integrado os serviços de gerenciamento do Azure, você precisará se concentrar nas configurações de operações e de segurança que oferecerão suporte a suas operações em andamento. Começaremos a proteger seu ambiente examinando a central de segurança do Azure. Em seguida, configuraremos políticas para manter seus servidores em conformidade e automatizar tarefas comuns. Esta seção contém os seguintes tópicos:
+Depois de integrar os serviços de gerenciamento do servidor do Azure, você precisará se concentrar nas configurações de operações e de segurança que oferecerão suporte a suas operações em andamento. Começaremos a proteger seu ambiente examinando a central de segurança do Azure. Em seguida, configuraremos políticas para manter seus servidores em conformidade e automatizar tarefas comuns. Esta seção contém os seguintes tópicos:
 
-- **[Abordar as recomendações de segurança.](#address-security-recommendations)** A central de segurança do Azure fornece sugestões para melhorar a segurança do seu ambiente. Ao implementar essas recomendações, você pode ver o impacto refletido em uma pontuação de segurança.
-- **[Habilite a política de configuração de convidado.](./guest-configuration-policy.md)** Habilite o recurso de configuração de convidado Azure Policy para auditar as configurações em uma máquina virtual. Por exemplo, você pode verificar se algum certificado está prestes a expirar.
+- **[Abordar as recomendações de segurança.](#address-security-recommendations)** A central de segurança do Azure fornece sugestões para melhorar a segurança do seu ambiente. Ao implementar essas recomendações, você verá o impacto refletido em uma pontuação de segurança.
+- **[Habilite a política de configuração de convidado.](./guest-configuration-policy.md)** Use o recurso de configuração de convidado Azure Policy para auditar as configurações em uma máquina virtual. Por exemplo, você pode verificar se algum certificado está prestes a expirar.
 - **[Acompanhe e Alerte as alterações críticas.](./enable-tracking-alerting.md)** Quando estiver solucionando problemas, a primeira pergunta a ser considerada é "o que mudou?" Neste artigo, você aprenderá a controlar as alterações e criar alertas para monitorar proativamente os componentes críticos.
-- **[Criar agendas de atualização.](./update-schedules.md)** Agende a instalação das atualizações para garantir que todos os servidores tenham os mais recentes.
-- **[Exemplos comuns de Azure Policy.](./common-policies.md)** Fornece exemplos de políticas de gerenciamento comuns.
+- **[Criar agendas de atualização.](./update-schedules.md)** Agende a instalação de atualizações para garantir que todos os servidores tenham os mais recentes.
+- **[Exemplos comuns de Azure Policy.](./common-policies.md)** Este artigo fornece exemplos de políticas de gerenciamento comuns.
 
 ## <a name="address-security-recommendations"></a>Solucionar recomendações de segurança
 

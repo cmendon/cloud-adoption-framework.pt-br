@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 0328ea8487817b9c8b74bda2200af9353a56e047
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.openlocfilehash: 05596379872fbfa9099297a55d4b75dedc0b672a
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72979829"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564940"
 ---
 # <a name="cloud-monitoring-guide-collect-the-right-data"></a>Guia de monitoramento de nuvem: coletar os dados corretos
 
@@ -34,7 +34,7 @@ A forma como você responde a essas perguntas e os critérios de alerta, determi
 
 ## <a name="develop-a-monitoring-configuration"></a>Desenvolver uma configuração de monitoramento
 
-O proprietário e a equipe do serviço de monitoramento normalmente seguem um conjunto comum de atividades para desenvolver uma configuração de monitoramento. Essas atividades começam nos estágios iniciais de planejamento, continuam a testar e validando em um ambiente de não produção e se estendem para a implantação na produção. As configurações de monitoramento são derivadas de modos de falha conhecidos, resultados de teste de falhas simuladas e a experiência de várias pessoas na organização (a central de serviços, operações, engenheiros e desenvolvedores). Essas configurações pressupõem que o serviço já existe, está sendo migrado para a nuvem e não foi projetado novamente.
+O proprietário e a equipe do serviço de monitoramento normalmente seguem um conjunto comum de atividades para desenvolver uma configuração de monitoramento. Essas atividades começam nos estágios iniciais de planejamento, continuam a testar e validando em um ambiente de não produção e se estendem para a implantação na produção. As configurações de monitoramento são derivadas de modos de falha conhecidos, resultados de teste de falhas simuladas e a experiência de várias pessoas na organização (a central de serviços, operações, engenheiros e desenvolvedores). Essas configurações pressupõem que o serviço já existe, está sendo migrado para a nuvem e não foi rearquitetado.
 
 Para obter os resultados de qualidade de nível de serviço, monitore a integridade e a disponibilidade desses serviços no início do processo de desenvolvimento. Se você monitorar o design desse serviço ou aplicativo como uma prioridade, seus resultados não serão tão bem-sucedidos.
 
@@ -47,7 +47,7 @@ Para gerar uma resolução mais rápida do incidente, considere as seguintes rec
 
 Adotar esse conjunto de princípios de orientação pode ajudar a fornecer percepções quase em tempo real, bem como um melhor gerenciamento do seu serviço.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 > [!div class="nextstepaction"]
 > [Estratégia de alerta](./alerting.md)

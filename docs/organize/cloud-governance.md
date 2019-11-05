@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 33572e5de14c4d59e6281124cf488ca0e0c36aef
-ms.sourcegitcommit: 15898374495761bfb76cee719e0f9189856884e6
+ms.openlocfilehash: bf68bc17d5e94ae4c35e0a88d3ca73bd42935a5b
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888848"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566800"
 ---
 # <a name="cloud-governance-capabilities"></a>Recursos de governança de nuvem
 
@@ -31,7 +31,7 @@ Dependendo dos resultados de negócios desejados, as habilidades necessárias pa
 - Rede
 - Identidade
 - Virtualização
-- Continuidade dos negócios/recuperação de desastre
+- Continuidade dos negócios e recuperação de desastres
 - Proprietários do aplicativo dentro dele
 
 O recurso de governança de nuvem identifica os riscos relacionados às versões atuais e futuras. Esse recurso é visto nos esforços para avaliar o risco, entender os possíveis impactos e tomar decisões relacionadas à tolerância a riscos. Ao fazer isso, os planos podem ser atualizados rapidamente para refletir as necessidades dinâmicas da [capacidade de adoção da nuvem](./cloud-adoption.md).
@@ -97,7 +97,7 @@ Esses profissionais de governança que compartilham seus scripts estruturados aj
 
 Todas as empresas são exclusivas e, portanto, suas necessidades de governança. Escolha o nível de maturidade que se adapta à sua organização e use a estrutura de adoção de nuvem para orientar as práticas, os processos e as ferramentas para ajudá-lo a chegar lá.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 À medida que a governança de nuvem amadurece, as equipes serão capacitadas a adotar a nuvem em ritmos mais rápidos. Os esforços contínuos de adoção na nuvem tendem a disparar a maturidade nas operações de ti. Esse amadurecimento também pode exigir o desenvolvimento de [recursos de operações de nuvem](./cloud-operations.md).
 

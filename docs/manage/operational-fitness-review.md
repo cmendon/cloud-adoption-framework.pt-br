@@ -8,12 +8,12 @@ ms.date: 10/17/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 4fa02d8b81e4f1b0afcd5cf5fb932c52fc3c1ea6
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.openlocfilehash: 122f1e451c8b83de3d020c58426d8b897013aa8d
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72979917"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564900"
 ---
 # <a name="establish-an-operational-fitness-review"></a>Estabelecer uma análise de adequação operacional
 
@@ -94,13 +94,13 @@ Esse processo é iterativo e, teoricamente, sua empresa tem uma equipe dedicada 
 
 A equipe responsável pela revisão da adequação operacional é composta pelas seguintes funções:
 
-- **Proprietário da empresa**: fornece conhecimento da empresa para identificar e priorizar cada operação de negócios de missão crítica. Essa função também compara o custo de mitigação ao impacto nos negócios e orienta a decisão final sobre a correção.
+- **Proprietário da empresa:** Fornece conhecimento da empresa para identificar e priorizar cada operação de negócios de missão crítica. Essa função também compara o custo de mitigação ao impacto nos negócios e orienta a decisão final sobre a correção.
 
-- **Defensor dos negócios**: divide as operações de negócios em partes discretas e mapeia essas partes para serviços e infraestrutura, seja localmente ou na nuvem. A função requer um conhecimento profundo da tecnologia associada a cada operação de negócios.
+- **Defensora dos negócios:** Divide as operações de negócios em partes discretas e mapeia essas partes para serviços e infraestrutura, seja no local ou na nuvem. A função requer um conhecimento profundo da tecnologia associada a cada operação de negócios.
 
-- **Proprietário da engenharia**: implementa os serviços associados à operação de negócios. Esses indivíduos podem participar do design, da implementação e da implantação de qualquer solução para problemas de requisitos não-infuncionais que são descobertos pela equipe de análise.
+- **Proprietário da engenharia:** Implementa os serviços associados à operação de negócios. Esses indivíduos podem participar do design, da implementação e da implantação de qualquer solução para problemas de requisitos não-infuncionais que são descobertos pela equipe de análise.
 
-- **Proprietário do serviço**: opera os aplicativos e serviços da empresa. Esses indivíduos coletam dados de registro em log e de uso para esses aplicativos e serviços. Esses dados são usados para identificar problemas e verificar correções depois de serem implantados.
+- **Proprietário do serviço:** Opera os aplicativos e serviços da empresa. Esses indivíduos coletam dados de registro em log e de uso para esses aplicativos e serviços. Esses dados são usados para identificar problemas e verificar correções depois de serem implantados.
 
 ## <a name="review-meeting"></a>Revisar reunião
 
