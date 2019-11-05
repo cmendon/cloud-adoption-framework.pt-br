@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 10af3ade249bcc115d5b273b2610c093e48bf9a2
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: bc9cc463c50aac532e855ebd93ef1721d9fc38a4
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73238859"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564829"
 ---
 # <a name="policy-enforcement-decision-guide"></a>Guia de decisão de imposição de política
 
@@ -57,7 +57,7 @@ No Azure, você pode aplicar as definições de configuração e as regras de cr
 
 À medida que seu acervo de nuvem aumenta para abranger várias assinaturas que exigem imposição, você precisa se concentrar em uma estratégia de imposição para todo o acervo de nuvem para garantir a consistência da política.
 
-Sua [design de assinatura](../subscriptions/index.md) deve levar em conta para a que diz respeito à sua estrutura organizacional. Além de ajudar a dar suporte a organização complexa dentro de seu design de assinatura, [grupos de gerenciamento do Azure](../../ready/azure-best-practices/scaling-subscriptions.md#managing-multiple-subscriptions) podem ser usados para atribuir as regras do Azure Policy entre várias assinaturas.
+Sua [design de assinatura](../subscriptions/index.md) deve levar em conta para a que diz respeito à sua estrutura organizacional. Além de ajudar a dar suporte a organização complexa dentro de seu design de assinatura, [grupos de gerenciamento do Azure](../../ready/azure-best-practices/scaling-subscriptions.md#manage-multiple-subscriptions) podem ser usados para atribuir as regras do Azure Policy entre várias assinaturas.
 
 ## <a name="automated-enforcement"></a>Imposição automática
 
