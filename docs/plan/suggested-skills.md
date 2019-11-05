@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 70308733893ac3a8baf1d910b23c9d9162719b5f
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: e025b46c99e36340afd777e06b3a493c9f65c5dd
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73240211"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564208"
 ---
 # <a name="getting-started-on-a-skills-readiness-path"></a>Introdução ao caminho de preparação de habilidades
 
@@ -38,18 +38,15 @@ A estrutura de adoção de nuvem orienta os leitores por todo o ciclo de vida de
 
 Cada um dos caminhos de aprendizado anteriores compartilha oportunidades entre vários tipos de mídia para maximizar a aquisição da base de dados de conhecimento.
 
-# <a name="microsoft-learn"></a>Microsoft Learn
+## <a name="microsoft-learn"></a>Microsoft Learn
 
 O Microsoft Learn é uma nova abordagem para o aprendizado. A preparação para as novas habilidades e responsabilidades que acompanham a adoção da nuvem não é fácil. O Microsoft Learn oferece uma abordagem mais recompensadora para o aprendizado prático que ajuda você a atingir suas metas mais rapidamente. Ganhe pontos e níveis e obtenha mais!
 Aqui estão alguns exemplos de caminhos de aprendizado personalizados em Microsoft Learn que se alinham à seção de plano da estrutura de adoção de nuvem:
 
-[Evolua suas práticas DevOpss](learn/paths/evolve-your-devops-practices/):D evops é a União de pessoas, processos e produtos para permitir a entrega contínua de valor aos seus usuários finais. O Azure DevOps é um conjunto de serviços que fornece as ferramentas necessárias para fazer exatamente isso. Com o Azure DevOps, você pode criar, testar e implantar qualquer aplicativo, seja para a nuvem ou local.
+[Evolua suas práticas DevOpss](https://docs.microsoft.com/learn/paths/evolve-your-devops-practices):D evops é a União de pessoas, processos e produtos para permitir a entrega contínua de valor aos seus usuários finais. O Azure DevOps é um conjunto de serviços que fornece as ferramentas necessárias para fazer exatamente isso. Com o Azure DevOps, você pode criar, testar e implantar qualquer aplicativo, seja para a nuvem ou local.
 
-[Azure para o engenheiro de dados](learn/paths/azure-for-the-data-engineer/): Explore como o mundo dos dados evoluiu e como o advento das tecnologias de nuvem está proporcionando novas oportunidades de exploração pelos negócios. Você aprenderá as diversas tecnologias de plataforma de dados que estão disponíveis e como um engenheiro de dados pode aproveitar essa tecnologia para um benefício da organização.     
+[Azure para o engenheiro de dados](https://docs.microsoft.com/learn/paths/azure-for-the-data-engineer): Explore como o mundo dos dados evoluiu e como o advento das tecnologias de nuvem está proporcionando novas oportunidades de exploração pelos negócios. Você aprenderá as diversas tecnologias de plataforma de dados que estão disponíveis e como um engenheiro de dados pode aproveitar essa tecnologia para um benefício da organização.
 
-Para descobrir outros caminhos de aprendizado, navegue no [catálogo de aprendizado] (/learn/Browse). Use o filtro de funções para alinhar os caminhos de aprendizado com sua função.
+## <a name="learn-more"></a>Saiba mais
 
-
-
-
-
+Para descobrir outros caminhos de aprendizado, procure o [catálogo Microsoft Learn](https://docs.microsoft.com/learn/browse). Use o filtro de funções para alinhar os caminhos de aprendizado com sua função.

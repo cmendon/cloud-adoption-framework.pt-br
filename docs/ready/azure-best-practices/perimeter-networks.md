@@ -11,12 +11,12 @@ ms.subservice: ready
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 92aa03c07a6652f15a0400a025b8911a4d0d07dd
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 95a2bf325615c7eb765ad747d0aad16f008e015d
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73240182"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564013"
 ---
 # <a name="perimeter-networks"></a>Redes de perímetro
 
@@ -27,9 +27,9 @@ Para que as redes de perímetro sejam eficazes, os pacotes de entrada devem flui
 As redes de perímetro usam os seguintes recursos e serviços do Azure:
 
 - [Redes virtuais][virtual-networks], [rotas definidas pelo usuário][user-defined-routes] e [grupos de segurança de rede][network-security-groups]
-- NVAs [(soluções de virtualização de rede)][NVA]
+- [NVAs (soluções de virtualização de rede)][NVA]
 - [Balanceador de carga do Azure][ALB]
-- [Gateway de Aplicativo do Azure][AppGW] e WAF [(firewall do aplicativo Web)][AppGWWAF]
+- [Gateway de aplicativo Azure][AppGW] e [Firewall do aplicativo Web (WAF)][AppGWWAF]
 - [IPs públicos][PIP]
 - [Azure Front Door][AFD] com [firewall do aplicativo Web][AFDWAF]
 - [Firewall do Azure][AzFW]

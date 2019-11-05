@@ -8,12 +8,12 @@ ms.date: 09/22/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: dcf717841e7ac42e0957ce540fc974c84d112a79
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 1cdf066617ee43de6fedfeb707311e663318f8c4
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058173"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73561803"
 ---
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Andaime empresarial do Azure: governança de assinatura prescritiva
 
@@ -263,7 +263,7 @@ Essas informações podem ser exibidas e acionadas em vários níveis e estão c
 - **Mapa do serviço:** Mapa do Serviço fornece uma exibição gráfica dos seus componentes de infraestrutura, seus processos e interdependências em outros computadores e processos externos. Ele integra soluções de gerenciamento, eventos e dados de desempenho ao Log Analytics.
 
 > [!TIP]
-> Antes de criar alertas individuais, crie e mantenha um conjunto compartilhado de Grupos de Ação que pode ser usado para os Alertas do Azure. Isso permitirá que você mantenha centralmente o ciclo de vida de listas de destinatários, métodos de entrega de notificação (email, números de telefone para SMS) e webhooks para ações externas (runbooks de Automação do Azure, Azure Functions / Aplicativos Lógicos, ITSM).
+> Antes de criar alertas individuais, crie e mantenha um conjunto compartilhado de Grupos de Ação que pode ser usado para os Alertas do Azure. Isso permitirá que você mantenha centralmente o ciclo de vida de suas listas de destinatários, métodos de entrega de notificação (email, números de telefone de SMS) e WebHooks para ações externas (runbooks de automação do Azure, Azure Functions e aplicativos lógicos, ITSM).
 
 ## <a name="cost-management"></a>Gerenciamento de custos
 
@@ -284,7 +284,7 @@ Essas são ferramentas para fornecer informações instantâneas sobre o custo, 
 
 - **Power BI Azure consumption insights:** Deseja criar suas próprias visualizações para sua organização? Nesse caso, o pacote de conteúdo do Azure Consumption Insights para Power BI é sua ferramenta de escolha. Usando este pacote de conteúdo e Power BI você pode criar visualizações personalizadas para representar sua organização, fazer uma análise mais profunda dos custos e adicionar outras fontes de dados para aprimorar ainda mais.
 
-- **API de consumo:** As [APIs de consumo](/rest/api/consumption) fornecem acesso programático aos dados de custo e de uso, além das informações sobre orçamentos, instâncias reservadas e encargos do Marketplace. Essas APIs são acessíveis somente para Registros Enterprise e algumas assinaturas Web Direct, porém oferecem a capacidade de integrar seus dados de custo em suas próprias ferramentas e data warehouses. Você também pode [acessar essas APIs por meio do CLI do Azure](/cli/azure/consumption?view=azure-cli-latest).
+- **API de consumo:** As [APIs de consumo](https://docs.microsoft.com/rest/api/consumption) fornecem acesso programático aos dados de custo e de uso, além das informações sobre orçamentos, instâncias reservadas e encargos do Marketplace. Essas APIs são acessíveis somente para Registros Enterprise e algumas assinaturas Web Direct, porém oferecem a capacidade de integrar seus dados de custo em suas próprias ferramentas e data warehouses. Você também pode [acessar essas APIs por meio do CLI do Azure](https://docs.microsoft.com/cli/azure/consumption?view=azure-cli-latest).
 
 Os clientes que são usuários de nuvem de longo prazo e maduram seguem determinadas práticas recomendadas:
 
@@ -303,7 +303,7 @@ Várias ferramentas podem ajudá-lo a criar esse recurso, desde ferramentas de t
 
 - **Automação do Azure** O é um recurso baseado em nuvem que permite que você crie runbooks (tanto no PowerShell quanto no Python) e permite automatizar processos, configurar recursos e até mesmo aplicar patches. A [Automação do Azure](https://docs.microsoft.com/azure/automation/automation-intro) tem um conjunto abrangente de recursos de plataforma cruzada que fazem parte da sua implantação, mas são muito extensos para serem abordado em detalhes aqui.
 - A **grade de eventos** é um sistema de roteamento de eventos totalmente gerenciado que permite reagir a eventos no ambiente do Azure. Assim como a automação do Azure é a tecido de conexão das organizações de nuvem maduras, a [grade de eventos](https://docs.microsoft.com/azure/event-grid) é a tecido de conexão de boa automação. Usando a grade de eventos, você pode criar uma ação simples sem servidor para enviar um email a um administrador sempre que um novo recurso é criado e registrar esse recurso em um banco de dados. Essa mesma Grade de Eventos pode notificar quando um recurso é excluído e remover o item do banco de dados.
-- **Azure cloud Shell** é um [shell](https://docs.microsoft.com/azure/cloud-shell/overview) interativo baseado em navegador para gerenciar recursos no Azure. Ele fornece um ambiente completo para o PowerShell ou Bash que é iniciado conforme necessário (e mantido por você) para que você tenha um ambiente consistente para executar seus scripts. O Azure Cloud Shell fornece acesso a ferramentas-chave adicionais – já instaladas – para automatizar seu ambiente, incluindo [CLI do Azure](/cli/azure/get-started-with-azure-cli?view=azure-cli-latest), [Terraform](https://docs.microsoft.com/azure/virtual-machines/linux/terraform-install-configure) e uma lista crescente de [ferramentas](https://azure.microsoft.com/updates/cloud-shell-new-cli-tools-and-font-size-selection) adicionais para gerenciar contêineres, bancos de dados (sqlcmd) e cada.
+- **Azure cloud Shell** é um [shell](https://docs.microsoft.com/azure/cloud-shell/overview) interativo baseado em navegador para gerenciar recursos no Azure. Ele fornece um ambiente completo para o PowerShell ou Bash que é iniciado conforme necessário (e mantido por você) para que você tenha um ambiente consistente para executar seus scripts. O Azure Cloud Shell fornece acesso a ferramentas-chave adicionais – já instaladas – para automatizar seu ambiente, incluindo [CLI do Azure](https://docs.microsoft.com/cli/azure/get-started-with-azure-cli?view=azure-cli-latest), [Terraform](https://docs.microsoft.com/azure/virtual-machines/linux/terraform-install-configure) e uma lista crescente de [ferramentas](https://azure.microsoft.com/updates/cloud-shell-new-cli-tools-and-font-size-selection) adicionais para gerenciar contêineres, bancos de dados (sqlcmd) e cada.
 
 A automação é um trabalho em tempo integral e rapidamente se tornará uma das tarefas operacionais mais importantes em sua equipe de nuvem. As organizações que usam a abordagem de “primeiro automatizar” tem maior sucesso usando o Azure:
 

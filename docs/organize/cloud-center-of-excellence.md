@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: ac1fe4cac44d4a1f830be1faba7f2d50ddbd98f0
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: c1819bafaed5e75e6667754d598b075eb3204925
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224348"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564308"
 ---
 # <a name="cloud-center-of-excellence"></a>Centro de excelência de nuvem
 
@@ -92,7 +92,7 @@ No Exchange para esses benefícios, a função de ti existente pode estar negoci
 
 Em empresas íntegras em nuvem, esse processo de negociação é uma conversa dinâmica entre os colegas e as equipes de ti de parceria. Os detalhes técnicos podem ser complexos, mas são gerenciáveis quando compreendem o objetivo e estão em apoio aos esforços de CCoE. Quando for menor do que o de apoio, a seção a seguir sobre como habilitar o sucesso do CCoE pode ajudar a superar os bloqueadores culturais.
 
-## <a name="enabling-ccoe-success"></a>Habilitando o êxito do CCoE
+## <a name="enable-ccoe-success"></a>Habilitar o êxito do CCoE
 
 Antes de prosseguir com esse modelo, é importante validar a tolerância da empresa para uma mentalidade de crescimento e é confortável com a liberação de responsabilidades centrais. Conforme mencionado acima, a finalidade de um CCoE é o controle do Exchange para agilidade e velocidade.
 
@@ -130,7 +130,7 @@ Além disso, recomendamos que os participantes da empresa fiquem informados sobr
 
 **Criar um buffer:** A equipe do CCoE experimentará novas abordagens. Algumas dessas abordagens não se alinharão bem com as operações existentes ou restrições técnicas. Há um risco real do CCoE que está experimentando pressão ou recurso de outras equipes quando os experimentos falham. A encorajação e o armazenamento em buffer da equipe das consequências de oportunidades de aprendizado de "falha rápida" são importantes. É igualmente importante manter a equipe em uma mentalidade de crescimento, garantindo que eles estejam aprendendo com esses experimentos e encontrem soluções melhores.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 O Cloud Center of Excellence requer tanto [recursos de plataforma de nuvem](./cloud-platform.md) quanto recursos de automação de [nuvem](./cloud-automation.md). A próxima etapa é alinhar os [recursos da plataforma de nuvem](./cloud-platform.md).
 

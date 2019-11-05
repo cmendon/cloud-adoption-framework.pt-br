@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: d1d59b105dd6d75b0c5b5ed12d711473fd4995c8
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: dcf98227f6464b71d0e3e3a1bc0bf505c149254b
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549107"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564270"
 ---
 # <a name="central-it-capabilities"></a>Recursos centrais de ti
 
@@ -93,7 +93,7 @@ As medidas desse risco são a velocidade e a flexibilidade. A nuvem simplifica a
 
 Muitos setores exigem adesão rígida à conformidade de terceiros. Alguns requisitos de conformidade ainda exigem controle de ti centralizado. A oferta dessas medidas de conformidade pode adicionar tempo a processos de implantação, especialmente para novas tecnologias que não foram usadas em larga escala. Nesses cenários, espere atrasos na implantação durante os primeiros estágios de adoção. As situações semelhantes minhas existem para empresas que lidam com dados confidenciais do cliente, mas podem não ser regidas por um requisito de conformidade de terceiros.
 
-### <a name="operating-within-the-exceptions"></a>Operando dentro das exceções
+### <a name="operate-within-the-exceptions"></a>Operar dentro das exceções
 
 Quando processos de ti centralizados são necessários e esses processos criam pontos de verificação apropriados na adoção de novas tecnologias, esses pontos de verificação de inovação ainda podem ser tratados rapidamente. Os requisitos de governança e conformidade foram projetados para proteger as coisas que são confidenciais, não proteger tudo. A nuvem fornece mecanismos simples para adquirir e implantar recursos isolados, mantendo os guardrails adequados.
 

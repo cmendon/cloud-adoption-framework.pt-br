@@ -1,5 +1,5 @@
 ---
-title: Criar uma justificativa de negócios para a migração de nuvem
+title: Crie uma justificativa comercial para a migração para a nuvem
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Considerações ao criar uma justificativa comercial para a migração para a nuvem.
 author: BrianBlanchard
@@ -9,32 +9,32 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: d545b977a4c98692ba8503d5512b8cb0d0b7dd0d
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 629b882c993e85dbb85b04cc9568491bd6e2036d
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224182"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566628"
 ---
-# <a name="build-a-business-justification-for-cloud-migration"></a>Criar uma justificativa de negócios para a migração de nuvem
+# <a name="build-a-business-justification-for-cloud-migration"></a>Crie uma justificativa comercial para a migração para a nuvem
 
 As migrações para a nuvem podem gerar retorno sobre o investimento (ROI) antecipado de iniciativas de transformação de nuvem. Mas desenvolver uma justificativa de negócios clara com custos tangíveis e relevantes e Devoluções pode ser um processo complexo. Este artigo o ajudará a pensar em quais dados você precisa para criar um modelo financeiro que se alinhe aos resultados da migração na nuvem. Primeiro, vamos eliminar alguns mitos sobre a migração para a nuvem, para que sua organização possa evitar alguns erros comuns.
 
 ## <a name="dispelling-cloud-migration-myths"></a>Dissipando mitos sobre a migração para a nuvem
 
-**Mito: A nuvem é sempre mais barata.** Normalmente, acredita-se que operar um datacenter na nuvem é sempre mais barato do que operar um no local. Embora essa suposição geralmente seja verdadeira, nem sempre é o caso. Às vezes, os custos operacionais de nuvem são maiores. Esses custos mais altos geralmente são causados por controle de baixo custo, arquiteturas de sistema desalinhadas, duplicação de processo, configurações do sistema atípicos ou maior custo de equipe. Felizmente, você pode mitigar muitos desses problemas para criar um ROI inicial. Seguir as diretrizes de [criação da justificativa de negócios](#building-the-business-justification) pode ajudá-lo a detectar e evitar esses inalinhamentos. A grafia dos outros mitos descritos aqui também pode ajudar.
+**Mito: a nuvem é sempre mais barata.** Normalmente, acredita-se que operar um datacenter na nuvem é sempre mais barato do que operar um no local. Embora essa suposição geralmente seja verdadeira, nem sempre é o caso. Às vezes, os custos operacionais de nuvem são maiores. Esses custos mais altos geralmente são causados por controle de baixo custo, arquiteturas de sistema desalinhadas, duplicação de processo, configurações do sistema atípicos ou maior custo de equipe. Felizmente, você pode mitigar muitos desses problemas para criar um ROI inicial. Seguir as orientações em [criar a justificativa de negócios](#build-the-business-justification) pode ajudá-lo a detectar e evitar esses inalinhamentos. A grafia dos outros mitos descritos aqui também pode ajudar.
 
-**Mito: tudo deve ir para a nuvem.** Na verdade, alguns drivers de negócios podem levá-lo a escolher uma solução híbrida. Antes de finalizar um modelo de negócios, é inteligente concluir uma análise quantitativa de primeira rodada, conforme descrito nos artigos de [imóveis digitais](../digital-estate/5-rs-of-rationalization.md). Para obter mais informações sobre os drivers quantitativos individuais envolvidos na racionalização, consulte [o 5 RS de racionalização](../digital-estate/5-rs-of-rationalization.md). As duas abordagens usarão dados de inventário obtidos facilmente e uma breve análise quantitativa para identificar as cargas de trabalho ou aplicativos que poderiam resultar em custos mais altos na nuvem. Essas abordagens também podem identificar dependências ou padrões de tráfego que exigiriam uma solução híbrida.
+**Mito: tudo deve entrar na nuvem.** Na verdade, alguns drivers de negócios podem levá-lo a escolher uma solução híbrida. Antes de finalizar um modelo de negócios, é inteligente concluir uma análise quantitativa de primeira rodada, conforme descrito nos artigos de [imóveis digitais](../digital-estate/5-rs-of-rationalization.md). Para obter mais informações sobre os drivers quantitativos individuais envolvidos na racionalização, consulte [o 5 RS de racionalização](../digital-estate/5-rs-of-rationalization.md). As duas abordagens usarão dados de inventário obtidos facilmente e uma breve análise quantitativa para identificar as cargas de trabalho ou aplicativos que poderiam resultar em custos mais altos na nuvem. Essas abordagens também podem identificar dependências ou padrões de tráfego que exigiriam uma solução híbrida.
 
 **Mito: o espelhamento do meu ambiente local me ajudará a economizar dinheiro na nuvem.** Durante o planejamento de imóveis digitais, não é despercebido que as empresas detectem capacidade não utilizada de mais de 50% do ambiente provisionado. Se os ativos forem provisionados na nuvem para corresponder ao provisionamento atual, será difícil perceber as economias de custos. Considere reduzir o tamanho dos ativos implantados para alinhar com padrões de uso em vez de padrões de provisionamento.
 
-**Mito: Os custos do servidor impulsionam casos comerciais para migração na nuvem.** Às vezes, essa suposição é verdadeira. Para algumas empresas, é importante reduzir as despesas de capital contínuas relacionadas aos servidores. Mas depende de vários fatores. Empresas com um ciclo de atualização de hardware de cinco anos a oito anos são improvável de ver retornos rápidos em sua migração de nuvem. As empresas com ciclos de atualização padronizados ou impostos podem zerar o custo rapidamente. Em ambos os casos, outras despesas podem ser os gatilhos financeiros que justificam a migração. Aqui estão alguns exemplos de custos que geralmente são ignorados quando as empresas usam uma exibição somente de servidor ou somente VM de custos:
+**Mito: os custos de servidor impulsionam casos de negócios para migração na nuvem.** Às vezes, essa suposição é verdadeira. Para algumas empresas, é importante reduzir as despesas de capital contínuas relacionadas aos servidores. Mas depende de vários fatores. Empresas com um ciclo de atualização de hardware de cinco anos a oito anos são improvável de ver retornos rápidos em sua migração de nuvem. As empresas com ciclos de atualização padronizados ou impostos podem zerar o custo rapidamente. Em ambos os casos, outras despesas podem ser os gatilhos financeiros que justificam a migração. Aqui estão alguns exemplos de custos que geralmente são ignorados quando as empresas usam uma exibição somente de servidor ou somente VM de custos:
 
 - Os custos de software para virtualização, servidores e middleware podem ser extensivos. Os provedores de nuvem eliminam alguns desses custos. Dois exemplos de um provedor de nuvem que reduz os custos de virtualização são os [benefício híbrido do Azure](https://azure.microsoft.com/pricing/hybrid-benefit/#services) e os programas de [reservas do Azure](https://azure.microsoft.com/reservations) .
 - As perdas de negócios causadas por interrupções podem exceder rapidamente os custos de hardware ou software. Se seu datacenter atual estiver instável, trabalhe com a empresa para quantificar o impacto de interrupções em termos de custos de oportunidades ou custos reais de negócios.
 - Os custos ambientais também podem ser significativos. Para a família americana média, uma casa é o maior investimento e o custo mais alto no orçamento. O mesmo costuma ser verdadeiro para datacenters. Imóveis, instalações e custos com serviços essenciais representam uma parte importante dos custos locais. Quando os data centers são desativados, essas instalações podem ser realocadas ou sua empresa pode ser liberada por completo desses custos.
 
-**Mito: Um modelo de despesa operacional é melhor do que um modelo de despesas de capital.** Conforme explicado no artigo [resultados fiscais](./business-outcomes/fiscal-outcomes.md) , um modelo de despesa operacional pode ser algo bom. Mas alguns setores exibem as despesas operacionais de forma negativa. Aqui estão alguns exemplos que disparariam uma integração mais rígida com as unidades de contabilidade e de negócios em relação à conversa de despesas operacionais:
+**Mito: um modelo de despesa operacional é melhor do que um modelo de despesas de capital.** Conforme explicado no artigo [resultados fiscais](./business-outcomes/fiscal-outcomes.md) , um modelo de despesa operacional pode ser algo bom. Mas alguns setores exibem as despesas operacionais de forma negativa. Aqui estão alguns exemplos que disparariam uma integração mais rígida com as unidades de contabilidade e de negócios em relação à conversa de despesas operacionais:
 
 - Quando uma empresa vê ativos de capital como um driver para a avaliação dos negócios, as reduções de despesas de capital podem ser um resultado negativo. Embora não seja um padrão universal, esse sentimentos é mais comumente visto nos setores de varejo, manufatura e construção.
 - Uma firma de patrimônio particular ou uma empresa que está buscando um influxo de capital pode considerar as despesas operacionais aumentadas como um resultado negativo.
@@ -44,10 +44,10 @@ As migrações para a nuvem podem gerar retorno sobre o investimento (ROI) antec
 
 Antes de fornecer uma justificativa de negócios que se concentre em uma conversão de despesas de capital para despesas operacionais, entenda o que é melhor para sua empresa. A contabilidade e a aquisição muitas vezes podem ajudar a alinhar a mensagem a objetivos financeiros.
 
-**Mito: migrar para a nuvem é como apertar um botão.** As migrações são uma transformação técnica manualmente intensa. Ao desenvolver uma justificativa comercial, especialmente justificativas com prazos apertados, considere os seguintes aspectos que podem aumentar o tempo necessário para migrar ativos:
+**Mito: mudar para a nuvem é como inverter um interruptor.** As migrações são uma transformação técnica manualmente intensa. Ao desenvolver uma justificativa comercial, especialmente justificativas com prazos apertados, considere os seguintes aspectos que podem aumentar o tempo necessário para migrar ativos:
 
 - **Limitações de largura de banda:** A quantidade de largura de banda entre o datacenter atual e o provedor de nuvem orientará as linhas do tempo durante a migração.
-- **Testando linhas do tempo:** Testar aplicativos com a empresa para garantir a prontidão e o desempenho podem ser demorados. O alinhamento dos usuários avançados com os processos de teste é essencial.
+- **Testando linhas** do tempo: Testar aplicativos com a empresa para garantir a prontidão e o desempenho podem ser demorados. O alinhamento dos usuários avançados com os processos de teste é essencial.
 - **Cronogramas de migração:** A quantidade de tempo e esforço necessários para implementar a migração pode aumentar os custos e causar atrasos. Alocar funcionários ou parceiros contratados também pode atrasar o processo. O plano deve considerar essas alocações.
 
 Impedimentos técnicos e culturais podem reduzir a adoção da nuvem. Quando o tempo é um aspecto importante da justificativa comercial, a melhor mitigação é o planejamento adequado. Durante o planejamento, duas abordagens podem ajudar a reduzir os riscos da linha do tempo:
@@ -57,7 +57,7 @@ Impedimentos técnicos e culturais podem reduzir a adoção da nuvem. Quando o t
 
 Para maximizar a prontidão e a mitigação de riscos no cronograma, prepare os stakeholders executivos alinhando claramente o valor comercial e os resultados comerciais. Ajude esses participantes a entender as alterações que serão fornecidas com a transformação. Seja claro e defina expectativas realistas desde o início. Quando as pessoas ou tecnologias diminuem o processo, será mais fácil inscrever o suporte executivo.
 
-## <a name="building-the-business-justification"></a>Criar a justificativa comercial
+## <a name="build-the-business-justification"></a>Crie a justificativa de negócios
 
 O processo a seguir define uma abordagem para desenvolver a justificativa comercial para migrações para a nuvem. Para obter mais informações sobre os cálculos e os termos financeiros, consulte o artigo sobre [modelos financeiros](./financial-models.md).
 
@@ -73,7 +73,7 @@ Podemos desempacotar esta equação para obter uma exibição específica da mig
 - Alguns provedores de nuvem também fornecem calculadoras de custo-Delta. A [calculadora do custo total de propriedade (TCO) do Azure](https://azure.com/tco) é um exemplo.
 - Para estruturas de custo mais refinadas, considere um exercício de [planejamento de imobiliária digital](../digital-estate/index.md) .
 - Estime o custo da migração.
-- Estime o custo das oportunidades de treinamento esperadas, se houver. [Microsoft Learn](/learn) talvez possa ajudar a mitigar esses custos.
+- Estime o custo das oportunidades de treinamento esperadas, se houver. [Microsoft Learn](https://docs.microsoft.com/learn) talvez possa ajudar a mitigar esses custos.
 - Em algumas empresas, o tempo investido por membros da equipe existentes pode precisar ser incluído nos custos iniciais. Consulte o departamento financeiro para obter diretrizes.
 - Discuta custos adicionais ou indiretos com o departamento financeiro para validação.
 
@@ -106,7 +106,7 @@ Quando o ROI está abaixo de 20%, considere um exercício de [planejamento de im
 
 Se o ROI ainda estiver desalinhado, procure a ajuda de seu representante de vendas da Microsoft ou [entre em contato com um parceiro experiente](https://azure.microsoft.com/migration/support).
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 > [!div class="nextstepaction"]
 > [Criar um modelo financeiro para a transformação de nuvem](./financial-models.md)

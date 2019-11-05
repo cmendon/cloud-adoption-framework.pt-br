@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 16289952e74f81c885f15d69436c17e9d012d80a
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: ab5e8cdb7058a773b4085f01a6be64b4521e6b69
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73238912"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566457"
 ---
 # <a name="scale-a-migration-to-azure"></a>Dimensionar uma migração para o Azure
 
@@ -174,7 +174,7 @@ A Contoso usará Migrações para Azure da seguinte maneira:
 
 #### <a name="database-tools"></a>Ferramentas de Banco de Dados
 
-Além de Migrações para Azure, a Contoso focará em usar ferramentas especificamente para avaliação do banco de dados. Ferramentas como o [Assistente de Migração de Dados](/sql/dma/dma-overview?view=sql-server-2017) ajudarão a avaliar os bancos de dados do SQL Server para a migração.
+Além de Migrações para Azure, a Contoso focará em usar ferramentas especificamente para avaliação do banco de dados. Ferramentas como o [Assistente de Migração de Dados](https://docs.microsoft.com/sql/dma/dma-overview?view=sql-server-2017) ajudarão a avaliar os bancos de dados do SQL Server para a migração.
 
 O AMD (Assistente de Migração de Dados) pode ajudar a Contoso a descobrir se os bancos de dados local são compatíveis com uma variedade de soluções de banco de dados do Azure, como o Banco de Dados SQL do Azure, o SQL Server em execução em uma VM IaaS do Azure e Instância Gerenciada SQL do Azure.
 
@@ -221,7 +221,7 @@ O Azure Site Recovery é o principal serviço do Azure para orquestrar a recuper
 
 A Contoso já [concluiu uma POC](./contoso-migration-rehost-vm.md) para ver como o Site Recovery pode ajudá-las a migrar para a nuvem.
 
-##### <a name="using-site-recovery-at-scale"></a>Como usar o Site Recovery em escala
+##### <a name="use-site-recovery-at-scale"></a>Usar Site Recovery em escala
 
 A contoso planeja executar várias migrações de comparação de precisão e deslocamento. Para garantir que isso funcione, o Site Recovery replicará lotes de cerca de 100 VMs por vez. Para descobrir como isso vai funcionar, a Contoso precisa executar o planejamento de capacidade para a migração do Site Recovery proposta.
 
@@ -262,10 +262,10 @@ A Contoso precisa descobrir como implantar esses componentes com base em conside
 --- | ---
 **Taxa de alteração diária máxima** | Um único servidor de processo pode lidar com uma taxa de alteração diária de até 2 TB. Como uma VM só pode usar um servidor de processo, a taxa máxima diária de alteração de dados com suporte para uma VM replicada é 2 TB.
 **Taxa de transferência máxima** | Uma conta de armazenamento padrão do Azure pode processar um máximo de 20 mil solicitações por segundo, e as operações de IOPS (entrada/saída por segundo) em uma VM de replicação devem estar dentro desse limite. Por exemplo, se uma VM tiver 5 discos e cada disco gerar 120 IOPS (8 mil de tamanho) na VM, isso estará dentro do limite de IOPS por disco do Azure de 500.<br/><br/> Observe que o número de contas de armazenamento necessário é igual ao total de IOPS do computador de origem dividido por 20 mil. Um computador replicado pode pertencer somente a uma única conta de armazenamento no Azure.
-**Servidor de configuração** | Com base na estimativa da Contoso de replicar 100=200 VMs juntas e os [requisitos de dimensionamento do servidor de configuração](https://docs.microsoft.com/azure/site-recovery/site-recovery-plan-capacity-vmware#size-recommendations-for-the-configuration-server-and-inbuilt-process-server), a Contoso estima que precisará de um computador de servidor de configuração assim:<br/><br/> CPU: 16 vCPUs (2 soquetes * 8 núcleos a 2,5 GHz)<br/><br/> Memória: 32 GB<br/><br/> Disco de cache: 1 TB<br/><br/> Taxa de alteração de dados: 1 TB a 2 TB.<br/><br/> Além dos requisitos de dimensionamento, a Contoso precisará garantir que o servidor de configuração esteja localizado no lugar ideal, na mesma rede e segmento de LAN que as VMs que serão migradas.
-**Servidor de processo** | A Contoso implantará um servidor de processo dedicado autônomo com capacidade para replicar de 100 a 200 VMs:<br/><br/> CPU: 16 vCPUs (2 soquetes * 8 núcleos a 2,5 GHz)<br/><br/> Memória: 32 GB<br/><br/> Disco de cache: 1 TB<br/><br/> Taxa de alteração de dados: 1 TB a 2 TB.<br/><br/> O servidor de processo vai trabalhar duro, assim, deve estar localizado em um host ESXi que possa lidar com a E/S de disco, o tráfego de rede e a CPU necessários para a replicação. A Contoso considerará um host dedicado para essa finalidade.
+**Servidor de configuração** | Com base na estimativa da Contoso de replicar 100=200 VMs juntas e os [requisitos de dimensionamento do servidor de configuração](https://docs.microsoft.com/azure/site-recovery/site-recovery-plan-capacity-vmware#size-recommendations-for-the-configuration-server-and-inbuilt-process-server), a Contoso estima que precisará de um computador de servidor de configuração assim:<br/><br/> CPU: 16 vCPUs (2 soquetes &#215; 8 núcleos a 2,5 GHz)<br/><br/> Memória: 32 GB<br/><br/> Disco de cache: 1 TB<br/><br/> Taxa de alteração de dados: 1 TB a 2 TB.<br/><br/> Além dos requisitos de dimensionamento, a Contoso precisará garantir que o servidor de configuração esteja localizado no lugar ideal, na mesma rede e segmento de LAN que as VMs que serão migradas.
+**Servidor de processo** | A Contoso implantará um servidor de processo dedicado autônomo com capacidade para replicar de 100 a 200 VMs:<br/><br/> CPU: 16 vCPUs (2 soquetes &#215; 8 núcleos a 2,5 GHz)<br/><br/> Memória: 32 GB<br/><br/> Disco de cache: 1 TB<br/><br/> Taxa de alteração de dados: 1 TB a 2 TB.<br/><br/> O servidor de processo vai trabalhar duro, assim, deve estar localizado em um host ESXi que possa lidar com a E/S de disco, o tráfego de rede e a CPU necessários para a replicação. A Contoso considerará um host dedicado para essa finalidade.
 **Rede** | A Contoso examinou a atual infraestrutura de VPN site a site e decidiu implementar o Azure ExpressRoute. A implementação é crítica porque reduzirá a latência e melhorará a largura de banda para a região Leste dos EUA 2 do Azure primária da Contoso.<br/><br/> **Monitoramento:** A contoso precisará monitorar cuidadosamente o fluxo de dados do servidor de processo. Se os dados sobrecarregarem a largura de banda de rede, a Contoso considerará a [limitação da largura de banda do servidor de processo](https://docs.microsoft.com/azure/site-recovery/site-recovery-plan-capacity-vmware#control-network-bandwidth).
-**Armazenamento do Azure** | Para a migração, a Contoso deve identificar o tipo e o número certos de contas de armazenamento do Azure de destino. O Site Recovery replica dados de VM para o armazenamento do Azure.<br/><br/> O Site Recovery pode replicar contas de armazenamento standard ou premium (SSD).<br/><br/> Para decidir sobre o armazenamento, a Contoso deve examinar os [limites de armazenamento](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types), além do fator de crescimento esperado e do aumento no uso ao longo do tempo. Dada a velocidade e a prioridade das migrações, a Contoso decidiu usar SSDs premium<br/><br/>
+**Armazenamento do Azure** | Para a migração, a Contoso deve identificar o tipo e o número certos de contas de armazenamento do Azure de destino. O Site Recovery replica dados de VM para o armazenamento do Azure.<br/><br/> O Site Recovery pode replicar contas de armazenamento standard ou premium (SSD).<br/><br/> Para decidir sobre o armazenamento, a Contoso deve examinar os [limites de armazenamento](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types), além do fator de crescimento esperado e do aumento no uso ao longo do tempo. Dada a velocidade e a prioridade das migrações, a Contoso decidiu usar o SSDs Premium.<br/><br/>
 A Contoso tomou a decisão de usar Managed Disks para todas as VMs implantadas no Azure. O IOPS necessário determinará se os discos serão Standard HDD, Standard SSD ou Premium (SSD).<br/><br/>
 
 <!--markdownlint-enable MD033 -->
@@ -281,7 +281,7 @@ O Serviço de Migração de Banco de Dados do Azure é um serviço totalmente ge
 
 O DMS não é a única ferramenta de migração de banco de dados da Microsoft. Obtenha uma [comparação de ferramentas e serviços](https://blogs.msdn.microsoft.com/datamigration/2017/10/13/differentiating-microsofts-database-migration-tools-and-services).
 
-##### <a name="using-dms-at-scale"></a>Como usar DMS em escala
+##### <a name="use-dms-at-scale"></a>Usar DMS em escala
 
 A Contoso usará DMS ao migrar do SQL Server.
 
@@ -291,7 +291,7 @@ A Contoso usará DMS ao migrar do SQL Server.
 
 - Outra tática de dimensionamento para a Contoso é aumentar temporariamente a instância de destino do SQL do Azure ou do Banco de Dados MySQL para a SKU da camada Premium durante a migração de dados. Isso minimiza a limitação do banco de dados que pode afetar atividades de transferência de dados ao usar SKUs de nível inferior.
 
-##### <a name="using-other-tools"></a>Como usar outras ferramentas
+##### <a name="use-other-tools"></a>Usar outras ferramentas
 
 Além do DMS, a Contoso pode usar outras ferramentas e serviços para identificar as informações da VM.
 

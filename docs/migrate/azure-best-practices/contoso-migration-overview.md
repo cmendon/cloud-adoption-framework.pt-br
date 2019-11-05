@@ -8,12 +8,12 @@ ms.date: 10/11/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: f993676a002eeac128c9a221059815802bf36bdf
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 18b2bc641ba45c83a8ce6c5069857c398801adfd
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239333"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566439"
 ---
 # <a name="application-migration-patterns-and-examples"></a>Exemplos e padrões de migração de aplicativos
 
@@ -88,7 +88,7 @@ Os artigos da série são resumidos abaixo.
 [Hospedar novamente um aplicativo em uma VM do Azure e uma Instância Gerenciada do Banco de Dados SQL](./contoso-migration-rehost-vm-sql-managed-instance.md) | Este artigo fornece um exemplo de migração de comparação de precisão e de deslocamento para o Azure para um aplicativo local. Isso envolve migrar a VM front-end do aplicativo usando o [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) e o banco de dados do aplicativo para uma Instância Gerenciada do Banco de Dados SQL do Azure, usando o [Serviço de Migração de Banco de Dados do Azure](https://docs.microsoft.com/azure/dms/dms-overview).
 [Hospedar novamente um aplicativo em VMs do Azure e em um grupo de disponibilidade Always On do SQL Server](./contoso-migration-rehost-vm-sql-ag.md) | Este exemplo mostra como migrar um aplicativo e dados usando as VMs do SQL Server hospedadas no Azure. Ele usa o Site Recovery para migrar as VMs do aplicativo e o Serviço de Migração de Banco de Dados do Azure para migrar o banco de dados do aplicativo para um cluster do SQL Server protegido por um grupo de disponibilidade Always On.
 
-### <a name="aspnet--php--java-apps"></a>Aplicativos ASP.NET/PHP/Java
+### <a name="aspnet-php-and-java-apps"></a>Aplicativos ASP.NET, PHP e Java
 
 **Artigo** | **Detalhes**
 --- | ---

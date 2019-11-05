@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: 75f19fcdc9f23066d5a6471cd79c0a6a00869554
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: cb5653de592fb92fa9ad9f5866997703a928ee4e
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027890"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566583"
 ---
 # <a name="create-a-financial-model-for-cloud-transformation"></a>Criar um modelo financeiro para a transformação de nuvem
 
@@ -28,13 +28,13 @@ O ROI (retorno sobre o investimento) geralmente é um critério importante para 
 
 Nas próximas seções, veremos os dados que você precisará para calcular o investimento inicial e o ganho de investimento (ganhos).
 
-## <a name="calculating-initial-investment"></a>Calculando o investimento inicial
+## <a name="calculate-initial-investment"></a>Calcular o investimento inicial
 
 O investimento inicial é a despesa de capital e as despesas operacionais necessárias para concluir uma transformação. A classificação dos custos pode variar dependendo dos modelos de contabilidade e da preferência do diretor financeiro. Mas essa categoria inclui itens como serviços profissionais para transformar, licenças de software usadas somente durante a transformação, o custo dos serviços de nuvem durante a transformação e, potencialmente, o custo de funcionários com salários durante a transformação .
 
 Adicione esses custos para criar uma estimativa do investimento inicial.
 
-## <a name="calculating-the-gain-from-investment"></a>Calculando o ganho com o investimento
+## <a name="calculate-the-gain-from-investment"></a>Calcular o lucro do investimento
 
 Calcular o lucro do investimento geralmente requer uma segunda fórmula específica para os resultados de negócios e as alterações técnicas associadas. Calcular os ganhos é mais difícil do que calcular as reduções de custos.
 
@@ -105,7 +105,7 @@ As despesas de capital são um pouco diferentes das despesas operacionais. Em ge
 
 Se um ciclo de atualização for aprovado e orçado, a transformação de nuvem poderá ajudar a eliminar esse custo. Se um ciclo de atualização estiver planejado, mas ainda não tiver sido aprovado, a transformação de nuvem poderá evitar uma despesa de capital. Ambas as reduções seriam adicionadas ao Delta de custo.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Saiba mais sobre os modelos de [contabilidade de nuvem](./cloud-accounting.md) .
 

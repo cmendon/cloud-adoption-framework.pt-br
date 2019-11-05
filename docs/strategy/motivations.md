@@ -1,5 +1,5 @@
 ---
-title: Motivações Por que estamos migrando para a nuvem?
+title: 'Motivações: por que estamos migrando para a nuvem?'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Contabilidade de nuvem e mudança para a nuvem
 author: BrianBlanchard
@@ -8,16 +8,16 @@ ms.date: 5/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 9a6c007beedd06ff6e1a88cd7ccc497f58807af9
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 65ef12ca476ca624ae1e71cce2e62d41141873a9
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030007"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73561614"
 ---
 <!-- markdownlint-disable MD026 -->
 
-# <a name="motivations-why-are-we-moving-to-the-cloud"></a>Motivações Por que estamos migrando para a nuvem?
+# <a name="motivations-why-are-we-moving-to-the-cloud"></a>Motivações: por que estamos migrando para a nuvem?
 
 "Por que estamos migrando para a nuvem?" é uma pergunta comum para parceiros comerciais e técnicos. Se a resposta for: "nosso Conselho (ou CIO ou executivos de nível C) nos informou para migrar para a nuvem", é improvável que os negócios atinjam os resultados desejados.
 
@@ -25,7 +25,7 @@ Este artigo discute algumas motivações por trás da migração na nuvem que po
 
 ## <a name="motivations"></a>Motivações
 
-As transformações de negócios com suporte pela adoção de nuvem podem ser controladas por várias motivações. É muito provável que várias motivações sejam aplicáveis ao mesmo tempo. O objetivo das listas na tabela a seguir é ajudar a despertar ideias sobre quais motivações são relevantes. A partir daí, você pode priorizar e avaliar os possíveis impactos das motivações. Neste artigo, recomendamos que sua equipe de adoção de nuvem se reúna com vários executivos e líderes de negócios usando a lista abaixo para entender quais dessas motivações são afetadas pelo esforço de adoção de nuvem.
+As transformações de negócios com suporte pela adoção de nuvem podem ser controladas por várias motivações. É provável que várias motivações se apliquem ao mesmo tempo. O objetivo das listas na tabela a seguir é ajudar a despertar ideias sobre quais motivações são relevantes. A partir daí, você pode priorizar e avaliar os possíveis impactos das motivações. Neste artigo, recomendamos que sua equipe de adoção de nuvem se reúna com vários executivos e líderes de negócios usando a lista abaixo para entender quais dessas motivações são afetadas pelo esforço de adoção de nuvem.
 
 <!-- markdownlint-disable MD033 -->
 
@@ -77,7 +77,7 @@ A lista a seguir inclui motivações que fazem com que uma organização de ti s
 - Melhorando as experiências e os compromissos com o cliente.
 - Transformando produtos ou serviços.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Entender os resultados de negócios projetados ajuda a facilitar as conversas que você precisa ter ao documentar suas motivações e as métricas de suporte, alinhadas à sua estratégia de negócios. Em seguida, leia uma visão geral dos resultados de negócios que normalmente estão associados a uma mudança para a nuvem.
 

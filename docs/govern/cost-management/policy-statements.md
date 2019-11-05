@@ -9,44 +9,44 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: efc105298462afa9dfac76f0505854fdc157c17d
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 086740f6677896220824096a5afe66618779a2d0
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220949"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566394"
 ---
 # <a name="cost-management-sample-policy-statements"></a>Instruções de política de amostra de Gerenciamento de Custos
 
-As instruções individuais da política de nuvem são diretrizes para abordar os riscos específicos identificados durante o processo de avaliação de riscos. Essas instruções oferecem um resumo conciso dos riscos e planos com os quais lidar. Cada definição de instrução deve incluir essas informações:
+Declarações da política de nuvem individuais são diretrizes para tratar de riscos específicos identificados durante o processo de avaliação de riscos. Essas instruções oferecem um resumo conciso dos riscos e planos com os quais lidar. Cada definição de instrução deve incluir essas informações:
 
-- **Risco para os negócios.** Um resumo do risco que esta política abordará.
-- **Instrução da política.** Uma clara explicação de resumo dos requisitos de política.
-- **Opções de design.** Recomendações viáveis, especificações ou outras diretrizes que as equipes de TI e desenvolvedores possam usar ao implementar a política.
+- **Risco para os negócios:** Um resumo do risco que essa política abordará.
+- **Declaração de política:** Uma explicação resumida clara dos requisitos de política.
+- **Opções de design:** Recomendações, especificações ou outras diretrizes acionáveis que as equipes de ti e os desenvolvedores podem usar ao implementar a política.
 
 As instruções de política de exemplo a seguir abordam riscos de negócios comuns relacionados a custos. Essas instruções são exemplos que você pode referenciar ao rascunhar instruções de política para atender às necessidades da sua organização. Esses exemplos não devem ser proexistentes e há potencialmente várias opções de política para lidar com cada risco identificado. Trabalhe junto com as equipes de ti e de negócios para identificar as melhores políticas para seu conjunto exclusivo de riscos.
 
 ## <a name="future-proofing"></a>Durabilidade
 
-**Risco de negócios:** Critérios atuais que não garantem um investimento em uma disciplina de Gerenciamento de Custos da equipe de governança. No entanto, você antecipar o investimento no futuro.
+**Risco para os negócios:** Critérios atuais que não garantem um investimento em uma disciplina de gerenciamento de custos da equipe de governança. No entanto, você antecipar o investimento no futuro.
 
-**Instrução da política:** Você deve associar todos os ativos implantados à nuvem com uma unidade de cobrança e um aplicativo/carga de trabalho. Esta política garantirá que os esforços do Gerenciamento de Custos futuros entrarão em vigor.
+**Declaração de política:** Você deve associar todos os ativos implantados à nuvem com uma unidade de cobrança e um aplicativo/carga de trabalho. Esta política garantirá que os esforços do Gerenciamento de Custos futuros entrarão em vigor.
 
 **Opções de design:** Para obter informações sobre como estabelecer uma base de verificação futura, consulte as discussões relacionadas à criação de um MVP de governança nos [guias de design acionáveis](../guides/index.md) incluídos como parte das diretrizes da estrutura de adoção da nuvem.
 
 ## <a name="budget-overruns"></a>Excedentes de orçamento
 
-**Risco de negócios:** A implantação por autoatendimento cria um risco de excesso de gastos.
+**Risco para os negócios:** A implantação de autoatendimento cria um risco de excesso de gastos.
 
-**Instrução da política:** Qualquer implantação de nuvem deve ser alocada para uma unidade de cobrança com orçamento aprovado e um mecanismo para limites orçamentários.
+**Declaração de política:** Qualquer implantação na nuvem deve ser alocada a uma unidade de cobrança com orçamento aprovado e um mecanismo para limites orçamentários.
 
-**Opções de design:** No Azure, o orçamento pode ser controlado com o [Gerenciamento de Custos do Azure](https://docs.microsoft.com/azure/cost-management/manage-budgets)
+**Opções de design:** No Azure, o orçamento pode ser controlado com o [Gerenciamento de custos do Azure](https://docs.microsoft.com/azure/cost-management/manage-budgets)
 
 ## <a name="underutilization"></a>Subutilização
 
-**Risco de negócios:** A empresa tem pré-pago por serviços de nuvem ou fez um compromisso anual gastar uma quantidade específica. Há um risco de que o valor acordado não seja usado, resultando em um investimento perdido.
+**Risco para os negócios:** A empresa tem pré-pago para serviços de nuvem ou fez um compromisso anual para gastar um valor específico. Há um risco de que o valor acordado não seja usado, resultando em um investimento perdido.
 
-**Instrução da política:** Cada unidade de cobrança com um orçamento de nuvem alocado atenderá anualmente para definir os orçamentos trimestralmente para ajustar os orçamentos e mensal de alocar tempo para revisar os gastos reais versus planejados. Discuta desvios maiores que 20% com o líder da unidade de cobrança mensal. Para fins de acompanhamento, atribua todos os ativos para uma unidade de cobrança.
+**Declaração de política:** Cada unidade de cobrança com um orçamento de nuvem alocado será atendida anualmente para definir orçamentos trimestrais para ajustar orçamentos e mensalmente para alocar tempo para revisar gastos planejados versus reais. Discuta desvios maiores que 20% com o líder da unidade de cobrança mensal. Para fins de acompanhamento, atribua todos os ativos para uma unidade de cobrança.
 
 **Opções de design:**
 
@@ -55,9 +55,9 @@ As instruções de política de exemplo a seguir abordam riscos de negócios com
 
 ## <a name="overprovisioned-assets"></a>Ativos superprovisionados
 
-**Risco de negócios:** Em data centers tradicionais locais, é uma prática comum de implantar ativos com capacidade extra, planejamento para crescimento distante no futuro. A nuvem pode dimensionar mais rapidamente do que o equipamento tradicional. Ativos na nuvem também são cobrados com base na capacidade técnica. Há um risco da prática do local antigo artificialmente aumentando os gastos com a nuvem.
+**Risco para os negócios:** Em data centers locais tradicionais, é prática comum implantar ativos com planejamento de capacidade extra para crescimento no futuro distante. A nuvem pode dimensionar mais rapidamente do que o equipamento tradicional. Ativos na nuvem também são cobrados com base na capacidade técnica. Há um risco da prática do local antigo artificialmente aumentando os gastos com a nuvem.
 
-**Instrução da política:** Qualquer ativo implantado na nuvem deve ser registrado em um programa que pode monitorar a utilização e relatar qualquer capacidade mais de 50% de utilização. Qualquer ativo implantado na nuvem deve ser agrupado ou marcado de uma maneira lógica, portanto, os membros da equipe governança podem envolver o proprietário da carga de trabalho em relação a qualquer otimização de ativos sobre provisionados.
+**Declaração de política:** Qualquer ativo implantado na nuvem deve ser registrado em um programa que possa monitorar a utilização e relatar qualquer capacidade acima de 50% da utilização. Qualquer ativo implantado na nuvem deve ser agrupado ou marcado de uma maneira lógica, portanto, os membros da equipe governança podem envolver o proprietário da carga de trabalho em relação a qualquer otimização de ativos sobre provisionados.
 
 **Opções de design:**
 
@@ -66,18 +66,18 @@ As instruções de política de exemplo a seguir abordam riscos de negócios com
 
 ## <a name="overoptimization"></a>Otimização excessiva
 
-**Risco de negócios:** O gerenciamento de custos efetivo cria novos riscos. A otimização dos gastos é o inverso para o desempenho do sistema. Ao reduzir os custos, há um risco de sobrecarregar gastos e produzindo as experiências de usuário insatisfatória.
+**Risco para os negócios:** O gerenciamento de custos efetivo cria novos riscos. A otimização dos gastos é o inverso para o desempenho do sistema. Ao reduzir os custos, há um risco de sobrecarregar gastos e produzindo as experiências de usuário insatisfatória.
 
-**Instrução da política:** Qualquer ativo que afeta diretamente as experiências do cliente deve ser identificado por meio do agrupamento ou marcação. Antes de otimizar qualquer ativo que afete a experiência do cliente, a equipe de governança de nuvem deve ajustar a otimização com base em pelo menos 90 dias de tendências de utilização. Documente quaisquer intermitências sazonais ou orientadas por eventos consideradas ao otimizar ativos.
+**Declaração de política:** Qualquer ativo que afeta diretamente as experiências do cliente deve ser identificado por meio de agrupamento ou marcação. Antes de otimizar qualquer ativo que afete a experiência do cliente, a equipe de governança de nuvem deve ajustar a otimização com base em pelo menos 90 dias de tendências de utilização. Documente quaisquer intermitências sazonais ou orientadas por eventos consideradas ao otimizar ativos.
 
 **Opções de design:**
 
 - No Azure, [os recursos de insights do Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-performance) podem ajudar com a análise de utilização do sistema.
 - Há várias opções para agrupar e marcar recursos baseados nas funções. No Azure, escolha um [modelo de consistência do recurso](../../decision-guides/resource-consistency/index.md) em conjunto com a equipe de governança e aplicado a todos os ativos.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
-Use os exemplos mencionados neste artigo como um ponto de partida para desenvolver políticas que abordam os riscos de negócios específicos que se alinham aos seus planos de adoção de nuvem.
+Use as amostras mencionadas neste artigo como ponto de partida para desenvolver políticas que abordem os riscos empresariais específicos que alinham-se aos seus planos de adoção de nuvem.
 
 Para começar a desenvolver suas próprias instruções de política personalizadas relacionadas ao Gerenciamento de Custos, realize o download do [Modelo de Gerenciamento de Custos](./template.md).
 

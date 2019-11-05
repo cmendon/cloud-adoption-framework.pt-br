@@ -1,21 +1,21 @@
 ---
-title: Decisões que afetam migrações
+title: Decisões que afetam a migração
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Decisões importantes a serem feitas com relação ao processo de migração
+description: Decisões importantes a serem feitas sobre o processo de migração.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 14946c48e69471f72d4979d18f39e43e6ce374e1
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 4bd04de2bd773e3fc02fbab5264ae60f275a8e7d
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239928"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564574"
 ---
-# <a name="decisions-that-affect-migrations"></a>Decisões que afetam migrações
+# <a name="decisions-that-affect-migration"></a>Decisões que afetam a migração
 
 Durante a migração, diversos fatores afetam as decisões e as atividades de execução. Este artigo explica o tema central dessas decisões e explora algumas perguntas que auxiliam nas discussões sobre os princípios de migração nesta seção de orientações da Cloud Adoption Framework.
 
@@ -25,25 +25,25 @@ O objetivo ou a meta de qualquer esforço de adoção pode ter um impacto signif
 
 - **Migração.** Drivers empresariais urgentes, velocidade de adoção ou economia de custos são exemplos de resultados operacionais. Esses resultados são fundamentais para os esforços que agregam valor empresarial de alterações transitivas em modelos de operações ou de TI. A seção Migrar da Cloud Adoption Framework se concentra intensamente nos resultados dos negócios voltados para a Migração.
 - **Inovação de aplicativo.** Melhorar a experiência do cliente e aumentar a participação no mercado são exemplos de resultados incrementais. Os resultados derivam de uma série de alterações incrementais focadas nas necessidades e nos desejos dos clientes atuais.
-- **Inovação controlada por dados.** Novos produtos ou serviços, especialmente aqueles que vêm do poder dos dados, são exemplos de resultados com interrupção. Esses resultados são provenientes de experimentação e de previsões que usam dados para interromper o status quo no mercado.
+- **Inovação conduzida por dados.** Novos produtos ou serviços, especialmente aqueles que vêm do poder dos dados, são exemplos de resultados com interrupção. Esses resultados são provenientes de experimentação e de previsões que usam dados para interromper o status quo no mercado.
 
 Nenhuma empresa buscaria apenas um desses resultados. Sem operações, não há clientes e vice-versa. Com a adoção da nuvem, não é diferente. Normalmente, as empresas trabalham para atingir todos esses resultados, mas tentar se concentrar em todos eles ao mesmo tempo pode pulverizar seus esforços e causar lentidão no progresso de trabalhos que poderiam beneficiar ao máximo suas necessidades empresariais.
 
 Esse pré-requisito não é uma exigência para que você escolha uma dessas três metas, mas sim para ajudar a equipe de estratégia da nuvem e a equipe de adoção da nuvem a estabelecer um conjunto de prioridades operacionais que orientarão a execução nos próximos três a seis meses. Essas prioridades são definidas classificando cada uma das três opções da *mais significativa* para a *menos significativa*, pois elas estão relacionadas aos esforços com que as equipes podem contribuir nos próximos trimestres.
 
-### <a name="acting-on-migration-outcomes"></a>Atuação nos resultados da migração
+### <a name="act-on-migration-outcomes"></a>Agir em resultados de migração
 
 Se os resultados operacionais forem classificados como mais altos na lista, esta seção da Cloud Adoption Framework funcionará bem para sua equipe. Nesta seção, supõe-se que você precisa priorizar a velocidade e a economia de custos como KPIs (indicadores chave de desempenho). Nesse caso, um modelo de migração para a adoção estaria bem alinhado com os resultados. Um modelo com foco em migração é muito predicado na migração de deslocamento e mudança de ativos de IaaS (infraestrutura como serviço) para depauperam um datacenter e para produzir economias de custos. Nesse modelo, a modernização poderá ocorrer, mas será um foco secundário até que a missão de migração principal seja realizada.
 
-### <a name="acting-on-application-innovations"></a>Atuação em inovações de aplicativos
+### <a name="act-on-application-innovations"></a>Aja em inovações de aplicativos
 
 Se a participação de mercado e a experiência do cliente forem seus principais motivadores, talvez esta não seja a melhor seção da Cloud Adoption Framework para orientar os esforços de suas equipes. A inovação de aplicativos requer um plano que se concentre na modernização e na transição de cargas de trabalho, independentemente da infraestrutura subjacente. Nesse caso, as orientações nesta seção podem ser informativas, mas talvez não sejam a melhor abordagem para orientar as decisões principais.
 
-### <a name="acting-on-data-innovations"></a>Atuando em inovações de dados
+### <a name="act-on-data-innovations"></a>Aja em inovações de dados
 
 Se dados, experimentação, P&D (pesquisa e desenvolvimento ) ou novos produtos forem sua prioridade para os próximos seis meses, talvez esta não seja a melhor seção da Cloud Adoption Framework para orientar os esforços de suas equipes. Qualquer esforço de inovação de dados pode se beneficiar das orientações relacionadas à migração de dados de origem existentes. No entanto, o foco mais amplo desse esforço seriam a entrada e a integração de fontes de dados adicionais. Estender essas orientações com previsões e novas experiências é muito mais importante do que a migração de ativos de IaaS.
 
-## <a name="balancing-the-portfolio"></a>Equilibrar o portfólio
+## <a name="balance-the-portfolio"></a>Equilibrar o portfólio
 
 Esta seção da Cloud Adoption Framework estabelece a teoria para ajudar os leitores a entenderem as diferentes abordagens para lidar com alterações em um portfólio equilibrado. O artigo sobre como [equilibrar o portfólio](../../expanded-scope/balance-the-portfolio.md) é um exemplo de escopo expandido, criado para ajudar a agir com base nessa teoria.
 

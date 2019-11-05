@@ -8,12 +8,12 @@ ms.date: 05/15/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 8623a845a6c8d8b0a8cc50d404ead85eae256134
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: dbdabb6edc425ea3c70706313d2357323d2a523c
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73243182"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73561872"
 ---
 # <a name="review-your-compute-options"></a>Examine as opções de computação
 
@@ -35,7 +35,7 @@ Para cada aplicativo ou serviço que você implantará no ambiente de zona de ac
 Responda às seguintes perguntas sobre as cargas de trabalho para ajudá-lo a tomar decisões com base na árvore de decisão de serviços de computação do Azure:
 
 - **Você está criando aplicativos e serviços novos ou migrando de cargas de trabalho locais existentes?** O desenvolvimento de novos aplicativos como parte de seus esforços da adesão à nuvem permite aproveitar ao máximo as tecnologias modernas de hospedagem baseadas em nuvem desde a fase de design.
-- **Se você estiver migrando cargas de trabalho existentes, elas poderão aproveitar as tecnologias de nuvem modernas?** A migração de cargas de trabalho locais requer análise: você pode otimizar facilmente os aplicativos e serviços existentes para tirar proveito das tecnologias de nuvem modernas ou uma abordagem de *mudança de precisão* funcionará melhor para suas cargas de trabalho?
+- **Se você estiver migrando cargas de trabalho existentes, elas poderão aproveitar as tecnologias de nuvem modernas?** A migração de cargas de trabalho locais requer análise: você pode otimizar facilmente os aplicativos e serviços existentes para tirar proveito das tecnologias de nuvem modernas ou uma abordagem de aumento de _precisão e de deslocamento_ funciona melhor para suas cargas de trabalho?
 - **Seus aplicativos ou serviços podem tirar proveito de contêineres?** Se os aplicativos forem bons candidatos para hospedagem em contêiner, você poderá aproveitar as possibilidades de eficiência de recursos, escalabilidade e orquestração fornecidas pelos [serviços de contêiner do Azure](https://azure.microsoft.com/product-categories/containers). Os serviços [Armazenamento em Disco do Azure](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview) e [Arquivos do Azure](https://docs.microsoft.com/azure/storage/files/storage-files-introduction) podem ser usados para armazenamento persistente para aplicativos em contêineres.
 - **Os aplicativos são baseados na Web ou em API. Eles usam PHP, ASP.NET, Node.js ou tecnologias semelhantes?** Os aplicativos Web podem ser implantados em instâncias gerenciadas do [Serviço de Aplicativo do Azure](https://docs.microsoft.com/azure/app-service/overview), evitando que você tenha que manter máquinas virtuais para fins de hospedagem.
 - **Você precisará de controle total sobre o sistema operacional e o ambiente de hospedagem da carga de trabalho?** Se você precisar controlar o ambiente de hospedagem, incluindo o sistema operacional, os discos, o software em execução local e outras configurações, poderá usar as [Máquinas Virtuais do Azure](https://azure.microsoft.com/services/virtual-machines) para hospedar os aplicativos e serviços. Além de escolher os tamanhos de máquina virtual e os níveis de desempenho, suas decisões relacionadas ao armazenamento em disco virtual afetarão o desempenho e os SLAs relacionados às cargas de trabalho baseadas em IaaS (infraestrutura como serviço). Para obter mais informações, confira a documentação do [Armazenamento em Disco do Azure](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview).

@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 8d374fdc5df4589e58b890ae5c169d26d0b1f206
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: a5ccbe2f3dd754914997ccba7b49ba47505dffa3
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70833746"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564136"
 ---
 # <a name="review-rationalization-decisions"></a>Examinar as decisões de racionalização
 
@@ -26,7 +26,7 @@ Para validar decisões de racionalização, use as perguntas a seguir para facil
 
 ## <a name="innovation-indicators"></a>Indicadores de inovação
 
-Se a análise conjunta das perguntas a seguir resultar em uma resposta "Sim", uma carga de trabalho poderá ser um candidato melhor para a inovação. Essa carga de trabalho não seria migrada por meio de um modelo Shift/de mover ou modernizar. Em vez disso, a lógica de negócios ou as estruturas de dados seriam recriadas como um aplicativo novo ou rearquitetado. Essa abordagem pode ser mais trabalhoso e demorada. Mas, para uma carga de trabalho que representa retornos de negócios significativos, o investimento é justificado.
+Se a análise conjunta das perguntas a seguir resultar em uma resposta "Sim", uma carga de trabalho poderá ser um candidato melhor para a inovação. Essa carga de trabalho não seria migrada por meio de um modelo de comparação de precisão e deslocamento ou modernização. Em vez disso, a lógica de negócios ou as estruturas de dados seriam recriadas como um aplicativo novo ou rearquitetado. Essa abordagem pode ser mais trabalhoso e demorada. Mas, para uma carga de trabalho que representa retornos de negócios significativos, o investimento é justificado.
 
 - Os aplicativos nesta carga de trabalho criam diferenciação de mercado?
 - Há um investimento proposto ou aprovado com o objetivo de melhorar as experiências associadas aos aplicativos nessa carga de trabalho?
@@ -67,7 +67,7 @@ Quando você gerencia o plano de adoção de nuvem no Azure DevOps, esse gerenci
 
 Para planos de adoção grandes e complexos com vários projetos distintos, considere atualizar o caminho de iteração. A alteração do caminho de área torna a carga de trabalho visível somente para a equipe atribuída a esse caminho de área. Essa alteração pode facilitar o trabalho para a equipe de adoção de nuvem, reduzindo o número de tarefas visíveis. Mas adiciona complexidade para os processos de gerenciamento de projeto.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 [Defina iterações e versões](./iteration-paths.md) para começar a planejar o trabalho.
 
