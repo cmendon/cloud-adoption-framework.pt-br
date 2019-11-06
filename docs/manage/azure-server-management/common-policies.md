@@ -8,19 +8,19 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 0d998f06e73c03a74cdaf5fbd75cb605fa9a2fbb
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 7008809ef2e80cd5f1c263b705b46a37b6028482
+ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547306"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73656398"
 ---
 # <a name="common-azure-policy-examples"></a>Exemplos comuns de Azure Policy
 
 [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) pode ajudá-lo a aplicar governança aos seus recursos de nuvem. Esse serviço pode ajudá-lo a criar guardrails que garantem a conformidade de toda a empresa com os requisitos de política de governança. Para criar políticas, use os cmdlets portal do Azure ou PowerShell. Este artigo fornece exemplos de cmdlet do PowerShell.
 
 > [!NOTE]
-> Com Azure Policy, as políticas de imposição (**deployIfNotExists**) não são implantadas automaticamente em VMs existentes. A correção é necessária para manter essas VMs em conformidade. Para obter mais informações, consulte [corrigir recursos não compatíveis com Azure Policy](https://docs.microsoft.com/azure/governance/policy/how-to/remediate-resources).
+> Com Azure Policy, as políticas de imposição (**deployIfNotExists**) não são implantadas automaticamente em VMs existentes. A correção é necessária para manter as VMs em conformidade. Para obter mais informações, consulte [corrigir recursos não compatíveis com Azure Policy](https://docs.microsoft.com/azure/governance/policy/how-to/remediate-resources).
 
 ## <a name="common-policy-examples"></a>Exemplos de políticas comuns
 
@@ -28,15 +28,15 @@ As seções a seguir descrevem algumas políticas usadas com frequência.
 
 ### <a name="restrict-resource-regions"></a>Restringir regiões de recursos
 
-A conformidade com a política e a regulamentação geralmente dependerá do controle do local físico em que os recursos são implantados. Você pode usar uma política interna para permitir que os usuários criem recursos somente em regiões do Azure na lista de permissões. Você pode encontrar essa política no portal pesquisando por "local" na página definição de política.
+A conformidade com a política e a regulamentação geralmente depende do controle do local físico em que os recursos são implantados. Você pode usar uma política interna para permitir que os usuários criem recursos somente em determinadas regiões do Azure permitidas.
 
-Ou você pode executar este cmdlet para localizar a política:
+Para localizar essa política no portal, procure "local" na página definição de política. Ou execute este cmdlet para localizar a política:
 
 ```powershell
 Get-AzPolicyDefinition | Where-Object { ($_.Properties.policyType -eq "BuiltIn") -and ($_.Properties.displayName -like "*location*") }
 ```
 
-O script a seguir mostra como atribuir a política. Para usar o script, altere o valor `$SubscriptionID` para que ele aponte para a assinatura à qual você deseja atribuir a política. Antes de executar o script, você precisará entrar usando o cmdlet [Connect-AzAccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) .
+O script a seguir mostra como atribuir a política. Altere o valor `$SubscriptionID` para apontar para a assinatura à qual você deseja atribuir a política. Antes de executar o script, use o cmdlet [Connect-AzAccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) para entrar.
 
 ```powershell
 #Specify the value for $SubscriptionID.
@@ -51,13 +51,13 @@ $policyParam = '{"listOfAllowedLocations":{"value":["eastus","westus"]}}'
 New-AzPolicyAssignment -Name "Allowed Location" -DisplayName "Allowed locations for resource creation" -Scope $scope -PolicyDefinition $AllowedLocationPolicy -Location eastus -PolicyParameter $policyparam
 ```
 
-Você pode usar esse mesmo script para aplicar as outras políticas discutidas neste artigo. Basta substituir o GUID na linha que define `$AllowedLocationPolicy` com o GUID da política que você deseja aplicar.
+Você também pode usar esse script para aplicar as outras políticas que são discutidas neste artigo. Basta substituir o GUID na linha que define `$AllowedLocationPolicy` com o GUID da política que você deseja aplicar.
 
 ### <a name="block-certain-resource-types"></a>Bloquear determinados tipos de recursos
 
-Outra política interna comum que é usada para controlar os custos permite que você bloqueie determinados tipos de recursos. Você pode encontrar essa política no portal pesquisando "tipos de recurso permitidos" na página definição de política.
+Outra política interna comum que é usada para controlar os custos também pode ser usada para bloquear determinados tipos de recursos.
 
-Ou você pode executar este cmdlet para localizar a política:
+Para localizar essa política no portal, pesquise "tipos de recursos permitidos" na página definição de política. Ou execute este cmdlet para localizar a política:
 
 ```powershell
 Get-AzPolicyDefinition | Where-Object { ($_.Properties.policyType -eq "BuiltIn") -and ($_.Properties.displayName -like "*allowed resource types") }
@@ -67,15 +67,15 @@ Depois de identificar a política que você deseja usar, você pode modificar o 
 
 ### <a name="restrict-vm-size"></a>Restringir o tamanho da VM
 
-O Azure oferece uma ampla variedade de tamanhos de VM para dar suporte a vários tipos de cargas de trabalho. Para controlar seu orçamento, você pode criar uma política que permita apenas um subconjunto de tamanhos de VM em suas assinaturas.
+O Azure oferece uma ampla variedade de tamanhos de VM para dar suporte a várias cargas de trabalho. Para controlar seu orçamento, você pode criar uma política que permita apenas um subconjunto de tamanhos de VM em suas assinaturas.
 
 ### <a name="deploy-antimalware"></a>Implantar Antimalware
 
-Você pode usar essa política para implantar uma extensão do Microsoft Iaasantimalware da com uma configuração padrão para VMs que não são protegidas por antimalware.
+Você pode usar essa política para implantar uma extensão do Microsoft *iaasantimalware da* com uma configuração padrão para VMs que não são protegidas por antimalware.
 
 O GUID da política é `2835b622-407b-4114-9198-6f7064cbe0dc`.
 
-O script a seguir mostra como atribuir a política. Para usar o script, altere o valor `$SubscriptionID` para que ele aponte para a assinatura à qual você deseja atribuir a política. Antes de executar o script, você precisará entrar usando o cmdlet [Connect-AzAccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) .
+O script a seguir mostra como atribuir a política. Para usar o script, altere o valor `$SubscriptionID` para apontar para a assinatura à qual você deseja atribuir a política. Antes de executar o script, use o cmdlet [Connect-AzAccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) para entrar.
 
 ```powershell
 #Specify the value for $SubscriptionID.
@@ -84,7 +84,7 @@ $scope = "/subscriptions/$SubscriptionID"
 
 $AntimalwarePolicy = Get-AzPolicyDefinition -Name "2835b622-407b-4114-9198-6f7064cbe0dc"
 
-#Replace location “eastus” with the value you want to use.
+#Replace location “eastus” with the value that you want to use.
 New-AzPolicyAssignment -Name "Deploy Antimalware" -DisplayName "Deploy default Microsoft IaaSAntimalware extension for Windows Server" -Scope $scope -PolicyDefinition $AntimalwarePolicy -Location eastus –AssignIdentity
 
 ```

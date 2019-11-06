@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 04e78b51bcea5aea8d8db719b7d88865696d781b
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: caa9d3ced70ce15eacf37b4bcbb653efae9da1ef
+ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566027"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73656699"
 ---
 # <a name="governance-design-for-multiple-teams"></a>Design de governança para várias equipes
 
@@ -259,7 +259,7 @@ Siga estas etapas:
 6. Crie um processo de aprovação para **proprietários da carga de trabalho** para solicitar a criação de grupos de recursos. O processo de aprovação pode ser implementado de diversas maneiras, como por email, ou você pode usar uma ferramenta de gerenciamento do processo como [fluxos de trabalho do SharePoint](https://support.office.com/article/introduction-to-sharepoint-workflow-07982276-54e8-4e17-8699-5056eff4d9e3). O processo de aprovação pode seguir estas etapas:
     - O **proprietário da carga de trabalho** prepara uma lista de materiais dos recursos do Azure necessários no **desenvolvimento** ambiente, **produção** ambiente, ou ambos e envia para o **proprietário da assinatura**.
     - O **proprietário da assinatura** examina a lista de materiais e valida os recursos solicitados para garantir que os recursos solicitados são apropriados para seu uso planejado - por exemplo, a verificação de que a solicitação [ tamanhos de máquina virtual](https://docs.microsoft.com/azure/virtual-machines/windows/sizes) estão corretas.
-    - Se a solicitação não for aprovada, o **proprietário da carga de trabalho** será notificado. Se a solicitação for aprovada, o **proprietário da assinatura** [cria o grupo de recurso solicitado](https://docs.microsoft.com/azure/azure-resource-manager/manage-resource-groups-portal#create-resource-groups) após sua organização [convenções de nomenclatura](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions), [ Adiciona o **proprietário da carga de trabalho** ](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal#add-a-role-assignment) com o [ **colaborador** função](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor) e envia uma notificação para o **proprietário de carga de trabalho** que o grupo de recursos foi criado.
+    - Se a solicitação não for aprovada, o **proprietário da carga de trabalho** será notificado. Se a solicitação for aprovada, o **proprietário da assinatura** [cria o grupo de recurso solicitado](https://docs.microsoft.com/azure/azure-resource-manager/manage-resource-groups-portal#create-resource-groups) após sua organização [convenções de nomenclatura](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming), [ Adiciona o **proprietário da carga de trabalho** ](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal#add-a-role-assignment) com o [ **colaborador** função](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor) e envia uma notificação para o **proprietário de carga de trabalho** que o grupo de recursos foi criado.
 7. Crie um processo de aprovação para os proprietários da carga de trabalho solicitar uma emparelhamento de conexão do proprietário infraestrutura compartilhada de rede virtual. Assim como acontece com a etapa anterior, esse processo de aprovação pode ser implementado usando email ou uma ferramenta de gerenciamento de processos.
 
 Agora que você já implementou o seu modelo de controle, poderá implantar seus serviços de infraestrutura compartilhada.
@@ -268,7 +268,7 @@ Agora que você já implementou o seu modelo de controle, poderá implantar seus
 
 [Funções internas para recursos do Azure](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles)
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 > [!div class="nextstepaction"]
 > [Saiba mais sobre como implantar uma infraestrutura básica](../../infrastructure/virtual-machines/basic-workload.md)

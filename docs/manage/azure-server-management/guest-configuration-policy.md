@@ -8,43 +8,43 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 16d67f628ff99f971d2d79127b25698987cc8977
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 741a73bacadccc0ee7b06542b86b9958aa236982
+ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547274"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73656326"
 ---
 # <a name="guest-configuration-policy"></a>Política de configuração de convidado
 
-A extensão de [configuração de convidado](https://docs.microsoft.com/azure/governance/policy/concepts/guest-configuration) Azure Policy permite que você audite as definições de configuração em uma máquina virtual. Atualmente, a configuração de convidado tem suporte apenas em VMs do Azure.
+Você pode usar a extensão de [configuração de convidado](https://docs.microsoft.com/azure/governance/policy/concepts/guest-configuration) Azure Policy para auditar as definições de configuração em uma máquina virtual. Atualmente, a configuração de convidado tem suporte apenas em VMs do Azure.
 
-Você pode encontrar a lista de políticas de configuração de convidado pesquisando a categoria "configuração de convidado" na página do portal de Azure Policy. Você também pode encontrar a lista executando este cmdlet em uma janela do PowerShell:
+Para localizar a lista de políticas de configuração de convidado, procure "configuração de convidado" na página do portal de Azure Policy. Ou execute este cmdlet em uma janela do PowerShell para encontrar a lista:
 
 ```powershell
 Get-AzPolicySetDefinition | where-object {$_.Properties.metadata.category -eq "Guest Configuration"}
 ```
 
 > [!NOTE]
-> A funcionalidade de configuração de convidado é atualizada regularmente para dar suporte a conjuntos de políticas adicionais. Verifique se há novas políticas com suporte periodicamente e avalie se elas são úteis para suas necessidades.
+> A funcionalidade de configuração de convidado é atualizada regularmente para dar suporte a conjuntos de políticas adicionais. Verifique se há novas políticas com suporte periodicamente e avalie se elas serão úteis.
 
 <!-- TODO: Update these links when available. 
 
-By default, we recommend enabling the following policies:
+By default, we recommend that you enable the following policies:
 
-- [Preview]: Audit to verify password security settings are set correctly inside Linux and Windows machines.
+- [Preview]: Audit to verify that password-security settings are correct on Linux and Windows machines.
 - Audit to verify that certificates are not nearing expiration on Windows VMs.
 
 -->
 
 ## <a name="deployment"></a>Implantação
 
-Você pode usar o seguinte script do PowerShell de exemplo para implantar essas políticas:
+Use o exemplo de script do PowerShell a seguir para implantar essas políticas em:
 
 - Verifique se as configurações de segurança de senha em computadores Windows e Linux estão definidas corretamente.
 - Verifique se os certificados não estão perto de expirar em VMs do Windows.
 
- Antes de executar esse script, você precisará entrar usando o cmdlet [Connect-AzAccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) . Ao executar o script, você precisará fornecer o nome da assinatura à qual deseja aplicar as políticas.
+ Antes de executar esse script, use o cmdlet [Connect-AzAccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) para entrar. Ao executar o script, você deve fornecer o nome da assinatura à qual deseja aplicar as políticas.
 
 ```powershell
 

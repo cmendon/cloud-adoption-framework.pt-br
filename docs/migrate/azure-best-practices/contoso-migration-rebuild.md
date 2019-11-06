@@ -9,16 +9,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: cbe5de4242baedfa704bd90baa7fa3ca0f0aa026
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 6a7c27e1c2e4bf0bdf4a4ef9104bf13bf221f4e0
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025123"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566605"
 ---
 # <a name="rebuild-an-on-premises-app-on-azure"></a>Recompilar um aplicativo local no Azure
 
-Este artigo demonstra como a empresa fictícia Contoso recompila um aplicativo de duas camadas .NET do Windows em execução em VMs VMware como parte de uma migração para o Azure. A Contoso migra a VM de front-end do aplicativo para um aplicativo Web do Serviço de Aplicativo do Azure. O back-end do aplicativo é criado usando microsserviços implantados em contêineres gerenciados pelo AKS (Serviço de Kubernetes do Azure). O site interage com o Azure Functions a fim de proporcionar funcionalidades para fotos de animais de estimação.
+Este artigo demonstra como a empresa fictícia Contoso recompila um aplicativo de duas camadas .NET do Windows em execução em VMs VMware como parte de uma migração para o Azure. A Contoso migra a VM de front-end do aplicativo para um aplicativo Web do Serviço de Aplicativo do Azure. O back-end do aplicativo é criado usando microsserviços implantados em contêineres gerenciados pelo AKS (Serviço de Kubernetes do Azure). O site interage com o Azure Functions para fornecer a funcionalidade de fotos de animais de estimação.
 
 O aplicativo SmartHotel360 usado neste exemplo é fornecido como software livre. Se quiser usá-lo em seus próprios testes, você poderá baixá-lo do [GitHub](https://github.com/Microsoft/SmartHotel360).
 
@@ -31,7 +31,7 @@ A equipe de liderança de TI trabalhou em conjunto com parceiros comerciais para
 - **Escala.** Na medida em que a empresa cresce com sucesso, a equipe de TI da Contoso deve disponibilizar sistemas capazes de crescer no mesmo ritmo.
 - **Reduzir custos.** a Contoso quer minimizar os custos de licenciamento.
 
-## <a name="migration-goals"></a>Objetivos da migração
+## <a name="migration-goals"></a>Metas de migração
 
 A equipe de nuvem da Contoso fixou os requisitos do aplicativo para esta migração. Esses requisitos foram usados para determinar o melhor método de migração:
 
@@ -50,11 +50,11 @@ Depois de fixar as metas e os requisitos, a Contoso projeta e analisa uma soluç
 
 ### <a name="current-app"></a>Aplicativo atual
 
-- O aplicativo local SmartHotel360 é dividido em duas VMs (WEBVM e SQLVM).
+- O aplicativo local do SmartHotel360 é dividido em duas VMs (WEBVM e SQLVM).
 - As VMs estão localizadas no host VMware ESXi **contosohost1.contoso.com** (versão 6.5)
 - O ambiente VMware é gerenciado pelo vCenter Server 6.5 (**vcenter.contoso.com**) em execução em uma VM.
 - A Contoso tem um datacenter local (contoso-datacenter), com um controlador de domínio local (**contosodc1**).
-- As VMs locais no datacenter da Contoso serão descomissionadas após a migração.
+- As VMs locais no datacenter Contoso, serão descomissionadas após a migração.
 
 ### <a name="proposed-architecture"></a>Arquitetura proposta
 
@@ -95,7 +95,7 @@ A Contoso avalia o design proposto reunindo uma lista de prós e contras.
 
 **Serviço** | **Descrição** | **Custo**
 --- | --- | ---
-[AKS](/sql/dma/dma-overview?view=ssdt-18vs2017) | Simplifica o gerenciamento, a implantação e as operações do Kubernetes. Fornece um serviço de orquestração de contêiner do Kubernetes totalmente gerenciado. | O AKS é um serviço gratuito. Pague apenas pelas máquinas virtuais, pelo armazenamento associado e pelos recursos de rede consumidos. [Saiba mais](https://azure.microsoft.com/pricing/details/kubernetes-service).
+[AKS](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | Simplifica o gerenciamento, a implantação e as operações do Kubernetes. Fornece um serviço de orquestração de contêiner do Kubernetes totalmente gerenciado. | O AKS é um serviço gratuito. Pague apenas pelas máquinas virtuais, pelo armazenamento associado e pelos recursos de rede consumidos. [Saiba mais](https://azure.microsoft.com/pricing/details/kubernetes-service).
 [Funções do Azure](https://azure.microsoft.com/services/functions) | Acelera o desenvolvimento com uma experiência de computação sem servidor orientada por evento. Dimensione sob demanda. | Pague apenas pelos recursos consumidos. O plano é cobrado com base no consumo de recursos e execuções por segundo. [Saiba mais](https://azure.microsoft.com/pricing/details/functions).
 [Registro de Contêiner do Azure](https://azure.microsoft.com/services/container-registry) | Armazena imagens para todos os tipos de implantações de contêiner. | Custo com base em recursos, armazenamento e duração de uso. [Saiba mais](https://azure.microsoft.com/pricing/details/container-registry).
 [Serviço de Aplicativo do Azure](https://azure.microsoft.com/services/app-service/containers) | Crie, implante e dimensione rapidamente aplicativos de API, móveis e Web de nível corporativo em execução em qualquer plataforma. | Os Planos do Serviço de Aplicativo são cobrados por segundo. [Saiba mais](https://azure.microsoft.com/pricing/details/app-service/windows).
@@ -110,40 +110,40 @@ Veja o que a Contoso precisa para esse cenário:
 --- | ---
 **Assinatura do Azure** | A Contoso já criou assinaturas em um artigo anterior. Se você não tiver uma assinatura do Azure, crie uma [conta gratuita](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Se você criar uma conta gratuita, será o administrador da assinatura e poderá executar todas as ações.<br/><br/> Se você usar uma assinatura existente e não for o administrador, será necessário trabalhar com o administrador para receber permissões de Proprietário ou de Colaborador.
 **Infraestrutura do Azure** | [ Saiba como ](./contoso-migration-infrastructure.md) a Contoso configurou uma infraestrutura do Azure.
-**Pré-requisitos de desenvolvedor** | A Contoso precisa das ferramentas a seguir em uma estação de trabalho de desenvolvedor:<br/><br/> - [Visual Studio 2017 Community Edition: Versão 15.5](https://www.visualstudio.com)<br/><br/> Carga de trabalho .NET habilitada.<br/><br/> [Git](https://git-scm.com)<br/><br/> [PowerShell do Azure](https://azure.microsoft.com/downloads)<br/><br/> [CLI do Azure](/cli/azure/install-azure-cli?view=azure-cli-latest)<br/><br/> [Docker CE (Windows 10) ou Docker EE (Windows Server)](https://docs.docker.com/docker-for-windows/install) configurado para usar Contêineres do Windows.
+**Pré-requisitos de desenvolvedor** | A Contoso precisa das ferramentas a seguir em uma estação de trabalho de desenvolvedor:<br/><br/> - [Visual Studio 2017 Community Edition: versão 15.5](https://www.visualstudio.com)<br/><br/> Carga de trabalho .NET habilitada.<br/><br/> [Git](https://git-scm.com)<br/><br/> [PowerShell do Azure](https://azure.microsoft.com/downloads)<br/><br/> [CLI do Azure](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest)<br/><br/> [Docker CE (Windows 10) ou Docker EE (Windows Server)](https://docs.docker.com/docker-for-windows/install) configurado para usar Contêineres do Windows.
 
 <!-- markdownlint-enable MD033 -->
 
 ## <a name="scenario-steps"></a>Etapas do cenário
 
-Veja como a Contoso executará a migração:
+Aqui está como a Contoso executará a migração:
 
 > [!div class="checklist"]
 >
-> - **Etapa 1: Provisione o AKS e ACR.** A Contoso provisiona o cluster do AKS gerenciado e o registro de contêiner do Azure usando PowerShell.
-> - **Etapa 2: Compile contêineres do Docker.** Configuram a CI para contêineres do Docker usando Azure DevOp e efetuam push para o ACR.
-> - **Etapa 3: Implante microsserviços de back-end.** Eles implantam o restante da infraestrutura que será utilizada pelos microsserviços de back-end.
-> - **Etapa 4: Implante a infraestrutura de front-end.** Implantam a infraestrutura de front-end, incluindo o armazenamento de blobs para telefones de animais de estimação, Cosmos DB e API de Pesquisa Visual.
-> - **Etapa 5: Migre o back-end.** Implantam microsserviços e executam no AKS para migrar o back-end.
-> - **Etapa 6: Publique o front-end.** Eles publicam o aplicativo SmartHotel360 no Serviço de Aplicativo e aplicativo de funções que será chamado pelo serviço para animais de estimação.
+> - **Etapa 1: provisionar AKS e ACR.** A Contoso provisiona o cluster do AKS gerenciado e o registro de contêiner do Azure usando PowerShell.
+> - **Etapa 2: criar contêineres do Docker.** Configuram a CI para contêineres do Docker usando Azure DevOp e efetuam push para o ACR.
+> - **Etapa 3: implantar microserviços de back-end.** Eles implantam o restante da infraestrutura que será utilizada pelos microsserviços de back-end.
+> - **Etapa 4: implantar a infraestrutura de front-end.** Implantam a infraestrutura de front-end, incluindo o armazenamento de blobs para telefones de animais de estimação, Cosmos DB e API de Pesquisa Visual.
+> - **Etapa 5: migre o back-end.** Implantam microsserviços e executam no AKS para migrar o back-end.
+> - **Etapa 6: publicar o front-end.** Eles publicam o aplicativo SmartHotel360 no Serviço de Aplicativo e aplicativo de funções que será chamado pelo serviço para animais de estimação.
 
 ## <a name="step-1-provision-back-end-resources"></a>Etapa 1: Provisionar recursos de back-end
 
 Os administradores da Contoso executam um script de implantação para criar o cluster do Kubernetes gerenciado usando o AKS e o ACR (Registro de Contêiner do Azure).
 
 - As instruções desta seção usam o repositório **SmartHotel360-Azure-backend**.
-- O repositório do GitHub **SmartHotel360-Azure-backend** contém todo o software para essa parte da implantação.
+- O repositório do GitHub **SmartHotel360-Azure-backend** contém todo o software para essa parte da implantação.  
 
 ### <a name="prerequisites"></a>Pré-requisitos
 
-1. Antes de começar, os administradores da Contoso verificam se todos os software de pré-requisitos estão instalados no computador de desenvolvimento usado para a implantação.
+1. Antes de começar, os administradores da Contoso garantem que todos os softwares de pré-requisito instalados no computador de desenvolvimento estejam usando para a implantação.
 2. Eles clonam o repositório local no computador de desenvolvimento usando o Git: `git clone https://github.com/Microsoft/SmartHotel360-Azure-backend.git`
 
 ### <a name="provision-aks-and-acr"></a>Provisionar o AKS e o ACR
 
 Os administradores da Contoso provisionam da seguinte maneira:
 
-1.Eles abrem a pasta usando o Visual Studio Code e movem o diretório **/deploy/k8s**, que contém o script **gen-aks-env.ps1**.
+1. eles abrem a pasta usando Visual Studio Code e movem para o diretório **/Deploy/K8S** , que contém o script **Gen-AKs-env. ps1**.
 2. Eles executam o script para criar o cluster do Kubernetes gerenciado, usando o AKS e o ACR.
     ![AKS](./media/contoso-migration-rebuild/aks1.png)
 3. Com o arquivo aberto, eles atualizam o parâmetro $location para **eastus2** e salvam o arquivo.
@@ -152,7 +152,7 @@ Os administradores da Contoso provisionam da seguinte maneira:
     ![AKS](./media/contoso-migration-rebuild/aks3.png)
 5. No terminal integrado do PowerShell, eles entram no Azure usando o comando Connect-AzureRmAccount. [Saiba mais](https://docs.microsoft.com/powershell/azure/get-started-azureps) sobre como começar a trabalhar com o PowerShell.
     ![AKS](./media/contoso-migration-rebuild/aks4.png)
-6. Eles autenticam a CLI do Azure executando o comando **az login** e seguindo as instruções para autenticar usando o navegador da Web. [Saiba mais](/cli/azure/authenticate-azure-cli?view=azure-cli-latest) sobre o logon com a CLI do Azure.
+6. Eles autenticam CLI do Azure executando o comando `az login` e seguindo as instruções para autenticar usando seu navegador da Web. [Saiba mais](https://docs.microsoft.com/cli/azure/authenticate-azure-cli?view=azure-cli-latest) sobre o logon com a CLI do Azure.
     ![AKS](./media/contoso-migration-rebuild/aks5.png)
 7. Eles executam o seguinte comando, passando o nome do grupo de recursos de ContosoRG, o nome do cluster AKS smarthotel-aks-eus2 e o nome do novo Registro.
 
@@ -178,7 +178,9 @@ Os administradores da Contoso provisionam da seguinte maneira:
 
 11. Eles executam o comando a seguir para iniciar o Painel do Kubernetes:
 
-    **az aks browse --resource-group ContosoRG --name smarthotelakseus2**
+    ```console
+    az aks browse --resource-group ContosoRG --name smarthotelakseus2
+    ```
 
 12. Uma guia do navegador é aberta no Painel. Essa é uma conexão por túnel usando a CLI do Azure.
 
@@ -278,7 +280,7 @@ Agora, os administradores da Contoso fazem o seguinte:
 - Implantam os microsserviços no cluster do AKS.
 - Como uma primeira etapa, eles atualizam as cadeias de conexão dos microsserviços usando o Azure DevOps. Em seguida, eles configuram um novo pipeline de lançamento do Azure DevOps para implantar os microsserviços.
 - As instruções nesta seção usam o repositório [SmartHotel360-Azure-Backend](https://github.com/Microsoft/SmartHotel360-Azure-backend).
-- Observe que algumas das definições de configuração (por exemplo o Active Directory B2C) não são abordadas neste artigo. Leia mais informações sobre essas configurações no repositório.
+- Algumas das definições de configuração (por exemplo Active Directory B2C) não são abordadas neste artigo. Para obter mais informações sobre essas configurações, examine o repositório acima.
 
 Eles criam o pipeline:
 
@@ -348,7 +350,7 @@ As instruções desta seção usam o repositório [SmartHotel360-public-web](htt
 
 3. Eles criam um segundo novo contêiner chamado **settings**. Um arquivo com todas as configurações de aplicativo front-end será colocado nesse contêiner.
 
-    ![Blob de armazenamento](./media/contoso-migration-rebuild/blob2.png)
+    ![Armazenamento de blobs](./media/contoso-migration-rebuild/blob2.png)
 
 4. Eles capturam os detalhes de acesso da conta de armazenamento em um arquivo de texto para referência futura.
 
@@ -388,7 +390,7 @@ Os administradores da Contoso provisionam a API da Pesquisa Visual Computacional
 
 3. Eles salvam as configurações de conexão para a API em um arquivo de texto para referência posterior.
 
-     ![Pesquisa Visual Computacional](./media/contoso-migration-rebuild/vision3.png)
+     ![Visual Computacional](./media/contoso-migration-rebuild/vision3.png)
 
 ### <a name="provision-the-azure-web-app"></a>Provisionar o aplicativo Web do Azure
 
@@ -537,7 +539,7 @@ Os administradores da Contoso agora podem publicar o site.
 
 23. O pipeline conclui a troca.
 
-    ![Completar troca](./media/contoso-migration-rebuild/vsts-publishfront16.png)
+    ![Troca completa](./media/contoso-migration-rebuild/vsts-publishfront16.png)
 
 24. A equipe verifica o slot de **prod** para saber se o aplicativo Web está em produção em `https://smarthotelcontoso.azurewebsites.net/`.
 

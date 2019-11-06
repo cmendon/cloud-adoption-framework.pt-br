@@ -8,12 +8,12 @@ ms.date: 09/22/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: 1cdf066617ee43de6fedfeb707311e663318f8c4
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 79d784b65a2006559efc9f074b319ea67de67db0
+ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73561803"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73656656"
 ---
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Andaime empresarial do Azure: governança de assinatura prescritiva
 
@@ -115,7 +115,7 @@ O primeiro pilar do andaime é um padrão consistente de nomenclatura. Os padrõ
 > [!TIP]
 > Para convenções de nomenclatura:
 >
-> - Analise e adote onde possível as [Orientações de padrões e práticas](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions). Essas diretrizes ajudam a decidir sobre um padrão de nomenclatura significativo e fornece exemplos abrangentes.
+> - Analise e adote onde possível as [Orientações de padrões e práticas](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming). Essas diretrizes ajudam a decidir sobre um padrão de nomenclatura significativo e fornece exemplos abrangentes.
 > - Usar políticas do Resource Manager para ajudar a reforçar os padrões de nomenclatura.
 >
 > Lembre-se de que é difícil alterar nomes mais tarde, portanto, alguns minutos agora evitarão problemas mais tarde.

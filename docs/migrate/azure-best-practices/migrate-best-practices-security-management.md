@@ -8,12 +8,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ca56669818add8e54d7c4805a19879412da54567
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 34659cb5cd3a223fe084ba8975f0f7a39b2b74f6
+ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564772"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73656703"
 ---
 # <a name="best-practices-for-securing-and-managing-workloads-migrated-to-azure"></a>Melhores práticas para proteger e gerenciar cargas de trabalho migradas para o Azure
 
@@ -137,7 +137,7 @@ O Azure fornece algumas soluções:
 
 ![proteger aplicativos Web](./media/migrate-best-practices-security-management/web-apps.png)
 
-*Cofre de Chaves do Azure*
+*Cofre da Chave do Azure*
 
 **Saiba mais:**
 
@@ -219,7 +219,7 @@ Ter grupos de recursos com nomes significativos que os administradores e os memb
 
 **Saiba mais:**
 
-- [Saiba mais sobre](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions) convenções de nomenclatura.
+- [Saiba mais sobre](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming) convenções de nomenclatura.
 
 ## <a name="best-practice-implement-delete-locks-for-resource-groups"></a>Prática recomendada: implementar bloqueios de exclusão para grupos de recursos
 
@@ -349,7 +349,7 @@ Para cargas de trabalho em execução em VMs IaaS do Azure, considere estas solu
 - **Backup do Azure:** Fornece backups consistentes com o aplicativo para VMs Windows e Linux do Azure.
 - **Instantâneos de armazenamento:** Usa instantâneos do armazenamento de BLOBs.
 
-#### <a name="azure-backup"></a>Serviço de Backup do Azure
+#### <a name="azure-backup"></a>Backup do Azure
 
 O Backup do Azure cria pontos de recuperação de dados que são armazenados no armazenamento do Azure. O Backup do Azure pode fazer backup de discos de VM do Azure e arquivos do Azure (versão prévia). Os Arquivos do Azure oferecem compartilhamentos de arquivos na nuvem, que podem ser acessados por meio de SMB.
 
@@ -394,13 +394,13 @@ Além disso, você pode usar soluções de terceiros para fazer backup de VMs do
 
 Além de proteger dados, o planejamento de BCDR precisa considerar como manter os aplicativos e cargas de trabalho disponíveis em caso de desastre. Para cargas de trabalho em execução em VMs IaaS do Azure e no armazenamento do Azure, considere estas soluções:
 
-#### <a name="azure-site-recovery"></a>Azure Site Recovery
+#### <a name="azure-site-recovery"></a>Recuperação de Site do Azure
 
 O Azure Site Recovery é o principal serviço do Azure para fazer com que as VMs do Azure possam ser colocadas online e os aplicativos VM possam ser disponibilizados quando ocorrem paralisações.
 
 O Site Recovery replica as VMs de uma região primária para uma região secundária do Azure. Quando ocorre um desastre, faça failover das VMs da região primária e continue a acessá-las normalmente na região secundária. Quando as operações voltarem ao normal, você poderá fazer failback das VMs para a região primária.
 
-![Azure Site Recovery](./media/migrate-best-practices-security-management/site-recovery.png)
+![Recuperação de Site do Azure](./media/migrate-best-practices-security-management/site-recovery.png)
 
 *Recuperação de Site*
 
@@ -419,7 +419,7 @@ Os discos gerenciados do Azure simplificam o gerenciamento de discos para VMs Ia
 - Você pode converter discos existentes em gerenciados.
 - Você deve criar VMs em conjuntos de disponibilidade para ter alta resiliência e disponibilidade. Quando ocorrem paralisações, planejadas ou não, os conjuntos de disponibilidade fazem com que pelo menos uma das VMs no conjunto permaneça disponível.
 
-![Discos gerenciados](./media/migrate-best-practices-security-management/managed-disks.png)
+![Managed Disks](./media/migrate-best-practices-security-management/managed-disks.png)
 
 *Discos gerenciados*
 
@@ -555,7 +555,7 @@ O Azure tem uma solução de controle de alterações na Automação do Azure:
 - [Saiba mais sobre](https://docs.microsoft.com/azure/automation/automation-change-tracking) Controle de Alterações.
 - [Saiba mais sobre](https://docs.microsoft.com/azure/automation/automation-intro) recursos da Automação do Azure.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Examine outras melhores práticas:
 

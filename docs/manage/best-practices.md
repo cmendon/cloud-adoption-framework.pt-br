@@ -8,18 +8,18 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 38ecfe706840964caa7f6e3cd5b11daa24de2973
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 052c723372830791c9baaf490e43ac373ea05760
+ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565238"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73656556"
 ---
 # <a name="establish-operational-management-practices-in-the-cloud"></a>Estabelecer práticas de gerenciamento operacional na nuvem
 
-A adoção de nuvem é um Catalyst para habilitar o valor comercial. No entanto, o valor comercial real é realizado por meio de operações contínuas e estáveis dos ativos de tecnologia implantados na nuvem. Esta seção da estrutura de adoção de nuvem orienta você por várias transições no gerenciamento operacional na nuvem.
+A adoção da nuvem é um catalisador para habilitar o valor comercial. No entanto, o verdadeiro valor comercial é obtido por meio de operações em andamento e estáveis dos ativos de tecnologia implantados na nuvem. Esta seção da estrutura de adoção de nuvem orienta você por várias transições no gerenciamento operacional na nuvem.
 
-## <a name="actionable-best-practices"></a>Práticas recomendadas acionáveis
+## <a name="actionable-best-practices"></a>Melhores práticas acionáveis
 
 As soluções modernas de gerenciamento de operações criam uma exibição de operações de nuvem. Os ativos gerenciados por meio das seguintes práticas recomendadas podem residir na nuvem, em um datacenter existente ou até mesmo em um provedor de nuvem concorrente. Atualmente, a estrutura inclui duas referências de práticas recomendadas para orientar a maturidade do gerenciamento de operações na nuvem:
 
@@ -42,6 +42,6 @@ Essas duas práticas recomendadas se desenvolvem em uma metodologia de estado fu
 - **Operações de plataforma:** Todos os ambientes de ti contêm um conjunto de plataformas usadas com frequência. Essas plataformas podem incluir armazenamentos de dados como o SQL Server ou o Azure HDInsight. Outras plataformas comuns podem incluir soluções de contêiner, como o AKS (serviço kubernetes do Azure). Independentemente da plataforma, a maturidade das operações da plataforma se concentra na personalização de operações com base em como as plataformas comuns são implantadas, configuradas e usadas por cargas de trabalho.
 - **Operações de carga de trabalho:** No nível mais alto de maturidade operacional, as equipes de operações de nuvem podem ajustar as operações de cargas de trabalho que são cruciais para o sucesso dos negócios. Para essas cargas de trabalho de alta importância, os dados disponíveis podem ajudar a automatizar a correção, o dimensionamento ou a proteção de cargas de trabalho com base em sua utilização.
 
-Diretrizes adicionais, como a [estrutura de análise de design (nome do código: princípios de design de nuvem)](https://docs.microsoft.com/azure/architecture/reliability), podem ajudá-lo a tomar decisões de arquitetura detalhadas sobre cada carga de trabalho, nas disciplinas descritas anteriormente.
+Diretrizes adicionais, como a [estrutura de análise de design (nome do código: princípios de design de nuvem)](https://docs.microsoft.com/azure/architecture/framework/resiliency/overview), podem ajudá-lo a tomar decisões de arquitetura detalhadas sobre cada carga de trabalho, nas disciplinas descritas anteriormente.
 
 Esta seção da estrutura de adoção de nuvem será criada em cada um dos tópicos anteriores para ajudar a promover operações de nuvem maduras em sua organização.
