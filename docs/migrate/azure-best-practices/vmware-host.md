@@ -1,23 +1,23 @@
 ---
-title: Práticas recomendadas de migração de host VMWare para Azure
+title: Práticas recomendadas de migração de host VMware para Azure
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Introdução às práticas recomendadas de migração de host VMWare para o Azure
+description: Introdução às práticas recomendadas de migração de host VMware para o Azure
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: c14445dcdeaba16a01d5adbdab0a2c47feb57915
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
-ms.translationtype: HT
+ms.openlocfilehash: b55fc8fa06a5e33fde12754e893dd2309407746b
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72558006"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564659"
 ---
-# <a name="vmware-host-migration-best-practices-for-azure"></a>Práticas recomendadas de migração de host VMWare para Azure
+# <a name="vmware-host-migration-best-practices-for-azure"></a>Práticas recomendadas de migração de host VMware para Azure
 
-A migração de um host VMWare inteiro para o Azure pode acelerar a metodologia de migração padrão descrita na estrutura de adoção de nuvem e configurada abaixo.
+A migração de um host VMware inteiro para o Azure pode acelerar a metodologia de migração padrão descrita na estrutura de adoção de nuvem e configurada abaixo.
 
 ![Modelo de migração da Cloud Adoption Framework](../../_images/operational-transformation-migrate.png)
 
@@ -27,4 +27,4 @@ O [artigo sobre escopo expandido na migração de host do VMware](../expanded-sc
 
 ## <a name="migration-best-practices"></a>Práticas recomendadas de migração
 
-O Sumário à esquerda descreve uma série de práticas recomendadas em várias propriedades da Web da Microsoft, que podem orientar a execução da migração de host do VMWare para as soluções VMWare do Azure (AVS). Marque esta página para referência rápida à lista completa de práticas recomendadas.
+O Sumário à esquerda descreve uma série de práticas recomendadas em várias propriedades da Web da Microsoft, que podem orientar a execução da migração de host do VMware para as soluções VMware do Azure (AVS). Marque esta página para referência rápida à lista completa de práticas recomendadas.
