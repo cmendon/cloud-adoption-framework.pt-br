@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: f96ada5b1c43694d0ea1af10524f3c344db62356
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 9de6f01a4252383c1d7619078568964fe8e685c9
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222716"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566359"
 ---
 # <a name="deployment-acceleration-discipline-overview"></a>Visão geral da disciplina de Aceleração de implantação
 
@@ -35,7 +35,7 @@ As declarações de política acionáveis e os requisitos de arquitetura resulta
 > [!CAUTION]
 > As políticas de exemplo são provenientes de experiências comuns do cliente. Para alinhar melhor essas políticas às necessidades específicas de governança de nuvem, execute as etapas a seguir para criar instruções de políticas que atendam às suas necessidades exclusivas de negócios.
 
-## <a name="developing-deployment-acceleration-governance-policy-statements"></a>Desenvolvimento de instruções de políticas de governança de Aceleração de implantação
+## <a name="develop-governance-policy-statements"></a>Desenvolva declarações de política de governança
 
 As seis etapas a seguir ajudarão você a definir políticas de governança para controlar a implantação e configuração de recursos em seu ambiente de nuvem.
 

@@ -221,7 +221,7 @@
               href: migrate/expanded-scope/balance-the-portfolio.md
             - name: Prontidão das habilidades
               href: migrate/expanded-scope/suggested-skills.md
-            - name: Migração de host VMWare
+            - name: Migração de host VMware
               href: migrate/expanded-scope/vmware-host.md
             - name: Migração do SQL Server
               href: migrate/expanded-scope/sql-migration.md
@@ -475,13 +475,13 @@
               items:
                 - name: Visão geral
                   href: migrate/migration-considerations/prerequisites/index.md
-                - name: Decisões que afetam as atividades de migração
+                - name: Decisões que afetam a migração
                   href: migrate/migration-considerations/prerequisites/decisions.md
                 - name: Lista de verificação de planejamento do ambiente
                   href: migrate/migration-considerations/prerequisites/planning-checklist.md
                 - name: Alinhar funções e responsabilidades
                   href: migrate/migration-considerations/prerequisites/cultural-complexity.md
-                - name: Listas de pendências de estrutura para gerenciar as alterações
+                - name: Gerenciamento de alterações ágil
                   href: migrate/migration-considerations/prerequisites/technical-complexity.md
                 - name: Revisão da lista de pendências de migração
                   href: migrate/migration-considerations/prerequisites/migration-backlog-review.md
@@ -491,31 +491,31 @@
                   href: migrate/migration-considerations/assess/index.md
                 - name: Manter as prioridades alinhadas
                   href: migrate/migration-considerations/assess/business-priorities.md
-                - name: Avaliar a preparação de ativos e da carga de trabalho
+                - name: Avaliar a preparação da carga de trabalho
                   href: migrate/migration-considerations/assess/evaluate.md
                 - name: Cargas de trabalho do arquiteto
                   href: migrate/migration-considerations/assess/architect.md
                 - name: Estimar os custos de nuvem
                   href: migrate/migration-considerations/assess/estimate.md
-                - name: Envolver o suporte e os parceiros de migração
+                - name: Entender as opções de parceria
                   href: migrate/migration-considerations/assess/partnership-options.md
-                - name: Gerenciar processos incrementais
+                - name: Gerenciar alteração
                   href: migrate/migration-considerations/assess/release-iteration-backlog.md
-                - name: Alterar os processos de aprovação
+                - name: Aprovar alterações de arquitetura
                   href: migrate/migration-considerations/assess/approve.md
             - name: Migrar os ativos individuais
               items:
                 - name: Visão geral
                   href: migrate/migration-considerations/migrate/index.md
-                - name: 'Modelos de promoção – passo a passo, em etapas ou versão piloto'
+                - name: Modelos de promoção
                   href: migrate/migration-considerations/migrate/promotion-models.md
-                - name: Tarefas de correção
+                - name: Corrigir ativos
                   href: migrate/migration-considerations/migrate/remediate.md
-                - name: Replicar os ativos na nuvem
+                - name: Replicar ativos
                   href: migrate/migration-considerations/migrate/replicate.md
                 - name: Opções de réplica
                   href: migrate/migration-considerations/migrate/replicate-options.md
-                - name: Cargas de trabalho em etapas para teste e promoção
+                - name: Preparar cargas de trabalho
                   href: migrate/migration-considerations/migrate/stage.md
             - name: Otimizar e promover as cargas de trabalho
               items:
@@ -525,15 +525,15 @@
                   href: migrate/migration-considerations/optimize/business-change-plan.md
                 - name: Testar o negócio
                   href: migrate/migration-considerations/optimize/business-test.md
-                - name: Avaliar o desempenho e otimizar os ativos
+                - name: Parâmetros de comparação e redimensionamento de ativos
                   href: migrate/migration-considerations/optimize/optimize.md
-                - name: Pronto para promoção
+                - name: Preparar para promoção
                   href: migrate/migration-considerations/optimize/ready.md
-                - name: Promover as cargas de trabalho para produção
+                - name: Promova para Produção
                   href: migrate/migration-considerations/optimize/promote.md
                 - name: Encerrar os ativos desativados
                   href: migrate/migration-considerations/optimize/decommission.md
-                - name: Retrospectiva
+                - name: Conduzir as retrospectivas
                   href: migrate/migration-considerations/optimize/retrospective.md
             - name: Proteger e gerenciar as cargas de trabalho em produção
               items:

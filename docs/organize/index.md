@@ -10,14 +10,14 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
 layout: LandingPage
-ms.openlocfilehash: b1fc986983b709491d0b06f4624c60deed7e9219
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: d2ed2222aa536ec377987674837b237d1050cdeb
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71026354"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564298"
 ---
-# <a name="managing-organizational-alignment"></a>Como gerenciar o alinhamento organizacional
+# <a name="manage-organizational-alignment"></a>Gerenciar o alinhamento da organização
 
 A adoção da nuvem não pode acontecer sem pessoas bem organizadas. A adoção de nuvem bem-sucedida é o resultado de pessoas adequadamente capacitadas para os tipos de trabalho apropriados, em alinhamento com as metas de negócios claramente definidas e em um ambiente bem gerenciado. Para fornecer um modelo operacional de nuvem eficaz, é importante estabelecer estruturas organizacionais com equipes apropriadas. Este artigo descreve uma abordagem para estabelecer e manter as estruturas organizacionais adequadas em quatro etapas.
 
@@ -130,7 +130,7 @@ Veja a seguir uma lista de funcionalidades de nuvem que são necessárias para o
 - [Plataforma de nuvem](./cloud-platform.md): operar e desenvolver a plataforma.
 - [Automação de nuvem](./cloud-automation.md): acelerar a adoção e a inovação.
 
-## <a name="maturing-organizational-structures"></a>Como desenvolver estruturas organizacionais
+## <a name="mature-organizational-structures"></a>Desenvolver estruturas organizacionais
 
 Até certo ponto, cada uma das funcionalidades acima é entregue em cada esforço de adoção de nuvem, seja explicitamente ou de acordo com uma estrutura de equipe definida.
 A necessidade de criar equilíbrio e estrutura aumenta conforme as necessidades de adoção aumentam. Para atender a essas necessidades, as empresas geralmente seguem um processo de desenvolvimento de estruturas organizacionais.
@@ -139,7 +139,7 @@ A necessidade de criar equilíbrio e estrutura aumenta conforme as necessidades 
 
 O artigo sobre [como determinar a maturidade da estrutura organizacional](./organization-structures.md) fornece detalhes adicionais sobre cada nível de maturidade.
 
-## <a name="aligning-raci-charts"></a>Como alinhar gráficos RACI
+## <a name="align-raci-charts"></a>Alinhar gráficos de RACI
 
 Em cada nível de maturidade, a responsabilidade por várias funcionalidades de nuvem muda para novas equipes. Essa mudança de responsabilidade habilita uma migração mais rápida e ciclos de inovação, removendo e automatizando as barreiras a serem alteradas. Para alinhar as atribuições corretamente, o artigo sobre [alinhamento RACI](./raci-alignment.md) compartilha um gráfico RACI para cada uma das estruturas organizacionais referenciadas.
 

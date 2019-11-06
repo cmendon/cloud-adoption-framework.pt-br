@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 layout: LandingPage
-ms.openlocfilehash: c112c1d340de944502ac16159977ffa12b5b095d
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: a6e7cb52fdac7607765b32c5355c0f2df066538a
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378256"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566853"
 ---
 # <a name="cloud-migration-in-the-cloud-adoption-framework"></a>Migração na nuvem na Cloud Adoption Framework
 
@@ -130,7 +130,7 @@ Em seu núcleo, a migração para a nuvem consiste em quatro fases simples: Aval
 
 ![Modelo de migração da Cloud Adoption Framework](../_images/operational-transformation-migrate.png)
 
-## <a name="creating-a-balanced-cloud-portfolio"></a>Criar um portfólio de nuvem equilibrado
+## <a name="create-a-balanced-cloud-portfolio"></a>Crie um portfólio de nuvem equilibrado
 
 Qualquer portfólio de tecnologia equilibrado tem uma combinação de ativos em vários estados. Alguns aplicativos estão programados para desativação e recebem suporte mínimo. Outros aplicativos ou ativos têm suporte em um estado de manutenção, mas os recursos dessas soluções são estáveis. Para processos empresariais mais recentes, a alteração nas condições de mercado provavelmente vai incentivar modernização ou aprimoramentos de recursos contínuos. Quando surgem oportunidades para gerar novos fluxos de receita, novos aplicativos ou os ativos são introduzidos no ambiente. Em cada estágio do ciclo de vida do ativo, o impacto que qualquer investimento tem sobre a receita e lucro mudará. Quanto mais tarde no estágio do ciclo de vida, menor é a probabilidade de um novo esforço de recurso ou modernização gerar um forte retorno sobre o investimento.
 

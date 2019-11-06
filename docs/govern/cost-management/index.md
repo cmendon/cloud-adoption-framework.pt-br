@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: b95d3ccf3a7248c38da9936a55fc169adcf2f2a2
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: ac6c3cb0a26cebf655a1161a3fd54197c795c283
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221155"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566416"
 ---
 # <a name="cost-management-discipline-overview"></a>Visão geral da disciplina de Gerenciamento de Custos
 
@@ -33,7 +33,7 @@ As declarações de política acionáveis e os requisitos de arquitetura resulta
 > [!CAUTION]
 > As políticas de exemplo são provenientes de experiências comuns do cliente. Para alinhar melhor essas políticas às necessidades específicas de governança de nuvem, execute as etapas a seguir para criar instruções de políticas que atendam às suas necessidades exclusivas de negócios.
 
-## <a name="developing-cost-management-governance-policy-statements"></a>Instruções da política de controle de Gerenciamento de Custos de desenvolvimento
+## <a name="develop-governance-policy-statements"></a>Desenvolva declarações de política de governança
 
 As seis etapas a seguir ajudarão você a definir as políticas de governança para controlar os custos em seu ambiente.
 

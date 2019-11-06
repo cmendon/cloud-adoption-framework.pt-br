@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: operating-model
-ms.openlocfilehash: 77e3ded1f76b096655a7831bc1950bf28bd4c86b
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: d9e26d82dd0332c338567bf962094a39f2ef84b4
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683809"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564532"
 ---
 # <a name="establish-an-operating-model-for-the-cloud"></a>Estabelecer um modelo operacional para a nuvem
 
@@ -36,7 +36,7 @@ Esta seção do Cloud Adoption Framework fornece um modelo operacional acionáve
 - [Gerenciar](../manage/index.md): alinhe processos em andamento para o gerenciamento operacional da tecnologia para maximizar a obtenção de valor e minimizar as interrupções.
 - [Organizar](../organize/index.md): À medida que o modelo operacional amadurecer, o mesmo ocorrerá com a organização de várias equipes e funcionalidades que dão suporte ao modelo operacional.
 
-## <a name="aligning-operating-models"></a>Alinhar os modelos operacionais
+## <a name="align-operating-models"></a>Alinhe modelos operacionais
 
 A nuvem e a economia digital expuseram a necessidade de vários modelos operacionais. Às vezes, essa necessidade é orientada por um requisito de dar suporte a várias nuvens públicas. Mais comumente, a necessidade é realçada pela transição do local para a nuvem. Em qualquer cenário, é importante alinhar os modelos operacionais para obter o máximo de desempenho e o mínimo de redundância.
 
