@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 94b1f2784875553bb27f32189e6d7d723de42634
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.openlocfilehash: be2cb79383748050e2b3b4506da53c42320847f6
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72980188"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239824"
 ---
 # <a name="organize-your-azure-resources"></a>Organizar seus recursos do Azure
 
@@ -40,7 +40,7 @@ Você pode aplicar configurações de gerenciamento, como políticas e controles
 
 Normalmente, é adequado aplicar configurações críticas em níveis superiores e requisitos específicos do projeto em níveis inferiores. Por exemplo, você pode querer garantir que todos os recursos para sua organização sejam implantados em determinadas regiões. Para fazer isso, aplique uma política à assinatura que especifique os locais permitidos. Na medida em que outros usuários em sua organização adicionarem novos recursos e grupos de recursos, as localizações permitidas serão aplicadas automaticamente. Saiba mais sobre as políticas na seção de governança, segurança e conformidade deste guia.
 
-Se você tem apenas algumas assinaturas, é relativamente simples gerenciá-las de forma independente. Se o número de assinaturas que você usa aumentar, considere a criação de uma hierarquia de grupo de gerenciamento para simplificar o gerenciamento de suas assinaturas e recursos. Para obter mais informações sobre como gerenciar várias assinaturas, confira [dimensionando com várias assinaturas do Azure](../considerations/scaling-subscriptions.md).
+Se você tem apenas algumas assinaturas, é relativamente simples gerenciá-las de forma independente. Se o número de assinaturas que você usa aumentar, considere a criação de uma hierarquia de grupo de gerenciamento para simplificar o gerenciamento de suas assinaturas e recursos. Para obter mais informações sobre como gerenciar várias assinaturas, confira [dimensionando com várias assinaturas do Azure](../azure-best-practices/scaling-subscriptions.md).
 
 Ao planejar sua estratégia de conformidade, trabalhe com pessoas em sua organização com as seguintes funções: segurança e conformidade, administração de TI, arquiteto corporativo, rede, finanças e compras.
 
@@ -79,7 +79,7 @@ Crie um grupo de recursos para armazenar recursos como aplicativos Web, bancos d
 Para obter mais informações, consulte:
 
 - [Conceitos básicos do Azure](../considerations/fundamental-concepts.md)
-- [Dimensionamento com várias assinaturas do Azure](../considerations/scaling-subscriptions.md)
+- [Dimensionamento com várias assinaturas do Azure](../azure-best-practices/scaling-subscriptions.md)
 - [Noções básicas sobre o gerenciamento de acesso aos recursos no Azure](../../govern/resource-consistency/resource-access-management.md)
 - [Organizar seus recursos com grupos de gerenciamento do Azure](https://docs.microsoft.com/azure/azure-resource-manager/management-groups-overview)
 - [Limites do serviço da assinatura](https://docs.microsoft.com/azure/azure-subscription-service-limits)
@@ -130,7 +130,7 @@ Um bom padrão de nomenclatura ajuda a identificar recursos no portal do Azure, 
 
 - O lado operacional deve garantir que os nomes incluam as informações de que as equipes de TI precisam. Use os detalhes que identificam a carga de trabalho, o aplicativo, o ambiente, a criticidade e outras informações que sejam úteis para o gerenciamento de recursos.
 
-Tipos de recursos diferentes podem ter limites de comprimento e caracteres permitidos diferentes, muitos dos quais estão listados no [artigo de convenções de nomenclatura](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions) das melhores práticas do Azure. Para obter mais informações e recomendações voltadas especificamente para o suporte a esforços de adoção de nuvem empresarial, confira a diretriz da Cloud Adoption Framework [sobre nomenclatura e marcação](../considerations/naming-and-tagging.md).
+Tipos de recursos diferentes podem ter limites de comprimento e caracteres permitidos diferentes, muitos dos quais estão listados no [artigo de convenções de nomenclatura](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions) das melhores práticas do Azure. Para obter mais informações e recomendações voltadas especificamente para o suporte a esforços de adoção de nuvem empresarial, confira a diretriz da Cloud Adoption Framework [sobre nomenclatura e marcação](../azure-best-practices/naming-and-tagging.md).
 
 A tabela a seguir inclui padrões de nomenclatura para alguns tipos de exemplo de recursos do Azure.
 
@@ -161,7 +161,7 @@ Você também pode usar marcas para muitos outros fins. Usos comuns incluem:
 
 Cada recurso ou grupo de recursos pode ter um máximo de 50 pares de nome e valor de tag. Essa limitação se aplica somente a marcas aplicadas diretamente ao grupo de recursos ou recurso.
 
-Para obter mais recomendações e exemplos de marcação, confira a [orientação sobre marcação](../considerations/naming-and-tagging.md) da Cloud Adoption Framework.
+Para obter mais recomendações e exemplos de marcação, confira a [orientação sobre marcação](../azure-best-practices/naming-and-tagging.md) da Cloud Adoption Framework.
 
 ::: zone target="docs"
 

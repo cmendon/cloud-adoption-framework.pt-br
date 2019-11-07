@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: fc0f91ac6c2a4476786935555c4c4305f33a0980
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: e47e7e5f8528580d4aa268fd90e7aa838e5f70ba
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224055"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239960"
 ---
 # <a name="organize-your-azure-resources"></a>Organizar seus recursos do Azure
 
@@ -151,7 +151,7 @@ Você também pode usar marcas para muitos outros fins. Usos comuns incluem:
 
 Cada recurso ou grupo de recursos pode ter um máximo de 15 pares de nome/valor de marca. Porém, essa limitação se aplica somente a marcas aplicadas diretamente ao grupo de recursos ou recurso.
 
-Para obter mais informações sobre marcação, confira [Convenções de nomenclatura para recursos do Azure no Centro de Arquitetura do Azure](../../ready/considerations/naming-and-tagging.md#metadata-tags)
+Para obter mais informações sobre marcação, confira [Convenções de nomenclatura para recursos do Azure no Centro de Arquitetura do Azure](../../ready/azure-best-practices/naming-and-tagging.md#metadata-tags)
 
 ::: zone target="docs"
 

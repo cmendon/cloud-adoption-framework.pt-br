@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: c43cf0d12ba26ee0298e79f2f6b90cc5773b2df6
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: ec4f0262c4d71752719285d225001a8fcf31d611
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72379043"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73563421"
 ---
 # <a name="governance-security-and-compliance-in-azure"></a>Governança, segurança e conformidade no Azure
 
@@ -92,7 +92,7 @@ Para obter mais informações, consulte:
 
 - [Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints)
 - [Cloud Adoption Framework: Guia de decisão sobre a consistência do recurso](../../decision-guides/resource-consistency/index.md)
-- [Exemplos de blueprints baseados em padrões](/azure/governance/blueprints/samples/index#standards-based-blueprint-samples)
+- [Exemplos de blueprints baseados em padrões](https://docs.microsoft.com/azure/governance/blueprints/samples/index#standards-based-blueprint-samples)
 
 ::: zone-end
 
