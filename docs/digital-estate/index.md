@@ -8,12 +8,12 @@ ms.date: 12/10/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 9a5b7c3eb1a831b9bf15540550d1c2005114a820
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 3504e9107f221e71953a238b5ebd092a7531e5ae
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023459"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564740"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -27,11 +27,11 @@ A importância de uma propriedade digital é mais óbvia durante o planejamento 
 
 A medição de uma propriedade digital muda dependendo dos resultados comerciais desejados.
 
-- **Migrações de infraestrutura.** Quando uma organização volta a atenção para dentro e busca otimizar custos, processos operacionais, agilidade ou outros aspectos das operações, a propriedade digital se concentra em VMs, servidores e cargas de trabalho.
+- **Migrações de infraestrutura:** Quando uma organização volta a atenção para dentro e busca otimizar custos, processos operacionais, agilidade ou outros aspectos das operações, a propriedade digital se concentra em VMs, servidores e cargas de trabalho.
 
-- **Inovação de aplicativo.** Para transformações centradas no cliente, a perspectiva é um pouco diferente. O foco deve estar nos aplicativos, nas APIs e nos dados transacionais que dão suporte aos clientes. As VMs e os dispositivos de rede costumam receber menos foco.
+- **Inovação de aplicativos:** Para transformações centradas no cliente, a perspectiva é um pouco diferente. O foco deve estar nos aplicativos, nas APIs e nos dados transacionais que dão suporte aos clientes. As VMs e os dispositivos de rede costumam receber menos foco.
 
-- **Inovação conduzida por dados.** No mercado digitalmente orientado de hoje em dia, é difícil lançar um novo produto ou serviço sem uma base sólida de dados. Durante os esforços de inovação de dados habilitados para a nuvem, o foco está mais nos silos de dados em toda a organização.
+- **Inovação controlada por dados:** No mercado digitalmente orientado de hoje em dia, é difícil lançar um novo produto ou serviço sem uma base sólida de dados. Durante os esforços de inovação de dados habilitados para a nuvem, o foco está mais nos silos de dados em toda a organização.
 
 Depois que uma organização compreende a forma mais importante de transformação, o planejamento da propriedade digital fica muito mais fácil de gerenciar.
 

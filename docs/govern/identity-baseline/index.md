@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 7b670f2159784fdb948c95ea45b70adfd6a5fe2d
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: c134cd2a3cf17cd4e650f637fec2c417f3c29ff1
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222251"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566205"
 ---
 # <a name="identity-baseline-discipline-overview"></a>Visão geral da disciplina de Linha de Base de Identidade
 
@@ -35,7 +35,7 @@ As declarações de política acionáveis e os requisitos de arquitetura resulta
 > [!CAUTION]
 > As políticas de exemplo são provenientes de experiências comuns do cliente. Para alinhar melhor essas políticas às necessidades específicas de governança de nuvem, execute as etapas a seguir para criar instruções de políticas que atendam às suas necessidades exclusivas de negócios.
 
-## <a name="developing-identity-baseline-governance-policy-statements"></a>Desenvolver declarações de política de governança de Linha de Base de Identidade
+## <a name="develop-governance-policy-statements"></a>Desenvolver declarações de política de governança
 
 As seis etapas a seguir oferecem exemplos e opções em potencial a serem consideradas ao desenvolver a governança de Linha de Base de Identidade. Use cada etapa como um ponto de partida para discussões com a equipe de governança de nuvem e com as equipes empresariais e de TI afetadas em sua organização para estabelecer as políticas e os processos necessários para gerenciar os riscos relacionados à identidade.
 

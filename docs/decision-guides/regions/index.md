@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 14ebb2d3f253a7cf80b005595584202537e46cc1
-ms.sourcegitcommit: 910efd3e686bd6b9bf93951d84253b43d4cc82b5
+ms.openlocfilehash: 3e43c6ac4136a2f8f89446091f9bcea005369fce
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72769397"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564821"
 ---
 # <a name="azure-regions"></a>Regiões do Azure
 
@@ -29,7 +29,7 @@ O Azure é composto por muitas regiões ao redor do mundo. Cada uma das [regiõe
     1. [Governo dos EUA para Azure](https://azure.microsoft.com/global-infrastructure/government)
     1. Observação: há duas regiões na [Austrália](https://azure.microsoft.com/global-infrastructure/australia) que são gerenciadas pela Microsoft, mas são fornecidas para o governo australiano, seus clientes e prestadores de serviço e, portanto, transportam restrições de clientes semelhantes às outras nuvens soberanas.
 
-## <a name="operating-in-multiple-geographic-regions"></a>Operar em várias regiões geográficas
+## <a name="operate-in-multiple-geographic-regions"></a>Operar em várias regiões geográficas
 
 Quando as empresas operam em várias regiões geográficas, embora seja essencial para resiliência, uma complexidade adicional pode ser introduzida. Essas complexidades se manifestam de quatro formas principais:
 
@@ -44,17 +44,23 @@ Quando as empresas operam em várias regiões geográficas, embora seja essencia
 
 Qualquer implantação robusta de nuvem requer uma rede bem considerada que leva em conta as regiões do Azure. Depois de considerar as características acima para em quais regiões implantar, a rede deve ser implantada. Embora uma discussão exaustiva sobre a rede esteja além do escopo deste artigo, alguns pontos devem ser considerados:
 
-1. As regiões do Azure são implantadas em pares. No caso de uma falha catastrófica de uma região, outra região no mesmo limite geopolítico* será designada como sua região emparelhada. Deve-se considerar a implantação em regiões emparelhadas como a estratégia de resiliência primária e secundária. *O Azure Brasil é uma exceção notável cuja região emparelhada é o Centro-Sul dos EUA. Para saber mais, consulte [Regiões emparelhadas do Azure](https://docs.microsoft.com/azure/best-practices-availability-paired-regions).
-    1. O Armazenamento do Azure dá suporte ao [GRS (Armazenamento com Redundância Geográfica)](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs), o que significa que três cópias de seus dados são armazenadas em sua região primária e três cópias adicionais são armazenadas na região emparelhada. Não é possível alterar o emparelhamento de armazenamento para o GRS.
-    1. Os serviços que dependem do GRS do Armazenamento do Azure podem aproveitar essa funcionalidade de região emparelhada. Para fazer isso, seus aplicativos e a rede devem ser orientados a dar suporte a isso.
-    1. Se você não planeja usar o GRS para dar suporte às suas necessidades de resiliência regionais, é aconselhável que você _NÃO_ use a região emparelhada como sua secundária. No caso de uma falha regional, haverá pressão intensa em recursos na região emparelhada conforme os recursos forem migrados. Evitar essa pressão pode proporcionar uma velocidade adicional durante sua recuperação recuperando-se para um site alternativo.
-    > [!WARNING]
-    > Não tente usar o GRS do Azure para backups ou recuperação de VMs. Em vez disso, use o [Backup do Azure](https://azure.microsoft.com/services/backup) e o [Azure Site Recovery](https://azure.microsoft.com/services/site-recovery) junto com o [Managed Disks](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview) para dar suporte à sua resiliência de carga de trabalho IaaS.
-2. O Backup do Azure e o Azure Site Recovery funcionam em conjunto com seu design de rede para facilitar a resiliência regional para suas necessidades de IaaS e backup de dados. Verifique se a rede foi otimizada para que as transferências de dados permaneçam no backbone da Microsoft e usem o [Emparelhamento VNet](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview), se possível. Algumas organizações maiores com implantações globais podem usar o [ExpressRoute Premium](https://docs.microsoft.com/azure/expressroute/expressroute-introduction) para rotear o tráfego entre regiões que podem economizar encargos de saída regionais.
-3. Os grupos de recursos do Azure são constructos específicos regionais. Contudo, é normal que os recursos dentro de um grupo de recursos abranjam várias regiões. Ao fazer isso, é importante considerar que, no caso de uma falha regional, as operações do painel de controle em um grupo de recursos falharão na região afetada, mesmo que os recursos em outras regiões (nesse grupo de recursos) continuem a funcionar. Isso pode afetar a rede e o design do grupo de recursos.
-4. Muitos serviços PaaS no Azure dão suporte a [Pontos de Extremidade de Serviços](https://docs.microsoft.com/azure/virtual-network/virtual-network-service-endpoints-overview) ou a um [Link Privado](https://docs.microsoft.com/azure/private-link/private-link-overview). Essas duas soluções afetam suas considerações de rede substancialmente ao considerar a resiliência, migração e governança regionais.
-5. Muitos serviços PaaS dependem de suas próprias soluções de resiliência regional. Por exemplo, o Banco de Dados SQL do Azure permite que você replique facilmente para N regiões adicionais como o Cosmos DB faz. Alguns serviços não transmitem nenhuma dependência de região como o DNS do Azure. Enquanto você considera quais serviços você usará em seu processo de adoção, entenda claramente as funcionalidades de failover e as etapas de recuperação que podem ser necessárias para cada serviço do Azure.
-6. Além de implantar em várias regiões para dar suporte à recuperação de desastre, muitas organizações optam por implantar em um padrão Ativo-Ativo para que nenhum failover seja necessário. Isso tem o benefício adicional de fornecer balanceamento de carga global e mais aumentos de desempenho de rede e tolerância a falhas. Para usar esse padrão, seus aplicativos devem dar suporte à execução de Ativo-Ativo em várias regiões.
+- As regiões do Azure são implantadas em pares. No caso de uma falha catastrófica de uma região, outra região no mesmo limite geopolítico* será designada como sua região emparelhada. Deve-se considerar a implantação em regiões emparelhadas como a estratégia de resiliência primária e secundária. *O Azure Brasil é uma exceção notável cuja região emparelhada é o Centro-Sul dos EUA. Para saber mais, consulte [Regiões emparelhadas do Azure](https://docs.microsoft.com/azure/best-practices-availability-paired-regions).
+
+  - O Armazenamento do Azure dá suporte ao [GRS (Armazenamento com Redundância Geográfica)](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs), o que significa que três cópias de seus dados são armazenadas em sua região primária e três cópias adicionais são armazenadas na região emparelhada. Não é possível alterar o emparelhamento de armazenamento para o GRS.
+  - Os serviços que dependem do GRS do Armazenamento do Azure podem aproveitar essa funcionalidade de região emparelhada. Para fazer isso, seus aplicativos e a rede devem ser orientados a dar suporte a isso.
+  - Se você não planeja usar o GRS para dar suporte às suas necessidades de resiliência regionais, é aconselhável que você _NÃO_ use a região emparelhada como sua secundária. No caso de uma falha regional, haverá pressão intensa em recursos na região emparelhada conforme os recursos forem migrados. Evitar essa pressão pode proporcionar uma velocidade adicional durante sua recuperação recuperando-se para um site alternativo.
+  > [!WARNING]
+  > Não tente usar o GRS do Azure para backups ou recuperação de VMs. Em vez disso, aproveite o [Backup do Azure](https://azure.microsoft.com/services/backup) e o [Azure Site Recovery](https://azure.microsoft.com/services/site-recovery) juntamente com os [discos gerenciados do Azure](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview) para dar suporte à resiliência de carga de trabalho de IaaS.
+
+- O Backup do Azure e o Azure Site Recovery funcionam em conjunto com seu design de rede para facilitar a resiliência regional para suas necessidades de IaaS e backup de dados. Verifique se a rede foi otimizada para que as transferências de dados permaneçam no backbone da Microsoft e usem o [Emparelhamento VNet](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview), se possível. Algumas organizações maiores com implantações globais podem usar o [ExpressRoute Premium](https://docs.microsoft.com/azure/expressroute/expressroute-introduction) para rotear o tráfego entre regiões que podem economizar encargos de saída regionais.
+
+- Os grupos de recursos do Azure são constructos específicos regionais. Contudo, é normal que os recursos dentro de um grupo de recursos abranjam várias regiões. Ao fazer isso, é importante considerar que, no caso de uma falha regional, as operações do painel de controle em um grupo de recursos falharão na região afetada, mesmo que os recursos em outras regiões (nesse grupo de recursos) continuem a funcionar. Isso pode afetar a rede e o design do grupo de recursos.
+
+- Muitos serviços PaaS no Azure dão suporte a [Pontos de Extremidade de Serviços](https://docs.microsoft.com/azure/virtual-network/virtual-network-service-endpoints-overview) ou a um [Link Privado](https://docs.microsoft.com/azure/private-link/private-link-overview). Essas duas soluções afetam suas considerações de rede substancialmente ao considerar a resiliência, migração e governança regionais.
+
+- Muitos serviços PaaS dependem de suas próprias soluções de resiliência regional. Por exemplo, o Banco de Dados SQL do Azure permite que você replique facilmente para N regiões adicionais como o Cosmos DB faz. Alguns serviços não transmitem nenhuma dependência de região como o DNS do Azure. Enquanto você considera quais serviços você usará em seu processo de adoção, entenda claramente as funcionalidades de failover e as etapas de recuperação que podem ser necessárias para cada serviço do Azure.
+
+- Além de implantar em várias regiões para dar suporte à recuperação de desastre, muitas organizações optam por implantar em um padrão Ativo-Ativo para que nenhum failover seja necessário. Isso tem o benefício adicional de fornecer balanceamento de carga global e mais aumentos de desempenho de rede e tolerância a falhas. Para usar esse padrão, seus aplicativos devem dar suporte à execução de Ativo-Ativo em várias regiões.
 
 > [!WARNING]
 > As regiões do Azure são constructos altamente disponíveis com SLAs aplicados aos serviços em execução nelas. No entanto, você nunca deve usar uma dependência de região única em aplicativos críticos. Sempre planeje a falha regional e pratique etapas de recuperação e mitigação.
@@ -70,7 +76,7 @@ Após considerar a topologia de rede que será necessária para mantê-lo em ope
 
 Alinhe as alterações no processo de migração para abordar o inventário inicial.
 
-## <a name="documenting-complexity"></a>Documentar a complexidade
+## <a name="document-complexity"></a>Complexidade do documento
 
 A tabela a seguir pode auxiliar na documentação das descobertas das etapas acima:
 
@@ -99,7 +105,7 @@ Como a empresa dá suporte a funcionários, parceiros e clientes na Alemanha, ma
 
 A localização dos datacenters existentes pode afetar uma estratégia de migração. A seguir, estão alguns dos impactos mais comuns:
 
-**Decisões de arquitetura:** região/localização de destino é uma das primeiras etapas no design da estratégia de migração. Isso geralmente é influenciado pela localização dos ativos existentes. Além disso, a disponibilidade dos serviços de nuvem e o custo unitário desses serviços podem variar de uma região para a outra. Dessa forma, entender a localização atual e futura dos ativos afeta as decisões de arquitetura e também pode afetar as estimativas de orçamento.
+**Decisões de arquitetura:** A região de destino é uma das primeiras etapas no design da estratégia de migração. Isso geralmente é influenciado pela localização dos ativos existentes. Além disso, a disponibilidade dos serviços de nuvem e o custo unitário desses serviços podem variar de uma região para a outra. Dessa forma, entender a localização atual e futura dos ativos afeta as decisões de arquitetura e também pode afetar as estimativas de orçamento.
 
 **Dependências de datacenters:** com base nos dados na tabela acima, é provável que existam dependências entre os vários datacenters em todo o mundo. Em muitas organizações que operam nesse tipo de escala, essas dependências podem não ser documentadas ou bem compreendidas. As abordagens usadas para avaliar os perfis de usuário ajudarão a identificar algumas dessas dependências. No entanto, são sugeridas etapas adicionais durante o processo de avaliação para atenuar os riscos associados a essa complexidade.
 
@@ -114,7 +120,7 @@ Quando o escopo de uma migração inclui várias regiões, as seguintes consider
 
 Quando a equipe se sentir confortável com a abordagem de linha de base e a preparação estiver alinhada, haverá alguns pré-requisitos controlados por dados a serem considerados:
 
-- **Descoberta geral:** preencha a tabela [Documentar complexidade](#documenting-complexity) acima.
+- **Descoberta geral:** preencha a tabela [Documentar complexidade](#document-complexity) acima.
 - **Executar uma análise de perfil do usuário em cada país afetado:** é importante entender o roteamento geral do usuário final no processo de migração. Alterar as linhas de concessão globais e adicionar conexões como o ExpressRoute a um datacenter na nuvem pode exigir meses de atrasos de rede. Resolva isso o quanto antes no processo.
 - **Racionalização de propriedade digital inicial:** sempre que a complexidade é introduzida em uma estratégia de migração, uma racionalização de propriedade digital inicial deve ser concluída. Confira as diretrizes sobre [racionalização de propriedade digital](../../digital-estate/index.md) para obter assistência.
   - **Outros requisitos de propriedade digital:** estabeleça políticas de marcação para identificar qualquer carga de trabalho afetada pelos requisitos da soberania de dados. As marcas necessárias devem começar na racionalização de propriedade digital e ser transferida para os ativos migrados.

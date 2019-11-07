@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: ee1006efd3a8807e294480fdea4e46b8555a0bb8
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: b772eddfce65fa7a2ce4d67e36b1cc0f82e47ac5
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73238769"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564869"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>Guia de decisão de registro em log e relatório
 
@@ -22,13 +22,13 @@ Todas as organizações precisam de mecanismos para notificar as equipes de TI s
 
 ![Plotagem das opções de registro em log, relatório e monitoramento do menos ao mais complexo, alinhado com links de salto abaixo](../../_images/decision-guides/decision-guide-logging-and-reporting.png)
 
-Ir para: [Planejar a infraestrutura de monitoramento](#planning-your-monitoring-infrastructure) | [Nativo de Nuvem](#cloud-native) | [Extensão local](#on-premises-extension) | [Agregação de gateway](#gateway-aggregation) | [Monitoramento híbrido (local)](#hybrid-monitoring-on-premises) | [Monitoramento híbrido (baseado em nuvem)](#hybrid-monitoring-cloud-based) | [Multinuvem](#multicloud) | [Saiba mais](#learn-more)
+Ir para: [Planejar a infraestrutura de monitoramento](#plan-your-monitoring-infrastructure) | [Nativo de Nuvem](#cloud-native) | [Extensão local](#on-premises-extension) | [Agregação de gateway](#gateway-aggregation) | [Monitoramento híbrido (local)](#hybrid-monitoring-on-premises) | [Monitoramento híbrido (baseado em nuvem)](#hybrid-monitoring-cloud-based) | [Multinuvem](#multicloud) | [Saiba mais](#learn-more)
 
 O ponto de inflexão ao determinar uma estratégia de identidade e registro em log de nuvem baseia-se principalmente nos investimentos existentes feitos pela organização nos processos operacionais e, até certo ponto, nos requisitos necessários para dar suporte a uma estratégia de multinuvem.
 
 Há várias maneiras de registrar e relatar atividades na nuvem. Os registros em log centralizado e nativo de nuvem são duas opções comuns de serviço gerenciado, orientadas pelo design de assinatura e pelo número de assinaturas.
 
-## <a name="planning-your-monitoring-infrastructure"></a>Planejar a infraestrutura de monitoramento
+## <a name="plan-your-monitoring-infrastructure"></a>Planejar sua infraestrutura de monitoramento
 
 Ao planejar a implantação, será necessário considerar onde os dados de registro em log serão armazenados e como os serviços de relatório e monitoramento baseados em nuvem serão integrados com os processos e as ferramentas existentes.
 
@@ -45,9 +45,9 @@ Se a organização atualmente não tiver sistemas de registros em log e relatór
 
 Nesse cenário, todos os dados de log são gravados e armazenados na nuvem, enquanto as ferramentas de registro em log e relatórios que processam e descobrem informações para a equipe de TI são fornecidas pela plataforma do Azure e pelo Azure Monitor.
 
-As soluções personalizadas de registro em log baseadas no Azure Monitor podem ser implementadas ad hoc para cada assinatura ou carga de trabalho em implantações experimentais ou menores e são organizadas de maneira centralizada para monitorar dados do log em toda a propriedade de nuvem.
+As soluções personalizadas de registro em log baseadas no Azure Monitor podem ser implementadas de forma ad hoc para cada assinatura ou carga de trabalho em implantações experimentais ou menores e são organizadas de maneira centralizada para monitorar os dados de log em toda a abrangência da nuvem.
 
-**Suposições nativas da nuvem.** O uso de um sistema de registro em log e relatório de nuvem nativa supõe o seguinte:
+**Suposições sobre a solução nativa da nuvem:** O uso de um sistema de registro em log e relatório de nuvem nativa supõe o seguinte:
 
 - Não é necessário integrar os dados do log das cargas de trabalho de nuvem em sistemas locais existentes.
 - Você não usará os sistemas de relatórios baseados em nuvem para monitorar sistemas locais.
@@ -87,7 +87,7 @@ Uma solução de monitoramento híbrido combina dados do log dos recursos locais
 
 Se você tiver um investimento existente em sistemas de monitoramento local cuja substituição se tornaria difícil ou de alto custo, talvez seja necessário integrar a telemetria das cargas de trabalho de nuvem em soluções de monitoramento locais preexistentes. Em um sistema de monitoramento local híbrido, os dados telemétricos locais continuam usando o sistema de monitoramento local existente. Os dados telemétricos baseados em nuvem são enviados diretamente ao sistema de monitoramento local ou são enviados ao Azure Monitor e então compilados e ingeridos no sistema local a intervalos regulares.
 
-**Suposições sobre o monitoramento híbrido local.** O uso de um sistema local de registro em log e relatório para monitoramento híbrido supõe o seguinte:
+**Suposições sobre o monitoramento híbrido local:** O uso de um sistema local de registro em log e relatório para monitoramento híbrido supõe o seguinte:
 
 - Você precisa usar sistemas de relatórios locais existentes para monitorar as cargas de trabalho na nuvem.
 - Você precisa manter a propriedade dos dados do log no local.

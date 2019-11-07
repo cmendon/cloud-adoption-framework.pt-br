@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: d6e95ebec986d0a4af29ec70332f1c6fcb3518f2
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 1bf2331c8ee1275a71be2275cefef49cf0a50dfc
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547575"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566246"
 ---
 # <a name="cloud-governance-guides"></a>Guias de governança de nuvem
 
@@ -62,7 +62,7 @@ Para começar seu percurso de adoção, escolha um dos seguintes guias de govern
 
 ## <a name="an-incremental-approach-to-cloud-governance"></a>Uma abordagem incremental para a governança de nuvem
 
-## <a name="choosing-a-governance-guide"></a>Escolha de um guia de governança
+## <a name="choose-a-governance-guide"></a>Escolha um guia de governança
 
 Os guias demonstram como implementar um MVP de governança. Depois disso, cada guia mostra como a equipe de governança de nuvem pode trabalhar à frente das equipes de adoção da nuvem como um parceiro para acelerar os esforços de adoção. O modelo de governança do Cloud Adoption Framework guia a aplicação da governança desde a base até as melhorias e as evoluções subsequentes.
 

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 67dbfbe48626c77303ec8626dc7889f474a28b66
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.openlocfilehash: 315ba0898f6a301af6f91614290c51244fbf6eb0
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72979875"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564930"
 ---
 # <a name="cloud-monitoring-guide-introduction"></a>Guia de monitoramento de nuvem: Introdução
 
@@ -34,7 +34,7 @@ A meta deste guia é oferecer uma referência detalhada para ajudar os gerentes 
 
 * As plataformas de monitoramento do Azure com uma visão geral e uma comparação das suas funcionalidades.
 * A solução mais adequada para o monitoramento de cargas de trabalho híbridas, privadas e nativas do Azure.
-* A abordagem de monitoramento recomendada para a infraestrutura e os aplicativos como um todo, de ponta a ponta. Isso inclui soluções implantáveis para essas cargas de trabalho comuns que estão sendo migradas para o Azure.
+* A abordagem de monitoramento de ponta a ponta recomendada para a infraestrutura e os aplicativos. Isso inclui soluções implantáveis para essas cargas de trabalho comuns que estão sendo migradas para o Azure.
 
 Este guia não é um artigo de instruções para usar ou configurar soluções e serviços individuais do Azure, mas citará as fontes relacionadas a esses assuntos quando for aplicável ou quando elas estiverem disponíveis. Depois de ler este guia, você entenderá como operar uma carga de trabalho com sucesso seguindo as melhores práticas e padrões.
 

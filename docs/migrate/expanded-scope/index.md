@@ -8,12 +8,12 @@ ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ee164f75b4f3748fce027d0c6c98db5200dcdd71
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 181777e08e82cf7e58c73c7c8b66544d0960656d
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548509"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564629"
 ---
 # <a name="expanded-scope-for-cloud-migration"></a>Escopo expandido para migração na nuvem
 
@@ -32,7 +32,7 @@ A lista de verificação a seguir descreve as áreas comuns de complexidade que 
 
 ### <a name="technology-driven-scope-expansion"></a>Expansão de escopo controlada por tecnologia
 
-- **[Migração de VMWare](./vmware-host.md):** A migração de hosts VMWare pode acelerar o processo geral de migração. Cada host VMWare migrado pode mover várias cargas de trabalho para a nuvem usando uma abordagem lift-and-shift. Após a migração, essas VMs e cargas de trabalho podem permanecer no VMWare ou serem migradas para funcionalidades de nuvem modernas.
+- **[Migração do VMware](./vmware-host.md):** A migração de hosts VMware pode acelerar o processo geral de migração. Cada host VMware migrado pode mover várias cargas de trabalho para a nuvem usando uma abordagem de lift-and-shift. Após a migração, essas VMs e cargas de trabalho podem permanecer no VMware ou serem migradas para funcionalidades de nuvem modernas.
 - **[Migração do SQL Server](./sql-migration.md):** A migração de SQL Servers pode acelerar o processo geral de migração. Cada SQL Server migrado pode mover vários bancos de dados e serviços, potencialmente acelerando várias cargas de trabalho.
 - **[Vários datacenters](./multiple-datacenters.md):** A migração de vários data centers adiciona muita complexidade. Durante os processos de avaliação, migração, otimização e gerenciamento, são discutidas considerações adicionais como preparação para ambientes mais complexos.
 - **[Os requisitos de dados ultrapassam a capacidade da rede](./network-capacity-exceeded.md):** as empresas frequentemente optam por migrar para a nuvem porque a capacidade, a velocidade ou a estabilidade de um datacenter existente não são mais satisfatórias. Essas mesmas restrições adicionam complexidade ao processo de migração, exigindo um planejamento adicional durante os processos de avaliação e migração.

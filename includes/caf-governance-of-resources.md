@@ -20,8 +20,8 @@ Definições de políticas personalizadas são salvas em um grupo de gerenciamen
 Como as políticas necessárias para dar suporte ao MVP de governança destinam-se a serem aplicadas a todas as assinaturas atuais, os seguintes requisitos comerciais serão implementados com uma combinação de definições internas e personalizadas criadas no grupo de gerenciamento raiz:
 
 1. Restrinja a lista de atribuições de função disponíveis a um conjunto de funções internas do Azure autorizadas por sua equipe de Governança de Nuvem. Isso exigirá uma [definição de política personalizada](https://github.com/Azure/azure-policy/tree/master/samples/Authorization/allowed-role-definitions).
-2. Exija o uso das seguintes marcações em todos os recursos: *Unidade de Cobrança/Departamento*, *Geografia*, *Classificação de Dados*, *Nível de Importância*, *SLA*, *Ambiente*, *Arquétipo do Aplicativo*, *Aplicativo* e *Proprietário do Aplicativo*. Isso pode ser tratado usando a definição interna "Exigir a marca especificada".
-3. Exija que a marca *Aplicativo* para recursos deva corresponder ao nome do grupo de recursos relevante. Isso pode ser tratado usando a definição interna "Exigir a marca e seu valor'".
+2. Exija o uso das seguintes marcações em todos os recursos: *Unidade de Cobrança/Departamento*, *Geografia*, *Classificação de Dados*, *Nível de Importância*, *SLA*, *Ambiente*, *Arquétipo do Aplicativo*, *Aplicativo* e *Proprietário do Aplicativo*. Isso pode ser tratado usando a definição interna do `Require specified tag`.
+3. Exigir que a marca `Application` para os recursos deva corresponder ao nome do grupo de recursos relevante. Isso pode ser tratado usando a definição interna "Exigir a marca e seu valor'".
 
 Para obter informações sobre como definir as políticas personalizadas, veja a [documentação do Azure Policy](https://docs.microsoft.com/azure/governance/policy/tutorials/create-custom-policy-definition). Para obter instruções e exemplos de políticas personalizadas, veja o [site de exemplos do Azure Policy](https://docs.microsoft.com/azure/governance/policy/samples) e o respectivo [repositório do GitHub](https://github.com/Azure/azure-policy).
 
@@ -53,7 +53,7 @@ Até que a confiança no ambiente de nuvem seja totalmente estabelecida, é impo
     1. A [arquitetura de referência de VPN](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/vpn) estabelece um padrão e um modelo de implantação para criar um Gateway de VPN no Azure.
     2. Confirme se os mecanismos de gerenciamento de segurança e tráfego locais tratam as redes de nuvem conectadas como não confiáveis. Recursos e serviços hospedados na nuvem devem ter apenas acesso a serviços autorizados locais.
     3. Valide que o dispositivo de borda local no datacenter local é compatível com [requisitos do Gateway de VPN do Azure](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices) e está configurado para acessar a Internet pública.
-    4. Observe que os túneis de VPN não devem ser considerados circuitos prontos para produção para nada, exceto as cargas de trabalho mais simples. Qualquer coisa além de algumas cargas de trabalho simples que exijam conectividade local deve aproveitar o Azure ExpressRoute.
+    4. Observe que os túneis de VPN não devem ser considerados circuitos prontos para produção para nada, exceto as cargas de trabalho mais simples. Qualquer coisa, além de poucas cargas de trabalho simples que exija conectividade local, deve aproveitar o Azure ExpressRoute.
 1. No grupo de gerenciamento raiz, criar uma segunda definição de blueprint chamada `secure-hybrid-vnet`.
     1. Adicione o modelo do Resource Manager do Gateway de VPN como um artefato à definição de blueprint.
     2. Adicione o modelo do Resource Manager da rede virtual como um artefato à definição de blueprint.

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 82ad7e2c4e7e7eac375e99daa0815c8482492e15
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 27a86947bdcf240f3ea469db10c94b3f63ccb1e8
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223905"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564887"
 ---
 # <a name="encryption-decision-guide"></a>Guia de decisão de criptografia
 
@@ -103,7 +103,9 @@ A criptografia de dados em repouso também abrange técnicas mais avançadas de 
 
 Seus requisitos gerais de política e conformidade, a confidencialidade dos dados sendo armazenados e os requisitos de desempenho de suas cargas de trabalho devem determinar quais ativos exigem criptografia.
 
-**Suposições sobre a criptografia de dados em repouso.** A criptografia de dados em repouso pressupõe o seguinte:
+### <a name="assumptions-about-encrypting-data-at-rest"></a>Suposições sobre a criptografia de dados em repouso
+
+A criptografia de dados em repouso pressupõe o seguinte:
 
 - Você está armazenando dados que não são destinados ao uso público.
 - Suas cargas de trabalho podem aceitar o custo de latência de criptografia de disco.

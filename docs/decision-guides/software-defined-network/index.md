@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: bbe9815b12226c193073bff3c2298d4124034935
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 46d01d6685b4cac55db7ed313b70891b4f9c029f
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023746"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564782"
 ---
 # <a name="software-defined-networking-decision-guide"></a>Guia de decisão de Rede Definida por Software
 
@@ -32,7 +32,7 @@ O ponto de inflexão nesse guia depende de várias decisões importantes que a e
 
 Implantações de região única e pequena de menos de 1.000 VMs têm menor probabilidade de serem significativamente afetadas por esse ponto de inflexão. Por outro lado, grandes esforços de adoção com mais de 1.000 VMs, várias unidades de negócios ou vários mercados geopolíticos podem ser substancialmente afetados pela decisão de SDN e esse ponto-chave de inflexão.
 
-## <a name="choosing-the-right-virtual-networking-architectures"></a>Escolher as arquiteturas de rede virtual corretas
+## <a name="choose-the-right-virtual-networking-architectures"></a>Escolha as arquiteturas de rede virtual certas
 
 Essa seção expande o guia de decisão para ajudá-lo a escolher as arquiteturas de rede virtual corretas.
 

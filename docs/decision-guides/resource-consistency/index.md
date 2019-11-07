@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: cab22f60604b2bf201f333df366c7ceca0398ffc
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: c6ad3e6b14ffde5f3c09feb6047a2d0bbe981314
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683523"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564809"
 ---
 # <a name="resource-consistency-decision-guide"></a>Guia de decisão de consistência de recursos
 
@@ -32,7 +32,7 @@ Conforme a importância desses fatores aumenta, os benefícios de garantir consi
 
 No Azure, [grupos de recursos](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#resource-groups) são um mecanismo de organização de recursos de núcleo para agrupar logicamente os recursos dentro de uma assinatura.
 
-Os grupos de recursos atuam como contêineres para recursos com um ciclo de vida comum E restrições de gerenciamento compartilhadas como política ou requisitos de RBAC (controle de acesso a função). Os grupos de recursos não podem ser aninhados e os recursos podem pertencer apenas a um grupo de recursos. Todas as ações do painel de controle agem em todos os recursos em um grupo de recursos. Por exemplo, a exclusão de um grupo de recursos também exclui todos os recursos daquele grupo. O padrão preferencial do gerenciamento de grupo de recursos é considerar:
+Os grupos de recursos atuam como contêineres para os recursos com um ciclo de vida comum e também como restrições de gerenciamento compartilhado, como os requisitos de RBAC (controle de acesso baseado em função) ou de política. Os grupos de recursos não podem ser aninhados e os recursos podem pertencer apenas a um grupo de recursos. Todas as ações do painel de controle agem em todos os recursos em um grupo de recursos. Por exemplo, a exclusão de um grupo de recursos também exclui todos os recursos daquele grupo. O padrão preferencial do gerenciamento de grupo de recursos é considerar:
 
 1. O conteúdo do grupo de recursos foi desenvolvido em conjunto?
 1. O conteúdo do grupo de recursos é gerenciado, atualizado e monitorado em conjunto e feito de acordo com as mesmas pessoas ou equipes?
@@ -41,7 +41,7 @@ Os grupos de recursos atuam como contêineres para recursos com um ciclo de vida
 Se você respondeu _NÃO_ a nenhum dos pontos acima, o recurso em questão deve ser colocado em outro lugar, em outro grupo de recursos.
 
 > [!IMPORTANT]
-> os grupos de recursos também são específicos da região; no entanto, é comum que os recursos estejam em regiões diferentes dentro do mesmo grupo de recursos, pois eles são gerenciados juntos, conforme descrito acima. Confira [aqui](../regions/index.md) para obter mais informações sobre a seleção de região.
+> Os grupos de recursos também são específicos da região. No entanto, é comum que os recursos estejam em regiões diferentes dentro do mesmo grupo de recursos, pois eles são gerenciados juntos, conforme a descrição acima. Para obter mais informações sobre a seleção de região, confira o [Guia de decisão de regiões](../regions/index.md).
 
 ## <a name="deployment-consistency"></a>Consistência de implantação
 
