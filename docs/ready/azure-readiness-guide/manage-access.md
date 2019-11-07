@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: e79966dbcbb00cb59fc88133c3ac62255a395a27
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ced1c366b4eb85c9692e9d65ebdbb034e32bc9b3
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022098"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239862"
 ---
 # <a name="manage-access-to-your-azure-environment-with-role-based-access-controls"></a>Gerenciar o acesso ao seu ambiente do Azure com controles de acesso baseado em função
 
@@ -29,7 +29,7 @@ Ao planejar sua estratégia de controle de acesso, conceda a usuários o menor p
 
 Ao planejar sua metodologia de controle de acesso, recomendamos que você trabalhe com pessoas em suas organizações com as seguintes funções: segurança e conformidade, administração de TI e arquiteto corporativo.
 
-A Cloud Adoption Framework oferece diretrizes adicionais sobre como [usar o controle de acesso baseado em função](../azure-best-practices/roles.md) como parte de seus esforços de adoção de nuvem.
+A Cloud Adoption Framework oferece diretrizes adicionais sobre como [usar o controle de acesso baseado em função](../considerations/roles.md) como parte de seus esforços de adoção de nuvem.
 
 ::: zone target="chromeless"
 
@@ -88,6 +88,6 @@ Para conceder acesso de uma assinatura a um usuário:
 Para obter mais informações, consulte:
 
 - [O que é o RBAC (controle de acesso baseado em função)?](https://docs.microsoft.com/azure/role-based-access-control/overview)
-- [Cloud Adoption Framework: use o controle de acesso baseado em função](../azure-best-practices/roles.md)
+- [Cloud Adoption Framework: use o controle de acesso baseado em função](../considerations/roles.md)
 
 ::: zone-end
