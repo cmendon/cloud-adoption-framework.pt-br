@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 027b685b2c75edc59e03cca9f9d2614422684bf0
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: ddee24fda25b329eccbee5eebf41fd5929346877
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048279"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753387"
 ---
 # <a name="plan-for-cloud-adoption"></a>Planejar a adoção da nuvem
 
@@ -21,7 +21,7 @@ Um plano é um requisito essencial para uma adoção de nuvem bem-sucedida. Um p
 
 ## <a name="align-strategy-and-planning"></a>Alinhar estratégia e planejamento
 
-Os planos de adoção de nuvem começam com uma estratégia bem definida. No mínimo, a estratégia deve descrever as motivações, resultados de negócios e justificativas de negócios para a adoção da nuvem. Em seguida, esses retornos positivos são balanceados pelo esforço necessário para concretiza-los.
+Os planos de adoção de nuvem começam com uma estratégia bem definida. No mínimo, a estratégia deve descrever as motivações, os resultados de negócios e as justificativas de negócios para a adoção da nuvem. Em seguida, esses retornos positivos são balanceados pelo esforço necessário para concretiza-los.
 
 O esforço começa com o espaço digital (proposto ou existente), que traduz a estratégia em cargas de trabalho e ativos mais tangíveis. Em seguida, você pode mapear esses elementos tangíveis para o trabalho técnico. A partir daí, pessoas capacitadas em uma estrutura organizacional apropriada podem executar o trabalho técnico. O plano de adoção de nuvem combina todos esses tópicos em um plano que pode ser previsto, orçado, implementado e gerenciado por meio de práticas de gerenciamento de projetos ágeis. Esta série de artigos ajuda você a criar o plano e fornece alguns modelos para facilitar o trabalho.
 

@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: dafe5f36a59d60fa91816695cae1e1f3784df046
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 20a4168f5a7650b20357de2ec2628a0edb093993
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565319"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73751649"
 ---
 # <a name="phase-1-prerequisite-planning-for-azure-server-management-services"></a>Fase 1: planejamento de pré-requisitos para os serviços de gerenciamento de servidor do Azure
 
@@ -34,7 +34,7 @@ As seções a seguir discutem o planejamento e a preparação necessários para 
 
 Muitos dos serviços que você usará para carregar os serviços de gerenciamento do Azure exigem um espaço de trabalho Log Analytics e uma conta de automação do Azure vinculada.
 
-Um [espaço de trabalho log Analytics](https://docs.microsoft.com/azure/azure-monitor/learn/quick-create-workspace) é um ambiente exclusivo para armazenar Azure monitor dados de log. Cada espaço de trabalho tem seu próprio repositório de dados e configuração. As fontes de dados e as soluções são configuradas para armazenar seus dados em espaços de trabalho específicos. As soluções de monitoramento do Azure exigem que todos os servidores estejam conectados a um espaço de trabalho, para que os dados de log possam ser armazenados e acessados.
+Um [workspace do Log Analytics](https://docs.microsoft.com/azure/azure-monitor/learn/quick-create-workspace) é um ambiente exclusivo para dados de log do Azure Monitor. Cada workspace tem seu próprio repositório de dados e configuração. As fontes de dados e as soluções são configuradas para armazenar seus dados em determinados workspaces. As soluções de monitoramento do Azure exigem que todos os servidores estejam conectados a um workspace para que seus dados de log possam ser armazenados e acessados.
 
 Alguns dos serviços de gerenciamento exigem uma conta de [automação do Azure](https://docs.microsoft.com/azure/automation/automation-intro) . Você usa essa conta e os recursos da automação do Azure, para integrar os serviços do Azure e outros sistemas públicos para implantar, configurar e gerenciar seus processos de gerenciamento de servidor.
 
@@ -100,7 +100,7 @@ Para criar um espaço de trabalho Log Analytics usando o portal do Azure, consul
 >
 > Você também pode criar contas Executar como usando o [PowerShell](https://docs.microsoft.com/azure/automation/manage-runas-account#create-run-as-account-using-powershell).
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Saiba como integrar [seus servidores](./onboarding-overview.md) aos serviços de gerenciamento do servidor do Azure.
 

@@ -8,18 +8,18 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: f854b103decc3b23f27a41d01a81b812d2bc3c3f
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 242985f57cc377b78328e2277ba76f15abaec8b8
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565697"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753043"
 ---
-# <a name="democratize-data"></a>Dados do democratize
+# <a name="democratize-data"></a>Democratizar os dados
 
 Carvão, petróleo e potencial humano foram os três ativos mais CONSEQÜENCIAIS durante a revolução industrial. Esses ativos criaram empresas, mercados deslocados e, em última análise, Nações alteradas. Na economia digital, há três ativos igualmente importantes: dados, dispositivos e potencial humano. Cada um desses ativos tem grande potencial de inovação. Para qualquer esforço de inovação na era moderna, os dados são o novo óleo.
 
-Em toda a empresa hoje, há bolsos de dados que podem ser utilizados para encontrar e atender às necessidades do cliente com mais eficiência. Infelizmente, o processo de mineração de dados para impulsionar a inovação tem sido muito dispendioso e demorado. Muitas das soluções mais valiosas para os clientes vão desaparecer, pois as pessoas certas não podem acessar os dados de que precisam.
+Em toda a empresa hoje, há bolsos de dados que poderiam ser usados para encontrar e atender às necessidades do cliente com mais eficiência. Infelizmente, o processo de mineração de dados para impulsionar a inovação tem sido muito dispendioso e demorado. Muitas das soluções mais valiosas para os clientes vão desaparecer, pois as pessoas certas não podem acessar os dados de que precisam.
 
 Democratization de dados é o processo de obter esses dados em mãos à direita para impulsionar a inovação. Esse processo pode usar várias formas, mas geralmente inclui soluções para dados brutos ingeridos ou integrados, centralização de dados, compartilhamento de dados e proteção de dados. Quando esses métodos são bem-sucedidos, os especialistas em toda a empresa podem usar os dados para testar as mesmas. Em muitos casos, as equipes de adoção de nuvem podem [criar com empatia de clientes](./build.md) usando apenas dados e endereçando rapidamente as necessidades existentes do cliente.
 
@@ -33,20 +33,20 @@ As fases a seguir guiarão as decisões e as abordagens necessárias para adotar
 
 Quando você [cria com o cliente empatia](./build.md), todos os processos elevam a necessidade do cliente sobre uma solução técnica. Como os dados de democratizando não são exceção, começamos compartilhando dados. Para democratize dados, ele deve incluir uma solução que compartilha dados com um consumidor de dados. O consumidor de dados pode ser um cliente direto ou um proxy que toma decisões para os clientes. Os consumidores de dados aprovados podem analisar, interrogar e relatar dados centralizados, sem nenhum suporte da equipe de ti.
 
-Muitas inovações bem-sucedidas foram lançadas como MVPs (produtos viáveis) mínimos que fornecem processos manuais controlados por dados em nome do cliente. Neste modelo do concierge, um funcionário é o consumidor de dados. Esse funcionário usa dados para auxiliar o cliente. Cada vez que o cliente envolve o suporte manual, uma hipótese pode ser testada e validada. Essa abordagem geralmente é um meio econômico de testar uma hipótese com foco no cliente antes de investir pesadamente em soluções integradas.
+Muitas inovações bem-sucedidas foram iniciadas como um MVP (produto viável) mínimo que fornece processos manuais controlados por dados em nome do cliente. Neste modelo do concierge, um funcionário é o consumidor de dados. Esse funcionário usa dados para auxiliar o cliente. Cada vez que o cliente envolve o suporte manual, uma hipótese pode ser testada e validada. Essa abordagem geralmente é um meio econômico de testar uma hipótese com foco no cliente antes de investir pesadamente em soluções integradas.
 
 As principais ferramentas para compartilhar dados diretamente com consumidores de dados incluem relatórios de autoatendimento ou dados inseridos em outras experiências, usando ferramentas como [Power bi](https://docs.microsoft.com/power-bi).
 
 > [!NOTE]
 > Antes de compartilhar dados, verifique se você leu as seções a seguir. O compartilhamento de dados pode exigir governança para fornecer proteção para os dados compartilhados. Além disso, esses dados podem ser distribuídos em várias nuvens e podem exigir centralização. Grande parte dos dados pode até residir em aplicativos, o que exigirá a coleta de dados antes que você possa compartilhá-lo.
 
-### <a name="govern-data"></a>Controlar dados
+### <a name="govern-data"></a>Controlar os dados
 
 O compartilhamento de dados pode produzir rapidamente um MVP que você pode usar em conversas de clientes. No entanto, para transformar esses dados compartilhados em conhecimento útil e acionável, geralmente é necessário um pouco mais. Depois que uma hipótese foi validada por meio do compartilhamento de dados, a próxima fase de desenvolvimento normalmente é a governança de dados.
 
 A governança de dados é um tópico abrangente que pode exigir sua própria estrutura dedicada. Esse grau de granularidade está fora do escopo da estrutura de [adoção da nuvem](../../index.md). No entanto, há vários aspectos do controle de dados que você deve considerar assim que a hipótese do cliente é validada. Por exemplo:
 
-- **Os dados compartilhados são confidenciais?** Os [dados devem ser classificados](../../govern/policy-compliance/data-classification.md) antes de qualquer compartilhamento público para proteger os interesses dos clientes e da empresa.
+- **Os dados compartilhados são confidenciais?** Os [dados devem ser classificados](../../govern/policy-compliance/data-classification.md) antes de serem compartilhados publicamente para proteger os interesses dos clientes e da empresa.
 - **Se os dados forem confidenciais, eles foram protegidos?** A proteção de dados confidenciais deve ser um requisito para qualquer dado de democratizado. A carga de trabalho de exemplo focada na [proteção de soluções de dados](https://docs.microsoft.com/azure/architecture/data-guide/scenarios/securing-data-solutions) fornece algumas referências para proteger os dados.
 - **Os dados são catalogados?** Capturar detalhes sobre os dados que estão sendo compartilhados ajudará no gerenciamento de dados de longo prazo. As ferramentas para documentar dados, como o catálogo de dados do Azure, podem tornar esse processo muito mais fácil na nuvem. A orientação sobre a [anotação de dados](https://docs.microsoft.com/azure/data-catalog/data-catalog-how-to-annotate) e a [documentação de fontes de dados](https://docs.microsoft.com/azure/data-catalog/data-catalog-how-to-documentation) pode ajudar a acelerar o processo.
 
@@ -72,7 +72,7 @@ Quando você precisa que os dados sejam centralizados para atender a uma necessi
 
 **Integração:** Os dados que residem em um repositório de dados existente podem ser integrados ao armazenamento de dados centralizado usando técnicas tradicionais de movimentação de dados. Isso é especialmente comum para cenários que envolvem o armazenamento de dados de nuvem. Essas técnicas envolvem extrair os dados do armazenamento de dados existente e, em seguida, carregá-los no armazenamento de dados central. Em algum momento nesse processo, os dados normalmente são transformados para serem mais utilizáveis e relevantes no armazenamento central.
 
-As ferramentas baseadas em nuvem transformaram essas técnicas em ferramentas de pagamento por uso, reduzindo a barreira de entrada para a coleta e a centralização de dados. Ferramentas como serviço de migração de dados e Data Factory são dois exemplos no Azure. A arquitetura de referência para [Data Factory com um armazenamento de dados OLAP](https://docs.microsoft.com/azure/architecture/data-guide/relational-data/etl) é um exemplo de uma dessas soluções.
+As ferramentas baseadas em nuvem transformaram essas técnicas em ferramentas de pagamento por uso, reduzindo a barreira de entrada para a coleta e a centralização de dados. Ferramentas como o serviço de migração de banco de dados do Azure e Azure Data Factory são dois exemplos. A arquitetura de referência para [Data Factory com um armazenamento de dados OLAP](https://docs.microsoft.com/azure/architecture/data-guide/relational-data/etl) é um exemplo de uma dessas soluções.
 
 **Ingestão:** Alguns dados não residem em um repositório de dados existente. Quando esses dados transitórios são uma fonte primária de inovação, você desejará considerar abordagens alternativas. Dados transitórios podem ser encontrados em uma variedade de fontes existentes, como aplicativos, APIs, fluxos de dados, dispositivos IoT, um blockchain, um cache de aplicativos, no conteúdo de mídia ou até mesmo em arquivos simples.
 
@@ -82,7 +82,7 @@ Você pode integrar essas várias formas de dados em um armazenamento de dados c
 
 SQL Server 2017 e o Azure SQL Data Warehouse dão suporte ao [polybase](https://docs.microsoft.com/sql/relational-databases/polybase/polybase-guide) , que é a abordagem para a virtualização de dados mais comumente usada no Azure.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Com uma estratégia para dados de democratizando em vigor, você vai querer avaliar abordagens para [envolver clientes por meio de aplicativos](./apps.md).
 

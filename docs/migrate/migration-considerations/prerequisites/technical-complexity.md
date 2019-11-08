@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 842143afbb042ceddee5029a3fa86d0aa8cdd997
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 415e7b456cc342f7a749cd98a55e573a46563bf4
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564542"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753688"
 ---
 # <a name="prepare-for-technical-complexity-agile-change-management"></a>Preparar-se para a complexidade técnica: gerenciamento de alterações Agile
 
@@ -107,7 +107,7 @@ Para uma migração pequena, com uma equipe de migração independente, um únic
 
 ### <a name="sprint-backlog-data-points"></a>Pontos de dados da lista de pendências do sprint
 
-O resultado de um sprint captura e documenta as alterações feitas em uma carga de trabalho, fechando assim o loop de gerenciamento de alterações. Quando concluído, pelo menos o seguinte deve ser documentado. Durante a execução de um sprint, esta documentação deve ser concluída em conjunto com os itens de trabalho técnicos.
+O resultado de um sprint captura e documenta as alterações feitas em uma carga de trabalho, fechando assim o loop de gerenciamento de alterações. Quando concluído, no mínimo, o seguinte deve ser documentado. Durante a execução de um sprint, esta documentação deve ser concluída em conjunto com os itens de trabalho técnicos.
 
 - **Ativos implantados.** Todos os ativos implantados na nuvem para hospedar a carga de trabalho.
 - **Remediação.** Toda alteração feita nos ativos a fim de se prepará-los para a migração na nuvem.
@@ -119,7 +119,7 @@ O resultado de um sprint captura e documenta as alterações feitas em uma carga
 - **Aprovação operacional.** Aprovação da validação da preparação operacional do proprietário do aplicativo e da equipe de operações de TI responsável pelo gerenciamento da carga de trabalho após a implantação.
 - **Aprovação da arquitetura.** Aprovação do proprietário da carga de trabalho e da equipe de adoção da nuvem para validar toda alteração de arquitetura necessária para hospedar cada ativo.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Depois que as abordagens de gerenciamento de alterações tiverem sido estabelecidas, é hora de abordar o pré-requisito final, a [análise da lista de pendências de migração](./migration-backlog-review.md)
 

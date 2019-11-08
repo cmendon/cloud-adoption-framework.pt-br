@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3367a76be508b61c214210e9e712c8a310932f2e
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: c363f038b5fed3f2c8636b9b15a09625ca42218f
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566906"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753544"
 ---
 # <a name="governance-or-compliance-strategy"></a>Estratégia de governança ou conformidade
 
@@ -47,7 +47,7 @@ Durante a avaliação, são necessárias decisões adicionais para alinhar-se à
 
 ### <a name="suggested-action-during-the-assess-process"></a>Ação sugerida durante o processo de avaliação
 
-Os requisitos de avaliação de governança e conformidade são muito específicos do cliente para que possamos fornecer orientações gerais sobre as etapas reais realizadas durante a avaliação. No entanto, é recomendável que o processo inclua tarefas e alocações de tempo para "alinhamento aos requisitos de conformidade/governança". Para ter uma compreensão mais detalhada desses requisitos, confira os links a seguir:
+Os requisitos de avaliação de governança e conformidade são muito específicos do cliente para que possamos fornecer orientações gerais sobre as etapas reais realizadas durante a avaliação. No entanto, o processo deve incluir tarefas e alocações de tempo para "alinhamento aos requisitos de conformidade/governança". Para ter uma compreensão mais detalhada desses requisitos, confira os links a seguir:
 
 Para ter uma compreensão mais profunda da governança, examine as [Cinco disciplinas da governança de nuvem](../../govern/governance-disciplines.md). Esta seção da Cloud Adoption Framework também inclui modelos para documentar as políticas, as diretrizes e os requisitos de cada uma das cinco seções:
 
@@ -61,15 +61,15 @@ Para obter orientações de como desenvolver diretrizes de governança com base 
 
 ## <a name="optimize-and-promote-process-changes"></a>Otimizar e promover alterações no processo
 
-Durante os processos de otimização e promoção, é recomendável que a equipe de governança da nuvem invista tempo em testar e validar a adesão aos padrões de governança e conformidade. Além disso, essa etapa é um bom momento para injetar processos para a equipe de governança da nuvem organizar modelos que podem fornecer [aceleração de implantação](../../govern/deployment-acceleration/index.md) adicional para projetos futuros.
+Durante os processos de otimização e promoção, a equipe de governança de nuvem shluld investir tempo para testar e validar a adesão aos padrões de governança e de conformidade. Além disso, essa etapa é um bom momento para injetar processos para a equipe de governança da nuvem organizar modelos que podem fornecer [aceleração de implantação](../../govern/deployment-acceleration/index.md) adicional para projetos futuros.
 
 ### <a name="suggested-action-during-the-optimize-and-promote-process"></a>Ação sugerida durante o processo de otimização e promoção
 
-Durante esse processo, é recomendável que o plano de projeto inclua alocações de tempo para a equipe de governança da nuvem executar uma análise de conformidade para cada carga de trabalho planejada a fim de promover a produção.
+Durante esse processo, o plano de projeto deve incluir alocações de tempo para que a equipe de governança de nuvem execute uma análise de conformidade para cada carga de trabalho planejada para promoção de produção.
 
 ## <a name="next-steps"></a>Próximos passos
 
-Como o item final na [lista de verificação de escopo expandido](./index.md), o leitor é aconselhado a voltar à lista de verificação e reavaliar os requisitos de escopo adicionais para o esforço de migração.
+Como o item final na [lista de verificação de escopo expandido](./index.md), retorne à lista de verificação e reavalie os requisitos de escopo adicionais para o esforço de migração.
 
 > [!div class="nextstepaction"]
 > [Lista de verificação de escopo expandido](./index.md)

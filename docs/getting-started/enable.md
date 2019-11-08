@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 layout: LandingPage
-ms.openlocfilehash: f2892dbfab86da07db2441aea7757846903ff7e9
-ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
+ms.openlocfilehash: cb5ba007c18643efe3b0c83b8ff247844cbbe7b2
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73656583"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753299"
 ---
 # <a name="enable-success-during-a-cloud-adoption-journey"></a>Habilitar o sucesso durante uma jornada de adoção de nuvem
 
@@ -32,7 +32,7 @@ Durante esse Framework, a habilitação é um tema principal. A lista de verific
 
 ## <a name="additional-tools"></a>Ferramentas adicionais
 
-Além da estrutura de adoção de nuvem, a Microsoft aborda tópicos adicionais que podem habilitar o sucesso. Este artigo destaca algumas ferramentas comuns que podem melhorar significativamente o sucesso além do escopo da estrutura de adoção de nuvem. O estabelecimento de governança de nuvem, arquiteturas resilientes, habilidades técnicas e uma abordagem DevOps é cada um importante para o sucesso de qualquer esforço de adoção de nuvem. O leitor é aconselhado a marcar esta página como um recurso para revisitar em qualquer jornada de adoção de nuvem.
+Além da estrutura de adoção de nuvem, a Microsoft aborda tópicos adicionais que podem habilitar o sucesso. Este artigo destaca algumas ferramentas comuns que podem melhorar significativamente o sucesso além do escopo da estrutura de adoção de nuvem. O estabelecimento de governança de nuvem, arquiteturas resilientes, habilidades técnicas e uma abordagem DevOps é cada um importante para o sucesso de qualquer esforço de adoção de nuvem. Marque esta página como um recurso para revisitar em toda a jornada de adoção da nuvem.
 
 <!-- markdownlint-disable MD033 -->
 

@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: f5461ea659ae2363e98ddf45d8623e21f1ce0d90
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 29acef56de414d1a98e5fe11e5e396922b84392d
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565186"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752883"
 ---
 # <a name="business-commitment-in-cloud-management"></a>Compromisso de negócios no gerenciamento de nuvem
 
@@ -153,7 +153,7 @@ A menos que haja outros fatores de custo flexível a considerar, essa comparaç�
 
 Nesse ponto do processo, os compromissos foram feitos: responsabilidade centralizada ou delegada, aluguel do Azure e nível de compromisso. Cada compromisso deve ser validado e documentado para garantir que a equipe de operações de nuvem, a equipe de estratégia de nuvem e os participantes comerciais estejam alinhados a esse compromisso para gerenciar a carga de trabalho.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Depois que os compromissos são feitos, as equipes de operações responsáveis podem começar a configurar a carga de trabalho em questão. Para começar, avalie várias abordagens para [inventário e visibilidade](./inventory.md).
 

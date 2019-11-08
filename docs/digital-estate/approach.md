@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 2309b56bec38383f9fe80e78e66e01a090701c3c
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 6a9d82e0211b36a2d34b54deca50227a62d7298e
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023807"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753113"
 ---
 # <a name="approaches-to-digital-estate-planning"></a>Abordagens para planejamento de propriedade digital
 
@@ -48,7 +48,7 @@ Geralmente, essa abordagem pressupõe um modelo de implantação IaaS como linha
 
 - **Análise de custo inicial:** Se a validação financeira for necessária, comece com uma abordagem controlada por ativo, descrita anteriormente, para obter um cálculo de custo inicial para todo o espaço digital, sem racionalização. Isso estabelece um parâmetro de comparação de pior cenário possível.
 
-- **Planejamento da migração:** Depois de montar uma equipe de estratégia de nuvem, crie uma pendência de migração inicial usando uma abordagem controlada por carga de trabalho com base em seu conhecimento coletivo e em entrevistas de Stakeholder limitadas. Essa abordagem cria rapidamente uma avaliação de carga de trabalho leve para promover a colaboração.
+- **Planejamento de migração:** Depois de montar uma equipe de estratégia de nuvem, crie uma pendência de migração inicial usando uma abordagem controlada por carga de trabalho com base em seu conhecimento coletivo e em entrevistas de Stakeholder limitadas. Essa abordagem cria rapidamente uma avaliação de carga de trabalho leve para promover a colaboração.
 
 - **Planejamento de versão:** Em cada versão, a pendência de migração é removida e priorizada para se concentrar no impacto comercial mais relevante. Durante esse processo, as próximas cinco a dez cargas de trabalho são selecionadas como versões priorizadas. Neste ponto, a equipe de estratégia de nuvem investe o tempo de conclusão de uma abordagem exaustiva controlada por carga de trabalho. Atrasar essa avaliação até que uma versão seja alinhada melhor respeita o tempo dos participantes. Também atrasa o investimento em análise completa até que a empresa comece a ver resultados dos esforços anteriores.
 
@@ -57,9 +57,9 @@ Geralmente, essa abordagem pressupõe um modelo de implantação IaaS como linha
 > [!TIP]
 > Essa abordagem incremental permite o planejamento simplificado e os resultados acelerados. É importante que todas as partes envolvidas entendam a abordagem da tomada de decisão atrasada. É igualmente importante que as suposições feitas em cada estágio sejam documentadas para evitar a perda de detalhes.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
-Após a seleção de uma abordagem, o inventário pode ser coletado.
+Depois que uma abordagem é selecionada, o inventário pode ser coletado.
 
 > [!div class="nextstepaction"]
 > [Coletar dados de inventário](./inventory.md)

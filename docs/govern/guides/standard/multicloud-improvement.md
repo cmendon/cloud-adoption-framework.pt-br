@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 10097c550ba160c41add31e27d0813c175f5e26a
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 29f45afcb10b7d12df8392a8dd9d0d577414e59b
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566224"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753074"
 ---
 # <a name="standard-enterprise-governance-guide-multicloud-improvement"></a>Guia de governança empresarial padrão: aprimoramento de multinuvem
 
@@ -32,8 +32,8 @@ Na fase anterior dessa narrativa, a empresa começou a enviar ativamente os apli
 
 Desde então, ocorreram algumas mudanças que afetarão a governança:
 
-- A identidade é controlada por uma instância local do Active Directory. A identidade híbrida é facilitada por meio da replicação para o Azure Active Directory.
-- As Operações de TI ou Operações de Nuvem são amplamente gerenciadas pelo Azure Monitor e por automações relacionadas.
+- A identidade é controlada por uma instância local do Active Directory Domain Services. A identidade híbrida é facilitada por meio da replicação para o Azure Active Directory.
+- Operações de TI ou operações na nuvem em grande parte são gerenciadas pelo Azure Monitor e relacionados automações.
 - A recuperação de desastres e a continuidade dos negócios são controladas pelas instâncias do Azure Vault.
 - A Central de Segurança do Azure é utilizada para monitorar violações de segurança e ataques.
 - A Central de Segurança do Azure e o Azure Monitor são usados para monitorar a governança de nuvem.
@@ -78,11 +78,11 @@ Esta seção do artigo alterará o design MVP de governança para incluir novas 
     1. O Azure Monitor foi projetado como uma ferramenta de nuvem híbrida desde o início.
     2. Máquinas virtuais na nuvem secundária podem ser compatíveis com os agentes do Azure Monitor, permitindo que sejam incluídos no Azure Monitor para monitoramento operacional.
 6. Adote as ferramentas de imposição de governança.
-    1. A imposição de governança é específica da nuvem.
+    1. A imposição de governança é específico da nuvem.
     2. As políticas corporativas estabelecidas no guia de governança não são específicas da nuvem. Embora a implementação possa variar da nuvem para nuvem, as políticas podem ser aplicadas ao provedor secundário.
 
 A adoção de multinuvem deve estar contida em onde é necessário com base em necessidades técnicas ou em requisitos de negócios específicos. À medida que a adoção de nuvem cresce, isso aumenta a complexidade e os riscos de segurança.
 
 ## <a name="conclusion"></a>Conclusão
 
-Esta série de artigos descreveu o desenvolvimento incremental de práticas recomendadas de governança, alinhado com as experiências desta empresa fictícia. Iniciando pequena, mas com a base certa, a empresa pode se mover rapidamente e ainda assim se aplica a quantidade certa de governança no momento certo. O MVP por si só não protege o cliente. Em vez disso, ele criou a base para gerenciar riscos e adicionar proteções. A partir daí, as camadas de governança foram aplicadas para corrigir os riscos tangíveis. O percurso exato apresentado aqui não se alinha 100% com as experiências de qualquer leitor. Em vez disso, serve como um padrão de governança incremental. O leitor é aconselhado a fim de adaptar essas práticas recomendadas de acordo com suas próprias restrições exclusivas e requisitos de governança.
+Esta série de artigos descreveu o desenvolvimento incremental de práticas recomendadas de governança, alinhado com as experiências desta empresa fictícia. Iniciando pequena, mas com a base certa, a empresa pode se mover rapidamente e ainda assim se aplica a quantidade certa de governança no momento certo. O MVP por si só não protege o cliente. Em vez disso, ele criou a base para gerenciar riscos e adicionar proteções. A partir daí, as camadas de governança foram aplicadas para corrigir os riscos tangíveis. O percurso exato apresentado aqui não se alinha 100% com as experiências de qualquer leitor. Em vez disso, serve como um padrão de governança incremental. Você deve moldar essas práticas recomendadas para se adequar às suas próprias restrições exclusivas e aos requisitos de governança.

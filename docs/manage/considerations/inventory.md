@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 60c6b72590cc5f912572109f0cce10366413fdf0
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 5b38b5d52ee5151a2ccd696f0049a9feea0d21a0
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565110"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752810"
 ---
 # <a name="inventory-and-visibility-in-cloud-management"></a>Inventário e visibilidade no gerenciamento de nuvem
 
@@ -107,11 +107,11 @@ Independentemente da plataforma de nuvem, os cinco componentes de inventário e 
 
 Os dados sem ação produzem pouco retorno. O gerenciamento de nuvem pode se expandir além de ferramentas e processos nativos da nuvem. Para acomodar processos mais amplos, uma linha de base de gerenciamento de nuvem pode precisar ser aprimorada para incluir relatórios, integração de gerenciamento de serviços de ti ou centralização de dados. O gerenciamento de nuvem pode precisar incluir um ou mais dos itens a seguir durante várias fases de maturidade operacional.
 
-### <a name="report"></a>Relatório
+### <a name="report"></a>Relate
 
 Processos offline e comunicação sobre compromissos com os participantes de negócios geralmente exigem relatórios. Relatórios de autoatendimento ou relatórios periódicos podem ser um componente necessário de uma linha de base de gerenciamento aprimorado.
 
-### <a name="it-service-management-itsm-integration"></a>Integração de ITSM (gerenciamento de serviços de ti)
+### <a name="it-service-management-itsm-integration"></a>Integração de ITSM (Gerenciamento de serviços de TI)
 
 A integração de ITSM é geralmente o primeiro exemplo de atuar em inventário e visibilidade. Quando surgem os desvios dos padrões de desempenho esperados, a integração de ITSM usa alertas da plataforma de nuvem para disparar tíquetes em uma ferramenta de gerenciamento de serviços separada para disparar atividades de correção. Alguns modelos operacionais podem exigir integração de ITSM como um aspecto da linha de base de gerenciamento aprimorado.
 
@@ -119,7 +119,7 @@ A integração de ITSM é geralmente o primeiro exemplo de atuar em inventário 
 
 Há uma variedade de motivos pelos quais uma empresa pode exigir vários locatários em um único provedor de nuvem. Nesses cenários, a centralização de dados é um componente necessário da linha de base de gerenciamento avançado, pois pode fornecer visibilidade em cada um desses locatários ou ambientes.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 A conformidade operacional baseia-se em recursos de inventário aplicando a automação e os controles de gerenciamento. Veja como a [conformidade operacional](./operational-compliance.md) é mapeada para seus processos.
 

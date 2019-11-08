@@ -10,16 +10,16 @@ ms.subservice: reference
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: e5729e592fe0e602d24e2e37831c782fada73128
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 526c7846de947b9098f7d9d0b7458a314177a9c8
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566697"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753737"
 ---
 # <a name="virtual-datacenters-a-network-perspective"></a>Data centers virtuais: uma perspectiva de rede
 
-## <a name="overview"></a>Visão geral
+## <a name="overview"></a>Visão Geral
 
 A migração de aplicativos locais para o Azure fornece às organizações os benefícios de uma infraestrutura segura e econômica, mesmo se os aplicativos forem migrados com o mínimo de alterações. No entanto, para aproveitar ao máximo a agilidade com a computação em nuvem, as empresas precisam evoluir suas arquiteturas para aproveitarem os recursos do Azure.
 
@@ -87,13 +87,13 @@ As organizações empresariais podem exigir uma combinação exigente de serviç
 
 Um serviço de diretório é uma infraestrutura de informações compartilhadas que localiza, gerencia, administra e organiza itens cotidianos e recursos de rede. Esses recursos podem incluir volumes, pastas, arquivos, impressoras, usuários, grupos, dispositivos e outros objetos. Cada recurso na rede é considerado um objeto pelo servidor de diretório. Informações sobre um recurso são armazenadas como uma coleção de atributos associados a tal recurso ou objeto.
 
-Todos os serviços comerciais do Microsoft Online dependem do Azure Active Directory (Azure AD) para entrada e outras necessidades de identidade. O Azure Active Directory é uma solução de nuvem de gerenciamento de acesso e identidade abrangente e altamente disponível que combina os serviços principais de diretório, governança avançada de identidades e gerenciamento do acesso de aplicativos. O Azure AD pode ser integrado ao Active Directory local para habilitar o logon único para todos os aplicativos hospedados localmente e baseados em nuvem (local). Os atributos do usuário do Active Directory local podem ser sincronizados automaticamente com o Azure AD.
+Todos os serviços comerciais do Microsoft Online dependem do Azure Active Directory (Azure AD) para entrada e outras necessidades de identidade. O Azure Active Directory é uma solução de nuvem de gerenciamento de acesso de identidade altamente disponível que combina os serviços principais de diretório, controle de identidade avançado e gerenciamento de acesso do aplicativo. O Azure AD pode ser integrado ao Active Directory local para habilitar o logon único para todos os aplicativos hospedados localmente e baseados em nuvem (local). Os atributos do usuário do Active Directory local podem ser sincronizados automaticamente com o Azure AD.
 
 Um único administrador global não é necessário para atribuir todas as permissões em uma implementação de datacenter virtual. Em vez disso, cada departamento específico, grupo de usuários ou serviços no serviço de diretório pode ter as permissões necessárias para gerenciar seus próprios recursos em uma implementação de datacenter virtual. Estruturar permissões requer balanceamento. Um número excessivo de permissões pode prejudicar a eficiência de desempenho, enquanto permissões de menos ou não exigentes podem aumentar os riscos de segurança. O RBAC (controle de acesso baseado em função) do Azure ajuda a resolver esse problema, oferecendo gerenciamento de acesso refinado para recursos em uma implementação de datacenter virtual.
 
 #### <a name="security-infrastructure"></a>Infraestrutura de segurança
 
-A infraestrutura de segurança refere-se à diferenciação de tráfego em um segmento de rede virtual específico da implementação do datacenter virtual. Essa infraestrutura especifica como a entrada e a saída são controladas em uma implementação de datacenter virtual. O Azure é baseado em uma arquitetura multilocatário que impede tráfego não autorizado e não intencional entre implantações usando isolamento de VNet, ACLs (listas de controle de acesso), balanceadores de carga, filtros de IP e políticas de fluxo de tráfego. NAT (conversão de endereços de rede) separa o tráfego de rede interno do tráfego externo.
+A infraestrutura de segurança refere-se à diferenciação de tráfego em um segmento de rede virtual específico da implementação do datacenter virtual. Essa infraestrutura especifica como a entrada e a saída são controladas em uma implementação de datacenter virtual. O Azure é baseado em uma arquitetura multilocatário que impede tráfego não autorizado e não intencional entre implantações usando isolamento de VNet, ACLs (listas de controle de acesso), balanceadores de carga, filtros de IP e políticas de fluxo de tráfego. O recurso NAT (conversão de endereços de rede) separa o tráfego de rede interno do tráfego externo.
 
 A malha do Azure aloca recursos de infraestrutura a cargas de trabalho de locatário e gerencia comunicações para e de VMs (máquinas virtuais). O hipervisor do Azure impõe a separação de memória e processo entre VMs e encaminha com segurança o tráfego de rede a locatários do sistema operacional convidado.
 
@@ -194,7 +194,7 @@ O diagrama anterior mostra a relação entre projetos, usuários e grupos, bem c
 
 Normalmente, em TI, um ambiente (ou camada) é um sistema em que vários aplicativos são implantados e executados. Grandes empresas usam um ambiente de desenvolvimento (onde as alterações são feitas e testadas) e um ambiente de produção (o que os usuários finais usam). Esses ambientes são separados, geralmente com vários ambientes de preparo entre eles para permitir implantação em fases (distribuição), testes e reversão em caso de problemas. As arquiteturas de implantação variam significativamente, mas geralmente o processo básico de iniciar em desenvolvimento (DEV) e terminar em produção (PROD) ainda é seguido.
 
-Uma arquitetura comum para esses tipos de ambientes de várias camadas consiste em DevOps do Azure para desenvolvimento e teste, UAT para ambientes de preparo e produção. As organizações podem aproveitar locatários do Azure AD únicos ou múltiplos para definir o acesso e os direitos para esses ambientes. O diagrama anterior mostra um caso em que dois locatários do Azure AD diferentes são usados: um para Azure DevOps e UAT e outro exclusivamente para produção.
+Uma arquitetura comum para esses tipos de ambientes de várias camadas consiste em DevOps do Azure para desenvolvimento e teste, UAT para ambientes de preparo e produção. As organizações podem usar um ou vários locatários do Azure AD para definir o acesso e os direitos a esses ambientes. O diagrama anterior mostra um caso em que dois locatários do Azure AD diferentes são usados: um para Azure DevOps e UAT e outro exclusivamente para produção.
 
 A presença de diferentes locatários do Azure AD impõe a separação entre ambientes. O mesmo grupo de usuários, como a TI central, precisa autenticar usando um URI diferente para acessar um locatário diferente do Azure AD, a fim de modificar as funções ou permissões de ambientes do Azure DevOps ou de produção de um projeto. A presença de diferentes autenticações de usuário para acessar diferentes ambientes reduz possíveis interrupções e outros problemas causados por erros humanos.
 
@@ -231,7 +231,7 @@ Os componentes de rede de perímetro fornecem os seguintes recursos:
 
 - [Redes virtuais][VNet], [rotas definidas pelo usuário][user-defined-routes] e [grupos de segurança de rede][network-security-groups]
 - [Dispositivos de rede virtual][NVA]
-- [Azure Load Balancer][ALB]
+- [Balanceador de carga do Azure][ALB]
 - [Aplicativo Azure gateway][AppGW] com o [Firewall do aplicativo Web (WAF)][AppGWWAF]
 - [IPs públicos][PIP]
 - [Porta frontal do Azure][AFD] com [WAF (firewall do aplicativo Web)][AFDWAF]
@@ -386,13 +386,13 @@ Os seguintes recursos foram discutidos neste documento. Siga os links para saber
 
 <!-- markdownlint-disable MD033 -->
 
-|Recursos de rede|Balanceamento de Carga|Conectividade|
+|Recursos de rede|Balanceamento de carga|Conectividade|
 |-|-|-|
-|[Redes Virtuais do Azure][VNet]</br>[Grupos de segurança de rede][network-security-groups]</br>[Logs do grupo de segurança de rede][nsg-log]</br>[Rotas definidas pelo usuário][user-defined-routes]</br>[Soluções de virtualização de rede][NVA]</br>[Endereços IP Públicos][PIP]</br>[DDoS do Azure][DDoS]</br>[Firewall do Azure][AzFW]</br>[DNS do Azure][DNS]|[Porta frontal do Azure][AFD]</br>[Azure Load Balancer (L3)][ALB]</br>[Gateway de aplicativo (L7)][AppGW]</br>[Firewall do aplicativo Web] WAF</br>[Gerenciador de Tráfego do Azure][traffic-manager]</br></br></br></br></br> |[Emparelhamento VNet][VNetPeering]</br>[Rede virtual privada][VPN]</br>[WAN virtual][vWAN]</br>[ExpressRoute][ExR]</br>[ExpressRoute Direct][ExRD]</br></br></br></br></br>
+|[Redes Virtuais do Azure][VNet]</br>[Grupos de segurança de rede][network-security-groups]</br>[Logs do grupo de segurança de rede][nsg-log]</br>[Rotas definidas pelo usuário][user-defined-routes]</br>[Soluções de virtualização de rede][NVA]</br>[Endereços IP Públicos][PIP]</br>[DDoS do Azure][DDoS]</br>[Firewall do Azure][AzFW]</br>[DNS do Azure][DNS]|[Azure Front Door][AFD]</br>[Azure Load Balancer (L3)][ALB]</br>[Gateway de aplicativo (L7)][AppGW]</br>[Firewall do aplicativo Web] WAF</br>[Gerenciador de Tráfego do Azure][traffic-manager]</br></br></br></br></br> |[Emparelhamento VNet][VNetPeering]</br>[Rede virtual privada][VPN]</br>[WAN virtual][vWAN]</br>[ExpressRoute][ExR]</br>[ExpressRoute Direct][ExRD]</br></br></br></br></br>
 
-|Identidade</br>|Monitoramento</br>|Práticas Recomendadas</br>|
+|Identidade</br>|Monitoramento</br>|Práticas recomendadas</br>|
 |-|-|-|
-|[Active Directory do Azure][azure-ad]</br>[Autenticação Multifator][multi-factor-authentication]</br>[Controles de acesso de base de função][RBAC]</br>[Funções padrão do Azure AD][Roles]</br></br></br> |[Observador de Rede][NetWatch]</br>[Azure Monitor][Monitor]</br>[Logs de Atividades][ActLog]</br>[Logs de Diagnóstico][DiagLog]</br>[Microsoft Operations Management Suite][OMS]</br>[Monitor de Desempenho de Rede][NPM]|[Práticas recomendadas de redes de perímetro][DMZ]</br>[Gerenciamento de assinatura][SubMgmt]</br>[Gerenciamento de grupo de recursos][RGMgmt]</br>[Limites de assinatura do Azure][limits] </br></br></br>|
+|[Azure Active Directory][azure-ad]</br>[Autenticação Multifator][multi-factor-authentication]</br>[Controles de acesso de base de função][RBAC]</br>[Funções padrão do Azure AD][Roles]</br></br></br> |[Observador de Rede][NetWatch]</br>[Azure Monitor][Monitor]</br>[Logs de Atividades][ActLog]</br>[Logs de Diagnóstico][DiagLog]</br>[Microsoft Operations Management Suite][OMS]</br>[Monitor de Desempenho de Rede][NPM]|[Práticas recomendadas de redes de perímetro][DMZ]</br>[Gerenciamento de assinatura][SubMgmt]</br>[Gerenciamento de grupo de recursos][RGMgmt]</br>[Limites de assinatura do Azure][limits] </br></br></br>|
 
 |Outros serviços do Azure|
 |-|
@@ -400,7 +400,7 @@ Os seguintes recursos foram discutidos neste documento. Siga os links para saber
 
 <!-- markdownlint-enable MD033 -->
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 - Explore o [emparelhamento VNet][VNetPeering], a tecnologia de base para designs de Hub e spoke de datacenter virtual.
 - Implemente o [Azure ad][azure-ad] para começar a explorar o [RBAC][RBAC] .

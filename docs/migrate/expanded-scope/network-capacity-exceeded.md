@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a2afa6e7961a8cc53abb6c3dbe0d78c2251b134d
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 402628da8fb5af7526c33d6c4900298eb42bced5
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239962"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753500"
 ---
 # <a name="data-requirements-exceed-network-capacity-during-a-migration-effort"></a>Os requisitos de dados excedem a capacidade da rede durante um esforço de migração
 
@@ -39,7 +39,7 @@ Também há [soluções de parceiros terceiros](https://azuremarketplace.microso
 
 Se os requisitos de armazenamento de uma carga de trabalho (ou cargas de trabalho) exceder a capacidade da rede, o Azure Data Box ainda poderá ser usado em uma transferência de dados offline.
 
-A opinião geral da Microsoft é que a transmissão da rede seja a abordagem recomendada, a menos que a rede não esteja disponível. Essa sugestão é resultado de velocidades de transferência. A transferência de dados pela rede (mesmo quando a largura de banda é restrita) é normalmente mais rápida do que o envio físico da mesma quantidade de dados usando um mecanismo de transferência offline, como o Data Box.
+A transmissão de rede é a abordagem recomendada, a menos que a rede não esteja disponível. A velocidade de transferência de dados pela rede, mesmo quando a largura de banda é restrita, normalmente é mais rápida do que a entrega física da mesma quantidade de dados usando um mecanismo de transferência offline, como Data Box.
 
 Se a conectividade com o Azure estiver disponível, realize uma análise antes de usar o Data Box, especialmente se a migração da carga de trabalho for sensível ao fator tempo. O Data Box só é aconselhável quando o tempo para transferir os dados necessários excede o tempo para preencher, enviar e restaurar dados usando o Data Box.
 

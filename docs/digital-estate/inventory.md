@@ -8,12 +8,12 @@ ms.date: 12/10/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 5c7473fd5966f871bbbeef7dd2e42826b42cecf3
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 5ecf69235c27fbb45ad109609d8fd733dfc6187c
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222610"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753276"
 ---
 # <a name="gather-inventory-data-for-a-digital-estate"></a>Coletar dados de inventário para uma propriedade digital
 
@@ -23,7 +23,7 @@ O desenvolvimento de um inventário é a primeira etapa no [planejamento de imó
 
 O inventário que dá suporte a um espaço digital muda dependendo da transformação digital desejada e da jornada de transformação correspondente.
 
-- **Migração na nuvem:**  Geralmente recomendamos que, durante uma migração na nuvem, você colete o inventário de ferramentas de verificação que criam uma lista centralizada de todas as VMs e servidores. Algumas ferramentas também podem criar mapeamentos e dependências de rede, o que ajuda a definir o alinhamento da carga de trabalho.
+- **Migração na nuvem:**  Geralmente recomendamos que, durante uma migração de nuvem, você colete o inventário de ferramentas de verificação que criam uma lista centralizada de todas as máquinas virtuais e servidores. Algumas ferramentas também podem criar mapeamentos e dependências de rede, o que ajuda a definir o alinhamento da carga de trabalho.
 
 - **Inovação de aplicativos:** O inventário durante um esforço de inovação de aplicativos habilitado para nuvem começa com o cliente. O mapeamento da experiência do cliente do início ao fim é um bom lugar para começar. Alinhar esse mapa a aplicativos, APIs, dados e outros ativos cria um inventário detalhado para análise.
 
@@ -31,12 +31,11 @@ O inventário que dá suporte a um espaço digital muda dependendo da transforma
 
 - **Segurança:** O inventário fornece segurança à compreensão para ajudar a avaliar, proteger e monitorar os ativos da organização.
 
-
 ## <a name="accuracy-and-completeness-of-an-inventory"></a>Precisão e integridade de um inventário
 
 Um inventário é raramente concluído em sua primeira iteração. É altamente recomendável que a equipe de estratégia de nuvem alinhe os participantes e os usuários avançados a validar o inventário. Quando possível, use ferramentas adicionais, como a análise de rede e de dependência para identificar os ativos que estão sendo enviados ao tráfego, mas que não estão no inventário.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Depois que um inventário é compilado e validado, ele pode ser racionalizado. A racionalização de inventário é a próxima etapa para o planejamento de imóveis.
 

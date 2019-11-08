@@ -8,12 +8,12 @@ ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 078ba561384c07cee6ce3a174d1663f7590e228c
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 85ff0f9fa54542309a814fbca44c38de65805933
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220406"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752670"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -48,7 +48,7 @@ Durante uma transformação de nuvem, ambas as equipes de negócios e TI terão 
 
 Um **produto viável mínimo** é comumente usado para definir a menor unidade de algo que pode produzir um valor tangível. Em um MVP de risco de negócios, a equipe de governança de nuvem começa com a suposição de que alguns ativos serão implantados em um ambiente de nuvem em algum momento. É desconhecido o que esses ativos estão no momento, e a equipe pode não ter certeza de quais tipos de dados serão armazenados nesses ativos.
 
-Ao planejar o risco para os negócios, a equipe de governança de nuvem poderia criar o pior cenário e mapear cada política possível para a nuvem. No entanto, identificar todos os riscos de negócios potenciais para todos os cenários de uso de nuvem pode levar muito tempo e esforço, atrasando potencialmente a implementação de governança para suas cargas de trabalho de nuvem. Isso não é recomendável, mas é uma opção.
+Ao planejar o risco para os negócios, a equipe de governança de nuvem poderia criar o pior cenário e mapear cada política possível para a nuvem. No entanto, identificar todos os riscos de negócios potenciais para todos os cenários de uso de nuvem pode levar muito tempo e esforço, atrasando potencialmente a implementação de governança para suas cargas de trabalho de nuvem. Isso não é recomendado, mas é uma opção.
 
 Por outro lado, uma abordagem do MVP pode permitir que a equipe defina um ponto de partida inicial e um conjunto de suposições que seriam verdadeiras para a maioria/todos os ativos. Este MVP de risco de negócios oferecerá suporte a implantações de nuvem de teste ou de pequeno porte inicial e, em seguida, será usado como base para identificar gradualmente e corrigir novos riscos conforme as necessidades comerciais surgirem ou as cargas de trabalho adicionais serão adicionadas ao seu ambiente de nuvem. Esse processo permite que você aplique governança em todo o processo de adoção da nuvem.
 
@@ -76,7 +76,7 @@ Com cada iteração, a equipe de governança de nuvem pode trabalhar com a equip
 
 Essa abordagem minimiza os riscos, enquanto capacita a equipe a agir rapidamente. Ele também garante que os riscos sejam endereçados e resolvidos imediatamente antes da implantação.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Saiba como avaliar a tolerância a riscos durante a adoção da nuvem.
 

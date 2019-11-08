@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 7dbddb91d38a11c455e47fcd6f5a589929d8b003
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 2aeda3e6efac30e03a917e790ef619f7a6d74cde
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71026464"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753406"
 ---
 # <a name="cloud-adoption-capabilities"></a>Recursos de adoção de nuvem
 
@@ -61,9 +61,9 @@ Recomendamos que as equipes que fornecem o recurso de adoção de nuvem sejam de
 
 Os cronogramas de liberação e as durações de iteração são exclusivos para cada empresa. No entanto, um intervalo de uma a quatro semanas por iteração parece ser a duração média. Independentemente de iteração ou cadência de versão, recomendamos que a equipe atenda a todas as equipes de suporte ao final de cada versão para comunicar o resultado da versão e repriorizar os futuros esforços. Da mesma forma, é valioso se reunir como uma equipe no final de cada Sprint, com o [Cloud Center de excelência](./cloud-center-of-excellence.md) ou [equipe de governança de nuvem](./cloud-governance.md) para ficar alinhado aos esforços comuns e a todas as necessidades de suporte.
 
-Algumas das tarefas técnicas associadas à adoção da nuvem podem se tornar repetitivas. É aconselhável que os membros da equipe giram&ndash;a cada três seis meses para evitar problemas de satisfação dos funcionários e manter as habilidades relevantes. Um assento de rotação no [Cloud Center de excelência](./cloud-center-of-excellence.md) ou equipe de [governança de nuvem](./cloud-governance.md) pode fornecer uma excelente oportunidade para manter os funcionários atualizados e aproveitar novas inovações.
+Algumas das tarefas técnicas associadas à adoção da nuvem podem se tornar repetitivas. Os integrantes da equipe devem girar a cada 3&ndash;seis meses para evitar problemas de satisfação dos funcionários e manter as habilidades relevantes. Um assento de rotação no [Cloud Center de excelência](./cloud-center-of-excellence.md) ou equipe de [governança de nuvem](./cloud-governance.md) pode fornecer uma excelente oportunidade para manter os funcionários atualizados e aproveitar novas inovações.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 A adoção é ótima, mas a adoção não controlada pode produzir resultados inesperados. Alinhar [recursos de governança de nuvem](./cloud-governance.md) acelera a adoção e as práticas recomendadas, reduzindo ainda mais os riscos técnicos e de negócios.
 

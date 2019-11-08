@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: f5dd418a03dd35ebced1a9c73eb8fe6567339859
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 83e1cd80bcb821ba1b815291f7f25f875ba66284
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565399"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73751591"
 ---
 # <a name="automate-onboarding"></a>Automatizar a integração
 
@@ -37,7 +37,7 @@ Os arquivos de exemplo ilustram como usar Azure PowerShell cmdlets para automati
 
 Os arquivos descritos na tabela a seguir são usados neste exemplo. Você pode personalizá-los para dar suporte aos seus próprios cenários de implantação.
 
-| Nome do arquivo | DESCRIÇÃO |
+| Nome do arquivo | Descrição |
 |-----------|-------------|
 | New-AMSDeployment. ps1 | O principal, orquestrando o script que automatiza a integração. Ele cria grupos de recursos e contas de local, espaço de trabalho e automação, se eles ainda não existirem. Este script do PowerShell requer uma assinatura existente. |
 | Espaço de trabalho-AutomationAccount. JSON | Um modelo do Resource Manager que implanta os recursos de conta de automação e espaço de trabalho. |
@@ -52,7 +52,7 @@ Use o comando a seguir para executar New-AMSDeployment. ps1:
 .\New-AMSDeployment.ps1 -SubscriptionName '{Subscription Name}' -WorkspaceName '{Workspace Name}' -WorkspaceLocation '{Azure Location}' -AutomationAccountName {Account Name} -AutomationAccountLocation {Account Location}
 ```
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Saiba como configurar alertas básicos para notificar sua equipe sobre os principais eventos e problemas de gerenciamento.
 

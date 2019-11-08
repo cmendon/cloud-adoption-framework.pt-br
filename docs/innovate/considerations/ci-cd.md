@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: ea3bcdc521a043affb71375442b9d5f6fe542fa1
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: e4c09cb67872cec6fca8ab395f7ab88e2e0f2064
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565685"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752093"
 ---
 # <a name="empower-adoption"></a>Capacitar a adoção
 
@@ -21,7 +21,7 @@ O teste final da inovação é a reação do cliente à sua invenção. A hipót
 
 ## <a name="reduce-friction-that-affects-adoption"></a>Reduzir o conflito que afeta a adoção
 
-Há alguns pontos principais de conflitos na adoção que podem ser minimizados por meio de uma combinação de tecnologia e processos. Para leitores com conhecimento dos processos de CI (integração contínua) e de implantação contínua (CD) ou DevOps, o seguinte parecerá muito familiar. Este artigo pretende estabelecer um ponto de partida para as equipes de adoção de nuvem, que impulsionarão os loops de inovação e de comentários. A longo prazo, esse ponto de partida pode estimular abordagens mais robustas de CI/CD ou DevOps à medida que os produtos e as equipes amadurecem.
+Há alguns pontos principais de conflitos na adoção que podem ser minimizados por meio de uma combinação de tecnologia e processos. Para leitores com conhecimento dos processos de CI (integração contínua) e de implantação contínua (CD) ou DevOps, o seguinte será familiar. Este artigo estabelece um ponto de partida para equipes de adoção de nuvem que impulsionam loops de inovação e de comentários. No futuro, esse ponto de partida pode estimular abordagens mais robustas de CI/CD ou DevOps à medida que os produtos e as equipes amadurecem.
 
 Conforme descrito em [medida para o impacto do cliente](./measure.md), a validação positiva de qualquer hipótese requer iteração e determinação. Você experimentará muito mais falhas do que o WINS durante qualquer ciclo de inovação. Isso é esperado. No entanto, quando um cliente precisa, uma hipótese e uma solução são alinhadas em escala, o mundo muda rapidamente. Este artigo tem como objetivo minimizar os [picos técnicos](./build.md#reduce-complexity-and-delay-technical-spikes) que tornam a inovação lenta, mas que ainda garantem que você mantenha algumas práticas recomendadas sólidas. Isso ajudará o design da equipe para o sucesso futuro, oferecendo as necessidades atuais do cliente.
 
@@ -69,7 +69,7 @@ Saiba mais sobre a [integração contínua](https://docs.microsoft.com/azure/dev
 
 Defeitos em qualquer solução podem criar falsos positivos ou falsos negativos. Erros inesperados podem facilmente levar a uma má interpretação das métricas de adoção do usuário. Eles também podem gerar comentários negativos de clientes que não representam com precisão o teste de sua hipótese.
 
-Durante as iterações iniciais de uma solução MVP, são esperados defeitos; os pioneiros podem até mesmo encontrá-los. Em versões anteriores, o teste de aceitação normalmente não existe. No entanto, um aspecto da criação com empatia se preocupa com a validação da necessidade e da hipótese. Ambos podem ser concluídos por meio de testes de unidade em um nível de código e testes de aceitação manual antes da implantação. Juntos, eles fornecem alguns meios de confiabilidade no teste. Prazo mais longo, você deve se esforçar para automatizar uma série bem definida de testes de compilação, unidade e aceitação. Eles garantirão métricas confiáveis relacionadas a ajustes mais granulares para a hipótese e a solução resultante.
+Durante as iterações iniciais de uma solução MVP, são esperados defeitos; os pioneiros podem até mesmo encontrá-los. Em versões anteriores, o teste de aceitação normalmente não existe. No entanto, um aspecto da criação com empatia se preocupa com a validação da necessidade e da hipótese. Ambos podem ser concluídos por meio de testes de unidade em um nível de código e testes de aceitação manual antes da implantação. Juntos, eles fornecem alguns meios de confiabilidade no teste. Você deve se esforçar para automatizar uma série bem definida de testes de compilação, unidade e aceitação. Eles garantirão métricas confiáveis relacionadas a ajustes mais granulares para a hipótese e a solução resultante.
 
 O recurso [Azure Test Plans](https://docs.microsoft.com/azure/devops/test/track-test-status?view=azure-devops) fornece ferramentas para desenvolver e operar planos de teste durante a execução de teste manual ou automatizada.
 
@@ -95,7 +95,7 @@ Ao [medir o impacto do cliente](./measure.md), é importante entender como os cl
 
 No Azure, [Azure monitor](https://docs.microsoft.com/azure/azure-monitor/overview) fornece as ferramentas e a interface para coletar e examinar dados de experiências do cliente. Você pode aplicar essas observações e ideias para refinar a pendência usando [Azure boards](https://docs.microsoft.com/azure/devops/boards).
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Depois de ter obtido uma compreensão das ferramentas e dos processos necessários para capacitar a adoção, é hora de examinar uma disciplina de inovação mais avançada: [interagir com dispositivos](./devices.md). Essa disciplina pode ajudar a reduzir as barreiras entre experiências físicas e digitais, tornando sua solução ainda mais fácil de adotar.
 

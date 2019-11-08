@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a320562f97b6e3a37e0f1b4912f1401189855530
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 7383f07f4d52cef640bcb1e617de60697a20b248
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566920"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753480"
 ---
 # <a name="balance-the-portfolio"></a>Equilibrar o portfólio
 
@@ -76,7 +76,7 @@ Equilibrar o portfólio exige uma análise qualitativa adicional durante o proce
 
 Com base nos dados da tabela da seção [documentação dos resultados empresariais](#document-business-outcomes) acima, há um risco provável do portfólio estar muito inclinado para um modelo de execução focado na migração. Se a experiência do cliente fosse a prioridade máxima, um portfólio pesado de inovação seria o mais provável. Nenhum modelo está certo nem errado, mas pender muito em uma direção geralmente leva a resultados decrescentes, adiciona complexidade desnecessária e aumenta o tempo de execução relacionado aos esforços de adoção da nuvem.
 
-Para reduzir a complexidade, é aconselhável que o leitor siga uma abordagem tradicional de racionalização de portfólio, mas em um modelo iterativo. As etapas a seguir descrevem um modelo qualitativo para essa abordagem:
+Para reduzir a complexidade, você deve seguir uma abordagem tradicional para a racionalização do portfólio, mas em um modelo iterativo. As etapas a seguir descrevem um modelo qualitativo para essa abordagem:
 
 - A equipe de estratégia da nuvem mantém uma lista de pendências priorizada das cargas de trabalho que serão migradas.
 - A equipe de estratégia da nuvem e a equipe de adoção da nuvem organizam uma reunião de planejamento de versão antes da conclusão de cada versão.
@@ -89,8 +89,8 @@ Para reduzir a complexidade, é aconselhável que o leitor siga uma abordagem tr
   - Os dados dentro dessa carga de trabalho contribuirão para uma inovação downstream relacionada ao BI, Machine Learning, IoT ou tecnologias relacionadas?
   - A carga de trabalho é compatível com plataformas de aplicativos modernas, como o Serviço de Aplicativo do Azure?
 - As respostas às perguntas acima e qualquer outra análise qualitativa necessária influenciariam os ajustes da lista de pendências priorizada. Esses ajustes podem incluir:
-  - Se uma carga de trabalho puder ser substituída por uma solução PaaS, ela poderá ser totalmente removida da lista de pendências da migração. No mínimo, a devida diligência adicional para decidir entre nova hospedagem e substituição seria adicionada como uma tarefa reduzindo temporariamente a prioridade dessa carga de trabalho na lista de pendências da migração.
-  - Se uma carga de trabalho estiver passando por um avanço de desenvolvimento (ou deveria estar), ela poderá se encaixar melhor em um modelo de refatoração/rearquitetura/recompilação. Como a inovação e a migração exigem habilidades técnicas diferentes, muitas vezes é aconselhável que os aplicativos, condizentes com uma abordagem de refatoração/rearquitetura/recompilação, sejam gerenciados por uma lista de pendências de inovação e não uma lista de pendências de migração.
+  - Se uma carga de trabalho puder ser substituída por uma solução PaaS, ela poderá ser totalmente removida da lista de pendências da migração. No mínimo, uma auditoria detalhada adicional para decidir entre Rehost e substituição seria adicionada como uma tarefa, reduzindo temporariamente a prioridade da carga de trabalho da pendência de migração.
+  - Se uma carga de trabalho for (ou deve estar) passando por um avanço no desenvolvimento, pode ser melhor se ajustar a um modelo de recriação de reestruturação-recompilação. Como a inovação e a migração exigem habilidades técnicas diferentes, os aplicativos que se alinham a uma abordagem refatorar-recriação de recompilação devem ser gerenciados por meio de uma pendência de inovação em vez de uma pendência de migração.
   - Se uma carga de trabalho fizer parte de uma inovação downstream, talvez faça sentido refatorar a plataforma de dados, mas deixar as camadas do aplicativo disponíveis para nova hospedagem. A refatoração secundária da plataforma de dados de uma carga de trabalho geralmente pode ser tratada em uma lista de pendências de migração ou inovação. Esse resultado de racionalização pode resultar em itens de trabalho mais detalhados na lista de pendências, mas, por outro lado, sem alterações nas prioridades.
   - Se uma carga de trabalho não for estratégica, mas for compatível com plataformas de hospedagem de aplicativos modernas baseadas em nuvem, talvez seja prudente realizar pequenas refatorações no aplicativo para implantá-las como um aplicativo moderno. Isso pode contribuir para a economia geral reduzindo os requisitos gerais de licenciamento de IaaS e sistema operacional da migração na nuvem.
   - Se uma carga de trabalho for de terceiros e os dados da carga de trabalho não forem planejados para uso em uma inovação downstream, talvez seja melhor deixar como uma opção de nova hospedagem na lista de pendências.
@@ -105,7 +105,7 @@ Durante a migração, as atividades de equilíbrio do portfólio podem ter um im
 
 A racionalização do portfólio exige diversidade do esforço técnico. A ideia que as equipes de adoção da nuvem correspondam à diversidade do portfólio nos esforços de migração é tentadora. Os stakeholders de negócios solicitam uma única equipe de adoção da nuvem para abordar toda a lista de pendências de migração. Isso raramente é uma abordagem recomendável e, em muitos casos, pode ser contraproducente.
 
-É recomendável que esses vários esforços sejam segmentados em duas ou mais equipes de adoção da nuvem. Usando um modelo de duas equipes como um modo de execução de exemplo, a Equipe 1 é a Equipe de migração e a Equipe 2 é a Equipe de inovação. Para esforços maiores, essas equipes poderiam ser mais segmentadas para tratar de outras abordagens, como esforços de Substituição/PaaS ou Refatoração secundária. A seguir descrevemos as habilidades e funções necessárias para Nova hospedagem, Refatoração ou Refatoração secundária:
+Esses diversos esforços devem ser segmentados em duas ou mais equipes de adoção de nuvem. Usando um modelo de duas equipes como um modo de execução de exemplo, a Equipe 1 é a Equipe de migração e a Equipe 2 é a Equipe de inovação. Para esforços maiores, essas equipes poderiam ser mais segmentadas para tratar de outras abordagens, como esforços de Substituição/PaaS ou Refatoração secundária. A seguir descrevemos as habilidades e funções necessárias para Nova hospedagem, Refatoração ou Refatoração secundária:
 
 **Hospedar novamente:** O Rehost exige que os membros da equipe implementem alterações focadas na infraestrutura. Geralmente usando uma ferramenta como o Azure Site Recovery para migrar VMs ou outros ativos para o Azure. Este trabalho se alinha bem com os administradores do datacenter ou implementadores de TI. A equipe de migração na nuvem está bem estruturada para fornecer esse trabalho em alta escala. Essa é a abordagem mais rápida para migrar ativos existentes na maioria dos cenários.
 

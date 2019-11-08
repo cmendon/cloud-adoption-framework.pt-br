@@ -1,5 +1,5 @@
 ---
-title: Guia de monitoramento de nuvem – alertas
+title: 'Guia de monitoramento de nuvem: alertas'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Escolha quando usar Azure Monitor ou System Center Operations Manager no Microsoft Azure
 author: MGoedtel
@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: efbb3b677f2349f0d2e8c240c42c75d75cf849f1
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 7e602ce0c27da5204a51d0a4a790ce65dc7e6871
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564988"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752736"
 ---
 # <a name="cloud-monitoring-guide-alerting"></a>Guia de monitoramento de nuvem: alertas
 
@@ -88,7 +88,7 @@ Azure Monitor para VMs | Os critérios de integridade são métricas gravadas no
 
 ### <a name="fastest-speed-driven-by-cost"></a>Velocidade mais rápida orientada por custo
 
-A latência é uma das decisões mais críticas que impulsionam alertas e uma rápida resolução de problemas que afetam seu serviço. Se você precisar de alertas quase em tempo real menos de cinco minutos, avalie primeiro se tiver ou puder obter alertas em sua telemetria, onde ele é armazenado por padrão. Em geral, essa estratégia também é a opção mais barata, porque a ferramenta que você está usando já está enviando seus dados para esse local.
+A latência é uma das decisões mais críticas que impulsionam alertas e uma rápida resolução de problemas que afetam seu serviço. Se você precisar de alertas quase em tempo real menos de cinco minutos, avalie primeiro se você tiver ou puder obter alertas em sua telemetria onde eles são armazenados por padrão. Em geral, essa estratégia também é a opção mais barata, porque a ferramenta que você está usando já está enviando seus dados para esse local.
 
 Dito isso, há algumas notas de rodapé importantes para essa regra.
 

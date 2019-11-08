@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: c57152b92826539a236227636ee115c19bd70e7a
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 8085a87f114011ce9a1089c0427ff9c592b33d15
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565761"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752009"
 ---
 # <a name="build-consensus-on-the-business-value-of-innovation"></a>Crie um consenso sobre o valor comercial da inovação
 
@@ -66,14 +66,15 @@ Essas grandes oportunidades de panorama geral revelam maneiras de alinhar melhor
 - **Oportunidade de hipótese:** É comum que vários participantes e equipes de desenvolvimento tenham muitas expectativas para uma solução. As expectativas irreais podem ser um sinal de que a hipótese é muito vaga. Siga as orientações sobre como [criar com o Customer empatia](./considerations/build.md) para construir uma hipótese mais clara.
 - **Oportunidade de compilação:** As equipes podem estar desalinhadas porque discordam na maneira de resolver a necessidade do cliente. Essa desacordo geralmente indica que a equipe está sendo [atrasada por um pico técnico prematuro](./considerations/build.md#reduce-complexity-and-delay-technical-spikes). Para manter a equipe focada no cliente, inicie a primeira iteração e crie um pequeno produto viável mínimo (MVP) para endereçar parte da hipótese. Para obter mais diretrizes para ajudar a equipe a avançar, consulte [desenvolver invenções digitais](./considerations/invention.md).
 - **Oportunidade de treinamento:** Qualquer uma das equipes pode ser desalinhada porque elas precisam de requisitos técnicos profundos e amplos requisitos funcionais. Essa necessidade pode levar a uma oportunidade de treinamento em metodologias Agile. Quando a cultura de equipe não está pronta para processos ágeis, você pode encontrar inovação e acompanhar o mercado para ser um desafio.  Para obter recursos de treinamento sobre as práticas DevOps e Agile, consulte:
-  - [Desenvolva suas práticas de DevOps](https://docs.microsoft.com/learn/paths/evolve-your-devops-practices)
+  - [Evolua suas práticas de DevOps](https://docs.microsoft.com/learn/paths/evolve-your-devops-practices)
   - [Crie aplicativos com o Azure DevOps](https://docs.microsoft.com/learn/paths/build-applications-with-azure-devops)
   - [Implantar aplicativos com o Azure DevOps](https://docs.microsoft.com/learn/paths/deploy-applications-with-azure-devops)
 
 Seguindo a metodologia e as ferramentas de gerenciamento de pendências em cada seção deste artigo, você pode ajudar a criar alinhamento de solução.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Depois de alinhar sua proposta de valor de negócios e comunicar-se, você estará pronto para começar a criar sua solução.
+
 > [!div class="nextstepaction"]
 > [Retorne à inovação de exercícios para as próximas etapas](./index.md)

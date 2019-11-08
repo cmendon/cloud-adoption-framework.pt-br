@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3ffc0c0707dd8a8631bc7724fd432a2183fea797
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 0875442331a5da3c53c5d6c713c3bdbfcfab6cbf
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058676"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753051"
 ---
 # <a name="standard-enterprise-governance-guide-improve-the-security-baseline-discipline"></a>Guia de governança empresarial padrão: melhorar a disciplina de linha de base de segurança
 
@@ -71,7 +71,7 @@ As alterações a seguir na política ajudarão a corrigir os novos riscos e a i
 
 1. Todos os ativos implantados devem ser categorizados por nível de importância e classificação de dados. As classificações devem ser revisadas pela equipe de governança de nuvem e pelo proprietário do aplicativo antes da implantação na nuvem.
 2. Os aplicativos que armazenam ou acessam dados protegidos devem ser gerenciados de forma diferente daqueles que não o fazem. No mínimo, eles devem ser segmentados para evitar acesso não intencional de dados protegidos.
-3. Todos os dados protegidos devem ser criptografados quando estão em repouso. Embora esse seja o padrão para todas as contas de armazenamento do Azure, outras estratégias de criptografia podem ser necessárias, incluindo a criptografia dos dados dentro da conta de armazenamento, a criptografia de VMs e a criptografia no nível do banco de dado se estiver aproveitando o SQL em uma VM (TDE e coluna criptografia).
+3. Todos os dados protegidos devem ser criptografados quando estão em repouso. Embora esse seja o padrão para todas as contas de armazenamento do Azure, outras estratégias de criptografia podem ser necessárias, incluindo a criptografia dos dados dentro da conta de armazenamento, a criptografia de VMs e a criptografia no nível do banco de dados ao usar o SQL em uma VM (TDE e criptografia de coluna ).
 4. As permissões elevadas em qualquer segmento que contenha dados protegidos devem ser uma exceção. Essas exceções serão registradas com a equipe de governança de nuvem e auditadas regularmente.
 5. As sub-redes de rede que contêm dados protegidos devem ser isoladas de todas as outras sub-redes. O tráfego de rede entre as sub-redes de dados protegidos será auditado regularmente.
 6. Nenhuma sub-rede que contém os dados protegidos pode ser acessada diretamente pela Internet pública ou em datacenters. O acesso a essas sub-redes deve ser roteado por meio de sub-redes intermediárias. Todo o acesso a essas sub-redes deve vir por meio de uma solução de firewall que pode executar a verificação de pacotes e funções de bloqueio.

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a307c29a640332fdf82a69ec06eab27589f77304
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 9a879f2957f1fd7c1d92a9a01381c64cff320d27
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566342"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752677"
 ---
 # <a name="deployment-acceleration-sample-policy-statements"></a>Instruções de política de exemplo de Aceleração de implantação
 
@@ -32,7 +32,7 @@ As instruções de política de exemplo a seguir abordam os riscos de negócios 
 
 **Declaração de política:** Todos os ativos implantados na nuvem devem ser implantados usando modelos ou scripts de automação sempre que possível.
 
-**Opções de design potenciais:** [modelos de Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/template-deployment-overview) fornece uma abordagem de infraestrutura como código para implantar seus recursos no Azure. Você também pode usar o [Terraform](https://docs.microsoft.com/azure/terraform/terraform-overview) como uma ferramenta de implantação consistente local e baseada em nuvem.
+**Opções de design potenciais:** [modelos de Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/template-deployment-overview) fornece uma infraestrutura como abordagem de código para implantar seus recursos no Azure. Você também pode usar o [Terraform](https://docs.microsoft.com/azure/terraform/terraform-overview) como uma ferramenta de implantação consistente local e baseada em nuvem.
 
 ## <a name="lack-of-visibility-into-system-issues"></a>Falta de visibilidade em problemas de sistema
 
@@ -43,7 +43,7 @@ As instruções de política de exemplo a seguir abordam os riscos de negócios 
 - Medidas métricas principais e diagnósticos serão identificadas para todos os sistemas de produção e os componentes e ferramentas de diagnóstico e monitoramento serão aplicados a esses sistemas e monitorados regularmente pela equipe de operações.
 - As operações considerarão o uso de ferramentas de monitoramento e diagnóstico em ambientes de não produção, como preparo e QA, para identificar problemas do sistema antes que eles ocorram no ambiente de produção.
 
-**Opções de design potenciais:** [Azure monitor](https://docs.microsoft.com/azure/azure-monitor), que também inclui log Analytics e Application insights, fornece ferramentas para coletar e analisar a telemetria para ajudá-lo a entender como seus aplicativos estão sendo executados e proativamente identificar problemas que os afetam e os recursos dos quais eles dependem. Além disso, o [log de atividades do Azure](https://docs.microsoft.com/azure/azure-monitor/platform/activity-logs-overview) relata todas as alterações que estão sendo feitas no nível da plataforma e deve ser monitorado/auditado quanto a alterações não compatíveis.
+**Opções de design em potencial:** [Azure monitor](https://docs.microsoft.com/azure/azure-monitor), que inclui log Analytics e Application insights, fornece ferramentas para coletar e analisar a telemetria para ajudá-lo a entender como seus aplicativos estão sendo executados e a identificar proativamente problemas que os afetam e os recursos dos quais eles dependem. Além disso, o [log de atividades do Azure](https://docs.microsoft.com/azure/azure-monitor/platform/activity-logs-overview) relata todas as alterações que estão sendo feitas no nível da plataforma e deve ser monitorado e auditado quanto a alterações não compatíveis.
 
 ## <a name="configuration-security-reviews"></a>Revisões de segurança de configuração
 

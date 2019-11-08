@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 15bce39a8ffee6c3f35a8de3d205f863374ae3ff
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 59a18ab71befd7b4f60c4e0a97ecb6af28690d7f
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239176"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752826"
 ---
 # <a name="rehost-an-on-premises-app-on-an-azure-vm-and-sql-database-managed-instance"></a>Hospedar novamente um aplicativo local em uma Instância Gerenciada do Banco de Dados SQL e VM do Azure
 
@@ -387,7 +387,7 @@ Para configurar o ambiente de origem, os administradores da Contoso fazem o segu
 3. Quando eles ligam a VM pela primeira vez, ela é iniciada em uma experiência de instalação do Windows Server 2016. Eles aceitam o contrato de licença e inserem uma senha de administrador.
 4. Quando a instalação é concluída, eles entram na VM como o administrador. Na primeira conexão, a Ferramenta de Configuração do Azure Site Recovery é executada automaticamente.
 5. Na Ferramenta de Configuração do Site Recovery, eles inserem um nome a ser usado para registrar o servidor de configuração no cofre.
-6. A ferramenta verifica a conexão da VM para o Azure. Depois que a conexão é estabelecida, eles selecionam **Entrar** para entrar na assinatura do Azure. As credenciais devem ter acesso ao cofre no qual o servidor de configuração está registrado.
+6. A ferramenta verifica a conexão da máquina virtual com o Azure. Depois que a conexão é estabelecida, eles selecionam **Entrar** para entrar na assinatura do Azure. As credenciais devem ter acesso ao cofre no qual o servidor de configuração está registrado.
 
     ![Registrar o servidor de configuração](./media/contoso-migration-rehost-vm-sql-managed-instance/config-server-register2.png)
 

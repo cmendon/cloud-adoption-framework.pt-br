@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 99155a4dba7c51c5fc5d1888798275c47f870d5e
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: a8cf7c6bb09d2f4c505e3edcb97a0354a870a730
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566259"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753199"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>Guia de governança para empresas complexas: melhorar a disciplina de linha de base de segurança
 
@@ -40,7 +40,7 @@ Desde então, ocorreram algumas mudanças que afetarão a governança:
 
 - Milhares de ativos de negócios e de TI foram implantados na nuvem.
 - A equipe de desenvolvimento de aplicativos implementou um pipeline de CI/CD (integração contínua e implantação contínua) para implantar um aplicativo nativo de nuvem com uma experiência de usuário aprimorada. Esse aplicativo ainda não interage com dados protegidos, portanto, não está pronto para produção.
-- A equipe de Business Intelligence dentro da TI organiza ativamente os dados na nuvem a partir de dados de logística, inventário e de terceiros. Esses dados estão sendo usados para gerar novas previsões, o que poderia moldar os processos de negócios. No entanto, essas previsões e insights não são acionáveis até que os dados financeiros e do cliente possam ser integrados à plataforma de dados.
+- A equipe de Business Intelligence dentro da TI organiza ativamente os dados na nuvem a partir de dados de logística, inventário e de terceiros. Esses dados estão sendo usados para gerar novas previsões, o que poderia moldar os processos de negócios. No entanto, essas previsões e informações não são acionáveis até que os dados financeiros e do cliente possam ser integrados à plataforma de dados.
 - A equipe de TI está em andamento nos planos do CIO e CFO para desativar dois datacenters. Quase 3.500 dos ativos nos dois datacenters foram desativados ou migrados.
 - As políticas relativas a dados confidenciais pessoais e financeiros foram modernizadas. No entanto, as novas políticas corporativas dependem da implementação das políticas de segurança e governança relacionadas. As equipes ainda estão trabalhando nisso.
 
@@ -58,7 +58,7 @@ Desde então, ocorreram algumas mudanças que afetarão a governança:
 Esse risco de negócios pode ser dividido em alguns riscos técnicos:
 
 1. Aplicativos críticos ou dados protegidos podem ser implantados acidentalmente.
-2. Dados protegidos podem ser expostos durante o armazenamento devido a más decisões de criptografia.
+2. Dados protegidos podem ser expostos durante o armazenamento devido a decisões de criptografia ineficientes.
 3. Usuários não autorizados podem acessar dados protegidos.
 4. Uma invasão externa pode resultar no acesso aos dados protegidos.
 5. Uma invasão externa ou ataques de negação de serviço pode causar uma interrupção dos negócios.
@@ -82,14 +82,14 @@ As alterações a seguir na política ajudarão a corrigir os novos riscos e a i
 6. Nenhuma sub-rede que contém os dados protegidos pode ser acessada diretamente pela Internet pública ou em datacenters. O acesso a essas sub-redes deve ser roteado por meio de sub-redes intermediárias. Todo o acesso a essas sub-redes deve vir por meio de uma solução de firewall que pode executar a verificação de pacotes e as funções de bloqueio.
 7. As ferramentas de governança devem realizar a auditoria e impor requisitos de configuração de rede definidos pela equipe de gerenciamento de segurança.
 8. As ferramentas de governança devem limitar a implantação da VM (máquina virtual) apenas às imagens aprovadas.
-9. Sempre que possível, o gerenciamento da configuração do nó deve aplicar requisitos da política à configuração de qualquer sistema operacional convidado. O gerenciamento de configuração de nó deve respeitar o investimento atual no GPO (Objeto de Política de Grupo) para configuração de recurso.
-10. As ferramentas de governança devem impor que as atualizações automáticas sejam habilitadas em todos os ativos implantados. Quando possível, as atualizações automáticas serão impostas. Quando não forem impostas por ferramentas, as violações de nível de nó deverão ser analisadas com as equipes de gerenciamento operacional e corrigidas de acordo com as políticas de operações. Os ativos que não são automaticamente atualizados devem ser incluídos em processos que pertencem às operações de TI.
+9. Sempre que possível, o gerenciamento de configuração de nó deverá aplicar os requisitos da política à configuração de qualquer sistema operacional convidado. O gerenciamento de configuração de nó deve respeitar o investimento atual no GPO (Objeto de Política de Grupo) para configuração de recurso.
+10. As ferramentas de governança devem impor que as atualizações automáticas sejam habilitadas em todos os ativos implantados. Quando possível, as atualizações automáticas serão impostas. Quando não forem impostas por ferramentas, as violações de nível de nó deverão ser analisadas com as equipes de gerenciamento operacional e corrigidas de acordo com as políticas de operações. Ativos que não são atualizados automaticamente devem ser incluídos nos processos pertencentes às Operações de TI.
 11. A criação de novas assinaturas ou grupos de gerenciamento para qualquer aplicativo de missão crítica ou dados protegidos requer uma análise da equipe de governança de nuvem para garantir uma atribuição de diagrama adequada.
 12. Um modelo de acesso de privilégios mínimos será aplicado a qualquer assinatura que contenha aplicativos críticos ou dados protegidos.
 13. O fornecedor de nuvem deve ser capaz de integrar chaves de criptografia gerenciadas pela solução local atual.
 14. O fornecedor de nuvem deve ser capaz de oferecer suporte para a solução de dispositivo de borda atual e todas as configurações necessárias para proteger qualquer limite de rede exposto publicamente.
 15. O fornecedor de nuvem deve ser capaz de oferecer suporte a uma conexão compartilhada à WAN global, com a transmissão de dados roteados por meio da solução de dispositivo de borda atual.
-16. As tendências e explorações que podem afetar as implantações de nuvem devem ser revisadas regularmente pela equipe de segurança para que sejam fornecidas atualizações às ferramentas de Linha de base de segurança usadas na nuvem.
+16. Tendências e explorações que podem afetar as implantações de nuvem devem ser revisadas regularmente pela equipe de segurança para que sejam fornecidas atualizações às ferramentas de Linha de Base de Segurança usadas na nuvem.
 17. As ferramentas de implantação devem ser aprovadas pela equipe de governança de nuvem para garantir a governança contínua de ativos implantados.
 18. Os scripts de implantação devem ser mantidos em um repositório central acessível pela equipe de governança de nuvem para revisão e auditoria periódicas.
 19. Os processos de governança devem incluir auditorias no momento da implantação e em ciclos regulares para garantir a consistência em todos os ativos.
@@ -98,7 +98,7 @@ As alterações a seguir na política ajudarão a corrigir os novos riscos e a i
 
 ## <a name="incremental-improvement-of-the-best-practices"></a>Melhoria incremental das práticas recomendadas
 
-Esta seção do artigo alterará o design MVP de governança para incluir novas políticas do Azure e uma implementação do gerenciamento de custos do Azure. Juntas, essas duas alterações de design atenderão às novas instruções da política corporativa.
+Esta seção modifica o design do MVP de governança para incluir novas políticas do Azure e uma implementação do gerenciamento de custos do Azure. Juntas, essas duas alterações de design atenderão às novas instruções da política corporativa.
 
 As novas práticas recomendadas se enquadram em duas categorias: ti corporativa (Hub) e adoção de nuvem (spoke).
 
@@ -108,7 +108,7 @@ As novas práticas recomendadas se enquadram em duas categorias: ti corporativa 
 2. Modelo de Hub e spoke:
     1. As diretrizes na [topologia hub e spoke com](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services) arquitetura de referência de serviços compartilhados podem ser usadas para gerar modelos do Resource Manager para os ativos necessários em um hub de ti corporativo.
     2. Ao usar esses modelos, essa estrutura pode ser feita repetidamente, como parte de uma estratégia de governança central.
-    3. Além da arquitetura de referência atual, é recomendável que um modelo de grupo de segurança de rede seja criado, capturando quaisquer requisitos de bloqueio de porta ou de lista de permissões para a VNet para hospedar o firewall. Esse grupo de segurança de rede é diferente dos grupos anteriores, pois será o primeiro grupo de segurança de rede a permitir o tráfego público em uma VNet.
+    3. Além da arquitetura de referência atual, um modelo de grupo de segurança de rede deve ser criado para capturar quaisquer requisitos de bloqueio de porta ou de lista de permissões para a VNet hospedar o firewall. Esse grupo de segurança de rede é diferente dos grupos anteriores, pois será o primeiro grupo de segurança de rede a permitir o tráfego público em uma VNet.
 3. Crie políticas do Azure. Crie uma política chamada `Hub NSG Enforcement` para impor a configuração do grupo de segurança de rede atribuído a qualquer VNet criada nesta assinatura. Aplique as Políticas internas para configuração do convidado, conforme a seguir:
     1. Realize uma auditoria para verificar se os servidores Web do Windows estão usando protocolos de comunicação segura.
     2. Realize uma auditoria para verificar se as configurações de segurança de senha estão definidas corretamente em computadores Linux e Windows.
@@ -134,7 +134,7 @@ Em alterações iterativas anteriores à prática recomendada, definimos grupos 
     1. A arquitetura de referência da seção anterior, do [Hub e da topologia do spoke com serviços compartilhados](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services), gerou um modelo do Resource Manager para habilitar o emparelhamento VNet.
     2. Esse modelo pode ser usado como um guia para modificar o modelo DMZ da iteração de governança anterior.
     3. Agora estamos adicionando o emparelhamento VNet à VNet da DMZ que foi conectada anteriormente ao dispositivo de borda local pela VPN.
-    4. *** Também é recomendável que a VPN seja removida desse modelo para garantir que nenhum tráfego seja roteado diretamente para o datacenter local, sem passar pela assinatura de TI corporativa e pela solução de Firewall. Você também pode definir essa VPN como um circuito de failover no caso de um circuito de ExpressRoute outge.
+    4. A VPN também deve ser removida desse modelo para garantir que nenhum tráfego seja roteado diretamente para o datacenter local, sem passar pela solução de firewall e assinatura de ti corporativa. Você também pode definir essa VPN como um circuito de failover no caso de um circuito de ExpressRoute outge.
     5. [Configuração de rede](https://docs.microsoft.com/azure/automation/automation-dsc-overview#network-planning) adicional será exigida pela Automação do Azure para aplicar a DSC às VMs hospedadas.
 2. Modifique o grupo de segurança de rede. Bloquear todo o tráfego local público **e** direto no grupo de segurança de rede. Somente o tráfego de entrada deve ser proveniente do par de VNet na assinatura de TI corporativa.
     1. Na iteração anterior, um grupo de segurança de rede foi criado, bloqueando todo o tráfego público e listando todo o tráfego interno. Agora, queremos mudar um pouco esse grupo de segurança de rede.
@@ -169,7 +169,7 @@ Em alterações iterativas anteriores à prática recomendada, definimos grupos 
 
 Adicionar esses processos e alterações ao MVP de governança ajuda a corrigir muitos dos riscos associados à governança de segurança. Em conjunto, eles adicionam ferramentas de monitoramento de segurança, identidade e rede necessárias para proteger os dados.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 À medida que a adoção de nuvem continua e entrega o valor comercial adicional, os riscos e as necessidades de governança de nuvem também mudam. Para a empresa fictícia neste guia, a próxima etapa é oferecer suporte a cargas de trabalho de missão crítica. Essa é a situação em que os controles de Consistência de Recursos são necessários.
 

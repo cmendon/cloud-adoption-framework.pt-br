@@ -1,5 +1,5 @@
 ---
-title: Guia de monitoramento de nuvem – coletar os dados corretos
+title: 'Guia de monitoramento de nuvem: coletar os dados corretos'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Escolha quando usar Azure Monitor ou System Center Operations Manager no Microsoft Azure
 author: MGoedtel
@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 05596379872fbfa9099297a55d4b75dedc0b672a
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 950b767101fea9b33875f1ad0938599a4f371ba9
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564940"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73751518"
 ---
 # <a name="cloud-monitoring-guide-collect-the-right-data"></a>Guia de monitoramento de nuvem: coletar os dados corretos
 
@@ -45,9 +45,9 @@ Para gerar uma resolução mais rápida do incidente, considere as seguintes rec
 - Use os recursos de busca detalhada do painel ou dê suporte à personalização da exibição para refiná-la.
 - Se você precisar de logs detalhados, as métricas devem ter ajudado a direcionar os critérios de pesquisa. Se as métricas não ajudarem, melhore-as para o próximo incidente.
 
-Adotar esse conjunto de princípios de orientação pode ajudar a fornecer percepções quase em tempo real, bem como um melhor gerenciamento do seu serviço.
+Adotar esse conjunto de princípios de orientação pode ajudar a fornecer informações quase em tempo real, bem como um melhor gerenciamento do seu serviço.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 > [!div class="nextstepaction"]
 > [Estratégia de alerta](./alerting.md)

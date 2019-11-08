@@ -8,12 +8,12 @@ ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 444530a603d7d7e77bb71592a061486db835ea56
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 71632e8f3f995922f4021f216f2090b742141169
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566889"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753529"
 ---
 # <a name="accelerate-migration-by-migrating-an-instance-of-sql-server"></a>Acelere a migração migrando uma instância do SQL Server
 
@@ -102,7 +102,7 @@ O caminho sugerido para migração e sincronização usa uma combinação das tr
 
 ### <a name="guidance-and-tutorials-for-suggested-migration-process"></a>Diretrizes e tutoriais para o processo de migração sugerido
 
-Escolher a melhor orientação para a migração usando o serviço de migração de banco de dados é contingente na plataforma de origem e de destino de sua escolha. A tabela a seguir contém links para tutoriais para cada uma das abordagens padrão para migrar um banco de dados SQL usando o serviço de migração de banco de dados.
+A escolha da melhor orientação para a migração usando o serviço de migração de banco de dados do Azure é contingente na plataforma de origem e de destino de sua escolha. A tabela a seguir contém links para tutoriais para cada uma das abordagens padrão para migrar um banco de dados SQL usando o serviço de migração de banco de dados do Azure.
 
 |Origem  |Escolha o destino  |Ferramenta  |Tipo de migração  |Diretriz  |
 |---------|---------|---------|---------|---------|
@@ -114,7 +114,7 @@ Escolher a melhor orientação para a migração usando o serviço de migração
 
 ### <a name="guidance-and-tutorials-for-various-services-to-equivalent-paas-solutions"></a>Diretrizes e tutoriais para vários serviços para soluções de PaaS equivalentes
 
-Depois de mover os bancos de dados de uma instância do SQL Server para o serviço de migração de banco de dado, o esquema e os dados podem ser rehospedados em várias soluções PaaS. No entanto, outros serviços necessários ainda podem estar em execução nesse servidor. Os três tutoriais a seguir auxiliam na movimentação do SSIS, do SSAS e do SSRS para os serviços de PaaS equivalentes no Azure.
+Depois de mover os bancos de dados de uma instância do SQL Server para o serviço de migração de banco de dado do Azure, o esquema e os dados podem ser rehospedados em várias soluções PaaS. No entanto, outros serviços necessários ainda podem estar em execução nesse servidor. Os três tutoriais a seguir auxiliam na movimentação do SSIS, do SSAS e do SSRS para os serviços de PaaS equivalentes no Azure.
 
 |Origem  |Escolha o destino  |Ferramenta  |Tipo de migração  |Diretriz  |
 |---------|---------|---------|---------|---------|

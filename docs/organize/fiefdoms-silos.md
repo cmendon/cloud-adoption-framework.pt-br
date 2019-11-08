@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: beac1a3d459bd0f8654a9c746bc25981ad366fb0
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: f0767ad4825a0b6b1506b8ee17e33eccf383325a
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566750"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753646"
 ---
 # <a name="organizational-antipatterns-silos-and-fiefdoms"></a>Antipadrão organizacional: silos e fiefdoms
 
@@ -134,7 +134,7 @@ Fiefdoms de ti pode ser um sinal de problemas de liderança do sistema. Para sup
 
 O alinhamento com os participantes de negócios, as motivações de negócios e os resultados de negócios pode ser necessário para impulsionar a alteração necessária. Parceria com a [equipe de estratégia de nuvem](./cloud-strategy.md), o [Cloud Center de excelência](./cloud-center-of-excellence.md)e a [equipe de governança de nuvem](./cloud-governance.md) podem fornecer os pontos de dados necessários para uma posição defensible. Quando necessário, essas equipes devem estar envolvidas em um escalonamento de grupo para resolver os desafios que não podem ser abordados com a liderança de ti sozinho.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Interromper os antipadrões organizacionais é um esforço de equipe. Para agir sobre essas diretrizes, examine a introdução à preparação organizacional para identificar os participantes e as estruturas de equipe certas:
 

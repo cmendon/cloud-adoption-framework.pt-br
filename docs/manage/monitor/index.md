@@ -9,16 +9,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 315ba0898f6a301af6f91614290c51244fbf6eb0
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 0920e834bcec0fc5885650ba5cab7ec28eac669f
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564930"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752784"
 ---
 # <a name="cloud-monitoring-guide-introduction"></a>Guia de monitoramento de nuvem: Introdução
 
-A nuvem apresenta uma mudança fundamental na maneira como as empresas adquirem e usam os recursos de tecnologia. No passado, as empresas assumiam propriedade e responsabilidade por todos os níveis de tecnologia, da infraestrutura ao software. Agora, a nuvem oferece o potencial para que as empresas provisionem e consumam recursos conforme necessário.
+Fundamentalmente, a nuvem altera como as empresas adquirem e usam recursos de tecnologia. No passado, as empresas assumiam propriedade e responsabilidade por todos os níveis de tecnologia, da infraestrutura ao software. Agora, a nuvem oferece o potencial para que as empresas provisionem e consumam recursos conforme necessário.
 
 Embora a nuvem ofereça flexibilidade praticamente ilimitada em termos de opções de design, as empresas buscam uma metodologia consistente e comprovada para a adoção de tecnologias de nuvem. Cada empresa tem metas e cronogramas diferentes para a adoção da nuvem, portanto, é praticamente impossível que haja uma única abordagem para todos os casos de adoção.
 

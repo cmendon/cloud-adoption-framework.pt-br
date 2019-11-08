@@ -9,18 +9,18 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: dcf98227f6464b71d0e3e3a1bc0bf505c149254b
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 25e9ecd4d911766864d81a5ff34f00caf82e86bf
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564270"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753635"
 ---
 # <a name="central-it-capabilities"></a>Recursos centrais de ti
 
 À medida que a adoção de nuvem é dimensionada, os recursos de governança de nuvem sozinhos podem não ser suficientes para controlar os esforços de adoção. Quando a adoção é gradual, as equipes tendem a desenvolver proorgânicamente as habilidades e os processos necessários para estar prontos para a nuvem ao longo do tempo.
 
-No entanto, quando uma equipe de adoção de nuvem aproveita a nuvem para atingir um resultado comercial de alto perfil, a adoção gradual raramente é o caso. O sucesso segue o sucesso. Isso também é verdadeiro para a adoção da nuvem, mas acontece em escala de nuvem. Quando a adoção de nuvem se expande de uma equipe para várias equipes relativamente rapidamente, é necessário ter suporte adicional da equipe de ti existente. No entanto, esses membros da equipe podem não ter o treinamento e a experiência necessários para dar suporte à nuvem usando ferramentas de ti nativas de nuvem. Isso geralmente orienta a formação de uma equipe de ti central que governa a nuvem.
+No entanto, quando uma equipe de adoção de nuvem usa a nuvem para atingir um resultado comercial de alto perfil, a adoção gradual raramente é o caso. O sucesso segue o sucesso. Isso também é verdadeiro para a adoção da nuvem, mas acontece em escala de nuvem. Quando a adoção de nuvem se expande de uma equipe para várias equipes relativamente rapidamente, é necessário ter suporte adicional da equipe de ti existente. No entanto, esses membros da equipe podem não ter o treinamento e a experiência necessários para dar suporte à nuvem usando ferramentas de ti nativas de nuvem. Isso geralmente orienta a formação de uma equipe de ti central que governa a nuvem.
 
 > [!CAUTION]
 > Embora essa seja uma etapa de maturidade comum, ela pode apresentar um alto risco de adoção, potencialmente bloqueando os esforços de inovação e de migração, se não forem gerenciados com eficiência. Consulte a seção de risco abaixo para saber como reduzir o risco de centralizar se tornar um antipadrão cultural.
@@ -105,7 +105,7 @@ Esta narração de exemplo ilustra a abordagem adotada por uma equipe de ti cent
 
 A contoso, a LLC adotou um modelo de ti central para o suporte dos recursos de nuvem da empresa. Para fornecer esse modelo, eles implementaram controles rígidos para vários serviços compartilhados, como conexões de rede de entrada. Essa mudança inteligente reduziu a exposição de seu ambiente de nuvem e forneceu um único dispositivo de "interrupção" para bloquear todo o tráfego em caso de violação. Suas políticas de linha de base de segurança preparam que todo o tráfego de entrada deve vir por um dispositivo compartilhado gerenciado pela equipe de ti central.
 
-No entanto, uma de suas equipes de adoção de nuvem agora requer um ambiente com uma conexão de rede de entrada dedicada e especialmente configurada para aproveitar uma tecnologia de nuvem específica. Uma equipe de ti central inmaturo simplesmente recusaria a solicitação e priorizaria seus processos existentes em relação às necessidades de adoção. A equipe de ti central da Contoso é diferente. Eles identificaram rapidamente uma solução simples de quatro partes para esse dilema: classificação, negociação, isolamento e automação.
+No entanto, uma de suas equipes de adoção de nuvem agora requer um ambiente com uma conexão de rede de entrada dedicada e especialmente configurada para usar uma tecnologia de nuvem específica. Uma equipe de ti central inmaturo simplesmente recusaria a solicitação e priorizaria seus processos existentes em relação às necessidades de adoção. A equipe de ti central da Contoso é diferente. Eles identificaram rapidamente uma solução simples de quatro partes para esse dilema: classificação, negociação, isolamento e automação.
 
 **Classificação:** Como a equipe de adoção de nuvem estava nos primeiros estágios da criação de uma nova solução e não tinha dados confidenciais ou necessidades de suporte de missão crítica, os ativos no ambiente foram classificados como baixo risco e não crítico. A classificação efetiva é um sinal de maturidade na ti central. Classificar todos os ativos e ambientes permite políticas mais claras.
 

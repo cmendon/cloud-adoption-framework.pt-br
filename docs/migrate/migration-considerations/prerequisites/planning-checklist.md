@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7a71b5694849533b6a01b98d9e14d5022e7287f8
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 8815a9089b63fe20d2d79c5ef979ff5d41166192
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564560"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753444"
 ---
 # <a name="migration-environment-planning-checklist-validate-environmental-readiness-prior-to-migration"></a>Lista de verificação de planejamento do ambiente de migração: validar prontidão do ambiente antes da migração
 
@@ -27,7 +27,7 @@ Este artigo e a lista de verificação assumem uma abordagem de _novo host_ ou d
 
 ## <a name="governance-alignment"></a>Alinhamento de governança
 
-A primeira e mais importante decisão sobre qualquer ambiente pronto para a migração é a opção de alinhamento da governança. Chegou-se a um consenso sobre o alinhamento da governança com a fundação da migração? No mínimo, a equipe de adoção da nuvem deve entender se essa migração termina em um único ambiente com governança limitada, em uma fábrica de ambiente totalmente controlada ou em alguma variante dessas duas opções. Para obter mais opções e diretrizes sobre o alinhamento da governança, confira o artigo sobre [Alinhamento da governança e de conformidade](../../expanded-scope/governance-or-compliance.md).
+A primeira e mais importante decisão sobre qualquer ambiente pronto para a migração é a opção de alinhamento da governança. Chegou-se a um consenso sobre o alinhamento da governança com a fundação da migração? No mínimo, a equipe de adoção de nuvem deve entender se essa migração é inicial em um único ambiente com governança limitada, uma fábrica de ambiente totalmente controlada ou alguma variante entre elas. Para obter mais opções e diretrizes sobre o alinhamento da governança, confira o artigo sobre [Alinhamento da governança e de conformidade](../../expanded-scope/governance-or-compliance.md).
 
 ## <a name="cloud-readiness-implementation"></a>Implementação de preparação para a nuvem
 
@@ -52,7 +52,7 @@ Deve ser estabelecida antes da migração uma abordagem consistente para dar nom
 
 ### <a name="resource-governance"></a>Governança de recursos
 
-Uma decisão quanto às ferramentas para controlar os recursos deve ser tomada antes da migração. As ferramentas não precisam ser totalmente implementadas, mas uma direção deve ser selecionada e testada. É recomendável que a equipe de governança da nuvem defina e exija a implementação de um MVP (produto viável mínimo) para ferramentas de governança antes da migração.
+Uma decisão quanto às ferramentas para controlar os recursos deve ser tomada antes da migração. As ferramentas não precisam ser totalmente implementadas, mas uma direção deve ser selecionada e testada. A equipe de governança de nuvem deve definir e exigir a implementação de um MVP (produto viável) mínimo para ferramentas de governança antes da migração.
 
 ## <a name="network"></a>Rede
 
@@ -62,7 +62,7 @@ Suas cargas de trabalho baseadas em nuvem exigirão o provisionamento de redes v
 
 Os serviços de identidade baseados em nuvem são um pré-requisito para oferecer IAM (gerenciamento de identidade e acesso) para seus recursos de nuvem. Alinhe sua estratégia de gerenciamento de identidades com seus planos de adoção da nuvem antes de continuar. Por exemplo, ao migrar ativos locais existentes, considere a possibilidade de oferecer suporte para uma abordagem de identidade híbrida usando a [sincronização de diretório](../../../decision-guides/identity/index.md) a fim de permitir um conjunto consistente de credenciais de usuário em seus ambientes local e na nuvem, durante e após a migração.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Se o ambiente atender aos requisitos mínimos, ele poderá ser considerado aprovado para preparação para a migração. [A complexidade cultural e o gerenciamento de alterações](./cultural-complexity.md) ajudam a alinhar funções e responsabilidades para garantir as expectativas adequadas durante a execução do plano.
 

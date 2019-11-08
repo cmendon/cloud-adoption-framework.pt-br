@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 6dbc0dce4e129a785ddd3ae735115a211bf04dee
-ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
+ms.openlocfilehash: 7ee8cab09fc5ad875240a10d7fe6f632d91432c9
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73656534"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73751664"
 ---
 # <a name="enable-server-management-services-on-a-single-vm-for-evaluation"></a>Habilitar serviços de gerenciamento de servidor em uma única VM para avaliação
 
@@ -35,7 +35,7 @@ Para obter mais informações sobre como carregar essas soluções para VMs indi
 
 ## <a name="next-steps"></a>Próximos passos
 
-Saiba como usar a política do Azure para carregar VMs do Azure em escala.
+Saiba como usar Azure Policy para carregar VMs do Azure em escala.
 
 > [!div class="nextstepaction"]
 > [Configurar os serviços de gerenciamento do Azure para uma assinatura](./onboard-at-scale.md)

@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 8daab86846ef0c3dbc93a5382f76080f678c1a08
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: f2e6aabec18d309aaae0a3a3d3cfd43ac6216a85
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565001"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752771"
 ---
 # <a name="apply-design-principles-and-advanced-operations"></a>Aplicar princípios de design e operações avançadas
 
@@ -37,7 +37,7 @@ Conforme descrito no guia de gerenciamento do Azure, uma linha de base de gerenc
 
 ## <a name="management-specialization"></a>Especialização de gerenciamento
 
-Os aspectos da carga de trabalho e das operações de plataforma podem exigir alterações nos princípios de design e arquitetura. Essas alterações podem levar tempo e podem resultar em maiores despesas operacionais. Para reduzir o número de cargas de trabalho que exigem esses investimentos, uma linha de base de gerenciamento aprimorada pode fornecer um aperfeiçoamento suficiente para o compromisso de negócios.
+Os aspectos da carga de trabalho e das operações de plataforma podem exigir alterações nos princípios de design e arquitetura. Essas alterações podem levar tempo e podem resultar em maiores despesas operacionais. Para reduzir o número de cargas de trabalho que exigem esses investimentos, uma linha de base de gerenciamento aprimorada poderia fornecer um aperfeiçoamento suficiente para o compromisso de negócios.
 
 Para cargas de trabalho que garantem um investimento maior para atender a um compromisso de negócios, a especialização das operações é fundamental.
 
@@ -52,9 +52,9 @@ Há duas áreas de especialização:
 
 As decisões entre a especialização de plataforma e a especialização de carga de trabalho são baseadas na criticalidade e no impacto de cada carga de trabalho. No entanto, essas decisões também são indícios de decisões culturais maiores entre os modelos organizacionais de ti central e CCoE.
 
-A especialização de carga de trabalho geralmente dispara uma alteração cultural. Ti tradicional e central de ti os dois processos de compilação que podem fornecer suporte em escala. O suporte a escala é mais atingível para serviços repetíveis encontrados em uma linha de base de gerenciamento, linha de base aprimorada ou até mesmo operações de plataforma. A especialização de carga de trabalho não é geralmente dimensionada. Essa falta de escala dificulta para uma organização de ti centralizada fornecer o suporte necessário sem alcançar as limitações de escala organizacional.
+A especialização de carga de trabalho geralmente aciona uma mudança cultural. Ti tradicional e central de ti os dois processos de compilação que podem fornecer suporte em escala. O suporte a escala é mais atingível para serviços repetíveis encontrados em uma linha de base de gerenciamento, linha de base aprimorada ou até mesmo operações de plataforma. A especialização de carga de trabalho não é geralmente dimensionada. Essa falta de escala dificulta para uma organização de ti centralizada fornecer o suporte necessário sem alcançar as limitações de escala organizacional.
 
-Como alternativa, a abordagem do Cloud Center of Excellence é dimensionada pela delegação proposital de responsabilidade e centralização seletiva. A especialização de carga de trabalho tende a se alinhar melhor à abordagem de responsabilidade delegada de um CCoE.
+Como alternativa, uma abordagem do Cloud Center of Excellence é dimensionada pela delegação proposital de responsabilidade e centralização seletiva. A especialização de carga de trabalho tende a se alinhar melhor à abordagem de responsabilidade delegada de um CCoE.
 
 O alinhamento natural das funções em um CCoE é descrito da seguinte maneira:
 
@@ -76,9 +76,9 @@ Em cada especialização, o processo de quatro etapas a seguir é fornecido em u
 
 ### <a name="improve-system-design"></a>Melhorar o design do sistema
 
-Melhorar o design do sistema é a abordagem mais eficaz para melhorar as operações de qualquer plataforma comum. As melhorias de design do sistema podem ajudar a aumentar a estabilidade e diminuir as interrupções de negócios. O design de sistemas individuais está fora do escopo da exibição de ambiente obtida em toda a estrutura de adoção de nuvem. Como complemento a essa estrutura, a estrutura de arquitetura do Azure fornece as práticas recomendadas para melhorar a resiliência e o design de um sistema específico. Você pode aplicar essas melhorias de design ao design de sistemas de uma plataforma ou uma carga de trabalho específica.
+Melhorar o design do sistema é a abordagem mais eficaz para melhorar operações de qualquer plataforma comum. As melhorias de design do sistema podem ajudar a aumentar a estabilidade e diminuir as interrupções de negócios. O design de sistemas individuais está fora do escopo da exibição de ambiente obtido em todo o Cloud Adoption Framework. Como um complemento a essa estrutura, a Estrutura de Arquitetura do Azure oferece melhores práticas para melhorar a resiliência e o design de um sistema específico. Você pode aplicar essas melhorias de design ao design de sistemas de uma plataforma ou uma carga de trabalho específica.
 
-A estrutura da arquitetura do Azure concentra-se na melhoria em cinco pilares do design do sistema:
+A Estrutura da Arquitetura do Azure concentra-se na melhoria em cinco pilares do design do sistema:
 
 - **Escalabilidade:** Dimensionamento dos ativos de plataforma comuns para lidar com o aumento da carga.
 - **Disponibilidade:** Diminuindo as interrupções de negócios, melhorando o potencial de tempo de atividade.
@@ -86,7 +86,7 @@ A estrutura da arquitetura do Azure concentra-se na melhoria em cinco pilares do
 - **Segurança:** Proteção de aplicativos e dados de ameaças externas.
 - **Gerenciamento:** Processos de operações específicos para esses ativos de plataforma comuns.
 
-A maioria das interrupções de negócios equivale a alguma forma de dívida técnica ou deficiência na arquitetura. Para implantações existentes, as melhorias de design de sistemas podem ser exibidas como pagamentos em relação à dívida técnica existente. Para novas implantações, as melhorias de design de sistemas podem ser vistas como evitar a dívida técnica. A próxima seção, "correção automatizada", analisa maneiras de abordar a dívida técnica que não pode ou não ser resolvida.
+A maioria das interrupções de negócios equivale a alguma forma de dívida técnica ou deficiência na arquitetura. Para implantações existentes, as melhorias no design dos sistemas podem ser exibidas como pagamentos com relação à dívida técnica existente. Para novas implantações, as melhorias no design dos sistemas podem ser exibidas como prevenção de dívida técnica. A próxima seção, "correção automatizada", analisa maneiras de abordar a dívida técnica que não pode ou não ser resolvida.
 
 Para ajudar a melhorar o design do sistema, saiba mais sobre a [estrutura de arquitetura do Azure](https://docs.microsoft.com/azure/architecture/guide/pillars). Conforme o design do seu sistema aprimora, retorne a este artigo para encontrar novas oportunidades para melhorar e dimensionar as melhorias em seu ambiente.
 
@@ -94,21 +94,21 @@ Para ajudar a melhorar o design do sistema, saiba mais sobre a [estrutura de arq
 
 Uma dívida técnica não pode ou não ser resolvida. A resolução pode ser muito cara para corrigir. Pode ser planejado, mas pode ter uma duração longa do projeto. A interrupção dos negócios pode não ter um impacto significativo nos negócios, ou a prioridade dos negócios é recuperar-se rapidamente em vez de investir em resiliência.
 
-Quando a resolução da dívida técnica não é o caminho desejado, a correção automatizada é normalmente a próxima etapa desejada. Usar a automação do Azure e o Azure Monitor para detectar tendências e fornecer correção automatizada é a abordagem mais comum para a correção automatizada.
+Quando a resolução da dívida técnica não for o caminho desejado, a correção automatizada será comumente a próxima etapa desejada. Usar a Automação do Azure e o Azure Monitor para detectar tendências e fornecer correção automatizada é a abordagem mais comum para a correção automatizada.
 
 Para obter orientação sobre a correção automatizada, consulte [automação e alertas do Azure](https://docs.microsoft.com/azure/automation/automation-create-alert-triggered-runbook).
 
 ### <a name="scale-the-solution-with-a-service-catalog"></a>Dimensionar a solução com um catálogo de serviços
 
-A base da especialização de plataforma e das operações de plataforma é um catálogo de serviços bem gerenciado. É assim que os aprimoramentos feitos no design e na correção de sistemas são dimensionados em um ambiente. A equipe da plataforma de nuvem e a nuvem de automação de nuvens se alinham para criar soluções reproduzíveis para as plataformas mais comuns em qualquer ambiente. Mas, se essas soluções não forem aplicadas consistentemente, o gerenciamento de nuvem poderá fornecer pouco mais do que uma oferta de linha de base.
+A base da especialização e das operações de plataforma é um catálogo de serviços bem gerenciado. É assim que as melhorias no design dos sistemas e na correção são dimensionadas em um ambiente. A equipe da plataforma de nuvem e a equipe de automação de nuvem se alinham para criar soluções reproduzíveis para as plataformas mais comuns em qualquer ambiente. Mas, se essas soluções não forem aplicadas consistentemente, o gerenciamento de nuvem poderá fornecer pouco mais do que uma oferta de linha de base.
 
-Para maximizar a adoção e minimizar a sobrecarga de manutenção de qualquer plataforma otimizada, a plataforma deve ser adicionada a um catálogo de serviços. Cada aplicativo no catálogo pode ser implantado para consumo interno por meio do catálogo de serviços ou como uma oferta de Marketplace para consumidores externos.
+Para maximizar a adoção e minimizar a sobrecarga de manutenção de qualquer plataforma otimizada, a plataforma deve ser adicionada a um catálogo de serviços. Cada aplicativo no catálogo pode ser implantado para consumo interno por meio do catálogo de serviços ou como uma oferta de marketplace para consumidores externos.
 
 Para obter informações sobre como publicar em um catálogo de serviços, consulte a série sobre [publicação em um catálogo de serviços](https://docs.microsoft.com/azure/managed-applications/publish-service-catalog-app).
 
-### <a name="continuous-improvement"></a>Aperfeiçoamento contínuo
+### <a name="continuous-improvement"></a>Melhoria contínua
 
-A especialização de plataforma e as operações de plataforma dependem de loops de comentários fortes entre a adoção, a plataforma, a automação e as equipes de gerenciamento. O aterramento desses loops de comentários nos dados permite que cada equipe tome decisões inteligentes. Para que as operações de plataforma obtenham compromissos de negócios de longo prazo, é importante aproveitar as informações específicas para a plataforma centralizada. Como os contêineres e SQL Server são as duas plataformas mais comuns gerenciadas centralmente, considere a introdução à coleta de dados de melhoria contínua revisando os seguintes artigos:
+A especialização de plataforma e as operações de plataforma dependem de loops de comentários fortes entre as equipes de adoção, de plataforma, de automação e de gerenciamento. A fundamentação desses loops de comentários em dados capacita cada equipe a tomar decisões sábias. Para que as operações de plataforma obtenham compromissos de negócios de longo prazo, é importante aproveitar as informações específicas para a plataforma centralizada. Como os contêineres e SQL Server são as duas plataformas mais comuns gerenciadas centralmente, considere a introdução à coleta de dados de melhoria contínua revisando os seguintes artigos:
 
 - [Desempenho do contêiner](https://docs.microsoft.com/azure/azure-monitor/insights/container-insights-overview)
 - [Desempenho do banco de dados PaaS](https://docs.microsoft.com/azure/azure-monitor/insights/azure-sql)

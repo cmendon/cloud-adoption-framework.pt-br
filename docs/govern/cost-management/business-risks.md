@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 72d97057484ff757c94ab24a886d1232f01e5ee3
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 49fcfb3558da82e34f33f54c4e36780606b1e47d
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223612"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753263"
 ---
 # <a name="cost-management-motivations-and-business-risks"></a>Motivações de Gerenciamento de Custos e riscos de negócios
 
@@ -32,20 +32,20 @@ A nuvem oferece recursos de auto-atendimento que eram anteriormente conhecidos c
 
 ## <a name="business-risk"></a>Riscos de negócios
 
-A disciplina de Gerenciamento de Custos tenta abordar riscos comerciais principais relacionados a despesas incorridas ao hospedar cargas de trabalho baseadas em nuvem. Trabalhar com seus negócios para identificar esses riscos e monitorar cada um deles para relevância como planejar e implementar suas implantações de nuvem.
+A disciplina de gerenciamento de custos tenta abordar riscos comerciais principais relacionados a despesas incorridas ao hospedar cargas de trabalho baseadas em nuvem. Trabalhar com seus negócios para identificar esses riscos e monitorar cada um deles para relevância como planejar e implementar suas implantações de nuvem.
 
 Os riscos serão diferentes entre a organização, mas os seguintes servem como riscos comuns relacionados a custo que você pode usar como um ponto de partida para discussões em sua equipe de governança de nuvem:
 
-- **Controle de orçamento:** Controlar o orçamento não pode levar a gastos excessivos com um fornecedor de nuvem.
+- **Controle de orçamento:** Não controlar o orçamento pode levar a gastos excessivos com um fornecedor de nuvem.
 - **Perda de utilização:** As precompras ou os precompromissos que não são usados podem resultar em perda de investimentos.
-- **Anomalias de gastos:** Picos inesperados em qualquer direção podem ser indicadores de uso inapropriado.
+- **Anomalias de gastos:** Picos inesperados em qualquer direção podem ser indicadores de uso impróprio.
 - **Ativos com provisionamento excessivo:** Quando os ativos são implantados em uma configuração que excede as necessidades de um aplicativo ou VM (máquina virtual), eles podem criar resíduos.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Usando o [modelo de gerenciamento de nuvem](./template.md), documente os riscos de negócios que provavelmente serão introduzidos pelo plano de adoção de nuvem atual.
 
-Quando um entendimento dos riscos de negócios realista é estabelecido, a próxima etapa é documentar a tolerância do negócio quanto a risco e os indicadores e métricas de chave para monitorar essa tolerância.
+Depois de obter uma compreensão dos riscos de negócios realísticos, a próxima etapa é documentar a tolerância de risco da empresa e os indicadores e métricas-chave para monitorar essa tolerância.
 
 > [!div class="nextstepaction"]
 > [Entenda os indicadores, métricas e tolerância a risco](./metrics-tolerance.md)

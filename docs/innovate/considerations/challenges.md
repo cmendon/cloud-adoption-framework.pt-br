@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: fe10230be2c71942fa411389b99e00811e008fbc
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 85b02e488476960a50112c1b5ebd7380a873a3f8
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565717"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752000"
 ---
 # <a name="common-blockers-and-challenges-to-innovation"></a>Bloqueios e desafios comuns de inovação
 
@@ -45,7 +45,7 @@ A nuvem supera muitos desses desafios de invenção ao fornecer provisionamento 
 
 ### <a name="invention-challenges-in-a-digital-economy"></a>Os desafios de invenção em uma economia digital
 
-Os desafios de invenção de hoje são diferentes. O potencial infinito das tecnologias de nuvem também produz mais opções de implementação e considerações mais detalhadas sobre como essas implementações podem ser aproveitadas.
+Os desafios de invenção de hoje são diferentes. O potencial infinito das tecnologias de nuvem também produz mais opções de implementação e considerações mais detalhadas sobre como essas implementações podem ser usadas.
 
 A metodologia inovar usa as seguintes disciplinas de inovação para ajudar a alinhar suas decisões de implementação com suas metas de invenção e adoção:
 
@@ -57,7 +57,7 @@ A metodologia inovar usa as seguintes disciplinas de inovação para ajudar a al
 
 Em uma economia digital, os maiores arquitetos de desafio enfrentam é entender claramente as necessidades de invenção e adoção de seus clientes e, em seguida, determinar a melhor ferramentas baseada em nuvem a fim de atender a essas necessidades.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Com base no conhecimento adquirido em relação ao modelo de compilação-avaliação-aprendizado e à mentalidade de crescimento, agora você está pronto para [desenvolver invenções digitais](./invention.md) na [metodologia da inovação](./index.md).
 

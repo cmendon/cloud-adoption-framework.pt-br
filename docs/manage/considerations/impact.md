@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 356460b8f2952475060c857e0b7999696be0d215
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 0480a03ef488d00625115ded8f03526f959dd203
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565138"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752873"
 ---
 # <a name="business-impact-in-cloud-management"></a>Impacto nos negócios no gerenciamento de nuvem
 
@@ -41,7 +41,7 @@ Quando você quiser considerar os investimentos de gerenciamento adicionais, é 
 
 - **Perdas ajustadas:** Se sua empresa tiver tido um grande evento de perda no passado, como um furacão ou outro desastre natural, um ajustador de declarações poderá ter calculado as perdas reais durante a interrupção. Esses cálculos são baseados em padrões do setor de seguros para cálculo de perda e gerenciamento de riscos. O uso de perdas ajustadas como a quantidade total de perdas em um período de tempo específico pode levar a projeções altamente precisas.
 
-- **Perdas históricas:** Se o seu ambiente local tiver sofrido historicamente de interrupções resultantes da instabilidade da infraestrutura, pode ser um pouco mais difícil calcular as perdas. Mas você ainda pode aplicar as fórmulas do ajustador utilizadas internamente. Para calcular as perdas históricas, compare os deltas em vendas, receita bruta e custos operacionais em três quadros de tempo: antes, durante e após a interrupção. Ao examinar esses deltas, você pode identificar perdas precisas quando nenhum outro dado está disponível.
+- **Perdas históricas:** Se o seu ambiente local tiver sofrido historicamente de interrupções resultantes da instabilidade da infraestrutura, pode ser um pouco mais difícil calcular as perdas. Mas você ainda pode aplicar as fórmulas do ajustador usadas internamente. Para calcular as perdas históricas, compare os deltas em vendas, receita bruta e custos operacionais em três quadros de tempo: antes, durante e após a interrupção. Ao examinar esses deltas, você pode identificar perdas precisas quando nenhum outro dado está disponível.
 
 - **Cálculo de perda completa:** Se nenhum dado histórico estiver disponível, você poderá derivar um valor de perda comparativa. Nesse modelo, você determina a receita bruta média por hora para a unidade de negócios. Quando você está projetando a perda de investimentos, não é justo pressupor que uma interrupção completa do sistema corresponda a uma perda de 100% da receita. Mas você pode usar essa suposição como uma base aproximada para comparar impactos de perda e priorizar investimentos.
 
@@ -57,7 +57,7 @@ Se você estiver usando a [pasta de trabalho do Operations Management](https://r
 
 - Cada empresa deve atualizar cada carga de trabalho no *exemplo* ou *limpar modelo* com o *impacto de tempo/valor* de cada carga de trabalho. Por padrão, o *impacto de tempo/valor* representa as perdas projetadas por hora associadas a uma interrupção da carga de trabalho.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Depois que a empresa tiver definido o impacto, você poderá [alinhar os compromissos](./commitment.md).
 

@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: b62dde42255d1a0e9f484e5bcfcd83bbff1ebf7e
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 337eac12b3c01136f611d6a53693de4d29663f46
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565766"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752072"
 ---
 # <a name="engage-through-applications"></a>Envolver aplicativos
 
@@ -21,7 +21,7 @@ Conforme discutido nos [dados do democratize](./data.md), os dados são o novo �
 
 Em alguns casos, os dados sozinhos são suficientes para impulsionar a alteração e atender às necessidades do cliente. Porém, mais comumente, as soluções para as necessidades do cliente exigem que os aplicativos modelem os dados e criem uma experiência. Os aplicativos são a maneira como podemos envolver o usuário. Eles são a base dos processos necessários para responder aos disparadores do cliente. Eles são os meios dos clientes de fornecer dados e diretrizes de recebimento. Este artigo resume vários princípios que podem ajudar a alinhá-lo com a solução de aplicativo correta, com base nas mesmas que serão validadas.
 
-![Envolva-se por meio de aplicativos](../../_images/innovate/engage-via-apps.png)
+![Envolver-se por meio de aplicativos](../../_images/innovate/engage-via-apps.png)
 
 ## <a name="shared-code"></a>Código compartilhado
 
@@ -32,7 +32,7 @@ Para estar pronto para a inovação, todo o desenvolvimento de aplicativos deve 
 - [Git](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git): controle de versão distribuído
 - [Controle de versão do Team Foundation (TFVC)](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc): controle de versão centralizado
 
-## <a name="citizen-developers"></a>Desenvolvedores do cidadão
+## <a name="citizen-developers"></a>Cidadãos desenvolvedores
 
 Os desenvolvedores profissionais são um componente vital da inovação. Quando uma hipótese comprova precisamente em escala, os desenvolvedores profissionais precisam estabilizar e preparar a solução para escala. A maioria dos princípios mencionados neste artigo exige suporte de desenvolvedores profissionais. Infelizmente, as tendências atuais sugerem que há uma demanda maior para desenvolvedores profissionais do que para desenvolvedores. Além disso, o custo e o ritmo da inovação podem ser menos favoráveis quando o desenvolvimento profissional é considerado necessário. Em resposta a esses desafios, os desenvolvedores do cidadão fornecem uma maneira de dimensionar os esforços de desenvolvimento e acelerar o teste de hipótese inicial.
 
@@ -49,7 +49,7 @@ Experiências inteligentes combinam a velocidade e a escala de aplicativos Web m
 
 Quando um aplicativo ou uma experiência é necessária para atender a uma necessidade do cliente, os aplicativos Web modernos podem ser a maneira mais rápida de começar. Experiências da Web modernas podem envolver clientes internos ou externos rapidamente e permitir a iteração rápida na solução.
 
-### <a name="infusing-intelligence"></a>Infusíveis de inteligência
+### <a name="infusing-intelligence"></a>Inserção de inteligência
 
 O aprendizado de máquina e a inteligência artificial estão cada vez mais disponíveis para os desenvolvedores. A disponibilidade de larga propagação de APIs comuns com recursos de previsão permite que os desenvolvedores atendam melhor às necessidades do cliente por meio do acesso expandido a dados e previsões.
 
@@ -108,7 +108,7 @@ Para se preparar para as muitas iterações necessárias para fornecer uma solu�
 
 Em paralelo, o Azure fornece opções de dados de transação sem servidor que também reduzem a sobrecarga. A [lista de produtos de banco](https://docs.microsoft.com/azure/#pivot=products&panel=databases) de dados fornece opções para hospedagem de dados sem a necessidade de uma plataforma de dados completa.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Dependendo da hipótese e da solução, os princípios neste artigo podem ajudar a criar aplicativos que atendam às definições de MVP e contrate usuários. Em seguida, veja os princípios para [capacitar a adoção](./ci-cd.md), que oferece maneiras de obter o aplicativo e os dados em mãos de clientes com mais rapidez e eficiência.
 

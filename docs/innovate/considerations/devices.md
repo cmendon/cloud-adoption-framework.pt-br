@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 309ea099eee5fcec5700a48afc4376dbc30805f9
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 4a1b96a5f29ebac9fd228ab1603d12e08b38ba63
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565661"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752092"
 ---
 # <a name="ambient-experiences-interact-with-devices"></a>Experiências de ambiente: interagir com dispositivos
 
@@ -55,7 +55,7 @@ As soluções de realidade misturada representam o próximo nível de maturidade
 > [!IMPORTANT]
 > Se um dispositivo VR (realidade virtual) é necessário e *ainda não faz parte dos comportamentos imediatos ou naturais do cliente*, o aumento ou a realidade virtual é mais uma experiência alternativa e uma experiência de ambiente menor.
 
-As experiências de realidade misturada são cada vez mais comuns entre as forças de força remotas. Seu uso está crescendo ainda mais rapidamente em setores que exigem habilidades de colaboração ou de especialidade que não estão prontamente disponíveis no mercado local. As situações que exigem suporte de implementação centralizado de um produto complexo para uma força de trabalho remota são particularmente fértils para a realidade aumentada. Nesses cenários, a equipe de suporte central e os funcionários remotos podem aproveitar a realidade aumentada para trabalhar, solucionar problemas e instalar o produto.
+As experiências de realidade misturada são cada vez mais comuns entre as forças de força remotas. Seu uso está crescendo ainda mais rapidamente em setores que exigem habilidades de colaboração ou de especialidade que não estão prontamente disponíveis no mercado local. As situações que exigem suporte de implementação centralizado de um produto complexo para uma força de trabalho remota são particularmente fértils para a realidade aumentada. Nesses cenários, a equipe de suporte central e os funcionários remotos podem usar a realidade aumentada para trabalhar, solucionar problemas e instalar o produto.
 
 Por exemplo, considere o caso de âncoras espaciais. As âncoras espaciais permitem que você crie experiências mistas de realidade com objetos que persistem seus respectivos locais entre dispositivos ao longo do tempo. Por meio de âncoras espaciais, um comportamento específico pode ser capturado, gravado e persistido, fornecendo, assim, uma experiência ambiente na próxima vez que o usuário operar dentro desse ambiente aumentado. As [âncoras espaciais do Azure](https://docs.microsoft.com/azure/spatial-anchors/overview) são um serviço que move essa lógica para a nuvem, permitindo que as experiências sejam compartilhadas entre dispositivos e até mesmo em soluções.
 
@@ -87,7 +87,7 @@ Uma teledigital é outro exemplo da realidade ajustada. Este termo refere-se a u
 
 No Azure, as gêmeos digitais são criadas e acessadas por meio de um serviço chamado [Azure digital gêmeos](https://docs.microsoft.com/azure/digital-twins/about-digital-twins).
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Agora que você tem uma compreensão mais profunda das interações de dispositivos e da experiência ambiente ideal para sua solução, você está pronto para explorar a disciplina final de inovação, [previsão e influência](./predict.md).
 

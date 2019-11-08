@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 19559e34f396561a25761e2b452133f84580fe85
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 9d11dff3ce8900d3dc95e1061af87313eae47a1b
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565965"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752543"
 ---
 # <a name="cloud-native-security-baseline-policy"></a>Política de linha de base de segurança nativa de nuvem
 
@@ -90,10 +90,10 @@ Mesmo com esse investimento em uma linha de base de segurança nativa de nuvem, 
 - **VMs seguras.** A segurança deve ser a prioridade mais alta de cada organização e fazê-lo com eficiência requer várias coisas. Você deve avaliar o estado da segurança, proteger contra ameaças à segurança e, em seguida, detectar e responder rapidamente às ameaças que ocorrem.
 - **Proteger o conteúdo da VM.** Configurar os backups automatizados regulares é essencial para proteger contra erros do usuário. No entanto, isso não é suficiente; Você também deve certificar-se de que os backups estão protegidos do ataques cibernéticos e estão disponíveis quando você precisar deles.
 - **Monitorar aplicativos.** Esse padrão abrange várias tarefas, incluindo obter informações sobre a integridade de suas VMs, interações de compreensão entre eles e o estabelecimento de maneiras de monitorar os aplicativos que executam essas VMs. Todas essas tarefas são essenciais em manter seus aplicativos em execução o tempo todo.
-- **Acesso de dados seguro e de auditoria.** As organizações devem auditar todo o acesso a dados e aproveitar os recursos avançados de aprendizado de máquina para chamar desvios de padrões de acesso regulares.
+- **Acesso de dados seguro e de auditoria.** As organizações devem auditar todos os acessos a dados e usar recursos avançados de aprendizado de máquina para chamar desvios de padrões de acesso normais.
 - **Prática de failover.** As operações de nuvem que têm tolerâncias baixas para a falha devem ser capazes de fazer failover ou de uma recuperação de um incidente de segurança cibernética ou plataforma. Esses procedimentos não devem ser simplesmente documentados, mas devem ser praticado trimestralmente.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Agora que você analisou a política de linha de base de segurança de exemplo para soluções nativas de nuvem, retorne ao [Guia de revisão de política](../policy-compliance/cloud-policy-review.md) para começar a criar esse exemplo para criação de suas próprias políticas para adoção de nuvem.
 

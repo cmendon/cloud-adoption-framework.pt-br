@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 9d68aca88d9f2ae992616df4b493bcf3c35fc122
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 3eace4b20fac9e22fa8aeaa2d4b7f55a33743e47
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566509"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73751833"
 ---
 # <a name="deploy-a-migration-infrastructure"></a>Implante uma infraestrutura de migração
 
@@ -643,7 +643,7 @@ O Azure fornece uma variedade de controles de governança entre os serviços e a
 À medida que configuram o controle de identidade e de acesso, a Contoso já começou a implementar alguns aspectos de governança e segurança. Em geral, há três áreas que ela precisa considerar:
 
 - **Política:** Azure Policy aplica e impõe regras e efeitos sobre seus recursos, para que os recursos permaneçam em conformidade com os requisitos e SLAs corporativos.
-- **Bloqueios:** O Azure permite que você bloqueie assinaturas, grupos de recursos e outros recursos, para que eles só possam ser modificados por aqueles com autoridade para fazer isso.
+- **Bloqueios:** O Azure permite que você bloqueie assinaturas, grupos de recursos e outros recursos, para que eles possam ser modificados somente por aqueles com autoridade para fazer isso.
 - **Marcas:** Os recursos podem ser controlados, auditados e gerenciados com marcas. As macas anexam metadados a recursos, fornecendo informações sobre recursos ou proprietários.
 
 ### <a name="set-up-policies"></a>Configurar políticas
@@ -654,7 +654,7 @@ As políticas elaboram as definições e atribuições de políticas específica
 
 A Contoso deseja começar com duas políticas:
 
-- Ela deseja uma política para garantir que os recursos só possam ser implantados nas regiões EUS2 e CUS.
+- Ele quer uma política para garantir que os recursos possam ser implantados somente nas regiões EUS2 e CUS.
 - Ela deseja limitar as SKUs da VM apenas aos SKUs aprovados. A intenção é garantir que não sejam usados SKUs de VMs caros.
 
 #### <a name="limit-resources-to-regions"></a>Limitar recursos a regiões
@@ -780,7 +780,7 @@ Os NSGs associados aos ASGs serão configurados com o menor privilégio para gar
 
 **Ação** | **Nome** | **Origem** | **Destino** | **Porta**
 --- | --- | --- | --- | ---
-PERMITIR | AllowiInternetToFE | VNET-HUB-EUS1/IB-TrustZone | APP1-FE 80, 443
+PERMITIR | AllowInternetToFE | VNET-HUB-EUS1/IB-TrustZone | APP1-FE 80, 443
 PERMITIR | AllowWebToApp | APP1-FE | APP1-APP | 80, 443
 PERMITIR | AllowAppToDB | APP1-APP | APP1-DB | 1433
 Negar | DenyAllInBound | Qualquer | Qualquer | Qualquer

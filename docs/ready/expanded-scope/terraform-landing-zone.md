@@ -8,12 +8,12 @@ ms.date: 10/16/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: deebe6db08d573872f67d79f734d1f65a85c6904
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 62f6f8f52d669c2822b822218612986be4503378
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73561697"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753742"
 ---
 # <a name="use-terraform-to-build-your-landing-zones"></a>Use o Terraform para criar suas zonas de aterrissagem
 
@@ -33,7 +33,7 @@ A primeira zona de aterrissagem implanta os seguintes componentes em sua assinat
 
 ![Zona de aterrissagem de fundação usando Terraform](../../_images/ready/foundations-terraform-landingzone.png)
 
-## <a name="capabilities"></a>Funcionalidades
+## <a name="capabilities"></a>Capacidades
 
 Os componentes implantados e sua finalidade incluem o seguinte:
 
@@ -76,18 +76,18 @@ As decisões a seguir são representadas na zona de aterrissagem Terraform:
 | Dados | N/D | [Escolha a opção de SQL Server correta no Azure e nas](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) [diretrizes do Azure Data Store](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
 |Armazenamento|N/D|[Diretrizes do Armazenamento do Azure](../considerations/storage-options.md) |
 | Padrões de nomenclatura | Quando o ambiente é criado, um prefixo exclusivo também é criado. Os recursos que exigem um nome global exclusivo (como contas de armazenamento) usam esse prefixo. O nome personalizado é acrescentado com um sufixo aleatório. O uso de marca é obrigatório conforme descrito na tabela a seguir. | [Melhores práticas de nomenclatura e marcação](../azure-best-practices/naming-and-tagging.md) |
-| Gerenciamento de custo | N/D | [Acompanhando os custos](../azure-best-practices/track-costs.md) |
+| Gerenciamento de custos | N/D | [Acompanhando os custos](../azure-best-practices/track-costs.md) |
 | Computação | N/D | [Opções de computação](../considerations/compute-options.md) |
 
 ### <a name="tagging-standards"></a>Padrões de marcação
 
 O seguinte conjunto de marcas mínimas deve estar presente em todos os recursos e grupos de recursos:
 
-| Nome da marca | DESCRIÇÃO | Chave | Valor de exemplo |
+| Nome da marca | Descrição | Chave | Valor de exemplo |
 |--|--|--|--|
 | Unidade de negócios | Divisão de nível superior da sua empresa que tem a assinatura ou a carga de trabalho à qual o recurso pertence. | BusinessUnit | Finanças, MARKETING, {nome do produto}, CORP, compartilhado |
-| Centro de custo | O centro de custo de contabilidade associado a este recurso.| CostCenter | Número |
-| Recuperação de desastre | Nível de importância empresarial do aplicativo, da carga de trabalho ou do serviço. | Recovery | HABILITADO PARA DR, NÃO HABILITADO PARA DR |
+| Centro de custo | O centro de custo de contabilidade associado a este recurso.| CostCenter | NUMBER |
+| Recuperação de desastres | Nível de importância empresarial do aplicativo, da carga de trabalho ou do serviço. | Recovery | HABILITADO PARA DR, NÃO HABILITADO PARA DR |
 | Ambiente | Ambiente de implantação do aplicativo, da carga de trabalho ou do serviço. |  Variável | Prod, dev, QA, estágio, teste, treinamento |
 | Nome do proprietário | Proprietário do aplicativo, da carga de trabalho ou do serviço.| Proprietário | email |
 | Tipo de implantação | Define como os recursos são mantidos. | deploymentType | Manual, Terraform |
@@ -96,7 +96,7 @@ O seguinte conjunto de marcas mínimas deve estar presente em todos os recursos 
 
 ## <a name="customize-and-deploy-your-first-landing-zone"></a>Personalizar e implantar sua primeira zona de aterrissagem
 
-Você pode [clonar sua zona de aterrissagem do Terraform Foundation](https://github.com/microsoft/CloudAdoptionFramework/tree/master/ready). É fácil começar a usar a zona de aterrissagem modificando as variáveis Terraform. Em nosso exemplo, usamos **blueprint_foundations. sandbox. auto. tfvars**, de modo que Terraform define automaticamente os valores nesse arquivo para você.
+Você pode [clonar sua zona de aterrissagem do Terraform Foundation](https://github.com/microsoft/CloudAdoptionFramework/tree/master/ready). É fácil começar a usar a zona de aterrissagem modificando as variáveis Terraform. Em nosso exemplo, usamos **blueprint_foundations. sandbox. auto. tfvars**, portanto, o Terraform define automaticamente os valores nesse arquivo para você.
 
 Vamos examinar as diferentes seções variáveis.
 
@@ -189,20 +189,20 @@ security_center = {
 }
 ```
 
-## <a name="get-started"></a>Introdução
+## <a name="get-started"></a>Comece agora
 
 Depois de examinar a configuração, você pode implantar a configuração da mesma forma que implantaria um ambiente Terraform. Recomendamos que você use o Rover, que é um contêiner do Docker que permite a implantação do Windows, do Linux ou do MacOS. Você pode começar a usar o [repositório GitHub do Rover](https://github.com/aztfmod/rover).
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 A zona de aterrissagem base estabelece a base para um ambiente complexo de forma decomposta. Esta edição fornece um conjunto de recursos simples que podem ser estendidos por:
 
 - Adicionar outros módulos ao plano gráfico.
 - Dispor zonas de aterrissagem adicionais sobre ela.
 
-As zonas de aterrissagem em camadas são uma boa prática para desacoplar os sistemas, o controle de versão de cada componente que você está usando e permitindo uma inovação e estabilidade rápidas para sua implantação de infraestrutura como código.
+As zonas de aterrissagem em camadas são uma boa prática para desacoplar os sistemas, o controle de versão de cada componente que você está usando e permitindo uma inovação e estabilidade rápidas para sua infraestrutura como implantação de código.
 
-As arquiteturas de referência futuras demonstrarão esse conceito para uma topologia hub e spoke.
+Arquiteturas de referência futuras demonstrarão esse conceito para uma topologia de Hub e spoke.
 
 > [!div class="nextstepaction"]
 > [Examinar o exemplo de zona de aterrissagem de Terraform de base](https://github.com/microsoft/CloudAdoptionFramework/tree/master/ready)

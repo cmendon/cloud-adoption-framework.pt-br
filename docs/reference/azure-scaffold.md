@@ -8,12 +8,12 @@ ms.date: 09/22/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: 79d784b65a2006559efc9f074b319ea67de67db0
-ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
+ms.openlocfilehash: 799ab1ba0d0b99ed5427d2c986c4fae9659a5b05
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73656656"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753763"
 ---
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Andaime empresarial do Azure: governança de assinatura prescritiva
 
@@ -195,13 +195,13 @@ A [Central de Segurança do Azure](https://docs.microsoft.com/azure/security-cen
 > [!TIP]
 >A central de segurança do Azure é uma ferramenta poderosa que é aprimorada regularmente com novos recursos que você pode usar para detectar ameaças e proteger sua empresa. É altamente recomendável habilitar sempre a central de segurança do Azure.
 
-### <a name="azure-resource-locks"></a>Bloqueios de recursos do Azure
+### <a name="locks-for-azure-resources"></a>Bloqueios para recursos do Azure
 
-À medida que sua organização adiciona serviços principais às assinaturas, ela se torna cada vez mais importante para evitar a interrupção dos negócios. Um tipo de interrupção que vemos com frequência é consequências não intencionais de scripts e ferramentas trabalhando contra uma assinatura do Azure, excluindo recursos por engano. Os [Bloqueios de recursos](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-lock-resources) permitem restringir operações nos recursos de alto valor, onde sua modificação ou exclusão teria um impacto significativo. Os bloqueios são aplicados a uma assinatura, grupo de recursos ou até mesmo recursos individuais. O caso de uso comum é aplicar bloqueios a recursos fundamentais, como redes virtuais, gateways, grupos de segurança de rede e contas de armazenamento de chaves.
+À medida que sua organização adiciona serviços principais às assinaturas, ela se torna cada vez mais importante para evitar a interrupção dos negócios. Uma interrupção comum ocorre quando um script ou uma ferramenta executada em uma assinatura do Azure exclui de forma não intencional um recurso. [Bloqueia](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-lock-resources) operações restritas em recursos de alto valor em que modificar ou excluí-las teria um impacto significativo. Você pode aplicar bloqueios a assinaturas, grupos de recursos ou recursos individuais. Aplique bloqueios a recursos fundamentais, como redes virtuais, gateways, grupos de segurança de rede e contas de armazenamento de chaves.
 
-### <a name="secure-devops-toolkit"></a>Kit de ferramentas de DevOps seguro
+### <a name="secure-devops-kit-for-azure"></a>Secure DevOps Kit para Azure
 
-O Secure DevOps Kit for Azure (AzSK) é uma coleção de scripts, ferramentas, extensões e recursos de automação originalmente criados pela própria equipe de ti da Microsoft e [lançado como software livre por meio do GitHub](https://github.com/azsk/DevOpsKit-docs). O AzSK atende às necessidades de segurança de recursos e assinatura do Azure de ponta a ponta para equipes que usam automação abrangente e integram a segurança em fluxos de trabalho nativos do DevOps, ajudando a atingir DevOps seguras com estas seis áreas de enfoque:
+O Secure DevOps Kit for Azure (AzSK) é uma coleção de scripts, ferramentas, extensões e recursos de automação originalmente criados pela própria equipe de ti da Microsoft e [lançado como software livre por meio do GitHub](https://github.com/azsk/devopskit-docs). O AzSK atende às necessidades de segurança de recursos e assinatura do Azure de ponta a ponta para equipes que usam automação abrangente e integram a segurança em fluxos de trabalho nativos do DevOps, ajudando a atingir DevOps seguras com estas seis áreas de enfoque:
 
 - Proteger a assinatura
 - Permitir o desenvolvimento seguro
@@ -210,7 +210,7 @@ O Secure DevOps Kit for Azure (AzSK) é uma coleção de scripts, ferramentas, e
 - Alertas e monitoramento
 - Governança de riscos na nuvem
 
-![Kit de ferramentas de DevOps seguro](../_images/reference/secure-devops-kit.png)
+![Diagrama de visão geral do Secure DevOps Kit para Azure](../_images/reference/secure-devops-kit.png)
 
 O AzSK é um rico conjunto de ferramentas, scripts e informações que são uma parte importante de um plano de governança do Azure completo e incorporando isso em seu Scaffold é crucial para dar suporte às metas de gerenciamento de riscos de suas organizações.
 

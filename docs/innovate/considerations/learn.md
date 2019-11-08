@@ -8,14 +8,14 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 82f6ea5b422bc4d33fe898f86d003ffb2ab92422
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: b960bbd4382a14f254038397f3843d7ad7b65f8c
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565632"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753006"
 ---
-# <a name="learn-with-customers"></a>Aprenda com os clientes
+# <a name="learn-with-customers"></a>Aprender com os clientes
 
 Nossos clientes atuais representam nosso melhor recurso para aprendizado. Ao fazer um parceiro conosco, eles nos ajudam a [criar com o cliente empatia](./build.md) para encontrar a melhor solução para suas necessidades. Eles também ajudam a criar uma solução MVP (produto viável) mínima, gerando métricas da qual [medimos o impacto do cliente](./measure.md). Neste artigo, descreveremos como aprender com e de nossos parceiros de clientes.
 
@@ -49,11 +49,11 @@ Alguns podem negar a transformação de radical na cultura da Microsoft que ocor
 - **Desafio o que funciona:** O sucesso não significa necessariamente que você está demonstrando verdadeiro empatia de clientes. Evite ter uma mentalidade fixa e uma tendência para fazer o que foi trabalhado antes. Procure aprender em métricas positivas e negativas ao envolver seus clientes.
 - **Ser inclusivo:** Trabalhe de difícil para convidar perspectivas diferentes na combinação. Há muitas variáveis que podem dividir os seres humanos em grupos separados. Normas culturais, comportamentos anteriores, gênero, Religion, preferência sexual, até mesmo capacidades físicas. A verdadeira inovação é quando nos comparamos com as últimas nossas diferenças e nos empenhamos em incluir todos os clientes, parceiros e colegas de trabalho.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Como uma próxima etapa para entender essa metodologia, [os bloqueadores comuns e os desafios da inovação](./challenges.md) podem prepará-lo para as alterações à frente.
 
 > [!div class="nextstepaction"]
 > [Entendendo os bloqueadores e os desafios comuns](./challenges.md)
 
-Alguns dos conceitos neste artigo se baseiam nos tópicos descritos pela primeira vez na [inicialização de Lean](http://theleanstartup.com/book), escrito por Eric Ries.
+Alguns dos conceitos neste artigo se baseiam nos tópicos descritos pela primeira vez na [inicialização de Lean](https://theleanstartup.com/book), escrito por Eric Ries.

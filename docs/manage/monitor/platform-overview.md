@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 4d50025ee6030e07ccb2979fff89ebb6569e0aed
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: d7ff166733f0d4544cb229207278f724ca947319
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564952"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73751680"
 ---
 # <a name="cloud-monitoring-guide-monitoring-platforms-overview"></a>Guia de monitoramento de nuvem: visão geral das plataformas de monitoramento
 
@@ -26,7 +26,7 @@ Este artigo fornece uma visão geral de alto nível de nossas plataformas de mon
 
 ## <a name="the-story-of-system-center-operations-manager"></a>A história do System Center Operations Manager
 
-Em 2000, inserimos o campo Operations Management com Microsoft Operations Manager (MOM) 2000. No 2007, apresentamos uma versão reformulada do produto, chamada System Center Operations Manager. Ele passou além do monitoramento simples de um Windows Server e concentrou-se no monitoramento de aplicativos e serviços robustos e de ponta a ponta, incluindo plataformas heterogêneas, dispositivos de rede e outras dependências de aplicativo ou serviço. É uma plataforma de monitoramento de nível empresarial estabelecida para ambientes locais, na mesma classe que o IBM Tivoli ou HP Operations Manager no setor. Ele cresceu para dar suporte ao monitoramento de recursos de computação e plataforma em execução no Azure, Amazon Web Services (AWS) e em outros provedores de nuvem.
+Em 2000, inserimos o campo Operations Management com Microsoft Operations Manager (MOM) 2000. No 2007, apresentamos uma versão reprojetada do produto, chamada System Center Operations Manager. Ele passou além do monitoramento simples de um Windows Server e concentrou-se no monitoramento de aplicativos e serviços robustos e de ponta a ponta, incluindo plataformas heterogêneas, dispositivos de rede e outras dependências de aplicativo ou serviço. É uma plataforma de monitoramento de nível empresarial estabelecida para ambientes locais, na mesma classe que o IBM Tivoli ou HP Operations Manager no setor. Ele cresceu para dar suporte ao monitoramento de recursos de computação e plataforma em execução no Azure, Amazon Web Services (AWS) e em outros provedores de nuvem.
 
 ## <a name="the-story-of-azure-monitor"></a>A história do Azure Monitor
 
@@ -34,7 +34,7 @@ Quando o Azure foi lançado no 2010, o monitoramento dos serviços de nuvem foi 
 
 O Application Insights foi introduzido para mudar com as alterações no setor em que a proliferação de dispositivos de nuvem, móveis e IoT estava crescendo e a introdução das práticas DevOpss. Ele cresceu do monitoramento do desempenho de aplicativos em Operations Manager para um serviço no Azure, em que ele fornece monitoramento avançado de aplicativos Web escritos em uma variedade de linguagens. Em 2015, a visualização do Application Insights para Visual Studio foi anunciada e posterior, ela se tornou conhecida como apenas Application Insights. Ele coleta detalhes sobre o desempenho, as solicitações e as exceções do aplicativo e os rastreamentos.
 
-No 2015, o insights operacionais do Azure foi disponibilizado para o público geral. Ele forneceu o serviço de análise de Log Analytics que coletou e pesquisou dados de computadores no Azure, no local ou em outros ambientes de nuvem, e está conectado ao System Center Operations Manager. Foram oferecidos pacotes de inteligência que forneciam uma variedade de configurações de monitoramento e gerenciamento predefinidas que continham uma coleção de consulta e lógica analítica, visualizações e regras de coleta de dados para cenários como a auditoria de segurança, avaliações de integridade e gerenciamento de alertas. Posteriormente, as informações operacionais do Azure se tornaram conhecidas como Log Analytics.  
+No 2015, o insights operacionais do Azure foi disponibilizado para o público geral. Ele forneceu o serviço de análise de Log Analytics que coletou e pesquisou dados de computadores no Azure, no local ou em outros ambientes de nuvem, e está conectado ao System Center Operations Manager. Foram oferecidas pacotes de inteligência que forneciam uma variedade de configurações de monitoramento e gerenciamento predefinidos que continham uma coleção de consulta e lógica analítica, visualizações e regras de coleta de dados para cenários como auditoria de segurança, integridade avaliações e gerenciamento de alertas. Posteriormente, as informações operacionais do Azure se tornaram conhecidas como Log Analytics.  
 
 Em 2016, a visualização do Azure Monitor foi anunciada na conferência do Microsoft Ignite. Ele fornecia uma estrutura comum para coletar métricas de plataforma, logs de diagnóstico de recursos e eventos de log de atividades no nível de assinatura de qualquer serviço do Azure que começou a usar a estrutura. Anteriormente, cada serviço do Azure tinha seu próprio método de monitoramento.
 
@@ -50,11 +50,11 @@ Na conferência 2018 Ignite, anunciamos que a marca Azure Monitor expandida para
 
 De 2015 até abril de 2018, o OMS (Operations Management Suite) foi um agrupamento dos seguintes serviços de gerenciamento do Azure para fins de licenciamento:
 
-- Application Insights
+- Percepções sobre o Aplicativo
 - Automação do Azure
-- Serviço de Backup do Azure
+- Backup do Azure
 - Insights operacionais (mais tarde, com a marca Log Analytics)
-- Recuperação de Site
+- Recuperação de site
 
 A funcionalidade dos serviços que faziam parte do OMS não foi alterada quando o OMS foi descontinuado. Elas foram realinhadas em Azure Monitor.
 
@@ -73,6 +73,8 @@ O Azure Monitor é um serviço SaaS (software como serviço), em que toda a infr
 ![Diagrama de Azure Monitor](./media/monitoring-management-guidance-cloud-and-on-premises/azure-monitor-greyed-optimized.svg)
 
 ## <a name="data-collection"></a>Coleta de dados
+
+<!-- markdownlint-disable MD024 -->
 
 ### <a name="operations-manager"></a>Operations Manager
 
@@ -118,7 +120,7 @@ Todos os dados coletados pelo Azure Monitor são armazenados como logs ou métri
 
 Como o monitor separa a coleta de dados de ações contra esses dados, ele pode não ser capaz de fornecer alertas quase em tempo real em muitos casos. Para alertar sobre dados de log, as consultas são executadas em um agendamento recorrente definido no alerta. Esse comportamento permite que Azure Monitor correlacione facilmente os dados de todas as fontes monitoradas, e você pode analisar de maneira interativa os dados de várias maneiras. Isso é especialmente útil para fazer a análise da causa raiz e identificar onde pode ocorrer um problema.
 
-## <a name="health-monitoring"></a>Monitoramento da integridade
+## <a name="health-monitoring"></a>Monitoramento de integridade
 
 ### <a name="operations-manager"></a>Operations Manager
 
@@ -134,7 +136,7 @@ Azure Monitor não fornece um método definido pelo usuário para implementar um
 
 - **Azure monitor para contêineres:** Monitora o desempenho e a integridade do serviço kubernetes do Azure ou das instâncias de contêiner do Azure. Ele coleta métricas de processador e memória de controladores, nós e contêineres disponíveis no Kubernetes por meio da API Métricas. Ele também coleta logs de contêiner e dados de inventário sobre contêineres e suas imagens. Os critérios de integridade predefinidos baseados nos dados de desempenho coletados ajudam a identificar se existe um problema de capacidade ou afunilamento de recursos. Você também pode entender o desempenho geral ou o desempenho de um tipo de objeto kubernetes específico (Pod, nó, controlador ou contêiner).
 
-## <a name="analyze-data"></a>Analisar dados
+## <a name="analyze-data"></a>Analisar os dados
 
 ### <a name="operations-manager"></a>Operations Manager
 
@@ -152,7 +154,7 @@ O Operations Manager fornece quatro maneiras básicas de analisar dados depois q
 
 Com o poderoso mecanismo de análise de Azure Monitor, você pode trabalhar interativamente com dados de log e combiná-los com outros dados de monitoramento para análise de tendências e outros dados. Exibições e painéis permitem que você visualize dados de consulta de várias maneiras a partir da portal do Azure e importe-os para Power BI. As soluções de monitoramento incluem consultas e exibições para apresentar os dados coletados. Informações como Application Insights, Azure Monitor para VMs e Azure Monitor para contêineres incluem visualizações personalizadas para dar suporte a cenários de monitoramento interativos.
 
-## <a name="alerting"></a>Alertas
+## <a name="alerting"></a>Alerta
 
 ### <a name="operations-manager"></a>Operations Manager
 
@@ -192,7 +194,7 @@ Azure Monitor coleta métricas e logs de recursos do Azure, com pouca ou nenhuma
 
 O monitor oferece suporte a vários métodos para coletar dados de monitoramento ou de gerenciamento do Azure ou de recursos externos. Em seguida, você pode extrair e encaminhar dados da métrica ou dos repositórios de log para suas ferramentas de ITSM ou de monitoramento. Ou você pode executar tarefas administrativas usando a API REST do Azure Monitor.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 > [!div class="nextstepaction"]
 > [Monitorando os modelos de implantação de nuvem](./cloud-models-monitor-overview.md)

@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 8aa0e1d86bb679241bc8e769bb8a09fc436c6906
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: bcb01ada3589b733fe97de2689352ab414ef469b
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565581"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752990"
 ---
 # <a name="predict-and-influence"></a>Prever e influenciar
 
@@ -46,9 +46,9 @@ Os dados são a mais elementar das características mencionadas anteriormente. C
 
 Uma variedade de fontes de dados pode ser usada para fornecer recursos de previsão:
 
-## <a name="insights"></a>Insights
+## <a name="insights"></a>Visões
 
-Os especialistas no assunto aproveitam os dados sobre as necessidades e os comportamentos dos clientes para desenvolver informações de negócios básicas de um estudo de dados brutos. Essas informações podem identificar ocorrências dos comportamentos de clientes desejados (ou, como alternativa, resultados indesejáveis). Durante as iterações nas previsões, essas informações podem ajudar a identificar possíveis correlações que poderiam, em última análise, gerar resultados positivos. Para obter orientação sobre como habilitar especialistas no assunto para desenvolver informações, consulte [democratizando data](./data.md).
+Os especialistas no assunto usam dados sobre as necessidades e os comportamentos dos clientes para desenvolver informações de negócios básicas de um estudo de dados brutos. Essas informações podem identificar ocorrências dos comportamentos de clientes desejados (ou, como alternativa, resultados indesejáveis). Durante as iterações nas previsões, essas informações podem ajudar a identificar possíveis correlações que poderiam, em última análise, gerar resultados positivos. Para obter orientação sobre como habilitar especialistas no assunto para desenvolver informações, consulte [democratizando data](./data.md).
 
 ## <a name="patterns"></a>Padrões
 
@@ -76,7 +76,7 @@ Depois que uma previsão é disponibilizada por meio de uma API, você pode usá
 
 Saiba mais sobre como criar uma experiência de ambiente por meio de uma [solução de realidade ajustada](./devices.md#adjusted-reality).
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Tendo se familiarizado com as [disciplinas de invenção](./invention.md) e com a [metodologia inovar](./index.md), agora você está pronto para aprender a [criar com empatia de clientes](./build.md).
 

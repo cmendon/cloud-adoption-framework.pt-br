@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 7dcb61b24834caa1da0de414ab5eaa7291711258
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 5e88a87a141adb1170f419db5d410cc31341c230
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048434"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753102"
 ---
 # <a name="innovate-through-cloud-adoption"></a>Inovar por meio da adoção de nuvem
 
@@ -21,7 +21,7 @@ A migração de nuvem é uma opção excelente para suas cargas de trabalho exis
 
 ## <a name="motivations-behind-innovation"></a>Motivações por trás da inovação
 
-A inovação não é o caminho de adoção certo para cada carga de trabalho. Um caminho de inovação geralmente requer um investimento maior em código personalizado e gerenciamento de dados do que outros caminhos. A inovação também leva mais tempo do que a migração ou outras formas de modernização. Esse caminho é recomendado quando os clientes visam os seguintes resultados de negócios:
+A inovação não é o caminho de adoção certo para cada carga de trabalho. Um caminho de inovação geralmente requer um investimento maior em código personalizado e gerenciamento de dados do que outros caminhos. A inovação também leva mais tempo do que a migração ou outras formas de modernização. Siga este caminho quando estiver visando os seguintes resultados comerciais:
 
 - Preparar-se para novos recursos técnicos.
 - Dimensione para atender às demandas de mercado.

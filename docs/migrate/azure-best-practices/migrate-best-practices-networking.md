@@ -8,12 +8,12 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: df31cb73ec601c52f0f925d09a56f0af7aaf1513
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: a7f119dcfd2b7cdfc71b8a4c6f913448cd98e763
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565234"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753621"
 ---
 # <a name="best-practices-to-set-up-networking-for-workloads-migrated-to-azure"></a>Melhores práticas para configurar a rede para as cargas de trabalho migradas para o Azure
 
@@ -85,7 +85,7 @@ Para fornecer isolamento em uma VNet, segmente a VNet em uma ou mais sub-redes e
 - Suas decisões de sub-rede são baseadas em seus requisitos técnicos e organizacionais.
 - Você cria sub-redes usando a notação CIDR.
 - Ao decidir sobre o intervalo de rede para sub-redes, é importante observar que o Azure mantém cinco endereços IP de cada sub-rede que não pode ser usada. Por exemplo, se você criar a menor sub-rede disponível de /29 (com oito endereços IP), o Azure manterá cinco endereços, portanto, você terá apenas três endereços utilizáveis que podem ser atribuídos aos hosts na sub-rede.
-- Na maioria dos casos, é recomendável usar /28 como a menor sub-rede.
+- Na maioria dos casos, use/28 como a menor sub-rede.
 
 **Exemplo:**
 
@@ -160,8 +160,8 @@ Para uma migração bem-sucedida, é essencial conectar redes corporativas locai
 
 Para implementar uma VPN site a site, configure um gateway de VPN no Azure.
 
-- Um gateway de VPN é um tipo específico de gateway de VNet que é usado para enviar tráfego criptografado entre uma VNet do Azure e uma localização local na Internet pública.
-- Você também pode usar um gateway de VPN para enviar tráfego criptografado entre as VNets do Azure pela rede da Microsoft.
+- Um gateway de VPN é um tipo específico de gateway de VNet que envia o tráfego criptografado entre uma VNet do Azure e um local na Internet pública.
+- Um gateway de VPN também pode enviar tráfego criptografado entre o Azure VNets pela rede da Microsoft.
 - Cada VNet pode ter apenas um gateway de VPN.
 - Você pode criar várias conexões com o mesmo gateway de VPN. Quando você cria várias conexões, todos os túneis de VPN compartilham a largura de banda de gateway disponível.
 - Cada gateway de VPN do Azure consiste em duas instâncias em uma configuração ativa e em espera.
@@ -175,7 +175,7 @@ Ao configurar uma VPN site a site, faça o seguinte:
 
 - Você precisa de uma VNet cujo intervalo de endereços não se sobreponha à rede local ao qual a VPN se conectará.
 - Você cria uma sub-rede de gateway na rede.
-- Você cria um gateway de VPN, especifica o tipo de gateway (VPN) e se o gateway é baseado em políticas ou baseado em rota. Uma VPN RouteBased é recomendada porque é mais apta e à prova de obsolescência.
+- Você cria um gateway de VPN, especifica o tipo de gateway (VPN) e se o gateway é baseado em políticas ou baseado em rota. Uma VPN baseada em rota é considerada mais capaz e à prova de futuro.
 - Você cria um gateway de rede local e configura seu dispositivo VPN local.
 - Você cria uma conexão de VPN site a site de failover entre o gateway da VNet e o dispositivo local. Usar VPN baseada em rota permite conexões ativo-passivo ou ativo-ativo ao Azure. Ser baseado em rota também dá suporte a conexões de ponto a site (de um único computador) e de site a site (de qualquer computador) simultaneamente.
 - Você especifica o SKU de gateway que deseja usar. Isso dependerá de seus requisitos de carga de trabalho, taxas de transferência, recursos e SLAs.
@@ -512,7 +512,7 @@ Firewalls de NVA | Como no Firewall do Azure, os farms de firewall da NVA têm u
 
 - [Saiba mais sobre](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-hybrid) o uso de NVAs em uma VNet do Azure.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Examine outras melhores práticas:
 

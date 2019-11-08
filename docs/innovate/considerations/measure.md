@@ -8,14 +8,14 @@ ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: c050e34feecfe26431c7105eef46d000fbb32cf8
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 99e2f126c518da72e95a166d203a3c4fdbb546aa
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565595"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752116"
 ---
-# <a name="measure-for-customer-impact"></a>Medida para o impacto do cliente
+# <a name="measure-for-customer-impact"></a>Avaliar o impacto sobre o cliente
 
 Há várias maneiras de medir o impacto do cliente. Este artigo o ajudará a definir métricas para validar as mesmas que surgirem de um esforço para [criar com empatia de clientes](./build.md).
 
@@ -65,7 +65,7 @@ A primeira medida para definir métricas de aprendizado é a definição de parc
 
 Esses tipos de agrupamentos ajudam a validar as métricas de aprendizado em várias seções cruzadas desses clientes que optam por fazer uma parceria com você durante seus esforços de inovação. Todas as métricas subsequentes devem ser derivadas do agrupamento de clientes definíveis.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 À medida que as métricas de aprendizado se acumulam, a equipe pode começar a [aprender com os clientes](./learn.md).
 
