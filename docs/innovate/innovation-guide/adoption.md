@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 2b2c4768cbe74363cd50b7730c3ba6b4078db14c
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 98db83bf842fe4c293eba482572bffbdb50caed6
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058100"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565574"
 ---
 ::: zone target="docs"
 
@@ -36,7 +36,7 @@ Criar uma solução inovadora não é fornecer aos usuários o que eles desejam 
 - **Quantitativo (comentários dos testes):** Esses comentários medem as ações que esperamos ver.
 - **Quantitativo (comentários dos clientes):** Esses comentários nos dizem o que essas métricas significam na opinião do cliente.
 
-Antes de integrar os loops de comentários, você precisa ter um repositório compartilhado para a solução. Um repositório centralizado fornecerá uma maneira de registrar todos os comentários recebidos sobre seu projeto e agir com base neles. O [GitHub](https://github.com/) é a página inicial para software livre. Ele também é uma das plataformas usadas com mais frequência para hospedar repositórios de código-fonte para aplicativos desenvolvidos comercialmente. O artigo sobre [criação de repositórios do GitHub](https://docs.microsoft.com/azure/devops/pipelines/repos/github?view=azure-devops&tabs=yaml) pode ajudá-lo a começar com seu repositório.
+Antes de integrar os loops de comentários, você precisa ter um repositório compartilhado para a solução. Um repositório centralizado fornecerá uma maneira de registrar todos os comentários recebidos sobre seu projeto e agir com base neles. O [GitHub](https://github.com) é a página inicial para software livre. Ele também é uma das plataformas usadas com mais frequência para hospedar repositórios de código-fonte para aplicativos desenvolvidos comercialmente. O artigo sobre [criação de repositórios do GitHub](https://docs.microsoft.com/azure/devops/pipelines/repos/github?view=azure-devops&tabs=yaml) pode ajudá-lo a começar com seu repositório.
 
 Cada uma das seguintes ferramentas no Azure se integra (ou é compatível) com projetos hospedados no GitHub:
 
@@ -126,7 +126,7 @@ Para abrir os serviços de Gerenciamento de API, acesse o [portal do Azure](http
 ### <a name="action"></a>Ação
 
 O Azure Boards e o Azure Pipelines exigem um portal separado do GitHub e do Azure.
-Para começar a usar qualquer dessas ferramentas, acesse [Azure DevOps](https://dev.azure.com/).
+Para começar a usar qualquer dessas ferramentas, acesse [Azure DevOps](https://dev.azure.com).
 
 ::: zone-end
 
@@ -138,11 +138,11 @@ Para começar a usar qualquer dessas ferramentas, acesse [Azure DevOps](https://
 
 Para criar um projeto de DevOps:
 
-1. Acesse **Projeto do Azure DevOps**.
+1. Acesse **Azure DevOps Projects**.
 2. Selecione **Criar projeto de DevOps**.
 3. Selecione **Runtime, Estrutura e Serviço**.
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/microsoft.visualstudio%2Faccount%2Fproject]" submitText="Go to Azure DevOps Project" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/microsoft.visualstudio%2Faccount%2Fproject]" submitText="Go to Azure DevOps Projects" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 
@@ -152,8 +152,8 @@ Para criar um projeto de DevOps:
 
 Esses artigos ajudarão você a centralizar e gerenciar comentários usando Azure Boards junto com o GitHub:
 
-- [Introdução ao Azure Boards](https://docs.microsoft.com/azure/devops/boards/boards/kanban-quickstart?view=azure-devops)
-- [Azure Boards e GitHub](https://docs.microsoft.com/azure/devops/boards/boards/kanban-quickstart?view=azure-devops)
+- [Introdução ao Azure Boards](https://docs.microsoft.com/azure/devops/boards/github?view=azure-devops)
+- [Azure Boards e GitHub](https://docs.microsoft.com/azure/devops/boards/get-started/?view=azure-devops)
 
 ## <a name="close-the-loop-with-pipelinestabpipelines"></a>[Fechar o loop com pipelines](#tab/pipelines)
 
@@ -163,7 +163,7 @@ Agir com base nos comentários nem sempre significa adicionar o recurso solicita
 
 Para exibir as implantações atuais no pipeline:
 
-1. Acesse **Serviço de Aplicativo**.
+1. Acesse **Serviços de Aplicativos**.
 2. Selecione o aplicativo desejado na lista.
 3. Selecione **Central de Implantação** na seção **Implantação** no painel de Serviços de Aplicativos.
 
@@ -171,7 +171,7 @@ Para exibir as implantações atuais no pipeline:
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Web%2Fsites]" submitText="Go to App Service" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Web%2Fsites]" submitText="Go to App Services" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 

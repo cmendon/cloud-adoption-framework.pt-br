@@ -1,7 +1,7 @@
 ---
 title: Proteger e recuperar no Azure
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Garantir a estabilidade dos negócios diminuindo o tempo de recuperação
+description: Garanta a estabilidade dos negócios reduzindo o tempo de recuperação
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
@@ -10,27 +10,27 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: a79164435772f571849d0a836f43b53ce3bca087
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 83ac1abd6ce35b62f64722d101f599726c7b26b3
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72556999"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565411"
 ---
 # <a name="protect-and-recover-in-azure"></a>Proteger e recuperar no Azure
 
-Proteger e recuperar é a terceira e última disciplina em qualquer linha de base de gerenciamento de nuvem.
+_Proteger e recuperar_ é a terceira e última disciplina em qualquer linha de base de gerenciamento de nuvem.
 
 ![Linha de base de gerenciamento de nuvem](../../_images/manage/management-baseline.png)
 
-No último artigo “Conformidade operacional”, o objetivo é reduzir a probabilidade de uma interrupção dos negócios. Este artigo “Proteger e recuperar” visa reduzir a duração e o impacto das interrupções que não podem ser evitadas.
+Na [conformidade Operacional no Azure](./operational-compliance.md) o objetivo é reduzir a probabilidade de uma interrupção dos negócios. Este artigo visa reduzir a duração e o impacto de interrupções que não podem ser evitadas.
 
-Para qualquer ambiente de nível corporativo, a tabela a seguir descreve o mínimo sugerido para qualquer linha de base de gerenciamento.
+Para qualquer ambiente de nível empresarial, esta tabela descreve o mínimo sugerido para qualquer linha de base de gerenciamento:
 
 |Processo  |Ferramenta  |Finalidade  |
 |---------|---------|---------|
-|Proteger dados|Serviço de Backup do Azure|Fazer backup de dados e VMs na nuvem|
-|Proteger o ambiente|Central de Segurança do Azure|
+|Proteger dados|Serviço de Backup do Azure|Faça o backup de dados e de máquinas virtuais na nuvem.|
+|Proteger o ambiente|Central de Segurança do Azure|Fortaleça a segurança e forneça proteção avançada contra ameaças em suas cargas de trabalho híbridas.|
 
 ::: zone target="docs"
 
@@ -43,13 +43,13 @@ Para qualquer ambiente de nível corporativo, a tabela a seguir descreve o míni
 
 ::: zone-end
 
-O Backup do Azure é o serviço baseado no Azure que você pode usar para fazer backup (ou proteger) e recuperar os dados na nuvem da Microsoft. Ele substitui a solução de backup local ou externa existente por uma solução confiável, segura e econômica baseada em nuvem. Ele também pode ser usado para proteger e recuperar ativos locais por meio de uma solução consistente.
+Com o Backup do Azure é possível fazer backup, proteger e recuperar seus dados no Microsoft Cloud. O Backup do Azure substitui sua solução existente de backup local ou externo por uma solução baseada em nuvem. Essa nova solução é confiável, segura e de custo competitivo. O Backup do Azure também pode ajudar a proteger e recuperar ativos locais por meio de uma solução consistente.
 
 ### <a name="enable-backup-for-an-azure-vm"></a>Habilitar o backup para uma VM do Azure
 
 1. No Portal do Azure, selecione **Máquinas virtuais** e selecione a VM que você deseja replicar.
-1. Em **Operações**, selecione **Backup**.
-1. Crie ou selecione um cofre dos Serviços de Recuperação.
+1. No painel **Operações**, selecione **Backup**.
+1. Crie ou selecione um cofre existente dos Serviços de Recuperação do Azure.
 1. Selecione **Criar (ou editar) uma nova política**.
 1. Configure a agenda e o período de retenção.
 1. Selecione **OK**.
@@ -76,23 +76,22 @@ O Backup do Azure é o serviço baseado no Azure que você pode usar para fazer 
 
 O Azure Site Recovery é um componente crítico em sua estratégia de recuperação de desastre.
 
-O serviço Azure Site Recovery permite replicar máquinas virtuais e cargas de trabalho hospedadas em uma região primária do Azure para uma cópia hospedada em uma região secundária. Quando ocorre uma interrupção em sua região primária, você pode fazer failover para a cópia em execução na região secundária e continuar a acessar seus aplicativos e serviços a partir dela. Essa abordagem proativa de recuperação pode reduzir significativamente os tempos de recuperação. Quando o ambiente de recuperação não for mais necessário, o tráfego de produção poderá fazer fallback para o ambiente original.
+O Site Recovery replica VMs e cargas de trabalho que são hospedadas em uma região primária do Azure. Ele as replica para uma cópia hospedada em uma região secundária. Quando ocorrer uma interrupção em sua região primária, faça failover para a cópia em execução na região secundária. Em seguida, continue acessando seus aplicativos e serviços a partir daí. Essa abordagem proativa de recuperação pode reduzir significativamente os tempos de recuperação. Quando o ambiente de recuperação não for mais necessário, o tráfego de produção poderá fazer fallback para o ambiente original.
 
-### <a name="replicate-an-azure-vm-to-another-region-with-site-recovery-service"></a>Replicar uma VM do Azure para outra região com o serviço Site Recovery
+### <a name="replicate-an-azure-vm-to-another-region-with-site-recovery"></a>Replicar uma VM do Azure para outra região com o Site Recovery
 
-As etapas a seguir descrevem o processo para usar o serviço Site Recovery para replicar uma VM do Azure para outra região (Azure para Azure):
-
+As etapas a seguir descrevem o processo para usar o Site Recovery para replicação do Azure para o Azure, ou seja, a replicação de uma VM do Azure para outra região.
 >
 > [!TIP]
-> Dependendo da sua situação, as etapas exatas podem variar um pouco.
+> Dependendo do seu cenário, as etapas exatas podem variar um pouco.
 >
 
 ### <a name="enable-replication-for-the-azure-vm"></a>Habilitar a replicação para a VM do Azure
 
 1. No Portal do Azure, selecione **Máquinas virtuais** e selecione a VM que você deseja replicar.
-1. Em **Operações**, clique em **Recuperação de desastre**.
-1. Em **Configurar recuperação de desastre** > **Região de destino**, selecione a região de destino para a qual será replicada.
-1. Para este guia de início rápido, aceite as outras configurações padrão.
+1. No painel **Operações**, selecione **Recuperação de desastre**.
+1. Selecione **Configurar recuperação de desastre** > **Região de destino** e escolha a região de destino para a qual você replicará.
+1. Para este guia de início rápido, aceite os valores padrão para todas as outras opções.
 1. Selecione **Habilitar replicação**, que inicia um trabalho para habilitar a replicação da VM.
 
 ::: zone target="chromeless"
@@ -106,7 +105,7 @@ As etapas a seguir descrevem o processo para usar o serviço Site Recovery para 
 Após o trabalho de replicação, você poderá verificar o status de replicação, a integridade da replicação e testar a implantação.
 
 1. No menu da VM, selecione **Recuperação de desastre**.
-2. Verifique a integridade da replicação, os pontos de recuperação que foram criados e as regiões de origem e destino no mapa.
+1. Verifique a integridade da replicação, os pontos de recuperação que foram criados e as regiões de origem e destino no mapa.
 
 ::: zone target="chromeless"
 
