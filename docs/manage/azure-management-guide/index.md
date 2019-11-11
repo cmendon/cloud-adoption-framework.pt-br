@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: abbcdd7214673fdad47946ae77f7dd0bdb7c57af
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 1b0ecb840a5378acbabaf94f11e2aa1297c35427
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565498"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73751534"
 ---
 ::: zone target="docs"
 
@@ -45,7 +45,7 @@ Este guia ensina como estabelecer ferramentas para uma linha de base de gerencia
 > - **Proteger e recuperar:** Verifique se todos os ativos gerenciados estão protegidos e podem ser recuperados usando as ferramentas de gerenciamento de linha de base.
 > - **Opções de linha de base aprimoradas:** Avalie adições comuns à linha de base que podem atender às necessidades comerciais.
 > - **Operações de plataforma:** Estenda a linha de base de gerenciamento com um catálogo de serviços bem definido e plataformas gerenciadas de forma central.
-> - **Operações de carga de trabalho:** Estenda a linha de base de gerenciamento para incluir um foco em cargas de trabalho críticas.
+> - **Operações de carga de trabalho:** Estenda a linha de base de gerenciamento para incluir um foco nas cargas críticas de trabalho.
 
 ## <a name="management-baseline"></a>Linha de base de gerenciamento
 

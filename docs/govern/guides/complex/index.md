@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6c3588c7b7b8e3ae53fc2d2a311b93b548b856c5
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 4a678620e2d194fa2430579b0289ac39c0720204
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566281"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753226"
 ---
 # <a name="governance-guide-for-complex-enterprises"></a>Guia de governança para empresas complexas
 
@@ -39,15 +39,15 @@ O diagrama a seguir mostra a hierarquia de MVP de governança para organizar rec
 
 Todos os aplicativos devem ser implantados na área apropriada do grupo de gerenciamento, assinatura e hierarquia de grupo de recursos. Durante o planejamento da implantação, a equipe de governança de nuvem criará os nós necessários na hierarquia para capacitar as equipes de adoção da nuvem.
 
-1. Defina um grupo de gerenciamento para cada unidade de negócios com uma hierarquia detalhada que reflete a geografia e, em seguida, o tipo de ambiente (por exemplo, ambientes de produção ou pré-produção).
-2. Crie uma assinatura de produção e não produção para cada combinação única de geografia ou unidade de negócios discreta. Tome cuidado se for criar várias assinaturas. Para obter mais informações, consulte o [guia de decisão da Assinatura](../../../decision-guides/subscriptions/index.md).
+1. Defina um grupo de gerenciamento para cada unidade de negócios com uma hierarquia detalhada que reflita primeiro a geografia e, em seguida, o tipo de ambiente (por exemplo, ambientes de produção ou que não sejam de produção).
+2. Crie uma assinatura de produção e uma assinatura que não seja de produção para cada combinação exclusiva de unidade de negócios ou geografia distinta. A criação de várias assinaturas exige uma consideração cuidadosa. Para obter mais informações, consulte o [guia de decisão da Assinatura](../../../decision-guides/subscriptions/index.md).
 3. Aplique uma [nomenclatura consistente](../../../ready/azure-best-practices/naming-and-tagging.md) em cada nível dessa hierarquia de agrupamento.
-4. Os grupos de recursos devem ser implantados de uma maneira que considere seu ciclo de vida de conteúdo: tudo o que é desenvolvido em conjunto é gerenciado em conjunto e o que é desativado junto fica junto. Para saber mais sobre melhores práticas de grupo de recursos, [confira aqui](../../../decision-guides/resource-consistency/index.md).
+4. Os grupos de recursos devem ser implantados de maneira a considerar os ciclos de vida do conteúdo deles. Os recursos que são desenvolvidos juntos, gerenciados juntos e desativados juntos pertencem ao mesmo grupo de recursos. Para obter mais informações sobre as práticas recomendadas para o uso de grupos de recursos, [clique aqui](../../../decision-guides/resource-consistency/index.md).
 5. A [seleção de região](../../../decision-guides/regions/index.md) é incrivelmente importante e deve ser considerada para que a rede, o monitoramento e a auditoria possam estar em vigor para failover/failback, assim como a confirmação de que os [SKUs necessários estão disponíveis nas regiões preferenciais](https://azure.microsoft.com/global-infrastructure/services).
 
 ![Diagrama de organização de recurso de empresa de grande porte](../../../_images/govern/large-enterprise-resource-organization.png)
 
-Esses padrões fornecem espaço para crescimento sem complicar a hierarquia desnecessariamente.
+Esses padrões dão espaço para o crescimento sem complicar a hierarquia desnecessariamente.
 
 [!INCLUDE [governance-of-resources](../../../../includes/caf-governance-of-resources.md)]
 

@@ -9,24 +9,24 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 1ddb65153cde9fac7426c8ef9b10f58a60918b82
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: c5ffe30a66305dcff1df70a383f6716702b4a067
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223882"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753330"
 ---
 # <a name="architectural-decision-guides"></a>Guias de decisão de arquitetura
 
 Guias de decisão de arquitetura em que a estrutura de adoção da nuvem descrevem padrões e modelos que ajudam durante a criação de diretrizes de design de governança de nuvem. Cada guia de decisão se concentra em um componente de infraestrutura de núcleo de implantações de nuvem e lista padrões e modelos que podem dar suporte a cenários de implantação de nuvem específica.
 
-Quando você começa a estabelecer a governança de nuvem para sua organização, percursos de governança acionáveis fornecem um roteiro de linha de base. No entanto, esses percursos fazem suposições sobre os requisitos e as prioridades que podem não refletir àquelas de sua organização.
+Quando você começa a estabelecer a governança de nuvem para sua organização, percursos de governança acionáveis fornecem um roteiro de linha de base. No entanto, esses percursos fazem suposições sobre os requisitos e as prioridades que podem não refletir a realidade da organização.
 
 Esses guias de decisão complementam os percursos de governança de exemplo, fornecendo padrões alternativos e modelos que ajudam você a alinhar as escolhas de design arquitetônico feitas nas diretrizes de design de exemplo pelos seus próprios requisitos.
 
 ## <a name="decision-guidance-categories"></a>Categorias de orientação de decisão
 
-Cada uma das categorias a seguir representa uma tecnologia de base de todas as implantações de nuvem. As jornadas de governança de exemplo tomam decisões de design relacionadas a essas tecnologias com base nas necessidades de negócios de exemplo e algumas dessas decisões podem não corresponder às necessidades da sua organização. As seções a seguir discutem opções alternativas a cada uma dessas categorias, permitindo que você escolha um modelo ou padrão mais adequado às suas necessidades.
+Cada uma das categorias a seguir representa uma tecnologia de base de todas as implantações de nuvem. Os percursos de governança de exemplo tomam decisões de design relacionadas a essas tecnologias com base nas necessidades de negócios de exemplo e algumas dessas decisões podem não corresponder às necessidades da sua própria organização. As seções a seguir discutem opções alternativas a cada uma dessas categorias, permitindo que você escolha um modelo ou padrão mais adequado às suas necessidades.
 
 [Assinaturas](./subscriptions/index.md): Planeje a estrutura de design e conta de assinatura da sua implantação para corresponder com a propriedade da sua organização, faturamento e capacidades de gerenciamento.
 

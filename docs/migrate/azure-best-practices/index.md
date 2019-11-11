@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: e8a7ae0af3b64a6d7e04555fe64a6189d964b3ff
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 1519adff06d600b9829c9b7ff3ca82a0aa5a0160
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70816560"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753384"
 ---
 # <a name="azure-migration-best-practices"></a>Melhores práticas de migração do Azure
 
@@ -27,4 +27,4 @@ Expanda quaisquer processos no sumário à esquerda para ver as melhores prátic
 > A avaliação de ativos e o planejamento de acervo digital representam dois níveis diferentes de avaliação e planejamento de migração:
 >
 > - **Planejamento de acervo digital:** você planeja ou racionaliza o acervo digital durante o planejamento para estabelecer uma lista de pendências de migração geral. No entanto, esse plano se baseia em algumas suposições e detalhes que precisam ser validados antes da migração de uma carga de trabalho.
-> - **Avaliação de ativo:** você avalia os ativos individuais de uma carga de trabalho antes da migração da carga de trabalho para avaliar a compatibilidade de nuvem e entender as restrições de arquitetura e dimensionamento. Esse processo valida suposições iniciais e fornece os detalhes necessários para fazer a migração de um ativo individual.
+> - **Avaliação de ativo:** você avalia os ativos individuais de uma carga de trabalho antes da migração dela para analisar a compatibilidade com a nuvem e entender as restrições de arquitetura e de dimensionamento. Esse processo valida suposições iniciais e fornece os detalhes necessários para fazer a migração de um ativo individual.

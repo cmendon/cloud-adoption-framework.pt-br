@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: e3dad3c514c4d76a857b6b433b7bf7ee7320e626
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 367480222244c1e4287bebec85743408a10efc19
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565128"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752851"
 ---
 # <a name="it-management-and-operations-in-the-cloud"></a>Gerenciamento de TI e operações na nuvem
 
@@ -21,7 +21,7 @@ ms.locfileid: "73565128"
 
 ## <a name="brief-history-of-it-management"></a>Breve histórico do gerenciamento de TI
 
-Antes da nuvem, o gerenciamento de TI cresceu de uma simples função de aquisição. A aquisição de equipamentos técnicos para dar suporte a processos de negócios exigia conhecimento técnico e experiência profunda com um grupo específico de fornecedores de equipamentos. O gerenciamento de TI consolidou a seleção, a aquisição e a configuração dos ativos de TI. Em geral, os ativos adquiridos incluíam armazenamento, capacidade de computação, rede e outros ativos semelhantes que são necessários para ativar a função comercial desejada. Na condição de principais especialistas no equipamento, os responsáveis pelo TI também receberam a tarefa de operar o equipamento para garantir o desempenho máximo e o mínimo de interrupções nos negócios.
+Antes da nuvem, o gerenciamento de TI era uma simples função de aquisição que cresceu. A aquisição de equipamentos técnicos para dar suporte a processos de negócios exigia conhecimento técnico e experiência profunda com um grupo específico de fornecedores de equipamentos. O gerenciamento de TI consolidou a seleção, a aquisição e a configuração dos ativos de TI. Em geral, os ativos adquiridos incluíam armazenamento, capacidade de computação, rede e outros ativos semelhantes que são necessários para ativar a função comercial desejada. Na condição de principais especialistas no equipamento, os responsáveis pelo TI também receberam a tarefa de operar o equipamento para garantir o desempenho máximo e o mínimo de interrupções nos negócios.
 
 Quando a empresa cria soluções de tecnologia, há uma necessidade clara para justificar as despesas significativas associadas à aquisição de ativos ou até mesmo à criação de datacenters completos. Ao criar soluções, a empresa enxerga os custos de aquisição como um investimento no futuro. Depois que a necessidade comercial é atendida, a percepção dos mesmos custos muda. Os custos associados às soluções existentes são vistos como uma bagagem operacional criada por necessidades anteriores. Essa percepção é a razão pela qual muitas empresas enxergam o TI como um centro de custo. Também é por isso que muitas organizações de TI realizam exercícios regulares de controle de custos ou reduções na equipe de TI.
 

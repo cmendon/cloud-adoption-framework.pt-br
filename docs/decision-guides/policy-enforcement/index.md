@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: bc9cc463c50aac532e855ebd93ef1721d9fc38a4
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 7e3df166c41658b248bc7fb61067b27362a8070c
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564829"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753163"
 ---
 # <a name="policy-enforcement-decision-guide"></a>Guia de decisão de imposição de política
 
@@ -51,13 +51,13 @@ Conforme sua propriedade de nuvem cresce, ferramentas adicionais como a [Central
 
 No Azure, você pode aplicar as definições de configuração e as regras de criação de recursos no nível de grupo de gerenciamento, de assinatura ou de grupo de recursos para ajudar a garantir o alinhamento com a política.
 
-[O Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) é um serviço do Azure para criar, atribuir e gerenciar políticas. Essas políticas impõem diferentes regras e efeitos sobre os recursos para que esses recursos permaneçam em conformidade com seus padrões corporativos e contratos de nível de serviço. O Azure Policy avalia seus recursos quanto a não conformidade com políticas atribuídas. Por exemplo, você talvez queira limitar o tamanho da SKU de máquinas virtuais em seu ambiente. Depois que essa política é implementada, os recursos novos e existentes são avaliados quanto à conformidade. Com a política certa, os recursos existentes podem ser colocados em conformidade.
+[O Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) é um serviço do Azure para criar, atribuir e gerenciar políticas. Essas políticas impõem diferentes regras e efeitos sobre os recursos para que esses recursos permaneçam em conformidade com seus padrões corporativos e contratos de nível de serviço. O Azure Policy avalia seus recursos quanto a não conformidade com políticas atribuídas. Por exemplo, você talvez queira limitar o tamanho da SKU de máquinas virtuais em seu ambiente. Após a implantação de uma política correspondente, recursos novos e existentes são avaliados quanto à conformidade. Com a política certa, os recursos existentes podem ser colocados em conformidade.
 
 ## <a name="cross-organization-policy"></a>Política entre organizações
 
-À medida que seu acervo de nuvem aumenta para abranger várias assinaturas que exigem imposição, você precisa se concentrar em uma estratégia de imposição para todo o acervo de nuvem para garantir a consistência da política.
+À medida que sua propriedade de nuvem aumenta para abranger várias assinaturas que exigem imposição, você precisa se concentrar em uma estratégia de imposição para a propriedade inteira de nuvem para garantir a consistência com a política.
 
-Sua [design de assinatura](../subscriptions/index.md) deve levar em conta para a que diz respeito à sua estrutura organizacional. Além de ajudar a dar suporte a organização complexa dentro de seu design de assinatura, [grupos de gerenciamento do Azure](../../ready/azure-best-practices/scaling-subscriptions.md#manage-multiple-subscriptions) podem ser usados para atribuir as regras do Azure Policy entre várias assinaturas.
+O [design da assinatura](../subscriptions/index.md) precisa levar em conta a política em relação à sua estrutura organizacional. Além de ajudar a dar suporte a organização complexa dentro de seu design de assinatura, [grupos de gerenciamento do Azure](../../ready/azure-best-practices/scaling-subscriptions.md#manage-multiple-subscriptions) podem ser usados para atribuir as regras do Azure Policy entre várias assinaturas.
 
 ## <a name="automated-enforcement"></a>Imposição automática
 

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: ceb9fb6ff6be481f665a0bb70e3afcc2eddb6e92
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: b071fc546f615679bf712e9caa7725e767b73ad9
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023892"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753195"
 ---
 # <a name="identity-decision-guide"></a>Guia de decisão de identidade
 
@@ -26,9 +26,9 @@ Ir para: [Determinar Requisitos de Integração de Identidade](#determine-identi
 
 Várias opções estão disponíveis para gerenciar a identidade em um ambiente de nuvem. Essas opções variam de acordo com o custo e com a complexidade. Um fator essencial na estruturação dos serviços de identidade baseados em nuvem é o nível de integração exigido pela infraestrutura de identidade local existente.
 
-No Azure, o Azure AD (Azure Active Directory) fornece um nível básico de gerenciamento de identidades e controle de acesso para recursos de nuvem. No entanto, se a infraestrutura do Active Directory local da sua organização tiver uma estrutura de floresta complexa ou UOs (unidades organizacionais) personalizadas, as cargas de trabalho baseadas em nuvem poderão exigir sincronização com o Azure AD para manter um conjunto consistente de identidades, grupos e funções entre os ambientes local e de nuvem. Além disso, o suporte a aplicativos dependentes de mecanismos de autenticação herdados pode exigir a implantação do AD DS (Active Directory Domain Services) na nuvem.
+No Azure, o Azure AD (Azure Active Directory) fornece um nível básico de gerenciamento de identidades e controle de acesso para recursos de nuvem. No entanto, se a infraestrutura do Active Directory local da sua organização tiver uma estrutura de floresta complexa ou UOs (unidades organizacionais) personalizadas, as cargas de trabalho baseadas em nuvem poderão exigir a sincronização de diretório com o Azure AD para manter um conjunto consistente de identidades, grupos e funções entre os ambientes local e de nuvem. Além disso, o suporte para aplicativos dependentes de mecanismos de autenticação herdados pode exigir a implantação do AD DS (Active Directory Domain Services) na nuvem.
 
-Gerenciamento de identidades baseado em nuvem é um processo iterativo. Talvez você queira começar com uma solução nativa de nuvem e um pequeno conjunto de usuários e funções correspondentes para uma implantação inicial. À medida que sua migração amadurece, você precisa integrar sua solução de identidade usando a sincronização de diretório ou adicionar serviços de domínio como parte de suas implantações de nuvem. Reavalie sua estratégia de identidade em cada iteração do processo de migração.
+Gerenciamento de identidades baseado em nuvem é um processo iterativo. Você pode começar com uma solução nativa de nuvem, um pequeno conjunto de usuários e as funções correspondentes para uma implantação inicial. À medida que a migração amadurecer, você precisará integrar sua solução de identidade usando a sincronização de diretório ou adicionar serviços de domínio como parte das implantações de nuvem. Reavalie sua estratégia de identidade em cada iteração do processo de migração.
 
 ## <a name="determine-identity-integration-requirements"></a>Determinar os requisitos de integração de identidade
 
@@ -48,12 +48,12 @@ O Azure AD é o sistema de IAM (Gerenciamento de Identidades e Acesso) nativo pa
 **Pressuposições da linha de base de nuvem:** O uso de uma infraestrutura de identidade puramente nativa de nuvem pressupõe o seguinte:
 
 - Os recursos baseados em nuvem não dependerão de servidores do Active Directory ou serviços de diretório locais; como alternativa, as cargas de trabalho poderão ser modificadas para remover tais dependências.
-- As cargas de trabalho de aplicativo ou serviço que estão sendo migradas dão suporte a mecanismos de autenticação compatíveis com o Azure AD ou podem ser modificadas facilmente para dar suporte a eles. O Azure AD se baseia em mecanismos de autenticação prontos para a Internet, como SAML, OAuth e OpenID Connect. Cargas de trabalho existentes dependentes de métodos de autenticação herdados que usam protocolos como Kerberos ou NTLM talvez precisem ser refatoradas antes da migração na nuvem usando o padrão de linha de base de nuvem.
+- As cargas de trabalho de aplicativo ou serviço que estão sendo migradas dão suporte a mecanismos de autenticação compatíveis com o Azure AD ou podem ser modificadas facilmente para dar suporte a eles. O Azure AD se baseia em mecanismos de autenticação prontos para a Internet, como SAML, OAuth e OpenID Connect. As cargas de trabalho existentes que dependem de métodos de autenticação herdados e usam protocolos, como o Kerberos ou o NTLM, talvez precisem ser refatoradas antes da migração para a nuvem usando o padrão de linha de base de nuvem.
 
 > [!TIP]
 > Fazer a migração completa dos serviços de identidade para o Azure AD elimina a necessidade de manter sua própria infraestrutura de identidade, o que simplifica bastante o gerenciamento de TI.
 >
-> No entanto, o Azure AD não é uma substituição completa para uma infraestrutura local tradicional do Active Directory. Recursos de diretório, como métodos de autenticação herdados, gerenciamento do computador ou política de grupo, podem não estar disponíveis sem implantar ferramentas ou serviços adicionais na nuvem.
+> No entanto, o Azure AD não é uma substituição completa para uma infraestrutura local tradicional do Active Directory. Os recursos de diretório, como os métodos de autenticação herdados, o gerenciamento do computador ou a política de grupo, podem não estar disponíveis sem a implantação de ferramentas ou serviços adicionais na nuvem.
 >
 > Para cenários em que você precisa integrar suas identidades ou serviços de domínio locais com suas implantações de nuvem, veja a sincronização de diretórios e os padrões de serviços de domínio hospedado na nuvem discutidos abaixo.
 
@@ -73,7 +73,7 @@ Observação: as organizações que adotaram o Office 365 talvez já tenham impl
 
 ### <a name="cloud-hosted-domain-services"></a>Serviços de domínio hospedados na nuvem
 
-Se você tiver cargas de trabalho que dependem de autenticação baseada em declarações usando protocolos herdados, como Kerberos ou NTLM, e essas cargas de trabalho não puderem ser refatoradas para aceitar protocolos de autenticação modernos, como SAML ou OAuth e OpenID Connect, talvez seja necessário migrar alguns dos seus serviços de domínio para a nuvem como parte da implantação de nuvem.
+Se você tiver cargas de trabalho que dependam da autenticação baseada em solicitações usando protocolos herdados, como o Kerberos ou o NTLM, e elas não puderem ser refatoradas para aceitar os protocolos de autenticação modernos, como o SAML, o OAuth ou o OpenID Connect, talvez seja necessário migrar alguns dos serviços de domínio para a nuvem como parte da implantação de nuvem.
 
 Esse padrão envolve a implantação de máquinas virtuais que executam o Active Directory para suas redes virtuais baseadas em nuvem para fornecer AD DS (Active Directory Domain Services) para recursos na nuvem. Todos os aplicativos e serviços existentes que estão migrando para sua rede de nuvem devem poder usar os servidores de diretório hospedados na nuvem com algumas modificações.
 

@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
-ms.openlocfilehash: b231df4665e0da46229d6bc87f8ac32bc1985067
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 2129e0f27dd44a32ea0966326cd0c172603783cf
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564860"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753335"
 ---
 # <a name="migration-tools-decision-guide"></a>Guia de decisão de ferramentas de migração
 
@@ -32,7 +32,7 @@ Responder às perguntas a seguir permitirá que você tome decisões com base na
 - **Seu aplicativo atualmente está em execução em máquinas virtuais dedicadas ou compartilha a hospedagem com outros aplicativos?** Um aplicativo em execução em máquinas virtuais dedicadas pode ser migrado com mais facilidade para as opções de hospedagem de PaaS que outros aplicativos em execução em servidores compartilhados.
 - **Sua migração de dados excederá a largura de banda de rede?** A capacidade de rede entre as fontes de dados locais e o Azure pode ser um gargalo na migração de dados. Se os dados que você precisa transferir enfrentam limitações de largura de banda que impedem a migração em tempo hábil ou eficiente, você precisa examinar mecanismos de transferência alternativos ou offline. O [artigo sobre replicação de migração](../../migrate/migration-considerations/migrate/replicate.md#replication-risks---physics-of-replication) da Cloud Adoption Framework discute como os limites de replicação podem afetar os esforços de migração. Como parte de sua avaliação de migração, consulte suas equipes de TI para verificar se a largura de banda da WAN e local é capaz de atender seus requisitos de migração. Veja também o [cenário de migração de escopo expandido para quando os requisitos de armazenamento excedem a capacidade de rede durante uma migração](../../migrate/expanded-scope/network-capacity-exceeded.md#suggested-prerequisites).
 - **Seu aplicativo usa um pipeline de DevOps existente?** Em muitos casos, o Azure Pipelines pode ser facilmente refatorado para implantar aplicativos em ambientes de hospedagem baseados em nuvem.
-- **Seus dados têm requisitos de armazenamento de dados complexos?** Aplicativos de produção geralmente exigem armazenamento de dados com alta disponibilidade, que ofereça funcionalidade sempre ativa e recursos de continuidade e tempo de atividade similares. Opções de banco de dados gerenciado baseado em PaaS do Azure, como o Banco de Dados SQL do Azure, o Banco de Dados do Azure para MySQL e o Azure Cosmos DB, oferecem contratos de nível de serviço com tempo de atividade de 99,99%. Por outro lado, SQL Server baseado em IaaS em VMs do Azure oferece contratos de nível de serviço de instância única de 99,95%. Se os dados não puderem ser modernizados para usar as opções de armazenamento de PaaS, garantir um tempo de atividade de IaaS maior envolverá cenários mais complexos de armazenamento de dados como clusters Always-On do SQL Server sincronização contínua de dados entre instâncias. Isso pode envolver custos significativos de hospedagem e manutenção, portanto, balancear requisitos de tempo de atividade, esforços de modernização e impacto geral orçamentários é importante ao considerar suas opções de migração de dados.
+- **Seus dados têm requisitos de armazenamento de dados complexos?** Aplicativos de produção geralmente exigem armazenamento de dados com alta disponibilidade, que ofereça funcionalidade sempre ativa e recursos de continuidade e tempo de atividade similares. Opções de banco de dados gerenciado baseado em PaaS do Azure, como o Banco de Dados SQL do Azure, o Banco de Dados do Azure para MySQL e o Azure Cosmos DB, oferecem contratos de nível de serviço com tempo de atividade de 99,99%. Por outro lado, o SQL Server baseado em IaaS nas VMs do Azure oferece contratos de nível de serviço de instância única de 99,95%. Se os dados não puderem ser modernizados para usar as opções de armazenamento de PaaS, garantir um tempo de atividade de IaaS maior envolverá cenários mais complexos de armazenamento de dados como clusters Always-On do SQL Server sincronização contínua de dados entre instâncias. Isso pode envolver custos significativos de hospedagem e manutenção, portanto, balancear requisitos de tempo de atividade, esforços de modernização e impacto geral orçamentários é importante ao considerar suas opções de migração de dados.
 
 ## <a name="innovation-and-migration"></a>Inovação e migração
 

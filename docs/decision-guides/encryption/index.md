@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 27a86947bdcf240f3ea469db10c94b3f63ccb1e8
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: ed394c0bd1748a6e3382835cec816b552217bd01
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564887"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753360"
 ---
 # <a name="encryption-decision-guide"></a>Guia de decisão de criptografia
 
@@ -63,7 +63,7 @@ Com uma abordagem do tipo "Bring Your Own Key", você gera chaves em hardware HS
 
 ### <a name="on-premises-hold-your-own-key"></a>Local (mantenha sua própria chave)
 
-Em determinados cenários, é possível haver motivos regulatórios, de política ou técnicos que o impeçam de armazenar chaves em um sistema de gerenciamento de chaves baseado em nuvem. Nesses casos, você deve gerar chaves usando hardware local, armazenar e gerenciar essas chaves usando um sistema de gerenciamento de chaves local e provisionar um mecanismo para permitir que o recurso baseado em nuvem acesse essas chaves para fins de criptografia. Observe que manter sua chave pode não ser compatível com todos os serviços baseados no Azure.
+Em determinados cenários, é possível que haja motivos regulamentares, de política ou técnicos que impeçam o armazenamento de chaves em um sistema de gerenciamento de chaves baseado em nuvem. Nesses casos, você precisa gerar chaves usando hardware local, armazenar e gerenciar essas chaves usando um sistema de gerenciamento de chaves local e estabelecer uma maneira para que os recursos baseados em nuvem acessem essas chaves para fins de criptografia. A opção de manter a sua própria chave pode não ser compatível com todos os serviços baseados no Azure.
 
 **Suposições sobre o gerenciamento de chaves local:** Usar um sistema de gerenciamento de chaves local inclui estas suposições:
 
@@ -84,7 +84,7 @@ Considere vários estados diferentes de dados com diferentes necessidades de cri
 
 Dados em trânsito são dados que se movem entre recursos nas redes internas, entre datacenters ou externas ou pela Internet.
 
-A criptografia de dados em trânsito geralmente é feita com protocolos SSL/TLS para o tráfego. O tráfego que transita entre os recursos hospedados na nuvem em direção à rede externa ou à Internet pública deve estar criptografado. Geralmente, os recursos de PaaS também impõem a criptografia SSL/TLS ao tráfego por padrão. Geralmente recomendada, a imposição da criptografia para o tráfego entre os recursos de IaaS hospedados dentro de suas redes virtuais é uma decisão a ser tomada por suas equipes de adoção da nuvem e o proprietário da carga de trabalho.
+Os dados em trânsito geralmente são criptografados exigindo protocolos SSL/TLS para o tráfego de rede. Sempre criptografe o tráfego entre seus recursos hospedados na nuvem e as redes externas ou a Internet pública. Os recursos de PaaS normalmente impõem a criptografia SSL/TLS por padrão. Suas equipes de adoção de nuvem e os proprietários de cargas de trabalho devem considerar a imposição da criptografia para o tráfego entre os recursos de IaaS hospedados em suas redes virtuais.
 
 **Suposições sobre a criptografia de dados em trânsito:** Para a implementação de uma política de criptografia adequada a dados em trânsito, pressupõe-se o seguinte:
 

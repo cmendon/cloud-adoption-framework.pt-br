@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 4f024a95afcb993bd0fe314737ee4d2f97daffb0
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 4e97c7c1d363b81badc440eb46495b134c680162
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73238779"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753144"
 ---
 # <a name="subscription-decision-guide"></a>Guia de decisão da assinatura
 
@@ -48,7 +48,7 @@ Uma assinatura única por conta pode ser suficiente para organizações que prec
 
 ### <a name="production-and-nonproduction-pattern"></a>Padrão de produção e não produção
 
-Quando estiver pronto para implantar uma carga de trabalho em um ambiente de produção, você deverá adicionar outra assinatura. Isso ajuda você a manter seus dados de produção e outros ativos fora dos ambientes de desenvolvimento/teste. Você também pode aplicar com facilidade dois diferentes conjuntos de políticas aos recursos nas duas assinaturas.
+Quando você estiver pronto para implantar uma carga de trabalho em um ambiente de produção, adicione uma outra assinatura. Isso ajuda você a manter seus dados de produção e outros ativos fora dos ambientes de desenvolvimento/teste. Você também pode aplicar com facilidade dois diferentes conjuntos de políticas aos recursos nas duas assinaturas.
 
 ![Padrão de assinatura de produção e não produção](../../_images/ready/basic-subscription-model.png)
 

@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7aac08981375a3fcbbd658d6e14564a07e06795e
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 6f35ca4e8420100c7455e8fa909fc8b572ee1074
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70816288"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753466"
 ---
 # <a name="assess-assets-prior-to-migration"></a>Avaliar os ativos antes da migração
 
@@ -56,7 +56,7 @@ Além da responsabilidade de alto nível, há ações pelas quais uma pessoa ou 
   - Para evitar surpresas mais adiante no processo, pelo menos um representante da empresa deve estar envolvido no processo de aprovação.
 
 > [!CAUTION]
-> Essa lista completa de responsabilidades e ações pode dar suporte a migrações grandes e complexas envolvendo várias funções com diferentes níveis de responsabilidade e exigindo um processo de aprovação detalhado. Esforços de migração menores e mais simples podem não exigir todas as funções e ações descritas aqui. Para determinar quais dessas atividades agregam valor e quais são uma sobrecarga desnecessária, aconselhamos sua equipe de adoção de nuvem e a equipe de estratégia de nuvem a usar esse processo completo como parte da primeira migração de carga de trabalho. Depois que a carga de trabalho tiver sido verificada e testada, a equipe poderá avaliar esse processo e escolher quais ações usar mais adiante.
+> Essa lista completa de responsabilidades e ações pode dar suporte a migrações grandes e complexas envolvendo várias funções com diferentes níveis de responsabilidade e exigindo um processo de aprovação detalhado. Esforços de migração menores e mais simples podem não exigir todas as funções e ações descritas aqui. Para determinar quais dessas atividades agregam valor e quais são desnecessárias, a equipe de adoção de nuvem e a equipe de estratégia de nuvem devem usar esse processo completo como parte da primeira migração de carga de trabalho. Depois que a carga de trabalho tiver sido verificada e testada, a equipe poderá avaliar esse processo e escolher quais ações usar mais adiante.
 
 ## <a name="next-steps"></a>Próximas etapas
 

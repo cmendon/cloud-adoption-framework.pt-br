@@ -5,7 +5,7 @@
 
 ### <a name="governance-of-resources"></a>Governança de recursos
 
-Um conjunto de políticas globais e funções de RBAC fornecerá um nível de linha de base de imposição de governança. Para atender aos requisitos da política da equipe de Governança de Nuvem, a implementação do MVP de governança exige a conclusão das seguintes tarefas:
+Um conjunto de políticas globais e funções de RBAC fornecerá um nível de linha de base de imposição de governança. Para atender aos requisitos da política da equipe de governança de nuvem, a implementação do MVP de governança exige a conclusão das seguintes tarefas:
 
 1. Identificar as definições do Azure Policy necessárias para impor os requisitos comerciais. Isso pode incluir o uso de definições internas e a criação de definições personalizadas.
 2. Criar uma definição de blueprint usando essa política interna e personalizada e as atribuições de função necessárias para o MVP de governança.
@@ -19,8 +19,8 @@ Definições de políticas personalizadas são salvas em um grupo de gerenciamen
 
 Como as políticas necessárias para dar suporte ao MVP de governança destinam-se a serem aplicadas a todas as assinaturas atuais, os seguintes requisitos comerciais serão implementados com uma combinação de definições internas e personalizadas criadas no grupo de gerenciamento raiz:
 
-1. Restrinja a lista de atribuições de função disponíveis a um conjunto de funções internas do Azure autorizadas por sua equipe de Governança de Nuvem. Isso exigirá uma [definição de política personalizada](https://github.com/Azure/azure-policy/tree/master/samples/Authorization/allowed-role-definitions).
-2. Exija o uso das seguintes marcações em todos os recursos: *Unidade de Cobrança/Departamento*, *Geografia*, *Classificação de Dados*, *Nível de Importância*, *SLA*, *Ambiente*, *Arquétipo do Aplicativo*, *Aplicativo* e *Proprietário do Aplicativo*. Isso pode ser tratado usando a definição interna do `Require specified tag`.
+1. Restrinja a lista de atribuições de função disponíveis a um conjunto de funções internas do Azure autorizadas pela equipe de governança de nuvem. Para isso, é necessária uma [definição de política personalizada](https://github.com/Azure/azure-policy/tree/master/samples/Authorization/allowed-role-definitions).
+2. Exija as seguintes marcas em todos os recursos: *Unidade de Cobrança/Departamento*, *Geografia*, *Classificação de Dados*, *Nível de Importância*, *SLA*, *Ambiente*, *Arquétipo do Aplicativo*, *Aplicativo* e *Proprietário do Aplicativo*. Isso pode ser tratado usando a definição interna do `Require specified tag`.
 3. Exigir que a marca `Application` para os recursos deva corresponder ao nome do grupo de recursos relevante. Isso pode ser tratado usando a definição interna "Exigir a marca e seu valor'".
 
 Para obter informações sobre como definir as políticas personalizadas, veja a [documentação do Azure Policy](https://docs.microsoft.com/azure/governance/policy/tutorials/create-custom-policy-definition). Para obter instruções e exemplos de políticas personalizadas, veja o [site de exemplos do Azure Policy](https://docs.microsoft.com/azure/governance/policy/samples) e o respectivo [repositório do GitHub](https://github.com/Azure/azure-policy).
@@ -31,7 +31,7 @@ As políticas do Azure podem ser atribuídas no nível do grupo de recursos, da 
 
 O Azure Blueprints permite a atribuição consistente de política e funções, a aplicação de modelos do Resource Manager e a implantação de grupos de recursos em várias assinaturas. Como ocorre com definições de política, definições de blueprint são salvas em grupos de gerenciamento ou em assinaturas e estão disponíveis por meio de herança para qualquer filho na hierarquia de grupo de gerenciamento.
 
-A equipe de Governança de Nuvem decidiu que a imposição de atribuições obrigatórias do Azure Policy e RBAC entre assinaturas será implementada por meio do Azure Blueprints e artefatos associados:
+A equipe de governança de nuvem decidiu que a imposição de atribuições obrigatórias do Azure Policy e de RBAC entre assinaturas será implementada por meio do Azure Blueprints e dos artefatos associados:
 
 1. No grupo de gerenciamento raiz, crie uma definição de blueprint chamada `governance-baseline`.
 2. Adicione os seguintes artefatos do blueprint à definição de blueprint:
@@ -53,7 +53,7 @@ Até que a confiança no ambiente de nuvem seja totalmente estabelecida, é impo
     1. A [arquitetura de referência de VPN](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/vpn) estabelece um padrão e um modelo de implantação para criar um Gateway de VPN no Azure.
     2. Confirme se os mecanismos de gerenciamento de segurança e tráfego locais tratam as redes de nuvem conectadas como não confiáveis. Recursos e serviços hospedados na nuvem devem ter apenas acesso a serviços autorizados locais.
     3. Valide que o dispositivo de borda local no datacenter local é compatível com [requisitos do Gateway de VPN do Azure](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices) e está configurado para acessar a Internet pública.
-    4. Observe que os túneis de VPN não devem ser considerados circuitos prontos para produção para nada, exceto as cargas de trabalho mais simples. Qualquer coisa, além de poucas cargas de trabalho simples que exija conectividade local, deve aproveitar o Azure ExpressRoute.
+    4. Observe que os túneis de VPN não devem ser considerados circuitos prontos para produção para nada, exceto as cargas de trabalho mais simples. Qualquer coisa, além de poucas cargas de trabalho simples que exijam conectividade local, deve aproveitar o Azure ExpressRoute.
 1. No grupo de gerenciamento raiz, criar uma segunda definição de blueprint chamada `secure-hybrid-vnet`.
     1. Adicione o modelo do Resource Manager do Gateway de VPN como um artefato à definição de blueprint.
     2. Adicione o modelo do Resource Manager da rede virtual como um artefato à definição de blueprint.

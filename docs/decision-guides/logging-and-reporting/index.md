@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: b772eddfce65fa7a2ce4d67e36b1cc0f82e47ac5
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 4328cdf3249b065bf20efd5858254ad9da1dc211
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564869"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753170"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>Guia de decisão de registro em log e relatório
 
@@ -26,7 +26,7 @@ Ir para: [Planejar a infraestrutura de monitoramento](#plan-your-monitoring-infr
 
 O ponto de inflexão ao determinar uma estratégia de identidade e registro em log de nuvem baseia-se principalmente nos investimentos existentes feitos pela organização nos processos operacionais e, até certo ponto, nos requisitos necessários para dar suporte a uma estratégia de multinuvem.
 
-Há várias maneiras de registrar e relatar atividades na nuvem. Os registros em log centralizado e nativo de nuvem são duas opções comuns de serviço gerenciado, orientadas pelo design de assinatura e pelo número de assinaturas.
+As atividades na nuvem podem ser registradas e relatadas de várias maneiras. Os registros em log centralizado e nativo de nuvem são duas opções comuns de serviço gerenciado, orientadas pelo design de assinatura e pelo número de assinaturas.
 
 ## <a name="plan-your-monitoring-infrastructure"></a>Planejar sua infraestrutura de monitoramento
 
@@ -54,7 +54,7 @@ As soluções personalizadas de registro em log baseadas no Azure Monitor podem 
 
 ### <a name="on-premises-extension"></a>Extensão local
 
-Pode ser necessário um esforço novo desenvolvimento substancial para aplicativos e serviços que estejam migrando para a nuvem usarem soluções de registro em logs e relatórios baseadas em nuvem como o Azure Monitor. Nesses casos, talvez faça sentido permitir que essas cargas de trabalho continuem a enviar dados de telemetria para os sistemas locais existentes.
+Uma nova etapa de desenvolvimento significativa pode ser necessária para que os aplicativos e os serviços que estejam migrando para a nuvem usem soluções baseadas em nuvem para registro em log e relatórios, como o Azure Monitor. Nesses casos, considere permitir que essas cargas de trabalho continuem enviando dados de telemetria para sistemas locais existentes.
 
 Para dar suporte a essa abordagem, os recursos de nuvem precisarão se comunicar diretamente com os sistemas locais por meio de uma combinação de [rede híbrida](../software-defined-network/hybrid.md) e [serviços de domínio hospedados na nuvem](../identity/index.md#cloud-hosted-domain-services). Dessa forma, a rede virtual na nuvem funcionará como uma extensão da rede do ambiente local. Consequentemente, as cargas de trabalho hospedadas na nuvem poderão comunicar-se diretamente com o sistema de registro em log e relatórios local.
 
@@ -69,7 +69,7 @@ Suposições somente&ndash;locais:
 
 ### <a name="gateway-aggregation"></a>Agregação de gateway
 
-Para cenários em que o valor dos dados telemétricos baseados em nuvem for grande ou os sistemas de monitoramento locais existentes precisarem de dados do log modificados antes de serem processados, um serviço de [agregação de gateway](https://docs.microsoft.com/azure/architecture/patterns/gateway-aggregation) de dados do log poderá ser necessário.
+Para cenários em que a quantidade de dados de telemetria baseados em nuvem é grande ou os sistemas de monitoramento locais existentes precisam que os dados de log sejam modificados antes do processamento, pode ser necessário usar um serviço de [agregação de gateway](https://docs.microsoft.com/azure/architecture/patterns/gateway-aggregation) de dados de log.
 
 Um serviço de gateway é implantado no provedor de nuvem. Em seguida, aplicativos e serviços relevantes são configurados para enviar dados telemétricos para o gateway, em vez de um sistema de registro em log padrão. O gateway poderá, em seguida, processar os dados: agregando, combinando ou formatando-os antes de enviá-los ao serviço de monitoramento para ingestão e análise.
 
@@ -85,7 +85,7 @@ Suposições sobre a agregação de gateway:
 
 Uma solução de monitoramento híbrido combina dados do log dos recursos locais e da nuvem para fornecer uma exibição integrada do status operacional da propriedade de TI.
 
-Se você tiver um investimento existente em sistemas de monitoramento local cuja substituição se tornaria difícil ou de alto custo, talvez seja necessário integrar a telemetria das cargas de trabalho de nuvem em soluções de monitoramento locais preexistentes. Em um sistema de monitoramento local híbrido, os dados telemétricos locais continuam usando o sistema de monitoramento local existente. Os dados telemétricos baseados em nuvem são enviados diretamente ao sistema de monitoramento local ou são enviados ao Azure Monitor e então compilados e ingeridos no sistema local a intervalos regulares.
+Se você já tem um investimento em sistemas de monitoramento locais cuja substituição seria difícil ou muito cara, pode ser necessário integrar a telemetria das cargas de trabalho de nuvem nas soluções de monitoramento locais já existentes. Em um sistema de monitoramento local híbrido, os dados telemétricos locais continuam usando o sistema de monitoramento local existente. Os dados telemétricos baseados em nuvem são enviados diretamente ao sistema de monitoramento local ou são enviados ao Azure Monitor e então compilados e ingeridos no sistema local a intervalos regulares.
 
 **Suposições sobre o monitoramento híbrido local:** O uso de um sistema local de registro em log e relatório para monitoramento híbrido supõe o seguinte:
 
