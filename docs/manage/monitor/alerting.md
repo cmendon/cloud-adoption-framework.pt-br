@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 7e602ce0c27da5204a51d0a4a790ce65dc7e6871
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: b605aad4400ef531022392ceb786ab5467812f5f
+ms.sourcegitcommit: 5d865c3a3f105986bda83ff84f8cc29def030334
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752736"
+ms.lasthandoff: 11/11/2019
+ms.locfileid: "73912506"
 ---
 # <a name="cloud-monitoring-guide-alerting"></a>Guia de monitoramento de nuvem: alertas
 
@@ -67,7 +67,7 @@ Azure Monitor tem quatro tipos de alertas, cada um de certa forma vinculado ao r
 
 - [Alerta do log de atividades](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-activity-log): alertas em itens no repositório de logs de atividades, com exceção dos dados de integridade do serviço.
 
-- [Alerta de integridade do serviço](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-activity-log-service-notifications?toc=%2fazure%2fservice-health%2ftoc.json): um tipo especial de alerta, apenas para problemas de integridade do serviço provenientes do repositório de logs de atividades.
+- [Alerta de integridade do serviço](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-activity-log-service-notifications?toc=%2fazure%2fservice-health%2ftoc.json): um tipo especial de alerta que é usado somente para problemas de integridade do serviço provenientes do repositório de logs de atividades, como interrupções e manutenção planejada futura. Observe que esse tipo de alerta é configurado por meio da [integridade do serviço do Azure](https://docs.microsoft.com/azure/service-health/service-health-overview), um serviço complementar para Azure monitor.
 
 ### <a name="enable-alerting-through-partner-tools"></a>Habilitar alertas por meio de ferramentas de parceiro
 
