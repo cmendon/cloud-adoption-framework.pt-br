@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 3d8d8007125a0ffa6268132f1d608123c25c9c22
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: bafeecd715ac2c18c9ae744165be249c2b3639e5
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058554"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73751562"
 ---
 ::: zone target="docs"
 
@@ -43,7 +43,7 @@ Uma das vantagens das soluções baseadas em nuvem é a capacidade de reunir com
 
 O Serviço de Aplicativo do Azure fornece um ambiente de hospedagem para os aplicativos que remove a carga de gerenciamento de infraestrutura e aplicação de patches do sistema operacional. Ele fornece a automação de escala para atender às demandas dos usuários, sendo limitado pelos limites que você define para manter os custos sob controle.
 
-O Serviço de Aplicativo do Azure fornece suporte de primeira classe para linguagens de programação como ASP.NET, ASP.NET Core, Java, Ruby, Node.js, PHP e Python. Se você precisar hospedar outra pilha de runtime, o Aplicativo Web para Contêineres permite hospedar de forma rápida e fácil um contêiner do Docker dentro do ambiente do Serviço de Aplicativo do Azure, de modo que você pode hospedar, assim, sua pilha de códigos personalizada em um ambiente que retira você do negócio de servidores.
+O Serviço de Aplicativo do Azure fornece suporte de primeira classe para linguagens de programação como ASP.NET, ASP.NET Core, Java, Ruby, Node.js, PHP e Python. Se você precisa hospedar outra pilha de runtime, o Aplicativo Web para Contêineres permite hospedar de forma rápida e fácil um contêiner do Docker dentro do Serviço de Aplicativo, de modo que você pode hospedar sua pilha de códigos personalizada em um ambiente que retira você do negócio de servidores.
 
 ### <a name="action"></a>Ação
 

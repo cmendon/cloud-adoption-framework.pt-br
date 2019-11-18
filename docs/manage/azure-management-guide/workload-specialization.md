@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 92b9988d47dcc8ba4b7a7e3dd02a4ec9ff3ed2e9
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 2381a7579fad573abeca6afafd6f6fbaa6310ee4
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565387"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752925"
 ---
 # <a name="workload-specialization-for-cloud-management"></a>Especialização de carga de trabalho para gerenciamento de nuvem
 
@@ -44,9 +44,9 @@ Quando a especialização de carga de trabalho é necessária, o gerenciamento o
 
 Nesse modelo, tarefas operacionais como monitoramento, implantação, DevOps e outras funções focadas em inovação são deslocadas para um desenvolvimento de aplicativo ou uma organização de unidade de negócios. A equipe de Plataforma de Nuvem e a equipe principal de Monitoramento de Nuvem ainda oferecem linha de base de gerenciamento no ambiente.
 
-Essas equipes centralizadas também orientam e instruem equipes especializadas em cargas de trabalho sobre as operações de cargas de trabalho delas. Porém, a responsabilidade operacional diária recai sobre uma equipe de gerenciamento de nuvem que é gerenciada fora da TI. Esse tipo de controle distribuído é um dos principais indicadores da maturidade do Centro de Excelência de Nuvem.
+Essas equipes centralizadas também orientam e instruem equipes especializadas em cargas de trabalho sobre as operações de cargas de trabalho delas. Porém, a responsabilidade operacional diária recai sobre uma equipe de gerenciamento de nuvem que é gerenciada fora da TI. Esse tipo de controle distribuído é um dos principais indicadores da maturidade em um centro de nuvem de excelência.
 
-## <a name="beyond-platform-specialization---application-insights"></a>Além da especialização de plataforma – Application Insights
+## <a name="beyond-platform-specialization-application-insights"></a>Além da especialização de plataforma: Application Insights
 
 São necessários maiores detalhes sobre a carga de trabalho específica para fornecer operações de carga de trabalho claras. Durante a fase de melhoria contínua, o Application Insights será um acréscimo necessário à cadeia de ferramentas de gerenciamento de nuvem.
 
