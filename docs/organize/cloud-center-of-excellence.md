@@ -9,20 +9,20 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: c1819bafaed5e75e6667754d598b075eb3204925
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 1bd332898140d032525935cd8cfc96cb1d46e54e
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564308"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160498"
 ---
 # <a name="cloud-center-of-excellence"></a>Centro de excelência de nuvem
 
-A agilidade comercial e técnica são os principais objetivos da maioria das organizações de ti. O Cloud Center of Excellence (CCoE) é uma função que cria um equilíbrio entre velocidade e estabilidade.
+A agilidade comercial e técnica são os principais objetivos da maioria das organizações de ti. Um CCoE (Cloud Center of Excellence) é uma função que cria um equilíbrio entre velocidade e estabilidade.
 
 ## <a name="function-structure"></a>Estrutura de função
 
-O CCoE requer colaboração entre cada um dos seguintes recursos:
+Um modelo CCoE requer colaboração entre cada um dos seguintes recursos:
 
 - Adoção de nuvem (especificamente arquitetos de solução)
 - Estratégia de nuvem (especificamente o programa e os gerentes de projeto)
@@ -132,7 +132,7 @@ Além disso, recomendamos que os participantes da empresa fiquem informados sobr
 
 ## <a name="next-steps"></a>Próximos passos
 
-O Cloud Center of Excellence requer tanto [recursos de plataforma de nuvem](./cloud-platform.md) quanto recursos de automação de [nuvem](./cloud-automation.md). A próxima etapa é alinhar os [recursos da plataforma de nuvem](./cloud-platform.md).
+Um modelo CCoE requer tanto [recursos de plataforma de nuvem](./cloud-platform.md) quanto recursos de automação de [nuvem](./cloud-automation.md). A próxima etapa é alinhar os [recursos da plataforma de nuvem](./cloud-platform.md).
 
 > [!div class="nextstepaction"]
 > [Alinhar os recursos da plataforma de nuvem](./cloud-platform.md)

@@ -9,21 +9,21 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 98a65f0e65e8c2851a8aa97fe2f0c17ffe2359db
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 81bb5775f2d83a0784e360440b52112427acf243
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752728"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160254"
 ---
 # <a name="cloud-monitoring-guide-monitoring-strategy-for-cloud-deployment-models"></a>Guia de monitoramento de nuvem: estratégia de monitoramento para modelos de implantação de nuvem
 
 Este artigo inclui nossa estratégia de monitoramento recomendada para cada um dos modelos de implantação de nuvem, com base nos seguintes critérios:
 
-- Você precisa manter seu compromisso com o Operations Manager ou outra plataforma de monitoramento corporativo, pois ele está integrado com seus processos de operações de ti, conhecimento e experiência ou alguma funcionalidade ainda não está disponível no Azure Monitor.
-- Você precisa monitorar cargas de trabalho locais e na nuvem pública ou apenas na nuvem.
+- Você deve manter seu compromisso com o Operations Manager ou outra plataforma de monitoramento corporativo, pois ele está integrado com seus processos de operações de ti, conhecimento e experiência ou alguma funcionalidade ainda não está disponível no Azure Monitor.
+- Você deve monitorar cargas de trabalho locais e na nuvem pública ou apenas na nuvem.
 - Sua estratégia de migração de nuvem inclui modernizar operações de ti e migrar para nossos serviços de monitoramento de nuvem e soluções.
-- Você pode ter sistemas críticos que são gapped ou isolados fisicamente, hospedados em uma nuvem privada ou em hardware físico. E os sistemas precisam ser monitorados.
+- Você pode ter sistemas críticos que são gapped ou isolados fisicamente, ou são hospedados em uma nuvem privada ou em hardware físico, e esses sistemas precisam ser monitorados.
 
 Nossa estratégia inclui suporte para monitoramento de infraestrutura (cargas de trabalho de computação, armazenamento e servidor), aplicativo (usuário final, exceções e cliente) e recursos de rede. Ele fornece uma perspectiva de monitoramento orientada a serviços completa.
 
@@ -104,7 +104,7 @@ Para coletar métricas e logs da infraestrutura e dos recursos de plataforma do 
 
 ### <a name="monitor-with-system-center-operations-manager"></a>Monitorar com System Center Operations Manager
 
-Embora System Center Operations Manager tenha sido originalmente projetado como uma solução local para monitorar entre aplicativos, cargas de trabalho e infraestrutura em execução em seu ambiente de ti, ele evoluiu para incluir recursos de monitoramento de nuvem. Ele se integra ao Azure, Office 365 e Amazon Web Services (AWS). Ele pode monitorar esses diversos ambientes com pacotes de gerenciamento que são projetados e atualizados para dar suporte a eles.  
+Embora System Center Operations Manager tenha sido originalmente projetado como uma solução local para monitorar entre aplicativos, cargas de trabalho e componentes de infraestrutura em execução em seu ambiente de ti, ele evoluiu para incluir o monitoramento de nuvem técnicas. Ele se integra ao Azure, Office 365 e Amazon Web Services (AWS). Ele pode monitorar esses diversos ambientes com pacotes de gerenciamento que são projetados e atualizados para dar suporte a eles.  
 
 Para clientes que fizeram investimentos significativos em Operations Manager para obter um monitoramento abrangente que esteja totalmente integrado com seus processos e ferramentas de gerenciamento de serviços de TI ou para clientes novos no Azure, é compreensível fazer o seguinte dúvidas
 
@@ -181,7 +181,7 @@ Você pode obter o monitoramento holístico de Azure Stack com System Center Ope
 
 Você também pode obter um monitoramento holístico com uma combinação de [recursos de monitoramento de infraestrutura](https://docs.microsoft.com/azure/azure-stack/azure-stack-monitor-health) incluídos no Azure Stack. Esses recursos ajudam a exibir a integridade e os alertas de uma região Azure Stack e o [serviço de Azure monitor](https://docs.microsoft.com/azure/azure-stack/user/azure-stack-metrics-azure-data) no Azure Stack, que fornece métricas de infraestrutura de nível básico e logs para a maioria dos serviços.
 
-Se você já investiu em Operations Manager, use o pacote de gerenciamento do Azure Stack para monitorar a disponibilidade e o estado de integridade de implantações de Azure Stack. Isso inclui regiões, provedores de recursos, atualizações, execuções de atualização, unidades de escala, nós de unidade, funções de infraestrutura e suas instâncias (entidades lógicas compostas pelos recursos de hardware). Ele usa as APIs REST de provedor de recursos de integridade e atualização para se comunicar com Azure Stack. Para monitorar servidores físicos e dispositivos de armazenamento, use o pacote de gerenciamento de fornecedores de OEM (por exemplo, fornecido pela Lenovo, Hewlett Packard ou Dell). Operations Manager pode monitorar nativamente os comutadores de rede para coletar estatísticas básicas usando SNMP. O monitoramento das cargas de trabalho de locatário é possível com o pacote de gerenciamento do Azure seguindo duas etapas básicas. Configure a assinatura que você deseja monitorar e, em seguida, adicione os monitores para essa assinatura.
+Se você já investiu em Operations Manager, use o pacote de gerenciamento do Azure Stack para monitorar a disponibilidade e o estado de integridade de implantações de Azure Stack, incluindo regiões, provedores de recursos, atualizações, execuções de atualização, unidades de escala, nós de unidade, infraestrutura funções e suas instâncias (entidades lógicas compostas pelos recursos de hardware). Este pacote de gerenciamento usa as APIs REST de provedor de recursos de integridade e atualização para se comunicar com Azure Stack. Para monitorar servidores físicos e dispositivos de armazenamento, use o pacote de gerenciamento de fornecedores de OEM (por exemplo, fornecido pela Lenovo, Hewlett Packard ou Dell). Operations Manager pode monitorar nativamente os comutadores de rede para coletar estatísticas básicas usando SNMP. O monitoramento das cargas de trabalho de locatário é possível com o pacote de gerenciamento do Azure seguindo duas etapas básicas. Configure a assinatura que você deseja monitorar e, em seguida, adicione os monitores para essa assinatura.
 
 ## <a name="next-steps"></a>Próximos passos
 

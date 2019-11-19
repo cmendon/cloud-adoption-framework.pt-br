@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 356d6c463e97553cb56d132c4f94e812a5b1c656
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: acfae57b1073d0205619f81b9caea72b5dc6d57d
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752806"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160272"
 ---
 # <a name="protect-and-recover-in-cloud-management"></a>Proteger e recuperar no gerenciamento de nuvem
 
@@ -31,7 +31,7 @@ No mínimo, cada ativo que dá suporte a uma determinada carga de trabalho deve 
 
 ### <a name="recovery-time-objectives-rto"></a>RTO (objetivos de tempo de recuperação)
 
-Quando ocorre um desastre, um objetivo de tempo de recuperação é a quantidade de tempo que deve levar para recuperar qualquer sistema em seu estado de pré-desastre. Para cada carga de trabalho, isso inclui o tempo necessário para restaurar a funcionalidade mínima necessária para as VMs e os aplicativos. Ele também inclui a quantidade de tempo necessária para restaurar os dados exigidos pelos aplicativos.
+Quando ocorre um desastre, um objetivo de tempo de recuperação é a quantidade de tempo que deve levar para recuperar qualquer sistema para seu estado antes do desastre. Para cada carga de trabalho, isso inclui o tempo necessário para restaurar a funcionalidade mínima necessária para as VMs e os aplicativos. Ele também inclui a quantidade de tempo necessária para restaurar os dados exigidos pelos aplicativos.
 
 Em termos comerciais, o RTO representa a quantidade de tempo que o processo de negócios estará fora de serviço. Para cargas de trabalho de missão crítica, essa variável deve ser relativamente baixa, permitindo que os processos de negócios retomem rapidamente. Para cargas de trabalho de baixa prioridade, um nível padrão de RTO pode não ter um impacto perceptível no desempenho da empresa.
 

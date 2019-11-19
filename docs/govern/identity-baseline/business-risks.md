@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e4203944d6ab5de891f637034d60381290a31c46
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: cd8dc50480480766ec4b4413d0dddfaeafc69f7f
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222182"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160125"
 ---
 # <a name="identity-baseline-motivations-and-business-risks"></a>Motivações da linha de base de identidade e riscos de negócios
 
@@ -24,7 +24,7 @@ Este artigo aborda os motivos que os clientes normalmente adotam uma disciplina 
 
 ## <a name="identity-baseline-relevancy"></a>Relevância de linha de base de identidade
 
-Diretórios locais tradicionais são projetados para permitir que as empresas estritamente controlem permissões e políticas para os usuários, grupos e funções dentro de suas redes internas e datacenters. Geralmente, isso serve para dar suporte a implementações de único locatário, com os serviços aplicáveis somente dentro do ambiente local.
+Diretórios locais tradicionais são projetados para permitir que as empresas estritamente controlem permissões e políticas para os usuários, grupos e funções dentro de suas redes internas e datacenters. Esses diretórios normalmente dão suporte a implementações de locatário único, com serviços aplicáveis somente no ambiente local.
 
 Os serviços de identidade de nuvem expandem os recursos de controle de acesso e autenticação de uma organização para a Internet. Eles oferecem suporte a multilocação e podem ser usados para gerenciar usuários e política de acesso em aplicativos de nuvem e implantações. As plataformas de nuvem pública têm serviços de identidade nativos de nuvem que oferecem suporte a tarefas de gerenciamento e implantação e são capazes de [diferentes níveis de integração](../../decision-guides/identity/index.md) com suas soluções de identidade locais existentes. Todos esses recursos podem resultar na política de identidade de nuvem que está sendo mais complicada do que suas soluções locais tradicionais exigem.
 
@@ -41,7 +41,7 @@ Os riscos serão diferentes entre a organização, mas os seguintes servem como 
 - **Incapacidade de compartilhar recursos com parceiros externos.** Dificuldade para adição de parceiros comerciais externos às suas soluções de identidade existente pode impedir a comunicação eficiente de recursos de compartilhamento e de negócios.
 - **Dependências de identidade local.** Mecanismos de autenticação herdados ou autenticação de multifator de terceiros pode não estar disponível na nuvem, exigindo migrar as cargas de trabalho para serem alteradas ou serviços de identidade adicional a serem implantado para a nuvem. Nenhum dos dois requisitos pode atrasar ou evitar a migração e aumentar os custos.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Usando o [modelo de gerenciamento de nuvem](./template.md), documente os riscos de negócios que provavelmente serão introduzidos pelo plano de adoção de nuvem atual.
 

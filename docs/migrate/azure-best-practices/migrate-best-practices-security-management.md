@@ -8,12 +8,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 34659cb5cd3a223fe084ba8975f0f7a39b2b74f6
-ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
+ms.openlocfilehash: e2fb2587b5e6e0914c6a9facc062d817a508897e
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73656703"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160044"
 ---
 # <a name="best-practices-for-securing-and-managing-workloads-migrated-to-azure"></a>Melhores práticas para proteger e gerenciar cargas de trabalho migradas para o Azure
 
@@ -38,10 +38,10 @@ Após a migração, a tarefa mais importante é proteger cargas de trabalho migr
 
 A Microsoft trabalha duro para fazer com que os administradores de locatários do Azure tenham as informações necessárias para habilitar os recursos de segurança que protegem suas cargas de trabalho contra ataques. A Central de Segurança do Azure fornece gerenciamento unificado de segurança. Na Central de Segurança, você pode aplicar políticas de segurança em cargas de trabalho, limitar a exposição a riscos e detectar e responder a ataques. A Central de Segurança analisa as configurações e os recursos entre locatários do Azure e faz recomendações de segurança, incluindo:
 
-- **Gerenciamento de política centralizado** – garanta a conformidade com requisitos de segurança da empresa ou de regulamentação, gerenciando políticas de segurança de forma centralizada em todas as suas cargas de trabalho de nuvem híbrida.
-- **Avaliação de segurança contínua** – monitore a postura de segurança de computadores, redes, armazenamento e serviços de dados e aplicativos para descobrir problemas potenciais de segurança.
-- **Recomendações acionáveis** – corrija a vulnerabilidades de segurança antes que elas sejam exploradas por invasores, usando recomendações de segurança priorizadas e práticas.
-- **Alertas e incidentes priorizados** – concentre-se primeiro nas ameaças mais importantes com alertas de segurança e incidentes priorizados.
+- **Gerenciamento de política centralizado:** Garanta a conformidade com os requisitos de segurança normativa ou da empresa gerenciando centralmente políticas de segurança em todas as suas cargas de trabalho de nuvem híbrida.
+- **Avaliação de segurança contínua:** Monitore a postura de segurança de máquinas, redes, armazenamento e serviços de dados e aplicativos para descobrir possíveis problemas de segurança.
+- **Recomendações acionáveis:** Corrija vulnerabilidades de segurança antes que elas possam ser exploradas por invasores com recomendações de segurança priorizadas e acionáveis.
+- **Alertas e incidentes priorizados:** Concentre-se primeiro nas ameaças mais críticas com alertas e incidentes de segurança priorizados.
 
 Além de avaliações e recomendações, a Central de Segurança do Azure fornece outros recursos de segurança que podem ser habilitados para recursos específicos.
 
@@ -135,9 +135,8 @@ O Azure fornece algumas soluções:
   - Ele protege vários aplicativos Web ao mesmo tempo por trás de um gateway de aplicativo.
   - Um firewall do aplicativo Web pode ser monitorado com o Azure Monitor e está integrado à Central de Segurança do Azure.
 
-![proteger aplicativos Web](./media/migrate-best-practices-security-management/web-apps.png)
-
-*Cofre da Chave do Azure*
+![Proteger aplicativos Web](./media/migrate-best-practices-security-management/web-apps.png)
+*Azure Key Vault*
 
 **Saiba mais:**
 
@@ -174,8 +173,7 @@ O Azure AD (Azure Active Directory) fornece logs de atividade que aparecem no Az
 - É possível rotear os logs de atividade para vários pontos de extremidade para retenção de longo prazo e insights sobre os dados.
 - Torne uma prática comum rever os logs ou integrar sua ferramenta SIEM (gerenciamento de eventos e informações de segurança) para examinar as anomalias automaticamente. Se você não estiver usando Premium 1 ou 2, precisará fazer grande parte da análise por conta própria ou usar o sistema SIEM. A análise inclui a procura por entradas e eventos de risco e outros padrões de ataque de usuários.
 
-![Usuários e Grupos](./media/migrate-best-practices-security-management/azure-ad.png)
-
+![Usuários e grupos](./media/migrate-best-practices-security-management/azure-ad.png)
 *Usuários e grupos do Azure AD*
 
 **Saiba mais:**
@@ -214,7 +212,6 @@ Ter grupos de recursos com nomes significativos que os administradores e os memb
 - Se você estiver sincronizando seu AD DS local com o Azure AD usando o Azure AD Connect, considere a possibilidade de corresponder os nomes dos grupos de segurança locais com os nomes dos grupos de recursos no Azure.
 
 ![Nomenclatura](./media/migrate-best-practices-security-management/naming.png)
-
 *Nomenclatura do grupo de recursos*
 
 **Saiba mais:**
@@ -225,9 +222,8 @@ Ter grupos de recursos com nomes significativos que os administradores e os memb
 
 A pior coisa que poderia acontecer é você perder um grupo de recursos porque o excluiu acidentalmente. Por isso, recomendamos que você implemente bloqueios de exclusão para que isso não aconteça.
 
-![Excluir bloqueios](./media/migrate-best-practices-security-management/locks.png)
-
-*Excluir bloqueios*
+![Bloqueios de exclusão](./media/migrate-best-practices-security-management/locks.png)
+*Bloqueios de exclusão*
 
 **Saiba mais:**
 
@@ -359,7 +355,7 @@ Você pode usar o Backup do Azure para fazer backup de VMs de duas maneiras.
 - **Backup direto em um cofre dos Serviços de Recuperação.** você pode fazer backup de VMs IaaS implantando um cofre dos Serviços de Recuperação do Backup do Azure. Isso fornece um local único para controlar e gerenciar backups, bem como opções de backup e restauração granulares. O Backup ocorre até três vezes por dia, no nível de arquivo/pasta. Ele não tem reconhecimento de aplicativo e não tem suporte para Linux. Instale o agente MARS (Serviços de Recuperação do Microsoft Azure) em cada VM em que você deseja realizar o backup usando esse método.
 - **Proteja a VM no Servidor de Backup do Azure.** O Servidor de Backup do Azure é fornecido gratuitamente com o Backup do Azure. O backup da VM é feito no armazenamento local do Servidor de Backup do Azure. Depois disso, você faz o backup do Servidor de Backup do Azure no Azure em um cofre. O backup tem reconhecimento de aplicativo com granularidade completa sobre a frequência e a retenção de backup. Você pode fazer backup no nível do aplicativo, por exemplo, ao fazer backup do SQL Server ou do SharePoint.
 
-Para segurança, o Backup do Azure criptografa os dados em trânsito usando AES 256 e os envia por HTTPS para o Azure. Os dados de backup em repouso no Azure são criptografados com [SSE (Criptografia do Serviço de Armazenamento)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption?toc=%2fazure%2fstorage%2fqueues%2ftoc.json) e os dados para armazenamento e transmissão.
+Para segurança, o Backup do Azure criptografa os dados em trânsito usando AES 256 e os envia por HTTPS para o Azure. Os dados de backup em repouso no Azure são criptografados com [SSE (Criptografia do Serviço de Armazenamento)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption?toc=/azure/storage/queues/toc.json) e os dados para armazenamento e transmissão.
 
 ![Backup do Azure](./media/migrate-best-practices-security-management/iaas-backup.png)
 *Backup do Azure*
@@ -400,9 +396,8 @@ O Azure Site Recovery é o principal serviço do Azure para fazer com que as VMs
 
 O Site Recovery replica as VMs de uma região primária para uma região secundária do Azure. Quando ocorre um desastre, faça failover das VMs da região primária e continue a acessá-las normalmente na região secundária. Quando as operações voltarem ao normal, você poderá fazer failback das VMs para a região primária.
 
-![Recuperação de Site do Azure](./media/migrate-best-practices-security-management/site-recovery.png)
-
-*Recuperação de Site*
+![Azure Site Recovery](./media/migrate-best-practices-security-management/site-recovery.png)
+*Site Recovery*
 
 **Saiba mais:**
 
@@ -419,8 +414,7 @@ Os discos gerenciados do Azure simplificam o gerenciamento de discos para VMs Ia
 - Você pode converter discos existentes em gerenciados.
 - Você deve criar VMs em conjuntos de disponibilidade para ter alta resiliência e disponibilidade. Quando ocorrem paralisações, planejadas ou não, os conjuntos de disponibilidade fazem com que pelo menos uma das VMs no conjunto permaneça disponível.
 
-![Managed Disks](./media/migrate-best-practices-security-management/managed-disks.png)
-
+![Discos gerenciados](./media/migrate-best-practices-security-management/managed-disks.png)
 *Discos gerenciados*
 
 **Saiba mais:**

@@ -8,12 +8,12 @@ ms.date: 09/22/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: 799ab1ba0d0b99ed5427d2c986c4fae9659a5b05
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 3ad84a52b35a98744f59b0d719e61f2c83a61af0
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753763"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160466"
 ---
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Andaime empresarial do Azure: governança de assinatura prescritiva
 
@@ -40,20 +40,20 @@ Ao construir um prédio, o andaime é usado para criar a base de uma estrutura. 
 
 Um andaime se baseia em práticas que coletamos dos muitos compromissos com clientes de vários tamanhos. Esses clientes variam de pequenas organizações que desenvolvem soluções na nuvem para grandes empresas multinacionais e fornecedores de software independentes que estão migrando cargas de trabalho e desenvolvendo soluções nativas de nuvem. O Enterprise Scaffold é "criado especificamente" para ser flexível para dar suporte a cargas de trabalho de ti tradicionais e a cargas Agile, como os desenvolvedores que criam aplicativos SaaS (software como serviço) baseados em recursos da plataforma Azure.
 
-O andaime empresarial destina-se a ser a base de cada nova assinatura no Azure. Ele permite aos administradores garantir que as cargas de trabalho atendam aos requisitos mínimos de governança de uma organização sem impedir que grupos de negócios e desenvolvedores cumpram rapidamente suas próprias metas. Nossa experiência mostra que isso acelera bastante o crescimento da nuvem pública, em vez de impedi-lo.
+O Enterprise Scaffold pode servir como a base de cada nova assinatura no Azure. Ele permite aos administradores garantir que as cargas de trabalho atendam aos requisitos mínimos de governança de uma organização sem impedir que grupos de negócios e desenvolvedores cumpram rapidamente suas próprias metas. Nossa experiência mostra que isso acelera muito, em vez de impedir o crescimento da nuvem pública.
 
 > [!NOTE]
 > A Microsoft lançou a versão prévia de um novo recurso chamado [Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints/overview), que permitirá a você empacotar, gerenciar e implantar imagens, modelos, políticas e scripts comuns em assinaturas e grupos de gerenciamento. Esse recurso é a ponte entre a finalidade do andaime como modelo de referência e a implantação desse modelo na organização.
 >
 A imagem a seguir mostra os componentes do andaime. A base depende de um plano sólido para a hierarquia de gerenciamento e para as assinaturas. Os pilares consistem em políticas do Resource Manager e sólidos padrões de nomenclatura. O restante do andaime é composto pelos principais recursos e funcionalidades do Azure, que possibilitam e conectam um ambiente seguro e gerenciável.
 
-![andaime empresarial](../_images/reference/scaffoldv2.png)
+![Scaffold empresarial](../_images/reference/scaffoldv2.png)
 
 ## <a name="define-your-hierarchy"></a>Definir sua hierarquia
 
 A base do andaime é a hierarquia e o relacionamento do Registro empresarial do Azure para assinaturas e grupos de recursos. O Registro empresarial define a forma e o uso dos serviços do Azure em uma empresa de um ponto de vista contratual. Dentro do Enterprise Agreement, você pode subdividir ainda mais o ambiente em departamentos, contas, assinaturas e grupos de recursos para corresponder à estrutura da sua organização.
 
-![hierarquia](../_images/reference/agreement.png)
+![Hierarquia](../_images/reference/agreement.png)
 
 Uma assinatura do Azure é a unidade básica onde todos os recursos estão contidos. Ela também define vários limites dentro do Azure, como o número de núcleos, de redes virtuais e outros recursos. Os grupos de recursos são usados para refinar ainda mais o modelo de assinatura e habilitar um agrupamento mais natural de recursos.
 
@@ -228,7 +228,7 @@ Coletar e analisar a telemetria que fornece a linha de visão sobre as atividade
 
 Essas informações podem ser exibidas e acionadas em vários níveis e estão continuamente sendo aprimoradas. O Azure fornece recursos de monitoramento **compartilhados**, **básicos**e **profundos** dos recursos do Azure por meio dos serviços descritos no diagrama a seguir.
 
-![monitoring](../_images/reference/monitoring.png)
+![Monitoramento](../_images/reference/monitoring.png)
 
 ### <a name="shared-capabilities"></a>Funcionalidades compartilhadas
 
@@ -344,4 +344,4 @@ O Azure fornece recursos internos e recursos de terceiros da nossa extensa rede 
 
 A governança é essencial para o sucesso do Azure. Este artigo foca na implementação técnica de um andaime empresarial, mas toca apenas no processo mais amplo e nas relações entre os componentes. A governança da política flui de cima para baixo e é determinada por aquilo que a empresa quer alcançar. Naturalmente, a criação de um modelo de governança para o Azure inclui representantes da TI, mas o mais importante é ter uma forte representação dos líderes do grupo de negócios, além de gerenciamento de segurança e risco. No fim, um andaime empresarial é sobre reduzir o risco aos negócios para facilitar a missão e os objetivos de uma organização.
 
-Agora que você aprendeu sobre governança de assinatura, é hora de ver essas recomendações na prática. Veja [Exemplos de implementação da governança de assinatura do Azure](./azure-scaffold-examples.md).
+Agora que você aprendeu sobre governança de assinatura, é hora de ver essas recomendações na prática. Para obter mais informações, consulte as [práticas recomendadas para prontidão do Azure](../ready/azure-best-practices/index.md).

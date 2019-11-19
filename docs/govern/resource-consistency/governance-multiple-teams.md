@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: caa9d3ced70ce15eacf37b4bcbb653efae9da1ef
-ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
+ms.openlocfilehash: 59b60af79d81316726ffed1dcf326641af059cb0
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73656699"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160469"
 ---
 # <a name="governance-design-for-multiple-teams"></a>Design de governança para várias equipes
 
@@ -82,21 +82,22 @@ Portanto, para criar um modelo de acesso de privilégios mínimos, você precisa
 Vamos dar uma olhada em dois modelos de permissão de exemplo para entender esse conceito um pouco melhor. No primeiro exemplo, o modelo confia somente no administrador de serviço para criar grupos de recursos. No segundo exemplo, o modelo atribui a função de proprietário interno para o proprietário de cada carga de trabalho no escopo da assinatura.
 
 Em ambos os exemplos, há um administrador de serviço de assinatura que é atribuído à função de proprietário interna no escopo da assinatura. Lembre-se de que a função de proprietário interna concede todas as permissões, incluindo o gerenciamento de acesso a recursos.
+
 ![administrador do serviço de assinatura com a função de proprietário](../../_images/govern/design/governance-2-1.png)
 *Figura 3-uma assinatura com um administrador de serviços atribuiu a função de proprietário interna.*
 
 1. No primeiro exemplo, temos o **proprietário da carga de trabalho A** sem permissões no escopo de assinatura — ele não tem direitos de gerenciamento de acesso de recursos por padrão. Esse usuário deseja implantar e gerenciar os recursos para sua carga de trabalho. Eles devem contatar o **administrador de serviço** para solicitar a criação de um grupo de recursos.
-    ![criação de solicitações de proprietário de carga de trabalho do grupo de recursos A](../../_images/govern/design/governance-2-2.png)
+    ![proprietário da carga de trabalho solicita A criação do grupo de recursos A](../../_images/govern/design/governance-2-2.png)
 2. O **administrador de serviços** revisa sua solicitação e cria **o grupo de recursos A**. Neste ponto, **o proprietário da carga de trabalho** ainda não tem permissão para fazer nada.
-    ![administrador de serviço cria o grupo de recursos A](../../_images/govern/design/governance-2-3.png)
+    ![administrador de serviços cria um grupo de recursos A](../../_images/govern/design/governance-2-3.png)
 3. O **administrador de serviço** adiciona **proprietário da carga de trabalho A** para **do grupo de recursos A** e atribui o [função colaborador interna](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor). A função de colaborador concede todas as permissões no **grupo de recursos A**, exceto o gerenciamento de permissão de acesso.
-    ![O administrador de serviços adiciona o proprietário da carga de trabalho a para o grupo de recursos a](../../_images/govern/design/governance-2-4.png)
+    ![administrador de serviço adiciona o proprietário da carga de trabalho a ao grupo de recursos a](../../_images/govern/design/governance-2-4.png)
 4. Vamos supor que o **proprietário da carga de trabalho A** tenha um requisito para um par de membros da equipe para exibir o CPU e o tráfego de rede de dados como parte do planejamento de capacidade para a carga de trabalho de monitoramento. Como o **proprietário da carga de trabalho** a recebe a função de colaborador, ele não tem permissão para adicionar um usuário ao **grupo de recursos a**. Eles devem enviar essa solicitação ao **administrador de serviços**.
-    ![o proprietário da carga de trabalho solicita que colaboradores de carga de trabalho sejam adicionados ao grupo de recursos](../../_images/govern/design/governance-2-5.png)
+    ![proprietário da carga de trabalho solicita que os colaboradores de carga de trabalho sejam adicionados ao grupo de recursos](../../_images/govern/design/governance-2-5.png)
 5. O **administrador de serviços** revisa a solicitação e adiciona os dois usuários de **colaborador de carga de trabalho** ao **grupo de recursos a**. Nenhum desses dois usuários exigem permissão para gerenciar recursos, portanto, eles recebem a [função de leitor interna](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor).
-    ![o administrador de serviço adiciona colaboradores da carga de trabalho ao grupo de recursos A](../../_images/govern/design/governance-2-6.png)
+    ![administrador de serviços adiciona colaboradores de carga de trabalho ao grupo de recursos A](../../_images/govern/design/governance-2-6.png)
 6. Em seguida, o **proprietário da carga de trabalho B** também requer um grupo de recursos conter os recursos para sua carga de trabalho. Assim como acontece com **proprietário da carga de trabalho A**, **proprietário da carga de trabalho B** inicialmente não tem permissão para realizar qualquer ação no escopo de assinatura para que eles devem enviar uma solicitação para o **administrador de serviços**.
-    ![criação de solicitações de proprietário de carga de trabalho B do grupo de recursos B](../../_images/govern/design/governance-2-7.png)
+    ![proprietário da carga de trabalho B solicita a criação do grupo de recursos B](../../_images/govern/design/governance-2-7.png)
 7. O **administrador de serviços** revisa a solicitação e cria o **grupo de recursos B**.  ![administrador de serviço cria o grupo de recursos B](../../_images/govern/design/governance-2-8.png)
 8. Em seguida, o **administrador do serviço** adiciona o proprietário da **carga de trabalho b** ao **grupo de recursos b** e atribui a função de colaborador interna.
     ![O administrador de serviços adiciona o proprietário da carga de trabalho B ao grupo de recursos B](../../_images/govern/design/governance-2-9.png)

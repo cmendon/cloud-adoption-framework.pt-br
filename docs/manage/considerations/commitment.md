@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 29acef56de414d1a98e5fe11e5e396922b84392d
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 02a4b4debf11507f557951652f362c02e4ae0ecc
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752883"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160397"
 ---
 # <a name="business-commitment-in-cloud-management"></a>Compromisso de negócios no gerenciamento de nuvem
 
@@ -60,7 +60,7 @@ Em um ambiente local tradicional, o custo do gerenciamento do ambiente é geralm
 
 As organizações também podem optar por [terceirizar algumas das funções de gerenciamento contínuas para um provedor de serviços](https://www.microsoft.com/cloud-adoption-framework-offers?ot=manage). Esses provedores de serviços podem usar o [Azure Lighthouse](https://azure.com/lighthouse) para dar ao organizações um controle mais preciso para conceder acesso a seus recursos, juntamente com maior visibilidade das ações executadas pelos provedores de serviços.
 
-- **Responsabilidade delegada:** Como não há necessidade de centralizar e assumir a sobrecarga de gerenciamento operacional, as operações de ti para muitas organizações estão considerando novas abordagens. Uma abordagem comum é conhecida como _responsabilidade delegada_. Em um Cloud Center de modelo de excelência, as operações de plataforma e a automação de plataforma fornecem ferramentas de gerenciamento de autoatendimento que podem ser usadas por equipes de operações orientadas por negócios, independentemente de uma equipe de operações de ti central. Essa abordagem dá aos participantes da empresa controle total sobre os orçamentos relacionados ao gerenciamento. Ele também permite que a equipe do Cloud Center of Excellence (CCOE) garanta que um conjunto mínimo de guardrails tenha sido adequadamente implementado. Nesse modelo, ele atua como um agente e um guia para ajudar a empresa a tomar decisões inteligentes. As operações de negócios supervisionam as operações diárias de cargas de trabalho dependentes.
+- **Responsabilidade delegada:** Como não há necessidade de centralizar e assumir a sobrecarga de gerenciamento operacional, as operações de ti para muitas organizações estão considerando novas abordagens. Uma abordagem comum é conhecida como _responsabilidade delegada_. Em um Cloud Center de modelo de excelência, as operações de plataforma e a automação de plataforma fornecem ferramentas de gerenciamento de autoatendimento que podem ser usadas por equipes de operações orientadas por negócios, independentemente de uma equipe de operações de ti central. Essa abordagem dá aos participantes da empresa controle total sobre os orçamentos relacionados ao gerenciamento. Ele também permite que a equipe do Cloud Center of Excellence (CCoE) garanta que um conjunto mínimo de guardrails tenha sido adequadamente implementado. Nesse modelo, ele atua como um agente e um guia para ajudar a empresa a tomar decisões inteligentes. As operações de negócios supervisionam as operações diárias de cargas de trabalho dependentes.
 
 - **Responsabilidade centralizada:** Os requisitos de conformidade, a complexidade técnica e alguns modelos de serviço compartilhado podem exigir um modelo de _ti central_ . Nesse modelo, ele continua a exercitar suas responsabilidades de gerenciamento de operações. O design ambiental, os controles de gerenciamento e as ferramentas de governança podem ser gerenciados e controlados centralmente, o que restringe a função dos participantes de negócios ao fazer compromissos de gerenciamento. Mas a visibilidade do custo e da arquitetura das abordagens de nuvem torna muito mais fácil para a ti centralizada comunicar o custo e o nível de gerenciamento de cada carga de trabalho.
 

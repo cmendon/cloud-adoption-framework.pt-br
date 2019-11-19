@@ -8,16 +8,16 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 1742f794f12501a1506cc6228241435adc5fba52
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 219c5b402c9cdc4b6214e8a5ed38b85ba7a2e203
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565163"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160361"
 ---
 # <a name="business-criticality-in-cloud-management"></a>Importância dos negócios no gerenciamento de nuvem
 
-Em toda empresa, existe um pequeno número de cargas de trabalho que são muito importantes para falhar. Eles são considerados de missão crítica. Quando essas cargas de trabalho experimentam interrupções ou degradação de desempenho, o impacto adverso na receita e na lucratividade pode ser sentido em toda a empresa.
+Em toda empresa, existe um pequeno número de cargas de trabalho que são muito importantes para falhar. Essas cargas de trabalho são consideradas de missão crítica. Quando essas cargas de trabalho experimentam interrupções ou degradação de desempenho, o impacto adverso na receita e na lucratividade pode ser sentido em toda a empresa.
 
 Na outra extremidade do espectro, algumas cargas de trabalho podem ir meses por vez sem serem usadas. Baixo desempenho ou interrupções para essas cargas de trabalho não é desejável, mas o impacto é isolado e limitado.
 
@@ -65,7 +65,7 @@ As etapas a seguir se aplicam se você estiver usando a [pasta de trabalho de ge
 2. Atualize cada carga de trabalho no *exemplo* ou *Limpe o modelo* para refletir a criticalidade padrão na coluna de *criticalidade* .
 3. A empresa deve inserir os valores corretos para refletir quaisquer desvios da criticalidade padrão.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Depois que sua equipe tiver definido a criticalidade de negócios, você poderá [calcular e registrar o impacto nos negócios](./impact.md).
 

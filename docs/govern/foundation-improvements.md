@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: fc06264bad61571aaa4735350a16e294492dd9c0
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 315797d7ef4ab93d5d386ee32a499f4172752687
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547704"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74159920"
 ---
 # <a name="improve-your-initial-cloud-governance-foundation"></a>Aprimore sua base de governança de nuvem inicial
 
@@ -28,14 +28,14 @@ A qualquer momento, as práticas recomendadas a seguir podem ser aplicadas à ba
 > [!IMPORTANT]
 > A organização de recursos pode afetar como essas práticas recomendadas são aplicadas. É importante começar com as recomendações que melhor se alinham com a base de governança de nuvem inicial que você implementou na etapa anterior.
 
-|Risco/necessidade | Enterprise Standard | Empresarial complexa |
+|Risco/necessidade | Empresa padrão | Empresa complexa |
 |---|---|---|
 |Dados confidenciais na nuvem|[Aprimoramento da disciplina](./guides/standard/security-baseline-improvement.md)|[Aprimoramento da disciplina](./guides/complex/security-baseline-improvement.md)|
 |Aplicativos de missão crítica na nuvem|[Aprimoramento da disciplina](./guides/standard/resource-consistency-improvement.md)|[Aprimoramento da disciplina](./guides/complex/resource-consistency-improvement.md)|
 |Gerenciamento de custos de nuvem|[Aprimoramento da disciplina](./guides/standard/cost-management-improvement.md)|[Aprimoramento da disciplina](./guides/complex/cost-management-improvement.md)|
 |Multinuvem|[Aprimoramento da disciplina](./guides/standard/multicloud-improvement.md)|[Aprimoramento da disciplina](./guides/complex/multicloud-improvement.md)|
 |Gerenciamento de identidade complexo/herdado|N/D|[Aprimoramento da disciplina](./guides/complex/identity-baseline-improvement.md)|
-|Várias camadas de governança|N/D|[Aprimoramento da disciplina](./guides/complex/multiple-layers-of-governance.md)|
+|Múltiplas camadas de governança|N/D|[Aprimoramento da disciplina](./guides/complex/multiple-layers-of-governance.md)|
 
 ## <a name="next-steps"></a>Próximos passos
 

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 118a111ae787e58d1f50704216e921a4df43501e
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 44c0f8693362572e0faf1e39d9f2ec7ba2ff16b9
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753024"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160072"
 ---
 # <a name="identity-baseline-sample-policy-statements"></a>Instruções de política de exemplo de Linha de base de identidade
 
@@ -28,7 +28,7 @@ As instruções de política de exemplo a seguir abordam os riscos de negócios 
 
 ## <a name="lack-of-access-controls"></a>Falta de controles de acesso
 
-**Risco técnico:** As configurações de controle de acesso insuficientes ou ad hoc podem introduzir o risco de acesso não autorizado a recursos confidenciais ou de missão crítica.
+**Risco técnico:** As configurações de controle de acesso insuficiente ou ad hoc podem introduzir o risco de acesso não autorizado a recursos confidenciais ou de missão crítica.
 
 **Declaração de política:** Todos os ativos implantados na nuvem devem ser controlados com o uso de identidades e funções aprovadas pelas políticas de governança atuais.
 

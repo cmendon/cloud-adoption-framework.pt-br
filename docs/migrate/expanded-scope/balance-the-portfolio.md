@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7383f07f4d52cef640bcb1e617de60697a20b248
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 9834778e7aaddc616d595e874459fa7bd3eb61e3
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753480"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74159904"
 ---
 # <a name="balance-the-portfolio"></a>Equilibrar o portfólio
 
@@ -95,7 +95,7 @@ Para reduzir a complexidade, você deve seguir uma abordagem tradicional para a 
   - Se uma carga de trabalho não for estratégica, mas for compatível com plataformas de hospedagem de aplicativos modernas baseadas em nuvem, talvez seja prudente realizar pequenas refatorações no aplicativo para implantá-las como um aplicativo moderno. Isso pode contribuir para a economia geral reduzindo os requisitos gerais de licenciamento de IaaS e sistema operacional da migração na nuvem.
   - Se uma carga de trabalho for de terceiros e os dados da carga de trabalho não forem planejados para uso em uma inovação downstream, talvez seja melhor deixar como uma opção de nova hospedagem na lista de pendências.
 
-Essas perguntas não devem ser o âmbito da análise qualitativa concluída para cada carga de trabalho, mas têm a intenção de orientar uma conversa para ajudar a resolver a complexidade de um portfólio desequilibrado.
+Essas perguntas não devem ser a extensão da análise qualitativa concluída para cada carga de trabalho, mas ajudam a orientar uma conversa sobre como abordar a complexidade de um portfólio desbalanceado.
 
 ## <a name="migrate-process-changes"></a>Alterações no processo de migração
 

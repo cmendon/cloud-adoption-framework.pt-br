@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 57f94fde4e7f4863a3ddca710d523d9c027571d0
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 6671efc087d718a44de97062dcf8c32498cfdb81
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566128"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74159847"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -38,15 +38,15 @@ Antes de definir gatilhos para a correção de conformidade de política, você 
 
 ### <a name="assign-cloud-governance-team-members"></a>Atribuir membros da equipe de governança de nuvem
 
-Sua equipe de governança de nuvem fornecerá orientação contínua sobre a conformidade da política e tratará os problemas relacionados à política que surgiram ao implantar e operar seus ativos de nuvem. Ao criar essa equipe, convide a equipe de sua organização que tem experiência em áreas cobertas por suas declarações de política definidas e riscos identificados.
+Sua equipe de governança de nuvem fornecerá orientação contínua sobre a conformidade da política e tratará os problemas relacionados à política que surgiram ao implantar e operar seus ativos de nuvem. Ao criar essa equipe, convide os membros da equipe que têm experiência em áreas cobertas por suas declarações de política definidas e riscos identificados.
 
-Para implantações de teste iniciais, isso poderá ser limitado a alguns administradores de sistema responsáveis por estabelecer os princípios básicos de governança. À medida que seus processos de governança forem amadurecedos, revise a associação da equipe de diretrizes da nuvem regularmente para garantir que você possa resolver corretamente os novos riscos potenciais e os requisitos de política. Identifique membros de sua equipe de ti e de negócios com experiência relevante ou interesse em áreas específicas de governança e inclua-os em suas equipes por uma base permanente ou ad-hoc conforme necessário.
+Para implantações iniciais de teste, isso pode ser limitado a alguns administradores de sistema responsáveis por estabelecer os conceitos básicos de governança. À medida que seus processos de governança forem amadurecedos, revise a associação da equipe de diretrizes da nuvem regularmente para garantir que você possa resolver corretamente os novos riscos potenciais e os requisitos de política. Identifique membros de sua equipe de ti e de negócios com experiência relevante ou interesse em áreas específicas de governança e inclua-os em suas equipes em uma base permanente ou temporária, conforme necessário.
 
 ### <a name="reviews-and-policy-iteration"></a>Análises e política de iteração
 
 Conforme os recursos adicionais e as cargas de trabalho são implantados, a equipe de governança de nuvem precisará garantir que novas cargas de trabalho ou ativos estejam em conformidade com os requisitos de política. Avalie novos requisitos de equipes de desenvolvimento de carga de trabalho para garantir que suas implantações planejadas se alinhem com seus guias de design e atualize suas políticas para dar suporte a esses requisitos quando apropriado.
 
-Planeje avaliar os novos riscos potenciais e atualizar as instruções de política e guias de design, conforme necessário. Trabalhe com a equipe de ti e as equipes de carga de trabalho para avaliar os novos recursos e serviços do Azure em uma base contínua. Também agende ciclos de revisão regulares cada uma das cinco disciplinas de governança para garantir que a política esteja atualizada e sendo atendida.
+Planeje avaliar os novos riscos potenciais e atualizar as instruções de política e guias de design, conforme necessário. Trabalhe com a equipe de ti e as equipes de carga de trabalho para avaliar os novos recursos e serviços do Azure em uma base contínua. Também agende ciclos de revisão regulares cada uma das cinco disciplinas de governança para garantir que a política seja atual e em conformidade.
 
 ### <a name="education"></a>Educação
 
@@ -77,19 +77,19 @@ Cada gatilho de violação deve ter uma ação correspondente. Ações disparada
 
 Alguns exemplos de gatilhos e ações de violação:
 
-| Disciplina de Governança de Nuvem | Gatilho de exemplo | Ação de exemplo |
+| Disciplina de Governança de Nuvem | Amostra do gatilho | Ação de exemplo |
 |-----------------------------|----------------|---------------|
-| Gerenciamento de Custos | Os gastos mensais com a nuvem são mais de 20% superior ao esperado. | Notifique o líder da unidade de cobrança que iniciará uma análise do uso de recursos. |
-| Linha de base de segurança | Detectar atividade suspeita de logon de usuário. | Notifique a equipe de segurança de TI e desabilite a conta do usuário suspeita. |
-| Consistência de recursos | A utilização da CPU para a carga de trabalho é maior que 90%. | Notifique a equipe de operações de TI e dimensione recursos adicionais para lidar com a carga. |
+| Gerenciamento de Custos | Os gastos mensais com a nuvem são mais de 20% superior ao esperado. | Notifique o líder da unidade de cobrança que iniciará uma revisão do uso do recurso. |
+| Linha de base de segurança | Detectar atividade suspeita do usuário. | Notifique a equipe de segurança de ti e desabilite a conta de usuário suspeita. |
+| Consistência de recursos | A utilização da CPU para uma carga de trabalho é maior que 90%. | Notifique a equipe de operações de ti e expanda recursos adicionais para lidar com a carga. |
 
 ## <a name="automation-of-monitoring-and-compliance"></a>Automação de monitoramento e conformidade
 
 Após definir os gatilhos de violação de conformidade e as ações, você poderá iniciar o planejamento de como melhor utilizar as ferramentas de relatório e registro em log e outros recursos da plataforma de nuvem para ajudar a automatizar a estratégia de monitoramento e conformidade da política.
 
-Consulte o tópico guia de [decisão de log e relatório](../../decision-guides/logging-and-reporting/index.md) da estrutura de adoção de nuvem para obter orientação sobre como escolher o melhor padrão de monitoramento para sua implantação.
+Para obter ajuda para escolher o melhor padrão de monitoramento para sua implantação, consulte o [Guia de decisão de registro em log e relatório](../../decision-guides/logging-and-reporting/index.md).
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Saiba mais sobre a conformidade regulatória na nuvem.
 

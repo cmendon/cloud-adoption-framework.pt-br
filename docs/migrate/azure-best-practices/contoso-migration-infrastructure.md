@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 3eace4b20fac9e22fa8aeaa2d4b7f55a33743e47
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 44fb2e8d7fc71dfa676f5711ab50c2201d67f260
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73751833"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160373"
 ---
 # <a name="deploy-a-migration-infrastructure"></a>Implante uma infraestrutura de migração
 
@@ -299,7 +299,7 @@ O Backup do Azure permite fazer backup e restaurar discos da VM do Azure.
 - Os backups são consistentes com os aplicativos, garantindo que os dados sejam transacionalmente consistentes e que os aplicativos sejam inicializados após a restauração.
 - O Backup do Azure oferece suporte ao armazenamento com redundância local (LRS) para replicar várias cópias de seus dados de backup em um datacenter, no caso de uma falha de hardware local.
 - No caso de uma indisponibilidade regional, o Backup do Azure também oferece suporte ao armazenamento com redundância geográfica (GRS), replicando seus dados de backup para uma região secundária emparelhada.
-- O Backup do Azure criptografa os dados em trânsito usando o AES 256. Os dados de backup em repouso são criptografados usando a [ Criptografia do Serviço de Armazenamento (SSE)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption?toc=%2fazure%2fstorage%2fqueues%2ftoc.json).
+- O Backup do Azure criptografa os dados em trânsito usando o AES 256. Os dados de backup em repouso são criptografados usando a [ Criptografia do Serviço de Armazenamento (SSE)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption).
 
 A Contoso usará o Backup do Azure com GRS em todas as VMs de produção, para garantir o backup dos dados de carga de trabalho e pode ser restaurado rapidamente em caso de interrupção ou parada. [Saiba mais](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup).
 

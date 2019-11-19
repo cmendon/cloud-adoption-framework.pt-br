@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 60f622411a71284fa8e97f457da2461ec6e02ac3
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 70ae0b048b0cf5e3bd364f8c0cc1051c515c39ea
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564658"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74159900"
 ---
 # <a name="understand-partnership-options"></a>Entender as opções de parceria
 
@@ -84,7 +84,7 @@ As principais fases de um compromisso típico do FastTrack for Azure são:
 
 **Migrar/otimizar:** A solução de [modernização em nuvem](https://download.microsoft.com/download/3/7/3/373F90E3-8568-44F3-B096-CD9C1CD28AB7/Cloud_Modernization_Datasheet_EN_US.pdf) dos serviços da Microsoft oferece uma abordagem abrangente para mover aplicativos e infraestrutura para o Azure, bem como para otimizar e modernizar após a implantação na nuvem, apoiada pela migração simplificada.
 
-**Inovar:** A [solução de CCOE (Cloud Center of Excellence)](https://download.microsoft.com/download/F/8/B/F8BBE4BD-E5F8-4DFB-82F7-C0A4E17051BB/Cloud_Center_of_Excellence_Datasheet_EN_US.pdf) dos serviços da Microsoft oferece um envolvimento de treinamento DevOps e usa princípios de DevOps combinados com controles de segurança e gerenciamento de serviços nativos de nuvem prescritiva para ajudar a impulsionar a inovação dos negócios, Aumente a agilidade e reduza o tempo de implantação em uma capacidade de gerenciamento de operações e entrega de serviços segura, previsível e flexível.
+**Inovar:** A [solução de CCOE (Cloud Center of Excellence)](https://download.microsoft.com/download/F/8/B/F8BBE4BD-E5F8-4DFB-82F7-C0A4E17051BB/Cloud_Center_of_Excellence_Datasheet_EN_US.pdf) dos serviços da Microsoft oferece um envolvimento de treinamento de DevOps e usa princípios de DevOps combinados com controles de segurança e gerenciamento de serviços nativos de nuvem para ajudar a impulsionar a inovação dos negócios, aumentar a agilidade e reduzir o tempo de implantação em uma capacidade de gerenciamento de operações e de entrega de serviços segura, previsível e flexível.
 
 ## <a name="azure-support"></a>Suporte do Azure
 

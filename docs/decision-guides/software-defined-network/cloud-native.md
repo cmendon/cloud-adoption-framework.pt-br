@@ -1,5 +1,5 @@
 ---
-title: 'Rede definida pelo software: Nativo da nuvem'
+title: 'Rede definida pelo software: nativa na nuvem'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Discussão sobre serviços de rede virtual nativas de nuvem.
 author: rotycenh
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: d9dda8b5cb91b97da2da50bc747cb3bd6b31947e
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: bf585f923a4c8abddeeb56bab4a3a4b8eb370f8d
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023591"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160196"
 ---
-# <a name="software-defined-networking-cloud-native"></a>Rede definida pelo software: Nativo da nuvem
+# <a name="software-defined-networking-cloud-native"></a>Rede definida pelo software: nativa na nuvem
 
 Uma rede virtual nativa de nuvem é necessária ao implantar recursos de IaaS, como máquinas virtuais, em uma plataforma de nuvem. Acesso a redes virtuais de fontes externas, semelhantes à web, precisa ser provisionado explicitamente. Esses tipos de redes virtuais dão suporte a criação de sub-redes, regras de roteamento e firewall virtual e dispositivos de gerenciamento de tráfego.
 
@@ -37,9 +37,9 @@ Outros problemas que suas equipes de adoção de nuvem devem considerar ao discu
 - Cargas de trabalho existentes, projetadas para serem executadas em um datacenter local, talvez seja necessário uma extensa modificação para tirar proveito da funcionalidade baseada em nuvem, como os serviços de armazenamento ou autenticação.
 - As redes nativas de nuvem são gerenciadas exclusivamente por meio das ferramentas de gerenciamento da plataforma de nuvem e, portanto, podem levar ao gerenciamento e à divergência de políticas de seus padrões de ti existentes à medida que o tempo continua.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Para obter mais informações sobre redes virtuais nativas de nuvem no Azure, consulte:
 
-- [Rede Virtual do Azure: Guias de instruções](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm). Redes Virtuais do Azure recentemente criadas são nativas de nuvem por padrão. Use esses guias para ajudar a planejar a criação e implantação de suas redes virtuais.
-- [Limites de assinatura: Rede](https://docs.microsoft.com/azure/azure-subscription-service-limits?toc=%2fazure%2fvirtual-network%2ftoc.json#networking-limits). Qualquer rede virtual única e os recursos conectados só podem existir em uma única assinatura e são associados por limites de assinatura.
+- [Rede virtual do Azure: guias de instruções](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm). Redes Virtuais do Azure recentemente criadas são nativas de nuvem por padrão. Use esses guias para ajudar a planejar a criação e implantação de suas redes virtuais.
+- [Limites de assinatura: rede](https://docs.microsoft.com/azure/azure-subscription-service-limits?toc=/azure/virtual-network/toc.json#networking-limits). Qualquer rede virtual única e os recursos conectados só podem existir em uma única assinatura e são associados por limites de assinatura.

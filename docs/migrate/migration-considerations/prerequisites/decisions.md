@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4bd04de2bd773e3fc02fbab5264ae60f275a8e7d
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 6f809003c1181c925a5b86abfb162a6032614f53
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564574"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74159860"
 ---
 # <a name="decisions-that-affect-migration"></a>Decisões que afetam a migração
 
@@ -80,8 +80,8 @@ Geralmente, as migrações são impulsionadas por um evento empresarial atraente
 Antes de continuar, documente as seguintes pressuposições e compartilhe-as com a equipe de estratégia da nuvem e a equipe de adoção da nuvem:
 
 - Resultados dos negócios.
-- Funções. Isso será documentado e refinado para os processos de migração *Avaliar*, *Migrar*, *Otimizar* e *Proteger e gerenciar*.
-- Definição de concluído. Isso será documentado e refinado separadamente para os processos de migração *Avaliar*, *Migrar*, *Otimizar* e *Proteger e gerenciar*.
+- Funções, documentadas e refinadas para *avaliar*, *migrar*, *otimizar*e *proteger* os processos de migração.
+- Definição de concluído, documentado e refinado separadamente para os processos de *avaliação avaliar*, *migrar*, *otimizar*e *proteger e gerenciar* .
 - Tipo do esforço.
 - Escala do esforço.
 - Tempo do esforço.

@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 05b713c2f1f88f50829e38db8a0a0343d3afd32d
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 7df4792fda1436d822108dc20d422e6912a0709f
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753507"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74159882"
 ---
 # <a name="evaluate-workload-readiness"></a>Avaliar a preparação da carga de trabalho
 
@@ -23,7 +23,7 @@ Essa atividade se concentra em avaliar a prontidão de uma carga de trabalho a s
 
 A maior parte do conteúdo que discute os princípios na estrutura de adoção de nuvem é independente da nuvem. No entanto, o processo de avaliação de prontidão deve ser amplamente específico para cada plataforma de nuvem específica. As diretrizes a seguir pressupõem uma intenção de migrar para o Azure. Elas também pressupõem o uso de Migrações para Azure (também conhecidas como Azure Site Recovery) para [atividades de replicação](../migrate/replicate.md). Para ferramentas alternativas, confira [opções de replicação](../migrate/replicate-options.md).
 
-Este artigo não se destina a capturar todas as atividades de avaliação possíveis. Supõe-se que cada ambiente e o resultado dos negócios determinarão requisitos específicos. Para ajudar a acelerar a criação desses requisitos, o restante deste artigo compartilha algumas atividades de avaliação comuns relacionadas à avaliação de [infraestrutura](#common-infrastructure-evaluation-activities), de [banco de dados](#common-database-evaluation-activities) e de [rede](#common-network-evaluation-activities).
+Este artigo não captura todas as atividades de avaliação possíveis. Supõe-se que cada ambiente e o resultado dos negócios determinarão requisitos específicos. Para ajudar a acelerar a criação desses requisitos, o restante deste artigo compartilha algumas atividades de avaliação comuns relacionadas à avaliação de [infraestrutura](#common-infrastructure-evaluation-activities), de [banco de dados](#common-database-evaluation-activities) e de [rede](#common-network-evaluation-activities).
 
 ## <a name="common-infrastructure-evaluation-activities"></a>Atividades comuns de avaliação de infraestrutura
 

@@ -9,88 +9,88 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f92f3846f0282123fab8049dd47227db0843d955
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 312a3f4e6577b0a0db525e6428bf7e1b2616b625
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221662"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160520"
 ---
 # <a name="security-baseline-sample-policy-statements"></a>Instruções de política de exemplo de Linha de base de segurança
 
-As instruções individuais da política de nuvem são diretrizes para abordar os riscos específicos identificados durante o processo de avaliação de riscos. Essas instruções oferecem um resumo conciso dos riscos e planos com os quais lidar. Cada definição de instrução deve incluir essas informações:
+Declarações da política de nuvem individuais são diretrizes para tratar de riscos específicos identificados durante o processo de avaliação de riscos. Essas instruções oferecem um resumo conciso dos riscos e planos com os quais lidar. Cada definição de instrução deve incluir essas informações:
 
-- **Risco técnico:** Um resumo do risco que esta política abordará.
-- **Instrução da política:** Uma clara explicação de resumo dos requisitos de política.
-- **Opções técnicas:** Recomendações viáveis, especificações ou outras diretrizes que as equipes de TI e desenvolvedores possam usar ao implementar a política.
+- **Risco técnico:** Um resumo do risco que essa política abordará.
+- **Declaração de política:** Uma explicação resumida clara dos requisitos de política.
+- **Opções técnicas:** Recomendações, especificações ou outras diretrizes acionáveis que as equipes de ti e os desenvolvedores podem usar ao implementar a política.
 
 As instruções de política de exemplo a seguir abordam os riscos de negócios relacionados à segurança comuns. Essas instruções são exemplos que você pode referenciar ao rascunhar instruções de política para atender às necessidades da sua organização. Esses exemplos não devem ser proexistentes e há potencialmente várias opções de política para lidar com cada risco identificado. Trabalhe junto com as equipes de negócios, de segurança e de ti para identificar as melhores políticas para seu conjunto exclusivo de riscos.
 
 ## <a name="asset-classification"></a>Classificação de ativo
 
-**Risco técnico:** Ativos que não estão corretamente identificados como dados confidenciais de missão crítica ou que envolvem dados talvez confidenciais podem não receber proteções suficientes, levando a potencial vazamento de dados ou interrupções dos negócios.
+**Risco técnico:** Ativos que não são corretamente identificados como de missão crítica ou que envolvem dados confidenciais podem não receber proteções suficientes, levando a possíveis vazamentos de dados ou interrupções de negócios.
 
-**Instrução da política:** Todos os ativos implantados devem ser categorizados por nível de importância e classificação de dados. As classificações devem ser revisadas pela equipe de governança de nuvem e pelo proprietário do aplicativo antes da implantação na nuvem.
+**Declaração de política:** Todos os ativos implantados devem ser categorizados por criticalidade e classificação de dados. As classificações devem ser revisadas pela equipe de governança de nuvem e pelo proprietário do aplicativo antes da implantação na nuvem.
 
-**Possível opção de design:** Estabelecer [padrões de marcação de recursos](../../decision-guides/resource-tagging/index.md) e certificar-se de que a equipe de TI irá aplicá-las consistentemente a qualquer recurso implantado usando [marcas de recurso do Azure](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags).
+**Possível opção de design:** Estabeleça [padrões de marcação de recursos](../../decision-guides/resource-tagging/index.md) e garanta que a equipe de ti as aplique de forma consistente a qualquer recurso implantado usando as [marcas de recurso do Azure](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags).
 
 ## <a name="data-encryption"></a>Criptografia de dados
 
-**Risco técnico:** Há um risco de exposição durante o armazenamento de dados protegidos.
+**Risco técnico:** Há um risco de os dados protegidos serem expostos durante o armazenamento.
 
-**Instrução da política:** Todos os dados protegidos devem ser criptografados quando estão em repouso.
+**Declaração de política:** Todos os dados protegidos devem ser criptografados quando em repouso.
 
-**Possível opção de design:** Consulte o artigo da [visão geral da criptografia do Azure](https://docs.microsoft.com/azure/security/security-azure-encryption-overview) para uma discussão sobre como os dados de criptografia em repouso são executados na plataforma do Azure. Controles adicionais, como a criptografia de dados de conta e o controle sobre como as configurações de conta de armazenamento podem ser alteradas, também devem ser considerados.
+**Possível opção de design:** Consulte o artigo [visão geral da criptografia do Azure](https://docs.microsoft.com/azure/security/security-azure-encryption-overview) para obter uma discussão sobre como os dados em repouso são executados na plataforma do Azure. Controles adicionais, como a criptografia de dados de conta e o controle sobre como as configurações de conta de armazenamento podem ser alteradas, também devem ser considerados.
 
 ## <a name="network-isolation"></a>Isolamento da rede
 
-**Risco técnico:** Conectividade entre redes e sub-redes dentro redes apresenta possíveis vulnerabilidades que podem resultar em vazamentos de dados ou interrupção dos serviços de missão crítica.
+**Risco técnico:** A conectividade entre redes e sub-redes em redes introduz possíveis vulnerabilidades que podem resultar em vazamentos de dados ou interrupção de serviços de missão crítica.
 
-**Instrução da política:** As sub-redes de rede que contêm dados protegidos devem ser isoladas de todas as outras sub-redes. O tráfego de rede entre as sub-redes de dados protegidos será auditado regularmente.
+**Declaração de política:** As sub-redes de rede que contêm dados protegidos devem ser isoladas de quaisquer outras sub-redes. O tráfego de rede entre as sub-redes de dados protegidos será auditado regularmente.
 
-**Possível opção de design:** No Azure, o isolamento de rede e sub-rede é gerenciado por meio das [Redes Virtuais do Azure](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview).
+**Possível opção de design:** No Azure, o isolamento de rede e sub-rede é gerenciado por meio de [redes virtuais do Azure](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview).
 
 ## <a name="secure-external-access"></a>Acesso externo seguro
 
-**Risco técnico:** Permitir o acesso da internet pública para cargas de trabalho apresenta um risco de invasões, resultando em exposição não autorizada de dados ou interrupção de negócios.
+**Risco técnico:** Permitir o acesso a cargas de trabalho da Internet pública apresenta um risco de intrusão, resultando em exposição não autorizada de dados ou interrupção dos negócios.
 
-**Instrução da política:** Nenhuma sub-rede que contém os dados protegidos pode ser acessada diretamente pela internet pública ou em datacenters. O acesso a essas sub-redes deve ser roteado por meio de sub-redes intermediárias. Todo o acesso a essas sub-redes deve vir por meio de uma solução de firewall que pode executar a verificação de pacotes e funções de bloqueio.
+**Declaração de política:** Nenhuma sub-rede contendo dados protegidos pode ser acessada diretamente pela Internet pública ou por data centers. O acesso a essas sub-redes deve ser roteado por meio de sub-redes intermediárias. Todo o acesso a essas sub-redes deve vir por meio de uma solução de firewall que pode executar a verificação de pacotes e funções de bloqueio.
 
-**Possível opção de design:** No Azure, proteger pontos de extremidade públicos implantando uma [DMZ entre a internet pública e a rede baseada em nuvem](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz). Considere a implantação, a configuração e a automação do [Firewall do Azure](https://docs.microsoft.com/azure/firewall).
+**Possível opção de design:** No Azure, proteja os pontos de extremidade públicos implantando uma [DMZ entre a Internet pública e sua rede baseada em nuvem](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json). Considere a implantação, a configuração e a automação do [Firewall do Azure](https://docs.microsoft.com/azure/firewall).
 
-## <a name="ddos-protection"></a>Proteção contra DDoS
+## <a name="ddos-protection"></a>Proteção de DDoS
 
-**Risco técnico:** Ataques distribuídos de negação de serviço (DDoS) podem resultar em uma interrupção de negócios.
+**Risco técnico:** Ataques de DDoS (negação de serviço distribuído) podem resultar em uma interrupção de negócios.
 
-**Instrução da política:** Implante mecanismos automatizados de mitigação de DDoS para todos os pontos de extremidade de rede acessível publicamente. Nenhum site voltado para o público apoiado por IaaS deve ser exposto à Internet sem DDoS.
+**Declaração de política:** Implante mecanismos de mitigação de DDoS automatizados para todos os pontos de extremidade de rede acessíveis publicamente. Nenhum site voltado para o público apoiado por IaaS deve ser exposto à Internet sem DDoS.
 
 **Possível opção de design:** Use a [proteção contra DDoS do Azure](https://docs.microsoft.com/azure/virtual-network/ddos-protection-overview) padrão para minimizar as interrupções causadas por ataques de DDoS.
 
 ## <a name="secure-on-premises-connectivity"></a>Conectividade local segura
 
-**Risco técnico:** O tráfego não criptografado entre sua rede de nuvem e locais na internet pública é vulnerável a interceptação, apresentando o risco de exposição de dados.
+**Risco técnico:** O tráfego não criptografado entre a rede de nuvem e o local pela Internet pública é vulnerável à interceptação, apresentando o risco de exposição de dados.
 
-**Instrução da política:** Todas as conexões entre o local e as redes de nuvem devem ser realizadas por meio de uma conexão de VPN criptografada segura ou um link WAN privado dedicado.
+**Declaração de política:** Todas as conexões entre as redes locais e na nuvem devem ocorrer por meio de uma conexão VPN criptografada segura ou um link WAN privado dedicado.
 
-**Possível opção de design:** No Azure, use o ExpressRoute ou VPN do Azure para estabelecer conexões privadas entre seu local e as redes de nuvem.
+**Possível opção de design:** No Azure, use o ExpressRoute ou a VPN do Azure para estabelecer conexões privadas entre suas redes locais e na nuvem.
 
 ## <a name="network-monitoring-and-enforcement"></a>Monitoramento de rede e imposição
 
-**Risco técnico:** Alterações na configuração de rede podem levar a novas vulnerabilidades e riscos de exposição de dados.
+**Risco técnico:** As alterações na configuração de rede podem levar a novas vulnerabilidades e riscos de exposição de dados.
 
-**Instrução da política:** As ferramentas de governança devem realizar auditoria e impor requisitos de configuração de rede definidos pela equipe de Linha de Base de segurança.
+**Declaração de política:** As ferramentas de governança devem auditar e aplicar os requisitos de configuração de rede definidos pela equipe de linha de base de segurança.
 
-**Possível opção de design:** No Azure, a atividade de rede pode ser monitorada usando [Observador de Rede do Azure](https://docs.microsoft.com/azure/network-watcher/network-watcher-monitoring-overview), e [Central de Segurança do Azure](https://docs.microsoft.com/azure/security-center/security-center-network-recommendations) podem ajudar a identificar vulnerabilidades de segurança. O Azure Policy permite restringir os recursos de rede e a política de configuração de recursos de acordo com limites definidos pela equipe de segurança.
+**Possível opção de design:** No Azure, a atividade de rede pode ser monitorada usando o [observador de rede do Azure](https://docs.microsoft.com/azure/network-watcher/network-watcher-monitoring-overview)e a [central de segurança do Azure](https://docs.microsoft.com/azure/security-center/security-center-network-recommendations) pode ajudar a identificar vulnerabilidades de segurança. O Azure Policy permite restringir os recursos de rede e a política de configuração de recursos de acordo com limites definidos pela equipe de segurança.
 
 ## <a name="security-review"></a>Revisão de segurança
 
-**Risco técnico:** Ao longo do tempo, novas ameaças à segurança e tipos de ataques surgem, aumentando o risco de exposição ou interrupção dos seus recursos de nuvem.
+**Risco técnico:** Ao longo do tempo, novas ameaças à segurança e tipos de ataque surgem, aumentando o risco de exposição ou interrupção de seus recursos de nuvem.
 
-**Instrução da política:** As tendências e explorações potenciais que podem afetar as implantações de nuvem devem ser revisadas regularmente pela equipe de segurança para que sejam fornecidas atualizações às ferramentas de Linha de base de segurança usadas na nuvem.
+**Declaração de política:** As tendências e possíveis explorações que poderiam afetar as implantações de nuvem devem ser examinadas regularmente pela equipe de segurança para fornecer atualizações para as ferramentas de linha de base de segurança usadas na nuvem.
 
-**Possível opção de design:** Estabeleça uma reunião de análise de segurança regular que inclua membros relevantes da equipe de TI e de governança. Examine as métricas e os dados de segurança existentes para estabelecer lacunas na política atual e nas ferramentas de linha de base de segurança, e atualize a política para corrigir quaisquer riscos novos. Aproveite o [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) e a [central de segurança do Azure](https://docs.microsoft.com/azure/security-center/security-center-intro) para obter informações acionáveis sobre ameaças emergentes específicas às suas implantações.
+**Possível opção de design:** Estabeleça uma reunião de revisão de segurança regular que inclua Membros relevantes da equipe de ti e governança. Examine as métricas e os dados de segurança existentes para estabelecer lacunas na política atual e nas ferramentas de linha de base de segurança, e atualize a política para corrigir quaisquer riscos novos. Aproveite o [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) e a [central de segurança do Azure](https://docs.microsoft.com/azure/security-center/security-center-intro) para obter informações acionáveis sobre ameaças emergentes específicas às suas implantações.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Use as amostras mencionadas neste artigo como ponto de partida para desenvolver políticas que abordem os riscos comerciais específicos que alinham-se aos seus planos de adoção de nuvem.
 

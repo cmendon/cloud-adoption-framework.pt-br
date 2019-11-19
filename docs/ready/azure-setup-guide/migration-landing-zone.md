@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, setup
-ms.openlocfilehash: 1e9fe49f03eb9cc0b2f53e334f649e8dea9cf2fe
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 528864cab448ef2e6ead89b16ee174cc2c405401
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73240106"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74159580"
 ---
 # <a name="deploy-a-migration-landing-zone"></a>Implantar uma zona de aterrissagem de migração
 
@@ -65,7 +65,7 @@ As decisões a seguir são representadas no blueprint da zona de acesso.
 |Design de assinatura|N/A – projetado para uma única assinatura de produção.|[Dimensionamento de assinaturas](../azure-best-practices/scaling-subscriptions.md)|
 |Grupos de gerenciamento|N/A – projetado para uma única assinatura de produção.|[Dimensionamento de assinaturas](../azure-best-practices/scaling-subscriptions.md)         |
 |Grupos de recursos|N/A – projetado para uma única assinatura de produção.|[Dimensionamento de assinaturas](../azure-best-practices/scaling-subscriptions.md)         |
-|Dados|N/D|[Escolha a opção de SQL Server correta no Azure e nas](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas?toc=https://docs.microsoft.com/azure/architecture/toc.json&bc=https://docs.microsoft.com/azure/architecture/bread/toc.json) [diretrizes do Azure Data Store](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
+|Dados|N/D|[Escolha a opção de SQL Server correta no Azure e nas](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) [diretrizes do Azure Data Store](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
 |Armazenamento|N/D|[Diretrizes do Armazenamento do Azure](../considerations/storage-options.md)         |
 |Padrões de nomenclatura e marcação|N/D|[Melhores práticas de nomenclatura e marcação](../azure-best-practices/naming-and-tagging.md)         |
 |Gerenciamento de custos|N/D|[Acompanhando os custos](../azure-best-practices/track-costs.md)|

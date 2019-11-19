@@ -11,12 +11,12 @@ ms.subservice: ready
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 95a2bf325615c7eb765ad747d0aad16f008e015d
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 08e2998e6e9f561189562f65b463aa1e0ffbe5b4
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564013"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160509"
 ---
 # <a name="perimeter-networks"></a>Redes de perímetro
 
@@ -38,7 +38,7 @@ As redes de perímetro usam os seguintes recursos e serviços do Azure:
 > As arquiteturas de referência do Azure fornecem modelos de exemplo que você pode usar para implementar suas próprias redes de perímetro:
 >
 > - [Implementar uma DMZ entre o Azure e o datacenter local](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-hybrid)
-> - [Implementar uma DMZ entre o Azure e a Internet](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz)
+> - [Implementar uma DMZ entre o Azure e a Internet](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)
 
 Normalmente, suas equipes de TI e de segurança central são responsáveis por definir os requisitos de operação das redes de perímetro.
 
