@@ -8,16 +8,16 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 367480222244c1e4287bebec85743408a10efc19
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 90fd78e45f71c6ca52ea76f5efe6a3aaae49af74
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752851"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160298"
 ---
 # <a name="it-management-and-operations-in-the-cloud"></a>Gerenciamento de TI e operações na nuvem
 
-À medida que uma empresa migra para um modelo baseado em nuvem, é sempre necessário ressaltar a importância da adequação do gerenciamento e das operações. Infelizmente, poucas organizações estão preparadas para a mudança no gerenciamento de TI necessária para estabelecer com sucesso um modelo operacional que priorize a nuvem. Esta seção do Cloud Adoption Framework descreve o modelo operacional, os processos e as ferramentas que já tiveram um sucesso comprovado na nuvem. Cada uma dessas áreas representa uma mudança secundária, mas fundamental, na forma como a empresa deve enxergar as operações e o gerenciamento de TI ao começar a adotar a nuvem.
+À medida que uma empresa migra para um modelo baseado em nuvem, é sempre necessário ressaltar a importância da adequação do gerenciamento e das operações. Infelizmente, poucas organizações estão preparadas para a mudança no gerenciamento de TI necessária para estabelecer com sucesso um modelo operacional que priorize a nuvem. Esta seção do Cloud Adoption Framework descreve o modelo operacional, os processos e as ferramentas que já tiveram um sucesso comprovado na nuvem. Cada uma dessas áreas representa uma alteração secundária, mas fundamental na forma como a empresa deve enxergar as operações e o gerenciamento de TI ao começar a adotar a nuvem.
 
 ## <a name="brief-history-of-it-management"></a>Breve histórico do gerenciamento de TI
 
