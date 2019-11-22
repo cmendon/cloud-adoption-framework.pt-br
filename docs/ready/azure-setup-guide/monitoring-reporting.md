@@ -5,17 +5,17 @@ description: Saiba como configurar monitoramento, relatórios e alertas para o s
 author: timleyden
 ms.author: tileyden
 ms.date: 04/09/2019
-ms.topic: conceptual
+ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 1be663168815af9067268cd18d9db51cfe10291c
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 0ed9f9c1739fc73f4d28bf532bd52bd0a182b2fc
+ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548871"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74251359"
 ---
 # <a name="monitoring-and-reporting-in-azure"></a>Monitoramento e relatórios no Azure
 
@@ -98,12 +98,13 @@ Para obter mais informações, confira a [documentação da Integridade do Servi
 
 # <a name="azure-advisortabazureadvisor"></a>[Assistente do Azure](#tab/AzureAdvisor)
 
-O Assistente do Azure é um consultor de nuvem personalizado e gratuito que ajuda a seguir e implementar as melhores práticas de implantação do Azure. Ele analisa sua configuração de recurso e a telemetria de uso e recomenda soluções que podem ajudar a otimizar seu ambiente. As recomendações são divididas em quatro categorias:
+O Assistente do Azure é um consultor de nuvem personalizado e gratuito que ajuda a seguir e implementar as melhores práticas de implantação do Azure. Ele analisa sua configuração de recurso e a telemetria de uso e recomenda soluções que podem ajudar a otimizar seu ambiente. As recomendações são divididas nas seguintes categorias:
 
 - **Alta disponibilidade:** Para melhorar a continuidade dos aplicativos comercialmente críticos. Recomendações podem incluir adição de máquinas virtuais a um conjunto de disponibilidade ou adicionar pontos de extremidade com redundância geográfica.
 - **Segurança:** Para detectar ameaças e vulnerabilidades que podem levar a violações de segurança. As recomendações podem incluir aplicar criptografia de disco ou habilitar os grupos de segurança de rede.
 - **Desempenho:** Para melhorar a velocidade dos aplicativos. As recomendações podem incluir aumentar o desempenho de consultas SQL criando índices ou redefinindo as configurações do gerenciador de tráfego.
 - **Custo:** Para otimizar e reduzir os gastos gerais do Azure. As recomendações podem incluir o redimensionamento ou o desligamento de máquinas virtuais subutilizadas ou alternar para as reservas do Azure para reduzir o custo total de propriedade.
+- **Excelência operacional:** para melhorar a eficiência do processo e do fluxo de trabalho e a capacidade de gerenciamento. As recomendações podem incluir a configuração e a aplicação de regras do Azure Policy, o reparo de regras de alerta de log inválidas e a configuração de alertas de Integridade do Serviço do Azure.
 
 As recomendações no Assistente se baseiam em recursos que você implanta e nas ações que você pode executar no Azure. Você pode verificar regularmente o Assistente para obter as recomendações mais recentes.
 

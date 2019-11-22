@@ -5,17 +5,17 @@ description: Saiba como configurar orçamentos e pagamentos e entender as fatura
 author: bandersmsft
 ms.author: banders
 ms.date: 08/08/2019
-ms.topic: conceptual
+ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 219f5868f8fa8f3f5d26fa4c3c63db7786479a2c
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: 57725e56c973a8fb094c50987d84c26a70c0ead6
+ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683833"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74251675"
 ---
 # <a name="migration-focused-cost-control-mechanisms"></a>Mecanismos de controle de custo focados na migração
 
@@ -65,8 +65,8 @@ As Migrações para Azure calculam **estimativas de custo mensal** com base em d
 
 A estimativa resultante, ilustrada abaixo, identifica os custos mensais de computação e armazenamento, que geralmente representam a maior parte dos custos de nuvem.
 
-![compute-storage-monthly-cost-estimate.png](./media/manage-costs/compute-storage-monthly-cost-estimate.png)
-*Figura 1 – Imagem da exibição Detalhes de Custo de uma avaliação nas Migrações para Azure.*
+![Exibição dos detalhes de custo](./media/manage-costs/compute-storage-monthly-cost-estimate.png)
+*Figura 1 – Imagem da exibição dos detalhes de custo de uma avaliação nas Migrações para Azure.*
 
 ## <a name="additional-resources"></a>Recursos adicionais
 
@@ -130,7 +130,7 @@ Fale com seu representante de conta Microsoft para entender como você pode apro
 
 ## <a name="azure-reservations"></a>Reservas do Azure
 
-As [Reservas do Azure](https://docs.microsoft.com/azure/billing/billing-save-compute-costs-reservations) permitem que você pague antecipadamente por um ou três anos de máquina virtual ou pela capacidade de computação de Banco de Dados SQL. Pagar previamente permitirá obter um desconto nos recursos que você usar. As Reservas do Azure podem reduzir significativamente os custos de sua máquina virtual ou os custos de computação do Banco de Dados SQL em até 72% com base em preços pagos conforme o uso, com um compromisso antecipado de um ou três anos. As reservas fornecem um desconto de faturamento e não afetam o estado de tempo de execução de suas máquinas virtuais ou bancos de dados SQL.
+As [Reservas do Azure](https://docs.microsoft.com/azure/billing/billing-save-compute-costs-reservations) permitem que você pague antecipadamente por um ou três anos de máquina virtual ou pela capacidade de computação de Banco de Dados SQL. Pagar previamente permitirá obter um desconto nos recursos que você usar. As Reservas do Azure podem reduzir significativamente os custos de sua máquina virtual ou os custos de computação do Banco de Dados SQL em até 72% com base em preços pagos conforme o uso, com um compromisso antecipado de um ou três anos. As reservas fornecem um desconto de faturamento e não afetam o estado de runtime de suas máquinas virtuais ou bancos de dados SQL.
 
 ## <a name="use-azure-hybrid-benefit"></a>Usar o Benefício Híbrido do Azure
 
