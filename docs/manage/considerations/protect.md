@@ -71,7 +71,7 @@ Cada um dos modelos anteriores reduz o RTO, resultando em uma restauração mais
 
 Para saber mais sobre esse processo de pensamento, consulte [disciplina de operações de carga de trabalho](./workload.md).
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Depois que esse componente de linha de base de gerenciamento for atendido, a equipe poderá ficar à frente para evitar interrupções nas operações de [plataforma](./platform.md) e operações de [carga de trabalho](./workload.md).
 

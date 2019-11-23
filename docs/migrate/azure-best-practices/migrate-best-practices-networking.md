@@ -512,7 +512,7 @@ Firewalls de NVA | Como no Firewall do Azure, os farms de firewall da NVA têm u
 
 - [Saiba mais sobre](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-hybrid) o uso de NVAs em uma VNet do Azure.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Examine outras melhores práticas:
 

@@ -56,10 +56,10 @@ A tabela a seguir ilustra alguns cenários de uso comum e os serviços de comput
 | Quero simplificar a implantação, o gerenciamento e as operações do Kubernetes. | [AKS (Serviço de Kubernetes do Azure)](https://azure.microsoft.com/services/kubernetes-service) |
 | Preciso acelerar o desenvolvimento de aplicativos usando uma arquitetura sem servidor orientada a eventos. | [Funções do Azure](https://azure.microsoft.com/services/functions) |
 | Preciso desenvolver microsserviços e orquestrar contêineres no Windows e no Linux. | [Azure Service Fabric](https://azure.microsoft.com/services/service-fabric) |
-| Quero criar rapidamente aplicativos de nuvem para a Web e dispositivos móveis usando uma plataforma totalmente gerenciada. | [Serviço de aplicativo do Azure](https://azure.microsoft.com/services/app-service) |
+| Quero criar rapidamente aplicativos de nuvem para a Web e dispositivos móveis usando uma plataforma totalmente gerenciada. | [Serviço de Aplicativo do Azure](https://azure.microsoft.com/services/app-service) |
 | Quero colocar aplicativos em contêineres e executar facilmente contêineres usando apenas um comando. | [Instâncias de Contêiner do Azure](https://azure.microsoft.com/services/container-instances) |
 | Preciso agendar trabalhos com escala de nuvem e gerenciamento de computação com a capacidade de escalonar a dezenas, centenas ou milhares de máquinas virtuais. | [Lote do Azure](https://azure.microsoft.com/services/batch) |
-| Preciso criar aplicativos de nuvem e APIs escalonáveis e altamente disponíveis que possam ajudar a me concentrar nos aplicativos em vez do hardware. | [Serviços de nuvem do Azure](https://azure.microsoft.com/services/cloud-services) |
+| Preciso criar aplicativos de nuvem e APIs escalonáveis e altamente disponíveis que possam ajudar a me concentrar nos aplicativos em vez do hardware. | [Serviços de Nuvem do Azure](https://azure.microsoft.com/services/cloud-services) |
 
 ## <a name="regional-availability"></a>Disponibilidade regional
 
