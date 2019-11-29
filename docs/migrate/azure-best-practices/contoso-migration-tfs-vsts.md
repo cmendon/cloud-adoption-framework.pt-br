@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 887d2e2ec410b761fdc81b87d83f3a471c3bf99e
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 3c87bfbd8fe920d0469da8b3e60da59da07158ed
+ms.sourcegitcommit: 0b6939f65a1e5653149301e9aa14db9a1f67825f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566547"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74557021"
 ---
-# <a name="refactor-a-team-foundation-server-deployment-to-azure-devops-services"></a>Refatorar uma implantação do Team Foundation Server para o Azure DevOps Services
+# <a name="refactor-a-team-foundation-server-deployment-to-azure-devops-services"></a>Refatore uma implantação do Team Foundation Server para o Azure DevOps Services
 
 Este artigo mostra como a empresa fictícia, Contoso, tem refatorado sua implantação do TFS (Team Foundation Server) local migrando-o para o Azure DevOps Services no Azure. A equipe de desenvolvimento da Contoso usou o TFS para colaboração em equipe e controle do código-fonte nos últimos cinco anos. Agora, eles querem mudar para uma solução baseada em nuvem para o trabalho de desenvolvimento e teste e para o controle do código-fonte. O Azure DevOps Services desempenhará uma função conforme eles mudarem para um modelo do Azure DevOps e desenvolverem novos aplicativos nativos de nuvem.
 
@@ -63,7 +63,7 @@ A Contoso concluirá o processo de migração da seguinte maneira:
 
 ![Processo de migração](./media/contoso-migration-tfs-vsts/migration-process.png)
 
-## <a name="prerequisites"></a>pré-requisitos
+## <a name="prerequisites"></a>Pré-requisitos
 
 Aqui está o que a Contoso precisa para executar esse cenário.
 
@@ -86,12 +86,12 @@ Aqui está o que a Contoso precisa para executar esse cenário.
 > - **Etapa 3: validar a coleção.** a Contoso validará a coleção do TFS em preparação para a migração.
 > - **Etapa 4: compilar o arquivo de preparação.** a Contoso criará os arquivos de migração usando a Ferramenta de Migração do TFS.
 
-## <a name="step-1-create-a-storage-account"></a>Etapa 1: Criar uma conta de armazenamento
+## <a name="step-1-create-a-storage-account"></a>Etapa 1: criar uma conta de armazenamento
 
 1. No portal do Azure, os administradores da Contoso criam uma conta de armazenamento (**contosodevmigration**).
 2. Eles colocam a conta em sua região secundária que usam para failover – Centro dos EUA. Eles usam uma conta padrão de uso geral com o armazenamento localmente redundante.
 
-    ![Conta de Armazenamento](./media/contoso-migration-tfs-vsts/storage1.png)
+    ![Conta de armazenamento](./media/contoso-migration-tfs-vsts/storage1.png)
 
 **Precisa de mais ajuda?**
 
@@ -103,7 +103,7 @@ Aqui está o que a Contoso precisa para executar esse cenário.
 Os administradores da Contoso atualizam o servidor do TFS para o TFS 2018 Atualização 2. Antes de começar, eles:
 
 - Baixam o [TFS 2018 Atualização 2](https://visualstudio.microsoft.com/downloads)
-- Verificam os [requisitos de hardware](https://docs.microsoft.com/tfs/server/requirements) e leem todas as [notas de versão](https://docs.microsoft.com/visualstudio/releasenotes/tfs2018-relnotes) e as [armadilhas da atualização](https://docs.microsoft.com/tfs/server/upgrade/get-started#before-you-upgrade-to-tfs-2018).
+- Verificam os [requisitos de hardware](/azure/devops/server/requirements) e leem todas as [notas de versão](https://docs.microsoft.com/visualstudio/releasenotes/tfs2018-relnotes) e as [armadilhas da atualização](/azure/devops/server/upgrade/get-started#before-you-upgrade-to-tfs-2018).
 
 Eles atualizam da seguinte maneira:
 
@@ -132,7 +132,7 @@ Eles atualizam da seguinte maneira:
 
 **Precisa de mais ajuda?**
 
-Saiba mais sobre a [atualização do TFS](https://docs.microsoft.com/tfs/server/upgrade/get-started).
+Saiba mais sobre a [atualização do TFS](/azure/devops/server/upgrade/get-started).
 
 ## <a name="step-3-validate-the-tfs-collection"></a>Etapa 3: Validar a coleção do TFS
 
@@ -182,7 +182,7 @@ Com a validação completa, os administradores da Contoso podem usar a Ferrament
 
     `TfsMigrator prepare /collection:http://contosotfs:8080/tfs/ContosoDev /tenantDomainName:contosomigration.onmicrosoft.com /accountRegion:cus`
 
-     ![Preparar](./media/contoso-migration-tfs-vsts/prep1.png)
+     ![Prepare-se](./media/contoso-migration-tfs-vsts/prep1.png)
 
     A preparação faz o seguinte:
     - Examina a coleção para localizar uma lista de todos os usuários e preencher o log de mapa de identidades (**IdentityMapLog.csv**).
@@ -191,19 +191,19 @@ Com a validação completa, os administradores da Contoso podem usar a Ferrament
 
 2. Uma tela de entrada do Azure AD é exibida e eles inserem as credenciais de um Administrador Global.
 
-    ![Preparar](./media/contoso-migration-tfs-vsts/prep2.png)
+    ![Prepare-se](./media/contoso-migration-tfs-vsts/prep2.png)
 
 3. A preparação é concluída e a ferramenta relata que os arquivos de importação foram gerados com êxito.
 
-    ![Preparar](./media/contoso-migration-tfs-vsts/prep3.png)
+    ![Prepare-se](./media/contoso-migration-tfs-vsts/prep3.png)
 
 4. Agora, podem ver que os arquivos IdentityMapLog.csv e import.json foram criados em uma nova pasta.
 
-    ![Preparar](./media/contoso-migration-tfs-vsts/prep4.png)
+    ![Prepare-se](./media/contoso-migration-tfs-vsts/prep4.png)
 
 5. O arquivo de import.json fornece configurações de importação. Ele inclui informações como o nome da organização desejada e informações da conta de armazenamento. A maioria dos campos é populada automaticamente. Alguns campos precisam da entrada do usuário. A Contoso abre o arquivo e adiciona o nome da organização do Azure DevOps Services a ser criado: **contosodevmigration**. Com esse nome, a URL do Azure DevOps Services será **contosodevmigration.visualstudio.com**.
 
-    ![Preparar](./media/contoso-migration-tfs-vsts/prep5.png)
+    ![Prepare-se](./media/contoso-migration-tfs-vsts/prep5.png)
 
     > [!NOTE]
     > A organização deve ser criada antes da migração. Ela pode ser alterada após a conclusão da migração.
@@ -214,7 +214,7 @@ Com a validação completa, os administradores da Contoso podem usar a Ferrament
     - No Azure DevOps Services, essas identidades serão licenciadas e aparecerão como um usuário na organização após a migração.
     - Essas identidades são marcadas como **Ativa** na coluna **Status de Importação Esperado** no arquivo.
 
-    ![Preparar](./media/contoso-migration-tfs-vsts/prep6.png)
+    ![Prepare-se](./media/contoso-migration-tfs-vsts/prep6.png)
 
 ## <a name="step-5-migrate-to-azure-devops-services"></a>Etapa 5: Migrar para o Azure DevOps Services
 
@@ -235,31 +235,31 @@ Antes de iniciar, os administradores da Contoso realizam um backup do SQL Server
 
 1. No console do Administrador do TFS, eles escolhem a coleção que desejam desanexar (**ContosoDev**).
 
-    ![Migrar](./media/contoso-migration-tfs-vsts/migrate1.png)
+    ![Migre](./media/contoso-migration-tfs-vsts/migrate1.png)
 
 2. Em **Geral**, eles escolhem **Desanexar Coleção**.
 
-    ![Migrar](./media/contoso-migration-tfs-vsts/migrate2.png)
+    ![Migre](./media/contoso-migration-tfs-vsts/migrate2.png)
 
 3. No Assistente de Desanexação de Coleção de Projeto de Equipe > **Mensagem Manutenção**, eles fornecem uma mensagem para os usuários que podem tentar se conectar a projetos na coleção.
 
-    ![Migrar](./media/contoso-migration-tfs-vsts/migrate3.png)
+    ![Migre](./media/contoso-migration-tfs-vsts/migrate3.png)
 
 4. Em **Andamento da Desanexação**, eles monitoram o progresso e escolhem **Avançar** quando o processo termina.
 
-    ![Migrar](./media/contoso-migration-tfs-vsts/migrate4.png)
+    ![Migre](./media/contoso-migration-tfs-vsts/migrate4.png)
 
 5. Em **Verificações de Preparação**, quando as verificações terminam, eles escolhem **Desanexar**.
 
-    ![Migrar](./media/contoso-migration-tfs-vsts/migrate5.png)
+    ![Migre](./media/contoso-migration-tfs-vsts/migrate5.png)
 
 6. Eles escolhem **Fechar** para concluir.
 
-    ![Migrar](./media/contoso-migration-tfs-vsts/migrate6.png)
+    ![Migre](./media/contoso-migration-tfs-vsts/migrate6.png)
 
 7. A coleção não é mais referenciada no console do Administrador do TFS.
 
-    ![Migrar](./media/contoso-migration-tfs-vsts/migrate7.png)
+    ![Migre](./media/contoso-migration-tfs-vsts/migrate7.png)
 
 ### <a name="generate-a-dacpac"></a>Gerar um DACPAC
 
@@ -466,7 +466,7 @@ Com a migração concluída, a Contoso deseja mudar do TFVC para o Git para gere
 
 [Saiba mais](https://docs.microsoft.com/azure/devops/repos/git/import-from-TFVC?view=vsts) sobre a importação do TFVC.
 
-## <a name="clean-up-after-migration"></a>Limpar após a migração
+## <a name="clean-up-after-migration"></a>Limpeza após a migração
 
 Com a migração completa, a Contoso precisa fazer o seguinte:
 
