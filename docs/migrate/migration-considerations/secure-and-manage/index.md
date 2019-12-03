@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3d99e999d8d083814812b1605d9f0053f186bfc4
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: c03e6d25734a487c317fa9c6904a799dfd53f631
+ms.sourcegitcommit: 72df8c1b669146285a8680e05aeceecd2c3b2e83
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753419"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74681800"
 ---
 # <a name="secure-monitoring-and-management-tools"></a>Ferramentas de monitoramento e gerenciamento seguros
 
@@ -71,3 +71,11 @@ O Assistente do Azure é seu guia personalizado de melhores práticas do Azure. 
 - **Novos alertas de recomendações.** Mantenha-se informado sobre novas recomendações, como oportunidades adicionais para dimensionar VMs e economizar dinheiro.
 
 Saiba mais sobre o [Assistente do Azure ](https://docs.microsoft.com/azure/advisor/advisor-overview) para otimizar seus recursos migrados.
+
+## <a name="suggested-skills"></a>Habilidades sugeridas
+
+O Microsoft Learn é uma nova abordagem para o aprendizado. A preparação para as novas habilidades e responsabilidades que acompanham a adoção de nuvem não é fácil. O Microsoft Learn oferece uma abordagem mais recompensadora para o aprendizado prático que ajuda você a atingir suas metas mais rapidamente. Ganhe pontos e níveis e conquiste mais!
+
+Aqui está um exemplo de um roteiro de aprendizagem personalizado no Microsoft Learn, alinhado com a parte Proteger e Gerenciar da Cloud Adoption Framework: 
+
+[Proteja seus dados de nuvem](https://docs.microsoft.com/learn/paths/secure-your-cloud-data/): O Azure foi projetado para segurança e conformidade. Saiba como aproveitar os serviços internos para armazenar seus dados de aplicativo com segurança para garantir que somente serviços e clientes autorizados tenham acesso a eles.
