@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 7e464b93dd9cc46526ab5f72bd8cf4fbf15f31f3
-ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
+ms.openlocfilehash: 2f00fca7cc5d21221faed2a56d0a25dba2e82258
+ms.sourcegitcommit: 72df8c1b669146285a8680e05aeceecd2c3b2e83
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74251812"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74681752"
 ---
 # <a name="migrate-assets-infrastructure-apps-and-data"></a>Migrar ativos (infraestrutura, aplicativos e dados)
 
@@ -266,6 +266,14 @@ E essas não são as únicas ferramentas disponíveis. Muitas outras ferramentas
 À medida que você migra para as tecnologias de nuvem, isso representa uma grande oportunidade de configurar sua organização para DevOps e CI/CD. Mesmo que sua organização esteja apenas gerenciando a infraestrutura, ao começar a fazê-lo usando códigos e os padrões e práticas do setor para DevOps, você pode aumentar sua agilidade por meio de pipelines de CI/CD, permitindo que você se adapte mais rápido a cenários de mudanças, crescimentos, lançamentos e até mesmo de recuperação.
 
 O Azure DevOps fornece toda a funcionalidade e integração necessárias com o Azure, com ambientes locais ou até mesmo com outras nuvens. Para obter mais informações, confira [Azure DevOps](https://azure.microsoft.com/services/devops). Para obter um treinamento guiado, consulte [CI e CD com o Azure DevOps – Guia de Início Rápido](https://microsoft.github.io/PartsUnlimited/pandp/200.1x-PandP-CICDQuickstartwithVSTS.html).
+
+## <a name="suggested-skills"></a>Habilidades sugeridas
+
+O Microsoft Learn é uma nova abordagem para o aprendizado. A preparação para as novas habilidades e responsabilidades que acompanham a adoção de nuvem não é fácil. O Microsoft Learn oferece uma abordagem mais recompensadora para o aprendizado prático que ajuda você a atingir suas metas mais rapidamente. Ganhe pontos e níveis e conquiste mais!
+
+Aqui está um exemplo de um roteiro de aprendizagem personalizado no Microsoft Learn, que complementa a configuração para diretrizes de DevOps no Cloud Adoption Framework. 
+
+[Crie aplicativos com o Azure DevOps](https://docs.microsoft.com/learn/paths/build-applications-with-azure-devops/): Colabore com outras pessoas para criar aplicativos usando o Azure Pipelines e o GitHub. Execute testes automatizados em seu pipeline para validar a qualidade do código. Examine o código-fonte e componentes de terceiros em busca de possíveis vulnerabilidades. Defina vários pipelines que funcionam em conjunto para criar seu aplicativo. Crie aplicativos usando agentes hospedados pela Microsoft e seus próprios agentes de build. 
 
 # <a name="cost-managementtabmanagecost"></a>[Gerenciamento de Custos](#tab/ManageCost)
 
