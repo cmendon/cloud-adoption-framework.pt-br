@@ -145,7 +145,7 @@ Além das funcionalidades de localização tradicionais, tais como proximidade, 
 
 **Operações espaciais:** Melhore sua inteligência de localização com uma biblioteca de cálculos matemáticos geoespaciais comuns, incluindo delimitação geográfica, ponto mais próximo, grande distância de círculo e buffers.
 
-**Geolocalização:** Pesquise o país de um endereço IP. Personalize conteúdos e serviços com base na localização do usuário e obtenha insights sobre a distribuição geográfica dos clientes.
+**Geolocalização:** Pesquise o país/região de um endereço IP. Personalize conteúdos e serviços com base na localização do usuário e obtenha insights sobre a distribuição geográfica dos clientes.
 
 ::: zone target="docs"
 
