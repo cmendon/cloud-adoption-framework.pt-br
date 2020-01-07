@@ -8,14 +8,14 @@ ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 71632e8f3f995922f4021f216f2090b742141169
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: e499e499cf1639bf9ce1118dcb93254268e9cb54
+ms.sourcegitcommit: 3c325764ad8229b205d793593ff344dca3a0579b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753529"
+ms.lasthandoff: 12/23/2019
+ms.locfileid: "75328915"
 ---
-# <a name="accelerate-migration-by-migrating-an-instance-of-sql-server"></a>Acelere a migração migrando uma instância do SQL Server
+# <a name="accelerate-migration-by-migrating-multiple-databases-or-entire-sql-servers"></a>Acelere a migração migrando vários bancos de dados ou SQL Servers inteiros
 
 A migração de instâncias inteiras de SQL Server pode acelerar os esforços de migração de carga de trabalho. As diretrizes a seguir expandem o escopo do [Guia de migração do Azure](../azure-migration-guide/index.md) migrando uma instância do SQL Server fora de um esforço de migração voltado para carga de trabalho. Essa abordagem pode propagar a migração de várias cargas de trabalho com uma única migração de plataforma de dados. A maioria dos esforços necessários nessa expansão de escopo ocorre durante os processos de pré-requisitos, avaliação, migração e otimização de um esforço de migração.
 
@@ -25,9 +25,9 @@ A migração de instâncias inteiras de SQL Server pode acelerar os esforços de
 
 A abordagem recomendada no [Guia de migração do Azure](../azure-migration-guide/index.md) é migrar cada estrutura de dados junto com as cargas de trabalho associadas como parte de um único esforço de migração. A abordagem iterativa da migração reduz a descoberta, a avaliação e outras tarefas que podem criar bloqueadores e retornos de valor comercial lentos.
 
-No entanto, algumas estruturas de dados podem ser migradas com mais eficiência por meio de uma migração de plataforma de dados separada. Seguem alguns exemplos:
+No entanto, algumas estruturas de dados podem ser migradas com mais eficiência por meio de uma migração de plataforma de dados separada. A seguir, estão alguns exemplos:
 
-- **Fim do serviço:** Mover rapidamente uma instância de SQL Server para evitar desafios de fim de serviço pode justificar o uso deste guia fora dos esforços de migração padrão.
+- **Fim do serviço:** Mover rapidamente uma instância de SQL Server como uma iteração isolada dentro de um esforço de migração maior pode evitar desafios de fim de serviço. Este guia ajudará a integrar a migração de um SQL Server no processo mais amplo de migração. No entanto, se você estiver migrando/atualizando um SQL Server independente de qualquer outro esforço de adoção de nuvem, a [visão geral SQL Server fim da vida útil](/sql/sql-server/end-of-support/sql-server-end-of-life-overview) ou os artigos de [documentação de migração SQL Server](/sql/sql-server/migrate/index) podem fornecer uma orientação mais clara.
 - **Serviços SQL Servers:** A estrutura de dados faz parte de uma solução mais ampla que requer SQL Server em execução em uma máquina virtual. Isso é comum para soluções que usam serviços SQL Server como SQL Server Reporting Services, SQL Server Integration Services ou SQL Server Analysis Services.
 - **Bancos de dados de uso baixo e de alta densidade:** A instância do SQL Server tem uma alta densidade de bancos de dados. Cada um desses bancos de dados tem volumes de transação baixos e requer pouco na forma de recursos de computação. Você deve considerar outras soluções mais modernas, mas uma abordagem de infraestrutura como serviço (IaaS) pode resultar em um custo operacional significativamente reduzido.
 - **Custo total de propriedade:** Quando aplicável, você pode aplicar os [benefícios híbridos do Azure](https://azure.microsoft.com/pricing/hybrid-benefit) ao preço da lista, criando o menor custo de propriedade para instâncias do SQL Server. Isso é especialmente comum para clientes que hospedam SQL Server em cenários de nuvem.
@@ -42,30 +42,30 @@ Se este guia se alinhar com seus critérios, continue com esse guia de escopo ex
 
 Antes de executar uma migração de SQL Server, comece com uma expansão do espaço digital, incluindo um espaço de dados. O espaço de dados registra um inventário dos ativos de dados que você está considerando para a migração. As tabelas a seguir descrevem uma abordagem para registrar o espaço de dados.
 
-### <a name="server-inventory"></a>Inventário de servidor
+### <a name="server-inventory"></a>Estoque do servidor
 
 Veja a seguir um exemplo de um inventário de servidor:
 
-|SQL Server|Finalidade|Versão|[Importância](../../manage/considerations/criticality.md)|[Confidencialidade](../../govern/policy-compliance/data-classification.md)|Contagem de banco de dados|SSIS|SSRS|ADAPTADOR|Cluster|Número de nós|
+|SQL Server|Finalidade|Versão|[Criticidade](../../manage/considerations/criticality.md)|[Confidencialidade](../../govern/policy-compliance/data-classification.md)|Contagem de banco de dados|SSIS|SSRS|SSAS|Cluster|Número de nós|
 |---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|
-|SQL-01|Aplicativos principais|2016|Essenciais|Altamente confidencial|40|N/D|N/D|N/D|SIM|3|
-|SQL-02|Aplicativos principais|2016|Essenciais|Altamente confidencial|40|N/D|N/D|N/D|SIM|3|
-|SQL-03|Aplicativos principais|2016|Essenciais|Altamente confidencial|40|N/D|N/D|N/D|SIM|3|
-|SQL-04|BI|2012|Alto|XX|6|N/D|Confidencial|Sim – cubo multidimensional|Não|1|
-|SQL-05|Integração|2008 R2|Baixo|Geral|20|SIM|N/D|N/D|Não|1|
+|SQL-01|Aplicativos principais|2016|Essenciais|Altamente confidencial|40|N/D|N/D|N/D|Sim|3|
+|SQL-02|Aplicativos principais|2016|Essenciais|Altamente confidencial|40|N/D|N/D|N/D|Sim|3|
+|SQL-03|Aplicativos principais|2016|Essenciais|Altamente confidencial|40|N/D|N/D|N/D|Sim|3|
+|SQL-04|BI|2012|Alto|XX|6|N/D|Confidential|Sim – cubo multidimensional|Não|1|
+|SQL-05|Integração|2008 R2|Baixo|Geral|20|Sim|N/D|N/D|Não|1|
 
 ### <a name="database-inventory"></a>Inventário de banco de dados
 
 Veja a seguir um exemplo de inventário de banco de dados para um dos servidores acima:
 
-|Servidor|Banco de dados|[Importância](../../manage/considerations/criticality.md)|[Confidencialidade](../../govern/policy-compliance/data-classification.md)|Resultados de Assistente de Migração de Dados (DMA)|Correção de DMA|Plataforma de destino|
+|Servidor|Banco de dados|[Criticidade](../../manage/considerations/criticality.md)|[Confidencialidade](../../govern/policy-compliance/data-classification.md)|Resultados de Assistente de Migração de Dados (DMA)|Correção de DMA|Plataforma de destino|
 |---------|---------|---------|---------|---------|---------|---------|
-|SQL-01|DB-1|Essenciais|Altamente confidencial|Compatíveis|N/D|Banco de dados SQL do Azure|
-|SQL-01|DB-2|Alto|Confidencial|Alteração de esquema necessária|Alterações implementadas|Banco de dados SQL do Azure|
-|SQL-01|DB-1|Alto|Geral|Compatíveis|N/D|Instância gerenciada do SQL do Azure|
-|SQL-01|DB-1|Baixo|Altamente confidencial|Alteração de esquema necessária|Alterações agendadas|Instância gerenciada do SQL do Azure|
-|SQL-01|DB-1|Essenciais|Geral|Compatíveis|N/D|Instância gerenciada do SQL do Azure|
-|SQL-01|DB-2|Alto|Confidencial|Compatíveis|N/D|Banco de dados SQL do Azure|
+|SQL-01|DB-1|Essenciais|Altamente Confidencial|Compatível|N/D|Banco de dados SQL do Azure|
+|SQL-01|DB-2|Alto|Confidential|Alteração de esquema necessária|Alterações implementadas|Banco de dados SQL do Azure|
+|SQL-01|DB-3|Alto|Geral|Compatível|N/D|Instância Gerenciada do SQL do Azure|
+|SQL-01|DB-4|Baixo|Altamente Confidencial|Alteração de esquema necessária|Alterações agendadas|Instância Gerenciada do SQL do Azure|
+|SQL-01|DB-5|Essenciais|Geral|Compatível|N/D|Instância Gerenciada do SQL do Azure|
+|SQL-01|DB-6|Alto|Confidential|Compatível|N/D|Banco de dados SQL do Azure|
 
 ### <a name="integration-with-the-cloud-adoption-plan"></a>Integração com o plano de adoção de nuvem
 
@@ -106,9 +106,9 @@ A escolha da melhor orientação para a migração usando o serviço de migraç�
 
 |Origem  |Escolha o destino  |Ferramenta  |Tipo de migração  |Diretriz  |
 |---------|---------|---------|---------|---------|
-|SQL Server|Banco de dados SQL do Azure|Serviço de Migração do Banco de Dados|Off-line|[Tutorial](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-azure-sql)|
+|SQL Server|Banco de dados SQL do Azure|Serviço de Migração do Banco de Dados|Offline|[Tutorial](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-azure-sql)|
 |SQL Server|Banco de dados SQL do Azure|Serviço de Migração do Banco de Dados|Online|[Tutorial](https://docs.microsoft.com/azure/dms/tutorial-sql-server-azure-sql-online)|
-|SQL Server|Instância gerenciada do Banco de Dados SQL do Azure|Serviço de Migração do Banco de Dados|Off-line|[Tutorial](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-managed-instance)|
+|SQL Server|Instância gerenciada do Banco de Dados SQL do Azure|Serviço de Migração do Banco de Dados|Offline|[Tutorial](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-managed-instance)|
 |SQL Server|Instância gerenciada do Banco de Dados SQL do Azure|Serviço de Migração do Banco de Dados|Online|[Tutorial](https://docs.microsoft.com/azure/dms/tutorial-sql-server-managed-instance-online)|
 |SQL Server RDS|Banco de dados SQL do Azure (ou instância gerenciada)|Serviço de Migração do Banco de Dados|Online|[Tutorial](https://docs.microsoft.com/azure/dms/tutorial-rds-sql-server-azure-sql-and-managed-instance-online)|
 
@@ -118,9 +118,9 @@ Depois de mover os bancos de dados de uma instância do SQL Server para o servi�
 
 |Origem  |Escolha o destino  |Ferramenta  |Tipo de migração  |Diretriz  |
 |---------|---------|---------|---------|---------|
-|SQL Server Integration Services|Tempo de execução de integração do Azure Data Factory|Fábrica de dados do Azure|Off-line|[Tutorial](https://docs.microsoft.com/azure/data-factory/create-azure-ssis-integration-runtime)|
-|Modelo de SQL Server Analysis Services de tabela|Analysis Services do Azure|SQL Server Data Tools|Off-line|[Tutorial](https://docs.microsoft.com/azure/analysis-services/analysis-services-deploy)|
-|SQL Server Reporting Services|Servidor de Relatórios do Power BI|Power BI|Off-line|[Tutorial](https://docs.microsoft.com/power-bi/report-server/migrate-report-server)|
+|SQL Server Integration Services|Tempo de execução de integração do Azure Data Factory|Azure Data Factory|Offline|[Tutorial](https://docs.microsoft.com/azure/data-factory/create-azure-ssis-integration-runtime)|
+|Modelo de SQL Server Analysis Services de tabela|Analysis Services do Azure|SQL Server Data Tools|Offline|[Tutorial](https://docs.microsoft.com/azure/analysis-services/analysis-services-deploy)|
+|SQL Server Reporting Services|Servidor de Relatórios do Power BI|Power BI|Offline|[Tutorial](https://docs.microsoft.com/power-bi/report-server/migrate-report-server)|
 
 ### <a name="guidance-and-tutorials-for-migration-from-sql-server-to-an-iaas-instance-of-sql-server"></a>Diretrizes e tutoriais para migração de SQL Server para uma instância de IaaS do SQL Server
 
@@ -130,7 +130,7 @@ Use essa abordagem para migrar bancos de dados ou outros serviços na instância
 
 |Origem  |Escolha o destino  |Ferramenta  |Tipo de migração  |Diretriz  |
 |---------|---------|---------|---------|---------|
-|SQL Server de instância única|SQL Server na IaaS|Variado|Off-line|[Tutorial](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-migrate-sql)|
+|SQL Server de instância única|SQL Server na IaaS|Variado|Offline|[Tutorial](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-migrate-sql)|
 
 ## <a name="optimization-process-changes"></a>Alterações no processo de otimização
 
