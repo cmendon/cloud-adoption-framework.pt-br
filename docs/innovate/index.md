@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 layout: LandingPage
-ms.openlocfilehash: 758cd3285ed7f9f1b3542b54af7d275dccf1662d
-ms.sourcegitcommit: 72df8c1b669146285a8680e05aeceecd2c3b2e83
+ms.openlocfilehash: 06110380d848cdab37f7bc6109869be07faa9265
+ms.sourcegitcommit: 390b374dc7af4c4b85ef9fcb381c7c1bc6076ac7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74681777"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75868073"
 ---
 # <a name="cloud-innovation-in-the-cloud-adoption-framework"></a>Inovação de nuvem na Cloud Adoption Framework
 
@@ -123,9 +123,9 @@ O Microsoft Learn é uma nova abordagem para o aprendizado. A preparação para 
 
 Aqui estão alguns exemplos de roteiros de aprendizagem específicos a uma função no Microsoft Learn que se alinham com a parte Inovar da Cloud Adoption Framework.
 
-[Administre contêineres no Azure](https://docs.microsoft.com/learn/paths/administer-containers-in-azure/): As ACI (Instâncias de Contêiner do Azure) são a maneira mais rápida e fácil de executar contêineres no Azure. Este roteiro de aprendizagem ensinará a você como criar e gerenciar seus contêineres e como é possível usar as ACI para fornecer escala elástica para o Kubernetes.
+[Administre contêineres no Azure](https://docs.microsoft.com/learn/paths/administer-containers-in-azure): As ACI (Instâncias de Contêiner do Azure) são a maneira mais rápida e fácil de executar contêineres no Azure. Este roteiro de aprendizagem ensinará a você como criar e gerenciar seus contêineres e como é possível usar as ACI para fornecer escala elástica para o Kubernetes.
 
-[Crie aplicativos sem servidor](https://docs.microsoft.com/learn/paths/create-serverless-applications/): O Azure Functions habilita a criação de sistemas de computação sob demanda controlados por eventos que podem ser disparados por eventos externos diversos. Saiba como aproveitar as funções para executar a lógica do lado do servidor e criar arquiteturas sem servidor.
+[Crie aplicativos sem servidor](https://docs.microsoft.com/learn/paths/create-serverless-applications): O Azure Functions habilita a criação de sistemas de computação sob demanda controlados por eventos que podem ser disparados por eventos externos diversos. Saiba como aproveitar as funções para executar a lógica do lado do servidor e criar arquiteturas sem servidor.
 
 Para descobrir outros roteiros de aprendizagem, navegue no [Catálogo do Learn](/learn/browse). Use o filtro de **Funções** para alinhar os roteiros de aprendizagem com sua função.
 
@@ -134,4 +134,3 @@ Para descobrir outros roteiros de aprendizagem, navegue no [Catálogo do Learn](
 O primeiro exercício para a inovação em nuvem é:
 > [!div class="nextstepaction"]
 > [Criar um consenso sobre o valor comercial da inovação](./business-value.md)
-

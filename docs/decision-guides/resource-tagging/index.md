@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 1142ca43776ab9b147b23ef054d77d76d8aed212
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: c62e087372d21a3883c90425b31e1c5ff9bfd2fb
+ms.sourcegitcommit: 390b374dc7af4c4b85ef9fcb381c7c1bc6076ac7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74160236"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75868016"
 ---
 # <a name="resource-naming-and-tagging-decision-guide"></a>Guia de decisão de marcação e nomenclatura de recurso
 
@@ -73,7 +73,7 @@ Os padrões comuns de marcação listados a seguir dão exemplos de como a marca
 
 Para obter mais informações sobre nomenclatura e marcação no Azure, consulte:
 
-- [Convenções de nomenclatura para recursos do Azure](/azure/architecture/best-practices/resource-naming). Veja esta orientação quanto às convenções de nomenclatura recomendadas para recursos do Azure.
+- [Convenções de nomenclatura para recursos do Azure](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming). Veja esta orientação quanto às convenções de nomenclatura recomendadas para recursos do Azure.
 - [Use as marcas para organizar seus recursos do Azure](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags). Você pode aplicar marcas no Azure no grupo de recursos e no nível do recurso individual, dando a você flexibilidade na granularidade de quaisquer relatórios de estatísticas com base em marcas aplicadas.
 
 ## <a name="next-steps"></a>Próximas etapas
