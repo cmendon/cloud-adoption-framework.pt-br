@@ -8,12 +8,12 @@ ms.date: 05/20/2019
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 25ccd940207e6b8d081b68b154e921c2da599147
-ms.sourcegitcommit: 57208103dd80b6b169e7144a8e55994a56184740
+ms.openlocfilehash: 86082985a252e4724f237806669814d41ac29173
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74856790"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781429"
 ---
 # <a name="landing-zone-considerations"></a>Considerações sobre zonas de aterrissagem
 
@@ -37,7 +37,7 @@ Todas as zonas de aterrissagem fornecem uma estrutura para as opções de hosped
 Cada zona de aterrissagem faz parte de uma solução mais abrangente para organizar recursos em um ambiente de nuvem. Os conceitos básicos do Azure são os blocos de construção fundamentais para a organização.
 
 - **[Conceitos fundamentais do Azure](./fundamental-concepts.md)** . Aprenda conceitos e termos fundamentais usados para organizar recursos no Azure e como os conceitos se relacionam entre si.
-- **Guia de decisão de organização de recursos**. Depois que você compreender cada um dos conceitos básicos, o guia de decisão de organização de recursos poderá ajudá-lo a tomar decisões que moldarão a zona de aterrissagem.
+- **[Guia de decisão de consistência de recursos](../../decision-guides/resource-consistency/)** . Depois que você compreender cada um dos conceitos básicos, o guia de decisão de organização de recursos poderá ajudá-lo a tomar decisões que moldarão a zona de aterrissagem.
 
 ## <a name="governance-considerations"></a>Considerações de governança
 

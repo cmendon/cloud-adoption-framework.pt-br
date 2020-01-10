@@ -9,30 +9,30 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 layout: LandingPage
-ms.openlocfilehash: 977a1f58d59a182df6451b27f15747477a1a1de9
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: 40bce7ec1a68463c9ece51188170d94a274507c3
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683743"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781514"
 ---
-# <a name="microsoft-cloud-adoption-framework-for-azure"></a>Microsoft Cloud Adoption Framework for Azure
+# <a name="cloud-adoption-framework-roadmap"></a>Roteiro da Cloud Adoption Framework
 
 Fundamentalmente, a nuvem altera como as empresas adquirem e usam recursos de tecnologia. Tradicionalmente, as empresas assumiam a propriedade e a responsabilidade por todos os aspectos da tecnologia: desde a infraestrutura até o software. A nuvem permite que as empresas provisionem e consumam recursos somente quando necessário. No entanto, a adoção da nuvem é um meio para um fim. As empresas adotam a nuvem quando perceberem que ela pode aproveitar a todas as seguintes oportunidades de negócios:
 
 - As empresas se sentem motivadas a **migrar** para a nuvem a fim de:
-  - Otimizar as operações.
-  - Simplificar a tecnologia.
-  - Aumentar a agilidade dos negócios.
-  - Reduzir custos.
-  - Preparar-se para novos recursos técnicos.
-  - Dimensionar-se conforme as demandas de mercado ou as áreas geográficas.
+  - Otimizar as operações
+  - Simplificar a tecnologia
+  - Aumentar a agilidade dos negócios
+  - Reduzir custos
+  - Preparar-se para novos recursos técnicos
+  - Ajustar-se às demandas do mercado ou novas regiões geográficas
 - As empresas se sentem motivadas a **inovar** usando a nuvem para:
-  - Melhorar as experiências do cliente.
-  - Aumentar a participação do cliente.
-  - Transformar produtos.
-  - Preparar-se para novas funcionalidades técnicas e criá-las.
-  - Dimensionar-se conforme as demandas de mercado ou as áreas geográficas.
+  - Melhorar as experiências do cliente
+  - Aumentar a participação do cliente
+  - Transformar produtos
+  - Criar e preparar-se para novos recursos técnicos
+  - Ajustar-se às demandas do mercado ou novas regiões geográficas
 
 ## <a name="vision-and-objectives"></a>Visão e objetivos
 
@@ -46,7 +46,7 @@ Fundamentalmente, a nuvem altera como as empresas adquirem e usam recursos de te
 
 A Estrutura de Adoção do Microsoft Cloud é uma estrutura abrangente que envolve as fases Planejar, Preparar e Adotar em todas as motivações de inovação e migração para a adoção da nuvem, com suporte das diretrizes de governança e operações.
 
-A Microsoft está construindo ativamente essa estrutura de aspiração em colaboração com clientes, parceiros e equipes internas. Para incentivar a parceria, o conteúdo será liberado na versão prévia pública, à medida que for disponibilizado. Essas versões prévias públicas habilitam o teste, a validação e o refinamento incremental das diretrizes. A estrutura entrará em GA (disponibilidade geral) quando as metas de aspiração forem cumpridas.
+A estrutura atingiu a GA (disponibilidade geral). No entanto, ainda estamos criando ativamente essa estrutura em colaboração com clientes, parceiros e equipes internas. Para incentivar a parceria, o conteúdo é liberado quando ele se torna disponível. Essas versões públicas permitem testar, validar e refinar de forma incremental as diretrizes. 
 
 Para adotar a nuvem com sucesso, o cliente deve preparar o pessoal, as tecnologias e os processos para essa transformação digital. A Estrutura de Adoção do Microsoft Cloud inclui uma seção que descreve os percursos gerais de adoção, tanto da migração quanto da inovação, como uma visão geral para os clientes. Esta seção é composta pelas seguintes fases do percurso de adoção:
 

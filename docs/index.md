@@ -8,12 +8,12 @@ layout: LandingPage
 ms.topic: landing-page
 author: BrianBlanchard
 ms.date: 10/14/2019
-ms.openlocfilehash: 743bbb31b6bee799e18161a55b0f70c1783eaf6f
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: c945539be722db41f9e4f04813c8bf9ac93af34f
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565917"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781701"
 ---
 # <a name="microsoft-cloud-adoption-framework-for-azure"></a>Microsoft Cloud Adoption Framework for Azure
 
@@ -163,13 +163,13 @@ Cada uma das fases capturadas acima faz parte de um amplo ciclo de vida de adoç
 
 ![Visão geral do Cloud Adoption Framework](./_images/caf-overview.png)
 
-## <a name="intent"></a>Intenção
+## <a name="intent"></a>Intencional
 
-Fundamentalmente, a nuvem altera como as empresas adquirem e usam recursos de tecnologia. Tradicionalmente, as empresas assumiam a propriedade e a responsabilidade por todos os aspectos da tecnologia, da infraestrutura ao software. Ao migrar para a nuvem, as empresas podem provisionar e consumir recursos somente quando necessário. Embora a nuvem ofereça uma imensa flexibilidade em relação às opções de design, as empresas precisam de uma metodologia consistente e comprovada para adotar tecnologias de nuvem. A Microsoft Cloud Adoption Framework para Azure atende a essa necessidade, ajudando a conduzir as decisões em toda a adoção da nuvem.
+A nuvem altera fundamentalmente a forma como as empresas adquirem, usam e protegem os recursos de tecnologia. Tradicionalmente, as empresas assumiam a propriedade e a responsabilidade por todos os aspectos da tecnologia, da infraestrutura ao software. Ao migrar para a nuvem, as empresas podem provisionar e consumir recursos somente quando necessário. Embora a nuvem ofereça uma imensa flexibilidade em relação às opções de design, as empresas precisam de uma metodologia consistente e comprovada para adotar tecnologias de nuvem. A Microsoft Cloud Adoption Framework para Azure atende a essa necessidade, ajudando a conduzir as decisões em toda a adoção da nuvem.
 
 No entanto, a adoção da nuvem é apenas um meio para alcançar um fim. A adoção da nuvem bem-sucedida começa bem antes de um fornecedor de plataformas de nuvem ser selecionado. Ela começa quando a empresa e os responsáveis por tomar a decisão de TI percebem que a nuvem pode acelerar um objetivo de transformação empresarial específico. A Cloud Adoption Framework pode ajudar as empresas a alinhar estratégias de negócios, cultura e alteração técnica a fim de atingir os resultados empresariais desejados.
 
-A estrutura de adoção de nuvem fornece orientações técnicas relacionadas ao Microsoft Azure. Como os clientes empresariais ainda podem estar em processo de escolha de um fornecedor de nuvem, a estrutura fornece diretrizes independentes de nuvem para facilitar as decisões estratégicas, quando possível.
+A estrutura de adoção de nuvem fornece orientações técnicas relacionadas ao Microsoft Azure. Como os clientes corporativos ainda podem estar no processo de escolher um fornecedor de nuvem ou podem ter uma estratégia intencional de várias nuvens, a estrutura fornece diretrizes independentes de nuvem para decisões estratégicas sempre que possível.
 
 ## <a name="intended-audience"></a>Público-alvo
 
