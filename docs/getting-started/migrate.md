@@ -8,12 +8,12 @@ ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: cdfe247470626a142d31ab6357f771fb39ced55f
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: c902c2a3f564bd2fcc575c8eb885b52da068826e
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564677"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781674"
 ---
 # <a name="begin-a-cloud-migration-journey-in-azure"></a>Iniciar uma jornada de migração na nuvem no Azure
 
@@ -36,7 +36,7 @@ As migrações na nuvem podem ajudar as empresas a alcançar seus resultados com
 
 |Eventos comerciais críticos | Motivações de migração | Motivações de inovação |
 |---------|---------|---------|
-| Saída do datacenter<br/><br/>Fusões, aquisição ou divestiture<br/><br/>Reduções em despesas de capital<br/><br/>Fim do suporte para tecnologias de missão crítica<br/><br/>Resposta às alterações de conformidade regulatória<br/><br/>Atender aos novos requisitos de soberania de dados<br/><br/>Reduzir as interrupções e melhorar a estabilidade da ti|Economia de custos<br/><br/>Redução no fornecedor ou na complexidade técnica<br/><br/>Otimização de operações internas<br/><br/>Aumentar a agilidade dos negócios<br/><br/>Preparar-se para novos recursos técnicos<br/><br/>Dimensionar para atender às demandas de mercado<br/><br/>Dimensionar para atender às demandas geográficas|Preparar-se para novos recursos técnicos<br/><br/>Crie novos recursos técnicos<br/><br/>Dimensionar para atender às demandas de mercado<br/><br/>Dimensionar para atender às demandas geográficas<br/><br/>Melhorar as experiências e os compromissos do cliente<br/><br/>Transformar produtos ou serviços<br/><br/>Interromper o mercado com novos produtos ou serviços|
+| Saída do datacenter<br/><br/>Fusões, aquisição ou divestiture<br/><br/>Reduções em despesas de capital<br/><br/>Fim do suporte para tecnologias de missão crítica<br/><br/>Resposta às alterações de conformidade regulatória<br/><br/>Atender aos novos requisitos de soberania de dados<br/><br/>Reduzir as interrupções e melhorar a estabilidade da ti|Redução de custos<br/><br/>Redução no fornecedor ou na complexidade técnica<br/><br/>Otimização de operações internas<br/><br/>Aumentar a agilidade dos negócios<br/><br/>Preparar-se para novos recursos técnicos<br/><br/>Dimensionar para atender às demandas de mercado<br/><br/>Dimensione para atender às demandas geográficas ou de mercado|Preparar-se para novos recursos técnicos<br/><br/>Crie novos recursos técnicos<br/><br/>Modernizar a postura e os controles de segurança<br/><br/>Dimensione para atender às demandas geográficas ou de mercado<br/><br/>Melhorar as experiências e os compromissos do cliente<br/><br/>Transformar produtos ou serviços<br/><br/>Interromper o mercado com novos produtos ou serviços|
 
 <!-- markdownlint-enable MD033 -->
 
@@ -64,7 +64,7 @@ O foco desse esforço é a migração ou a modernização de cargas de trabalho.
 
 As migrações de nuvem geralmente são consideradas um único projeto dentro de um programa mais amplo para simplificar as operações de ti, os custos ou a complexidade. A metodologia de implementação de nuvem ajuda a alinhar os esforços técnicos dentro de uma série de migrações de carga de trabalho a valores de negócios de nível mais alto descritos na estratégia e no plano de nuvem.
 
-**Introdução:** Para começar a usar uma implementação de nuvem, o guia de [migração do Azure](../migrate/azure-migration-guide/index.md) e o [Guia de instalação do Azure](../ready/azure-setup-guide/index.md) descrevem as ferramentas e os processos de alto nível necessários para serem bem-sucedidos na execução de uma implementação de nuvem. Migrar sua primeira carga de trabalho usando esses guias ajudará a equipe a superar as curvas de aprendizado iniciais no início do processo de planejamento. Posteriormente, considerações adicionais devem ser dadas à [lista de verificação de escopo expandido](../migrate/expanded-scope/index.md), [práticas recomendadas de migração](../migrate/azure-best-practices/index.md) e consideração de [migração](../migrate/migration-considerations/index.md)para alinhar as diretrizes de linha de base com as restrições exclusivas, processos e equipe do seu esforço. estruturas e objetivos.
+**Introdução:** Para começar a usar uma implementação de nuvem, o guia de [migração do Azure](../migrate/azure-migration-guide/index.md) e o [Guia de instalação do Azure](../ready/azure-setup-guide/index.md) descrevem as ferramentas e os processos de alto nível necessários para serem bem-sucedidos na execução de uma implementação de nuvem. Migrar sua primeira carga de trabalho usando esses guias ajudará a equipe a superar as curvas de aprendizado iniciais no início do processo de planejamento. Posteriormente, considerações adicionais devem ser dadas à [lista de verificação de escopo expandido](../migrate/expanded-scope/index.md), [práticas recomendadas de migração](../migrate/azure-best-practices/index.md) e consideração de [migração](../migrate/migration-considerations/index.md)para alinhar as diretrizes de linha de base com as restrições, os processos, as estruturas de equipe e os objetivos exclusivos do seu esforço.
 
 ## <a name="cloud-strategy-and-planning"></a>Estratégia e planejamento de nuvem
 
@@ -93,13 +93,13 @@ Ao longo dessa experiência de migração, essa estrutura será usada para abord
 
 ### <a name="common-cultural-changes-resulting-from-adherence-to-this-methodology"></a>Alterações culturais comuns resultantes da adesão a essa metodologia
 
-O esforço para perceber os resultados de negócios desejados pode disparar ligeiras alterações na cultura da ti e em algum grau a cultura da empresa. A seguir estão algumas alterações culturais comuns vistas neste processo:
+O esforço para perceber os resultados de negócios desejados pode disparar ligeiras alterações na cultura da ti, na segurança e em algum grau da cultura dos negócios. A seguir estão algumas alterações culturais comuns vistas neste processo:
 
-- A equipe de ti provavelmente adotará novas habilidades para dar suporte a cargas de trabalho na nuvem.
+- As equipes de ti e segurança provavelmente adotarão novas habilidades para dar suporte a cargas de trabalho na nuvem.
 - A execução de uma migração de nuvem incentiva abordagens iterativas ou ágeis.
 - A inclusão da governança de nuvem também tende a inspirar abordagens DevOpss.
 - A criação de uma equipe de estratégia de nuvem pode levar a uma integração mais rígida entre os líderes de ti e de negócios.
-- Coletivamente, essas mudanças tendem a levar a agilidade de ti e de negócios.
+- Coletivamente, essas mudanças tendem a levar a uma maior agilidade de negócios e ti.
 
 A mudança cultural não é uma meta da migração na nuvem nem da estrutura de adoção da nuvem, mas é um resultado mais experiente.
 As alterações culturais não são guiadas diretamente, em vez disso, as alterações sutis na cultura são incorporadas às melhorias e abordagens do processo sugeridas em todas as diretrizes.
@@ -110,7 +110,7 @@ Durante a implementação da estratégia de nuvem e planejar a equipe de ti, con
 
 ### <a name="common-workload-examples"></a>Exemplos comuns de carga de trabalho
 
-A estratégia de nuvem e o planejamento geralmente visam uma ampla coleção de cargas de trabalho e aplicativos. No portfólio, os tipos de aplicativos comuns ou de carga de trabalho normalmente são migrados. Seguem alguns exemplos:
+A estratégia de nuvem e o planejamento geralmente visam uma ampla coleção de cargas de trabalho e aplicativos. No portfólio, os tipos de aplicativos comuns ou de carga de trabalho normalmente são migrados. A seguir, estão alguns exemplos:
 
 - Aplicativos de linha de negócios
 - Aplicativos voltados para o cliente
@@ -144,7 +144,7 @@ A estrutura de adoção de nuvem é uma solução de ciclo de vida. Ele foi proj
 >
 > [Inove](../innovate/index.md)
 >
-> [Indicadores](../govern/index.md)
+> [Governança](../govern/index.md)
 >
 > [Gerenciar](../manage/index.md)
 >

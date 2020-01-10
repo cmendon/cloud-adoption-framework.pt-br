@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: bf68bc17d5e94ae4c35e0a88d3ca73bd42935a5b
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 38fa6133c9a4f823d4347b3c1b4db5dd81f24ceb
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566800"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781447"
 ---
 # <a name="cloud-governance-capabilities"></a>Recursos de governança de nuvem
 
@@ -26,6 +26,7 @@ Dependendo dos resultados de negócios desejados, as habilidades necessárias pa
 
 - Governança de ti
 - Arquitetura empresarial
+- Segurança
 - Operações de ti
 - Infraestrutura de ti
 - Rede
@@ -33,6 +34,7 @@ Dependendo dos resultados de negócios desejados, as habilidades necessárias pa
 - Virtualização
 - Continuidade dos negócios e recuperação de desastres
 - Proprietários do aplicativo dentro dele
+- Proprietários de finanças
 
 O recurso de governança de nuvem identifica os riscos relacionados às versões atuais e futuras. Esse recurso é visto nos esforços para avaliar o risco, entender os possíveis impactos e tomar decisões relacionadas à tolerância a riscos. Ao fazer isso, os planos podem ser atualizados rapidamente para refletir as necessidades dinâmicas da [capacidade de adoção da nuvem](./cloud-adoption.md).
 
@@ -69,7 +71,7 @@ Veja a seguir os participantes que irão participar frequentemente das atividade
 
 ## <a name="maturation-of-cloud-governance-capability"></a>Desenvolvimento do recurso de governança de nuvem
 
-Algumas organizações de grande porte têm equipes dedicadas existentes que se concentram na governança de ti. Essas equipes são especializadas em gerenciamento de riscos em todo o portfólio de ti por meio de metodologias como ITIL ou ITSM. Quando essas equipes existem, os modelos de maturidade a seguir podem ser acelerados rapidamente. No entanto, a equipe de governança de ti é incentivada a examinar o modelo de governança de nuvem para entender como a governança muda ligeiramente na nuvem. Os principais artigos incluem a [extensão de políticas corporativas para a nuvem](../govern/corporate-policy.md) e as [cinco disciplinas de governança de nuvem](../govern/governance-disciplines.md).
+Algumas organizações de grande porte têm equipes dedicadas existentes que se concentram na governança de ti. Essas equipes são especializadas em gerenciamento de riscos em todo o portfólio de ti. Quando essas equipes existem, os modelos de maturidade a seguir podem ser acelerados rapidamente. No entanto, a equipe de governança de ti é incentivada a examinar o modelo de governança de nuvem para entender como a governança muda ligeiramente na nuvem. Os principais artigos incluem a [extensão de políticas corporativas para a nuvem](../govern/corporate-policy.md) e as [cinco disciplinas de governança de nuvem](../govern/governance-disciplines.md).
 
 **Sem governança:** É comum que as organizações se movam para a nuvem sem planos claros para governança. Antes de longo, as preocupações com relação à segurança, ao custo, à escala e às operações começam a disparar conversas sobre a necessidade de um modelo de governança e de pessoas para a equipe dos processos associados a esse modelo. Iniciar essas conversas antes que elas se tornem preocupações é sempre uma boa primeira etapa para superar o antipadrão de "sem governança". A seção sobre como [definir políticas corporativas](../govern/corporate-policy.md) pode ajudar a facilitar essas conversas.
 
@@ -97,7 +99,7 @@ Esses profissionais de governança que compartilham seus scripts estruturados aj
 
 Todas as empresas são exclusivas e, portanto, suas necessidades de governança. Escolha o nível de maturidade que se adapta à sua organização e use a estrutura de adoção de nuvem para orientar as práticas, os processos e as ferramentas para ajudá-lo a chegar lá.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 À medida que a governança de nuvem amadurece, as equipes serão capacitadas a adotar a nuvem em ritmos mais rápidos. Os esforços contínuos de adoção na nuvem tendem a disparar a maturidade nas operações de ti. Esse amadurecimento também pode exigir o desenvolvimento de [recursos de operações de nuvem](./cloud-operations.md).
 

@@ -9,16 +9,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: fee983ba2379bb84d56f23139bba987a56e5c54d
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 7c733c715f636416f1a6f3f4a4cfe1d984eae73b
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564701"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781735"
 ---
 # <a name="rationalize-the-digital-estate"></a>Racionalizar a propriedade digital
 
-A racionalização de nuvem é o processo de avaliação de ativos para determinar a melhor abordagem para hospedá-los na nuvem. Depois de determinar uma [abordagem](./approach.md) e agregar um [inventário](./inventory.md), a racionalização de nuvem pode começar. A [racionalização de nuvem](./rationalize.md) aborda as opções de racionalização mais comuns.
+A racionalização de nuvem é o processo de avaliação de ativos para determinar a melhor abordagem para hospedá-los na nuvem. Depois de determinar uma [abordagem](./approach.md) e agregar um [inventário](./inventory.md), a racionalização de nuvem pode começar. A racionalização de nuvem aborda as opções de racionalização mais comuns.
 
 ## <a name="traditional-view-of-rationalization"></a>Visão tradicional de racionalização
 
@@ -156,7 +156,7 @@ Ao longo do tempo, a combinação da equipe de adoção da nuvem e da equipe de 
 
 Em alguns casos, o modelo financeiro pode ser muito rígido para tomar uma decisão sem racionalização adicional. Nesses casos, talvez você precise de uma abordagem mais tradicional para a racionalização.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 A saída de um esforço de racionalização é uma lista de pendências priorizada de todos os ativos afetados pela transformação escolhida. Essa lista de pendências agora está pronta para servir como base para modelos de custo dos serviços de nuvem.
 

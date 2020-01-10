@@ -9,22 +9,22 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 086740f6677896220824096a5afe66618779a2d0
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 3ee38869badce877fc89784c1e90a60ed7ee04eb
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566394"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781531"
 ---
 # <a name="cost-management-sample-policy-statements"></a>Instruções de política de amostra de Gerenciamento de Custos
 
-Declarações da política de nuvem individuais são diretrizes para tratar de riscos específicos identificados durante o processo de avaliação de riscos. Essas instruções oferecem um resumo conciso dos riscos e planos com os quais lidar. Cada definição de instrução deve incluir essas informações:
+As instruções individuais da política de nuvem são diretrizes para abordar os riscos específicos identificados durante o processo de avaliação de riscos. Essas instruções oferecem um resumo conciso dos riscos e planos com os quais lidar. Cada definição de instrução deve incluir essas informações:
 
 - **Risco para os negócios:** Um resumo do risco que essa política abordará.
 - **Declaração de política:** Uma explicação resumida clara dos requisitos de política.
 - **Opções de design:** Recomendações, especificações ou outras diretrizes acionáveis que as equipes de ti e os desenvolvedores podem usar ao implementar a política.
 
-As instruções de política de exemplo a seguir abordam riscos de negócios comuns relacionados a custos. Essas instruções são exemplos que você pode referenciar ao rascunhar instruções de política para atender às necessidades da sua organização. Esses exemplos não devem ser proexistentes e há potencialmente várias opções de política para lidar com cada risco identificado. Trabalhe junto com as equipes de ti e de negócios para identificar as melhores políticas para seu conjunto exclusivo de riscos.
+As instruções de política de exemplo a seguir abordam riscos de negócios comuns relacionados a custos. Essas instruções são exemplos que você pode referenciar ao rascunhar instruções de política para atender às necessidades da sua organização. Esses exemplos não devem ser prescritivas e há potencialmente várias opções de política para lidar com cada risco identificado. Trabalhe junto com as equipes de ti e de negócios para identificar as melhores políticas para seu conjunto exclusivo de riscos.
 
 ## <a name="future-proofing"></a>Durabilidade
 
@@ -77,7 +77,7 @@ As instruções de política de exemplo a seguir abordam riscos de negócios com
 
 ## <a name="next-steps"></a>Próximos passos
 
-Use as amostras mencionadas neste artigo como ponto de partida para desenvolver políticas que abordem os riscos empresariais específicos que alinham-se aos seus planos de adoção de nuvem.
+Use os exemplos mencionados neste artigo como um ponto de partida para desenvolver políticas que abordam os riscos de negócios específicos que se alinham aos seus planos de adoção de nuvem.
 
 Para começar a desenvolver suas próprias instruções de política personalizadas relacionadas ao Gerenciamento de Custos, realize o download do [Modelo de Gerenciamento de Custos](./template.md).
 

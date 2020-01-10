@@ -9,19 +9,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 59a18ab71befd7b4f60c4e0a97ecb6af28690d7f
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: b594283b4787cb9b369f018264098fd052ec638e
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752826"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781854"
 ---
 # <a name="rehost-an-on-premises-app-on-an-azure-vm-and-sql-database-managed-instance"></a>Hospedar novamente um aplicativo local em uma Instância Gerenciada do Banco de Dados SQL e VM do Azure
 
 Este artigo mostra como a empresa fictícia Contoso migra um aplicativo de front-end do Windows .NET de duas camadas executado em VMs do VMware para uma VM do Azure que usa o serviço Azure Site Recovery. Também mostra como a Contoso migra o banco de dados de aplicativo para Instância Gerenciada do Banco de Dados SQL do Azure.
-
-> [!NOTE]
-> Atualmente, a Instância Gerenciada do Banco de Dados SQL do Azure está em versão prévia.
 
 O aplicativo SmartHotel360 usado neste exemplo é fornecido como software livre. Se quiser usá-lo em seus próprios testes, você poderá baixá-lo do [GitHub](https://github.com/Microsoft/SmartHotel360).
 
@@ -109,7 +106,7 @@ A Contoso migrará as camadas da Web e de dados de seu aplicativo SmartHotel360 
 
 ### <a name="azure-services"></a>Serviços do Azure
 
-Serviço | Descrição | Custo
+Serviço | Description | Custo
 --- | --- | ---
 [Serviço de Migração de Banco de Dados do Azure](https://docs.microsoft.com/azure/dms/dms-overview) | O Serviço de Migração de Banco de Dados do Azure permite a migração perfeita de várias fontes de banco de dados para as plataformas de dados do Azure com tempo de inatividade mínimo. | Saiba mais sobre [regiões com suporte](https://docs.microsoft.com/azure/dms/dms-overview#regional-availability) e [preços do serviço de migração de banco de dados](https://azure.microsoft.com/pricing/details/database-migration).
 [Instância Gerenciada do Banco de Dados SQL do Azure](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance) | Instância Gerenciada é um serviço de banco de dados gerenciado que representa uma instância do SQL Server totalmente gerenciada na nuvem do Azure. Ela usa o mesmo código da última versão do Mecanismo de Banco de Dados do SQL Server e possui os recursos, melhorias de desempenho e patches de segurança mais recentes. | O uso de uma Instância Gerenciada do Banco de Dados SQL em execução no Azure incorre em encargos com base na capacidade. Saiba mais sobre [Preço de Instância Gerenciada](https://azure.microsoft.com/pricing/details/sql-database/managed).
@@ -123,7 +120,6 @@ A Contoso e outros usuários devem atender aos pré-requisitos a seguir para est
 
 Requisitos | Detalhes
 --- | ---
-**Inscrever-se na versão prévia da Instância Gerenciada** | É necessário estar inscrito na visualização pública limitada da Instância Gerenciada do Banco de Dados SQL. Adicionalmente, é necessária uma assinatura do Azure para [criar conta](https://portal.azure.com#create/Microsoft.SQLManagedInstance). A inscrição pode levar alguns dias para ser concluída, por isso, inscreva-se antes de começar a implantar esse cenário.
 **Assinatura do Azure** | Ao realizar a avaliação no primeiro artigo desta série, é necessário já ter criado a assinatura. Se você não tiver uma assinatura do Azure, crie uma [conta gratuita](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Se você criar uma conta gratuita, será o administrador da assinatura e poderá executar todas as ações.<br/><br/> Se você usar uma assinatura existente e não for o administrador da assinatura, será necessário trabalhar com o administrador para atribuir-lhe permissões de Proprietário ou de Colaborador.<br/><br/> Se permissões mais granulares forem necessárias, consulte [Use o controle de acesso baseado em função para gerenciar o acesso à recuperação do site](https://docs.microsoft.com/azure/site-recovery/site-recovery-role-based-linked-access-control).
 **Infraestrutura do Azure** | A Contoso configura a infraestrutura do Azure conforme descrito em [Infraestrutura do Azure para migração](./contoso-migration-infrastructure.md).
 **Site Recovery (locais)** | A instância do vCenter Server local deve estar executando a versão 5.5, 6.0 ou 6.5<br/><br/> Um host ESXi que executa a versão 5.5, 6.0 ou 6.5<br/><br/> Uma ou mais VMs do VMware em execução no host ESXi.<br/><br/> As VMs devem atender aos [requisitos do Azure](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#azure-vm-requirements).<br/><br/> Configuração de [rede](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#network) e de [armazenamento](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#storage) compatível.
@@ -376,7 +372,7 @@ Agora, os administradores da Contoso configuram o ambiente de origem. Para confi
 
 Para configurar o ambiente de origem, os administradores da Contoso fazem o seguinte:
 
-1. Eles baixam o modelo OVF do portal do Azure (**Preparar Infraestrutura**  >  **Fonte**  >  **Servidor de Configuração**).
+1. Eles baixam o modelo OVF do portal do Azure (**Preparar Infraestrutura** > **Fonte** > **Servidor de Configuração**).
 
     ![Adicionar um servidor de configuração](./media/contoso-migration-rehost-vm-sql-managed-instance/add-cs.png)
 
@@ -411,7 +407,7 @@ Para configurar o ambiente de origem, os administradores da Contoso fazem o segu
 
 Agora os administradores da Contoso configuram o ambiente de replicação de destino:
 
-1. Em **preparar infraestrutura** > **destino**, eles selecionam as configurações de destino.
+1. Em **Preparar infraestrutura** > **Destino**, selecionam as configurações de destino.
 2. O Site Recovery verifica se há uma conta de armazenamento e rede no destino especificado.
 
 ### <a name="create-a-replication-policy"></a>Criar uma política de replicação
@@ -422,7 +418,7 @@ Quando a origem e o destino estão configurados, os administradores da Contoso c
 2. Usam as configurações padrão:
     - **Limite de RPO:** Padrão de 60 minutos. Esse valor define a frequência em que são criados os pontos de recuperação. Um alerta será gerado se a replicação contínua exceder esse limite.
     - **Retenção do ponto de recuperação:** Padrão de 24 horas. Esse valor especifica qual é o tempo da janela de retenção para cada ponto de recuperação. VMs replicadas podem ser recuperadas para qualquer ponto em uma janela.
-    - **Frequência de instantâneo consistente com o aplicativo:** Padrão de 1 hora. Esse valor especifica a frequência com a qual os instantâneos consistentes com o aplicativo são criados.
+    - **Frequência de instantâneo consistente com o aplicativo:** Padrão de 1 hora. Esse valor especifica a frequência com que são criados instantâneos consistentes com o aplicativo.
 
     ![Política de replicação - Criar](./media/contoso-migration-rehost-vm-sql-managed-instance/replication-policy.png)
 
@@ -545,7 +541,7 @@ Antes de migrar o WEBVM, um failover de teste ajuda a garantir que tudo funcione
 
 Como etapa final do processo de migração, os administradores da Contoso atualizam a cadeia de conexão do aplicativo para apontar para o banco de dados migrado em execução na Instância Gerenciada da Contoso.
 
-1. No portal do Azure, eles encontram a cadeia de conexão selecionando **Configurações**  > **Cadeias de conexão**.
+1. No portal do Azure, eles encontram a cadeia de conexão selecionando **Configurações** > **Cadeias de conexão**.
 
     ![Cadeias de conexão](./media/contoso-migration-rehost-vm-sql-managed-instance/failover4.png)
 
@@ -561,7 +557,7 @@ Como etapa final do processo de migração, os administradores da Contoso atuali
 - Saiba como [criar um plano de recuperação](https://docs.microsoft.com/azure/site-recovery/site-recovery-create-recovery-plans).
 - Saiba como [fazer failover no Azure](https://docs.microsoft.com/azure/site-recovery/site-recovery-failover).
 
-## <a name="clean-up-after-migration"></a>Limpeza após a migração
+## <a name="clean-up-after-migration"></a>Limpar após a migração
 
 Com a migração completa, o aplicativo SmartHotel360 está sendo executado em uma VM do Azure e o banco de dados SmartHotel360 está disponível na Instância Gerenciada do Banco de Dados SQL do Azure.
 
@@ -569,7 +565,7 @@ Agora, a Contoso precisa realizar as seguintes tarefas de limpeza:
 
 - Remover a máquina WEBVM do inventário de vCenter Server.
 - Remover a máquina SQLVM do inventário de vCenter Server.
-- Remover WEBVM e SQLVM dos trabalhos de backup locais.
+- Remova o WEBVM e o SQLVM das tarefas de backup locais.
 - Atualizar a documentação interna para mostrar o novo local e endereço IP para WEBVM.
 - Remover SQLVM da documentação interna. Como alternativa, a Contoso pode revisar a documentação para mostrar SQLVM como excluído e não mais no inventário de VM.
 - Revisar todos os recursos que interagem com as VMs descomissionadas. Atualizar qualquer configuração ou documentação relevante para refletir a nova configuração.

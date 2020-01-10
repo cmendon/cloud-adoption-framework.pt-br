@@ -8,12 +8,12 @@ ms.date: 10/17/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 122f1e451c8b83de3d020c58426d8b897013aa8d
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: c8ed34cccdcd108d17554f103bcfb0ce864ccf55
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564900"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781667"
 ---
 # <a name="establish-an-operational-fitness-review"></a>Estabelecer uma análise de adequação operacional
 
@@ -37,13 +37,13 @@ Desde o início, muitas equipes na Microsoft estão envolvidas no desenvolviment
 
 Os processos que a Microsoft segue formam a base dos processos descritos neste artigo.
 
-## <a name="understand-the-problem"></a>Entender o problema
+## <a name="understand-the-problem"></a>Compreender o problema
 
 Como você aprendeu na [introdução](../getting-started/migrate.md), a primeira etapa da transformação digital de uma empresa é identificar os problemas de negócios a serem resolvidos adotando o Azure. A próxima etapa é determinar uma solução de alto nível para o problema, como migrar uma carga de trabalho para a nuvem ou adaptar um serviço local existente para incluir a funcionalidade de nuvem. Por fim, você cria e implementa a solução.
 
 Durante esse processo, o foco geralmente está nos recursos do serviço: o conjunto de requisitos _funcionais_ que você deseja que o serviço execute. Por exemplo, um serviço de entrega de produto requer recursos para determinar os locais de origem e de destino do produto, acompanhar o produto durante a entrega e enviar notificações para o cliente.
 
-Os requisitos não- _infuncionais_ , por outro lado, estão relacionados a propriedades como [disponibilidade](https://docs.microsoft.com/azure/architecture/checklist/availability), [resiliência](https://docs.microsoft.com/azure/architecture/resiliency)e [escalabilidade](https://docs.microsoft.com/azure/architecture/checklist/scalability)do serviço. Essas propriedades diferem dos requisitos funcionais porque não afetam diretamente a função final de qualquer recurso específico no serviço. No entanto, os requisitos não-infuncionais se relacionam com o desempenho e a continuidade do serviço.
+Os requisitos _não-infuncionais_, por outro lado, estão relacionados a propriedades como [disponibilidade](https://docs.microsoft.com/azure/architecture/checklist/availability), [resiliência](https://docs.microsoft.com/azure/architecture/resiliency)e [escalabilidade](https://docs.microsoft.com/azure/architecture/checklist/scalability) do serviço. Essas propriedades diferem dos requisitos funcionais porque não afetam diretamente a função final de qualquer recurso específico no serviço. No entanto, os requisitos não-infuncionais se relacionam com o desempenho e a continuidade do serviço.
 
 Você pode especificar alguns requisitos não-infuncionais em termos de um SLA (contrato de nível de serviço). Por exemplo, você pode expressar a continuidade de serviço como uma porcentagem de disponibilidade: "disponível 99,99% do tempo". Outros requisitos não-funcionais podem ser mais difíceis de definir e podem mudar conforme as necessidades de produção mudam. Por exemplo, um serviço orientado ao consumidor pode enfrentar requisitos de taxa de transferência inesperados após um surto de popularidade.
 
@@ -130,3 +130,5 @@ Adapte os detalhes do processo e da reunião para atender às suas necessidades 
     Este guia começa com uma definição do termo _resiliência_ e conceitos relacionados. Em seguida, ele descreve um processo de obtenção de resiliência usando uma abordagem estruturada durante o tempo de vida de um aplicativo, desde o design e a implementação até a implantação e as operações.
 - [Padrões de design de nuvem](https://docs.microsoft.com/azure/architecture/patterns).
     Esses padrões de design são úteis para equipes de engenharia ao criar aplicativos sobre os pilares de qualidade do software.
+- [Azure Advisor](https://docs.microsoft.com/en-us/azure/advisor/).
+    O Advisor fornece recomendações personalizadas com base no uso e nas configurações para ajudá-lo a otimizar seus recursos para alta disponibilidade, segurança, desempenho e custo. 

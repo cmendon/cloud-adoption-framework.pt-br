@@ -8,12 +8,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 30dd36841171ebc0e239a8e59f94d290cc5782c7
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: a3b773c4715b064413cb07d15d750b1204ddf90a
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73561762"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781497"
 ---
 # <a name="azure-fundamental-concepts"></a>Conceitos fundamentais do Azure
 
@@ -30,7 +30,7 @@ Aprenda conceitos e termos fundamentais que são usados no Azure e como os conce
 - **Azure Active Directory (AD do Azure):** O serviço de gerenciamento de identidade e acesso baseado em nuvem da Microsoft. O Azure AD permite que seus funcionários entrem e acessem recursos.
 - **Locatário do Azure AD:** Uma instância dedicada e confiável do Azure AD. Um locatário do Azure AD é automaticamente criado quando sua organização se inscreve pela primeira vez em uma assinatura de serviço de nuvem da Microsoft, como o Microsoft Azure, o Microsoft Intune ou o Office 365. Um locatário do Azure representa uma única organização.
 - **Diretório do AD do Azure:** Cada locatário do Azure AD tem um diretório único, dedicado e confiável. O diretório inclui os usuários, grupos e aplicativos do locatário. O diretório é usado para realizar as funções de gerenciamento de acesso e identidade para recursos de locatário. Um diretório pode ser associado a várias assinaturas, mas cada assinatura é associada a apenas um diretório.
-- **Grupos de recursos:** Contêineres lógicos que você usa para agrupar recursos relacionados em uma assinatura. Cada recurso pode existir apenas em um grupo de recursos.
+- **Grupos de recursos:** Contêineres lógicos que você usa para agrupar recursos relacionados em uma assinatura. Cada recurso pode existir apenas em um grupo de recursos. Os grupos de recursos permitem um agrupamento mais granular em uma assinatura. Normalmente usado para representar uma coleção de ativos necessários para dar suporte a uma carga de trabalho, aplicativo ou função específica em uma assinatura.
 - **Grupos de gerenciamento:** Contêineres lógicos que você usa para uma ou mais assinaturas. Você pode definir uma hierarquia de grupos de gerenciamento, assinaturas, grupos de recursos e recursos para gerenciar com eficiência o acesso, as políticas e a conformidade por meio de herança.
 - **Região:** Um conjunto de data centers do Azure que são implantados dentro de um perímetro definido por latência. Os datacenters são conectados por meio de uma rede dedicada, regional de baixa latência. A maioria dos recursos do Azure é executada em uma região específica do Azure.
 
@@ -93,7 +93,7 @@ Os recursos a seguir fornecem informações detalhadas sobre os conceitos discut
 - [Topologias para o Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-topologies)
 - [Assinaturas, licenças, contas e locatários para ofertas de nuvem da Microsoft](https://docs.microsoft.com/office365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings)
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Agora que você entendeu conceitos fundamentais do Azure, saiba como [dimensionar com várias assinaturas do Azure](../azure-best-practices/scaling-subscriptions.md).
 

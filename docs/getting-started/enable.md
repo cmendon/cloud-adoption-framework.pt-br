@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 layout: LandingPage
-ms.openlocfilehash: cb5ba007c18643efe3b0c83b8ff247844cbbe7b2
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: f24227cbbb06630810f7f6b48e7acdf842c171b3
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753299"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781582"
 ---
 # <a name="enable-success-during-a-cloud-adoption-journey"></a>Habilitar o sucesso durante uma jornada de adoção de nuvem
 
@@ -29,6 +29,8 @@ Durante esse Framework, a habilitação é um tema principal. A lista de verific
   - **Controle:** Alinhe as [disciplinas de governança](../govern/index.md) adequadas para aplicar consistentemente o gerenciamento de custos, a mitigação de riscos, a conformidade e as linhas de base de segurança em toda a adoção da nuvem.
   - **Gerenciar:** [Gerenciamento operacional](../manage/index.md) contínuo do portfólio de ti para minimizar as interrupções nos processos de negócios e garantir a estabilidade do portfólio de ti.
   - **Suporte:** Alinhe [as opções de parceria e suporte](../migrate/migration-considerations/assess/partnership-options.md)adequadas.
+
+Outro tema principal é a segurança, que é um atributo de qualidade crítica para uma adoção de nuvem bem-sucedida. A segurança é integrada em toda essa estrutura para fornecer diretrizes integradas sobre a manutenção de confidencialidade, integridade e garantias de disponibilidade para suas cargas de trabalho de nuvem. 
 
 ## <a name="additional-tools"></a>Ferramentas adicionais
 
