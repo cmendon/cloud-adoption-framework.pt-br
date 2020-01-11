@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 3c87bfbd8fe920d0469da8b3e60da59da07158ed
-ms.sourcegitcommit: 0b6939f65a1e5653149301e9aa14db9a1f67825f
+ms.openlocfilehash: 48ceb3581f72f6fed72360ecf4e30596b4d2eb72
+ms.sourcegitcommit: 390b374dc7af4c4b85ef9fcb381c7c1bc6076ac7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74557021"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75868100"
 ---
 # <a name="refactor-a-team-foundation-server-deployment-to-azure-devops-services"></a>Refatore uma implantação do Team Foundation Server para o Azure DevOps Services
 
@@ -102,8 +102,8 @@ Aqui está o que a Contoso precisa para executar esse cenário.
 
 Os administradores da Contoso atualizam o servidor do TFS para o TFS 2018 Atualização 2. Antes de começar, eles:
 
-- Baixam o [TFS 2018 Atualização 2](https://visualstudio.microsoft.com/downloads)
-- Verificam os [requisitos de hardware](/azure/devops/server/requirements) e leem todas as [notas de versão](https://docs.microsoft.com/visualstudio/releasenotes/tfs2018-relnotes) e as [armadilhas da atualização](/azure/devops/server/upgrade/get-started#before-you-upgrade-to-tfs-2018).
+- Eles baixam a [atualização 2 do TFS 2018](https://visualstudio.microsoft.com/downloads).
+- Verificam os [requisitos de hardware](https://docs.microsoft.com/azure/devops/server/requirements) e leem todas as [notas de versão](https://docs.microsoft.com/visualstudio/releasenotes/tfs2018-relnotes) e as [armadilhas da atualização](https://docs.microsoft.com/azure/devops/server/upgrade/get-started#before-you-upgrade-to-tfs-2018).
 
 Eles atualizam da seguinte maneira:
 
@@ -132,7 +132,7 @@ Eles atualizam da seguinte maneira:
 
 **Precisa de mais ajuda?**
 
-Saiba mais sobre a [atualização do TFS](/azure/devops/server/upgrade/get-started).
+Saiba mais sobre a [atualização do TFS](https://docs.microsoft.com/azure/devops/server/upgrade/get-started).
 
 ## <a name="step-3-validate-the-tfs-collection"></a>Etapa 3: Validar a coleção do TFS
 
@@ -266,7 +266,7 @@ Antes de iniciar, os administradores da Contoso realizam um backup do SQL Server
 A Contoso cria um backup (DACPAC) para importar no Azure DevOps Services.
 
 - O SqlPackage.exe no SQL Server Data Tools é usado para criar o DACPAC. Há várias versões do SqlPackage.exe instaladas com o SQL Server Data Tools, localizadas em pastas com nomes como 120, 130 e 140. É importante usar a versão correta para preparar o DACPAC.
-- Importações do TFS 2018 precisam usar o SqlPackage.exe da pasta 140 ou superior. Para CONTOSOTFS, esse arquivo está localizado na pasta: **C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Extensions\Microsoft\SQLDB\DAC\140**.
+- Importações do TFS 2018 precisam usar o SqlPackage.exe da pasta 140 ou superior. Para CONTOSOTFS, esse arquivo está localizado na pasta: ' C:\Arquivos de programas (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Extensions\Microsoft\SQLDB\DAC\140
 
 Os administradores da Contoso geram o DACPAC da seguinte maneira:
 
@@ -466,7 +466,7 @@ Com a migração concluída, a Contoso deseja mudar do TFVC para o Git para gere
 
 [Saiba mais](https://docs.microsoft.com/azure/devops/repos/git/import-from-TFVC?view=vsts) sobre a importação do TFVC.
 
-## <a name="clean-up-after-migration"></a>Limpeza após a migração
+## <a name="clean-up-after-migration"></a>Limpar após a migração
 
 Com a migração completa, a Contoso precisa fazer o seguinte:
 

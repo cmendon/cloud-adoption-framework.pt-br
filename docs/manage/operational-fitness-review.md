@@ -8,12 +8,12 @@ ms.date: 10/17/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: c8ed34cccdcd108d17554f103bcfb0ce864ccf55
-ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
+ms.openlocfilehash: 9607bf217d8638f2337fa337a4cb57c7ba919608
+ms.sourcegitcommit: 390b374dc7af4c4b85ef9fcb381c7c1bc6076ac7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75781667"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75868059"
 ---
 # <a name="establish-an-operational-fitness-review"></a>Estabelecer uma análise de adequação operacional
 
@@ -130,5 +130,5 @@ Adapte os detalhes do processo e da reunião para atender às suas necessidades 
     Este guia começa com uma definição do termo _resiliência_ e conceitos relacionados. Em seguida, ele descreve um processo de obtenção de resiliência usando uma abordagem estruturada durante o tempo de vida de um aplicativo, desde o design e a implementação até a implantação e as operações.
 - [Padrões de design de nuvem](https://docs.microsoft.com/azure/architecture/patterns).
     Esses padrões de design são úteis para equipes de engenharia ao criar aplicativos sobre os pilares de qualidade do software.
-- [Azure Advisor](https://docs.microsoft.com/en-us/azure/advisor/).
-    O Advisor fornece recomendações personalizadas com base no uso e nas configurações para ajudá-lo a otimizar seus recursos para alta disponibilidade, segurança, desempenho e custo. 
+- [Azure Advisor](https://docs.microsoft.com/azure/advisor).
+    O Advisor fornece recomendações personalizadas com base no uso e nas configurações para ajudá-lo a otimizar seus recursos para alta disponibilidade, segurança, desempenho e custo.

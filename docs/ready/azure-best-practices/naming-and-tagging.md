@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness
-ms.openlocfilehash: 6268fc8a272cd173b95707d19eee5e784a2a0c25
-ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
+ms.openlocfilehash: 657f0fd43b65b0d1122ae275e41370c9ddc5bbd0
+ms.sourcegitcommit: 390b374dc7af4c4b85ef9fcb381c7c1bc6076ac7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75781548"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75868087"
 ---
 # <a name="ready-recommended-naming-and-tagging-conventions"></a>Pronto: convenções de nomenclatura e marcação recomendadas
 
@@ -52,7 +52,7 @@ Por exemplo, uma rede virtual tem um escopo de grupo de recursos, o que signific
 
 Alguns nomes de recursos, como serviços PaaS com pontos de extremidade públicos ou rótulos DNS de máquina virtual, têm escopos globais, o que significa que eles devem ser exclusivos em toda a plataforma do Azure.
 
-Nomes de recursos têm limites de comprimento. O balanceamento do contexto inserido em um nome com seu escopo e comprimento é importante quando você desenvolve suas convenções de nomenclatura. Para saber mais sobre regras de nomenclatura para caracteres permitidos, escopos e comprimentos de nome para tipos de recursos, confira [Convenções de nomenclatura para recursos do Azure](/azure/architecture/best-practices/resource-naming).
+Nomes de recursos têm limites de comprimento. O balanceamento do contexto inserido em um nome com seu escopo e comprimento é importante quando você desenvolve suas convenções de nomenclatura. Para saber mais sobre regras de nomenclatura para caracteres permitidos, escopos e comprimentos de nome para tipos de recursos, confira [Convenções de nomenclatura para recursos do Azure](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming).
 
 #### <a name="recommended-naming-components"></a>Componentes de nomenclatura recomendados
 
