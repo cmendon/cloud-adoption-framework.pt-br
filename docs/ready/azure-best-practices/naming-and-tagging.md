@@ -9,25 +9,25 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness
-ms.openlocfilehash: 657f0fd43b65b0d1122ae275e41370c9ddc5bbd0
-ms.sourcegitcommit: 390b374dc7af4c4b85ef9fcb381c7c1bc6076ac7
+ms.openlocfilehash: 3a99398d5ae180efe9dca4cadf0554d92c6380b2
+ms.sourcegitcommit: 91ece6ba373a4d0d573cca7e616f0b67337b0d1b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75868087"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76023352"
 ---
-# <a name="ready-recommended-naming-and-tagging-conventions"></a>Pronto: convenções de nomenclatura e marcação recomendadas
+# <a name="recommended-naming-and-tagging-conventions"></a>Convenções de nomenclatura e de marcação recomendadas
 
-Organizar ativos baseados em nuvem de maneiras que auxiliem o gerenciamento operacional e deem suporte aos requisitos de contabilidade é um desafio comum que enfrenta grandes esforços de adoção de nuvem. Aplicando convenções de nomenclatura e de marcação de metadados bem definidas aos recursos hospedados em nuvem, a equipe de TI pode encontrar e gerenciar recursos com rapidez. Nomes e marcas bem definidos também ajudam a alinhar os custos de uso da nuvem com as equipes empresariais usando os mecanismos de contabilidade de estorno e de showback.
+Organizar ativos baseados em nuvem de maneiras que auxiliam o gerenciamento operacional e os requisitos de contabilidade de suporte é um desafio comum em grandes esforços de adoção de nuvem. Aplicando convenções de nomenclatura e de marcação de metadados bem definidas aos recursos hospedados em nuvem, a equipe de TI pode encontrar e gerenciar recursos com rapidez. Nomes e marcas bem definidos também ajudam a alinhar os custos de uso da nuvem com as equipes empresariais usando os mecanismos de contabilidade de estorno e de showback.
 
-As regras de [nomenclatura do centro de arquitetura do Azure e as restrições das diretrizes de recursos do Azure](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming) fornecem recomendações gerais e limitações da plataforma. A discussão a seguir estende essas diretrizes genéricas com recomendações mais detalhadas com o objetivo específico de dar suporte a esforços empresariais de adoção da nuvem.
+As diretrizes de Centro de Arquitetura do Azure para a [nomenclatura de regras e restrições para recursos do Azure](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming) fornecem recomendações gerais e limitações de plataforma. A discussão a seguir estende essa orientação com recomendações mais detalhadas voltadas especificamente para o suporte a esforços de adoção de nuvem empresarial.
 
-Pode ser difícil alterar nomes de recursos. Torne uma prioridade para suas equipes de adoção de nuvem estabelecer uma convenção de nomenclatura abrangente antes de iniciar qualquer grande implantação de nuvem.
+Pode ser difícil alterar nomes de recursos. Priorize o estabelecimento de uma Convenção de nomenclatura abrangente antes de começar qualquer implantação em nuvem de grande porte.
 
 > [!NOTE]
-> Cada negócio tem requisitos organizacionais e de gerenciamento diferentes. As recomendações deste artigo servem como ponto de partida para discussões em suas equipes de adoção de nuvem.
+> Cada negócio tem requisitos organizacionais e de gerenciamento diferentes. Essas recomendações fornecem um ponto de partida para discussões em suas equipes de adoção de nuvem.
 >
-> À medida que essas discussões progredirem, use o seguinte modelo para capturar as decisões de nomenclatura e de marcação que você tomar ao alinhar essas recomendações às suas necessidades empresariais específicas.
+> Conforme essas discussões continuarem, use o modelo a seguir para capturar as decisões de nomenclatura e marcação que você faz ao alinhar essas recomendações às suas necessidades de negócios específicas.
 >
 > Baixe o [modelo de acompanhamento de convenção de nomenclatura e de marcação](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/CAF%20Readiness%20Naming%20and%20Tagging%20tracking%20template.xlsx).
 
@@ -35,7 +35,7 @@ Pode ser difícil alterar nomes de recursos. Torne uma prioridade para suas equi
 
 Uma estratégia de nomenclatura e de marcação inclui detalhes empresariais e operacionais como componentes de nomes de recursos e marcas de metadados:
 
-- O lado relacionado aos negócios desta estratégia verifica se os nomes de recursos e as marcas incluem as informações organizacionais necessárias para identificar as equipes. Use um recurso junto com os proprietários empresariais responsáveis por custos de recursos.
+- O lado comercial dessa estratégia garante que nomes e marcas de recursos incluam as informações organizacionais necessárias para identificar as equipes. Use um recurso junto com os proprietários empresariais responsáveis por custos de recursos.
 - O lado operacional verifica se os nomes e marcas incluem informações que as equipes de TI usam para identificar a carga de trabalho, o aplicativo, o ambiente, a severidade e outras informações úteis para gerenciar recursos.
 
 ### <a name="resource-naming"></a>Nomenclatura de recursos
