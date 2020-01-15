@@ -1,19 +1,19 @@
 ---
-title: Caminho de preparação de habilidades
+title: Caminho de preparação de habilidades durante o planejamento
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Visão geral do caminho de preparação de habilidades
+description: Visão geral do caminho de preparação de habilidades durante a fase planejar da migração.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: ce3949a6d778ed61eea74fbd8a1aa955a477d3d8
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 62152049578d1bd1f433cc4d2070504363cffef1
+ms.sourcegitcommit: 2efd4715294189bcea7aada8a1cbbc85c72f6264
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73561647"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75943452"
 ---
 # <a name="skills-readiness-path-during-the-plan-phase-of-a-migration-journey"></a>Caminho de preparação de habilidades durante a fase de plano de uma jornada de migração
 
@@ -87,11 +87,11 @@ A Microsoft e os parceiros oferecem várias opções para ajudar todos os públi
 
 ## <a name="microsoft-learn"></a>Microsoft Learn
 
-O Microsoft Learn é uma nova abordagem para o aprendizado. A preparação para as novas habilidades e responsabilidades que acompanham a adoção da nuvem não é fácil. O Microsoft Learn oferece uma abordagem mais recompensadora para o aprendizado prático que ajuda você a atingir suas metas mais rapidamente. Ganhe pontos, níveis e alcance mais!
+O Microsoft Learn é uma nova abordagem para o aprendizado. A preparação para as novas habilidades e responsabilidades que acompanham a adoção de nuvem não é fácil. O Microsoft Learn oferece uma abordagem mais recompensadora para o aprendizado prático que ajuda você a atingir suas metas mais rapidamente. Ganhe pontos, níveis e alcance mais!
 
 Aqui está um exemplo de roteiros de aprendizado personalizados que se alinham com a estratégia parte da estrutura de adoção de nuvem.
 
-[Aprenda o valor comercial de Microsoft Azure](https://docs.microsoft.com/learn/paths/learn-business-value-of-azure): essa experiência de aprendizado levará você em uma jornada que começará mostrando como a transformação digital e o poder da nuvem podem transformar seus negócios. Abordaremos como Microsoft Azure serviços de nuvem podem capacitar sua organização em uma plataforma de nuvem confiável. Finalmente, vamos concluir ilustrando como tornar essa jornada real para sua organização.
+[Aprenda o valor comercial de Microsoft Azure](https://docs.microsoft.com/learn/paths/learn-business-value-of-azure): essa experiência de aprendizado levará você em uma jornada que começará mostrando como a transformação digital e o poder da nuvem podem transformar seus negócios. Abordaremos como os serviços de nuvem do Microsoft Azure podem impulsionar sua organização em uma plataforma de nuvem confiável. Por fim, concluiremos ilustrando como tornar essa jornada real para a sua organização.
 
 ## <a name="learn-more"></a>Saiba mais
 
