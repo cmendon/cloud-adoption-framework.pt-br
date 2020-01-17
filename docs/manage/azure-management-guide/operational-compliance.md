@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: b5a94ab41bff26371621acc5e62ae19d9fd02e5c
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 9109a51a85627f3c8d0cee8b72baa0936d56c98e
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565480"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781803"
 ---
 # <a name="operational-compliance-in-azure"></a>Conformidade operacional no Azure
 
@@ -32,6 +32,7 @@ Para qualquer ambiente de nível empresarial, esta tabela descreve o mínimo sug
 |Gerenciamento de patch|Gerenciamento de atualizações|Gerenciamento e agendamento de atualizações|
 |Aplicação de políticas|Azure Policy|Imposição de política para garantir a conformidade do ambiente e do convidado|
 |Configuração do ambiente|Azure Blueprints|Conformidade automatizada para os serviços principais|
+|Configuração de recurso|Desired State Configuration|Configuração automatizada no SO convidado e alguns aspectos do ambiente|
 
 ::: zone target="docs"
 
@@ -162,7 +163,7 @@ Para criar um blueprint:
 1. Na caixa **Nome do blueprint**, insira o nome do blueprint.
 1. Selecione **Local de definição** e escolha o local apropriado.
 1. Selecione **Avançar: Artefatos >>** e revise os artefatos incluídos no blueprint.
-1. Selecione **Salvar rascunho**.
+1. Selecione **Salvar Rascunho**.
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/GetStarted]" submitText="Create a blueprint" :::
 

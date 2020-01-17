@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 84efac562647d88235dbcecbb2078e632c1c0341
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 4969681cbc6fbb71da70f3ced09b5e4616c773b5
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565471"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781769"
 ---
 # <a name="inventory-and-visibility-in-azure"></a>Inventário e visibilidade no Azure
 
@@ -33,7 +33,7 @@ Para qualquer ambiente de nível empresarial, a tabela a seguir descreve o míni
 |Centralização de log|Log Analytics|Log central para fins de visibilidade|
 |Centralização do monitoramento|Azure Monitor|Monitoramento central de tendências e dados operacionais|
 |Inventário de máquinas virtuais e controle de alterações|Controle de Alterações e Inventário do Azure|Inventariar VMs e monitorar alterações para o nível do SO convidado|
-|Integridade do serviço|Log de Atividades do Azure|Monitoramento de alterações no nível da assinatura|
+|Monitoramento de assinatura|Log de Atividades do Azure|Monitoramento de alterações no nível da assinatura|
 |Monitoramento de SO convidado|Azure Monitor para VMs|Monitoramento de alterações e do desempenho de VMs|
 |Monitoramento de rede|Observador de Rede do Azure|Monitoramento de alterações e desempenho de rede|
 |Monitoramento de DNS|Análise de DNS|Segurança, desempenho e operações do DNS|
