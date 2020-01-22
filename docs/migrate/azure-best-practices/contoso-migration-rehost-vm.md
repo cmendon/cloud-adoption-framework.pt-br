@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 3de31e419ea701f8e7e7091d14db1884a4b641d2
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: f38503b0cc998721726845fc1669f40ea8c845e4
+ms.sourcegitcommit: b166fe1621fe7e886616009e56b76873b8cce83c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566472"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76520184"
 ---
 # <a name="rehost-an-on-premises-app-on-azure-vms"></a>Rehospedar um aplicativo local em VMs do Azure
 
@@ -56,7 +56,7 @@ Depois de fixar metas e requisitos, a Contoso cria e examina uma solução de im
 - As VMs do aplicativo serão migradas para a região principal do Azure (Leste dos EUA 2) e colocadas na rede de produção (VNET-PROD-EUS2).
 - A VM do front-end da Web residirá na sub-rede do front-end (PROD-FE-EUS2), na rede de produção.
 - A VM do banco de dados residirá na sub-rede do banco de dados (PROD-DB-EUS2) na rede de produção.
-- As VMs locais no datacenter Contoso, serão descomissionadas após a migração.
+- As VMs locais no datacenter da Contoso serão descomissionadas após a migração.
 
 ![Arquitetura de cenário](./media/contoso-migration-rehost-vm/architecture.png)
 
@@ -129,7 +129,7 @@ Aqui estão os componentes do Azure que a Contoso precisa para migrar as máquin
 - Uma rede virtual na qual as VMs do Azure serão localizadas quando forem criadas durante o failover.
 - A ferramenta de Migração de Servidor das Migrações para Azure provisionada.
 
-Eles configuram isso tudo da seguinte maneira:
+Eles configuram estes da seguinte forma:
 
 1. Configurar uma rede – a Contoso já configurou uma rede que pode ser usada para a Migração de Servidor das Migrações para Azure quando [implantou a infraestrutura do Azure](./contoso-migration-infrastructure.md)
 
@@ -154,12 +154,12 @@ Após o failover, a Contoso deseja se conectar a máquinas virtuais do Azure. Pa
 
     - Habilitam o RDP na VM local antes do failover.
     - Assegure-se de que as regras TCP e UDP sejam incluídas para o perfil **Público**.
-    - Verifique se o RDP é permitido no **Firewall do Windows**  >  **Aplicativos permitidos** para todos os perfis.
+    - Verifique se o RDP é permitido no **Firewall do Windows** > **Aplicativos permitidos** para todos os perfis.
 
 2. Para acesso por VPN site-to-site, eles:
 
     - Ative o RDP na máquina no local.
-    - Permitir o RDP no **Firewall do Windows**  ->  **Aplicativos e recursos permitidos**, para **Domínio e redes particulares**.
+    - Permitir o RDP no **Firewall do Windows** -> **Aplicativos e recursos permitidos**, para **Domínio e redes particulares**.
     - Defina a política de SAN do sistema operacional na VM local para **OnlineAll**.
 
 Além disso, quando eles executam um failover, precisam verificar o seguinte:
@@ -171,7 +171,7 @@ Além disso, quando eles executam um failover, precisam verificar o seguinte:
 
 - [Saiba mais](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-vm#prepare-vms-for-migration) sobre a preparação de VMs para migração
 
-## <a name="step-3-replicate-the-on-premises-vms"></a>Etapa 3: Replicar VMs locais
+## <a name="step-3-replicate-the-on-premises-vms"></a>Etapa 3: Replicar máquinas virtuais no local
 
 Antes que os administradores da Contoso possam executar uma migração para o Azure, eles precisam configurar e habilitar a replicação.
 
@@ -203,7 +203,7 @@ Com a descoberta concluída, é possível começar a replicação de VMs do VMwa
     - Selecione **Não** se não desejar aplicar o Benefício Híbrido do Azure. Em seguida, clique em **Próximo**.
     - Selecione **Sim** se você tiver computadores Windows Server cobertos com assinaturas ativas do Software Assurance ou do Windows Server e quiser aplicar o benefício aos computadores que estão sendo migrados. Em seguida, clique em **Próximo**.
 
-8. Em **Computação**, examine o nome da VM, o tamanho, o tipo de disco do sistema operacional e o conjunto de disponibilidade. As VMs devem estar em conformidade com os [requisitos do Azure](https://docs.microsoft.com/azure/migrate/migrate-support-matrix-vmware#agentless-migration-vmware-vm-requirements).
+8. Em **Computação**, examine o nome da VM, o tamanho, o tipo de disco do sistema operacional e o conjunto de disponibilidade. As VMs devem estar em conformidade com os [requisitos do Azure](https://docs.microsoft.com/azure/migrate/migrate-support-matrix-vmware#vmware-requirements).
 
     - **Tamanho da VM:** Se você estiver usando recomendações de avaliação, a lista suspensa tamanho da VM conterá o tamanho recomendado. Caso contrário, as Migrações para Azure escolherão um tamanho com base na correspondência mais próxima na assinatura do Azure. Como alternativa, escolha um tamanho manual em **Tamanho da VM do Azure**.
     - **Disco do so:** Especifique o disco do sistema operacional (inicialização) para a VM. O disco do sistema operacional é o disco que tem o carregador de inicialização e o instalador do sistema operacional.
@@ -259,16 +259,16 @@ Agora os administradores da Contoso podem executar um failover completo para con
 - [Saiba mais](https://docs.microsoft.com/azure/migrate/tutorial-migrate-vmware#run-a-test-migration) sobre como executar failovers de teste.
 - [Saiba mais](https://docs.microsoft.com/azure/migrate/tutorial-migrate-vmware#migrate-vms) sobre a migração de VMs para o Azure.
 
-## <a name="clean-up-after-migration"></a>Limpeza após a migração
+## <a name="clean-up-after-migration"></a>Limpar após a migração
 
 Com a migração concluída, as camadas de aplicativos do SmartHotel360 agora estão em execução nas VMs do Azure.
 
-Agora, a Contoso precisa concluir estas etapas de limpeza:
+Agora, a contoso precisa concluir estas etapas de limpeza:
 
 - Após a conclusão da migração, pare a replicação.
 - Remova a máquina WEBVM do inventário do vCenter.
 - Remova a máquina do SQLVM do inventário do vCenter.
-- Remover WEBVM e SQLVM dos trabalhos de backup locais.
+- Remova o WEBVM e o SQLVM das tarefas de backup locais.
 - Atualizar a documentação interna para mostrar o novo local e endereços IP para as máquinas virtuais.
 - Examinar todos os recursos que interagem com as máquinas virtuais e atualizar configurações relevantes ou documentação para refletir a nova configuração.
 

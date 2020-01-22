@@ -8,12 +8,12 @@ ms.date: 09/05/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 8a632f9632c1ad5bf6abbfeb60096e2cfadce141
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: b9bc3a5c2b2bf62c49726a29cedbac81d1d1a96e
+ms.sourcegitcommit: b166fe1621fe7e886616009e56b76873b8cce83c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73240146"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76520167"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>Controlar os custos em unidades de negócios, ambientes ou projetos
 
@@ -27,7 +27,7 @@ O controle de custo, de forma bastante semelhante à governança e outras constr
 
 Os ativos (também conhecidos como recursos) incluem todas as máquinas virtuais, fontes de dados e aplicativos implantados na nuvem. O Azure fornece vários mecanismos para classificar e organizar ativos. [O dimensionamento com várias assinaturas do Azure](../azure-best-practices/scaling-subscriptions.md) detalha opções para organizar recursos com base em diversos critérios a fim de estabelecer um ambiente bem gerenciado. Este artigo se concentra na aplicação dos conceitos fundamentais do Azure para proporcionar visibilidade de custo na nuvem.
 
-### <a name="classification"></a>Classificação
+### <a name="classification"></a>classificação
 
 A *marcação* é uma maneira fácil de classificar ativos. A marcação associa metadados a um ativo. Esses metadados podem ser usados para classificar o ativo com base em diversos pontos de dados. Quando as marcações são usadas para classificar ativos como parte de um esforço de gerenciamento de custos, as empresas geralmente precisam das seguintes marcações: unidade de negócios, departamento, código de cobrança, geografia, ambiente, projeto e carga de trabalho ou "categorização de aplicativo". O Gerenciamento de Custos do Azure pode usar essas marcações para criar diferentes exibições de dados de custo.
 
@@ -126,7 +126,7 @@ Para obter mais informações sobre como começar a usar o Gerenciamento de Cust
 
 ### <a name="use-azure-cost-management-to-govern-aws-costs"></a>Usar o Gerenciamento de Custos do Azure para controlar os custos do AWS
 
-- [Integração dos relatórios de Custos e Uso do AWS](https://docs.microsoft.com/azure/cost-management/aws-integration-set-up-configure)
+- [Integração dos relatórios de Custos e Uso do AWS](https://docs.microsoft.com/azure/cost-management-billing/costs/aws-integration-set-up-configure)
 - [Gerenciar custos do AWS](https://docs.microsoft.com/azure/cost-management/aws-integration-manage)
 
 ### <a name="establish-access-roles-and-scope"></a>Estabelecer acesso, funções e escopo

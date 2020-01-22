@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: c1d7549a820b8f830fc577ce82ebc4d2f1dbfcb2
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 078749474b13074d9196a80c10768da468e423bc
+ms.sourcegitcommit: b166fe1621fe7e886616009e56b76873b8cce83c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566539"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76520201"
 ---
 # <a name="rehost-an-on-premises-linux-app-to-azure-vms"></a>Hospede novamente um aplicativo Linux local para VMs do Azure
 
@@ -57,7 +57,7 @@ Depois de fixar metas e requisitos, a Contoso cria e examina uma solução de im
 - As máquinas virtuais serão migradas para a região principal (Leste dos EUA 2) e colocadas na rede de produção (VNET-PROD-EUS2):
   - A VM Web reside na sub-rede de front-end (PROD-FE-EUS2).
   - O banco de dados de máquina virtual residem na sub-rede de banco de dados (PROD-DB-EUS2).
-- As VMs locais no datacenter Contoso, serão descomissionadas após a migração.
+- As VMs locais no datacenter da Contoso serão descomissionadas após a migração.
 
 ![Arquitetura de cenário](./media/contoso-migration-rehost-linux-vm/architecture.png)
 
@@ -70,7 +70,7 @@ A Contoso avalia o design proposto reunindo uma lista de prós e contras.
 **Consideração** | **Detalhes**
 --- | ---
 **Prós** | As duas VMs do aplicativo serão movidas para o Azure sem alterações, simplificando a migração.<br/><br/> Como a Contoso está usando uma abordagem de comparação e de deslocamento para ambas as VMs de aplicativo, nenhuma ferramenta especial de configuração ou migração é necessária para o banco de dados de aplicativo.<br/><br/> A Contoso manterá o controle total sobre as VMs do aplicativo no Azure. <br/><br/> As VMs do aplicativo executam o Ubuntu 16.04-TLS, que é uma distribuição endossada do Linux. [Saiba mais](https://docs.microsoft.com/azure/virtual-machines/linux/endorsed-distros).
-**Contras** | A camada da Web e de dados do aplicativo continuará sendo um ponto único de failover. <br/><br/> A Contoso precisará continuar dando suporte ao aplicativo como VMs do Azure, em vez de mover para um serviço gerenciado, como o Serviço de Aplicativo do Azure e o Banco de Dados do Azure para MySQL.<br/><br/> A Contoso está ciente de que, ao manter as coisas simples com uma migração de VM de comparação de precisão, elas não estão aproveitando totalmente os recursos fornecidos pelo [banco de dados do Azure para MySQL](https://docs.microsoft.com/azure/mysql/overview) (alta disponibilidade interna, desempenho previsível, dimensionamento simples, automático backups e segurança interna).
+**Contras** | A camada da Web e de dados do aplicativo continuará sendo um ponto único de failover. <br/><br/> A Contoso precisará continuar dando suporte ao aplicativo como VMs do Azure, em vez de mover para um serviço gerenciado, como o Serviço de Aplicativo do Azure e o Banco de Dados do Azure para MySQL.<br/><br/> A Contoso está ciente de que, ao manter as coisas simples com uma migração de VM de mudança e precisão, elas não aproveitam totalmente os recursos fornecidos pelo [banco de dados do Azure para MySQL](https://docs.microsoft.com/azure/mysql/overview) (alta disponibilidade interna, desempenho previsível, dimensionamento simples, backups automáticos e segurança interna).
 
 <!-- markdownlint-enable MD033 -->
 
@@ -124,7 +124,7 @@ Aqui estão os componentes do Azure que a Contoso precisa para migrar as máquin
 - Uma rede virtual na qual as VMs do Azure serão localizadas quando forem criadas durante o failover.
 - A ferramenta de Migração de Servidor das Migrações para Azure provisionada.
 
-Eles configuram isso tudo da seguinte maneira:
+Eles configuram estes da seguinte forma:
 
 1. **Configurar uma rede:** A contoso já configurou uma rede que pode ser para migração de servidor de migrações para Azure quando [implantou a infraestrutura do Azure](./contoso-migration-infrastructure.md)
 
@@ -145,7 +145,7 @@ Eles configuram isso tudo da seguinte maneira:
 
 Após o failover no Azure, a Contoso deseja ser capaz de se conectar às VMs replicadas no Azure. Para fazer isso, os administradores da Contoso precisam executar algumas ações:
 
-- Para acessar as VMs do Azure pela Internet, eles habilitam SSH na VM Linux local antes da migração. Para Ubuntu isso pode ser feito usando o seguinte comando: **apt Sudo get ssh -y instalar**.
+- Para acessar as VMs do Azure pela Internet, eles habilitam SSH na VM Linux local antes da migração. No cado do Ubuntu, isso pode ser feito usando o seguinte comando: **Sudo apt-get ssh install -y**.
 - Depois de executar a migração (failover), eles devem verificar os **Diagnósticos de inicialização** para exibir uma captura de tela da VM.
 - Se isso não funcionar, será necessário verificar se a VM está em execução e revisar estas [dicas de solução de problemas](https://social.technet.microsoft.com/wiki/contents/articles/31666.troubleshooting-remote-desktop-connection-after-failover-using-asr.aspx).
 
@@ -153,7 +153,7 @@ Após o failover no Azure, a Contoso deseja ser capaz de se conectar às VMs rep
 
 - [Saiba mais](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-linux-vm#prepare-vms-for-migration) sobre a preparação de VMs para migração
 
-## <a name="step-3-replicate-the-on-premises-vms"></a>Etapa 3: Replicar VMs locais
+## <a name="step-3-replicate-the-on-premises-vms"></a>Etapa 3: Replicar máquinas virtuais no local
 
 Antes que os administradores da Contoso possam executar uma migração para o Azure, eles precisam configurar e habilitar a replicação.
 
@@ -185,7 +185,7 @@ Com a descoberta concluída, é possível começar a replicação de VMs do VMwa
     - Selecione **Não** se não desejar aplicar o Benefício Híbrido do Azure. Em seguida, clique em **Próximo**.
     - Selecione **Sim** se você tiver computadores Windows Server cobertos com assinaturas ativas do Software Assurance ou do Windows Server e quiser aplicar o benefício aos computadores que estão sendo migrados. Em seguida, clique em **Próximo**.
 
-8. Em **Computação**, examine o nome da VM, o tamanho, o tipo de disco do sistema operacional e o conjunto de disponibilidade. As VMs devem estar em conformidade com os [requisitos do Azure](https://docs.microsoft.com/azure/migrate/migrate-support-matrix-vmware#agentless-migration-vmware-vm-requirements).
+8. Em **Computação**, examine o nome da VM, o tamanho, o tipo de disco do sistema operacional e o conjunto de disponibilidade. As VMs devem estar em conformidade com os [requisitos do Azure](https://docs.microsoft.com/azure/migrate/migrate-support-matrix-vmware#vmware-requirements).
 
     - **Tamanho da VM:** Se você estiver usando recomendações de avaliação, a lista suspensa tamanho da VM conterá o tamanho recomendado. Caso contrário, as Migrações para Azure escolherão um tamanho com base na correspondência mais próxima na assinatura do Azure. Como alternativa, escolha um tamanho manual em **Tamanho da VM do Azure**.
     - **Disco do so:** Especifique o disco do sistema operacional (inicialização) para a VM. O disco do sistema operacional é o disco que tem o carregador de inicialização e o instalador do sistema operacional.
@@ -246,7 +246,7 @@ Como a etapa final no processo de migração, os administradores da Contoso atua
 
     ![Conectar ao banco de dados](./media/contoso-migration-rehost-linux-vm/db-connect2.png)
 
-2. Eles precisam para se certificar de que o **OSTICKETWEB** VM pode se comunicar com o **OSTICKETMYSQL** VM. Atualmente, a configuração é codificado com o endereço IP local 172.16.0.43.
+2. Eles precisam para se certificar de que o **OSTICKETWEB** VM pode se comunicar com o **OSTICKETMYSQL** VM. Atualmente, a configuração está codificada com o endereço IP local 172.16.0.43.
 
     **Antes da atualização:**
 
@@ -271,7 +271,7 @@ Como a etapa final no processo de migração, os administradores da Contoso atua
 - [Saiba mais](https://docs.microsoft.com/azure/migrate/tutorial-migrate-vmware#run-a-test-migration) sobre como executar failovers de teste.
 - [Saiba mais](https://docs.microsoft.com/azure/migrate/tutorial-migrate-vmware#migrate-vms) sobre a migração de VMs para o Azure.
 
-## <a name="clean-up-after-migration"></a>Limpeza após a migração
+## <a name="clean-up-after-migration"></a>Limpar após a migração
 
 Migração concluída, as camadas de aplicativo osTicket agora estão em execução em VMs do Azure.
 

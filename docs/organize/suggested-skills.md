@@ -1,7 +1,7 @@
 ---
-title: Caminho de preparação de habilidades
+title: Criação de habilidades técnicas
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Visão geral do caminho de preparação de habilidades
+description: Visão geral do caminho de preparação de habilidades durante a fase pronta de migração.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/10/2019
@@ -9,14 +9,14 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: c8954fbb4e5c17ec43951270ded2708cfb3432df
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 21239c8fafe4ef202ec7feba054b8d176fe598ff
+ms.sourcegitcommit: b166fe1621fe7e886616009e56b76873b8cce83c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564237"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76520150"
 ---
-# <a name="skills-readiness-path-during-the-ready-phase-of-a-migration"></a>Caminho de preparação de habilidades durante a fase "pronto" de uma migração
+# <a name="skills-readiness-path-during-the-ready-phase-of-a-migration"></a>Caminho de preparação de habilidades durante a fase pronta de uma migração
 
 Durante a fase *pronta* de uma migração, o objetivo é preparar-se para a jornada à frente. Essa fase é realizada em duas áreas principais: preparação organizacional e ambiental (técnico). Ambos podem exigir novas habilidades para colaboradores técnicos e não técnicos. As informações a seguir podem ajudar sua organização a criar as habilidades necessárias.
 
