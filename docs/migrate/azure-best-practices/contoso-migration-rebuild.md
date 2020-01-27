@@ -9,16 +9,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: b00b007f9fb223312aa7baf99f54d32a8a08ce70
-ms.sourcegitcommit: 72df8c1b669146285a8680e05aeceecd2c3b2e83
+ms.openlocfilehash: 160d39a26e579816b2e961df30715e6aae1d16bb
+ms.sourcegitcommit: f53e8620adfca7bb5660ef23cac1dab069998e0e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74681822"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "76726346"
 ---
 # <a name="rebuild-an-on-premises-app-on-azure"></a>Recompilar um aplicativo local no Azure
 
-Este artigo demonstra como a empresa fictícia Contoso recompila um aplicativo de duas camadas .NET do Windows em execução em VMs VMware como parte de uma migração para o Azure. A Contoso migra a VM de front-end do aplicativo para um aplicativo Web do Serviço de Aplicativo do Azure. O back-end do aplicativo é criado usando microsserviços implantados em contêineres gerenciados pelo AKS (Serviço de Kubernetes do Azure). O site interage com o Azure Functions a fim de proporcionar funcionalidades para fotos de animais de estimação.
+Este artigo demonstra como a empresa fictícia Contoso recompila um aplicativo de duas camadas .NET do Windows em execução em VMs VMware como parte de uma migração para o Azure. A Contoso migra a VM de front-end do aplicativo para um aplicativo Web do Serviço de Aplicativo do Azure. O back-end do aplicativo é criado usando microsserviços implantados em contêineres gerenciados pelo AKS (Serviço de Kubernetes do Azure). O site interage com o Azure Functions para fornecer a funcionalidade de fotos de animais de estimação.
 
 O aplicativo SmartHotel360 usado neste exemplo é fornecido como software livre. Se quiser usá-lo em seus próprios testes, você poderá baixá-lo do [GitHub](https://github.com/Microsoft/SmartHotel360).
 
@@ -41,7 +41,7 @@ A equipe de nuvem da Contoso fixou os requisitos do aplicativo para esta migraç
 - O serviço de API usado para fotos de animais de estimação deve ser precisa e confiável no mundo real, uma vez que as decisões tomadas pelo aplicativo devem ser respeitadas em seus hotéis. Qualquer animal de estimação com acesso concedido pode permanecer nos hotéis.
 - Para atender aos requisitos de um pipeline de DevOps, a Contoso usará o Azure DevOps no SCM (Gerenciamento de Código-fonte), com repositórios Git. Builds e versões automatizadas serão usadas para criar código e implantar no Serviço de Aplicativo do Azure, no Azure Functions e no AKS.
 - São necessários diferentes pipelines de CI/CD para os microsserviços no back-end e para o site no front-end.
-- Os serviços de back-end têm uma versão diferente do ciclo do aplicativo Web de front-end. Para atender a esse requisito, eles implantarão dois pipelines de DevOps diferentes.
+- Os serviços de back-end têm uma versão diferente do ciclo do aplicativo Web de front-end. Para atender a esse requisito, eles implantarão dois pipelines diferentes.
 - A Contoso precisa de aprovação da gerência para todas as implantações do site de front-end e o pipeline de CI/CD precisa fornecer isso.
 
 ## <a name="solution-design"></a>Design da solução
@@ -52,13 +52,13 @@ Depois de fixar as metas e os requisitos, a Contoso projeta e analisa uma soluç
 
 - O aplicativo local SmartHotel360 é dividido em duas VMs (WEBVM e SQLVM).
 - As VMs estão localizadas no host VMware ESXi **contosohost1.contoso.com** (versão 6.5)
-- O ambiente VMware é gerenciado pelo vCenter Server 6.5 (**vcenter.contoso.com**), em execução em uma VM.
+- O ambiente VMware é gerenciado pelo vCenter Server 6.5 (**vcenter.contoso.com**) em execução em uma VM.
 - A Contoso tem um datacenter local (contoso-datacenter), com um controlador de domínio local (**contosodc1**).
-- As VMs locais no datacenter Contoso, serão descomissionadas após a migração.
+- As VMs locais no datacenter da Contoso serão descomissionadas após a migração.
 
 ### <a name="proposed-architecture"></a>Arquitetura proposta
 
-- O front-end do aplicativo é implantado como um aplicativo Web do Serviço de Aplicativo do Azure, na região primária do Azure.
+- O front-end do aplicativo é implantado como um aplicativo Web do serviço Azure App na região primária do Azure.
 - Uma função do Azure fornece os uploads de fotos de animais de estimação e o site interage com essa funcionalidade.
 - A função de foto animais de estimação utiliza a API da Pesquisa Visual dos Serviços Cognitivos e o Cosmos DB.
 - O back-end do site é criado usando microsserviços. Eles serão implantados em contêineres gerenciados no AKS (Serviço de Kubernetes do Azure).
@@ -93,12 +93,12 @@ A Contoso avalia o design proposto reunindo uma lista de prós e contras.
 
 ### <a name="azure-services"></a>Serviços do Azure
 
-**Serviço** | **Descrição** | **Custo
+**Serviço** | **Descrição** | **Custo**
 --- | --- | ---
 [AKS](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | Simplifica o gerenciamento, a implantação e as operações do Kubernetes. Fornece um serviço de orquestração de contêiner do Kubernetes totalmente gerenciado. | O AKS é um serviço gratuito. Pague apenas pelas máquinas virtuais, pelo armazenamento associado e pelos recursos de rede consumidos. [Saiba mais](https://azure.microsoft.com/pricing/details/kubernetes-service).
-[Funções do Azure](https://azure.microsoft.com/services/functions) | Acelera o desenvolvimento com uma experiência de computação sem servidor orientada por evento. Dimensione sob demanda. | Pague apenas pelos recursos consumidos. O plano é cobrado com base no consumo de recursos e execuções por segundo. [Saiba mais](https://azure.microsoft.com/pricing/details/functions).
+[Azure Functions](https://azure.microsoft.com/services/functions) | Acelera o desenvolvimento com uma experiência de computação sem servidor orientada por evento. Dimensione sob demanda. | Pague apenas pelos recursos consumidos. O plano é cobrado com base no consumo de recursos e execuções por segundo. [Saiba mais](https://azure.microsoft.com/pricing/details/functions).
 [Registro de Contêiner do Azure](https://azure.microsoft.com/services/container-registry) | Armazena imagens para todos os tipos de implantações de contêiner. | Custo com base em recursos, armazenamento e duração de uso. [Saiba mais](https://azure.microsoft.com/pricing/details/container-registry).
-[Serviço de aplicativo do Azure](https://azure.microsoft.com/services/app-service/containers) | Crie, implante e dimensione rapidamente aplicativos de API, móveis e Web de nível corporativo para serem executados em qualquer plataforma. | Os planos do Serviço de Aplicativo são cobrados por segundo. [Saiba mais](https://azure.microsoft.com/pricing/details/app-service/windows).
+[Serviço de Aplicativo do Azure](https://azure.microsoft.com/services/app-service/containers) | Crie, implante e dimensione rapidamente aplicativos de API, móveis e Web de nível corporativo para serem executados em qualquer plataforma. | Os planos do Serviço de Aplicativo são cobrados por segundo. [Saiba mais](https://azure.microsoft.com/pricing/details/app-service/windows).
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
@@ -110,7 +110,7 @@ Veja o que a Contoso precisa para esse cenário:
 --- | ---
 **Assinatura do Azure** | A Contoso já criou assinaturas em um artigo anterior. Se você não tiver uma assinatura do Azure, crie uma [conta gratuita](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Se você criar uma conta gratuita, será o administrador da assinatura e poderá executar todas as ações.<br/><br/> Se você usar uma assinatura existente e não for o administrador, será necessário trabalhar com o administrador para receber permissões de Proprietário ou de Colaborador.
 **Infraestrutura do Azure** | [ Saiba como ](./contoso-migration-infrastructure.md) a Contoso configurou uma infraestrutura do Azure.
-**Pré-requisitos de desenvolvedor** | A Contoso precisa das ferramentas a seguir em uma estação de trabalho de desenvolvedor:<br/><br/> - [Visual Studio 2017 Community Edition: versão 15.5](https://www.visualstudio.com)<br/><br/> Carga de trabalho .NET habilitada.<br/><br/> [Git](https://git-scm.com)<br/><br/> [Azure PowerShell](https://azure.microsoft.com/downloads)<br/><br/> [CLI do Azure](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest)<br/><br/> [Docker CE (Windows 10) ou Docker EE (Windows Server)](https://docs.docker.com/docker-for-windows/install) configurado para usar Contêineres do Windows.
+**Pré-requisitos de desenvolvedor** | A Contoso precisa das ferramentas a seguir em uma estação de trabalho de desenvolvedor:<br/><br/> - [Visual Studio 2017 Community Edition: versão 15.5](https://www.visualstudio.com)<br/><br/> Carga de trabalho .NET habilitada.<br/><br/> [Git](https://git-scm.com)<br/><br/> [PowerShell do Azure](https://azure.microsoft.com/downloads)<br/><br/> [CLI do Azure](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest)<br/><br/> [Docker CE (Windows 10) ou Docker EE (Windows Server)](https://docs.docker.com/docker-for-windows/install) configurado para usar Contêineres do Windows.
 
 <!-- markdownlint-enable MD033 -->
 
@@ -134,7 +134,7 @@ Os administradores da Contoso executam um script de implantação para criar o c
 - As instruções desta seção usam o repositório **SmartHotel360-Azure-backend**.
 - O repositório do GitHub **SmartHotel360-Azure-backend** contém todo o software para essa parte da implantação.  
 
-### <a name="prerequisites"></a>Pré-requisitos
+### <a name="ensure-prerequisites"></a>Garantir pré-requisitos
 
 1. Antes de começar, os administradores da Contoso garantem que todos os softwares de pré-requisito instalados no computador de desenvolvimento estejam usando para a implantação.
 2. Eles clonam o repositório local no computador de desenvolvimento usando o Git: `git clone https://github.com/Microsoft/SmartHotel360-Azure-backend.git`
@@ -445,7 +445,7 @@ Os administradores da Contoso criam dois projetos diferentes para o site de fron
 
 2. Eles importam o repositório Git do [front-end do SmartHotel360](https://github.com/Microsoft/SmartHotel360-public-web.git) para o novo projeto.
 
-3. Para o aplicativo de funções, eles criam outro projeto do Azure DevOps (SmartHotelPetChecker) e importam o repositório Git [PetChecker](https://github.com/Microsoft/SmartHotel360-PetCheckerFunction ) para esse projeto.
+3. Para o aplicativo de funções, eles criam outro projeto do Azure DevOps (SmartHotelPetChecker) e importam o repositório Git [PetChecker](https://github.com/sonahander/SmartHotel360-PetCheckerFunction) para esse projeto.
 
 ### <a name="configure-the-web-app"></a>Configurar o aplicativo Web
 
@@ -490,7 +490,7 @@ Os administradores da Contoso agora podem publicar o site.
 1. Eles abrem o Azure DevOps e, no projeto **SmartHotelFrontend**, em **Builds e Versões**, escolhem **+Novo Pipeline**.
 2. Eles selecionam o **Git do Azure DevOps** como uma fonte.
 3. Eles selecionam o modelo **ASP.NET Core**.
-4. Eles examinar o pipeline e verificam se **Publicar Projetos Web** e **Zipar Projetos Publicados** estão selecionados.
+4. Eles examinam o pipeline e verificam se **Publicar Projetos Web** e **Zipar Projetos Publicados** estão selecionados.
 
     ![Configurações do pipeline](./media/contoso-migration-rebuild/vsts-publishfront2.png)
 
@@ -584,21 +584,20 @@ Os administradores da Contoso implantam o aplicativo da seguinte maneira.
 14. Depois que a função é implantada, ela aparece no portal do Azure, com o status **Em Execução**.
 
     ![Implantar a função](./media/contoso-migration-rebuild/function6.png)
-    
+
 15. Eles navegam até o aplicativo para testar se aplicativo Pet Checker está funcionando como esperado em [http://smarthotel360public.azurewebsites.net/Pets](http://smarthotel360public.azurewebsites.net/Pets).
 
 16. Eles escolhem o avatar para carregar uma imagem.
 
     ![Implantar a função](./media/contoso-migration-rebuild/function7.png)
-    
+
 17. A primeira foto que desejam verificar é de um cachorro pequeno.
 
     ![Implantar a função](./media/contoso-migration-rebuild/function8.png)
-    
+
 18. O aplicativo retornar uma mensagem de aceitação.
 
     ![Implantar a função](./media/contoso-migration-rebuild/function9.png)
-    
 
 ## <a name="review-the-deployment"></a>Revisar a implantação
 
@@ -621,7 +620,7 @@ Com os recursos migrados para o Azure, agora a Contoso precisa operacionalizar e
 
 - Depois que todos os recursos estiverem implantados, a Contoso deverá atribuir marcações ao Azure com base no seu [planejamento de infraestrutura](./contoso-migration-infrastructure.md#set-up-tagging).
 - Todo o licenciamento se baseia no custo dos serviços de PaaS que a Contoso está consumindo. Isso será deduzido do EA.
-- A Contoso permitirá o gerenciamento de custos do Azure licenciado por Cloudyn, uma subsidiária Microsoft. É uma solução de gerenciamento de custo de várias nuvens que ajuda você a usar e gerenciar o Azure e outros recursos de nuvem. [Saiba mais](https://docs.microsoft.com/azure/cost-management/overview) sobre o Gerenciamento de Custos do Azure.
+- A Contoso habilitará o Gerenciamento de Custos do Azure licenciado pela Cloudyn, uma subsidiária da Microsoft. É uma solução de gerenciamento de custo de várias nuvens que ajuda você a usar e gerenciar o Azure e outros recursos de nuvem. [Saiba mais](https://docs.microsoft.com/azure/cost-management/overview) sobre o Gerenciamento de Custos do Azure.
 
 ## <a name="conclusion"></a>Conclusão
 
@@ -629,11 +628,10 @@ Neste artigo, a Contoso recria o aplicativo SmartHotel360 no Azure. A VM de fron
 
 ## <a name="suggested-skills"></a>Habilidades sugeridas
 
-O Microsoft Learn é uma nova abordagem para o aprendizado. A preparação para as novas habilidades e responsabilidades que acompanham a adoção da nuvem não é fácil. O Microsoft Learn oferece uma abordagem mais recompensadora para o aprendizado prático que ajuda você a atingir suas metas mais rapidamente. Ganhe pontos e níveis e obtenha mais!
+O Microsoft Learn é uma nova abordagem para o aprendizado. A preparação para as novas habilidades e responsabilidades que acompanham a adoção de nuvem não é fácil. O Microsoft Learn oferece uma abordagem mais recompensadora para o aprendizado prático que ajuda você a atingir suas metas mais rapidamente. Ganhe pontos e níveis e conquiste mais!
 
 Aqui estão alguns exemplos de caminhos de aprendizado personalizados em Microsoft Learn que se alinham com o aplicativo contoso SmartHotel360 no Azure.
 
 [Implantar um site no Azure com o serviço Azure app](https://docs.microsoft.com/learn/paths/deploy-a-website-with-azure-app-service/): aplicativos Web no Azure permitem que você publique e gerencie seu site facilmente sem precisar trabalhar com os servidores subjacentes, armazenamento ou ativos de rede. Em vez disso, você pode se concentrar nos recursos de seu site e contar com a robusta plataforma do Azure para fornecer acesso seguro ao seu site.
 
 [Processar e classificar imagens com os serviços de visão cognitiva do Azure: os](https://docs.microsoft.com/learn/paths/classify-images-with-vision-services/)serviços cognitivas do Azure oferecem funcionalidade predefinida para habilitar a funcionalidade de pesquisa Visual computacional em seus aplicativos. Saiba como usar os serviços de visão cognitiva para detectar faces, marcar e classificar imagens e identificar objetos.
-
