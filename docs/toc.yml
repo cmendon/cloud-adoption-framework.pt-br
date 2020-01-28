@@ -33,7 +33,7 @@
           href: strategy/business-outcomes/business-outcome-template.md
         - name: Alinhar esforços a métricas de aprendizado
           href: strategy/learning-metrics.md
-    - name: Justificativa empresarial
+    - name: Justificativa comercial
       items:
         - name: Criar uma justificativa comercial
           href: strategy/cloud-migration-business-case.md
@@ -69,7 +69,7 @@
       items:
         - name: Visão geral
           href: plan/plan-intro.md
-        - name: Pré-requisitos
+        - name: Prerequisites
           href: plan/prerequisites.md
         - name: Implantar o modelo no Azure DevOps
           href: plan/template.md
@@ -107,9 +107,9 @@
           href: ready/azure-setup-guide/monitoring-reporting.md
         - name: Manter-se atualizado com o Azure
           href: ready/azure-setup-guide/staying-current.md
-        - name: Implantar uma zona de aterrissagem de migração
+        - name: Implantar uma zona de destino de migração
           href: ready/azure-setup-guide/migration-landing-zone.md
-    - name: Considerações sobre zonas de aterrissagem
+    - name: Considerações sobre zonas de destino
       items:
         - name: Visão geral
           href: ready/considerations/index.md
@@ -173,7 +173,7 @@
               href: 'https://docs.microsoft.com/azure/security/fundamentals/database-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
             - name: Escolher uma opção de implantação no SQL do Azure
               href: 'https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-        - name: Gerenciamento de custo
+        - name: Gerenciamento de custos
           items:
             - name: Acompanhar os custos
               href: ready/azure-best-practices/track-costs.md
@@ -283,7 +283,7 @@
               items:
                 - name: Visão geral
                   href: migrate/azure-best-practices/vmware-host.md
-                - name: Pré-requisitos
+                - name: Prerequisites
                   items:
                     - name: Proteger seu Ambiente
                       href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/private-cloud-secure?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
@@ -387,7 +387,7 @@
                       items:
                         - name: Migração do SAP ASE para o BD SQL do Azure
                           href: 'https://datamigration.microsoft.com/scenario/sybase-to-azuresqldb?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                    - name: Access
+                    - name: Acesso
                       items:
                         - name: Migração do Access para o BD SQL do Azure
                           href: 'https://datamigration.microsoft.com/scenario/access-to-azuresqldb?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
@@ -457,7 +457,7 @@
                       href: 'https://docs.microsoft.com/azure/security/fundamentals/iaas?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                     - name: Implementando uma arquitetura de rede híbrida segura no Azure
                       href: 'https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                    - name: Práticas recomendadas de segurança de IoT
+                    - name: Práticas recomendadas de segurança da IoT
                       href: 'https://docs.microsoft.com/azure/iot-fundamentals/iot-security-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                     - name: Protegendo bancos de dados de PaaS no Azure
                       href: 'https://docs.microsoft.com/azure/security/fundamentals/paas-applications-using-sql?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
@@ -471,7 +471,7 @@
           items:
             - name: Visão geral
               href: migrate/migration-considerations/index.md
-            - name: Pré-requisitos
+            - name: Prerequisites
               items:
                 - name: Visão geral
                   href: migrate/migration-considerations/prerequisites/index.md
@@ -817,8 +817,8 @@
                       href: 'https://docs.microsoft.com/azure/iot-fundamentals/iot-security-architecture?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                     - name: Introdução ao Azure Sphere
                       href: 'https://azure.microsoft.com/services/azure-sphere/get-started/'
-                    - name: Implantar aplicativos over-the-air com o Azure Sphere
-                      href: 'https://docs.microsoft.com/azure-sphere/deployment/application-deployment-steps?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                    - name: Criar uma implantação com o Azure Sphere
+                      href: 'https://docs.microsoft.com/azure-sphere/deployment/create-a-deployment?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                     - name: Introdução ao Azure Kinect DK
                       href: 'https://docs.microsoft.com/azure/Kinect-dk/about-azure-kinect-dk?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                     - name: Criar seu primeiro aplicativo do Azure Kinect DK
@@ -831,9 +831,9 @@
                       href: 'https://docs.microsoft.com/azure/digital-twins/about-digital-twins?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                     - name: Monitorar um prédio com Gêmeos Digitais
                       href: 'https://docs.microsoft.com/azure/digital-twins/tutorial-facilities-setup?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                    - name: Guia do Azure IoT para comunicações da nuvem para o dispositivo
+                    - name: Guia do Azure IoT para comunicações da nuvem para dispositivo
                       href: 'https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-c2d-guidance?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                    - name: Configuração do Azure IoT para comunicações da nuvem para o dispositivo
+                    - name: Configuração do Azure IoT para comunicações da nuvem para dispositivo
                       href: 'https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-c2d-guidance?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
             - name: Prever e influenciar
               items:
@@ -857,8 +857,6 @@
                   items:
                     - name: Azure Machine Learning do experimento para os serviços operacionais
                       href: 'https://docs.microsoft.com/azure/machine-learning/studio/model-progression-experiment-to-web-service?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                    - name: Publicação do Azure Machine Learning para os serviços Web para consumo de aplicativo
-                      href: 'https://docs.microsoft.com/azure/machine-learning/studio/publish-a-machine-learning-web-service?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                     - name: Operacionalizar os Serviços de ML no Azure HDInsight
                       href: 'https://docs.microsoft.com/azure/hdinsight/r-server/r-server-operationalize?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
 - name: Administrar
@@ -947,7 +945,7 @@
       href: govern/governance-disciplines.md
     - name: Implementar disciplinas de governança de nuvem
       items:
-        - name: Gerenciamento de custo
+        - name: Gerenciamento de custos
           items:
             - name: Visão geral do gerenciamento de custos
               href: govern/cost-management/index.md
@@ -957,7 +955,7 @@
               href: govern/cost-management/business-risks.md
             - name: Indicadores e métricas de tolerância a riscos
               href: govern/cost-management/metrics-tolerance.md
-            - name: Exemplo de políticas de gerenciamento de custo
+            - name: Exemplo de políticas de gerenciamento de custos
               href: govern/cost-management/policy-statements.md
             - name: Processos de conformidade de política
               href: govern/cost-management/compliance-processes.md
@@ -1091,7 +1089,7 @@
               items:
                 - name: Visão geral
                   href: manage/azure-server-management/ongoing-management-overview.md
-                - name: Habilitar a política de configuração de convidado
+                - name: Habilitar a política de configuração de participante
                   href: manage/azure-server-management/guest-configuration-policy.md
                 - name: Alterações críticas (acompanhamento e alertas)
                   href: manage/azure-server-management/enable-tracking-alerting.md
