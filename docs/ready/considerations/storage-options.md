@@ -1,6 +1,5 @@
 ---
 title: Examine as opções de armazenamento
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Examine suas opções de armazenamento para cargas de trabalho do Azure.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 37b99c367df1e77bcd32223d5d8a8ac8e1ee20d1
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: d6e15d465982c02e34ce1bbc89bd2289297d402a
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73561722"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76799022"
 ---
 # <a name="review-your-storage-options"></a>Examine as opções de armazenamento
 
@@ -137,7 +136,7 @@ O Azure Disk Encryption permite criptografar discos gerenciados que são anexado
 
 ## <a name="regional-availability"></a>Disponibilidade regional
 
-Você pode usar o Azure para entregar serviços na escala de que precisa para acessar seus clientes e parceiros *onde quer que estejam*. As páginas de disponibilidade regional dos [Managed Disks](https://azure.microsoft.com/global-infrastructure/services/?products=managed-disks) e do [Armazenamento do Azure](https://azure.microsoft.com/global-infrastructure/services/?products=storage) mostram as regiões em que esses serviços estão disponíveis. Verificar a disponibilidade regional de um serviço com antecedência pode ajudar a tomar a decisão certa para sua carga de trabalho e as necessidades do cliente.
+Você pode usar o Azure para oferecer serviços na escala necessária para alcançar seus clientes e parceiros, *onde quer que eles estejam*. As páginas de disponibilidade regional dos [Managed Disks](https://azure.microsoft.com/global-infrastructure/services/?products=managed-disks) e do [Armazenamento do Azure](https://azure.microsoft.com/global-infrastructure/services/?products=storage) mostram as regiões em que esses serviços estão disponíveis. Verificar a disponibilidade regional de um serviço com antecedência pode ajudar a tomar a decisão certa para sua carga de trabalho e as necessidades do cliente.
 
 Os Managed Disks estão disponíveis em todas as regiões do Azure que têm ofertas de SSD Premium e SSD Standard. Embora o SSD Ultra esteja em versão prévia pública, ele é oferecido apenas em uma zona de disponibilidade, a região Leste dos EUA 2. Verifique a disponibilidade regional quando planejar cargas de trabalho críticas e de camada superior que exigirem o SSD Ultra.
 
@@ -147,6 +146,6 @@ Para saber mais sobre a infraestrutura global do Azure, confira a [página das r
 
 ## <a name="data-residency-and-compliance-requirements"></a>Requisitos de conformidade e residência de dados
 
-Os requisitos legais e contratuais que são relacionados ao armazenamento de dados geralmente serão aplicados às suas cargas de trabalho. Esses requisitos podem variar de acordo com a localização da sua organização, a jurisdição dos ativos físicos que hospedam os armazenamentos de dados e o setor empresarial pertinente. Os componentes das obrigações de dados a serem considerados incluem a classificação de dados, a localização dos dados e as respectivas responsabilidades de proteção de dados no modelo de responsabilidade compartilhada. Para obter ajuda com a compreensão desses requisitos, consulte a white paper [obter segurança e residência de dados em conformidade com o Azure](https://azure.microsoft.com/resources/achieving-compliant-data-residency-and-security-with-azure).
+Os requisitos legais e contratuais que são relacionados ao armazenamento de dados geralmente serão aplicados às suas cargas de trabalho. Esses requisitos podem variar de acordo com a localização da sua organização, a jurisdição dos ativos físicos que hospedam os armazenamentos de dados e o setor empresarial pertinente. Os componentes das obrigações de dados a serem considerados incluem a classificação de dados, a localização dos dados e as respectivas responsabilidades de proteção de dados no modelo de responsabilidade compartilhada. Para obter ajuda no entendimento desses requisitos, confira o white paper [Como conseguir residência e segurança de dados em conformidade com o Azure](https://azure.microsoft.com/resources/achieving-compliant-data-residency-and-security-with-azure).
 
-Parte dos seus esforços de conformidade pode incluir o controle do local em que os recursos do banco de dados ficam fisicamente. As regiões do Azure são organizadas em grupos chamados geografias. Uma [Geografia do Azure](https://azure.microsoft.com/global-infrastructure/geographies) garante que os requisitos de residência de dados, soberania, conformidade e resiliência sejam respeitados em limites geográficos e políticos. Se as cargas de trabalho estiverem sujeitas à soberania de dados ou outros requisitos de conformidade, você deverá implantar os recursos de armazenamento em regiões em uma geografia do Azure em conformidade.
+Parte dos seus esforços de conformidade pode incluir o controle do local em que os recursos do banco de dados ficam fisicamente. As regiões do Azure são organizadas em grupos chamados geografias. Uma [geografia do Azure](https://azure.microsoft.com/global-infrastructure/geographies) garante que os requisitos de residência, de soberania, de conformidade e de resiliência de dados sejam respeitados dentro de limites geográficos e políticos. Se as cargas de trabalho estiverem sujeitas à soberania de dados ou outros requisitos de conformidade, você deverá implantar os recursos de armazenamento em regiões em uma geografia do Azure em conformidade.

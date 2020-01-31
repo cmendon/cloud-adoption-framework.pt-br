@@ -1,6 +1,5 @@
 ---
 title: Migração na nuvem
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Migração na nuvem na Cloud Adoption Framework
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 layout: LandingPage
-ms.openlocfilehash: a6e7cb52fdac7607765b32c5355c0f2df066538a
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 90a9c69b311f1d4687d2691af13c3b51a7b6f813
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566853"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76802949"
 ---
 # <a name="cloud-migration-in-the-cloud-adoption-framework"></a>Migração na nuvem na Cloud Adoption Framework
 
@@ -130,7 +129,7 @@ Em seu núcleo, a migração para a nuvem consiste em quatro fases simples: Aval
 
 ![Modelo de migração da Cloud Adoption Framework](../_images/operational-transformation-migrate.png)
 
-## <a name="create-a-balanced-cloud-portfolio"></a>Crie um portfólio de nuvem equilibrado
+## <a name="create-a-balanced-cloud-portfolio"></a>Criar um portfólio de nuvem balanceado
 
 Qualquer portfólio de tecnologia equilibrado tem uma combinação de ativos em vários estados. Alguns aplicativos estão programados para desativação e recebem suporte mínimo. Outros aplicativos ou ativos têm suporte em um estado de manutenção, mas os recursos dessas soluções são estáveis. Para processos empresariais mais recentes, a alteração nas condições de mercado provavelmente vai incentivar modernização ou aprimoramentos de recursos contínuos. Quando surgem oportunidades para gerar novos fluxos de receita, novos aplicativos ou os ativos são introduzidos no ambiente. Em cada estágio do ciclo de vida do ativo, o impacto que qualquer investimento tem sobre a receita e lucro mudará. Quanto mais tarde no estágio do ciclo de vida, menor é a probabilidade de um novo esforço de recurso ou modernização gerar um forte retorno sobre o investimento.
 

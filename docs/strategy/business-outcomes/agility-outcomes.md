@@ -1,6 +1,5 @@
 ---
 title: Exemplos de resultados de agilidade
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Exemplos de resultados de agilidade
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 79c6c10d924781d494cd8dbd7cc104d42f168083
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 6f865eb0a5f81aa005239dbafd5437dc93797f94
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566639"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76798495"
 ---
 # <a name="examples-of-agility-outcomes"></a>Exemplos de resultados de agilidade
 
@@ -25,7 +24,7 @@ Tradicionalmente, os CIOs (gerentes de investimentos) e as equipes de ti foram c
 
 ## <a name="why-is-agility-so-important"></a>Por que a agilidade é tão importante?
 
-Os mercados mudam em um ritmo mais rápido atualmente do que nunca. A partir de 2015, apenas 57 empresas ainda estavam no Fortune 500 61 anos depois &mdash;an taxa de rotatividade de 88,6%. Isso representa a mudança de mercado em uma taxa anteriormente desouvida. A agilidade de ti ou mesmo agilities de negócios é improvável de afetar uma listagem de organização no Fortune 500, mas esses números nos ajudam a entender o ritmo no qual os mercados continuam a mudar.
+Os mercados mudam em um ritmo mais rápido atualmente do que nunca. A partir de 2015, somente 57 empresas ainda estavam nos últimos 500 61 anos&mdash;uma taxa de rotatividade de 88,6%. Isso representa a mudança de mercado em uma taxa anteriormente desouvida. A agilidade de ti ou mesmo agilities de negócios é improvável de afetar uma listagem de organização no Fortune 500, mas esses números nos ajudam a entender o ritmo no qual os mercados continuam a mudar.
 
 Para os encarregados e o upicios, a agilidade dos negócios pode ser a diferença entre o sucesso ou a falha de uma iniciativa de negócios. Adaptar-se rapidamente às alterações no mercado pode ajudar a colocar os clientes existentes no limite de toques ou reivindicar a participação de mercado dos concorrentes. Os resultados relacionados à agilidade nas próximas seções podem ajudar a comunicar o valor da nuvem durante uma transformação.
 

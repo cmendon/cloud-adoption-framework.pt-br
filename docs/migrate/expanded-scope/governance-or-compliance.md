@@ -1,6 +1,5 @@
 ---
 title: Estratégia de governança ou conformidade
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Estratégia de governança ou conformidade
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: c363f038b5fed3f2c8636b9b15a09625ca42218f
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 17952dc4c3ff28f2fcfe1a378a9efb969d65925b
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753544"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76803119"
 ---
 # <a name="governance-or-compliance-strategy"></a>Estratégia de governança ou conformidade
 
@@ -27,7 +26,7 @@ As atividades de pré-requisito são mais afetadas quando a governança ou a con
 
 A configuração do ambiente base do Azure pode mudar significativamente ao integrar requisitos de governança ou de conformidade. Para entender como os pré-requisitos mudam, é importante entender a natureza deles. Antes de iniciar qualquer migração que exija governança ou conformidade, uma abordagem deve ser escolhida e implementada no ambiente de nuvem. Veja a seguir algumas abordagens de alto nível normalmente vistas durante migrações:
 
-**Abordagem de governança comum:** Para a maioria das organizações, o [modelo de governança da estrutura de adoção da nuvem](../../govern/guides/index.md) é uma abordagem suficiente que consiste em uma implementação do MVP (produto viável) mínima, seguida pelas iterações direcionadas da maturidade de governança para abordar os riscos tangíveis identificado no plano de adoção. Essa abordagem fornece as ferramentas mínimas necessárias para estabelecer uma governança consistente para que a equipe possa entender as ferramentas. Em seguida, ela se expande quanto a essas ferramentas para resolver preocupações de governança comuns.
+**Abordagem de governança comum:** Para a maioria das organizações, o [modelo de governança da estrutura de adoção da nuvem](../../govern/guides/index.md) é uma abordagem suficiente que consiste em uma implementação do MVP (produto viável) mínima, seguida pelas iterações direcionadas da maturidade de governança para resolver os riscos tangíveis identificados no plano de adoção. Essa abordagem fornece as ferramentas mínimas necessárias para estabelecer uma governança consistente para que a equipe possa entender as ferramentas. Em seguida, ela se expande quanto a essas ferramentas para resolver preocupações de governança comuns.
 
 **Plantas de conformidade ISO 27001:** Para clientes que precisam aderir aos padrões de conformidade ISO, os exemplos de [plantas de serviços compartilhados iso 27001](https://docs.microsoft.com/azure/governance/blueprints/samples/iso27001-shared/index) podem servir como um MVP mais eficaz para produzir restrições de governança mais avançadas no processo iterativo anteriormente. O [exemplo de Ambiente do Serviço de Aplicativo/Banco de Dados SQL para ISO 27001](https://docs.microsoft.com/azure/governance/blueprints/samples/iso27001-ase-sql-workload) expande o blueprint para mapear controles e implantar uma arquitetura comum para um ambiente de aplicativo. Conforme blueprints de conformidade adicionais forem lançados, eles também serão referenciados aqui.
 

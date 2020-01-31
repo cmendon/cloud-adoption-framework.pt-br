@@ -1,6 +1,5 @@
 ---
 title: Monitoramento e relatórios no Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Saiba como configurar monitoramento, relatórios e alertas para o seu ambiente de gerenciamento do Azure.
 author: timleyden
 ms.author: tileyden
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 0ed9f9c1739fc73f4d28bf532bd52bd0a182b2fc
-ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
+ms.openlocfilehash: 0b37500652606e3a1018b3b93c03aae546827eff
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74251359"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76799396"
 ---
 # <a name="monitoring-and-reporting-in-azure"></a>Monitoramento e relatórios no Azure
 

@@ -1,6 +1,5 @@
 ---
 title: Estabelecer estruturas de equipe
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Estabelecer estruturas de equipe
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 8000847a46082be6116abb22e52def03243c69b0
-ms.sourcegitcommit: 1dccf1aed8e98aa0f58c4f86d90c65f5fa5ac84d
+ms.openlocfilehash: 1d4cb3873767988fc7f5538e2023a6b2ca0a6586
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71811081"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76800909"
 ---
 # <a name="establish-team-structures"></a>Estabelecer estruturas de equipe
 
@@ -44,7 +43,7 @@ A núcleo de todos os esforços de adoção de nuvem é a equipe de adoção de 
 Para iniciativas de pequena escala ou de adoção de estágio inicial, essa equipe pode ser tão pequena quanto uma pessoa. Em esforços de maior escala ou de estágio posterior, é comum ter várias equipes de adoção de nuvem, cada uma com cerca de seis engenheiros. Independentemente do tamanho ou das tarefas, o aspecto consistente de qualquer equipe de adoção de nuvem é que ele fornece os meios para a integração de soluções na nuvem. Para algumas organizações, essa pode ser uma estrutura organizacional suficiente. O artigo da [equipe de adoção de nuvem](./cloud-adoption.md) fornece mais informações sobre a estrutura, a composição e a função da equipe de adoção da nuvem.
 
 > [!WARNING]
-> Operar com *apenas* uma equipe de adoção de nuvem (ou várias equipes de adoção de nuvem ) é considerado um antipadrão e deve ser evitado. No mínimo, considere a [prática recomendada do MVP](#best-practice-minimum-viable-product-mvp).
+> Operar com *apenas* uma equipe de adoção de nuvem (ou várias equipes de adoção de nuvem) é considerado um *antipadrão* e deve ser evitado. No mínimo, considere a [prática recomendada do MVP](#best-practice-minimum-viable-product-mvp).
 
 ## <a name="best-practice-minimum-viable-product-mvp"></a>Prática recomendada: produto (MVP) mínimo viável
 
@@ -55,7 +54,7 @@ Para iniciativas de pequena escala ou de adoção de estágio inicial, essa equi
 
 ![Adoção de nuvem com counterbalance de governança de nuvem](../_images/ready/org-ready-best-practice.png)
 
-Essa abordagem comprovada é considerada um MVP porque pode não ser sustentável. Cada equipe está gastando muitas funções, conforme descrito nos [gráficos *responsável, responsáveis, consultados e* informados (RACI)](./raci-alignment.md).
+Essa abordagem comprovada é considerada um MVP porque pode não ser sustentável. Cada equipe está gastando muitas funções, conforme descrito nos [gráficos *responsável, responsáveis, consultados e informados* (RACI)](./raci-alignment.md).
 
 As seções a seguir descrevem uma estrutura organizacional comprovada e totalmente equipada, juntamente com abordagens para alinhar a estrutura apropriada à sua organização.
 
@@ -93,7 +92,7 @@ No mais alto estado de maturidade, um centro de excelência em nuvem alinha as e
 
 A principal diferença entre essa estrutura e a estrutura central de ti acima é um foco no autoatendimento. As equipes nessa estrutura se organizam com a intenção de delegar o controle o máximo possível. Alinhar práticas de governança e conformidade a soluções nativas de nuvem cria guardrails e mecanismos de proteção. Ao contrário do modelo de ti central, a abordagem nativa de nuvem maximiza a inovação e minimiza a sobrecarga operacional. Para que esse modelo seja adotado, o contrato mútuo para modernizar os processos de ti será exigido da liderança de ti e de negócios. Esse modelo é improvável de ocorrer de orgânica e geralmente requer suporte executivo.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Depois de alinhar a um determinado estágio da maturidade da estrutura organizacional, você pode usar [gráficos do RACI](./raci-alignment.md) para alinhar a responsabilidade e a responsabilidade em cada equipe.
 

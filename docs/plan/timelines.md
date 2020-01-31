@@ -1,6 +1,5 @@
 ---
 title: Linhas do tempo em um plano de adoção de nuvem
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Linhas do tempo em um plano de adoção de nuvem
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: c5bafd4504a0df9570bf65846a5a077e54e158ca
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 4918c5e4c9efefdd8785586bf8fb309684b654a7
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549037"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76800042"
 ---
 # <a name="timelines-in-a-cloud-adoption-plan"></a>Linhas do tempo em um plano de adoção de nuvem
 

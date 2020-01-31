@@ -1,6 +1,5 @@
 ---
 title: Diretrizes de segurança do Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Quais diretrizes de segurança a Microsoft fornece?
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 18fce98055f72e43ea7ecc2565ab859845cea356
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: cc57de575b7ad208748595a82b9726ebf85fa3fd
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058822"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76804904"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -32,7 +31,7 @@ Essas ferramentas são projetadas para auxiliar as organizações a cumprirem as
 
 A **STP (Plataforma de Confiança do Serviço)** fornece informações detalhadas e ferramentas para ajudar a atender às necessidades de uso dos serviços do Microsoft Cloud, incluindo Azure, Office 365, Dynamics 365 e Windows. A STP é uma solução completa para informações de segurança, regulamentação, conformidade e privacidade relacionadas ao Microsoft Cloud. É onde publicamos as informações e os recursos necessários para realizar avaliações de risco de autoatendimento de serviços de nuvem e ferramentas. A STP foi criada para ajudar a acompanhar as atividades de conformidade regulatória no Azure, incluindo:
 
-- **Gerente de conformidade:** O Compliance Manager, uma ferramenta de avaliação de riscos baseada em fluxo de trabalho na plataforma de confiança de serviços da Microsoft, permite que você controle, atribua e verifique as atividades de conformidade regulatória de sua organização relacionadas a serviços de Microsoft Cloud, como o Office 365, Dynamics 365 e o Azure. Você pode encontrar mais detalhes na próxima seção.
+- **Gerente de conformidade:** O Compliance Manager, uma ferramenta de avaliação de riscos baseada em fluxo de trabalho na plataforma de confiança de serviços da Microsoft, permite que você controle, atribua e verifique as atividades de conformidade regulatória de sua organização relacionadas a serviços de Microsoft Cloud, como o Office 365, o Dynamics 365 e o Azure. Você pode encontrar mais detalhes na próxima seção.
 - **Documentos de confiança:** Atualmente, há três categorias de guias que fornecem recursos abundantes para avaliar Microsoft Cloud; Saiba mais sobre as operações da Microsoft em segurança, conformidade e privacidade; e ajudar você a agir em aprimorar seus recursos de proteção de dados. Estão incluídas:
 - **Relatórios de auditoria:** Os relatórios de auditoria permitem que você se mantenha atualizado sobre as informações mais recentes relacionadas à privacidade, segurança e conformidade para serviços de Microsoft Cloud. Isso inclui ISO, SOC, FedRAMP e outros relatórios de auditoria, notificações de avaliação e materiais relacionados a auditorias independentes de terceiros dos serviços do Microsoft Cloud como Azure, Office 365, Dynamics 365, e outros.
 - **Guias de proteção de dados:** Os guias de proteção de dados fornecem informações sobre como Microsoft Cloud serviços protegem seus dados e como você pode gerenciar a segurança de dados de nuvem e a conformidade para sua organização. Isso inclui white papers aprofundados que fornecem detalhes sobre como a Microsoft desenvolve e opera serviços de nuvem, perguntas frequentes, relatórios de avaliações de segurança de fim de ano, resultados de testes de penetração e diretrizes para ajudá-lo a realizar avaliações de risco e aprimorar os recursos de proteção de dados.
@@ -47,7 +46,7 @@ A **STP (Plataforma de Confiança do Serviço)** fornece informações detalhada
   - **Solicitações de entidade de dados:** O GDPR concede a indivíduos (ou entidades de dados) determinados direitos em conexão com o processamento de seus dados pessoais. Isso inclui o direito de corrigir dados imprecisos, apagar dados ou restringir o processamento, bem como receber dados e atender a uma solicitação para transmitir os dados a outro controlador.
   - **Violação de dados:** O GDPR exige requisitos de notificação para controladores de dados e processadores no caso de uma violação de dados pessoais. A STP fornece informações sobre como a Microsoft tenta evitar violações, como a Microsoft detecta uma violação e como a Microsoft irá responder no caso de uma violação e notificá-lo como um controlador de dados.
   - **Avaliação de impacto da proteção de dados:** A Microsoft ajuda os controladores a concluir as avaliações de impacto da proteção de dados GDPR. O RGPD fornece uma lista abrangente de casos em que DPIAs devem ser realizadas, como processamento automatizado para fins de criação de perfis e atividades semelhantes, processamento em larga escala de categorias especiais de dados pessoais e monitoramento sistemático de uma área de acesso público em larga escala.
-  - **Outros recursos:** Além das diretrizes de ferramentas discutidas nas seções acima, o STP também fornece outros recursos, incluindo conformidade regional, recursos adicionais para o centro de segurança e conformidade e perguntas frequentes sobre a plataforma de confiança de serviço, Compliance Manager e Privacy/GDPR.
+  - **Outros recursos:** Além das diretrizes de ferramentas discutidas nas seções acima, o STP também fornece outros recursos, incluindo conformidade regional, recursos adicionais para o centro de segurança e conformidade e perguntas frequentes sobre a plataforma de confiança do serviço, o Compliance Manager e o Privacy/GDPR.
 - **Conformidade regional:** O STP fornece vários documentos de conformidade e orientações para o Microsoft serviços online atender aos requisitos de conformidade para diferentes regiões, incluindo República Tcheca, Polônia e Romênia.
 
 ## <a name="unique-intelligent-insights"></a>Insights inteligentes exclusivos

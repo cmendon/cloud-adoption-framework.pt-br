@@ -1,6 +1,5 @@
 ---
 title: Arquitetar cargas de trabalho antes da migração
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Arquitetar cargas de trabalho antes da migração
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 77931f6315c43d963947cbdaf628b8bfa514749c
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: b902f4b53784d30cd5de0b0eb77ed943e5e41aab
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566820"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76802694"
 ---
 # <a name="architect-workloads-prior-to-migration"></a>Arquitetar cargas de trabalho antes da migração
 
@@ -39,7 +38,7 @@ As suposições discriminadas podem criar empecilhos que poderiam retardar o pro
 
 ## <a name="accelerate-business-value"></a>Acelere o valor comercial
 
-Alguns cenário poderiam exigir uma arquitetura diferente da estratégia de nova hospedagem de IaaS presumida. Seguem alguns exemplos:
+Alguns cenário poderiam exigir uma arquitetura diferente da estratégia de nova hospedagem de IaaS presumida. A seguir, estão alguns exemplos:
 
 - Alternativas do PaaS. As implantações do PaaS podem reduzir os custos de hospedagem e o tempo necessário para migrar determinadas cargas de trabalho. Para obter uma lista de abordagens que podem se beneficiar de uma conversão de PaaS, confira o artigo sobre [como avaliar ativos](./evaluate.md).
 - Implantações com script/DevOps. Se uma carga de trabalho tiver uma implantação DevOps existente ou outras formas de implantação com script, o custo de alterar esses scripts poderá ser menor do que o custo de migrar o ativo.
@@ -47,7 +46,7 @@ Alguns cenário poderiam exigir uma arquitetura diferente da estratégia de nova
 
 Em cada um desses cenários discriminados, uma arquitetura alternativa poder ser a melhor solução possível.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Depois que a nova arquitetura é definida, [estimativas de custo precisas podem ser calculadas](./estimate.md).
 

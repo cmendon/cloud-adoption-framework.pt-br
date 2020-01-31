@@ -1,6 +1,5 @@
 ---
 title: Caminho de preparação de habilidades
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Visão geral do caminho de preparação de habilidades
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 05/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 1a2da8e65e6b1fda5995fa5fb207239e36b7d8a7
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 8116c653656d2b5f20150aaf447225616e2657a6
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566701"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76798767"
 ---
 # <a name="skills-readiness-path-during-the-ready-phase-of-a-migration-journey"></a>Caminho de preparação de habilidades durante a fase de "prontidão" de um percurso de migração
 
@@ -61,7 +60,7 @@ Transforme seu conhecimento sobre o Azure em reconhecimento oficial com os [exam
 
 ## <a name="microsoft-learn"></a>Microsoft Learn
 
-O Microsoft Learn é uma nova abordagem para o aprendizado. A preparação para as novas habilidades e responsabilidades que acompanham a adoção da nuvem não é fácil. O Microsoft Learn oferece uma abordagem mais recompensadora para o aprendizado prático que ajuda você a atingir suas metas mais rapidamente. Ganhe pontos e níveis e conquiste mais.
+O Microsoft Learn é uma nova abordagem para o aprendizado. A preparação para as novas habilidades e responsabilidades que acompanham a adoção de nuvem não é fácil. O Microsoft Learn oferece uma abordagem mais recompensadora para o aprendizado prático que ajuda você a atingir suas metas mais rapidamente. Ganhe pontos e níveis e conquiste mais.
 
 Os exemplos a seguir são alguns caminhos de aprendizado personalizados em Microsoft Learn que se alinham à parte pronta da estrutura de adoção da nuvem:
 

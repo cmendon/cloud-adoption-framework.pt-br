@@ -1,6 +1,5 @@
 ---
 title: Use o Terraform para criar suas zonas de aterrissagem
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Aprenda a usar o Terraform para criar suas zonas de aterrissagem.
 author: arnaudlh
 ms.author: arnaul
@@ -8,12 +7,12 @@ ms.date: 10/16/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 62f6f8f52d669c2822b822218612986be4503378
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 54fa496c7b97231a8ad8cc7150717bb942bf07a2
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753742"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76798971"
 ---
 # <a name="use-terraform-to-build-your-landing-zones"></a>Use o Terraform para criar suas zonas de aterrissagem
 
@@ -27,7 +26,7 @@ A zona de aterrissagem da estrutura de adoção de nuvem para Terraform tem um c
 
 A reutilização de componentes é um princípio fundamental da infraestrutura como código. Os módulos são fundamentais para definir padrões e consistência em toda a implantação de recursos em e entre ambientes. Os módulos usados para implantar essa primeira zona de aterrissagem estão disponíveis no [registro](https://registry.terraform.io/search?q=aztfmod)oficial do Terraform.
 
-## <a name="architecture-diagram"></a>Diagrama da arquitetura
+## <a name="architecture-diagram"></a>Diagrama de arquitetura
 
 A primeira zona de aterrissagem implanta os seguintes componentes em sua assinatura:
 
@@ -37,7 +36,7 @@ A primeira zona de aterrissagem implanta os seguintes componentes em sua assinat
 
 Os componentes implantados e sua finalidade incluem o seguinte:
 
-| Componente | responsabilidade |
+| Componente | Responsabilidade |
 |---------|---------|
 | Grupos de recursos | Principais grupos de recursos necessários para a base |
 | Log de atividades | Auditar todas as atividades de assinatura e arquivamento: </br> -Conta de armazenamento </br> -Hubs de eventos do Azure |  
@@ -83,10 +82,10 @@ As decisões a seguir são representadas na zona de aterrissagem Terraform:
 
 O seguinte conjunto de marcas mínimas deve estar presente em todos os recursos e grupos de recursos:
 
-| Nome da marca | Descrição | Chave | Valor de exemplo |
+| Nome da marca | Description | Chave | Valor de exemplo |
 |--|--|--|--|
 | Unidade de negócios | Divisão de nível superior da sua empresa que tem a assinatura ou a carga de trabalho à qual o recurso pertence. | BusinessUnit | Finanças, MARKETING, {nome do produto}, CORP, compartilhado |
-| Centro de custo | O centro de custo de contabilidade associado a este recurso.| CostCenter | NUMBER |
+| Centro de custo | O centro de custo de contabilidade associado a este recurso.| CostCenter | Número |
 | Recuperação de desastres | Nível de importância empresarial do aplicativo, da carga de trabalho ou do serviço. | Recovery | HABILITADO PARA DR, NÃO HABILITADO PARA DR |
 | Ambiente | Ambiente de implantação do aplicativo, da carga de trabalho ou do serviço. |  Variável | Prod, dev, QA, estágio, teste, treinamento |
 | Nome do proprietário | Proprietário do aplicativo, da carga de trabalho ou do serviço.| Proprietário | email |

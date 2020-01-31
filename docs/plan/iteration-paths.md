@@ -1,6 +1,5 @@
 ---
 title: Estabelecer iterações e planos de liberação
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Estabelecer iterações e planos de liberação
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 0dbef36d3909f11c1616d2e44c63227959c4ff56
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: bdd0150aef6c04b43121b5bef1224bea93191e2c
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70833772"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76800331"
 ---
 # <a name="establish-iterations-and-release-plans"></a>Estabelecer iterações e planos de liberação
 
@@ -64,7 +63,7 @@ Para garantir que uma alteração seja justificada por seu retorno potencial, a 
 
 Para clientes que gerenciam planos de adoção de nuvem no Azure DevOps, os processos anteriores são refletidos por meio da atribuição de um caminho de iteração para cada tarefa e história de usuário. Também é recomendável marcar cada carga de trabalho com uma versão específica. Essa marcação e a atribuição alimentam a população automática de relatórios de linha do tempo.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 [Estimar as linhas](./timelines.md) do tempo para comunicar as expectativas corretamente.
 

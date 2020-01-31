@@ -1,6 +1,5 @@
 ---
 title: Recursos da plataforma de nuvem
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Descreve a formação de recursos da plataforma de nuvem
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: faeea7a0e42c45894d82b31becca06562fef94b9
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: be5e914bd154ec2db0578714d08383c3c8770a5a
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027479"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76800960"
 ---
 # <a name="cloud-platform-capabilities"></a>Recursos da plataforma de nuvem
 
@@ -29,7 +28,7 @@ As habilidades necessárias para fornecer recursos completos da plataforma podem
 - Arquitetura empresarial
 - Operações de ti
 - Governança de ti
-- Infraestrutura de TI
+- Infraestrutura de ti
 - Rede
 - Identidade
 - Virtualização
@@ -70,7 +69,7 @@ As seguintes tarefas são normalmente executadas regularmente:
 
 A experiência da plataforma de nuvem geralmente vem de uma equipe de trabalho. Espere que os participantes confirmem uma grande parte de suas agendas diárias para o trabalho da plataforma em nuvem. As contribuições não são limitadas a ciclos de reuniões e comentários.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 À medida que sua plataforma de nuvem se torna melhor definida, alinhar os [recursos de automação de nuvem](./cloud-automation.md) pode acelerar a adoção. Ele também pode ajudar a estabelecer práticas recomendadas ao mesmo tempo em que reduz os riscos técnicos e de negócios.
 

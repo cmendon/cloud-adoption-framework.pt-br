@@ -1,6 +1,5 @@
 ---
 title: Processos de conformidade de política de Linha de Base de Identidade
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Processos de conformidade de política de Linha de Base de Identidade
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6b92072ed182eefc596ab446638a87b4fd560080
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 937bf6c4dae8d134b4f140e0a0023d82e5f9e3f9
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566209"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807148"
 ---
 # <a name="identity-baseline-policy-compliance-processes"></a>Processos de conformidade de política de Linha de Base de Identidade
 
@@ -32,7 +31,7 @@ As ferramentas de gerenciamento de identidades oferecem recursos e funcionalidad
 
 **Planejamento anual:** Anualmente, execute uma revisão de alto nível da estratégia de gerenciamento de identidade. Explore as alterações planejadas no ambiente de serviços de identidade e as estratégias de adoção de nuvem atualizadas para identificar o aumento de risco potencial ou modificar os padrões de infraestrutura de identidade atuais. Além disso, use esse tempo para revisar as melhores práticas de gerenciamento de identidades mais recentes e integrá-las às políticas e aos processos de avaliação.
 
-**Planejamento trimestral:** Em uma base trimestral, execute uma revisão geral dos dados de auditoria de controle de acesso e identidade e conheça as equipes de adoção de nuvem para identificar quaisquer possíveis riscos novos ou requisitos operacionais que exijam atualizações de política de identidade ou alterações no controle de acesso usada.
+**Planejamento trimestral:** Em uma base trimestral, execute uma revisão geral dos dados de auditoria de controle de acesso e identidade e conheça as equipes de adoção de nuvem para identificar quaisquer possíveis riscos novos ou requisitos operacionais que exijam atualizações de política de identidade ou alterações na estratégia de controle de acesso.
 
 Esse processo de planejamento também é um bom momento para avaliar a associação atual de sua equipe de governança de nuvem para as lacunas de conhecimento relacionadas à política nova ou alteração e aos riscos relacionados à identidade. Convide a equipe de TI relevante a participar das análises e planejamentos como consultores temporários ou membros permanentes da sua equipe.
 
@@ -56,7 +55,7 @@ Os gatilhos e ações de imposição a seguir fornecem exemplos que você pode c
 - **Credenciais de usuário vazadas:** As contas que têm seu nome de usuário e senha vazadas para a Internet serão desabilitadas até que a identidade do usuário possa ser verificada e a redefinição de senha.
 - **Controles de acesso insuficientes detectados:** Quaisquer ativos protegidos em que as restrições de acesso não atendam aos requisitos de segurança terão acesso bloqueado até que o recurso seja colocado em conformidade.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Usando o [modelo de Gerenciamento de Nuvem](./template.md), documente os processos e gatilhos que alinham-se ao plano de adoção da nuvem atual.
 

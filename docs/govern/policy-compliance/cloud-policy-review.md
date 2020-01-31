@@ -1,6 +1,5 @@
 ---
 title: Realizar uma revisão da política de nuvem
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Saiba como conduzir uma revisão de política de nuvem.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7ce392797cf21d9f69ae791eb2db6a6d38c38dfc
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 48e4e759435178e346e08233afeca95ab065711e
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223842"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76805057"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -37,12 +36,12 @@ Ao executar uma transformação de nuvem, as políticas geralmente controlam mui
 
 ## <a name="the-cloud-policy-review-process"></a>Processo de revisão da política de nuvem
 
-As revisões de política de nuvem alinham as políticas de segurança de ti e de governança de ti existentes com as [cinco disciplinas de governança de nuvem](../index.md): [Gerenciamento de Custos](../cost-management/index.md), [Linhas de base de segurança](../security-baseline/index.md), [Linha de base de identidade](../identity-baseline/index.md), [Consistência de recursos](../resource-consistency/index.md), e [Aceleração de Implantação](../deployment-acceleration/index.md).
+As revisões de política de nuvem alinham as políticas de segurança de ti e de governança de ti existentes às [cinco disciplinas de governança de nuvem](../index.md): [Gerenciamento de custos](../cost-management/index.md), [linha de base de segurança](../security-baseline/index.md), linha de base de [identidade](../identity-baseline/index.md), [consistência de recursos](../resource-consistency/index.md)e [aceleração](../deployment-acceleration/index.md)
 
 Para cada uma dessas disciplinas, o processo de revisão segue essas etapas:
 
 1. Políticas de revisão local existentes relacionadas à disciplina específica, procurando dois pontos de dados principais: dependências de legado e riscos comerciais identificados.
-2. Avalie cada risco aos negócios fazendo uma pergunta simples: "O risco de negócios ainda existe em um modelo de nuvem?"
+2. Avalie cada risco de negócios fazendo uma pergunta simples: "o risco comercial ainda existe em um modelo de nuvem?"
 3. Se o risco ainda existir, reescreva a política ao documentar a mitigação de negócios necessária, não a solução técnica.
 4. Examine a política atualizada com as equipes de adoção de nuvem para entender as possíveis soluções técnicas para a mitigação necessária.
 
@@ -58,7 +57,7 @@ Para fornecer um exemplo do processo, vamos usar novamente a política de backup
   - Também é importante considerar que a linha do tempo especificada no requisito acima pode ter sido definida por restrições técnicas que não estão mais presentes na nuvem. Certifique-se de entender as restrições técnicas e os recursos da nuvem antes de simplesmente aplicar um RTO/RPO herdado.
 - Examine com as equipes de adoção da nuvem. Dependendo da solução que está sendo implementada, há vários meios de aderir a esta política de Consistência de Recursos.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Saiba mais sobre como incluir a classificação de dados em sua estratégia de governança de nuvem.
 

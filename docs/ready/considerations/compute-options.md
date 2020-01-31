@@ -1,6 +1,5 @@
 ---
 title: Examine as opções de computação
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Examine as opções de computação para cargas de trabalho do Azure.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: dbdabb6edc425ea3c70706313d2357323d2a523c
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: d4b1d5728a8cba06900bfe67e288f15b042b8106
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73561872"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76799175"
 ---
 # <a name="review-your-compute-options"></a>Examine as opções de computação
 
@@ -54,7 +53,7 @@ A tabela a seguir ilustra alguns cenários de uso comum e os serviços de comput
 | Preciso provisionar máquinas virtuais do Linux e Windows em apenas alguns segundos com as configurações de minha escolha. | [Máquinas Virtuais do Azure](https://azure.microsoft.com/services/virtual-machines) |
 | Preciso alcançar alta disponibilidade por meio do dimensionamento automático para criar milhares de VMs em alguns minutos. | [Conjuntos de dimensionamento de máquinas virtuais](https://azure.microsoft.com/services/virtual-machine-scale-sets) |
 | Quero simplificar a implantação, o gerenciamento e as operações do Kubernetes. | [AKS (Serviço de Kubernetes do Azure)](https://azure.microsoft.com/services/kubernetes-service) |
-| Preciso acelerar o desenvolvimento de aplicativos usando uma arquitetura sem servidor orientada a eventos. | [Funções do Azure](https://azure.microsoft.com/services/functions) |
+| Preciso acelerar o desenvolvimento de aplicativos usando uma arquitetura sem servidor orientada a eventos. | [Azure Functions](https://azure.microsoft.com/services/functions) |
 | Preciso desenvolver microsserviços e orquestrar contêineres no Windows e no Linux. | [Azure Service Fabric](https://azure.microsoft.com/services/service-fabric) |
 | Quero criar rapidamente aplicativos de nuvem para a Web e dispositivos móveis usando uma plataforma totalmente gerenciada. | [Serviço de Aplicativo do Azure](https://azure.microsoft.com/services/app-service) |
 | Quero colocar aplicativos em contêineres e executar facilmente contêineres usando apenas um comando. | [Instâncias de Contêiner do Azure](https://azure.microsoft.com/services/container-instances) |

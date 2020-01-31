@@ -1,6 +1,5 @@
 ---
 title: Priorizar e definir cargas de trabalho para um plano de adoção de nuvem
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Priorizar e definir cargas de trabalho para um plano de adoção de nuvem
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 8e58c0e95517d49e9c8685539407127880b5d090
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 78abd15ae06918e913f520d96b29e29f1a253856
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73240185"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76799974"
 ---
 # <a name="prioritize-and-define-workloads-for-a-cloud-adoption-plan"></a>Priorizar e definir cargas de trabalho para um plano de adoção de nuvem
 
@@ -64,7 +63,7 @@ Depois que as prioridades iniciais tiverem sido definidas e as cargas de trabalh
 
 ### <a name="business-inputs"></a>Entradas comerciais
 
-| Ponto de dados | Descrição | Entrada |
+| Ponto de dados | Description | Entrada |
 |---|---|---|
 | Nome da carga de trabalho | O que essa carga de trabalho é chamada? |         |
 | Descrição da carga de trabalho | Em uma frase, o que essa carga de trabalho faz? |         |
@@ -83,7 +82,7 @@ Depois que as prioridades iniciais tiverem sido definidas e as cargas de trabalh
 
 ### <a name="technical-inputs"></a>Entradas técnicas
 
-| Ponto de dados | Descrição | Entrada |
+| Ponto de dados | Description | Entrada |
 |---|---|---|
 | Abordagem de adoção | Essa adoção é um candidato para migração ou inovação? |         |
 | Líder de ops do aplicativo | Liste as partes responsáveis pelo desempenho e pela disponibilidade dessa carga de trabalho. |         |
@@ -91,7 +90,7 @@ Depois que as prioridades iniciais tiverem sido definidas e as cargas de trabalh
 | Importância | Liste a criticalidade do aplicativo atual. |         |
 | Classificação de dados | Liste a classificação de sensibilidade de dados. |         |
 | Geografias operacionais | Listar qualquer região geográfica na qual a carga de trabalho seja ou deve ser hospedada. |         |
-| aplicativos | Especifique uma lista inicial ou contagem de todos os aplicativos incluídos nessa carga de trabalho. |         |
+| Aplicativos | Especifique uma lista inicial ou contagem de todos os aplicativos incluídos nessa carga de trabalho. |         |
 | VMs | Especifique uma lista inicial ou a contagem de quaisquer VMs ou servidores incluídos na carga de trabalho. |         |
 | Fontes de dados | Especifique uma lista inicial ou a contagem de quaisquer fontes de dados incluídas na carga de trabalho. |         |
 | Dependências | Listar quaisquer dependências de ativos não incluídas na carga de trabalho. |         |

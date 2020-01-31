@@ -1,6 +1,5 @@
 ---
 title: Introdução ao caminho de preparação de habilidades
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Introdução ao caminho de preparação de habilidades
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: e025b46c99e36340afd777e06b3a493c9f65c5dd
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 88de7ae19e3853bf132b58d0c3cbeb16d278a28f
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564208"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76800144"
 ---
 # <a name="getting-started-on-a-skills-readiness-path"></a>Introdução ao caminho de preparação de habilidades
 
@@ -40,7 +39,7 @@ Cada um dos caminhos de aprendizado anteriores compartilha oportunidades entre v
 
 ## <a name="microsoft-learn"></a>Microsoft Learn
 
-O Microsoft Learn é uma nova abordagem para o aprendizado. A preparação para as novas habilidades e responsabilidades que acompanham a adoção da nuvem não é fácil. O Microsoft Learn oferece uma abordagem mais recompensadora para o aprendizado prático que ajuda você a atingir suas metas mais rapidamente. Ganhe pontos e níveis e obtenha mais!
+O Microsoft Learn é uma nova abordagem para o aprendizado. A preparação para as novas habilidades e responsabilidades que acompanham a adoção de nuvem não é fácil. O Microsoft Learn oferece uma abordagem mais recompensadora para o aprendizado prático que ajuda você a atingir suas metas mais rapidamente. Ganhe pontos e níveis e conquiste mais!
 Aqui estão alguns exemplos de caminhos de aprendizado personalizados em Microsoft Learn que se alinham à seção de plano da estrutura de adoção de nuvem:
 
 [Evolua suas práticas DevOpss](https://docs.microsoft.com/learn/paths/evolve-your-devops-practices):D evops é a União de pessoas, processos e produtos para permitir a entrega contínua de valor aos seus usuários finais. O Azure DevOps é um conjunto de serviços que fornece as ferramentas necessárias para fazer exatamente isso. Com o Azure DevOps, você pode criar, testar e implantar qualquer aplicativo, seja para a nuvem ou local.

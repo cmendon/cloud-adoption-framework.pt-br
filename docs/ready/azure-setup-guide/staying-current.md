@@ -1,6 +1,5 @@
 ---
 title: Manter-se atualizado com o Azure na cadência da nuvem de hoje
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Saiba como se manter atualizado e como gerenciar mudanças com o Azure na cadência da nuvem de hoje.
 author: jelledruyts
 ms.author: andym
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-new, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 5c241ab6b5f7c9fafa13492151b0ab49a7f619e8
-ms.sourcegitcommit: 72df8c1b669146285a8680e05aeceecd2c3b2e83
+ms.openlocfilehash: 8dd545e4d34dfafd6a777828b9c590030797fdae
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74681705"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76799209"
 ---
 # <a name="stay-current-with-microsoft-azure"></a>Permaneça atualizado com o Microsoft Azure
 

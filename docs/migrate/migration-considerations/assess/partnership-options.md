@@ -1,6 +1,5 @@
 ---
 title: Noções básicas sobre opções de parceria e de suporte
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Descreve as opções e abordagens para dar suporte aos esforços de migração
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 70ae0b048b0cf5e3bd364f8c0cc1051c515c39ea
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: 9a525ab1c87f1cbb4c662c6f902e73de93c0204c
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74159900"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76802456"
 ---
 # <a name="understand-partnership-options"></a>Entender as opções de parceria
 
@@ -47,7 +46,7 @@ O [FastTrack for Azure](https://azure.microsoft.com/roadmap/fasttrack-for-azure)
 - Windows Server no Azure
 - Linux no Azure
 - SAP no Azure
-- BCDR (continuidade de negócios e recuperação de desastre)
+- BCDR (continuidade de negócios e recuperação de desastres)
 - Computação de alto desempenho*
 - Aplicativos nativos de nuvem
 - Operações de Desenvolvimento
@@ -78,9 +77,9 @@ As principais fases de um compromisso típico do FastTrack for Azure são:
 
 ![Abordagem do Cloud Adoption Framework dos Serviços Microsoft](../../../_images/migrate/mcs-program-approach.jpg)
 
-**Avaliar:** Os serviços da Microsoft usam uma [abordagem orientada, de dados e de ferramentas](https://download.microsoft.com/download/C/7/C/C7CEA89D-7BDB-4E08-B998-737C13107361/Secure_Cloud_Insights_Datasheet_EN_US.pdf) , que consiste em workshops de arquitetura, informações em tempo real do Azure, modelos de ameaça de identidade e segurança e várias ferramentas para fornecer ideias sobre desafios, riscos, recomendações e problemas em um ambiente existente do Azure com um resultado importante, como um [roteiro de modernização de alto nível](https://download.microsoft.com/download/F/7/2/F72FAD7E-8BBD-4E04-8C7B-9AC4FE04A150/Cloud_Adoption_Discovery_and_Roadmap_Datasheet.pdf).
+**Avaliar:** Os serviços da Microsoft usam uma [abordagem orientada, de dados e de ferramentas](https://download.microsoft.com/download/C/7/C/C7CEA89D-7BDB-4E08-B998-737C13107361/Secure_Cloud_Insights_Datasheet_EN_US.pdf) , que consiste em workshops arquitetônicos, informações em tempo real do Azure, modelos de ameaça de identidade e segurança e várias ferramentas para fornecer ideias sobre desafios, riscos, recomendações e problemas para um ambiente existente do Azure com um resultado importante, como o [roteiro de modernização de alto nível](https://download.microsoft.com/download/F/7/2/F72FAD7E-8BBD-4E04-8C7B-9AC4FE04A150/Cloud_Adoption_Discovery_and_Roadmap_Datasheet.pdf).
 
-**Adote:** Por meio do Microsoft [Azure cloud Foundation](https://download.microsoft.com/download/D/8/7/D872DFD0-1C46-4145-95E4-B5EAB2958B96/Hybrid_Cloud_Foundation_Datasheet_EN_US.pdf), estabeleça seus principais designs, padrões e arquitetura de governança do Azure, mapeando seus requisitos para a arquitetura de referência mais apropriada e planeje, projete e implante a infraestrutura, gerenciamento, segurança e identidade necessários para cargas de trabalho.
+**Adote:** Por meio do Microsoft [Azure cloud Foundation](https://download.microsoft.com/download/D/8/7/D872DFD0-1C46-4145-95E4-B5EAB2958B96/Hybrid_Cloud_Foundation_Datasheet_EN_US.pdf), estabeleça seus principais designs, padrões e arquitetura de governança do Azure, mapeando seus requisitos para a arquitetura de referência e o plano mais adequados, projetar e implantar a infraestrutura, o gerenciamento, a segurança e a identidade necessárias para as cargas de trabalho.
 
 **Migrar/otimizar:** A solução de [modernização em nuvem](https://download.microsoft.com/download/3/7/3/373F90E3-8568-44F3-B096-CD9C1CD28AB7/Cloud_Modernization_Datasheet_EN_US.pdf) dos serviços da Microsoft oferece uma abordagem abrangente para mover aplicativos e infraestrutura para o Azure, bem como para otimizar e modernizar após a implantação na nuvem, apoiada pela migração simplificada.
 
@@ -94,7 +93,7 @@ Se você tiver dúvidas ou precisar de ajuda, [crie uma solicitação de suporte
 
 Os Provedores de soluções certificados pela Microsoft se especializam em fornecer soluções atualizadas com base em tecnologia Microsoft aos clientes do mundo todo. Otimize seus negócios na nuvem com a ajuda de um parceiro experiente.
 
-Obtenha ajuda de parceiros com soluções do Azure prontas para uso ou personalizadas e os parceiros podem ajudar na implantação e no gerenciamento dessas soluções para seu negócio:
+Obtenha a ajuda de parceiros com soluções do Azure prontas para uso ou personalizadas e os parceiros podem ajudar na implantação e gerenciamento dessas soluções para seu negócio:
 
 - **[Encontre um Parceiro de Soluções de Nuvem](https://www.microsoft.com/solution-providers/home).** Um CSP certificado pode ajudar a aproveitar ao máximo a nuvem, avaliando as metas empresariais para a adoção da nuvem, identificando a solução de nuvem certa que atenda às necessidades empresariais e que ajude a tornar a empresa mais ágil e eficiente.
 - **[Encontrar um Parceiro de serviço gerenciado](https://www.microsoft.com/solution-providers/search?cacheId=16a3b49b-fef2-449d-bdf0-628008114cca).** Um MSP (parceiro de serviço gerenciado) do Azure ajuda na transição empresarial para o Azure, orientando todos os aspectos do percurso para a nuvem. Da consultoria ao gerenciamento de operações e migrações, os MSPs de nuvem mostram aos clientes todos os benefícios que a adoção da nuvem proporciona. Eles também atuam como uma loja conveniente que fornece suporte comum, provisionamento e experiência de cobrança, tudo com um modelo empresarial PAYG (pago conforme o uso) flexível.

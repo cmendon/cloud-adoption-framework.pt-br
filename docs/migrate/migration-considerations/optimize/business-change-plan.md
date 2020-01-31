@@ -1,6 +1,5 @@
 ---
 title: Diretrizes para desenvolver um plano de alteração do negócio
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Um processo na migração na nuvem que se concentra nas tarefas de migrar cargas de trabalho para a nuvem.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2050c210bad9434e688ec4ef7c2e700cccf39f2c
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 48e670028e26be5a28abf55c7a0565769e17dacf
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564607"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76801963"
 ---
 # <a name="business-change-plan"></a>Plano de alteração do negócio
 
@@ -58,7 +57,7 @@ Um plano de alteração do negócio vai além da alteração técnica e assume q
 
 O plano de alteração do negócio varia de acordo com a empresa. O objetivo dessas perguntas é ajudar a integrar melhor os negócios às alterações associadas a cada lançamento. Ao examinar cada lançamento não como uma alteração de tecnologia a ser adotada, mas como um plano de alteração do negócio, pode ser mais fácil alcançar os resultados empresariais.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Após documentar e planejar a alteração do negócio, é possível começar os [testes de negócios](./business-test.md).
 

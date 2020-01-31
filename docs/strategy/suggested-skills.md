@@ -1,6 +1,5 @@
 ---
 title: Caminho de preparação de habilidades durante o planejamento
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Visão geral do caminho de preparação de habilidades durante a fase planejar da migração.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 05/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 62152049578d1bd1f433cc4d2070504363cffef1
-ms.sourcegitcommit: 2efd4715294189bcea7aada8a1cbbc85c72f6264
+ms.openlocfilehash: 36e7957f8bcdcc7edc12f3a2e5309eac3d551fb5
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "75943452"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76798104"
 ---
 # <a name="skills-readiness-path-during-the-plan-phase-of-a-migration-journey"></a>Caminho de preparação de habilidades durante a fase de plano de uma jornada de migração
 
@@ -91,7 +90,7 @@ O Microsoft Learn é uma nova abordagem para o aprendizado. A preparação para 
 
 Aqui está um exemplo de roteiros de aprendizado personalizados que se alinham com a estratégia parte da estrutura de adoção de nuvem.
 
-[Aprenda o valor comercial de Microsoft Azure](https://docs.microsoft.com/learn/paths/learn-business-value-of-azure): essa experiência de aprendizado levará você em uma jornada que começará mostrando como a transformação digital e o poder da nuvem podem transformar seus negócios. Abordaremos como os serviços de nuvem do Microsoft Azure podem impulsionar sua organização em uma plataforma de nuvem confiável. Por fim, concluiremos ilustrando como tornar essa jornada real para a sua organização.
+[Aprenda o valor comercial de Microsoft Azure](https://docs.microsoft.com/learn/paths/learn-business-value-of-azure): essa experiência de aprendizado levará você em uma jornada que começará mostrando como a transformação digital e o poder da nuvem podem transformar seus negócios. Abordaremos como Microsoft Azure serviços de nuvem podem capacitar sua organização em uma plataforma de nuvem confiável. Finalmente, vamos concluir ilustrando como tornar essa jornada real para sua organização.
 
 ## <a name="learn-more"></a>Saiba mais
 

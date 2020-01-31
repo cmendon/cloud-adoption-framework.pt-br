@@ -1,6 +1,5 @@
 ---
 title: Recursos de estratégia de nuvem
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Descreve a formação de recursos de estratégia de nuvem
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 022afb976a807d1e178bcc5788885bcabc3f1b59
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 17ef8a6b84e16b2baf7a69918051c7f6a8257396
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030438"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76800841"
 ---
 # <a name="cloud-strategy-capabilities"></a>Recursos de estratégia de nuvem
 
@@ -29,9 +28,9 @@ Esse recurso é normalmente fornecido pelos seguintes tipos de funções. Quando
 - Finanças
 - Linha de negócios
 - Recursos humanos
-- Operações
+- Operations
 - Arquitetura empresarial
-- Infraestrutura de TI
+- Infraestrutura de ti
 - Grupos de aplicativos
 - Gerentes de projeto (muitas vezes com experiência de gerenciamento de projeto ágil)
 
@@ -47,8 +46,8 @@ O foco principal da estratégia de nuvem é validar e manter o alinhamento entre
 ### <a name="early-planning-tasks"></a>Tarefas de planejamento antecipada
 
 - Revise e forneça comentários sobre [resultados de negócios](../strategy/business-outcomes/index.md) e [modelos financeiros](../strategy/financial-models.md).
-- Ajudar a estabelecer motivações claras [para a adoção de nuvem](../strategy/motivations.md) que se alinham com os objetivos corporativos.
-- Defina métricas de [aprendizado](../strategy/learning-metrics.md) relevantes que informam claramente o progresso em relação aos resultados de negócios.
+- Ajudar a estabelecer [motivações claras para a adoção de nuvem](../strategy/motivations.md) que se alinham com os objetivos corporativos.
+- Defina [métricas de aprendizado](../strategy/learning-metrics.md) relevantes que informam claramente o progresso em relação aos resultados de negócios.
 - Entenda os [riscos de negócios](../govern/policy-compliance/risk-tolerance.md) introduzidos pelo plano, que representam a tolerância a riscos dos [negócios](../govern/policy-compliance/risk-tolerance.md).
 - Examine e aprove a [racionalização do espaço digital](../digital-estate/rationalize.md).
 
@@ -63,11 +62,11 @@ O foco principal da estratégia de nuvem é validar e manter o alinhamento entre
 
 As tarefas listadas na seção anterior podem ser demoradas nas fases de planejamento iniciais. Aqui estão algumas recomendações para a alocação de tempo para membros da equipe da estratégia de nuvem:
 
-- Durante os esforços de planejamento antecipado, aloque uma hora a cada semana para atender à equipe. Depois que o plano de adoção é solidificou (geralmente&ndash;dentro de 4 6 semanas), os requisitos de tempo podem ser reduzidos.
-- Em todos os esforços de adoção,&ndash;aloque 1 2 horas por mês para revisar o progresso e validar as prioridades contínuas.
+- Durante os esforços de planejamento antecipado, aloque uma hora a cada semana para atender à equipe. Depois que o plano de adoção é solidificou (geralmente dentro de 4&ndash;6 semanas), os requisitos de tempo podem ser reduzidos.
+- Em todos os esforços de adoção, aloque 1&ndash;2 horas por mês para revisar o progresso e validar as prioridades contínuas.
 - É provável que o tempo adicional seja exigido de membros delegados da equipe do executivo de acordo com a necessidade. Cada membro da equipe de estratégia de nuvem deve indicar um delegado que pode alocar 5&ndash;10 horas por semana para dar suporte a perguntas de priorização contínua e relatar as necessidades urgentes.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 A estratégia e o planejamento são importantes. No entanto, nada é acionável sem [recursos de adoção de nuvem](./cloud-adoption.md). Entenda a função desse recurso importante antes de começar os esforços de adoção.
 

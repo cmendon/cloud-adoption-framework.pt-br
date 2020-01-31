@@ -1,6 +1,5 @@
 ---
 title: Vários datacenters
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Vários datacenters
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b2491d349628d2c9640097ddd2c94b79505a0921
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 9156df0b76f6edf1d249d5d724e0a5d0f4fd8e15
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024782"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76803068"
 ---
 # <a name="multiple-datacenters"></a>Vários datacenters
 
@@ -37,10 +36,10 @@ A maior mudança no processo de avaliação, ao expandir o escopo para lidar com
 
 ### <a name="suggested-action-during-the-assess-process"></a>Ação sugerida durante o processo de avaliação
 
-**Avaliar dependências entre datacenters:** as [ferramentas de visualização de dependência nas Migrações para Azure](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization) podem ajudar a identificar dependências. O uso desse conjunto de ferramentas antes da migração é uma melhor prática geral. No entanto, ao lidar com a complexidade global, ela se torna uma etapa necessária para o processo de avaliação. Por meio do [agrupamento de dependências](https://docs.microsoft.com/azure/migrate/how-to-create-group-machine-dependencies), a visualização pode ajudar a identificar os endereços IP e as portas de ativos necessários para dar suporte à carga de trabalho.
+**Avaliar dependências entre datacenters:** As [ferramentas de visualização de dependência nas migrações para Azure](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization) podem ajudar a identificar dependências. O uso desse conjunto de ferramentas antes da migração é uma melhor prática geral. No entanto, ao lidar com a complexidade global, ela se torna uma etapa necessária para o processo de avaliação. Por meio do [agrupamento de dependências](https://docs.microsoft.com/azure/migrate/how-to-create-group-machine-dependencies), a visualização pode ajudar a identificar os endereços IP e as portas de ativos necessários para dar suporte à carga de trabalho.
 
 > [!IMPORTANT]
-> Duas observações importantes: Primeiro, é necessário um especialista no assunto com compreensão do posicionamento dos ativos e dos esquemas de endereços IP para identificar os ativos que residem em um datacenter secundário. Depois, é importante avaliar as dependências de downstream e os clientes no visual para entender as dependências bidirecionais.
+> Duas observações importantes: primeiro, um especialista no assunto com uma compreensão do posicionamento do ativo e dos esquemas de endereço IP é necessário para identificar os ativos que residem em um datacenter secundário. Depois, é importante avaliar as dependências de downstream e os clientes no visual para entender as dependências bidirecionais.
 
 ## <a name="migrate-process-changes"></a>Alterações no processo de migração
 
@@ -50,8 +49,8 @@ A migração de vários datacenters é semelhante à consolidação de datacente
 
 Confira a seguir as atividades que afetam muito o sucesso de uma migração na nuvem:
 
-- **Avaliar conflitos de rede:** ao consolidar datacenters em um único provedor de nuvem, há uma probabilidade de criar conflitos de rede, DNS ou outros. Durante a migração, é importante testar se há conflitos, a fim de evitar interrupções em sistemas de produção hospedados na nuvem.
-- **Atualizar tabelas de roteamento:** muitas vezes, modificações nas tabelas de roteamento são necessárias ao consolidar redes ou datacenters.
+- **Avaliar conflitos de rede:** Ao consolidar data centers em um único provedor de nuvem, há uma probabilidade de criar conflitos de rede, DNS ou outros. Durante a migração, é importante testar se há conflitos, a fim de evitar interrupções em sistemas de produção hospedados na nuvem.
+- **Atualizar tabelas de roteamento:** Muitas vezes, as modificações nas tabelas de roteamento são necessárias ao consolidar redes ou data centers.
 
 ## <a name="optimize-and-promote-process-changes"></a>Otimizar e promover alterações no processo
 
@@ -65,7 +64,7 @@ Antes da promoção, é importante fornecer níveis adicionais de teste durante 
 
 A proteção e o gerenciamento de processos precisam permanecer inalterados nessa expansão de escopo.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Retorne à [Lista de verificação de escopo expandido](./index.md) para garantir que o método de migração esteja totalmente alinhado.
 
