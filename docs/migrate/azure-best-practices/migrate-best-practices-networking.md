@@ -1,6 +1,5 @@
 ---
 title: Melhores práticas para configurar a rede para as cargas de trabalho migradas para o Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Depois de migrar para o Azure, obtenha as melhores práticas para a configuração de rede para suas cargas de trabalho migradas.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a7f119dcfd2b7cdfc71b8a4c6f913448cd98e763
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: a8a4bc504c085f461cb70f561670fe55a20a544b
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753621"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76803867"
 ---
 # <a name="best-practices-to-set-up-networking-for-workloads-migrated-to-azure"></a>Melhores práticas para configurar a rede para as cargas de trabalho migradas para o Azure
 
@@ -115,7 +114,7 @@ O Azure adiciona um servidor DNS por padrão quando você implanta uma VNet. Iss
 - Os servidores DNS especificados para um adaptador de rede ou serviço de nuvem têm precedência sobre aqueles especificados para a VNet.
 - No modelo de implantação do Azure Resource Manager, você pode especificar servidores DNS para uma VNet e um adaptador de rede, mas a melhor prática é usar a configuração somente em VNets.
 
-    ![Servidores DNS](./media/migrate-best-practices-networking/dns2.png) *Servidores DNS para VNet*
+    ![servidores DNS](./media/migrate-best-practices-networking/dns2.png) *servidores DNS para VNet*
 
 **Saiba mais:**
 
@@ -132,14 +131,14 @@ As zonas de disponibilidade aumentam a alta disponibilidade para proteger os apl
 - A separação física das zonas de disponibilidade dentro de uma região protege os aplicativos e os dados contra falhas do datacenter.
 - Os serviços com redundância de zona replicam os aplicativos e os dados entre zonas de disponibilidade para proteger dos pontos únicos de falha. Com as zonas de disponibilidade, o Azure oferece um SLA de tempo de atividade da VM de 99,99%.
 
-    ![Zona de disponibilidade](./media/migrate-best-practices-networking/availability-zone.png) *Zona de disponibilidade*
+    zona de disponibilidade de *![](./media/migrate-best-practices-networking/availability-zone.png) zona* de disponibilidade
 
 - É possível planejar e criar alta disponibilidade na arquitetura de migração colocalizando os recursos de computação, armazenamento, rede e dados em uma zona e replicando em outras zonas. Os serviços do Azure que dão suporte a zonas de disponibilidade enquadram-se em duas categorias:
   - Serviços zonais: você associa um recurso a uma zona específica. Por exemplo, VMs, discos gerenciados, endereços IP.
   - Serviços com redundância de zona: o recurso é replicado automaticamente entre zonas. Por exemplo, armazenamento com redundância de zona, Banco de Dados SQL do Azure.
 - Você pode implantar uma carga do Azure padrão balanceada com cargas de trabalho voltadas para a Internet ou camadas de aplicativo, para fornecer tolerância a falhas de zona.
 
-    ![Balanceador de carga](./media/migrate-best-practices-networking/load-balancer.png) *Balanceador de carga*
+    ![balanceador de carga](./media/migrate-best-practices-networking/load-balancer.png) *balanceador de carga*
 
 **Saiba mais:**
 
@@ -512,7 +511,7 @@ Firewalls de NVA | Como no Firewall do Azure, os farms de firewall da NVA têm u
 
 - [Saiba mais sobre](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-hybrid) o uso de NVAs em uma VNet do Azure.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Examine outras melhores práticas:
 

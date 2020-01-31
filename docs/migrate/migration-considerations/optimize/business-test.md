@@ -1,6 +1,5 @@
 ---
 title: Diretrizes para teste de negócios (UAT) durante a migração
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Um processo na migração na nuvem que se concentra nas tarefas de migrar cargas de trabalho para a nuvem.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 0f1ba39ae283b1ab2fdb276310a9490af6bf87b7
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 4c24ae176d3b8fc8ec4fa504ed406bc32a1c0ab3
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70825504"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76801946"
 ---
 # <a name="guidance-for-business-testing-uat-during-migration"></a>Diretrizes para teste de negócios (UAT) durante a migração
 
@@ -50,7 +49,7 @@ A TI serve como um dos destinatários da saída do teste de negócios. Os loops 
 - Identificar os testes automatizados existentes que podem simplificar o teste para os usuários avançados.
 - Para alterações que possam exigir a repetição da implantação ou de testes, estude os processos de testes, defina os parâmetros de comparação e projete a automação para simplificar ainda mais os testes de usuários avançados.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Em conjunto com os testes de negócios, a [otimização dos ativos migrados](./optimize.md) pode refinar os custos e o desempenho da carga de trabalho.
 

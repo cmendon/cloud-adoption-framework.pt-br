@@ -1,6 +1,5 @@
 ---
 title: Guia de decisão de identidade
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Saiba mais sobre identidade como um serviço principal nas migrações do Azure.
 author: rotycenh
 ms.author: v-tyhopk
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: b071fc546f615679bf712e9caa7725e767b73ad9
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: b447330368823947bfe027036b14c3a6c1fb94f1
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753195"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807097"
 ---
 # <a name="identity-decision-guide"></a>Guia de decisão de identidade
 
@@ -36,7 +35,7 @@ Gerenciamento de identidades baseado em nuvem é um processo iterativo. Você po
 |------|------|------|------|------|
 | Você não tem um serviço de diretório local atualmente? | Sim | Não | Não | Não |
 | Suas cargas de trabalho precisam usar um conjunto comum de usuários e grupos entre o ambiente de nuvem e local? | Não | Sim | Não | Não |
-| Suas cargas de trabalho dependem de mecanismos de autenticação herdados, como Kerberos ou NTLM? | Não | Não | sim | Sim |
+| Suas cargas de trabalho dependem de mecanismos de autenticação herdados, como Kerberos ou NTLM? | Não | Não | Sim | Sim |
 | Você precisa de logon único entre vários provedores de identidade? | Não | Não | Não | Sim |
 
 Como parte do planejamento da migração para o Azure, você precisará determinar a melhor maneira de integrar seus serviços existentes de gerenciamento de identidades e de identidade na nuvem. Abaixo temos cenários comuns de integração.

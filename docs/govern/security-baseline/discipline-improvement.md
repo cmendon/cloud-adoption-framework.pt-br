@@ -1,6 +1,5 @@
 ---
 title: Melhoria da disciplina de Linha de Base de Segurança
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Melhoria da disciplina de Linha de Base de Segurança
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,18 +8,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: fc7a6bf6553ebc9679aee63a07d6ef3bca847c3a
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 316a848e0f9f3f90a2f7badde3166733dce4a4c0
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221729"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808899"
 ---
 # <a name="security-baseline-discipline-improvement"></a>Melhoria da disciplina de Linha de Base de Segurança
 
 A disciplina de linha de base de segurança concentra-se em maneiras de estabelecer políticas que protegem a rede, os ativos e, mais importante, os dados que residirão na solução de um provedor de nuvem. Dentro das cinco disciplinas de governança de nuvem, a linha de base de segurança inclui a classificação do espaço digital e dos dados. Adicionalmente, inclui documentação de riscos, tolerância comercial e estratégias de mitigação associadas à segurança dos dados, ativos e rede. De uma perspectiva técnica, também inclui o envolvimento nas decisões relativas à [criptografia](../../decision-guides/encryption/index.md), [requisitos de rede](../../decision-guides/software-defined-network/index.md), [estratégias de identidade híbrida](../../decision-guides/identity/index.md) e aos [processos](./compliance-processes.md) utilizados para desenvolver políticas de Linha de Base de Segurança de nuvem.
 
-Este artigo descreve algumas tarefas potenciais em que sua empresa pode se envolver para desenvolver e consolidar melhor a disciplina de Linha de Base de Segurança. Essas tarefas podem ser divididas em fases de planejamento, construção, adoção e operação da implementação de uma solução em nuvem, as quais serão iteradas ao permitir o desenvolvimento de uma [abordagem incremental para governança de nuvem](../guides/index.md#an-incremental-approach-to-cloud-governance).
+Este artigo descreve algumas tarefas potenciais em que sua empresa pode se envolver para desenvolver e consolidar melhor a disciplina de Linha de Base de Segurança. Essas tarefas podem ser divididas entre as fases de planejamento, criação, adoção e operacional para a implementação de uma solução de nuvem, que depois são iteradas para permitir o desenvolvimento de uma [abordagem incremental para a governança de nuvem](../guides/index.md#an-incremental-approach-to-cloud-governance).
 
 ![Quatro fases de adoção](../../_images/govern/adoption-phases.png)
 
@@ -38,8 +37,8 @@ Esta fase de maturidade de governança une os resultados de negócios e as estra
 **Atividades mínimas sugeridas:**
 
 - Avalie as opções da [cadeia de ferramentas de Linha de Base de Segurança](./toolchain.md).
-- Desenvolva um documento preliminar de Diretrizes de Arquitetura e distribua aos principais stakeholders.
-- Treine e envolva as pessoas e as equipes afetadas pelo desenvolvimento de diretrizes de arquitetura.
+- Desenvolver um documento com o esboço das Diretrizes de Arquitetura e distribuí-lo aos principais stakeholders.
+- Treinar e envolver as pessoas e equipes afetadas pelo desenvolvimento das diretrizes de arquitetura.
 - Adicione tarefas de segurança prioritárias à lista de pendências de migração.
 
 **Atividades potenciais:**
@@ -64,7 +63,7 @@ Vários pré-requisitos técnicos e não técnicos são necessários para migrar
 - Implemente sua [linha de base de segurança ferramentas](./toolchain.md) distribuindo em uma fase de pré-implantação.
 - Atualizar o documento com o esboço das Diretrizes de Arquitetura e distribuí-lo aos principais stakeholders.
 - Implemente tarefas de segurança na lista de pendências de migração priorizada.
-- Desenvolva materiais educacionais e documentação, comunicações de conscientização, incentivos e outros programas para ajudar a impulsionar a adoção pelos usuários.
+- Desenvolver materiais e documentações educativas, comunicações de conscientização, incentivos e outros programas para ajudar a conduzir a adoção de usuários.
 
 **Atividades potenciais:**
 
@@ -96,7 +95,7 @@ A migração é um processo incremental que se concentra no movimento, teste e a
 - Revise suas políticas de acesso de privilégio mínimo e ajuste os controles de acesso para maximizar a segurança.
 - Teste a cadeia de ferramentas da Linha de Base de Segurança das cargas de trabalho para identificar e resolver quaisquer vulnerabilidades.
 
-## <a name="operate-and-post-implementation"></a>Operar e pós-implementação
+## <a name="operate-and-post-implementation"></a>Operação e pós-implementação
 
 Depois que a transformação for concluída, a governança e as operações devem ser mantidas para o ciclo de vida natural de um aplicativo ou uma carga de trabalho. Essa fase de maturidade de governança se concentra em atividades que normalmente ocorrem depois que a solução é implementada e que o ciclo de transformação começa a se estabilizar.
 
@@ -114,11 +113,11 @@ Depois que a transformação for concluída, a governança e as operações deve
 - Tenha procedimentos implantados para parar rapidamente o acesso não autorizado e desabilitar recursos que possam ter sido comprometidos por um invasor.
 - Revise regularmente as melhores práticas de segurança mais recentes e aplique recomendações às políticas de segurança, automação e monitoramento de recursos, sempre que possível.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Agora que você já entende o conceito de governança de segurança de nuvem, prossiga e saiba [quais as diretrizes de segurança e melhores práticas a Microsoft oferece](./azure-security-guidance.md) para o Azure.
 
 > [!div class="nextstepaction"]
-> [Saiba mais sobre as diretrizes de segurança para](./azure-security-guidance.md)
-> a introdução do Azure
-> [à segurança do Azure](https://docs.microsoft.com/azure/security/azure-security)[saiba mais sobre registro em log, relatórios e monitoramento](../../decision-guides/logging-and-reporting/index.md)
+> [Saiba mais sobre as diretrizes de segurança do azure](./azure-security-guidance.md)
+> [introdução à segurança do Azure](https://docs.microsoft.com/azure/security/azure-security)
+> [saiba mais sobre registro em log, relatórios e monitoramento](../../decision-guides/logging-and-reporting/index.md)

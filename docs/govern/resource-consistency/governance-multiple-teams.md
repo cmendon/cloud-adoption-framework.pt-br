@@ -1,6 +1,5 @@
 ---
 title: Design de governança no Azure para várias equipes
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Diretrizes para configurar controles de governança do Azure para várias equipes, várias cargas de trabalho e vários ambientes.
 author: alexbuckgit
 ms.author: abuck
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 59b60af79d81316726ffed1dcf326641af059cb0
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: 7bfceb1a7fe68869dabec7eda813cd3fdc121b49
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74160469"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76804292"
 ---
 # <a name="governance-design-for-multiple-teams"></a>Design de governança para várias equipes
 
@@ -140,7 +139,7 @@ Agora que criamos um modelo de permissões de privilégios mínimos, vamos dar u
 2. **Ambiente de produção:** Vários grupos de recursos que representam várias cargas de trabalho de produção. Esses recursos são usados para hospedar os artefatos de aplicativo voltados para o público e o privado. Esses recursos normalmente têm o controle mais completa e modelos de segurança para proteger os recursos, o código do aplicativo e dados contra acesso não autorizado.
 3. **Ambiente de pré-produção:** Vários grupos de recursos que representam várias cargas de trabalho prontas de não produção. Esses recursos são usados para desenvolvimento e teste esses recursos podem ter um modelo de governança mais relaxado para permitir maior agilidade do desenvolvedor. A segurança nesses grupos deve aumentar o nível mais próximo de "produção" que um processo de desenvolvimento de aplicativos obtém.
 
-Para cada um desses três ambientes, temos um requisito para controlar dados de custo por **proprietário da carga de trabalho**, **ambiente**, ou ambos. Ou seja, você desejará saber o custo contínuo da **infraestrutura compartilhada**, os custos incorridos por indivíduos na pré-produção **e nos ambientes de** **produção** e, finalmente, o custo geral de **pré-produção** eambientes de produção.
+Para cada um desses três ambientes, temos um requisito para controlar dados de custo por **proprietário da carga de trabalho**, **ambiente**, ou ambos. Ou seja, você desejará saber o custo contínuo da **infraestrutura compartilhada**, os custos incorridos por indivíduos na pré-produção **e nos ambientes de** **produção** e, finalmente, o custo **geral de ambientes de** **produção e pré-produção** .
 
 Você já aprendeu que os recursos estão no escopo em dois níveis: **assinatura** e **grupo de recursos**. Portanto, a primeira decisão é como organizar os ambientes por **assinatura**. Há apenas duas possibilidades: uma única assinatura ou várias assinaturas.
 
@@ -260,7 +259,7 @@ Siga estas etapas:
 6. Crie um processo de aprovação para **proprietários da carga de trabalho** para solicitar a criação de grupos de recursos. O processo de aprovação pode ser implementado de diversas maneiras, como por email, ou você pode usar uma ferramenta de gerenciamento do processo como [fluxos de trabalho do SharePoint](https://support.office.com/article/introduction-to-sharepoint-workflow-07982276-54e8-4e17-8699-5056eff4d9e3). O processo de aprovação pode seguir estas etapas:
     - O **proprietário da carga de trabalho** prepara uma lista de materiais dos recursos do Azure necessários no **desenvolvimento** ambiente, **produção** ambiente, ou ambos e envia para o **proprietário da assinatura**.
     - O **proprietário da assinatura** examina a lista de materiais e valida os recursos solicitados para garantir que os recursos solicitados são apropriados para seu uso planejado - por exemplo, a verificação de que a solicitação [ tamanhos de máquina virtual](https://docs.microsoft.com/azure/virtual-machines/windows/sizes) estão corretas.
-    - Se a solicitação não for aprovada, o **proprietário da carga de trabalho** será notificado. Se a solicitação for aprovada, o **proprietário da assinatura** [cria o grupo de recurso solicitado](https://docs.microsoft.com/azure/azure-resource-manager/manage-resource-groups-portal#create-resource-groups) após sua organização [convenções de nomenclatura](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming), [ Adiciona o **proprietário da carga de trabalho** ](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal#add-a-role-assignment) com o [ **colaborador** função](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor) e envia uma notificação para o **proprietário de carga de trabalho** que o grupo de recursos foi criado.
+    - Se a solicitação não for aprovada, o **proprietário da carga de trabalho** será notificado. Se a solicitação for aprovada, o **proprietário da assinatura** [criará o grupo de recursos solicitado](https://docs.microsoft.com/azure/azure-resource-manager/manage-resource-groups-portal#create-resource-groups) seguindo as [convenções de nomenclatura](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming)da sua organização, [adicionará o **proprietário da carga de trabalho** ](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal#add-a-role-assignment) com a [função **colaborador** ](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor) e enviará a notificação para o **proprietário da carga de trabalho** que o grupo de recursos foi criado.
 7. Crie um processo de aprovação para os proprietários da carga de trabalho solicitar uma emparelhamento de conexão do proprietário infraestrutura compartilhada de rede virtual. Assim como acontece com a etapa anterior, esse processo de aprovação pode ser implementado usando email ou uma ferramenta de gerenciamento de processos.
 
 Agora que você já implementou o seu modelo de controle, poderá implantar seus serviços de infraestrutura compartilhada.

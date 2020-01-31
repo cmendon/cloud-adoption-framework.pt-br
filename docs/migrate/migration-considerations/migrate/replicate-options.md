@@ -1,6 +1,5 @@
 ---
 title: Opções de replicação
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Um processo na migração na nuvem que se concentra nas tarefas de migrar cargas de trabalho para a nuvem.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7433ddd9a1c3bb6bd62f9d065c79bbb0b1f52f1b
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: bf798a816d799ba856d8ea20b999de1240ac5284
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022724"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76802133"
 ---
 # <a name="replication-options"></a>Opções de replicação
 
@@ -42,13 +41,13 @@ Depois de avaliar a infraestrutura local e na nuvem para migração, o Azure Sit
 - Teste o failover para verificar se tudo está funcionando.
 - Execute um failover avulso para o Azure.
 
-## <a name="azure-database-migration-service"></a>Serviço de Migração de Banco de Dados do Azure
+## <a name="azure-database-migration-service"></a>Serviço de migração de banco de dados do Azure
 
 Esse serviço reduz a complexidade da migração na nuvem usando um único serviço abrangente em vez de uma combinação de diversas ferramentas. O [Serviço de Migração de Banco de Dados do Azure](https://docs.microsoft.com/azure/dms/dms-overview) é projetado como uma solução perfeita de ponta a ponta para migrar bancos de dados do SQL Server local para a nuvem. O Serviço de Migração de Banco de Dados do Azure é um serviço totalmente gerenciado projetado para permitir migrações perfeitas de várias fontes de banco de dados para plataformas de dados do Azure com um tempo de inatividade mínimo. Ele integra algumas das funcionalidades de ferramentas e serviços existentes oferecendo aos clientes uma solução abrangente e altamente disponível.
 
 O serviço usa o Assistente de Migração de Dados para gerar relatórios de avaliação que fornecem recomendações para orientar você durante as alterações necessárias antes de executar uma migração. Cabe a você executar as correções necessárias. Quando você estiver pronto para iniciar o processo de migração, o Serviço de Migração de Banco de Dados do Azure executará todas as etapas associadas. Você pode acioná-lo e ficar tranquilo quanto aos seus projetos de migração, com a certeza de que o processo aproveita as melhores práticas determinadas pela Microsoft.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Após a conclusão da replicação, as [atividades de preparo](./stage.md) podem começar.
 

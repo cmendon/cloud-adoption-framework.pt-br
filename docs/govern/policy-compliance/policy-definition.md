@@ -1,6 +1,5 @@
 ---
 title: Definir política corporativa para governança de nuvem
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Saiba como estabelecer a política para refletir e corrigir riscos.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 4184ccdd4a0efa06d6a842f7ba1d9cbf0dc77ea6
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 92c04d53e59d8876291794c5da74104ec62412a9
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223736"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806043"
 ---
 # <a name="define-corporate-policy-for-cloud-governance"></a>Definir política corporativa para governança de nuvem
 
@@ -52,9 +51,9 @@ As políticas de TI baseadas em nuvem estabelecem requisitos, padrões e objetiv
 
 As instruções individuais da política de nuvem são diretrizes para abordar os riscos específicos identificados durante o processo de avaliação de riscos. Embora essas políticas possam ser integradas em sua documentação de política corporativa mais ampla, as instruções de política de nuvem discutidas em todas as diretrizes da estrutura de adoção de nuvem tendem a ser um resumo mais conciso dos riscos e planos para lidar com elas. Cada definição deve incluir essas duas informações:
 
-- **Risco de negócios:** Um resumo do risco que esta política abordará.
-- **Instrução da política:** Uma explicação concisa dos objetivos e requisitos da política.
-- **Design ou orientação técnica:** Recomendações viáveis, especificações ou outras orientações para dar suporte e aplicar esta política em que as equipes de TI e desenvolvedores podem usar ao projetar e criar suas implantações de nuvem.
+- **Risco para os negócios:** Um resumo do risco que essa política abordará.
+- **Declaração de política:** Uma explicação concisa dos requisitos e das metas da política.
+- **Design ou orientação técnica:** Recomendações, especificações ou outras diretrizes acionáveis para dar suporte e impor essa política que as equipes de ti e os desenvolvedores podem usar ao projetar e criar suas implantações na nuvem.
 
 Se você precisar de ajuda para iniciar as políticas de definição, consulte as [disciplinas de governança](../governance-disciplines.md) apresentadas na visão geral de seção de governança. Os artigos para cada uma dessas disciplinas incluem exemplos de riscos comerciais comuns encontrados ao migrar para a nuvem e amostras de políticas usadas para corrigir esses riscos (por exemplo, consulte as definições de política de [exemplo](../cost-management/policy-statements.md)da disciplina de gerenciamento de custos).
 
@@ -64,7 +63,7 @@ Adições planejadas para o seu ambiente de nuvem sempre devem ser verificadas q
 
 A necessidade de integrar a política de nuvem às suas políticas de TI herdadas, depende em grande parte da maturidade dos processos de governança de nuvem e do tamanho do seu acervo de nuvem. Consulte o artigo sobre [governança incremental e política de MVP](./index.md) para uma discussão mais ampla sobre como lidar com a integração de política durante sua transformação de nuvem.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Depois de definir suas políticas, faça um rascunho de um guia de design de arquitetura para fornecer a equipe de TI e desenvolvedores de diretrizes de ações.
 

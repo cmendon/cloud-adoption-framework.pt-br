@@ -1,6 +1,5 @@
 ---
 title: Modelo de Consistência de Recursos
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Modelo de Consistência de Recursos
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 831c40b2bf8f7e8fb64fc6cddcf8d6817376be00
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: f500245b80b0100f075e11b6a796d9acb05458ce
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221911"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76805108"
 ---
 # <a name="resource-consistency-template"></a>Modelo de Consistência de Recursos
 
@@ -31,7 +30,7 @@ A primeira etapa para implementar a alteração é comunicar o que é desejado. 
 
 <!-- markdownlint-enable MD033 -->
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Práticas sólidas de governança começam com um entendimento do risco de negócios. Revise o artigo sobre os riscos de negócios e comece a documentar os riscos de negócios que se alinham com seu plano de adoção de nuvem atual.
 

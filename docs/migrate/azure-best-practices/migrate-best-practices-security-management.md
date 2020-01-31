@@ -1,6 +1,5 @@
 ---
 title: Melhores práticas para proteger e gerenciar cargas de trabalho migradas para o Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Depois de migrar para o Azure, obtenha as melhores práticas para operar, gerenciar e proteger as cargas de trabalho migradas.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: e2fb2587b5e6e0914c6a9facc062d817a508897e
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: fd0d65910b3a62170ce1f0d50ae73af1d4c99899
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74160044"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76803833"
 ---
 # <a name="best-practices-for-securing-and-managing-workloads-migrated-to-azure"></a>Melhores práticas para proteger e gerenciar cargas de trabalho migradas para o Azure
 

@@ -1,6 +1,5 @@
 ---
 title: Modelo da Linha de base de identidade
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Modelo da Linha de base de identidade
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: fafd0d467940f2086731ff9e9575c7e6d12aaf0b
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: c1f8e752f1952890880eb30f9f1911d83fca6a40
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220407"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807199"
 ---
 # <a name="identity-baseline-template"></a>Modelo da Linha de base de identidade
 
@@ -31,7 +30,7 @@ A primeira etapa para implementar a alteração é comunicar a alteração desej
 
 <!-- markdownlint-enable MD033 -->
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Práticas de governança sólidas começam com um [entendimento do risco de negócios](./business-risks.md). Revise o artigo sobre os riscos de negócios e comece a documentar os riscos de negócios que se alinham com seu plano de adoção de nuvem atual.
 

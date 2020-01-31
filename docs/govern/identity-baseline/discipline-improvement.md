@@ -1,6 +1,5 @@
 ---
 title: Melhoria da disciplina de Linha de base de identidade
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Melhoria da disciplina de Linha de base de identidade
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1a1f7d21d1291b567d1ec1b1a2d4305bcb202b99
-ms.sourcegitcommit: f7ec7828687f433ff8b69b91817cbec7b074662c
+ms.openlocfilehash: 6adb2e0d6edaacd45e41b8ac3eadb57969cad160
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72915060"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807182"
 ---
 # <a name="identity-baseline-discipline-improvement"></a>Melhoria da disciplina de Linha de base de identidade
 
@@ -104,7 +103,7 @@ A migração é um processo incremental que se concentra no movimento, teste e a
 - Distribuir a identidade entre regiões globais em vários hubs com a sincronização entre regiões.
 - Estabelecer federação de RBAC (controle) de acesso baseado em função central.
 
-## <a name="operate-and-post-implementation"></a>Operar e pós-implementação
+## <a name="operate-and-post-implementation"></a>Operação e pós-implementação
 
 Depois que a transformação for concluída, a governança e as operações devem ser mantidas para o ciclo de vida natural de um aplicativo ou uma carga de trabalho. Essa fase de maturidade de governança se concentra em atividades que normalmente ocorrem depois que a solução é implementada e que o ciclo de transformação começa a se estabilizar.
 

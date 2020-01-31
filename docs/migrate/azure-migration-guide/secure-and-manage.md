@@ -1,6 +1,5 @@
 ---
 title: Proteger e gerenciar
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Proteger e gerenciar
 author: matticusau
 ms.author: mlavery
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: bd06a0e878b98ff52c7d2c5ab8a3b978758a2ef6
-ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
+ms.openlocfilehash: 6490c9dec38755fcb271774d00471b2a22888fd1
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74251616"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806961"
 ---
 # <a name="secure-and-manage"></a>Proteger e gerenciar
 
@@ -52,7 +51,7 @@ A Integridade do Serviço do Azure fornece diretrizes personalizadas e suporte q
 A Integridade do Serviço do Azure inclui:
 
 - **Status do Azure:** uma exibição global da integridade dos serviços do Azure.
-- **Integridade do Serviço:** uma visão personalizada da integridade de seus Serviços do Azure.
+- **Integridade do Serviço:** uma visão personalizada da integridade de seus serviços do Azure.
 - **Resource Health:** uma visão mais profunda da integridade dos recursos individuais fornecidos a você pelos serviços do Azure.
 
 Combinadas, essas experiências oferecem uma visão abrangente da integridade do Azure, em um nível de detalhe relevante para você.

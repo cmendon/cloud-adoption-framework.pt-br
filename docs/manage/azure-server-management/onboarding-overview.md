@@ -1,6 +1,5 @@
 ---
 title: Integração com os serviços de gerenciamento do servidor do Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Integração com os serviços de gerenciamento do servidor do Azure
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: c0b1a3ec7f748f9a9217dde45226ae778a2c78d9
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 48c0728c39457a2fa060679460a97c0ddca49c45
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565347"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807998"
 ---
 # <a name="phase-2-onboarding-azure-server-management-services"></a>Fase 2: integração dos serviços de gerenciamento do servidor do Azure
 
@@ -44,7 +43,7 @@ Conforme mostrado no diagrama anterior, o agente de Log Analytics tem uma config
 - **Registro automático:** Quando o agente de Log Analytics é instalado em um servidor e configurado para se conectar a um espaço de trabalho, as soluções habilitadas nesse espaço de trabalho são aplicadas automaticamente ao servidor.
 - **Aceitação:** Mesmo que o agente esteja instalado e conectado ao espaço de trabalho, a solução não será aplicada, a menos que seja adicionada à configuração de escopo do servidor no espaço de trabalho.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Saiba como carregar uma única VM usando o portal para avaliar o processo de integração.
 

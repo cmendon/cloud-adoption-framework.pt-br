@@ -1,6 +1,5 @@
 ---
 title: 'Guia de inovação do Azure: Interagir com dispositivos'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Guia de inovação do Azure – interagir com dispositivos
 author: umarmohamedusman
 ms.author: umarm
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: cf0671d4ea4c8d008010d43379cd782ff58e38ed
-ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
+ms.openlocfilehash: 4744a1a019a8454f9a454c5eb75192a6d97b6998
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74251896"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808304"
 ---
 ::: zone target="docs"
 
@@ -145,7 +144,7 @@ Além das funcionalidades de localização tradicionais, tais como proximidade, 
 
 **Operações espaciais:** Melhore sua inteligência de localização com uma biblioteca de cálculos matemáticos geoespaciais comuns, incluindo delimitação geográfica, ponto mais próximo, grande distância de círculo e buffers.
 
-**Geolocalização:** Pesquise o país/região de um endereço IP. Personalize conteúdos e serviços com base na localização do usuário e obtenha insights sobre a distribuição geográfica dos clientes.
+**Geolocalização:** Pesquise o país de um endereço IP. Personalize conteúdos e serviços com base na localização do usuário e obtenha insights sobre a distribuição geográfica dos clientes.
 
 ::: zone target="docs"
 

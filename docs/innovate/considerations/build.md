@@ -1,6 +1,5 @@
 ---
 title: 'Inovação em nuvem: criar com empatia de cliente'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Aprenda a criar com empatia de clientes.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,14 +7,14 @@ ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: d1f9b53a152ee85d8817fcfdc9cfc613a89a585b
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 406d53bfb322c424737a9b8cec7c028a9833143d
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565746"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808542"
 ---
-# <a name="build-with-customer-empathy"></a>Criar com empatia do cliente
+# <a name="build-with-customer-empathy"></a>Criar com empatia pelo cliente
 
 "A necessidade é a mãe da invenção". Esse provérbio captura a indelibility do espírito humano e nossa unidade natural para inventar. Conforme explicado no dicionário Oxford em inglês, "quando a necessidade de algo se torna imperativa, você é forçado a encontrar maneiras de obtê-lo ou obtê-lo". Algumas delas negaria essas realidades universais sobre a invenção. No entanto, conforme descrito em [inovação na economia digital](./index.md), a inovação exige um equilíbrio entre a *invenção* e a *adoção*.
 
@@ -106,7 +105,7 @@ Há muitos requisitos legais, de conformidade e do setor que podem exigir uma ab
 
 Alguns dos conceitos neste artigo se baseiam nos tópicos discutidos na [*inicialização de Lean*](http://theleanstartup.com/book) (Eric Ries, coroa Business, 2011).
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Depois de criar uma solução MVP, você pode medir o valor de empatia e o valor de escala. Saiba como [medir o impacto do cliente](./measure.md).
 

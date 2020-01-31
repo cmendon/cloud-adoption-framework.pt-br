@@ -1,6 +1,5 @@
 ---
 title: Modelo de Linha de Base de Segurança
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Explicação da linha de base de segurança do conceito em relação à governança de nuvem.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 2a691223ccb3e6264b53fbf0e018d303cbcf091a
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 8602676ceb6b3c1400254dc6f72cb2d9f99069b0
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222813"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808831"
 ---
 # <a name="security-baseline-template"></a>Modelo de Linha de Base de Segurança
 
@@ -31,7 +30,7 @@ A primeira etapa para implementar a alteração é comunicar o que é desejado. 
 
 <!-- markdownlint-enable MD033 -->
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Práticas sólidas de governança começam com um entendimento do risco de negócios. Revise o artigo sobre os riscos de negócios e comece a documentar os riscos de negócios que se alinham com seu plano de adoção de nuvem atual.
 

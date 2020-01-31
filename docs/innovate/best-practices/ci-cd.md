@@ -1,6 +1,5 @@
 ---
 title: 'Inovação em nuvem: ferramentas para capacitar a adoção no Azure'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Ferramentas para capacitar a adoção no Azure
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 203bd84154b038939b29cb42b53bfbac2b4d2360
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 01961b514f5640d73150504ea65ee9af2fec17b2
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565889"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808695"
 ---
 # <a name="tools-to-empower-adoption-in-azure"></a>Ferramentas para capacitar a adoção no Azure
 
@@ -39,13 +38,13 @@ Para equipes de adoção que são equipes de desenvolvimento profissional madura
 Conforme sua necessidade cresce, você pode expandir essa base para usar outros recursos da ferramenta. A base expandida pode envolver ferramentas como:
 
 - Azure Blueprints
-- Azure Policy
-- Modelos do Gerenciador de Recursos do Azure
+- Política do Azure
+- Modelos do Azure Resource Manager
 - Azure Monitor
 
 O Sumário no lado esquerdo desta página lista as diretrizes para cada ferramenta e se alinha com o modelo de maturidade descrito anteriormente.
 
-## <a name="get-started"></a>Introdução
+## <a name="get-started"></a>Comece agora
 
 O Sumário no lado esquerdo desta página descreve muitos artigos do. Esses artigos ajudam você a começar a usar cada uma das ferramentas neste ferramentas.
 

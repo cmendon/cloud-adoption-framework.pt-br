@@ -1,6 +1,5 @@
 ---
 title: Guia de decisão de registro em log e relatório
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Saiba mais sobre registro em log, relatório e monitoramento como principais serviços nas migrações do Azure.
 author: rotycenh
 ms.author: v-tyhopk
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 4328cdf3249b065bf20efd5858254ad9da1dc211
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 038137088abe02160fd199cef468ecc5d5756281
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753170"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806757"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>Guia de decisão de registro em log e relatório
 
@@ -34,7 +33,7 @@ Ao planejar a implantação, será necessário considerar onde os dados de regis
 
 | Pergunta | Nativo da nuvem | Extensão local | Monitoramento híbrido | Agregação de gateway |
 |-----|-----|-----|-----|-----|
-| Há uma infraestrutura de monitoramento local existente? | Não | sim | sim |  Não |
+| Há uma infraestrutura de monitoramento local existente? | Não | Sim | Sim |  Não |
 | Há requisitos para impedir o armazenamento de dados do log em locais de armazenamento externos? | Não | Sim | Não | Não |
 | Você precisa integrar o monitoramento de nuvem com sistemas locais? | Não | Não | Sim | Não |
 Você precisará processar ou filtrar dados telemétricos, antes de enviá-los aos sistemas de monitoramento? | Não | Não | Não | Sim |

@@ -1,6 +1,5 @@
 ---
 title: Ferramentas e serviços de gerenciamento do servidor do Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Ferramentas e serviços de gerenciamento do servidor do Azure
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,35 +7,35 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 51564add9bfe50ab494b39344eb24d3079fce000
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: dbb2d190fcbe787cd3ee26cc0803566b398e945d
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565275"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807930"
 ---
 # <a name="azure-server-management-tools-and-services"></a>Ferramentas e serviços de gerenciamento do servidor do Azure
 
 Como é discutido na [visão geral](./index.md) dessas diretrizes, o pacote de serviços de gerenciamento de servidor do Azure abrange essas áreas:
 
-- Migrar
-- Segurança
-- Proteger
-- Monitoramento
+- Migre
+- Segura
+- Proteja
+- Monitorar
 - Configurar
 - Administrar
 
 As seções a seguir descrevem brevemente essas áreas de gerenciamento e fornecem links para conteúdo detalhado sobre os principais serviços do Azure que dão suporte a eles.
 
-## <a name="migrate"></a>Migrar
+## <a name="migrate"></a>Migre
 
 Os serviços de migração podem ajudá-lo a migrar suas cargas de trabalho para o Azure. Para fornecer as melhores diretrizes, o serviço migrações para Azure começa medindo o desempenho do servidor local e avaliando a adequação para a migração. Após a migração do Azure concluir a avaliação, você poderá usar [Azure site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) e o [serviço de migração de banco de dados do Azure](https://docs.microsoft.com/azure/dms/dms-overview) para migrar seus computadores locais para o Azure.
 
-## <a name="secure"></a>Segurança
+## <a name="secure"></a>Segura
 
 A [central de segurança do Azure](https://docs.microsoft.com/azure/security-center/security-center-intro) é um aplicativo abrangente de gerenciamento de segurança. Ao integrar à central de segurança, você pode obter rapidamente uma avaliação do status de conformidade normativa e de segurança do seu ambiente. Para obter instruções sobre a integração dos servidores à central de segurança do Azure, consulte [configurar os serviços de gerenciamento do Azure para uma assinatura](./onboard-at-scale.md#azure-security-center).
 
-## <a name="protect"></a>Proteger
+## <a name="protect"></a>Proteja
 
 Para proteger seus dados, você precisa planejar o backup, a alta disponibilidade, a criptografia, a autorização e os problemas operacionais relacionados. Esses tópicos são amplamente abordados online, portanto, vamos nos concentrar em criar um plano de recuperação de desastres de continuidade de negócios (BCDR). Incluiremos referências à documentação que descreve em detalhes como implementar e implantar esse tipo de plano.
 
@@ -54,7 +53,7 @@ Para obter mais informações, consulte a [matriz de replicação completa do Az
 
 Para os dados do servidor de arquivos, outro serviço a ser considerado é [sincronização de arquivos do Azure](https://docs.microsoft.com/azure/storage/files/storage-sync-files-planning). Esse serviço ajuda a centralizar os compartilhamentos de arquivos de sua organização nos arquivos do Azure, preservando a flexibilidade, o desempenho e a compatibilidade de um servidor de arquivos local. Para usar esse serviço, siga as instruções para implantar o Sincronização de Arquivos do Azure.
 
-## <a name="monitor"></a>Monitoramento
+## <a name="monitor"></a>Monitorar
 
 O [Azure monitor](https://docs.microsoft.com/azure/azure-monitor/overview) fornece uma exibição de vários recursos, como aplicativos, contêineres e máquinas virtuais. Ele também coleta dados de várias fontes:
 

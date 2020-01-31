@@ -1,6 +1,5 @@
 ---
 title: Ferramentas de Gerenciamento de Custos no Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Ferramentas de Gerenciamento de Custos no Azure
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3b301f8dfcc50539f4325901cd32553368a0da55
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: e35530fbf3a858c000cb78c0c076d7d56d5fbd86
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222642"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806400"
 ---
 # <a name="cost-management-tools-in-azure"></a>Ferramentas de Gerenciamento de Custos no Azure
 
@@ -22,15 +21,15 @@ O [Gerenciamento de Custos](./index.md) é uma das [Cinco disciplinas de Governa
 
 A seguir, é apresentada uma lista de ferramentas nativas do Azure que podem ajudar a amadurecer as políticas e os processos que dão suporte a essa disciplina de governança.
 
-| Ferramenta | [Portal do Azure](https://azure.microsoft.com/features/azure-portal)  | [Gerenciamento de Custos do Azure](https://docs.microsoft.com/azure/cost-management/overview-cost-mgt)  | [Pacote de conteúdo do EA do Azure](https://docs.microsoft.com/power-bi/service-connect-to-azure-enterprise)  | [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) |
+| Ferramenta | [Azure portal](https://azure.microsoft.com/features/azure-portal)  | [Gerenciamento de Custos do Azure](https://docs.microsoft.com/azure/cost-management/overview-cost-mgt)  | [Pacote de conteúdo do EA do Azure](https://docs.microsoft.com/power-bi/service-connect-to-azure-enterprise)  | [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) |
 |---------|---------|---------|---------|---------|
 |Enterprise Agreement necessário?     | Não         | Não         | Sim         | Não         |
 |Controle de orçamento     | Não         | Sim         | Não         | Sim         |
-|Monitorar gastos em um único recurso    | Sim         | Sim         | sim         | Não         |
-|Monitorar gastos em vários recursos    | Não         | sim        | sim         | Não         |
+|Monitorar gastos em um único recurso    | Sim         | Sim         | Sim         | Não         |
+|Monitorar gastos em vários recursos    | Não         | Sim        | Sim         | Não         |
 |Controlar gastos em um único recurso     | Sim - dimensionamento manual         | Sim         | Não         | Sim         |
 |Impor gastos em vários recursos    | Não         | Sim         | Não         | Sim         |
 |Impor metadados de contabilidade em recursos    | Não         | Não         | Não         | Sim         |
-|Monitorar e detectar tendências     | Sim          | Sim        | sim         | Não         |
-|Detectar anomalias de gastos     | Não         | sim        | sim         | Não        |
-|Socializar desvios     | Não        | sim        | sim        | Não        |
+|Monitorar e detectar tendências     | Sim          | Sim        | Sim         | Não         |
+|Detectar anomalias de gastos     | Não         | Sim        | Sim         | Não        |
+|Socializar desvios     | Não        | Sim        | Sim        | Não        |

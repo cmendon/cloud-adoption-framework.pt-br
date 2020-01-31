@@ -1,6 +1,5 @@
 ---
 title: Métricas de Gerenciamento de Custos, indicadores e tolerância a risco
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Explicação sobre o Gerenciamento de Custos em relação a governança de nuvem
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: dc026ec6fc1a82db3c5c025becd31cd5cf2e7d8d
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: aee529f6065e35645805a7f3d6577447eb48cf3f
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752698"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806451"
 ---
 # <a name="cost-management-metrics-indicators-and-risk-tolerance"></a>Métricas de Gerenciamento de Custos, indicadores e tolerância a risco
 
@@ -50,7 +49,7 @@ Depois de ter identificado [riscos de negócios](./business-risks.md), você tra
 
 ## <a name="next-steps"></a>Próximos passos
 
-Uso do [modelo de Gerenciamento de nuvem](./template.md), de métricas do documento e de indicadores de tolerância que se alinham ao atual plano de adoção da nuvem.
+Usar o [modelo de Gerenciamento de Nuvem](./template.md), de métricas do documento e de indicadores de tolerância que se alinham ao atual plano de adoção da nuvem.
 
 Examine as políticas de gerenciamento de custo de exemplo como um ponto de partida para desenvolver políticas que atendam a riscos de negócios específicos que se alinham com seus planos de adoção de nuvem.
 

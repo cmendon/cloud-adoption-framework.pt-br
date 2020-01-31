@@ -1,6 +1,5 @@
 ---
 title: Dimensionar uma migração para o Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Saiba como a Contoso lida com uma migração em escala para o Azure.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: ab5e8cdb7058a773b4085f01a6be64b4521e6b69
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 8a807bfc20289339221056b9b0798260aaddbfd8
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566457"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807301"
 ---
 # <a name="scale-a-migration-to-azure"></a>Dimensionar uma migração para o Azure
 
@@ -194,7 +193,7 @@ Há quatro estratégias de migração amplas que a Contoso pode considerar.
 
 <!--markdownlint-disable MD033 -->
 
-**Estratégia** | **Detalhes** | **Uso**
+**Estratégia** | **Detalhes** | **Usage**
 --- | --- | ---
 **Hospedar novamente** | Geralmente conhecida como migração de comparação _e de deslocamento_ , essa é uma opção sem código para migrar aplicativos existentes para o Azure rapidamente.<br/><br/> Um aplicativo é migrado no estado em que se encontra, com os benefícios da nuvem, sem os riscos nem os custos associados com as alterações de código. | A Contoso pode hospedar novamente aplicativos menos estratégico sem necessidade de qualquer alteração de código.
 **Refatorar** | Também conhecida como "reempacotamento", essa estratégia exige alterações mínimas de código ou configuração de aplicativo para conectar o aplicativo à PaaS do Azure e aproveitar ao máximo as funcionalidades da nuvem. | A Contoso pode refatorar aplicativos estratégicos para manter a mesma funcionalidade básica, mas movê-los para execução em uma plataforma do Azure, como o Serviço de Aplicativo do Azure.<br/><br/> Isso requer alterações mínimas de código.<br/><br/> Por outro lado, a Contoso precisará manter uma plataforma de VM, pois isso não será gerenciado pela Microsoft.
@@ -225,7 +224,7 @@ A Contoso já [concluiu uma POC](./contoso-migration-rehost-vm.md) para ver como
 
 A contoso planeja executar várias migrações de comparação de precisão e deslocamento. Para garantir que isso funcione, o Site Recovery replicará lotes de cerca de 100 VMs por vez. Para descobrir como isso vai funcionar, a Contoso precisa executar o planejamento de capacidade para a migração do Site Recovery proposta.
 
-- A Contoso precisa coletar informações sobre os volumes de tráfego. Especificamente:
+- A Contoso precisa coletar informações sobre os volumes de tráfego. Especialmente:
   - A Contoso precisa determinar a taxa de alteração para VMs que deseja replicar.
   - A Contoso também precisa considerar a conectividade de rede do site local para o Azure.
 - Em resposta aos requisitos de capacidade e volume, a Contoso precisa alocar largura de banda suficiente com base na taxa de alteração diária de dados para as VMs necessárias para atender a seu RPO (objetivo de ponto de recuperação).

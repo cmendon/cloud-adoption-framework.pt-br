@@ -1,6 +1,5 @@
 ---
-title: 'Migração de mainframe: Fazer a transição dos mainframes para Azure'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
+title: 'Migração de mainframe: faça a troca de mainframes para o Azure'
 description: Migre aplicativos de ambientes de mainframe para o Azure para sistemas que atualmente são executados em mainframes.
 author: njray
 ms.author: v-nanra
@@ -8,12 +7,12 @@ ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8416abd3429a0dafd50eda91323eb74bfb1bf9cd
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: f68dbd309264b0cef189346096ce3dc797ae7d08
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221515"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808763"
 ---
 # <a name="make-the-switch-from-mainframes-to-azure"></a>Fazer a transição dos mainframes para Azure
 
@@ -52,7 +51,7 @@ Quando você usa a plataforma do Azure como um recurso de serviço (PaaS), como 
 
 ## <a name="scalability"></a>Escalabilidade
 
-Mainframes normalmente se expandem, enquanto os ambientes de nuvem se expandem. Os mainframes podem escalar horizontalmente com o uso de uma instalação de acoplamento (CF), mas o alto custo do hardware e do armazenamento torna os mainframes caros de expandir.
+Os mainframes normalmente aumentam, enquanto os ambientes de nuvem são expandidos. Os mainframes podem escalar horizontalmente com o uso de uma instalação de acoplamento (CF), mas o alto custo do hardware e do armazenamento torna os mainframes caros de expandir.
 
 Um CF também oferece computação rigidamente acoplada, enquanto os recursos de expansão do Azure são livremente acoplados. A nuvem pode ser ampliada ou reduzida para corresponder às especificações exatas do usuário, com a capacidade de computação, armazenamento e escalabilidade de serviços sob demanda em um modelo de faturamento baseado em uso.
 
@@ -71,7 +70,7 @@ O hardware de mainframe inclui processadores e muitos outros dispositivos, como 
 Tipos de armazenamento físico para mainframes incluem:
 
 - **Armazenamento central:** Localizado diretamente no processador de mainframe, isso também é conhecido como processador ou armazenamento real.
-- **Armazenamento auxiliar:** Localizados separadamente do mainframe, esse tipo inclui o armazenamento em DASDs e também é conhecido como armazenamento de paginação.
+- **Armazenamento auxiliar:** Localizado separadamente do mainframe, esse tipo inclui o armazenamento em DASDs e também é conhecido como armazenamento de paginação.
 
 A nuvem oferece uma variedade de opções flexíveis e escalonáveis, e você pagará apenas essas opções que você precisa. O [Armazenamento do Azure](https://docs.microsoft.com/azure/storage/common/storage-introduction) oferece um armazenamento de objetos altamente escalonável para objetos de dados, um serviço de sistema de arquivos para a nuvem, armazenamento de mensagens confiáveis e armazenamento de NoSQL. Para VMs, discos gerenciados e discos não gerenciados fornecem armazenamento em disco persistente e seguro.
 
@@ -85,7 +84,7 @@ Compiladores e ambientes de emulação estão disponíveis em plataformas x86, p
 
 Quando as soluções são desenvolvidas e testadas no Azure e estão prontas para implantação ao mainframe, você precisará copiar o código para o mainframe e compilá-lo ali.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 > [!div class="nextstepaction"]
 > [Migração de aplicativos de mainframe](./application-strategies.md)

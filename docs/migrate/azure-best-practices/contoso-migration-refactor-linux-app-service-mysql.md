@@ -1,6 +1,5 @@
 ---
 title: Refatorar um aplicativo de central de serviços Linux para o Serviço de Aplicativo do Azure e o Banco de Dados do Azure para MySQL
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Saiba como a Contoso refatora um aplicativo Linux local migrando-o para o Serviço de Aplicativo do Azure usando o GitHub para camada da Web e o Banco de Dados SQL do Azure.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/11/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: e504d4032fc019af43ec7cb1e8513504196559a2
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 2e47647b06da12b9b595f4330767f629121e00a0
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024208"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807454"
 ---
 # <a name="refactor-a-linux-app-to-multiple-regions-using-azure-app-service-traffic-manager-and-azure-database-for-mysql"></a>Refatorar um aplicativo do Linux para várias regiões usando o Serviço de Aplicativo do Azure, o Gerenciador de Tráfego e o Banco de Dados do Azure para MySQL
 
@@ -29,14 +28,14 @@ A equipe de liderança de TI trabalhou em conjunto com seus parceiros comerciais
 - **Escala.** A solução deve ser criada para que a Contoso possa adicionar mais agentes de atendimento ao cliente à medida que os negócios crescem.
 - **Aumentar a resiliência.**  No passado, os problemas com o sistema só afetavam os usuários internos. Com o novo modelo de negócios, os usuários externos serão afetados, e a Contoso precisará ter o aplicativo em funcionamento sempre.
 
-## <a name="migration-goals"></a>Objetivos da migração
+## <a name="migration-goals"></a>Metas de migração
 
 A equipe de nuvem Contoso fixou metas para essa migração a fi de determinar o melhor método de migração:
 
 - O aplicativo deve ser dimensionado além da capacidade e do desempenho locais atuais. A Contoso está movendo o aplicativo para usar a colocação em escala sob demanda do Azure.
 - A Contoso deseja mover a base de código do aplicativo para um pipeline de entrega contínua. À medida que as alterações do aplicativo são enviadas para o GitHub, a Contoso deseja implantar essas alterações sem tarefas para a equipe de operações.
 - O aplicativo deve ser resiliente com recursos para crescimento e failover. A Contoso deseja implantar o aplicativo em duas regiões diferentes do Azure e configurá-lo para dimensionar automaticamente.
-- A Contoso deseja minimizar as tarefas de administração do banco de dados após a migração do aplicativo para a nuvem.
+- A Contoso deseja minimizar as tarefas de administração do banco de dados depois que o aplicativo é movido para a nuvem.
 
 ## <a name="solution-design"></a>Design da solução
 
@@ -77,7 +76,7 @@ A Contoso concluirá o processo de migração da seguinte maneira:
 2. Após preparar o Azure, ela migra o banco de dados usando o Workbench do MySQL.
 3. Depois que o banco de dados estiver em execução no Azure, eles configurarão um repositório privado do GitHub para o Serviço de Aplicativo do Azure com entrega contínua e o carregarão com o aplicativo osTicket.
 4. No portal do Azure, ela carrega o aplicativo do GitHub para o contêiner do Docker que está executando o Serviço de Aplicativo do Azure.
-5. Ela ajusta as configurações de DNS e configura o dimensionamento automático para o aplicativo.
+5. Ela ajusta as configurações de DNS e configura a colocação em escala automática para o aplicativo.
 
 ![Processo de migração](./media/contoso-migration-refactor-linux-app-service-mysql/migration-process.png)
 
@@ -108,14 +107,14 @@ Aqui está o que a Contoso precisa para executar esse cenário.
 
 > [!div class="checklist"]
 >
-> - **Etapa 1: Provisionar o Serviço de Aplicativo do Azure.** Os administradores da Contoso provisionarão aplicativos Web nas regiões primárias e secundárias.
-> - **Etapa 2: Configurar o Gerenciador de Tráfego.** Eles configuram o Gerenciador de Tráfego na frente dos aplicativos Web para balanceamento de carga e roteamento de tráfego.
-> - **Etapa 3: Provisionar o MySQL**. No Azure, eles provisionam uma instância do Banco de Dados do Azure para MySQL.
-> - **Etapa 4: Migrar o banco de dados.** Irá migrar o banco de dados usando o Workbench do MySQL.
-> - **Etapa 5: Configurar o GitHub.** Irá configurar um repositório do GitHub local para o código/sites da Web do aplicativo.
-> - **Etapa 6: Implantar os aplicativos Web.** Irá implantar os aplicativos web do GitHub.
+> - **Etapa 1: provisionar Azure App serviço.** Os administradores da Contoso provisionarão aplicativos Web nas regiões primárias e secundárias.
+> - **Etapa 2: configurar o Gerenciador de tráfego.** Eles configuram o Gerenciador de Tráfego na frente dos aplicativos Web para balanceamento de carga e roteamento de tráfego.
+> - **Etapa 3: provisionar MySQL.** No Azure, eles provisionam uma instância do Banco de Dados do Azure para MySQL.
+> - **Etapa 4: migre o banco de dados.** Irá migrar o banco de dados usando o Workbench do MySQL.
+> - **Etapa 5: configurar o GitHub.** Irá configurar um repositório do GitHub local para o código/sites da Web do aplicativo.
+> - **Etapa 6: implantar os aplicativos Web.** Irá implantar os aplicativos web do GitHub.
 
-## <a name="step-1-provision-azure-app-service"></a>Etapa 1: Provisionar o Serviço de Aplicativo do Azure
+## <a name="step-1-provision-azure-app-service"></a>Etapa 1: provisionar Azure App serviço
 
 Os administradores da Contoso provisionam dois aplicativos Web (um em cada região) usando o Serviço de Aplicativo do Azure.
 
@@ -128,7 +127,7 @@ Os administradores da Contoso provisionam dois aplicativos Web (um em cada regi�
 
      ![Aplicativo do Azure](./media/contoso-migration-refactor-linux-app-service-mysql/azure-app2.png)
 
-4. Eles selecionam um sistema operacional Linux com a pilha de tempo de execução do PHP 7.0, que é um contêiner do Docker.
+4. Eles selecionam um sistema operacional Linux com a pilha de runtime do PHP 7.0, que é um contêiner do Docker.
 
     ![Aplicativo do Azure](./media/contoso-migration-refactor-linux-app-service-mysql/azure-app3.png)
 
@@ -189,7 +188,7 @@ Os administradores da Contoso provisionam uma instância do banco de dados MySQL
 
 Os administradores da Contoso migram o banco de dados usando backup e restauração, com as ferramentas do MySQL. Ela instala o Workbench do MySQL, faz backup do banco de dados de OSTICKETMYSQL e, em seguida, o restaura no servidor do Banco de Dados do Azure para MySQL.
 
-### <a name="install-mysql-workbench"></a>Instalar MySQL Workbench
+### <a name="install-mysql-workbench"></a>Instalar o MySQL Workbench
 
 1. Eles verificam os [pré-requisitos e downloads do MySQL Workbench](https://dev.mysql.com/downloads/workbench/?utm_source=tuicool).
 2. Ela instala o Workbench do MySQL para Windows de acordo com as [instruções de instalação](https://dev.mysql.com/doc/workbench/en/wb-installing.html). O computador no qual ela instala deverá ser acessível para a VM OSTICKETMYSQL e para o Azure por meio da Internet.
@@ -263,7 +262,7 @@ Os administradores da Contoso criam um novo repositório GitHub privado e config
 
     ![GitHub](./media/contoso-migration-refactor-linux-app-service-mysql/github7.png)
 
-## <a name="step-6-configure-the-web-apps"></a>Etapa 6: Configurar os aplicativos Web
+## <a name="step-6-configure-the-web-apps"></a>Etapa 6: configurar os aplicativos Web
 
 Como a etapa final do processo de migração, os administradores da Contoso configuram os aplicativos Web com os sites do osTicket.
 
@@ -303,11 +302,11 @@ Por fim, ela configura a colocação em escala automática do aplicativo. Isso g
 1. No Serviço de Aplicativo **APP-SRV-EUS2**, eles abrem a **Unidade de Escala**.
 2. Ela configurará uma nova configuração de dimensionamento automático com uma única regra que aumentará a contagem de instâncias em um quando o percentual da CPU para a instância atual estiver acima de 70% durante 10 minutos.
 
-    ![Autoscale](./media/contoso-migration-refactor-linux-app-service-mysql/autoscale1.png)
+    ![Autoescala](./media/contoso-migration-refactor-linux-app-service-mysql/autoscale1.png)
 
 3. Ela configura a mesma configuração em **APP-SRV-CUS** para garantir que o mesmo comportamento seja aplicado se o aplicativo realizar failover na região secundária. A única diferença é que eles definem a instância padrão como 1, pois isso é apenas para failovers.
 
-   ![Dimensionamento automático](./media/contoso-migration-refactor-linux-app-service-mysql/autoscale2.png)
+   ![Autoescala](./media/contoso-migration-refactor-linux-app-service-mysql/autoscale2.png)
 
 ## <a name="clean-up-after-migration"></a>Limpar após a migração
 

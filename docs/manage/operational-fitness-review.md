@@ -1,6 +1,5 @@
 ---
 title: Estabelecer uma análise de adequação operacional
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Orientação sobre os conceitos básicos operacionais
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 9607bf217d8638f2337fa337a4cb57c7ba919608
-ms.sourcegitcommit: 390b374dc7af4c4b85ef9fcb381c7c1bc6076ac7
+ms.openlocfilehash: df13e7bf3622c7062c3da1fc30a6a3fee9d28c90
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75868059"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807556"
 ---
 # <a name="establish-an-operational-fitness-review"></a>Estabelecer uma análise de adequação operacional
 
@@ -37,7 +36,7 @@ Desde o início, muitas equipes na Microsoft estão envolvidas no desenvolviment
 
 Os processos que a Microsoft segue formam a base dos processos descritos neste artigo.
 
-## <a name="understand-the-problem"></a>Compreender o problema
+## <a name="understand-the-problem"></a>Entender o problema
 
 Como você aprendeu na [introdução](../getting-started/migrate.md), a primeira etapa da transformação digital de uma empresa é identificar os problemas de negócios a serem resolvidos adotando o Azure. A próxima etapa é determinar uma solução de alto nível para o problema, como migrar uma carga de trabalho para a nuvem ou adaptar um serviço local existente para incluir a funcionalidade de nuvem. Por fim, você cria e implementa a solução.
 

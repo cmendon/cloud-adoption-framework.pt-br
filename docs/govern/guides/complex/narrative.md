@@ -1,6 +1,5 @@
 ---
 title: 'Guia de governança para empresas complexas: a narração de suporte'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Essa narração estabelece um caso de uso para governança durante uma jornada de adoção de nuvem complexa da empresa.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: acc82a629adf32cd9a7bfe638b0ad176f1de7933
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: fae1940c1cc522cd917b2b0293d60b630007537c
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967667"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76805550"
 ---
 # <a name="governance-guide-for-complex-enterprises-the-supporting-narrative"></a>Guia de governança para empresas complexas: a narração de suporte
 
@@ -61,7 +60,7 @@ As seguintes alterações estão previstas nos próximos vários anos:
     ![custos locais versus os custos do Azure demonstrando um retorno de US $100 milhões nos próximos cinco anos](../../../_images/govern/calculator-enterprise.png)
 - Junto com essa economia de custos, a empresa planeja alterar o gerenciamento de alguns investimentos em ti Reposicionando a despesa de capital confirmada como uma despesa operacional dentro dela. Essa alteração fornecerá maior controle de custo que poderá usar para acelerar as outras iniciativas planejadas.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 A empresa desenvolveu uma política corporativa para formar a implementação de governança. A política corporativa conduz muitas das decisões técnicas.
 

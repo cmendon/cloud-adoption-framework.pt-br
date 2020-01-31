@@ -1,6 +1,5 @@
 ---
 title: Migrar ativos
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Migrar ativos
 author: matticusau
 ms.author: mlavery
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 2f00fca7cc5d21221faed2a56d0a25dba2e82258
-ms.sourcegitcommit: 72df8c1b669146285a8680e05aeceecd2c3b2e83
+ms.openlocfilehash: 81c55ee4ac3605c04d583df21182c4d5c44f8380
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74681752"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807012"
 ---
 # <a name="migrate-assets-infrastructure-apps-and-data"></a>Migrar ativos (infraestrutura, aplicativos e dados)
 
@@ -222,7 +221,7 @@ O Cloudamize é um serviço ISV que abrange todas as fases da estratégia de mig
 
 O Zerto fornece replicação virtual para os ambientes Microsoft Hyper-V e VMware vSphere.
 
-[Saiba mais](https://www.zerto.com/solutions/use-cases/data-center-migration-software)
+[Saiba mais](https://www.zerto.com/modernize)
 
 ## <a name="carbonite"></a>Carbonite
 
@@ -271,9 +270,9 @@ O Azure DevOps fornece toda a funcionalidade e integração necessárias com o A
 
 O Microsoft Learn é uma nova abordagem para o aprendizado. A preparação para as novas habilidades e responsabilidades que acompanham a adoção de nuvem não é fácil. O Microsoft Learn oferece uma abordagem mais recompensadora para o aprendizado prático que ajuda você a atingir suas metas mais rapidamente. Ganhe pontos e níveis e conquiste mais!
 
-Aqui está um exemplo de um roteiro de aprendizagem personalizado no Microsoft Learn, que complementa a configuração para diretrizes de DevOps no Cloud Adoption Framework. 
+Aqui está um exemplo de um roteiro de aprendizagem personalizado no Microsoft Learn, que complementa a configuração para diretrizes de DevOps no Cloud Adoption Framework.
 
-[Crie aplicativos com o Azure DevOps](https://docs.microsoft.com/learn/paths/build-applications-with-azure-devops/): Colabore com outras pessoas para criar aplicativos usando o Azure Pipelines e o GitHub. Execute testes automatizados em seu pipeline para validar a qualidade do código. Examine o código-fonte e componentes de terceiros em busca de possíveis vulnerabilidades. Defina vários pipelines que funcionam em conjunto para criar seu aplicativo. Crie aplicativos usando agentes hospedados pela Microsoft e seus próprios agentes de build. 
+[Crie aplicativos com o Azure DevOps](https://docs.microsoft.com/learn/paths/build-applications-with-azure-devops/): Colabore com outras pessoas para criar aplicativos usando o Azure Pipelines e o GitHub. Execute testes automatizados em seu pipeline para validar a qualidade do código. Examine o código-fonte e componentes de terceiros em busca de possíveis vulnerabilidades. Defina vários pipelines que funcionam em conjunto para criar seu aplicativo. Crie aplicativos usando agentes hospedados pela Microsoft e seus próprios agentes de build.
 
 # <a name="cost-managementtabmanagecost"></a>[Gerenciamento de Custos](#tab/ManageCost)
 

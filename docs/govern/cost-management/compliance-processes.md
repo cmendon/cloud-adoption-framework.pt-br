@@ -1,6 +1,5 @@
 ---
 title: Processos de conformidade de política do Gerenciamento de Custos
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Processos de conformidade de política do Gerenciamento de Custos
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: eb3bfc584e3c3f86e39918495fe7e0d313f13e55
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 6a6f5c5d13a98b6c210fececb2d6372e7f95626b
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564713"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76804139"
 ---
 # <a name="cost-management-policy-compliance-processes"></a>Processos de conformidade de política do Gerenciamento de Custos
 
@@ -57,7 +56,7 @@ Estes são exemplos de gatilhos:
 - **Desvios mensais do orçamento:** Discuta quaisquer desvios em gastos mensais que ultrapassem a taxa de previsão de 20% em relação ao real com o líder da unidade de cobrança. Resoluções de registros e alterações na previsão.
 - **Ritmo da adoção:** Qualquer desvio em um nível de assinatura que exceda 20% disparará uma análise com o líder da unidade de cobrança. Resoluções de registros e alterações na previsão.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Usando o [modelo de Gerenciamento de Nuvem](./template.md), documente os processos e gatilhos que alinham-se ao plano de adoção da nuvem atual.
 

@@ -1,6 +1,5 @@
 ---
 title: 'Guia de monitoramento de nuvem: estratégia de monitoramento para modelos de implantação de nuvem'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Escolha quando usar Azure Monitor ou System Center Operations Manager no Microsoft Azure
 author: MGoedtel
 ms.author: magoedte
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 81bb5775f2d83a0784e360440b52112427acf243
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: abb9395a739d4e32cab85367d4de822dc47939ac
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74160254"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807624"
 ---
 # <a name="cloud-monitoring-guide-monitoring-strategy-for-cloud-deployment-models"></a>Guia de monitoramento de nuvem: estratégia de monitoramento para modelos de implantação de nuvem
 
@@ -75,26 +74,26 @@ A tabela a seguir resume os requisitos que Azure Monitor e System Center Operati
 
 |Requisito | Azure Monitor | Operations Manager |
 |:--|:---|:---|
-|Requisitos de infraestrutura | Não | SIM<br> Requer, no mínimo, um servidor de gerenciamento e um SQL Server para hospedar o banco de dados operacional e o data warehouse de relatórios banco de dados. A complexidade aumenta quando a alta disponibilidade e a recuperação de desastres são necessárias, e há máquinas em vários sites, sistemas não confiáveis e outras considerações de design complexas.|
-|Conectividade limitada-sem Internet<br> ou rede isolada | Não | SIM |
-|Acesso limitado à Internet controlado por conectividade | SIM | SIM |
-|Conectividade limitada – com frequência desconectada | SIM | SIM |
-|Monitoramento de integridade configurável | Não | SIM |
-| Teste de disponibilidade do aplicativo Web (rede isolada) | Sim, limitado<br> Azure Monitor tem suporte limitado nessa área e requer exceções de firewall personalizadas. | SIM |
-| Teste de disponibilidade do aplicativo Web (distribuído globalmente) | Não | SIM |
-|Monitorar cargas de trabalho de VM | Sim, limitado<br> Pode coletar logs de erros do IIS e SQL Server, eventos do Windows e contadores de desempenho. Requer a criação de consultas personalizadas, alertas e visualizações. | SIM<br> Dá suporte ao monitoramento da maioria das cargas de trabalho de servidor com pacotes de gerenciamento disponíveis. Requer o Log Analytics agente do Windows ou agente de Operations Manager na VM, relatando de volta para o grupo de gerenciamento na rede corporativa.|
-|Monitorar IaaS do Azure | SIM | SIM<br> Dá suporte ao monitoramento da maior parte da infraestrutura da rede corporativa. Rastreia o estado de disponibilidade, as métricas e os alertas para VMs do Azure, SQL e armazenamento por meio do pacote de gerenciamento do Azure.|
-|Monitorar o PaaS do Azure | SIM | Sim, limitado<br> Com base no que tem suporte no pacote de gerenciamento do Azure. |
-|Monitoramento de serviço do Azure | SIM<br> | SIM<br> Embora não haja nenhum monitoramento nativo da integridade do serviço do Azure fornecido hoje por meio de um pacote de gerenciamento, você pode criar fluxos de trabalho personalizados para consultar alertas de integridade do serviço do Azure. Use a API REST do Azure para obter alertas por meio de suas notificações existentes.|
-|Monitoramento de aplicativos Web moderno | SIM | Não |
+|Requisitos de infraestrutura | Não | Sim<br> Requer, no mínimo, um servidor de gerenciamento e um SQL Server para hospedar o banco de dados operacional e o data warehouse de relatórios banco de dados. A complexidade aumenta quando a alta disponibilidade e a recuperação de desastres são necessárias, e há máquinas em vários sites, sistemas não confiáveis e outras considerações de design complexas.|
+|Conectividade limitada-sem Internet<br> ou rede isolada | Não | Sim |
+|Acesso limitado à Internet controlado por conectividade | Sim | Sim |
+|Conectividade limitada – com frequência desconectada | Sim | Sim |
+|Monitoramento de integridade configurável | Não | Sim |
+| Teste de disponibilidade do aplicativo Web (rede isolada) | Sim, limitado<br> Azure Monitor tem suporte limitado nessa área e requer exceções de firewall personalizadas. | Sim |
+| Teste de disponibilidade do aplicativo Web (distribuído globalmente) | Não | Sim |
+|Monitorar cargas de trabalho de VM | Sim, limitado<br> Pode coletar logs de erros do IIS e SQL Server, eventos do Windows e contadores de desempenho. Requer a criação de consultas personalizadas, alertas e visualizações. | Sim<br> Dá suporte ao monitoramento da maioria das cargas de trabalho de servidor com pacotes de gerenciamento disponíveis. Requer o Log Analytics agente do Windows ou agente de Operations Manager na VM, relatando de volta para o grupo de gerenciamento na rede corporativa.|
+|Monitorar IaaS do Azure | Sim | Sim<br> Dá suporte ao monitoramento da maior parte da infraestrutura da rede corporativa. Rastreia o estado de disponibilidade, as métricas e os alertas para VMs do Azure, SQL e armazenamento por meio do pacote de gerenciamento do Azure.|
+|Monitorar o PaaS do Azure | Sim | Sim, limitado<br> Com base no que tem suporte no pacote de gerenciamento do Azure. |
+|Monitoramento de serviço do Azure | Sim<br> | Sim<br> Embora não haja nenhum monitoramento nativo da integridade do serviço do Azure fornecido hoje por meio de um pacote de gerenciamento, você pode criar fluxos de trabalho personalizados para consultar alertas de integridade do serviço do Azure. Use a API REST do Azure para obter alertas por meio de suas notificações existentes.|
+|Monitoramento de aplicativos Web moderno | Sim | Não |
 |Monitoramento de aplicativo Web herdado | Sim, limitado, varia por SDK<br> Dá suporte ao monitoramento de versões mais antigas de aplicativos Web .NET e Java. | Sim, limitado |
-|Monitorar contêineres do serviço kubernetes do Azure | SIM | Não |
-|Monitorar contêineres do Docker ou do Windows | SIM | Não |
-|Monitoramento de desempenho de rede | SIM | Sim, limitado<br> Dá suporte a verificações de disponibilidade e coleta estatísticas básicas de dispositivos de rede usando o SNMP (Simple Network Management Protocol) da rede corporativa.|
-|Análise de dados interativa | SIM | Não<br> O se baseia em relatórios SQL Server Reporting Services ou fornecidos, soluções de visualização de terceiros ou uma implementação de Power BI personalizada. Há limitações de escala e desempenho com o data warehouse de Operations Manager. Integre-se com os logs de Azure Monitor como uma alternativa para os requisitos de agregação de dados. Você Obtém a integração Configurando o conector de Log Analytics.|
-|Diagnóstico de ponta a ponta, análise de causa raiz e solução de problemas oportuna | SIM | Sim, limitado<br> Dá suporte a diagnóstico de ponta a ponta e solução de problemas somente para infraestrutura e aplicativos locais. O usa outros componentes do System Center ou soluções de parceiros.|
-|Visualizações interativas (painéis) | SIM | Sim, limitado<br> Fornece painéis essenciais com seu console Web HTML5 ou uma experiência avançada de soluções de parceiros, como o enquadramento e o Savision. |
-|Integração com ferramentas de ti ou DevOps | SIM | Sim, limitado |
+|Monitorar contêineres do serviço kubernetes do Azure | Sim | Não |
+|Monitorar contêineres do Docker ou do Windows | Sim | Não |
+|Monitoramento de desempenho de rede | Sim | Sim, limitado<br> Dá suporte a verificações de disponibilidade e coleta estatísticas básicas de dispositivos de rede usando o SNMP (Simple Network Management Protocol) da rede corporativa.|
+|Análise de dados interativa | Sim | Não<br> O se baseia em relatórios SQL Server Reporting Services ou fornecidos, soluções de visualização de terceiros ou uma implementação de Power BI personalizada. Há limitações de escala e desempenho com o data warehouse de Operations Manager. Integre-se com os logs de Azure Monitor como uma alternativa para os requisitos de agregação de dados. Você Obtém a integração Configurando o conector de Log Analytics.|
+|Diagnóstico de ponta a ponta, análise de causa raiz e solução de problemas oportuna | Sim | Sim, limitado<br> Dá suporte a diagnóstico de ponta a ponta e solução de problemas somente para infraestrutura e aplicativos locais. O usa outros componentes do System Center ou soluções de parceiros.|
+|Visualizações interativas (painéis) | Sim | Sim, limitado<br> Fornece painéis essenciais com seu console Web HTML5 ou uma experiência avançada de soluções de parceiros, como o enquadramento e o Savision. |
+|Integração com ferramentas de ti ou DevOps | Sim | Sim, limitado |
 
 <!-- markdownlint-enable MD033 -->
 

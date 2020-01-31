@@ -1,6 +1,5 @@
 ---
 title: Examine as opções de dados
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Examine as opções de dados para cargas de trabalho do Azure.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 950465788053fa0977a158a5363cb6271e65b3e6
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 434fb0982b0749a6fcb117b86d8cf3bb6335f13a
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73243143"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806876"
 ---
 # <a name="review-your-data-options"></a>Examine as opções de dados
 
@@ -55,7 +54,7 @@ A tabela a seguir ilustra alguns requisitos de cenários de uso comum e os servi
 | Preciso de um banco de dados relacional MySQL escalonável e totalmente gerenciado, que tenha alta disponibilidade e segurança interna sem custo extra. | [Banco de Dados do Azure para MySQL](https://docs.microsoft.com/azure/mysql/overview) |
 | Preciso de um banco de dados relacional PostgreSQL escalonável e totalmente gerenciado, que tenha alta disponibilidade e segurança interna sem custo extra. | [Banco de Dados do Azure para PostgreSQL](https://docs.microsoft.com/azure/postgresql/overview) |
 | Pretendo hospedar aplicativos de SQL Server corporativos na nuvem e ter controle total sobre o sistema operacional do servidor. | [SQL Server em Máquinas Virtuais](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-iaas-overview) |
-| Preciso de um data warehouse elástico totalmente gerenciado, que tenha segurança em todos os níveis de escala, sem custo extra. | [SQL Data Warehouse do Azure](https://docs.microsoft.com/azure/sql-data-warehouse/sql-data-warehouse-overview-what-is) |
+| Preciso de um data warehouse elástico totalmente gerenciado, que tenha segurança em todos os níveis de escala, sem custo extra. | [Azure SQL Data Warehouse](https://docs.microsoft.com/azure/sql-data-warehouse/sql-data-warehouse-overview-what-is) |
 | Preciso de recursos de Data Lake Storage que sejam compatíveis com clusters Hadoop ou dados HDFS. | [Azure Data Lake](https://azure.microsoft.com/solutions/data-lake) |
 | Preciso de acesso de baixa latência consistente de alta taxa de transferência para que meus dados ofereçam suporte a aplicativos rápidos e escalonáveis. | [Cache Redis do Azure](https://docs.microsoft.com/azure/azure-cache-for-redis/cache-overview) |
 | Preciso de um banco de dados relacional MariaDB escalonável e totalmente gerenciado, que tenha alta disponibilidade e segurança interna sem custo extra. | [Banco de Dados do Azure para MariaDB](https://docs.microsoft.com/azure/mariadb/overview) |

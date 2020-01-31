@@ -1,6 +1,5 @@
 ---
 title: Guia de decisão de regiões
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Saiba mais sobre as seleções de região da plataforma de nuvem.
 author: doodlemania2
 ms.author: dermar
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 981752b1e1963dd4f8a646ccc087d445669e6cd3
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: aff6a3129bd93df434737a861f0b5f0daad24bcc
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753304"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806706"
 ---
 # <a name="azure-regions"></a>Regiões do Azure
 
@@ -83,7 +82,7 @@ A tabela a seguir pode auxiliar na documentação das descobertas das etapas aci
 | Região        | País/Região     | Funcionários locais | Usuários externos locais   | Datacenters locais ou ativos | Requisitos de soberania de dados |
 |---------------|-------------|-----------------|------------------------|-----------------------------|-------------------------------|
 | América do Norte | EUA         | Sim             | Parceiros e clientes | Sim                         | Não                            |
-| América do Norte | Canadá      | Não              | Clientes              | Sim                         | Sim                           |
+| América do Norte | Canada      | Não              | Clientes              | Sim                         | Sim                           |
 | Europa        | Alemanha     | Sim             | Parceiros e clientes | Não – Apenas rede           | Sim                           |
 | Pacífico Asiático  | Coreia do Sul | Sim             | Parceiros               | Sim                         | Não                            |
 
@@ -138,7 +137,7 @@ Ao lidar com as complexidades globais da base de usuários e dos ativos, há alg
 **Avaliar dependências entre datacenters:** as [ferramentas de visualização de dependência nas Migrações para Azure](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization) podem ajudar a identificar dependências. O uso dessas ferramentas antes da migração é uma prática recomendada. Mas ao lidar com a complexidade global, ela se torna uma etapa obrigatória no processo de avaliação. Por meio do [agrupamento de dependências](https://docs.microsoft.com/azure/migrate/how-to-create-group-machine-dependencies), a visualização pode ajudar a identificar os endereços IP e as portas de ativos necessários para dar suporte à carga de trabalho.
 
 > [!IMPORTANT]
-> Duas observações importantes: Primeiro, é necessário um especialista no assunto com compreensão do posicionamento do ativo e dos esquemas de endereço IP para identificar os ativos que residem em um datacenter secundário. Depois, é importante avaliar as dependências de downstream e os Clientes no visual para entender as dependências bidirecionais.
+> Duas observações importantes: Primeiro, é necessário um especialista no assunto com compreensão do posicionamento dos ativos e dos esquemas de endereços IP para identificar os ativos que residem em um datacenter secundário. Depois, é importante avaliar as dependências de downstream e os Clientes no visual para entender as dependências bidirecionais.
 
 **Identificar o impacto do usuário global:** as saídas da análise de perfil do usuário de pré-requisito devem identificar qualquer carga de trabalho afetada por perfis de usuário globais. Quando um candidato à migração está na lista de cargas de trabalho afetadas, o arquiteto que está se preparando para a migração deve consultar especialistas no assunto de redes e operações para validar as expectativas de desempenho e de roteamento de rede. No mínimo, a arquitetura deve incluir uma conexão do ExpressRoute entre o NOC (centro de operações de rede) mais próximo e o Azure. A [arquitetura de referência para conexões do ExpressRoute](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/expressroute) pode auxiliar na configuração da conexão necessária.
 

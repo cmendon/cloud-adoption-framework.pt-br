@@ -1,6 +1,5 @@
 ---
 title: Gerenciamento e segurança contínuos
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Gerenciamento e segurança contínuos
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 0bf778b89ed91069b9387f7bbdc5f27f05480e0c
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: fc15e50f0919745faff89949dbac15169adc5c6c
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565322"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807981"
 ---
 # <a name="phase-3-ongoing-management-and-security"></a>Fase 3: gerenciamento e segurança contínuos
 
@@ -31,7 +30,7 @@ A central de segurança do Azure é o local central para gerenciar a segurança 
 
 Recomendamos que você revise e implemente as recomendações fornecidas por esse serviço. Para obter informações sobre os benefícios adicionais da central de segurança do Azure, consulte [seguir as recomendações da central de segurança do Azure](https://docs.microsoft.com/azure/migrate/migrate-best-practices-security-management#best-practice-follow-azure-security-center-recommendations).
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Saiba como [habilitar o recurso de configuração de convidado Azure Policy](./guest-configuration-policy.md) .
 

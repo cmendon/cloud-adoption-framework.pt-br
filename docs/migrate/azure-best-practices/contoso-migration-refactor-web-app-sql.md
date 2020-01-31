@@ -1,6 +1,5 @@
 ---
 title: Refatorar um aplicativo migrando-o para o Serviço de Aplicativo do Azure e o Banco de Dados SQL do Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Saiba como a Contoso hospeda novamente um aplicativo local migrando-o para um aplicativo Web do Serviço de Aplicativo do Azure e do banco de dados do Azure SQL Server.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: d0d0fa87d424cbdf33e2b8516dd43b5156b55756
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 35a64b9f42df3737e186d25a43ecad457010607d
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566569"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807437"
 ---
 # <a name="refactor-an-on-premises-app-to-an-azure-app-service-web-app-and-azure-sql-database"></a>Refatorar um aplicativo local para um aplicativo Web do Serviço de Aplicativo do Azure e do banco de dados SQL do Azure
 
@@ -42,7 +41,7 @@ A equipe de nuvem da Contoso fixou metas para esta migração. Essas metas foram
 --- | ---
 **Aplicativo** | O aplicativo no Azure permanecerá tão importante quanto é hoje.<br/><br/> Ele deve ter os mesmos recursos de desempenho que tem atualmente no VMware.<br/><br/> A equipe não quer investir no aplicativo. Por enquanto, os administradores simplesmente movem o aplicativo com segurança para a nuvem.<br/><br/> A equipe deseja parar de oferecer suporte ao Windows Server 2008 R2, no qual o aplicativo é executado atualmente.<br/><br/> A equipe também deseja se afastar do SQL Server 2008 R2 para uma plataforma de banco de dados PaaS moderna, o que minimizará a necessidade de gerenciamento.<br/><br/> A Contoso deseja aproveitar seu investimento em licenciamento do SQL Server e o Software Assurance quando possível.<br/><br/> Além disso, a Contoso deseja reduzir o ponto único de falha na camada da web.
 **Limitações** | O aplicativo consiste em um aplicativo ASP.NET e um serviço WCF em execução na mesma VM. Eles querem dividir isso em dois aplicativos Web usando o Serviço de Aplicativo do Azure.
-**As tabelas** | Contoso quer mover o aplicativo para o Azure, mas não quer executá-lo em VMs. A Contoso quer usar os serviços de PaaS do Azure para as camadas da Web e de dados.
+**Azure** | Contoso quer mover o aplicativo para o Azure, mas não quer executá-lo em VMs. A Contoso quer usar os serviços de PaaS do Azure para as camadas da Web e de dados.
 **DevOps** | A Contoso deseja passar para um modelo de DevOps usando o Azure DevOps para o pipelines de builds e de lançamento.
 
 <!-- markdownlint-enable MD033 -->
@@ -53,11 +52,11 @@ Depois de fixar as metas e os requisitos, a Contoso projeta e analisa uma soluç
 
 ### <a name="current-app"></a>Aplicativo atual
 
-- O aplicativo local do SmartHotel360 é dividido em duas VMs (WEBVM e SQLVM).
+- O aplicativo local SmartHotel360 é dividido em duas VMs (WEBVM e SQLVM).
 - As VMs estão localizadas no host VMware ESXi **contosohost1.contoso.com** (versão 6.5)
 - O ambiente VMware é gerenciado pelo vCenter Server 6.5 (**vcenter.contoso.com**) em execução em uma VM.
 - A Contoso tem um datacenter local (contoso-datacenter), com um controlador de domínio local (**contosodc1**).
-- As VMs locais no datacenter Contoso, serão descomissionadas após a migração.
+- As VMs locais no datacenter da Contoso serão descomissionadas após a migração.
 
 ### <a name="proposed-solution"></a>Solução proposta
 
@@ -117,7 +116,7 @@ Aqui, a Contoso precisa executar este cenário:
 
 ## <a name="scenario-steps"></a>Etapas do cenário
 
-Aqui está como a Contoso executará a migração:
+Veja como a Contoso executará a migração:
 
 > [!div class="checklist"]
 >
@@ -288,7 +287,7 @@ Agora, os administradores da Contoso configuram o Azure DevOps para executar o p
 
 5. Isso inicia o primeiro build. Eles selecionam o número da compilação para assistir ao processo. Após a conclusão, eles podem ver os comentários do processo e selecionar **Artefatos** para examinar os resultados do build.
 
-    ![Análise](./media/contoso-migration-refactor-web-app-sql/pipeline5.png)
+    ![Examinar](./media/contoso-migration-refactor-web-app-sql/pipeline5.png)
 
 6. A pasta **Destino** contém os resultados do build.
 
@@ -319,7 +318,7 @@ Agora, os administradores da Contoso configuram o Azure DevOps para executar o p
 
 12. No pipeline > **Artefatos**, eles selecionam **+ Adicionar um artefato** e selecionam compilar com o pipeline **ContosoSmarthotel360Refactor**.
 
-     ![Compilação](./media/contoso-migration-refactor-web-app-sql/pipeline12.png)
+     ![Crie](./media/contoso-migration-refactor-web-app-sql/pipeline12.png)
 
 13. Eles selecionam o raio do artefato verificado, para ativar o gatilho de implantação contínua.
 
@@ -337,7 +336,7 @@ Agora, os administradores da Contoso configuram o Azure DevOps para executar o p
 
     ![Salve o WCF](./media/contoso-migration-refactor-web-app-sql/pipeline16.png)
 
-17. Eles selecionam **Pipeline** > **Estágios** **+ Adicionar**, para adicionar um ambiente para **SHWEB-EUS2**. Eles selecionam outra implantação do Serviço de Aplicativo do Azure.
+17. Eles selecionam **Pipeline** > **estágios** **+ Adicionar**, para adicionar um ambiente para **SHWEB-EUS2**. Eles selecionam outra implantação do Serviço de Aplicativo do Azure.
 
     ![Adicionar o ambiente](./media/contoso-migration-refactor-web-app-sql/pipeline17.png)
 
@@ -367,7 +366,7 @@ Agora, os administradores da Contoso configuram o Azure DevOps para executar o p
 
 Neste ponto, o aplicativo é migrado com êxito para o Azure.
 
-## <a name="clean-up-after-migration"></a>Limpeza após a migração
+## <a name="clean-up-after-migration"></a>Limpar após a migração
 
 Após a migração, a Contoso precisa concluir estas etapas de limpeza:
 

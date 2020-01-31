@@ -1,6 +1,5 @@
 ---
 title: Visão geral da disciplina de Linha de Base de Segurança
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Visão geral da disciplina de Linha de Base de Segurança
 author: BrianBlanchard
 ms.author: brblanch
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: a0b0ed642e11fc3ffc81db7fd1095853a5458b1d
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: ecea5b28e64004f85b4312a35b78bef81048c050
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565938"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808967"
 ---
 # <a name="security-baseline-discipline-overview"></a>Visão geral da disciplina de Linha de Base de Segurança
 
@@ -30,7 +29,7 @@ Tomar as decisões corretas relacionadas à segurança é fundamental para o êx
 
 ## <a name="policy-statements"></a>Declarações de políticas
 
-As declarações de política acionáveis e os requisitos de arquitetura resultantes servem como base de uma disciplina de Linha de Base de Segurança. Para ver exemplos de declarações de políticas, consulte o artigo sobre [Declarações de políticas de Linha de Base de Segurança](./policy-statements.md). Esses exemplos podem servir como ponto de partida para as políticas de governança da organização.
+As declarações de política acionáveis e os requisitos de arquitetura resultantes servem como base de uma disciplina de Linha de Base de Segurança. Para ver exemplos de declarações de políticas, consulte o artigo sobre [Declarações de políticas de Linha de Base de Segurança](./policy-statements.md). Esses exemplos podem servir como ponto de partida para as políticas de governança da sua organização.
 
 > [!CAUTION]
 > As políticas de exemplo são provenientes de experiências comuns do cliente. Para alinhar melhor essas políticas às necessidades específicas de governança de nuvem, execute as etapas a seguir para criar instruções de políticas que atendam às suas necessidades exclusivas de negócios.

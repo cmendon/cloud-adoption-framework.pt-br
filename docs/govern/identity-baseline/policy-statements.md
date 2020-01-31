@@ -1,6 +1,5 @@
 ---
 title: Instruções de política de exemplo de Linha de base de identidade
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Instruções de política de exemplo de Linha de base de identidade
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,16 +8,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 44c0f8693362572e0faf1e39d9f2ec7ba2ff16b9
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: c3804f24db454e4c198494e0024632efdc7d0d53
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74160072"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76805040"
 ---
 # <a name="identity-baseline-sample-policy-statements"></a>Instruções de política de exemplo de Linha de base de identidade
 
-Declarações da política de nuvem individuais são diretrizes para tratar de riscos específicos identificados durante o processo de avaliação de riscos. Essas instruções oferecem um resumo conciso dos riscos e planos com os quais lidar. Cada definição de instrução deve incluir essas informações:
+As instruções individuais da política de nuvem são diretrizes para abordar os riscos específicos identificados durante o processo de avaliação de riscos. Essas instruções oferecem um resumo conciso dos riscos e planos com os quais lidar. Cada definição de instrução deve incluir essas informações:
 
 - **Risco técnico:** Um resumo do risco que essa política abordará.
 - **Declaração de política:** Uma explicação resumida clara dos requisitos de política.

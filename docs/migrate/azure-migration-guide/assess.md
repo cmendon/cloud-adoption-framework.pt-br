@@ -1,6 +1,5 @@
 ---
 title: Avaliar bens digitais
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Avaliar bens digitais
 author: matticusau
 ms.author: mlavery
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 31e76ec1f81bc38b03e8f1e480d083983dc85b14
-ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
+ms.openlocfilehash: 298cfc866e770e2dcd33a22d6cd4713e4053de25
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74251417"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807063"
 ---
 # <a name="assess-the-digital-estate"></a>Avaliar bens digitais
 
@@ -68,7 +67,7 @@ Para começar a usar uma avaliação de migração do servidor usando as Migraç
 
 ## <a name="service-map"></a>Mapa do Serviço
 
-O Mapa do Serviço detecta automaticamente os componentes de aplicativos em sistemas Windows e Linux e mapeia a comunicação entre os serviços. Com o Mapa do Serviço é possível exibir seus servidores da maneira desejada: como sistemas interconectados que fornecem serviços críticos. O Mapa do Serviço mostra conexões entre servidores, processos, latência de conexão de entrada e saída e portas em qualquer arquitetura conectada a TCP, sem a necessidade de configuração diferente da instalação de um agente.
+O Mapa do Serviço descobre automaticamente os componentes de aplicativo em sistemas Windows e Linux e mapeia a comunicação entre os serviços. Com o Mapa do Serviço é possível exibir seus servidores da maneira desejada: como sistemas interconectados que fornecem serviços críticos. O Mapa do Serviço mostra conexões entre servidores, processos, latência de conexão de entrada e saída e portas em qualquer arquitetura conectada a TCP, sem a necessidade de configuração diferente da instalação de um agente.
 
 As Migrações para Azure usam o Mapa do Serviço para aprimorar os recursos de geração de relatórios e as dependências em todo o ambiente. Veja os detalhes completos dessa integração descritos em [Visualização de dependência](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization). Se você usar o serviço de Migração para Azure, não serão necessárias etapas adicionais para configurar e obter os benefícios do Mapa do Serviço. As instruções a seguir são fornecidas como referência, caso você deseje usar o Mapa do Serviço para outras finalidades ou projetos.
 
@@ -131,6 +130,6 @@ Durante a migração, certos fatores podem afetar as decisões e atividades de e
 
 Os seguintes recursos fornecem informações relacionadas:
 
-- [Estimar os custos de nuvem](../migration-considerations/assess/estimate.md)
+- [Estimar custos de nuvem](../migration-considerations/assess/estimate.md)
 
 ::: zone-end

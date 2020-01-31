@@ -1,6 +1,5 @@
 ---
 title: Como obter assistência
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Como obter assistência durante a jornada para o Azure
 author: matticusau
 ms.author: mlavery
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: a63cc0b1ff26bf4dc30635f01ba7a6810a43891c
-ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
+ms.openlocfilehash: 479a9433f8768c701aa198e32fe2c9fcc295a61f
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74251651"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76803476"
 ---
 ::: zone target="chromeless"
 
@@ -104,11 +103,11 @@ As seguintes comunidades online fornecem suporte baseado na comunidade:
 
 # <a name="partnerstabpartners"></a>[Parceiros](#tab/Partners)
 
-## <a name="azure-solutions-partner"></a>Parceiro das Soluções do Azure
+## <a name="azure-solutions-partner"></a>Parceiro de Soluções do Azure
 
 Os Provedores de soluções certificados pela Microsoft se especializam em fornecer soluções atualizadas com base em tecnologia Microsoft aos clientes do mundo todo. Otimize seus negócios na nuvem com a ajuda de um parceiro experiente.
 
 Obtenha a ajuda de parceiros com soluções do Azure prontas para uso ou personalizadas e os parceiros podem ajudar na implantação e gerenciamento dessas soluções para seu negócio:
 
-- [Encontre um parceiro de soluções na nuvem](https://www.microsoft.com/solution-providers/home). Um CSP certificado pode ajudar a aproveitar ao máximo a nuvem, avaliando as metas de negócios para a adoção da nuvem, identificando a solução de nuvem certa que atende às necessidades dos negócios e que ajuda a tornar a empresa mais ágil e eficiente.
-- [Encontre um Managed Service Partner ](https://www.microsoft.com/solution-providers/search?cacheId=16a3b49b-fef2-449d-bdf0-628008114cca). Um MSP (Managed Service Partner) do Azure ajuda na transição dos negócios para o Azure, orientando todos os aspectos da jornada para a nuvem. De consultoria ao gerenciamento de operações e migrações, os MSPs de nuvem mostram aos clientes todos os benefícios que a adoção da nuvem proporciona. Eles também atuam como uma loja conveniente que fornece suporte comum, provisionamento e experiência de cobrança, tudo com um modelo de negócios&mdash;PAYG (pago conforme o uso) flexível.
+- [Encontre um parceiro de soluções na nuvem](https://www.microsoft.com/solution-providers/home). Um CSP certificado pode ajudar a aproveitar ao máximo a nuvem, avaliando as metas empresariais para a adoção da nuvem, identificando a solução de nuvem certa que atenda às necessidades empresariais e que ajude a tornar a empresa mais ágil e eficiente.
+- [Encontre um Managed Service Partner ](https://www.microsoft.com/solution-providers/search?cacheId=16a3b49b-fef2-449d-bdf0-628008114cca). Um MSP (Managed Service Partner) do Azure ajuda na transição dos negócios para o Azure, orientando todos os aspectos da jornada para a nuvem. Da consultoria ao gerenciamento de operações e migrações, os MSPs de nuvem mostram aos clientes todos os benefícios que a adoção da nuvem proporciona. Eles também atuam como uma loja conveniente que fornece suporte comum, provisionamento e experiência de cobrança, tudo com um modelo de negócios&mdash;PAYG (pago conforme o uso) flexível.

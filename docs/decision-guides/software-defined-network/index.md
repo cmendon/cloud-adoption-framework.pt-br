@@ -1,6 +1,5 @@
 ---
 title: Guia de decisão de Rede Definida por Software
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Aprenda sobre redes definidas pelo software como um serviço principal em migrações do Azure.
 author: rotycenh
 ms.author: v-tyhopk
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 46d01d6685b4cac55db7ed313b70891b4f9c029f
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 7eb03b01dfab3627117b4d07727f09669e6b0924
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564782"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806587"
 ---
 # <a name="software-defined-networking-decision-guide"></a>Guia de decisão de Rede Definida por Software
 
@@ -43,9 +42,9 @@ Ao planejar qual arquitetura de rede virtual ou combinação de arquiteturas dev
 | Pergunta | PaaS-only | Nativo da nuvem | DMZ de nuvem | Híbrido | Hub e spoke |
 |-----|-----|-----|-----|-----|-----|
 | A carga de trabalho utilizará apenas serviços de PaaS e não exigirá recursos de rede além daqueles fornecidos pelos próprios serviços? | Sim | Não | Não | Não | Não |
-| A carga de trabalho requer integração com aplicativos locais? | Não | Não | sim | sim | Sim |
-| Você estabeleceu políticas de segurança sólidas e conectividade segura entre o local e as redes na nuvem? | Não | Não | Não | sim | Sim |
-| A carga de trabalho exige serviços de autenticação que não têm suporte por meio dos serviços de identidade na nuvem ou você precisa de acesso direto aos controladores de domínio locais? | Não | Não | Não | sim | Sim |
+| A carga de trabalho requer integração com aplicativos locais? | Não | Não | Sim | Sim | Sim |
+| Você estabeleceu políticas de segurança sólidas e conectividade segura entre o local e as redes na nuvem? | Não | Não | Não | Sim | Sim |
+| A carga de trabalho exige serviços de autenticação que não têm suporte por meio dos serviços de identidade na nuvem ou você precisa de acesso direto aos controladores de domínio locais? | Não | Não | Não | Sim | Sim |
 | Você precisará implantar e gerenciar um grande número de VMs e cargas de trabalho? | Não | Não | Não | Não | Sim |
 | Você precisará fornecer gerenciamento centralizado e conectividade local ao delegar controle sobre recursos a equipes de carga de trabalho individuais? | Não | Não | Não | Não | Sim |
 

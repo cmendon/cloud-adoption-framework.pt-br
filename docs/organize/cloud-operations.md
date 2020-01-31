@@ -1,6 +1,5 @@
 ---
 title: Recursos de operação de nuvem
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Descreve a formação de recursos de operação de nuvem
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: c56b3d174438583e07ae3a610180b39318c83f5d
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: a33dc9921f5e7fcbe2ee05f9483097040d9b309b
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71030439"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76801028"
 ---
 # <a name="cloud-operation-capabilities"></a>Recursos de operação de nuvem
 
@@ -62,7 +61,7 @@ As tarefas das pessoas que fornecem a capacidade de operações de nuvem é forn
 
 Aqueles que executam recursos de operações de nuvem devem estar envolvidos no planejamento de versão e no Cloud Center do planejamento de excelência para fornecer comentários e se preparar para os requisitos operacionais.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Conforme a adoção e a escala de operações, é importante definir e automatizar as práticas recomendadas de governança que estendem os requisitos de ti existentes. Formar um [Cloud Center de excelência](./cloud-center-of-excellence.md) é uma etapa importante para dimensionar a adoção de nuvem, operações de nuvem e esforços de governança de nuvem.
 

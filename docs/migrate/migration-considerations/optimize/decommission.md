@@ -1,6 +1,5 @@
 ---
 title: Encerrar os ativos desativados
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Encerrar os ativos desativados
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ae2538263af35e8fdb2cf5c861a2c7b0537108d4
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 933a9c42a55e58e5a58f9ef1c308b006e30e1abf
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70833356"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76801929"
 ---
 # <a name="decommission-retired-assets"></a>Encerrar os ativos desativados
 
@@ -35,7 +34,7 @@ Mesmo com o melhor planejamento, as cargas de trabalho de produção ainda podem
 
 Não é incomum que dados sejam perdidos durante os processos de replicação. E isso ocorre mais frequentemente com dados mais antigos, que não são usados regularmente. Depois que um ativo é desativado, ainda é aconselhável mantê-lo por um tempo para servir como um backup temporário de dados. As empresas devem testar a infraestrutura e manter esses dados por, pelo menos, 30 dias antes de destruir ativos desativados.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Depois que os ativos desativados são encerrados, a migração é concluída. Isso cria uma boa oportunidade para melhorar o processo de migração e uma [retrospectiva](./retrospective.md) envolve a equipe de adoção da nuvem na revisão da versão, em um esforço para aprender e melhorar.
 

@@ -1,6 +1,5 @@
 ---
 title: O que é contabilidade de nuvem?
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Explicação do conceito de contabilidade de nuvem
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 834beb021b394e2d6ffe58723caced7519923b59
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 008958e0542a52f022bbf2ba3183fbfb8c78b9ee
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028479"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806808"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -35,7 +34,7 @@ Independentemente do modelo de receita, os modelos de contabilidade de ti centra
 
 Em um modelo de contabilidade de ti central, a equipe de ti marca os serviços fornecidos para levar em conta a sobrecarga, o gerenciamento e outras despesas estimadas. Em seguida, ele cobra as unidades de negócios concorrentes para os serviços marcados. Nesse modelo, espera-se que o CIO gerencie o P & L associado à venda desses serviços. Isso pode criar custos e contenção de ti informados entre as unidades centrais de ti e de negócios, especialmente quando precisa reduzir os custos ou não atender a SLAs acordados. Durante os horários de alteração da tecnologia ou do mercado, qualquer nova tecnologia causaria uma interrupção na central de ti de P & L, dificultando a transformação.
 
-## <a name="chargeback"></a>Estorno
+## <a name="chargeback"></a>Recuperação
 
 Uma das primeiras etapas comuns para alterar sua reputação é que o centro de custo está implementando um modelo de estorno de contabilidade. Esse modelo é especialmente comum em empresas menores ou em organizações de ti altamente eficientes. No modelo de estorno, os custos de ti associados a uma unidade de negócios específica são tratados como uma despesa operacional no orçamento da unidade de negócios. Essa prática reduz os efeitos de custo cumulativo, permitindo que os valores de negócios sejam mostrados mais claramente.
 

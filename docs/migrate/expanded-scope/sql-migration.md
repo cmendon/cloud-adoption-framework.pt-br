@@ -1,6 +1,5 @@
 ---
 title: Acelere a migração migrando uma instância do SQL Server
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: A migração de instâncias inteiras de SQL Server pode acelerar os esforços de migração de carga de trabalho.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: e499e499cf1639bf9ce1118dcb93254268e9cb54
-ms.sourcegitcommit: 3c325764ad8229b205d793593ff344dca3a0579b
+ms.openlocfilehash: 5b2190456e63c0e1da39f064e34d63eebbf4d998
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/23/2019
-ms.locfileid: "75328915"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76802983"
 ---
 # <a name="accelerate-migration-by-migrating-multiple-databases-or-entire-sql-servers"></a>Acelere a migração migrando vários bancos de dados ou SQL Servers inteiros
 
@@ -42,11 +41,11 @@ Se este guia se alinhar com seus critérios, continue com esse guia de escopo ex
 
 Antes de executar uma migração de SQL Server, comece com uma expansão do espaço digital, incluindo um espaço de dados. O espaço de dados registra um inventário dos ativos de dados que você está considerando para a migração. As tabelas a seguir descrevem uma abordagem para registrar o espaço de dados.
 
-### <a name="server-inventory"></a>Estoque do servidor
+### <a name="server-inventory"></a>Inventário de servidor
 
 Veja a seguir um exemplo de um inventário de servidor:
 
-|SQL Server|Finalidade|Versão|[Criticidade](../../manage/considerations/criticality.md)|[Confidencialidade](../../govern/policy-compliance/data-classification.md)|Contagem de banco de dados|SSIS|SSRS|SSAS|Cluster|Número de nós|
+|SQL Server|Finalidade|Versão|[Importância](../../manage/considerations/criticality.md)|[Confidencialidade](../../govern/policy-compliance/data-classification.md)|Contagem de banco de dados|SSIS|SSRS|SSAS|Cluster|Número de nós|
 |---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|
 |SQL-01|Aplicativos principais|2016|Essenciais|Altamente confidencial|40|N/D|N/D|N/D|Sim|3|
 |SQL-02|Aplicativos principais|2016|Essenciais|Altamente confidencial|40|N/D|N/D|N/D|Sim|3|
@@ -58,12 +57,12 @@ Veja a seguir um exemplo de um inventário de servidor:
 
 Veja a seguir um exemplo de inventário de banco de dados para um dos servidores acima:
 
-|Servidor|Banco de dados|[Criticidade](../../manage/considerations/criticality.md)|[Confidencialidade](../../govern/policy-compliance/data-classification.md)|Resultados de Assistente de Migração de Dados (DMA)|Correção de DMA|Plataforma de destino|
+|Servidor|Banco de dados|[Importância](../../manage/considerations/criticality.md)|[Confidencialidade](../../govern/policy-compliance/data-classification.md)|Resultados de Assistente de Migração de Dados (DMA)|Correção de DMA|Plataforma de destino|
 |---------|---------|---------|---------|---------|---------|---------|
-|SQL-01|DB-1|Essenciais|Altamente Confidencial|Compatível|N/D|Banco de dados SQL do Azure|
+|SQL-01|DB-1|Essenciais|Altamente confidencial|Compatível|N/D|Banco de dados SQL do Azure|
 |SQL-01|DB-2|Alto|Confidential|Alteração de esquema necessária|Alterações implementadas|Banco de dados SQL do Azure|
 |SQL-01|DB-3|Alto|Geral|Compatível|N/D|Instância Gerenciada do SQL do Azure|
-|SQL-01|DB-4|Baixo|Altamente Confidencial|Alteração de esquema necessária|Alterações agendadas|Instância Gerenciada do SQL do Azure|
+|SQL-01|DB-4|Baixo|Altamente confidencial|Alteração de esquema necessária|Alterações agendadas|Instância Gerenciada do SQL do Azure|
 |SQL-01|DB-5|Essenciais|Geral|Compatível|N/D|Instância Gerenciada do SQL do Azure|
 |SQL-01|DB-6|Alto|Confidential|Compatível|N/D|Banco de dados SQL do Azure|
 

@@ -1,6 +1,5 @@
 ---
 title: Processos de conformidade de política de Consistência de Recursos
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Processos de conformidade de política de Consistência de Recursos
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ebff4e0bbeb7f74a61b81527e0dbc62874ffbe6c
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 7fbb2d7b121c011005c4f900bf66cafb8977ffeb
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566036"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76805975"
 ---
 # <a name="resource-consistency-policy-compliance-processes"></a>Processos de conformidade de política de Consistência de Recursos
 
@@ -62,7 +61,7 @@ Os gatilhos e ações de imposição a seguir fornecem exemplos que você pode c
 - **Interrupção de recurso crítico detectada.** A equipe de TI é notificada sobre todas as interrupções detectadas de interrupções de missão crítica. Se a interrupção não for resolvida imediatamente, a equipe irá escalonar o problema e notificar os proprietários da carga de trabalho e a equipe de governança de nuvem. A equipe de governança de nuvem controlará o problema até a resolução e a orientação da atualização se a revisão da política for necessária para evitar futuros incidentes.
 - **Descompasso de configuração.** Os recursos detectados que não estão em conformidade com as linhas de base estabelecidas devem disparar alertas e ser corrigidos automaticamente usando ferramentas de gerenciamento de configuração como a automação do Azure, chefe, Puppet, Ansible, etc.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Usando o [modelo de Gerenciamento de Nuvem](./template.md), documente os processos e gatilhos que alinham-se ao plano de adoção da nuvem atual.
 

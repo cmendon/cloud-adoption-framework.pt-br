@@ -1,6 +1,5 @@
 ---
 title: Configurar os serviços de gerenciamento de servidor do Azure para uma assinatura
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Configurar os serviços de gerenciamento de servidor do Azure para uma assinatura
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: c4a0964ed8ec28ead844e1fd15275422adf8f081
-ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
+ms.openlocfilehash: c3c44f3c53049f29be989616e1d5af041907e497
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73656644"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808083"
 ---
 # <a name="configure-azure-server-management-services-at-scale"></a>Configurar os serviços de gerenciamento de servidor do Azure em escala
 
@@ -48,7 +47,7 @@ O Azure Policy tem uma iniciativa de [diretiva](https://docs.microsoft.com/azure
 
 Para atribuir as políticas descritas na seção anterior:
 
-1. Na portal do Azure, acesse **Azure Policy**  > **atribuições**  >  a**iniciativa atribuir**.
+1. Na portal do Azure, acesse **Azure Policy** > **atribuições** > a **iniciativa atribuir**.
 
     ![Captura de tela da interface de política do portal](./media/onboarding-at-scale1.png)
 
@@ -140,10 +139,10 @@ O [log de atividades do Azure](https://docs.microsoft.com/azure/azure-monitor/pl
 
 Para implementar essa solução:
 
-1. Na portal do Azure, abra **todos os serviços** e selecione **gerenciamento + governança**  > **soluções**.
+1. Na portal do Azure, abra **todos os serviços** e selecione **gerenciamento + governança** > **soluções**.
 2. No modo de exibição **soluções** , selecione **Adicionar**.
 3. Procure **análise do log de atividades** e selecione-o.
-4. Clique em **Criar**.
+4. Selecione **Criar**.
 
 Você precisa especificar o **nome do espaço** de trabalho do espaço de trabalho que você criou na seção anterior em que a solução está habilitada.
 
@@ -153,14 +152,14 @@ A solução de Integridade do Agente Log Analytics do Azure relata sobre a integ
 
 Para implementar essa solução:
 
-1. Na portal do Azure, abra **todos os serviços** e selecione **gerenciamento + governança**  > **soluções**.
+1. Na portal do Azure, abra **todos os serviços** e selecione **gerenciamento + governança** > **soluções**.
 2. No modo de exibição **soluções** , selecione **Adicionar**.
 3. Pesquise a **integridade do agente de log Analytics do Azure** e selecione-o.
-4. Clique em **Criar**.
+4. Selecione **Criar**.
 
 Você precisa especificar o **nome do espaço** de trabalho do espaço de trabalho que você criou na seção anterior em que a solução está habilitada.
 
-Após a conclusão da criação, a instância de recurso do espaço de trabalho exibe **AgentHealthAssessment** quando você seleciona **Exibir**  > **soluções**.
+Após a conclusão da criação, a instância de recurso do espaço de trabalho exibe **AgentHealthAssessment** quando você seleciona **Exibir** > **soluções**.
 
 ### <a name="antimalware-assessment"></a>Avaliação antimalware
 
@@ -168,14 +167,14 @@ A solução Avaliação de Antimalware ajuda a identificar servidores infectados
 
 Para implementar essa solução:
 
-1. Na portal do Azure, abra **todos os serviços** e selecione **gerenciamento + governança**  > **soluções**.
+1. Na portal do Azure, abra **todos os serviços** e selecione **gerenciamento + governança** > **soluções**.
 2. No modo de exibição **soluções** , selecione **Adicionar**.
 3. Procure e selecione **avaliação de antimalware**.
-4. Clique em **Criar**.
+4. Selecione **Criar**.
 
 Você precisa especificar o **nome do espaço** de trabalho do espaço de trabalho que você criou na seção anterior em que a solução está habilitada.
 
-Após a conclusão da criação, a instância de recurso do espaço de trabalho exibe o **Antimalware** quando você seleciona **exibir** **soluções**de  > .
+Após a conclusão da criação, a instância de recurso do espaço de trabalho exibe o **Antimalware** quando você seleciona **exibir** **soluções**de > .
 
 ### <a name="azure-monitor-for-vms"></a>Azure Monitor para VMs
 

@@ -1,6 +1,5 @@
 ---
 title: Avaliar sua jornada de transformação
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Avaliar sua jornada de transformação
 author: alexbuckgit
 ms.author: abuck
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 413a7023738f510f5b08692a3f88a88cd3333632
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: a25e7c9149c14d25f86f7095db8404b85cc95b48
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71028915"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806519"
 ---
 # <a name="assess-your-transformation-journey"></a>Avaliar sua jornada de transformação
 
@@ -47,7 +46,7 @@ A ferramenta de benchmark de governança fornece um relatório personalizado que
 
 <!-- markdownlint-enable MD033 -->
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Comece sua jornada de governança com um conjunto de ferramentas de governança pequeno e implementado com facilidade. Essa base de governança inicial é chamada de MVP (produto mínimo viável).
 

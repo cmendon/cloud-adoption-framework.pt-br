@@ -1,6 +1,5 @@
 ---
 title: Instruções de política de exemplo de Linha de base de segurança
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Instruções de política de exemplo de Linha de base de segurança
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,16 +8,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 312a3f4e6577b0a0db525e6428bf7e1b2616b625
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: ba0887b93664ac77fc2933c24631110dfab14be0
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74160520"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808865"
 ---
 # <a name="security-baseline-sample-policy-statements"></a>Instruções de política de exemplo de Linha de base de segurança
 
-Declarações da política de nuvem individuais são diretrizes para tratar de riscos específicos identificados durante o processo de avaliação de riscos. Essas instruções oferecem um resumo conciso dos riscos e planos com os quais lidar. Cada definição de instrução deve incluir essas informações:
+As instruções individuais da política de nuvem são diretrizes para abordar os riscos específicos identificados durante o processo de avaliação de riscos. Essas instruções oferecem um resumo conciso dos riscos e planos com os quais lidar. Cada definição de instrução deve incluir essas informações:
 
 - **Risco técnico:** Um resumo do risco que essa política abordará.
 - **Declaração de política:** Uma explicação resumida clara dos requisitos de política.

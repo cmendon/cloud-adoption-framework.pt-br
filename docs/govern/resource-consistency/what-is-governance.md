@@ -1,6 +1,5 @@
 ---
 title: O que é a governança dos recursos da nuvem?
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Governança de recursos de nuvem de explicação no Azure
 author: alexbuckgit
 ms.author: abuck
@@ -8,12 +7,12 @@ ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 7f22a4f28d0d84a8847d06d37ad88002a03ecc16
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 9277bf82d9034108b478536a699f96918c38ae0d
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221854"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807267"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -39,7 +38,7 @@ As políticas de recursos definem regras para a criação de recursos. Por exemp
 
 Ao configurar essas ferramentas, é importante balancear a governança e a agilidade organizacional. Quanto mais restritiva for sua política de governança, menos ágil serão os desenvolvedores e os profissionais de ti. Uma política de governança restritiva pode exigir mais etapas manuais, como exigir que um desenvolvedor preencha um formulário ou envie um email a um membro da equipe de governança para criar manualmente um recurso. A equipe de governança tem capacidade finita e pode se tornar um afunilamento, resultando em equipes de desenvolvimento aguardando inprodutivamente que seus recursos sejam criados, ou recursos desnecessários que acumulam custos antes de serem excluídos.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Agora que você entendeu o conceito de governança de recursos de nuvem, saiba mais sobre como o acesso aos recursos é gerenciado no Azure.
 

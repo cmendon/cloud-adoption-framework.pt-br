@@ -1,74 +1,73 @@
 ---
-title: Guia de preparação para a nuvem do CISO
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Como um CISO pode se preparar para a nuvem
+title: Guia de preparação da nuvem CISO
+description: Como um diretor de segurança da informação pode se preparar para a nuvem?
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 5675d611979c992f41f03d362f0110aaeb3b9b24
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: ea86e0b35dd61cb65a5396a6c9f2e604abe6d9a5
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547372"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76804989"
 ---
-# <a name="ciso-cloud-readiness-guide"></a>Guia de preparação para a nuvem do CISO
+# <a name="ciso-cloud-readiness-guide"></a>Guia de preparação da nuvem CISO
 
-As diretrizes da Microsoft, como a estrutura de adoção de nuvem, não estão posicionadas para determinar ou orientar as restrições de segurança exclusivas dos milhares de empresas com suporte nesta documentação. Ao migrar para a nuvem, a função do diretor de segurança de informações da empresa ou da CISO (diretor de segurança de informações) não é suplantado pelas tecnologias de nuvem. O contrário, o CISO e o escritório do CISO, tornam-se mais refinados e integrados. Este guia pressupõe que o leitor esteja familiarizado com os processos de CISO e está buscando modernizar esses processos para habilitar a transformação em nuvem.
+As diretrizes da Microsoft, como a estrutura de adoção de nuvem, não estão posicionadas para determinar ou orientar as restrições de segurança exclusivas dos milhares de empresas com suporte nesta documentação. Ao migrar para a nuvem, a função do diretor de segurança de informações da empresa ou da CISO (diretor de segurança de informações) não é suplantado pelas tecnologias de nuvem. Muito pelo contrário, o CISO e o escritório de CISO, se tornam mais integrantes e integrados. Este guia pressupõe que o leitor esteja familiarizado com os processos de CISO e está buscando modernizar esses processos para habilitar a transformação em nuvem.
 
-A adoção de nuvem habilita serviços que não eram frequentemente considerados em ambientes de ti tradicionais. As implantações autoatendimento ou automatizadas geralmente são executadas pelo desenvolvimento de aplicativos ou outras equipes de ti que não estão tradicionalmente alinhadas à implantação de produção. Em algumas organizações, os constituintes de negócios têm, de certa forma, recursos de autoatendimento. Isso pode disparar novos requisitos de segurança que não eram necessários no mundo local. A segurança centralizada é mais desafiadora, a segurança geralmente se torna uma responsabilidade compartilhada na empresa e na cultura de ti. Este artigo pode ajudar um CISO a se preparar para essa abordagem e se envolver no controle incremental.
+A adoção da nuvem permite que os serviços que não sejam considerados geralmente em ambientes de TI tradicionais. As implantações autoatendimento ou automatizadas geralmente são executadas pelo desenvolvimento de aplicativos ou outras equipes de ti que não estão tradicionalmente alinhadas à implantação de produção. Em algumas organizações, aspectos relacionados aos negócios da mesma forma têm recursos de autoatendimento. Isso pode disparar novos requisitos de segurança que não eram necessários no mundo local. Segurança centralizada é mais desafiador, a segurança muitas vezes se torna uma responsabilidade compartilhada entre os negócios e a cultura de TI. Este artigo pode ajudar um CISO a se preparar para essa abordagem e participar de governança incremental.
 
 <!-- markdownlint-disable MD026 -->
 
-## <a name="how-can-a-ciso-prepare-for-the-cloud"></a>Como um CISO pode se preparar para a nuvem?
+## <a name="how-can-a-ciso-prepare-for-the-cloud"></a>Como um diretor de segurança da informação pode se preparar para a nuvem?
 
-Como a maioria das políticas, as políticas de segurança e governança em uma organização tendem a crescer de forma orgânica. Quando ocorrem incidentes de segurança, eles modelam a diretiva para informar os usuários e reduzir a probabilidade de ocorrências repetidas. Embora natural, essa abordagem cria o inchar de política e dependências técnicas. As jornadas de transformação em nuvem criam uma oportunidade única para modernizar e redefinir políticas. Durante a preparação para qualquer jornada de transformação, o CISO pode criar valor imediato e mensurável, servindo como o principal participante de uma [revisão de política](./cloud-policy-review.md).
+Como a maioria das políticas, as políticas de segurança e governança em uma organização tendem a crescer de forma orgânica. Quando ocorrerem incidentes de segurança, eles formam a política para informar os usuários e reduzir a probabilidade de ocorrências repetidas. Enquanto natural, essa abordagem cria inchaço de política e dependências técnicas. As jornadas de transformação em nuvem criam uma oportunidade única para modernizar e redefinir políticas. Durante a preparação para qualquer jornada de transformação, o CISO pode criar valor imediato e mensurável, servindo como o principal interessado stakeholder em uma [revisão da política](./cloud-policy-review.md).
 
-Nessa revisão, a função do CISO é criar um equilíbrio seguro entre as restrições de política/conformidade existente e a postura de segurança aprimorada dos provedores de nuvem. Medir esse progresso pode assumir muitas formas, muitas vezes é medido no número de políticas de segurança que podem ser descarregadas com segurança para o provedor de nuvem.
+Em revisão, a função do CISO é criar um equilíbrio seguro entre as restrições de política existente/conformidade e a postura de segurança aprimorada de provedores de nuvem. Medir o progresso pode ter várias formas, geralmente é medido no número de políticas de segurança que podem ser descarregadas com segurança para o provedor de nuvem.
 
-**Transferindo riscos de segurança:** Como os serviços são movidos para modelos de Hospedagem de IaaS (infraestrutura como serviço), a empresa assume menos risco direto em relação ao provisionamento de hardware. O risco não é removido, em vez disso, é transferido para o fornecedor da nuvem. Caso a abordagem de um fornecedor de nuvem para o provisionamento de hardware forneça o mesmo nível de mitigação de risco, em um processo de repetição seguro, o risco de execução de provisionamento de hardware é removido da área de responsabilidade de ti corporativa e transferido para a nuvem operador. Isso reduz o risco de segurança geral corporativo que é responsável pelo gerenciamento, embora o risco em si ainda deva ser acompanhado e revisado periodicamente.
+**Transferindo riscos de segurança:** Como os serviços são movidos para modelos de Hospedagem de IaaS (infraestrutura como serviço), a empresa assume menos risco direto em relação ao provisionamento de hardware. O risco não é removido, em vez disso, ele é transferido para o fornecedor de nuvem. Caso a abordagem de um fornecedor de nuvem para o provisionamento de hardware forneça o mesmo nível de mitigação de risco, em um processo de repetição seguro, o risco de execução de provisionamento de hardware é removido da área de responsabilidade de ti corporativa e transferido para a nuvem operador. Isso reduz o risco de segurança geral corporativo que é responsável pelo gerenciamento, embora o risco em si ainda deva ser acompanhado e revisado periodicamente.
 
-À medida que as soluções se movem ainda mais "pilha para cima" para incorporar os modelos de PaaS (plataforma como serviço) ou SaaS (software como serviço), os riscos adicionais podem ser evitados ou transferidos. Quando o risco é movido com segurança para um provedor de nuvem, o custo da execução, do monitoramento e da imposição de políticas de segurança ou outras políticas de conformidade também pode ser reduzido com segurança.
+À medida que as soluções se movem ainda mais "pilha para cima" para incorporar os modelos de PaaS (plataforma como serviço) ou SaaS (software como serviço), os riscos adicionais podem ser evitados ou transferidos. Quando o risco com segurança é movido para um provedor de nuvem, o custo de executar, monitorar e impor políticas de segurança ou outras políticas de conformidade podem ser reduzidas com segurança também.
 
-**Mentalidade de crescimento:** A alteração pode ser assustadora tanto para os implementadores técnicos como para os negócios. Quando o CISO lidera uma mudança de mentalidade de crescimento em uma organização, descobrimos que esses temoress naturais são substituídos por um maior interesse em segurança e conformidade com a política. Abordar uma [análise de política](./cloud-policy-review.md), uma jornada de transformação ou revisões de implementação simples com uma mentalidade de crescimento, permite que a equipe se movimente rapidamente, mas não com o custo de um perfil de risco razoável e gerenciável.
+**Mentalidade de crescimento:** A alteração pode ser assustadora tanto para os implementadores técnicos como para os negócios. Quando o CISO leva a uma mudança de mentalidade de crescimento em uma organização, descobrimos que os temores naturais são substituídos por um aumento de interesse em segurança e política de conformidade. Abordar uma [análise de política](./cloud-policy-review.md), uma jornada de transformação ou revisões de implementação simples com uma mentalidade de crescimento, permite que a equipe se movimente rapidamente, mas não com o custo de um perfil de risco razoável e gerenciável.
 
-## <a name="resources-for-the-chief-information-security-officer"></a>Recursos para o diretor de segurança de informações
+## <a name="resources-for-the-chief-information-security-officer"></a>Recursos para Chief Information Security Officer
 
-O conhecimento sobre a nuvem é fundamental para abordar uma [análise de política](./cloud-policy-review.md) com uma mentalidade de crescimento. Os recursos a seguir podem ajudar a CISO a entender melhor a postura de segurança da plataforma Azure da Microsoft.
+Saber conhecimento sore a nuvem é fundamental para abordar uma [revisão da política](./cloud-policy-review.md) com uma mentalidade de crescimento. Os recursos a seguir podem ajudar o CISO a entender melhor a postura de segurança da plataforma do Azure da Microsoft.
 
-Recursos da plataforma de segurança:
+Recursos de plataforma de segurança:
 
 - [Ciclo de vida de desenvolvimento de segurança, auditorias internas](https://www.microsoft.com/sdl)
 - [Treinamento de segurança obrigatório, verificações em segundo plano](https://downloads.cloudsecurityalliance.org/star/self-assessment/StandardResponsetoRequestforInformationWindowsAzureSecurityPrivacy.docx)
-- [Teste de penetração, detecção de intrusão, DDoS, auditorias e registro em log](https://www.microsoft.com/trustcenter/Security/AuditingAndLogging)
-- [Datacenter](https://www.microsoft.com/cloud-platform/global-datacenters)de ponta, segurança física, [rede segura](https://docs.microsoft.com/azure/security/security-network-overview)
-- [Microsoft Azure resposta de segurança na nuvem (PDF)](https://aka.ms/SecurityResponsePaper)
+- [Testes de penetração, Detecção de intrusão, DDoS, Auditorias e registro em log](https://www.microsoft.com/trustcenter/Security/AuditingAndLogging)
+- [Centro de dados de última geração](https://www.microsoft.com/cloud-platform/global-datacenters), a segurança física, [rede segura](https://docs.microsoft.com/azure/security/security-network-overview)
+- Saiba mais em [Resposta da segurança do Microsoft Azure na nuvem (PDF)](https://aka.ms/SecurityResponsePaper)
 
-Privacidade e controles:
+Privacidade e cookies:
 
-- [Gerencie seus dados o tempo todo](https://www.microsoft.com/trustcenter/Privacy/You-own-your-data)
-- [Controle no local dos dados](https://www.microsoft.com/trustcenter/Privacy/Where-your-data-is-located)
-- [Fornecer acesso a dados em seus termos](https://www.microsoft.com/trustcenter/Privacy/Who-can-access-your-data-and-on-what-terms)
-- [Respondendo à imposição de leis](https://www.microsoft.com/trustcenter/Privacy/Responding-to-govt-agency-requests-for-customer-data)
-- [Padrões de privacidade rígidos](https://www.microsoft.com/TrustCenter/Privacy/We-set-and-adhere-to-stringent-standards)
+- [Gerenciar sempre seus dados](https://www.microsoft.com/trustcenter/Privacy/You-own-your-data)
+- [Controlar o local dos dados](https://www.microsoft.com/trustcenter/Privacy/Where-your-data-is-located)
+- [Fornecer acesso a dados em seus próprios termos](https://www.microsoft.com/trustcenter/Privacy/Who-can-access-your-data-and-on-what-terms)
+- [Respondendo às autoridades competentes](https://www.microsoft.com/trustcenter/Privacy/Responding-to-govt-agency-requests-for-customer-data)
+- [Padrões de privacidade rigorosos](https://www.microsoft.com/TrustCenter/Privacy/We-set-and-adhere-to-stringent-standards)
 
-Regulamenta
+Conformidade:
 
 - [Central de Confiabilidade da Microsoft](https://www.microsoft.com/trustcenter/default.aspx)
 - [Hub de controles comuns](https://www.microsoft.com/trustcenter/Common-Controls-Hub)
 - [Lista de verificação de auditoria detalhada dos serviços de nuvem](https://www.microsoft.com/trustcenter/Compliance/Due-Diligence-Checklist)
 - [Conformidade por serviço, local e setor](https://www.microsoft.com/trustcenter/Compliance/default.aspx)
 
-Transparência
+Transparência:
 
 - [Como a Microsoft protege os dados do cliente nos serviços do Azure](https://www.microsoft.com/trustcenter/Transparency/default.aspx)
 - [Como a Microsoft gerencia o local de dados nos serviços do Azure](https://azuredatacentermap.azurewebsites.net)
-- [Quem na Microsoft pode acessar seus dados em quais termos](https://www.microsoft.com/trustcenter/Privacy/Who-can-access-your-data-and-on-what-terms)
+- [Quem na Microsoft pode acessar seus dados e em quais termos](https://www.microsoft.com/trustcenter/Privacy/Who-can-access-your-data-and-on-what-terms)
 - [Como a Microsoft protege os dados do cliente nos serviços do Azure](https://www.microsoft.com/trustcenter/Transparency/default.aspx)
-- [Examinar a certificação para os serviços do Azure, Hub de transparência](https://www.microsoft.com/trustcenter/Compliance/default.aspx)
+- [Revisar a certificação para serviços do Azure, hub de transparência](https://www.microsoft.com/trustcenter/Compliance/default.aspx)
 
 ## <a name="next-steps"></a>Próximos passos
 

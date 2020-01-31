@@ -1,6 +1,5 @@
 ---
 title: Modelo de Aceleração de implantação
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Modelo de Aceleração de implantação
 author: alexbuckgit
 ms.author: abuck
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 96b10c0c5494325c2cd7b46c1415dfd544932962
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 210abd5fe90810dea0d4da65422b2db8d66b4c26
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223586"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806349"
 ---
 # <a name="deployment-acceleration-template"></a>Modelo de Aceleração de implantação
 
@@ -31,7 +30,7 @@ A primeira etapa para implementar a alteração é comunicar a alteração desej
 
 <!-- markdownlint-enable MD033 -->
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Práticas sólidas de governança começam com um entendimento do risco de negócios. Revise o artigo sobre os riscos de negócios e comece a documentar os riscos de negócios que se alinham com seu plano de adoção de nuvem atual.
 

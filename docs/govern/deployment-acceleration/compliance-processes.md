@@ -1,6 +1,5 @@
 ---
 title: Processos de conformidade de política de aceleração de implantação
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Processos de conformidade de política de aceleração de implantação
 author: alexbuckgit
 ms.author: abuck
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: de64b03c6c6113261426beed5de729eb6927a440
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 157f43baa7de8aabfcf3d3823caf962ac6bc2306
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566392"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806366"
 ---
 # <a name="deployment-acceleration-policy-compliance-processes"></a>Processos de conformidade de política de aceleração de implantação
 

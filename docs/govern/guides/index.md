@@ -1,6 +1,5 @@
 ---
 title: Guias de governança de nuvem
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Saiba mais sobre os guias de governança acionáveis fornecidos no Cloud Adoption Framework.
 author: BrianBlanchard
 ms.author: brblanch
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 1bf2331c8ee1275a71be2275cefef49cf0a50dfc
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: de76ec738e6a2fe8493b12c7c510aa68d1bfe0a2
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566246"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76805482"
 ---
 # <a name="cloud-governance-guides"></a>Guias de governança de nuvem
 

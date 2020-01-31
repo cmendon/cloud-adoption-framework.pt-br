@@ -1,6 +1,5 @@
 ---
-title: 'Rede definida pelo software: Rede híbrida'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
+title: 'Rede definida pelo software: rede híbrida'
 description: Discussão sobre como as redes híbridas permitem que suas redes virtuais de nuvem se conectem a recursos locais.
 author: rotycenh
 ms.author: v-tyhopk
@@ -9,14 +8,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 94e285f59442b6632209e1cd6a76c39cfccd337b
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 61ce3447a852ec8aa1caa0737b0f3757f0f26450
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70829482"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806604"
 ---
-# <a name="software-defined-networking-hybrid-network"></a>Rede definida pelo software: Rede híbrida
+# <a name="software-defined-networking-hybrid-network"></a>Rede definida pelo software: rede híbrida
 
 A arquitetura de rede em nuvem híbrida permite que as redes virtuais acessem os recursos e serviços locais e vice-versa, usando uma Conexão WAN dedicada como o ExpressRoute ou outro método de conexão para conectar diretamente as redes.
 

@@ -1,7 +1,6 @@
 ---
-title: 'Guia de governança empresarial padrão: Melhorando a consistência de recursos'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 'Guia de governança empresarial padrão: Melhorando a consistência de recursos'
+title: 'Guia de governança empresarial padrão: melhorando a consistência de recursos'
+description: 'Guia de governança empresarial padrão: melhorando a consistência de recursos'
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -9,14 +8,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: d501f976613eae869228dfd75e4612f974997558
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: aa752e83dd5e83da101600c756fe7b878015c1db
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967442"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76805992"
 ---
-# <a name="standard-enterprise-governance-guide-improving-resource-consistency"></a>Guia de governança empresarial padrão: Melhorando a consistência de recursos
+# <a name="standard-enterprise-governance-guide-improving-resource-consistency"></a>Guia de governança empresarial padrão: melhorando a consistência de recursos
 
 Este artigo avança na narração adicionando controles de consistência de recursos para dar suporte a aplicativos de missão crítica.
 
@@ -42,7 +41,7 @@ As alterações ao estado atual e futuro expõem novos riscos que exigem novas i
 
 ## <a name="changes-in-tangible-risks"></a>Alterações em riscos tangíveis
 
-**Interrupção dos negócios:** Há um risco inerente da nova plataforma causar interrupções para processos de negócios de missão crítica. A equipe de operações de TI e as equipes que executam em várias adoções de nuvem são relativamente inexperientes com operações na nuvem. Isso aumenta o risco de interrupção e deve ser corrigido e regido.
+**Interrupção dos negócios:** Há um risco inerente de qualquer nova plataforma causando interrupções em processos de negócios de missão crítica. A equipe de operações de TI e as equipes que executam em várias adoções de nuvem são relativamente inexperientes com operações na nuvem. Isso aumenta o risco de interrupção e deve ser corrigido e regido.
 
 Esse risco de negócios pode ser dividido em alguns riscos técnicos:
 
@@ -53,7 +52,7 @@ Esse risco de negócios pode ser dividido em alguns riscos técnicos:
 5. Registro em log pode não ser corretamente registrado e centralizado para permitir a correção dos problemas de desempenho.
 6. As políticas de recuperação podem falhar ou levar mais tempo do que o esperado.
 7. Os processos de implantação podem resultar em falhas de segurança, o que pode levar a perdas de dados ou interrupções.
-8. A inconsistência na configuração ou patches ausentes podem resultar em falhas de segurança não intencionais, o que pode levar a vazamentos de dados ou interrupções.
+8. Desvio de configuração ou patches ausentes pode resultar em falhas de segurança não intencionais, o que pode levar a vazamentos de dados ou interrupções.
 9. Configuração não pode impor os requisitos de SLAs ou requisitos de recuperação confirmados.
 10. Os sistemas operacionais ou aplicativos implantados podem falhar ao atender aos requisitos de proteção.
 11. Com numerosas equipes trabalhando na nuvem, há um risco de inconsistência.
@@ -66,11 +65,11 @@ As alterações a seguir na política ajudarão a corrigir os novos riscos e a i
 2. Sub-redes que contêm aplicativos de missão crítica devem ser protegidas por uma solução de firewall capaz de detecção de invasões e responder a ataques.
 3. As ferramentas de governança devem realizar a auditoria e impor requisitos de configuração de rede definidos pela equipe de gerenciamento de segurança.
 4. Ferramentas de governança devem validar que todos os ativos relacionados a aplicativos de missão crítica ou dados protegidos são incluídos no monitoramento para otimização e esgotamento de recursos.
-5. Ferramentas de governança devem validar que o nível apropriado de dados de log está sendo coletado para todos os aplicativos de missão crítica ou dados protegidos.
+5. As ferramentas de governança devem validar se o nível apropriado de dados de registro em log está sendo coletado para todos os aplicativos críticos ou dados protegidos.
 6. O processo de governança deve validar o backup, recuperação e o cumprimento de SLA são implementados corretamente para aplicativos de missão crítica e dados protegidos.
 7. As ferramentas de governança devem limitar as implantações da VM somente a imagens aprovadas.
-8. Ferramentas de governança devem impor que as atualizações automáticas estejam impedidas em todos os ativos implantados que dão suporte a aplicativos de missão crítica. As violações devem ser revisadas com as equipes de gerenciamento operacional e corrigidas de acordo com as políticas de operações. Os ativos que não são automaticamente atualizados devem ser incluídos em processos que pertencem às operações de TI.
-9. Ferramentas de governança devem validar a marcação relacionadas à classificação de custo, nível de importância, SLA, aplicativos e dados. Todos os valores devem estar alinhados aos valores predefinidos gerenciados pela equipe de governança.
+8. Ferramentas de governança devem impor que as atualizações automáticas estejam impedidas em todos os ativos implantados que dão suporte a aplicativos de missão crítica. As violações devem ser examinadas com as equipes de gerenciamento operacional e corrigidas de acordo com as políticas de operações. Ativos que não são atualizados automaticamente devem ser incluídos nos processos pertencentes às Operações de TI.
+9. Ferramentas de governança devem validar a marcação relacionadas à classificação de custo, nível de importância, SLA, aplicativos e dados. Todos os valores devem ser alinhados a valores predefinidos gerenciados pela equipe de governança.
 10. Os processos de governança devem incluir auditorias no momento da implantação e em ciclos regulares para garantir a consistência em todos os ativos.
 11. Tendências e explorações que possam afetar as implantações de nuvem devem ser examinadas regularmente pela equipe de segurança para que sejam fornecidas atualizações às ferramentas de gerenciamento de segurança usadas na nuvem.
 12. Antes do lançamento para a produção, todos os aplicativos de missão crítica e dados protegidos devem ser adicionados à solução de monitoramento operacional designada. Ativos que não podem ser descobertos pelas ferramentas de operações de TI escolhidas, não podem ser liberados para uso em produção. Quaisquer alterações necessárias para tornar os ativos detectáveis devem ser feitas aos processos de implantação relevantes para garantir que os ativos sejam detectáveis em implantações futuras.
@@ -90,7 +89,7 @@ Esta seção do artigo alterará o design MVP de governança para incluir novas 
     2. Criar um modelo do Gerenciador de Recursos para criação de um cofre em cada assinatura.
 4. Atualizar o Azure Policy para todas as assinaturas:
     1. Realize auditoria e imponha o nível de importância e classificação de dados em todas as assinaturas para identificar todas as assinaturas com ativos de missão crítica.
-    2. Realize uma auditoria e imponha o uso de imagens aprovadas apenas.
+    2. Realize uma auditoria e imponha o uso exclusivo de imagens aprovadas.
 5. Implementação do Azure Monitor:
     1. Depois que uma carga de trabalho de missão crítica for identificada, crie um espaço Azure Monitor.
     2. Durante o teste de implantação, a equipe de operações de nuvem implanta os agentes e a descoberta de testes necessários.
@@ -114,7 +113,7 @@ Esta seção do artigo alterará o design MVP de governança para incluir novas 
 
 Esses processos adicionais e as alterações no MVP de governança ajudam a corrigir muitos dos riscos associados à governança de recursos. Juntos, aumentam a recuperação, dimensionamento e controles de monitoramento que capacitam as operações de recuperação de nuvem.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 À medida que a adoção de nuvem continua e entrega o valor comercial adicional, os riscos e as necessidades de governança de nuvem também serão alterados. Para a empresa fictícia neste guia, o próximo gatilho é quando a escala da implantação excede 100 ativos para a nuvem ou gastos mensais excedem $1000 por mês. Neste ponto, a equipe de governança de nuvem adiciona controles de gerenciamento de custos.
 

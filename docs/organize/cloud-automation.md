@@ -1,6 +1,5 @@
 ---
 title: Recursos de automação de nuvem
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Descrever a formação de recursos de automação de nuvem
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 945e72550ebc827dbd08e42b87ed3496f465c1a2
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 26384b8e12962a7c1d86ae71af2b8036e9691de9
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71027081"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806910"
 ---
 # <a name="cloud-automation-capabilities"></a>Recursos de automação de nuvem
 
@@ -80,7 +79,7 @@ A automação de nuvem é uma equipe de trabalho. Espere que os participantes co
 
 A equipe de automação de nuvem deve alinhar as atividades com outras áreas de capacidade. Esse alinhamento pode resultar em reunião de fadiga. Para garantir que a automação de nuvem tenha tempo suficiente para gerenciar o catálogo de soluções, você deve analisar as cadências da reunião para maximizar a colaboração e minimizar as interrupções nas atividades de desenvolvimento.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Conforme os recursos essenciais de nuvem se alinham, as equipes coletivamente podem ajudar a [desenvolver habilidades técnicas necessárias](./suggested-skills.md).
 

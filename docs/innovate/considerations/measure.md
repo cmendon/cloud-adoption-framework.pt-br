@@ -1,6 +1,5 @@
 ---
 title: 'Inovação na nuvem: medida'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Introdução à inovação em nuvem – conteúdo de medidas
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 99e2f126c518da72e95a166d203a3c4fdbb546aa
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: d6e29f159059da9c219006a69a63484b546a4488
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752116"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808406"
 ---
 # <a name="measure-for-customer-impact"></a>Avaliar o impacto sobre o cliente
 
@@ -23,7 +22,7 @@ Há várias maneiras de medir o impacto do cliente. Este artigo o ajudará a def
 
 Durante a [fase de estratégia](../../strategy/index.md) do ciclo de vida de adoção da nuvem, examinamos as [motivações](../../strategy/motivations.md) e os [resultados de negócios](../../strategy/business-outcomes/index.md). Essas práticas fornecem um conjunto de métricas para testar o impacto do cliente. Quando a inovação é bem-sucedida, você tende a ver os resultados alinhados aos seus objetivos estratégicos.
 
-Antes de estabelecer as métricas de aprendizado, defina um pequeno número de métricas estratégicas que você deseja que essa inovação afete. Geralmente, essas métricas estratégicas se alinham com uma ou mais das seguintes áreas de resultado: [agilidade dos negócios](../../strategy/business-outcomes/agility-outcomes.md), [envolvimento do cliente](../../strategy/business-outcomes/engagement-outcomes.md), alcance do [cliente](../../strategy/business-outcomes/reach-outcomes.md), [impacto financeiro](../../strategy/business-outcomes/fiscal-outcomes.md)ou, no caso de inovação operacional: [solução desempenho](../../strategy/business-outcomes/fiscal-outcomes.md).
+Antes de estabelecer as métricas de aprendizado, defina um pequeno número de métricas estratégicas que você deseja que essa inovação afete. Geralmente, essas métricas estratégicas se alinham com uma ou mais das seguintes áreas de resultado: [agilidade dos negócios](../../strategy/business-outcomes/agility-outcomes.md), [envolvimento do cliente](../../strategy/business-outcomes/engagement-outcomes.md), [alcance do cliente](../../strategy/business-outcomes/reach-outcomes.md), [impacto financeiro](../../strategy/business-outcomes/fiscal-outcomes.md)ou, no caso de inovação operacional: [desempenho da solução](../../strategy/business-outcomes/fiscal-outcomes.md).
 
 Documente as métricas acordadas e acompanhe seu impacto com frequência. Mas não espere os resultados em qualquer uma dessas métricas surgirem para várias iterações. Para obter mais informações sobre como definir e alinhar as expectativas entre as partes envolvidas, consulte [compromisso com a iteração](./index.md#commitment-to-iteration).
 

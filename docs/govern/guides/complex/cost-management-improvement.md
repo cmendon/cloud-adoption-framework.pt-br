@@ -1,6 +1,5 @@
 ---
 title: 'Guia de governança para empresas complexas: melhorar a disciplina de gerenciamento de custos'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Guia de governança para empresas complexas: melhorar a disciplina de gerenciamento de custos'
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ad7770a7339cf1fa444442e68d2e13539f272190
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 2b66894ca215156aa9688ca1ab458910e8f496f8
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566341"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76805720"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-cost-management-discipline"></a>Guia de governança para empresas complexas: melhorar a disciplina de gerenciamento de custos
 
@@ -63,7 +62,7 @@ As alterações a seguir na política ajudarão a corrigir os novos riscos e a i
 
 ## <a name="incremental-improvement-of-the-best-practices"></a>Melhoria incremental das práticas recomendadas
 
-Esta seção do artigo melhorará o design do MVP de governança para incluir novas políticas do Azure e uma implementação do gerenciamento de custos do Azure. Juntas, essas duas alterações de design atenderão às novas instruções da política corporativa.
+Esta seção do artigo melhorará o design do MVP de governança para incluir novas políticas do Azure e uma implementação do gerenciamento de custos do Azure. Em conjunto, essas duas alterações de design atenderão às novas declarações da política corporativa.
 
 1. Faça alterações na Enterprise Portal do Azure para cobrar o administrador do departamento pela implantação canadense.
 2. Implemente o Gerenciamento de Custos do Azure.

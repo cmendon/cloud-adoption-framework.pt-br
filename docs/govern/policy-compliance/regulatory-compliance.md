@@ -1,6 +1,5 @@
 ---
 title: Introdução à conformidade regulatória
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Introdução à conformidade regulatória
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: b38b52fc6899000bf5f452425a8b6f26070af7dc
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: bd48f3080c1cf516121f9afe2e8c31bbc799e3a5
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222038"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806111"
 ---
 # <a name="introduction-to-regulatory-compliance"></a>Introdução à conformidade regulatória
 
@@ -40,13 +39,13 @@ PCI DSS (Padrão de Segurança de Dados da Indústria de Pagamento com Cartão) 
 
 Dados pessoais são informações que podem ser usadas para identificar um consumidor, funcionário, parceiro ou qualquer outra entidade de vida ou legal. Muitas leis emergentes, especialmente aquelas que lidam com dados pessoais e de privacidade, exigem que as empresas estejam em conformidade e relatem a conformidade e quaisquer violações que possam ocorrer.
 
-## <a name="gdpr"></a>RGPD
+## <a name="gdpr"></a>GDPR
 
 Um dos desenvolvimentos mais importantes nessa área é o Regulamento Geral sobre a Proteção de Dados (GDPR), projetado para reforçar a proteção de dados para indivíduos dentro da União Europeia. O GDPR exige que os dados sobre indivíduos (como "um nome, um endereço residencial, uma foto, um endereço de email, detalhes do banco, postagens em sites de rede social, informações médicas ou o endereço IP de um computador") sejam mantidos em servidores na UE e não sejam transferidos de ti. Ele também exige que as empresas notifiquem indivíduos de quaisquer violações de dados e exija que as empresas tenham um DPO (responsável pela proteção de dados). Outros países têm ou estão desenvolvendo tipos similares de regulamentos.
 
 ## <a name="compliant-foundation-in-azure"></a>Base compatível no Azure
 
-Para ajudar os clientes a atender suas próprias obrigações de conformidade entre indústrias regulamentadas e mercados em todo o mundo, o Azure&mdash;mantém o maior portfólio de conformidade do setor em amplitude (número total de ofertas), bem como profundidade (número de serviços voltados para o cliente no escopo da avaliação). As ofertas de conformidade do Azure são agrupadas em quatro segmentos: aplicável globalmente, US Government, específico do setor e específico do região/país.
+Para ajudar os clientes a atender suas próprias obrigações de conformidade entre indústrias regulamentadas e mercados no mundo todo, o Azure mantém o maior portfólio de conformidade do setor&mdash;em amplitude (número total de ofertas), bem como profundidade (número de serviços voltados para o cliente no escopo da avaliação). As ofertas de conformidade do Azure são agrupadas em quatro segmentos: aplicável globalmente, US Government, específico do setor e específico do região/país.
 
 As ofertas de conformidade do Azure são baseadas em vários tipos de garantias, incluindo certificações formais, atestados, validações, autorizações e avaliações produzidas por empresas de auditoria de terceiros independentes, bem como alterações contratuais, autoavaliações e documentos de diretrizes para o cliente produzidos pela Microsoft. Cada descrição de oferta neste documento fornece uma declaração de escopo atualizada indicando quais serviços voltados ao cliente do Azure estão no escopo da avaliação, assim como links para recursos baixáveis para auxiliar os clientes com suas próprias obrigações de conformidade.
 
@@ -55,7 +54,7 @@ Informações mais detalhadas sobre as ofertas de conformidade do Azure estão d
 - **Relatórios de auditoria:** Inclui seções para relatórios FedRAMP, avaliação de GRC, ISO, PCI DSS e SOC.
 - **Recursos de proteção de dados:** Inclui guias de conformidade, perguntas frequentes e White papers e seções de avaliação de segurança e teste de caneta.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Saiba mais sobre a preparação de segurança na nuvem.
 

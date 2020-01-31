@@ -1,6 +1,5 @@
 ---
 title: Alinhar seu guia de design de governança de nuvem com a política corporativa
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Alinhar seu guia de design de governança de nuvem com a política corporativa
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 6b3fd0ca16bf54e5eaf026037ba1f59c2043f4e7
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 522ab305b7538be303909a13d27879b3e98d2f67
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566142"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76805363"
 ---
 # <a name="align-your-cloud-governance-design-guide-with-corporate-policy"></a>Alinhar seu guia de design de governança de nuvem com a política corporativa
 
@@ -33,9 +32,9 @@ Se você estiver planejando usar a plataforma do Azure para sua adoção de nuve
 
 Enquanto cada adoção de nuvem tiver metas exclusivas, prioridades e desafios, estes exemplos devem fornecer um bom modelo para converter sua política em orientação. Escolha o cenário mais próximo à sua situação como ponto de partida e molde-o para atender às suas necessidades de política específica.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Com a diretriz de design no local, estabeleça processos de adesão da política para garantir a conformidade de política.
 
 > [!div class="nextstepaction"]
-> [Estabelecer os processos de conformidade com as políticas](./processes.md)
+> [Estabelecer os processos de conformidade com políticas](./processes.md)

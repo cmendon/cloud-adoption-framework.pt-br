@@ -1,6 +1,5 @@
 ---
 title: Exemplos comuns de Azure Policy
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Exemplos comuns de Azure Policy
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 7008809ef2e80cd5f1c263b705b46a37b6028482
-ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
+ms.openlocfilehash: 7020ffed2395d6c22f835d66cd1c539b525f37c3
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73656398"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808117"
 ---
 # <a name="common-azure-policy-examples"></a>Exemplos comuns de Azure Policy
 

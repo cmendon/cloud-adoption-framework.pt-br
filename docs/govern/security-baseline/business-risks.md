@@ -1,6 +1,5 @@
 ---
 title: Motivações da linha de base de segurança e riscos de negócios
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Motivações da linha de base de segurança e riscos de negócios
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 937eb35c07996e57bc51f85090f8e1fd136848f8
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 9d1bf5ef10ec3acd936ba4e66cca374e8365018a
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222289"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808950"
 ---
 # <a name="security-baseline-motivations-and-business-risks"></a>Motivações da linha de base de segurança e riscos de negócios
 
@@ -41,10 +40,10 @@ A disciplina de linha de base de segurança tenta abordar riscos de negócios re
 
 Os riscos serão diferentes entre a organização, mas os seguintes servem como riscos comuns relacionados à segurança que você pode usar como ponto de partida para discussões em sua equipe de governança de nuvem:
 
-- **Violação de dados:** Exposição acidental ou perda de dados confidenciais hospedados na nuvem pode levar à perda de clientes, problemas contratuais ou consequências jurídicas.
-- **Interrupção do serviço:** Interrupções e outros problemas de desempenho devido à infraestrutura insegura interrompe as operações normais e pode resultar em perda de produtividade ou perda de negócios.
+- **Violação de dados:** A exposição inadvertida ou a perda de dados confidenciais hospedados na nuvem pode levar à perda de clientes, problemas contratuais ou consequências legais.
+- **Interrupção do serviço:** Interrupções e outros problemas de desempenho devido à infraestrutura insegura interrompem operações normais e podem resultar em perda de produtividade ou perda de negócios.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Usando o [modelo de gerenciamento de nuvem](./template.md), documente os riscos de negócios que provavelmente serão introduzidos pelo plano de adoção de nuvem atual.
 

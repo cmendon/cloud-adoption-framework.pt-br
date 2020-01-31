@@ -1,6 +1,5 @@
 ---
 title: Instruções de política de exemplo de Aceleração de implantação
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Instruções de política de exemplo de Aceleração de implantação
 author: alexbuckgit
 ms.author: abuck
@@ -9,16 +8,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9a879f2957f1fd7c1d92a9a01381c64cff320d27
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: c582b0a6e836f5198724e5675840f3f8085f55dc
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752677"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76803935"
 ---
 # <a name="deployment-acceleration-sample-policy-statements"></a>Instruções de política de exemplo de Aceleração de implantação
 
-Declarações da política de nuvem individuais são diretrizes para tratar de riscos específicos identificados durante o processo de avaliação de riscos. Essas instruções oferecem um resumo conciso dos riscos e planos com os quais lidar. Cada definição de instrução deve incluir essas informações:
+As instruções individuais da política de nuvem são diretrizes para abordar os riscos específicos identificados durante o processo de avaliação de riscos. Essas instruções oferecem um resumo conciso dos riscos e planos com os quais lidar. Cada definição de instrução deve incluir essas informações:
 
 - **Risco técnico:** Um resumo do risco que essa política abordará.
 - **Declaração de política:** Uma explicação resumida clara dos requisitos de política.
@@ -43,7 +42,7 @@ As instruções de política de exemplo a seguir abordam os riscos de negócios 
 - Medidas métricas principais e diagnósticos serão identificadas para todos os sistemas de produção e os componentes e ferramentas de diagnóstico e monitoramento serão aplicados a esses sistemas e monitorados regularmente pela equipe de operações.
 - As operações considerarão o uso de ferramentas de monitoramento e diagnóstico em ambientes de não produção, como preparo e QA, para identificar problemas do sistema antes que eles ocorram no ambiente de produção.
 
-**Opções de design em potencial:** [Azure monitor](https://docs.microsoft.com/azure/azure-monitor), que inclui log Analytics e Application insights, fornece ferramentas para coletar e analisar a telemetria para ajudá-lo a entender como seus aplicativos estão sendo executados e a identificar proativamente problemas que os afetam e os recursos dos quais eles dependem. Além disso, o [log de atividades do Azure](https://docs.microsoft.com/azure/azure-monitor/platform/activity-logs-overview) relata todas as alterações que estão sendo feitas no nível da plataforma e deve ser monitorado e auditado quanto a alterações não compatíveis.
+**Opções de design em potencial:** [Azure monitor](https://docs.microsoft.com/azure/azure-monitor), que inclui log Analytics e Application insights, fornece ferramentas para coletar e analisar a telemetria para ajudá-lo a entender como seus aplicativos estão executando e identificar proativamente os problemas que os afetam e os recursos dos quais eles dependem. Além disso, o [log de atividades do Azure](https://docs.microsoft.com/azure/azure-monitor/platform/activity-logs-overview) relata todas as alterações que estão sendo feitas no nível da plataforma e deve ser monitorado e auditado quanto a alterações não compatíveis.
 
 ## <a name="configuration-security-reviews"></a>Revisões de segurança de configuração
 
@@ -55,7 +54,7 @@ As instruções de política de exemplo a seguir abordam os riscos de negócios 
 
 ## <a name="next-steps"></a>Próximos passos
 
-Use as amostras mencionadas neste artigo como ponto de partida para desenvolver políticas que abordem os riscos empresariais específicos que alinham-se aos seus planos de adoção de nuvem.
+Use os exemplos mencionados neste artigo como um ponto de partida para desenvolver políticas que abordam os riscos de negócios específicos que se alinham aos seus planos de adoção de nuvem.
 
 Para começar a desenvolver suas próprias instruções de política personalizadas relacionadas ao gerenciamento de identidade, baixe o [modelo de Linha de base de identidade](../identity-baseline/template.md).
 

@@ -1,6 +1,5 @@
 ---
 title: Preparação de habilidades para migração na nuvem
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Preparação de habilidades para migração na nuvem
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 05/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ffef26fd2ff6261133f5b63a8c13b5f4cd4364f5
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: d6768f3944699fdde483fb25f47bcb22be2484f1
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73240253"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76802932"
 ---
 # <a name="skills-readiness-for-cloud-migration"></a>Preparação de habilidades para migração na nuvem
 
@@ -57,7 +56,7 @@ As ferramentas a seguir podem ajudar a equipe a otimizar os recursos e promover 
 - [Custo e dimensionamento](../azure-best-practices/migrate-best-practices-costs.md): ajuste o dimensionamento para alinhar custos e orçamentos.
 - [Promover uma carga de trabalho](../azure-best-practices/migrate-best-practices-networking.md): altere a configuração de rede para redirecionar os usuários de produção para cargas de trabalho migradas.
 
-## <a name="secure-and-manage-process-changes"></a>Proteger e gerenciar alterações no processo
+## <a name="secure-and-manage-process-changes"></a>Alterações na proteção e no gerenciamento de processos
 
 As ferramentas a seguir podem ajudar a equipe a encontrar maneiras de proteger e gerenciar ativos migrados:
 

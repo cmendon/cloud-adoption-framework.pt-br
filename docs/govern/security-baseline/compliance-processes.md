@@ -1,6 +1,5 @@
 ---
 title: Processos de conformidade de política de Linha de Base de Segurança
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Processos de conformidade de política de Linha de Base de Segurança
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5f5de9c25574e36648930ce6de835d73eb0685fa
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: b725a4867ec7e55f6b9d53cdba31c0874d61c80c
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221794"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808916"
 ---
 # <a name="security-baseline-policy-compliance-processes"></a>Processos de conformidade de política de Linha de Base de Segurança
 
@@ -24,21 +23,21 @@ Este artigo descreve uma abordagem para processos de adesão a políticas que re
 
 As melhores ferramentas de linha de base de segurança na nuvem somente são tão boas quanto os processos e políticas que dão suporte a elas. A seguir, é apresentado um conjunto de exemplos de processos normalmente envolvidos na disciplina de Linha de Base de Segurança. Use esses exemplos como ponto de partida ao planejar os processos que permitirão atualizar a política de segurança com base nas alterações dos negócios e no feedback das equipes de TI e segurança encarregadas de transformar as diretrizes de governança em ações.
 
-**Avaliação e planejamento inicial de riscos:** Como parte da adoção inicial da disciplina de Linha de Base de Segurança, identifique os principais riscos e tolerâncias de negócios relacionados à segurança de nuvem. Use essas informações para discutir sobre os riscos técnicos específicos com os membros das equipes de TI e segurança e desenvolva um conjunto de linhas de base de políticas de segurança para mitigar esses riscos, objetivando estabelecer a estratégia de governança inicial.
+**Avaliação e planejamento inicial de riscos:** Como parte da adoção inicial da disciplina de linha de base de segurança, identifique seus principais riscos e tolerâncias de negócios relacionados à segurança da nuvem. Use essas informações para discutir sobre os riscos técnicos específicos com os membros das equipes de TI e segurança e desenvolva um conjunto de linhas de base de políticas de segurança para mitigar esses riscos, objetivando estabelecer a estratégia de governança inicial.
 
-**Planejamento de implantação**: Antes de implantar qualquer carga de trabalho ou ativo, execute uma revisão de segurança para identificar novos riscos e garantir que todos os requisitos de acesso e política de segurança de dados sejam atendidos.
+**Planejamento da implantação:** Antes de implantar qualquer carga de trabalho ou ativo, execute uma revisão de segurança para identificar novos riscos e garantir que todos os requisitos de acesso e política de segurança de dados sejam atendidos.
 
 **Teste de implantação:** Como parte do processo de implantação de qualquer carga de trabalho ou ativo, a equipe de governança de nuvem, em cooperação com suas equipes de segurança corporativa, será responsável por revisar a implantação para validar a conformidade da política de segurança.
 
-**Planejamento anual**: Anualmente, realize uma análise de alto nível da estratégia de Linha de base de segurança. Explore as prioridades corporativas futuras e estratégias de nuvem atualizadas para identificar aumento de risco potencial e outras necessidades de segurança emergentes. Além disso, use esse tempo para analisar as melhores práticas de Linha de base de segurança e integre às suas políticas e processos de avaliação.
+**Planejamento anual:** Em uma base anual, execute uma revisão de alto nível da estratégia de linha de base de segurança. Explore as prioridades corporativas futuras e estratégias de nuvem atualizadas para identificar aumento de risco potencial e outras necessidades de segurança emergentes. Além disso, use esse tempo para analisar as melhores práticas de Linha de base de segurança e integre às suas políticas e processos de avaliação.
 
-**Análise e planejamento trimestral:** Trimestralmente, execute uma análise de dados de auditoria de segurança e relatórios de incidentes para identificar quaisquer alterações na política de segurança. Como parte desse processo, examine o panorama atual de segurança cibernética para prever proativamente as ameaças emergentes e atualizar a política conforme apropriado. Depois que a análise for concluída, alinhe as diretrizes de design com a política atualizada.
+**Análise e planejamento trimestral:** Trimestralmente, execute uma revisão dos dados de auditoria de segurança e dos relatórios de incidentes para identificar as alterações necessárias na política de segurança. Como parte desse processo, examine o panorama atual de segurança cibernética para prever proativamente as ameaças emergentes e atualizar a política conforme apropriado. Depois que a análise for concluída, alinhe as diretrizes de design com a política atualizada.
 
 Esse processo de planejamento também é um bom momento para avaliar a associação atual de sua equipe de governança de nuvem para as lacunas de conhecimento relacionadas à política nova ou alteração e aos riscos relacionados à segurança. Convide a equipe de TI relevante a participar das análises e planejamentos como consultores temporários ou membros permanentes da sua equipe.
 
 **Educação e treinamento:** Em uma base Bimonthly, ofereça sessões de treinamento para garantir que a equipe de ti e os desenvolvedores estejam atualizados sobre os requisitos de política de segurança mais recentes. Como parte desse processo, revise e atualize todas as documentações, diretrizes ou outros recursos de treinamento para garantir que estejam em sincronia com as últimas declarações da política corporativa.
 
-**Revisões mensais de auditoria e relatórios:** Mensalmente, realize uma auditoria em todas as implantações na nuvem para garantir o alinhamento contínuo com a política de segurança. Revise as atividades relacionadas à segurança com a equipe de TI e identifique quaisquer problemas de conformidade que ainda não são tratados como parte do processo de monitoramento e imposição em andamento. O resultado dessa revisão é um relatório para a equipe de estratégia de nuvem e para cada equipe de adoção da nuvem comunicar a conformidade geral com a política. O relatório também é armazenado para fins de auditoria e legais.
+**Revisões mensais de auditoria e relatórios:** Mensalmente, execute uma auditoria em todas as implantações de nuvem para garantir seu alinhamento contínuo com a política de segurança. Revise as atividades relacionadas à segurança com a equipe de TI e identifique quaisquer problemas de conformidade que ainda não são tratados como parte do processo de monitoramento e imposição em andamento. O resultado dessa revisão é um relatório para a equipe de estratégia de nuvem e para cada equipe de adoção da nuvem comunicar a conformidade geral com a política. O relatório também é armazenado para fins de auditoria e legais.
 
 ## <a name="ongoing-monitoring-processes"></a>Processos de monitoramento contínuo
 
@@ -59,7 +58,7 @@ Os gatilhos e ações de imposição a seguir fornecem exemplos que você pode c
 - **Problema de integridade de segurança detectado.** Desabilite o acesso a máquinas virtuais (VMs) que tem acesso conhecido ou vulnerabilidades de malware identificados até que os patches apropriados ou software de segurança possam ser instalados. Diretrizes de política de atualização para levar em consideração para qualquer ameaças detectadas recentemente.
 - **Vulnerabilidade de rede detectada.** O acesso a qualquer recurso não foi explicitamente permitido pelas políticas de acesso de rede deve disparar um alerta à equipe de segurança de TI e o proprietário da carga de trabalho relevante. Acompanhe o problema e diretrizes de atualização se a revisão de política for necessária para atenuar incidentes futuros.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Usando o [modelo de Gerenciamento de Nuvem](./template.md), documente os processos e gatilhos que alinham-se ao plano de adoção da nuvem atual.
 

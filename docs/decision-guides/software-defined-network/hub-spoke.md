@@ -1,6 +1,5 @@
 ---
 title: 'Rede definida pelo software: Hub e spoke'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Discussão sobre serviços de rede virtual nativas de nuvem.
 author: rotycenh
 ms.author: v-tyhopk
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: d2337ea5fdcd18fc2f56c60c64a35ee878710e65
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: a24ccb7f382e03b3eb0138e94e6b02954c36bd87
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023561"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806621"
 ---
 # <a name="software-defined-networking-hub-and-spoke"></a>Rede definida pelo software: Hub e spoke
 

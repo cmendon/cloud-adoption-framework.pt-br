@@ -1,6 +1,5 @@
 ---
 title: Métricas de Linha de base de segurança, indicadores e tolerância a risco
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Métricas de Linha de base de segurança, indicadores e tolerância a risco
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,34 +8,34 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: b8171839b79ffbe9e3849cf303180d1f1ee049f2
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 1075563dd4596ad6bd1b4ac202a69a1ab1251cba
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222843"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808848"
 ---
 # <a name="security-baseline-metrics-indicators-and-risk-tolerance"></a>Métricas de Linha de base de segurança, indicadores e tolerância a risco
 
 Este artigo o ajudará a quantificar a tolerância a riscos de negócios, pois ela se relaciona com a linha de base de segurança. Definir métricas e indicadores ajuda a criar um caso de negócios para investir no amadurecimento da disciplina Linha de Base de Segurança.
 
-## <a name="metrics"></a>metrics
+## <a name="metrics"></a>Métricas
 
 Linha de base de segurança em geral se concentra na identificação de possíveis vulnerabilidades em suas implantações de nuvem. Como parte da sua análise de risco, você desejará coletar dados relacionados ao seu ambiente de segurança para determinar o grau do risco enfrentado e quão importante é o investimento na governança da linha de base de segurança para as implantações de nuvem planejadas.
 
 Cada organização tem requisitos e ambientes de segurança diferentes e diferentes possíveis fontes de dados de segurança. Veja a seguir exemplos de métricas úteis que devem ser coletadas para ajudar a avaliar a tolerância a riscos na disciplina Linha de base de segurança:
 
-- **Classificação de dados:** Número de dados armazenados em nuvem e serviços que não são classificados de acordo com na privacidade, conformidade ou padrões de impacto de negócios da sua organização.
+- **Classificação de dados:** Número de dados armazenados na nuvem e serviços que não são classificados de acordo com os padrões de privacidade, conformidade ou impacto de negócios da sua organização.
 - **Número de armazenamentos de dados confidenciais:** O número de pontos de extremidade de armazenamento ou bancos de dados que contêm informações confidenciais e devem ser protegidos.
 - **Número de armazenamentos de dados não criptografados:** Número de armazenamentos de dados confidenciais que não estão criptografados.
-- **Superfície de ataque:** Quantas fontes de dados totais, serviços e aplicativos serão hospedados na nuvem. Qual porcentagem dessas fontes de dados ser classificada como sensível? Qual é a porcentagem desses aplicativos e serviços serem de missão crítica?
+- **Superfície de ataque:** Quantas fontes de dados, serviços e aplicativos do total serão hospedados na nuvem. Qual porcentagem dessas fontes de dados ser classificada como sensível? Qual é a porcentagem desses aplicativos e serviços serem de missão crítica?
 - **Padrões cobertos:** Número de padrões de segurança definidos pela equipe de segurança.
-- **Recursos cobertos:** Ativos implantados que são cobertos pelos padrões de segurança.
-- **Conformidade geral com os padrões:** Taxa de aderência à conformidade com os padrões de segurança.
-- **Ataques por severidade:** Quantas tentativas coordenadas para interromper os serviços hospedados na nuvem, como por meio de ataques de negação de serviço distribuído (DDoS), faz a sua experiência de infraestrutura? Qual é o tamanho e a gravidade desses ataques?
-- **Proteção contra malware:** Porcentagem de máquinas virtuais implantadas (VMs) que têm todos os itens necessário anti-malware, firewall ou outro software de segurança instalado.
-- **Latência de patch:** Quanto tempo passou desde que as VMs tiveram patches do sistema operacional e software aplicados.
-- **Recomendações de integridade de segurança:** Número de recomendações de software de segurança para resolver os padrões de integridade para recursos implantados, organizados por gravidade.
+- **Recursos cobertos:** Ativos implantados que são cobertos por padrões de segurança.
+- **Conformidade geral com os padrões:** Taxa de adesão à conformidade com os padrões de segurança.
+- **Ataques por severidade:** Quantas tentativas coordenadas de interromper os serviços hospedados na nuvem, como por meio de ataques de DDoS (negação de serviço distribuído), sua experiência de infraestrutura? Qual é o tamanho e a gravidade desses ataques?
+- **Proteção contra malware:** Porcentagem de VMs (máquinas virtuais) implantadas que têm todos os softwares Antimalware, firewall ou outro software de segurança necessários instalados.
+- **Latência de patch:** Quanto tempo foi desde que as VMs tivessem um sistema operacional e patches de software aplicados.
+- **Recomendações de integridade de segurança:** Número de recomendações de software de segurança para resolver padrões de integridade para recursos implantados, organizados por severidade.
 
 ## <a name="risk-tolerance-indicators"></a>Indicadores de tolerância de risco
 
@@ -57,7 +56,7 @@ Assim que você tiver uma linha de base, estabeleça parâmetros de comparação
 
 As métricas e os gatilhos exatos que você usa para medir a tolerância a riscos e o nível de investimento na disciplina de linha de base de segurança serão específicos para sua organização, mas os exemplos acima devem servir como uma base útil para discussão em sua equipe de governança de nuvem.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Usar o [modelo de Gerenciamento de Nuvem](./template.md), de métricas do documento e de indicadores de tolerância que se alinham ao atual plano de adoção da nuvem.
 

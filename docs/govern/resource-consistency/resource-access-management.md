@@ -1,6 +1,5 @@
 ---
 title: Gerenciamento de acesso aos recursos no Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Explicação das construções de gerenciamento de acesso a recursos no Azure: Azure Resource Manager, assinaturas, grupos de recursos e recursos'
 author: alexbuckgit
 ms.author: abuck
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a429aa445a7188a98593ec27892fb6ded8f9eb45
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 825c220bda1c560c5d7bf07bcae649017525ff53
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565982"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76805618"
 ---
 # <a name="resource-access-management-in-azure"></a>Gerenciamento de acesso aos recursos no Azure
 
@@ -59,7 +58,7 @@ A figura a seguir mostra três clientes: [PowerShell](https://docs.microsoft.com
 ![diagrama de clientes do Azure conectando-se à API do Azure Resource Manager](../../_images/govern/design/governance-1-13.png)
 *Figura 5-os clientes do Azure se conectam à API RESTful do Azure Resource Manager.*
 
-Embora esses clientes conectem o Azure Resource Manager usando a API RESTful, o Azure Resource Manager não inclui a funcionalidade para gerenciar recursos diretamente. Em vez disso, a maioria dos tipos de recursos no Azure têm seus próprios [ **provedores de recursos**](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#terminology).
+Embora esses clientes conectem o Azure Resource Manager usando a API RESTful, o Azure Resource Manager não inclui a funcionalidade para gerenciar recursos diretamente. Em vez disso, a maioria dos tipos de recursos no Azure têm seus próprios [**provedores de recursos**](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#terminology).
 
 ![provedores de recursos do Azure](../../_images/govern/design/governance-1-14.png)
 *Figura 6 – provedores de recursos do Azure.*
@@ -111,7 +110,7 @@ O controle final é uma verificação de que a solicitação está dentro do com
 
 Neste artigo, você aprendeu sobre como o acesso a recursos é gerenciado no Azure usando o Azure Resource Manager.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Agora que você sabe como gerenciar acesso de recurso no Azure, prossiga para aprender como criar um modelo de controle [para uma carga de trabalho simples](./governance-simple-workload.md) ou para [várias equipe](./governance-multiple-teams.md) usando esses serviços.
 

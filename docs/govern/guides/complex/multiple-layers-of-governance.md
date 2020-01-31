@@ -1,7 +1,6 @@
 ---
-title: 'Guia de governança para empresas complexas: Múltiplas camadas de governança'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 'Guia de governança para empresas complexas: Múltiplas camadas de governança'
+title: 'Guia de governança para empresas complexas: várias camadas de governança'
+description: 'Guia de governança para empresas complexas: várias camadas de governança'
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -9,14 +8,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4efd5b3de5551297a6ef5813a5108f3ad039472c
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 5aa48d6561f6d6122c74dcb60e82425b64071304
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222310"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806247"
 ---
-# <a name="governance-guide-for-complex-enterprises-multiple-layers-of-governance"></a>Guia de governança para empresas complexas: Múltiplas camadas de governança
+# <a name="governance-guide-for-complex-enterprises-multiple-layers-of-governance"></a>Guia de governança para empresas complexas: várias camadas de governança
 
 Quando grandes empresas exigem várias camadas de governança, há mais níveis de complexidade que devem ser fatorados no MVP de governança e nos aprimoramentos de governança posteriores.
 
@@ -52,8 +51,8 @@ Ferramentas, como grupos de gerenciamento, permitem que a TI corporativa crie um
 
 O aspecto importante de cada uma dessas ferramentas é a capacidade de aplicar vários planos de gráficos para uma hierarquia. Isso permite que o controle seja um processo em camadas. A seguir, um exemplo dessa aplicação hierárquica de governança:
 
-- **TI corporativa:** A IT empresarial cria um conjunto de padrões e políticas que se aplicam a adoção da nuvem. Isso é materializado em um blueprint de "Linha de base". A TI corporativa possui, em seguida, a hierarquia de grupo de gerenciamento, garantindo que uma versão da linha de base é aplicada a todas as assinaturas na hierarquia.
-- **TI regional ou de unidade de negócios:** Várias equipes de TI podem aplicar uma camada adicional de governança, criando suas próprias especificações técnicas. Esses blueprints criaram políticas e padrões aditivos. Depois que desenvolvido, a TI corporativa pode aplicar esses planos gráficos para os nós aplicáveis na hierarquia de grupo de gerenciamento.
+- **Ti corporativa:** TI corporativa cria um conjunto de padrões e políticas que se aplicam a toda a adoção da nuvem. Isso é materializado em um blueprint de "Linha de base". A TI corporativa possui, em seguida, a hierarquia de grupo de gerenciamento, garantindo que uma versão da linha de base é aplicada a todas as assinaturas na hierarquia.
+- **Ti regional ou de unidade de negócios:** Várias equipes de ti podem aplicar uma camada adicional de governança criando seu próprio plano gráfico. Esses blueprints criaram políticas e padrões aditivos. Depois que desenvolvido, a TI corporativa pode aplicar esses planos gráficos para os nós aplicáveis na hierarquia de grupo de gerenciamento.
 - **Equipes de adoção de nuvem:** Decisões e implementação detalhadas sobre aplicativos ou cargas de trabalho podem ser feitas por cada equipe de adoção de nuvem, dentro do contexto de requisitos de governança. Às vezes, a equipe também pode solicitar outros modelos de consistência de recursos do Azure para acelerar os esforços de adoção.
 
 Obtenha detalhes sobre a implementação da governança em cada nível exigirá a coordenação entre cada equipe. O MVP de governança e os aprimoramentos de governança descritos neste guia podem ajudar a alinhar essa coordenação.

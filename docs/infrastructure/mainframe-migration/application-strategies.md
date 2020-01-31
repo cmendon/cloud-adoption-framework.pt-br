@@ -1,6 +1,5 @@
 ---
 title: 'Migração de mainframe: migração de aplicativo de mainframe'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Migre aplicativos de ambientes de mainframe no Azure, uma infraestrutura escalonável, altamente disponível e comprovada para sistemas que atualmente executam em mainframes.
 author: njray
 ms.author: v-nanra
@@ -8,12 +7,12 @@ ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 9eb8c85c2355ae06e63d58e3078f1101bf7e3412
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: a662edd4ae7c6a854014b37cac2ccb0fab4c474e
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239439"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808814"
 ---
 # <a name="mainframe-application-migration"></a>Migração de aplicativos de mainframe
 
@@ -125,7 +124,7 @@ As arquiteturas distribuídas da nuvem dependem de um conjunto diferente de ferr
 
 ## <a name="migrate-databases-and-data"></a>Migre bancos de dados e dados
 
-A migração de aplicativo geralmente envolve a nova hospedagem da camada de dados. Você pode migrar SQL Server, software livre e outros bancos de dados relacionais para soluções totalmente gerenciadas no Azure, como [instância gerenciada do banco de dados SQL do Azure](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance), [serviço de banco de dados do Azure para PostgreSQL](https://docs.microsoft.com/azure/postgresql/overview)e [banco de dados do Azure para MySQL](https://docs.microsoft.com/azure/mysql/overview) com [ Serviço de migração de banco de dados do Azure](https://docs.microsoft.com/azure/dms/dms-overview).
+A migração de aplicativo geralmente envolve a nova hospedagem da camada de dados. Você pode migrar SQL Server, software livre e outros bancos de dados relacionais para soluções totalmente gerenciadas no Azure, como [instância gerenciada do banco de dados SQL do Azure](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance), [serviço de banco de dados do Azure para PostgreSQL](https://docs.microsoft.com/azure/postgresql/overview)e [banco de dados do Azure para MySQL](https://docs.microsoft.com/azure/mysql/overview) com o [serviço de migração de banco de dados do Azure](https://docs.microsoft.com/azure/dms/dms-overview).
 
 Por exemplo, você pode migrar se a camada de dados de mainframe usa:
 

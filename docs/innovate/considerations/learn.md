@@ -1,6 +1,5 @@
 ---
 title: 'Inovação em nuvem: Aprenda'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Introdução à inovação na nuvem – saiba mais sobre o conteúdo
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: b960bbd4382a14f254038397f3843d7ad7b65f8c
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 3f15407d78517d588e9f98ac6bbbb779574a7afd
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753006"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808423"
 ---
 # <a name="learn-with-customers"></a>Aprender com os clientes
 
@@ -56,4 +55,4 @@ Como uma próxima etapa para entender essa metodologia, [os bloqueadores comuns 
 > [!div class="nextstepaction"]
 > [Entendendo os bloqueadores e os desafios comuns](./challenges.md)
 
-Alguns dos conceitos neste artigo se baseiam nos tópicos descritos pela primeira vez na [inicialização de Lean](https://theleanstartup.com/book), escrito por Eric Ries.
+Alguns dos conceitos neste artigo se baseiam nos tópicos descritos pela primeira vez na [inicialização de Lean](http://theleanstartup.com/book), escrito por Eric Ries.

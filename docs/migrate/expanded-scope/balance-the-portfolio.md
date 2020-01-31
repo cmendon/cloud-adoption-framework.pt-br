@@ -1,6 +1,5 @@
 ---
 title: Equilibrar o portfólio
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Para balancear seu portfólio de nuvem.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 9834778e7aaddc616d595e874459fa7bd3eb61e3
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: e93d5144a361aa3d6fb328c1d6f47eb3c069e11c
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74159904"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76803289"
 ---
 # <a name="balance-the-portfolio"></a>Equilibrar o portfólio
 
@@ -29,7 +28,7 @@ Antes de balancear o portfólio, é importante documentar e compartilhar os resu
 
 A tabela a seguir pode ajudar a documentar e compartilhar os resultados empresariais desejados. É importante notar que a maioria das empresas tem buscando vários resultados de cada vez. A importância deste exercício é esclarecer os resultados que estão mais diretamente relacionados ao esforço de migração na nuvem:
 
-|Resultado  |Medido por  |Objetivo  |Período  |Prioridade do esforço  |
+|Resultado  |Medido por  |Goal  |Período  |Prioridade do esforço  |
 |---------|---------|---------|---------|---------|
 |Reduzir custos de TI     |Orçamento do datacenter         |Reduzir em US$ 2 milhões         |12 meses         |Nº 1         |
 |Saída do datacenter     |Saída dos datacenters         |2 datacenters         |6 meses         |Nº 2         |
@@ -119,7 +118,7 @@ Durante a migração, os esforços devem ser segmentados nas três maneiras list
 
 Não são necessárias alterações adicionais durante os processos de Otimização e Promoção no esforço de migração.
 
-## <a name="secure-and-manage-process-changes"></a>Proteger e gerenciar alterações no processo
+## <a name="secure-and-manage-process-changes"></a>Alterações na proteção e no gerenciamento de processos
 
 Não são necessárias alterações adicionais durante os processos de Proteção e Gerenciamento no esforço de migração.
 

@@ -1,6 +1,5 @@
 ---
 title: Guia de decisão de criptografia
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Saiba mais sobre a criptografia como um serviço principal em migrações do Azure.
 author: rotycenh
 ms.author: v-tyhopk
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: ed394c0bd1748a6e3382835cec816b552217bd01
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 7df170713e10460d9e928837a99287be0afd5805
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753360"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807046"
 ---
 # <a name="encryption-decision-guide"></a>Guia de decisão de criptografia
 
@@ -36,7 +35,7 @@ Modernos sistemas de gerenciamento de chaves, como armazenamento de suporte do A
 
 Ao planejar uma migração na nuvem, a tabela a seguir pode ajudá-lo a decidir como armazenar e gerenciar chaves de criptografia, certificados e segredos, que são críticos para a criação de implantações de nuvem segura e gerenciável:
 
-| Pergunta | Nativo da nuvem | Trazer sua própria chave | Reter sua própria chave |
+| Pergunta | Nativo da nuvem | Bring your own key | Reter sua própria chave |
 |---------------------------------------------------------------------------------------------------------------------------------------|--------------|--------|-------------|
 | Há uma falta de gerenciamento centralizado de chaves e segredos na sua organização?                                                                    | Sim          | Não     | Não          |
 | Você precisará limitar a criação de chaves e segredos em dispositivos para seu hardware local ao usar essas chaves na nuvem? | Não           | Sim    | Não          |
@@ -51,7 +50,7 @@ Usar um sistema de gerenciamento de chaves nativo da nuvem inclui estas suposiç
 - Você confia a criação, o gerenciamento e a hospedagem de chaves e segredos da sua organização à solução de gerenciamento de chaves de nuvem.
 - Você habilita todos os aplicativos e serviços locais que dependam do acesso a serviços ou segredos de criptografia para acessar o sistema de gerenciamento de chaves em nuvem.
 
-### <a name="bring-your-own-key"></a>Trazer sua própria chave
+### <a name="bring-your-own-key"></a>Bring your own key
 
 Com uma abordagem do tipo "Bring Your Own Key", você gera chaves em hardware HSM dedicado em seu ambiente local, então transfere com segurança essas chaves para um sistema de gerenciamento baseado em nuvem como o Azure Key Vault para uso com os recursos hospedados na nuvem.
 

@@ -1,6 +1,5 @@
 ---
 title: Aplicar princípios de design e operações avançadas
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Aplicar princípios de design e operações avançadas
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: f2e6aabec18d309aaae0a3a3d3cfd43ac6216a85
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 16762a0eae366c3bf1cd578faaf52df60e6c97b1
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752771"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807675"
 ---
 # <a name="apply-design-principles-and-advanced-operations"></a>Aplicar princípios de design e operações avançadas
 
@@ -96,7 +95,7 @@ Uma dívida técnica não pode ou não ser resolvida. A resolução pode ser mui
 
 Quando a resolução da dívida técnica não for o caminho desejado, a correção automatizada será comumente a próxima etapa desejada. Usar a Automação do Azure e o Azure Monitor para detectar tendências e fornecer correção automatizada é a abordagem mais comum para a correção automatizada.
 
-Para obter orientação sobre a correção automatizada, consulte [automação e alertas do Azure](https://docs.microsoft.com/azure/automation/automation-create-alert-triggered-runbook).
+Para obter orientação sobre correção automatizada, consulte [Alertas e Automação do Azure](https://docs.microsoft.com/azure/automation/automation-create-alert-triggered-runbook).
 
 ### <a name="scale-the-solution-with-a-service-catalog"></a>Dimensionar a solução com um catálogo de serviços
 
@@ -111,5 +110,5 @@ Para obter informações sobre como publicar em um catálogo de serviços, consu
 A especialização de plataforma e as operações de plataforma dependem de loops de comentários fortes entre as equipes de adoção, de plataforma, de automação e de gerenciamento. A fundamentação desses loops de comentários em dados capacita cada equipe a tomar decisões sábias. Para que as operações de plataforma obtenham compromissos de negócios de longo prazo, é importante aproveitar as informações específicas para a plataforma centralizada. Como os contêineres e SQL Server são as duas plataformas mais comuns gerenciadas centralmente, considere a introdução à coleta de dados de melhoria contínua revisando os seguintes artigos:
 
 - [Desempenho do contêiner](https://docs.microsoft.com/azure/azure-monitor/insights/container-insights-overview)
-- [Desempenho do banco de dados PaaS](https://docs.microsoft.com/azure/azure-monitor/insights/azure-sql)
-- [Desempenho do banco de dados IaaS](https://docs.microsoft.com/azure/azure-monitor/insights/sql-assessment)
+- [Desempenho do Banco de Dados PaaS](https://docs.microsoft.com/azure/azure-monitor/insights/azure-sql)
+- [Desempenho do Banco de Dados IaaS](https://docs.microsoft.com/azure/azure-monitor/insights/sql-assessment)

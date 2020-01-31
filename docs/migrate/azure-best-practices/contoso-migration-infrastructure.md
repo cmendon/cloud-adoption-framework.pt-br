@@ -1,6 +1,5 @@
 ---
 title: Implante uma infraestrutura de migração
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Saiba como a Contoso define uma infraestrutura do Azure para a migração para o Azure.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 44fb2e8d7fc71dfa676f5711ab50c2201d67f260
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: 4d8a7b53722de4b356753626d0cc695fa1a77596
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74160373"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807505"
 ---
 # <a name="deploy-a-migration-infrastructure"></a>Implante uma infraestrutura de migração
 
@@ -136,7 +135,7 @@ Para usar seu nome de domínio padrão, os administradores da Contoso precisam a
 
 Para configurar um nome de domínio personalizado que ele adiciona ao diretório, adicione uma entrada DNS e, em seguida, verifique o nome no Azure AD.
 
-1. Em **nomes de domínios personalizados**  >  **Adicione um domínio personalizado**, eles adicionam o domínio.
+1. Em **nomes de domínios personalizados** > **Adicione um domínio personalizado**, eles adicionam o domínio.
 2. Para usar uma entrada de DNS no Azure, eles precisam registrá-la no registrador de domínios.
 
     - No **nomes de domínio personalizado** lista, eles observam as informações de DNS para o nome. Ela está usando uma entrada MX.
@@ -586,7 +585,7 @@ Após atualizar as configurações de rede, os administradores da Contoso estar�
     - Verifique se o tecido do Azure separa as VMs em infraestruturas diferentes na Região do Azure.
     - Permite que a Contoso seja elegível para o SLA de 99,95% para VMs no Azure. [Saiba mais](https://docs.microsoft.com/azure/virtual-machines/windows/tutorial-availability-sets).
 
-    ![Grupo de disponibilidade](./media/contoso-migration-infrastructure/availability-group.png)
+    ![grupo de disponibilidade](./media/contoso-migration-infrastructure/availability-group.png)
 
 3. Depois que a VM for implantada, eles abrirão o adaptador de rede da VM. Eles definem o endereço IP privado como estático e especificam um endereço válido.
 
@@ -778,11 +777,11 @@ A Contoso criou um modelo de como será a aparência para seus aplicativos.
 
 Os NSGs associados aos ASGs serão configurados com o menor privilégio para garantir que apenas os pacotes permitidos possam fluir de uma parte da rede para seu destino.
 
-**Ação** | **Nome** | **Origem** | **Destino** | **Porta**
+**Ação** | **Nome** | **Origem** | **Target (destino)** | **Porta**
 --- | --- | --- | --- | ---
-PERMITIR | AllowInternetToFE | VNET-HUB-EUS1/IB-TrustZone | APP1-FE 80, 443
-PERMITIR | AllowWebToApp | APP1-FE | APP1-APP | 80, 443
-PERMITIR | AllowAppToDB | APP1-APP | APP1-DB | 1433
+Permitir | AllowInternetToFE | VNET-HUB-EUS1/IB-TrustZone | APP1-FE 80, 443
+Permitir | AllowWebToApp | APP1-FE | APP1-APP | 80, 443
+Permitir | AllowAppToDB | APP1-APP | APP1-DB | 1433
 Negar | DenyAllInBound | Qualquer | Qualquer | Qualquer
 
 ### <a name="encrypt-data"></a>Criptografar dados

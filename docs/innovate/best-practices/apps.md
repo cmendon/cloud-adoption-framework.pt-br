@@ -1,6 +1,5 @@
 ---
 title: 'Inovação em nuvem: ferramentas para se envolver por meio de aplicativos no Azure'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Ferramentas para se envolver por meio de aplicativos no Azure
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 96450c838ce6833d77803428272e96d2327747de
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: cf37b3555244db05ecd22f9c4421a35e8a0f758e
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565869"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808712"
 ---
 # <a name="tools-to-engage-via-apps-in-azure"></a>Ferramentas para se envolver por meio de aplicativos no Azure
 
@@ -39,7 +38,7 @@ Cada caminho resulta em vantagens e desvantagens que são de curto e longo prazo
 
 Dependendo do caminho que a equipe de adoção da nuvem pega, o Azure fornece ferramentas para acelerar a capacidade da equipe de criar com o cliente empatia. A lista a seguir de ofertas do Azure é agrupada com base nos caminhos de decisão anteriores. Essas ofertas incluem:
 
-- Serviço de aplicativo do Azure
+- Serviço de Aplicativos do Azure
 - AKS (Serviço do Kubernetes do Azure)
 - Migrações para Azure
 - Azure Stack
@@ -47,7 +46,7 @@ Dependendo do caminho que a equipe de adoção da nuvem pega, o Azure fornece fe
 - Microsoft Flow
 - Power BI
 
-## <a name="get-started"></a>Introdução
+## <a name="get-started"></a>Comece agora
 
 O Sumário no lado esquerdo desta página descreve muitos artigos do. Esses artigos ajudam você a começar a usar cada uma das ferramentas neste ferramentas.
 

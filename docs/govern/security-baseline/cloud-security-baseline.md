@@ -1,6 +1,5 @@
 ---
 title: Entender a linha de base de segurança de nuvem
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Saiba mais sobre a linha de base de segurança de nuvem.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a6de2681f83eba32400ed0dd214267f0960f5a8a
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: abd222cd3fd29f2150a18fafaae82393aa54e98b
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752175"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808882"
 ---
 # <a name="understand-the-cloud-security-baseline"></a>Entender a linha de base de segurança de nuvem
 
@@ -36,7 +35,7 @@ No mínimo, qualquer estratégia de segurança na nuvem deve considerar os segui
 
 ## <a name="protecting-data-and-privacy"></a>Proteger dados e privacidade
 
-Para organizações em todo o mundo &mdash;whether governos, instituições sem fins lucrativos ou empresas &mdash;cloud a computação se tornou uma parte fundamental de sua estratégia contínua de ti. Os serviços de nuvem permitem que as organizações de todos os portes acessem virtualmente o armazenamento de dados ilimitados, enquanto as desobriga da necessidade de comprar, manter e atualizar suas próprias redes e sistemas de computadores. A Microsoft e outros provedores de nuvem oferecem infraestrutura de TI, plataforma e SaaS (software como serviço), permitindo aos clientes escalar ou reduzir verticalmente de maneira muito rápida, conforme necessário, e pagar apenas pela capacidade de computação e armazenamento que utilizarem.
+Para organizações em todo o mundo&mdash;se governos, organizações sem fins lucrativos ou empresas&mdash;computação em nuvem tornou-se uma parte fundamental de sua estratégia contínua de ti. Os serviços de nuvem permitem que as organizações de todos os portes acessem virtualmente o armazenamento de dados ilimitados, enquanto as desobriga da necessidade de comprar, manter e atualizar suas próprias redes e sistemas de computadores. A Microsoft e outros provedores de nuvem oferecem infraestrutura de TI, plataforma e SaaS (software como serviço), permitindo aos clientes escalar ou reduzir verticalmente de maneira muito rápida, conforme necessário, e pagar apenas pela capacidade de computação e armazenamento que utilizarem.
 
 No entanto, como as organizações continuam beneficiando-se dos serviços de nuvem, como escolha, agilidade e flexibilidade maiores, ao mesmo tempo que aumentam a eficiência e diminuem o custo de TI, deverão considerar como a introdução de serviços de nuvem afetará as condições de privacidade, segurança e conformidade. A Microsoft tem trabalhado para tornar as ofertas de nuvem não apenas escalonáveis, confiáveis e gerenciáveis, mas também, para garantir que os dados de nossos clientes sejam protegidos e utilizados de maneira transparente.
 

@@ -1,6 +1,5 @@
 ---
 title: Métricas, indicadores e tolerância a riscos da linha de base de identidade
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Métricas, indicadores e tolerância a riscos da linha de base de identidade
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,18 +8,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: bf929fe5f1addbb27da77b865dfbdc71253c62a3
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: f5002d278e833873a2077538c848bc5e7f47131d
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220437"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806026"
 ---
 # <a name="identity-baseline-metrics-indicators-and-risk-tolerance"></a>Métricas, indicadores e tolerância a riscos da linha de base de identidade
 
 Este artigo o ajudará a quantificar a tolerância a riscos de negócios, pois ela se relaciona com a linha de base de identidade. Definir métricas e indicadores ajuda a criar um caso de negócios para investir no amadurecimento da disciplina Linha de Base de Identidade.
 
-## <a name="metrics"></a>metrics
+## <a name="metrics"></a>Métricas
 
 A linha de base de identidade se concentra na identificação, autenticação e autorização de indivíduos, grupos de usuários ou processos automatizados e fornece a eles o devido acesso aos recursos em suas implantações de nuvem. Como parte da análise de risco, são coletados dados relacionados aos serviços de identidade para determinar qual o grau de risco enfrentado e quão importante é o investimento em governança na linha de base de identidade para suas implantações planejadas de nuvem.
 
@@ -49,18 +48,18 @@ Assim que você tiver uma linha de base, estabeleça parâmetros de comparação
 
 - **Gatilho de número de conta de usuário.** Uma empresa com mais de _x_ usuários, grupos ou outros objetos gerenciados em seus sistemas de identidade pode se beneficiar do investimento na disciplina de linha de base de identidade para garantir uma governança eficiente em um grande número de contas.
 - **Gatilho de dependência de identidade local.** Uma empresa que planeja migrar cargas de trabalho para a nuvem que exigem recursos de autenticação herdados ou autenticação multifator de terceiros deve investir na disciplina de linha de base de identidade para reduzir os riscos relacionados à refatoração ou nuvem adicional implantação de infraestrutura.
-- **Gatilho de complexidade dos serviços de diretório.** Uma empresa que mantém mais de um número _x_ of_ florestas individuais, domínios ou locatários de diretório deve investir na disciplina de linha de base de identidade para reduzir os riscos relacionados ao gerenciamento de conta e os problemas de eficiência relacionados a vários usuários as credenciais se espalham por vários sistemas.
-- **Gatilho de serviços de diretório hospedado na nuvem.** Uma empresa que hospeda máquinas virtuais (VMs) do servidor _x_ Active Directory hospedadas na nuvem ou que tenha unidades organizacionais _x_ (UOs) gerenciadas nesses servidores baseados em nuvem pode se beneficiar do investimento na disciplina de linha de base de identidade para otimizar integração com qualquer serviço local ou outros serviços de identidade externos.
+- **Gatilho de complexidade dos serviços de diretório.** Uma empresa que mantém mais de _x_ número of_ florestas individuais, domínios ou locatários de diretório deve investir na disciplina de linha de base de identidade para reduzir os riscos relacionados ao gerenciamento de conta e os problemas de eficiência relacionados a várias credenciais de usuário espalhadas por vários sistemas.
+- **Gatilho de serviços de diretório hospedado na nuvem.** Uma empresa que hospeda máquinas virtuais (VMs) do servidor _x_ Active Directory hospedadas na nuvem ou que tenha unidades organizacionais _x_ (UOs) gerenciadas nesses servidores baseados em nuvem pode se beneficiar do investimento na disciplina de linha de base de identidade para otimizar a integração com qualquer serviço de identidade local ou outro.
 - **Gatilho de Federação.** Uma empresa que implementa a Federação de identidades com sistemas de linha de base de identidade externa _x_ pode se beneficiar de investir na disciplina de linha de base de identidade para garantir uma política organizacional consistente entre membros da Federação.
 - **Gatilho de acesso elevado.** Uma empresa com mais de _x%_ dos usuários com permissões elevadas para ferramentas de gerenciamento e recursos deve considerar investindo na disciplina de linha de base de identidade para minimizar o risco de excesso de provisionamento inadvertido de acesso aos usuários.
 - **Gatilho do RBAC.** Uma empresa com menos de _x%_ dos recursos que usam métodos de controle de acesso baseado em função deve considerar investindo na disciplina de linha de base de identidade para identificar maneiras otimizadas de atribuir acesso de usuário aos recursos.
-- **Gatilho de falha de autenticação.** Uma empresa em que as falhas de autenticação representam mais de _x%_ das tentativas deve investir na disciplina de linha de base de identidade para garantir que os métodos de autenticação não estejam sob ataque externo e que os usuários possam usar os métodos de autenticação devidamente.
+- **Gatilho de falha de autenticação.** Uma empresa em que as falhas de autenticação representam mais de _x%_ das tentativas deve investir na disciplina de linha de base de identidade para garantir que os métodos de autenticação não estejam sob ataque externo e que os usuários possam usar os métodos de autenticação corretamente.
 - **Gatilho de falha de autorização.** Uma empresa em que as tentativas de acesso são rejeitadas mais de _x%_ do tempo deve investir na disciplina de linha de base de identidade para melhorar o aplicativo e atualizar os controles de acesso e identificar tentativas de acesso potencialmente mal-intencionadas.
 - **Gatilho de conta comprometida.** Uma empresa com mais de 1 conta comprometida deve investir na disciplina de linha de base de identidade para melhorar a força e a segurança dos mecanismos de autenticação e melhorar os mecanismos para corrigir os riscos relacionados a contas comprometidas.
 
 As métricas e os gatilhos exatos que você usa para medir a tolerância a riscos e o nível de investimento na disciplina de linha de base de identidade serão específicos para sua organização, mas os exemplos acima devem servir como uma base útil para discussão em sua equipe de governança de nuvem.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Usar o [modelo de Gerenciamento de Nuvem](./template.md), de métricas do documento e de indicadores de tolerância que se alinham ao atual plano de adoção da nuvem.
 

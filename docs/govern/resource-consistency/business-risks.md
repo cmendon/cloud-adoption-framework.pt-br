@@ -1,6 +1,5 @@
 ---
 title: Motivações de Consistência de Recursos e os riscos de negócios
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Motivações de Consistência de Recursos e os riscos de negócios
 author: alexbuckgit
 ms.author: abuck
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: fd1eb5d9425b87d17613507d3955126ce1437edd
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: e1c4723aa52c20c16dbfa883d7e8566292ca54b3
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222005"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807216"
 ---
 # <a name="resource-consistency-motivations-and-business-risks"></a>Motivações de Consistência de Recursos e os riscos de negócios
 
@@ -43,7 +42,7 @@ Os riscos serão diferentes entre a organização, mas os seguintes servem como 
 - **Ineficiências de gerenciamento.** Falta de nomenclatura consistente e metadados associados aos recursos de marcação pode levar a equipe de TI a ter dificuldades para localizar recursos para tarefas de gerenciamento ou de identificação de propriedade e informações de estatísticas relacionadas a ativos. Isso resulta em ineficiências de gerenciamento que podem aumentar o custo e a capacidade de resposta lenta da TI a interrupção do serviço ou outros problemas operacionais.
 - **Interrupção dos negócios.** Interrupções de serviço que resultam em violações dos Contratos e Nível de Serviço (SLAs) estabelecidos da sua organização podem resultar em perda de negócios ou outros impactos financeiros a sua empresa.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Usando o [modelo de gerenciamento de nuvem](./template.md), documente os riscos de negócios que provavelmente serão introduzidos pelo plano de adoção de nuvem atual.
 

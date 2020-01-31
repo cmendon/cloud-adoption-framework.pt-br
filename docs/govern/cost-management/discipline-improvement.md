@@ -1,6 +1,5 @@
 ---
 title: Aperfeiçoamento da disciplina de Gerenciamento de Custos
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Aperfeiçoamento da disciplina de Gerenciamento de Custos
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,16 +8,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1b59121bc0679475079dc1a7b5d3770cc87d7523
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: ebd297f4fbebd451f47bbb6b88be56e1ccc489be
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753093"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806468"
 ---
 # <a name="cost-management-discipline-improvement"></a>Aperfeiçoamento da disciplina de Gerenciamento de Custos
 
-A disciplina de gerenciamento de custos tenta abordar riscos comerciais principais relacionados a despesas incorridas ao hospedar cargas de trabalho baseadas em nuvem. Dentro das cinco disciplinas de governança de nuvem, o gerenciamento de custos está envolvido no controle do custo e do uso de recursos de nuvem com o objetivo de criar e manter um ciclo de custo planejado.
+A disciplina de Gerenciamento de Custos tenta abordar riscos comerciais principais relacionados a despesas incorridas ao hospedar cargas de trabalho baseadas em nuvem. Dentro das cinco disciplinas de governança de nuvem, o gerenciamento de custos está envolvido no controle do custo e do uso de recursos de nuvem com o objetivo de criar e manter um ciclo de custo planejado.
 
 Este artigo descreve as tarefas potenciais da sua empresa para realizar para desenvolver e maturar sua disciplina de Gerenciamento de Custos. Essas tarefas podem ser divididas entre as fases de planejamento, criação, adoção e operacional para a implementação de uma solução de nuvem, que depois são iteradas para permitir o desenvolvimento de uma [abordagem incremental para a governança de nuvem](../guides/index.md#an-incremental-approach-to-cloud-governance).
 
@@ -85,7 +84,7 @@ A migração é um processo incremental que se concentra no movimento, teste e a
 - Monitore as alterações nos planos de acesso a recursos e valide com os stakeholders se forem necessárias aprovações adicionais.
 - Atualizar as alterações no documento de Diretrizes de arquitetura para refletir os custos reais.
 
-## <a name="operate-and-post-implementation"></a>Operar e pós-implementação
+## <a name="operate-and-post-implementation"></a>Operação e pós-implementação
 
 Após a conclusão da transformação, a governança e as operações devem residir para o ciclo de vida natural de um aplicativo ou carga de trabalho. Essa fase de maturidade de governança se concentra em atividades que normalmente ocorrem depois que a solução é implementada e que o ciclo de transformação começa a se estabilizar.
 

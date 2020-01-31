@@ -1,6 +1,5 @@
 ---
 title: Controle de acesso baseado em função recomendado
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Controle de acesso baseado em função recomendado
 author: rotycenh
 ms.author: brblanch
@@ -11,14 +10,14 @@ ms.subservice: ready
 manager: BrianBlanchard
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 47933f12bea00ff1ea9052125147287ffc9381d6
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 2b7af250046e024393d14e37ae2985f8bf453be7
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73561770"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806859"
 ---
-# <a name="role-based-access-control"></a>Controle de acesso baseado em função
+# <a name="role-based-access-control"></a>Controle de acesso baseado em funções
 
 Direitos e privilégios de acesso baseados em grupo são uma boa prática. Lidar com grupos em vez de usuários individuais simplifica a manutenção de políticas de acesso, fornece gerenciamento de acesso consistente entre equipes e reduz erros de configuração. Atribuir e remover usuários de grupos, conforme apropriado, ajuda a manter os privilégios dos usuários sempre atualizados. O [RBAC (controle de acesso baseado em função)](https://docs.microsoft.com/azure/role-based-access-control/overview) do Azure oferece gerenciamento de acesso refinado para os recursos organizados em torno das funções de usuário.
 
@@ -80,7 +79,7 @@ A tabela a seguir ilustra um padrão comum para dividir as responsabilidades de 
 | Operações de segurança | SecOps | Fornece supervisão geral de segurança.<br/><br/> Estabelece e impõe a política de segurança, como a criptografia em repouso.<br/><br/> Gerencia as chaves de criptografia.<br/><br/> Gerencia as regras de firewall. |
 | Operações de rede | NetOps | Gerencia a configuração e as operações de rede em redes virtuais, como rotas e emparelhamentos. |
 | Operações de sistema | SysOps | Especifica as opções de infraestrutura de armazenamento e computação e mantém os recursos que foram implantados. |
-| Desenvolvimento, teste e operações | DevOps | Compila e implanta recursos e aplicativos de carga de trabalho.<br/><br/> Opera recursos e aplicativos para atender aos SLAs (contratos de nível de serviço) e a outros padrões de qualidade. |
+| Desenvolvimento, teste e operações | Operações de Desenvolvimento | Compila e implanta recursos e aplicativos de carga de trabalho.<br/><br/> Opera recursos e aplicativos para atender aos SLAs (contratos de nível de serviço) e a outros padrões de qualidade. |
 
 <!-- markdownlint-enable MD033 -->
 

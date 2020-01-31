@@ -1,6 +1,5 @@
 ---
 title: Rehospede um aplicativo migrando-o para VMs do Azure e SQL Server grupos de disponibilidade Always On
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Saiba como a Contoso hospeda novamente um aplicativo local migrando-o para as VMs do Azure e para o grupo de disponibilidade Always On do SQL Server.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: e4d8ab371e01d98e22382a70cc9c1ea42173cf53
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: b5b8710c8545fa2e7c56131ed74a0ea1a3a02f8e
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74160332"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807420"
 ---
 # <a name="rehost-an-on-premises-app-on-azure-vms-and-sql-server-always-on-availability-groups"></a>Rehospedar um aplicativo local em VMs do Azure e SQL Server grupos de disponibilidade Always On
 
@@ -114,7 +113,7 @@ Os administradores da Contoso migrarão as VMs de aplicativo para o Azure.
 
 ![Processo de migração](media/contoso-migration-rehost-vm-sql-ag/migration-process.png)
 
-## <a name="prerequisites"></a>pré-requisitos
+## <a name="prerequisites"></a>Pré-requisitos
 
 Veja o que a Contoso precisa fazer para esse cenário.
 
@@ -153,7 +152,7 @@ Os administradores da Contoso configuram o cluster da seguinte maneira:
 
     ![SQL VM SKU](media/contoso-migration-rehost-vm-sql-ag/sql-vm-sku.png)
 
-2. No **Assistente de criação de máquinas virtuais**  >  **Basics**, eles configuram:
+2. No **Assistente de criação de máquinas virtuais** > **Basics**, eles configuram:
 
     - Nomes para as VMs: **SQLAOG1** e **SQLAOG2**.
     - Como as máquinas são críticas para os negócios, elas habilitam o SSD para o tipo de disco da VM.
@@ -214,7 +213,7 @@ Os administradores da Contoso criam uma conta de armazenamento da seguinte manei
 
 Antes de configurar o cluster, os administradores da Contoso obtêm um instantâneo do disco do sistema operacional em cada computador.
 
-![Como criar um instantâneo](media/contoso-migration-rehost-vm-sql-ag/snapshot.png)
+![Criar instantâneo](media/contoso-migration-rehost-vm-sql-ag/snapshot.png)
 
 1. Em seguida, eles executam um script que eles criaram para criar o cluster de failover do Windows.
 
@@ -325,7 +324,7 @@ Os administradores da Contoso definem o seguinte:
 
 2. Os administradores da Contoso criam uma conta de armazenamento do Azure (contosovmsacc20180528) na região primária.
 
-    - Eles usam uma conta de finalidade geral, com armazenamento padrão e replicação de LRS.
+    - Eles usam uma conta de propósito geral, com armazenamento padrão e replicação de LRS.
     - A conta deve estar na mesma região do cofre.
 
       ![Armazenamento do Site Recovery](media/contoso-migration-rehost-vm-sql-ag/asr-storage.png)
@@ -336,7 +335,7 @@ Os administradores da Contoso definem o seguinte:
 
 **Precisa de mais ajuda?**
 
-[Saiba mais sobre](https://docs.microsoft.com/azure/site-recovery/tutorial-prepare-azure) a configuração o Azure para o Site Recovery.
+[Saiba mais sobre](https://docs.microsoft.com/azure/site-recovery/tutorial-prepare-azure) como configurar o Azure para o Site Recovery.
 
 ## <a name="step-5-prepare-on-premises-vmware-for-site-recovery"></a>Etapa 5: Preparar o VMware local para Site Recovery
 
@@ -375,12 +374,12 @@ Após o failover, a Contoso deseja poder se conectar às VMs do Azure. Para faze
 
    - Habilite o RDP na VM local antes do failover
    - Assegure-se de que as regras TCP e UDP sejam incluídas para o perfil **Público**.
-   - Verifique se o RDP é permitido no **Firewall do Windows**  >  **Aplicativos permitidos** para todos os perfis.
+   - Verifique se o RDP é permitido no **Firewall do Windows** > **Aplicativos permitidos** para todos os perfis.
 
 2. Para acesso por VPN site-to-site, eles:
 
    - Ative o RDP na máquina no local.
-   - Permitir o RDP no **Firewall do Windows**  ->  **Aplicativos e recursos permitidos**, para **Domínio e redes particulares**.
+   - Permitir o RDP no **Firewall do Windows** -> **Aplicativos e recursos permitidos**, para **Domínio e redes particulares**.
    - Defina a política de SAN do sistema operacional na VM local para **OnlineAll**.
 
 Além disso, quando eles executam um failover, precisam verificar o seguinte:
@@ -390,8 +389,8 @@ Além disso, quando eles executam um failover, precisam verificar o seguinte:
 
 **Precisa de mais ajuda?**
 
-- [Saiba mais sobre](https://docs.microsoft.com/azure/site-recovery/vmware-azure-tutorial-prepare-on-premises#prepare-an-account-for-automatic-discovery) criar e atribuir uma função para a descoberta automática.
-- [Saiba mais sobre](https://docs.microsoft.com/azure/site-recovery/vmware-azure-tutorial-prepare-on-premises#prepare-an-account-for-mobility-service-installation) como criar uma conta para a instalação por push do serviço de Mobilidade.
+- [Saiba mais sobre](https://docs.microsoft.com/azure/site-recovery/vmware-azure-tutorial-prepare-on-premises#prepare-an-account-for-automatic-discovery) como criar e atribuir uma função para a descoberta automática.
+- [Saiba mais sobre](https://docs.microsoft.com/azure/site-recovery/vmware-azure-tutorial-prepare-on-premises#prepare-an-account-for-mobility-service-installation) como criar uma conta para a instalação do serviço de mobilidade por push.
 
 ## <a name="step-6-replicate-the-on-premises-vms-to-azure-with-site-recovery"></a>Etapa 6: Replicar as VMs locais para o Azure com o Site Recovery
 
@@ -399,8 +398,8 @@ Antes que eles possam executar uma migração para o Azure, os administradores d
 
 ### <a name="set-a-replication-goal"></a>Definir uma meta de replicação
 
-1. No cofre, sob o nome do vault (ContosoVMVault), eles selecionam uma meta de replicação (**Introdução**  >  **Recuperação do site**  >  **Preparar a infraestrutura**.
-2. Eles especificam que suas máquinas são locais, em execução no VMware e replicando para o Azure.
+1. No cofre, sob o nome do vault (ContosoVMVault), eles selecionam uma meta de replicação (**Introdução** > **Recuperação do site** > **Preparar a infraestrutura**.
+2. Eles especificam que suas máquinas estão localizadas no local, sendo executadas no VMware e replicadas no Azure.
 
     ![Meta de replicação](./media/contoso-migration-rehost-vm-sql-ag/replication-goal.png)
 
@@ -429,7 +428,7 @@ Os administradores da Contoso executam as seguintes etapas:
     ![Modelo de OVF](./media/contoso-migration-rehost-vm-sql-ag/vcenter-wizard.png)
 
 3. Ao ligar a máquina virtual pela primeira vez, ela é inicializada como uma experiência de instalação do Windows Server 2016. Eles aceitam o contrato de licença e inserem uma senha de administrador.
-4. Após a conclusão da instalação, eles entram na VM como administrador. No primeiro logon, a Ferramenta de Configuração do Azure Site Recovery é iniciada por padrão.
+4. Após a conclusão da instalação, entram na VM como administrador. No primeiro logon, a Ferramenta de Configuração do Azure Site Recovery é iniciada por padrão.
 5. Na ferramenta, ela especifica um nome a ser usado para registrar o servidor de configuração no cofre.
 6. A ferramenta verifica se a VM pode se conectar ao Azure. Depois que a conexão é estabelecida, entram na assinatura do Azure. As credenciais devem ter acesso ao cofre no qual você deseja registrar o servidor de configuração.
 
@@ -438,7 +437,7 @@ Os administradores da Contoso executam as seguintes etapas:
 7. A ferramenta executa algumas tarefas de configuração e, em seguida, é reinicializada.
 8. Entram na máquina novamente e o Assistente de Gerenciamento do Servidor de Configuração é iniciado automaticamente.
 9. No assistente, selecionam o NIC que vai receber o tráfego de replicação. Essa configuração não pode ser alterada depois de definida.
-10. Eles selecionam a assinatura, o grupo de recursos e o cofre no qual registrar o servidor de configuração.
+10. Ela seleciona a assinatura, o grupo de recursos e o cofre no qual registrar o servidor de configuração.
         ![selecionar o cofre dos serviços de recuperação](./media/contoso-migration-rehost-vm-sql-ag/cswiz1.png)
 
 11. Em seguida, eles baixam e instalam o MySQL Server e o VMware PowerCLI.
@@ -455,7 +454,7 @@ Os administradores da Contoso executam as seguintes etapas:
 Agora os administradores da Contoso especificam configurações de replicação de destino.
 
 1. Em **Preparar infraestrutura** > **Destino**, selecionam as configurações de destino.
-2. Recuperação de site verifica se há uma conta de armazenamento do Azure e da rede de destino especificado.
+2. O Site Recovery verifica se há uma rede e uma conta de armazenamento do Azure no destino especificado.
 
 ### <a name="create-a-replication-policy"></a>Criar uma política de replicação
 
@@ -477,8 +476,8 @@ Agora os administradores da Contoso podem criar uma política de replicação.
 
 Agora os administradores da Contoso podem começar a replicar o WebVM.
 
-1. Em **Replicar aplicativo**  >  **Fonte**  >  **+ Replicar** eles selecionam as configurações de origem.
-2. Eles indicam que desejam habilitar máquinas virtuais, selecionam o vCenter Server e o servidor de configuração.
+1. Em **Replicar aplicativo** > **Fonte** >  **+Replicar**, ela seleciona as configurações de fonte.
+2. Eles indicam que desejam ativar as VMs, selecionar o servidor vCenter e o servidor de configuração.
 
     ![Habilitar a replicação](./media/contoso-migration-rehost-vm-sql-ag/enable-replication1.png)
 
@@ -498,7 +497,7 @@ Agora os administradores da Contoso podem começar a replicar o WebVM.
 **Precisa de mais ajuda?**
 
 - Você pode ler uma explicação completa de todas essas etapas em [Configurar a recuperação de desastres para máquinas virtuais do VMware locais](https://docs.microsoft.com/azure/site-recovery/vmware-azure-tutorial).
-- As instruções detalhadas estão disponíveis para ajudá-lo a [configurar o ambiente de origem](https://docs.microsoft.com/azure/site-recovery/vmware-azure-set-up-source), [implantar o servidor de configuração](https://docs.microsoft.com/azure/site-recovery/vmware-azure-deploy-configuration-server), e [definir configurações de replicação](https://docs.microsoft.com/azure/site-recovery/vmware-azure-set-up-replication).
+- As instruções detalhadas estão disponíveis para ajudá-lo a [configurar o ambiente da fonte](https://docs.microsoft.com/azure/site-recovery/vmware-azure-set-up-source), [implantar o servidor de configuração](https://docs.microsoft.com/azure/site-recovery/vmware-azure-deploy-configuration-server), e [definir configurações de replicação](https://docs.microsoft.com/azure/site-recovery/vmware-azure-set-up-replication).
 - Você pode saber mais sobre a [ habilitação da replicação](https://docs.microsoft.com/azure/site-recovery/vmware-azure-enable-replication).
 
 ## <a name="step-7-install-the-data-migration-assistant-dma"></a>Etapa 7: instalar o Assistente de Migração de Dados (DMA)
@@ -590,7 +589,7 @@ A Contoso administra um failover de teste rápido e, em seguida, migra a VM.
 Executar um failover de teste ajuda a garantir que tudo está funcionando conforme o esperado antes da migração.
 
 1. Eles executam um failover de teste, até o último momento disponível (**Último processamento**).
-2. Eles selecionam **Desligar o computador antes do início do failover**, para que o Site Recovery tente desligar a VM da fonte antes de disparar o failover. O failover continuará mesmo o desligamento falhar.
+2. Selecionam **Desligar o computador antes do início do failover**, para que o Site Recovery tente desligar a VM da fonte antes de disparar o failover. O failover continuará mesmo o desligamento falhar.
 3. O failover de teste é executado:
 
     - Uma verificação de pré-requisitos será executada para conferir se todas as condições exigidas para a migração foram cumpridas.
@@ -606,7 +605,7 @@ Executar um failover de teste ajuda a garantir que tudo está funcionando confor
 
      ![Plano de recuperação](./media/contoso-migration-rehost-vm-sql-ag/recovery-plan.png)
 
-2. Ela executa um failover no plano. Eles adicionam o WEBVM ao plano. Eles selecionam o ponto de recuperação mais recente e especificam que o Site Recovery deve tentar encerrar a VM local antes de acionar o failover.
+2. Ela executa um failover no plano. Ela seleciona o último ponto de recuperação e especifica que o Site Recovery deve tentar desligar a VM local antes de disparar o failover.
 
     ![Failover](./media/contoso-migration-rehost-vm-sql-ag/failover1.png)
 
@@ -639,7 +638,7 @@ Como etapa final do processo de migração, os administradores da Contoso atuali
 
 Após a migração, o aplicativo SmartHotel360 está sendo executado em uma VM do Azure, e o banco de dados do SmartHotel360 está localizado no cluster do Azure SQL.
 
-Agora, a Contoso precisa concluir estas etapas de limpeza:
+Agora, a contoso precisa concluir estas etapas de limpeza:
 
 - Remova as VMs locais do inventário do vCenter.
 - Remova as VMs das tarefas de backup locais.

@@ -1,6 +1,5 @@
 ---
 title: 'Inovação em nuvem: serviço de migração de banco de dados do Azure'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Inovação de nuvem-serviço de migração de banco de dados do Azure
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 46e21c08bac9501dd9b99fceb4ef3040cc9f0a83
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 44ebe7e28eea56d1b7e61b5926a9588f4c985ae1
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752038"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808661"
 ---
 # <a name="collect-data-through-the-migration-and-modernization-of-existing-data-sources"></a>Coletar dados por meio da migração e da modernização de fontes de dados existentes
 
@@ -49,14 +48,14 @@ Sugerimos que você decida o tempo de inatividade aceitável dos negócios e tes
 
 |Origem  |Escolha o destino  |Ferramenta  |Tipo de migração  |Diretriz  |
 |---------|---------|---------|---------|---------|
-|SQL Server|Banco de dados SQL do Azure|Serviço de Migração do Banco de Dados|Off-line|[Tutorial](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-azure-sql)|
+|SQL Server|Banco de dados SQL do Azure|Serviço de Migração do Banco de Dados|Offline|[Tutorial](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-azure-sql)|
 |SQL Server|Banco de dados SQL do Azure|Serviço de Migração do Banco de Dados|Online|[Tutorial](https://docs.microsoft.com/azure/dms/tutorial-sql-server-azure-sql-online)|
-|SQL Server|Instância gerenciada do Banco de Dados SQL do Azure|Serviço de Migração do Banco de Dados|Off-line|[Tutorial](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-managed-instance)|
+|SQL Server|Instância gerenciada do Banco de Dados SQL do Azure|Serviço de Migração do Banco de Dados|Offline|[Tutorial](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-managed-instance)|
 |SQL Server|Instância gerenciada do Banco de Dados SQL do Azure|Serviço de Migração do Banco de Dados|Online|[Tutorial](https://docs.microsoft.com/azure/dms/tutorial-sql-server-managed-instance-online)|
 |SQL Server RDS|Banco de dados SQL do Azure ou instância gerenciada do banco de dados SQL|Serviço de Migração do Banco de Dados|Online|[Tutorial](https://docs.microsoft.com/azure/dms/tutorial-rds-sql-server-azure-sql-and-managed-instance-online)|
 |MySQL|Banco de Dados do Azure para MySQL|Serviço de Migração do Banco de Dados|Online|[Tutorial](https://docs.microsoft.com/azure/dms/tutorial-mysql-azure-mysql-online)|
 |PostgreSQL|Banco de Dados do Azure para PostgreSQL|Serviço de Migração do Banco de Dados|Online|[Tutorial](https://docs.microsoft.com/azure/dms/tutorial-postgresql-azure-postgresql-online)|
-|MongoDB|API do Mongo Azure Cosmos DB|Serviço de Migração do Banco de Dados|Off-line|[Tutorial](https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db)|
+|MongoDB|API do Mongo Azure Cosmos DB|Serviço de Migração do Banco de Dados|Offline|[Tutorial](https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db)|
 |MongoDB|API do Mongo Azure Cosmos DB|Serviço de Migração do Banco de Dados|Online|[Tutorial](https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db-online)|
 |Oracle|Opções de PaaS (plataforma como serviço) e IaaS diferentes|A ferramenta de um parceiro ou migrações para Azure|Offline ou online|[Árvore de decisão](../../migrate/expanded-scope/data-oracle-migration.md)|
 |Opções de banco de tinta NoSQL diferentes|Opções de Cosmo DB ou IaaS|Migrações de procedimento ou migração do Azure|Offline ou online|[Árvore de decisão](../../migrate/expanded-scope/data-no-sql-migration.md)|

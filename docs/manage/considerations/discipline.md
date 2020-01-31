@@ -1,6 +1,5 @@
 ---
 title: Nivelamento de gerenciamento entre disciplinas de gerenciamento de nuvem
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Este artigo discute o nivelamento de gerenciamento entre as disciplinas de gerenciamento de nuvem.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 2e3aa2b27c503039d39bf3cc4a90b528f45d513e
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: d6bd93d65c7db0972a6b2a0b55c8ee9bef1417f3
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565176"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807811"
 ---
 # <a name="management-leveling-across-cloud-management-disciplines"></a>Nivelamento de gerenciamento entre disciplinas de gerenciamento de nuvem
 
@@ -50,7 +49,7 @@ Na maioria dos casos, o *nível de linha de base de gerenciamento* discutido ant
 
 O nível de especialização da plataforma de gerenciamento Obtém os processos e as ferramentas que estão alinhados com as disciplinas de operações da plataforma. Da mesma forma, o nível de especialização da carga de trabalho de gerenciamento Obtém os processos e as ferramentas alinhados com as disciplinas de operações de carga de trabalho.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 A próxima etapa para definir cada nível de gerenciamento de nuvem é compreender o [inventário e a visibilidade](./inventory.md).
 

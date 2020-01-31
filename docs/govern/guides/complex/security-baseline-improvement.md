@@ -1,6 +1,5 @@
 ---
 title: 'Guia de governança para empresas complexas: melhorar a disciplina de linha de base de segurança'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Guia de governança para empresas complexas: melhorar a disciplina de linha de base de segurança'
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a8cf7c6bb09d2f4c505e3edcb97a0354a870a730
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 41fba8029eabb570a40d5692374f1cb7e7d7c9b5
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753199"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806230"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>Guia de governança para empresas complexas: melhorar a disciplina de linha de base de segurança
 
@@ -40,7 +39,7 @@ Desde então, ocorreram algumas mudanças que afetarão a governança:
 
 - Milhares de ativos de negócios e de TI foram implantados na nuvem.
 - A equipe de desenvolvimento de aplicativos implementou um pipeline de CI/CD (integração contínua e implantação contínua) para implantar um aplicativo nativo de nuvem com uma experiência de usuário aprimorada. Esse aplicativo ainda não interage com dados protegidos, portanto, não está pronto para produção.
-- A equipe de Business Intelligence dentro da TI organiza ativamente os dados na nuvem a partir de dados de logística, inventário e de terceiros. Esses dados estão sendo usados para gerar novas previsões, o que poderia moldar os processos de negócios. No entanto, essas previsões e informações não são acionáveis até que os dados financeiros e do cliente possam ser integrados à plataforma de dados.
+- A equipe de Business Intelligence dentro da TI organiza ativamente os dados na nuvem a partir de dados de logística, inventário e de terceiros. Esses dados estão sendo usados para gerar novas previsões, o que poderia moldar os processos de negócios. No entanto, essas previsões e insights não são acionáveis até que os dados financeiros e do cliente possam ser integrados à plataforma de dados.
 - A equipe de TI está em andamento nos planos do CIO e CFO para desativar dois datacenters. Quase 3.500 dos ativos nos dois datacenters foram desativados ou migrados.
 - As políticas relativas a dados confidenciais pessoais e financeiros foram modernizadas. No entanto, as novas políticas corporativas dependem da implementação das políticas de segurança e governança relacionadas. As equipes ainda estão trabalhando nisso.
 
@@ -98,7 +97,7 @@ As alterações a seguir na política ajudarão a corrigir os novos riscos e a i
 
 ## <a name="incremental-improvement-of-the-best-practices"></a>Melhoria incremental das práticas recomendadas
 
-Esta seção modifica o design do MVP de governança para incluir novas políticas do Azure e uma implementação do gerenciamento de custos do Azure. Juntas, essas duas alterações de design atenderão às novas instruções da política corporativa.
+Esta seção modifica o design do MVP de governança para incluir novas políticas do Azure e uma implementação do gerenciamento de custos do Azure. Em conjunto, essas duas alterações de design atenderão às novas declarações da política corporativa.
 
 As novas práticas recomendadas se enquadram em duas categorias: ti corporativa (Hub) e adoção de nuvem (spoke).
 

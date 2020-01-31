@@ -1,6 +1,5 @@
 ---
 title: Avalie as cargas de trabalho locais para migração para o Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Saiba como a Contoso avalia os computadores locais para migração para o Azure, usando o Assistente de Migração de Dados e Migrações para Azure.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 3fe54994ac99a86bcb0a6c84c37b7b8612a129fa
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 051e52bee9b83160860234f953b19439b64eed97
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566483"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807471"
 ---
 # <a name="assess-on-premises-workloads-for-migration-to-azure"></a>Avalie as cargas de trabalho locais para migração para o Azure
 
@@ -71,7 +70,7 @@ A equipe de nuvem da Contoso identificou metas para as avaliações de migraçã
 
 A Contoso usa ferramentas da Microsoft para a avaliação de migração. As ferramentas são alinhadas com os objetivos da empresa e deverão fornecer à Contoso todas as informações necessárias.
 
-Tecnologia | Descrição | Custo
+Tecnologia | Description | Custo
 --- | --- | ---
 [Assistente de migração de dados](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | A Contoso usa o Assistente de Migração de Dados para avaliar e detectar problemas de compatibilidade que possam afetar a funcionalidade de banco de dados no Azure. O Assistente de Migração de Dados avalia a paridade de recursos entre origens e destinos de SQL. O assistente recomenda melhorias de desempenho e confiabilidade. | O Assistente de Migração de Dados é uma ferramenta gratuita que pode ser baixada.
 [Migrações para Azure](https://docs.microsoft.com/azure/migrate/migrate-overview) | A Contoso usa o serviço de Migrações para Azure para avaliar as VMs do VMware. As Migrações para Azure avaliam a adequação de migração das máquinas. Também fornecem estimativas de custos e dimensionamento para execução no Azure. | A partir de maio de 2018, as Migrações para Azure serão um serviço gratuito.
@@ -245,7 +244,7 @@ Configure um novo projeto das Migrações para Azure, conforme descrito a seguir
     - A geografia do projeto é usada apenas para armazenar os metadados coletados das VMs locais.
     - Você pode selecionar qualquer região de destino ao executar uma migração.
 
-7. Clique em \\**Próximo**.
+7. Clique em **Próximo**.
 
 8. Em **selecionar ferramenta de avaliação**, selecione **migrações para Azure: avaliação do servidor** > **Avançar**.
 
@@ -267,7 +266,7 @@ Configure um novo projeto das Migrações para Azure, conforme descrito a seguir
 
      ![Migrações para Azure – Download do coletor](./media/contoso-migration-assessment/download-ovav2.png)
 
-### <a name="verify-the-collector-appliance"></a>Verifique o dispositivo coletor
+### <a name="verify-the-collector-appliance"></a>Verificar o dispositivo coletor
 
 Antes de implantar a VM, a Contoso verifica se o arquivo OVA é seguro:
 
@@ -295,7 +294,7 @@ Agora, a Contoso pode importar o arquivo baixado para a instância do vCenter Se
 5. Em **Mapeamento de Rede**, a Contoso especifica a rede na qual conectar a VM do coletor. A rede precisa de conectividade com a Internet para poder enviar metadados para o Azure.
 6. A Contoso analisa as configurações e, em seguida, seleciona **Ligar após implantação** > **Concluir**. Uma mensagem que confirma a conclusão com êxito aparece quando o dispositivo é criado.
 
-### <a name="run-the-collector-to-discover-vms"></a>Execute o coletor para descobrir as VMs
+### <a name="run-the-collector-to-discover-vms"></a>Executar o coletor para descobrir VMs
 
 Agora, a Contoso executa o coletor para descobrir VMs. Atualmente, o coletor dá suporte apenas em **Inglês (Estados Unidos)** como o idioma do sistema operacional e idioma da interface do coletor.
 

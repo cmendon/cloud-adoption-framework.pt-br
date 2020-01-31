@@ -1,6 +1,5 @@
 ---
 title: 'Guia de governança para empresas complexas: melhorar a disciplina de linha de base de identidade'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Guia de governança para empresas complexas: melhorar a disciplina de linha de base de identidade'
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 8c64507c03a99ef771f7885dc8fbde960c570e4d
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 7f975f948bc078a80ead4207d755ff67cd5e4f2f
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566323"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806281"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-identity-baseline-discipline"></a>Guia de governança para empresas complexas: melhorar a disciplina de linha de base de identidade
 
@@ -92,7 +91,7 @@ Aqui estão as novas práticas recomendadas:
 
 A adição dessas alterações ao MVP de governança ajuda a corrigir muitos dos riscos neste artigo, permitindo que cada equipe de adoção da nuvem se movimente rapidamente após esse obstáculo.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 À medida que a adoção de nuvem continua e entrega o valor comercial adicional, os riscos e as necessidades de governança de nuvem também serão alterados. Veja a seguir algumas alterações que podem ocorrer. Para essa empresa fictícia, o próximo gatilho é a inclusão de dados protegidos no plano de adoção de nuvem. Essa alteração requer controles de segurança adicionais.
 

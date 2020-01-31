@@ -1,6 +1,5 @@
 ---
 title: 'Inovação na nuvem: envolver aplicativos'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Introdução à inovação na nuvem – envolva-se por meio de aplicativos.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 337eac12b3c01136f611d6a53693de4d29663f46
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 77921ce7c683ff5bfc32c711719ae58ae049f039
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752072"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808559"
 ---
 # <a name="engage-through-applications"></a>Envolver aplicativos
 
@@ -36,7 +35,7 @@ Para estar pronto para a inovação, todo o desenvolvimento de aplicativos deve 
 
 Os desenvolvedores profissionais são um componente vital da inovação. Quando uma hipótese comprova precisamente em escala, os desenvolvedores profissionais precisam estabilizar e preparar a solução para escala. A maioria dos princípios mencionados neste artigo exige suporte de desenvolvedores profissionais. Infelizmente, as tendências atuais sugerem que há uma demanda maior para desenvolvedores profissionais do que para desenvolvedores. Além disso, o custo e o ritmo da inovação podem ser menos favoráveis quando o desenvolvimento profissional é considerado necessário. Em resposta a esses desafios, os desenvolvedores do cidadão fornecem uma maneira de dimensionar os esforços de desenvolvimento e acelerar o teste de hipótese inicial.
 
-O uso de desenvolvedores do cidadão pode ser viável e eficaz quando as primeiras expressões podem ser validadas por meio de ferramentas como o [PowerApps](https://docs.microsoft.com/powerapps/powerapps-overview) para interfaces de aplicativo, o [Construtor de ia](https://docs.microsoft.com/powerapps/use-ai-builder) para processos e previsões, [Microsoft Flow](https://docs.microsoft.com/flow) para fluxos de trabalho e [energia BI](https://docs.microsoft.com/power-bi) para consumo de dados.
+O uso de desenvolvedores do cidadão pode ser viável e eficaz quando as primeiras expressões podem ser validadas por meio de ferramentas como o [PowerApps](https://docs.microsoft.com/powerapps/powerapps-overview) para interfaces de aplicativo, o [Construtor de ia](https://docs.microsoft.com/powerapps/use-ai-builder) para processos e previsões, [Microsoft Flow](https://docs.microsoft.com/flow) para fluxos de trabalho e [Power bi](https://docs.microsoft.com/power-bi) para consumo de dados.
 
 > [!NOTE]
 > Quando você depende de desenvolvedores do cidadão para testar as mesmas, é aconselhável ter alguns desenvolvedores profissionais disponíveis para fornecer suporte, revisão e orientação. Depois que uma hipótese é validada em escala, um processo para fazer a transição do aplicativo para um modelo de programação mais robusto acelerará os retornos na inovação. Ao envolver desenvolvedores profissionais em definições de processos no início, você pode perceber transições mais claras posteriormente.

@@ -1,6 +1,5 @@
 ---
 title: Guia de decisão de marcação e nomenclatura de recurso
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Saiba mais sobre a organização de recursos e a marcação como um serviço principal em migrações do Azure.
 author: alexbuckgit
 ms.author: abuck
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: c62e087372d21a3883c90425b31e1c5ff9bfd2fb
-ms.sourcegitcommit: 390b374dc7af4c4b85ef9fcb381c7c1bc6076ac7
+ms.openlocfilehash: 4a4b283fa447b296d429f037f12bbf3b2bfcf0fb
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75868016"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806672"
 ---
 # <a name="resource-naming-and-tagging-decision-guide"></a>Guia de decisão de marcação e nomenclatura de recurso
 
@@ -59,7 +58,7 @@ Os padrões comuns de marcação listados a seguir dão exemplos de como a marca
 
 <!-- markdownlint-disable MD033 -->
 
-| Tipo de marca | Exemplos | DESCRIÇÃO |
+| Tipo de marca | Exemplos | Descrição |
 |-----|-----|-----|
 | Funcional            | app = catalogsearch1 <br/>camada = web <br/>webserver = apache<br/>env = prod <br/>env = preparo <br/>env = dev                 | Categorize os recursos em relação à sua finalidade dentro de uma carga de trabalho, em qual ambiente foram implantados ou outra funcionalidade e detalhes operacionais.                                 |
 | classificação        | confidentiality=private<br/>SLA = 24 horas                                 | Classifica um recurso, como são usados e quais políticas se aplicam a ele                               |

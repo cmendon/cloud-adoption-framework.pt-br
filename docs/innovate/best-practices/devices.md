@@ -1,6 +1,5 @@
 ---
 title: 'Inovação em nuvem: ferramentas para interagir com dispositivos no Azure'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Ferramentas para interagir com dispositivos no Azure
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: c649ef695e74dce0ae2ec21e1e0d666abc2a65e9
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 83aa06b897c510b90993d77a119063c3fe5f1af1
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565819"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808644"
 ---
 # <a name="tools-to-interact-with-devices-in-azure"></a>Ferramentas para interagir com dispositivos no Azure
 
@@ -39,7 +38,7 @@ No Azure, você geralmente usa as ferramentas a seguir para acelerar a invençã
 - Realidade integrada: Hub IoT do Azure, Azure Sphere, Azure Kinect DK
 - Realidade ajustada: nuvem IoT para dispositivo, Azure digital gêmeos + HoloLens
 
-## <a name="get-started"></a>Introdução
+## <a name="get-started"></a>Comece agora
 
 O Sumário no lado esquerdo desta página descreve muitos artigos do. Esses artigos ajudam você a começar a usar cada uma das ferramentas neste ferramentas.
 

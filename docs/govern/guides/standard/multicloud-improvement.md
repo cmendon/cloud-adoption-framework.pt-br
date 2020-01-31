@@ -1,6 +1,5 @@
 ---
 title: 'Guia de governança empresarial padrão: aprimoramento de multinuvem'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Guia de governança empresarial padrão: aprimoramento de multinuvem'
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 29f45afcb10b7d12df8392a8dd9d0d577414e59b
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 3952111d8e4c9bdc8c1920d72e763a56427bb397
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753074"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806145"
 ---
 # <a name="standard-enterprise-governance-guide-multicloud-improvement"></a>Guia de governança empresarial padrão: aprimoramento de multinuvem
 
@@ -32,11 +31,11 @@ Na fase anterior dessa narrativa, a empresa começou a enviar ativamente os apli
 
 Desde então, ocorreram algumas mudanças que afetarão a governança:
 
-- A identidade é controlada por uma instância local do Active Directory Domain Services. A identidade híbrida é facilitada por meio da replicação para o Azure Active Directory.
-- Operações de TI ou operações na nuvem em grande parte são gerenciadas pelo Azure Monitor e relacionados automações.
+- A identidade é controlada por uma instância local do Active Directory. A identidade híbrida é facilitada por meio da replicação para o Azure Active Directory.
+- As Operações de TI ou Operações de Nuvem são amplamente gerenciadas pelo Azure Monitor e por automações relacionadas.
 - A recuperação de desastres e a continuidade dos negócios são controladas pelas instâncias do Azure Vault.
 - A Central de Segurança do Azure é utilizada para monitorar violações de segurança e ataques.
-- A Central de Segurança do Azure e o Azure Monitor são usados para monitorar a governança de nuvem.
+- A Central de Segurança do Azure e o Azure Monitor são utilizados para monitorar a governança da nuvem.
 - O Azure Blueprints, Azure Policy e os grupos de gerenciamento do Azure são usados para automatizar a conformidade com a política.
 
 ### <a name="incrementally-improve-the-future-state"></a>Melhorar incrementalmente o estado futuro
@@ -64,8 +63,8 @@ As seguintes alterações na política ajudarão a corrigir os novos riscos e a 
 
 Esta seção do artigo alterará o design MVP de governança para incluir novas políticas do Azure e uma implementação do gerenciamento de custos do Azure. Juntas, essas alterações de design atenderão às novas instruções de política corporativa.
 
-1. Conectar as redes. Esta etapa é executada pelas equipes de segurança de rede e de ti e com suporte da equipe de governança de nuvem. Adicionar uma conexão do provedor de MPLS/baseado em linha à nova nuvem irá integrar as redes. Adicionar tabelas de roteamento e configurações de firewall irá controlar o acesso e o tráfego entre os ambientes.
-2. Consolidar provedores de identidade. Dependendo das cargas de trabalho que estão sendo hospedadas na nuvem secundária, há uma variedade de opções para a consolidação do provedor de identidade. Seguem alguns exemplos:
+1. Conectar as redes. Esta etapa é executada pelas equipes de segurança de rede e de ti e com suporte da equipe de governança de nuvem. Adicionar uma conexão do provedor de MPLS/baseado em linha à nova nuvem irá integrar as redes. Adicionar tabelas de roteamento e configurações de firewall controlará o acesso e o tráfego entre os ambientes.
+2. Consolidar provedores de identidade. Dependendo das cargas de trabalho que estão sendo hospedadas na nuvem secundária, haverá diversas opções para a consolidação do provedor de identidade. A seguir, estão alguns exemplos:
     1. Para aplicativos que se autenticam usando o OAuth 2, os usuários do Active Directory na nuvem secundária simplesmente podem ser replicados para o locatário existente do Active Directory Domain Services. Isso garante que todos os usuários podem ser autenticados no locatário.
     2. Por outro lado, a federação permite UOs fluam para o Active Directory local, em seguida, para a instância do Active Directory Domain Services.
 3. Adicionar ativos ao Azure Site Recovery.
@@ -78,7 +77,7 @@ Esta seção do artigo alterará o design MVP de governança para incluir novas 
     1. O Azure Monitor foi projetado como uma ferramenta de nuvem híbrida desde o início.
     2. Máquinas virtuais na nuvem secundária podem ser compatíveis com os agentes do Azure Monitor, permitindo que sejam incluídos no Azure Monitor para monitoramento operacional.
 6. Adote as ferramentas de imposição de governança.
-    1. A imposição de governança é específico da nuvem.
+    1. A imposição de governança é específica da nuvem.
     2. As políticas corporativas estabelecidas no guia de governança não são específicas da nuvem. Embora a implementação possa variar da nuvem para nuvem, as políticas podem ser aplicadas ao provedor secundário.
 
 A adoção de multinuvem deve estar contida em onde é necessário com base em necessidades técnicas ou em requisitos de negócios específicos. À medida que a adoção de nuvem cresce, isso aumenta a complexidade e os riscos de segurança.

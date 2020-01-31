@@ -1,6 +1,5 @@
 ---
 title: Operações de plataforma – gerenciamento de nuvem e operações
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Operações de plataforma – gerenciamento de nuvem e operações
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 6a2cf644a7c046dfb62f6049c2eae6b283e6552b
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 15531346d453bca72c74c09d9bc95eef8d4c9ac3
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565067"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807726"
 ---
 # <a name="platform-operations-in-cloud-management"></a>Operações de plataforma no gerenciamento de nuvem
 
@@ -78,7 +77,7 @@ Quando a modernização não é uma opção, as equipes de gerenciamento de nuve
 
 Além das plataformas de dados, os hosts de máquina virtual tendem a ser uma plataforma comum para aprimoramentos de operações. Geralmente, as equipes de gerenciamento de nuvem e de plataforma de nuvem investem em melhorias em hosts VMware ou soluções de contêiner. Esses investimentos podem melhorar a estabilidade e a confiabilidade dos hosts, que dão suporte às VMs, que, por sua vez, alimentam as cargas de trabalho. As operações adequadas em um host ou contêiner podem melhorar o RPO ou o RTO de várias cargas de trabalho. Essa abordagem cria compromissos de negócios aprimorados, mas distribui o investimento. Compromissos aprimorados e custos reduzidos são combinados para tornar muito mais fácil justificar melhorias nas operações de gerenciamento de nuvem e plataforma.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Em paralelo com melhorias nas operações de plataforma, as equipes de gerenciamento de nuvem também se concentram em melhorar [as operações de carga de trabalho](./workload.md) para os 20% maiores ou menos de cargas de trabalho de produção.
 

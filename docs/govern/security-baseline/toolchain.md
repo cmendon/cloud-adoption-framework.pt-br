@@ -1,6 +1,5 @@
 ---
 title: Ferramentas de Linha de Base de Segurança no Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Explicação das ferramentas que podem facilitar a melhoria da linha de base de segurança no Azure.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,20 +8,20 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7f4062c08ef1c9fec72e515453e8acc8cedfc513
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 122e0774912fdc65cd9c8daff0bd48b679634868
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565905"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808797"
 ---
 # <a name="security-baseline-tools-in-azure"></a>Ferramentas de Linha de Base de Segurança no Azure
 
-A [Linha de Base de Segurança](./index.md) é uma das [Cinco Disciplinas de Governança de Nuvem](../governance-disciplines.md). Essa disciplina se concentra em maneiras de estabelecer políticas que protegem a rede, os ativos e, mais importante, os dados que residirão em uma solução de provedor de nuvem. Dentro das cinco disciplinas de governança de nuvem, a disciplina de linha de base de segurança envolve a classificação do espaço digital e dos dados. Ele também envolve documentação de riscos, tolerância de negócios e estratégias de mitigação associados à segurança de dados, ativos e redes. Do ponto de vista técnico, essa disciplina também inclui o envolvimento em decisões relacionadas à [criptografia](../../decision-guides/encryption/index.md), [aos requisitos de rede, às](../../decision-guides/software-defined-network/index.md)estratégias de [identidade híbrida](../../decision-guides/identity/index.md)e às ferramentas para [automatizar a imposição](../../decision-guides/policy-enforcement/index.md) de políticas de segurança entre [grupos de recursos](../../decision-guides/resource-consistency/index.md).
+A [Linha de Base de Segurança](./index.md) é uma das [Cinco Disciplinas de Governança de Nuvem](../governance-disciplines.md). Essa disciplina se concentra em maneiras de estabelecer políticas que protegem a rede, os ativos e, mais importante, os dados que residirão em uma solução de provedor de nuvem. Dentro das cinco disciplinas de governança de nuvem, a disciplina de linha de base de segurança envolve a classificação do espaço digital e dos dados. Ele também envolve documentação de riscos, tolerância de negócios e estratégias de mitigação associados à segurança de dados, ativos e redes. Do ponto de vista técnico, essa disciplina também inclui o envolvimento em decisões relacionadas à [criptografia](../../decision-guides/encryption/index.md), [aos requisitos de rede, às](../../decision-guides/software-defined-network/index.md)estratégias de [identidade híbrida](../../decision-guides/identity/index.md)e às ferramentas para [automatizar a imposição](../../decision-guides/policy-enforcement/index.md) de políticas de segurança em [grupos de recursos](../../decision-guides/resource-consistency/index.md).
 
 A lista a seguir das ferramentas do Azure pode ajudar a amadurecer as políticas e os processos que dão suporte à linha de base de segurança.
 
-| Ferramenta | [Portal do Azure](https://azure.microsoft.com/features/azure-portal) e [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview)  | [Cofre de Chaves do Azure](https://docs.microsoft.com/azure/key-vault)  | [Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) | [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) | [Central de Segurança do Azure](https://docs.microsoft.com/azure/security-center/security-center-intro) | [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) |
+| Ferramenta | [Portal do Azure](https://azure.microsoft.com/features/azure-portal) e [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview)  | [Cofre da Chave do Azure](https://docs.microsoft.com/azure/key-vault)  | [Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) | [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) | [Central de Segurança do Azure](https://docs.microsoft.com/azure/security-center/security-center-intro) | [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) |
 |------------------------------------------------------------|---------------------------------|-----------------|----------|--------------|-----------------------|---------------|
 | Aplicar controles de acesso a recursos e criação de recursos   | Sim                             | Não              | Sim      | Não           | Não                    | Não            |
 | Redes virtuais seguras                                    | Sim                             | Não              | Não       | Sim          | Não                    | Não            |

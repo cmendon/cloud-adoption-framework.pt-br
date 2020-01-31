@@ -1,6 +1,5 @@
 ---
 title: Motivações e riscos de negócios que direcionam a aceleração da implantação
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Saiba mais sobre a disciplina de Aceleração de implantação como parte de uma estratégia de governança de nuvem.
 author: alexbuckgit
 ms.author: abuck
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: d827b4de1c938180579303e60c6808d65fcd14a8
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: c9bdb912311aac6c926402753a678b9f191594c9
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220727"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806383"
 ---
 # <a name="deployment-acceleration-motivations-and-business-risks"></a>Motivações de aceleração de implantação e os riscos de negócios
 
@@ -36,11 +35,11 @@ Um plano de aceleração de implantação robusto garante que seus recursos de n
 
 A disciplina de Aceleração de implantação tenta abordar os seguintes riscos de negócios. Durante a adoção da nuvem, monitore cada uma das seguintes opções de relevância:
 
-- **Interrupção do serviço:** Falta de processos de implantação repetíveis previsíveis ou mudanças inalteradas para configurações do sistema podem interromper as operações normais e podem resultar em perda de produtividade ou perda de negócios.
-- **Sobreexecuções de custo:** Alterações inesperadas na configuração de recursos do sistema podem tornar mais difícil a identificação da causa raiz, elevar os custo de desenvolvimento, operações e manutenção.
-- **Ineficiências organizacionais:** Barreiras entre o desenvolvimento, operações e as equipes de segurança podem causar vários desafios para a adoção efetiva das tecnologias de nuvem e o desenvolvimento de um modelo de governança de nuvem unificada.
+- **Interrupção do serviço:** A falta de processos de implantação reproduzíveis previsíveis ou alterações não gerenciadas nas configurações do sistema podem interromper as operações normais e pode resultar em perda de produtividade ou perda de negócios.
+- **Sobreexecuções de custo:** Alterações inesperadas na configuração de recursos do sistema podem dificultar a identificação da causa raiz dos problemas, aumentando os custos de desenvolvimento, operações e manutenção.
+- **Ineficiências organizacionais:** As barreiras entre desenvolvimento, operações e equipes de segurança podem causar inúmeros desafios para a adoção efetiva de tecnologias de nuvem e o desenvolvimento de um modelo de governança de nuvem unificado.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
 Usando o [modelo de gerenciamento de nuvem](./template.md), documente os riscos de negócios que provavelmente serão introduzidos pelo plano de adoção de nuvem atual.
 

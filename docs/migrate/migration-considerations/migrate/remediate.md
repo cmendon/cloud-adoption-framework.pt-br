@@ -1,6 +1,5 @@
 ---
 title: Corrigir ativos antes da migração
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Corrigir ativos incompatíveis antes da migração
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 5fede95558e32b4cbc07be3ef60635e8c13eda97
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 23045cf48dd26400bbad07bbde927e29c3189f8d
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058861"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76802099"
 ---
 # <a name="remediate-assets-prior-to-migration"></a>Corrigir ativos antes da migração
 
@@ -21,7 +20,7 @@ Durante o processo de avaliação da migração, a equipe busca identificar as c
 
 ## <a name="common-remediation-tasks"></a>Tarefas de correção comuns
 
-Em qualquer ambiente corporativo, a dívida técnica existe. Algumas são saudáveis e esperadas. As decisões de arquitetura que foram bem adequadas para um ambiente local podem não ser totalmente adequadas para uma plataforma de nuvem. Em ambos os casos, as tarefas de correção comuns podem ser necessárias para preparar os ativos para a migração. Seguem alguns exemplos:
+Em qualquer ambiente corporativo, a dívida técnica existe. Algumas são saudáveis e esperadas. As decisões de arquitetura que foram bem adequadas para um ambiente local podem não ser totalmente adequadas para uma plataforma de nuvem. Em ambos os casos, as tarefas de correção comuns podem ser necessárias para preparar os ativos para a migração. A seguir, estão alguns exemplos:
 
 - **Atualizações secundárias do host.** Às vezes é necessário atualizar um host antigo antes da replicação.
 - **Atualizações secundárias do sistema operacional convidado.** É bem provável que um sistema operacional precise da aplicação de um patch ou atualização antes da replicação.

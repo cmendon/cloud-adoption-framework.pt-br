@@ -1,6 +1,5 @@
 ---
 title: Declarações da política de amostra de Consistência de Recursos
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Declarações da política de amostra de Consistência de Recursos
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,28 +8,28 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f2e15ad1640bec4e289c49a1f9dcf83de7c04ec3
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 5e997dee318d0d6799167de4f4c61a93c814c548
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221973"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807250"
 ---
 # <a name="resource-consistency-sample-policy-statements"></a>Declarações da política de amostra de Consistência de Recursos
 
-Declarações da política de nuvem individuais são diretrizes para tratar de riscos específicos identificados durante o processo de avaliação de riscos. Essas instruções oferecem um resumo conciso dos riscos e planos com os quais lidar. Cada definição de instrução deve incluir essas informações:
+As instruções individuais da política de nuvem são diretrizes para abordar os riscos específicos identificados durante o processo de avaliação de riscos. Essas instruções oferecem um resumo conciso dos riscos e planos com os quais lidar. Cada definição de instrução deve incluir essas informações:
 
-- **Risco técnico:** Um resumo do risco que esta política abordará.
-- **Instrução da política:** Uma clara explicação de resumo dos requisitos de política.
-- **Opções de design:** Recomendações viáveis, especificações ou outras diretrizes que as equipes de TI e desenvolvedores possam usar ao implementar a política.
+- **Risco técnico:** Um resumo do risco que essa política abordará.
+- **Declaração de política:** Uma explicação resumida clara dos requisitos de política.
+- **Opções de design:** Recomendações, especificações ou outras diretrizes acionáveis que as equipes de ti e os desenvolvedores podem usar ao implementar a política.
 
 As instruções de política de exemplo a seguir abordam os riscos comerciais comuns relacionados à consistência de recursos. Essas instruções são exemplos que você pode referenciar ao rascunhar instruções de política para atender às necessidades da sua organização. Esses exemplos não devem ser proexistentes e há potencialmente várias opções de política para lidar com cada risco identificado. Trabalhe junto com as equipes de ti e de negócios para identificar as melhores políticas para seu conjunto exclusivo de riscos.
 
 ## <a name="tagging"></a>Marcação
 
-**Risco técnico:** Sem a marcação de metadados adequada associada aos recursos implantados, as operações de TI não podem priorizar o suporte ou a otimização de recursos com base no SLA exigido, a importância das operações de negócios ou o custo operacional. Isso pode resultar em alocação incorreta de recursos de TI e possíveis atrasos na resolução de incidentes.
+**Risco técnico:** Sem a marcação de metadados adequada associada a recursos implantados, as operações de ti não podem priorizar o suporte ou a otimização de recursos com base no SLA necessário, na importância das operações de negócios ou no custo operacional. Isso pode resultar em alocação incorreta de recursos de TI e possíveis atrasos na resolução de incidentes.
 
-**Instrução da política:** As políticas a seguir serão implementadas:
+**Declaração de política:** As seguintes políticas serão implementadas:
 
 - Os ativos implantados devem ser marcados com os seguintes valores:
   - Custo
@@ -39,57 +38,57 @@ As instruções de política de exemplo a seguir abordam os riscos comerciais co
   - Ambiente
 - O conjunto de ferramentas de governança deve validar a marcação relacionada ao custo, criticidade, SLA, aplicativo e ambiente. Todos os valores devem ser alinhados a valores predefinidos gerenciados pela equipe de governança.
 
-**Possíveis opções de design:** No Azure, as [marcas de metadados de nome-valor padrão](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags) são compatíveis com a maioria dos tipos de recursos. O [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) é usado para impor marcas específicas como parte da criação de recursos.
+**Possíveis opções de design:** No Azure, as [marcas de metadados de valor de nome padrão](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags) têm suporte na maioria dos tipos de recursos. O [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) é usado para impor marcas específicas como parte da criação de recursos.
 
 ## <a name="ungoverned-subscriptions"></a>Assinaturas sem governança
 
-**Risco técnico:** A criação arbitrária de assinaturas e grupos de gerenciamento poderá resultar em seções isoladas da propriedade de nuvem que não estejam devidamente sujeitas às políticas de governança.
+**Risco técnico:** A criação arbitrária de assinaturas e grupos de gerenciamento pode levar a seções isoladas do seu estado de nuvem que não estão sujeitos corretamente às suas políticas de governança.
 
-**Instrução da política:** A criação de novas assinaturas ou grupos de gerenciamento para qualquer aplicativo de missão crítica ou dados protegidos exigirá uma análise da equipe de governança de nuvem. As alterações aprovadas serão integradas em uma atribuição de blueprint adequada.
+**Declaração de política:** A criação de novas assinaturas ou grupos de gerenciamento para qualquer aplicativo de missão crítica ou dados protegidos exigirá uma análise da equipe de governança de nuvem. As alterações aprovadas serão integradas em uma atribuição de blueprint adequada.
 
-**Possíveis opções de design:** Restrinja o acesso administrativo aos [Grupos de gerenciamento do Azure](https://docs.microsoft.com/azure/governance/management-groups) da sua organização apenas para os membros da equipe de governança aprovados que controlarão o processo de criação de assinatura e controle de acesso.
+**Possíveis opções de design:** Bloqueie o acesso administrativo aos grupos de [Gerenciamento do Azure](https://docs.microsoft.com/azure/governance/management-groups) de suas organizações para apenas os membros da equipe de governança aprovados que controlarão a criação da assinatura e o processo de controle de acesso.
 
 ## <a name="manage-updates-to-virtual-machines"></a>Gerenciar atualizações para máquinas virtuais
 
-**Risco técnico:** VMs (máquinas virtuais) que não estejam atualizadas com as atualizações e correções de software mais recentes ficarão vulneráveis a problemas de segurança ou desempenho, o que poderá resultar em interrupções de serviço.
+**Risco técnico:** As máquinas virtuais (VMs) que não estão atualizadas com as atualizações e os patches de software mais recentes estão vulneráveis a problemas de segurança ou desempenho, o que pode resultar em interrupções de serviço.
 
-**Instrução da política:** O conjunto de ferramentas de governança deve garantir que as atualizações automáticas estejam habilitadas em todas as VMs implantadas. As violações devem ser analisadas com as equipes de gerenciamento operacional e corrigidas de acordo com as políticas de operações. Ativos que não são atualizados automaticamente devem ser incluídos nos processos pertencentes às Operações de TI.
+**Declaração de política:** As ferramentas de governança devem impor que as atualizações automáticas estejam habilitadas em todas as VMs implantadas. As violações devem ser examinadas com as equipes de gerenciamento operacional e corrigidas de acordo com as políticas de operações. Ativos que não são atualizados automaticamente devem ser incluídos nos processos pertencentes às Operações de TI.
 
-**Possíveis opções de design:** Para VMs hospedadas no Azure, é possível fornecer gerenciamento de atualização consistente usando a [solução de Gerenciamento de Atualizações na Automação do Azure](https://docs.microsoft.com/azure/automation/automation-update-management).
+**Possíveis opções de design:** Para VMs hospedadas no Azure, você pode fornecer gerenciamento de atualizações consistente usando a [solução gerenciamento de atualizações na automação do Azure](https://docs.microsoft.com/azure/automation/automation-update-management).
 
 ## <a name="deployment-compliance"></a>Conformidade de implantação
 
 **Risco técnico:** Scripts de implantação e ferramentas de automação que não são totalmente verificadosdos pela equipe de governança de nuvem podem resultar em implantações de recursos que violam a política.
 
-**Instrução da política:** As políticas a seguir serão implementadas:
+**Declaração de política:** As seguintes políticas serão implementadas:
 
 - As ferramentas de implantação devem ser aprovadas pela equipe de governança de nuvem para garantir a governança contínua de ativos implantados.
 - Os scripts de implantação devem ser mantidos no repositório central acessível pela equipe de governança de nuvem para revisão e auditoria periódicas.
 
-**Possíveis opções de design:** O uso consistente do [Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints) para gerenciar implantações automatizadas permite implantações consistentes de recursos do Azure que aderem aos padrões e políticas de governança da sua organização.
+**Possíveis opções de design:** O uso consistente de [plantas do Azure](https://docs.microsoft.com/azure/governance/blueprints) para gerenciar implantações automatizadas permite implantações consistentes de recursos do Azure que aderem aos padrões e às políticas de governança de sua organização.
 
-## <a name="monitoring"></a>Monitorando
+## <a name="monitoring"></a>Monitoramento
 
-**Risco técnico:** O monitoramento instrumentado de forma incorreta ou inconsistente pode impedir a detecção de problemas de integridade da carga de trabalho ou outras violações de conformidade com a política.
+**Risco técnico:** O monitoramento instrumentado incorretamente ou inconsistente pode impedir a detecção de problemas de integridade da carga de trabalho ou outras violações de conformidade de política.
 
-**Instrução da política:** As políticas a seguir serão implementadas:
+**Declaração de política:** As seguintes políticas serão implementadas:
 
 - As ferramentas de governança devem validar que todos os ativos estão incluídos no monitoramento de esgotamento de recursos, segurança, conformidade e otimização.
 - As ferramentas de governança devem validar se o nível apropriado de dados de log está sendo coletado para todos os aplicativos e dados.
 
-**Possíveis opções de design:** [Azure monitor](https://docs.microsoft.com/azure/azure-monitor/overview) é o serviço de monitoramento padrão no Azure, e o monitoramento consistente pode ser imposto por meio de [plantas do Azure](https://docs.microsoft.com/azure/governance/blueprints) ao implantar recursos.
+**Opções de design em potencial:** [Azure monitor](https://docs.microsoft.com/azure/azure-monitor/overview) é o serviço de monitoramento padrão no Azure, e o monitoramento consistente pode ser imposto por meio de [plantas do Azure](https://docs.microsoft.com/azure/governance/blueprints) ao implantar recursos.
 
-## <a name="disaster-recovery"></a>Recuperação de desastres
+## <a name="disaster-recovery"></a>Recuperação de desastre
 
-**Risco técnico:** Falhas, exclusões ou corrupção de recursos podem resultar na interrupção de serviços ou aplicativos críticos e na perda de dados confidenciais.
+**Risco técnico:** Falhas de recursos, exclusões ou danos podem resultar em interrupção de aplicativos ou serviços de missão crítica e perda de dados confidenciais.
 
-**Instrução da política:** Todos os aplicativos críticos e dados protegidos devem ter soluções de backup e recuperação implementadas para minimizar o impacto nos negócios decorrente de interrupções ou falhas do sistema.
+**Declaração de política:** Todos os aplicativos de missão crítica e dados protegidos devem ter soluções de backup e recuperação implementadas para minimizar o impacto nos negócios de interrupções ou falhas do sistema.
 
 **Possíveis opções de design:** O serviço de [Azure site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) fornece recursos de backup, recuperação e replicação que minimizam a duração da interrupção nos cenários de continuidade dos negócios e recuperação de desastres (BCDR).
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>Próximos passos
 
-Use as amostras mencionadas neste artigo como ponto de partida para desenvolver políticas que abordem os riscos empresariais específicos que alinham-se aos seus planos de adoção de nuvem.
+Use os exemplos mencionados neste artigo como um ponto de partida para desenvolver políticas que abordam os riscos de negócios específicos que se alinham aos seus planos de adoção de nuvem.
 
 Para começar a desenvolver suas próprias declarações da política personalizadas relacionadas à Consistência de Recursos, baixe o [modelo de Consistência de Recursos](./template.md).
 
