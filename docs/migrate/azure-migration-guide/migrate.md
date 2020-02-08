@@ -1,6 +1,6 @@
 ---
 title: Migrar ativos
-description: Migrar ativos
+description: Este guia ajuda a iniciar a migração do ambiente ao identificar as ferramentas corretas para alcançar um "estado finalizado", incluindo ferramentas nativas, de terceiros e de gerenciamento de projetos.
 author: matticusau
 ms.author: mlavery
 ms.date: 08/08/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 81c55ee4ac3605c04d583df21182c4d5c44f8380
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 41f52c8ddfa3ccc277569fde323161159344cb20
+ms.sourcegitcommit: 4948a5f458725e8a0c7206f08502422965a549d5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807012"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "76994185"
 ---
 # <a name="migrate-assets-infrastructure-apps-and-data"></a>Migrar ativos (infraestrutura, aplicativos e dados)
 
@@ -24,7 +24,7 @@ Nesta fase da jornada, você usa a saída da fase de avaliação para iniciar a 
 
 # <a name="native-migration-toolstabtools"></a>[Ferramentas de migração nativas](#tab/Tools)
 
-As seções a seguir descrevem as ferramentas nativas do Azure disponíveis para executar ou auxiliar na migração. Para obter informações sobre como escolher as ferramentas certas para apoiar seus esforços de migração, confira o [Guia de decisão das ferramentas de migração da Estrutura de Adoção de Nuvem](../../decision-guides/migrate-decision-guide/index.md).
+As seções a seguir descrevem as ferramentas nativas do Azure disponíveis para executar ou auxiliar na migração. Para obter informações sobre como escolher as ferramentas certas para apoiar seus esforços de migração, confira o [Guia de decisão das ferramentas de migração da Cloud Adoption Framework ](../../decision-guides/migrate-decision-guide/index.md).
 
 ## <a name="azure-migrate"></a>Migrações para Azure
 
@@ -55,7 +55,7 @@ Para executar uma migração usando as Migrações para Azure, siga essas etapas
 
 ## <a name="azure-site-recovery"></a>Azure Site Recovery
 
-O serviço do Azure Site Recovery pode gerenciar a migração de recursos locais para o Azure. Ele também pode gerenciar e orquestrar a recuperação de desastres de computadores locais e VMs do Azure para fins de continuidade dos negócios e recuperação de desastre (BCDR).
+O serviço do Azure Site Recovery pode gerenciar a migração de recursos locais para o Azure. Ele também pode gerenciar e orquestrar a recuperação de desastres de computadores locais e VMs do Azure para fins de BCDR (continuidade dos negócios e recuperação de desastres).
 
 As etapas a seguir descrevem como usar o Site Recovery para a migração:
 
@@ -77,8 +77,8 @@ As etapas a seguir descrevem como usar o Site Recovery para a migração:
 1. Configure o ambiente de origem conforme apropriado.
 1. Configure o ambiente de destino.
     1. Clique em **Preparar infraestrutura > Destino**  e selecione a assinatura do Azure que deseja usar.
-    1. Especifique o modelo de implantação do Gerenciador de Recursos.
-    1. A Recuperação de Site verifica se você tem uma ou mais contas de armazenamento e redes do Azure compatíveis.
+    1. Especifique o modelo de implantação do Resource Manager.
+    1. A Site Recovery verifica se você tem uma ou mais contas de armazenamento e redes do Azure compatíveis.
 1. Configurar uma política de replicação.
 1. Habilite a replicação.
 1. Execute uma migração de teste (failover de teste).
@@ -241,7 +241,7 @@ O Movere é uma solução de descoberta que fornece os dados e as informações 
 
 [Saiba mais](https://docs.microsoft.com/azure/cosmos-db/partners-migration-cosmosdb#migration-tools)
 
-Visite o [Centro de Migração do Azure](https://azure.microsoft.com/migration/support) para descobrir organizações que oferecem soluções de tecnologia de parceiros prontas para uso que se ajustam aos seus cenários de migração e saber mais sobre ferramentas adicionais de migração de terceiros e serviços de suporte.
+Visite o [Central de migrações do Azure](https://azure.microsoft.com/migration/support) para descobrir organizações que oferecem soluções de tecnologia de parceiros prontas para uso que se ajustam aos seus cenários de migração e saber mais sobre ferramentas adicionais de migração de terceiros e serviços de suporte.
 
 Visite o [Guia de Migração de Banco de Dados do Azure](https://datamigration.microsoft.com) para ver uma variedade de opções de migração de banco de dados e diretrizes passo a passo com os parceiros e nativos.
 

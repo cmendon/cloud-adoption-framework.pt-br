@@ -1,6 +1,6 @@
 ---
 title: Otimizar e transformar
-description: Otimizar e transformar
+description: Esta parte do Guia de Migração do Azure aborda áreas de otimização, incluindo a revisão do design da solução, o dimensionamento correto dos serviços e a análise de custos.
 author: matticusau
 ms.author: mlavery
 ms.date: 04/04/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 5d9ec518069023a8db763a9fc21f7c4847053be6
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 5173dc348ee0c9251b4c5e41aaa2b193da6ea890
+ms.sourcegitcommit: 4948a5f458725e8a0c7206f08502422965a549d5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806995"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "76994170"
 ---
 # <a name="optimize-and-transform"></a>Otimizar e transformar
 
@@ -39,7 +39,7 @@ A seguir estão alguns serviços comuns que você pode redimensionar.
 
 ## <a name="resize-a-virtual-machine"></a>Redimensionar uma máquina virtual
 
-As Migrações para Azure executam uma análise de dimensionamento correto como parte de sua fase de avaliação pré-migração, e as máquinas virtuais migradas usando essa ferramenta provavelmente já serão dimensionadas com base em seus requisitos pré-migração.
+As Migrações para Azure executam uma análise de dimensionamento correto como parte de sua fase de avaliação pré-migração. As máquinas virtuais migradas usando essa ferramenta provavelmente já serão dimensionadas com base em seus requisitos pré-migração.
 
 No entanto, para máquinas virtuais criadas ou migradas usando outros métodos ou nos casos em que os requisitos de máquina virtual após a migração precisem de ajuste, convém refinar ainda mais seu dimensionamento da máquina virtual.
 

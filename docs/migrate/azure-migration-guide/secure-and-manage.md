@@ -1,6 +1,6 @@
 ---
 title: Proteger e gerenciar
-description: Proteger e gerenciar
+description: Saiba mais sobre métodos de segurança e gerenciamento que podem ser usados para gerenciar o ambiente após a migração para o Azure.
 author: matticusau
 ms.author: mlavery
 ms.date: 04/04/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 6490c9dec38755fcb271774d00471b2a22888fd1
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 1af3ed5ea3b9291263a5ad8da43c65d51570651e
+ms.sourcegitcommit: 4948a5f458725e8a0c7206f08502422965a549d5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806961"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "76994093"
 ---
 # <a name="secure-and-manage"></a>Proteger e gerenciar
 
@@ -77,7 +77,7 @@ Para obter mais informações, confira a [documentação da Integridade do Servi
 
 # <a name="azure-advisortabadvisor"></a>[Assistente do Azure](#tab/advisor)
 
-O Azure Advisor é um consultor de nuvem personalizado que ajuda a seguir as práticas recomendadas para otimizar as implantações do Azure. Ele analisa a configuração dos recursos e a telemetria do uso. Então, recomenda soluções para ajudar a melhorar o desempenho, segurança e alta disponibilidade de seus recursos enquanto procura oportunidades para reduzir a despesa geral do Azure.
+O Assistente do Azure é um consultor de nuvem personalizado que ajuda a seguir as práticas recomendadas para otimizar as implantações do Azure. Ele analisa a configuração dos recursos e a telemetria do uso. Então, recomenda soluções para ajudar a melhorar o desempenho, segurança e alta disponibilidade de seus recursos enquanto procura oportunidades para reduzir a despesa geral do Azure.
 
 ## <a name="access-azure-advisor"></a>Acessar o Assistente do Azure
 
@@ -151,7 +151,7 @@ O Backup do Azure é o serviço baseado no Azure que você pode usar para fazer 
 
 Anteriormente neste guia, discutimos como o Azure Site Recovery pode ser usado como parte da execução da migração. Mas ele também é um componente crítico para sua estratégia de recuperação de desastre após a conclusão da migração.
 
-O serviço Azure Site Recovery permite replicar máquinas virtuais e cargas de trabalho hospedadas em uma região primária do Azure para uma cópia hospedada em uma região secundária. Quando ocorre uma interrupção em sua região primária, você pode fazer failover para a cópia em execução na região secundária e continuar a acessar seus aplicativos e serviços a partir dela. Quando a cópia primária da sua máquina virtual estiver em execução novamente, você poderá fazer failback para ela.
+O serviço Azure Site Recovery permite replicar máquinas virtuais e cargas de trabalho hospedadas em uma região primária do Azure para uma cópia hospedada em uma região secundária. Quando ocorre uma interrupção em sua região primária, você pode fazer failover para a cópia em execução na região secundária e continuar a acessar seus aplicativos e serviços nela. Quando a cópia primária da sua máquina virtual estiver em execução novamente, você poderá fazer failback para ela.
 
 ## <a name="replicate-an-azure-vm-to-another-region-with-site-recovery-service"></a>Replicar uma VM do Azure para outra região com o serviço Site Recovery
 
