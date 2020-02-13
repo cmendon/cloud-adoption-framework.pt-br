@@ -1,6 +1,6 @@
 ---
 title: Estabelecer estruturas de equipe
-description: Estabelecer estruturas de equipe
+description: Use esses exemplos de estruturas de equipe comuns para encontrar a estrutura organizacional que melhor se alinha às suas necessidades operacionais.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/27/2019
@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 1d4cb3873767988fc7f5538e2023a6b2ca0a6586
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 326ffa486c07da907ad9e532d5794545ef2dbd9f
+ms.sourcegitcommit: 238e7a06b56950cebdcc8f75924849fc995e6ff2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76800909"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "77173405"
 ---
 # <a name="establish-team-structures"></a>Estabelecer estruturas de equipe
 
@@ -92,7 +92,7 @@ No mais alto estado de maturidade, um centro de excelência em nuvem alinha as e
 
 A principal diferença entre essa estrutura e a estrutura central de ti acima é um foco no autoatendimento. As equipes nessa estrutura se organizam com a intenção de delegar o controle o máximo possível. Alinhar práticas de governança e conformidade a soluções nativas de nuvem cria guardrails e mecanismos de proteção. Ao contrário do modelo de ti central, a abordagem nativa de nuvem maximiza a inovação e minimiza a sobrecarga operacional. Para que esse modelo seja adotado, o contrato mútuo para modernizar os processos de ti será exigido da liderança de ti e de negócios. Esse modelo é improvável de ocorrer de orgânica e geralmente requer suporte executivo.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Depois de alinhar a um determinado estágio da maturidade da estrutura organizacional, você pode usar [gráficos do RACI](./raci-alignment.md) para alinhar a responsabilidade e a responsabilidade em cada equipe.
 

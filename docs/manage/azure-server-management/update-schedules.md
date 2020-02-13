@@ -1,18 +1,18 @@
 ---
 title: Criar agendas de atualização
-description: Criar agendas de atualização
+description: Use o portal do Azure ou os novos módulos de cmdlet do PowerShell para gerenciar agendamentos de atualização.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 67e66c62d6d35d7eab94f9a7c1fb5e743f6f9feb
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 2f049fce8c109c3028fa84c5822c0eb1053023bb
+ms.sourcegitcommit: 238e7a06b56950cebdcc8f75924849fc995e6ff2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807913"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "77173351"
 ---
 # <a name="create-update-schedules"></a>Criar agendas de atualização
 
@@ -106,7 +106,7 @@ Antes de executar o script de exemplo, você precisará entrar usando o cmdlet [
         -IncludedUpdateClassification Security,Critical
 ```
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Veja exemplos de como implementar [políticas comuns no Azure](./common-policies.md) que podem ajudar a gerenciar seus servidores.
 

@@ -1,6 +1,6 @@
 ---
 title: Modelo da Linha de base de identidade
-description: Modelo da Linha de base de identidade
+description: Baixe o modelo de linha de base de identidade e comece a documentar e a comunicar instruções de política que regem os serviços de identidade na nuvem.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c1f8e752f1952890880eb30f9f1911d83fca6a40
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 6b17a4aaaaa26d7cc1be33dd95f6a8905e1adc2b
+ms.sourcegitcommit: 238e7a06b56950cebdcc8f75924849fc995e6ff2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807199"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "77173209"
 ---
 # <a name="identity-baseline-template"></a>Modelo da Linha de base de identidade
 
@@ -30,7 +30,7 @@ A primeira etapa para implementar a alteração é comunicar a alteração desej
 
 <!-- markdownlint-enable MD033 -->
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Práticas de governança sólidas começam com um [entendimento do risco de negócios](./business-risks.md). Revise o artigo sobre os riscos de negócios e comece a documentar os riscos de negócios que se alinham com seu plano de adoção de nuvem atual.
 
