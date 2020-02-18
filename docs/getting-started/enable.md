@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 layout: LandingPage
-ms.openlocfilehash: 603e26d5fc8405e29d163bc0585bc0ce3cd5093f
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 34b67422ad8f32cf8d6bae141db05956a1b41e22
+ms.sourcegitcommit: 6a22ac00549eb9964f25d3dfd63730e17f7eefe1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76804479"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413196"
 ---
 # <a name="enable-success-during-a-cloud-adoption-journey"></a>Habilitar o sucesso durante uma jornada de adoção de nuvem
 
@@ -69,7 +69,7 @@ Além da estrutura de adoção de nuvem, a Microsoft aborda tópicos adicionais 
                     </div>
                     <div class="cardText">
                         <h3>Arquitetura confiável (resiliência)</h3>
-                        <p>Criar um aplicativo confiável na nuvem é diferente do desenvolvimento de aplicativos tradicional. Embora historicamente você possa ter comprado um hardware superior para escalar verticalmente, em um ambiente de nuvem, é preciso escalar horizontalmente e não verticalmente. Em vez de tentar evitar completamente a falha, a meta é minimizar os efeitos de uma falha em um componente individual.</p>
+                        <p>Criar um aplicativo confiável na nuvem é diferente do desenvolvimento de aplicativos tradicional. Embora historicamente você possa ter comprado níveis de hardware redundante de alto nível para minimizar a chance de uma plataforma de aplicativo inteira falhar. Na nuvem, confirmamos antecipadamente que ocorrerão falhas. Em vez de tentar evitar completamente a falha, a meta é minimizar os efeitos de uma falha em um componente individual.</p>
                     </div>
                 </div>
             </div>
@@ -125,7 +125,7 @@ Além da estrutura de adoção de nuvem, a Microsoft aborda tópicos adicionais 
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Centro de arquitetura do Azure</h3>
+                        <h3>Centro de Arquitetura do Azure</h3>
                         <p>Soluções de arquitetura, arquiteturas de referência, cenários de exemplo, práticas recomendadas e padrões de design de nuvem para auxiliar na arquitetura de soluções em execução no Azure.</p>
                     </div>
                 </div>
@@ -156,7 +156,7 @@ Além da estrutura de adoção de nuvem, a Microsoft aborda tópicos adicionais 
 
 <!-- markdownlint-enable MD033 -->
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Munido da compreensão dos principais aspectos da estrutura de adoção da nuvem, a probabilidade de sucesso em um esforço de [migração](./migrate.md) ou [inovação](./innovate.md) será muito maior.
 
