@@ -7,12 +7,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 03fb8ab37657ea500c342884e2ae2ca1c1290fca
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 30783e760f85324116e0a9a968a1c5aa486eb6f7
+ms.sourcegitcommit: 41cb36f58cc48950da1a2aa2032cc34ba5b16a0b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76803714"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77599975"
 ---
 # <a name="best-practices-for-costing-and-sizing-workloads-migrated-to-azure"></a>Melhores práticas para estimar os custos e dimensionar as cargas de trabalho migradas para o Azure
 
@@ -67,7 +67,7 @@ Escolha uma entre várias opções ao implantar VMs do Azure para dar suporte à
 **Propósito geral** | CPU/memória equilibrados. | Boa para teste e desenvolvimento, bancos de dados pequenos a médios, servidores Web com tráfego de volume baixo a médio.
 **Com otimização de computação** | Relação de CPU/memória alta. | Boa para servidores Web com tráfego de volume médio, dispositivos de rede, processos de lote e servidores de aplicativos.
 **Com otimização de memória** | Alta relação de memória/CPU. | Boa para banco de dados relacionais, cache de médio a grande porte e análise in-memory.
-**Armazenamento otimizado** | Alta taxa de transferência de disco e E/S. | Boa para Big Data, bancos de dados SQL e NoSQL.
+**Armazenamento otimizado** | Alta taxa de transferência de disco e de E/S. | Boa para Big Data, bancos de dados SQL e NoSQL.
 **GPU otimizada** | VMs especializadas. GPUs únicas ou múltiplas. | Elementos gráficos pesados e edição de vídeo.
 **Alto desempenho** | CPU mais rápida e eficiente. VMs com adaptadores de rede de alta produtividade (RDMA) opcionais | Aplicativos de alto desempenho críticos.
 
@@ -152,7 +152,7 @@ As contas de armazenamento podem usar diferentes tipos de redundância para resi
 - [Compare](https://docs.microsoft.com/azure/storage/common/storage-decide-blobs-files-disks?toc=%2fazure%2fstorage%2fblobs%2ftoc.json) os tipos de dados do armazenamento de blobs, de arquivos e em disco.
 - [Saiba mais](https://docs.microsoft.com/azure/storage/blobs/storage-blob-storage-tiers) sobre as camadas de acesso.
 - [Examine](https://docs.microsoft.com/azure/storage/common/storage-account-overview?toc=%2fazure%2fstorage%2fblobs%2ftoc.json) diferentes tipos de contas de armazenamento.
-- Saiba mais sobre [redundância de armazenamento](https://docs.microsoft.com/azure/storage/common/storage-redundancy), [LRS](https://docs.microsoft.com/azure/storage/common/storage-redundancy-lrs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json), [ZRS](https://docs.microsoft.com/azure/storage/common/storage-redundancy-zrs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json), [GRS](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json) e [GRS com acesso de leitura](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json#read-access-geo-redundant-storage).
+- Saiba mais sobre [redundância de armazenamento](https://docs.microsoft.com/azure/storage/common/storage-redundancy), [LRS](https://docs.microsoft.com/azure/storage/common/storage-redundancy-lrs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json), [ZRS](https://docs.microsoft.com/azure/storage/common/storage-redundancy-zrs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json), [GRS](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json) e [GRS com acesso de leitura](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json#read-access-to-data-in-the-secondary-region).
 - [Saiba mais](https://docs.microsoft.com/azure/storage/files/storage-files-introduction) sobre os Arquivos do Azure.
 
 ## <a name="best-practice-take-advantage-of-azure-hybrid-benefits"></a>Prática recomendada: Tire proveito dos benefícios híbridos do Azure
@@ -342,7 +342,7 @@ Após a migração, depois de uma análise completa desses tipos de tarefas, voc
 - Saiba mais sobre o [Azure Functions](https://azure.microsoft.com/services/functions).
 - Saiba mais sobre o [Lote do Azure](https://azure.microsoft.com/services/batch).
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Examine outras melhores práticas:
 
