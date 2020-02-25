@@ -1,6 +1,6 @@
 ---
-title: Métricas de Aceleração de Implantação, indicadores e tolerância a riscos
-description: Métricas de Aceleração de Implantação, indicadores e tolerância a riscos
+title: Indicadores e métricas de tolerância a riscos de aceleração de implantação
+description: Quantificar a tolerância a riscos de negócios relacionada à aceleração de implantação na estrutura de adoção Microsoft Cloud para o Azure.
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 26bbcd201d699c8f58d51bb4f83582417127fcbb
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 18efcb5d46041a0fa87327832c0a4d819d0917b5
+ms.sourcegitcommit: 1de39a4c3954512892f11e3d1330a04e95ce187d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76804020"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77567695"
 ---
 # <a name="deployment-acceleration-metrics-indicators-and-risk-tolerance"></a>Métricas de Aceleração de Implantação, indicadores e tolerância a riscos
 
@@ -43,7 +43,7 @@ Assim que você tiver uma linha de base, estabeleça parâmetros de comparação
 - **Disparadores de conformidade insuficientes:** Se o número de recursos fora de conformidade exceder um limite definido (como um número total de recursos ou uma porcentagem do total de recursos), uma empresa deverá investir em melhorias na disciplina de aceleração de implantação para garantir que a configuração de cada recurso permaneça em conformidade durante todo o ciclo de vida do recurso.
 - **Gatilhos de agenda do projeto:** Se o tempo para implantar os recursos e aplicativos da empresa geralmente exceder um limite definido, uma empresa deverá investir em seus processos de aceleração de implantação para introduzir ou aprimorar implantações automatizadas para consistência e previsibilidade. Tempos de implantação, medidos em dias ou até mesmo semanas geralmente indicam uma estratégia de implantação de aceleração abaixo do ideal.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Usar o [modelo de Gerenciamento de Nuvem](./template.md), de métricas do documento e de indicadores de tolerância que se alinham ao atual plano de adoção da nuvem.
 
