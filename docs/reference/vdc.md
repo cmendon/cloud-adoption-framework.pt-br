@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: reference
 keywords: Azure
 layout: LandingPage
-ms.openlocfilehash: 4e13c064cb449e3f8fca9573b44d214bb644b927
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: bc20624beb0d3a088d119bf0f75c1e1881d37fce
+ms.sourcegitcommit: 10f687bb1316db509fc1a3dbde72e107a467d72a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566668"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77629208"
 ---
 # <a name="azure-virtual-datacenter"></a>Datacenter Virtual do Azure
 
@@ -36,8 +36,8 @@ ms.locfileid: "73566668"
 <tr>
     <td style="width: 64px; vertical-align: middle;"><a href="./networking-vdc.md"><img src="../_images/vdc/vdc-network.png" alt="Network Perspective" /></a></td>
     <td>
-        <h3><a href="./networking-vdc.md">Datacenter Virtual do Azure: uma perspectiva de rede</a></h3>
-        <p>Este artigo online apresenta uma visão geral de padrões e designs de rede que podem ser usados para resolver as preocupações de desempenho, escala e segurança da arquitetura que muitos clientes têm quando pensam em uma transição em massa para a nuvem.</p>
+        <h3><a href="./networking-vdc.md">O datacenter virtual: uma perspectiva de rede</a></h3>
+        <p>Essa visão geral dos padrões e dos designs de rede aborda a escala arquitetônica, o desempenho e as preocupações de segurança que os clientes enfrentam ao planejar uma migração de nuvem em larga escala.</p>
     </td>
 </tr>
 <tr>

@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 825c220bda1c560c5d7bf07bcae649017525ff53
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: e32151fc39f22e4dcb2a9ab40b24f351b11775e7
+ms.sourcegitcommit: 10f687bb1316db509fc1a3dbde72e107a467d72a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76805618"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77629293"
 ---
 # <a name="resource-access-management-in-azure"></a>Gerenciamento de acesso aos recursos no Azure
 
@@ -58,7 +58,7 @@ A figura a seguir mostra três clientes: [PowerShell](https://docs.microsoft.com
 ![diagrama de clientes do Azure conectando-se à API do Azure Resource Manager](../../_images/govern/design/governance-1-13.png)
 *Figura 5-os clientes do Azure se conectam à API RESTful do Azure Resource Manager.*
 
-Embora esses clientes conectem o Azure Resource Manager usando a API RESTful, o Azure Resource Manager não inclui a funcionalidade para gerenciar recursos diretamente. Em vez disso, a maioria dos tipos de recursos no Azure têm seus próprios [**provedores de recursos**](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#terminology).
+Embora esses clientes conectem o Azure Resource Manager usando a API RESTful, o Azure Resource Manager não inclui a funcionalidade para gerenciar recursos diretamente. Em vez disso, a maioria dos tipos de recursos no Azure tem seu próprio [provedor de recursos](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#terminology).
 
 ![provedores de recursos do Azure](../../_images/govern/design/governance-1-14.png)
 *Figura 6 – provedores de recursos do Azure.*
@@ -110,7 +110,7 @@ O controle final é uma verificação de que a solicitação está dentro do com
 
 Neste artigo, você aprendeu sobre como o acesso a recursos é gerenciado no Azure usando o Azure Resource Manager.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Agora que você sabe como gerenciar acesso de recurso no Azure, prossiga para aprender como criar um modelo de controle [para uma carga de trabalho simples](./governance-simple-workload.md) ou para [várias equipe](./governance-multiple-teams.md) usando esses serviços.
 

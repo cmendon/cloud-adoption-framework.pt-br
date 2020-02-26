@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: 3cbce52809c191ec6bacf30454bd2e9a48d57c1b
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: dd4f60eafed3281d5d4e67285c413b9f969793e3
+ms.sourcegitcommit: 10f687bb1316db509fc1a3dbde72e107a467d72a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76798784"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77629242"
 ---
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Andaime empresarial do Azure: governança de assinatura prescritiva
 
@@ -162,7 +162,7 @@ Após criar políticas e agrupá-las em iniciativas lógicas você deve atribuir
 
 Você encontrará vários exemplos de política que mostram como iniciativas e políticas podem ser aplicadas a vários recursos no Azure neste repositório [GitHub](https://github.com/Azure/azure-policy).
 
-## <a name="identity-and-access-management"></a>Gerenciamento de identidades e acessos
+## <a name="identity-and-access-management"></a>Gerenciamento de identidade e de acesso
 
 Uma das primeira e mais importantes perguntas que você se faz ao começar a usar a nuvem pública é “quem devem ter acesso aos recursos?” e "como controlar esse acesso?" Controlar o acesso ao portal do Azure e aos recursos no portal é essencial para a segurança de longo prazo de seus ativos na nuvem.
 
@@ -265,7 +265,7 @@ Essas informações podem ser exibidas e acionadas em vários níveis e estão c
 > [!TIP]
 > Antes de criar alertas individuais, crie e mantenha um conjunto compartilhado de Grupos de Ação que pode ser usado para os Alertas do Azure. Isso permitirá que você mantenha centralmente o ciclo de vida de suas listas de destinatários, métodos de entrega de notificação (email, números de telefone de SMS) e WebHooks para ações externas (runbooks de automação do Azure, Azure Functions e aplicativos lógicos, ITSM).
 
-## <a name="cost-management"></a>Gerenciamento de custos
+## <a name="cost-management"></a>Gerenciamento de custo
 
 Uma das principais alterações que você enfrentará mudar da nuvem local para a nuvem pública é a mudança de gastos de capital (comprar hardware) para gastos operacionais (pagar por serviço conforme você o utiliza). Essa opção também exige um gerenciamento mais cuidadoso dos custos. O benefício da nuvem é que você pode afetar de maneira fundamental e positiva o custo de um serviço usado simplesmente desligando ou redimensionando-o quando não for necessário. O gerenciamento deliberado dos custos na nuvem é uma prática recomendada e um que os clientes maduros fazem diariamente.
 
@@ -338,9 +338,9 @@ O componente final do modelo de referência de andaime do Azure é essencial par
 
 ### <a name="azure-virtual-datacenter"></a>Datacenter Virtual do Azure
 
-O Azure fornece recursos internos e recursos de terceiros da nossa extensa rede de parceiros que permitem que você tenha uma postura eficaz em relação à segurança. Mais importante, a Microsoft fornece as práticas recomendadas e orientações na forma de [VDC (datacenter virtual) do Azure](./networking-vdc.md). À medida que você passa de uma única carga de trabalho para várias cargas de trabalho que usam recursos híbridos, as diretrizes de VDC fornecerão "receitas" para permitir uma rede flexível e que aumentará à medida que suas cargas de trabalho no Azure crescem.
+O Azure fornece recursos internos e de terceiros de nossa ampla rede de parceiros que oferecem uma postura de segurança eficaz. Mais importante, a Microsoft fornece as práticas recomendadas e orientações na forma de [VDC (datacenter virtual) do Azure](./networking-vdc.md). À medida que você passa de uma única carga de trabalho para várias cargas de trabalho que usam recursos híbridos, as diretrizes de VDC fornecerão "receitas" para permitir uma rede flexível e que aumentará à medida que suas cargas de trabalho no Azure crescem.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 A governança é essencial para o sucesso do Azure. Este artigo foca na implementação técnica de um andaime empresarial, mas toca apenas no processo mais amplo e nas relações entre os componentes. A governança da política flui de cima para baixo e é determinada por aquilo que a empresa quer alcançar. Naturalmente, a criação de um modelo de governança para o Azure inclui representantes da TI, mas o mais importante é ter uma forte representação dos líderes do grupo de negócios, além de gerenciamento de segurança e risco. No fim, um andaime empresarial é sobre reduzir o risco aos negócios para facilitar a missão e os objetivos de uma organização.
 
