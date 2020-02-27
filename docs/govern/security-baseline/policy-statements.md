@@ -1,6 +1,6 @@
 ---
 title: Instruções de política de exemplo de Linha de base de segurança
-description: Instruções de política de exemplo de Linha de base de segurança
+description: Consulte estas instruções de política de linha de base de segurança de exemplo para ajudar as instruções de política de rascunho para atender às necessidades da sua organização.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ba0887b93664ac77fc2933c24631110dfab14be0
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 02a1c18a73b784cb9245ed7c83d86c21c0690148
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808865"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77707200"
 ---
 # <a name="security-baseline-sample-policy-statements"></a>Instruções de política de exemplo de Linha de base de segurança
 
@@ -57,7 +57,7 @@ As instruções de política de exemplo a seguir abordam os riscos de negócios 
 
 **Possível opção de design:** No Azure, proteja os pontos de extremidade públicos implantando uma [DMZ entre a Internet pública e sua rede baseada em nuvem](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json). Considere a implantação, a configuração e a automação do [Firewall do Azure](https://docs.microsoft.com/azure/firewall).
 
-## <a name="ddos-protection"></a>Proteção de DDoS
+## <a name="ddos-protection"></a>Proteção contra DDOS
 
 **Risco técnico:** Ataques de DDoS (negação de serviço distribuído) podem resultar em uma interrupção de negócios.
 
@@ -89,7 +89,7 @@ As instruções de política de exemplo a seguir abordam os riscos de negócios 
 
 **Possível opção de design:** Estabeleça uma reunião de revisão de segurança regular que inclua Membros relevantes da equipe de ti e governança. Examine as métricas e os dados de segurança existentes para estabelecer lacunas na política atual e nas ferramentas de linha de base de segurança, e atualize a política para corrigir quaisquer riscos novos. Aproveite o [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) e a [central de segurança do Azure](https://docs.microsoft.com/azure/security-center/security-center-intro) para obter informações acionáveis sobre ameaças emergentes específicas às suas implantações.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Use as amostras mencionadas neste artigo como ponto de partida para desenvolver políticas que abordem os riscos comerciais específicos que alinham-se aos seus planos de adoção de nuvem.
 

@@ -1,6 +1,6 @@
 ---
 title: O que é classificação de dados?
-description: A classificação de dados permite que você determine e atribua valor aos dados da sua organização e é um ponto de partida comum para governança.
+description: Use a classificação de dados como ponto de partida para a governança de nuvem determinando e atribuindo valor aos dados da sua organização.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1f476aaccfc88eab4a2bea1db17e7b1d33f31ee9
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: e956f2c4690d2020770d4da3e50bb163994c4c66
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76805074"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77706686"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -43,7 +43,7 @@ As marcas de recurso são uma boa abordagem para armazenamento de metadados, e v
 
 Para obter informações adicionais sobre a marcação de recursos no Azure, consulte [usando marcas para organizar os recursos do Azure](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags).
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Aplique classificações de dados durante um dos guias de governança acionáveis.
 

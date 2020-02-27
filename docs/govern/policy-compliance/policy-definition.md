@@ -1,18 +1,18 @@
 ---
-title: Definir política corporativa para governança de nuvem
-description: Saiba como estabelecer a política para refletir e corrigir riscos.
+title: Definir política corporativa de governança de nuvem
+description: Use a estrutura de adoção de nuvem para o Azure para aprender a estabelecer a política que aborda riscos conhecidos e tolerâncias de risco durante sua jornada de transformação na nuvem.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 92c04d53e59d8876291794c5da74104ec62412a9
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 94e49d8f6682d4f5edb6b1d00bd93d47ba600bc8
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806043"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77706669"
 ---
 # <a name="define-corporate-policy-for-cloud-governance"></a>Definir política corporativa para governança de nuvem
 
@@ -63,7 +63,7 @@ Adições planejadas para o seu ambiente de nuvem sempre devem ser verificadas q
 
 A necessidade de integrar a política de nuvem às suas políticas de TI herdadas, depende em grande parte da maturidade dos processos de governança de nuvem e do tamanho do seu acervo de nuvem. Consulte o artigo sobre [governança incremental e política de MVP](./index.md) para uma discussão mais ampla sobre como lidar com a integração de política durante sua transformação de nuvem.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Depois de definir suas políticas, faça um rascunho de um guia de design de arquitetura para fornecer a equipe de TI e desenvolvedores de diretrizes de ações.
 

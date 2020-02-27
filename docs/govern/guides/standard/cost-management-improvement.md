@@ -1,6 +1,6 @@
 ---
-title: 'Guia empresarial Standard: melhorar a disciplina de gerenciamento de custos'
-description: 'Guia empresarial Standard: melhorar a disciplina de gerenciamento de custos'
+title: 'Governança empresarial padrão: melhorar a disciplina de gerenciamento de custos'
+description: Use a estrutura de adoção de nuvem para o Azure para saber mais sobre como adicionar controles de custo a um produto de governança mínimo viável (MVP).
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 83fe35135b37fe96a95f7335639aec65538ee829
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 81140a69d3d024159c62b499de2e69cd57eb3d1f
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806196"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709236"
 ---
 # <a name="standard-enterprise-guide-improve-the-cost-management-discipline"></a>Guia empresarial Standard: melhorar a disciplina de gerenciamento de custos
 
@@ -78,7 +78,7 @@ Esta seção do artigo alterará o design MVP de governança para incluir novas 
 
 Adicionar esses processos e alterações ao MVP de governança ajuda a corrigir muitos dos riscos associados ao controle de custos. Juntos, criam a visibilidade, a responsabilidade e a otimização necessárias para controlar os custos.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 À medida que a adoção de nuvem continua e entrega o valor comercial adicional, os riscos e as necessidades de governança de nuvem também serão alterados. Para a empresa fictícia neste guia, a próxima etapa é usar esse investimento de governança para gerenciar várias nuvens.
 

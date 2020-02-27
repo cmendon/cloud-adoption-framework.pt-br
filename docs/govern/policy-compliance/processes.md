@@ -1,6 +1,6 @@
 ---
 title: Estabelecer os processos de conformidade com políticas
-description: Estabeleça processos para garantir a conformidade com as políticas corporativas.
+description: Crie uma estratégia e processos para garantir que sua implantação em nuvem permaneça em conformidade com seus requisitos de política. 
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: bf69c13d80063e44a49d945908e2cc319b90ce3e
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 760015fc72cd893cb14dd39d9a9b3078d304da97
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807165"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709457"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -88,7 +88,7 @@ Após definir os gatilhos de violação de conformidade e as ações, você pode
 
 Para obter ajuda para escolher o melhor padrão de monitoramento para sua implantação, consulte o [Guia de decisão de registro em log e relatório](../../decision-guides/logging-and-reporting/index.md).
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Saiba mais sobre a conformidade regulatória na nuvem.
 

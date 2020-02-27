@@ -1,6 +1,6 @@
 ---
-title: 'Guia de governança para empresas complexas: melhorar a disciplina de consistência de recursos'
-description: 'Guia de governança para empresas complexas: melhorar a disciplina de consistência de recursos'
+title: 'Governança empresarial complexa: melhorar a disciplina de consistência de recursos'
+description: Use a estrutura de adoção de nuvem para o Azure para aprender sobre os controles de recuperação, dimensionamento e monitoramento para melhorar a linha de base de governança e corrigir riscos.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 35a77b0837da1b3364516a95b2baaa32e4e2fe6f
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: d7148df4bb06a0dc4ca035b89f7077888fb7306c
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76805533"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77708930"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-resource-consistency-discipline"></a>Guia de governança para empresas complexas: melhorar a disciplina de consistência de recursos
 
@@ -108,7 +108,7 @@ Seguindo a experiência desse exemplo fictício, supõe-se que as alterações d
 
 Adicionar esses processos e alterações ao MVP de governança ajuda a corrigir muitos dos riscos associados à governança de recursos. Juntos, aumentam a recuperação, dimensionamento e controles de monitoramento necessários para capacitar as operações de reconhecimento de nuvem.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 À medida que a adoção de nuvem cresce e fornece valor comercial adicional, os riscos e as necessidades de governança de nuvem também serão alterados. Para a empresa fictícia neste guia, o próximo gatilho é quando a escala de implantação excede 1.000 ativos para a nuvem ou gastos mensais excedem $10000 USD por mês. Neste ponto, a equipe de governança de nuvem adiciona controles de gerenciamento de custos.
 

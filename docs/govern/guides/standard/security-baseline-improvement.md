@@ -1,6 +1,6 @@
 ---
-title: 'Guia de governança empresarial padrão: melhorar a disciplina de linha de base de segurança'
-description: 'Guia de governança empresarial padrão: melhorar a disciplina de linha de base de segurança'
+title: 'Governança empresarial padrão: melhorar a disciplina de linha de base de segurança'
+description: Use a estrutura de adoção de nuvem para o Azure para saber mais sobre como adicionar controles de segurança que dão suporte à movimentação de dados protegidos para a nuvem.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ef4d58cb871ea290f8489e806a4b78f32a9d8b3d
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 2e9dbaf3bb92893e4eb737964da3f1b0c3a056ad
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807114"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77707706"
 ---
 # <a name="standard-enterprise-governance-guide-improve-the-security-baseline-discipline"></a>Guia de governança empresarial padrão: melhorar a disciplina de linha de base de segurança
 
@@ -126,7 +126,7 @@ O design do MVP de governança será alterado para incluir novas políticas do A
 
 Adicionar os processos acima e as alterações ao MVP de governança ajudará a corrigir muitos dos riscos associados ao controle de segurança. Em conjunto, eles adicionam ferramentas de monitoramento de segurança, identidade e rede necessárias para proteger os dados.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 À medida que a adoção de nuvem continua e entrega o valor comercial adicional, os riscos e as necessidades de governança de nuvem também mudam. Para a empresa fictícia neste guia, a próxima etapa é oferecer suporte a cargas de trabalho de missão crítica. Essa é a situação em que os controles de Consistência de Recursos são necessários.
 

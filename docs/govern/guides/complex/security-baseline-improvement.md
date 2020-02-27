@@ -1,6 +1,6 @@
 ---
-title: 'Guia de governança para empresas complexas: melhorar a disciplina de linha de base de segurança'
-description: 'Guia de governança para empresas complexas: melhorar a disciplina de linha de base de segurança'
+title: 'Governança empresarial complexa: melhorar a disciplina de linha de base de segurança'
+description: Use a estrutura de adoção de nuvem para o Azure para saber mais sobre como adicionar controles de segurança que dão suporte à movimentação de dados protegidos para a nuvem.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 41fba8029eabb570a40d5692374f1cb7e7d7c9b5
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 6501871e909beba8d32cee0c5dd8c3dbe091f252
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806230"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77706805"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>Guia de governança para empresas complexas: melhorar a disciplina de linha de base de segurança
 
@@ -168,7 +168,7 @@ Em alterações iterativas anteriores à prática recomendada, definimos grupos 
 
 Adicionar esses processos e alterações ao MVP de governança ajuda a corrigir muitos dos riscos associados à governança de segurança. Em conjunto, eles adicionam ferramentas de monitoramento de segurança, identidade e rede necessárias para proteger os dados.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 À medida que a adoção de nuvem continua e entrega o valor comercial adicional, os riscos e as necessidades de governança de nuvem também mudam. Para a empresa fictícia neste guia, a próxima etapa é oferecer suporte a cargas de trabalho de missão crítica. Essa é a situação em que os controles de Consistência de Recursos são necessários.
 

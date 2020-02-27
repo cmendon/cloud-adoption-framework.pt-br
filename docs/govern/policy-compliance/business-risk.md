@@ -1,18 +1,18 @@
 ---
 title: Entender os riscos de negócios durante a migração na nuvem
-description: Entender os riscos de negócios durante a migração na nuvem
+description: Use a estrutura de adoção de nuvem para o Azure para aprender os processos de gerenciamento de riscos que ajudam você a avaliar, entender, balancear e corrigir riscos de migração.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 801420d31c5f1bbfef20ac610e06f7501bce5e6d
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 729a359f5ea44d77c691acb0a22477eed7cecb44
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806128"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709423"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -75,7 +75,7 @@ Com cada iteração, a equipe de governança de nuvem pode trabalhar com a equip
 
 Essa abordagem minimiza os riscos, enquanto capacita a equipe a agir rapidamente. Ele também garante que os riscos sejam endereçados e resolvidos imediatamente antes da implantação.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Saiba como avaliar a tolerância a riscos durante a adoção da nuvem.
 

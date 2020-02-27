@@ -1,6 +1,6 @@
 ---
 title: Aperfeiçoamento da disciplina de Gerenciamento de Custos
-description: Aperfeiçoamento da disciplina de Gerenciamento de Custos
+description: Entenda as tarefas potenciais que uma empresa realiza para desenvolver e amadureceu sua disciplina de gerenciamento de custos em cada fase da adoção da nuvem.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ebd297f4fbebd451f47bbb6b88be56e1ccc489be
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 1d32b70c2c07ee341e03a020cd0010c8763d4cdc
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806468"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77708828"
 ---
 # <a name="cost-management-discipline-improvement"></a>Aperfeiçoamento da disciplina de Gerenciamento de Custos
 
@@ -105,7 +105,7 @@ Após a conclusão da transformação, a governança e as operações devem resi
 - Detectar desalinhamentos e anomalias entre os gastos reais e planejados.
 - Auxilie as equipes de adoção da nuvem e a equipe de estratégia de nuvem com a compreensão e a resolução dessas anomalias.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Agora que você entende o conceito de governança de identidade de nuvem, examine a [cadeia de ferramentas de Gerenciamento de Custos](./toolchain.md) para identificar as ferramentas do Azure e recursos que você precisará ao desenvolver a disciplina de governança da de Gerenciamento de Custos na plataforma do Azure.
 

@@ -1,18 +1,18 @@
 ---
 title: Avaliar a tolerância a riscos
-description: Explicação dos riscos de negócios associados a uma transformação de nuvem
+description: Entenda os riscos de negócios associados a várias formas de transformação em nuvem e maneiras de avaliar a tolerância a riscos de uma empresa.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 06f8229ab38134ac4d51a4f0cef212ebc864bbdb
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: cbde932d0e4a91a80c4bde6a5b9604b43ee30441
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806009"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709491"
 ---
 # <a name="evaluate-risk-tolerance"></a>Avaliar a tolerância a riscos
 
@@ -103,7 +103,7 @@ Depois de responder a essas perguntas, juntamente com as perguntas determinadas 
 
 Os três conjuntos de perguntas acima devem fornecer dados suficientes para determinar as tolerâncias iniciais. Quando o risco e a probabilidade são baixos e os custos de correção de risco são altos, é improvável que os negócios invistam na correção. Quando o risco e a probabilidade são altos, é provável que os negócios considerem um investimento, desde que os custos não excedam os riscos potenciais.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Esse tipo de conversa pode ajudar o corporativo e a TI a avaliarem a tolerância de maneira mais eficaz. Essas conversas podem ser usadas durante a criação de políticas de MVP e durante análises de políticas incrementais.
 

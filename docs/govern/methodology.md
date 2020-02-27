@@ -1,6 +1,6 @@
 ---
 title: Metodologia de governança de nuvem
-description: Estabeleça uma compreensão básica da metodologia que impulsiona a governança de nuvem no Cloud Adoption Framework.
+description: Use uma abordagem de governança incremental baseada em um MVP (produto viável) mínimo para dar suporte a políticas corporativas e se mover rapidamente para a adoção da nuvem.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/04/2019
@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 402ebf52583ae5e94de52057133990656d8009b5
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 828f9c85366f3e73ddb804a2622784ba0a0ccb65
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807080"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709083"
 ---
 # <a name="cloud-governance-methodology"></a>Metodologia de governança de nuvem
 
@@ -60,7 +60,7 @@ O diagrama a seguir mostra um MVP de governança simples e três iterações da 
 > [!NOTE]
 > A governança não é uma substituição para funções-chave, como segurança, rede, identidade, finanças, DevOps ou operações. Ao longo do caminho, haverá interações e dependências com membros de cada função. Esses membros devem ser incluídos na equipe de governança de nuvem para acelerar a tomada de decisões e ações.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Use a [ferramenta de benchmark de governança](https://cafbaseline.com) da estrutura de adoção da nuvem para avaliar sua jornada de transformação e ajudá-lo a identificar lacunas em sua organização em seis domínios-chave, conforme definido na estrutura.
 

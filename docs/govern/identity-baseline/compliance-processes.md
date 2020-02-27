@@ -1,6 +1,6 @@
 ---
 title: Processos de conformidade de política de Linha de Base de Identidade
-description: Processos de conformidade de política de Linha de Base de Identidade
+description: Use a estrutura de adoção de nuvem para o Azure para aprender uma abordagem de criação de processos que dão suporte a uma disciplina de governança de linha de base de identidade.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 937bf6c4dae8d134b4f140e0a0023d82e5f9e3f9
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: ba23836fdcfcd8dee6f90707487142f755e525b8
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807148"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77706976"
 ---
 # <a name="identity-baseline-policy-compliance-processes"></a>Processos de conformidade de política de Linha de Base de Identidade
 
@@ -55,7 +55,7 @@ Os gatilhos e ações de imposição a seguir fornecem exemplos que você pode c
 - **Credenciais de usuário vazadas:** As contas que têm seu nome de usuário e senha vazadas para a Internet serão desabilitadas até que a identidade do usuário possa ser verificada e a redefinição de senha.
 - **Controles de acesso insuficientes detectados:** Quaisquer ativos protegidos em que as restrições de acesso não atendam aos requisitos de segurança terão acesso bloqueado até que o recurso seja colocado em conformidade.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Usando o [modelo de Gerenciamento de Nuvem](./template.md), documente os processos e gatilhos que alinham-se ao plano de adoção da nuvem atual.
 

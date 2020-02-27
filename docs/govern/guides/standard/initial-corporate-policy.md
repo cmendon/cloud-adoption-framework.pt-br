@@ -1,6 +1,6 @@
 ---
-title: 'Guia de governança empresarial padrão: política corporativa inicial por trás da estratégia de governança'
-description: 'Guia de governança empresarial padrão: política corporativa inicial por trás da estratégia de governança'
+title: 'Governança empresarial padrão: política corporativa inicial'
+description: Use a estrutura de adoção de nuvem para o Azure para definir uma posição de governança inicial, riscos de estágio inicial, instruções de política iniciais e processos de imposição antecipada.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 33c73a13fc49f6e7b70d9b2e2e0dfd01844f1fca
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: f3afbeb33904473fbfd0d1590437cee68b80a7e4
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806162"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709049"
 ---
 # <a name="standard-enterprise-governance-guide-initial-corporate-policy-behind-the-governance-strategy"></a>Guia de governança empresarial padrão: política corporativa inicial por trás da estratégia de governança
 
@@ -38,7 +38,7 @@ A tolerância a riscos atual é alta e o apetite de investir em governança de n
 
 [!INCLUDE [policy-statements](../../../../includes/policy-statements.md)]
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Essa política corporativa prepara a equipe de governança de nuvem para implementar o MVP de governança, que será a base para a adoção. A próxima etapa é implementar esse MVP.
 

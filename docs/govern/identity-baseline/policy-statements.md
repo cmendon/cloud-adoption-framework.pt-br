@@ -1,6 +1,6 @@
 ---
 title: Instruções de política de exemplo de Linha de base de identidade
-description: Instruções de política de exemplo de Linha de base de identidade
+description: Use a estrutura de adoção de nuvem do Azure para obter instruções de política de linha de base de identidade de exemplo que podem ajudá-lo a criar instruções de política de rascunho
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c3804f24db454e4c198494e0024632efdc7d0d53
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 4cf67b9580fb6b3970dc9982d9df94a809a73f36
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76805040"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709287"
 ---
 # <a name="identity-baseline-sample-policy-statements"></a>Instruções de política de exemplo de Linha de base de identidade
 
@@ -76,7 +76,7 @@ As instruções de política de exemplo a seguir abordam os riscos de negócios 
 
 **Possíveis opções de design:** Estabeleça uma reunião trimestral de revisão de segurança que inclua membros da equipe de governança e a equipe de ti responsáveis pelo gerenciamento de serviços de identidade. Examine as métricas e os dados de segurança existentes para estabelecer lacunas na política e nas ferramentas de gerenciamento de identidade atuais e na política de atualização para corrigir quaisquer riscos novos.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Use os exemplos mencionados neste artigo como um ponto de partida para o desenvolvimento de políticas para lidar com riscos comerciais específicos que se alinham com seus planos de adoção de nuvem.
 

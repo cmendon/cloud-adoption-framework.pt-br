@@ -1,6 +1,6 @@
 ---
 title: Declarações da política de amostra de Consistência de Recursos
-description: Declarações da política de amostra de Consistência de Recursos
+description: Use a estrutura de adoção de nuvem do Azure para obter instruções de exemplo de política de consistência de recursos que ajudarão você a rascunhar as instruções de política da sua organização.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5e997dee318d0d6799167de4f4c61a93c814c548
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 4222639ddb82da88cc95600ad2c6731b541f9f35
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807250"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77708131"
 ---
 # <a name="resource-consistency-sample-policy-statements"></a>Declarações da política de amostra de Consistência de Recursos
 
@@ -34,7 +34,7 @@ As instruções de política de exemplo a seguir abordam os riscos comerciais co
 - Os ativos implantados devem ser marcados com os seguintes valores:
   - Custo
   - Importância
-  - SLA
+  - Contrato de Nível de Serviço
   - Ambiente
 - O conjunto de ferramentas de governança deve validar a marcação relacionada ao custo, criticidade, SLA, aplicativo e ambiente. Todos os valores devem ser alinhados a valores predefinidos gerenciados pela equipe de governança.
 
@@ -86,7 +86,7 @@ As instruções de política de exemplo a seguir abordam os riscos comerciais co
 
 **Possíveis opções de design:** O serviço de [Azure site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) fornece recursos de backup, recuperação e replicação que minimizam a duração da interrupção nos cenários de continuidade dos negócios e recuperação de desastres (BCDR).
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Use os exemplos mencionados neste artigo como um ponto de partida para desenvolver políticas que abordam os riscos de negócios específicos que se alinham aos seus planos de adoção de nuvem.
 

@@ -1,6 +1,6 @@
 ---
 title: Introdução à conformidade regulatória
-description: Introdução à conformidade regulatória
+description: Saiba mais sobre os regulamentos de conformidade em vários setores e geografias que podem afetar a governança de nuvem.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: bd48f3080c1cf516121f9afe2e8c31bbc799e3a5
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 2e5cfa035efe2fd3dd45b29edec53bfff2c7914f
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806111"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709372"
 ---
 # <a name="introduction-to-regulatory-compliance"></a>Introdução à conformidade regulatória
 
@@ -54,7 +54,7 @@ Informações mais detalhadas sobre as ofertas de conformidade do Azure estão d
 - **Relatórios de auditoria:** Inclui seções para relatórios FedRAMP, avaliação de GRC, ISO, PCI DSS e SOC.
 - **Recursos de proteção de dados:** Inclui guias de conformidade, perguntas frequentes e White papers e seções de avaliação de segurança e teste de caneta.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Saiba mais sobre a preparação de segurança na nuvem.
 

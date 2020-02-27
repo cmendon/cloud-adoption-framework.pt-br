@@ -1,6 +1,6 @@
 ---
 title: Entender a linha de base de segurança de nuvem
-description: Saiba mais sobre a linha de base de segurança de nuvem.
+description: Saiba mais sobre uma linha de base de segurança de nuvem que se baseia nas cinco disciplinas do controle de nuvem para estabelecer uma estrutura de governança.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: abd222cd3fd29f2150a18fafaae82393aa54e98b
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 36aa64e35c5858e41d7cb4d29885289ca0c5435a
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808882"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77707570"
 ---
 # <a name="understand-the-cloud-security-baseline"></a>Entender a linha de base de segurança de nuvem
 
@@ -22,7 +22,7 @@ Este é um artigo introdutório sobre o tópico geral de uma linha de base de se
 > [!NOTE]
 > Este artigo não disponibiliza contexto suficiente para permitir que o leitor implemente uma estratégia de segurança. É apenas para conhecimento geral.
 
-## <a name="cloud-security"></a>Segurança na nuvem
+## <a name="cloud-security"></a>Segurança de Nuvem
 
 A segurança de nuvem é uma extensão das práticas tradicionais de segurança da informação. A segurança de TI tradicional incluiria políticas e controles que controlam a segurança do computador, segurança de rede, proteção de dados, uso de informações, e assim por diante. Essas mesmas políticas e controles são necessários na nuvem. Durante qualquer transformação na nuvem, é imperativo que o CISO esteja ativamente envolvido e entenda o cenário de nuvem, para garantir que as políticas de ti herdadas sejam mapeadas para os níveis adequados de controle na nuvem.
 

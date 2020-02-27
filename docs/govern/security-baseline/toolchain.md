@@ -1,6 +1,6 @@
 ---
 title: Ferramentas de Linha de Base de Segurança no Azure
-description: Explicação das ferramentas que podem facilitar a melhoria da linha de base de segurança no Azure.
+description: Veja como as ferramentas nativas do Azure podem ajudar processos e políticas maduros que dão suporte à disciplina de governança de linha de base de segurança.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 122e0774912fdc65cd9c8daff0bd48b679634868
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 85b0d88d4a275c7215a498b95e0af6717bfac169
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808797"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77707060"
 ---
 # <a name="security-baseline-tools-in-azure"></a>Ferramentas de Linha de Base de Segurança no Azure
 

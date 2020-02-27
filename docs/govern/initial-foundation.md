@@ -1,6 +1,6 @@
 ---
-title: Estabelecer uma base de governança de nuvem inicial
-description: Comece a usar a governança de nuvem estabelecendo uma base de governança de nuvem inicial.
+title: Estabelecer a base de governança de nuvem inicial
+description: Use a estrutura de adoção de nuvem do Azure para começar a usar a governança de nuvem estabelecendo uma base de governança de nuvem inicial.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 290bffadc608d8ff9d593e5231242e3555732bf3
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 4de35756be83e02817c4ce8e7a20dd1444007e87
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76803782"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77708352"
 ---
 # <a name="establish-an-initial-cloud-governance-foundation"></a>Estabelecer uma base de governança de nuvem inicial
 
@@ -64,7 +64,7 @@ A seguir estão dois exemplos diferentes de fundamentos de governança iniciais 
 </ul>
 <!-- markdownlint-enable MD033 -->
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Quando uma base de governança estiver em vigor, aplique recomendações adequadas para melhorar a solução e proteger contra riscos tangíveis.
 

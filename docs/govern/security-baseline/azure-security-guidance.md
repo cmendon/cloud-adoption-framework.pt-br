@@ -1,6 +1,6 @@
 ---
-title: Diretrizes de segurança do Azure
-description: Quais diretrizes de segurança a Microsoft fornece?
+title: Guia de segurança do Azure
+description: Use o Microsoft Service Trusting Platform e o Compliance Manager para ajudar a atender às obrigações de conformidade complexas e a melhorar a proteção de dados.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: cc57de575b7ad208748595a82b9726ebf85fa3fd
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: ab126c3638edd18d76c579bbf4d1958621546a76
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76804904"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709525"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -32,7 +32,7 @@ Essas ferramentas são projetadas para auxiliar as organizações a cumprirem as
 A **STP (Plataforma de Confiança do Serviço)** fornece informações detalhadas e ferramentas para ajudar a atender às necessidades de uso dos serviços do Microsoft Cloud, incluindo Azure, Office 365, Dynamics 365 e Windows. A STP é uma solução completa para informações de segurança, regulamentação, conformidade e privacidade relacionadas ao Microsoft Cloud. É onde publicamos as informações e os recursos necessários para realizar avaliações de risco de autoatendimento de serviços de nuvem e ferramentas. A STP foi criada para ajudar a acompanhar as atividades de conformidade regulatória no Azure, incluindo:
 
 - **Gerente de conformidade:** O Compliance Manager, uma ferramenta de avaliação de riscos baseada em fluxo de trabalho na plataforma de confiança de serviços da Microsoft, permite que você controle, atribua e verifique as atividades de conformidade regulatória de sua organização relacionadas a serviços de Microsoft Cloud, como o Office 365, o Dynamics 365 e o Azure. Você pode encontrar mais detalhes na próxima seção.
-- **Documentos de confiança:** Atualmente, há três categorias de guias que fornecem recursos abundantes para avaliar Microsoft Cloud; Saiba mais sobre as operações da Microsoft em segurança, conformidade e privacidade; e ajudar você a agir em aprimorar seus recursos de proteção de dados. Estão incluídas:
+- **Documentos de confiança:** Atualmente, há três categorias de guias que fornecem recursos abundantes para avaliar Microsoft Cloud; Saiba mais sobre as operações da Microsoft em segurança, conformidade e privacidade; e ajudar você a agir em aprimorar seus recursos de proteção de dados. Eles incluem:
 - **Relatórios de auditoria:** Os relatórios de auditoria permitem que você se mantenha atualizado sobre as informações mais recentes relacionadas à privacidade, segurança e conformidade para serviços de Microsoft Cloud. Isso inclui ISO, SOC, FedRAMP e outros relatórios de auditoria, notificações de avaliação e materiais relacionados a auditorias independentes de terceiros dos serviços do Microsoft Cloud como Azure, Office 365, Dynamics 365, e outros.
 - **Guias de proteção de dados:** Os guias de proteção de dados fornecem informações sobre como Microsoft Cloud serviços protegem seus dados e como você pode gerenciar a segurança de dados de nuvem e a conformidade para sua organização. Isso inclui white papers aprofundados que fornecem detalhes sobre como a Microsoft desenvolve e opera serviços de nuvem, perguntas frequentes, relatórios de avaliações de segurança de fim de ano, resultados de testes de penetração e diretrizes para ajudá-lo a realizar avaliações de risco e aprimorar os recursos de proteção de dados.
 - **Plano de segurança e conformidade do Azure:** Os planos gráficos fornecem recursos para ajudá-lo na criação e inicialização de aplicativos capacitados para a nuvem que o ajudarão a cumprir regulamentações e padrões rígidos. Com mais certificações do que qualquer outro provedor de nuvem, você pode confiar na implantação das cargas de trabalho críticas no Azure com blueprints, que incluem:

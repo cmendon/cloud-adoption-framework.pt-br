@@ -1,6 +1,6 @@
 ---
 title: Modelo de Linha de Base de Segurança
-description: Explicação da linha de base de segurança do conceito em relação à governança de nuvem.
+description: Use este modelo como um ponto de partida para documentar e comunicar instruções de política que regem os problemas relacionados à segurança na nuvem.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 8602676ceb6b3c1400254dc6f72cb2d9f99069b0
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 5341abc29fffdfebca60acc3db44bb846aada0d9
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808831"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77707162"
 ---
 # <a name="security-baseline-template"></a>Modelo de Linha de Base de Segurança
 
@@ -30,7 +30,7 @@ A primeira etapa para implementar a alteração é comunicar o que é desejado. 
 
 <!-- markdownlint-enable MD033 -->
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Práticas sólidas de governança começam com um entendimento do risco de negócios. Revise o artigo sobre os riscos de negócios e comece a documentar os riscos de negócios que se alinham com seu plano de adoção de nuvem atual.
 

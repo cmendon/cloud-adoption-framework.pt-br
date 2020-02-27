@@ -1,6 +1,6 @@
 ---
 title: Política de linha de base de segurança nativa de nuvem
-description: Política de linha de base de segurança nativa da nuvem
+description: Veja um exemplo de política nativa de nuvem para a disciplina de linha de base de segurança, na qual as ferramentas e plataformas do Azure são suficientes para gerenciar riscos de negócios.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9921e04f0b066023842c2ff9009d9e159b759315
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: adf14719f4d4d4c50194eb7b85ccfed7cd0df855
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808933"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77707485"
 ---
 # <a name="cloud-native-security-baseline-policy"></a>Política de linha de base de segurança nativa de nuvem
 
@@ -92,7 +92,7 @@ Mesmo com esse investimento em uma linha de base de segurança nativa de nuvem, 
 - **Acesso de dados seguro e de auditoria.** As organizações devem auditar todos os acessos a dados e usar recursos avançados de aprendizado de máquina para chamar desvios de padrões de acesso normais.
 - **Prática de failover.** As operações de nuvem que têm tolerâncias baixas para a falha devem ser capazes de fazer failover ou de uma recuperação de um incidente de segurança cibernética ou plataforma. Esses procedimentos não devem ser simplesmente documentados, mas devem ser praticado trimestralmente.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Agora que você analisou a política de linha de base de segurança de exemplo para soluções nativas de nuvem, retorne ao [Guia de revisão de política](../policy-compliance/cloud-policy-review.md) para começar a criar esse exemplo para criação de suas próprias políticas para adoção de nuvem.
 

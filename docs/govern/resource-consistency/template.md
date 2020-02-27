@@ -1,6 +1,6 @@
 ---
 title: Modelo de Consistência de Recursos
-description: Modelo de Consistência de Recursos
+description: Use este modelo como um ponto de partida para documentar e comunicar instruções de política que regem o gerenciamento e as operações de ti na nuvem.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f500245b80b0100f075e11b6a796d9acb05458ce
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 72e4de691e083aad1df53f6a13e46c2c7fb907e4
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76805108"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709542"
 ---
 # <a name="resource-consistency-template"></a>Modelo de Consistência de Recursos
 
@@ -30,7 +30,7 @@ A primeira etapa para implementar a alteração é comunicar o que é desejado. 
 
 <!-- markdownlint-enable MD033 -->
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Práticas sólidas de governança começam com um entendimento do risco de negócios. Revise o artigo sobre os riscos de negócios e comece a documentar os riscos de negócios que se alinham com seu plano de adoção de nuvem atual.
 

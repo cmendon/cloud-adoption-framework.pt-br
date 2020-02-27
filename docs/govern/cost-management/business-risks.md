@@ -1,6 +1,6 @@
 ---
-title: Motivações de Gerenciamento de Custos e riscos de negócios
-description: Motivações de Gerenciamento de Custos e riscos de negócios
+title: Riscos de negócios de gerenciamento de custos
+description: Entenda e veja exemplos de adoção de cliente típica de uma disciplina de gerenciamento de custo em uma estratégia de governança de nuvem. 
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 16408b01e06e29fc2697dbbdd053126d026920f0
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 544c425e94e9fa2cc4a687608f0dece80b3e9251
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806502"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77707876"
 ---
 # <a name="cost-management-motivations-and-business-risks"></a>Motivações de Gerenciamento de Custos e riscos de negócios
 
@@ -40,7 +40,7 @@ Os riscos serão diferentes entre a organização, mas os seguintes servem como 
 - **Anomalias de gastos:** Picos inesperados em qualquer direção podem ser indicadores de uso impróprio.
 - **Ativos com provisionamento excessivo:** Quando os ativos são implantados em uma configuração que excede as necessidades de um aplicativo ou VM (máquina virtual), eles podem criar resíduos.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Usando o [modelo de gerenciamento de nuvem](./template.md), documente os riscos de negócios que provavelmente serão introduzidos pelo plano de adoção de nuvem atual.
 

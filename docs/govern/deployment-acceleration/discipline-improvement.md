@@ -1,6 +1,6 @@
 ---
 title: Aperfeiçoamento da disciplina de Aceleração de implantação
-description: Aperfeiçoamento da disciplina de Aceleração de implantação
+description: Entenda as tarefas potenciais que uma empresa realiza para desenvolver e amadureceu sua disciplina de aceleração de implantação em cada fase da adoção da nuvem.
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c5f07137ac1ca8c3ddbc4717dba5622096551862
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: c5406a11fa2d0f5cd2f561c162a344564501486f
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76805924"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77708743"
 ---
 # <a name="deployment-acceleration-discipline-improvement"></a>Aperfeiçoamento da disciplina de Aceleração de implantação
 
@@ -95,7 +95,7 @@ Depois que a transformação for concluída, a governança e as operações deve
 - Revisar regularmente as ferramentas de configuração e scripts para melhorar os processos e identificar problemas comuns.
 - Trabalhar com equipes de desenvolvimento, operações e segurança para ajudar a práticas recomendadas de DevSecOps maduras e dividir silos organizacionais que levam a ineficiências.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Agora que você entende o conceito de governança de identidade de nuvem, examine a [cadeia de ferramentas da Linha de base de identidade](./toolchain.md) para identificar as ferramentas do Azure e recursos que você precisará ao desenvolver a disciplina de governança da Linha de base de identidade na plataforma do Azure.
 

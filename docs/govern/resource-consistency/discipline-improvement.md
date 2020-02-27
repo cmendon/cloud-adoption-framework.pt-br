@@ -1,6 +1,6 @@
 ---
 title: Melhoria da disciplina de Consistência de recursos
-description: Melhoria da disciplina de Consistência de recursos
+description: Use a estrutura de adoção de nuvem para o Azure para entender as tarefas necessárias para desenvolver e amadurecer a disciplina de consistência de recursos em cada fase de adoção.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 0113c37aaca23374021d6790bcbb1db751ffcf4a
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 3e8c51da7dc0e45ee2722681872ca851ee385656
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807233"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709066"
 ---
 # <a name="resource-consistency-discipline-improvement"></a>Melhoria da disciplina de Consistência de recursos
 
@@ -124,7 +124,7 @@ Depois que a transformação for concluída, a governança e as operações deve
 - Avaliar as ferramentas de registro de logs e monitoramento para determinar se as soluções locais, de gateways de nuvem ou híbridas precisam de ajuste.
 - Para unidades de negócios e grupos distribuídos geograficamente, determine se a sua organização deve considerar o uso de recursos adicionais de gerenciamento de nuvem, como [grupos de gerenciamento do Azure](https://docs.microsoft.com/azure/governance/management-groups) , para aplicar melhor a política centralizada e atender aos requisitos de SLA.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Agora que você entende o conceito de governança de recursos de nuvem, saiba mais sobre [como o acesso aos recursos é gerenciado](./resource-access-management.md) no Azure em preparação para aprender a criar um modelo de governança para uma [carga de trabalho simples](./governance-simple-workload.md) ou [múltiplas equipes](./governance-multiple-teams.md).
 

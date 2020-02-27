@@ -1,6 +1,6 @@
 ---
 title: Processos de conformidade de política de aceleração de implantação
-description: Processos de conformidade de política de aceleração de implantação
+description: Use a estrutura de adoção de nuvem para o Azure para aprender uma abordagem de criação de processos que dão suporte a uma disciplina de governança de gerenciamento de implantação.
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 157f43baa7de8aabfcf3d3823caf962ac6bc2306
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 149fe69eaa89fcc1b0ee7715dad8e4c46dadc963
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806366"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77708760"
 ---
 # <a name="deployment-acceleration-policy-compliance-processes"></a>Processos de conformidade de política de aceleração de implantação
 
@@ -57,7 +57,7 @@ Os gatilhos e ações de imposição a seguir fornecem exemplos que você pode c
 - **A configuração de novos recursos não adere à política.** Trabalhe com as equipes do DevOps e proprietários da carga de trabalho para examinar as políticas de aceleração de implantação durante a inicialização do projeto para que todos os envolvidos compreendam os requisitos de política relevantes.
 - **Falhas na implantação ou problemas de configuração causam atrasos em cronogramas do projeto.** Trabalhe com as equipes de desenvolvimento e os proprietários da carga de trabalho para garantir que a equipe compreenda como automatizar a implantação de recursos baseados em nuvem para consistência e capacidade de repetição. As implantações totalmente automatizadas devem ser necessárias no início do ciclo de desenvolvimento&mdash;tentar fazer isso mais tarde no ciclo de desenvolvimento geralmente leva a problemas e atrasos inesperados.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Usando o [modelo de Gerenciamento de Nuvem](./template.md), documente os processos e gatilhos que alinham-se ao plano de adoção da nuvem atual.
 

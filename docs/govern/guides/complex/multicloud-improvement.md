@@ -1,6 +1,6 @@
 ---
-title: 'Guia de governança para empresas complexas: melhoria em nuvem'
-description: 'Guia de governança para empresas complexas: melhoria em nuvem'
+title: 'Governança empresarial complexa: melhoria em nuvem'
+description: Use a estrutura de adoção de nuvem para o Azure para aprender sobre várias nuvens e como integrar organizações multinuvem para empresas complexas.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3da91b65c282e9eba8248645b18cec65763b429b
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 07126e67dbe76562e664e35a4817d0e51733236f
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76805584"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709168"
 ---
 # <a name="governance-guide-for-complex-enterprises-multicloud-improvement"></a>Guia de governança para empresas complexas: melhoria em nuvem
 
@@ -81,7 +81,7 @@ Esta seção do artigo melhora o design de MVP de governança para incluir novas
 
 A adoção de multinuvem deve estar contida em onde é necessário com base em necessidades técnicas ou em requisitos de negócios específicos. À medida que a adoção de nuvem cresce, isso aumenta a complexidade e os riscos de segurança.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Em muitas grandes empresas, as cinco disciplinas de governança de nuvem podem ser bloqueadores para adoção. O próximo artigo tem algumas opiniões adicionais sobre como tornar a governança um esporte de equipe para ajudar a garantir o sucesso a longo prazo na nuvem.
 

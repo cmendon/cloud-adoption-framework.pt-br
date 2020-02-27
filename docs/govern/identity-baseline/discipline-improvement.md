@@ -1,6 +1,6 @@
 ---
 title: Melhoria da disciplina de Linha de base de identidade
-description: Melhoria da disciplina de Linha de base de identidade
+description: Entenda as tarefas potenciais que uma empresa realiza para desenvolver e amadurecer sua disciplina de linha de base de identidade em cada fase da adoção da nuvem.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6adb2e0d6edaacd45e41b8ac3eadb57969cad160
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: f1ee4e64e86ccb3648badad38d2118be11b76cc7
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807182"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709355"
 ---
 # <a name="identity-baseline-discipline-improvement"></a>Melhoria da disciplina de Linha de base de identidade
 
@@ -132,7 +132,7 @@ Depois que a transformação for concluída, a governança e as operações deve
 - Periodicamente, produzir um relatório de impacto que mostra as alterações nas métricas criadas pelo sistema e estimar o impacto de negócios da [estratégia de identidade híbrida](../../decision-guides/identity/index.md).
 - Estabelecer monitoramento integrado recomendado pela [Central de Segurança do Azure](https://docs.microsoft.com/azure/security-center/security-center-intro).
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Agora que você entende o conceito de governança de identidade de nuvem, examine a [cadeia de ferramentas da Linha de base de identidade](./toolchain.md) para identificar as ferramentas do Azure e recursos que você precisará ao desenvolver a disciplina de governança da Linha de base de identidade na plataforma do Azure.
 

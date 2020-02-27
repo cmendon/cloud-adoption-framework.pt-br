@@ -1,6 +1,6 @@
 ---
 title: Identificar ferramentas da linha de base no Azure
-description: Identificar ferramentas da linha de base no Azure
+description: Veja como as ferramentas nativas do Azure podem ajudar processos e políticas maduros que dão suporte à disciplina de governança de linha de base de identidade.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: d145d08aa4cf2b386c3ee1f0df403f684b27c2a2
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 0aa9525a42e62012e1aa5913d9f806cc2a40e2f0
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806060"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709389"
 ---
 # <a name="identity-baseline-tools-in-azure"></a>Identificar ferramentas da linha de base no Azure
 
@@ -74,7 +74,7 @@ A tabela a seguir lista as ferramentas nativas que ajudam a amadurecer as polít
 > [!NOTE]
 > Atualmente, os controles personalizados no acesso condicional do Azure AD não dão suporte para registro de dispositivos.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 O [White paper da estrutura de transformação digital de identidade híbrida](https://resources.office.com/ww-landing-M365E-EMS-IDAM-Hybrid-Identity-WhitePaper.html) descreve combinações e soluções para escolher e integrar cada um desses componentes.
 

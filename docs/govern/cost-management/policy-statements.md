@@ -1,6 +1,6 @@
 ---
 title: Instruções de política de amostra de Gerenciamento de Custos
-description: Instruções de política de amostra de Gerenciamento de Custos
+description: Use a estrutura de adoção de nuvem do Azure para obter instruções de política de gerenciamento de custo de exemplo que ajudarão você a criar instruções de política de rascunho.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e9ec4024033d71ca15c34d33beb0cb52967f6d4a
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 3f9b7076cb50d9526beccfe4faabaa043b010841
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806434"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77708879"
 ---
 # <a name="cost-management-sample-policy-statements"></a>Instruções de política de amostra de Gerenciamento de Custos
 
@@ -74,7 +74,7 @@ As instruções de política de exemplo a seguir abordam riscos de negócios com
 - No Azure, [os recursos de insights do Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-performance) podem ajudar com a análise de utilização do sistema.
 - Há várias opções para agrupar e marcar recursos baseados nas funções. No Azure, escolha um [modelo de consistência do recurso](../../decision-guides/resource-consistency/index.md) em conjunto com a equipe de governança e aplicado a todos os ativos.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Use os exemplos mencionados neste artigo como um ponto de partida para desenvolver políticas que abordam os riscos de negócios específicos que se alinham aos seus planos de adoção de nuvem.
 

@@ -1,6 +1,6 @@
 ---
 title: Instruções de política de exemplo de Aceleração de implantação
-description: Instruções de política de exemplo de Aceleração de implantação
+description: Use a estrutura de adoção da nuvem para o Azure para obter instruções de política de aceleração de implantação de exemplo para ajudá-lo a criar instruções de política.
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c582b0a6e836f5198724e5675840f3f8085f55dc
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 9e25c81e2811bcefa238366462db3d2c66184b08
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76803935"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77708947"
 ---
 # <a name="deployment-acceleration-sample-policy-statements"></a>Instruções de política de exemplo de Aceleração de implantação
 
@@ -52,7 +52,7 @@ As instruções de política de exemplo a seguir abordam os riscos de negócios 
 
 **Possíveis opções de design:** Estabeleça uma reunião de revisão de segurança mensal que inclua membros da equipe de governança e a equipe de ti responsáveis por aplicativos e recursos de nuvem de configuração. Examine as métricas e os dados de segurança existentes para estabelecer lacunas na política e nas ferramentas de aceleração de implantação atuais, e atualize a política para corrigir quaisquer riscos novos.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Use os exemplos mencionados neste artigo como um ponto de partida para desenvolver políticas que abordam os riscos de negócios específicos que se alinham aos seus planos de adoção de nuvem.
 

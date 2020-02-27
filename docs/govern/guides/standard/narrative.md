@@ -1,6 +1,6 @@
 ---
-title: 'Guia de governança empresarial padrão: a narração por trás da estratégia de governança'
-description: Essa narração estabelece um caso de uso para governança durante uma jornada de adoção de nuvem padrão da empresa.
+title: 'Governança empresarial padrão: narração por trás da estratégia de governança'
+description: Use a estrutura de adoção de nuvem para o Azure para saber como estabelecer um caso de uso para governança durante uma jornada de adoção de nuvem empresarial padrão.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1e6edb6db4663c9a3b78394dc715376f697e6f5e
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: d963053806a6a43476c7597be5dd628b6e187e06
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76805516"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709270"
 ---
 # <a name="standard-enterprise-governance-guide-the-narrative-behind-the-governance-strategy"></a>Guia de governança empresarial padrão: a narração por trás da estratégia de governança
 
@@ -54,7 +54,7 @@ As seguintes alterações estão previstas nos próximos vários anos:
     ![custos locais versus os custos do Azure demonstrando um retorno de $25M USD nos próximos cinco anos](../../../_images/govern/calculator-small-to-medium-enterprise.png)
 - A empresa planeja alterar a forma como ela faz investimentos reposicionando as despesas de capital confirmadas como uma despesa operacional dentro dela. Essa alteração fornecerá maior controle de custo e habilitará a TI para acelerar outros esforços planejados.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 A empresa desenvolveu uma política corporativa para formar a implementação de governança. A política corporativa conduz muitas das decisões técnicas.
 

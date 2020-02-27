@@ -1,6 +1,6 @@
 ---
-title: Métricas de Gerenciamento de Custos, indicadores e tolerância a risco
-description: Explicação sobre o Gerenciamento de Custos em relação a governança de nuvem
+title: Indicadores e métricas de tolerância de risco do gerenciamento de custos
+description: Use a estrutura de adoção de nuvem para o Azure para quantificar as métricas de tolerância a riscos de gerenciamento de custos e os indicadores em relação à governança de nuvem.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: aee529f6065e35645805a7f3d6577447eb48cf3f
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: c44fc6974be69ff684089c65aa23da5eefbfd814
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806451"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77708811"
 ---
 # <a name="cost-management-metrics-indicators-and-risk-tolerance"></a>Métricas de Gerenciamento de Custos, indicadores e tolerância a risco
 
@@ -47,7 +47,7 @@ Depois de ter identificado [riscos de negócios](./business-risks.md), você tra
 - **Gatilho de gasto anual:** Uma empresa com um orçamento de R & D que permite gastar _$x, 000_ por ano em experimentação de nuvem. Eles podem executar cargas de trabalho de produção na nuvem, mas eles ainda serão considerados soluções experimentais se o orçamento não exceder essa quantidade. Se o orçamento for excedido, ele precisará tratar o orçamento como um investimento em produção e gerenciar os gastos de forma minuciosa.
 - **Despesa operacional-adverso (incomum):** Como uma empresa, eles estão avessando as despesas operacionais e precisarão de controles de gerenciamento de custos em vigor antes de implantar uma carga de trabalho de desenvolvimento/teste.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Usar o [modelo de Gerenciamento de Nuvem](./template.md), de métricas do documento e de indicadores de tolerância que se alinham ao atual plano de adoção da nuvem.
 

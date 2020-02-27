@@ -1,6 +1,6 @@
 ---
-title: 'Guia de governança para empresas complexas: a narração de suporte'
-description: Essa narração estabelece um caso de uso para governança durante uma jornada de adoção de nuvem complexa da empresa.
+title: 'Governança empresarial complexa: a narração de suporte'
+description: Use a estrutura de adoção de nuvem para o Azure para estabelecer um caso de uso para governança durante a jornada de adoção de nuvem de sua empresa complexa.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: fae1940c1cc522cd917b2b0293d60b630007537c
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 7c2cfcc76153e999b2ca9d50b63cf0a72cfb2c14
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76805550"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77706907"
 ---
 # <a name="governance-guide-for-complex-enterprises-the-supporting-narrative"></a>Guia de governança para empresas complexas: a narração de suporte
 
@@ -60,7 +60,7 @@ As seguintes alterações estão previstas nos próximos vários anos:
     ![custos locais versus os custos do Azure demonstrando um retorno de US $100 milhões nos próximos cinco anos](../../../_images/govern/calculator-enterprise.png)
 - Junto com essa economia de custos, a empresa planeja alterar o gerenciamento de alguns investimentos em ti Reposicionando a despesa de capital confirmada como uma despesa operacional dentro dela. Essa alteração fornecerá maior controle de custo que poderá usar para acelerar as outras iniciativas planejadas.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 A empresa desenvolveu uma política corporativa para formar a implementação de governança. A política corporativa conduz muitas das decisões técnicas.
 

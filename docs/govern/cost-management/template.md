@@ -1,6 +1,6 @@
 ---
 title: Modelo de Gerenciamento de Custos
-description: Use este modelo como um modelo para capturar os riscos de negócios, as tolerâncias de risco, os processos de conformidade e as ferramentas necessárias para definir as instruções de política de gerenciamento de custos da sua organização.
+description: Use este modelo para definir instruções de política de gerenciamento de custos que capturam riscos de negócios, tolerância a riscos, processos de conformidade e ferramentas.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a44912caaf2a79c505f0f6825471baaa7888e957
-ms.sourcegitcommit: 238e7a06b56950cebdcc8f75924849fc995e6ff2
+ms.openlocfilehash: 4b4f3f9e8be48f96abf9471738a50491ac80d317
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "77173269"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77708794"
 ---
 # <a name="cost-management-template"></a>Modelo de Gerenciamento de Custos
 

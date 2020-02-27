@@ -1,6 +1,6 @@
 ---
 title: Design de governança para uma carga de trabalho simples
-description: Diretrizes para configurar os controles de governança do Azure para permitir que um usuário implante uma carga de trabalho simples.
+description: Aprenda o processo de criação de um modelo de governança de recursos no Azure para dar suporte a uma única equipe e uma carga de trabalho simples. 
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a1edb7395751f8a91899fc8ef88f53bc056914ac
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 868f62856c68c516c384d44cd7fa0e1857ade0e8
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76803850"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709559"
 ---
 # <a name="governance-design-for-a-simple-workload"></a>Design de governança para uma carga de trabalho simples
 
@@ -36,7 +36,7 @@ Quando o Azure foi adicionado ao Enterprise Agreement de sua organização, foi 
 ![conta do Azure com o Gerenciador de contas do Azure e o administrador global do Azure AD](../../_images/govern/design/governance-3-0.png)
 *Figura 1-uma conta do Azure com um gerente de conta e um administrador global do Azure AD.*
 
-## <a name="identity-management"></a>Gerenciamento de identidade
+## <a name="identity-management"></a>Gerenciamento de identidades
 
 Somente o Azure confia no [Azure AD](https://docs.microsoft.com/azure/active-directory) para autenticar usuários e autorizar o acesso de usuários a recursos, por isso, o Azure AD é o nosso sistema de gerenciamento de identidade. O administrador global do Azure AD tem o nível mais alto de permissões e pode executar todas as ações relacionadas à identidade, incluindo a criação de usuários e a atribuição de permissões.
 
@@ -110,7 +110,7 @@ Em seguida, o **proprietário da conta** do Azure deve [criar uma assinatura](ht
 
 Por fim, agora que a assinatura está criada e seu locatário do Azure Active Directory está associado a ela, você poderá [adicionar o **proprietário da carga de trabalho** à assinatura com a função de **proprietário** interna](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#to-assign-a-user-as-an-administrator).
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 > [!div class="nextstepaction"]
 > [Implantar uma carga de trabalho básica para o Azure](../../infrastructure/virtual-machines/basic-workload.md)

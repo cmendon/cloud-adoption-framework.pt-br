@@ -1,6 +1,6 @@
 ---
 title: 'Rede definida pelo software: nativa na nuvem'
-description: Discussão sobre serviços de rede virtual nativas de nuvem.
+description: Use a estrutura de adoção de nuvem para o Azure para saber mais sobre redes virtuais nativas de nuvem, que são necessárias para implantar VMs na nuvem.
 author: rotycenh
 ms.author: v-tyhopk
 ms.date: 02/11/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 8b5983ace8d56fa219d88e921fa6da7263d486fb
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 9d8bf9a5188eae55c14a22a8007aa6e9cc01b02c
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806638"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77708590"
 ---
 # <a name="software-defined-networking-cloud-native"></a>Rede definida pelo software: nativa na nuvem
 
@@ -36,7 +36,7 @@ Outros problemas que suas equipes de adoção de nuvem devem considerar ao discu
 - Cargas de trabalho existentes, projetadas para serem executadas em um datacenter local, talvez seja necessário uma extensa modificação para tirar proveito da funcionalidade baseada em nuvem, como os serviços de armazenamento ou autenticação.
 - As redes nativas de nuvem são gerenciadas exclusivamente por meio das ferramentas de gerenciamento da plataforma de nuvem e, portanto, podem levar ao gerenciamento e à divergência de políticas de seus padrões de ti existentes à medida que o tempo continua.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Para obter mais informações sobre redes virtuais nativas de nuvem no Azure, consulte:
 

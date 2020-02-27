@@ -1,6 +1,6 @@
 ---
-title: 'Guia de governança para empresas complexas: práticas recomendadas explicadas'
-description: Saiba mais sobre as práticas recomendadas para governança em empresas complexas.
+title: 'Governança empresarial complexa: práticas recomendadas explicadas'
+description: Use a estrutura de adoção de nuvem para o Azure para estabelecer um MVP (produto viável) mínimo para governança que reflita as práticas recomendadas para uma empresa complexa.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e733db73ce5a77d4b1e81f052804b7a49da4aad5
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 74f81e139e7eacc7445321592eab4027a40a8c56
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806264"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709202"
 ---
 # <a name="governance-guide-for-complex-enterprises-best-practices-explained"></a>Guia de governança para empresas complexas: práticas recomendadas explicadas
 
@@ -79,7 +79,7 @@ As decisões de marcação de recursos determinam como os metadados são aplicad
   - painel Geografia do app&#39;s selecionado
   - Classificação de dados
   - Importância
-  - SLA
+  - Contrato de Nível de Serviço
   - Ambiente
   - Arquétipo do aplicativo
   - Aplicativo
@@ -123,7 +123,7 @@ Se qualquer um dos padrões escolhidos neste guia de governança não se alinhar
 - [Padrões de rede definidos pelo software](../../../decision-guides/software-defined-network/index.md)
 - [Padrões de design de assinatura](../../../decision-guides/subscriptions/index.md)
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Depois que este guia for implementado, cada equipe de adoção da nuvem poderá continuar com uma base sólida sobre governança. Ao mesmo tempo, a equipe de governança de nuvem trabalhará para atualizar continuamente as políticas corporativas e as disciplinas de governança.
 

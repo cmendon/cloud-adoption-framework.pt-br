@@ -1,6 +1,6 @@
 ---
-title: Métricas de Linha de base de segurança, indicadores e tolerância a risco
-description: Métricas de Linha de base de segurança, indicadores e tolerância a risco
+title: Métricas e indicadores de tolerância de risco de linha de base de segurança
+description: Use a estrutura de adoção de nuvem para o Azure para aprender a quantificar a tolerância a riscos de negócios relacionada à linha de base de segurança.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1075563dd4596ad6bd1b4ac202a69a1ab1251cba
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 5f85fd62f78b3be30faab452f12113790e6455d8
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808848"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77707332"
 ---
 # <a name="security-baseline-metrics-indicators-and-risk-tolerance"></a>Métricas de Linha de base de segurança, indicadores e tolerância a risco
 
@@ -56,7 +56,7 @@ Assim que você tiver uma linha de base, estabeleça parâmetros de comparação
 
 As métricas e os gatilhos exatos que você usa para medir a tolerância a riscos e o nível de investimento na disciplina de linha de base de segurança serão específicos para sua organização, mas os exemplos acima devem servir como uma base útil para discussão em sua equipe de governança de nuvem.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Usar o [modelo de Gerenciamento de Nuvem](./template.md), de métricas do documento e de indicadores de tolerância que se alinham ao atual plano de adoção da nuvem.
 

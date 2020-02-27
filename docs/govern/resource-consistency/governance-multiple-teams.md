@@ -1,6 +1,6 @@
 ---
-title: Design de governança no Azure para várias equipes
-description: Diretrizes para configurar controles de governança do Azure para várias equipes, várias cargas de trabalho e vários ambientes.
+title: Design de governança de várias equipes no Azure
+description: Encontre diretrizes para configurar controles de governança do Azure para várias equipes, várias cargas de trabalho e vários ambientes.
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7bfceb1a7fe68869dabec7eda813cd3fdc121b49
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: ba1776affc2bd4f0ca090603ca969c21090d9252
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76804292"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709576"
 ---
 # <a name="governance-design-for-multiple-teams"></a>Design de governança para várias equipes
 
@@ -38,7 +38,7 @@ Esses requisitos são:
   - A empresa não deseja ter que gerenciar funções independentemente em cada um dos três ambientes principais e, portanto, requer o uso de apenas [funções internas](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles) disponíveis no RBAC (controle de acesso baseado em função) do Azure. Se a empresa absolutamente requer funções RBAC personalizadas, processos adicionais seriam necessários para sincronizar funções personalizadas entre os três ambientes.
 - Custo de controle por nome de proprietário de carga de trabalho, ambiente ou ambos.
 
-## <a name="identity-management"></a>Gerenciamento de identidade
+## <a name="identity-management"></a>Gerenciamento de identidades
 
 Antes de podermos projetar o gerenciamento de identidades para o seu modelo de controle, é importante entender as quatro áreas principais que englobam:
 
@@ -268,7 +268,7 @@ Agora que você já implementou o seu modelo de controle, poderá implantar seus
 
 [Funções internas para recursos do Azure](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles)
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 > [!div class="nextstepaction"]
 > [Saiba mais sobre como implantar uma infraestrutura básica](../../infrastructure/virtual-machines/basic-workload.md)

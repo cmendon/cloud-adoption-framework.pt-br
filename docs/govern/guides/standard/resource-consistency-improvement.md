@@ -1,6 +1,6 @@
 ---
 title: 'Governança empresarial padrão: melhorar a consistência de recursos'
-description: Melhore a linha de base de governança e corrija os riscos de governança de recursos adicionando controles de recuperação, dimensionamento e monitoramento na estrutura de adoção de Microsoft Cloud para o Azure.
+description: Use a estrutura de adoção de nuvem do Azure para saber mais sobre como melhorar uma linha de base de governança e corrigir riscos adicionando controles de recuperação, dimensionamento e monitoramento.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 366f5034a89529e65325a8afd2cf0275dcec02e4
-ms.sourcegitcommit: 1de39a4c3954512892f11e3d1330a04e95ce187d
+ms.openlocfilehash: e50d3e258a4b040d1f9cfaa1b274ed977c49b14d
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "77567666"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709100"
 ---
 # <a name="standard-enterprise-governance-guide-improving-resource-consistency"></a>Guia de governança empresarial padrão: melhorando a consistência de recursos
 
@@ -113,7 +113,7 @@ Esta seção do artigo alterará o design MVP de governança para incluir novas 
 
 Esses processos adicionais e as alterações no MVP de governança ajudam a corrigir muitos dos riscos associados à governança de recursos. Juntos, aumentam a recuperação, dimensionamento e controles de monitoramento que capacitam as operações de recuperação de nuvem.
 
-## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
+## <a name="next-steps"></a>Próximas etapas
 
 À medida que a adoção de nuvem continua e entrega o valor comercial adicional, os riscos e as necessidades de governança de nuvem também serão alterados. Para a empresa fictícia neste guia, o próximo gatilho é quando a escala da implantação excede 100 ativos para a nuvem ou gastos mensais excedem $1000 por mês. Neste ponto, a equipe de governança de nuvem adiciona controles de gerenciamento de custos.
 

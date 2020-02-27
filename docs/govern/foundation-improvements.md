@@ -1,6 +1,6 @@
 ---
 title: Aprimore sua base de governança de nuvem inicial
-description: Saiba como melhorar incrementalmente sua base de governança de nuvem inicial.
+description: Use a estrutura de adoção de nuvem para o Azure para aprender a melhorar incrementalmente sua base de governança de nuvem inicial.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/13/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 1b46157e134967095cff9ff84bcfb5b826a22bae
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 050d9cdfd2069a4d7da2e411233f6a60f270eb10
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76805805"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77706601"
 ---
 # <a name="improve-your-initial-cloud-governance-foundation"></a>Aprimore sua base de governança de nuvem inicial
 
@@ -36,7 +36,7 @@ A qualquer momento, as práticas recomendadas a seguir podem ser aplicadas à ba
 |Gerenciamento de identidade complexo/herdado|N/D|[Aprimoramento da disciplina](./guides/complex/identity-baseline-improvement.md)|
 |Múltiplas camadas de governança|N/D|[Aprimoramento da disciplina](./guides/complex/multiple-layers-of-governance.md)|
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Além da aplicação das práticas recomendadas, a metodologia de governança na estrutura de adoção de nuvem pode ser personalizada para se ajustar a restrições de negócios exclusivas. Depois de seguir as recomendações aplicáveis, [avalie a política corporativa para entender os requisitos de personalização adicionais](./corporate-policy.md).
 

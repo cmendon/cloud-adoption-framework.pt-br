@@ -1,6 +1,6 @@
 ---
 title: Melhoria da disciplina de Linha de Base de Segurança
-description: Melhoria da disciplina de Linha de Base de Segurança
+description: Entenda as tarefas potenciais que uma empresa realiza para desenvolver e amadureceu sua disciplina de linha de base de segurança em cada fase da adoção da nuvem.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 316a848e0f9f3f90a2f7badde3166733dce4a4c0
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 0d5f2e2c1032c77ceb56b187aa9f2bcee02262eb
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808899"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77707383"
 ---
 # <a name="security-baseline-discipline-improvement"></a>Melhoria da disciplina de Linha de Base de Segurança
 
@@ -113,7 +113,7 @@ Depois que a transformação for concluída, a governança e as operações deve
 - Tenha procedimentos implantados para parar rapidamente o acesso não autorizado e desabilitar recursos que possam ter sido comprometidos por um invasor.
 - Revise regularmente as melhores práticas de segurança mais recentes e aplique recomendações às políticas de segurança, automação e monitoramento de recursos, sempre que possível.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Agora que você já entende o conceito de governança de segurança de nuvem, prossiga e saiba [quais as diretrizes de segurança e melhores práticas a Microsoft oferece](./azure-security-guidance.md) para o Azure.
 

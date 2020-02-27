@@ -1,6 +1,6 @@
 ---
 title: Realizar uma revisão da política de nuvem
-description: Saiba como conduzir uma revisão de política de nuvem.
+description: Saiba como modernizar as políticas de ti corporativa existentes para fornecer um nível equivalente de gerenciamento de riscos para recursos baseados em nuvem.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 48e4e759435178e346e08233afeca95ab065711e
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: e4235830eee8e57581214f3eabb46c32ebcf975b
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76805057"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709117"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -57,7 +57,7 @@ Para fornecer um exemplo do processo, vamos usar novamente a política de backup
   - Também é importante considerar que a linha do tempo especificada no requisito acima pode ter sido definida por restrições técnicas que não estão mais presentes na nuvem. Certifique-se de entender as restrições técnicas e os recursos da nuvem antes de simplesmente aplicar um RTO/RPO herdado.
 - Examine com as equipes de adoção da nuvem. Dependendo da solução que está sendo implementada, há vários meios de aderir a esta política de Consistência de Recursos.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Saiba mais sobre como incluir a classificação de dados em sua estratégia de governança de nuvem.
 

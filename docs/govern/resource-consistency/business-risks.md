@@ -1,6 +1,6 @@
 ---
-title: Motivações de Consistência de Recursos e os riscos de negócios
-description: Motivações de Consistência de Recursos e os riscos de negócios
+title: Riscos de negócios de consistência de recursos
+description: Use a estrutura de adoção de nuvem para o Azure para entender a adoção típica do cliente de uma disciplina de consistência de recursos em uma estratégia de governança de nuvem.
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e1c4723aa52c20c16dbfa883d7e8566292ca54b3
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 90959045d877c313576540c3f0288eff8c136b5f
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807216"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77706856"
 ---
 # <a name="resource-consistency-motivations-and-business-risks"></a>Motivações de Consistência de Recursos e os riscos de negócios
 
@@ -42,7 +42,7 @@ Os riscos serão diferentes entre a organização, mas os seguintes servem como 
 - **Ineficiências de gerenciamento.** Falta de nomenclatura consistente e metadados associados aos recursos de marcação pode levar a equipe de TI a ter dificuldades para localizar recursos para tarefas de gerenciamento ou de identificação de propriedade e informações de estatísticas relacionadas a ativos. Isso resulta em ineficiências de gerenciamento que podem aumentar o custo e a capacidade de resposta lenta da TI a interrupção do serviço ou outros problemas operacionais.
 - **Interrupção dos negócios.** Interrupções de serviço que resultam em violações dos Contratos e Nível de Serviço (SLAs) estabelecidos da sua organização podem resultar em perda de negócios ou outros impactos financeiros a sua empresa.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Usando o [modelo de gerenciamento de nuvem](./template.md), documente os riscos de negócios que provavelmente serão introduzidos pelo plano de adoção de nuvem atual.
 

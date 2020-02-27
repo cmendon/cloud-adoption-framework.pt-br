@@ -1,6 +1,6 @@
 ---
-title: Motivações da linha de base de identidade e riscos de negócios
-description: Motivações da linha de base de identidade e riscos de negócios
+title: Riscos de negócios de linha de base de identidade
+description: Entenda e veja exemplos de adoção típica do cliente de uma disciplina de linha de base de identidade em uma estratégia de governança de nuvem. 
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 13aedd3ef5a596547a6a7bb33102182504bde86f
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 8969a2f3cfef80f814f7dae63982e66558a35425
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807131"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709321"
 ---
 # <a name="identity-baseline-motivations-and-business-risks"></a>Motivações da linha de base de identidade e riscos de negócios
 
@@ -40,7 +40,7 @@ Os riscos serão diferentes entre a organização, mas os seguintes servem como 
 - **Incapacidade de compartilhar recursos com parceiros externos.** Dificuldade para adição de parceiros comerciais externos às suas soluções de identidade existente pode impedir a comunicação eficiente de recursos de compartilhamento e de negócios.
 - **Dependências de identidade local.** Mecanismos de autenticação herdados ou autenticação de multifator de terceiros pode não estar disponível na nuvem, exigindo migrar as cargas de trabalho para serem alteradas ou serviços de identidade adicional a serem implantado para a nuvem. Nenhum dos dois requisitos pode atrasar ou evitar a migração e aumentar os custos.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Usando o [modelo de gerenciamento de nuvem](./template.md), documente os riscos de negócios que provavelmente serão introduzidos pelo plano de adoção de nuvem atual.
 

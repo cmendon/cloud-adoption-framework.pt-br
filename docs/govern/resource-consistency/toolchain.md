@@ -1,6 +1,6 @@
 ---
 title: Ferramentas de consistência de recursos no Azure
-description: Ferramentas de consistência de recursos no Azure
+description: Veja como as ferramentas nativas do Azure podem ajudar as políticas e os processos maduros que dão suporte à disciplina de governança de consistência de recursos.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a2f553285f9d44085cc816c2db34f76fcb02235d
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 002b9d1fc559d87ef84614a6f1c085e08c6b9842
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76805176"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77708165"
 ---
 # <a name="resource-consistency-tools-in-azure"></a>Ferramentas de consistência de recursos no Azure
 
@@ -61,6 +61,6 @@ Ao planejar a implantação, será necessário considerar onde os dados de regis
 > [!NOTE]
 > As organizações também usam ferramentas de DevOps de terceiros para monitorar recursos e cargas de trabalho. Para obter mais informações, consulte [integração da ferramenta DevOps](https://azure.microsoft.com/products/devops-tool-integrations).
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Aprenda como criar, atribuir e gerenciar [definições de políticas](https://docs.microsoft.com/azure/governance/policy) no Azure.

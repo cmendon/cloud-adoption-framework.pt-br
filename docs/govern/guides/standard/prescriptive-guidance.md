@@ -1,6 +1,6 @@
 ---
-title: 'Guia de governança empresarial Standard: práticas recomendadas explicadas'
-description: Saiba mais sobre as práticas recomendadas para governança em empresas padrão.
+title: 'Governança empresarial padrão: práticas recomendadas explicadas'
+description: Use a estrutura de adoção de nuvem para o Azure para estabelecer um MVP (produto viável) mínimo para governança que reflita as práticas recomendadas para uma empresa padrão.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1705310a335e3fd5aab622b401a6067e8af6d133
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: f82dc3d12aa325c3239060a904cc5d3111a056d4
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806791"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709304"
 ---
 # <a name="standard-enterprise-governance-guide-best-practices-explained"></a>Guia de governança empresarial Standard: práticas recomendadas explicadas
 
@@ -77,7 +77,7 @@ As decisões de marcação de recursos determinam como os metadados são aplicad
 - Os ativos implantados devem ser marcados com:
   - Classificação de dados
   - Importância
-  - SLA
+  - Contrato de Nível de Serviço
   - Ambiente
 - Esses quatro valores guiarão as decisões relativas à governança, operações e segurança.
 - Se este guia de governança estiver sendo implementado para uma unidade de negócios ou equipe em uma empresa maior, a marcação também deverá incluir metadados para a unidade de cobrança.
@@ -113,7 +113,7 @@ Se qualquer um dos padrões selecionados neste guia de governança não se alinh
 - [Padrões de rede definidos pelo software](../../../decision-guides/software-defined-network/index.md)
 - [Padrões de design de assinatura](../../../decision-guides/subscriptions/index.md)
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Depois que este guia for implementado, cada equipe de adoção da nuvem poderá continuar o trabalho com uma base sólida sobre governança. Ao mesmo tempo, a equipe de governança de nuvem trabalhará para atualizar continuamente as políticas corporativas e as disciplinas de governança.
 
