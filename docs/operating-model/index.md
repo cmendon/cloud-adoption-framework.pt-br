@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: operating-model
-ms.openlocfilehash: a04be99cfa3a37c9627b4384f240dac865d63da3
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 093f404ce4e8a5a9c5f60b5ee3bb81064ba5b3f8
+ms.sourcegitcommit: 10f687bb1316db509fc1a3dbde72e107a467d72a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806944"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77629276"
 ---
 # <a name="establish-an-operating-model-for-the-cloud"></a>Estabelecer um modelo operacional para a nuvem
 
@@ -23,7 +23,7 @@ Esses esforços de adoção são relativamente fáceis de acompanhar e medir, me
 
 **Se a adoção descreve o que você está fazendo, o modelo operacional define o quem e o como subjacentes que permitem a adoção.**
 
-Satya Nadella disse que **"A cultura come a estratégia no café da manhã"** . O modelo operacional é a materialização da cultura de TI, capturada em vários processos mensuráveis. Quando a nuvem é alimentada por um modelo de operação forte, a cultura impulsionará a estratégia, acelerando a adoção e a realização dos valores de negócios. Por outro lado, quando a adoção é bem-sucedida mas não há nenhum modelo operacional, o retorno pode ser impressionante, mas de vida muito curta. Para o sucesso a longo prazo, é vital que os modelos de adoção e de operação avancem em paralelo.
+"A cultura come a estratégia no café da manhã." O modelo operacional é a materialização da cultura de TI, capturada em vários processos mensuráveis. Quando a nuvem é alimentada por um modelo de operação forte, a cultura impulsionará a estratégia, acelerando a adoção e a realização dos valores de negócios. Por outro lado, quando a adoção é bem-sucedida mas não há nenhum modelo operacional, o retorno pode ser impressionante, mas de vida muito curta. Para sucesso a longo prazo, é vital que os modelos de adoção e de operação avancem em paralelo.
 
 ## <a name="establish-your-operating-model"></a>Estabelecer seu modelo operacional
 

@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 790bb68a862343452aa5481e20596a839bb7b93c
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: eb2564239548f77084fbc38d93003346a07e8e84
+ms.sourcegitcommit: 1de39a4c3954512892f11e3d1330a04e95ce187d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799328"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77567751"
 ---
 # <a name="organize-your-azure-resources"></a>Organizar seus recursos do Azure
 
@@ -22,7 +22,7 @@ A organização dos seus recursos baseados em nuvem é essencial para proteger, 
 
 <!-- markdownlint-disable MD024 MD025 -->
 
-# <a name="azure-management-groups-and-hierarchytabazuremanagmentgroupsandhierarchy"></a>[Hierarquia e grupos de gerenciamento do Azure](#tab/AzureManagmentGroupsAndHierarchy)
+# <a name="azure-management-groups-and-hierarchy"></a>[Hierarquia e grupos de gerenciamento do Azure](#tab/AzureManagmentGroupsAndHierarchy)
 
 O Azure fornece quatro níveis de escopo de gerenciamento: grupos de gerenciamento, assinatura, grupos de recursos e recursos. A imagem a seguir mostra a relação de um desses níveis.
 
@@ -121,7 +121,7 @@ Crie um grupo de recursos para armazenar recursos como aplicativos Web, bancos d
 
 ::: zone-end
 
-# <a name="naming-standardstabnamingstandards"></a>[Padrões de nomenclatura](#tab/NamingStandards)
+# <a name="naming-standards"></a>[Padrões de nomenclatura](#tab/NamingStandards)
 
 Um bom padrão de nomenclatura ajuda a identificar recursos no portal do Azure, em uma fatura e nos scripts. Sua estratégia de nomenclatura deve incluir detalhes empresariais e operacionais como componentes dos nomes de recursos:
 
@@ -146,7 +146,7 @@ A tabela a seguir inclui padrões de nomenclatura para alguns tipos de exemplo d
 |Conjunto de disponibilidade |Resource group |1-80 |Não diferencia maiúsculas de minúsculas |Alfanumérico, sublinhado e hífen |`<service-short-name>-<context>-as` |`profx-sql-as` |
 |Marca |Entidade associada |512 (nome), 256 (valor) |Não diferencia maiúsculas de minúsculas |Alfanumérico |`"key" : "value"` |`"department" : "Central IT"` |
 
-# <a name="resource-tagstabresourcetags"></a>[Marcações de recursos](#tab/ResourceTags)
+# <a name="resource-tags"></a>[Marcações de recursos](#tab/ResourceTags)
 
 As marcas são úteis para identificar rapidamente os seus recursos e grupos de recursos. Você pode aplicar marcas para os recursos do Azure para organizá-los logicamente por categorias. Cada marca consiste em um nome e em um valor. Por exemplo, você pode aplicar o nome "Ambiente" e o valor "Produção" a todos os recursos na produção. As marcas devem incluir contexto sobre a carga de trabalho ou aplicativo associado, requisitos operacionais e informações de propriedade do recurso.
 
@@ -156,7 +156,7 @@ Você também pode usar marcas para muitos outros fins. Usos comuns incluem:
 
 - **Metadados e documentação:** Os administradores podem facilmente ver os detalhes sobre os recursos com os quais estão trabalhando ao aplicar uma tag, como "ProjectOwner".
 - **Automação:** Talvez você tenha scripts que são executados regularmente que podem realizar uma ação com base em um valor de tag, como "ShutdownTime" ou "DeprovisionDate".
-- **Cobrança:** as marcas podem aparecer na sua fatura. Você pode usá-las para ajudar a segmentar sua fatura, como "CostCenter" ou "BillTo".
+- **Otimização de custos:** você pode alocar recursos para as equipes e recursos responsáveis pelo custo. No Gerenciamento de Custos do Azure, você pode aplicar a marca do centro de custo como um filtro para relatar os encargos com base no uso de uma equipe ou de um departamento.
 
 Cada recurso ou grupo de recursos pode ter um máximo de 50 pares de nome e valor de tag. Essa limitação se aplica somente a marcas aplicadas diretamente ao grupo de recursos ou recurso.
 
