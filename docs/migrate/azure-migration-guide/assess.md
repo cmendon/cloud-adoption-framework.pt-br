@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 9c4d5bac8046cc27399b2be7bc0b8ce82ea65769
-ms.sourcegitcommit: 238e7a06b56950cebdcc8f75924849fc995e6ff2
+ms.openlocfilehash: 20f71083a7a200fd4b45fbdda24ad6bbd24a397a
+ms.sourcegitcommit: 1de39a4c3954512892f11e3d1330a04e95ce187d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "77173395"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77567734"
 ---
 # <a name="assess-the-digital-estate"></a>Avaliar bens digitais
 
@@ -24,7 +24,7 @@ Os recursos desta seção ajudarão você a avaliar seu ambiente para determinar
 
 <!-- markdownlint-disable MD025 -->
 
-# <a name="toolstabtools"></a>[Ferramentas](#tab/Tools)
+# <a name="tools"></a>[Ferramentas](#tab/Tools)
 
 As ferramentas a seguir ajudarão você a avaliar seu ambiente para determinar a adequação da migração e a melhor abordagem de uso. Para obter informações úteis sobre como escolher as ferramentas certas para apoiar aos seus esforços de migração, confira o [Guia de decisão das ferramentas de migração da Estrutura de Adoção de Nuvem](../../decision-guides/migrate-decision-guide/index.md).
 
@@ -51,7 +51,7 @@ Para começar a usar uma avaliação de migração do servidor usando as Migraç
 
 ::: zone target="chromeless"
 
-::: form action="Blade[#blade/Microsoft_Azure_Migrate/AmhResourceMenuBlade/overview]" submitText="Assess and migrate servers" :::
+::: form action="OpenBlade[#blade/Microsoft_Azure_Migrate/AmhResourceMenuBlade/overview]" submitText="Assess and migrate servers" :::
 
 ::: zone-end
 
@@ -86,7 +86,7 @@ Para usar a visualização de dependência, você precisa baixar e instalar agen
 - [Usando a solução do Mapa do Serviço no Azure](https://docs.microsoft.com/azure/azure-monitor/insights/service-map)
 - [Mapa do Serviço e Migrações para Azure: Visualização de dependências](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization)
 
-# <a name="scenarios-and-stakeholderstabscenarios"></a>[Cenários e Stakeholders](#tab/Scenarios)
+# <a name="scenarios-and-stakeholders"></a>[Cenários e Stakeholders](#tab/Scenarios)
 
 ## <a name="scenarios"></a>Cenários
 
@@ -105,7 +105,7 @@ O estabelecimento de uma equipe central de estratégia em nuvem, criada pensando
 
 Para obter mais informações sobre como preparar sua organização para esforços de migração para a nuvem confira o artigo da Estrutura de Adoção de Nuvem no [alinhamento inicial da organização](../../plan/initial-org-alignment.md).
 
-# <a name="timelinestabtimelines"></a>[Linhas do tempo](#tab/Timelines)
+# <a name="timelines"></a>[Linhas do tempo](#tab/Timelines)
 
 De maneira geral, os clientes acham que o cenário de migração abordado por este guia pode ser concluído em um a seis meses.
 
@@ -117,7 +117,7 @@ Alguns dos fatores a serem considerados ao avaliar a linha do tempo da sua migra
 - **Gerenciamento de alterações:** Sua empresa possui requisitos específicos relacionados à implementação e aprovação de alterações?
 - **Regulamentos do setor:** Você precisa estar em conformidade com os regulamentos do setor ou da indústria?
 
-# <a name="cost-managementtabmanagecost"></a>[Gerenciamento de Custos](#tab/ManageCost)
+# <a name="cost-management"></a>[Gerenciamento de Custos](#tab/ManageCost)
 
 Durante o processo de avaliação de seu ambiente, aproveite essa oportunidade para incluir uma etapa de análise de custos. Usando os dados coletados pelas atividades de avaliação, você deve conseguir analisar e prever custos. Essa previsão de custos deve fatorar os custos do serviço de consumo, além de quaisquer custos únicos (como o aumento da entrada de dados).
 
