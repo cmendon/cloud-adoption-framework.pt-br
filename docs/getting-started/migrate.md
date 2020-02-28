@@ -1,18 +1,18 @@
 ---
 title: Iniciar uma jornada de migração na nuvem no Azure
-description: Comece uma jornada de migração na nuvem no Azure.
+description: Obtenha orientação abrangente para a transição de cargas de trabalho de aplicativos herdados para a nuvem usando tecnologias inovadoras baseadas em nuvem.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: e5ef9aecfe30cc9b401e9b4ffabe56e50f3afad2
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: eeb7cc566a373296fdf290dced4c82e038c11d17
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76804445"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170181"
 ---
 # <a name="begin-a-cloud-migration-journey-in-azure"></a>Iniciar uma jornada de migração na nuvem no Azure
 
@@ -35,7 +35,7 @@ As migrações na nuvem podem ajudar as empresas a alcançar seus resultados com
 
 |Eventos comerciais críticos | Motivações de migração | Motivações de inovação |
 |---------|---------|---------|
-| Saída do datacenter<br/><br/>Fusões, aquisição ou divestiture<br/><br/>Reduções em despesas de capital<br/><br/>Fim do suporte para tecnologias de missão crítica<br/><br/>Resposta às alterações de conformidade regulatória<br/><br/>Atender aos novos requisitos de soberania de dados<br/><br/>Reduzir as interrupções e melhorar a estabilidade da ti|Redução de custos<br/><br/>Redução no fornecedor ou na complexidade técnica<br/><br/>Otimização de operações internas<br/><br/>Aumentar a agilidade dos negócios<br/><br/>Preparar-se para novos recursos técnicos<br/><br/>Dimensionar para atender às demandas de mercado<br/><br/>Dimensione para atender às demandas geográficas ou de mercado|Preparar-se para novos recursos técnicos<br/><br/>Crie novos recursos técnicos<br/><br/>Modernizar a postura e os controles de segurança<br/><br/>Dimensione para atender às demandas geográficas ou de mercado<br/><br/>Melhorar as experiências e os compromissos do cliente<br/><br/>Transformar produtos ou serviços<br/><br/>Interromper o mercado com novos produtos ou serviços|
+| Saída do datacenter<br/><br/>Fusões, aquisição ou divestiture<br/><br/>Reduções em despesas de capital<br/><br/>Fim do suporte para tecnologias de missão crítica<br/><br/>Resposta às alterações de conformidade regulatória<br/><br/>Atender aos novos requisitos de soberania de dados<br/><br/>Reduzir as interrupções e melhorar a estabilidade da ti|Economia de custos<br/><br/>Redução no fornecedor ou na complexidade técnica<br/><br/>Otimização de operações internas<br/><br/>Aumentar a agilidade dos negócios<br/><br/>Preparar-se para novos recursos técnicos<br/><br/>Dimensionar para atender às demandas de mercado<br/><br/>Dimensione para atender às demandas geográficas ou de mercado|Preparar-se para novos recursos técnicos<br/><br/>Crie novos recursos técnicos<br/><br/>Modernizar a postura e os controles de segurança<br/><br/>Dimensione para atender às demandas geográficas ou de mercado<br/><br/>Melhorar as experiências e os compromissos do cliente<br/><br/>Transformar produtos ou serviços<br/><br/>Interromper o mercado com novos produtos ou serviços|
 
 <!-- markdownlint-enable MD033 -->
 

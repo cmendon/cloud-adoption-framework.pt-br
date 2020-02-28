@@ -1,18 +1,18 @@
 ---
-title: 'Inovação em nuvem: Aprenda'
-description: Introdução à inovação na nuvem – saiba mais sobre o conteúdo
+title: Aprenda com os clientes para impulsionar a inovação
+description: Aprenda com e de parceiros de clientes para criar uma solução de MVP (produto viável) mínima com empatia e gerar métricas de impacto no cliente.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 3f15407d78517d588e9f98ac6bbbb779574a7afd
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 4166f55c3878266a06f1da4b907eaab5baa6e473
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808423"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171150"
 ---
 # <a name="learn-with-customers"></a>Aprender com os clientes
 
@@ -48,7 +48,7 @@ Alguns podem negar a transformação de radical na cultura da Microsoft que ocor
 - **Desafio o que funciona:** O sucesso não significa necessariamente que você está demonstrando verdadeiro empatia de clientes. Evite ter uma mentalidade fixa e uma tendência para fazer o que foi trabalhado antes. Procure aprender em métricas positivas e negativas ao envolver seus clientes.
 - **Ser inclusivo:** Trabalhe de difícil para convidar perspectivas diferentes na combinação. Há muitas variáveis que podem dividir os seres humanos em grupos separados. Normas culturais, comportamentos anteriores, gênero, Religion, preferência sexual, até mesmo capacidades físicas. A verdadeira inovação é quando nos comparamos com as últimas nossas diferenças e nos empenhamos em incluir todos os clientes, parceiros e colegas de trabalho.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Como uma próxima etapa para entender essa metodologia, [os bloqueadores comuns e os desafios da inovação](./challenges.md) podem prepará-lo para as alterações à frente.
 

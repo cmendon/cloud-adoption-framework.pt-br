@@ -1,18 +1,18 @@
 ---
-title: 'Inovação em nuvem: prever e influenciar'
-description: Introdução à inovação na nuvem – prever e influenciar
+title: Prever e influenciar o comportamento do cliente
+description: Use a modelagem preditiva para desenvolver recursos de previsão por meio de dados, ideias, padrões, previsões e interações.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: f55325b46ee9b2e45dd539c08f426d49357f5ba3
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: e299025afcbf1066411f8d4792fe739663d46c74
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808389"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171099"
 ---
 # <a name="predict-and-influence"></a>Prever e influenciar
 
@@ -39,13 +39,13 @@ As soluções que fornecem de forma consistente recursos de previsão precisos n
 > [!CAUTION]
 > Se a hipótese do cliente desenvolvida no [Build com o cliente empatia](./build.md) inclui recursos de previsão, os princípios descritos podem se aplicar. No entanto, os recursos de previsão exigem um investimento significativo de tempo e energia. Quando os recursos de previsão são [picos técnicos](./build.md#reduce-complexity-and-delay-technical-spikes), em oposição a uma fonte de valor real do cliente, sugerimos que você adie previsões até que as subpartes do cliente tenham sido validadas em escala.
 
-## <a name="data"></a>Dados
+## <a name="data"></a>data
 
 Os dados são a mais elementar das características mencionadas anteriormente. Cada uma das disciplinas para o desenvolvimento de invenções digitais gera dados. Esses dados, é claro, contribuem para o desenvolvimento de previsões. Para obter mais diretrizes sobre maneiras de obter dados em uma solução preditiva, consulte [dados do democratizando](./data.md) e [interagindo com dispositivos](./devices.md).
 
 Uma variedade de fontes de dados pode ser usada para fornecer recursos de previsão:
 
-## <a name="insights"></a>Visões
+## <a name="insights"></a>Insights
 
 Os especialistas no assunto usam dados sobre as necessidades e os comportamentos dos clientes para desenvolver informações de negócios básicas de um estudo de dados brutos. Essas informações podem identificar ocorrências dos comportamentos de clientes desejados (ou, como alternativa, resultados indesejáveis). Durante as iterações nas previsões, essas informações podem ajudar a identificar possíveis correlações que poderiam, em última análise, gerar resultados positivos. Para obter orientação sobre como habilitar especialistas no assunto para desenvolver informações, consulte [democratizando data](./data.md).
 
@@ -75,7 +75,7 @@ Depois que uma previsão é disponibilizada por meio de uma API, você pode usá
 
 Saiba mais sobre como criar uma experiência de ambiente por meio de uma [solução de realidade ajustada](./devices.md#adjusted-reality).
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Tendo se familiarizado com as [disciplinas de invenção](./invention.md) e com a [metodologia inovar](./index.md), agora você está pronto para aprender a [criar com empatia de clientes](./build.md).
 

@@ -1,18 +1,18 @@
 ---
-title: 'Inovação na nuvem: envolver aplicativos'
-description: Introdução à inovação na nuvem – envolva-se por meio de aplicativos.
+title: Envolva-se por meio de aplicativos para a invenção digital
+description: Entenda como criar soluções de aplicativos para formatar dados e criar experiências que envolvam clientes e inovação de suporte.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 77921ce7c683ff5bfc32c711719ae58ae049f039
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: c326461435123b8093c86590baa4461f5048f4df
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808559"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170657"
 ---
 # <a name="engage-through-applications"></a>Envolver aplicativos
 
@@ -107,7 +107,7 @@ Para se preparar para as muitas iterações necessárias para fornecer uma solu�
 
 Em paralelo, o Azure fornece opções de dados de transação sem servidor que também reduzem a sobrecarga. A [lista de produtos de banco](https://docs.microsoft.com/azure/#pivot=products&panel=databases) de dados fornece opções para hospedagem de dados sem a necessidade de uma plataforma de dados completa.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Dependendo da hipótese e da solução, os princípios neste artigo podem ajudar a criar aplicativos que atendam às definições de MVP e contrate usuários. Em seguida, veja os princípios para [capacitar a adoção](./ci-cd.md), que oferece maneiras de obter o aplicativo e os dados em mãos de clientes com mais rapidez e eficiência.
 

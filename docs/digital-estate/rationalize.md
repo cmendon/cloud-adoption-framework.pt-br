@@ -1,6 +1,6 @@
 ---
 title: Racionalizar a propriedade digital
-description: Avalie os ativos digitais para determinar a melhor maneira de hospedá-los na nuvem.
+description: Use a lógica de nuvem para avaliar seus ativos digitais e determinar a melhor abordagem para hospedá-los na nuvem.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 12/10/2018
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: c618e6c1cf83199ae55df44397e07f3755fbb1f8
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 38d574735dbc7854a03b98aee9d3e7012b939ff8
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76804547"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170130"
 ---
 # <a name="rationalize-the-digital-estate"></a>Racionalizar a propriedade digital
 
@@ -155,7 +155,7 @@ Ao longo do tempo, a combinação da equipe de adoção da nuvem e da equipe de 
 
 Em alguns casos, o modelo financeiro pode ser muito rígido para tomar uma decisão sem racionalização adicional. Nesses casos, talvez você precise de uma abordagem mais tradicional para a racionalização.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 A saída de um esforço de racionalização é uma lista de pendências priorizada de todos os ativos afetados pela transformação escolhida. Essa lista de pendências agora está pronta para servir como base para modelos de custo dos serviços de nuvem.
 

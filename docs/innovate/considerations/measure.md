@@ -1,18 +1,18 @@
 ---
-title: 'Inovação na nuvem: medida'
-description: Introdução à inovação em nuvem – conteúdo de medidas
+title: Medir o impacto do cliente
+description: Defina o fluxo do cliente desejado e estabeleça métricas de aprendizado para medir o comportamento e a adoção do cliente.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: d6e29f159059da9c219006a69a63484b546a4488
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 1b60f1b9cadb20ae516946fe09299fb3af2f895c
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808406"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171133"
 ---
 # <a name="measure-for-customer-impact"></a>Avaliar o impacto sobre o cliente
 
@@ -64,7 +64,7 @@ A primeira medida para definir métricas de aprendizado é a definição de parc
 
 Esses tipos de agrupamentos ajudam a validar as métricas de aprendizado em várias seções cruzadas desses clientes que optam por fazer uma parceria com você durante seus esforços de inovação. Todas as métricas subsequentes devem ser derivadas do agrupamento de clientes definíveis.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 À medida que as métricas de aprendizado se acumulam, a equipe pode começar a [aprender com os clientes](./learn.md).
 

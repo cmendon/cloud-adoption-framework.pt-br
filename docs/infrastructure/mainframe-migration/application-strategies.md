@@ -1,18 +1,18 @@
 ---
-title: 'Migração de mainframe: migração de aplicativo de mainframe'
-description: Migre aplicativos de ambientes de mainframe no Azure, uma infraestrutura escalonável, altamente disponível e comprovada para sistemas que atualmente executam em mainframes.
+title: Estratégias de migração de aplicativo de mainframe
+description: Aprenda estratégias como hospedar novamente, desativar, recompilar ou substituir aplicativos para migrar de ambientes de mainframe para o Azure.
 author: njray
 ms.author: v-nanra
 ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a662edd4ae7c6a854014b37cac2ccb0fab4c474e
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 52dbbd594a95f86c1bdb49ac76a7b178d8a71b13
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808814"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171405"
 ---
 # <a name="mainframe-application-migration"></a>Migração de aplicativos de mainframe
 
@@ -168,7 +168,7 @@ Um cenário comum é mover um aplicativo no Azure enquanto mantém os dados usad
 
 Uma opção é o [Microsoft Host Integration Server](https://docs.microsoft.com/host-integration-server), uma solução que fornece a DRDA (arquitetura de banco de dados relacional distribuída) necessária para que aplicativos no Azure acessem dados no DB2 que permanecem no mainframe. Outras opções para integração com o mainframe no Azure incluem soluções da IBM, Attunity, Codit, outros fornecedores e opções de software livre.
 
-## <a name="partner-solutions"></a>Soluções de parceiro
+## <a name="partner-solutions"></a>Soluções de parceiros
 
 Se você estiver considerando uma migração de mainframe, o ecossistema de parceiros está disponível para ajudá-lo.
 

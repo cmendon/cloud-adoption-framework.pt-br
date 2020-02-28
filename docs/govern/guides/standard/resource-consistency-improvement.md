@@ -1,6 +1,6 @@
 ---
 title: 'Governança empresarial padrão: melhorar a consistência de recursos'
-description: Use a estrutura de adoção de nuvem do Azure para saber mais sobre como melhorar uma linha de base de governança e corrigir riscos adicionando controles de recuperação, dimensionamento e monitoramento.
+description: Use a estrutura de adoção de nuvem para o Azure para saber mais sobre como melhorar a linha de base de governança e adicionar controles de recuperação, dimensionamento e monitoramento para corrigir riscos.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e50d3e258a4b040d1f9cfaa1b274ed977c49b14d
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 57358a9933c6f18d72678c3c4ba82bef90e713a0
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709100"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170810"
 ---
 # <a name="standard-enterprise-governance-guide-improving-resource-consistency"></a>Guia de governança empresarial padrão: melhorando a consistência de recursos
 

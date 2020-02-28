@@ -1,18 +1,18 @@
 ---
-title: Coletar dados de inventário para uma propriedade digital
-description: Como coletar dados de inventário para um estado digital.
+title: Dados de inventário para um espaço digital
+description: Aprenda a criar uma lista de inventário de ativos de ti que dão suporte a funções de negócios específicas, para análise e racionalização posteriores.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 12/10/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 013a47725113ee76a7ba64b54a70cce714829290
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 1735c5e6f818f727cee3e28f11fbaf31610de8d8
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76804564"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170079"
 ---
 # <a name="gather-inventory-data-for-a-digital-estate"></a>Coletar dados de inventário para uma propriedade digital
 
@@ -34,7 +34,7 @@ O inventário que dá suporte a um espaço digital muda dependendo da transforma
 
 Um inventário é raramente concluído em sua primeira iteração. É altamente recomendável que a equipe de estratégia de nuvem alinhe os participantes e os usuários avançados a validar o inventário. Quando possível, use ferramentas adicionais, como a análise de rede e de dependência para identificar os ativos que estão sendo enviados ao tráfego, mas que não estão no inventário.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Depois que um inventário é compilado e validado, ele pode ser racionalizado. A racionalização de inventário é a próxima etapa para o planejamento de imóveis.
 

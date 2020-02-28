@@ -1,6 +1,6 @@
 ---
 title: Riscos de negócios da aceleração de implantação
-description: Entenda os riscos de negócios da disciplina de aceleração de implantação, que pode ser usada na estratégia de governança na estrutura de adoção de Microsoft Cloud para o Azure.
+description: Use a estrutura de adoção de nuvem para o Azure para entender os riscos de negócios da disciplina de aceleração de implantação, que pode ser usada na estratégia de governança.
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: b7f56bc9181226b0f0fe03fbcf08a061af33099f
-ms.sourcegitcommit: 1de39a4c3954512892f11e3d1330a04e95ce187d
+ms.openlocfilehash: dc80f889442fd7139e9f3930da1304d1a25e3e98
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "77567683"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171422"
 ---
 # <a name="deployment-acceleration-motivations-and-business-risks"></a>Motivações de aceleração de implantação e os riscos de negócios
 
@@ -39,7 +39,7 @@ A disciplina de Aceleração de implantação tenta abordar os seguintes riscos 
 - **Sobreexecuções de custo:** Alterações inesperadas na configuração de recursos do sistema podem dificultar a identificação da causa raiz dos problemas, aumentando os custos de desenvolvimento, operações e manutenção.
 - **Ineficiências organizacionais:** As barreiras entre desenvolvimento, operações e equipes de segurança podem causar inúmeros desafios para a adoção efetiva de tecnologias de nuvem e o desenvolvimento de um modelo de governança de nuvem unificado.
 
-## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
+## <a name="next-steps"></a>Próximas etapas
 
 Usando o [modelo de gerenciamento de nuvem](./template.md), documente os riscos de negócios que provavelmente serão introduzidos pelo plano de adoção de nuvem atual.
 

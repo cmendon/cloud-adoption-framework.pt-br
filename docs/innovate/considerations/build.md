@@ -1,18 +1,18 @@
 ---
-title: 'Inovação em nuvem: criar com empatia de cliente'
-description: Aprenda a criar com empatia de clientes.
+title: Crie a adoção com o cliente empatia
+description: Aprenda a criar soluções que conduzem inovações com base no empatia do cliente, uma compreensão profunda da experiência do cliente.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 406d53bfb322c424737a9b8cec7c028a9833143d
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: d6cf92c2cb08e59196bc9c24aadf1fa2c812db0d
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808542"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170623"
 ---
 # <a name="build-with-customer-empathy"></a>Criar com empatia pelo cliente
 
@@ -105,7 +105,7 @@ Há muitos requisitos legais, de conformidade e do setor que podem exigir uma ab
 
 Alguns dos conceitos neste artigo se baseiam nos tópicos discutidos na [*inicialização de Lean*](http://theleanstartup.com/book) (Eric Ries, coroa Business, 2011).
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Depois de criar uma solução MVP, você pode medir o valor de empatia e o valor de escala. Saiba como [medir o impacto do cliente](./measure.md).
 

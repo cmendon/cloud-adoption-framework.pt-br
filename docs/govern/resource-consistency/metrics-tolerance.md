@@ -1,6 +1,6 @@
 ---
 title: Métricas e indicadores de tolerância de risco de consistência de recursos
-description: Quantificar a tolerância a riscos de negócios relacionada à consistência de recursos na estrutura de adoção de Microsoft Cloud para o Azure.
+description: Use a estrutura de adoção de nuvem para o Azure para quantificar a tolerância a riscos de negócios relacionada à consistência de recursos.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 71b29f1c2d87b916701767e5c74c2699cf8aa4fa
-ms.sourcegitcommit: 1de39a4c3954512892f11e3d1330a04e95ce187d
+ms.openlocfilehash: 98413117b3eb6abf1e826fcf14f765c6cd461d65
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "77567717"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171354"
 ---
 # <a name="resource-consistency-metrics-indicators-and-risk-tolerance"></a>Métricas, indicadores e tolerância a riscos da Consistência de Recursos
 
@@ -67,7 +67,7 @@ Assim que você tiver uma linha de base, estabeleça parâmetros de comparação
 
 As métricas e os gatilhos exatos que você usa para medir a tolerância a riscos e o nível de investimento na disciplina de consistência de recursos serão específicos para sua organização, mas os exemplos acima devem servir como uma base útil para discussão em sua governança de nuvem time.
 
-## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
+## <a name="next-steps"></a>Próximas etapas
 
 Usar o [modelo de Gerenciamento de Nuvem](./template.md), de métricas do documento e de indicadores de tolerância que se alinham ao atual plano de adoção da nuvem.
 

@@ -1,18 +1,18 @@
 ---
-title: 'Migração de mainframe: mitos e fatos'
-description: Migre aplicativos de ambientes de mainframe no Azure, uma infraestrutura escalonável, altamente disponível e comprovada para sistemas que atualmente executam em mainframes.
+title: Mitos e fatos de migração de mainframe
+description: Saiba como distinguir os mitos da realidade sobre mainframes e avaliar as cargas de trabalho de mainframe mais adequadas para o Azure.
 author: njray
 ms.author: v-nanra
 ms.date: 12/27/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: e3e14bca45f8e5531e663c76b346f295ccb64319
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 101ce6ef12ca9f9c686075c6e839a8353bc93da8
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808746"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171303"
 ---
 # <a name="mainframe-myths-and-facts"></a>Mitos e fatos a respeito de mainframe
 
@@ -42,7 +42,7 @@ Embora possa haver algumas instâncias isoladas nas quais as soluções de nuvem
 
 Por comparação, o Azure oferece uma plataforma alternativa capaz de fornecer recursos e funcionalidades de mainframe equivalentes e com um custo muito menor. Além disso, o TCO (custo total de propriedade) do modelo de custo controlado por uso baseado em assinatura da nuvem é muito menos caro do que os computadores mainframe.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 > [!div class="nextstepaction"]
 > [Faça a mudança de mainframes para o Azure](./migration-strategies.md)

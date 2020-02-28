@@ -1,18 +1,18 @@
 ---
 title: Inovar por meio da adoção de nuvem
-description: Aprenda a inovar por meio da adoção de nuvem usando a estrutura de adoção de nuvem.
+description: Saiba mais sobre a metodologia inovar como uma abordagem para guiar o desenvolvimento de novos produtos e serviços de nuvem.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 96a1bca8e52ec384f8b93582ab4b3eac2fa77dd4
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: ef9291d07a9de6067ae6d47477c47b2d57449feb
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76805958"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170096"
 ---
 # <a name="innovate-through-cloud-adoption"></a>Inovar por meio da adoção de nuvem
 
@@ -40,7 +40,7 @@ As cargas de trabalho candidatas para a inovação em nuvem incluem:
 - Inteligência de ambiente: integração de tecnologia não intrusiva em um ambiente.
 - Serviços cognitivas: Big data, ia, Machine Learning e soluções preditivas.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Comece sua jornada de inovação usando a [metodologia inovar](../innovate/index.md).
 

@@ -1,18 +1,18 @@
 ---
-title: 'Inovação em nuvem: desafios e bloqueadores'
-description: Introdução à inovação na nuvem – desafios e bloqueadores
+title: Desafios e bloqueadores de adoção do cliente
+description: Use a estrutura de adoção de nuvem para o Azure para entender os desafios comuns relacionados à adoção e à invenções da inovação.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 3ab4311ca8d5ccaf6cdf7b9bcf91e55d2a7d5929
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 5fa02af8464a63488e77b69226cb02d38ceca5d7
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808525"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170606"
 ---
 # <a name="common-blockers-and-challenges-to-innovation"></a>Bloqueios e desafios comuns de inovação
 
@@ -56,7 +56,7 @@ A metodologia inovar usa as seguintes disciplinas de inovação para ajudar a al
 
 Em uma economia digital, os maiores arquitetos de desafio enfrentam é entender claramente as necessidades de invenção e adoção de seus clientes e, em seguida, determinar a melhor ferramentas baseada em nuvem a fim de atender a essas necessidades.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Com base no conhecimento adquirido em relação ao modelo de compilação-avaliação-aprendizado e à mentalidade de crescimento, agora você está pronto para [desenvolver invenções digitais](./invention.md) na [metodologia da inovação](./index.md).
 

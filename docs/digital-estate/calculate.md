@@ -1,6 +1,6 @@
 ---
 title: Alinhar os modelos de custo com a propriedade digital
-description: Alinhar os modelos de custo com a propriedade digital para prever os custos de nuvem.
+description: Saiba mais sobre as ferramentas de preços do Azure que podem ajudá-lo a prever e gerenciar os gastos de nuvem com transparência e precisão, para aproveitar ao máximo o Azure e outras nuvens.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 12/10/2018
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 30eee82d3afab32890ab00ad82b38106576f33ee
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 06e1bafa4a4a4c1ed88bb29d6787fec95fbd956b
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76804700"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170113"
 ---
 # <a name="align-cost-models-with-the-digital-estate-to-forecast-cloud-costs"></a>Alinhar os modelos de custo com a propriedade digital para prever os custos de nuvem
 
@@ -27,4 +27,4 @@ As ferramentas de preços do Azure ajudam você a gerenciar os gastos de nuvem c
 
 - [Calculadora de preços do Azure](https://azure.microsoft.com/pricing): estimar sua fatura mensal esperada usando nossa calculadora de preços. Acompanhe quando quiser o uso real e a fatura da conta usando o portal de cobrança. Configure alertas automáticos de cobrança por email para notificá-lo se seus gastos estiverem acima da quantia configurada.
 
-- [Gerenciamento de custos do Azure](https://azure.microsoft.com/services/cost-management): o gerenciamento de custos do Azure, licenciado pela subsidiária da Microsoft Cloudyn, é uma solução de gerenciamento de custos de nuvem que ajuda você a usar e gerenciar com eficiência o Azure e outros recursos de nuvem. Colete dados de uso de nuvem e de cobrança por meio de APIs (interfaces de programas aplicativos) do Azure, Amazon Web Services e Google Cloud Platform. Com os dados, obtenha visibilidade total do consumo de recursos e dos custos nas plataformas de nuvem em uma exibição única e simplificada. Monitore de maneira contínua o consumo e as tendências de custo da nuvem. Acompanhe os gastos reais em nuvem em relação ao seu orçamento para evitar o excesso de gastos. Detecte anomalias nos gastos e ineficiências no uso. Use dados históricos para melhorar a precisão das previsões para o uso e as despesas da nuvem.
+- [Gerenciamento de custos do Azure](https://azure.microsoft.com/services/cost-management): o gerenciamento de custos do Azure, licenciado pela subsidiária da Microsoft Cloudyn, é uma solução de gerenciamento de custos de nuvem que ajuda você a usar e gerenciar com eficiência o Azure e outros recursos de nuvem. Colete dados de uso de nuvem e de cobrança por meio de APIs (interfaces de programas aplicativos) do Azure, Amazon Web Services e Google Cloud Platform. Com os dados, obtenha visibilidade total do consumo de recursos e dos custos nas plataformas de nuvem em uma exibição única e simplificada. Monitorar de maneira contínua o consumo e as tendências de custos da nuvem. Acompanhe os gastos reais em nuvem em relação ao seu orçamento para evitar o excesso de gastos. Detecte anomalias nos gastos e ineficiências no uso. Use dados históricos para melhorar a precisão das previsões para o uso e as despesas da nuvem.

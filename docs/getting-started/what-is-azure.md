@@ -1,6 +1,6 @@
 ---
 title: Como funciona o Azure?
-description: Explicação sobre o funcionamento interno do Azure
+description: Aprenda as noções básicas sobre a estrutura interna e o funcionamento da plataforma de nuvem do Azure e da virtualização de nuvem.
 author: alexbuckgit
 ms.author: abuck
 ms.date: 04/04/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: governance
-ms.openlocfilehash: 79fc35b8fdcae1de012b9d2d8a2f67b43f3f9cc9
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: f74e5f6fa5abc263af73fcf69b489de6518c9e37
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76804377"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78169909"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -39,7 +39,7 @@ Por exemplo, o front-end hospeda os serviços que lidam com as solicitações do
 
 Fundamentalmente, o Azure é uma enorme coleção de servidores e hardware de rede que executam um conjunto complexo de aplicativos distribuídos para orquestrar a configuração e a operação do hardware e software virtualizados nesses servidores. É essa orquestração que torna o Azure tão potente&mdash;os usuários não são mais responsáveis por manter e atualizar o hardware, pois o Azure faz tudo isso por trás dos bastidores.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Agora que você entende os elementos internos do Azure, saiba mais sobre a governança de recursos de nuvem.
 

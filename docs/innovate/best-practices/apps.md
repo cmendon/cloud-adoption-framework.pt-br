@@ -1,18 +1,18 @@
 ---
-title: 'Inovação em nuvem: ferramentas para se envolver por meio de aplicativos no Azure'
-description: Ferramentas para se envolver por meio de aplicativos no Azure
+title: Ferramentas de inovação para se envolver por meio de aplicativos
+description: Saiba mais sobre as ferramentas do Azure para acelerar o desenvolvimento de aplicativos que se alinham à metodologia inovadora da estrutura de adoção de nuvem.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: cf37b3555244db05ecd22f9c4421a35e8a0f758e
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 701c4634aab8e2a9abb06356a929ae90c1b5a864
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808712"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171320"
 ---
 # <a name="tools-to-engage-via-apps-in-azure"></a>Ferramentas para se envolver por meio de aplicativos no Azure
 
@@ -38,15 +38,15 @@ Cada caminho resulta em vantagens e desvantagens que são de curto e longo prazo
 
 Dependendo do caminho que a equipe de adoção da nuvem pega, o Azure fornece ferramentas para acelerar a capacidade da equipe de criar com o cliente empatia. A lista a seguir de ofertas do Azure é agrupada com base nos caminhos de decisão anteriores. Essas ofertas incluem:
 
-- Serviço de Aplicativos do Azure
-- AKS (Serviço do Kubernetes do Azure)
+- Serviço de aplicativo do Azure
+- AKS (Serviço de Kubernetes do Azure)
 - Migrações para Azure
 - Azure Stack
 - PowerApps
 - Microsoft Flow
 - Power BI
 
-## <a name="get-started"></a>Comece agora
+## <a name="get-started"></a>Introdução
 
 O Sumário no lado esquerdo desta página descreve muitos artigos do. Esses artigos ajudam você a começar a usar cada uma das ferramentas neste ferramentas.
 

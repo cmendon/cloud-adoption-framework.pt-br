@@ -1,18 +1,18 @@
 ---
-title: 'Inovação em nuvem: ferramentas para democratize dados no Azure'
-description: Ferramentas para democratize dados no Azure
+title: Ferramentas de inovação para dados do democratize
+description: Saiba mais sobre o catálogo de dados do Azure e outros serviços que ajudam a testar rapidamente uma hipótese antes de se expandir em invenções digitais mais amplas e dispendiosas.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 3fed47eb3a5bb7a3b51f19f2d103395ede848e9d
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: e505b7794c9eeff94d746286e0d8cbb9f0cea86e
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808678"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171252"
 ---
 # <a name="tools-to-democratize-data-in-azure"></a>Ferramentas para democratize dados no Azure
 
@@ -41,28 +41,28 @@ No Azure, as seguintes ferramentas são comumente usadas para acelerar a invenç
 
 - Power BI
 - Catálogo de Dados do Azure
-- Azure SQL Data Warehouse
-- BD Cosmos do Azure
+- SQL Data Warehouse do Azure
+- Azure Cosmos DB
 - Banco de Dados do Azure para PostgreSQL
 - Banco de Dados do Azure para MySQL
 - Banco de Dados do Azure para MariaDB
 - Banco de dados do Azure para PostgreSQL de hiperescala
 - Azure Data Lake
-- Serviço de migração de banco de dados do Azure
+- Serviço de Migração de Banco de Dados do Azure
 - Banco de dados SQL do Azure, com ou sem instâncias gerenciadas
-- Azure Data Factory
-- Azure Stream Analytics
+- Fábrica de dados do Azure
+- Stream Analytics do Azure
 - SQL Server Integration Services
 - Azure Stack
 - SQL Server Stretch Database
 - Microsoft Azure StorSimple
 - Arquivos do Azure
-- Sincronização de arquivos do Azure
+- Sincronização de Arquivos do Azure
 - PolyBase
 
 Como a invenção se aproxima da adoção em escala, os aspectos de cada solução exigem refinamento e maturidade técnica. Como isso acontece, mais desses serviços provavelmente serão necessários. Use o Sumário no lado esquerdo desta página para obter diretrizes de ferramentas do Azure relevantes para seu processo de teste de hipótese.
 
-## <a name="get-started"></a>Comece agora
+## <a name="get-started"></a>Introdução
 
 O Sumário no lado esquerdo desta página descreve muitos artigos do. Esses artigos ajudam você a começar a usar cada uma das ferramentas neste ferramentas.
 

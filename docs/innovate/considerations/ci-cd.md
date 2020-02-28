@@ -1,18 +1,18 @@
 ---
-title: 'Inovação na nuvem: Capacite a adoção'
-description: Introdução à inovação na nuvem – capacitar a adoção
+title: Capacite a adoção com a invenção digital
+description: Use o modelo de maturidade da metodologia inovar para reduzir o conflito que reduz a adoção e, ao mesmo tempo, mantém as práticas recomendadas.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: a3c726443e62140dba997ae4a1ff89593f72e6e6
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: bfaacd1f07b24a3d88b03aa577e1f1ca38493423
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808508"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170555"
 ---
 # <a name="empower-adoption"></a>Capacitar a adoção
 
@@ -94,7 +94,7 @@ Ao [medir o impacto do cliente](./measure.md), é importante entender como os cl
 
 No Azure, [Azure monitor](https://docs.microsoft.com/azure/azure-monitor/overview) fornece as ferramentas e a interface para coletar e examinar dados de experiências do cliente. Você pode aplicar essas observações e ideias para refinar a pendência usando [Azure boards](https://docs.microsoft.com/azure/devops/boards).
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Depois de ter obtido uma compreensão das ferramentas e dos processos necessários para capacitar a adoção, é hora de examinar uma disciplina de inovação mais avançada: [interagir com dispositivos](./devices.md). Essa disciplina pode ajudar a reduzir as barreiras entre experiências físicas e digitais, tornando sua solução ainda mais fácil de adotar.
 

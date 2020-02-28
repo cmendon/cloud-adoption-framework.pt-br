@@ -1,6 +1,6 @@
 ---
 title: Abordagens para planejamento de propriedade digital
-description: Saiba mais sobre as várias abordagens para o planejamento digital de imóveis.
+description: Entenda as características e os requisitos de abordagens de cima para baixo, controladas por ativos ou incrementais para o planejamento de imóveis.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 12/10/2018
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 453ac12e8c86aed46675c710395101ff3a121195
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: f2a589844b4564bb787db0efe4d796b7e5576309
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806536"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170030"
 ---
 # <a name="approaches-to-digital-estate-planning"></a>Abordagens para planejamento de propriedade digital
 
@@ -56,7 +56,7 @@ Geralmente, essa abordagem pressupõe um modelo de implantação IaaS como linha
 > [!TIP]
 > Essa abordagem incremental permite o planejamento simplificado e os resultados acelerados. É importante que todas as partes envolvidas entendam a abordagem da tomada de decisão atrasada. É igualmente importante que as suposições feitas em cada estágio sejam documentadas para evitar a perda de detalhes.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Depois que uma abordagem é selecionada, o inventário pode ser coletado.
 

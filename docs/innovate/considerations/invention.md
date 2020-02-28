@@ -1,18 +1,18 @@
 ---
-title: 'Inovação em nuvem: desenvolver invenções digitais'
-description: Introdução à inovação na nuvem – desenvolver invenções digitais
+title: Desenvolva invenções digitais inovadoras
+description: Equilibre invenção e adoção para desenvolver invenções digitais e, ao mesmo tempo, manter a adoção e o empatia do cliente em mente.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 4011f34f61ec41d4ec30be8b9ee8c5cb203f930a
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 4ddc8c0e479aaf0feee928249919edf9899ce40f
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808440"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171184"
 ---
 # <a name="develop-digital-inventions"></a>Desenvolver invenções digitais
 
@@ -30,7 +30,7 @@ As disciplinas a *seguir não são* necessárias para impulsionar a inovação e
 - **[Interagir com dispositivos](./devices.md):** As linhas digitais e físicas se desfocam em vários canais. Forneça experiências em dispositivos, IoT e realidade misturada.
 - **[Prever e influenciar](./predict.md):** Procure o futuro para liderar a inovação. Veja os dados atuais anteriores para informar experiências e interações por meio de ferramentas preditivas.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 [Democratization de dados](./data.md) é a primeira disciplina de inovação a ser considerada e avaliada.
 

@@ -1,18 +1,18 @@
 ---
-title: 'Migração de mainframe: faça a troca de mainframes para o Azure'
-description: Migre aplicativos de ambientes de mainframe para o Azure para sistemas que atualmente são executados em mainframes.
+title: Migrar aplicativos de mainframes para o Azure
+description: Obtenha orientações técnicas para fazer a mudança de uma plataforma de mainframe para computação e armazenamento de hiperescala do Azure em um ambiente de alta disponibilidade.
 author: njray
 ms.author: v-nanra
 ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: f68dbd309264b0cef189346096ce3dc797ae7d08
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: fb3465345b45f2a7c71dac3c519e4daa7702dd47
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808763"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171337"
 ---
 # <a name="make-the-switch-from-mainframes-to-azure"></a>Fazer a transição dos mainframes para Azure
 
@@ -84,7 +84,7 @@ Compiladores e ambientes de emulação estão disponíveis em plataformas x86, p
 
 Quando as soluções são desenvolvidas e testadas no Azure e estão prontas para implantação ao mainframe, você precisará copiar o código para o mainframe e compilá-lo ali.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 > [!div class="nextstepaction"]
 > [Migração de aplicativos de mainframe](./application-strategies.md)

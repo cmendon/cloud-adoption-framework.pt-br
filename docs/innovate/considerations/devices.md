@@ -1,18 +1,18 @@
 ---
-title: 'Inovação em nuvem: interagir com dispositivos'
-description: Introdução à inovação na nuvem – interagir com dispositivos
+title: Interagir com dispositivos por meio da invenção digital
+description: Saiba mais sobre abordagens avançadas para reduzir o esforço de inovação por meio da interação com o cliente com experiências e dispositivos de ambiente, em vez de aplicativos.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 8b39362f2e0e21431e5d04ef05e2676094bca9bc
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 05fc3e3b4ddb0ae630feaee57a345aec8870ea08
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808474"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171218"
 ---
 # <a name="ambient-experiences-interact-with-devices"></a>Experiências de ambiente: interagir com dispositivos
 
@@ -86,7 +86,7 @@ Uma teledigital é outro exemplo da realidade ajustada. Este termo refere-se a u
 
 No Azure, as gêmeos digitais são criadas e acessadas por meio de um serviço chamado [Azure digital gêmeos](https://docs.microsoft.com/azure/digital-twins/about-digital-twins).
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Agora que você tem uma compreensão mais profunda das interações de dispositivos e da experiência ambiente ideal para sua solução, você está pronto para explorar a disciplina final de inovação, [previsão e influência](./predict.md).
 

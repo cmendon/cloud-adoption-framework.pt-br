@@ -1,6 +1,6 @@
 ---
 title: Racionalização de nuvem
-description: Examine as opções disponíveis para racionalizar um espaço digital.
+description: Saiba mais sobre a racionalização de nuvem, o processo de avaliação de ativos para determinar a melhor maneira de migrar ou modernizar cada ativo na nuvem.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/16/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 1a74487a77388e6260c177096d9563dbe6646cf2
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 74a384cd3bf5688979a848423e0740ff15f08a34
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806553"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170147"
 ---
 # <a name="cloud-rationalization"></a>Racionalização de nuvem
 
@@ -58,7 +58,7 @@ Fatores de análise qualitativa:
 - Eventos comerciais críticos
 - Dependências de processo
 
-## <a name="refactor"></a>Refatorar
+## <a name="refactor"></a>Refatoração
 
 As opções de PaaS (plataforma como serviço) podem reduzir os custos operacionais associados a vários aplicativos. É uma boa ideia refatorar ligeiramente um aplicativo para se ajustar a um modelo baseado em PaaS.
 
@@ -84,7 +84,7 @@ Fatores de análise qualitativa:
 - Opções/linhas do tempo de intermitência
 - Dependências de processo comercial
 
-## <a name="rearchitect"></a>Recriação de arquitetura
+## <a name="rearchitect"></a>Recriação da arquitetura
 
 Alguns aplicativos de envelhecimento não são compatíveis com os provedores de nuvem devido às decisões arquitetônicas que foram feitas quando o aplicativo foi criado. Nesses casos, o aplicativo pode precisar ser rearquitetado antes da transformação.
 
@@ -110,14 +110,14 @@ Fatores de análise qualitativa:
 - Custos operacionais
 - Possíveis loops de comentários e investimentos DevOpss.
 
-## <a name="rebuild"></a>Recriação
+## <a name="rebuild"></a>Recriar
 
 Em alguns cenários, o Delta que deve ser superado para carregar um aplicativo pode ser muito grande para justificar um investimento adicional. Isso é especialmente verdadeiro para aplicativos que atendem anteriormente às necessidades de um negócio, mas que agora não têm suporte ou estão desalinhados com os processos de negócios atuais. Nesse caso, uma nova base de código é criada para se alinhar com uma abordagem [nativa de nuvem](https://azure.microsoft.com/overview/cloudnative) .
 
 Os drivers comuns podem incluir:
 
-- Acelere a inovação
-- Crie aplicativos mais rápido
+- Acelerar a inovação
+- Compilar aplicativos mais rápido
 - Reduzir o custo operacional
 
 Fatores de análise quantitativa:
@@ -159,7 +159,7 @@ Fatores de análise qualitativa:
 - Esquemas de dados
 - Processos personalizados ou automatizados
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Coletivamente, você pode aplicar esses cinco RS de racionalização a um espaço digital para ajudá-lo a tomar decisões de racionalização sobre o estado futuro de cada aplicativo.
 

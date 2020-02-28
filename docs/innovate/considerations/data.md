@@ -1,18 +1,18 @@
 ---
-title: 'Inovação em nuvem: dados de democratize'
-description: Introdução à inovação em nuvem – dados do democratize
+title: Democratize dados com a invenção digital
+description: Saiba mais sobre o democratization, o processo de obtenção de dados para as mãos certas para testar as mesmas e impulsionar a inovação.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 158c3e25bac2124312a8ceaf3ac5500a58246f48
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 1ee86c13d94f62770e21e3a8208e9c0695725ba5
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808491"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170215"
 ---
 # <a name="democratize-data"></a>Democratizar os dados
 
@@ -81,7 +81,7 @@ Você pode integrar essas várias formas de dados em um armazenamento de dados c
 
 SQL Server 2017 e o Azure SQL Data Warehouse dão suporte ao [polybase](https://docs.microsoft.com/sql/relational-databases/polybase/polybase-guide) , que é a abordagem para a virtualização de dados mais comumente usada no Azure.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Com uma estratégia para dados de democratizando em vigor, você vai querer avaliar abordagens para [envolver clientes por meio de aplicativos](./apps.md).
 
