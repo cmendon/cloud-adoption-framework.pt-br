@@ -1,6 +1,6 @@
 ---
 title: Visão geral da disciplina de Consistência de recursos
-description: Visão geral da disciplina de Consistência de recursos
+description: Entenda a abordagem para o desenvolvimento de uma disciplina de Consistência de Recursos como parte da estratégia de governança de nuvem.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 864a5d3679d80663337b1b73748ab2af6628ef7d
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 93064d0c3feb8b9ee129c404e58e8d0485dcdfe5
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806094"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77706958"
 ---
 # <a name="resource-consistency-discipline-overview"></a>Visão geral da disciplina de Consistência de recursos
 

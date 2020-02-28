@@ -1,6 +1,6 @@
 ---
 title: Guias de decisão de arquitetura
-description: Saiba mais sobre guias de decisão de arquitetura no Cloud Adoption Framework.
+description: Use esses modelos e padrões principais de componentes de infraestrutura de implantação de nuvem para dar suporte a seus cenários de implantação de nuvem específicos.
 author: rotycenh
 ms.author: v-tyhopk
 ms.date: 02/11/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: aa1f2b4bfdb77f8b69b79a89da8bd425918799d4
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 6fcd5892eb9d13b61cbaa697731718e1ca8ce3eb
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806774"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77708148"
 ---
 # <a name="architectural-decision-guides"></a>Guias de decisão de arquitetura
 

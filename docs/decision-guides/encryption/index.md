@@ -1,6 +1,6 @@
 ---
 title: Guia de decisão de criptografia
-description: Saiba mais sobre a criptografia como um serviço principal em migrações do Azure.
+description: Implemente uma política de criptografia, um serviço principal em migrações do Azure que fornece camadas adicionais de segurança para suas cargas de trabalho e dados baseados em nuvem.
 author: rotycenh
 ms.author: v-tyhopk
 ms.date: 02/11/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 7df170713e10460d9e928837a99287be0afd5805
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: c81096576934aa55bd0381e7ac26dd8666b827ea
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807046"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77707978"
 ---
 # <a name="encryption-decision-guide"></a>Guia de decisão de criptografia
 
