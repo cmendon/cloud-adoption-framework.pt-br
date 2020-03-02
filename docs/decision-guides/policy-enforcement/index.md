@@ -1,6 +1,6 @@
 ---
 title: Guia de decisão de imposição de política
-description: Saiba mais sobre as assinaturas de imposição de política como uma prioridade de design principal em migrações no Azure.
+description: Use o Cloud Adoption Framework for Azure para saber mais sobre as assinaturas de imposição de política como uma prioridade principal de design nas migrações para o Azure.
 author: rotycenh
 ms.author: v-tyhopk
 ms.date: 02/11/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 8bc458fa480112c1b1a5748d042c9e439933f47f
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 2a5976d1aa1bb4ae0b1e8a0d810ae0acddabd883
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806723"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170980"
 ---
 # <a name="policy-enforcement-decision-guide"></a>Guia de decisão de imposição de política
 
