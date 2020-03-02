@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2660c6f09924c907591c8c8635b943125d0ac9a1
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: acf6c3b8dacd94c51a6fa9a857efad48eda727a0
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76801402"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222236"
 ---
 # <a name="migration-environment-planning-checklist-validate-environmental-readiness-prior-to-migration"></a>Lista de verificação de planejamento do ambiente de migração: validar prontidão do ambiente antes da migração
 
@@ -26,7 +26,11 @@ Este artigo e a lista de verificação assumem uma abordagem de _novo host_ ou d
 
 ## <a name="governance-alignment"></a>Alinhamento de governança
 
-A primeira e mais importante decisão sobre qualquer ambiente pronto para a migração é a opção de alinhamento da governança. Chegou-se a um consenso sobre o alinhamento da governança com a fundação da migração? No mínimo, a equipe de adoção de nuvem deve entender se essa migração é inicial em um único ambiente com governança limitada, uma fábrica de ambiente totalmente controlada ou alguma variante entre elas. Para obter mais opções e diretrizes sobre o alinhamento da governança, confira o artigo sobre [Alinhamento da governança e de conformidade](../../expanded-scope/governance-or-compliance.md).
+A primeira e mais importante decisão sobre qualquer ambiente pronto para a migração é a opção de alinhamento da governança. Chegou-se a um consenso sobre o alinhamento da governança com a fundação da migração? No mínimo, a equipe de adoção de nuvem deve entender se essa migração é inicial em um único ambiente com governança limitada, uma fábrica de ambiente totalmente controlada ou alguma variante entre elas. Para obter diretrizes adicionais sobre o alinhamento de governança, consulte a [metodologia](../../../govern/index.md)de controle.
+
+## <a name="operations-management-alignment"></a>Alinhamento do gerenciamento de operações
+
+Antes de migrar ativos para a nuvem, é importante entender quaisquer requisitos ou restrições relacionados ao gerenciamento de operações. No mínimo, o ambiente de migração deve incluir todas as implementações necessárias para atender à linha de base de operações. Para obter diretrizes adicionais sobre o alinhamento de operações, consulte a [metodologia gerenciar](../../../manage/index.md).
 
 ## <a name="cloud-readiness-implementation"></a>Implementação de preparação para a nuvem
 
@@ -57,11 +61,11 @@ Uma decisão quanto às ferramentas para controlar os recursos deve ser tomada a
 
 Suas cargas de trabalho baseadas em nuvem exigirão o provisionamento de redes virtuais para dar suporte ao usuário final e ao acesso administrativo. Com base nas decisões de organização de recursos e governança de recursos, você deve selecionar uma abordagem de rede para alinhá-la aos requisitos de segurança de TI. Além disso, suas decisões de rede devem estar alinhadas com todas as restrições de rede híbridas necessárias para operar as cargas de trabalho na lista de pendências da migração e dar suporte para acesso aos recursos hospedados localmente.
 
-## <a name="identity"></a>Identidade
+## <a name="identity"></a>Identity
 
 Os serviços de identidade baseados em nuvem são um pré-requisito para oferecer IAM (gerenciamento de identidade e acesso) para seus recursos de nuvem. Alinhe sua estratégia de gerenciamento de identidades com seus planos de adoção da nuvem antes de continuar. Por exemplo, ao migrar ativos locais existentes, considere a possibilidade de oferecer suporte para uma abordagem de identidade híbrida usando a [sincronização de diretório](../../../decision-guides/identity/index.md) a fim de permitir um conjunto consistente de credenciais de usuário em seus ambientes local e na nuvem, durante e após a migração.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Se o ambiente atender aos requisitos mínimos, ele poderá ser considerado aprovado para preparação para a migração. [A complexidade cultural e o gerenciamento de alterações](./cultural-complexity.md) ajudam a alinhar funções e responsabilidades para garantir as expectativas adequadas durante a execução do plano.
 

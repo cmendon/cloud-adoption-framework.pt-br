@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: adf14719f4d4d4c50194eb7b85ccfed7cd0df855
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: ce5b1a77396479b2621afab5cac025b983f14469
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77707485"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223747"
 ---
 # <a name="cloud-native-security-baseline-policy"></a>Política de linha de base de segurança nativa de nuvem
 
@@ -90,9 +90,9 @@ Mesmo com esse investimento em uma linha de base de segurança nativa de nuvem, 
 - **Proteger o conteúdo da VM.** Configurar os backups automatizados regulares é essencial para proteger contra erros do usuário. No entanto, isso não é suficiente; Você também deve certificar-se de que os backups estão protegidos do ataques cibernéticos e estão disponíveis quando você precisar deles.
 - **Monitorar aplicativos.** Esse padrão abrange várias tarefas, incluindo obter informações sobre a integridade de suas VMs, interações de compreensão entre eles e o estabelecimento de maneiras de monitorar os aplicativos que executam essas VMs. Todas essas tarefas são essenciais em manter seus aplicativos em execução o tempo todo.
 - **Acesso de dados seguro e de auditoria.** As organizações devem auditar todos os acessos a dados e usar recursos avançados de aprendizado de máquina para chamar desvios de padrões de acesso normais.
-- **Prática de failover.** As operações de nuvem que têm tolerâncias baixas para a falha devem ser capazes de fazer failover ou de uma recuperação de um incidente de segurança cibernética ou plataforma. Esses procedimentos não devem ser simplesmente documentados, mas devem ser praticado trimestralmente.
+- **Prática de failover.** As operações de nuvem que têm tolerâncias baixas para a falha devem ser capazes de fazer failover ou recuperação de um incidente de segurança cibernética ou plataforma. Esses procedimentos não devem ser simplesmente documentados, mas devem ser praticado trimestralmente.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Agora que você analisou a política de linha de base de segurança de exemplo para soluções nativas de nuvem, retorne ao [Guia de revisão de política](../policy-compliance/cloud-policy-review.md) para começar a criar esse exemplo para criação de suas próprias políticas para adoção de nuvem.
 

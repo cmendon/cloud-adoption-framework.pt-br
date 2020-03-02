@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c148e62aee2ce7bcd78aa19248b3df8f5cf56129
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 9d50e40ba5877eab0f2aa904f2bcc1e984c309ca
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709338"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223873"
 ---
 # <a name="identity-baseline-metrics-indicators-and-risk-tolerance"></a>Métricas, indicadores e tolerância a riscos da linha de base de identidade
 
@@ -53,13 +53,13 @@ Assim que você tiver uma linha de base, estabeleça parâmetros de comparação
 - **Gatilho de Federação.** Uma empresa que implementa a Federação de identidades com sistemas de linha de base de identidade externa _x_ pode se beneficiar de investir na disciplina de linha de base de identidade para garantir uma política organizacional consistente entre membros da Federação.
 - **Gatilho de acesso elevado.** Uma empresa com mais de _x%_ dos usuários com permissões elevadas para ferramentas de gerenciamento e recursos deve considerar investindo na disciplina de linha de base de identidade para minimizar o risco de excesso de provisionamento inadvertido de acesso aos usuários.
 - **Gatilho do RBAC.** Uma empresa com menos de _x%_ dos recursos que usam métodos de controle de acesso baseado em função deve considerar investindo na disciplina de linha de base de identidade para identificar maneiras otimizadas de atribuir acesso de usuário aos recursos.
-- **Gatilho de falha de autenticação.** Uma empresa em que as falhas de autenticação representam mais de _x%_ das tentativas deve investir na disciplina de linha de base de identidade para garantir que os métodos de autenticação não estejam sob ataque externo e que os usuários possam usar os métodos de autenticação corretamente.
+- **Gatilho de falha de autenticação.** Uma empresa em que as falhas de autenticação representam mais de _x%_ das tentativas deve investir na disciplina de linha de base de identidade para garantir que os métodos de autenticação não estejam sob ataque externo e que os usuários possam se autenticar corretamente.
 - **Gatilho de falha de autorização.** Uma empresa em que as tentativas de acesso são rejeitadas mais de _x%_ do tempo deve investir na disciplina de linha de base de identidade para melhorar o aplicativo e atualizar os controles de acesso e identificar tentativas de acesso potencialmente mal-intencionadas.
 - **Gatilho de conta comprometida.** Uma empresa com mais de 1 conta comprometida deve investir na disciplina de linha de base de identidade para melhorar a força e a segurança dos mecanismos de autenticação e melhorar os mecanismos para corrigir os riscos relacionados a contas comprometidas.
 
 As métricas e os gatilhos exatos que você usa para medir a tolerância a riscos e o nível de investimento na disciplina de linha de base de identidade serão específicos para sua organização, mas os exemplos acima devem servir como uma base útil para discussão em sua equipe de governança de nuvem.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Usar o [modelo de Gerenciamento de Nuvem](./template.md), de métricas do documento e de indicadores de tolerância que se alinham ao atual plano de adoção da nuvem.
 

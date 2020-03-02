@@ -8,13 +8,15 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ba1776affc2bd4f0ca090603ca969c21090d9252
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 62c47f8d4b3c386129c6a6a9eeb966393573ea16
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709576"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223900"
 ---
+<!-- cSpell:ignore netops -->
+
 # <a name="governance-design-for-multiple-teams"></a>Design de governança para várias equipes
 
 A meta deste guia é ajudar você a aprender o processo para criar um modelo de controle de recursos no Azure para dar suporte a múltiplas equipes, múltiplas cargas de trabalho e múltiplos ambientes. Primei vamos examinar um conjunto de requisitos de governança hipotético e passar por várias implementações de exemplo que atendem a esses requisitos.
@@ -127,7 +129,7 @@ Observe que, neste modelo, o **administrador de serviço** executou ações meno
 ![assinatura com grupos de recursos A e B](../../_images/govern/design/governance-2-16.png)
 *Figura 5-uma assinatura com um administrador de serviços e dois proprietários de carga de trabalho, todos atribuídos à função de proprietário interna.*
 
-No entanto, porque ambos **proprietário da carga de trabalho A** e **proprietário da carga de trabalho B** são atribuídos à função de proprietário interno no escopo de assinatura, eles terão cada herdadas a função de proprietário interno para cada um dos outros recursos grupo. Isso significa que não só têm acesso total aos recursos do outro, eles também são capazes de delegar acesso de gerenciamento para cada um dos outros grupos de recursos. Por exemplo, **proprietário da carga de trabalho B** tem direitos para adicionar qualquer outro usuário para **do grupo de recursos A** e pode atribuir qualquer função a eles, incluindo a função de proprietário interno.
+No entanto, porque ambos **proprietário da carga de trabalho A** e **proprietário da carga de trabalho B** são atribuídos à função de proprietário interno no escopo de assinatura, eles terão cada herdadas a função de proprietário interno para cada um dos outros recursos grupo. Isso significa que não só têm acesso total aos recursos uns dos outros, eles também podem delegar o acesso de gerenciamento aos grupos de recursos uns dos outros. Por exemplo, **proprietário da carga de trabalho B** tem direitos para adicionar qualquer outro usuário para **do grupo de recursos A** e pode atribuir qualquer função a eles, incluindo a função de proprietário interno.
 
 Se compararmos cada exemplo aos requisitos, podemos ver que ambos os exemplos dão suporte a um único usuário confiável no escopo da assinatura com permissão para conceder direitos de acesso de recursos para os dois proprietários de cargas de trabalho. Cada um dos proprietários de duas cargas de trabalho não tinham acesso ao gerenciamento de recursos por padrão e exigiam que o **administrador de serviço** atribuísse explicitamente permissões a eles. No entanto, somente o primeiro exemplo suporta o requisito de que os recursos associados a cada carga de trabalho são isolados uma da outra, de modo que nenhum proprietário da carga de trabalho tem acesso aos recursos de qualquer outra carga de trabalho.
 
@@ -185,7 +187,7 @@ Vamos começar avaliando a primeira opção. Usaremos o modelo de permissões, d
 10. O segundo **proprietário da carga de trabalho** cria uma sub-rede na rede virtual **prod-vnet** e então adicionada duas máquinas virtuais. O segundo **proprietário da carga de trabalho** se aplica às marcas *environment* e *managedBy* para cada recurso.
     ![criar sub-redes](../../_images/govern/design/governance-3-8.png)
 
-Esse modelo de gerenciamento de recursos de exemplo nos permite gerenciar recursos nos três ambientes necessários. Os recursos de infraestrutura compartilhada estão protegidos porque há apenas um usuário na assinatura com a permissão para acessar esses recursos. Cada um dos proprietários da carga de trabalho é capaz de utilizar os recursos de infraestrutura de compartilhamento sem ter qualquer permissão nos próprios recursos compartilhados. No entanto, esse modelo de gerenciamento falha no requisito para o isolamento de carga de trabalho — cada um dos dois **proprietários de carga de trabalho** é capaz de acessar os recursos de carga de trabalho do outro.
+Esse modelo de gerenciamento de recursos de exemplo nos permite gerenciar recursos nos três ambientes necessários. Os recursos de infraestrutura compartilhada são protegidos porque apenas um único usuário na assinatura tem permissão para acessar esses recursos. Cada um dos proprietários da carga de trabalho pode usar os recursos de infraestrutura compartilhada sem ter nenhuma permissão nos próprios recursos compartilhados. No entanto, esse modelo de gerenciamento falha no requisito de isolamento da carga de trabalho, porque ambos os **proprietários da carga de trabalho** podem acessar os recursos da carga de trabalho de cada um.
 
 Há outra consideração importante com esse modelo, que pode não ser imediatamente óbvia. No exemplo, foi o **proprietário de carga de trabalho do app1** que solicitou a conexão de rede emparelhamento com o **hub-vnet** para fornecer conectividade a locais. O usuário **operações de rede** avaliou a solicitação com base nos recursos implantados com carga de trabalho. Quando o **proprietário da assinatura** adicionou o **proprietário de carga de trabalho do app2** com a função **colaborador**, o usuário tinha direitos de acesso de gerenciamento para todos os recursos no grupo de recursos **prod-rg**.
 
@@ -268,7 +270,7 @@ Agora que você já implementou o seu modelo de controle, poderá implantar seus
 
 [Funções internas para recursos do Azure](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles)
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 > [!div class="nextstepaction"]
 > [Saiba mais sobre como implantar uma infraestrutura básica](../../infrastructure/virtual-machines/basic-workload.md)

@@ -7,13 +7,15 @@ ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: fb3465345b45f2a7c71dac3c519e4daa7702dd47
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: f869716c907aa6c03adfb81a4f698dab42b9e387
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171337"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223636"
 ---
+<!-- cspell:ignore njray nanra vCPUs Proliant Sysplex IPLs DASDs LPARs ISPF Panvalet -->
+
 # <a name="make-the-switch-from-mainframes-to-azure"></a>Fazer a transição dos mainframes para Azure
 
 Como uma plataforma alternativa para a execução de aplicativos de mainframe tradicionais, o Azure oferece computação de hiperescala e armazenamento em um ambiente de alta disponibilidade. Você obtém o valor e a agilidade de uma plataforma moderna, com base em nuvem sem os custos associados a um ambiente de mainframe.
@@ -59,7 +61,7 @@ Um CF também oferece computação rigidamente acoplada, enquanto os recursos de
 
 Os clientes de mainframe normalmente mantêm sites de recuperação de desastres ou fazer uso ou um provedor de mainframe independentes para contingências de desastres. Sincronização com um site de recuperação de desastres geralmente é feita por meio de cópias offline de dados. Ambas as opções incorrem em custos altos.
 
-Redundância geográfica automatizada também está disponível por meio de facilidade acoplamento de mainframe, embora com grande despesa, e geralmente é reservado para sistemas de missão crítica. Em contraste, o Azure tem opções fáceis de implementar e econômicas para [backup](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup), [recuperação](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview), e [redundância](https://docs.microsoft.com/azure/storage/common/storage-redundancy) nos níveis locais ou regionais ou por meio de redundância geográfica.
+A redundância geográfica automatizada também está disponível por meio do recurso de acoplamento de mainframe. Essa abordagem é cara e normalmente é reservada para sistemas de missão crítica. Em contraste, o Azure tem opções fáceis de implementar e econômicas para [backup](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup), [recuperação](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview), e [redundância](https://docs.microsoft.com/azure/storage/common/storage-redundancy) nos níveis locais ou regionais ou por meio de redundância geográfica.
 
 ## <a name="storage"></a>Armazenamento
 

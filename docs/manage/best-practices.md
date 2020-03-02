@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 9fbdeccc3ed1c1acb516f9aceadc3d8dc8732030
-ms.sourcegitcommit: 35d01bccc8ecbec38f6247a065a309ec691ca810
+ms.openlocfilehash: b426acdc4ae88a88acd295758be4e2d4a6b85dc0
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77213602"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223263"
 ---
 # <a name="establish-operational-management-practices-in-the-cloud"></a>Estabelecer práticas de gerenciamento operacional na nuvem
 
@@ -39,7 +39,7 @@ Essas duas práticas recomendadas se desenvolvem em uma metodologia de estado fu
 - **Conformidade operacional:** O gerenciamento regular da configuração, do dimensionamento, do custo e do desempenho dos ativos é fundamental para manter as expectativas de desempenho.
 - **Proteger e recuperar:** Minimizar as interrupções operacionais e acelerar a recuperação ajuda a empresa a evitar perdas de desempenho e impactos de receita negativa. Detecção e recuperação são aspectos essenciais desta disciplina.
 - **Operações de plataforma:** Todos os ambientes de ti contêm um conjunto de plataformas usadas com frequência. Essas plataformas podem incluir armazenamentos de dados como o SQL Server ou o Azure HDInsight. Outras plataformas comuns podem incluir soluções de contêiner, como o AKS (serviço kubernetes do Azure). Independentemente da plataforma, a maturidade das operações da plataforma se concentra na personalização de operações com base em como as plataformas comuns são implantadas, configuradas e usadas por cargas de trabalho.
-- **Operações de carga de trabalho:** No nível mais alto de maturidade operacional, as equipes de operações de nuvem podem ajustar as operações de cargas de trabalho que são cruciais para o sucesso dos negócios. Para essas cargas de trabalho de alta importância, os dados disponíveis podem ajudar a automatizar a correção, o dimensionamento ou a proteção de cargas de trabalho com base em sua utilização.
+- **Operações de carga de trabalho:** No nível mais alto de maturidade operacional, as equipes de operações de nuvem podem ajustar as operações para cargas de trabalho críticas. Para essas cargas de trabalho, os dados disponíveis podem ajudar a automatizar a correção, o dimensionamento ou a proteção de cargas de trabalho com base em sua utilização.
 
 Diretrizes adicionais, como a [estrutura de análise de design (nome do código: princípios de design de nuvem)](https://docs.microsoft.com/azure/architecture/framework/resiliency/overview), podem ajudá-lo a tomar decisões de arquitetura detalhadas sobre cada carga de trabalho, nas disciplinas descritas anteriormente.
 

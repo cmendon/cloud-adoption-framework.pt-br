@@ -7,12 +7,12 @@ ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 5b2190456e63c0e1da39f064e34d63eebbf4d998
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: c41a8ebbce9fa4a8f0036c2aa395706f44069263
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76802983"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78225494"
 ---
 # <a name="accelerate-migration-by-migrating-multiple-databases-or-entire-sql-servers"></a>Acelere a migração migrando vários bancos de dados ou SQL Servers inteiros
 
@@ -45,26 +45,26 @@ Antes de executar uma migração de SQL Server, comece com uma expansão do espa
 
 Veja a seguir um exemplo de um inventário de servidor:
 
-|SQL Server|Finalidade|Versão|[Importância](../../manage/considerations/criticality.md)|[Confidencialidade](../../govern/policy-compliance/data-classification.md)|Contagem de banco de dados|SSIS|SSRS|SSAS|Cluster|Número de nós|
+|SQL Server|Finalidade|{1&gt;Version&lt;1}|[Importância](../../manage/considerations/criticality.md)|[Confidencialidade](../../govern/policy-compliance/data-classification.md)|Contagem de banco de dados|SSIS|SSRS|SSAS|Cluster|Número de nós|
 |---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|
-|SQL-01|Aplicativos principais|2016|Essenciais|Altamente confidencial|40|N/D|N/D|N/D|Sim|3|
-|SQL-02|Aplicativos principais|2016|Essenciais|Altamente confidencial|40|N/D|N/D|N/D|Sim|3|
-|SQL-03|Aplicativos principais|2016|Essenciais|Altamente confidencial|40|N/D|N/D|N/D|Sim|3|
-|SQL-04|BI|2012|Alto|XX|6|N/D|Confidential|Sim – cubo multidimensional|Não|1|
-|SQL-05|Integração|2008 R2|Baixo|Geral|20|Sim|N/D|N/D|Não|1|
+|SQL-01|Aplicativos principais|2016|Essenciais|Altamente confidencial|40|{1&gt;N/A&lt;1}|{1&gt;N/A&lt;1}|{1&gt;N/A&lt;1}|Sim|3|
+|SQL-02|Aplicativos principais|2016|Essenciais|Altamente confidencial|40|{1&gt;N/A&lt;1}|{1&gt;N/A&lt;1}|{1&gt;N/A&lt;1}|Sim|3|
+|SQL-03|Aplicativos principais|2016|Essenciais|Altamente confidencial|40|{1&gt;N/A&lt;1}|{1&gt;N/A&lt;1}|{1&gt;N/A&lt;1}|Sim|3|
+|SQL-04|BI|2012|Alta|XX|6|{1&gt;N/A&lt;1}|Confidential|Sim – cubo multidimensional|Não|1|
+|SQL-05|Integration|2008 R2|Baixo|Geral|20|Sim|{1&gt;N/A&lt;1}|{1&gt;N/A&lt;1}|Não|1|
 
 ### <a name="database-inventory"></a>Inventário de banco de dados
 
 Veja a seguir um exemplo de inventário de banco de dados para um dos servidores acima:
 
-|Servidor|Banco de dados|[Importância](../../manage/considerations/criticality.md)|[Confidencialidade](../../govern/policy-compliance/data-classification.md)|Resultados de Assistente de Migração de Dados (DMA)|Correção de DMA|Plataforma de destino|
+|Server|Database|[Importância](../../manage/considerations/criticality.md)|[Confidencialidade](../../govern/policy-compliance/data-classification.md)|Resultados de Assistente de Migração de Dados (DMA)|Correção de DMA|Plataforma de destino|
 |---------|---------|---------|---------|---------|---------|---------|
-|SQL-01|DB-1|Essenciais|Altamente confidencial|Compatível|N/D|Banco de dados SQL do Azure|
-|SQL-01|DB-2|Alto|Confidential|Alteração de esquema necessária|Alterações implementadas|Banco de dados SQL do Azure|
-|SQL-01|DB-3|Alto|Geral|Compatível|N/D|Instância Gerenciada do SQL do Azure|
+|SQL-01|DB-1|Essenciais|Altamente confidencial|Compatível|{1&gt;N/A&lt;1}|Banco de Dados SQL do Azure|
+|SQL-01|DB-2|Alta|Confidential|Alteração de esquema necessária|Alterações implementadas|Banco de Dados SQL do Azure|
+|SQL-01|DB-3|Alta|Geral|Compatível|{1&gt;N/A&lt;1}|Instância Gerenciada do SQL do Azure|
 |SQL-01|DB-4|Baixo|Altamente confidencial|Alteração de esquema necessária|Alterações agendadas|Instância Gerenciada do SQL do Azure|
-|SQL-01|DB-5|Essenciais|Geral|Compatível|N/D|Instância Gerenciada do SQL do Azure|
-|SQL-01|DB-6|Alto|Confidential|Compatível|N/D|Banco de dados SQL do Azure|
+|SQL-01|DB-5|Essenciais|Geral|Compatível|{1&gt;N/A&lt;1}|Instância Gerenciada do SQL do Azure|
+|SQL-01|DB-6|Alta|Confidential|Compatível|{1&gt;N/A&lt;1}|Banco de Dados SQL do Azure|
 
 ### <a name="integration-with-the-cloud-adoption-plan"></a>Integração com o plano de adoção de nuvem
 
@@ -103,22 +103,22 @@ O caminho sugerido para migração e sincronização usa uma combinação das tr
 
 A escolha da melhor orientação para a migração usando o serviço de migração de banco de dados do Azure é contingente na plataforma de origem e de destino de sua escolha. A tabela a seguir contém links para tutoriais para cada uma das abordagens padrão para migrar um banco de dados SQL usando o serviço de migração de banco de dados do Azure.
 
-|Origem  |Escolha o destino  |Ferramenta  |Tipo de migração  |Diretriz  |
+|Origem  |Destino  |Ferramenta  |Tipo de migração  |{1&gt;Orientação&lt;1}  |
 |---------|---------|---------|---------|---------|
-|SQL Server|Banco de dados SQL do Azure|Serviço de Migração do Banco de Dados|Offline|[Tutorial](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-azure-sql)|
-|SQL Server|Banco de dados SQL do Azure|Serviço de Migração do Banco de Dados|Online|[Tutorial](https://docs.microsoft.com/azure/dms/tutorial-sql-server-azure-sql-online)|
-|SQL Server|Instância gerenciada do Banco de Dados SQL do Azure|Serviço de Migração do Banco de Dados|Offline|[Tutorial](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-managed-instance)|
-|SQL Server|Instância gerenciada do Banco de Dados SQL do Azure|Serviço de Migração do Banco de Dados|Online|[Tutorial](https://docs.microsoft.com/azure/dms/tutorial-sql-server-managed-instance-online)|
-|SQL Server RDS|Banco de dados SQL do Azure (ou instância gerenciada)|Serviço de Migração do Banco de Dados|Online|[Tutorial](https://docs.microsoft.com/azure/dms/tutorial-rds-sql-server-azure-sql-and-managed-instance-online)|
+|SQL Server|Banco de Dados SQL do Azure|Serviço de Migração de Banco de Dados|Offline|[Tutorial](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-azure-sql)|
+|SQL Server|Banco de Dados SQL do Azure|Serviço de Migração de Banco de Dados|Online|[Tutorial](https://docs.microsoft.com/azure/dms/tutorial-sql-server-azure-sql-online)|
+|SQL Server|Instância gerenciada do Banco de Dados SQL do Azure|Serviço de Migração de Banco de Dados|Offline|[Tutorial](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-managed-instance)|
+|SQL Server|Instância gerenciada do Banco de Dados SQL do Azure|Serviço de Migração de Banco de Dados|Online|[Tutorial](https://docs.microsoft.com/azure/dms/tutorial-sql-server-managed-instance-online)|
+|SQL Server RDS|Banco de dados SQL do Azure (ou instância gerenciada)|Serviço de Migração de Banco de Dados|Online|[Tutorial](https://docs.microsoft.com/azure/dms/tutorial-rds-sql-server-azure-sql-and-managed-instance-online)|
 
 ### <a name="guidance-and-tutorials-for-various-services-to-equivalent-paas-solutions"></a>Diretrizes e tutoriais para vários serviços para soluções de PaaS equivalentes
 
 Depois de mover os bancos de dados de uma instância do SQL Server para o serviço de migração de banco de dado do Azure, o esquema e os dados podem ser rehospedados em várias soluções PaaS. No entanto, outros serviços necessários ainda podem estar em execução nesse servidor. Os três tutoriais a seguir auxiliam na movimentação do SSIS, do SSAS e do SSRS para os serviços de PaaS equivalentes no Azure.
 
-|Origem  |Escolha o destino  |Ferramenta  |Tipo de migração  |Diretriz  |
+|Origem  |Destino  |Ferramenta  |Tipo de migração  |{1&gt;Orientação&lt;1}  |
 |---------|---------|---------|---------|---------|
-|SQL Server Integration Services|Tempo de execução de integração do Azure Data Factory|Azure Data Factory|Offline|[Tutorial](https://docs.microsoft.com/azure/data-factory/create-azure-ssis-integration-runtime)|
-|Modelo de SQL Server Analysis Services de tabela|Analysis Services do Azure|SQL Server Data Tools|Offline|[Tutorial](https://docs.microsoft.com/azure/analysis-services/analysis-services-deploy)|
+|SQL Server Integration Services|Tempo de execução de integração do Azure Data Factory|Fábrica de dados do Azure|Offline|[Tutorial](https://docs.microsoft.com/azure/data-factory/create-azure-ssis-integration-runtime)|
+|Modelo de SQL Server Analysis Services de tabela|Azure Analysis Services|SQL Server Data Tools|Offline|[Tutorial](https://docs.microsoft.com/azure/analysis-services/analysis-services-deploy)|
 |SQL Server Reporting Services|Servidor de Relatórios do Power BI|Power BI|Offline|[Tutorial](https://docs.microsoft.com/power-bi/report-server/migrate-report-server)|
 
 ### <a name="guidance-and-tutorials-for-migration-from-sql-server-to-an-iaas-instance-of-sql-server"></a>Diretrizes e tutoriais para migração de SQL Server para uma instância de IaaS do SQL Server
@@ -127,7 +127,7 @@ Depois de migrar bancos de dados e serviços para instâncias de PaaS, você ain
 
 Use essa abordagem para migrar bancos de dados ou outros serviços na instância do SQL Server.
 
-|Origem  |Escolha o destino  |Ferramenta  |Tipo de migração  |Diretriz  |
+|Origem  |Destino  |Ferramenta  |Tipo de migração  |{1&gt;Orientação&lt;1}  |
 |---------|---------|---------|---------|---------|
 |SQL Server de instância única|SQL Server na IaaS|Variado|Offline|[Tutorial](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-migrate-sql)|
 
@@ -137,7 +137,7 @@ Durante a otimização, você pode testar, otimizar e promover para produção c
 
 O ideal é migrar as cargas de trabalho, os aplicativos e as VMs dependentes na mesma iteração que a instância de SQL Server. Quando esse cenário ideal ocorre, você pode testar a carga de trabalho junto com a fonte de dados. Após o teste, você pode promover a estrutura de dados para produção e encerrar o processo de sincronização.
 
-Agora, vamos considerar o cenário no qual há uma lacuna de tempo significativa entre migração de banco de dados e migração de carga de trabalho. Infelizmente, essa pode ser a maior alteração no processo de otimização durante uma migração não controlada por carga de trabalho. Ao migrar vários bancos de dados como parte de uma migração de SQL Server, esses bancos de dados podem coexistir na nuvem e no local, para várias iterações. Durante esse tempo, você precisa manter a sincronização de dados até que esses ativos dependentes sejam migrados, testados e promovidos.
+Agora, vamos considerar o cenário no qual há uma lacuna de tempo significativa entre migração de banco de dados e migração de carga de trabalho. Infelizmente, essa pode ser a maior alteração no processo de otimização durante uma migração que não é controlada pela carga de trabalho. Ao migrar vários bancos de dados como parte de uma migração de SQL Server, esses bancos de dados podem coexistir na nuvem e no local, para várias iterações. Durante esse tempo, você precisa manter a sincronização de dados até que esses ativos dependentes sejam migrados, testados e promovidos.
 
 Até que todas as cargas de trabalho dependentes sejam promovidas, você e sua equipe serão responsáveis por dar suporte à sincronização de dados do sistema de origem para o sistema de destino. Essa sincronização consome largura de banda de rede, custos de nuvem e, o mais importante, a hora das pessoas. O alinhamento adequado do plano de adoção entre a carga de trabalho de migração de SQL Server e todas as cargas de trabalho e aplicativos dependentes pode reduzir essa sobrecarga dispendiosa.
 
@@ -155,7 +155,7 @@ Durante os processos de otimização, conclua as tarefas a seguir a cada iteraç
 
 Até que a etapa 5 passe, você não pode encerrar bancos de dados e sincronização. Até que todos os bancos de dados em uma instância do SQL Server tenham passado por todas as sete etapas, você deve tratar a instância local do SQL Server como produção. Toda a sincronização deve ser mantida.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Retorne à [lista de verificação de escopo expandido](./index.md) para verificar se o método de migração está totalmente alinhado.
 

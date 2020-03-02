@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: a900ca61f957f941728829208cf72bc8f2aba601
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 36d87caae344414e7bb311fb032d28f58bc5ea6c
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76800314"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222151"
 ---
 # <a name="plan-for-cloud-adoption"></a>Planejar a adoção da nuvem
 
@@ -22,7 +22,7 @@ Um plano é um requisito essencial para uma adoção de nuvem bem-sucedida. Um p
 
 Os planos de adoção de nuvem começam com uma estratégia bem definida. No mínimo, a estratégia deve descrever as motivações, os resultados de negócios e as justificativas de negócios para a adoção da nuvem. Em seguida, esses retornos positivos são balanceados pelo esforço necessário para concretiza-los.
 
-O esforço começa com o espaço digital (proposto ou existente), que traduz a estratégia em cargas de trabalho e ativos mais tangíveis. Em seguida, você pode mapear esses elementos tangíveis para o trabalho técnico. A partir daí, pessoas capacitadas em uma estrutura organizacional apropriada podem executar o trabalho técnico. O plano de adoção de nuvem combina todos esses tópicos em um plano que pode ser previsto, orçado, implementado e gerenciado por meio de práticas de gerenciamento de projetos ágeis. Esta série de artigos ajuda você a criar o plano e fornece alguns modelos para facilitar o trabalho.
+O esforço começa com o espaço digital (proposto ou existente), que traduz a estratégia em cargas de trabalho e ativos mais tangíveis. Em seguida, você pode mapear esses elementos tangíveis para o trabalho técnico. A partir daí, pessoas capacitadas em uma estrutura organizacional apropriada podem executar o trabalho técnico. O plano de adoção de nuvem combina esses tópicos em um plano que pode ser previsto, orçado, implementado e gerenciado por meio de práticas de gerenciamento de projetos ágeis. Esta série de artigos ajuda você a criar o plano e fornece alguns modelos para facilitar o trabalho.
 
 ## <a name="transition-from-sequential-to-iterative-planning"></a>Transição do planejamento seqüencial para o iterativo
 
@@ -41,7 +41,7 @@ Esta série de artigos percorre cada etapa da tradução da estratégia e do esf
 5. **Definir iterações e versões:** as *iterações* são os blocos de tempo alocados para o trabalho. As *versões* são a definição do trabalho a ser feito antes de disparar uma alteração nos processos de produção.
 6. **Estimar linhas** do tempo: Estabelecer cronogramas aproximados para fins de planejamento de versão, com base nas estimativas iniciais.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Antes de criar seu plano de adoção de nuvem, certifique-se de que todos os [pré-requisitos necessários](./prerequisites.md) estejam em vigor.
 

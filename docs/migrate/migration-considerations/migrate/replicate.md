@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 6b37cea7b912cb4d65f9b1b119787e96b2f698d6
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 5eaea53e65951cb5fee3d36b2eba472e1048feb2
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76802014"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222243"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -24,7 +24,7 @@ A replicação é o principal instrumento dos esforços de migração. É o proc
 
 ## <a name="required-prerequisites-to-replication"></a>Pré-requisitos exigidos para a replicação
 
-Antes da replicação, a *nova plataforma* e o hardware devem estar preparados para receber as cópias binárias. O artigo sobre [pré-requisitos](../prerequisites/index.md) descreve os requisitos mínimos de ambiente para ajudar a criar uma plataforma segura, robusta e de alto desempenho para receber as réplicas binárias.
+Antes da replicação, a *nova plataforma* e o hardware devem estar preparados para receber as cópias binárias. O artigo sobre os [pré-requisitos](../prerequisites/index.md) descreve os requisitos mínimos do ambiente para ajudar a criar uma plataforma segura, robusta e de alto desempenho para receber as réplicas binárias.
 
 Os *binários de origem* também devem ser preparados para a replicação e sincronização. Os artigos sobre avaliação, arquitetura e remediação abordam as ações necessárias para garantir que o binário de origem esteja pronto para a replicação e sincronização.
 
@@ -46,7 +46,7 @@ Cada uma dessas leis da física orienta os seguintes riscos que normalmente afet
 - **Efeito cumulativo do desvio do disco.** Do ponto de replicação até a promoção de um ativo para produção, os binários de origem e destino devem permanecer sincronizados. O *desvio* nos binários consomem largura de banda adicional já que todas as alterações no binário devem ser replicadas de forma recorrente. Durante a sincronização, todo o desvio binário deve ser incluído no cálculo do armazenamento de migração total. Quanto mais tempo demorar para promover um ativo para a produção, mais desvio cumulativo haverá. Quanto mais ativos estiverem sendo sincronizados, mais largura de banda será consumida. Com os ativos sendo mantidos em um estado de sincronização, perde-se um pouco mais da largura de banda total de migração disponível.
 - **Tempo para mudanças nos negócios.** Conforme mencionado na entrada anterior, "Efeito cumulativo do desvio do disco", o tempo de sincronização tem um efeito cumulativo negativo na velocidade de migração. A priorização da lista de pendências de migração e a preparação avançada para o [plano de mudança empresarial](../optimize/business-change-plan.md) são cruciais para a velocidade da migração. O ritmo da promoção é o teste mais importante de alinhamento comercial e técnico durante um esforço de migração. Quanto mais rápido um ativo puder ser promovido para produção, menos impacto haverá na largura de banda e maior será a largura de banda/tempo que poderá ser alocada/o para a replicação da próxima carga de trabalho.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Após a conclusão da replicação, as [atividades de preparo](./stage.md) podem começar.
 

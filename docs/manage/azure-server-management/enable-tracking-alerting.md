@@ -7,18 +7,18 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 0cd8776c71eae22fdb7a7894b656a3dc1948e45c
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 4581c865f3dd928df91e7e1eef97a0ea341e4ccb
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808100"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223500"
 ---
 # <a name="enable-tracking-and-alerting-for-critical-changes"></a>Habilitar acompanhamento e alertas para alterações críticas
 
 O Azure Controle de Alterações e o inventário fornecem alertas sobre o estado de configuração do ambiente híbrido e alterações nesse ambiente. Ele pode relatar alterações críticas de arquivo, serviço, software e registro que podem afetar os servidores implantados.
 
-Por padrão, o serviço de inventário de automação do Azure não monitora arquivos ou configurações do registro. A solução fornece uma lista de chaves do registro que recomendamos para o monitoramento. Para ver essa lista, acesse sua conta de automação no portal do Azure e selecione **inventário** > **Editar configurações**.
+Por padrão, o serviço de inventário de automação do Azure não monitora arquivos ou configurações do registro. A solução fornece uma lista de chaves do registro que recomendamos para o monitoramento. Para ver essa lista, acesse sua conta de automação na portal do Azure e, em seguida, selecione **inventário** > **Editar configurações**.
 
 ![Captura de tela da exibição de inventário da automação do Azure no portal do Azure](./media/change-tracking1.png)
 
@@ -94,7 +94,7 @@ Use a consulta a seguir para detectar alterações em chaves de registro conheci
   ConfigurationChange | where RegistryKey == "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Control\\Session Manager\\KnownDlls"
   ```
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Saiba como usar a automação do Azure para [criar agendas de atualização](./update-schedules.md) para gerenciar atualizações em seus servidores.
 

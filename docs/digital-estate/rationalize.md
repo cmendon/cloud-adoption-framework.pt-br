@@ -3,17 +3,17 @@ title: Racionalizar a propriedade digital
 description: Use a lógica de nuvem para avaliar seus ativos digitais e determinar a melhor abordagem para hospedá-los na nuvem.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 12/10/2018
+ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 38d574735dbc7854a03b98aee9d3e7012b939ff8
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 14f96dde6558588c092a181aa2b7a2e57220cf5f
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170130"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78225284"
 ---
 # <a name="rationalize-the-digital-estate"></a>Racionalizar a propriedade digital
 
@@ -83,7 +83,7 @@ Em um ambiente local tradicional, hospedar ativos pequenos e não usados raramen
 
 No entanto, quando você passa para um modelo de contabilidade de nuvem, a desativação de ativos pode produzir uma economia significativa nos custos operacionais anuais e nos esforços de migração antecipada.
 
-Não é incomum que as organizações desativem 20% ou mais de seu espaço digital depois de concluir uma análise quantitativa. É recomendável fazer análises mais qualitativas antes de decidir sobre tal ação. Após a confirmação, a desativação desses ativos pode produzir a primeira vitória de ROI na migração na nuvem. Em muitos casos, trata-se de um dos maiores fatores de economia de custos. Como tal, recomendamos que a equipe de estratégia de nuvem supervisionasse a validação e a desativação dos ativos, em paralelo com a fase de compilação do processo de migração, para permitir um ganho financeiro inicial.
+Não é incomum que as organizações desativem 20% ou mais de seu espaço digital depois de concluir uma análise quantitativa. É recomendável realizar análise mais qualitativa antes de tomar as medidas. Após a confirmação, a desativação desses ativos pode produzir a primeira vitória de ROI da migração na nuvem. Geralmente, esse é um dos maiores fatores de economia de custos. Portanto, a equipe de estratégia de nuvem deve supervisionar a validação e a desativação dos ativos, em paralelo com a execução da [metodologia de migração](../migrate/index.md), para alcançar um ganho financeiro inicial.
 
 ### <a name="program-adjustments"></a>Ajustes do programa
 

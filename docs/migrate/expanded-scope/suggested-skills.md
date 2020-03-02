@@ -3,16 +3,16 @@ title: Preparação de habilidades para migração na nuvem
 description: Preparação de habilidades para migração na nuvem
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 05/19/2019
+ms.date: 02/25/2020
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d6768f3944699fdde483fb25f47bcb22be2484f1
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: f24d619106674cedf12bc650cd0807e0f766e3c6
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76802932"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222304"
 ---
 # <a name="skills-readiness-for-cloud-migration"></a>Preparação de habilidades para migração na nuvem
 
@@ -28,7 +28,7 @@ A implementação de processos de "Migração" será criada com base nas habilid
 
 As seguintes ferramentas podem auxiliar a equipe na execução de atividades de avaliação:
 
-- [Equilibre o portfólio](./balance-the-portfolio.md): garanta o equilíbrio e as alocações de investimento adequadas em um portfólio de aplicativos.
+- [Equilibre o portfólio](../../strategy/balance-the-portfolio.md): garanta o equilíbrio e as alocações de investimento adequadas em um portfólio de aplicativos.
 - [Crie uma justificativa de negócios](../../strategy/cloud-migration-business-case.md): Crie e entenda a justificativa de negócios que conduz o esforço de migração de nuvem.
 - [Racionalizar o espaço digital](../../digital-estate/rationalize.md): racionalizar os ativos no estado digital.
 - [Avaliação do portfólio de aplicativos](https://docs.microsoft.com/learn/modules/app-and-infra-migration-and-modernization): critérios para tomar decisões relacionadas a opções de migração ou inovação no portfólio de aplicativos.
@@ -62,7 +62,7 @@ As ferramentas a seguir podem ajudar a equipe a encontrar maneiras de proteger e
 
 - [Proteger e gerenciar cargas de trabalho no Azure](../azure-best-practices/migrate-best-practices-security-management.md): práticas recomendadas para proteger e gerenciar cargas de trabalho no Azure.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Retorne à [lista de verificação de escopo expandido](./index.md) para verificar se o método de migração está totalmente alinhado.
 

@@ -7,12 +7,12 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a8a4bc504c085f461cb70f561670fe55a20a544b
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 66694a9e1781f7d12d74e767b812b0831a371377
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76803867"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78225582"
 ---
 # <a name="best-practices-to-set-up-networking-for-workloads-migrated-to-azure"></a>Melhores práticas para configurar a rede para as cargas de trabalho migradas para o Azure
 
@@ -377,7 +377,7 @@ NIC4 | AsgDb
 --- | --- | ---
 Allow-HTTP-Inbound-Internet | Permitir o tráfego da Internet para os servidores Web. O tráfego de entrada da Internet é negado pela regra de segurança padrão DenyAllInbound, então nenhuma regra adicional é necessária para os grupos de segurança do aplicativo AsgLogic ou AsgDb. | Prioridade: 100<br/><br/> Fonte: Internet<br/><br/> Porta de origem: *<br/><br/> Destino: AsgWeb<br/><br/> Porta de destino: 80<br/><br/> Protocolo: TCP<br/><br/> Acesso: permitir.
 Deny-Database-All | A regra de segurança padrão AllowVNetInBound permite toda a comunicação entre recursos na mesma VNet. Essa regra é necessária para negar o tráfego de todos os recursos. | Prioridade: 120<br/><br/> Fonte: *<br/><br/> Porta de origem: *<br/><br/> Destino: AsgDb<br/><br/> Porta de destino: 1433<br/><br/> Protocolo: todos<br/><br/> Acesso: negar.
-Allow-Database-BusinessLogic | Permitir o tráfego do grupo de segurança do aplicativo AsgLogic para o grupo de segurança do aplicativo AsgDb. A prioridade para essa regra é mais alta do que a da regra Deny-Database-All e é processada antes da regra, então o tráfego do grupo de segurança do aplicativo AsgLogic é permitido enquanto todos os outros tráfegos são bloqueados. | Prioridade: 110<br/><br/> Origem: AsgLogic<br/><br/> Porta de origem: *<br/><br/> Destino: AsgDb<br/><br/> Porta de destino: 1433<br/><br/> Protocolo: TCP<br/><br/> Acesso: permitir.
+Allow-Database-BusinessLogic | Permitir o tráfego do grupo de segurança do aplicativo AsgLogic para o grupo de segurança do aplicativo AsgDb. A prioridade dessa regra é maior que a regra Deny-Database-All, portanto, essa regra é processada primeiro. Portanto, o tráfego do grupo de segurança do aplicativo AsgLogic é permitido e todos os outros tráfegos são bloqueados. | Prioridade: 110<br/><br/> Origem: AsgLogic<br/><br/> Porta de origem: *<br/><br/> Destino: AsgDb<br/><br/> Porta de destino: 1433<br/><br/> Protocolo: TCP<br/><br/> Acesso: permitir.
 
 <!--markdownlint-enable MD033 -->
 
@@ -511,7 +511,7 @@ Firewalls de NVA | Como no Firewall do Azure, os farms de firewall da NVA têm u
 
 - [Saiba mais sobre](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-hybrid) o uso de NVAs em uma VNet do Azure.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Examine outras melhores práticas:
 

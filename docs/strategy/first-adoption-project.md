@@ -7,12 +7,12 @@ ms.date: 5/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: c374ef690a28e1b7e0e8fd6f7fff3106c35e543f
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 90e21047f8d64f15ef3c94ebe82e31ba615c4d38
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76798172"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78225252"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -54,7 +54,7 @@ Para dar suporte aos critérios anteriores, essa lista fornece um exemplo de um 
 
 Exemplos adicionais de primeiros projetos de adoção incluem:
 
-- **Recuperação de desastres e continuidade dos negócios (DRBC):** Além Azure Site Recovery, você pode implementar várias estratégias DRBC como um primeiro projeto.
+- **Continuidade dos negócios e recuperação de desastres (BCDR):** Além Azure Site Recovery, você pode implementar várias estratégias BCDR como um primeiro projeto.
 - Não **produção:** Implantar uma instância de não produção de uma carga de trabalho.
 - **Arquivo morto:** O armazenamento frio pode encarregar os recursos do datacenter. Mover esses dados para a nuvem é um rápido ganho sólido.
 - **Fim do suporte (EOS):** A migração de ativos que atingiram o fim do suporte é outra vitória rápida que cria habilidades técnicas. Ele também pode fornecer alguma redução de custos de contratos de suporte caros ou custos de licenciamento.
@@ -64,7 +64,7 @@ Exemplos adicionais de primeiros projetos de adoção incluem:
 - **Laboratórios de desempenho:** Quando você precisar de desempenho em grande escala em uma configuração de laboratório, use a nuvem para provisionar de forma rápida e econômica esses laboratórios por um curto período de tempo.
 - **Plataforma de dados:** Criação de um data Lake com computação escalonável para análises, relatórios ou cargas de trabalho de aprendizado de máquina e migração para bancos de dados gerenciados usando métodos de despejo/restauração ou serviços de migração de dados.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Depois que o primeiro projeto de adoção de nuvem começou, a equipe de estratégia de nuvem pode transformar sua atenção no [plano de adoção de nuvem](../plan/index.md)de longo prazo.
 

@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: bfaacd1f07b24a3d88b03aa577e1f1ca38493423
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 59ef9ad61c9e3545fbcdbd62e05711e20de38a29
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170555"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223483"
 ---
 # <a name="empower-adoption"></a>Capacitar a adoção
 
@@ -45,7 +45,7 @@ Conforme descrito em [medida para o impacto do cliente](./measure.md), a valida�
 
 Quando você está dimensionando a inovação, não há uma ferramenta mais valiosa do que uma base de código compartilhada para a solução. Infelizmente, não existe uma maneira confiável de prever qual iteração ou qual MVP produzirá a combinação vencedora. É por isso que nunca é muito cedo estabelecer uma base de código ou um repositório compartilhado. Esse é o único [aumento técnico](./build.md#reduce-complexity-and-delay-technical-spikes) que nunca deve ser atrasado. À medida que a equipe itera por meio de várias soluções de MVPs, um repositório compartilhado permite a colaboração fácil e o desenvolvimento acelerado. Quando as alterações na solução arrastam as métricas de aprendizado, o controle de versão permite reverter para uma versão anterior e mais efetiva da solução.
 
-A ferramenta mais amplamente adotada para gerenciar repositórios de código é o [GitHub](https://guides.github.com), que permite criar um repositório de código compartilhado com apenas alguns cliques. Além disso, o recurso [Azure Repos](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops) do Azure DevOps pode ser usado para criar um repositório do [git](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git) ou do [Team Foundation](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc) .
+A ferramenta mais amplamente adotada para gerenciar repositórios de código é o [GitHub](https://guides.github.com), que permite criar um repositório de código compartilhado em apenas algumas etapas. Além disso, o recurso [Azure Repos](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops) do Azure DevOps pode ser usado para criar um repositório do [git](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git) ou do [Team Foundation](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc) .
 
 ## <a name="feedback-loops"></a>Loops de comentários
 
@@ -61,7 +61,7 @@ O [Azure DevOps](https://docs.microsoft.com/azure/devops) inclui maneiras de [so
 
 Na integração contínua, as alterações de código são frequentemente mescladas na ramificação principal. Os processos de compilação e teste automatizados garantem que o código na ramificação principal seja sempre a qualidade da produção. Isso garante que os desenvolvedores estejam trabalhando juntos para desenvolver soluções compartilhadas que forneçam loops de comentários precisos e confiáveis.
 
-O Azure DevOps e [Azure pipelines](https://docs.microsoft.com/azure/devops/pipelines) fornecem recursos de integração contínua com apenas alguns cliques no GitHub ou em uma variedade de outros repositórios.
+O Azure DevOps e [Azure pipelines](https://docs.microsoft.com/azure/devops/pipelines) fornecem recursos de integração contínua com apenas algumas etapas no GitHub ou em uma variedade de outros repositórios.
 Saiba mais sobre a [integração contínua](https://docs.microsoft.com/azure/devops/learn/what-is-continuous-integration)ou para obter mais informações, confira o [laboratório prático](https://www.azuredevopslabs.com/labs/azuredevops/continuousintegration). Também há arquiteturas de solução para acelerar a criação de seus [pipelines de CI/CD por meio do Azure DevOps](https://azure.microsoft.com/solutions/devops).
 
 ## <a name="reliable-testing"></a>Testes confiáveis

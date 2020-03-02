@@ -8,13 +8,15 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: dd4f60eafed3281d5d4e67285c413b9f969793e3
-ms.sourcegitcommit: 10f687bb1316db509fc1a3dbde72e107a467d72a
+ms.openlocfilehash: d94db62c907599720c8f29408c6b3e5ee5cfde5e
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77629242"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78225289"
 ---
+<!-- cSpell:ignore rodend subscope ITSM -->
+
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Andaime empresarial do Azure: governança de assinatura prescritiva
 
 > [!NOTE]
@@ -47,7 +49,7 @@ O Enterprise Scaffold pode servir como a base de cada nova assinatura no Azure. 
 >
 A imagem a seguir mostra os componentes do andaime. A base depende de um plano sólido para a hierarquia de gerenciamento e para as assinaturas. Os pilares consistem em políticas do Resource Manager e sólidos padrões de nomenclatura. O restante do andaime é composto pelos principais recursos e funcionalidades do Azure, que possibilitam e conectam um ambiente seguro e gerenciável.
 
-![Scaffold empresarial](../_images/reference/scaffoldv2.png)
+![Scaffold empresarial](../_images/reference/scaffold-v2.png)
 
 ## <a name="define-your-hierarchy"></a>Definir sua hierarquia
 
@@ -269,7 +271,7 @@ Essas informações podem ser exibidas e acionadas em vários níveis e estão c
 
 Uma das principais alterações que você enfrentará mudar da nuvem local para a nuvem pública é a mudança de gastos de capital (comprar hardware) para gastos operacionais (pagar por serviço conforme você o utiliza). Essa opção também exige um gerenciamento mais cuidadoso dos custos. O benefício da nuvem é que você pode afetar de maneira fundamental e positiva o custo de um serviço usado simplesmente desligando ou redimensionando-o quando não for necessário. O gerenciamento deliberado dos custos na nuvem é uma prática recomendada e um que os clientes maduros fazem diariamente.
 
-A Microsoft fornece várias ferramentas para que você possa visualizar, acompanhar e gerenciar seus custos. Nós também fornecemos um conjunto completo de APIs para que você possa personalizar e integrar o gerenciamento de custos em suas próprias ferramentas e painéis. Essas ferramentas são agrupadas de forma flexível em recursos de portal do Azure e recursos externos.
+A Microsoft fornece várias ferramentas que ajudam você a Visualizar, acompanhar e gerenciar seus custos. Nós também fornecemos um conjunto completo de APIs para que você possa personalizar e integrar o gerenciamento de custos em suas próprias ferramentas e painéis. Essas ferramentas são agrupadas de forma flexível em recursos de portal do Azure e recursos externos.
 
 ### <a name="azure-portal-capabilities"></a>Recursos de portal do Azure
 

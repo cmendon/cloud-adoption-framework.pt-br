@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4cf67b9580fb6b3970dc9982d9df94a809a73f36
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: d4c69bafe9bf0dc0bfdb060455c82d3b3a638a47
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709287"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223844"
 ---
 # <a name="identity-baseline-sample-policy-statements"></a>Instruções de política de exemplo de Linha de base de identidade
 
@@ -76,7 +76,7 @@ As instruções de política de exemplo a seguir abordam os riscos de negócios 
 
 **Possíveis opções de design:** Estabeleça uma reunião trimestral de revisão de segurança que inclua membros da equipe de governança e a equipe de ti responsáveis pelo gerenciamento de serviços de identidade. Examine as métricas e os dados de segurança existentes para estabelecer lacunas na política e nas ferramentas de gerenciamento de identidade atuais e na política de atualização para corrigir quaisquer riscos novos.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Use os exemplos mencionados neste artigo como um ponto de partida para o desenvolvimento de políticas para lidar com riscos comerciais específicos que se alinham com seus planos de adoção de nuvem.
 

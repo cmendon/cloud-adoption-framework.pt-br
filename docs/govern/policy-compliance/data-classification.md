@@ -1,6 +1,6 @@
 ---
 title: O que é classificação de dados?
-description: Use a classificação de dados como ponto de partida para a governança de nuvem determinando e atribuindo valor aos dados da sua organização.
+description: A classificação de dados permite que você determine e atribua valor aos dados da sua organização e fornece um ponto de partida comum para governança.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,18 +8,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e956f2c4690d2020770d4da3e50bb163994c4c66
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 1680a78af449731ea7e15525d3e276998a73c0d4
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77706686"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223796"
 ---
 <!-- markdownlint-disable MD026 -->
 
 # <a name="what-is-data-classification"></a>O que é classificação de dados?
 
-A classificação de dados permite que você determine e atribua valor aos dados da sua organização e é um ponto de partida comum para governança. O processo de classificação de dados categoriza os dados por sensibilidade e impacto nos negócios a fim de identificar os riscos. Quando os dados são classificados, você pode gerenciá-los de maneiras que protejam dados confidenciais ou importantes contra roubo ou perda.
+A classificação de dados permite que você determine e atribua valor aos dados da sua organização e fornece um ponto de partida comum para governança. O processo de classificação de dados categoriza os dados por sensibilidade e impacto nos negócios a fim de identificar os riscos. Quando os dados são classificados, você pode gerenciá-los de maneiras que protejam dados confidenciais ou importantes contra roubo ou perda.
 
 ## <a name="understand-data-risks-then-manage-them"></a>Entender os riscos de dados e gerenciá-los
 
@@ -43,7 +43,7 @@ As marcas de recurso são uma boa abordagem para armazenamento de metadados, e v
 
 Para obter informações adicionais sobre a marcação de recursos no Azure, consulte [usando marcas para organizar os recursos do Azure](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags).
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Aplique classificações de dados durante um dos guias de governança acionáveis.
 

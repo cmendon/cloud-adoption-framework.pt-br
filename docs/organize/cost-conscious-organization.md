@@ -7,12 +7,12 @@ ms.date: 09/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
-ms.openlocfilehash: 42025e9e7459aae8731b6269d6bc5512acde64e4
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 9c4b6e89d3593bebad491cb967d39be529de8989
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76800892"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78225389"
 ---
 # <a name="build-a-cost-conscious-organization"></a>Crie uma organização com consciência de custo
 
@@ -45,7 +45,7 @@ A criação de cérebro de custo em esforços de adoção de nuvem começa no n�
 
 - **Responsabilidade:** Os orçamentos devem ser estabelecidos entre a estratégia de nuvem, [governança de nuvem](./cloud-governance.md)e equipes de [adoção de nuvem](./cloud-adoption.md) com base nas atividades de adoção esperadas. Quando ocorrem desvios do orçamento, a equipe de estratégia de nuvem e a equipe de governança de nuvem devem ser parceiras para determinar rapidamente o melhor curso de ação para corrigir os desvios.
 
-- **Otimização:** Durante os esforços de otimização, a equipe de estratégia de nuvem pode representar o investimento e o valor de retorno de cargas de trabalho específicas. Se uma carga de trabalho tiver um valor estratégico ou impacto financeiro sobre os negócios, os esforços de otimização de custos devem ser monitorados de maneira minuciosa. Se não houver impacto estratégico na organização e nenhum custo inerente de desempenho ruim de uma carga de trabalho, a equipe de estratégia de nuvem poderá aprovar a superotimização. Para impulsionar essas decisões, a equipe deve ser capaz de exibir os custos em um escopo por projeto.
+- **Otimização:** Durante os esforços de otimização, a equipe de estratégia de nuvem pode representar o investimento e o valor de retorno de cargas de trabalho específicas. Se uma carga de trabalho tiver um valor estratégico ou impacto financeiro sobre os negócios, os esforços de otimização de custos devem ser monitorados de maneira minuciosa. Se não houver impacto estratégico na organização e nenhum custo inerente de desempenho ruim de uma carga de trabalho, a equipe de estratégia de nuvem poderá aprovar a otimização excessiva. Para impulsionar essas decisões, a equipe deve ser capaz de exibir os custos em um escopo por projeto.
 
 ## <a name="cloud-adoption-team"></a>Equipe de adoção de nuvem
 
@@ -82,7 +82,7 @@ Embora não seja normalmente responsável pelo gerenciamento de custos, o CCoE p
 
 - **Otimização:** Dada a visibilidade do CCoE a várias implantações, a equipe está em uma posição ideal para sugerir dicas de otimização e para ajudar as equipes de adoção a ajustar ativos melhor.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 A prática dessas responsabilidades em cada nível da empresa ajuda a conduzir uma organização econômica. Para começar a agir nessas diretrizes, examine a [introdução à preparação organizacional](./index.md) para ajudar a identificar as estruturas de equipe corretas.
 

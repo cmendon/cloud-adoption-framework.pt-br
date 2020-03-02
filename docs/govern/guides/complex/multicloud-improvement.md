@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 07126e67dbe76562e664e35a4817d0e51733236f
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 9f4b11023e8b345283054c0ddede132f10664632
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709168"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223933"
 ---
 # <a name="governance-guide-for-complex-enterprises-multicloud-improvement"></a>Guia de governança para empresas complexas: melhoria em nuvem
 
@@ -31,7 +31,7 @@ Desde então, ocorreram algumas mudanças que afetarão a governança:
 
 - A identidade é controlada por uma instância local do Active Directory. A identidade híbrida é facilitada por meio da replicação para o Azure Active Directory.
 - Operações de ti ou operações de nuvem são amplamente gerenciadas por Azure Monitor e recursos de automação relacionados.
-- A recuperação de desastres e a DRBC (continuidade dos negócios) são controladas pelas instâncias do cofre do Azure.
+- A continuidade dos negócios e a recuperação de desastres (BCDR) são controladas pelas instâncias do cofre do Azure.
 - A Central de Segurança do Azure é utilizada para monitorar violações de segurança e ataques.
 - A Central de Segurança do Azure e o Azure Monitor são utilizados para monitorar a governança da nuvem.
 - O Azure Blueprints, Azure Policy e os grupos de gerenciamento são usados para automatizar a conformidade com a política.

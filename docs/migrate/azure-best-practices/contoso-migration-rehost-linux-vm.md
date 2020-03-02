@@ -8,13 +8,15 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: b629cc932b54b7ef7c633cefc847ac3263477674
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 12d69eee9fa52d6c7aef4b7b71b654808928ace4
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807335"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222991"
 ---
+<!-- cSpell:ignore SQLVM OSTICKETWEB OSTICKETMYSQL contosohost contosodc vcenter WEBVM systemctl NSGs -->
+
 # <a name="rehost-an-on-premises-linux-app-to-azure-vms"></a>Hospede novamente um aplicativo Linux local para VMs do Azure
 
 Este artigo mostra como a empresa fictícia Contoso muda o host de um aplicativo LAMP (Apache MySQL PHP baseado em Linux) de dois níveis, usando VMs de IaaS do Azure.
@@ -90,7 +92,7 @@ A Contoso migrará da seguinte maneira:
 --- | --- | ---
 [Migração de Servidor das Migrações para Azure](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-linux-vm) | O serviço orquestra e gerencia a migração de seus aplicativos e cargas de trabalho locais, bem como de instâncias de VM do AWS/GCP. | Durante a replicação para o Azure, são gerados encargos do Armazenamento do Azure. As VMs do Azure são criadas e incorrem em encargos quando ocorre failover. [Saiba mais](https://azure.microsoft.com/pricing/details/azure-migrate) sobre encargos e preços.
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
 
 Veja o que a Contoso precisa para esse cenário.
 
@@ -142,7 +144,7 @@ Eles configuram estes da seguinte forma:
 
 ### <a name="prepare-to-connect-to-azure-vms-after-failover"></a>Preparar para conectar VMs do Azure após o failover
 
-Após o failover no Azure, a Contoso deseja ser capaz de se conectar às VMs replicadas no Azure. Para fazer isso, os administradores da Contoso precisam executar algumas ações:
+Após o failover para o Azure, a contoso deseja se conectar às VMs replicadas no Azure. Para fazer isso, os administradores da Contoso devem seguir estas etapas:
 
 - Para acessar as VMs do Azure pela Internet, eles habilitam SSH na VM Linux local antes da migração. No cado do Ubuntu, isso pode ser feito usando o seguinte comando: **Sudo apt-get ssh install -y**.
 - Depois de executar a migração (failover), eles devem verificar os **Diagnósticos de inicialização** para exibir uma captura de tela da VM.
@@ -158,7 +160,7 @@ Antes que os administradores da Contoso possam executar uma migração para o Az
 
 Com a descoberta concluída, é possível começar a replicação de VMs do VMware no Azure.
 
-1. No projeto de migração do Azure > **servidores**, **migrações para Azure: migração de servidor**, clique em **replicar**.
+1. No projeto de migração do Azure > **servidores**, **migrações para Azure: migração de servidor**, selecione **replicar**.
 
     ![Replicar VMs](./media/contoso-migration-rehost-linux-vm/select-replicate.png)
 
@@ -175,14 +177,14 @@ Com a descoberta concluída, é possível começar a replicação de VMs do VMwa
 
     ![Selecionar avaliação](./media/contoso-migration-rehost-linux-vm/select-assessment.png)
 
-5. Em **Máquinas virtuais**, pesquise as VMs conforme necessário e marque cada VM que você deseja migrar. Em seguida, clique em **Avançar: configurações de destino**.
+5. Em **Máquinas virtuais**, pesquise as VMs conforme necessário e marque cada VM que você deseja migrar. Em seguida, selecione **Avançar: configurações de destino**.
 
 6. Em **Configurações de destino**, selecione a assinatura e a região de destino para a qual você migrará e especifique o grupo de recursos no qual as VMs do Azure residirão após a migração. Em **Rede Virtual**, selecione a VNet/sub-rede do Azure na qual as VMs do Azure serão ingressadas após a migração.
 
 7. Em **benefício híbrido do Azure**, selecione o seguinte:
 
-    - Selecione **Não** se não desejar aplicar o Benefício Híbrido do Azure. Em seguida, clique em **Próximo**.
-    - Selecione **Sim** se você tiver computadores Windows Server cobertos com assinaturas ativas do Software Assurance ou do Windows Server e quiser aplicar o benefício aos computadores que estão sendo migrados. Em seguida, clique em **Próximo**.
+    - Selecione **Não** se não desejar aplicar o Benefício Híbrido do Azure. Em seguida, selecione **Avançar**.
+    - Selecione **Sim** se você tiver computadores Windows Server cobertos com assinaturas ativas do Software Assurance ou do Windows Server e quiser aplicar o benefício aos computadores que estão sendo migrados. Em seguida, selecione **Avançar**.
 
 8. Em **Computação**, examine o nome da VM, o tamanho, o tipo de disco do sistema operacional e o conjunto de disponibilidade. As VMs devem estar em conformidade com os [requisitos do Azure](https://docs.microsoft.com/azure/migrate/migrate-support-matrix-vmware#vmware-requirements).
 
@@ -190,11 +192,11 @@ Com a descoberta concluída, é possível começar a replicação de VMs do VMwa
     - **Disco do so:** Especifique o disco do sistema operacional (inicialização) para a VM. O disco do sistema operacional é o disco que tem o carregador de inicialização e o instalador do sistema operacional.
     - **Conjunto de disponibilidade:** Se a VM deve estar em um conjunto de disponibilidade do Azure após a migração, especifique o conjunto. O conjunto precisa estar no grupo de recursos de destino especificado para a migração.
 
-9. Em **Discos**, especifique se os discos de VM devem ser replicados no Azure e selecione o tipo de disco (discos gerenciados Premium ou HDD/SSD Standard) no Azure. Em seguida, clique em **Próximo**.
+9. Em **Discos**, especifique se os discos de VM devem ser replicados no Azure e selecione o tipo de disco (discos gerenciados Premium ou HDD/SSD Standard) no Azure. Em seguida, selecione **Avançar**.
     - Você pode excluir discos da replicação.
     - Se você excluir os discos, eles não estarão presentes na VM do Azure após a migração.
 
-10. Em **Examinar e iniciar a replicação**, examine as configurações e clique em **Replicar** para iniciar a replicação inicial dos servidores.
+10. Em **examinar e iniciar a replicação**, examine as configurações e, em seguida, selecione **replicar** para iniciar a replicação inicial para os servidores.
 
 > [!NOTE]
 > É possível atualizar configurações de replicação a qualquer momento antes que a replicação seja iniciada em **Gerenciar** > **Replicando computadores**. Não é possível alterar as configurações após o início da replicação.
@@ -205,18 +207,18 @@ Os administradores da Contoso executam um failover de teste rápido e, em seguid
 
 ### <a name="run-a-test-failover"></a>Execute um teste de failover
 
-1. Em **metas de migração** > **servidores** > **migrações para Azure: migração de servidor**, clique em **testar servidores migrados**.
+1. Em **metas de migração** > **servidores** > **migrações para Azure: migração de servidor**, selecione **testar servidores migrados**.
 
      ![Testar servidores migrados](./media/contoso-migration-rehost-linux-vm/test-migrated-servers.png)
 
-2. Clique com o botão direito do mouse na VM a ser testada e clique em **Migração de teste**.
+2. Clique com o botão direito do mouse na VM a ser testada e selecione **testar migrar**.
 
     ![Migração de teste](./media/contoso-migration-rehost-linux-vm/test-migrate.png)
 
 3. Em **Migração de Teste**, selecione a VNet do Azure na qual a VM do Azure estará localizada após a migração. Recomendamos que você use uma VNet que não seja de produção.
 4. O trabalho **Migração de teste** é iniciado. Monitore o trabalho nas notificações do portal.
 5. Após a conclusão da migração, veja a VM do Azure migrada em **Máquinas Virtuais** no portal do Azure. O nome do computador tem o sufixo **-Test**.
-6. Depois que o teste for realizado, clique com o botão direito do mouse na VM do Azure em **Replicando computadores** e clique em **Limpar migração de teste**.
+6. Após a conclusão do teste, clique com o botão direito do mouse na VM do Azure em **replicar computadores**e selecione **limpar migração de teste**.
 
     ![Limpar migração](./media/contoso-migration-rehost-linux-vm/clean-up.png)
 
@@ -224,7 +226,7 @@ Os administradores da Contoso executam um failover de teste rápido e, em seguid
 
 Agora os administradores da Contoso podem executar um failover completo para concluir a migração.
 
-1. No projeto de migração do Azure > **servidores** > **migrações para Azure: migração de servidor**, clique em **replicar servidores**.
+1. No projeto de migração do Azure > **servidores** > **migrações para Azure: migração de servidor**, selecione **replicar servidores**.
 
     ![Replicando servidores](./media/contoso-migration-rehost-linux-vm/replicating-servers.png)
 
@@ -237,7 +239,7 @@ Agora os administradores da Contoso podem executar um failover completo para con
 
 ### <a name="connect-the-vm-to-the-database"></a>Conectar a VM ao banco de dados
 
-Como a etapa final no processo de migração, os administradores da Contoso atualizam a cadeia de conexão do aplicativo para apontar para o banco de dados do aplicativo na VM **OSTICKETMYSQL**.
+Como a etapa final do processo de migração, os administradores da Contoso atualizam a cadeia de conexão do aplicativo para apontar para o banco de dados de aplicativo em execução na VM **OSTICKETMYSQL** .
 
 1. Eles fazer uma conexão SSH para a **OSTICKETWEB** VM usando Putty ou outro cliente SSH. A VM é particular e, portanto, ela se conecta usando o endereço IP privado.
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 5850b9d3da33babd4c44145fbca8f81da7dd8ff5
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 7ec95c75d81b93852a59ef137a02cc35d83a1cd3
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807352"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223081"
 ---
 # <a name="rehost-an-on-premises-app-on-an-azure-vm-and-sql-database-managed-instance"></a>Hospedar novamente um aplicativo local em uma Instância Gerenciada do Banco de Dados SQL e VM do Azure
 
@@ -105,19 +105,19 @@ A Contoso migrará as camadas da Web e de dados de seu aplicativo SmartHotel360 
 
 ### <a name="azure-services"></a>Serviços do Azure
 
-Serviço | Description | Custo
+Service | Descrição | Custo
 --- | --- | ---
 [Serviço de Migração de Banco de Dados do Azure](https://docs.microsoft.com/azure/dms/dms-overview) | O Serviço de Migração de Banco de Dados do Azure permite a migração perfeita de várias fontes de banco de dados para as plataformas de dados do Azure com tempo de inatividade mínimo. | Saiba mais sobre [regiões com suporte](https://docs.microsoft.com/azure/dms/dms-overview#regional-availability) e [preços do serviço de migração de banco de dados](https://azure.microsoft.com/pricing/details/database-migration).
 [Instância Gerenciada do Banco de Dados SQL do Azure](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance) | Instância Gerenciada é um serviço de banco de dados gerenciado que representa uma instância do SQL Server totalmente gerenciada na nuvem do Azure. Ela usa o mesmo código da última versão do Mecanismo de Banco de Dados do SQL Server e possui os recursos, melhorias de desempenho e patches de segurança mais recentes. | O uso de uma Instância Gerenciada do Banco de Dados SQL em execução no Azure incorre em encargos com base na capacidade. Saiba mais sobre [Preço de Instância Gerenciada](https://azure.microsoft.com/pricing/details/sql-database/managed).
 [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery) | O serviço do Site Recovery orquestra e gerencia migração e recuperação de desastre para VMs do Azure e servidores físicos e VMs locais. | Durante a replicação para o Azure, são gerados encargos do Armazenamento do Azure. As VMs do Azure são criadas e incorrem em encargos quando ocorre failover. Saiba mais sobre [Encargos e preços do Site Recovery](https://azure.microsoft.com/pricing/details/site-recovery).
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
 
 A Contoso e outros usuários devem atender aos pré-requisitos a seguir para este cenário:
 
 <!-- markdownlint-disable MD033 -->
 
-Requisitos | Detalhes
+{1&gt;{2&gt;Requisitos&lt;2}&lt;1} | Detalhes
 --- | ---
 **Assinatura do Azure** | Ao realizar a avaliação no primeiro artigo desta série, é necessário já ter criado a assinatura. Se você não tiver uma assinatura do Azure, crie uma [conta gratuita](https://azure.microsoft.com/pricing/free-trial).<br/><br/> Se você criar uma conta gratuita, será o administrador da assinatura e poderá executar todas as ações.<br/><br/> Se você usar uma assinatura existente e não for o administrador da assinatura, será necessário trabalhar com o administrador para atribuir-lhe permissões de Proprietário ou de Colaborador.<br/><br/> Se permissões mais granulares forem necessárias, consulte [Use o controle de acesso baseado em função para gerenciar o acesso à recuperação do site](https://docs.microsoft.com/azure/site-recovery/site-recovery-role-based-linked-access-control).
 **Infraestrutura do Azure** | A Contoso configura a infraestrutura do Azure conforme descrito em [Infraestrutura do Azure para migração](./contoso-migration-infrastructure.md).
@@ -224,14 +224,14 @@ Agora os administradores da Contoso podem provisionar uma Instância Gerenciada 
 1. Como a Instância Gerenciada atende a um aplicativo de negócios, eles implantam a Instância Gerenciada na região Leste dos EUA 2 primária da empresa. Eles adicionam a Instância Gerenciada ao grupo de recursos **ContosoRG**.
 2. Eles selecionam um tipo de preço, computação de tamanho e armazenamento para a instância. Saiba mais sobre [Preço de Instância Gerenciada](https://azure.microsoft.com/pricing/details/sql-database/managed).
 
-    ![Instância Gerenciada](media/contoso-migration-rehost-vm-sql-managed-instance/mi-create.png)
+    ![Banco de Dados SQL](media/contoso-migration-rehost-vm-sql-managed-instance/mi-create.png)
 
 3. Depois que a Instância Gerenciada é implantada, dois novos recursos aparecem no grupo de recursos **ContosoRG**:
 
     - Um cluster virtual se a Contoso tiver várias Instâncias Gerenciadas.
     - A Instância Gerenciada do Banco de Dados SQL.
 
-      ![Instância Gerenciada](media/contoso-migration-rehost-vm-sql-managed-instance/mi-resources.png)
+      ![Banco de Dados SQL](media/contoso-migration-rehost-vm-sql-managed-instance/mi-resources.png)
 
 **Precisa de mais ajuda?**
 
@@ -331,7 +331,7 @@ Saiba como [criar uma conta para instalação por push do Serviço de Mobilidade
 
 ### <a name="prepare-to-connect-to-azure-vms-after-failover"></a>Preparar para conectar VMs do Azure após o failover
 
-Após o failover no Azure, a Contoso deseja ser capaz de se conectar às VMs replicadas no Azure. Para conectar VMs replicadas no Azure, os administradores da Contoso devem concluir algumas tarefas na VM local antes da migração:
+Após o failover para o Azure, a contoso deseja se conectar às VMs replicadas no Azure. Para fazer isso, os administradores da Contoso devem concluir algumas tarefas na VM local antes da migração:
 
 1. Para acesso pela Internet, eles habilitam o RDP na VM local antes do failover. Eles certificam-se de que as regras TCP e UDP são adicionadas ao perfil **Público** e que o RDP é permitido em **Firewall do Windows** > **Aplicativos Permitidos** para todos os perfis.
 2. Para acesso pela VPN site a site da Contoso, eles habilitam o RDP no computador local. Eles permitem o RDP em **Firewall do Windows** > **Aplicativos e recursos permitidos** para redes **Privadas e domínios**.
@@ -506,7 +506,7 @@ Os administradores da Contoso precisam criar um projeto do Serviço de Migraçã
 
 A Contoso administra um failover de teste rápido e, em seguida, migra a VM.
 
-### <a name="run-a-test-failover"></a>Execute um teste de failover
+### <a name="run-a-test-failover"></a>executar um failover de teste
 
 Antes de migrar o WEBVM, um failover de teste ajuda a garantir que tudo funcione conforme o esperado. Os administradores concluem as seguintes etapas:
 

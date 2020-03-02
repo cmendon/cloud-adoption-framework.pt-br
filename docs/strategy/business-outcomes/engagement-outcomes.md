@@ -7,13 +7,15 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 5ad76f9d1b5b34772396f28cd5c5ba829785f76c
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 1c2bab06607147f5d0fe40ff714e6adb81e2a013
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76798359"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78225125"
 ---
+<!-- cSpell:ignore Exak -->
+
 # <a name="examples-of-customer-engagement-outcomes"></a>Exemplos de resultados do compromisso com o cliente
 
 Conforme discutido na [visão geral dos resultados de negócios](./index.md), vários resultados de negócios em potencial podem servir como base para qualquer conversa de jornada de transformação com a empresa. Este artigo se concentra em uma medida comum de negócios: envolvimento do cliente. Entender as necessidades dos clientes e o ecossistema em relação aos clientes ajuda a articulando os resultados de negócios que são o alvo da jornada de transformação de uma empresa.
@@ -28,7 +30,7 @@ Veja a seguir exemplos e resultados relacionados ao envolvimento do cliente:
 
 Durante as transformações de fanático do cliente, como um esforço de inovação de aplicativos habilitado para nuvem, os clientes respondem do envolvimento direto e a capacidade de ver suas necessidades atendidas rapidamente pela equipe de desenvolvimento. O tempo do ciclo é um termo de seis sigma que se refere à duração desde o início até o término de uma função. Para líderes de negócios que são clientes fanático e estão investindo muito para melhorar o envolvimento do cliente, o tempo de ciclo pode ser um grande resultado comercial.
 
-- **Exemplo:** Uma empresa de serviços que fornece serviços B2B (entre empresas) está tentando manter a participação no mercado em um mercado competitivo. Os clientes que saíram de um provedor de serviços concorrentes afirmaram que sua solução técnica excessivamente complexa interfere em seus processos de negócios e é o principal motivo para a saída. Nesse caso, o tempo de ciclo é imperativo. Hoje, leva 12 meses para que um recurso passe da solicitação para o lançamento. Se ele for priorizado pela equipe executiva, esse ciclo poderá ser reduzido para seis a nove meses. Por meio de um esforço de inovação de aplicativos habilitado para nuvem, modelos de aplicativos nativos de nuvem e integração do Azure DevOps, a equipe conseguiu cortar o tempo de ciclo de um mês, permitindo que as equipes de desenvolvimento de negócios e aplicativos interajam mais diretamente com utilizam.
+- **Exemplo:** Uma empresa de serviços que fornece serviços B2B (entre empresas) está tentando reter a participação no mercado em um mercado competitivo. Os clientes que saíram de um provedor de serviços concorrentes descobriram que sua solução técnica excessivamente complexa interfere em seus processos de negócios e é o principal motivo para se deixar. Nesse caso, o tempo de ciclo é imperativo. Hoje, leva 12 meses para que um recurso seja progredido da solicitação para o lançamento. Se ele for priorizado pela equipe executiva, esse ciclo poderá ser reduzido para seis a nove meses. Por meio de um esforço de inovação de aplicativos habilitado para nuvem, modelos de aplicativos nativos de nuvem e integração do Azure DevOps, a equipe reduz o tempo de ciclo para um mês, permitindo que as equipes de desenvolvimento de negócios e aplicativos interajam mais diretamente com os clientes.
 
 > **ExakTime**
 >
@@ -39,7 +41,7 @@ Durante as transformações de fanático do cliente, como um esforço de inovaç
 > Vice-Presidente de desenvolvimento de software  
 > ExakTime
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Saiba mais sobre os [resultados de desempenho](./performance-outcomes.md).
 

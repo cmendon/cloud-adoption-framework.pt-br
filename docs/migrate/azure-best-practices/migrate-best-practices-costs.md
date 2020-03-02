@@ -7,12 +7,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 30783e760f85324116e0a9a968a1c5aa486eb6f7
-ms.sourcegitcommit: 41cb36f58cc48950da1a2aa2032cc34ba5b16a0b
+ms.openlocfilehash: 0616b2721a903be369192a47fcd888247fd6cad6
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77599975"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222611"
 ---
 # <a name="best-practices-for-costing-and-sizing-workloads-migrated-to-azure"></a>Melhores práticas para estimar os custos e dimensionar as cargas de trabalho migradas para o Azure
 
@@ -85,7 +85,7 @@ Escolha uma entre várias opções ao implantar VMs do Azure para dar suporte à
 
 O ajuste e a manutenção do armazenamento local (SAN ou NAS), e as redes usadas para dar suporte a ele, podem ser caros e demorados. Os dados de arquivo (armazenamento) normalmente são migrados para a nuvem para ajudar a aliviar as preocupações operacionais e de gerenciamento. A Microsoft fornece várias opções para movimentação de dados para o Azure e você precisa tomar decisões sobre essas opções. A escolha do tipo de armazenamento ideal para os dados pode economizar vários milhares de dólares todo mês para sua organização. Algumas considerações:
 
-- Os dados que não são muito acessados e não são comercialmente críticos não precisam ser colocados no armazenamento mais caro.
+- Os dados que não são acessados muito e não são críticos para os negócios não precisam ser colocados no armazenamento mais caro.
 - Por outro lado, os dados importantes e comercialmente críticos devem estar localizados nas opções de armazenamento de camada superior.
 - Durante o planejamento da migração, faça um inventário dos dados e classifique-os por importância, a fim de mapeá-los para o armazenamento mais adequado. Considere o orçamento e os custos, bem como o desempenho. O custo não necessariamente deve ser o fator principal da tomada de decisão. A escolha da opção menos cara pode expor a carga de trabalho a riscos de desempenho e disponibilidade.
 

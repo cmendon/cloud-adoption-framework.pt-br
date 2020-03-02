@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: c3c44f3c53049f29be989616e1d5af041907e497
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: dd3cbd9deda4d0325f014be4bc793b59aa973788
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808083"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223382"
 ---
 # <a name="configure-azure-server-management-services-at-scale"></a>Configurar os serviços de gerenciamento de servidor do Azure em escala
 
@@ -74,7 +74,7 @@ Depois de concluir o assistente, a atribuição de política será implantada no
 > [!NOTE]
 > Crie o [espaço de trabalho log Analytics necessário e a conta de automação do Azure](./prerequisites.md#create-a-workspace-and-automation-account) antes de integrar os serviços de gerenciamento do servidor do Azure aos servidores.
 
-Para servidores locais, você precisa baixar e instalar o [agente de log Analytics e o agente de dependência da Microsoft](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud) manualmente e configurá-los para se conectar ao espaço de trabalho correto. Você deve especificar a ID do espaço de trabalho e as informações de chave. Para obter essas informações, vá para o espaço de trabalho do Log Analytics no portal do Azure e selecione **configurações** > **Configurações avançadas**.
+Para servidores locais, você precisa baixar e instalar o [agente de log Analytics e o agente de dependência da Microsoft](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud) manualmente e configurá-los para se conectar ao espaço de trabalho correto. Você deve especificar a ID do espaço de trabalho e as informações de chave. Para obter essas informações, vá para o espaço de trabalho do Log Analytics na portal do Azure e, em seguida, selecione **configurações** > **Configurações avançadas**.
 
 ![Captura de tela das configurações avançadas do espaço de trabalho do Log Analytics no portal do Azure](./media/onboarding-on-premises.png)
 
@@ -82,7 +82,7 @@ Para servidores locais, você precisa baixar e instalar o [agente de log Analyti
 
 Para habilitar soluções, você precisa configurar o workspace do Log Analytics. As VMs do Azure e os servidores locais integrados receberão as soluções dos espaços de trabalho Log Analytics aos quais estão conectados.
 
-### <a name="update-management"></a>Gerenciamento de atualização
+### <a name="update-management"></a>Gerenciamento de atualizações
 
 As soluções de Gerenciamento de Atualizações, Controle de Alterações e inventário exigem um espaço de trabalho Log Analytics e uma conta de automação. Para garantir que esses recursos estejam configurados corretamente, recomendamos que você integre sua conta de automação. Para obter mais informações, consulte [integrado gerenciamento de atualizações, controle de alterações e soluções de inventário](https://docs.microsoft.com/azure/automation/automation-onboard-solutions-from-automation-account).
 
@@ -139,7 +139,7 @@ O [log de atividades do Azure](https://docs.microsoft.com/azure/azure-monitor/pl
 
 Para implementar essa solução:
 
-1. Na portal do Azure, abra **todos os serviços** e selecione **gerenciamento + governança** > **soluções**.
+1. Na portal do Azure, abra **todos os serviços**e, em seguida, selecione **gerenciamento + governança** > **soluções**.
 2. No modo de exibição **soluções** , selecione **Adicionar**.
 3. Procure **análise do log de atividades** e selecione-o.
 4. Selecione **Criar**.
@@ -152,7 +152,7 @@ A solução de Integridade do Agente Log Analytics do Azure relata sobre a integ
 
 Para implementar essa solução:
 
-1. Na portal do Azure, abra **todos os serviços** e selecione **gerenciamento + governança** > **soluções**.
+1. Na portal do Azure, abra **todos os serviços**e, em seguida, selecione **gerenciamento + governança** > **soluções**.
 2. No modo de exibição **soluções** , selecione **Adicionar**.
 3. Pesquise a **integridade do agente de log Analytics do Azure** e selecione-o.
 4. Selecione **Criar**.
@@ -167,9 +167,9 @@ A solução Avaliação de Antimalware ajuda a identificar servidores infectados
 
 Para implementar essa solução:
 
-1. Na portal do Azure, abra **todos os serviços** e selecione **gerenciamento + governança** > **soluções**.
+1. Na portal do Azure, abra **todos os serviços**, selecione **gerenciamento + governança** > **soluções**.
 2. No modo de exibição **soluções** , selecione **Adicionar**.
-3. Procure e selecione **avaliação de antimalware**.
+3. Pesquise e selecione **avaliação de antimalware**.
 4. Selecione **Criar**.
 
 Você precisa especificar o **nome do espaço** de trabalho do espaço de trabalho que você criou na seção anterior em que a solução está habilitada.
@@ -187,14 +187,14 @@ Você pode habilitar [Azure monitor para VMs](https://docs.microsoft.com/azure/a
 Para habilitar a camada gratuita da central de segurança do Azure, siga estas etapas:
 
 1. Vá para a página do portal da **central de segurança** .
-2. Em **política & conformidade**, selecione **política de segurança**.
+2. Em **política &AMP; conformidade**, selecione **política de segurança**.
 3. Localize o recurso de espaço de trabalho Log Analytics que você criou no painel no lado direito.
 4. Selecione **Editar configurações** para esse espaço de trabalho.
 5. Selecione **Tipo de preço**.
 6. Escolha a opção **gratuito** .
 7. Clique em **Salvar**.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Saiba como usar a automação para carregar servidores e criar alertas.
 

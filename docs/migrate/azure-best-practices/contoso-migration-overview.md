@@ -3,16 +3,16 @@ title: Visão geral dos exemplos de migração de aplicativos para o Azure
 description: Fornece uma visão geral dos exemplos de migração de aplicativos incluídos como parte da seção Migração do Cloud Adoption Framework.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 10/11/2018
+ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: c2e0a27e432141feee526d4cb5fe54380fcde583
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 639d90285c1500a661e872931456f63c188daafc
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807369"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222983"
 ---
 # <a name="application-migration-patterns-and-examples"></a>Exemplos e padrões de migração de aplicativos
 
@@ -28,7 +28,7 @@ Como parte da estratégia de nuvem híbrida, o Azure fornece soluções de cresc
 
 ## <a name="migration-patterns"></a>Padrões de migração
 
-As estratégias para a migração para a nuvem se enquadram em quatro padrões amplos: hospedar novamente, refatorar, refazer arquitetura ou recompilar. A estratégia adotada depende de suas motivações de negócios e das metas de migração. Você pode adotar vários padrões. Por exemplo, pode optar por hospedar novamente aplicativos simples ou aplicativos que não são essenciais para seu negócio, mas refazer a arquitetura daqueles que são mais complexos e comercialmente críticos. Vamos examinar esses padrões.
+As estratégias para a migração para a nuvem se enquadram em quatro padrões amplos: hospedar novamente, refatorar, refazer arquitetura ou recompilar. A estratégia adotada depende de suas motivações de negócios e das metas de migração. Você pode adotar vários padrões. Por exemplo, você pode optar por hospedar novamente aplicativos simples ou aplicativos que não são essenciais para seus negócios, mas rearquitetar aplicativos que são mais complexos e críticos para os negócios. Vamos examinar esses padrões.
 
 <!-- markdownlint-disable MD033 -->
 
@@ -36,14 +36,14 @@ As estratégias para a migração para a nuvem se enquadram em quatro padrões a
 --- | --- | ---
 **Hospedar novamente** | Geralmente conhecida como migração de comparação _e de deslocamento_ . Essa opção não exige alterações de código e permite migrar seus aplicativos existentes para o Azure rapidamente. Cada aplicativo é migrado como está, para aproveitar os benefícios da nuvem, sem o risco e o custo associado com as alterações de código. | Quando você precisar mover aplicativos rapidamente para a nuvem.<br/><br/> Quando você deseja mover um aplicativo sem modificá-lo.<br/><br/> Quando os aplicativos são projetados para que possam se beneficiar da escalabilidade do [IaaS do Azure](https://azure.microsoft.com/overview/what-is-iaas) após a migração.<br/><br/> Quando aplicativos são importantes para a sua empresa, mas você não precisa de alterações imediatas nos recursos de aplicativo.
 **Refatorar** | Conhecida como "reempacotamento", a refatoração requer alterações mínimas nos aplicativos, para que eles possam se conectar ao [PaaS do Azure](https://azure.microsoft.com/overview/what-is-paas) e usar as ofertas de nuvem.<br/><br/> Por exemplo, você pode migrar seus aplicativos existentes para o Serviço de Aplicativo do Azure ou o AKS (Serviço Kubernetes do Azure).<br/><br/> Ou você pode refatorar seus bancos de dados relacionais e não relacionais em opções como a Instância Gerenciada do Banco de Dados SQL do Azure, o Banco de Dados do Azure para MySQL, o Banco de Dados do Azure para PostgreSQL e o Azure Cosmos DB. | Se seu aplicativo pode facilmente ser empacotado novamente para funcionar no Azure.<br/><br/> Se você deseja aplicar práticas DevOps inovadoras fornecidas pelo Azure, ou se estiver pensando em DevOps usando uma estratégia de contêiner para cargas de trabalho.<br/><br/> Para a refatoração, você precisa pensar sobre a portabilidade de sua base de código existente e as habilidades de desenvolvimento disponíveis.
-**Recriação de arquitetura** | A nova arquitetura para migração se concentra em modificar e estender a funcionalidade do aplicativo e o código base para otimizar a arquitetura do aplicativo de escalabilidade de nuvem.<br/><br/> Por exemplo, você pode decompor um aplicativo monolítico em um grupo de microsserviços que trabalham em conjunto e que são dimensionados com facilidade.<br/><br/> Ou você pode recriar a arquitetura dos bancos de dados relacionais e não relacionais para uma solução de banco de dados totalmente gerenciada, como Instância Gerenciada do Banco de Dados SQL do Azure, Banco de Dados do Azure para MySQL, Banco de Dados do Azure para PostgreSQL e Azure Cosmos DB. | Quando seus aplicativos precisam de revisões principais para incorporar os novos recursos ou trabalhar com eficiência em uma plataforma de nuvem.<br/><br/> Quando você quiser usar investimentos em aplicativos existentes, atenda aos requisitos de escalabilidade, aplique práticas inovadoras de DevOps do Azure e minimize o uso de máquinas virtuais.
-**Recompilar** | A recompilação leva tudo a um novo patamar por meio da recompilação de um aplicativo do zero usando tecnologias de nuvem do Azure.<br/><br/> Por exemplo, é possível compilar aplicativos completamente novos com tecnologias [nativas da nuvem](https://azure.com/cloudnative), como Azure Functions, IA do Azure, Instância Gerenciada do Banco de Dados SQL do Azure e Azure Cosmos DB. | Quando você quiser um desenvolvimento rápido e os aplicativos existentes têm funcionalidade e vida útil limitadas.<br/><br/> Quando estiver pronto para acelerar a inovação nos negócios (incluindo práticas de DevOps fornecidas pelo Azure), compile novos aplicativos usando tecnologias nativas da nuvem e aproveite os avanços em IA, Blockchain e IoT.
+**Recriação de arquitetura** | A nova arquitetura para migração se concentra em modificar e estender a funcionalidade do aplicativo e o código base para otimizar a arquitetura do aplicativo de escalabilidade de nuvem.<br/><br/> Por exemplo, você pode decompor um aplicativo monolítico em um grupo de microsserviços que trabalham em conjunto e que são dimensionados com facilidade.<br/><br/> Ou você pode recriar a arquitetura dos bancos de dados relacionais e não relacionais para uma solução de banco de dados totalmente gerenciada, como Instância Gerenciada do Banco de Dados SQL do Azure, Banco de Dados do Azure para MySQL, Banco de Dados do Azure para PostgreSQL e Azure Cosmos DB. | Quando seus aplicativos precisam de revisões principais para incorporar os novos recursos ou trabalhar com eficiência em uma plataforma de nuvem.<br/><br/> Quando você quiser usar os investimentos de aplicativos existentes, atender aos requisitos de escalabilidade, aplicar práticas de DevOps inovadoras e minimizar o uso de máquinas virtuais.
+**Recompilar** | A recompilação leva tudo a um novo patamar por meio da recompilação de um aplicativo do zero usando tecnologias de nuvem do Azure.<br/><br/> Por exemplo, você poderia criar aplicativos de campo verde com tecnologias [nativas de nuvem](https://azure.com/cloudnative) como Azure functions, ia do Azure, Instância Gerenciada do Banco de Dados SQL do Azure e Azure Cosmos DB. | Quando você quiser um desenvolvimento rápido e os aplicativos existentes têm funcionalidade e vida útil limitadas.<br/><br/> Quando estiver pronto para acelerar a inovação nos negócios (incluindo práticas de DevOps fornecidas pelo Azure), compile novos aplicativos usando tecnologias nativas da nuvem e aproveite os avanços em IA, Blockchain e IoT.
 
 <!-- markdownlint-enable MD033 -->
 
 ## <a name="migration-example-articles"></a>Artigos de exemplo de migração
 
-Os artigos desta seção fornecem exemplos de vários cenários de migração comuns. Cada um dos exemplos inclui informações contextuais e cenários de implantação detalhados que ilustram como configurar uma infraestrutura de migração e avaliar a adequação dos recursos locais para migração. Mais artigos serão adicionados a esta seção ao longo do tempo.
+Esta seção fornece exemplos de vários cenários de migração comuns. Cada exemplo inclui informações básicas e cenários de implantação detalhados que ilustram como configurar uma infraestrutura de migração e avaliar a adequação de recursos locais para migração. Mais artigos serão adicionados a esta seção ao longo do tempo.
 
 ![Projetos comuns de migração/modernização](./media/migration-patterns.png)
 
@@ -58,7 +58,7 @@ Os artigos da série são resumidos abaixo.
 
 **Artigo** | **Detalhes**
 --- | ---
-[Avaliar recursos locais para migração para o Azure](./contoso-migration-assessment.md) | Este artigo mostra como executar uma avaliação de um aplicativo local em execução no VMware. Neste exemplo, uma organização avalia as VMs do aplicativo usando o serviço de Migrações para Azure e o banco de dados do SQL Server do aplicativo usando o Assistente de Migração de Dados.
+[Avaliar recursos locais para migração para o Azure](../../plan/contoso-migration-assessment.md) | Este artigo de prática recomendada na metodologia de plano discute como executar uma avaliação de um aplicativo local em execução no VMware. No artigo, um exemplo de organização avalia as máquinas virtuais do aplicativo usando o serviço migrações para Azure e o banco de dados do SQL Server do aplicativo usando Assistente de Migração de Dados.
 
 ### <a name="infrastructure"></a>Infraestrutura
 
@@ -84,7 +84,7 @@ Os artigos da série são resumidos abaixo.
 
 **Artigo** | **Detalhes**
 --- | ---
-[Hospedar novamente um aplicativo em uma VM do Azure e uma Instância Gerenciada do Banco de Dados SQL](./contoso-migration-rehost-vm-sql-managed-instance.md) | Este artigo fornece um exemplo de migração de comparação de precisão e de deslocamento para o Azure para um aplicativo local. Isso envolve migrar a VM front-end do aplicativo usando o [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) e o banco de dados do aplicativo para uma Instância Gerenciada do Banco de Dados SQL do Azure, usando o [Serviço de Migração de Banco de Dados do Azure](https://docs.microsoft.com/azure/dms/dms-overview).
+[Hospedar novamente um aplicativo em uma VM do Azure e uma Instância Gerenciada do Banco de Dados SQL](./contoso-migration-rehost-vm-sql-managed-instance.md) | Este artigo fornece um exemplo de migração de comparação de precisão e de deslocamento para o Azure para um aplicativo local. Esse esforço envolve a migração da VM de front-end do aplicativo usando [Azure site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview)e o banco de dados de aplicativo para um instância gerenciada do banco de dados SQL do Azure usando o [serviço de migração de banco de dados do Azure](https://docs.microsoft.com/azure/dms/dms-overview).
 [Hospedar novamente um aplicativo em VMs do Azure e em um grupo de disponibilidade Always On do SQL Server](./contoso-migration-rehost-vm-sql-ag.md) | Este exemplo mostra como migrar um aplicativo e dados usando as VMs do SQL Server hospedadas no Azure. Ele usa o Site Recovery para migrar as VMs do aplicativo e o Serviço de Migração de Banco de Dados do Azure para migrar o banco de dados do aplicativo para um cluster do SQL Server protegido por um grupo de disponibilidade Always On.
 
 ### <a name="aspnet-php-and-java-apps"></a>Aplicativos ASP.NET, PHP e Java

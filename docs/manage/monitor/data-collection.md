@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 7ecf2ed4b9d66f6f1ccc7d65c1c0e9146a4046da
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: a406d0c05594cff736265b0b69e24dcc8bc0f695
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807607"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223241"
 ---
 # <a name="cloud-monitoring-guide-collect-the-right-data"></a>Guia de monitoramento de nuvem: coletar os dados corretos
 
@@ -23,7 +23,7 @@ Para observar a integridade e a disponibilidade da sua solução de nuvem, você
 
 Planeje o monitoramento e a migração com cuidado. Comece incluindo o proprietário do serviço de monitoramento, o gerente de operações e outros funcionários relacionados durante a fase de planejamento e continue a envolver em todo o ciclo de desenvolvimento e de lançamento. Seu foco será desenvolver uma configuração de monitoramento com base nos seguintes critérios:
 
-- Qual é a composição do serviço e essas dependências são monitoradas hoje? Nesse caso, há várias ferramentas envolvidas? Há uma oportunidade de consolidar, sem introduzir riscos?
+- Qual é a composição do serviço? Essas dependências são monitoradas hoje? Nesse caso, há várias ferramentas envolvidas? Há uma oportunidade de consolidar, sem introduzir riscos?
 - Qual é o SLA do serviço e como irei medi-lo e relatá-lo?
 - Como deve ser a aparência do painel de serviço quando um incidente é gerado? Como deve ser a aparência do painel para o proprietário do serviço e para a equipe que dá suporte ao serviço?
 - Que métricas o recurso produz que preciso monitorar?  
@@ -46,7 +46,7 @@ Para gerar uma resolução mais rápida do incidente, considere as seguintes rec
 
 Adotar esse conjunto de princípios de orientação pode ajudar a fornecer informações quase em tempo real, bem como um melhor gerenciamento do seu serviço.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 > [!div class="nextstepaction"]
 > [Estratégia de alerta](./alerting.md)

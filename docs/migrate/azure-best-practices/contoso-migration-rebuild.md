@@ -8,13 +8,15 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: e2904356871eec65b516b7a02c356c679ab86b33
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 1b8afc8da78d171d0d420730f05d5583b231ddd1
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807488"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223096"
 ---
+<!-- cSpell:ignore reqs contosohost contosodc contosoacreus contososmarthotel smarthotel smarthotelcontoso smarthotelakseus smarthotelacreus smarthotelpets smarthotelpetchecker smarthotelsettingsurl vcenter WEBVM SQLVM eastus kubectl contosodevops visualstudio azuredeploy cloudapp publishfront petchecker appsettings -->
+
 # <a name="rebuild-an-on-premises-app-on-azure"></a>Recompilar um aplicativo local no Azure
 
 Este artigo demonstra como a empresa fictícia Contoso recompila um aplicativo de duas camadas .NET do Windows em execução em VMs VMware como parte de uma migração para o Azure. A Contoso migra a VM de front-end do aplicativo para um aplicativo Web do Serviço de Aplicativo do Azure. O back-end do aplicativo é criado usando microsserviços implantados em contêineres gerenciados pelo AKS (Serviço de Kubernetes do Azure). O site interage com o Azure Functions para fornecer a funcionalidade de fotos de animais de estimação.
@@ -27,7 +29,7 @@ A equipe de liderança de TI trabalhou em conjunto com parceiros comerciais para
 
 - **Lidar com o crescimento da empresa.** A Contoso está crescendo e quer fornecer experiências diferenciadas aos clientes nos sites da Contoso.
 - **Ser ágil.** A Contoso deve ser capaz de reagir mais rápido frente às mudanças no mercado para possibilitar o sucesso em uma economia global.
-- **Escala.** Na medida em que a empresa cresce com sucesso, a equipe de TI da Contoso deve disponibilizar sistemas capazes de crescer no mesmo ritmo.
+- **Escala.** À medida que os negócios crescem com êxito, a equipe de ti da Contoso deve fornecer sistemas que podem crescer no mesmo ritmo.
 - **Reduzir custos.** a Contoso quer minimizar os custos de licenciamento.
 
 ## <a name="migration-goals"></a>Metas de migração
@@ -75,7 +77,7 @@ A Contoso avalia o design proposto reunindo uma lista de prós e contras.
 
 **Consideração** | **Detalhes**
 --- | ---
-**Prós** | Usar o PaaS e soluções sem servidor para a implantação de ponta a ponta reduz significativamente o tempo de gerenciamento que a Contoso deve fornecer.<br/><br/> A mudança para uma arquitetura de microsserviço permite que a Contoso, com o tempo, estenda facilmente a solução.<br/><br/> A nova funcionalidade pode ser colocada online sem interromper qualquer uma das bases de código de soluções existentes.<br/><br/> O aplicativo Web será configurado com várias instâncias sem nenhum ponto único de falha.<br/><br/> O dimensionamento automático será habilitado para que o aplicativo possa lidar com diferentes volumes de tráfego.<br/><br/> Com a mudança para os serviços de PaaS, a Contoso pode desativar soluções desatualizadas em execução no sistema operacional Windows Server 2008 R2.<br/><br/> O Cosmos DB tem tolerância a falhas internas que não exige configurações realizadas pela Contoso. Isso significa que a camada de dados não é mais um ponto único de failover.
+**Prós** | Usar o PaaS e soluções sem servidor para a implantação de ponta a ponta reduz significativamente o tempo de gerenciamento que a Contoso deve fornecer.<br/><br/> A mudança para uma arquitetura de microserviços permite que a contoso estenda facilmente a solução ao longo do tempo.<br/><br/> A nova funcionalidade pode ser colocada online sem interromper qualquer uma das bases de código de soluções existentes.<br/><br/> O aplicativo Web será configurado com várias instâncias sem nenhum ponto único de falha.<br/><br/> O dimensionamento automático será habilitado para que o aplicativo possa lidar com diferentes volumes de tráfego.<br/><br/> Com a mudança para os serviços de PaaS, a Contoso pode desativar soluções desatualizadas em execução no sistema operacional Windows Server 2008 R2.<br/><br/> O Cosmos DB tem tolerância a falhas internas que não exige configurações realizadas pela Contoso. Isso significa que a camada de dados não é mais um ponto único de failover.
 **Contras** | Contêineres são mais complexos do que outras opções de migração. A curva de aprendizado pode ser um problema para a Contoso. Eles apresentam um novo nível de complexidade que fornece bastante valor apesar da curva.<br/><br/> A equipe de operações da Contoso precisa se esforçar para entender e dar suporte ao Azure, aos contêineres e aos microsserviços do aplicativo.<br/><br/> A Contoso não implementou totalmente o DevOps para toda a solução. A Contoso precisa pensar nisso para a implantação de serviços para o AKS, Azure Functions e Serviço de Aplicativo do Azure.
 
 <!-- markdownlint-enable MD033 -->
@@ -97,9 +99,9 @@ A Contoso avalia o design proposto reunindo uma lista de prós e contras.
 [AKS](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | Simplifica o gerenciamento, a implantação e as operações do Kubernetes. Fornece um serviço de orquestração de contêiner do Kubernetes totalmente gerenciado. | O AKS é um serviço gratuito. Pague apenas pelas máquinas virtuais, pelo armazenamento associado e pelos recursos de rede consumidos. [Saiba mais](https://azure.microsoft.com/pricing/details/kubernetes-service).
 [Azure Functions](https://azure.microsoft.com/services/functions) | Acelera o desenvolvimento com uma experiência de computação sem servidor orientada por evento. Dimensione sob demanda. | Pague apenas pelos recursos consumidos. O plano é cobrado com base no consumo de recursos e execuções por segundo. [Saiba mais](https://azure.microsoft.com/pricing/details/functions).
 [Registro de Contêiner do Azure](https://azure.microsoft.com/services/container-registry) | Armazena imagens para todos os tipos de implantações de contêiner. | Custo com base em recursos, armazenamento e duração de uso. [Saiba mais](https://azure.microsoft.com/pricing/details/container-registry).
-[Serviço de Aplicativo do Azure](https://azure.microsoft.com/services/app-service/containers) | Crie, implante e dimensione rapidamente aplicativos de API, móveis e Web de nível corporativo para serem executados em qualquer plataforma. | Os planos do Serviço de Aplicativo são cobrados por segundo. [Saiba mais](https://azure.microsoft.com/pricing/details/app-service/windows).
+[Serviço de Aplicativo do Azure](https://azure.microsoft.com/services/app-service/containers) | Crie, implante e dimensione rapidamente aplicativos de API, móveis e Web de nível corporativo em execução em qualquer plataforma. | Os Planos do Serviço de Aplicativo são cobrados por segundo. [Saiba mais](https://azure.microsoft.com/pricing/details/app-service/windows).
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
 
 Veja o que a Contoso precisa para esse cenário:
 
@@ -178,7 +180,7 @@ Os administradores da Contoso provisionam da seguinte maneira:
 
 9. Depois que a implantação for concluída, instale a ferramenta de linha de comando **kubectl**. A ferramenta já está instalada no Azure CloudShell.
 
-   ```console
+   ```azurecli
    az aks install-cli
    ```
 
@@ -188,7 +190,7 @@ Os administradores da Contoso provisionam da seguinte maneira:
 
 11. Eles executam o comando a seguir para iniciar o Painel do Kubernetes:
 
-    ```console
+    ```azurecli
     az aks browse --resource-group ContosoRG --name smarthotelakseus2
     ```
 
@@ -244,7 +246,7 @@ A Contoso cria um projeto do Azure DevOps e configura um Build de CI para criar 
 
     ![Azure DevOps](./media/contoso-migration-rebuild/vsts10.png)
 
-12. Novamente, eles inserem o arquivo para o arquivo docker-compose.yaml e selecionam **Enviar imagens de serviço por push** e incluem a marcação mais recente. Quando a ação muda para **Enviar de imagens de serviço por push**, o nome da tarefa do Azure DevOps muda para **Enviar serviços por push automaticamente**.
+12. Novamente, eles inserem o arquivo no arquivo Docker-Compose. YAML e selecionam **imagens de serviço de envio por push** e incluem a marca mais recente. Quando a ação muda para **Enviar de imagens de serviço por push**, o nome da tarefa do Azure DevOps muda para **Enviar serviços por push automaticamente**.
 
     ![Azure DevOps](./media/contoso-migration-rebuild/vsts11.png)
 
@@ -269,10 +271,11 @@ Com o cluster do AKS criado e o build das imagens do Docker, a Contoso agora adm
 
 Eles implantam da seguinte maneira:
 
-1. Eles abrem um Prompt de Comando do Desenvolvedor e usam o comando logon az para a assinatura do Azure.
+1. Eles abrem um prompt de comando do desenvolvedor e usam o comando `az login` para a assinatura do Azure.
+
 2. Eles usam o arquivo deploy.cmd para implantar os recursos do Azure no grupo de recursos ContosoRG e na região EUS2, digitando o seguinte comando:
 
-    ```console
+    ```azurecli
     .\deploy.cmd azuredeploy ContosoRG -c eastus2
     ```
 
@@ -353,7 +356,7 @@ As instruções desta seção usam o repositório [SmartHotel360-public-web](htt
 
 ### <a name="create-blob-storage-containers"></a>Criar contêineres de armazenamento de blobs
 
-1. No portal do Azure, eles abrem a conta de armazenamento que foi criada e escolhem **Blobs**.
+1. No portal do Azure, eles abrem a conta de armazenamento que foi criada e, em seguida, selecionam **BLOBs**.
 2. Eles criam um novo contêiner (**Pets**) com o nível de acesso público definido como o contêiner. Os usuários carregarão as fotos de seu animal de estimação para esse contêiner.
 
     ![Armazenamento de blobs](./media/contoso-migration-rebuild/blob1.png)
@@ -374,7 +377,7 @@ Os administradores da Contoso provisionam um banco de dados do Cosmos a ser usad
 
     ![Cosmos DB](./media/contoso-migration-rebuild/cosmos1.png)
 
-2. Eles especificam um nome (**contosomarthotel**), selecionam a API SQL e a colocam no grupo de recursos de produção ContosoRG, na região Leste dos EUA 2 principal.
+2. Eles especificam um nome (**contososmarthotel**), selecionam a API do SQL e o colocam no grupo de recursos de produção ContosoRG, na região principal leste dos EUA 2.
 
     ![Cosmos DB](./media/contoso-migration-rebuild/cosmos2.png)
 
@@ -392,15 +395,15 @@ Os administradores da Contoso provisionam a API da Pesquisa Visual Computacional
 
 1. Eles criam uma instância de **Pesquisa Visual Computacional** no Azure Marketplace.
 
-     ![Visual computacional](./media/contoso-migration-rebuild/vision1.png)
+     ![Visual Computacional](./media/contoso-migration-rebuild/vision1.png)
 
 2. Eles provisionam a API (**smarthotelpets**) no grupo de recursos de produção ContosoRG, na região Leste dos EUA 2 principal.
 
-    ![Visual computacional](./media/contoso-migration-rebuild/vision2.png)
+    ![Visual Computacional](./media/contoso-migration-rebuild/vision2.png)
 
 3. Eles salvam as configurações de conexão para a API em um arquivo de texto para referência posterior.
 
-     ![Visual computacional](./media/contoso-migration-rebuild/vision3.png)
+     ![Visual Computacional](./media/contoso-migration-rebuild/vision3.png)
 
 ### <a name="provision-the-azure-web-app"></a>Provisionar o aplicativo Web do Azure
 
@@ -520,7 +523,7 @@ Os administradores da Contoso agora podem publicar o site.
     ![Novo ambiente](./media/contoso-migration-rebuild/vsts-publishfront8.png)
 
 14. Eles selecionam a **implantação do Serviço de Aplicativo do Azure com o espaço** e nomeiam o ambiente **Prod**.
-15. Eles escolhem **1 trabalho, 2 tarefas** e escolhem a assinatura, o nome do serviço de aplicativo e o slot **Preparo**.
+15. Eles selecionam **1 trabalho, 2 tarefas**e, em seguida, selecionam a assinatura, o nome do serviço de aplicativo e o slot de **preparo** .
 
     ![Nome do ambiente](./media/contoso-migration-rebuild/vsts-publishfront10.png)
 
@@ -565,12 +568,12 @@ Os administradores da Contoso implantam o aplicativo da seguinte maneira.
     ![Implantar a função](./media/contoso-migration-rebuild/function5.png)
 
 4. Eles confirmam o código e sincronizam-no novamente com o Azure DevOps, enviando as alterações por push.
-5. Eles adicionam um novo pipeline de build e selecionam o **Git do Azure DevOps** como a fonte.
+5. Eles adicionam um novo pipeline de compilação e, em seguida, selecionam **Azure DevOps git** para a origem.
 6. Eles selecionam o modelo **ASP.NET Core (.NET Framework)** .
 7. Eles aceitam os padrões do modelo.
-8. Em **Gatilhos**, eles escolhem **Habilitar a integração contínua** e **Salvar e Enfileirar** para iniciar um build.
+8. Em **gatilhos**, selecione para **habilitar a integração contínua**e, em seguida, selecione **Salvar & fila** para iniciar uma compilação.
 9. Depois que o build é bem-sucedido, eles criam um pipeline de lançamento adicionando a **Implantação do Serviço de Aplicativo do Azure com o slot**.
-10. Eles nomeiam o ambiente como **Prod**e selecionam a assinatura. Eles definem o **Tipo de aplicativo** como **Aplicativo de Funções** e o nome do Serviço de Aplicativo como **smarthotelpetchecker**.
+10. Eles nomeam o ambiente **prod**e, em seguida, selecionam a assinatura. Eles definem o **Tipo de aplicativo** como **Aplicativo de Funções** e o nome do Serviço de Aplicativo como **smarthotelpetchecker**.
 
     ![Aplicativo de funções](./media/contoso-migration-rebuild/petchecker2.png)
 
@@ -578,7 +581,7 @@ Os administradores da Contoso implantam o aplicativo da seguinte maneira.
 
     ![Artefato](./media/contoso-migration-rebuild/petchecker3.png)
 
-12. Elas habilitam o **Gatilho de implantação contínua** e escolhem **Salvar**.
+12. Eles habilitam o **gatilho de implantação contínua**e, em seguida, selecionam **salvar**.
 13. Eles escolhem **Enfileirar novo build** para executar o pipeline de CI/CD completo.
 14. Depois que a função é implantada, ela aparece no portal do Azure, com o status **Em Execução**.
 

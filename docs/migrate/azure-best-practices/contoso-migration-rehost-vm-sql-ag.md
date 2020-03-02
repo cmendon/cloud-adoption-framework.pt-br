@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: b5b8710c8545fa2e7c56131ed74a0ea1a3a02f8e
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: b52b1fad33a9868682ddcd7cf905c7f8ab9b3612
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807420"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222952"
 ---
-# <a name="rehost-an-on-premises-app-on-azure-vms-and-sql-server-always-on-availability-groups"></a>Rehospedar um aplicativo local em VMs do Azure e SQL Server grupos de disponibilidade Always On
+# <a name="rehost-an-on-premises-app-with-azure-virtual-machines-and-sql-server-always-on-availability-groups"></a>Rehospede um aplicativo local com máquinas virtuais do Azure e SQL Server grupos de disponibilidade Always On
 
-Este artigo demonstra como a empresa fictícia Contoso hospeda novamente um aplicativo de duas camadas .NET do Windows em execução em VMs VMware como parte de uma migração para o Azure. A Contoso migra a VM de front-end do aplicativo para uma VM do Azure e o banco de dados do aplicativo para uma VM do Azure SQL Server em execução em um cluster de failover do Windows Server com grupos de disponibilidade Always On do SQL Server.
+Este artigo demonstra como a empresa fictícia Contoso rehospeda um aplicativo Windows .NET de duas camadas em execução em VMs (máquinas virtuais) VMware como parte de uma migração para o Azure. A Contoso migra a VM de front-end do aplicativo para uma VM do Azure e o banco de dados do aplicativo para uma VM do Azure SQL Server em execução em um cluster de failover do Windows Server com grupos de disponibilidade Always On do SQL Server.
 
 O aplicativo SmartHotel360 usado neste exemplo é fornecido como software livre. Se quiser usá-lo em seus próprios testes, você poderá baixá-lo do [GitHub](https://github.com/Microsoft/SmartHotel360).
 
@@ -27,8 +27,8 @@ A equipe de liderança de TI trabalhou em conjunto com parceiros comerciais para
 
 - **Lidar com o crescimento da empresa.** A Contoso está crescendo e, como resultado, há pressão sobre os sistemas e a infraestrutura locais.
 - **Aumentar a eficiência.** A Contoso precisa remover procedimentos desnecessários e simplificar processos para desenvolvedores e usuários. Necessidades de negócios IT rápidas e tempo não resíduos ou money, fornecendo, assim, mais rápido nas necessidades do cliente.
-- **Aumentar a agilidade.** A TI da Contoso precisa atender melhor às necessidades empresariais. Ele deve ser capaz de reagir mais rápido do que as alterações no marketplace, para habilitar o sucesso em uma economia global. Ela não deve atrapalhar nem se tornar um bloqueador de negócios.
-- **Escala.** Uma vez que a empresa cresce com êxito, TI da Contoso deve fornecer sistemas que são capazes de crescer no mesmo ritmo.
+- **Aumentar a agilidade.** A TI da Contoso precisa atender melhor às necessidades empresariais. Ele deve reagir mais rápido do que as alterações no Marketplace para habilitar o sucesso em uma economia global. Ele não deve ficar no caminho ou se tornar um bloqueador de negócios.
+- **Escala.** À medida que os negócios crescem com êxito, a contoso IT deve fornecer sistemas que podem crescer no mesmo ritmo.
 
 ## <a name="migration-goals"></a>Metas de migração
 
@@ -37,8 +37,8 @@ A equipe de nuvem da Contoso fixou metas para esta migração. Essas metas foram
 - Após a migração, o aplicativo no Azure deve ter os mesmos recursos de desempenho de hoje no VMware. O aplicativo permanecerá essencial tanto na nuvem quanto localmente.
 - A contoso não quer investir nesse aplicativo. É importante para os negócios, mas em sua forma atual, ela simplesmente deseja movê-lo com segurança para a nuvem.
 - O banco de dados local do aplicativo teve problemas de disponibilidade. A Contoso gostaria de implantá-lo no Azure como um cluster de alta disponibilidade, com recursos de failover.
-- A Contoso deseja atualizar de sua plataforma atual do SQL Server 2008 R2 para o SQL Server 2017.
-- A Contoso não deseja usar um banco de dados SQL do Azure para este aplicativo e está procurando alternativas.
+- A contoso deseja atualizar da plataforma atual SQL Server 2008 R2 para SQL Server 2017.
+- A Contoso está procurando alternativas ao banco de dados SQL do Azure para este aplicativo.
 
 ## <a name="solution-design"></a>Design da solução
 
@@ -113,7 +113,7 @@ Os administradores da Contoso migrarão as VMs de aplicativo para o Azure.
 
 ![Processo de migração](media/contoso-migration-rehost-vm-sql-ag/migration-process.png)
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
 
 Veja o que a Contoso precisa fazer para esse cenário.
 
@@ -368,7 +368,7 @@ O serviço de Mobilidade deve ser instalado em cada VM.
 
 ### <a name="prepare-to-connect-to-azure-vms-after-failover"></a>Preparar para conectar VMs do Azure após o failover
 
-Após o failover, a Contoso deseja poder se conectar às VMs do Azure. Para fazer isso, os administradores da Contoso fazem o seguinte antes da migração:
+Após o failover, a contoso deseja se conectar às VMs do Azure. Para fazer isso, os administradores da Contoso devem executar as seguintes etapas antes da migração:
 
 1. Para acesso pela internet eles:
 
@@ -405,7 +405,7 @@ Antes que eles possam executar uma migração para o Azure, os administradores d
 
 ### <a name="confirm-deployment-planning"></a>Confirmar planejamento de implantação
 
-Para continuar, eles precisam confirmar que eles tenham concluído o planejamento da implantação, selecionando **Sim, eu tenho feito isso**. Neste cenário, a Contoso está apenas migrando uma VM e não precisa de planejamento de implantação.
+Para continuar, eles precisam confirmar que eles tenham concluído o planejamento da implantação, selecionando **Sim, eu tenho feito isso**. Nesse cenário, a Contoso está apenas migrando uma VM e não precisa de planejamento de implantação.
 
 ### <a name="set-up-the-source-environment"></a>Configurar o ambiente de origem
 
@@ -584,7 +584,7 @@ Com tudo configurado, agora a Contoso tem um grupo de disponibilidade funcional 
 
 A Contoso administra um failover de teste rápido e, em seguida, migra a VM.
 
-### <a name="run-a-test-failover"></a>Execute um teste de failover
+### <a name="run-a-test-failover"></a>executar um failover de teste
 
 Executar um failover de teste ajuda a garantir que tudo está funcionando conforme o esperado antes da migração.
 
@@ -603,7 +603,7 @@ Executar um failover de teste ajuda a garantir que tudo está funcionando confor
 
 1. Após verificar se o failover de teste funcionou como esperado, os administradores da Contoso criam um plano de recuperação para migração e adicionam o WEBVM ao plano.
 
-     ![Plano de recuperação](./media/contoso-migration-rehost-vm-sql-ag/recovery-plan.png)
+     ![Plano de Recuperação](./media/contoso-migration-rehost-vm-sql-ag/recovery-plan.png)
 
 2. Ela executa um failover no plano. Ela seleciona o último ponto de recuperação e especifica que o Site Recovery deve tentar desligar a VM local antes de disparar o failover.
 
@@ -611,7 +611,7 @@ Executar um failover de teste ajuda a garantir que tudo está funcionando confor
 
 3. Após o failover, eles verificam se a VM do Azure aparece conforme o esperado no portal do Azure.
 
-    ![Plano de recuperação](./media/contoso-migration-rehost-vm-sql-ag/failover2.png)
+    ![Plano de Recuperação](./media/contoso-migration-rehost-vm-sql-ag/failover2.png)
 
 4. Depois de verificar a VM no Azure, eles concluem a migração para concluir o processo de migração, interromper a replicação para a VM e interromper o faturamento do Site Recovery para a VM.
 

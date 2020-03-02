@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 8a8c3b471787e1bc189a0d1f0abe2e2d84447e7c
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 8810b4ab2ce78dd2add8a424518717392305346a
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806825"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222077"
 ---
 # <a name="examples-of-performance-outcomes"></a>Exemplos de resultados de desempenho
 
@@ -20,15 +20,15 @@ Conforme discutido nos [resultados de negócios](./index.md), vários resultados
 
 Na sociedade tecnológica de hoje, os clientes supõem que os aplicativos terão bom desempenho e sempre estarão disponíveis. Quando essa expectativa não é atendida, isso causa danos de reputação que podem ser dispendiosos e de longa duração.
 
-## <a name="performance"></a>Performance
+## <a name="performance"></a>Desempenho
 
-Os maiores serviços de computação em nuvem são executados em uma rede mundial de datacenters seguros, que são atualizados regularmente com a mais recente geração de hardware de computação rápido e eficiente. Isso fornece vários benefícios em um único datacenter corporativo, como redução da latência de rede para aplicativos e maior economia de escala.
+Os maiores serviços de computação em nuvem são executados em uma rede mundial de data centers seguros, que são atualizados regularmente para a última geração de hardware de computação rápido e eficiente. Isso fornece vários benefícios em um único datacenter corporativo, como redução da latência de rede para aplicativos e maior economia de escala.
 
 Transforme seus negócios e reduza os custos com uma infraestrutura eficiente em energia que abrange mais de 100 instalações altamente seguras em todo o mundo, vinculadas por uma das maiores redes na terra. O Azure tem mais regiões globais do que qualquer outro provedor de nuvem. Isso se traduz na escala necessária para trazer os aplicativos mais próximos aos usuários em todo o mundo, preservar a residência de dados e fornecer opções abrangentes de conformidade e resiliência para os clientes.
 
 - **Exemplo 1:** Uma empresa de serviços estava trabalhando com um provedor de hospedagem que hospedava vários ativos de infraestrutura operacional. Esses sistemas sofreram interrupções frequentes e mau desempenho. A empresa migrou seus ativos para o Azure para aproveitar o SLA e os controles de desempenho da nuvem. O tempo de inatividade que ele sofreu custau aproximadamente 15.000 USD por minuto de interrupção. Com quatro a oito horas de interrupção por mês, era fácil justificar essa transformação organizacional.
 
-- **Exemplo 2:** Uma empresa de investimento do consumidor estava nos estágios iniciais de um esforço de inovação de aplicativos habilitado para nuvem. Processos Agile e DevOps estavam em desenvolvimento, mas o desempenho do aplicativo era com picos. Como uma transformação mais madura, a empresa iniciou um programa para monitorar e automatizar o dimensionamento com base nas demandas de uso. A empresa foi capaz de eliminar problemas de dimensionamento usando as ferramentas de gerenciamento de desempenho do Azure, resultando em um aumento de 5% surpreendente em transações.
+- **Exemplo 2:** Uma empresa de investimento do consumidor estava nos estágios iniciais de um esforço de inovação de aplicativos habilitado para nuvem. Processos Agile e DevOps estavam em desenvolvimento, mas o desempenho do aplicativo era com picos. Como uma transformação mais madura, a empresa iniciou um programa para monitorar e automatizar o dimensionamento com base nas demandas de uso. A empresa eliminou problemas de dimensionamento usando as ferramentas de gerenciamento de desempenho do Azure, resultando em um aumento surpreendente de cinco% nas transações.
 
 ## <a name="reliability"></a>Confiabilidade
 
@@ -40,9 +40,9 @@ O backup do Azure é uma solução simples que diminui os custos de infraestrutu
 
 Azure Site Recovery torna simples testar a recuperação de desastres replicando aplicativos entre regiões do Azure. Você também pode replicar máquinas virtuais VMware e Hyper-V locais e servidores físicos para o Azure para ficar disponível se o site primário falhar. E você pode recuperar cargas de trabalho para o site primário quando ele estiver em funcionamento novamente.
 
-- **Exemplo:** Uma empresa de petróleo e gás usou as tecnologias do Azure para implementar uma recuperação de site completa. A empresa optou por não adotar totalmente a nuvem para as operações cotidianas, mas os recursos de DRBC (recuperação de desastres e continuidade dos negócios) da nuvem ainda protegevam seu datacenter. Como um furacão formado centenas de quilômetros de distância, seu parceiro de implementação começou a recuperar o site para o Azure. Antes de o Storm ser inativo, todos os ativos de missão crítica estavam em execução no Azure, evitando qualquer tempo de inatividade.
+- **Exemplo:** Uma empresa de petróleo e gás usou as tecnologias do Azure para implementar uma recuperação de site completa. A empresa optou por não adotar totalmente a nuvem para as operações cotidianas, mas os recursos de BCDR (continuidade dos negócios e recuperação de desastre) da nuvem ainda protegevam seu datacenter. Como um furacão formado centenas de quilômetros de distância, seu parceiro de implementação começou a recuperar o site para o Azure. Antes de o Storm ser inativo, todos os ativos de missão crítica estavam em execução no Azure, evitando qualquer tempo de inatividade.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Saiba como [usar o modelo de resultado comercial](./business-outcome-template.md).
 

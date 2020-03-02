@@ -1,5 +1,5 @@
 ---
-title: Implante uma infraestrutura de migração
+title: Implantar uma infraestrutura de migração
 description: Saiba como a Contoso define uma infraestrutura do Azure para a migração para o Azure.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,21 +8,23 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 4d8a7b53722de4b356753626d0cc695fa1a77596
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 314cd954332907f9bf1bf63eb52ed5d88cfab121
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807505"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223138"
 ---
-# <a name="deploy-a-migration-infrastructure"></a>Implante uma infraestrutura de migração
+<!-- cspell:ignore CSPs domainname IPAM CIDR Untrust RRAS CONTOSODC sysvol ITIL NSGs ASGs -->
+
+# <a name="deploy-a-migration-infrastructure"></a>Implantar uma infraestrutura de migração
 
 Este artigo mostra como a empresa fictícia Contoso preparou sua infraestrutura local para migração, configurou uma infraestrutura do Azure para preparar a migração e vem realizando negócios em um ambiente híbrido. Ao consultar este exemplo para planejar seus próprios esforços de migração de infraestrutura, lembre-se do seguinte:
 
 - A arquitetura de exemplo fornecida é específica da Contoso. Examine as necessidades de negócios, a estrutura e os requisitos técnicos da sua organização ao tomar decisões de infraestrutura importantes sobre design de assinatura ou arquitetura de rede.
 - Sua estratégia de migração é que definirá se você precisará de todos os elementos descritos neste artigo ou não. Por exemplo, se você estiver criando aplicativos de nuvem nativo somente no Azure, talvez seja necessário uma estrutura de rede menos complexa.
 
-## <a name="overview"></a>Visão Geral
+## <a name="overview"></a>Visão geral
 
 Antes de a Contoso poder migrar para o Azure, é fundamental preparar uma infraestrutura do Azure. Em geral, a Contoso precisa pensar em seis áreas amplas:
 
@@ -52,11 +54,11 @@ Aqui está um diagrama que mostra a atual infraestrutura local Contoso.
 
 - A Contoso tem um data center principal localizado na cidade de Nova York do Leste dos Estados Unidos.
 - Há três branches locais adicionais nos Estados Unidos.
-- O data center principal está conectado à internet com uma conexão de ethernet metro fibra (500 mbps).
+- O datacenter principal está conectado à Internet com uma conexão Ethernet metro de fibra (500 Mbps).
 - Cada ramificação está conectada localmente à internet usando conexões da classe de negócios, com túneis VPN IPSec para o data center principal. Isso permite que toda a rede fique permanentemente conectada e otimiza a conectividade com a Internet.
 - O data center principal é totalmente virtualizado com o VMware. A Contoso tem dois hosts de virtualização ESXi 6.5, gerenciados pelo vCenter Server 6.5.
 - A Contoso usa o Active Directory para gerenciamento de identidade e os servidores DNS na rede interna.
-- Executam os controladores de domínio no data center em máquinas virtuais do VMware. Os controladores de domínio no locais branches executados em servidores físicos.
+- Os controladores de domínio no datacenter são executados em máquinas virtuais VMware. Os controladores de domínio no locais branches executados em servidores físicos.
 
 ## <a name="step-1-buy-and-subscribe-to-azure"></a>Etapa 1: Comprar e inscrever-se no Azure
 
@@ -76,7 +78,7 @@ A Contoso acompanha um [EA (Contrato Enterprise)](https://azure.microsoft.com/pr
 Depois de pagar pelo Azure, a Contoso precisa descobrir como gerenciar as assinaturas do Azure. A Contoso tem um Contrato Enterprise e, portanto, nenhum limite no número de assinaturas do Azure que podem ser configuradas.
 
 - Um Registro Enterprise do Azure define como uma empresa modela e usa os serviços do Azure e define uma estrutura de controle central.
-- Como primeira etapa, a Contoso definiu uma estrutura conhecida como um scaffold corporativo para seu Registro Enterprise. A Contoso usou [este artigo](https://docs.microsoft.com/azure/azure-resource-manager/resource-manager-subscription-governance) para ajudar a entender e criar um scaffold.
+- Como primeira etapa, a Contoso definiu uma estrutura conhecida como um scaffold corporativo para seu Registro Enterprise. A contoso usou as [diretrizes de Scaffold do Azure Enterprise](https://docs.microsoft.com/azure/azure-resource-manager/resource-manager-subscription-governance) para ajudar a entender e projetar um Scaffold.
 - Por enquanto, a Contoso decidiu usar uma abordagem funcional para gerenciar assinaturas.
   - Dentro de empresa, ela usará um único departamento de TI que controlará o orçamento do Azure. Esse será o único grupo com assinaturas.
   - A Contoso estenderá esse modelo no futuro para que outros grupos corporativos possam participar como departamentos no Registro Enterprise.
@@ -87,7 +89,7 @@ Depois de pagar pelo Azure, a Contoso precisa descobrir como gerenciar as assina
 
 ### <a name="examine-licensing"></a>Examine o licenciamento
 
-Com as assinaturas configuradas, a Contoso pode examinar o licenciamento da Microsoft. A estratégia de licenciamento dependerá dos recursos que a Contoso deseja migrar para o Azure e como as VMs e serviços do Azure serão selecionados e implantados.
+Com as assinaturas configuradas, a Contoso pode examinar o licenciamento da Microsoft. A estratégia de licenciamento dependerá dos recursos que a contoso deseja migrar para o Azure e como as máquinas virtuais (VMs) e os serviços do Azure são selecionados e implantados.
 
 #### <a name="azure-hybrid-benefit"></a>Benefício Híbrido do Azure
 
@@ -324,7 +326,7 @@ Com o design de região implementado, a Contoso está pronta para considerar uma
 
 ### <a name="plan-hybrid-network-connectivity"></a>Planejar a conectividade de rede híbrida
 
-A Contoso considerou [inúmeras arquiteturas](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking) para redes híbridas entre o Azure e o datacenter local. Para obter mais informações, consulte [escolher uma solução para conectar uma rede local ao Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/considerations).
+A Contoso considerou [inúmeras arquiteturas](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking) para redes híbridas entre o Azure e o datacenter local. Para obter mais informações, confira [Escolher uma solução para conectar uma rede local ao Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/considerations).
 
 Como um lembrete, a infraestrutura de rede local da Contoso atualmente é composta pelo datacenter em Nova York e branches locais na parte leste dos EUA. Todos os locais têm uma conexão de classe de negócios para a internet. Cada uma das filiais é conectada posteriormente ao datacenter através de um túnel VPN IPSec pela internet.
 
@@ -348,16 +350,16 @@ Aqui está como a Contoso decidiu implementar conectividade híbrida:
 
 ### <a name="design-the-azure-network-infrastructure"></a>Projetar a infraestrutura de rede do Azure
 
-É essencial que a Contoso coloque as redes em funcionamento de forma a tornar a implantação híbrida segura e escalonável. Para fazer isso, a Contoso está adotando uma abordagem de longo prazo e está projetando VNETs (redes virtuais) para serem resilientes e preparadas para uso empresarial. [ Saiba mais ](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm) sobre o planejamento de VNets.
+A configuração de rede da Contoso deve tornar a implantação híbrida segura e escalonável. A Contoso está levando uma abordagem a longo prazo, criando redes virtuais (VNets) para ser resiliente e pronto para empresas. [ Saiba mais ](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm) sobre o planejamento de VNets.
 
-Para conectar as duas regiões, a Contoso decidiu implementar um modelo de rede de hub a hub:
+Para conectar as duas regiões, a contoso implementará um modelo de rede hub a Hub:
 
 - Dentro de cada região, a Contoso usará um modelo hub-spoke.
 - Para conectar redes e hubs, a Contoso usará o emparelhamento de rede do Azure.
 
 #### <a name="network-peering"></a>Emparelhamento de rede
 
-O Azure fornece emparelhamento de rede para conectar VNets e hubs. O emparelhamento global permite conexões entre VNets / hubs em diferentes regiões. O emparelhamento local conecta VNets na mesma região. O emparelhamento VNet oferece várias vantagens:
+O emparelhamento de rede do Azure conecta redes virtuais e hubs. O emparelhamento global permite conexões entre a rede virtual ou hubs em regiões diferentes. O emparelhamento local conecta redes virtuais na mesma região. O emparelhamento de rede virtual fornece várias vantagens:
 
 - O tráfego de rede entre os VNets emparelhados é privado.
 - O tráfego entre as VNets é mantido na rede backbone da Microsoft. Nenhuma Internet pública, gateways ou criptografia é necessária na comunicação entre as VNets.
@@ -471,7 +473,7 @@ Centro dos EUA é a região secundária da Contoso. Veja como a Contoso criará 
   - VNET-PROD-CUS. Esta VNet é uma rede de produção, semelhante ao VNET-PROD_EUS2.
   - VNET-ASR-CUS. Essa VNet funcionará como um local no qual as VMs são criadas após o failover no local ou como um local para as VMs do Azure com failover da região primária para a secundária. Essa rede é semelhante às redes de produção, mas sem nenhum controlador de domínio.
   - Cada VNet na região terá seu próprio espaço de endereço, sem sobreposição. A Contoso configurará o roteamento sem NAT.
-- **Sub-redes:** As sub-redes serão arquitetadas de forma semelhante àquelas no leste dos EUA 2. A exceção é que a Contoso não precisa de uma sub-rede para controladores de domínio.
+- **Sub-redes:** As sub-redes serão criadas de forma semelhante àquelas no leste dos EUA 2. A exceção é que a Contoso não precisa de uma sub-rede para controladores de domínio.
 
 As VNets no centro dos EUA estão resumidas na tabela a seguir.
 
@@ -557,14 +559,14 @@ Quando você implanta recursos em redes virtuais, você tem algumas opções par
 
 Os administradores da Contoso decidiram que o serviço DNS do Azure não é uma boa opção no ambiente híbrido. Em vez disso, eles usarão os servidores DNS locais.
 
-- Como essa é uma rede híbrida, todas as VMs no local e no Azure precisam ser capazes de resolver nomes para funcionar corretamente. Isso significa que as configurações de DNS personalizadas devem ser aplicadas a todas as VNets.
+- Como essa é uma rede híbrida, todas as VMs locais e no Azure devem ser capazes de resolver nomes para funcionar corretamente. Isso significa que as configurações de DNS personalizadas devem ser aplicadas a todas as VNets.
 - No momento, a Contoso tem DCs implantados no datacenter da Contoso e nas filiais. Os servidores DNS primários são CONTOSODC1(172.16.0.10) e CONTOSODC2(172.16.0.1)
 - Quando as VNETs forem implantadas, os controladores de domínio locais serão definidos para serem usados como servidores DNS nas redes.
 - Para configurar isso, ao usar o DNS personalizado na VNet, o endereço IP dos resolventes recursivos do Azure (como 168.63.129.16) deve ser adicionado à lista de DNS. Para fazer isso, a Contoso define as configurações do servidor DNS em cada rede virtual. Por exemplo, as configurações de DNS personalizadas para a rede VNET-HUB-EUS2 seriam as seguintes:
 
     ![DNS Personalizado](./media/contoso-migration-infrastructure/custom-dns.png)
 
-Além dos controladores de domínio locais, a Contoso implementará mais quatro para dar suporte às suas redes do Azure, duas para cada região. Veja o que a Contoso implantará no Azure.
+Além dos controladores de domínio locais, a contoso implementará mais quatro controladores de domínio para dar suporte às redes do Azure, dois para cada região. Veja o que a Contoso implantará no Azure.
 
 **Região** | **DC** | **Rede virtual** | **Sub-rede** | **Endereço IP**
 --- | --- | --- | --- | ---
@@ -779,9 +781,9 @@ Os NSGs associados aos ASGs serão configurados com o menor privilégio para gar
 
 **Ação** | **Nome** | **Origem** | **Target (destino)** | **Porta**
 --- | --- | --- | --- | ---
-Permitir | AllowInternetToFE | VNET-HUB-EUS1/IB-TrustZone | APP1-FE 80, 443
-Permitir | AllowWebToApp | APP1-FE | APP1-APP | 80, 443
-Permitir | AllowAppToDB | APP1-APP | APP1-DB | 1433
+Allow | AllowInternetToFE | VNET-HUB-EUS1/IB-TrustZone | APP1-FE 80, 443
+Allow | AllowWebToApp | APP1-FE | APP1-APP | 80, 443
+Allow | AllowAppToDB | APP1-APP | APP1-DB | 1433
 Negar | DenyAllInBound | Qualquer | Qualquer | Qualquer
 
 ### <a name="encrypt-data"></a>Criptografar dados
@@ -795,10 +797,10 @@ O Azure Disk Encryption se integra ao Azure Key Vault para ajudar a controlar e 
 
 Neste artigo, a Contoso configurou uma infraestrutura do Azure e a política de assinatura do Azure, identificação híbrida, recuperação de desastres, rede, governança e segurança.
 
-Nem todas as etapas que a Contoso concluiu aqui são necessárias para uma migração para a nuvem. Nesse caso, ela queria planejar uma infraestrutura de rede que pudesse ser usada para todos os tipos de migrações e fosse segura, resiliente e escalável.
+Nem todas as etapas tomadas aqui são necessárias para uma migração na nuvem. Nesse caso, a contoso planejou uma infraestrutura de rede que poderia lidar com todos os tipos de migrações, enquanto é seguro, resiliente e escalonável.
 
-Com essa infraestrutura, a Contoso está pronta para seguir em frente e experimentar a migração.
+Com essa infraestrutura, a Contoso está pronta para prosseguir e experimentar a migração.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Depois de configurar sua infraestrutura do Azure, a Contoso está pronta para começar a migrar cargas de trabalho para a nuvem. Confira a seção [padrões de migração e visão geral de exemplos](./contoso-migration-overview.md#windows-server-workloads) para obter uma seleção de cenários usando essa infraestrutura de exemplo como um destino de migração.

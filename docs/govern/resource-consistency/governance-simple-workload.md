@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 868f62856c68c516c384d44cd7fa0e1857ade0e8
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: efdca4c5848e8815166fd2ddf308d40ae62f75a1
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709559"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223728"
 ---
 # <a name="governance-design-for-a-simple-workload"></a>Design de governança para uma carga de trabalho simples
 
@@ -47,7 +47,7 @@ Nosso administrador global do Azure AD criará a conta do **proprietário da car
 ![o administrador global do Azure AD cria a conta do proprietário da carga de trabalho](../../_images/govern/design/governance-1-2.png)
 *Figura 2-o administrador global do Azure ad cria a conta de usuário do proprietário da carga de trabalho.*
 
-Não conseguimos atribuir permissão de acesso ao recurso até que esse usuário seja adicionado a uma **assinatura**, portanto, faremos isso nas próximas duas seções.
+Você não pode atribuir permissão de acesso de recurso até que este usuário seja adicionado a uma **assinatura**, portanto, você fará isso nas próximas duas seções.
 
 ## <a name="resource-management-scope"></a>Escopo do gerenciamento de recursos
 
@@ -110,7 +110,7 @@ Em seguida, o **proprietário da conta** do Azure deve [criar uma assinatura](ht
 
 Por fim, agora que a assinatura está criada e seu locatário do Azure Active Directory está associado a ela, você poderá [adicionar o **proprietário da carga de trabalho** à assinatura com a função de **proprietário** interna](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#to-assign-a-user-as-an-administrator).
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 > [!div class="nextstepaction"]
 > [Implantar uma carga de trabalho básica para o Azure](../../infrastructure/virtual-machines/basic-workload.md)

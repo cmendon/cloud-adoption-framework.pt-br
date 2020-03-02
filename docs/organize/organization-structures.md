@@ -8,13 +8,15 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 326ffa486c07da907ad9e532d5794545ef2dbd9f
-ms.sourcegitcommit: 238e7a06b56950cebdcc8f75924849fc995e6ff2
+ms.openlocfilehash: 0aeaa665370c612e89a0d4ce72a2b38b2bb05e2b
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "77173405"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222219"
 ---
+<!-- cSpell:ignore ccoe -->
+
 # <a name="establish-team-structures"></a>Estabelecer estruturas de equipe
 
 Cada recurso de nuvem é fornecido por alguém durante cada esforço de adoção da nuvem. Essas atribuições e estruturas de equipe podem ser desenvolvidas de forma orgânica ou podem ser intencionalmente projetadas para corresponder a uma estrutura de equipe definida.
@@ -58,9 +60,9 @@ Essa abordagem comprovada é considerada um MVP porque pode não ser sustentáve
 
 As seções a seguir descrevem uma estrutura organizacional comprovada e totalmente equipada, juntamente com abordagens para alinhar a estrutura apropriada à sua organização.
 
-## <a name="central-it"></a>Central de TI
+## <a name="central-it"></a>TI central
 
-À medida que a adoção é dimensionada, a equipe de governança de nuvem pode se esforçar para acompanhar o fluxo de inovação de várias equipes de adoção de nuvem. Isso é especialmente verdadeiro em ambientes que têm requisitos pesados de conformidade, operações ou segurança. Nesse estágio, é comum que as empresas mudem as responsabilidades da nuvem para uma equipe de ti central existente. Se essa equipe puder reavaliar as ferramentas, os processos e as pessoas para dar melhor suporte à adoção na nuvem em escala, então, a inclusão da equipe central de ti pode adicionar um valor significativo. Trazendo especialistas no assunto de operações, automação, segurança e administração para modernizar a ti central pode gerar inovações operacionais eficazes.
+À medida que a adoção é dimensionada, a equipe de governança de nuvem pode se esforçar para acompanhar o fluxo de inovação de várias equipes de adoção de nuvem. Isso é especialmente verdadeiro em ambientes que têm requisitos pesados de conformidade, operações ou segurança. Nesse estágio, é comum que as empresas mudem as responsabilidades da nuvem para uma equipe de ti central existente. Se essa equipe puder reavaliar as ferramentas, os processos e as pessoas para dar melhor suporte à adoção na nuvem em grande escala, a inclusão da equipe central de ti poderá adicionar um valor significativo. Trazendo especialistas no assunto de operações, automação, segurança e administração para modernizar a ti central pode gerar inovações operacionais eficazes.
 
 ![Adoção de nuvem com um modelo de ti central](../_images/ready/org-ready-central-it.png)
 
@@ -92,7 +94,7 @@ No mais alto estado de maturidade, um centro de excelência em nuvem alinha as e
 
 A principal diferença entre essa estrutura e a estrutura central de ti acima é um foco no autoatendimento. As equipes nessa estrutura se organizam com a intenção de delegar o controle o máximo possível. Alinhar práticas de governança e conformidade a soluções nativas de nuvem cria guardrails e mecanismos de proteção. Ao contrário do modelo de ti central, a abordagem nativa de nuvem maximiza a inovação e minimiza a sobrecarga operacional. Para que esse modelo seja adotado, o contrato mútuo para modernizar os processos de ti será exigido da liderança de ti e de negócios. Esse modelo é improvável de ocorrer de orgânica e geralmente requer suporte executivo.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Depois de alinhar a um determinado estágio da maturidade da estrutura organizacional, você pode usar [gráficos do RACI](./raci-alignment.md) para alinhar a responsabilidade e a responsabilidade em cada equipe.
 

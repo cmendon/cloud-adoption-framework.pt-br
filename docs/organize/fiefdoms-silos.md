@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 41f23244119358a3356f65f6050572e4a8c787c1
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: a430f988282a89bb4aea7e07689310309d5b971c
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76800807"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222287"
 ---
 # <a name="organizational-antipatterns-silos-and-fiefdoms"></a>Antipadrão organizacional: silos e fiefdoms
 
@@ -59,7 +59,7 @@ Mesmo em culturas tóxicoss, os esforços do CCoE e da equipe de governança de 
 
 ## <a name="it-silos"></a>Silos de ti
 
-Os membros da equipe em um silo de ti provavelmente se definirão por seu alinhamento com um pequeno número de fornecedores de ti ou uma área de especialização técnica. No entanto, não confunda silos de ti com fiefdoms de ti. Os silos de ti tendem a ser orientados por conforto e paixão, e geralmente são mais fáceis de superar do que as motivações controladas por medo por trás de fiefdoms.
+Os membros da equipe em um silo de ti provavelmente se definirão por seu alinhamento com um pequeno número de fornecedores de ti ou uma área de especialização técnica. No entanto, não confunda silos com ti fiefdoms. Os silos tendem a ser conduzidos por conforto e paixão, e muitas vezes os silos são mais fáceis de superar do que as motivações controladas por medo por trás de fiefdoms.
 
 Esse antipadrão geralmente surge de uma paixão comum para uma solução específica. Em seguida, os silos de ti são reforçados pelas habilidades avançadas da equipe como resultado do investimento nessa solução específica. Essa habilidade superior pode ser um acelerador para os esforços de adoção da nuvem se a resistência a alterações puder ser superada. Ele também poderá se tornar um bloqueador principal se os silos forem divididos ou se os membros da equipe não puderem avaliar as opções com precisão. Felizmente, os silos de ti geralmente podem ser superados sem nenhuma alteração significativa no gráfico organizacional.
 
@@ -77,9 +77,9 @@ Experimentação e exposição são ferramentas poderosas para quebrar barreiras
 
 Durante a revisão da solução concorrente, use as práticas descritas em [definir política corporativa](../govern/corporate-policy.md) para documentar os riscos tangíveis do experimento e estabelecer políticas que ajudam a equipe em silos a se sentir mais confortável com o estado futuro. Isso vai expor a equipe para novas soluções e proteger a solução futura.
 
-**Ser "com limite":** As equipes que impulsionam a adoção de nuvem acham mais fácil enviar limites por push explorando novas soluções de nuvem nativas empolgantes. Essa é uma metade da abordagem para remover limites. No entanto, essa reflexão pode reforçar ainda mais os silos de ti. Enviar por push para alterações muito rapidamente e sem respeitar as culturas existentes pode criar um conflito não íntegro e levar à resistência natural.
+**Ser "sem limite":** As equipes que impulsionam a adoção de nuvem acham mais fácil enviar limites por push explorando novas soluções de nuvem nativas empolgantes. Essa é uma metade da abordagem para remover limites. No entanto, essa reflexão pode reforçar ainda mais os silos de ti. Enviar por push para alterações muito rapidamente e sem respeitar as culturas existentes pode criar um conflito não íntegro e levar à resistência natural.
 
-Quando os silos começam a resistir, é importante estar sem limites em suas próprias soluções. Lembre-se de uma verdade simples: a nuvem nativa nem sempre é a melhor solução. Considere soluções híbridas que podem oferecer uma oportunidade de estender os investimentos existentes do silo de ti para o futuro.
+Quando os silos de ti começam a resistir, é importante ser "menos delimitados" em suas próprias soluções. Lembre-se de uma verdade simples: a nuvem nativa nem sempre é a melhor solução. Considere soluções híbridas que podem oferecer uma oportunidade de estender os investimentos existentes do silo de ti para o futuro.
 
 Considere também as versões baseadas em nuvem da solução que a equipe do silo de ti usa agora. Experimente essas soluções e expor-se ao ponto de vista das viver no silo de ti. No mínimo, você obterá uma nova perspectiva. Em muitas situações, você pode ganhar o máximo do silo de ti em relação a reduzir a resistência.
 
@@ -133,7 +133,7 @@ Fiefdoms de ti pode ser um sinal de problemas de liderança do sistema. Para sup
 
 O alinhamento com os participantes de negócios, as motivações de negócios e os resultados de negócios pode ser necessário para impulsionar a alteração necessária. Parceria com a [equipe de estratégia de nuvem](./cloud-strategy.md), o [Cloud Center de excelência](./cloud-center-of-excellence.md)e a [equipe de governança de nuvem](./cloud-governance.md) podem fornecer os pontos de dados necessários para uma posição defensible. Quando necessário, essas equipes devem estar envolvidas em um escalonamento de grupo para resolver os desafios que não podem ser abordados com a liderança de ti sozinho.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Interromper os antipadrões organizacionais é um esforço de equipe. Para agir sobre essas diretrizes, examine a introdução à preparação organizacional para identificar os participantes e as estruturas de equipe certas:
 

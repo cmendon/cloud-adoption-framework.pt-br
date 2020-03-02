@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 17f2395a435d8a29202595caec17932b406a1303
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: c5dc7212fc20914fddaa7bd8777a5fec5f49e811
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806927"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78225409"
 ---
 # <a name="central-it-capabilities"></a>Recursos centrais de ti
 
@@ -34,7 +34,7 @@ As habilidades necessárias para fornecer recursos de ti centralizados podem ser
 - Governança de ti
 - Infraestrutura de ti
 - Rede
-- Identidade
+- Identity
 - Virtualização
 - Continuidade dos negócios e recuperação de desastres
 - Proprietários do aplicativo dentro dele
@@ -116,7 +116,7 @@ No entanto, uma de suas equipes de adoção de nuvem agora requer um ambiente co
 
 A abordagem criativa desenvolvida da equipe de ti central da Contoso fornecia uma solução que não comprometeva a governança ou a conformidade, mas ainda foi incentivada a adoção. Essa abordagem de agente, em vez de alcançar abordagens nativas de nuvem para ser centralizada, é a primeira etapa para a criação de uma verdadeira CCoE (Cloud Center of Excellence). A adoção dessa abordagem para desenvolver rapidamente as políticas existentes permitirá o controle centralizado quando necessário e o guardrails de governança quando mais flexibilidade for aceitável. O balanceamento dessas duas considerações reduz os riscos associados à ti central na nuvem.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 À medida que a ti central amadurece na nuvem, a próxima etapa de maturidade é normalmente um acoplamento mais flexível das [operações de nuvem](./cloud-operations.md). A disponibilidade de ferramentas de gerenciamento de operações nativas de nuvem e custos operacionais menores para soluções de PaaS-First geralmente leva a equipes de negócios (ou mais especificamente, DevOps equipes dentro da empresa) assumindo a responsabilidade pelas operações de nuvem.
 

@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 6e9a791507a67ddbd53988f1adadd46c4689cd00
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 94129d863d524b6ff618835c271c14756487e587
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76798342"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78225237"
 ---
 # <a name="examples-of-global-reach-outcomes"></a>Exemplos de resultados de alcance global
 
@@ -32,9 +32,9 @@ Expandir um novo mercado pode ser um dos resultados mais valiosos dos negócios 
 
 Operar em novos mercados apresenta restrições de governança adicionais. GDPR é um exemplo de critérios de governança que poderiam causar um recurso financeiro significativo. O Azure fornece ofertas de conformidade que ajudam os clientes a atender às obrigações de conformidade entre indústrias regulamentadas e mercados globais. Para obter mais informações, consulte a [visão geral da conformidade do Microsoft Azure](https://aka.ms/AzureCompliance).
 
-- **Exemplo:** Um provedor de utilitários baseado nos EUA recebeu um contrato para fornecer utilitários no Canadá. A lei de soberania de dados canadenses exige que os dados canadenses permaneçam no Canadá. Essa empresa tinha trabalhado de forma por meio de um esforço de inovação de aplicativos habilitado para nuvem por anos. Como resultado, o software foi capaz de ser implantado por meio de processos de DevOps com script completo. Com algumas pequenas alterações na base de código, eles conseguiram implantar uma cópia de trabalho do código em um datacenter do Azure no Canadá, atendendo à conformidade da soberania de dados e mantendo o cliente.
+- **Exemplo:** Um provedor de utilitários baseado nos EUA recebeu um contrato para fornecer utilitários no Canadá. A lei de soberania de dados canadenses exige que os dados canadenses permaneçam no Canadá. Essa empresa tinha trabalhado de forma por meio de um esforço de inovação de aplicativos habilitado para nuvem por anos. Como resultado, o software pode ser implantado por meio de processos de DevOps com script completo. Com algumas pequenas alterações na base de código, eles conseguiram implantar uma cópia de trabalho do código em um datacenter do Azure no Canadá, atendendo à conformidade da soberania de dados e mantendo o cliente.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Saiba mais sobre os [resultados de participação do cliente](./engagement-outcomes.md).
 

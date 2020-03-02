@@ -7,13 +7,15 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d6f812c8f32ec9481942f697151e7ed803654a1b
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: a5043e3d42b843cfb714823fcb476e7bfdc0a2fd
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807403"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223009"
 ---
+<!-- cSpell:ignore OSTICKETWEB OSTICKETMYSQL contosohost contosodc contosovmsacc contosoosticket vcenter cswiz osticket NSGs systemctl -->
+
 # <a name="rehost-an-on-premises-linux-app-to-azure-vms-and-azure-database-for-mysql"></a>Mudança de host de um aplicativo local em Linux para VMs do Azure e no Banco de Dados do Azure para MySQL
 
 Este artigo mostra como a empresa fictícia Contoso muda a hospedagem de um aplicativos de duas camadas no Apache com base em Linux/MySQL/PHP (LAMP), migrando do local para o Azure usando VMs do Azure e o Banco de Dados do Azure para MySQL.
@@ -81,7 +83,7 @@ Para migrar o banco de dados:
 [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery) | O serviço coordena e gerencia a migração e a recuperação de desastre para VMs do Azure e servidores físicos e de VMs locais. | Durante a replicação para o Azure, são gerados encargos do Armazenamento do Azure. As VMs do Azure são criadas e incorrem em encargos quando ocorre failover. [Saiba mais](https://azure.microsoft.com/pricing/details/site-recovery) sobre encargos e preços.
 [Banco de Dados do Azure para MySQL](https://docs.microsoft.com/azure/mysql) | O banco de dados baseia-se no mecanismo do servidor MySQL de software livre. Ele fornece um banco de dados MySQL comunitário, pronto para empresas e totalmente gerenciado, como um serviço para o desenvolvimento e implantação de aplicativos.
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
 
 Veja o que a Contoso precisa para esse cenário.
 
@@ -165,7 +167,7 @@ O serviço de mobilidade deve ser instalado em cada VM que a Contoso deseja migr
 
 ### <a name="prepare-to-connect-to-azure-vms-after-failover"></a>Preparar para conectar VMs do Azure após o failover
 
-Após o failover para o Azure, a Contoso deseja poder se conectar às VMs do Azure. Para isso, os administradores da Contoso precisam fazer o seguinte:
+Após o failover para o Azure, a contoso deseja se conectar às VMs do Azure. Para habilitar isso, os administradores da Contoso devem fazer o seguinte:
 
 - Para ter acesso à Internet, ela habilita SSH na VM Linux local antes da migração. No cado do Ubuntu, isso pode ser feito usando o seguinte comando: **Sudo apt-get ssh install -y**.
 - Após o failover, ela deve verificar os **Diagnósticos de inicialização** para exibir uma captura de tela da VM.
@@ -214,7 +216,7 @@ Antes de poder migrar a VM Web para o Azure, os administradores da Contoso confi
 
 ### <a name="confirm-deployment-planning"></a>Confirmar planejamento de implantação
 
-Para continuar, ela confirma que concluiu o planejamento da implantação selecionando **Sim, fiz isso**. A Contoso só está migrando uma VM neste cenário e não precisa de planejamento de implantação.
+Para continuar, eles confirmam a conclusão selecionando **Sim, fiz isso**. A Contoso está migrando apenas uma máquina virtual neste cenário, que não requer planejamento de implantação.
 
 ### <a name="set-up-the-source-environment"></a>Configurar o ambiente de origem
 
@@ -311,7 +313,7 @@ Agora os administradores da Contoso podem iniciar a replicação da VM **OSTICKE
 
      ![Serviço de mobilidade](./media/contoso-migration-rehost-linux-vm-mysql/linux-mobility.png)
 
-6. Em **Configurações de Replicação** > **Definir configurações de replicação**, eles verificam se a política de replicação correta está aplicada e selecionam **Habilitar Replicação**. O serviço de mobilidade será instalado automaticamente.
+6. Em **configurações de replicação** > **definir configurações de replicação**, verifique se a política de replicação correta está aplicada e, em seguida, selecione **habilitar replicação**. O serviço de mobilidade será instalado automaticamente.
 7. Eles rastreiam o progresso da replicação em **Trabalhos**. Após o trabalho de **Finalizar Proteção** ser executado, o computador estará pronto para failover.
 
 **Precisa de mais ajuda?**
@@ -442,7 +444,7 @@ Com o aplicativo em execução, a Contoso precisa operacionalizar e proteger tot
 A equipe de segurança da Contoso examina a VM e o banco de dados para determinar os problemas de segurança.
 
 - Ela revisa os NSGs (grupos de segurança de rede) para a VM controlar o acesso. Os NSGs são usados para garantir que somente o tráfego permitido para o aplicativo pode passar.
-- Ela considera proteger os dados nos discos de VM usando criptografia de disco e o Azure Key Vault.
+- Eles consideram a proteção dos dados nos discos de VM usando a criptografia e a Azure Key Vault de disco.
 - A comunicação entre a VM e a instância do banco de dados não está configurada para SSL. Ela precisa fazer isso para fazer com que o tráfego de banco de dados não possa ser atacado.
 
 Para obter mais informações, consulte [práticas recomendadas de segurança para cargas de trabalho de IaaS no Azure](https://docs.microsoft.com/azure/security/fundamentals/iaas).

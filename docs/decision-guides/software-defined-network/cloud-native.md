@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 9d8bf9a5188eae55c14a22a8007aa6e9cc01b02c
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 250f78bb0287e30615aee4b2cfb1234823197f56
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77708590"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222667"
 ---
 # <a name="software-defined-networking-cloud-native"></a>Rede definida pelo software: nativa na nuvem
 
@@ -36,9 +36,9 @@ Outros problemas que suas equipes de adoção de nuvem devem considerar ao discu
 - Cargas de trabalho existentes, projetadas para serem executadas em um datacenter local, talvez seja necessário uma extensa modificação para tirar proveito da funcionalidade baseada em nuvem, como os serviços de armazenamento ou autenticação.
 - As redes nativas de nuvem são gerenciadas exclusivamente por meio das ferramentas de gerenciamento da plataforma de nuvem e, portanto, podem levar ao gerenciamento e à divergência de políticas de seus padrões de ti existentes à medida que o tempo continua.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Para obter mais informações sobre redes virtuais nativas de nuvem no Azure, consulte:
 
 - [Rede virtual do Azure: guias de instruções](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm). Redes Virtuais do Azure recentemente criadas são nativas de nuvem por padrão. Use esses guias para ajudar a planejar a criação e implantação de suas redes virtuais.
-- [Limites de assinatura: rede](https://docs.microsoft.com/azure/azure-subscription-service-limits?toc=/azure/virtual-network/toc.json#networking-limits). Qualquer rede virtual única e os recursos conectados só podem existir em uma única assinatura e são associados por limites de assinatura.
+- [Limites de assinatura: rede](https://docs.microsoft.com/azure/azure-subscription-service-limits?toc=/azure/virtual-network/toc.json#networking-limits). Cada rede virtual e recursos conectados existem em uma única assinatura. Esses recursos são associados por limites de assinatura.

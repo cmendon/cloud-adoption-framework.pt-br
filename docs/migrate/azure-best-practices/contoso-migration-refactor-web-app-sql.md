@@ -8,13 +8,15 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 35a64b9f42df3737e186d25a43ecad457010607d
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 3667207de8cc31a85e12666c425ffdf0469c1be5
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807437"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223066"
 ---
+<!-- cSpell:ignore WEBVM SQLVM contosohost contosodc vcenter smarthotel SHWEB SHWCF -->
+
 # <a name="refactor-an-on-premises-app-to-an-azure-app-service-web-app-and-azure-sql-database"></a>Refatorar um aplicativo local para um aplicativo Web do Serviço de Aplicativo do Azure e do banco de dados SQL do Azure
 
 Este artigo demonstra como a empresa fictícia Contoso refatora um aplicativo de duas camadas .NET do Windows em execução em VMs VMware como parte de uma migração para o Azure. Eles migram a VM de front-end do aplicativo para um aplicativo Web do Serviço de Aplicativo do Azure e o banco de dados do aplicativo para um banco de dados SQL do Azure.
@@ -28,7 +30,7 @@ A equipe de liderança de TI trabalhou em conjunto com parceiros comerciais para
 - **Lidar com o crescimento da empresa.** A Contoso está crescendo e há pressão sobre os sistemas e a infraestrutura locais.
 - **Aumentar a eficiência.** A Contoso precisa remover procedimentos desnecessários e simplificar processos para desenvolvedores e usuários. Necessidades de negócios IT rápidas e tempo não resíduos ou money, fornecendo, assim, mais rápido nas necessidades do cliente.
 - **Aumentar a agilidade.**  A TI da Contoso precisa atender melhor às necessidades empresariais. Ele deve ser capaz de reagir mais rápido do que as alterações no marketplace, para habilitar o sucesso em uma economia global. Ele não deve obter da forma ou se tornar um bloqueador de negócios.
-- **Escala.** Uma vez que a empresa cresce com êxito, TI da Contoso deve fornecer sistemas que são capazes de crescer no mesmo ritmo.
+- **Escala.** À medida que os negócios crescem com êxito, a contoso IT deve fornecer sistemas que podem crescer no mesmo ritmo.
 - **Reduzir custos.** a Contoso quer minimizar os custos de licenciamento.
 
 ## <a name="migration-goals"></a>Metas de migração
@@ -101,7 +103,7 @@ A Contoso avalia seu projeto proposto reunindo uma lista de prós e contras.
 [Serviço de Aplicativo do Azure](https://docs.microsoft.com/azure/app-service/overview) | Crie aplicativos de nuvem avançados usando uma plataforma totalmente gerenciada | Custo com base no tamanho, na localização e na duração do uso. [Saiba mais](https://azure.microsoft.com/pricing/details/app-service/windows).
 [Azure DevOps](https://docs.microsoft.com/azure/azure-portal/tutorial-azureportal-devops) | Fornece um pipeline de CI/CD (integração contínua/implantação contínua) para o desenvolvimento de aplicativos. O pipeline começa com um repositório Git para gerenciar o código do aplicativo, um sistema de build para produzir pacotes e outros artefatos de build e um sistema Release Management para implantar as alterações nos ambientes de desenvolvimento, teste e produção.
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
 
 Aqui, a Contoso precisa executar este cenário:
 
@@ -125,7 +127,7 @@ Veja como a Contoso executará a migração:
 > - **Etapa 3: provisionar aplicativos Web.** A Contoso provisiona os dois aplicativos Web.
 > - **Etapa 4: configurar o Azure DevOps.** a Contoso cria um projeto do Azure DevOps e importa o repositório Git.
 > - **Etapa 5: configurar cadeias de conexão.** a Contoso configura as sequências de conexão para que o aplicativo Web da camada da web, o aplicativo Web do serviço WCF e a instância do SQL possam se comunicar.
-> - **Etapa 6: configurar pipelines de Build e versão.** Como etapa final, a Contoso configura os pipelines de build e lançamento para criar o aplicativo e implanta-os em dois aplicativos Web separados.
+> - **Etapa 6: configurar pipelines de Build e versão.** Como etapa final, a Contoso configura pipelines de Build e versão para criar o aplicativo e os implanta em dois aplicativos Web separados.
 
 ## <a name="step-1-provision-an-azure-sql-database"></a>Etapa 1: Provisionar um Banco de Dados SQL do Azure
 
@@ -171,7 +173,7 @@ Os administradores da Contoso migrarão o banco de dados do SmartHotel360 usando
 
 ### <a name="migrate-the-database-with-dma"></a>Migrar o banco de dados com o DMA
 
-1. No AMD, eles criam um novo projeto (**SmartHotelDB**) e selecionam **Migração**.
+1. No DMA, eles criam um novo projeto (**SmartHotelDB**) e, em seguida, selecionam **migração**.
 2. Eles escolhem o tipo de servidor de origem como **SQL Server** e o destino como **Banco de Dados SQL do Azure**.
 
     ![DMA](media/contoso-migration-refactor-web-app-sql/dma-1.png)
@@ -180,7 +182,7 @@ Os administradores da Contoso migrarão o banco de dados do SmartHotel360 usando
 
      ![DMA](media/contoso-migration-refactor-web-app-sql/dma-2.png)
 
-4. Eles recebem um erro que parece estar associado à autenticação. No entanto, após investigar, o problema é o ponto (.) no nome do banco de dados. Como solução alternativa, eles decidiram provisionar um novo banco de dados SQL usando o nome **SmartHotel-Registration** para resolver o problema. Quando eles executam o DMA novamente, são capazes de selecionar **SmartHotel-Registration** e continuar com o assistente.
+4. Eles recebem um erro que parece estar associado à autenticação. No entanto, após investigar, o problema é o ponto (.) no nome do banco de dados. Como solução alternativa, eles decidiram provisionar um novo banco de dados SQL usando o nome **SmartHotel-Registration** para resolver o problema. Quando eles executam DMA novamente, eles podem selecionar **SmartHotel**e continuar com o assistente.
 
     ![DMA](media/contoso-migration-refactor-web-app-sql/dma-3.png)
 
@@ -230,7 +232,7 @@ Com o banco de dados migrado, os administradores da Contoso agora podem provisio
 
 A Contoso precisa criar a infraestrutura e os pipelines de DevOps para o aplicativo. Para fazer isso, os administradores da Contoso criam um projeto do Azure DevOps, importam o código e, em seguida, configuram os pipelines de build e lançamento.
 
-1. Na conta do Azure DevOps da Contoso, eles criam um projeto (**ContosoSmartHotelRefactor**) e selecionam o **Git** para controle de versão.
+1. Na conta contoso DevOps do Azure, eles criam um novo projeto (**ContosoSmartHotelRefactor**) e, em seguida, selecionam **git** para controle de versão.
 
     ![Novo Projeto](./media/contoso-migration-refactor-web-app-sql/vsts1.png)
 
@@ -285,9 +287,9 @@ Agora, os administradores da Contoso configuram o Azure DevOps para executar o p
 
      ![Salvar e enfileirar](./media/contoso-migration-refactor-web-app-sql/pipeline4.png)
 
-5. Isso inicia o primeiro build. Eles selecionam o número da compilação para assistir ao processo. Após a conclusão, eles podem ver os comentários do processo e selecionar **Artefatos** para examinar os resultados do build.
+5. Isso inicia o primeiro build. Eles selecionam o número da compilação para assistir ao processo. Após a conclusão, eles poderão ver os comentários do processo e, em seguida, selecionar **artefatos** para examinar os resultados da compilação.
 
-    ![Examinar](./media/contoso-migration-refactor-web-app-sql/pipeline5.png)
+    ![Revisão](./media/contoso-migration-refactor-web-app-sql/pipeline5.png)
 
 6. A pasta **Destino** contém os resultados do build.
 
@@ -316,9 +318,9 @@ Agora, os administradores da Contoso configuram o Azure DevOps para executar o p
 
      ![Selecionar o nome do serviço de aplicativo](./media/contoso-migration-refactor-web-app-sql/pipeline11.png)
 
-12. No pipeline > **Artefatos**, eles selecionam **+ Adicionar um artefato** e selecionam compilar com o pipeline **ContosoSmarthotel360Refactor**.
+12. No pipeline > **artefatos**, eles selecionam **+ adicionam um artefato**e, em seguida, selecionam para compilar com o pipeline **ContosoSmarthotel360Refactor** .
 
-     ![Crie](./media/contoso-migration-refactor-web-app-sql/pipeline12.png)
+     ![Build](./media/contoso-migration-refactor-web-app-sql/pipeline12.png)
 
 13. Eles selecionam o raio do artefato verificado, para ativar o gatilho de implantação contínua.
 
@@ -328,11 +330,11 @@ Agora, os administradores da Contoso configuram o Azure DevOps para executar o p
 
     ![Implantação contínua habilitada](./media/contoso-migration-refactor-web-app-sql/pipeline14.png)
 
-15. Agora, eles retornam ao Estágio 1 trabalho, I tarefa e selecionam **Implantar o Serviço de Aplicativo do Azure**.
+15. Agora, eles se movem de volta para o trabalho do estágio 1, tarefas e, em seguida, selecionamos **implantar o serviço de Azure app**.
 
     ![Implantar o Serviço de Aplicativo do Azure](./media/contoso-migration-refactor-web-app-sql/pipeline15.png)
 
-16. Em **Selecionar um arquivo ou pasta**, localizam o arquivo **SmartHotel.Registration.Wcf.zip** que estava sendo criado durante o build e selecionam **Salvar**.
+16. Em **selecionar um arquivo ou pasta**, eles localizam o arquivo **SmartHotel. Registration. WCF. zip** que estava criando durante a compilação e, em seguida, selecionamos **salvar**.
 
     ![Salve o WCF](./media/contoso-migration-refactor-web-app-sql/pipeline16.png)
 
@@ -348,7 +350,7 @@ Agora, os administradores da Contoso configuram o Azure DevOps para executar o p
 
      ![Resumo de pipeline de versão](./media/contoso-migration-refactor-web-app-sql/pipeline19.png)
 
-20. Eles voltam para **Build** e selecionam **Gatilhos** > **Habilitar a integração contínua**. Isso permite que o pipeline, quando as alterações são confirmadas no código, ocorra a criação e liberação completas.
+20. Eles voltam para o **Build**e, em seguida, selecionam **gatilhos** > **habilitam a integração contínua**. Isso permite que o pipeline, quando as alterações são confirmadas no código, ocorra a criação e liberação completas.
 
     ![Ativar integração contínua](./media/contoso-migration-refactor-web-app-sql/pipeline20.png)
 

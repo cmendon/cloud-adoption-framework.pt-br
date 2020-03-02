@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 8a807bfc20289339221056b9b0798260aaddbfd8
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: c4d5e151d5ea4badd3c6c5fab25f4a6be9ee60c5
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807301"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222821"
 ---
 # <a name="scale-a-migration-to-azure"></a>Dimensionar uma migração para o Azure
 
@@ -102,7 +102,7 @@ Problemas de segurança | S/N | Há problemas conhecidos de segurança com o apl
 Como parte do processo de avaliação, a Contoso precisa identificar quais aplicativos estão em execução, e descobrir as dependências e as conexões entre os servidores de aplicativo. A Contoso mapeia o ambiente em etapas.
 
 1. Como uma primeira etapa, a Contoso descobre como os servidores e máquinas são mapeados para aplicativos individuais, locais de rede e grupos.
-2. Com essas informações, a Contoso pode identificar claramente os aplicativos que têm algumas dependências e, portanto, são adequados para uma migração rápida.
+2. Com essas informações, a Contoso pode identificar claramente os aplicativos que têm poucas dependências e são adequados para uma migração rápida.
 3. A Contoso pode usar o mapeamento para ajudá-los a identificar as dependências e as comunicações mais complexas entre servidores de aplicativos. A Contoso pode agrupar esses servidores logicamente para representar aplicativos e planejar uma estratégia de migração com base nesses grupos.
 
 Com o mapeamento concluído, a Contoso pode garantir que todos os componentes do aplicativo sejam identificados e considerados ao criar o plano de migração.
@@ -206,12 +206,12 @@ Os dados também devem ser considerados, especialmente com o volume de bancos de
 
 ### <a name="evaluate-migration-tools"></a>Avaliar as ferramentas de migração
 
-A Contoso está usando principalmente algumas ferramentas e serviços do Azure para a migração:
+A Contoso está usando principalmente alguns serviços e ferramentas do Azure para a migração:
 
 - [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview): orquestra a recuperação de desastres e migra VMs locais para o Azure.
 - [Serviço de Migração de Banco de Dados do Azure](https://docs.microsoft.com/azure/dms/dms-overview): migra os bancos de dados locais, como SQL Server, MySQL e Oracle, para o Azure.
 
-#### <a name="azure-site-recovery"></a>Recuperação de Site do Azure
+#### <a name="azure-site-recovery"></a>Azure Site Recovery
 
 O Azure Site Recovery é o principal serviço do Azure para orquestrar a recuperação de desastres e a migração de dentro do Azure e de sites locais para o Azure.
 
@@ -269,7 +269,7 @@ A Contoso tomou a decisão de usar Managed Disks para todas as VMs implantadas n
 
 <!--markdownlint-enable MD033 -->
 
-#### <a name="azure-database-migration-service"></a>Serviço de migração de banco de dados do Azure
+#### <a name="azure-database-migration-service"></a>Serviço de Migração de Banco de Dados do Azure
 
 O Serviço de Migração de Banco de Dados do Azure é um serviço totalmente gerenciado que habilita migrações contínuas de várias fontes de banco de dados para plataformas de dados do Azure com um tempo de inatividade mínimo.
 
@@ -310,7 +310,7 @@ Para aproveitar ao máximo seu investimento na nuvem, a Contoso tirará proveito
 - O Gerenciamento de Custos pode otimizar os gastos na nuvem identificando os recursos subutilizados que, posteriormente, a Contoso pode gerenciar e ajustar.
 - [Saiba mais](https://docs.microsoft.com/azure/cost-management/overview) sobre o Gerenciamento de Custos do Azure.
 
-![Gerenciamento de custos](./media/contoso-migration-scale/cost-management.png)
+![Gerenciamento de custo](./media/contoso-migration-scale/cost-management.png)
 
 ### <a name="native-tools"></a>Ferramentas nativas
 

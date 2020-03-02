@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: f2a589844b4564bb787db0efe4d796b7e5576309
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 13fef27afdc4ca7622924f3890b72d1847e833c0
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170030"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222631"
 ---
 # <a name="approaches-to-digital-estate-planning"></a>Abordagens para planejamento de propriedade digital
 
@@ -23,7 +23,7 @@ O planejamento de imóveis pode usar várias formas dependendo dos resultados de
 
 A abordagem de avaliação de cima para baixo avalia os aspectos de segurança. A segurança inclui a categorização de dados (alto, médio ou baixo impacto nos negócios), conformidade, soberania e requisitos de risco de segurança. Essa abordagem avalia a complexidade da arquitetura de alto nível. Ele avalia aspectos como autenticação, estrutura de dados, requisitos de latência, dependências e expectativa de vida do aplicativo.
 
-A abordagem de cima para baixo também mede os requisitos operacionais do aplicativo, como níveis de serviço, integração, janelas de manutenção, monitoramento e insight. Quando todos esses aspectos foram analisados e levados em consideração, a pontuação resultante que reflete a dificuldade relativa de migrar esse aplicativo para cada uma das plataformas de nuvem: IaaS, PaaS e SaaS.
+A abordagem de cima para baixo também mede os requisitos operacionais do aplicativo, como níveis de serviço, integração, janelas de manutenção, monitoramento e insight. Quando esses aspectos foram analisados e considerados, a pontuação resultante reflete a dificuldade relativa de migrar esse aplicativo para cada uma das plataformas de nuvem: IaaS, PaaS e SaaS.
 
 Além disso, a avaliação de cima para baixo avalia os benefícios financeiros do aplicativo, como eficiência operacional, TCO, retorno sobre o investimento e outras métricas financeiras apropriadas. A avaliação também examina o sazonalidade do aplicativo (por exemplo, há ocasiões do ano em que a demanda é pico?) e carga de computação geral.
 
@@ -56,7 +56,7 @@ Geralmente, essa abordagem pressupõe um modelo de implantação IaaS como linha
 > [!TIP]
 > Essa abordagem incremental permite o planejamento simplificado e os resultados acelerados. É importante que todas as partes envolvidas entendam a abordagem da tomada de decisão atrasada. É igualmente importante que as suposições feitas em cada estágio sejam documentadas para evitar a perda de detalhes.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Depois que uma abordagem é selecionada, o inventário pode ser coletado.
 

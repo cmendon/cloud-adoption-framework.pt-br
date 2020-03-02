@@ -7,12 +7,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: fd0d65910b3a62170ce1f0d50ae73af1d4c99899
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: cef5746f8ab3368150ddcc328a8d929853dfb253
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76803833"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222685"
 ---
 # <a name="best-practices-for-securing-and-managing-workloads-migrated-to-azure"></a>Melhores práticas para proteger e gerenciar cargas de trabalho migradas para o Azure
 
@@ -132,7 +132,7 @@ O Azure fornece algumas soluções:
 - **Firewall do aplicativo Web:** Um recurso do gateway de Aplicativo Azure que fornece proteção centralizada para aplicativos Web.
   - Ele protege aplicativos Web sem a necessidade de modificações no código de back-end.
   - Ele protege vários aplicativos Web ao mesmo tempo por trás de um gateway de aplicativo.
-  - Um firewall do aplicativo Web pode ser monitorado com o Azure Monitor e está integrado à Central de Segurança do Azure.
+  - Um firewall do aplicativo Web pode ser monitorado usando Azure Monitor e é integrado à central de segurança do Azure.
 
 ![Proteger aplicativos Web](./media/migrate-best-practices-security-management/web-apps.png)
 *Azure Key Vault*
@@ -152,7 +152,7 @@ O Azure fornece algumas soluções:
 - O RBAC atribui permissões de acesso para entidades de segurança. As entidades de segurança representam usuários, grupos (um conjunto de usuários), entidades de serviço (identidade usada por aplicativos e serviços) e identidades gerenciadas (uma identidade do Azure Active Directory gerenciada automaticamente pelo Azure).
 - O RBAC pode atribuir funções a entidades de segurança, como proprietário, colaborador e leitor, e definições de função (uma coleção de permissões) que definem as operações que podem ser executadas pelas funções.
 - O RBAC também pode definir escopos que definem o limite de uma função. O escopo pode ser definido em vários níveis, incluindo um grupo de gerenciamento, uma assinatura, um grupo de recursos ou um recurso.
-- Garanta que os administradores com acesso do Azure só possam acessar os recursos que você deseja permitir. Se as funções predefinidas no Azure não forem suficientemente granulares, você poderá criar funções personalizadas para separar e limitar as permissões de acesso.
+- Verifique se os administradores com acesso do Azure podem acessar apenas os recursos que você deseja permitir. Se as funções predefinidas no Azure não forem suficientemente granulares, você poderá criar funções personalizadas para separar e limitar as permissões de acesso.
 
 ![Controle de acesso](./media/migrate-best-practices-security-management/subscription.png)
 *Controle de acesso – IAM*
@@ -344,7 +344,7 @@ Para cargas de trabalho em execução em VMs IaaS do Azure, considere estas solu
 - **Backup do Azure:** Fornece backups consistentes com o aplicativo para VMs Windows e Linux do Azure.
 - **Instantâneos de armazenamento:** Usa instantâneos do armazenamento de BLOBs.
 
-#### <a name="azure-backup"></a>Backup do Azure
+#### <a name="azure-backup"></a>Serviço de Backup do Azure
 
 O Backup do Azure cria pontos de recuperação de dados que são armazenados no armazenamento do Azure. O Backup do Azure pode fazer backup de discos de VM do Azure e arquivos do Azure (versão prévia). Os Arquivos do Azure oferecem compartilhamentos de arquivos na nuvem, que podem ser acessados por meio de SMB.
 
@@ -389,7 +389,7 @@ Além disso, você pode usar soluções de terceiros para fazer backup de VMs do
 
 Além de proteger dados, o planejamento de BCDR precisa considerar como manter os aplicativos e cargas de trabalho disponíveis em caso de desastre. Para cargas de trabalho em execução em VMs IaaS do Azure e no armazenamento do Azure, considere estas soluções:
 
-#### <a name="azure-site-recovery"></a>Recuperação de Site do Azure
+#### <a name="azure-site-recovery"></a>Azure Site Recovery
 
 O Azure Site Recovery é o principal serviço do Azure para fazer com que as VMs do Azure possam ser colocadas online e os aplicativos VM possam ser disponibilizados quando ocorrem paralisações.
 
@@ -405,13 +405,13 @@ O Site Recovery replica as VMs de uma região primária para uma região secund�
 
 ## <a name="best-practice-use-managed-disks-and-availability-sets"></a>Prática recomendada: usar discos gerenciados e conjuntos de disponibilidade
 
-O Azure usa conjuntos de disponibilidade para agrupar as VMs logicamente e isolar as VMs em um conjunto de outros recursos. As VMs no conjunto de disponibilidade são distribuídas entre vários domínios de falha com subsistemas separados, para proteção contra falhas locais, e também são distribuídas entre vários domínios de atualização, de modo que nem todas as VMs em um conjunto reiniciam ao mesmo tempo.
+O Azure usa conjuntos de disponibilidade para agrupar as VMs logicamente e isolar as VMs em um conjunto de outros recursos. As VMs em um conjunto de disponibilidade são distribuídas entre vários domínios de falha com subsistemas separados, o que protege contra falhas locais. As VMs também são distribuídas entre vários domínios de atualização, impedindo uma reinicialização simultânea de todas as VMs no conjunto.
 
-Os discos gerenciados do Azure simplificam o gerenciamento de discos para VMs IaaS do Azure por meio do gerenciamento de contas de armazenamento associadas aos discos de VM.
+Os discos gerenciados do Azure simplificam o gerenciamento de disco para máquinas virtuais do Azure gerenciando as contas de armazenamento associadas aos discos de VM.
 
-- Recomendamos que você use discos gerenciados sempre que possível. Você só precisa especificar o tipo de armazenamento que deseja usar e o tamanho do disco necessário, em seguida, o Azure cria e gerencia o disco para você em segundo plano.
-- Você pode converter discos existentes em gerenciados.
-- Você deve criar VMs em conjuntos de disponibilidade para ter alta resiliência e disponibilidade. Quando ocorrem paralisações, planejadas ou não, os conjuntos de disponibilidade fazem com que pelo menos uma das VMs no conjunto permaneça disponível.
+- Use discos gerenciados sempre que possível. Você só precisa especificar o tipo de armazenamento que deseja usar e o tamanho do disco necessário, e o Azure cria e gerencia o disco para você.
+- Você pode converter discos existentes em discos gerenciados.
+- Você deve criar VMs em conjuntos de disponibilidade para ter alta resiliência e disponibilidade. Quando ocorrem interrupções planejadas ou não planejadas, os conjuntos de disponibilidade garantem que pelo menos uma VM no conjunto permaneça disponível.
 
 ![Discos gerenciados](./media/migrate-best-practices-security-management/managed-disks.png)
 *Discos gerenciados*
@@ -548,7 +548,7 @@ O Azure tem uma solução de controle de alterações na Automação do Azure:
 - [Saiba mais sobre](https://docs.microsoft.com/azure/automation/automation-change-tracking) Controle de Alterações.
 - [Saiba mais sobre](https://docs.microsoft.com/azure/automation/automation-intro) recursos da Automação do Azure.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Examine outras melhores práticas:
 

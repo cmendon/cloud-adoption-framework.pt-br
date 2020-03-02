@@ -3,16 +3,16 @@ title: Iniciar uma jornada de migração na nuvem no Azure
 description: Obtenha orientação abrangente para a transição de cargas de trabalho de aplicativos herdados para a nuvem usando tecnologias inovadoras baseadas em nuvem.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 10/10/2019
+ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: eeb7cc566a373296fdf290dced4c82e038c11d17
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: ef04a867614c6597268269421ef1d341f5252f3b
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170181"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223983"
 ---
 # <a name="begin-a-cloud-migration-journey-in-azure"></a>Iniciar uma jornada de migração na nuvem no Azure
 
@@ -22,7 +22,7 @@ Use o Microsoft Cloud a estrutura de adoção do Azure para iniciar uma jornada 
 
 A estrutura de adoção de nuvem ajuda os clientes a empreender uma jornada de adoção de nuvem simplificada. Essa estrutura contém informações detalhadas sobre uma jornada de adoção de nuvem de ponta a ponta, começando com resultados de negócios direcionados e, em seguida, alinhando a preparação e as avaliações da nuvem com os objetivos de negócios claramente definidos. Esses resultados são obtidos por meio de um caminho definido para a adoção da nuvem. Com a adoção baseada em migração, o caminho definido se concentra em grande parte da migração de cargas de trabalho locais para a nuvem. Às vezes, essa jornada inclui modernização de cargas de trabalho para aumentar o retorno do investimento do esforço de migração.
 
-Essa estrutura foi projetada principalmente para arquitetos de nuvem e as equipes de estratégia de nuvem que lideram os esforços de adoção de nuvem. No entanto, muitos tópicos nessa estrutura são relevantes para outras funções em toda a empresa e ti. Os arquitetos de nuvem geralmente servem como facilitadores para envolver cada uma das funções relevantes. Este resumo executivo foi projetado para preparar as várias funções antes de facilitar as conversas.
+Essa estrutura foi projetada principalmente para arquitetos de nuvem e as equipes de estratégia de nuvem que lideram os esforços de adoção de nuvem. No entanto, muitos assuntos nessa estrutura são relevantes para outras funções em toda a empresa e ti. Os arquitetos de nuvem geralmente servem como facilitadores para envolver cada uma das funções relevantes. Este resumo executivo foi projetado para preparar as várias funções antes de facilitar as conversas.
 
 > [!NOTE]
 > Atualmente, essa diretriz é uma visualização pública. A terminologia, as abordagens e as diretrizes estão sendo totalmente testadas com clientes, parceiros e equipes da Microsoft durante essa visualização. Como tal, o Sumário e a orientação podem mudar um pouco ao longo do tempo.
@@ -55,7 +55,7 @@ Essa abordagem consiste em duas metodologias ou áreas de foco: estratégia de n
 
 ## <a name="cloud-implementation"></a>Implementação de nuvem
 
-A implementação de nuvem é um processo iterativo para migrar e modernizar o espaço digital em alinhamento com resultados de negócios direcionados e controles de gerenciamento de alterações. Durante cada iteração, as cargas de trabalho são migradas ou modernizadas em alinhamento com a estratégia e o plano. As decisões sobre IaaS, PaaS ou híbrido são feitas durante a fase avaliar para controle e execução otimizados. Essas decisões orientarão as ferramentas usadas durante a fase de migração. Esse modelo pode ser usado com a estratégia e o planejamento mínimos. No entanto, para garantir o maior retorno de negócios, é altamente recomendável que a ti e a empresa se alinhem em uma estratégia clara e planejem o guia das atividades de implementação.
+A implementação de nuvem é um processo iterativo para migrar e modernizar o espaço digital, alinhado com resultados de negócios direcionados e controles de gerenciamento de alterações. Durante cada iteração, as cargas de trabalho são migradas ou modernizadas em alinhamento com a estratégia e o plano. As decisões relacionadas a IaaS, PaaS ou híbrido são feitas durante a fase de avaliação da [metodologia de migração](../migrate/index.md) para otimizar o controle e a execução. Essas decisões orientarão as ferramentas usadas durante cada iteração da fase de migração na mesma metodologia. Esse modelo pode ser usado com a estratégia e o planejamento mínimos. No entanto, para garantir o maior retorno de negócios, a ti e a empresa devem alinhar uma estratégia clara e planejar as atividades de implementação.
 
 ![Metodologia de implementação na nuvem da estrutura de adoção da nuvem](../_images/operational-transformation-migrate.png)
 
@@ -124,7 +124,7 @@ As tecnologias migradas para a nuvem se expandem constantemente à medida que os
 
 - Windows e SQL Server
 - Bancos de dados Linux e OSS (software livre)
-- Bancos de dados não estrutura/NoSQL
+- Bancos de dados não estruturados e NoSQL
 - SAP no Azure
 - Análise (data warehouse, Data Lake)
 
