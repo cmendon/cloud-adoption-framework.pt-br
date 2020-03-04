@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: c81096576934aa55bd0381e7ac26dd8666b827ea
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: bc80c33569cdb0980885ebba9c87d52e0aa87b7d
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77707978"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222588"
 ---
 # <a name="encryption-decision-guide"></a>Guia de decisão de criptografia
 
@@ -52,9 +52,9 @@ Usar um sistema de gerenciamento de chaves nativo da nuvem inclui estas suposiç
 
 ### <a name="bring-your-own-key"></a>Bring your own key
 
-Com uma abordagem do tipo "Bring Your Own Key", você gera chaves em hardware HSM dedicado em seu ambiente local, então transfere com segurança essas chaves para um sistema de gerenciamento baseado em nuvem como o Azure Key Vault para uso com os recursos hospedados na nuvem.
+Com uma abordagem do tipo "Bring Your Own Key", você gera chaves em hardware HSM dedicado em seu ambiente local, então transfere com segurança essas chaves para um sistema de gerenciamento baseado em nuvem, como o Azure Key Vault, para uso com os recursos hospedados na nuvem.
 
-**Pressuposições sobre "Bring Your Own Key":** Gerar chaves localmente e usá-las com um sistema de gerenciamento de chaves baseado em nuvem inclui estas suposições:
+**Suposições "Bring Your Own Key":** Gerar chaves localmente e usá-las com um sistema de gerenciamento de chaves baseado em nuvem inclui estas suposições:
 
 - Você confia a segurança subjacente e a infraestrutura de controle de acesso da plataforma de nuvem para hospedar e usar suas chaves e segredos.
 - Seus aplicativos ou serviços hospedados na nuvem são capazes de acessar e usar chaves e segredos de modo robusto e seguro.

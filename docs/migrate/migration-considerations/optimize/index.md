@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 87235584bc9da0f1a9e5124408b587eec864af48
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: aed8ba9d97cfbc236d378066569b466302b66239
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76801878"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78225447"
 ---
 # <a name="optimize-migrated-workloads"></a>Otimizar cargas de trabalho migradas
 
@@ -22,7 +22,7 @@ O objetivo da otimização é preparar uma carga de trabalho migrada para a prom
 
 ## <a name="definition-of-done"></a>Definição de *concluído*
 
-O processo de otimização está concluído quando uma carga de trabalho foi corretamente configurada, dimensionada e está sendo usada na produção.
+O processo de otimização é concluído quando uma carga de trabalho foi corretamente configurada, dimensionada e implantada para produção.
 
 ## <a name="accountability-during-optimization"></a>Responsabilidade durante a otimização
 

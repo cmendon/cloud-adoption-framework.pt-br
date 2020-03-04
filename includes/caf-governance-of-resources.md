@@ -29,7 +29,7 @@ Para obter informações sobre como definir as políticas personalizadas, veja a
 
 As políticas do Azure podem ser atribuídas no nível do grupo de recursos, da assinatura e do grupo de gerenciamento, assinatura e podem ser incluídas nas definições do [Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints/overview). Embora os requisitos de política definidos neste MVP de governança se apliquem a todas as assinaturas atuais, é muito provável que as futuras implantações exijam exceções ou políticas alternativas. Como resultado, a atribuição de política usando grupos de gerenciamento, com todas as assinaturas filho herdando essas atribuições, poderá não ser flexível o suficiente para dar suporte a esses cenários.
 
-O Azure Blueprints permite a atribuição consistente de política e funções, a aplicação de modelos do Resource Manager e a implantação de grupos de recursos em várias assinaturas. Como ocorre com definições de política, definições de blueprint são salvas em grupos de gerenciamento ou em assinaturas e estão disponíveis por meio de herança para qualquer filho na hierarquia de grupo de gerenciamento.
+O Azure Blueprints permite a atribuição consistente de política e funções, a aplicação de modelos do Resource Manager e a implantação de grupos de recursos em várias assinaturas. Assim como as definições de política, as definições de blueprint são salvas em grupos de gerenciamento ou assinaturas. As definições de política estão disponíveis por meio de herança para um filho na hierarquia do grupo de gerenciamento.
 
 A equipe de governança de nuvem decidiu que a imposição de atribuições obrigatórias do Azure Policy e de RBAC entre assinaturas será implementada por meio do Azure Blueprints e dos artefatos associados:
 

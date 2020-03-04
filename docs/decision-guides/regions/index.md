@@ -8,19 +8,19 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: d8545d000d817aa8d6bcaa40a67a157ca5e57669
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 00dfa6c1caed189d9d9b1d27525344b5101c2af0
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77708488"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222597"
 ---
 # <a name="azure-regions"></a>Regiões do Azure
 
 O Azure é composto por muitas regiões ao redor do mundo. Cada [região do Azure](https://azure.microsoft.com/global-infrastructure/regions) tem características específicas que fazem com que a escolha da região a ser usada seja uma etapa extremamente importante.
 
 1. **Serviços disponíveis:** Os serviços implantados em cada região diferem com base em vários fatores. Selecione uma região para sua carga de trabalho que contenha o serviço desejado. Para obter mais informações sobre os serviços disponíveis em cada região, confira [Produtos disponíveis por região](https://azure.microsoft.com/global-infrastructure/services).
-1. **Capacidade:** cada região tem uma capacidade máxima. Embora essa questão esteja geralmente dissociada do usuário final, ela pode afetar quais tipos de assinaturas podem implantar quais tipos de serviços e em quais circunstâncias. Isso é diferente de cotas de assinatura. Se você estiver planejando uma migração maciça de data center para o Azure, convém consultar sua equipe de campo local ou gerente de conta do Azure para confirmar se você pode implantar na escala necessária.
+1. **Capacidade:** cada região tem uma capacidade máxima. Embora essa questão esteja geralmente dissociada do usuário final, ela pode afetar quais tipos de assinaturas podem implantar quais tipos de serviços e em quais circunstâncias. Isso é diferente de cotas de assinatura. Se você estiver planejando uma migração em massa de datacenter para o Azure, será conveniente consultar sua equipe de campo local ou gerente de conta do Azure para confirmar se é possível implantar na escala necessária.
 1. **Restrições:** determinadas restrições são inseridas na implantação de serviços em determinadas regiões. Por exemplo, algumas regiões só estão disponíveis como um destino de backup ou de failover. Outras restrições importantes a serem observadas são os [requisitos de soberania de dados](https://azure.microsoft.com/global-infrastructure/geographies).
 1. **Soberania:** Determinadas regiões são dedicadas a entidades soberanas específicas. Embora todas as regiões sejam do Azure, essas regiões soberanas são completamente isoladas do restante do Azure, não são necessariamente gerenciadas pela Microsoft e podem ser restritas a determinados tipos de clientes. Essas regiões soberanas são:
     1. [Azure China:](https://azure.microsoft.com/global-infrastructure/china)

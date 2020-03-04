@@ -7,13 +7,15 @@ ms.date: 12/27/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 04058077ed9fc739a063e75d0da4effb4c784436
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: b38408033231a4ac1d8debe889117c2f5220c676
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171371"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223669"
 ---
+<!-- cspell:ignore nanra njray dbspaces dbextents VSAM RACF LPARS ASSGN DLBL EXTENT LIBDEF EXEC IPLs -->
+
 # <a name="mainframe-migration-overview"></a>Visão geral da migração de mainframe
 
 Muitas empresas e organizações se beneficiam de mover algumas ou todas as suas cargas de trabalho de mainframe, aplicativos e bancos de dados para a nuvem. O Azure fornece recursos semelhantes a mainframe em escala de nuvem sem muitas das desvantagens associadas a mainframes.
@@ -34,13 +36,13 @@ Este guia ajuda as organizações de TI a iniciar a conversa de migração. Voc�
 
 No final de década de 50, os mainframes foram projetados como servidores de expansão para executar grandes volumes de transações online e processamento em lotes. Por isso, mainframes têm software para formulários de transações online (às vezes chamado de telas verdes) e sistemas de e/s de alto desempenho para as execuções em lote de processamento.
 
-Os mainframes têm uma reputação de alta confiabilidade e disponibilidade e são conhecidos por sua capacidade de executar trabalhos de lote e grandes transações online. Uma transação resulta de uma parte do processamento iniciado por uma única solicitação, normalmente de um usuário em um terminal. As transações também podem vir de várias fontes, incluindo páginas da web, estações de trabalho remotas e aplicativos de outros sistemas de informações. Uma transação também pode ser disparada automaticamente em um horário predefinido, como mostra a figura a seguir.
+Os mainframes têm uma reputação de alta confiabilidade e disponibilidade e são conhecidos por sua capacidade de executar grandes trabalhos em lote e transações online. Uma transação resulta de uma parte do processamento iniciado por uma única solicitação, normalmente de um usuário em um terminal. As transações também podem vir de várias fontes, incluindo páginas da web, estações de trabalho remotas e aplicativos de outros sistemas de informações. Uma transação também pode ser disparada automaticamente em um horário predefinido, como mostra a figura a seguir.
 
 ![Componentes em uma arquitetura típica de mainframe IBM](../../_images/mainframe-migration/mainframe-architecture.png)
 
 Uma arquitetura típica de mainframe IBM inclui os seguintes componentes comuns:
 
-- **Sistemas de front-end:** Os usuários podem iniciar transações a partir de terminais, páginas da web ou estações de trabalho remotas. Aplicativos de mainframe geralmente têm interfaces do usuário personalizada que podem ser preservadas após a migração para o Azure. Emuladores de terminal ainda são usados para acessar os aplicativos de mainframe e também são chamados de terminais de tela de verde.
+- **Sistemas de front-end:** Os usuários podem iniciar transações a partir de terminais, páginas da web ou estações de trabalho remotas. Aplicativos de mainframe geralmente têm interfaces do usuário personalizada que podem ser preservadas após a migração para o Azure. Emuladores de terminal (também conhecidos como "terminais de tela verde") ainda são usados para acessar os aplicativos de mainframe.
 
 - **Camada de aplicativo:** Mainframes geralmente incluem um sistema de controle de informações do cliente (CICS), um conjunto de gerenciamento de transações potenciais para o mainframe do IBM Z/OS que muitas vezes é usado com o Sistema de Gerenciamento de Informações da IBM (IMS), um gerenciador de transação baseado em mensagem. Os sistemas de lote manipulam atualizações de alta taxa de transferência de dados para grandes volumes de registros de conta.
 

@@ -3,32 +3,24 @@ title: Guia de introdução à migração do Azure
 description: Saiba como migrar efetivamente os serviços da sua organização para o Azure com orientação passo a passo.
 author: matticusau
 ms.author: mlavery
-ms.date: 04/04/2019
+ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 6f5592c93bb78b14a85e37ffa67ffea697a12345
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 4d2bb420609bb703a1f32b0912eb9c17ccabe4e9
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807029"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78225501"
 ---
-::: zone target="docs"
-
 # <a name="azure-migration-guide-before-you-start"></a>Guia de migração do Azure: Antes de começar
 
-::: zone-end
+A [metodologia de migração do Cloud Adoption Framework](../index.md) orienta os leitores por meio de um processo iterativo de migração de uma carga de trabalho ou de uma pequena coleção de cargas de trabalho por versão. Em cada iteração, o processo de avaliar, migrar, otimizar e promover é seguido para garantir que as cargas de trabalho estejam prontas para atender às demandas de produção. Esse processo independente da nuvem pode orientar a migração para um provedor de nuvem.
 
-::: zone target="chromeless"
-
-# <a name="before-you-start"></a>Antes de começar
-
-::: zone-end
-
-Antes fazer a migração dos recursos do Azure, é necessário escolher o método de migração e os recursos que você usará para controlar e proteger seu ambiente. Este guia o orienta por esse processo de decisão.
+Este guia demonstra uma versão simplificada desse processo ao migrar do seu ambiente local para o **Azure**.
 
 ::: zone target="docs"
 
@@ -37,43 +29,25 @@ Antes fazer a migração dos recursos do Azure, é necessário escolher o métod
 
 ::: zone-end
 
-# <a name="overviewtaboverview"></a>[Visão geral](#tab/Overview)
+## <a name="migration-tools"></a>[Ferramentas de migração](#tab/MigrationTools)
 
-Este guia o conduz pelos fundamentos de migrar aplicativos e recursos do ambiente local para o Azure. Ele é projetado para escopos de migração com complexidade mínima. Para determinar a adequação desse guia para migração, veja a guia **Quando usar este guia**.
-
-Quando você faz a migração para o Azure, é possível migrar seus aplicativos no estado em que se encontram usando soluções de máquina virtual baseadas em IaaS (conhecidas como migração do tipo _lift-and-shift_ ou _nova hospedagem_) ou ter a flexibilidade de usar serviços gerenciados e outros recursos nativos de nuvem para modernizar seus aplicativos. Veja a guia **Opções de migração** para obter mais informações sobre essas opções. À medida que você desenvolve sua estratégia de migração, pode considerar:
-
-- Meus aplicativos migrados vão funcionar na nuvem?
-- Qual é a melhor estratégia (em relação a tecnologia, ferramentas e migrações) para meu aplicativo? Veja o [Guia de decisão das ferramentas de migração](../../decision-guides/migrate-decision-guide/index.md) da Microsoft Cloud Adoption Framework para obter mais informações.
-- Como fazer para minimizar o tempo de inatividade durante a migração?
-- Como controlar os custos?
-- Como fazer para acompanhar custos de recurso e faturá-los com precisão?
-- Como fazer para garantir que eles permanecem em conformidade e cumpram os regulamentos?
-- Como atender aos requisitos legais para a soberania de dados em determinados países?
-
-Este guia ajuda a responder a essas perguntas. Ele sugere as tarefas e os recursos a serem considerados quando você se prepara para implantar recursos no Azure, incluindo:
+Este guia é o caminho sugerido para sua primeira migração para o Azure, pois ele mostrará a você a metodologia e as ferramentas nativas de nuvem usadas com mais frequência durante a migração para o Azure. Essas ferramentas são apresentadas nas seguintes páginas:
 
 > [!div class="checklist"]
 >
-> - **Configurar pré-requisitos.** Planeje e prepare-se para a migração.
-> - **Avaliar sua adequação técnica.** Valide a prontidão técnica e a adequação para a migração.
-> - **Gerenciar os custos e a cobrança.** Examine os custos de seus recursos.
-> - **Migrar seus serviços.** Execute a migração real.
-> - **Organizar seus recursos.** Bloqueie recursos críticos para seu sistema e marque recursos para acompanhá-los.
-> - **Otimizar e transformar.** Use a oportunidade de pós-migração para examinar seus recursos.
-> - **Proteger e gerenciar.** Verifique se o seu ambiente está seguro e monitorado corretamente.
+> - **Avalie a adequação técnica de cada carga de trabalho.** Valide a prontidão técnica e a adequação para a migração.
+> - **Migrar seus serviços.** Execute a migração real replicando recursos locais para o Azure.
+> - **Gerenciar os custos e a cobrança.** Entenda as ferramentas necessárias para controlar os custos no Azure.
+> - **Otimize e promova.** Otimize para ter equilíbrio de custo e desempenho antes de promover sua carga de trabalho para a produção.
 > - **Obter assistência.** Obtenha ajuda e suporte durante a migração ou atividades pós-migração.
 
-::: zone target="docs"
+Assume-se que uma zona de destino já foi implantada, em alinhamento com as melhores práticas na [metodologia de preparação do Cloud Adoption Framework](../../ready/index.md).
 
-Para saber mais sobre como organizar e estruturar suas assinaturas, gerenciar seus recursos implantados e estar em conformidade com os requisitos de política corporativa, veja [Governança no Azure](https://docs.microsoft.com/azure/security/governance-in-azure).
+## <a name="when-to-use-this-guide"></a>[Quando usar este guia](#tab/WhenToUseThisGuide)
 
-::: zone-end
+Embora as ferramentas abordadas neste guia deem suporte a uma ampla variedade de cenários de migração, este guia se concentrará nos esforços de escopo limitado com _complexidade mínima_. Para determinar se este guia de migração é adequado para o seu projeto, considere se as seguintes condições se aplicam a você:
 
-# <a name="when-to-use-this-guidetabwhentousethisguide"></a>[Quando usar este guia](#tab/WhenToUseThisGuide)
-
-Embora as ferramentas abordadas neste guia deem suporte a uma ampla variedade de cenários de migração, este guia se concentrará nos esforços de escopo limitado com _complexidade mínima_. Para determinar se este guia de migração é adequado para seu projeto, considere se as seguintes condições se aplicam a você:
-
+- As cargas de trabalho para a migração inicial não são críticas e não contêm dados confidenciais.
 - Você está migrando um ambiente homogêneo.
 - Apenas algumas unidades de negócios precisam se alinhar para concluir a migração.
 - Você não está planejando automatizar toda a migração.
@@ -81,7 +55,7 @@ Embora as ferramentas abordadas neste guia deem suporte a uma ampla variedade de
 - O mapeamento de dependência dos componentes a serem migrados é simples de definir.
 - Seu setor tem os requisitos normativos mínimos relevantes para esta migração.
 
-Se qualquer uma destas condições _não_ for aplicável à sua situação, você deverá considerar o [guia de escopo expandido](../expanded-scope/index.md). Também recomendamos que você solicite assistência de uma de nossas equipes ou parceiros da Microsoft para executar migrações que exigem o guia de escopo expandido. Os clientes que interagem com a Microsoft ou parceiros certificados obtêm mais êxito nesses cenários. Mais informações sobre como solicitar assistência estão disponíveis neste guia.
+Se uma destas condições não for aplicável à sua situação, você deverá considerar o [guia de escopo expandido](../expanded-scope/index.md). Também recomendamos que você solicite assistência de uma de nossas equipes ou parceiros da Microsoft para executar migrações que exigem o guia de escopo expandido. Os clientes que interagem com a Microsoft ou parceiros certificados obtêm mais êxito nesses cenários. Mais informações sobre como solicitar assistência estão disponíveis neste guia.
 
 <!-- markdownlint-enable MD033 -->
 
@@ -92,27 +66,3 @@ Para obter mais informações, consulte:
 - [Guia de escopo expandido](../expanded-scope/index.md)
 
 ::: zone-end
-
-# <a name="migration-optionstabmigrationoptions"></a>[Opções de migração](#tab/MigrationOptions)
-
-Você pode executar uma migração na nuvem de várias maneiras. Algumas são mais adequadas para cenários diferentes do que outras. Conforme você determina como fazer a migração de seu ambiente, considere as seguintes opções ao escolher uma estratégia de migração:
-
-- **Hospedar novamente:** também conhecido como "lift-and-shift", um esforço de nova hospedagem move o estado atual para o Azure, com alterações mínimas à arquitetura geral.
-- **Refatorar:** as opções de PaaS (plataforma como serviço) podem reduzir os custos operacionais associados a muitos aplicativos. Pode ser prudente refatorar ligeiramente um aplicativo para ajustá-lo a um modelo de PaaS. Isso também se refere ao processo de desenvolvimento de aplicativo de refatorar código para permitir que um aplicativo forneça novas oportunidades empresariais.
-- **Recriação da arquitetura:** Alguns aplicativos mais velhos não são compatíveis com provedores de nuvem devido a decisões arquitetônicas tomadas durante a compilação do aplicativo. Nesses casos, o aplicativo pode precisar de uma nova arquitetura como parte da migração.
-- **Recompilar:** em alguns cenários, as alterações necessárias para fazer a migração de um aplicativo podem ser muito grandes para justificar o investimento e a solução deve ser recompilada.
-- **Substituir:** normalmente, as soluções são implementadas usando as melhores tecnologias e técnicas disponíveis no momento. Em alguns casos, aplicativos modernos de SaaS (software como serviço) podem atender a todas as funcionalidades fornecidas pelo aplicativo hospedado. Nesses cenários, uma carga de trabalho poderia ser agendada para substituição futura, deixando de ser considerada como parte da migração.
-
-::: zone target="chromeless"
-
-Esses métodos não são mutuamente excludentes&mdash;por exemplo, embora sua migração inicial possa usar um modelo de **nova hospedagem**, você pode optar por implementar **refatoração** ou **recriação de arquitetura** como parte da fase de otimização após a migração. Isso é revisto na seção **Otimizar e transformar** deste guia.
-
-::: zone-end
-
-::: zone target="docs"
-
-Esses métodos não são mutuamente excludentes&mdash;por exemplo, embora sua migração inicial possa usar um modelo de **nova hospedagem**, você pode optar por implementar **refatoração** ou **recriação de arquitetura** como parte da fase de otimização após a migração. Isso é revisto na seção [Otimizar e transformar](./optimize-and-transform.md) deste guia.
-
-::: zone-end
-
-![Infográfico das opções de migração](../../_images/migrate/migration-options.png)

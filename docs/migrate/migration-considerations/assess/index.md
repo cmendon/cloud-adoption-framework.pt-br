@@ -1,20 +1,20 @@
 ---
-title: Avaliar os ativos antes da migração
-description: Avaliar os ativos antes da migração
+title: Validar suposições de avaliação antes da migração
+description: Validar suposições de avaliação antes da migração
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 76862bfbc4a88d34edb3dddb6281b5c435e6be73
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: e370ef47b27449a3a46965dc309403a09fb3829d
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76802490"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222270"
 ---
-# <a name="assess-assets-prior-to-migration"></a>Avaliar os ativos antes da migração
+# <a name="validate-assessment-assumptions-before-migration"></a>Validar suposições de avaliação antes da migração
 
 Muitas de suas cargas de trabalho existentes são candidatas ideais para a migração na nuvem, mas nem todo ativo é compatível com plataformas de nuvem e nem todas as cargas de trabalho podem se beneficiar de hospedagem na nuvem. O [planejamento de acervo digital](../../../digital-estate/index.md) permite que você gere uma [lista de pendências de migração](../prerequisites/technical-complexity.md#migration-backlog-aligning-business-priorities-and-timing) geral de cargas de trabalho potenciais para migrar. No entanto, esse esforço de planejamento é de alto nível. Ele baseia-se em suposições feitas pela equipe de estratégia de nuvem e não se aprofunda em considerações técnicas.
 
@@ -44,11 +44,14 @@ Além da responsabilidade de alto nível, há ações pelas quais uma pessoa ou 
 - **Prioridade empresarial.** A equipe compreende a finalidade para migrar essa carga de trabalho, incluindo qualquer impacto desejado aos negócios.
   - Um membro da equipe de estratégia de nuvem deve assumir a responsabilidade final por essa atividade sob a orientação da equipe de adoção da nuvem.
 - **Alinhamento de stakeholder.** A equipe alinha expectativas e prioridades com os stakeholders internos, identificando os critérios de sucesso para a migração. Como é o sucesso após a migração?
+- **Racionalização refinada.** Avalie as suposições iniciais sobre a racionalização. Uma [abordagem de racionalização](../../../digital-estate/rationalize.md) diferente deve ser usada para migrar esta carga de trabalho específica?
+- **Decisões de modernização.** Independentemente da decisão de racionalização, os vários ativos na carga de trabalho devem ser modernizados para aproveitar as soluções baseadas em PaaS?
 - **Custo.** O custo da arquitetura de destino foi estimado e o orçamento geral foi ajustado.
 - **Suporte à migração.** A equipe decidiu como o trabalho técnico da migração será concluído, incluindo decisões sobre o Suporte da Microsoft ou do parceiro.
 - **Avaliação.** A compatibilidade e as dependências da carga de trabalho são avaliadas.
   - Essa atividade deve ser atribuída a um especialista que esteja familiarizado com a arquitetura e as operações da carga de trabalho candidata.
 - **Arquitetar.** A equipe chegou a um acordo quanto à arquitetura do estado final para a carga de trabalho migrada.
+- **Ferramentas de migração.** Dependendo das abordagens de modernização e arquitetura, uma variedade de ferramentas de migração poderia ser usada para automatizar a migração. Com base na arquitetura proposta, essa migração usará as melhores [ferramentas de migração](../../../decision-guides/migrate-decision-guide/index.md)?
 - **Alinhamento da lista de pendências.** A equipe de adoção de nuvem examina os requisitos e compromete-se com a migração da carga de trabalho candidata. Depois de comprometer-se, a lista de pendências de versão e a lista de pendências de iteração devem ser atualizadas adequadamente.
 - **Estrutura de detalhamento de trabalho ou agenda de work-back.** A equipe estabelece uma agenda dos principais marcos identificando metas de prazo de conclusão dos processos de planejar, implementar e examinar.
 - **Aprovação final.** Qualquer aprovador necessário examinou o plano e aprovou a abordagem para fazer a migração do ativo.

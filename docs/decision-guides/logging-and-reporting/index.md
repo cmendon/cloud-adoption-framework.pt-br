@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: e87c64be282f91716bdb8d803681c1f0f8a1f722
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: a6229013dcbc56ff39fd4d41a5b81f13b446e625
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77707655"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222773"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>Guia de decisão de registro em log e relatório
 
@@ -44,7 +44,7 @@ Se a organização atualmente não tiver sistemas de registros em log e relatór
 
 Nesse cenário, todos os dados de log são gravados e armazenados na nuvem, enquanto as ferramentas de registro em log e relatórios que processam e descobrem informações para a equipe de TI são fornecidas pela plataforma do Azure e pelo Azure Monitor.
 
-As soluções personalizadas de registro em log baseadas no Azure Monitor podem ser implementadas de forma ad hoc para cada assinatura ou carga de trabalho em implantações experimentais ou menores e são organizadas de maneira centralizada para monitorar os dados de log em toda a abrangência da nuvem.
+As soluções de registro em log personalizadas baseadas no Azure Monitor podem ser implementadas conforme necessário para cada assinatura ou carga de trabalho em implantações menores ou experimentais. Essas soluções são organizadas de modo centralizado para monitorar dados de log em todo o espaço de nuvem.
 
 **Suposições sobre a solução nativa da nuvem:** O uso de um sistema de registro em log e relatório de nuvem nativa supõe o seguinte:
 
