@@ -7,13 +7,13 @@ ms.date: 04/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.custom: readiness
-ms.openlocfilehash: c85f4423ea61346e8692fd19ced0d53242733284
-ms.sourcegitcommit: 35d01bccc8ecbec38f6247a065a309ec691ca810
+ms.custom: readiness, fasttrack-edit
+ms.openlocfilehash: 5e168659c5120ded6b5cfde116699ced61390bdd
+ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77213585"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78337862"
 ---
 # <a name="recommended-naming-and-tagging-conventions"></a>Convenções de nomenclatura e de marcação recomendadas
 
@@ -85,9 +85,11 @@ A lista a seguir fornece prefixos de tipo de recurso do Azure recomendados para 
 | Grupo de segurança de rede              | nsg-                 |
 | Tabela de rotas                         | rota               |
 | Máquina virtual                     | vm                   |
+| Computadores conectados ao arco do Azure        | arcm-                |
 | Conta de armazenamento da VM                  | stvm                 |
 | IP público                           | pip-                 |
-| Balanceador de carga                       | lb-                  |
+| Balanceador de carga (interno)            | ILB                 |
+| Balanceador de carga (externo)            | Elb                 |
 | NIC                                 | nic-                 |
 | Cofre de chaves                           | kV                  |
 | Cluster AKS                         | AKs                 |
@@ -98,6 +100,7 @@ A lista a seguir fornece prefixos de tipo de recurso do Azure recomendados para 
 | Plano do Serviço de Aplicativo                    | intenção                |
 | Aplicativo Web                             | aplicação                 |
 | Aplicativo de funções                        | Func                |
+| Aplicativo lógico                           | lógica               |
 | serviço de nuvem                       | era                 |
 | Servidor de banco de dados SQL do Azure           | SQL                 |
 | Banco de Dados SQL do Azure                  | sqldb-               |
@@ -125,6 +128,9 @@ A lista a seguir fornece prefixos de tipo de recurso do Azure recomendados para 
 | Hub IoT                             | IOT                 |
 | Hubs de notificação                   | NTF                 |
 | Namespace dos hubs de notificação         | ntfns-               |
+| Espaço de Trabalho do Log Analytics             | Façam                 |
+| Application Insights                | appi-                |
+| Cofre dos Serviços de Recuperação             | rsv-                 |
 
 ### <a name="metadata-tags"></a>Marcas de metadados
 

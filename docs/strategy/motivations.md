@@ -1,18 +1,18 @@
 ---
-title: 'Motivações: por que estamos migrando para a nuvem?'
-description: Contabilidade de nuvem e mudança para a nuvem
+title: Por que estamos migrando para a nuvem?
+description: Use a estrutura de adoção de nuvem do Azure para entender as motivações por trás da migração de nuvem que podem ajudar a produzir resultados de negócios mais bem-sucedidos.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 5/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 6c774da4fa90c8a6806021b96d0519edebecfc61
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: cb5de82fab4e5a1c9f93b82ce8c7065d741ca292
+ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76798138"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78337858"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -30,7 +30,7 @@ As transformações de negócios com suporte pela adoção de nuvem podem ser co
 
 | Eventos comerciais críticos | Migração | Inovação |
 |---|---|---|
-| Saída do datacenter<br/><br/>Fusão, aquisição ou divestiture<br/><br/>Redução nas despesas de capital<br/><br/>Fim do suporte para tecnologias de missão crítica<br/><br/>Resposta às alterações de conformidade regulatória<br/><br/>Novos requisitos de soberania de dados<br/><br/>Redução de interrupções e melhoria da estabilidade de ti | Redução de custos<br/><br/>Redução no fornecedor ou na complexidade técnica<br/><br/>Otimização de operações internas<br/><br/>Aumento na agilidade dos negócios<br/><br/>Preparação para novos recursos técnicos<br/><br/>Dimensionamento para atender às demandas de mercado<br/><br/>Dimensionamento para atender às demandas geográficas | Preparação para novos recursos técnicos<br/><br/>Criando novos recursos técnicos<br/><br/>Dimensionamento para atender às demandas de mercado<br/><br/>Dimensionamento para atender às demandas geográficas<br/><br/>Experiências e compromissos do cliente aprimorados<br/><br/>Transformação de produtos ou serviços<br/><br/>Interrupção do mercado com novos produtos ou serviços |
+| Saída do datacenter<br/><br/>Fusão, aquisição ou divestiture<br/><br/>Redução nas despesas de capital<br/><br/>Fim do suporte para tecnologias de missão crítica<br/><br/>Resposta às alterações de conformidade regulatória<br/><br/>Novos requisitos de soberania de dados<br/><br/>Redução de interrupções e melhoria da estabilidade de ti | Economia de custos<br/><br/>Redução no fornecedor ou na complexidade técnica<br/><br/>Otimização de operações internas<br/><br/>Aumento na agilidade dos negócios<br/><br/>Preparação para novos recursos técnicos<br/><br/>Dimensionamento para atender às demandas de mercado<br/><br/>Dimensionamento para atender às demandas geográficas | Preparação para novos recursos técnicos<br/><br/>Criando novos recursos técnicos<br/><br/>Dimensionamento para atender às demandas de mercado<br/><br/>Dimensionamento para atender às demandas geográficas<br/><br/>Experiências e compromissos do cliente aprimorados<br/><br/>Transformação de produtos ou serviços<br/><br/>Interrupção do mercado com novos produtos ou serviços |
 
 ## <a name="classify-your-motivations"></a>Classifique suas motivações
 
@@ -76,7 +76,7 @@ A lista a seguir inclui motivações que fazem com que uma organização de ti s
 - Melhorando as experiências e os compromissos com o cliente.
 - Transformando produtos ou serviços.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Entender os resultados de negócios projetados ajuda a facilitar as conversas que você precisa ter ao documentar suas motivações e as métricas de suporte, alinhadas à sua estratégia de negócios. Em seguida, leia uma visão geral dos resultados de negócios que normalmente estão associados a uma mudança para a nuvem.
 

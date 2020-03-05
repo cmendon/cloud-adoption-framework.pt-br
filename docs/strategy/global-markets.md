@@ -1,18 +1,18 @@
 ---
-title: Entenda o impacto das decisões de mercado globais
-description: Explicação do conceito de mercados globais
+title: Impacto das decisões de mercado globais
+description: Use a estrutura de adoção de nuvem para o Azure para entender como decisões de mercado globais podem afetar a jornada de transformação para a nuvem.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: af3c9d8b155d2c6a5e861e64b6472effbafcbb6d
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 267408d4634bbed9c6bb9c8884e2af395f5df4d9
+ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76798155"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78337829"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -40,7 +40,7 @@ Em um modelo de nuvem, a Internet de mercadoria abre muitas opções novas tamb�
 
 É igualmente importante entender os padrões de uso de usuários externos, como clientes ou parceiros. Assim como os padrões de uso de funcionários, os padrões de uso de usuários externos podem afetar negativamente o desempenho das implantações na nuvem. Quando uma base de usuários grande ou de missão crítica reside em um país estrangeiro, pode ser prudente incluir uma estratégia de implantação global no design da solução geral.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Depois que as decisões globais do mercado forem feitas e comunicadas, a equipe estará pronta para começar a [estabelecer padrões técnicos](../digital-estate/index.md) contra essas métricas.
 O resultado será uma pendência de [transformação ou uma pendência de migração](..//migrate/migration-considerations/prerequisites/technical-complexity.md).

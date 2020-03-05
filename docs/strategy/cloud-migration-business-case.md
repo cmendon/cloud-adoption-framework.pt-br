@@ -1,6 +1,6 @@
 ---
-title: Crie uma justificativa comercial para a migração para a nuvem
-description: Considerações ao criar uma justificativa comercial para a migração para a nuvem.
+title: Justificativa de negócios para migração na nuvem
+description: Use a estrutura de adoção de nuvem do Azure para aprender a começar a desenvolver uma justificativa de negócios para migração na nuvem.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 12/10/2018
@@ -8,14 +8,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: 36306ab50f4158741f1ff4334c43900c2f657920
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 28762d3540124b40bd3db4d7bd431033a1c25b5f
+ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76798580"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78337967"
 ---
-# <a name="build-a-business-justification-for-cloud-migration"></a>Crie uma justificativa comercial para a migração para a nuvem
+# <a name="build-a-business-justification-for-cloud-migration"></a>Criar uma justificativa de negócios para a migração de nuvem
 
 As migrações para a nuvem podem gerar retorno sobre o investimento (ROI) antecipado de iniciativas de transformação de nuvem. Mas desenvolver uma justificativa de negócios clara com custos tangíveis e relevantes e Devoluções pode ser um processo complexo. Este artigo o ajudará a pensar em quais dados você precisa para criar um modelo financeiro que se alinhe aos resultados da migração na nuvem. Primeiro, vamos eliminar alguns mitos sobre a migração para a nuvem, para que sua organização possa evitar alguns erros comuns.
 
@@ -105,7 +105,7 @@ Quando o ROI está abaixo de 20%, considere um exercício de [planejamento de im
 
 Se o ROI ainda estiver desalinhado, procure a ajuda de seu representante de vendas da Microsoft ou [entre em contato com um parceiro experiente](https://azure.microsoft.com/migration/support).
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 > [!div class="nextstepaction"]
 > [Criar um modelo financeiro para a transformação de nuvem](./financial-models.md)

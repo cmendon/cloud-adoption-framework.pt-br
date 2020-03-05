@@ -1,6 +1,6 @@
 ---
-title: Criar um modelo financeiro para a transformação de nuvem
-description: Como criar um modelo financeiro para a transformação de nuvem.
+title: Modelo financeiro para migração na nuvem
+description: Saiba o que você precisa para criar um modelo financeiro que representa precisamente o valor comercial completo de uma transformação de nuvem.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 12/10/2018
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: 49cce1f4ade76350a820dae2f638edeacb380aa6
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: ebc85c5a76d9f53b0117567fc79de51488e9b51d
+ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76798597"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78337983"
 ---
 # <a name="create-a-financial-model-for-cloud-transformation"></a>Criar um modelo financeiro para a transformação de nuvem
 
@@ -104,7 +104,7 @@ As despesas de capital são um pouco diferentes das despesas operacionais. Em ge
 
 Se um ciclo de atualização for aprovado e orçado, a transformação de nuvem poderá ajudar a eliminar esse custo. Se um ciclo de atualização estiver planejado, mas ainda não tiver sido aprovado, a transformação de nuvem poderá evitar uma despesa de capital. Ambas as reduções seriam adicionadas ao Delta de custo.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Saiba mais sobre os modelos de [contabilidade de nuvem](./cloud-accounting.md) .
 
