@@ -1,18 +1,18 @@
 ---
-title: Impacto nos negócios-gerenciamento de nuvem e operações
-description: Impacto nos negócios-gerenciamento de nuvem e operações
+title: Impacto nos negócios no gerenciamento de nuvem
+description: Use a estrutura de adoção de nuvem para o Azure para saber como determinar e entender o impacto que as interrupções ou a degradação do desempenho podem ter em sua empresa.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 3447fcf081af559dd778bf342b0ec95b02fc7562
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: bdd45861141b8fe69f8c13a49bdb6d387acd12ba
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807794"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341174"
 ---
 # <a name="business-impact-in-cloud-management"></a>Impacto nos negócios no gerenciamento de nuvem
 
@@ -56,7 +56,7 @@ Se você estiver usando a [pasta de trabalho do Operations Management](https://r
 
 - Cada empresa deve atualizar cada carga de trabalho no *exemplo* ou *limpar modelo* com o *impacto de tempo/valor* de cada carga de trabalho. Por padrão, o *impacto de tempo/valor* representa as perdas projetadas por hora associadas a uma interrupção da carga de trabalho.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Depois que a empresa tiver definido o impacto, você poderá [alinhar os compromissos](./commitment.md).
 
