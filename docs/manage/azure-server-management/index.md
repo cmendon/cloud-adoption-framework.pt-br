@@ -1,18 +1,18 @@
 ---
 title: Visão geral dos serviços de gerenciamento do servidor do Azure
-description: Introdução aos serviços de gerenciamento do servidor do Azure
+description: Entenda o plano prescritivo fornecido nesta seção do Cloud Adoption Framework para o Azure para implantar serviços de gerenciamento de servidor em seu ambiente.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: d83b84ca63043646591c4e2f5b3e5f82fc53c102
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: c6afdfe05a9245d729b17d1d56f3c64ffa6107bd
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808049"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341667"
 ---
 # <a name="overview-of-azure-server-management-services"></a>Visão geral dos serviços de gerenciamento do servidor do Azure
 

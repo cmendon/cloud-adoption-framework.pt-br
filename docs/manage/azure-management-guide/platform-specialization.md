@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 9c4f18c4c81dce2caa41b1dab5dddc394042f390
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 91d800c3f3575cc16d239106805fdfaef8a29e14
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808168"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223524"
 ---
 # <a name="platform-specialization-for-cloud-management"></a>Especialização de plataforma para gerenciamento de nuvem
 
@@ -55,7 +55,7 @@ A especialização de plataforma consiste em uma execução disciplinada dos qua
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="improve-system-designtabsystemsdesign"></a>[Melhorar o design do sistema](#tab/SystemsDesign)
+## <a name="improve-system-design"></a>[Melhorar o design do sistema](#tab/SystemsDesign)
 
 ::: zone-end
 
@@ -86,7 +86,7 @@ Conforme o design do sistema é aprimorado, retorne a este artigo para encontrar
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="automated-remediationtabautomatedremediation"></a>[Correção automatizada](#tab/AutomatedRemediation)
+## <a name="automated-remediation"></a>[Correção automatizada](#tab/AutomatedRemediation)
 
 ::: zone-end
 
@@ -103,7 +103,7 @@ Para obter orientação sobre correção automatizada, consulte [Alertas e Autom
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="scale-the-solution-with-a-service-catalogtabservicecatalog"></a>[Dimensionar a solução com um catálogo de serviços](#tab/ServiceCatalog)
+## <a name="scale-the-solution-with-a-service-catalog"></a>[Dimensionar a solução com um catálogo de serviços](#tab/ServiceCatalog)
 
 ::: zone-end
 
@@ -119,7 +119,7 @@ Para obter instruções sobre como publicar em um catálogo de serviços, confir
 
 1. No portal do Azure, acesse **Centro de aplicativos gerenciados (versão prévia)** .
 2. No painel **Procurar**, selecione **Aplicativos do Catálogo de Serviços**.
-3. Clique em **Adicionar +** para escolher uma definição de aplicativo no catálogo de serviços de sua empresa.
+3. Selecione **Adicionar +** para escolher uma definição de aplicativo no catálogo de serviços de sua empresa.
 
 Todos os aplicativos gerenciados que você estiver reparando serão exibidos.
 
@@ -153,7 +153,7 @@ Todos os aplicativos gerenciados que você estiver reparando serão exibidos.
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="continuous-improvementtabcontinuousimprovement"></a>[Melhoria contínua](#tab/ContinuousImprovement)
+## <a name="continuous-improvement"></a>[Melhoria contínua](#tab/ContinuousImprovement)
 
 ::: zone-end
 

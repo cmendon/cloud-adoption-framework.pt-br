@@ -1,28 +1,34 @@
 ---
-title: Otimizar e transformar
+title: Otimizar e promover
 description: Esta parte do Guia de Migração do Azure aborda áreas de otimização, incluindo a revisão do design da solução, o dimensionamento correto dos serviços e a análise de custos.
 author: matticusau
 ms.author: mlavery
-ms.date: 04/04/2019
+ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 5173dc348ee0c9251b4c5e41aaa2b193da6ea890
-ms.sourcegitcommit: 4948a5f458725e8a0c7206f08502422965a549d5
+ms.openlocfilehash: bcd49a2168db862c3e1a0d948e4948abccbfe7c7
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76994170"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222501"
 ---
-# <a name="optimize-and-transform"></a>Otimizar e transformar
+<!-- cSpell:ignore Fservers Fdatabases -->
 
-Agora que você migrou seus serviços para o Azure, a próxima fase inclui a revisão da solução para encontrar possíveis áreas de otimização. Isso pode incluir revisar o design da solução, o dimensionamento correto dos serviços e a análise dos custos.
+<!-- markdownlint-disable MD025 DOCSMD001 -->
+
+# <a name="test-optimize-and-promote"></a>Testar, otimizar e promover
+
+Agora que você migrou seus serviços para o Azure, a próxima fase inclui a revisão da solução para encontrar possíveis áreas de otimização. Esse esforço pode incluir examinar o design da solução, o dimensionamento correto dos serviços e a análise dos custos.
 
 Essa fase também é uma oportunidade para otimizar seu ambiente e executar possíveis transformações nele. Por exemplo, você pode ter realizado uma migração "hospedar novamente" e, agora que seus serviços estão em execução no Azure, é possível revisitar a configuração das soluções ou os serviços consumidos e, possivelmente, executar algumas "refatorações" para modernizar e aumentar a funcionalidade da sua solução.
 
-# <a name="right-size-assetstaboptimize"></a>[Ativos do tamanho certo](#tab/optimize)
+O restante deste artigo se concentra em ferramentas para otimizar a carga de trabalho migrada. Quando o equilíbrio entre desempenho e custo for atingido, uma carga de trabalho estará pronta para ser promovida para produção. Para obter orientação sobre as opções de promoção, confira os artigos de melhoria do processo em [Otimizar e promover](../migration-considerations/optimize/index.md).
+
+# <a name="right-size-assets"></a>[Ativos do tamanho certo](#tab/optimize)
 
 Todos os serviços do Azure que fornecem um modelo de custo baseado em consumo podem ser redimensionados por meio do portal do Azure, da CLI ou do PowerShell. A primeira etapa no dimensionamento correto de um serviço é revisar suas métricas de uso. O serviço do Azure Monitor fornece acesso a essas métricas. Talvez seja necessário configurar a coleta das métricas do serviço que você está analisando e proporcionar o tempo adequado para coletar dados significativos com base em seus padrões de carga de trabalho.
 
@@ -39,7 +45,7 @@ A seguir estão alguns serviços comuns que você pode redimensionar.
 
 ## <a name="resize-a-virtual-machine"></a>Redimensionar uma máquina virtual
 
-As Migrações para Azure executam uma análise de dimensionamento correto como parte de sua fase de avaliação pré-migração. As máquinas virtuais migradas usando essa ferramenta provavelmente já serão dimensionadas com base em seus requisitos pré-migração.
+As Migrações para Azure executam uma análise de dimensionamento correto como parte de sua fase de avaliação pré-migração, e as máquinas virtuais migradas usando essa ferramenta provavelmente já serão dimensionadas com base em seus requisitos pré-migração.
 
 No entanto, para máquinas virtuais criadas ou migradas usando outros métodos ou nos casos em que os requisitos de máquina virtual após a migração precisem de ajuste, convém refinar ainda mais seu dimensionamento da máquina virtual.
 
@@ -48,8 +54,7 @@ No entanto, para máquinas virtuais criadas ou migradas usando outros métodos o
 1. Selecione o **Tamanho** e o novo tamanho desejado na lista. Talvez seja preciso ajustar os filtros para encontrar o tamanho necessário.
 1. Selecione **Redimensionar**.
 
-Observe que o redimensionamento de máquinas virtuais de produção tem o potencial de causar interrupções de serviço. Tente aplicar o dimensionamento correto para suas VMs antes de promovê-las para produção.
-
+O redimensionamento de máquinas virtuais de produção pode causar interrupções de serviço. Tente aplicar o dimensionamento correto para suas VMs antes de promovê-las para produção.
 
 ::: zone target="chromeless"
 
@@ -95,9 +100,9 @@ Os parceiros podem usar o Partner Center para analisar o uso.
 
 ::: zone-end
 
-# <a name="cost-managementtabmanagecost"></a>[Gerenciamento de Custos](#tab/ManageCost)
+# <a name="cost-management"></a>[Gerenciamento de Custos](#tab/ManageCost)
 
-É importante executar análises e revisões de custos contínuas. Isso oferece uma oportunidade de redimensionar os recursos conforme a necessidade a fim de balancear os custos e a carga de trabalho.
+É importante executar análises e revisões de custos contínuas. Esse esforço oferece uma oportunidade de redimensionar os recursos conforme a necessidade a fim de balancear os custos e a carga de trabalho.
 
 O Gerenciamento de Custos do Azure funciona com o Assistente do Azure para fornecer recomendações de otimização de custo. O Assistente do Azure ajuda você a otimizar e melhorar a eficiência identificando recursos ociosos e subutilizados.
 

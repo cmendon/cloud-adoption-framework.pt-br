@@ -1,6 +1,6 @@
 ---
-title: 'Guia de inovação do Azure: Interagir com dispositivos'
-description: Guia de inovação do Azure – interagir com dispositivos
+title: 'Inovação do Azure: Interagir por meio de dispositivos'
+description: Saiba como o Azure fornece uma estrutura para a criação de soluções comerciais de imersão e efetivas por meio de dispositivos de borda conectados e perceptivos.
 author: umarmohamedusman
 ms.author: umarm
 ms.date: 10/10/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 4744a1a019a8454f9a454c5eb75192a6d97b6998
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 5063d22cee1a2711bc3dd4c2d052df2870b61c5a
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808304"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171014"
 ---
 ::: zone target="docs"
 
@@ -44,7 +44,7 @@ Os clientes do Azure utilizam um conjunto em expansão contínua de sistemas e d
 
 <!-- markdownlint-disable MD025 -->
 
-## <a name="global-scale-iot-servicetabiothub"></a>[Serviço IoT de escala global](#tab/IoTHub)
+## <a name="global-scale-iot-service"></a>[Serviço IoT de escala global](#tab/IoTHub)
 
 <!-- markdownlint-enable MD025 -->
 
@@ -101,7 +101,7 @@ Para criar Serviços de Provisionamento de Dispositivos no Hub IoT:
 
 <!-- markdownlint-disable MD025 -->
 
-## <a name="azure-digital-twinstabdigitaltwins"></a>[Gêmeos Digitais do Azure](#tab/DigitalTwins)
+## <a name="azure-digital-twins"></a>[Gêmeos Digitais do Azure](#tab/DigitalTwins)
 
 Crie experiências reutilizáveis, altamente escalonáveis e com reconhecimento espacial que vinculam os dados de streaming entre o mundo digital e o mundo físico. Aumente o envolvimento dos clientes usando modelos abrangentes de ambientes físicos. Gere grafos de inteligência espacial para modelar relações e interações entre pessoas, locais e dispositivos. Consulte dados de um espaço físico em vez de usar sensores diferentes.
 
@@ -136,7 +136,7 @@ Para criar Gêmeos Digitais do Azure:
 
 <!-- markdownlint-disable MD025 -->
 
-## <a name="location-intelligencetabazuremaps"></a>[Inteligência de localização](#tab/AzureMaps)
+## <a name="location-intelligence"></a>[Inteligência de localização](#tab/AzureMaps)
 
 Além das funcionalidades de localização tradicionais, tais como proximidade, tráfego e roteamento, o serviço do Azure Mapas permite que as empresas criem soluções usando a inteligência de localização em tempo real impulsionada pelos parceiros de tecnologia de mobilidade de classe mundial **TomTom** e **Moovit**. Integre facilmente funcionalidades de mobilidade e localização avançadas em seus aplicativos com serviços geoespaciais.
 
@@ -169,7 +169,7 @@ Para usar a inteligência de localização:
 
 ::: zone-end
 
-## <a name="spatial-experiencestabspatial"></a>[Experiências espaciais](#tab/spatial)
+## <a name="spatial-experiences"></a>[Experiências espaciais](#tab/spatial)
 
 O Âncoras Espaciais do Azure permite aos desenvolvedores trabalhar com plataformas de realidade misturada para perceber espaços, designar pontos precisos de interesse e lembrar-se dos pontos de interesse de dispositivos compatíveis.
 
@@ -204,7 +204,7 @@ Para usar as experiências espaciais:
 
 ::: zone-end
 
-## <a name="azure-remote-renderingtabremoterender"></a>[Azure Remote Rendering](#tab/RemoteRender)
+## <a name="azure-remote-rendering"></a>[Azure Remote Rendering](#tab/RemoteRender)
 
 Renderize conteúdo 3D interativo e de alta qualidade na nuvem e transmita para seus dispositivos em tempo real. Cargas de trabalho de renderização são muito usadas para efeitos especiais (VFX) na indústria de mídia e entretenimento. A renderização também é usada em muitos outros setores como publicidade, varejo, petróleo e gás e manufatura.
 

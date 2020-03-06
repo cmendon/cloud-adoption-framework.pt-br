@@ -1,6 +1,6 @@
 ---
-title: 'Guia de gerenciamento do Azure: Antes de começar'
-description: Saiba como gerenciar suas operações do Azure com diretrizes passo a passo.
+title: Visão geral do gerenciamento do Azure
+description: Saiba mais sobre o Cloud Adoption Framework para o Azure com informações sobre as ferramentas básicas necessárias para gerenciar ambientes de produção do Azure.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
@@ -9,16 +9,18 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: a6f136f3a9aeae8b9ffe6f7e51dbb65da04e81ea
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 37d49948772ca0912dc574ccb299c050eae4aeb4
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223467"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341752"
 ---
+# <a name="azure-management-guide-before-you-start"></a>Guia de gerenciamento do Azure: Antes de começar
+
+
 ::: zone target="docs"
 
-# <a name="azure-management-guide-before-you-start"></a>Guia de gerenciamento do Azure: Antes de começar
 
 > [!NOTE]
 > Este guia é um ponto de partida para as diretrizes de inovação na Cloud Adoption Framework. Ele também está disponível no Centro de Início Rápido do Azure. Confira a dica mais adiante neste artigo para obter um link para o Centro de Início Rápido do Azure.

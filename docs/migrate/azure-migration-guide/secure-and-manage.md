@@ -9,18 +9,20 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 1af3ed5ea3b9291263a5ad8da43c65d51570651e
-ms.sourcegitcommit: 4948a5f458725e8a0c7206f08502422965a549d5
+ms.openlocfilehash: ec67108e90fb367535298ba7fab3b8ac32705255
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76994093"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222484"
 ---
+<!-- markdownlint-disable MD024 MD025 DOCSMD001 -->
+
 # <a name="secure-and-manage"></a>Proteger e gerenciar
 
 Depois de migrar seu ambiente para o Azure, é importante considerar a segurança e os métodos usados para gerenciar o ambiente. O Azure fornece muitos recursos e funcionalidades para atender a essas necessidades em sua solução.
 
-# <a name="azure-monitortabmonitor"></a>[Azure Monitor](#tab/monitor)
+# <a name="azure-monitor"></a>[Azure Monitor](#tab/monitor)
 
 O Azure Monitor maximiza a disponibilidade e o desempenho de seus aplicativos fornecendo uma solução abrangente para coletar, analisar e agir em relação a dados telemétricos de seus ambientes locais e de nuvem. Ele ajuda a entender o desempenho de seus aplicativos, além de identificar de maneira proativa os problemas que os estão afetando e os recursos dos quais eles dependem.
 
@@ -44,7 +46,7 @@ O Azure Monitor maximiza a disponibilidade e o desempenho de seus aplicativos fo
 
 ::: zone-end
 
-# <a name="azure-service-healthtabservicehealth"></a>[Integridade do Serviço do Azure](#tab/servicehealth)
+# <a name="azure-service-health"></a>[Integridade do Serviço do Azure](#tab/servicehealth)
 
 A Integridade do Serviço do Azure fornece diretrizes personalizadas e suporte quando problemas nos serviços do Azure afetam você. Ela pode notificar e ajudar a entender o impacto dos problemas, mantendo você atualizado sobre a resolução do problema. Ela também ajuda você a preparar manutenções planejadas e alterações que poderão afetar a disponibilidade de seus recursos.
 
@@ -75,9 +77,9 @@ Para obter mais informações, confira a [documentação da Integridade do Servi
 
 ::: zone-end
 
-# <a name="azure-advisortabadvisor"></a>[Assistente do Azure](#tab/advisor)
+# <a name="azure-advisor"></a>[Assistente do Azure](#tab/advisor)
 
-O Assistente do Azure é um consultor de nuvem personalizado que ajuda a seguir as práticas recomendadas para otimizar as implantações do Azure. Ele analisa a configuração dos recursos e a telemetria do uso. Então, recomenda soluções para ajudar a melhorar o desempenho, segurança e alta disponibilidade de seus recursos enquanto procura oportunidades para reduzir a despesa geral do Azure.
+O Azure Advisor é um consultor de nuvem personalizado que ajuda a seguir as práticas recomendadas para otimizar as implantações do Azure. Ele analisa a configuração dos recursos e a telemetria do uso. Então, recomenda soluções para ajudar a melhorar o desempenho, segurança e alta disponibilidade de seus recursos enquanto procura oportunidades para reduzir a despesa geral do Azure.
 
 ## <a name="access-azure-advisor"></a>Acessar o Assistente do Azure
 
@@ -98,7 +100,7 @@ O Assistente do Azure é um consultor de nuvem personalizado que ajuda a seguir 
 
 ::: zone-end
 
-# <a name="azure-security-centertabsecurity"></a>[Central de Segurança do Azure](#tab/security)
+# <a name="azure-security-center"></a>[Central de Segurança do Azure](#tab/security)
 
 A Central de Segurança do Azure é um sistema de gerenciamento de segurança de infraestrutura unificado que fortalece a postura de segurança de seus data centers e fornece proteção avançada contra ameaças em suas cargas de trabalho híbridas locais e na nuvem, estejam elas no Azure ou não.
 
@@ -121,13 +123,13 @@ A Central de Segurança do Azure é um sistema de gerenciamento de segurança de
 
 ::: zone-end
 
-# <a name="azure-backuptabbackup"></a>[Serviço de Backup do Azure](#tab/backup)
+# <a name="azure-backup"></a>[Serviço de Backup do Azure](#tab/backup)
 
 O Backup do Azure é o serviço baseado no Azure que você pode usar para fazer backup (ou proteger) e restaurar os dados na nuvem da Microsoft. Ele substitui a solução de backup local ou externa existente por uma solução confiável, segura e econômica baseada em nuvem.
 
 ## <a name="enable-backup-for-an-azure-vm"></a>Habilitar o backup para uma VM do Azure
 
-1. No Portal do Azure, selecione **Máquinas virtuais** e selecione a VM que você deseja replicar.
+1. No portal do Azure, selecione **Máquinas virtuais** e selecione a VM que você deseja replicar.
 1. Em **Operações**, selecione **Backup**.
 1. Crie ou selecione um cofre dos Serviços de Recuperação.
 1. Selecione **Criar (ou editar) uma nova política**.
@@ -147,11 +149,11 @@ O Backup do Azure é o serviço baseado no Azure que você pode usar para fazer 
 
 ::: zone-end
 
-# <a name="azure-site-recoverytabsiterecovery"></a>[Azure Site Recovery](#tab/siterecovery)
+# <a name="azure-site-recovery"></a>[Azure Site Recovery](#tab/siterecovery)
 
 Anteriormente neste guia, discutimos como o Azure Site Recovery pode ser usado como parte da execução da migração. Mas ele também é um componente crítico para sua estratégia de recuperação de desastre após a conclusão da migração.
 
-O serviço Azure Site Recovery permite replicar máquinas virtuais e cargas de trabalho hospedadas em uma região primária do Azure para uma cópia hospedada em uma região secundária. Quando ocorre uma interrupção em sua região primária, você pode fazer failover para a cópia em execução na região secundária e continuar a acessar seus aplicativos e serviços nela. Quando a cópia primária da sua máquina virtual estiver em execução novamente, você poderá fazer failback para ela.
+O serviço Azure Site Recovery permite replicar máquinas virtuais e cargas de trabalho hospedadas em uma região primária do Azure para uma cópia hospedada em uma região secundária. Quando ocorre uma interrupção em sua região primária, você pode fazer failover para a cópia em execução na região secundária e continuar a acessar seus aplicativos e serviços a partir dela. Quando a cópia primária da sua máquina virtual estiver em execução novamente, você poderá fazer failback para ela.
 
 ## <a name="replicate-an-azure-vm-to-another-region-with-site-recovery-service"></a>Replicar uma VM do Azure para outra região com o serviço Site Recovery
 
@@ -164,7 +166,7 @@ As etapas a seguir descrevem o processo para usar o serviço Site Recovery para 
 
 ## <a name="enable-replication-for-the-azure-vm"></a>Habilitar a replicação para a VM do Azure
 
-1. No Portal do Azure, selecione **Máquinas virtuais** e selecione a VM que você deseja replicar.
+1. No portal do Azure, selecione **Máquinas virtuais** e selecione a VM que você deseja replicar.
 1. Em **Operações**, clique em **Recuperação de desastre**.
 1. Em **Configurar a recuperação de desastre** > **Região de destino**, selecione a região de destino para a qual você replicará.
 1. Para este guia de início rápido, aceite as outras configurações padrão.

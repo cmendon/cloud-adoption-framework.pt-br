@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 3e9eadbd246ba38f496d8c74b7bcd3e6ade03685
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 908b2c8b07f66d53264e78432e07736a426d1be9
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808151"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223534"
 ---
 # <a name="protect-and-recover-in-azure"></a>Proteger e recuperar no Azure
 
@@ -38,7 +38,7 @@ Para qualquer ambiente de nível empresarial, esta tabela descreve o mínimo sug
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="azure-backuptabupdbackupatemanagement"></a>[Serviço de Backup do Azure](#tab/UpdbackupateManagement)
+## <a name="azure-backup"></a>[Serviço de Backup do Azure](#tab/UpdbackupateManagement)
 
 ::: zone-end
 
@@ -46,7 +46,7 @@ Com o Backup do Azure é possível fazer backup, proteger e recuperar seus dados
 
 ### <a name="enable-backup-for-an-azure-vm"></a>Habilitar o backup para uma VM do Azure
 
-1. No Portal do Azure, selecione **Máquinas virtuais** e selecione a VM que você deseja replicar.
+1. No portal do Azure, selecione **Máquinas virtuais** e selecione a VM que você deseja replicar.
 1. No painel **Operações**, selecione **Backup**.
 1. Crie ou selecione um cofre existente dos Serviços de Recuperação do Azure.
 1. Selecione **Criar (ou editar) uma nova política**.
@@ -69,7 +69,7 @@ Com o Backup do Azure é possível fazer backup, proteger e recuperar seus dados
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="azure-site-recoverytabsiterecovery"></a>[Azure Site Recovery](#tab/siterecovery)
+## <a name="azure-site-recovery"></a>[Azure Site Recovery](#tab/siterecovery)
 
 ::: zone-end
 
@@ -87,7 +87,7 @@ As etapas a seguir descrevem o processo para usar o Site Recovery para replicaç
 
 ### <a name="enable-replication-for-the-azure-vm"></a>Habilitar a replicação para a VM do Azure
 
-1. No Portal do Azure, selecione **Máquinas virtuais** e selecione a VM que você deseja replicar.
+1. No portal do Azure, selecione **Máquinas virtuais** e selecione a VM que você deseja replicar.
 1. No painel **Operações**, selecione **Recuperação de desastre**.
 1. Selecione **Configurar recuperação de desastre** > **Região de destino** e escolha a região de destino para a qual você replicará.
 1. Para este guia de início rápido, aceite os valores padrão para todas as outras opções.

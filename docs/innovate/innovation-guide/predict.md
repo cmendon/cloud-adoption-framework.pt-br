@@ -1,6 +1,6 @@
 ---
-title: 'Guia de inovação do Azure: Prever e influenciar'
-description: Saiba prever e influenciar usando o Azure.
+title: 'Inovação do Azure: Prever e influenciar'
+description: Saiba mais sobre as soluções do Azure para prever as necessidades dos clientes e integrar previsões de volta à sua solução para influenciar o comportamento do cliente.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 00bd41050d469c8bab6ee0c6a8c4e68facd92ca9
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 42cf4ffb65456bf1519a0f2bb0f017bb078687d9
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808253"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170963"
 ---
 ::: zone target="docs"
 
@@ -38,7 +38,7 @@ A tabela a seguir pode ajudá-lo a encontrar a melhor solução com base em suas
 |Azure Machine Learning Studio|Sim|Sim|Não|Compreensão geral de algoritmos preditivos|
 |Serviço do Azure Machine Learning|Sim|Sim|Sim|Cientista de dados|
 
-## <a name="azure-cognitive-servicestabcognitiveservices"></a>[Serviços Cognitivos do Azure](#tab/CognitiveServices)
+## <a name="azure-cognitive-services"></a>[Serviços Cognitivos do Azure](#tab/CognitiveServices)
 
 O caminho mais rápido e mais fácil para prever as necessidades do cliente são os Serviços Cognitivos do Azure. Os Serviços Cognitivos permitem que as previsões sejam feitas com base em modelos existentes, que não requerem treinamento adicional. Esses serviços são ideais e eficazes quando não há nenhum cientista de dados na equipe para treinar o modelo preditivo. Para alguns serviços, não é necessário nenhum treinamento. Outros serviços exigem apenas treinamento mínimo.
 
@@ -70,7 +70,7 @@ Acesse diretamente os Serviços Cognitivos no [portal do Azure](https://portal.a
 
 ::: zone-end
 
-## <a name="azure-machine-learning-studiotabmachinelearningstudio"></a>[Azure Machine Learning Studio](#tab/MachineLearningStudio)
+## <a name="azure-machine-learning-studio"></a>[Azure Machine Learning Studio](#tab/MachineLearningStudio)
 
 Se os modelos existentes dentro dos Serviços Cognitivos não se alinharem à previsão desejada, o Azure Machine Learning Studio poderá fornecer uma maneira de criar as previsões desejadas sem exigir habilidades profundas de cientistas de dados.
 
@@ -101,7 +101,7 @@ Acesse diretamente o Azure Machine Learning Studio no [portal do Azure](https://
 
 ::: zone-end
 
-## <a name="azure-machine-learning-servicetabmachinelearningservice"></a>[Serviço do Azure Machine Learning](#tab/MachineLearningService)
+## <a name="azure-machine-learning-service"></a>[Serviço do Azure Machine Learning](#tab/MachineLearningService)
 
 O Serviço do Azure Machine Learning oferece a abordagem baseada em código mais profunda necessária para um treinamento mais profundo de conjuntos de dados do cliente. Usando linguagens como o Python, os cientistas de dados podem treinar e criar um algoritmo para prever as necessidades do cliente.
 

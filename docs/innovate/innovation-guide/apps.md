@@ -1,6 +1,6 @@
 ---
-title: 'Guia de inovação do Azure: Envolver clientes por meio de aplicativos'
-description: Aprenda a inovar, envolvendo clientes por meio de aplicativos usando o Azure
+title: 'Inovação do Azure: Envolver-se por meio de aplicativos'
+description: Saiba mais sobre os serviços do Azure que ajudam você a modernizar facilmente seus aplicativos Web e de API existentes e a criar aplicativos nativos de nuvem.
 author: billyclaymyersmsft
 ms.author: wimyers
 ms.date: 10/17/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 7b6a94830f35f7dde577ba4b7122cdec7e4a711d
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: ad638c667a75561dfbdb9827413249ebc93fd9dc
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808338"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171065"
 ---
 ::: zone target="docs"
 
@@ -34,7 +34,7 @@ Com um modelo de contêiner de padrão aberto, a criação de microsserviços ou
 
 <!-- markdownlint-disable MD025 -->
 
-# <a name="deliver-value-fastertabdelivervaluefaster"></a>[Entregar valor mais rapidamente](#tab/DeliverValueFaster)
+# <a name="deliver-value-faster"></a>[Entregar valor mais rapidamente](#tab/DeliverValueFaster)
 
 Uma das vantagens das soluções baseadas em nuvem é a capacidade de reunir comentários mais rapidamente e começar a fornecer valor ao usuário. Quer o usuário seja um cliente externo ou um usuário em sua empresa, quanto mais rápido você puder obter comentários sobre seus aplicativos, melhor.
 
@@ -131,7 +131,7 @@ O Visual Studio App Center também fornece um serviço de notificação que perm
 - [Documentação do SDK do Azure para linguagem Go](https://docs.microsoft.com/azure/go)
 - [Soluções de DevOps](https://azure.microsoft.com/solutions/devops)
 
-# <a name="create-cloud-native-appstabcloudnative"></a>[Criar aplicativos nativos de nuvem](#tab/CloudNative)
+# <a name="create-cloud-native-apps"></a>[Criar aplicativos nativos de nuvem](#tab/CloudNative)
 
 <!-- markdownlint-disable MD026 -->
 
@@ -287,7 +287,7 @@ O Red Hat OpenShift no Azure oferece uma implantação de autoatendimento flexí
 
 **Acessar [Red Hat OpenShift no Azure](https://docs.microsoft.com/azure/openshift/intro-openshift)**
 
-# <a name="isolate-points-of-failuretabisolatepointsoffailure"></a>[Isolar pontos de falha](#tab/IsolatePointsOfFailure)
+# <a name="isolate-points-of-failure"></a>[Isolar pontos de falha](#tab/IsolatePointsOfFailure)
 
 Ao começar a fazer a transição de sua fase de teste inicial, avalie maneiras de isolar e remover pontos de falha. Devido à natureza distribuída da plataforma de nuvem do Azure, você pode projetar seu aplicativo para minimizar as falhas e também melhorar o desempenho.
 
