@@ -1,18 +1,18 @@
 ---
-title: 'Importância dos negócios: gerenciamento de nuvem e operações'
-description: 'Importância dos negócios: gerenciamento de nuvem e operações'
+title: Importância dos negócios no gerenciamento de nuvem
+description: Use a estrutura de adoção de nuvem para o Azure para entender a importância da carga de trabalho e evitar o impacto adverso na receita e na lucratividade.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 3232d0544f0382c6277e3a2898a95aa0c2f11ddd
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 2c3d5a71025e821b9554e2a8d99223c7e6b0712b
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807828"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341446"
 ---
 # <a name="business-criticality-in-cloud-management"></a>Importância dos negócios no gerenciamento de nuvem
 
@@ -33,8 +33,8 @@ A primeira etapa em qualquer esforço de alinhamento de criticalidade de negóci
 | --------- | --------- |
 | Essenciais |  Afeta a missão da empresa e pode afetar visivelmente as instruções corporativas de lucros e perdas. |
 | Unidade-crítica | Afeta a missão de uma unidade de negócios específica e suas instruções de lucros e perdas. |
-| Alto | Pode não atrapalhar a missão, mas afeta os processos de alta importância. As perdas mensuráveis podem ser quantificadas no caso de interrupções. |
-| Média | O impacto nos processos é provavelmente. As perdas são baixas ou inmensurável, mas danos à marca ou perdas de upstream são prováveis. |
+| Alta | Pode não atrapalhar a missão, mas afeta os processos de alta importância. As perdas mensuráveis podem ser quantificadas no caso de interrupções. |
+| Médio | O impacto nos processos é provavelmente. As perdas são baixas ou inmensurável, mas danos à marca ou perdas de upstream são prováveis. |
 | Baixo | O impacto nos processos de negócios não é mensurável. Nem os danos à marca nem as perdas de upstream são prováveis. É provável que o impacto localizado em uma única equipe seja. |
 | Sem suporte | Nenhum proprietário, equipe ou processo de negócios associado a essa carga de trabalho pode justificar qualquer investimento no gerenciamento contínuo da carga de trabalho. |
 
@@ -64,7 +64,7 @@ As etapas a seguir se aplicam se você estiver usando a [pasta de trabalho de ge
 2. Atualize cada carga de trabalho no *exemplo* ou *Limpe o modelo* para refletir a criticalidade padrão na coluna de *criticalidade* .
 3. A empresa deve inserir os valores corretos para refletir quaisquer desvios da criticalidade padrão.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Depois que sua equipe tiver definido a criticalidade de negócios, você poderá [calcular e registrar o impacto nos negócios](./impact.md).
 

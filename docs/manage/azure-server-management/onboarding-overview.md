@@ -1,18 +1,18 @@
 ---
-title: Integração com os serviços de gerenciamento do servidor do Azure
-description: Integração com os serviços de gerenciamento do servidor do Azure
+title: Integração dos serviços de gerenciamento do servidor do Azure
+description: Integre serviços de gerenciamento de servidor do Azure com informações para máquinas virtuais do Azure e servidores locais.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 48c0728c39457a2fa060679460a97c0ddca49c45
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: dcb6be86ec0bcf231cef8286768d014ae7489fea
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807998"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341514"
 ---
 # <a name="phase-2-onboarding-azure-server-management-services"></a>Fase 2: integração dos serviços de gerenciamento do servidor do Azure
 
@@ -43,7 +43,7 @@ Conforme mostrado no diagrama anterior, o agente de Log Analytics tem uma config
 - **Registro automático:** Quando o agente de Log Analytics é instalado em um servidor e configurado para se conectar a um espaço de trabalho, as soluções habilitadas nesse espaço de trabalho são aplicadas automaticamente ao servidor.
 - **Aceitação:** Mesmo que o agente esteja instalado e conectado ao espaço de trabalho, a solução não será aplicada, a menos que seja adicionada à configuração de escopo do servidor no espaço de trabalho.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Saiba como carregar uma única VM usando o portal para avaliar o processo de integração.
 

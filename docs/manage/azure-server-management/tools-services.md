@@ -1,18 +1,18 @@
 ---
-title: Ferramentas e serviços de gerenciamento do servidor do Azure
-description: Ferramentas e serviços de gerenciamento do servidor do Azure
+title: Serviços de gerenciamento do servidor do Azure
+description: Use a estrutura de adoção de nuvem para o Azure para aprender sobre áreas dentro do pacote de serviços de gerenciamento de servidor do Azure.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: df6851ff628c0abcb38ee9139fcf24f31e2117cf
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 38f7c2f6fc5be0cdad9a963fcf7f0fbb65937d3d
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223275"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341566"
 ---
 # <a name="azure-server-management-tools-and-services"></a>Ferramentas e serviços de gerenciamento do servidor do Azure
 
@@ -73,7 +73,7 @@ Vários serviços se encaixam nessa categoria. Eles podem ajudá-lo a:
 
 Esses serviços são essenciais para dar suporte a operações contínuas:
 
-- O [Gerenciamento de atualizações](https://docs.microsoft.com/azure/automation/automation-update-management#view-update-assessments) automatiza a implantação de patches em seu ambiente, incluindo a implantação em instâncias do sistema operacional em execução fora do Azure. Ele dá suporte a sistemas operacionais Windows e Linux e controla as principais vulnerabilidades do sistema operacional e a não conformidade causadas por patches ausentes.
+- O [Gerenciamento de atualizações](/azure/automation/automation-update-management) automatiza a implantação de patches em seu ambiente, incluindo a implantação em instâncias do sistema operacional em execução fora do Azure. Ele dá suporte a sistemas operacionais Windows e Linux e controla as principais vulnerabilidades do sistema operacional e a não conformidade causadas por patches ausentes.
 - O [controle de alterações e o inventário](https://docs.microsoft.com/azure/automation/change-tracking) fornecem informações sobre o software que está sendo executado em seu ambiente e realça as alterações ocorridas.
 - A [automação do Azure](https://docs.microsoft.com/azure/automation/automation-intro) permite executar scripts do Python e do PowerShell ou runbooks para automatizar tarefas em seu ambiente. Ao usar a automação com o [Hybrid runbook Worker](https://docs.microsoft.com/azure/automation/automation-hybrid-runbook-worker), você pode estender seus runbooks para seus recursos locais também.
 - A [configuração de estado da automação do Azure](https://docs.microsoft.com/azure/automation/automation-dsc-overview) permite que você envie por push configurações de DSC (configuração de estado desejado) do PowerShell diretamente do Azure. A DSC também permite que você monitore e preserve as configurações para sistemas operacionais e cargas de trabalho convidadas.

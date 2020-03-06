@@ -1,6 +1,6 @@
 ---
-title: 'Guia de monitoramento de nuvem: estratégia de monitoramento para modelos de implantação de nuvem'
-description: Escolha quando usar Azure Monitor ou System Center Operations Manager no Microsoft Azure
+title: Estratégia de monitoramento para modelos de implantação em nuvem
+description: Use a estrutura de adoção de nuvem para o Azure para saber qual estratégia de monitoramento para o gerenciamento de nuvem empregar.
 author: MGoedtel
 ms.author: magoedte
 ms.date: 10/04/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: abb9395a739d4e32cab85367d4de822dc47939ac
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 3b6434937816255269bda41c422099a07a25f5bc
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807624"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341820"
 ---
 # <a name="cloud-monitoring-guide-monitoring-strategy-for-cloud-deployment-models"></a>Guia de monitoramento de nuvem: estratégia de monitoramento para modelos de implantação de nuvem
 
@@ -43,7 +43,7 @@ Nossa abordagem recomendada para monitorar cada camada da pilha é resumida na t
 
 <!-- markdownlint-disable MD033 -->
 
-Camada | Grupos | Escopo | Método
+Camada | Recurso | Escopo | Método
 ---|---|---|----
 Aplicativo | Um aplicativo baseado na Web executado em .NET, .NET Core, Java, JavaScript e plataforma node. js em uma VM do Azure, serviços de Azure App, Service Fabric do Azure, Azure Functions e serviços de nuvem do Azure. | Monitore um aplicativo Web ao vivo para detectar automaticamente anomalias de desempenho, identificar exceções de código e problemas e coletar análises de comportamento do usuário. |  Azure Monitor (Application Insights).
 Recursos do Azure – PaaS (plataforma como serviço) | Serviços de banco de dados do Azure (por exemplo, SQL ou MySQL). | Banco de dados do Azure para métricas de desempenho do SQL. | Habilite o log de diagnóstico para transmitir dados SQL para logs de Azure Monitor.
@@ -182,7 +182,7 @@ Você também pode obter um monitoramento holístico com uma combinação de [re
 
 Se você já investiu em Operations Manager, use o pacote de gerenciamento do Azure Stack para monitorar a disponibilidade e o estado de integridade de implantações de Azure Stack, incluindo regiões, provedores de recursos, atualizações, execuções de atualização, unidades de escala, nós de unidade, infraestrutura funções e suas instâncias (entidades lógicas compostas pelos recursos de hardware). Este pacote de gerenciamento usa as APIs REST de provedor de recursos de integridade e atualização para se comunicar com Azure Stack. Para monitorar servidores físicos e dispositivos de armazenamento, use o pacote de gerenciamento de fornecedores de OEM (por exemplo, fornecido pela Lenovo, Hewlett Packard ou Dell). Operations Manager pode monitorar nativamente os comutadores de rede para coletar estatísticas básicas usando SNMP. O monitoramento das cargas de trabalho de locatário é possível com o pacote de gerenciamento do Azure seguindo duas etapas básicas. Configure a assinatura que você deseja monitorar e, em seguida, adicione os monitores para essa assinatura.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 > [!div class="nextstepaction"]
 > [Coletar os dados certos](./data-collection.md)

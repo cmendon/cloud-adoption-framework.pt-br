@@ -1,18 +1,18 @@
 ---
-title: Habilitar serviços de gerenciamento de servidor em uma única VM para avaliação
-description: Habilitar serviços de gerenciamento de servidor em uma única VM para avaliação
+title: Habilitar serviços de gerenciamento de servidor em uma VM
+description: Use a estrutura de adoção de nuvem para o Azure para saber como habilitar os serviços de gerenciamento de servidor do Azure em uma única VM.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: d73b9f5a13150b0c3b13feff3f21a765a36ac4a8
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: d79539e6708a46a905e1b69a4d6bd186eaff2d0f
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808032"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341684"
 ---
 # <a name="enable-server-management-services-on-a-single-vm-for-evaluation"></a>Habilitar serviços de gerenciamento de servidor em uma única VM para avaliação
 
@@ -32,7 +32,7 @@ Para obter mais informações sobre como carregar essas soluções para VMs indi
 - [Integração de soluções de Gerenciamento de Atualizações, Controle de Alterações e inventário da máquina virtual do Azure](https://docs.microsoft.com/azure/automation/automation-onboard-solutions-from-vm)
 - [Integração do monitoramento do Azure para VMs](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-single-vm)
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Saiba como usar Azure Policy para carregar VMs do Azure em escala.
 

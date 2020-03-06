@@ -1,6 +1,6 @@
 ---
-title: 'Guia de monitoramento de nuvem: visão geral das plataformas de monitoramento'
-description: Escolha quando usar Azure Monitor ou System Center Operations Manager em Microsoft Azure.
+title: Visão geral das plataformas de monitoramento de nuvem
+description: Tenha uma visão geral de alto nível de duas plataformas de monitoramento para ajudá-lo a entender como cada uma fornece a funcionalidade de monitoramento de núcleo.
 author: mgoedtel
 ms.author: magoedte
 ms.date: 07/31/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 99faaa30d67b404e9a9aa1a45d434fd7ec3f2c31
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: fba1f50b71f664c3d7bbb4a4498c3e067f45923d
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223025"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341191"
 ---
 <!-- cspell:ignore opsman ITSM -->
 

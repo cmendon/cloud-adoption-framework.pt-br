@@ -1,18 +1,18 @@
 ---
-title: Conformidade operacional-gerenciamento e operações de nuvem
-description: Conformidade operacional-gerenciamento e operações de nuvem
+title: Conformidade operacional no gerenciamento de nuvem
+description: Use a estrutura de adoção de nuvem para o Azure para saber como manter a conformidade com os compromissos operacionais.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: f83ec1ced367cca89349188932e608604dc3a005
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 894208ff08a0100e8d5d8d5d9df3eff592773426
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807743"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78340971"
 ---
 # <a name="operational-compliance-in-cloud-management"></a>Conformidade operacional no gerenciamento de nuvem
 
@@ -56,7 +56,7 @@ Como uma linha de base aprimorada para gerenciamento de nuvem, algumas cargas de
 
 Muitos argumentam que qualquer problema que seja comum o suficiente para automatizar deve ser resolvido por meio da resolução da dívida técnica. Quando uma resolução de longo prazo é prudente, ela deve ser a opção padrão. No entanto, vários cenários de negócios dificultam a justificação de grandes investimentos na resolução da dívida técnica. Quando essa resolução não pode ser justificada, mas a correção é uma carga comum e dispendiosa, a solução de correção automatizada é a próxima melhor.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 [Proteção e recuperação](./protect.md) são as próximas áreas a serem consideradas em uma linha de base de gerenciamento de nuvem.
 

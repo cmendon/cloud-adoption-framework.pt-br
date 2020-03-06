@@ -1,6 +1,6 @@
 ---
 title: Convenções de nomenclatura e de marcação recomendadas
-description: Este artigo fornece recomendações detalhadas de nomenclatura e de marcação de recursos com o objetivo específico de dar suporte a esforços empresariais de adoção da nuvem.
+description: Conheça as recomendações detalhadas de nomenclatura e marcação de recursos destinadas especificamente ao suporte a esforços de adoção de nuvem empresarial.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/01/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness, fasttrack-edit
-ms.openlocfilehash: 5e168659c5120ded6b5cfde116699ced61390bdd
-ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
+ms.openlocfilehash: 915e974e3968e873c8cf23ec7696f66469f01c82
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 03/05/2020
-ms.locfileid: "78337862"
+ms.locfileid: "78342007"
 ---
 # <a name="recommended-naming-and-tagging-conventions"></a>Convenções de nomenclatura e de marcação recomendadas
 

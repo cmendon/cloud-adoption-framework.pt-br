@@ -1,18 +1,18 @@
 ---
-title: Proteger e recuperar-gerenciamento de nuvem e operações
-description: Proteger e recuperar-gerenciamento de nuvem e operações
+title: Proteger e recuperar no gerenciamento de nuvem
+description: Aprenda a importância de se preparar para uma interrupção potencial da carga de trabalho. Essa preparação permite que sua equipe detecte falhas antes e se recupere mais rapidamente.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: c9733c238903e2fa66f76337bb255c4cfda33896
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: f46fb65572d319e2dc9a4a779cd205bbe476908b
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807709"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78340988"
 ---
 # <a name="protect-and-recover-in-cloud-management"></a>Proteger e recuperar no gerenciamento de nuvem
 
@@ -70,7 +70,7 @@ Cada um dos modelos anteriores reduz o RTO, resultando em uma restauração mais
 
 Para saber mais sobre esse processo de pensamento, consulte [disciplina de operações de carga de trabalho](./workload.md).
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Depois que esse componente de linha de base de gerenciamento for atendido, a equipe poderá ficar à frente para evitar interrupções nas operações de [plataforma](./platform.md) e operações de [carga de trabalho](./workload.md).
 

@@ -1,18 +1,18 @@
 ---
-title: Operações de carga de trabalho – gerenciamento de nuvem e operações
-description: Operações de carga de trabalho – gerenciamento de nuvem e operações
+title: Operações de carga de trabalho no gerenciamento de nuvem
+description: Entenda uma abordagem para investir nas operações contínuas dessas cargas de trabalho de alta prioridade para impulsionar os compromissos comerciais aprimorados.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: b97cd4963dc19753f0d8216923a376f4d077930a
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 43399d4d84d824f03a7fb19da493223f3baea717
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807692"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341242"
 ---
 # <a name="workload-operations-in-cloud-management"></a>Operações de carga de trabalho no gerenciamento de nuvem
 
@@ -94,7 +94,7 @@ Nos casos de resolução de dívidas técnicas e correção automatizada, as fal
 
 Para ajudar a melhorar as operações gerais, a [estrutura de arquitetura do Azure](https://docs.microsoft.com/azure/architecture/guide/pillars) fornece uma abordagem para avaliar cargas de trabalho específicas para adesão a esses pilares. Você pode aplicar os pilares que podem ser aplicados a operações de plataforma e operações de carga de trabalho.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Com uma compreensão total da metodologia de gerenciamento dentro da estrutura de adoção de nuvem, agora você está armado para implementar princípios de gerenciamento de nuvem. Para obter orientação sobre como tornar essa metodologia acionável no ambiente de operações, consulte [Gerenciamento de nuvem na estrutura de adoção de nuvem](../index.md) do ciclo de vida de adoção.
 

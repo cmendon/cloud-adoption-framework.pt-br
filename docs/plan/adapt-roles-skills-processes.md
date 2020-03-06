@@ -1,18 +1,18 @@
 ---
-title: Adapte as funções, habilidades e processos existentes para a nuvem
-description: Descreve um processo para adaptar as funções, habilidades e processos existentes para a nuvem.
+title: Adapte funções, habilidades e processos para a nuvem
+description: Use a estrutura de adoção de nuvem para o Azure para aprender a adaptar suas funções, habilidades e processos existentes à medida que sua organização faz a mudança para a computação em nuvem.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: a39c38a8ac158a45e22930da98f7268e4db21174
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: d016ee6fdc530774f759e100d704f9efc023c38b
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76800586"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341939"
 ---
 # <a name="adapt-existing-roles-skills-and-processes-for-the-cloud"></a>Adapte as funções, habilidades e processos existentes para a nuvem
 
@@ -51,7 +51,7 @@ Essas dependências representam novos processos que sua organização implementa
 
 Acompanhe essas dependências e anote os processos que oferecerão suporte a elas. Observe também se os processos existem atualmente. Para processos que exigem ferramentas, verifique se a linha do tempo para implantar qualquer ferramenta se alinha com a agenda geral de transformação digital.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Garantir o suporte adequado para as funções traduzidas é um esforço de equipe. Para agir sobre essas diretrizes, examine a [introdução à preparação organizacional](../organize/index.md) para identificar os participantes e as estruturas de equipe certas.
 

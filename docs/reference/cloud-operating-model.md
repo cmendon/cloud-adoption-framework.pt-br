@@ -1,6 +1,6 @@
 ---
-title: O modelo operacional de nuvem agora é a estrutura de adoção Microsoft Cloud para o Azure
-description: Saiba mais sobre como usar as práticas de modelo operacional em nuvem na estrutura de adoção de nuvem.
+title: O modelo operacional de nuvem agora é a estrutura de adoção de nuvem para o Azure
+description: Use a estrutura de adoção de nuvem para o Azure para aprender o quê, por que e como acelerar sua adoção de nuvem.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
@@ -9,18 +9,18 @@ ms.service: cloud-adoption-framework
 ms.subservice: reference
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 8408b657a3896cbb9376d0364dbd752ed90b9306
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: dc6a9244b16c0de69a870323d0099e37f85c075a
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048133"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341990"
 ---
 # <a name="cloud-operating-model-is-now-part-of-the-microsoft-cloud-adoption-framework-for-azure"></a>O modelo operacional de nuvem agora faz parte da estrutura de adoção Microsoft Cloud para o Azure
 
 No início de 2018, a Microsoft lançou o COM (Modelo Operacional de Nuvem). O COM foi um guia que ajudou os clientes a entender o **que** e o **porquê** da transformação digital. Isso ajudou os clientes a ter uma noção de todas as áreas que precisavam ser abordadas: estratégia de negócios, estratégia de cultura e estratégia tecnológica. O que não foi incluído no COM eram os específicos _como_, quais clientes deixaram de perguntar: "onde vamos para cá?"
 
-Em outubro de 2018, começamos a analisar todos os modelos que proliferaram na Comunidade da Microsoft, encontramos aproximadamente 60 modelos de adoção de nuvem diferentes. Uma equipe multimicrosoft foi estabelecida para trazer tudo junto como um "produto" de engenharia dedicado com implementações definidas em serviços, vendas e marketing. Esse esforço culminau na criação de um único modelo, a estrutura de adoção Microsoft Cloud para o Azure, projetada para ajudar os clientes a entender o **que** e **por que** e fornecer orientações unificadas sobre **como** ajudá-los a acelerar seus adoção da nuvem. O objetivo deste projeto é criar uma abordagem da Microsoft para a adoção da nuvem.
+Em outubro de 2018, começamos a analisar todos os modelos que proliferaram na Comunidade da Microsoft, encontramos aproximadamente 60 modelos de adoção de nuvem diferentes. Uma equipe multimicrosoft foi estabelecida para trazer tudo junto como um "produto" de engenharia dedicado com implementações definidas em serviços, vendas e marketing. Esse esforço culminau na criação de um único modelo, a estrutura de adoção Microsoft Cloud para o Azure, projetada para ajudar os clientes a entender o **que** e **por que** e fornecer orientações unificadas sobre **como** ajudá-los a acelerar sua adoção de nuvem. O objetivo deste projeto é criar uma abordagem da Microsoft para a adoção da nuvem.
 
 ## <a name="using-cloud-operating-model-practices-within-the-cloud-adoption-framework"></a>Usando práticas de modelo operacional de nuvem dentro da estrutura de adoção de nuvem
 
@@ -70,7 +70,7 @@ As três fases da adoção de nuvem foram mapeadas para duas viagens específica
 
 Recursos adicionais necessários para uma adoção de nuvem bem-sucedida podem ser encontrados na [habilitação do êxito da adoção](../getting-started/enable.md).
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Para retomar sua jornada em que o COM parou, escolha uma das seguintes jornadas de adoção de nuvem:
 

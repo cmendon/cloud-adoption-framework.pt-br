@@ -1,18 +1,18 @@
 ---
-title: Priorizar e definir cargas de trabalho para um plano de adoção de nuvem
-description: Priorizar e definir cargas de trabalho para um plano de adoção de nuvem
+title: Priorize e defina cargas de trabalho para adoção de nuvem
+description: Use a estrutura de adoção de nuvem para o Azure para saber como priorizar e definir cargas de trabalho para um plano de adoção de nuvem.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 78abd15ae06918e913f520d96b29e29f1a253856
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 42f55a866b3ac8f044861ef2bc738e128b3c9f38
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799974"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341905"
 ---
 # <a name="prioritize-and-define-workloads-for-a-cloud-adoption-plan"></a>Priorizar e definir cargas de trabalho para um plano de adoção de nuvem
 
@@ -26,7 +26,7 @@ Limitar o plano a 10 cargas de trabalho incentiva a agilidade e o alinhamento da
 
 No contexto de uma adoção de nuvem, uma carga de trabalho é uma coleção de ativos de ti (servidores, VMs, aplicativos, dados ou dispositivos) que, coletivamente, dá suporte a um processo definido. As cargas de trabalho podem dar suporte a mais de um processo. As cargas de trabalho também podem depender de outros ativos compartilhados ou plataformas maiores. No entanto, uma carga de trabalho deve ter limites definidos em relação aos ativos dependentes e aos processos que dependem da carga de trabalho. Muitas vezes, as cargas de trabalho podem ser visualizadas monitorando o tráfego de rede entre os ativos de ti.
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
 
 As entradas estratégicas da lista de pré-requisitos facilitam muito a realização das tarefas a seguir. Para obter ajuda com a coleta dos dados discutidos neste artigo, examine os [pré-requisitos](./prerequisites.md).
 
@@ -63,7 +63,7 @@ Depois que as prioridades iniciais tiverem sido definidas e as cargas de trabalh
 
 ### <a name="business-inputs"></a>Entradas comerciais
 
-| Ponto de dados | Description | Entrada |
+| Ponto de dados | DESCRIÇÃO | Entrada |
 |---|---|---|
 | Nome da carga de trabalho | O que essa carga de trabalho é chamada? |         |
 | Descrição da carga de trabalho | Em uma frase, o que essa carga de trabalho faz? |         |
@@ -78,11 +78,11 @@ Depois que as prioridades iniciais tiverem sido definidas e as cargas de trabalh
 | Conformidade | Há algum requisito de conformidade de terceiros para essa carga de trabalho? |         |
 | Proprietários do aplicativo | Quem é responsável pelo impacto nos negócios de todos os aplicativos associados a essa carga de trabalho? |         |
 | Períodos de congelamento de negócios | Há algum tempo durante o qual a empresa não permitirá alterações? |         |
-| Localidades | As geografias são afetadas por essa carga de trabalho? |         |
+| Países | As geografias são afetadas por essa carga de trabalho? |         |
 
 ### <a name="technical-inputs"></a>Entradas técnicas
 
-| Ponto de dados | Description | Entrada |
+| Ponto de dados | DESCRIÇÃO | Entrada |
 |---|---|---|
 | Abordagem de adoção | Essa adoção é um candidato para migração ou inovação? |         |
 | Líder de ops do aplicativo | Liste as partes responsáveis pelo desempenho e pela disponibilidade dessa carga de trabalho. |         |
@@ -102,7 +102,7 @@ Com base nos dados montados, a equipe de estratégia de nuvem e a equipe de ado�
 
 Após uma análise, ambas as equipes devem estar confortáveis com a confirmação das prioridades resultantes. Esse conjunto de prioridades documentadas, validadas e confirmadas é a pendência de adoção de nuvem priorizada.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Para qualquer carga de trabalho na pendência de adoção de nuvem priorizada, a equipe agora está pronta para [alinhar os ativos](./assets.md).
 

@@ -1,6 +1,6 @@
 ---
-title: Implantar uma zona de acesso de migração no Azure
-description: Saiba como implantar uma zona de acesso de migração no Azure.
+title: Implantar uma zona de aterrissagem de migração do Azure
+description: Use a estrutura de adoção de nuvem para o Azure para aprender a usar um projeto de zona de aterrissagem para implantar um ambiente definido.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/27/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, setup
-ms.openlocfilehash: cac594b7acd3764e6e5663ad28a77f292f7d440b
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: ba20999ecaf3b0abbde371fb965618fc24ee2479
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78225340"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341872"
 ---
 # <a name="deploy-a-migration-landing-zone"></a>Implantar uma zona de aterrissagem de migração
 
@@ -59,16 +59,16 @@ As decisões a seguir são representadas no blueprint da zona de acesso.
 |Ferramentas de migração|O Azure Site Recovery será implantado e um projeto do Migrações para Azure será criado.|[Guia de decisão de ferramentas de migração](../../decision-guides/migrate-decision-guide/index.md)|
 |Log e monitoramento|O workspace do Insights Operacionais e a conta de armazenamento de diagnóstico serão provisionados.|         |
 |Rede|Uma rede virtual será criada com sub-redes para gateway, firewall, jumpbox e zona de acesso.|[Decisões de rede](../considerations/networking-options.md)|
-|Identity|Supõe-se que a assinatura já esteja associada a uma instância do Azure Active Directory.|[Melhores práticas de gerenciamento de identidades](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json)         |
+|Identidade|Supõe-se que a assinatura já esteja associada a uma instância do Azure Active Directory.|[Melhores práticas de gerenciamento de identidades](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json)         |
 |Política|Atualmente, este blueprint pressupõe que nenhuma política do Azure deve ser aplicada.|         |
 |Design de assinatura|N/A – projetado para uma única assinatura de produção.|[Dimensionamento de assinaturas](../azure-best-practices/scaling-subscriptions.md)|
 |Grupos de gerenciamento|N/A – projetado para uma única assinatura de produção.|[Dimensionamento de assinaturas](../azure-best-practices/scaling-subscriptions.md)         |
 |Grupos de recursos|N/A – projetado para uma única assinatura de produção.|[Dimensionamento de assinaturas](../azure-best-practices/scaling-subscriptions.md)         |
-|Dados|{1&gt;N/A&lt;1}|[Escolha a opção de SQL Server correta no Azure e nas](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) [diretrizes do Azure Data Store](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
-|Armazenamento|{1&gt;N/A&lt;1}|[Diretrizes do Armazenamento do Azure](../considerations/storage-options.md)         |
-|Padrões de nomenclatura e marcação|{1&gt;N/A&lt;1}|[Melhores práticas de nomenclatura e marcação](../azure-best-practices/naming-and-tagging.md)         |
-|Gerenciamento de custo|{1&gt;N/A&lt;1}|[Acompanhando os custos](../azure-best-practices/track-costs.md)|
-|Computação|{1&gt;N/A&lt;1}|[Opções de computação](../considerations/compute-options.md)|
+|data|N/D|[Escolha a opção de SQL Server correta no Azure e nas](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) [diretrizes do Azure Data Store](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
+|Armazenamento|N/D|[Diretrizes do Armazenamento do Azure](../considerations/storage-options.md)         |
+|Padrões de nomenclatura e marcação|N/D|[Melhores práticas de nomenclatura e marcação](../azure-best-practices/naming-and-tagging.md)         |
+|Gerenciamento de custo|N/D|[Acompanhando os custos](../azure-best-practices/track-costs.md)|
+|Computação|N/D|[Opções de computação](../considerations/compute-options.md)|
 
 ## <a name="customize-or-deploy-a-landing-zone-from-this-blueprint"></a>Personalizar ou implantar uma zona de acesso com base neste blueprint
 
@@ -78,7 +78,7 @@ Os exemplos de blueprint também estão disponíveis no portal. Para obter detal
 
 Para diretrizes sobre a personalização que deve ser feita nesse blueprint ou na zona de acesso resultante, confira os artigos sobre [considerações de zona de acesso](../considerations/index.md).
 
-## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
+## <a name="next-steps"></a>Próximas etapas
 
 Depois que uma zona de acesso de migração for implantada, você estará pronto para migrar cargas de trabalho para o Azure.
 Para obter diretrizes sobre as ferramentas e os processos necessários para migrar sua primeira carga de trabalho, confira o [guia de migração do Azure](../../migrate/azure-migration-guide/index.md).

@@ -1,18 +1,18 @@
 ---
-title: Pré-requisitos para um plano de adoção de nuvem eficaz
-description: Entenda os pré-requisitos para um plano de adoção de nuvem eficaz.
+title: Pré-requisitos para um plano de adoção de nuvem
+description: Use a estrutura de adoção de nuvem para o Azure para entender os pré-requisitos para um plano de adoção de nuvem eficaz.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 391abf359cd1da0af1d243c1a220b34a746642eb
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: f229515b39c69fa0e9e6c840810720bca4e12dc6
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76800195"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78342041"
 ---
 # <a name="prerequisites-for-an-effective-cloud-adoption-plan"></a>Pré-requisitos para um plano de adoção de nuvem eficaz
 
@@ -38,7 +38,7 @@ As entradas táticas precisas garantem que o trabalho possa ser planejado de for
 
 Essas perguntas são essenciais para a precisão do plano de adoção da nuvem. No mínimo, as perguntas sobre a racionalização digital de imóveis devem ser respondidas para criar um plano. Para fornecer cronogramas precisos, as perguntas sobre a organização e as habilidades também são importantes.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Depois que a equipe estiver confortável com as entradas estratégicas e as entradas de racionalização de imóveis digitais, a próxima etapa da [priorização da carga de trabalho](./workloads.md) poderá começar.
 

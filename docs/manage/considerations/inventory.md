@@ -1,18 +1,18 @@
 ---
-title: Inventário e visibilidade – gerenciamento de nuvem e operações
-description: Inventário e visibilidade – gerenciamento de nuvem e operações
+title: Inventário e visibilidade no Azure
+description: Saiba mais sobre o que gerenciar (inventário) e como essas cargas de trabalho e ativos gerenciados mudam ao longo do tempo (visibilidade).
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 29085f6ce1324f9f22acd0dc674c382163426233
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: c9057c84757c49457b46c310d239dc8c49bd50d0
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807760"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341209"
 ---
 # <a name="inventory-and-visibility-in-cloud-management"></a>Inventário e visibilidade no gerenciamento de nuvem
 
@@ -49,7 +49,7 @@ A criação de visibilidade em qualquer plataforma de nuvem requer alguns compon
 - Responsabilidade e visibilidade
 - Inventário
 - Log central
-- Controle de alterações
+- controle de alterações
 - Telemetria de desempenho
 
 ### <a name="responsibility-and-visibility"></a>Responsabilidade e visibilidade
@@ -66,7 +66,7 @@ O registro em log centralizado é essencial para a visibilidade necessária dia 
 
 Impor o uso consistente do log central é a primeira etapa para estabelecer operações repetíveis. A imposição pode ser realizada por meio da política corporativa. Quando possível, no entanto, a imposição deve ser automatizada para garantir a consistência.
 
-### <a name="change-tracking"></a>Controle de alterações
+### <a name="change-tracking"></a>controle de alterações
 
 A alteração é a única constante em um ambiente de tecnologia. A conscientização e a compreensão das alterações em várias cargas de trabalho são essenciais para operações confiáveis. Qualquer solução de gerenciamento de nuvem deve incluir um meio de entender o quando, como e por que as mudanças técnicas. Sem esses pontos de dados, os esforços de correção são significativamente prejudicados.
 
@@ -106,7 +106,7 @@ Independentemente da plataforma de nuvem, os cinco componentes de inventário e 
 
 Os dados sem ação produzem pouco retorno. O gerenciamento de nuvem pode se expandir além de ferramentas e processos nativos da nuvem. Para acomodar processos mais amplos, uma linha de base de gerenciamento de nuvem pode precisar ser aprimorada para incluir relatórios, integração de gerenciamento de serviços de ti ou centralização de dados. O gerenciamento de nuvem pode precisar incluir um ou mais dos itens a seguir durante várias fases de maturidade operacional.
 
-### <a name="report"></a>Relate
+### <a name="report"></a>Relatório
 
 Processos offline e comunicação sobre compromissos com os participantes de negócios geralmente exigem relatórios. Relatórios de autoatendimento ou relatórios periódicos podem ser um componente necessário de uma linha de base de gerenciamento aprimorado.
 
@@ -118,7 +118,7 @@ A integração de ITSM é geralmente o primeiro exemplo de atuar em inventário 
 
 Há uma variedade de motivos pelos quais uma empresa pode exigir vários locatários em um único provedor de nuvem. Nesses cenários, a centralização de dados é um componente necessário da linha de base de gerenciamento avançado, pois pode fornecer visibilidade em cada um desses locatários ou ambientes.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 A conformidade operacional baseia-se em recursos de inventário aplicando a automação e os controles de gerenciamento. Veja como a [conformidade operacional](./operational-compliance.md) é mapeada para seus processos.
 

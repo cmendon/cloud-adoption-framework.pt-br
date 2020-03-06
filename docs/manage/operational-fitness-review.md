@@ -1,18 +1,18 @@
 ---
 title: Estabelecer uma análise de adequação operacional
-description: Orientação sobre os conceitos básicos operacionais
+description: Estabeleça um processo de revisão de adequação operacional para entender totalmente os problemas resultantes da execução de cargas de trabalho em um ambiente de produção.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: df13e7bf3622c7062c3da1fc30a6a3fee9d28c90
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 9bc4e2bb9b39a83ab8829ea4a12cd1bb019bf0c3
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807556"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341803"
 ---
 # <a name="establish-an-operational-fitness-review"></a>Estabelecer uma análise de adequação operacional
 
@@ -42,7 +42,7 @@ Como você aprendeu na [introdução](../getting-started/migrate.md), a primeira
 
 Durante esse processo, o foco geralmente está nos recursos do serviço: o conjunto de requisitos _funcionais_ que você deseja que o serviço execute. Por exemplo, um serviço de entrega de produto requer recursos para determinar os locais de origem e de destino do produto, acompanhar o produto durante a entrega e enviar notificações para o cliente.
 
-Os requisitos _não-infuncionais_, por outro lado, estão relacionados a propriedades como [disponibilidade](https://docs.microsoft.com/azure/architecture/checklist/availability), [resiliência](https://docs.microsoft.com/azure/architecture/resiliency)e [escalabilidade](https://docs.microsoft.com/azure/architecture/checklist/scalability) do serviço. Essas propriedades diferem dos requisitos funcionais porque não afetam diretamente a função final de qualquer recurso específico no serviço. No entanto, os requisitos não-infuncionais se relacionam com o desempenho e a continuidade do serviço.
+Os requisitos não- _infuncionais_ , por outro lado, estão relacionados a propriedades como [disponibilidade](https://docs.microsoft.com/azure/architecture/checklist/availability), [resiliência](https://docs.microsoft.com/azure/architecture/resiliency)e [escalabilidade](https://docs.microsoft.com/azure/architecture/checklist/scalability)do serviço. Essas propriedades diferem dos requisitos funcionais porque não afetam diretamente a função final de qualquer recurso específico no serviço. No entanto, os requisitos não-infuncionais se relacionam com o desempenho e a continuidade do serviço.
 
 Você pode especificar alguns requisitos não-infuncionais em termos de um SLA (contrato de nível de serviço). Por exemplo, você pode expressar a continuidade de serviço como uma porcentagem de disponibilidade: "disponível 99,99% do tempo". Outros requisitos não-funcionais podem ser mais difíceis de definir e podem mudar conforme as necessidades de produção mudam. Por exemplo, um serviço orientado ao consumidor pode enfrentar requisitos de taxa de transferência inesperados após um surto de popularidade.
 

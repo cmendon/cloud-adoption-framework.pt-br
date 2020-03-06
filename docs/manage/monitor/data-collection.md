@@ -1,6 +1,6 @@
 ---
-title: 'Guia de monitoramento de nuvem: coletar os dados corretos'
-description: Escolha quando usar Azure Monitor ou System Center Operations Manager no Microsoft Azure
+title: Coletar dados de monitoramento na nuvem
+description: Saiba como observar a integridade e a disponibilidade da sua solução de nuvem para coletar os dados de monitoramento corretos.
 author: MGoedtel
 ms.author: magoedte
 ms.date: 06/26/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: a406d0c05594cff736265b0b69e24dcc8bc0f695
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 3b537caf193601057da458b07cb62bdba64a7b6b
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223241"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341099"
 ---
 # <a name="cloud-monitoring-guide-collect-the-right-data"></a>Guia de monitoramento de nuvem: coletar os dados corretos
 
