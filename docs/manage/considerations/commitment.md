@@ -1,18 +1,18 @@
 ---
-title: 'Compromisso de negócios: gerenciamento de nuvem e operações'
-description: 'Compromisso de negócios: gerenciamento de nuvem e operações'
+title: Compromisso de negócios no gerenciamento de nuvem
+description: Calcule futuras Devoluções da classificação e do impacto das interrupções em várias cargas de trabalho para tomar melhores decisões de negócios e compromissos.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 4827ca2aac045b105beed9c15de366311092a7f2
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 9a16131436da5543eefd34afd8eafe6bb8a473d5
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807845"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341208"
 ---
 # <a name="business-commitment-in-cloud-management"></a>Compromisso de negócios no gerenciamento de nuvem
 
@@ -152,7 +152,7 @@ A menos que haja outros fatores de custo flexível a considerar, essa comparaç�
 
 Nesse ponto do processo, os compromissos foram feitos: responsabilidade centralizada ou delegada, aluguel do Azure e nível de compromisso. Cada compromisso deve ser validado e documentado para garantir que a equipe de operações de nuvem, a equipe de estratégia de nuvem e os participantes comerciais estejam alinhados a esse compromisso para gerenciar a carga de trabalho.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Depois que os compromissos são feitos, as equipes de operações responsáveis podem começar a configurar a carga de trabalho em questão. Para começar, avalie várias abordagens para [inventário e visibilidade](./inventory.md).
 
