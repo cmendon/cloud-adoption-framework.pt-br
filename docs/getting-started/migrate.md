@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: ef04a867614c6597268269421ef1d341f5252f3b
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: dcc5706e365e3761f236bb5a1c896eb213a1bf5f
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223983"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892150"
 ---
 # <a name="begin-a-cloud-migration-journey-in-azure"></a>Iniciar uma jornada de migração na nuvem no Azure
 
@@ -63,7 +63,7 @@ O foco desse esforço é a migração ou a modernização de cargas de trabalho.
 
 As migrações de nuvem geralmente são consideradas um único projeto dentro de um programa mais amplo para simplificar as operações de ti, os custos ou a complexidade. A metodologia de implementação de nuvem ajuda a alinhar os esforços técnicos dentro de uma série de migrações de carga de trabalho a valores de negócios de nível mais alto descritos na estratégia e no plano de nuvem.
 
-**Introdução:** Para começar a usar uma implementação de nuvem, o guia de [migração do Azure](../migrate/azure-migration-guide/index.md) e o [Guia de instalação do Azure](../ready/azure-setup-guide/index.md) descrevem as ferramentas e os processos de alto nível necessários para serem bem-sucedidos na execução de uma implementação de nuvem. Migrar sua primeira carga de trabalho usando esses guias ajudará a equipe a superar as curvas de aprendizado iniciais no início do processo de planejamento. Posteriormente, considerações adicionais devem ser dadas à [lista de verificação de escopo expandido](../migrate/expanded-scope/index.md), [práticas recomendadas de migração](../migrate/azure-best-practices/index.md) e consideração de [migração](../migrate/migration-considerations/index.md)para alinhar as diretrizes de linha de base com as restrições, os processos, as estruturas de equipe e os objetivos exclusivos do seu esforço.
+**Introdução:** Inicie uma implementação de nuvem usando o [Guia de migração do Azure](../migrate/azure-migration-guide/index.md) e o [Guia de instalação do Azure](../ready/azure-setup-guide/index.md), que descreve as ferramentas e os processos de alto nível necessários para a execução bem-sucedida de uma implementação de nuvem. Migrar sua primeira carga de trabalho usando esses guias ajudará a equipe a superar as curvas de aprendizado iniciais no início do processo de planejamento. Posteriormente, considerações adicionais devem ser dadas às [práticas recomendadas de migração](../migrate/azure-best-practices/index.md) e [considerações de migração](../migrate/migration-considerations/index.md) para alinhar as diretrizes de linha de base com as restrições, os processos, as estruturas de equipe e os objetivos exclusivos do seu esforço.
 
 ## <a name="cloud-strategy-and-planning"></a>Estratégia e planejamento de nuvem
 

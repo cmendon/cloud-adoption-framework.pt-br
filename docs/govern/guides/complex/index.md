@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4729e8e82cfa6674586cbeb8577fe8c3316423f0
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 04f8c5e53eea03c0a25c84c03a09c4fa0ec60bff
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223936"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892075"
 ---
 # <a name="governance-guide-for-complex-enterprises"></a>Guia de governança para empresas complexas
 
@@ -46,7 +46,7 @@ Todos os aplicativos devem ser implantados na área apropriada do grupo de geren
 
 1. Os grupos de recursos devem ser implantados de maneira a considerar os ciclos de vida do conteúdo deles. Os recursos que são desenvolvidos juntos, gerenciados juntos e desativados juntos pertencem ao mesmo grupo de recursos. Para obter mais informações sobre as práticas recomendadas para o uso de grupos de recursos, [clique aqui](../../../decision-guides/resource-consistency/index.md).
 
-1. A [seleção de região](../../../decision-guides/regions/index.md) é incrivelmente importante e deve ser considerada para que a rede, o monitoramento e a auditoria possam estar em vigor para failover/failback, assim como a confirmação de que os [SKUs necessários estão disponíveis nas regiões preferenciais](https://azure.microsoft.com/global-infrastructure/services).
+1. A [seleção de região](../../../migrate/azure-best-practices/multiple-regions.md) é incrivelmente importante e deve ser considerada para que a rede, o monitoramento e a auditoria possam estar em vigor para failover/failback, assim como a confirmação de que os [SKUs necessários estão disponíveis nas regiões preferenciais](https://azure.microsoft.com/global-infrastructure/services).
 
 ![Diagrama de organização de recurso de empresa de grande porte](../../../_images/govern/large-enterprise-resource-organization.png)
 

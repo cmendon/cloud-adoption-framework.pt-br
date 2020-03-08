@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: a6fb28316b55d92d0dc7c130d3e3c86bab942149
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: 054537d4d1b9a83700ed0c6a1a8840682f04faa1
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341956"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892490"
 ---
 # <a name="review-your-storage-options"></a>Examine as opções de armazenamento
 
@@ -128,7 +128,7 @@ Para ajudá-lo a proteger seus dados na nuvem, o Armazenamento do Microsoft Azur
 - Conceder acesso delegado aos objetos de dados no Armazenamento do Microsoft Azure usando assinaturas de acesso compartilhado.
 - Usar a análise para controlar o método de autenticação que alguém está usando ao acessar o armazenamento no Azure.
 
-Esses recursos de segurança se aplicam ao Armazenamento de Blobs do Azure (bloco e página) e aos Arquivos do Azure. Obtenha orientações de segurança de armazenamento detalhadas no [guia de segurança do Armazenamento do Azure](https://docs.microsoft.com/azure/storage/common/storage-security-guide).
+Esses recursos de segurança se aplicam ao Armazenamento de Blobs do Azure (bloco e página) e aos Arquivos do Azure. Obtenha orientações de segurança de armazenamento detalhadas no [guia de segurança do Armazenamento do Azure](https://docs.microsoft.com/azure/storage/blobs/security-recommendations).
 
 A [Criptografia do Serviço de Armazenamento](https://docs.microsoft.com/azure/storage/storage-service-encryption) fornece criptografia em repouso e protege seus dados para atender aos compromissos de conformidade e segurança da organização. A Criptografia do Serviço de Armazenamento é habilitada por padrão para todos os discos gerenciados, instantâneos e imagens em todas as regiões do Azure. Começando em 10 de junho de 2017, todos os novos discos gerenciados, instantâneos, imagens e novos dados gravados em discos gerenciados existentes são criptografados automaticamente em repouso com chaves gerenciadas pela Microsoft. Confira as [Perguntas frequentes sobre Managed Disks](https://docs.microsoft.com/azure/virtual-machines/windows/faq-for-disks#managed-disks-and-storage-service-encryption) para obter mais detalhes.
 

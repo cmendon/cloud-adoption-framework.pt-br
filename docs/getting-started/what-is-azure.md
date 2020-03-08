@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: governance
-ms.openlocfilehash: f74e5f6fa5abc263af73fcf69b489de6518c9e37
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 39373c0f2c4c7d96613fd10d5734a2826b6f1933
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78169909"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892057"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -39,9 +39,9 @@ Por exemplo, o front-end hospeda os serviços que lidam com as solicitações do
 
 Fundamentalmente, o Azure é uma enorme coleção de servidores e hardware de rede que executam um conjunto complexo de aplicativos distribuídos para orquestrar a configuração e a operação do hardware e software virtualizados nesses servidores. É essa orquestração que torna o Azure tão potente&mdash;os usuários não são mais responsáveis por manter e atualizar o hardware, pois o Azure faz tudo isso por trás dos bastidores.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
-Agora que você entende os elementos internos do Azure, saiba mais sobre a governança de recursos de nuvem.
+Saiba mais sobre a adoção de nuvem com a [estrutura de adoção Microsoft Cloud para o Azure](https://docs.microsoft.com/azure/cloud-adoption-framework).
 
 > [!div class="nextstepaction"]
-> [Saiba mais sobre governança de recursos](../govern/resource-consistency/what-is-governance.md)
+> [Saiba mais sobre a estrutura de adoção do Microsoft Cloud para o Azure](https://docs.microsoft.com/azure/cloud-adoption-framework)

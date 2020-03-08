@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: cd4009e8201cf6267e9da297ce13987cb025139e
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 1f6d7545814f51f79a45b619f73dab857ac582d3
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171269"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78891982"
 ---
 # <a name="collect-data-through-the-migration-and-modernization-of-existing-data-sources"></a>Coletar dados por meio da migração e da modernização de fontes de dados existentes
 
@@ -46,7 +46,7 @@ Com uma migração offline, o tempo de inatividade do aplicativo começa quando 
 
 Sugerimos que você decida o tempo de inatividade aceitável dos negócios e teste uma migração offline. Você faz isso para verificar se o horário de restauração atende ao tempo de inatividade aceitável. Se o tempo de restauração for inaceitável, faça uma migração online.
 
-|Fonte  |Destino  |Ferramenta  |Tipo de migração  |Orientação  |
+|Origem  |Destino  |Ferramenta  |Tipo de migração  |{1&gt;Orientação&lt;1}  |
 |---------|---------|---------|---------|---------|
 |SQL Server|Banco de Dados SQL do Azure|Serviço de Migração de Banco de Dados|Offline|[Tutorial](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-azure-sql)|
 |SQL Server|Banco de Dados SQL do Azure|Serviço de Migração de Banco de Dados|Online|[Tutorial](https://docs.microsoft.com/azure/dms/tutorial-sql-server-azure-sql-online)|
@@ -57,5 +57,3 @@ Sugerimos que você decida o tempo de inatividade aceitável dos negócios e tes
 |PostgreSQL|Banco de Dados do Azure para PostgreSQL|Serviço de Migração de Banco de Dados|Online|[Tutorial](https://docs.microsoft.com/azure/dms/tutorial-postgresql-azure-postgresql-online)|
 |MongoDB|API do Mongo Azure Cosmos DB|Serviço de Migração de Banco de Dados|Offline|[Tutorial](https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db)|
 |MongoDB|API do Mongo Azure Cosmos DB|Serviço de Migração de Banco de Dados|Online|[Tutorial](https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db-online)|
-|Oracle|Opções de PaaS (plataforma como serviço) e IaaS diferentes|A ferramenta de um parceiro ou migrações para Azure|Offline ou online|[Árvore de decisão](../../migrate/expanded-scope/data-oracle-migration.md)|
-|Opções de banco de tinta NoSQL diferentes|Opções de Cosmo DB ou IaaS|Migrações de procedimento ou migração do Azure|Offline ou online|[Árvore de decisão](../../migrate/expanded-scope/data-no-sql-migration.md)|

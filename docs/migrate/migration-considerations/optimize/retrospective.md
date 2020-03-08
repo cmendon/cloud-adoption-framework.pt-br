@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 759bd75a134b1f5a5992f038a33693f632b86b03
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 1bf3c79b95c748880e5d560003aa65acb1949c48
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76801504"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78891896"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -47,10 +47,3 @@ Equipes altamente eficazes não apenas executam reuniões de retrospectiva. Elas
 Esse novo crescimento é representado de forma mais tangível em alterações na lista de pendências de lançamento ou de iteração.
 
 A retrospectiva marca o fim de um lançamento ou iteração, conforme as equipes ganham experiência e aprendem lições e [ajustam a lista de pendências de lançamento e iteração](../assess/release-iteration-backlog.md) de forma a refletir novos processos e experimentos a serem testados. Isso iniciará a próxima iteração nos processos de migração.
-
-## <a name="next-steps"></a>Próximos passos
-
-A seção [Proteger e Gerenciar](../secure-and-manage/index.md) deste conteúdo pode ajudar a preparar o leitor para a transição da migração para as operações.
-
-> [!div class="nextstepaction"]
-> [Ferramentas de monitoramento e gerenciamento seguros](../secure-and-manage/index.md)

@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 layout: LandingPage
-ms.openlocfilehash: 4abfaa8622db86fefb2c7c99589d3ef81a5ed489
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: c9e33b32590cd3b73e5bc42a662abf5ef6de36da
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170164"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892235"
 ---
 # <a name="enable-success-during-a-cloud-adoption-journey"></a>Habilitar o sucesso durante uma jornada de adoção de nuvem
 
@@ -22,7 +22,7 @@ A estrutura de adoção de nuvem é uma ferramenta gratuita de autoatendimento q
 Durante esse Framework, a habilitação é um tema principal. A lista de verificação a seguir relaciona princípios fundamentais de adoção de nuvem que garantem que uma jornada de adoção seja considerada bem-sucedida tanto pela ti quanto pela empresa:
 
 - **Plano:** Estabelecendo [resultados](../strategy/business-outcomes/index.md)claros de negócios, um [plano de imóveis digital](../digital-estate/index.md)claramente definido e registros posteriores de [adoção](../migrate/migration-considerations/prerequisites/migration-backlog-review.md)bem compreendidos.
-- **Pronto:** Garanta a prontidão da equipe por meio de [planos de aprendizado e habilidades](../ready/technical-skills.md).
+- **Pronto:** Garanta a prontidão da equipe por meio de [planos de aprendizado e habilidades](../ready/suggested-skills.md).
 - **Operar:** Defina um modelo operacional gerenciável para guiar as atividades durante e muito tempo após a adoção.
   - **[Organizar](../organize/index.md):** Alinhe pessoas e equipes para fornecer operações e adoção adequadas de nuvem.
   - **Controle:** Alinhe as [disciplinas de governança](../govern/index.md) adequadas para aplicar consistentemente o gerenciamento de custos, a mitigação de riscos, a conformidade e as linhas de base de segurança em toda a adoção da nuvem.
@@ -77,7 +77,7 @@ Além da estrutura de adoção de nuvem, a Microsoft aborda tópicos adicionais 
     </a>
 </li>
 <li style="display: flex; flex-direction: column;">
-    <a href="../ready/technical-skills.md" style="display: flex; flex-direction: column; flex: 1 0 auto;">
+    <a href="../ready/suggested-skills.md" style="display: flex; flex-direction: column; flex: 1 0 auto;">
         <div class="cardSize" style="flex: 1 0 auto; display: flex;">
             <div class="cardPadding" style="display: flex;">
                 <div class="card">
@@ -156,7 +156,7 @@ Além da estrutura de adoção de nuvem, a Microsoft aborda tópicos adicionais 
 
 <!-- markdownlint-enable MD033 -->
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Munido da compreensão dos principais aspectos da estrutura de adoção da nuvem, a probabilidade de sucesso em um esforço de [migração](./migrate.md) ou [inovação](./innovate.md) será muito maior.
 

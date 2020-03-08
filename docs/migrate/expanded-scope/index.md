@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ba6c768f98e3b74b0478fef0a86e6d8ac5537f1c
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 730da49f910c34bf2bd94b8766cb292520201e50
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222321"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892626"
 ---
 # <a name="expanded-scope-for-cloud-migration"></a>Escopo expandido para migração na nuvem
 
@@ -26,15 +26,15 @@ A lista de verificação a seguir descreve as áreas comuns de complexidade que 
 
 ### <a name="business-driven-scope-expansion"></a>Expansão de escopo controlada por negócios
 
-- **[Dar suporte a mercados globais](../../decision-guides/regions/index.md):** a empresa opera em várias regiões geográficas com requisitos de soberania de dados díspares. Para atender a esses requisitos, é preciso levar em conta fatores adicionais na análise de pré-requisitos e na distribuição de ativos durante a migração.
+- **[Dar suporte a mercados globais](../azure-best-practices/multiple-regions.md):** a empresa opera em várias regiões geográficas com requisitos de soberania de dados díspares. Para atender a esses requisitos, é preciso levar em conta fatores adicionais na análise de pré-requisitos e na distribuição de ativos durante a migração.
 
 ### <a name="technology-driven-scope-expansion"></a>Expansão de escopo controlada por tecnologia
 
-- **[Migração do VMware](./vmware-host.md):** A migração de hosts VMware pode acelerar o processo geral de migração. Cada host VMware migrado pode mover várias cargas de trabalho para a nuvem usando uma abordagem de lift-and-shift. Após a migração, essas VMs e cargas de trabalho podem permanecer no VMware ou serem migradas para funcionalidades de nuvem modernas.
-- **[Migração do SQL Server](./sql-migration.md):** A migração de SQL Servers pode acelerar o processo geral de migração. Cada SQL Server migrado pode mover vários bancos de dados e serviços, potencialmente acelerando várias cargas de trabalho.
-- **[Vários datacenters](./multiple-datacenters.md):** A migração de vários data centers cria muita complexidade. Durante os processos de avaliação, migração, otimização e gerenciamento, são discutidas considerações adicionais como preparação para ambientes mais complexos.
-- **[Os requisitos de dados ultrapassam a capacidade da rede](./network-capacity-exceeded.md):** as empresas frequentemente optam por migrar para a nuvem porque a capacidade, a velocidade ou a estabilidade de um datacenter existente não são mais satisfatórias. Essas mesmas restrições adicionam complexidade ao processo de migração, exigindo um planejamento adicional durante os processos de avaliação e migração.
-- **[Estratégia de governança ou conformidade](./governance-or-compliance.md):** Quando governança e conformidade são vitais para o sucesso de uma migração, é necessário alinhamento adicional entre as equipes de governança de TI e a equipe de adoção de nuvem.
+- **[Migração do VMware](../azure-best-practices/vmware-host.md):** A migração de hosts VMware pode acelerar o processo geral de migração. Cada host VMware migrado pode mover várias cargas de trabalho para a nuvem usando uma abordagem de lift-and-shift. Após a migração, essas VMs e cargas de trabalho podem permanecer no VMware ou serem migradas para funcionalidades de nuvem modernas.
+- **[Migração do SQL Server](../azure-best-practices/sql-migration.md):** A migração de SQL Servers pode acelerar o processo geral de migração. Cada SQL Server migrado pode mover vários bancos de dados e serviços, potencialmente acelerando várias cargas de trabalho.
+- **[Vários datacenters](../azure-best-practices/multiple-datacenters.md):** A migração de vários data centers cria muita complexidade. Durante os processos de avaliação, migração, otimização e gerenciamento, são discutidas considerações adicionais como preparação para ambientes mais complexos.
+- **[Os requisitos de dados ultrapassam a capacidade da rede](../azure-best-practices/network-capacity-exceeded.md):** as empresas frequentemente optam por migrar para a nuvem porque a capacidade, a velocidade ou a estabilidade de um datacenter existente não são mais satisfatórias. Essas mesmas restrições adicionam complexidade ao processo de migração, exigindo um planejamento adicional durante os processos de avaliação e migração.
+- **[Estratégia de governança ou conformidade](../azure-best-practices/governance-or-compliance.md):** Quando governança e conformidade são vitais para o sucesso de uma migração, é necessário alinhamento adicional entre as equipes de governança de TI e a equipe de adoção de nuvem.
 
 Se qualquer uma dessas complexidades estiver presente em seu cenário, esta seção da Cloud Adoption Framework provavelmente fornecerá o tipo de orientação necessária para alinhar adequadamente o escopo nos processos de migração.
 
@@ -42,7 +42,7 @@ Cada um desses cenários é abordado pelos vários artigos nesta seção da estr
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Navegue no sumário à esquerda para abordar necessidades específicas ou alterações de escopo. Como alternativa, a primeira melhoria de escopo na lista, [Suporte a mercados globais](../../decision-guides/regions/index.md), é um bom ponto de partida ao examinar esses cenários.
+Navegue no sumário à esquerda para abordar necessidades específicas ou alterações de escopo. Como alternativa, a primeira melhoria de escopo na lista, [Suporte a mercados globais](../azure-best-practices/multiple-regions.md), é um bom ponto de partida ao examinar esses cenários.
 
 > [!div class="nextstepaction"]
-> [Dar suporte a mercados globais](../../decision-guides/regions/index.md)
+> [Dar suporte a mercados globais](../azure-best-practices/multiple-regions.md)

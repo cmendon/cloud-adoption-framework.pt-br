@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 481a617d3a09ae1f81fe313dd557314aed8f4f29
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 2ab2fa1cce7e779538137302a326ca49a291ad28
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77706826"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892079"
 ---
 # <a name="standard-enterprise-governance-guide"></a>Guia de governança corporativa padrão
 
@@ -42,7 +42,7 @@ Todos os aplicativos devem ser implantados na área apropriada do grupo de geren
 2. Duas assinaturas: uma para cargas de trabalho de produção e outra para cargas de trabalho de não produção.
 3. A [nomenclatura consistente](../../../ready/azure-best-practices/naming-and-tagging.md) deve ser aplicada em cada nível dessa hierarquia de agrupamento.
 4. Os grupos de recursos devem ser implantados de uma maneira que considere seu ciclo de vida de conteúdo: tudo o que é desenvolvido em conjunto é gerenciado em conjunto e o que é desativado junto fica junto. Para saber mais sobre melhores práticas de grupo de recursos, [confira aqui](../../../decision-guides/resource-consistency/index.md).
-5. A [seleção de região](../../../decision-guides/regions/index.md) é incrivelmente importante e deve ser considerada para que a rede, o monitoramento e a auditoria possam estar em vigor para failover/failback, assim como a confirmação de que os [SKUs necessários estão disponíveis nas regiões preferenciais](https://azure.microsoft.com/global-infrastructure/services).
+5. A [seleção de região](../../../migrate/azure-best-practices/multiple-regions.md) é incrivelmente importante e deve ser considerada para que a rede, o monitoramento e a auditoria possam estar em vigor para failover/failback, assim como a confirmação de que os [SKUs necessários estão disponíveis nas regiões preferenciais](https://azure.microsoft.com/global-infrastructure/services).
 
 Veja um exemplo desse padrão em uso:
 

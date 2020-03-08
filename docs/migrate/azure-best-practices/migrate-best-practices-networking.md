@@ -7,12 +7,12 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 66694a9e1781f7d12d74e767b812b0831a371377
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 7bdfe3108c2ccdfd2661d45cc234978c784232f9
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78225582"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892694"
 ---
 # <a name="best-practices-to-set-up-networking-for-workloads-migrated-to-azure"></a>Melhores práticas para configurar a rede para as cargas de trabalho migradas para o Azure
 
@@ -40,7 +40,7 @@ Ao planejar sua topologia de VNet, você deve considerar como organizar os espa�
 
 Ao criar VNets como parte de sua migração, é importante planejar seu espaço de endereços IP da VNet.
 
-- Você deve atribuir um espaço de endereço que não seja maior do que um intervalo CIDR de /16 para cada VNet. VNets permitem o uso de endereços IP 65536 e atribuir um prefixo menor que /16 resulta na perda de endereços IP. É importante não desperdiçar endereços IP, mesmo se estiverem em intervalos privados definidos pelo RFC 1918.
+- Você deve atribuir um espaço de endereço que não seja maior do que um intervalo CIDR de /16 para cada VNet. VNets permitem o uso de endereços IP 65.536 e a atribuição de um prefixo menor que/16, como a/15, que tem endereços 131.072, resultaria no excesso de endereços IP se tornando unusuable em outro lugar. É importante não desperdiçar endereços IP, mesmo se estiverem em intervalos privados definidos pelo RFC 1918.
 - O espaço de endereço da VNet não deve sobrepor os intervalos de rede local.
 - A NAT (conversão de endereços de rede) não deve ser usada.
 - A sobreposição de endereços pode fazer com que as redes não possam ser conectadas e o roteamento não funcione corretamente. Se as redes forem sobrepostas, você precisará reprojetar a rede ou usar a NAT (conversão de endereços de rede).

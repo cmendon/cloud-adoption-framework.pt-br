@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: a14d6338489fa873b1f78951ca34400819d71c0b
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: 3fdfbcbaabb79876d32fa8ea172b2c426ada9464
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78342024"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892677"
 ---
 # <a name="getting-started-on-a-skills-readiness-path"></a>Introdução ao caminho de preparação de habilidades
 
@@ -28,7 +28,7 @@ A estrutura de adoção de nuvem orienta os leitores por todo o ciclo de vida de
 - **[Pronto](../ready/suggested-skills.md):** Desenvolva as habilidades necessárias para preparar os negócios, a cultura, as pessoas e o ambiente para alterações futuras.
 
 - **Adote:** As habilidades de adoção estão alinhadas a vários esforços técnicos:
-  - **[Migrar](../migrate/expanded-scope/suggested-skills.md):** Obter as habilidades necessárias para implementar o plano de migração na nuvem.
+  - **[Migrar](../migrate/suggested-skills.md):** Obter as habilidades necessárias para implementar o plano de migração na nuvem.
   - **Inovar:** Conheça as habilidades necessárias para fornecer novas soluções inovadoras.
 
 - **Operar:** As habilidades relacionadas ao modelo operacional para adoção na nuvem estão alinhadas a várias oportunidades para obter habilidades:

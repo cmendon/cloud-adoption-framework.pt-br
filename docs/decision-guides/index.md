@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 6fcd5892eb9d13b61cbaa697731718e1ca8ce3eb
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 66ff53f203a07f5f61ae2ba448f56d6531ffaa94
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77708148"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892439"
 ---
 # <a name="architectural-decision-guides"></a>Guias de decisão de arquitetura
 
@@ -42,8 +42,6 @@ Cada uma das categorias a seguir representa uma tecnologia de base de todas as i
 [Criptografia](./encryption/index.md): proteja seus dados confidenciais usando criptografia para alinhar-se aos requisitos da política de segurança e conformidade da sua organização.
 
 [Registro em log e relatórios](./logging-and-reporting/index.md): Monitorar dados de log gerados pelos recursos baseados em nuvem. A análise de dados fornece insights relacionados à integridade para operações, manutenção e status de conformidade das cargas de trabalho.
-
-[Diretrizes regionais](./regions/index.md): uma discussão sobre os critérios de decisão adequados para o posicionamento regional de recursos na plataforma Azure.
 
 ## <a name="next-steps"></a>Próximas etapas
 

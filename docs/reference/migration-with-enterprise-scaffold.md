@@ -8,19 +8,19 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: d94db62c907599720c8f29408c6b3e5ee5cfde5e
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: e0c1486dbb498686fe532ecf02b6dcb5e56c7336
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78225289"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892507"
 ---
 <!-- cSpell:ignore rodend subscope ITSM -->
 
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Andaime empresarial do Azure: governança de assinatura prescritiva
 
 > [!NOTE]
-> O Azure Enterprise scaffolding foi integrado à estrutura de adoção Microsoft Cloud. O conteúdo deste artigo agora está representado na seção [pronta](../ready/index.md) da nova estrutura. Este artigo será preterido no início de 2020. Para começar a usar o novo processo, consulte a [visão geral pronta](../ready/index.md), [criando sua primeira zona de aterrissagem](../ready/azure-setup-guide/migration-landing-zone.md)e [Considerações sobre a zona de aterrissagem](../ready/considerations/index.md).
+> O Azure Enterprise scaffolding foi integrado à estrutura de adoção Microsoft Cloud. O conteúdo deste artigo agora está representado na seção [pronta](../ready/index.md) da nova estrutura. Este artigo será preterido no início de 2020. Para começar a usar o novo processo, consulte a [visão geral pronta](../ready/index.md), [criando sua primeira zona de aterrissagem](../ready/landing-zone/migrate-landing-zone.md)e [Considerações sobre a zona de aterrissagem](../ready/considerations/index.md).
 
 As empresas estão adotando cada vez mais a nuvem pública em busca de agilidade e flexibilidade. Eles contam com os pontos fortes da nuvem para gerar receita e otimizar o uso de recursos para os negócios. O Microsoft Azure fornece diversos serviços e recursos que as empresas montam como blocos de construção para atender a uma ampla gama de aplicativos e cargas de trabalho.
 
@@ -77,7 +77,7 @@ Os três padrões comuns para inscrições do Azure são:
 
   ![O padrão geográfico](../_images/reference/geographic.png)
 
-Embora cada um desses padrões tenha o seu lugar, o padrão de **unidade de negócios** está sendo cada vez mais adotado devido à sua flexibilidade na criação de um modelo de custo da organização e porque ele reflete o alcance de controle. O Microsoft Core Engineering and Operations Group criou um subconjunto efetivo do padrão de **unidade de negócios** modelado em **Federal**, **estadual**e **local**. Para obter mais informações, consulte [organizando assinaturas e grupos de recursos dentro da empresa](https://azure.microsoft.com/blog/organizing-subscriptions-and-resource-groups-within-the-enterprise).
+Embora cada um desses padrões tenha o seu lugar, o padrão de **unidade de negócios** está sendo cada vez mais adotado devido à sua flexibilidade na criação de um modelo de custo da organização e porque ele reflete o alcance de controle. O Microsoft Core Engineering and Operations Group criou um subconjunto efetivo do padrão de **unidade de negócios** modelado em **Federal**, **estadual**e **local**. Para obter mais informações, consulte [organizando assinaturas e grupos de recursos dentro da empresa](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/scaling-subscriptions).
 
 ### <a name="azure-management-groups"></a>Grupos de gerenciamento do Azure
 
@@ -342,7 +342,7 @@ O componente final do modelo de referência de andaime do Azure é essencial par
 
 O Azure fornece recursos internos e de terceiros de nossa ampla rede de parceiros que oferecem uma postura de segurança eficaz. Mais importante, a Microsoft fornece as práticas recomendadas e orientações na forma de [VDC (datacenter virtual) do Azure](./networking-vdc.md). À medida que você passa de uma única carga de trabalho para várias cargas de trabalho que usam recursos híbridos, as diretrizes de VDC fornecerão "receitas" para permitir uma rede flexível e que aumentará à medida que suas cargas de trabalho no Azure crescem.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 A governança é essencial para o sucesso do Azure. Este artigo foca na implementação técnica de um andaime empresarial, mas toca apenas no processo mais amplo e nas relações entre os componentes. A governança da política flui de cima para baixo e é determinada por aquilo que a empresa quer alcançar. Naturalmente, a criação de um modelo de governança para o Azure inclui representantes da TI, mas o mais importante é ter uma forte representação dos líderes do grupo de negócios, além de gerenciamento de segurança e risco. No fim, um andaime empresarial é sobre reduzir o risco aos negócios para facilitar a missão e os objetivos de uma organização.
 
