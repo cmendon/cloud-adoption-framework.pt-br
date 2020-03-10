@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness, fasttrack-edit
-ms.openlocfilehash: 84102816304188bf1b22534938fb6aea267f0d8c
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 119a0b64fe81e593404735e5ce6bc0c656ab23e2
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892643"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79023718"
 ---
 <!-- cSpell:ignore eastus westus westeurope usgovia accountlookup messagequery -->
 
@@ -61,7 +61,7 @@ Ao construir sua convenção de nomenclatura, identifique as principais partes d
 
 Mantenha o comprimento dos componentes de nomenclatura pequeno para evitar exceder os limites de comprimento de nome do recurso.
 
-| Componente de nomenclatura            | Descrição                                                                                                                                                                                                      | Exemplos                                         |
+| Componente de nomenclatura            | DESCRIÇÃO                                                                                                                                                                                                      | Exemplos                                         |
 |-----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|
 | Unidade de negócios               | Divisão de nível superior da sua empresa que tem a assinatura ou a carga de trabalho à qual o recurso pertence. Em organizações menores, esse componente pode representar um único elemento organizacional corporativo de nível superior. | _fin_, _mktg_, _product_, _it_, _corp_           |
 | Tipo de assinatura           | Descrição resumida da finalidade da assinatura que contém o recurso. É geralmente dividida pelo tipo de ambiente de implantação ou cargas de trabalho específicas.                                                       | _prod_, _compartilhado_, _cliente_                       |
@@ -75,11 +75,13 @@ Cada carga de trabalho é composta por muitos recursos e serviços individuais. 
 
 A lista a seguir fornece prefixos de tipo de recurso do Azure recomendados para usar quando você define suas convenções de nomenclatura.
 
+<!-- cSpell:disable -->
+
 ### <a name="general"></a>Geral
 
 | Tipo de ativo                      | Prefixo do nome |
 |---------------------------------|-------------|
-| Grupo de recursos                  | rg-         |
+| Resource group                  | rg-         |
 | Definição de política               | regras     |
 | Instância do serviço de gerenciamento de API | APIM       |
 
@@ -100,6 +102,7 @@ A lista a seguir fornece prefixos de tipo de recurso do Azure recomendados para 
 | Conexão VPN                   | cn-         |
 | Gateway de Aplicativo              | agw-        |
 | Tabela de rotas                      | rota      |
+| Perfil do Gerenciador de Tráfego          | traf-       |
 
 ### <a name="compute-and-web"></a>Computação e Web
 
@@ -139,7 +142,7 @@ A lista a seguir fornece prefixos de tipo de recurso do Azure recomendados para 
 | Tipo de ativo       | Prefixo do nome |
 |------------------|-------------|
 | Conta de armazenamento  | st          |
-| StorSimple do Azure | ssimp       |
+| Azure StorSimple | ssimp       |
 
 ### <a name="ai--machine-learning"></a>IA + Machine Learning
 
@@ -149,7 +152,7 @@ A lista a seguir fornece prefixos de tipo de recurso do Azure recomendados para 
 | Serviços Cognitivos do Azure         | engrenagem        |
 | Workspace do Azure Machine Learning | mlw-        |
 
-## <a name="analytics-and-iot"></a>Análise e IoT
+### <a name="analytics-and-iot"></a>Análise e IoT
 
 | Tipo de ativo                      | Prefixo do nome |
 |---------------------------------|-------------|
@@ -169,12 +172,12 @@ A lista a seguir fornece prefixos de tipo de recurso do Azure recomendados para 
 | Hub IoT                         | IOT        |
 | Power BI Embedded               | PBI        |
 
-### <a name="integration"></a>Integration
+### <a name="integration"></a>Integração
 
 | Tipo de ativo        | Prefixo do nome |
 |-------------------|-------------|
 | Aplicativos lógicos        | lógica      |
-| Service Bus       | sb-         |
+| Barramento de Serviço       | sb-         |
 | Fila do Barramento de Serviço | sbq-        |
 | Tópico do barramento de serviço | SBT        |
 
@@ -196,13 +199,15 @@ A lista a seguir fornece prefixos de tipo de recurso do Azure recomendados para 
 | Instância do serviço de migração de banco de dados | DMS        |
 | Cofre dos Serviços de Recuperação             | rsv-        |
 
+<!-- cSpell:enable -->
+
 ## <a name="metadata-tags"></a>Marcas de metadados
 
 Quando você aplica marcas de metadados aos seus recursos de nuvem, pode incluir informações sobre esses ativos que não poderiam ser incluídas no nome do recurso. Você pode usar essas informações para executar filtragem e relatórios mais sofisticados sobre os recursos. Convém que essas marcas incluam contexto sobre a carga de trabalho ou aplicativo associado, requisitos operacionais e informações de propriedade do recurso. Essas informações podem ser usadas pelas equipes empresariais ou de TI para encontrar recursos ou gerar relatórios sobre o uso e a cobrança de recursos.
 
 Quais as marcas que você aplica a recursos e quais marcas são obrigatórias ou opcionais são diferentes entre organizações. A lista a seguir fornece exemplos de marcas comuns que capturam informações e contexto importantes sobre um recurso. Use esta lista como um ponto de partida para estabelecer suas próprias convenções de marcação.
 
-| Nome da Marca                  | Descrição                                                                                                                                                                                                          | Chave               | Valor de exemplo                                              |
+| Nome da marca                  | DESCRIÇÃO                                                                                                                                                                                                          | Chave               | Valor de exemplo                                              |
 |---------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|------------------------------------------------------------|
 | Nome do aplicativo          | Dê um nome ao aplicativo, ao serviço ou à carga de trabalho a que o recurso está associado.                                                                                                                                       | _ApplicationName_ | _{app name}_                                               |
 | Nome do aprovador             | Pessoa responsável por aprovar custos relacionados a esse recurso.                                                                                                                                                     | _Approver_        | _{email}_                                                  |
@@ -214,55 +219,57 @@ Quais as marcas que você aplica a recursos e quais marcas são obrigatórias ou
 | Ambiente               | Ambiente de implantação do aplicativo, da carga de trabalho ou do serviço.                                                                                                                                                     | _Env_             | _Prod_, _dev_, _QA_, _estágio_, _teste_                       |
 | Nome do proprietário                | Proprietário do aplicativo, da carga de trabalho ou do serviço.                                                                                                                                                                      | _Proprietário_           | _{email}_                                                  |
 | Nome do solicitante            | Usuário que solicitou a criação deste aplicativo.                                                                                                                                                                 | _Solicitante_       | _{email}_                                                  |
-| Classe Service             | Nível do contrato de nível de serviço do aplicativo, da carga de trabalho ou do serviço.                                                                                                                                              | _ServiceClass_    | _Desenvolvimento_, _bronze_, _prata_, _ouro_                          |
+| Classe de serviço             | Nível do contrato de nível de serviço do aplicativo, da carga de trabalho ou do serviço.                                                                                                                                              | _ServiceClass_    | _Desenvolvimento_, _bronze_, _prata_, _ouro_                          |
 | Data de início do projeto | Data quando o aplicativo, carga de trabalho ou serviço foi implantado pela primeira vez.                                                                                                                                                  | _StartDate_       | _{date}_                                                   |
 
 ## <a name="example-names"></a>Nomes de exemplo
 
 A seção a seguir fornece alguns exemplos de nomes para tipos de recursos comuns do Azure em uma implantação de nuvem corporativa.
 
+<!-- cSpell:disable -->
+
 <!-- markdownlint-disable MD024 MD033 -->
 
 ### <a name="example-names-general"></a>Nomes de exemplo: geral
 
-| Tipo de ativo                      | Escopo                              | Formato                                                      | Exemplos                                                                                                                |
+| Tipo de ativo                      | Escopo                              | Formatar                                                      | Exemplos                                                                                                                |
 |---------------------------------|------------------------------------|-------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| Assinatura                    | Considerar <br/>Contrato Enterprise | \<Unidade de negócios\>-\<Tipo de assinatura\>-\<\#\#\#\>          | <ul><li>mktg-prod-001 </li><li>corp-shared-001 </li><li>fin-client-001</li></ul>                                        |
-| Grupo de recursos                  | Assinatura                       | RG-\<nome do serviço ou aplicativo\>-\<tipo de assinatura\>-\<\#\#\#\> | <ul><li>rg-mktgsharepoint-prod-001 </li><li>rg-acctlookupsvc-share-001 </li><li>rg-ad-dir-services-shared-001</li></ul> |
+| Subscription                    | Considerar <br/>Contrato Enterprise | \<Unidade de negócios\>-\<Tipo de assinatura\>-\<\#\#\#\>          | <ul><li>mktg-prod-001 </li><li>corp-shared-001 </li><li>fin-client-001</li></ul>                                        |
+| Resource group                  | Subscription                       | RG-\<nome do serviço ou aplicativo\>-\<tipo de assinatura\>-\<\#\#\#\> | <ul><li>rg-mktgsharepoint-prod-001 </li><li>rg-acctlookupsvc-share-001 </li><li>rg-ad-dir-services-shared-001</li></ul> |
 | Instância do serviço de gerenciamento de API | Global                             | APIM-\<nome do aplicativo ou do serviço\>                                | APIM-Navigator-prod                                                                                                     |
 
 ### <a name="example-names-networking"></a>Nomes de exemplo: rede
 
-| Tipo de ativo                   | Escopo           | Formato                                                               | Exemplos                                                                                                                      |
+| Tipo de ativo                   | Escopo           | Formatar                                                               | Exemplos                                                                                                                      |
 |------------------------------|-----------------|----------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| Rede virtual              | Grupo de recursos  | vnet-\<Tipo de assinatura\>-\<Região\>-\<\#\#\#\>                     | <ul><li>vnet-shared-eastus2-001 </li><li>vnet-prod-westus-001 </li><li>vnet-client-eastus2-001</li></ul>                      |
+| Rede virtual              | Resource group  | vnet-\<Tipo de assinatura\>-\<Região\>-\<\#\#\#\>                     | <ul><li>vnet-shared-eastus2-001 </li><li>vnet-prod-westus-001 </li><li>vnet-client-eastus2-001</li></ul>                      |
 | Sub-rede                       | Rede virtual | snet-\<subscription\>-\<subregion\>-\<\#\#\#\>                       | <ul><li>snet-shared-eastus2-001 </li><li>snet-prod-westus-001 </li><li>snet-client-eastus2-001</li></ul>                      |
-| NIC (adaptador de rede)      | Grupo de recursos  | nic-\<\#\#\>-\<vmname\>-\<assinatura\>\<\#\#\#\>                   | <ul><li>nic-01-dc1-shared-001 </li><li>nic-02-vmhadoop1-prod-001 </li><li>nic-02-vmtest1-client-001</li></ul>                 |
-| Endereço IP público            | Grupo de recursos  | pip-\<nome da VM ou do aplicativo\>-\<Ambiente\>-\<sub-região\>-\<\#\#\#\> | <ul><li>pip-dc1-shared-eastus2-001 </li><li>pip-hadoop-prod-westus-001</li></ul>                                              |
-| Balanceador de carga                | Grupo de recursos  | lb-\<nome do aplicativo ou função\>\<Ambiente\>\<\#\#\#\>                     | <ul><li>lb-navigator-prod-001 </li><li>lb-sharepoint-dev-001</li></ul>                                                        |
+| NIC (adaptador de rede)      | Resource group  | nic-\<\#\#\>-\<vmname\>-\<assinatura\>\<\#\#\#\>                   | <ul><li>nic-01-dc1-shared-001 </li><li>nic-02-vmhadoop1-prod-001 </li><li>nic-02-vmtest1-client-001</li></ul>                 |
+| Endereço IP público            | Resource group  | pip-\<nome da VM ou do aplicativo\>-\<Ambiente\>-\<sub-região\>-\<\#\#\#\> | <ul><li>pip-dc1-shared-eastus2-001 </li><li>pip-hadoop-prod-westus-001</li></ul>                                              |
+| Balanceador de carga                | Resource group  | lb-\<nome do aplicativo ou função\>\<Ambiente\>\<\#\#\#\>                     | <ul><li>lb-navigator-prod-001 </li><li>lb-sharepoint-dev-001</li></ul>                                                        |
 | NSG (Grupo de Segurança de Rede) | Sub-rede ou NIC   | NSG-nome da política de\<ou nome do aplicativo\>-\<\#\#\#\>                           | <ul><li>nsg-weballow-001 </li><li>nsg-rdpallow-001 </li><li>nsg-sqlallow-001 </li><li>nsg-dnsbloked-001</li></ul>             |
 | Gateway de rede local        | Gateway virtual | LGW-\<tipo de assinatura\>-\<região\>-\<\#\#\#\>                      | <ul><li>LGW-Shared-eastus2-001 </li><li>LGW-prod-westus-001 </li><li>LGW-Client-eastus2-001</li></ul>                         |
 | Gateway de rede virtual      | Rede virtual | vgw-\<tipo de assinatura\>-\<região\>-\<\#\#\#\>                      | <ul><li>vgw-Shared-eastus2-001 </li><li>vgw-prod-westus-001 </li><li>vgw-Client-eastus2-001</li></ul>                         |
-| Conexão site a site      | Grupo de recursos  | cn-\<nome do gateway local\>-to-\<nome do gateway virtual\>                | <ul><li>CN-LGW-Shared-eastus2-001-to-vgw-Shared-eastus2-001 </li><li>CN-LGW-Shared-eastus2-001-to-Shared-oesteus-001</li></ul> |
-| Conexão VPN               | Grupo de recursos  | cn-\<subscription1\>\<region1\>-to-\<subscription2\>\<region2\>-     | <ul><li>cn-shared-eastus2-to-shared-westus </li><li>cn-prod-eastus2-to-prod-westus</li></ul>                                  |
-| Tabela de rotas                  | Grupo de recursos  | nome da tabela de rotas de\<de rota\>                                           | <ul><li>lb-navigator-prod-001 </li><li>lb-sharepoint-dev-001</li></ul>                                                        |
+| Conexão site a site      | Resource group  | cn-\<nome do gateway local\>-to-\<nome do gateway virtual\>                | <ul><li>CN-LGW-Shared-eastus2-001-to-vgw-Shared-eastus2-001 </li><li>CN-LGW-Shared-eastus2-001-to-Shared-oesteus-001</li></ul> |
+| Conexão VPN               | Resource group  | cn-\<subscription1\>\<region1\>-to-\<subscription2\>\<region2\>-     | <ul><li>cn-shared-eastus2-to-shared-westus </li><li>cn-prod-eastus2-to-prod-westus</li></ul>                                  |
+| Tabela de rotas                  | Resource group  | nome da tabela de rotas de\<de rota\>                                           | <ul><li>lb-navigator-prod-001 </li><li>lb-sharepoint-dev-001</li></ul>                                                        |
 | Rótulo do DNS                    | Global          | \<Um registro de VM\>.[\<região\>.cloudapp.azure.com]                   | <ul><li>dc1.westus.cloudapp.azure.com </li><li>web1.eastus2.cloudapp.azure.com</li></ul>                                      |
 
 ### <a name="example-names-compute-and-web"></a>Nomes de exemplo: computação e Web
 
-| Tipo de ativo                  | Escopo          | Formato                                                              | Exemplos                                                                                                                          |
+| Tipo de ativo                  | Escopo          | Formatar                                                              | Exemplos                                                                                                                          |
 |-----------------------------|----------------|---------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| Máquina virtual             | Grupo de recursos | VM\<nome da política ou appname\>\<\#\#\#\>                              | <ul><li>vmnavigator001 </li><li>vmsharepoint001 </li><li>vmsqlnode001 </li><li>vmhadoop001</li></ul>                              |
+| Máquina virtual             | Resource group | VM\<nome da política ou appname\>\<\#\#\#\>                              | <ul><li>vmnavigator001 </li><li>vmsharepoint001 </li><li>vmsqlnode001 </li><li>vmhadoop001</li></ul>                              |
 | Conta de armazenamento da VM          | Global         | stvm\<tipo de desempenho\>\<appname ou prodname\>\<região\>\<\#\#\#\> | <ul><li>stvmstcoreeastus2001 </li><li>stvmpmcoreeastus2001 </li><li>stvmstplmeastus2001 </li><li>stvmsthadoopeastus2001</li></ul> |
 | Aplicativo Web                     | Global         | App-\<nome do aplicativo\>-\<ambiente\>-\<\#\#\#\>. [{azurewebsites.net}]   | <ul><li>app-navigator-prod-001.azurewebsites.net </li><li>app-accountlookup-dev-001.azurewebsites.net</li></ul>                   |
 | Aplicativo de funções                | Global         | Func-\<nome do aplicativo\>-\<ambiente\>-\<\#\#\#\>. [{azurewebsites.net}]  | <ul><li>func-navigator-prod-001.azurewebsites.net </li><li>func-accountlookup-dev-001.azurewebsites.net</li></ul>                 |
 | serviço de nuvem               | Global         | \<nome do aplicativo\>-\<ambiente\>-\<\#\#\#\>. [{cloudapp.net}]        | <ul><li>could-navigator-prod-001.azurewebsites.net </li><li>could-accountlookup-dev-001.azurewebsites.net</li></ul>                   |
-| Hub de notificação            | Grupo de recursos | NTF-\<nome do aplicativo\>-\<ambiente\>                                    | <ul><li>NTF-Navigator-prod </li><li>NTF-emissões-dev</li></ul>                                                                   |
+| Hub de notificação            | Resource group | NTF-\<nome do aplicativo\>-\<ambiente\>                                    | <ul><li>NTF-Navigator-prod </li><li>NTF-emissões-dev</li></ul>                                                                   |
 | Namespace dos hubs de notificação | Global         | ntfns-\<nome do aplicativo\>-\<ambiente\>                                  | <ul><li>ntfns-Navigator-prod </li><li>ntfns-emissões-dev</li></ul>                                                               |
 
 ### <a name="example-names-databases"></a>Nomes de exemplo: bancos de dados
 
-| Tipo de ativo                     | Escopo              | Formato                                 | Exemplos                                                                  |
+| Tipo de ativo                     | Escopo              | Formatar                                 | Exemplos                                                                  |
 |--------------------------------|--------------------|----------------------------------------|---------------------------------------------------------------------------|
 | Servidor de banco de dados SQL do Azure      | Global             | SQL-\<nome do aplicativo\>-\<ambiente\>       | <ul><li>SQL-Navigator-prod </li><li>SQL-emissões-dev</li></ul>           |
 | Banco de Dados SQL do Azure             | Banco de Dados SQL do Azure | SQLDB-\<nome do banco de dados >-\<ambiente\> | <ul><li>SQLDB-Users-prod </li><li>SQLDB-usuários-dev</li></ul>               |
@@ -275,26 +282,26 @@ A seção a seguir fornece alguns exemplos de nomes para tipos de recursos comun
 
 ### <a name="example-names-storage"></a>Nomes de exemplo: armazenamento
 
-| Tipo de ativo                        | Escopo  | Formato                                                                        | Exemplos                                                              |
+| Tipo de ativo                        | Escopo  | Formatar                                                                        | Exemplos                                                              |
 |-----------------------------------|--------|-------------------------------------------------------------------------------|-----------------------------------------------------------------------|
 | Conta de armazenamento (uso geral)     | Global | st\<nome do armazenamento\>\<\#\#\#\>                                                  | <ul><li>stnavigatordata001 </li><li>stemissionsoutput001</li></ul>    |
 | Conta de armazenamento (logs de diagnóstico) | Global | stdiag\<as duas primeiras letras do nome da assinatura e número\>\<região\>\<\#\#\#\> | <ul><li>stdiagsh001eastus2001 </li><li>stdiagsh001westus001</li></ul> |
-| StorSimple do Azure                  | Global | ssimp\<Nome do Aplicativo\>\<Ambiente\>                                              | <ul><li>ssimpnavigatorprod </li><li>ssimpemissionsdev</li></ul>       |
+| Azure StorSimple                  | Global | ssimp\<Nome do Aplicativo\>\<Ambiente\>                                              | <ul><li>ssimpnavigatorprod </li><li>ssimpemissionsdev</li></ul>       |
 
 ### <a name="example-names-ai--machine-learning"></a>Nomes de exemplo: ia + Machine Learning
 
-| Tipo de ativo                       | Escopo          | Formato                            | Exemplos                                                          |
+| Tipo de ativo                       | Escopo          | Formatar                            | Exemplos                                                          |
 |----------------------------------|----------------|-----------------------------------|-------------------------------------------------------------------|
 | Pesquisa Cognitiva do Azure           | Global         | srch-\<Nome do Aplicativo\>-\<Ambiente\> | <ul><li>srch-navigator-prod </li><li>srch-emissions-dev</li></ul> |
-| Serviços Cognitivos do Azure         | Grupo de recursos | engrenagem-\<nome do aplicativo\>-\<ambiente\>  | <ul><li>engrenagem-Navigator-prod </li><li>engrenagem-emissões-dev</li></ul>   |
-| Workspace do Azure Machine Learning | Grupo de recursos | MLW-\<nome do aplicativo\>-\<ambiente\>  | <ul><li>MLW-Navigator-prod </li><li>MLW-emissões-dev</li></ul>   |
+| Serviços Cognitivos do Azure         | Resource group | engrenagem-\<nome do aplicativo\>-\<ambiente\>  | <ul><li>engrenagem-Navigator-prod </li><li>engrenagem-emissões-dev</li></ul>   |
+| Workspace do Azure Machine Learning | Resource group | MLW-\<nome do aplicativo\>-\<ambiente\>  | <ul><li>MLW-Navigator-prod </li><li>MLW-emissões-dev</li></ul>   |
 
 ### <a name="example-names-analytics-and-iot"></a>Nomes de exemplo: análise e IoT
 
-| Tipo de ativo                  | Escopo          | Formato                              | Exemplos                                                              |
+| Tipo de ativo                  | Escopo          | Formatar                              | Exemplos                                                              |
 |-----------------------------|----------------|-------------------------------------|-----------------------------------------------------------------------|
 | Fábrica de dados do Azure          | Global         | ADF-\<nome do aplicativo\>ambiente de \<\>     | <ul><li>ADF-Navigator-prod </li><li>ADF-emissões-dev</li></ul>       |
-| Stream Analytics do Azure      | Grupo de recursos | asa-\<Nome do Aplicativo\>-\<Ambiente\>    | <ul><li>asa-navigator-prod </li><li>asa-emissions-dev</li></ul>       |
+| Stream Analytics do Azure      | Resource group | asa-\<Nome do Aplicativo\>-\<Ambiente\>    | <ul><li>asa-navigator-prod </li><li>asa-emissions-dev</li></ul>       |
 | Conta de Data Lake Analytics | Global         | dla\<Nome do Aplicativo\>\<Ambiente\>      | <ul><li>dlanavigatorprod </li><li>dlaemissionsdev</li></ul>           |
 | Conta de Data Lake Storage   | Global         | dls\<Nome do Aplicativo\>\<Ambiente\>      | <ul><li>dlsnavigatorprod </li><li>dlsemissionsdev</li></ul>           |
 | Hub de Eventos                   | Global         | evh-\<Nome do Aplicativo\>-\<Ambiente\>    | <ul><li>evh-navigator-prod </li><li>evh-emissions-dev</li></ul>       |
@@ -306,8 +313,8 @@ A seção a seguir fornece alguns exemplos de nomes para tipos de recursos comun
 
 ### <a name="example-names-integration"></a>Nomes de exemplo: integração
 
-| Tipo de ativo        | Escopo       | Formato                                                     | Exemplos                                                      |
+| Tipo de ativo        | Escopo       | Formatar                                                     | Exemplos                                                      |
 |-------------------|-------------|------------------------------------------------------------|---------------------------------------------------------------|
-| Service Bus       | Global      | sb-\<Nome do Aplicativo\>-\<Ambiente\>.[{servicebus.windows.net}] | <ul><li>sb-navigator-prod </li><li>sb-emissions-dev</li></ul> |
-| Fila do Barramento de Serviço | Service Bus | sbq-\<descritor da consulta\>                                   | <ul><li>sbq-messagequery</li></ul>                            |
-| Tópico do barramento de serviço | Service Bus | SBT\<descritor de consulta\>                                   | <ul><li>SBT-MessageQuery</li></ul>                            |
+| Barramento de Serviço       | Global      | sb-\<Nome do Aplicativo\>-\<Ambiente\>.[{servicebus.windows.net}] | <ul><li>sb-navigator-prod </li><li>sb-emissions-dev</li></ul> |
+| Fila do Barramento de Serviço | Barramento de Serviço | sbq-\<descritor da consulta\>                                   | <ul><li>sbq-messagequery</li></ul>                            |
+| Tópico do barramento de serviço | Barramento de Serviço | SBT\<descritor de consulta\>                                   | <ul><li>SBT-MessageQuery</li></ul>                            |

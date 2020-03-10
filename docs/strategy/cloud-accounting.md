@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 008958e0542a52f022bbf2ba3183fbfb8c78b9ee
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 016f0502108fa771490293bd6588f3fe7193fb07
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806808"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79023824"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -24,7 +24,7 @@ A nuvem altera como ela conta os custos, como é descrito em [criando um modelo 
 
 Geralmente, é preciso considerar um centro de custo. No modelo de contabilidade de ti tradicional, ele consolida a potência de compra de todos os ativos de ti. Como apontamos no artigo sobre [modelos financeiros](./financial-models.md) , essa aquisição de consolidação de energia pode incluir licenças de software, encargos recorrentes do licenciamento do CRM, compra de áreas de trabalho de funcionários e outros custos grandes.
 
-Quando ele atua como um centro de custo, o valor percebido dele é exibido em grande parte por meio de uma lente de gerenciamento de compras. Essa percepção torna difícil para o quadro ou outros executivos entenderem o valor real que ele fornece. Os custos de aquisição tendem a distorcer a exibição dele por meio da importância de qualquer outro valor adicionado pela organização. Este modo de exibição explica por que muitas vezes ele é dividido nas responsabilidades do CFO ou do COO. Essa percepção de ti é limitada e pode ser de curta aparência.
+Quando ele atua como um centro de custo, o valor percebido dele é exibido em grande parte por meio de uma lente de gerenciamento de compras. Essa percepção torna difícil para o quadro ou outros executivos entenderem o valor real que ele fornece. Os custos de aquisição tendem a distorcer a exibição dele por meio da importância de qualquer outro valor adicionado pela organização. Este modo de exibição explica por que muitas vezes é responsabilidade das responsabilidades do diretor financeiro ou do diretor de operações. Essa percepção de ti é limitada e pode ser de curta aparência.
 
 ## <a name="central-it-accounting-profit-center-model"></a>Contabilidade de ti central (modelo de centro de lucro)
 
@@ -34,7 +34,7 @@ Independentemente do modelo de receita, os modelos de contabilidade de ti centra
 
 Em um modelo de contabilidade de ti central, a equipe de ti marca os serviços fornecidos para levar em conta a sobrecarga, o gerenciamento e outras despesas estimadas. Em seguida, ele cobra as unidades de negócios concorrentes para os serviços marcados. Nesse modelo, espera-se que o CIO gerencie o P & L associado à venda desses serviços. Isso pode criar custos e contenção de ti informados entre as unidades centrais de ti e de negócios, especialmente quando precisa reduzir os custos ou não atender a SLAs acordados. Durante os horários de alteração da tecnologia ou do mercado, qualquer nova tecnologia causaria uma interrupção na central de ti de P & L, dificultando a transformação.
 
-## <a name="chargeback"></a>Recuperação
+## <a name="chargeback"></a>Cobrança Retroativa
 
 Uma das primeiras etapas comuns para alterar sua reputação é que o centro de custo está implementando um modelo de estorno de contabilidade. Esse modelo é especialmente comum em empresas menores ou em organizações de ti altamente eficientes. No modelo de estorno, os custos de ti associados a uma unidade de negócios específica são tratados como uma despesa operacional no orçamento da unidade de negócios. Essa prática reduz os efeitos de custo cumulativo, permitindo que os valores de negócios sejam mostrados mais claramente.
 

@@ -7,18 +7,18 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 6f865eb0a5f81aa005239dbafd5437dc93797f94
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 524fce58c6592ece46eedec0aea3cc6bbacb6f61
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76798495"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79023936"
 ---
 # <a name="examples-of-agility-outcomes"></a>Exemplos de resultados de agilidade
 
 Conforme discutido na [visão geral dos resultados de negócios](./index.md), vários resultados de negócios em potencial podem servir como base para qualquer conversa de jornada de transformação com a empresa. Este artigo se concentra na medida de negócios do timeserve: agilidade dos negócios. Entender a posição de mercado da sua empresa e o panorama competitivo pode ajudá-lo a articular os resultados de negócios que são o alvo da jornada de transformação da empresa.
 
-Tradicionalmente, os CIOs (gerentes de investimentos) e as equipes de ti foram considerados uma fonte de estabilidade em processos fundamentais de missão crítica. Isso ainda é verdade. Algumas empresas podem funcionar bem quando sua plataforma de ti está instável. No entanto, no mundo de negócios de hoje, é esperado muito mais. Ele pode expandir além de um centro de custo simples ao fazer a parceria com a empresa para fornecer vantagens no mercado. Muitos CIOs e executivos pressupõem que a estabilidade é simplesmente uma linha de base para ela. Para esses líderes, a agilidade dos negócios é a medida de sua contribuição para os negócios.
+Tradicionalmente, os gerentes de investimentos e as equipes de ti foram considerados uma fonte de estabilidade em processos fundamentais de missão crítica. Isso ainda é verdade. Algumas empresas podem funcionar bem quando sua plataforma de ti está instável. No entanto, no mundo de negócios de hoje, é esperado muito mais. Ele pode expandir além de um centro de custo simples ao fazer a parceria com a empresa para fornecer vantagens no mercado. Muitos gerentes e executivos de investimentos pressupõem que a estabilidade é simplesmente uma linha de base para ela. Para esses líderes, a agilidade dos negócios é a medida de sua contribuição para os negócios.
 
 <!-- markdownlint-disable MD026 -->
 
@@ -40,6 +40,8 @@ Durante os esforços de inovação habilitada para a nuvem, o tempo de colocaç�
 
 O sistema de saúde transforma serviços online em uma experiência digital amigável. Para transformar seus serviços digitais, a Aurora Health Care migrou seus sites para a plataforma Microsoft Azure e adotou uma estratégia de inovação contínua.
 
+<!-- cSpell:ignore Jamey Shiels -->
+
 > "Como equipe, estamos concentrados em soluções e velocidade de alta qualidade. Escolher o Azure foi uma decisão muito transformação para nós. "  
 > Jamey Shiels  
 > Vice-Presidente de experiência digital  
@@ -51,7 +53,7 @@ Quando a empresa exige novos serviços de ti ou escala para serviços existentes
 
 - **Exemplo:** Uma empresa de bens empacotados do consumidor requer a criação e a divisão de centenas de clusters de banco de dados por ano para atender às demandas operacionais dos negócios. Os hosts virtuais locais podem ser provisionados rapidamente, mas o processo de recuperação de ativos virtuais é lento e requer um tempo significativo da equipe. Como tal, o ambiente local herdado sofre de inchar e raramente pode acompanhar a demanda. Após a migração na nuvem, ele pode fornecer com mais facilidade o autoprovisionamento de recursos com script, com uma abordagem de estorno para cobrança. Juntos, isso permite que a empresa se movimente tão rapidamente quanto precisa, mas que ainda poderá ser contabilizada pelo custo dos recursos que demandam. Fazer isso na nuvem limita as implantações apenas ao orçamento da empresa.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Saiba mais sobre os [resultados do REACH](./reach-outcomes.md).
 

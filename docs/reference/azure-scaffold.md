@@ -7,13 +7,15 @@ ms.date: 09/22/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: 935e71b0fb0192fb4cc7aa3e7151e2192ac62243
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: cf8fa441dc69e073b3f78052b2acfa1e092129db
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78891691"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79023913"
 ---
+<!-- cSpell:ignore rodend -->
+
 # <a name="azure-enterprise-scaffold-is-now-the-microsoft-cloud-adoption-framework-for-azure"></a>O Azure Enterprise Scaffold agora é a estrutura de adoção Microsoft Cloud para o Azure
 
 O Azure Enterprise Scaffold foi integrado à estrutura de adoção do Microsoft Cloud para o Azure. Os objetivos do Enterprise Scaffold agora são abordados na seção [pronta](../ready/index.md) da estrutura de adoção de nuvem. O conteúdo do Enterprise Scaffold foi preterido.

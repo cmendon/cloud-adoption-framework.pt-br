@@ -9,16 +9,16 @@ ms.service: cloud-adoption-framework
 ms.subservice: reference
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: dc6a9244b16c0de69a870323d0099e37f85c075a
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: d1ba5e26214a0b60a4fe9fefb23d1dffaf8fa4ed
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341990"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79023862"
 ---
 # <a name="cloud-operating-model-is-now-part-of-the-microsoft-cloud-adoption-framework-for-azure"></a>O modelo operacional de nuvem agora faz parte da estrutura de adoção Microsoft Cloud para o Azure
 
-No início de 2018, a Microsoft lançou o COM (Modelo Operacional de Nuvem). O COM foi um guia que ajudou os clientes a entender o **que** e o **porquê** da transformação digital. Isso ajudou os clientes a ter uma noção de todas as áreas que precisavam ser abordadas: estratégia de negócios, estratégia de cultura e estratégia tecnológica. O que não foi incluído no COM eram os específicos _como_, quais clientes deixaram de perguntar: "onde vamos para cá?"
+No início de 2018, a Microsoft lançou o COM (Modelo Operacional de Nuvem). O COM foi um guia que ajudou os clientes a entender o **que** e o **porquê** da transformação digital. Isso ajudou os clientes a ter uma noção de todas as áreas que precisavam ser abordadas: estratégia de negócios, estratégia de cultura e estratégia tecnológica. O que não foi incluído no COM foram as etapas específicas de _instruções_ , que os clientes mais imaginandoam: "onde vamos aqui?"
 
 Em outubro de 2018, começamos a analisar todos os modelos que proliferaram na Comunidade da Microsoft, encontramos aproximadamente 60 modelos de adoção de nuvem diferentes. Uma equipe multimicrosoft foi estabelecida para trazer tudo junto como um "produto" de engenharia dedicado com implementações definidas em serviços, vendas e marketing. Esse esforço culminau na criação de um único modelo, a estrutura de adoção Microsoft Cloud para o Azure, projetada para ajudar os clientes a entender o **que** e **por que** e fornecer orientações unificadas sobre **como** ajudá-los a acelerar sua adoção de nuvem. O objetivo deste projeto é criar uma abordagem da Microsoft para a adoção da nuvem.
 

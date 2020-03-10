@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: 43cd9dd0d155849c8ed5dda277252e445507f6d8
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 7ee0451bd356cfc3fb4c7648f0bbf6b10ab0145f
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806842"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79023848"
 ---
 # <a name="examples-of-fiscal-outcomes"></a>Exemplos de resultados fiscais
 
@@ -56,6 +56,8 @@ A computação em nuvem pode reduzir as despesas de capital para hardware e soft
 - **Exemplo #2:** Uma empresa controladora adquiriu recentemente uma nova empresa. Na aquisição, os termos ditam que a nova entidade deve ser removida dos data centers atuais dentro de seis meses. Não fazer isso resultará em uma multa de 1 milhão USD por mês para a empresa controladora. Mover os ativos digitais para a nuvem em uma migração de nuvem pode permitir uma desativação rápida dos ativos antigos.
 - **Exemplo #3:** Uma empresa de imposto sobre renda que atende aos consumidores enfrenta 70% de sua receita anual durante os três primeiros meses do ano. No restante do ano, seu grande investimento em ti fica relativamente inativo. Uma migração de nuvem pode permitir que a ti implante a capacidade de computação/hospedagem necessária para esses três meses. Durante os nove meses restantes, os custos de IaaS poderiam ser reduzidos significativamente por meio da redução do volume de computação.
 
+<!-- cSpell:ignore Coverdell Coverdell's Sorensen -->
+
 ### <a name="example-coverdell"></a>Exemplo: Coverdell
 
 A Coverdell moderniza sua infraestrutura para gerar recordes de economias com o Azure. A decisão do Coverdell de investir no Azure, e para unir sua rede de sites, aplicativos, dados e infraestrutura nesse ambiente, levou a uma economia mais econômica do que a empresa já era esperada. A migração para um ambiente somente com Azure eliminou 54.000 USD em custos mensais dos serviços de colocação. Com a nova infraestrutura corporativa da empresa sozinha, a Coverdell espera economizar US $1 milhão dólares nos próximos dois a três anos.
@@ -92,7 +94,7 @@ Se um modelo de despesa operacional for desejável, o exemplo a seguir poderá s
 
 - **Exemplo:** O Data Center da empresa está sendo depreciado no momento em _US $ x_ por ano para os próximos três anos. Espera-se que seja necessário um _US x_ adicional para atualizar o hardware no próximo ano. Podemos converter as despesas de capital em um modelo de despesa operacional em uma taxa par de _z USD_ por mês, permitindo melhor gerenciamento e responsabilidade pelos custos operacionais da tecnologia.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Saiba mais sobre os [resultados da agilidade](./agility-outcomes.md).
 

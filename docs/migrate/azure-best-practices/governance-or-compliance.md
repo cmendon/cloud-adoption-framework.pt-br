@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 17952dc4c3ff28f2fcfe1a378a9efb969d65925b
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: b0aea9b1b69a659511e9a788e22a0e88e23e9047
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78897973"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79023737"
 ---
 # <a name="governance-or-compliance-strategy"></a>Estratégia de governança ou conformidade
 
@@ -52,8 +52,8 @@ Para ter uma compreensão mais profunda da governança, examine as [Cinco discip
 
 - [Gerenciamento de Custos](../../govern/cost-management/template.md)
 - [Linha de Base de Segurança](../../govern/security-baseline/template.md)
-- [Consistência de recursos].. /.. /govern/resource-consistency/template.md)
-- [Linha de base de identidade].. /.. /govern/identity-baseline/template.md)
+- [Consistência de Recursos](../../govern/resource-consistency/template.md)
+- [Linha de Base de Identidade](../../govern/identity-baseline/template.md)
 - [Aceleração de Implantação](../../govern/deployment-acceleration/template.md)
 
 Para obter orientações de como desenvolver diretrizes de governança com base no modelo de governança da Estrutura de Adoção da Nuvem, confira [Implementando uma estratégia de governança de nuvem](../../govern/corporate-policy.md).
@@ -66,7 +66,7 @@ Durante os processos de otimização e promoção, a equipe de governança de nu
 
 Durante esse processo, o plano de projeto deve incluir alocações de tempo para que a equipe de governança de nuvem execute uma análise de conformidade para cada carga de trabalho planejada para promoção de produção.
 
-## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
+## <a name="next-steps"></a>Próximas etapas
 
 Como o item final na [lista de verificação de escopo expandido](./index.md), retorne à lista de verificação e reavalie os requisitos de escopo adicionais para o esforço de migração.
 

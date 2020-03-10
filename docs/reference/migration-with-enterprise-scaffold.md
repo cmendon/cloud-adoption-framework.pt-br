@@ -8,14 +8,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: e0c1486dbb498686fe532ecf02b6dcb5e56c7336
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 8291b48d2955d623b643c944f4307613bcf22f47
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892507"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79023941"
 ---
-<!-- cSpell:ignore rodend subscope ITSM -->
+<!-- cSpell:ignore rodend subscope ITSM Hashi -->
 
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Andaime empresarial do Azure: governança de assinatura prescritiva
 
@@ -314,7 +314,7 @@ A automação é um trabalho em tempo integral e rapidamente se tornará uma das
 
 ## <a name="templates-and-devops"></a>Modelos e DevOps
 
-Conforme realçado na seção Automação, sua meta como uma organização deve ser provisionar recursos por meio de scripts e modelos controlados por código-fonte e para minimizar a configuração interativa de seus ambientes. Essa abordagem de “infraestrutura como código”, juntamente com um processo de DevOps disciplinado para implantação contínua pode garantir a consistência e reduzir desvios em seus ambientes. Quase todos os recursos do Azure podem ser implantados por meio de [modelos JSON do Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-template-deploy) em conjunto com o PowerShell ou com a CLI da plataforma Azure e ferramentas como a Terraform da Hashicorp (que tem um suporte de primeira classe e é integrado ao Azure Cloud Shell).
+Conforme realçado na seção Automação, sua meta como uma organização deve ser provisionar recursos por meio de scripts e modelos controlados por código-fonte e para minimizar a configuração interativa de seus ambientes. Essa abordagem de “infraestrutura como código”, juntamente com um processo de DevOps disciplinado para implantação contínua pode garantir a consistência e reduzir desvios em seus ambientes. Quase todos os recursos do Azure são implantáveis por meio de [modelos de JSON Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-template-deploy) em conjunto com o PowerShell ou a CLI de plataforma cruzada do Azure e ferramentas como Terraform de HashiCorp (que tem suporte de primeira classe e integrados ao Azure cloud Shell).
 
 O artigo como [as práticas recomendadas para usar modelos de Azure Resource Manager](https://blogs.msdn.microsoft.com/mvpawardprogram/2018/05/01/azure-resource-manager) fornece uma excelente discussão sobre as práticas recomendadas e as lições aprendidas para aplicar uma abordagem DevOps a modelos de Azure Resource Manager com o [Azure DevOps](https://docs.microsoft.com/azure/devops/user-guide/?view=vsts) ferramentas. Reserve tempo e esforço para desenvolver um conjunto principal de modelos específicos para os requisitos da sua organização e para desenvolver pipelines de entrega contínua com DevOps cadeias (como Azure DevOps, Jenkins, bambu, TeamCity e concurso), especialmente para seu ambientes de produção e de QA. Há uma grande biblioteca de [modelos de início rápido do Azure](https://github.com/Azure/azure-quickstart-templates) no GitHub que você pode usar como ponto de partida para modelos, e você pode criar rapidamente pipelines de entrega baseados em nuvem com o Azure DevOps.
 
@@ -342,7 +342,7 @@ O componente final do modelo de referência de andaime do Azure é essencial par
 
 O Azure fornece recursos internos e de terceiros de nossa ampla rede de parceiros que oferecem uma postura de segurança eficaz. Mais importante, a Microsoft fornece as práticas recomendadas e orientações na forma de [VDC (datacenter virtual) do Azure](./networking-vdc.md). À medida que você passa de uma única carga de trabalho para várias cargas de trabalho que usam recursos híbridos, as diretrizes de VDC fornecerão "receitas" para permitir uma rede flexível e que aumentará à medida que suas cargas de trabalho no Azure crescem.
 
-## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
+## <a name="next-steps"></a>Próximas etapas
 
 A governança é essencial para o sucesso do Azure. Este artigo foca na implementação técnica de um andaime empresarial, mas toca apenas no processo mais amplo e nas relações entre os componentes. A governança da política flui de cima para baixo e é determinada por aquilo que a empresa quer alcançar. Naturalmente, a criação de um modelo de governança para o Azure inclui representantes da TI, mas o mais importante é ter uma forte representação dos líderes do grupo de negócios, além de gerenciamento de segurança e risco. No fim, um andaime empresarial é sobre reduzir o risco aos negócios para facilitar a missão e os objetivos de uma organização.
 
