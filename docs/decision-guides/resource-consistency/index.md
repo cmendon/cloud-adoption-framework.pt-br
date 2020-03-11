@@ -1,6 +1,6 @@
 ---
 title: Guia de decisão de consistência de recursos
-description: Entenda a importância da consistência de recursos do seu estado de nuvem e os fatores que orientam os requisitos de consistência de recursos.
+description: Entenda a importância da consistência de recursos do seu acervo de nuvem e os fatores que orientam os requisitos de consistência de recursos.
 author: doodlemania2
 ms.author: dermar
 ms.date: 10/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: df1299c091c994e143fdc8102590c823f2974ac2
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: bb84d0f7ce6c29d52b1aebb54a456634cb942182
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77708709"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892388"
 ---
 # <a name="resource-consistency-decision-guide"></a>Guia de decisão de consistência de recursos
 
@@ -40,7 +40,7 @@ Os grupos de recursos atuam como contêineres para os recursos com um ciclo de v
 Se você respondeu _NÃO_ a nenhum dos pontos acima, o recurso em questão deve ser colocado em outro lugar, em outro grupo de recursos.
 
 > [!IMPORTANT]
-> Os grupos de recursos também são específicos da região. No entanto, é comum que os recursos estejam em regiões diferentes dentro do mesmo grupo de recursos, pois eles são gerenciados juntos, conforme a descrição acima. Para obter mais informações sobre a seleção de região, confira o [Guia de decisão de regiões](../regions/index.md).
+> Os grupos de recursos também são específicos da região. No entanto, é comum que os recursos estejam em regiões diferentes dentro do mesmo grupo de recursos, pois eles são gerenciados juntos, conforme a descrição acima. Para obter mais informações sobre a seleção de região, confira [Várias regiões](../../migrate/azure-best-practices/multiple-regions.md).
 
 ## <a name="deployment-consistency"></a>Consistência de implantação
 
