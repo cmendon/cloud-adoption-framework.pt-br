@@ -9,18 +9,20 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 0b37500652606e3a1018b3b93c03aae546827eff
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 762c302bf52473ae917ab5c59c589225f1c5f0ac
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799396"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79023990"
 ---
+<!-- cSpell:ignore timleyden tileyden -->
+
 # <a name="monitoring-and-reporting-in-azure"></a>Monitoramento e relatórios no Azure
 
 O Azure oferece vários serviços que, juntos, proporcionam uma solução abrangente para coletar, analisar e agir na telemetria de seus aplicativos e os recursos do Azure compatíveis com eles. Além disso, esses serviços podem estender para monitorar recursos críticos locais para fornecer um ambiente de monitoramento híbrido.
 
-# <a name="azure-monitortabazuremonitor"></a>[Azure Monitor](#tab/AzureMonitor)
+# <a name="azure-monitor"></a>[Azure Monitor](#tab/AzureMonitor)
 
 O Azure Monitor fornece um único hub unificado para todos os dados de monitoramento e diagnóstico no Azure. Você pode usá-lo para obter visibilidade em seus recursos. Com o Azure Monitor, você pode encontrar e corrigir problemas e otimizar o desempenho. Você também pode entender o comportamento do cliente.
 
@@ -51,13 +53,15 @@ Para obter mais informações, veja a [documentação do Azure Monitor](https://
 
 ::: zone target="chromeless"
 
+<!-- markdownlint-disable DOCSMD001 -->
+
 ## <a name="action"></a>Ação
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Monitoring/AzureMonitoringBrowseBlade/overview]" submitText="Explore Azure Monitor" :::
 
 ::: zone-end
 
-# <a name="azure-service-healthtabazureservicehealth"></a>[Integridade do Serviço do Azure](#tab/AzureServiceHealth)
+# <a name="azure-service-health"></a>[Integridade do Serviço do Azure](#tab/AzureServiceHealth)
 
 A Integridade do Serviço do Azure fornece uma exibição personalizada da integridade dos serviços do Azure e das regiões que você usa. As informações sobre os problemas ativos são postados na Integridade do Serviço para ajudá-lo a entender o impacto sobre seus recursos. As atualizações regulares mantêm você informado enquanto o problema é resolvido.
 
@@ -95,7 +99,7 @@ Para obter mais informações, confira a [documentação da Integridade do Servi
 
 ::: zone-end
 
-# <a name="azure-advisortabazureadvisor"></a>[Assistente do Azure](#tab/AzureAdvisor)
+# <a name="azure-advisor"></a>[Assistente do Azure](#tab/AzureAdvisor)
 
 O Assistente do Azure é um consultor de nuvem personalizado e gratuito que ajuda a seguir e implementar as melhores práticas de implantação do Azure. Ele analisa sua configuração de recurso e a telemetria de uso e recomenda soluções que podem ajudar a otimizar seu ambiente. As recomendações são divididas nas seguintes categorias:
 
@@ -125,7 +129,7 @@ Para obter mais informações, veja a [documentação do Assistente do Azure](ht
 
 ::: zone-end
 
-# <a name="azure-security-centertabazuresecuritycenter"></a>[Central de Segurança do Azure](#tab/AzureSecurityCenter)
+# <a name="azure-security-center"></a>[Central de Segurança do Azure](#tab/AzureSecurityCenter)
 
 A Central de Segurança do Azure também desempenha um papel importante na sua estratégia de monitoramento. Ela pode ajudar você a monitorar a segurança de seus computadores, redes, armazenamento, serviços de dados e aplicativos. A Central de Segurança fornece detecção avançada de ameaças usando análise comportamental e aprendizado de máquina para ajudar a identificar ameaças ativas visando seus recursos do Azure. Também fornece proteção contra ameaças que bloqueia malware ou outros códigos indesejados e reduz a área de superfície exposta à força bruta e outros ataques à rede.
 
