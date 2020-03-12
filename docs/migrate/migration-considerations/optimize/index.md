@@ -1,18 +1,18 @@
 ---
 title: Otimizar cargas de trabalho migradas
-description: Otimizar cargas de trabalho migradas
+description: Use o Cloud Adoption Framework para o Azure para preparar sua carga de trabalho e ativos migrados para serem promovidos para produção.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: aed8ba9d97cfbc236d378066569b466302b66239
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: b59245a8665355b34c3f599d8515ceeb93eb7315
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78225447"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094104"
 ---
 # <a name="optimize-migrated-workloads"></a>Otimizar cargas de trabalho migradas
 

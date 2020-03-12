@@ -42,12 +42,14 @@ items:
             href: strategy/financial-models.md
           - name: Entender a contabilidade de nuvem
             href: strategy/cloud-accounting.md
-          - name: Equilibrar o portfólio
-            href: strategy/balance-the-portfolio.md
       - name: Primeiro projeto de adoção de nuvem
         href: strategy/first-adoption-project.md
       - name: Considerações adicionais
         items:
+          - name: Balancear as prioridades concorrentes
+            href: strategy/balance-competing-priorities.md
+          - name: Equilibrar o portfólio
+            href: strategy/balance-the-portfolio.md
           - name: Mercados globais
             href: strategy/global-markets.md
       - name: Habilidades relevantes para a estratégia
@@ -256,7 +258,7 @@ items:
                     href: migrate/azure-best-practices/contoso-migration-refactor-linux-app-service-mysql.md
               - name: Hosts VMware
                 items:
-                  - name: Visão geral
+                  - name: Considerações ao hospedar o VMWare novamente
                     href: migrate/azure-best-practices/vmware-host.md
                   - name: Pré-requisitos
                     items:
@@ -496,6 +498,8 @@ items:
                 items:
                   - name: Validar suposições de avaliação antes da migração – Adicionar refinamento de R
                     href: migrate/migration-considerations/assess/index.md
+                  - name: Classificar cargas de trabalho
+                    href: migrate/migration-considerations/assess/classify.md
                   - name: Manter as prioridades alinhadas
                     href: migrate/migration-considerations/assess/business-priorities.md
                   - name: Avaliar a preparação da carga de trabalho
@@ -524,7 +528,7 @@ items:
                     href: migrate/migration-considerations/migrate/replicate-options.md
                   - name: Preparar cargas de trabalho
                     href: migrate/migration-considerations/migrate/stage.md
-              - name: 'Processos de teste, otimização e promoção'
+              - name: Processos de promoção
                 items:
                   - name: Visão geral
                     href: migrate/migration-considerations/optimize/index.md
@@ -1194,6 +1198,8 @@ items:
     items:
       - name: Roteiro da Cloud Adoption Framework
         href: reference/index.md
+      - name: Novidades
+        href: reference/whats-new.md
       - name: Modelo operacional
         items:
           - name: Visão geral

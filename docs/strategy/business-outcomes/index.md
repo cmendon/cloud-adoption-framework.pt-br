@@ -7,18 +7,18 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 1b0104767c58e31f6ae31cae511d2aa1dc60dd73
-ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
+ms.openlocfilehash: 0fc60c8d2ca4c0725d114f6bf618e1a02934b2b5
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78337938"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092379"
 ---
 <!-- markdownlint-disable MD026 -->
 
 # <a name="what-business-outcomes-are-associated-with-transformation-journeys"></a>Que resultados empresariais estão associados a jornadas de transformação?
 
-Os percursos de transformação mais bem-sucedidos começam com o resultado empresarial em mente. A adoção da nuvem pode ser um esforço dispendioso e demorado. Promover o nível certo de suporte de TI e outras áreas empresariais é crucial para o sucesso. A [estrutura de resultados empresariais](../index.md) da Microsoft foi projetada para ajudar os clientes a identificar resultados empresariais concisos e definidos e gerar resultados ou mudanças perceptíveis no desempenho empresarial, com suporte de uma medida específica.
+Os percursos de transformação mais bem-sucedidos começam com o resultado empresarial em mente. A adoção da nuvem pode ser um esforço dispendioso e demorado. Promover o nível certo de suporte de TI e outras áreas empresariais é crucial para o sucesso. Esta série de artigos foi criada para ajudar os clientes a identificar resultados empresariais concisos e definidos e gerar resultados ou mudanças perceptíveis no desempenho dos negócios, com o suporte de uma medida específica.
 
 Durante qualquer transformação de nuvem, a capacidade de falar em termos de resultados empresariais dá suporte a transparência e parcerias multifuncionais. A estrutura de resultados empresariais começa com um modelo simples para ajudar pessoas com mentalidade técnica a documentar e chegar a um consenso. Esse modelo pode ser usado com vários stakeholders empresariais para coletar uma variedade de resultados empresariais, que podem ser, cada um deles, influenciados pelo percurso de transformação de uma empresa. Fique à vontade para usar este modelo eletronicamente ou, melhor ainda, desenhá-lo em um quadro de comunicações para envolver os líderes empresariais e os stakeholders em discussões focadas em resultados.
 
