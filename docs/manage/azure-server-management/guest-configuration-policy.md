@@ -1,18 +1,18 @@
 ---
 title: Política de configuração de convidado
-description: Saiba como usar a extensão de configuração de convidado Azure Policy para auditar as definições de configuração em uma VM (máquina virtual) do Azure.
+description: Use a estrutura de adoção de nuvem para o Azure para aprender a usar a extensão de configuração de convidado Azure Policy para auditar as definições de configuração em uma VM do Azure.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 6e935288ce58af0570717c973c21b406ee94ebc0
-ms.sourcegitcommit: 238e7a06b56950cebdcc8f75924849fc995e6ff2
+ms.openlocfilehash: 73373e5cc56ef7e5804151171a22ad9f541f1cd3
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "77173307"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094695"
 ---
 # <a name="guest-configuration-policy"></a>Política de configuração de convidado
 

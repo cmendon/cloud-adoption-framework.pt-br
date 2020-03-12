@@ -1,6 +1,6 @@
 ---
 title: Recursos de adoção de nuvem
-description: Descreve a formação de recursos de adoção de nuvem
+description: Use a estrutura de adoção de nuvem para o Azure para entender a formação de recursos de adoção de nuvem e equipe de suas equipes adequadamente.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/10/2019
@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: fdd8c6234cfc66f4216ce2e6c4bcc8725ad2f079
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 9d0f4faf86322729f468ddd7cfc6bd60e48240ef
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76801165"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092702"
 ---
 # <a name="cloud-adoption-capabilities"></a>Recursos de adoção de nuvem
 
@@ -62,7 +62,7 @@ Os cronogramas de liberação e as durações de iteração são exclusivos para
 
 Algumas das tarefas técnicas associadas à adoção da nuvem podem se tornar repetitivas. Os integrantes da equipe devem girar a cada 3&ndash;seis meses para evitar problemas de satisfação dos funcionários e manter as habilidades relevantes. Um assento de rotação no [Cloud Center de excelência](./cloud-center-of-excellence.md) ou equipe de [governança de nuvem](./cloud-governance.md) pode fornecer uma excelente oportunidade para manter os funcionários atualizados e aproveitar novas inovações.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 A adoção é ótima, mas a adoção não controlada pode produzir resultados inesperados. Alinhar [recursos de governança de nuvem](./cloud-governance.md) acelera a adoção e as práticas recomendadas, reduzindo ainda mais os riscos técnicos e de negócios.
 

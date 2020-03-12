@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 7e64edb1f009d2fe7a522a9716c3b8ba2d52ef12
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: 97d4b52b50f943dfd0e146e84d4e5fc5a1d97711
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341568"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094636"
 ---
 # <a name="phase-1-prerequisite-planning-for-azure-server-management-services"></a>Fase 1: planejamento de pré-requisitos para os serviços de gerenciamento de servidor do Azure
 
@@ -97,7 +97,7 @@ Para criar um espaço de trabalho Log Analytics usando o portal do Azure, consul
 > [!NOTE]
 > Quando você cria uma conta de automação usando o portal do Azure, o portal tenta, por padrão, criar contas Executar como para os recursos de Azure Resource Manager e modelo de implantação clássico. Se você não tiver máquinas virtuais clássicas em seu ambiente e não for o coadministrador na assinatura, o portal criará uma conta Executar como para o Gerenciador de recursos, mas gerará um erro ao implantar a conta Executar como clássica. Se você não pretende dar suporte a recursos clássicos, pode ignorar esse erro.
 >
-> Você também pode criar contas Executar como usando o [PowerShell](https://docs.microsoft.com/azure/automation/manage-runas-account#create-run-as-account-using-powershell).
+> Você também pode criar contas Executar como usando o [PowerShell](https://docs.microsoft.com/azure/automation/manage-runas-account#creating-a-run-as-account-using-powershell).
 
 ## <a name="next-steps"></a>Próximas etapas
 

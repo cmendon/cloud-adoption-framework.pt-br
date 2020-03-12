@@ -1,6 +1,6 @@
 ---
 title: Redes de perímetro
-description: Saiba como as redes de perímetro (também chamadas de DMZs) usam os recursos e serviços do Azure.
+description: Use a estrutura de adoção de nuvem para o Azure para saber como configurar o Azure com eficiência para sua organização.
 author: tracsman
 ms.author: jonor
 ms.date: 05/10/2019
@@ -10,12 +10,12 @@ ms.subservice: ready
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: c2af34fce6f86ed4aafe432d37e8def9a82d4705
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: cbf77bad65753d219e3a0a53f300aee3690b001d
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892660"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79093244"
 ---
 <!-- cSpell:ignore tracsman jonor rossort NVAs WAFs -->
 
@@ -75,7 +75,7 @@ Normalmente, um farm de firewalls tem software menos especializado comparado a u
 
 Use um conjunto de instâncias do Firewall do Azure (ou NVAs) para o tráfego originado na Internet e outro conjunto para o tráfego originado localmente. Usar apenas um conjunto de firewalls para ambos é um risco à segurança, uma vez que ele não oferece nenhuma segurança de perímetro entre os dois conjuntos de tráfego de rede. Usar camadas de firewall separadas reduz a complexidade da verificação das regras de segurança e deixa claro quais regras correspondem a quais solicitações de rede de entrada.
 
-## <a name="azure-load-balancer"></a>Balanceador de carga do Azure
+## <a name="azure-load-balancer"></a>Azure Load Balancer
 
 O [Azure Load Balancer][ALB] oferece um serviço de Camada 4 (TCP, UDP) de alta disponibilidade que pode distribuir o tráfego de entrada entre instâncias de serviço definidas em um conjunto com balanceamento de carga. O tráfego enviado ao balanceador de carga dos pontos de extremidade de front-end (pontos de extremidade IP públicos ou pontos de extremidade IP privados) pode ser redistribuído com ou sem conversão de endereços para um pool de endereços IP de back-end (como NVAs ou VMs).
 

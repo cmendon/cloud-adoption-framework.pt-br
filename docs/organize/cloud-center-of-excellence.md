@@ -1,6 +1,6 @@
 ---
 title: Centro de excelência de nuvem
-description: Descreve a formação de um CCoE (Cloud Center of Excellence).
+description: Use a estrutura de adoção de nuvem para o Azure para aprender a estabelecer uma CCoE (Cloud Center of Excellence).
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/10/2019
@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: ca5e016ac07702711d38b671d767969cd4280bd3
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: ab3ff18d25d8a4e6ee9403236d101f98a9a6dd04
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76801113"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092652"
 ---
 # <a name="cloud-center-of-excellence"></a>Centro de excelência de nuvem
 
@@ -129,7 +129,7 @@ Além disso, recomendamos que os participantes da empresa fiquem informados sobr
 
 **Criar um buffer:** A equipe do CCoE experimentará novas abordagens. Algumas dessas abordagens não se alinharão bem com as operações existentes ou restrições técnicas. Há um risco real do CCoE que está experimentando pressão ou recurso de outras equipes quando os experimentos falham. A encorajação e o armazenamento em buffer da equipe das consequências de oportunidades de aprendizado de "falha rápida" são importantes. É igualmente importante manter a equipe em uma mentalidade de crescimento, garantindo que eles estejam aprendendo com esses experimentos e encontrem soluções melhores.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Um modelo CCoE requer tanto [recursos de plataforma de nuvem](./cloud-platform.md) quanto recursos de automação de [nuvem](./cloud-automation.md). A próxima etapa é alinhar os [recursos da plataforma de nuvem](./cloud-platform.md).
 

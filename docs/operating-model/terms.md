@@ -1,6 +1,6 @@
 ---
 title: Terminologia do modelo operacional
-description: Entenda a terminologia relacionada a um modelo operacional.
+description: Aprenda a terminologia associada aos modelos operacionais. A terminologia ajuda você a entender como um modelo operacional se encaixa no maior tema do planejamento corporativo.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/19/2019
@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: operating-model
-ms.openlocfilehash: 650ee5e075382de5da855a6f90aac86a8f4706b7
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 784a98597439b995b756291247c9142ab5ca5372
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76801198"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092744"
 ---
 # <a name="operating-model-terminology"></a>Terminologia do modelo operacional
 
@@ -33,7 +33,7 @@ O termo modelo operacional tem muitas definições. Este artigo de introdução 
 
 A adoção da nuvem é "o que fazemos" para obter o valor comercial. O modelo operacional representa "quem somos e como funcionamos diariamente" enquanto a adoção da nuvem está sendo entregue.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 [Aproveite o modelo operacional](./index.md) fornecido pela estrutura de adoção de nuvem para desenvolver a maturidade operacional.
 

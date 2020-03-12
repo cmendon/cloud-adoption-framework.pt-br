@@ -1,18 +1,18 @@
 ---
 title: Centralizar operações de gerenciamento
-description: Orientação sobre como centralizar operações de gerenciamento
+description: Aprenda a centralizar as operações de gerenciamento usando um único locatário de Azure Active Directory para todos os usuários. O gerenciamento centralizado simplifica as operações de gerenciamento e reduz os custos de manutenção.
 author: JnHs
 ms.author: jenhayes
 ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: a02e5804bd2ea18bd385634cbab57b21c8427bba
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 03920802d2ee483154f789a6f353fd1642ccaf98
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807879"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094462"
 ---
 # <a name="centralize-management-operations"></a>Centralizar operações de gerenciamento
 

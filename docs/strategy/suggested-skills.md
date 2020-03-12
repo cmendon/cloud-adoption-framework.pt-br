@@ -1,18 +1,18 @@
 ---
 title: Caminho de preparação de habilidades durante o planejamento
-description: Visão geral do caminho de preparação de habilidades durante a fase planejar da migração.
+description: Use a estrutura de adoção de nuvem para o Azure para saber mais sobre o caminho de preparação de habilidades durante a fase de planejamento da migração.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 36e7957f8bcdcc7edc12f3a2e5309eac3d551fb5
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: c138a81de0fd92c1a079c7a2f52255d5c7959526
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76798104"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092825"
 ---
 # <a name="skills-readiness-path-during-the-plan-phase-of-a-migration-journey"></a>Caminho de preparação de habilidades durante a fase de plano de uma jornada de migração
 
@@ -57,7 +57,7 @@ Durante a fase pronta, a equipe técnica cria uma zona de aterrissagem de migra�
 - [Crie uma conta do Azure](https://docs.microsoft.com/learn/modules/create-an-azure-account). a primeira etapa para usar o Azure é criar uma conta. Sua conta contém os serviços do Azure que você provisiona e manipula suas configurações pessoais, como identidade, cobrança e preferências.
 - [Portal do Azure](https://docs.microsoft.com/learn/modules/tour-azure-portal). Conheça os recursos e os serviços do portal do Azure e personalize o portal.
 - [Introdução ao Azure](https://docs.microsoft.com/learn/modules/welcome-to-azure). comece a trabalhar com o Azure criando e configurando sua primeira máquina virtual na nuvem.
-- [Introdução à segurança no Azure](https://docs.microsoft.com/learn/modules/intro-to-security-in-azure). Aprenda os conceitos básicos para proteger sua infraestrutura e seus dados quando você trabalha na nuvem. Entenda quais responsabilidades são suas e do que o Azure cuida para você.
+- [Introdução à segurança no Azure](https://docs.microsoft.com/learn/modules/intro-to-security-in-azure). Aprenda os conceitos básicos para proteger sua infraestrutura e seus dados ao trabalhar na nuvem. Entenda quais responsabilidades são suas e do que o Azure cuida para você.
 - [Gerencie recursos no Azure](https://docs.microsoft.com/learn/paths/manage-resources-in-azure). saiba como trabalhar com a linha de comando e o portal da Web do Azure para criar, gerenciar e controlar recursos baseados em nuvem.
 - [Crie uma VM](https://docs.microsoft.com/learn/modules/create-windows-virtual-machine-in-azure). crie uma máquina virtual usando o portal do Azure.
 - [Rede do Azure](https://docs.microsoft.com/learn/modules/intro-to-azure-networking). Aprenda os conceitos básicos da rede do Azure e como a rede do Azure ajuda a melhorar a resiliência e a reduzir a latência.

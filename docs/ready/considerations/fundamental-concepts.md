@@ -1,18 +1,18 @@
 ---
 title: Conceitos fundamentais do Azure
-description: Aprenda conceitos e termos fundamentais usados no Azure e como os conceitos se relacionam entre si.
+description: Use a estrutura de adoção de nuvem para o Azure para aprender conceitos e termos fundamentais usados no Azure e como os conceitos se relacionam entre si.
 author: alexbuckgit
 ms.author: abuck
 ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: d11e69014a9e46f916afb5bc8caf083c930ce725
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 90eed8109627298c8e6a044eff3333154bb17f1d
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799141"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092581"
 ---
 # <a name="azure-fundamental-concepts"></a>Conceitos fundamentais do Azure
 
@@ -92,7 +92,7 @@ Os recursos a seguir fornecem informações detalhadas sobre os conceitos discut
 - [Topologias para o Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-topologies)
 - [Assinaturas, licenças, contas e locatários para ofertas de nuvem da Microsoft](https://docs.microsoft.com/office365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings)
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Agora que você entendeu conceitos fundamentais do Azure, saiba como [dimensionar com várias assinaturas do Azure](../azure-best-practices/scaling-subscriptions.md).
 

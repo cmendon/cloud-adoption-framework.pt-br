@@ -1,18 +1,18 @@
 ---
 title: Examinar as decisões de racionalização
-description: Examinar as decisões de racionalização
+description: Use a estrutura de adoção de nuvem para o Azure para aprender a examinar as decisões de racionalização e se preparar para facilitar uma conversa com a empresa.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 47efac0b85198e95a76d40ad053a33c8051837ea
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: e38616b97f5026bd66de510cac12932290e276ba
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76800178"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79093263"
 ---
 # <a name="review-rationalization-decisions"></a>Examinar as decisões de racionalização
 
@@ -66,7 +66,7 @@ Quando você gerencia o plano de adoção de nuvem no Azure DevOps, esse gerenci
 
 Para planos de adoção grandes e complexos com vários projetos distintos, considere atualizar o caminho de iteração. A alteração do caminho de área torna a carga de trabalho visível somente para a equipe atribuída a esse caminho de área. Essa alteração pode facilitar o trabalho para a equipe de adoção de nuvem, reduzindo o número de tarefas visíveis. Mas adiciona complexidade para os processos de gerenciamento de projeto.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 [Defina iterações e versões](./iteration-paths.md) para começar a planejar o trabalho.
 

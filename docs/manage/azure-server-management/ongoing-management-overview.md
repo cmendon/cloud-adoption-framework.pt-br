@@ -1,18 +1,18 @@
 ---
 title: Gerenciamento e segurança contínuos
-description: Gerenciamento e segurança contínuos
+description: Use a estrutura de adoção de nuvem para o Azure para aprender a se concentrar nas configurações de operações e de segurança que oferecerão suporte a suas operações contínuas.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: fc15e50f0919745faff89949dbac15169adc5c6c
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: a68479bf128ea79383a5529b82a7866e399abc71
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807981"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094589"
 ---
 # <a name="phase-3-ongoing-management-and-security"></a>Fase 3: gerenciamento e segurança contínuos
 
@@ -30,7 +30,7 @@ A central de segurança do Azure é o local central para gerenciar a segurança 
 
 Recomendamos que você revise e implemente as recomendações fornecidas por esse serviço. Para obter informações sobre os benefícios adicionais da central de segurança do Azure, consulte [seguir as recomendações da central de segurança do Azure](https://docs.microsoft.com/azure/migrate/migrate-best-practices-security-management#best-practice-follow-azure-security-center-recommendations).
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Saiba como [habilitar o recurso de configuração de convidado Azure Policy](./guest-configuration-policy.md) .
 

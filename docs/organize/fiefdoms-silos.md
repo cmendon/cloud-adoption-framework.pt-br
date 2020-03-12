@@ -1,6 +1,6 @@
 ---
 title: Silos e fiefdoms
-description: Entenda os antipadrãos de silos e fiefdoms.
+description: Saiba mais sobre os antipadrões que podem bloquear a mentalidade de crescimento nas organizações. Especificamente, saiba mais sobre os antipadrões de silo e fiefdom.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/10/2019
@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: a430f988282a89bb4aea7e07689310309d5b971c
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 396e183e0e0af791c514e29b755c0b04a791f3a1
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222287"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79093803"
 ---
 # <a name="organizational-antipatterns-silos-and-fiefdoms"></a>Antipadrão organizacional: silos e fiefdoms
 
@@ -133,7 +133,7 @@ Fiefdoms de ti pode ser um sinal de problemas de liderança do sistema. Para sup
 
 O alinhamento com os participantes de negócios, as motivações de negócios e os resultados de negócios pode ser necessário para impulsionar a alteração necessária. Parceria com a [equipe de estratégia de nuvem](./cloud-strategy.md), o [Cloud Center de excelência](./cloud-center-of-excellence.md)e a [equipe de governança de nuvem](./cloud-governance.md) podem fornecer os pontos de dados necessários para uma posição defensible. Quando necessário, essas equipes devem estar envolvidas em um escalonamento de grupo para resolver os desafios que não podem ser abordados com a liderança de ti sozinho.
 
-## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
+## <a name="next-steps"></a>Próximas etapas
 
 Interromper os antipadrões organizacionais é um esforço de equipe. Para agir sobre essas diretrizes, examine a introdução à preparação organizacional para identificar os participantes e as estruturas de equipe certas:
 

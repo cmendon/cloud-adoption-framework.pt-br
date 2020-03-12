@@ -1,19 +1,21 @@
 ---
 title: Examine as opções de armazenamento
-description: Examine suas opções de armazenamento para cargas de trabalho do Azure.
+description: Use a estrutura de adoção de nuvem para o Azure para aprender a examinar suas opções de armazenamento para cargas de trabalho do Azure.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/15/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 054537d4d1b9a83700ed0c6a1a8840682f04faa1
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 28c5fbb7a95edd2ad32ccc3489f81cd99dc6c088
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892490"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79093012"
 ---
+<!-- cSpell:ignore HDFS databox Avere HANA ACLs Isilon DFSR Cloudera -->
+
 # <a name="review-your-storage-options"></a>Examine as opções de armazenamento
 
 As funcionalidades de armazenamento são críticas para dar suporte a cargas de trabalho e serviços hospedados na nuvem. Como parte de suas preparações de prontidão para adoção da nuvem, leia este artigo que ajudará você a se planejar e a atender às suas necessidades de armazenamento.

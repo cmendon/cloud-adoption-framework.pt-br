@@ -1,18 +1,18 @@
 ---
 title: Planejar a adoção da nuvem
-description: Planejando a adoção da nuvem
+description: Use a estrutura de adoção de nuvem para o Azure para aprender como um plano de adoção de nuvem ajuda as empresas a balancear seu portfólio de ti e gerenciar as transições ao longo do tempo.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 36d87caae344414e7bb311fb032d28f58bc5ea6c
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: d02dfda3b44155b7208e9caf00e979553fe97ff3
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222151"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79093554"
 ---
 # <a name="plan-for-cloud-adoption"></a>Planejar a adoção da nuvem
 
@@ -41,7 +41,7 @@ Esta série de artigos percorre cada etapa da tradução da estratégia e do esf
 5. **Definir iterações e versões:** as *iterações* são os blocos de tempo alocados para o trabalho. As *versões* são a definição do trabalho a ser feito antes de disparar uma alteração nos processos de produção.
 6. **Estimar linhas** do tempo: Estabelecer cronogramas aproximados para fins de planejamento de versão, com base nas estimativas iniciais.
 
-## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
+## <a name="next-steps"></a>Próximas etapas
 
 Antes de criar seu plano de adoção de nuvem, certifique-se de que todos os [pré-requisitos necessários](./prerequisites.md) estejam em vigor.
 

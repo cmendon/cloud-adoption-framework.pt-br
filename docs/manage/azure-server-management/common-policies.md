@@ -1,18 +1,18 @@
 ---
 title: Exemplos comuns de Azure Policy
-description: Exemplos comuns de Azure Policy
+description: Use a estrutura de adoção de nuvem para o Azure para garantir a conformidade com os requisitos de política de governança criando políticas com cmdlets do PowerShell.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 7020ffed2395d6c22f835d66cd1c539b525f37c3
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 2048a302c717ba51b674e50ffdcfe334ba14e101
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808117"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094770"
 ---
 # <a name="common-azure-policy-examples"></a>Exemplos comuns de Azure Policy
 
@@ -88,7 +88,7 @@ New-AzPolicyAssignment -Name "Deploy Antimalware" -DisplayName "Deploy default M
 
 ```
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Saiba mais sobre outros serviços e ferramentas de gerenciamento de servidor que estão disponíveis.
 

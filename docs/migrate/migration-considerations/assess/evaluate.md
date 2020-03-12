@@ -1,18 +1,18 @@
 ---
 title: Avaliar a preparação da carga de trabalho
-description: Um processo na migração na nuvem que se concentra nas tarefas de migrar cargas de trabalho para a nuvem.
+description: Entenda o que é necessário para avaliar a prontidão de uma carga de trabalho para migrar para a nuvem. Você aprenderá como validar todos os ativos e dependências associadas.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: c695d83c4e04b3cd837ff5916e47c128f17a1d34
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 3065dfa39af189c5275f966e758fe49004f4de00
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76802541"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094783"
 ---
 # <a name="evaluate-workload-readiness"></a>Avaliar a preparação da carga de trabalho
 
@@ -55,7 +55,7 @@ Documente discrepâncias na configuração de host, configuração de VM replica
 > [!NOTE]
 > O armazenamento total afeta diretamente os requisitos de largura de banda durante a replicação inicial. No entanto, o descompasso de armazenamento continua do ponto de replicação até o lançamento. Isso significa que i descompasso tem um efeito cumulativo na largura de banda disponível.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Após a conclusão da avaliação de um sistema, as saídas alimentam o desenvolvimento de uma nova [arquitetura de nuvem](./architect.md).
 

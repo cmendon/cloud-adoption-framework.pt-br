@@ -1,18 +1,18 @@
 ---
 title: Análise da lista de pendências de migração
-description: Importante análise da lista de pendências de migração
+description: Use a estrutura de adoção de nuvem para o Azure para entender a importância de criar e revisar uma pendência de migração.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: c8d6d7ab2403df01b2db99314c3ae73e9514b6b5
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 9bdf568c7f2a04273d2fec0b385c9abb2dfcbf79
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76801436"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094057"
 ---
 # <a name="migration-backlog-review"></a>Revisão da lista de pendências de migração
 
@@ -32,7 +32,7 @@ Acompanhar o progresso da migração é igualmente importante para a motivação
 
 O artigo sobre [racionalização da propriedade digital](../../../digital-estate/rationalize.md) debate a agilidade e o impacto na redução do tempo das pressuposições básicas ao avaliar uma propriedade digital. Para compreender totalmente esses valores, a equipe de adoção da nuvem precisa entender as pressuposições e os motivos pelos quais elas foram estabelecidas. Esse conhecimento prepara melhor a equipe de adoção da nuvem para questionar essas pressuposições.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Com uma compreensão geral da propriedade digital e da lista de pendências de migração, a equipe está pronta para ir além dos pré-requisitos e começar a [avaliar as cargas de trabalho](../assess/index.md).
 

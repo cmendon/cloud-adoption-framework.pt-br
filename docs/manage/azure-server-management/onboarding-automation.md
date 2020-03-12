@@ -1,18 +1,18 @@
 ---
 title: Automatizar a integração
-description: Automatizar a integração
+description: Use os arquivos de exemplo de integração para ajudá-lo a considerar a automatização da implantação dos serviços de gerenciamento do servidor do Azure para melhorar a eficiência.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 0c1c06c8e30a61993c9127838de59d070f714c3a
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 85f545b8703291819ece3562c0501ba9f0bcdead
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808015"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094638"
 ---
 # <a name="automate-onboarding"></a>Automatizar a integração
 
@@ -36,7 +36,7 @@ Os arquivos de exemplo ilustram como usar Azure PowerShell cmdlets para automati
 
 Os arquivos descritos na tabela a seguir são usados neste exemplo. Você pode personalizá-los para dar suporte aos seus próprios cenários de implantação.
 
-| Nome do arquivo | Description |
+| Nome do arquivo | DESCRIÇÃO |
 |-----------|-------------|
 | New-AMSDeployment.ps1 | O principal, orquestrando o script que automatiza a integração. Ele cria grupos de recursos e contas de local, espaço de trabalho e automação, se eles ainda não existirem. Este script do PowerShell requer uma assinatura existente. |
 | Workspace-AutomationAccount.json | Um modelo do Resource Manager que implanta os recursos de conta de automação e espaço de trabalho. |
@@ -51,7 +51,7 @@ Use o comando a seguir para executar New-AMSDeployment. ps1:
 .\New-AMSDeployment.ps1 -SubscriptionName '{Subscription Name}' -WorkspaceName '{Workspace Name}' -WorkspaceLocation '{Azure Location}' -AutomationAccountName {Account Name} -AutomationAccountLocation {Account Location}
 ```
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Saiba como configurar alertas básicos para notificar sua equipe sobre os principais eventos e problemas de gerenciamento.
 

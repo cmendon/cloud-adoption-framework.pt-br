@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 283bde5115583aa50acc69aff57ef025503ccdb8
-ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
+ms.openlocfilehash: 243a75f8aa5352299e0730a91f462fbf935a2f2f
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78337998"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092924"
 ---
 # <a name="how-to-use-the-business-outcome-template"></a>Como usar o modelo de resultado comercial
 
@@ -24,7 +24,7 @@ Baixe a [planilha de modelo de resultado comercial](https://archcenter.blob.core
 
 ## <a name="use-the-business-outcome-template"></a>Usar o modelo de resultado comercial
 
-Introduzido pela Kate Johnson na Microsoft digital Transformation Academy, os resultados de negócios se concentram em três tópicos:
+Neste modelo, os resultados de negócios se concentram em três tópicos:
 
 - Alinhando a participantes ou tomadores de decisões de negócios
 - Noções básicas sobre objetivos e drivers de negócios

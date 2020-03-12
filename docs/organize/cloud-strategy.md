@@ -1,6 +1,6 @@
 ---
 title: Recursos de estratégia de nuvem
-description: Descreve a formação de recursos de estratégia de nuvem
+description: Use a estrutura de adoção de nuvem para o Azure para aprender a alinhar atividades técnicas aos resultados de negócios.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/10/2019
@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 17ef8a6b84e16b2baf7a69918051c7f6a8257396
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 43973a5199f0c5f15e31381cddba56efab1ecb14
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76800841"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79093821"
 ---
 # <a name="cloud-strategy-capabilities"></a>Recursos de estratégia de nuvem
 
@@ -28,7 +28,7 @@ Esse recurso é normalmente fornecido pelos seguintes tipos de funções. Quando
 - Finanças
 - Linha de negócios
 - Recursos humanos
-- Operations
+- Operações
 - Arquitetura empresarial
 - Infraestrutura de ti
 - Grupos de aplicativos
@@ -66,7 +66,7 @@ As tarefas listadas na seção anterior podem ser demoradas nas fases de planeja
 - Em todos os esforços de adoção, aloque 1&ndash;2 horas por mês para revisar o progresso e validar as prioridades contínuas.
 - É provável que o tempo adicional seja exigido de membros delegados da equipe do executivo de acordo com a necessidade. Cada membro da equipe de estratégia de nuvem deve indicar um delegado que pode alocar 5&ndash;10 horas por semana para dar suporte a perguntas de priorização contínua e relatar as necessidades urgentes.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 A estratégia e o planejamento são importantes. No entanto, nada é acionável sem [recursos de adoção de nuvem](./cloud-adoption.md). Entenda a função desse recurso importante antes de começar os esforços de adoção.
 

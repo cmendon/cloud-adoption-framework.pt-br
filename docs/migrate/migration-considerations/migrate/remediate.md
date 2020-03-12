@@ -1,18 +1,18 @@
 ---
 title: Corrigir ativos antes da migração
-description: Corrigir ativos incompatíveis antes da migração
+description: Saiba como corrigir todos os ativos que você determinar para serem incompatíveis com o provedor de nuvem escolhido antes do início da migração.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 23045cf48dd26400bbad07bbde927e29c3189f8d
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: f092bb99cb16a6dd3c79c04d29fa7aac318c913f
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76802099"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092802"
 ---
 # <a name="remediate-assets-prior-to-migration"></a>Corrigir ativos antes da migração
 
@@ -56,7 +56,7 @@ Se essas perguntas não produzirem respostas favoráveis, pode valer a pena cons
 - **Automação.** Dependendo dos requisitos das cargas de trabalho e de correção, pode ser mais lucrativo gerar o script da implantação para novos ativos usando uma abordagem de DevOps.
 - **Recompilação.** Quando os custos de correção são muito altos e o valor comercial é igualmente alto, uma carga de trabalho pode ser uma boa candidata para a recompilação ou a uma nova arquitetura.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Depois de concluir a correção, as [atividades de replicação](./replicate.md) estarão prontas.
 

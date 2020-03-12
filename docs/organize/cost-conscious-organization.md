@@ -1,18 +1,18 @@
 ---
 title: Criando uma organização sensível ao custo
-description: Aprenda as práticas recomendadas para a criação de uma organização com consciência de custo.
+description: Use a estrutura de adoção de nuvem para o Azure para aprender as práticas recomendadas para a criação de uma organização com consciência de custo.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
-ms.openlocfilehash: 9c4b6e89d3593bebad491cb967d39be529de8989
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 57205533f8ae9b2da39ba7cc94e1071b0bde8c4f
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78225389"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79093833"
 ---
 # <a name="build-a-cost-conscious-organization"></a>Crie uma organização com consciência de custo
 
@@ -82,7 +82,7 @@ Embora não seja normalmente responsável pelo gerenciamento de custos, o CCoE p
 
 - **Otimização:** Dada a visibilidade do CCoE a várias implantações, a equipe está em uma posição ideal para sugerir dicas de otimização e para ajudar as equipes de adoção a ajustar ativos melhor.
 
-## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
+## <a name="next-steps"></a>Próximas etapas
 
 A prática dessas responsabilidades em cada nível da empresa ajuda a conduzir uma organização econômica. Para começar a agir nessas diretrizes, examine a [introdução à preparação organizacional](./index.md) para ajudar a identificar as estruturas de equipe corretas.
 

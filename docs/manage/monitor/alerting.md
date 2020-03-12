@@ -1,6 +1,6 @@
 ---
 title: 'Guia de monitoramento de nuvem: alertas'
-description: Escolha quando usar Azure Monitor ou System Center Operations Manager no Microsoft Azure
+description: Use a estrutura de adoção de nuvem para o Azure para saber como determinar quando usar Azure Monitor ou System Center Operations Manager no Microsoft Azure.
 author: MGoedtel
 ms.author: magoedte
 ms.date: 06/26/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 9c13333e6d0e834a4c66d4a1bd6a72ccc9a1bdbb
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: c6f48ae433746906d64023bd72f34c21a3163373
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807641"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79091296"
 ---
 # <a name="cloud-monitoring-guide-alerting"></a>Guia de monitoramento de nuvem: alertas
 

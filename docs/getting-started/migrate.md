@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: dcc5706e365e3761f236bb5a1c896eb213a1bf5f
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 85f5cf55bb089bd347383bedf58b054cf2a7351c
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892150"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094442"
 ---
 # <a name="begin-a-cloud-migration-journey-in-azure"></a>Iniciar uma jornada de migração na nuvem no Azure
 
@@ -57,7 +57,7 @@ Essa abordagem consiste em duas metodologias ou áreas de foco: estratégia de n
 
 A implementação de nuvem é um processo iterativo para migrar e modernizar o espaço digital, alinhado com resultados de negócios direcionados e controles de gerenciamento de alterações. Durante cada iteração, as cargas de trabalho são migradas ou modernizadas em alinhamento com a estratégia e o plano. As decisões relacionadas a IaaS, PaaS ou híbrido são feitas durante a fase de avaliação da [metodologia de migração](../migrate/index.md) para otimizar o controle e a execução. Essas decisões orientarão as ferramentas usadas durante cada iteração da fase de migração na mesma metodologia. Esse modelo pode ser usado com a estratégia e o planejamento mínimos. No entanto, para garantir o maior retorno de negócios, a ti e a empresa devem alinhar uma estratégia clara e planejar as atividades de implementação.
 
-![Metodologia de implementação na nuvem da estrutura de adoção da nuvem](../_images/operational-transformation-migrate.png)
+![A metodologia de implementação na nuvem da estrutura de adoção da nuvem](../_images/migrate/methodology.png)
 
 O foco desse esforço é a migração ou a modernização de cargas de trabalho. Uma carga de trabalho é uma coleção de infraestrutura, aplicativos e dados que, coletivamente, dá suporte a uma meta comercial comum ou à execução de um processo de negócios comum. Exemplos de cargas de trabalho podem incluir coisas como um aplicativo de linha de negócios, uma solução de folha de pagamento de RH, uma solução de CRM, um fluxo de trabalho de aprovação de documentos financeiros ou uma solução de business intelligence. As cargas de trabalho também podem incluir recursos técnicos compartilhados como um data warehouse que dá suporte a várias outras soluções. Em alguns casos, uma carga de trabalho pode ser representada por um único ativo, como um servidor independente, um aplicativo ou uma plataforma de dados.
 

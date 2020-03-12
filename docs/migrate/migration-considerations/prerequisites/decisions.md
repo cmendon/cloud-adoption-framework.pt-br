@@ -1,18 +1,18 @@
 ---
 title: Decisões que afetam a migração
-description: Decisões importantes a serem feitas sobre o processo de migração.
+description: Use a estrutura de adoção de nuvem para o Azure para tomar as decisões apropriadas e escolher as atividades de execução que irão dar suporte a uma migração bem-sucedida.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3281f7a14c5af58e435be9e3a412fc5285da1b47
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 07856662f95a588f252c78e8a3dd67eba6e8163c
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78225474"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094068"
 ---
 <!-- cSpell:ignore migrateable -->
 
@@ -83,7 +83,7 @@ Antes de continuar, documente as seguintes pressuposições e compartilhe-as com
 - Escala do esforço.
 - Tempo do esforço.
 
-## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
+## <a name="next-steps"></a>Próximas etapas
 
 Depois que o processo é compreendido entre a equipe, é hora de revisar os pré-requisitos técnicos. A [lista de verificação de planejamento do ambiente de migração](./planning-checklist.md) ajuda a garantir que a base técnica esteja pronta para a migração.
 

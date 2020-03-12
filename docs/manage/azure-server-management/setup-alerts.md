@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: e24932b074f69f83aff583d560399d884c6c5b0e
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 3525b8d84ee6dd54072a4fed401114578de7fcb3
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807947"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094473"
 ---
 # <a name="set-up-basic-alerts"></a>Configurar alertas básicos
 
@@ -47,7 +47,7 @@ Este pacote cria alertas para:
 
 O pacote usa o hardware de servidor HP como um exemplo. Altere as configurações no arquivo de configuração associado para refletir o hardware OEM. Você também pode adicionar mais contadores de desempenho ao arquivo de configuração. Para implantar o pacote, execute o arquivo New-CoreAlerts. ps1.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Saiba mais sobre as operações e os mecanismos de segurança que dão suporte a suas operações em andamento.
 

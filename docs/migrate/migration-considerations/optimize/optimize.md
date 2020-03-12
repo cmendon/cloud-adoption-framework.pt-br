@@ -1,18 +1,18 @@
 ---
 title: Parâmetros de comparação e redimensionamento de ativos de nuvem
-description: Parâmetros de comparação e redimensionamento de ativos de nuvem
+description: Saiba como avaliar o benchmark e otimizar seus ativos de nuvem para que você possa encontrar o equilíbrio entre desempenho e custos.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 5/19/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7198bdc1332a9d55bca68a04fe1384727dc7284a
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: b0b49d2785de8cee4c08395f6a2893436fd0aa9e
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76801827"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092780"
 ---
 # <a name="benchmark-and-resize-cloud-assets"></a>Parâmetros de comparação e redimensionamento de ativos de nuvem
 
@@ -43,7 +43,7 @@ Os dados históricos podem ajudar a gerenciar custos analisando o uso e os custo
 
 Determine o uso ideal das VMs, identifique ou remova as VMs ociosas e os discos desanexados com o Gerenciamento de Custos. Usando as informações contidas nos relatórios de ineficiência e otimização de dimensionamento, crie um plano para reduzir ou remover as VMs ociosas.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximas etapas
 
 Depois que uma carga de trabalho for testada e otimizada, é a hora de [preparar a carga de trabalho para promoção](./ready.md).
 

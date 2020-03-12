@@ -1,18 +1,18 @@
 ---
 title: Exemplos de resultados de desempenho
-description: Exemplos de resultados de desempenho
+description: Use a estrutura de adoção de nuvem para o Azure para entender os resultados de desempenho no contexto de uma transformação de nuvem.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 8810b4ab2ce78dd2add8a424518717392305346a
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 9a97a4d1c633a7da2153da946655dd41a8376648
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222077"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092893"
 ---
 # <a name="examples-of-performance-outcomes"></a>Exemplos de resultados de desempenho
 
@@ -42,7 +42,7 @@ Azure Site Recovery torna simples testar a recuperação de desastres replicando
 
 - **Exemplo:** Uma empresa de petróleo e gás usou as tecnologias do Azure para implementar uma recuperação de site completa. A empresa optou por não adotar totalmente a nuvem para as operações cotidianas, mas os recursos de BCDR (continuidade dos negócios e recuperação de desastre) da nuvem ainda protegevam seu datacenter. Como um furacão formado centenas de quilômetros de distância, seu parceiro de implementação começou a recuperar o site para o Azure. Antes de o Storm ser inativo, todos os ativos de missão crítica estavam em execução no Azure, evitando qualquer tempo de inatividade.
 
-## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
+## <a name="next-steps"></a>Próximas etapas
 
 Saiba como [usar o modelo de resultado comercial](./business-outcome-template.md).
 

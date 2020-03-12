@@ -3,22 +3,22 @@ title: Equilibrar o portfólio
 description: Descubra estratégias para balancear a migração, a inovação e a experimentação para aproveitar ao máximo seus esforços de migração na nuvem.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/25/2020
+ms.date: 03/04/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
-ms.subservice: migrate
-ms.openlocfilehash: b41a550583628c1246a0663c99509498f0786d70
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.subservice: strategy
+ms.openlocfilehash: 938250f20725540049bca831ff4c12b975b134a5
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78228464"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092396"
 ---
 <!-- cSpell:ignore CSAT -->
 
 # <a name="balance-the-portfolio"></a>Equilibrar o portfólio
 
-A adoção da nuvem é um esforço de gerenciamento de portfólio, inteligentemente disfarçado de implementação técnica. Como qualquer exercício de gerenciamento de portfólio, o balanceamento do portfólio é crítico. Em um nível estratégico, isso significa balancear a migração, a inovação e a experimentação para aproveitar a nuvem ao máximo. Quando a tentativa de adoção da nuvem se inclina demais em uma direção ou outra, a complexidade encontra seu caminho no esforço de migração. Este artigo orientará o leitor pelas abordagens para alcançar o equilíbrio no portfólio.
+A adoção de nuvem é um esforço de gerenciamento de portfólio, disfarçado de forma inteligente como implementação técnica. Como qualquer exercício de gerenciamento de portfólio, o balanceamento do portfólio é crítico. Em um nível estratégico, isso significa balancear a migração, a inovação e a experimentação para aproveitar a nuvem ao máximo. Quando o esforço de adoção da nuvem é muito distante em uma direção, a complexidade encontra seu caminho nos esforços de adoção. Este artigo orientará o leitor pelas abordagens para alcançar o equilíbrio no portfólio.
 
 ## <a name="general-scope-expansion"></a>Expansão do escopo geral
 
@@ -26,11 +26,9 @@ O balanceamento do portfólio é estratégico por natureza. Como tal, a abordage
 
 ### <a name="document-business-outcomes"></a>Documentar resultados de negócios
 
-Antes de balancear o portfólio, é importante documentar e compartilhar os resultados de negócios que levam ao esforço de migração na nuvem. Para ver exemplos de resultados empresariais gerais relacionados às migrações na nuvem, confira o [resumo executivo de migração na nuvem](../getting-started/migrate.md).
+Antes de balancear o portfólio, é importante documentar e compartilhar os resultados de negócios que levam ao esforço de migração de nuvem. A tabela a seguir pode ajudar a documentar e compartilhar os resultados empresariais desejados. É importante notar que a maioria das empresas tem buscando vários resultados de cada vez. A importância deste exercício é esclarecer os resultados que estão mais diretamente relacionados ao esforço de migração na nuvem:
 
-A tabela a seguir pode ajudar a documentar e compartilhar os resultados empresariais desejados. É importante notar que a maioria das empresas tem buscando vários resultados de cada vez. A importância deste exercício é esclarecer os resultados que estão mais diretamente relacionados ao esforço de migração na nuvem:
-
-|Resultado  |Medido por  |Meta  |Período  |Prioridade do esforço  |
+|Resultado  |Medido por  |Goal  |Período  |Prioridade do esforço  |
 |---------|---------|---------|---------|---------|
 |Reduzir custos de TI     |Orçamento do datacenter         |Reduzir em US$ 2 milhões         |12 meses         |Nº 1         |
 |Saída do datacenter     |Saída dos datacenters         |2 datacenters         |6 meses         |Nº 2         |
@@ -38,9 +36,9 @@ A tabela a seguir pode ajudar a documentar e compartilhar os resultados empresar
 |Melhorar a experiência do cliente     |Satisfação do cliente (CSAT)         |10% de melhoria         |12 meses         |Nº 4         |
 
 > [!IMPORTANT]
-> A tabela acima é um exemplo fictício e não deve ser usada para definir prioridades. Em muitos casos, essa tabela pode ser considerada um antipadrão ao se colocar economias de custos acima das experiências do cliente.
+> A tabela acima é um exemplo fictício e não deve ser usada para definir prioridades. Em muitos casos, essa tabela pode ser considerada um antipadrão, colocando economia de custos acima das experiências do cliente.
 
-A tabela acima poderia representar com precisão as prioridades da equipe de estratégia da nuvem e da equipe de adoção da nuvem que supervisionam uma migração na nuvem. Devido a restrições de curto prazo, essa equipe tem dado maior ênfase à redução de custos de TI e priorizado a saída de um datacenter como uma forma de atingir as reduções de custos de TI desejadas. No entanto, ao documentar as prioridades concorrentes nesta tabela, a equipe de adoção da nuvem tem o poder de ajudar a equipe de estratégia da nuvem a identificar oportunidades para alinhar melhor a implementação da estratégia do portfólio abrangente.
+A tabela acima pode representar com precisão as prioridades da equipe de estratégia de nuvem e da equipe de adoção de nuvem. Devido a restrições de curto prazo, essa equipe tem dado maior ênfase à redução de custos de TI e priorizado a saída de um datacenter como uma forma de atingir as reduções de custos de TI desejadas. No entanto, ao documentar as prioridades concorrentes nesta tabela, a equipe de adoção da nuvem tem o poder de ajudar a equipe de estratégia da nuvem a identificar oportunidades para alinhar melhor a implementação da estratégia do portfólio abrangente.
 
 ### <a name="move-fast-while-maintaining-balance"></a>Mova-se rapidamente mantendo o equilíbrio
 
@@ -65,15 +63,9 @@ Se a resposta para essas duas perguntas for "Sim", seria prudente considerar _n�
 
 Se a resposta a qualquer das perguntas for "Não", pode ser sensato estabelecer um plano para hospedar a carga de trabalho até que ela possa seja desativada. Esse plano poderia incluir a transferência dos ativos para um datacenter de custo mais reduzido ou um datacenter alternativo, o que também atingiria os objetivos de redução de custos e saída do datacenter.
 
-## <a name="suggested-prerequisites"></a>Pré-requisitos sugeridos
+## <a name="adopt-process-changes"></a>Adote alterações no processo
 
-Os pré-requisitos especificados no guia de linha de base ainda devem ser suficientes para abordar esse tópico complexo. No entanto, o inventário de ativos e o estado digital devem ser realçados e estar em negrito entre esses pré-requisitos, pois esses dados direcionarão as atividades a seguir.
-
-## <a name="assess-process-changes"></a>Avaliar alterações no processo
-
-Equilibrar o portfólio exige uma análise qualitativa adicional durante o processo de avaliação e isso ajudará a direcionar a racionalização simples do portfólio.
-
-### <a name="suggested-action-during-the-assess-process"></a>Ação sugerida durante o processo de avaliação
+O balanceamento do portfólio requer uma análise qualitativa adicional durante a adoção da execução, o que ajudará a impulsionar a racionalização do portfólio simples.
 
 Com base nos dados da tabela da seção [documentação dos resultados empresariais](#document-business-outcomes) acima, há um risco provável do portfólio estar muito inclinado para um modelo de execução focado na migração. Se a experiência do cliente fosse a prioridade máxima, um portfólio pesado de inovação seria o mais provável. Nenhum modelo está certo nem errado, mas pender muito em uma direção geralmente leva a resultados decrescentes, adiciona complexidade desnecessária e aumenta o tempo de execução relacionado aos esforços de adoção da nuvem.
 
@@ -102,8 +94,6 @@ Essas perguntas não devem ser a extensão da análise qualitativa concluída pa
 
 Durante a migração, as atividades de equilíbrio do portfólio podem ter um impacto negativo na velocidade de migração (a rapidez na qual os ativos são migrados). A orientação a seguir falará mais sobre os motivos e como alinhar o trabalho para evitar interrupções no esforço de migração.
 
-### <a name="suggested-action-during-the-migrate-process"></a>Ação sugerida durante o processo de migração
-
 A racionalização do portfólio exige diversidade do esforço técnico. A ideia que as equipes de adoção da nuvem correspondam à diversidade do portfólio nos esforços de migração é tentadora. Os stakeholders de negócios solicitam uma única equipe de adoção da nuvem para abordar toda a lista de pendências de migração. Isso raramente é uma abordagem recomendável e, em muitos casos, pode ser contraproducente.
 
 Esses diversos esforços devem ser segmentados em duas ou mais equipes de adoção de nuvem. Usando um modelo de duas equipes como um modo de execução de exemplo, a Equipe 1 é a Equipe de migração e a Equipe 2 é a Equipe de inovação. Para esforços maiores, essas equipes poderiam ser mais segmentadas para tratar de outras abordagens, como esforços de Substituição/PaaS ou Refatoração secundária. A seguir descrevemos as habilidades e funções necessárias para Nova hospedagem, Refatoração ou Refatoração secundária:
@@ -115,18 +105,3 @@ Esses diversos esforços devem ser segmentados em duas ou mais equipes de adoç�
 **Refatoração secundária:** Alguns aplicativos podem ser modernizados com refatoração secundária no nível de dados ou de aplicativo. Esse trabalho exige que os membros da equipe implantem dados em plataformas de dados baseadas em nuvem ou façam alterações de configuração secundárias no aplicativo. Isso pode exigir suporte limitado para especialistas no assunto de desenvolvimento de aplicativos ou de dados. No entanto, esse trabalho é semelhante ao trabalho realizado por implementadores de TI durante a implantação de aplicativos de terceiros. Esse trabalho pode ser facilmente alinhado com a equipe de migração na nuvem ou a equipe de estratégia da nuvem. Embora esse esforço não seja tão rápido quanto uma migração de nova hospedagem, leva menos tempo para ser executado do que os esforços de refatoração.
 
 Durante a migração, os esforços devem ser segmentados nas três maneiras listadas acima e executadas pela equipe apropriada na iteração apropriada. Embora você deva diversificar o portfólio, também garanta que os esforços fiquem muito concentrados e separados.
-
-## <a name="optimize-and-promote-process-changes"></a>Otimizar e promover alterações no processo
-
-Não são necessárias alterações adicionais durante os processos de Otimização e Promoção no esforço de migração.
-
-## <a name="secure-and-manage-process-changes"></a>Alterações na proteção e no gerenciamento de processos
-
-Não são necessárias alterações adicionais durante os processos de Proteção e Gerenciamento no esforço de migração.
-
-## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
-
-Retorne à [lista de verificação de escopo expandido](./index.md) para verificar se o método de migração está totalmente alinhado.
-
-> [!div class="nextstepaction"]
-> [Lista de verificação de escopo expandido](./index.md)

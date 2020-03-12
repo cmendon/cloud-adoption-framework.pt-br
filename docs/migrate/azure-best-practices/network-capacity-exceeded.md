@@ -7,13 +7,15 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2d7ae4989251c0c3022c1044280d433e4dc920ad
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 854e22b70250496704cade4d7465c217705c928d
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78897999"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094835"
 ---
+<!-- cSpell:ignore HDFS databox VHDX -->
+
 # <a name="data-requirements-exceed-network-capacity-during-a-migration-effort"></a>Os requisitos de dados excedem a capacidade da rede durante um esforço de migração
 
 Em uma migração na nuvem, os ativos são replicados e sincronizados pela rede entre o datacenter existente e a nuvem. Não é incomum para os requisitos de tamanho de dados existentes de várias cargas de trabalho excedam a capacidade da rede. Nesse cenário, o processo de migração pode ser radicalmente desacelerado ou, em alguns casos, totalmente interrompido. As diretrizes a seguir expandirão o escopo do [guia de migração do Azure](../azure-migration-guide/index.md) para oferecer uma solução que contorne as limitações de rede.
@@ -28,7 +30,7 @@ A maior parte do esforço necessário na expansão do escopo ocorrerá durante o
 
 **Transferência offline de armazenamentos de dados independentes:** A figura no diagrama a seguir são exemplos de transferências de dados online e offline com Azure Data Box. Essas abordagens podem ser usadas no envio de grandes volumes de dados para a nuvem antes da migração da carga de trabalho. Em uma transferência de dados offline, os dados de origem são copiados para o Azure Data Box e são enviados fisicamente à Microsoft para serem transferidos para uma conta de armazenamento do Azure como um arquivo ou um blob. Antes de outros esforços de migração, esse processo pode ser usado para enviar dados que não estão diretamente vinculados a uma carga de trabalho específica. Isso reduz a quantidade de dados que precisam ser enviados pela rede em uma tentativa para concluir uma migração dentro das restrições da rede.
 
-Essa abordagem pode ser usada para transferir HDFS de dados, backups, arquivos mortos, servidores de arquivos, aplicativos, etc... As diretrizes técnicas existentes explicam como usar essa abordagem para transferir dados de [um repositório HDFS](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster) ou de discos usando [SMB](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data), [NFS](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-nfs), [REST](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-rest) ou o [serviço de cópia de dados](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-copy-service) para o Data Box.
+Essa abordagem pode ser usada para transferir dados de HDFS, backups, arquivos, servidores de arquivos e aplicativos. As diretrizes técnicas existentes explicam como usar essa abordagem para transferir dados de [um repositório HDFS](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster) ou de discos usando [SMB](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data), [NFS](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-nfs), [REST](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-rest) ou o [serviço de cópia de dados](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-copy-service) para o Data Box.
 
 Também há [soluções de parceiros terceiros](https://azuremarketplace.microsoft.com/campaigns/databox/azure-data-box) que usam o Azure Data Box em uma migração do tipo "Propagação e feed" em que um grande volume de dados é movido por meio de uma transferência offline, mas, em seguida, é sincronizado em menor escala na rede.
 
@@ -75,7 +77,7 @@ As atividades de otimização provavelmente não serão afetadas por essa altera
 
 As atividades de segurança e gerenciamento provavelmente não serão afetadas por essa alteração no escopo.
 
-## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
+## <a name="next-steps"></a>Próximas etapas
 
 Retorne à [lista de verificação de escopo expandido](./index.md) para verificar se o método de migração está totalmente alinhado.
 

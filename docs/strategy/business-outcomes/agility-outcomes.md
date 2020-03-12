@@ -1,18 +1,18 @@
 ---
 title: Exemplos de resultados de agilidade
-description: Exemplos de resultados de agilidade
+description: Use a estrutura de adoção de nuvem para o Azure para entender a posição de mercado da sua empresa e o cenário competitivo.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 524fce58c6592ece46eedec0aea3cc6bbacb6f61
-ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
+ms.openlocfilehash: 05ff2e7f3e611d789ed289474ff13e0ed58bf0fb
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79023936"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092953"
 ---
 # <a name="examples-of-agility-outcomes"></a>Exemplos de resultados de agilidade
 
