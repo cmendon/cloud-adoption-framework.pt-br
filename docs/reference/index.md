@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 layout: LandingPage
-ms.openlocfilehash: d43097c940bcb6afb6b816dc4f8a533021d304fb
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 7c808e02b0f1d759fcb37acd0a6b6a24d2087950
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76798648"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140562"
 ---
 # <a name="cloud-adoption-framework-roadmap"></a>Roteiro da Cloud Adoption Framework
 
@@ -45,7 +45,7 @@ Fundamentalmente, a nuvem altera como as empresas adquirem e usam recursos de te
 
 A Estrutura de Adoção do Microsoft Cloud é uma estrutura abrangente que envolve as fases Planejar, Preparar e Adotar em todas as motivações de inovação e migração para a adoção da nuvem, com suporte das diretrizes de governança e operações.
 
-A estrutura atingiu a GA (disponibilidade geral). No entanto, ainda estamos criando ativamente essa estrutura em colaboração com clientes, parceiros e equipes internas. Para incentivar a parceria, o conteúdo é liberado quando ele se torna disponível. Essas versões públicas permitem testar, validar e refinar de forma incremental as diretrizes. 
+A estrutura atingiu a GA (disponibilidade geral). No entanto, ainda estamos criando ativamente essa estrutura em colaboração com clientes, parceiros e equipes internas. Para incentivar a parceria, o conteúdo é liberado quando ele se torna disponível. Essas versões públicas permitem testar, validar e refinar de forma incremental as diretrizes.
 
 Para adotar a nuvem com sucesso, o cliente deve preparar o pessoal, as tecnologias e os processos para essa transformação digital. A Estrutura de Adoção do Microsoft Cloud inclui uma seção que descreve os percursos gerais de adoção, tanto da migração quanto da inovação, como uma visão geral para os clientes. Esta seção é composta pelas seguintes fases do percurso de adoção:
 
