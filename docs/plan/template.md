@@ -7,16 +7,16 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: a7f03ce1f83d59fdcfe2b2ce696b6b591b8d0655
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: 243094da7b92a374124474eaaf0c955b5fdb85ed
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341922"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140596"
 ---
 # <a name="cloud-adoption-plan-and-azure-devops"></a>Plano de adoção de nuvem e DevOps do Azure
 
-O Azure DevOps é o conjunto de ferramentas baseadas em nuvem para clientes do Azure que gerenciam projetos iterativos. Ele também inclui ferramentas para gerenciar pipelines de implantação e outros aspectos importantes do DevOps. 
+O Azure DevOps é o conjunto de ferramentas baseadas em nuvem para clientes do Azure que gerenciam projetos iterativos. Ele também inclui ferramentas para gerenciar pipelines de implantação e outros aspectos importantes do DevOps.
 
 Neste artigo, você aprenderá a implantar rapidamente uma pendência no Azure DevOps usando um modelo de plano de adoção de nuvem. Este modelo alinha os esforços de adoção de nuvem a um processo padronizado com base nas diretrizes da estrutura de adoção de nuvem.
 
@@ -70,7 +70,7 @@ Os artigos a seguir dão suporte ao alinhamento do plano de adoção de nuvem:
 
 Esses cinco artigos ajudam com cada uma das tarefas de alinhamento necessárias para começar a gerenciar seus esforços de adoção. A próxima etapa o ajudará a começar a usar o exercício de alinhamento.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Comece a alinhar seu projeto de plano [definindo e priorizando cargas de trabalho](./workloads.md).
 

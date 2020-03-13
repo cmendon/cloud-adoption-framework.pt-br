@@ -8,14 +8,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: fba1f50b71f664c3d7bbb4a4498c3e067f45923d
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: 5e4effaccc04ba3b534a75394f17d758141c387e
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341191"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140545"
 ---
-<!-- cspell:ignore opsman ITSM -->
+<!-- cSpell:ignore opsman ITSM -->
 
 # <a name="cloud-monitoring-guide-monitoring-platforms-overview"></a>Guia de monitoramento de nuvem: visão geral das plataformas de monitoramento
 
@@ -121,7 +121,7 @@ Os dados coletados pelo Azure Monitor são armazenados como logs ou métricas, e
 
 Como Azure Monitor separa a coleta de dados de ações em relação a esses dados, pode não ser possível fornecer alertas quase em tempo real em muitos casos. Para alertar sobre dados de log, as consultas são executadas em um agendamento recorrente definido no alerta. Esse comportamento permite que Azure Monitor correlacione facilmente os dados de todas as fontes monitoradas, e você pode analisar de maneira interativa os dados de várias maneiras. Isso é especialmente útil para fazer a análise da causa raiz e identificar onde pode ocorrer um problema.
 
-## <a name="health-monitoring"></a>Monitoramento da integridade
+## <a name="health-monitoring"></a>Monitoramento de Integridade
 
 ### <a name="operations-manager"></a>Operations Manager
 
@@ -137,7 +137,7 @@ Azure Monitor não fornece um método definido pelo usuário para implementar um
 
 - **Azure monitor para contêineres:** Monitora o desempenho e a integridade do serviço kubernetes do Azure ou das instâncias de contêiner do Azure. Ele coleta métricas de processador e memória de controladores, nós e contêineres disponíveis no Kubernetes por meio da API Métricas. Ele também coleta logs de contêiner e dados de inventário sobre contêineres e suas imagens. Os critérios de integridade predefinidos baseados nos dados de desempenho coletados ajudam a identificar se existe um problema de capacidade ou afunilamento de recursos. Você também pode entender o desempenho geral ou o desempenho de um tipo de objeto kubernetes específico (Pod, nó, controlador ou contêiner).
 
-## <a name="analyze-data"></a>Analisar dados
+## <a name="analyze-data"></a>{1&gt;{2&gt;Analisar dados&lt;2}&lt;1}{3&gt;&lt;3}
 
 ### <a name="operations-manager"></a>Operations Manager
 
@@ -195,7 +195,7 @@ Azure Monitor coleta métricas e logs de recursos do Azure, com pouca ou nenhuma
 
 O monitor oferece suporte a vários métodos para coletar dados de monitoramento ou de gerenciamento do Azure ou de recursos externos. Em seguida, você pode extrair e encaminhar dados da métrica ou dos repositórios de log para suas ferramentas de ITSM ou de monitoramento. Ou você pode executar tarefas administrativas usando a API REST do Azure Monitor.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 > [!div class="nextstepaction"]
 > [Monitorando os modelos de implantação de nuvem](./cloud-models-monitor-overview.md)

@@ -7,13 +7,15 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 73cbd084e79589de68e359ad4dc88b639d92f9df
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 4ecd18a226a36497cf3b23669bf17f323c196382
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76801334"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140630"
 ---
+<!-- cSpell:ignore ITSM TOGAF -->
+
 # <a name="prepare-for-technical-complexity-agile-change-management"></a>Preparar-se para a complexidade técnica: gerenciamento de alterações Agile
 
 Quando um datacenter inteiro pode ser desprovisionado e recriado com uma única linha de código, os processos tradicionais lutam para acompanhar o processo. As diretrizes em todo o Cloud Adoption Framework se baseiam em práticas como o ITSM (gerenciamento de serviços de TI), a TOGAF (Estrutura de Arquitetura de Grupo Aberto) e outros. No entanto, para garantir a agilidade e a capacidade de resposta às alterações empresariais, essa estrutura molda tais práticas para se ajustar às metodologias Agile e às abordagens DevOps.
@@ -76,7 +78,7 @@ Uma parceria entre a equipe de estratégia da nuvem e a equipe de adoção da nu
 
 - **Estoque refinado.** Validação dos ativos necessários a serem migrados. Geralmente validados por meio de dados de log ou monitoramento no nível do host, da rede ou do sistema operacional para garantir uma compreensão precisa das dependências de rede e de hardware de cada ativo sob a carga padrão.
 - **Padrões de uso.** Uma compreensão dos padrões de uso dos usuários finais. Esses padrões geralmente incluem uma análise da distribuição geográfica do usuário final, das rotas de rede, dos picos de uso sazonal, do picos de uso diário/por hora e da composição do usuário final (intervalo vs. externo).
-- **Expectativas de desempenho.** Análise de dados de log disponíveis capturando taxa de transferência, exibições de página, rotas de rede e outros dados de desempenho necessários para replicar a experiência do usuário final.
+- **Expectativas de desempenho.** Análise dos dados de log disponíveis capturando taxa de transferência, exibições de página, rotas de rede e outros dados de desempenho necessários para replicar a experiência do usuário final.
 - **Dependências.** Análise do tráfego de rede e padrões de uso do aplicativo para identificar eventuais dependências de carga de trabalho adicionais, que devem ser fatoradas em sequenciamento e preparação do ambiente. Não inclua uma carga de trabalho em um lançamento até que um dos critérios a seguir possa ser atendido:
   - Todas as cargas de trabalho dependentes foram migradas.
   - As configurações de rede e segurança foram implementadas para permitir que a carga de trabalho acesse todas as dependências em alinhamento com as expectativas de desempenho existentes.
@@ -118,7 +120,7 @@ O resultado de um sprint captura e documenta as alterações feitas em uma carga
 - **Aprovação operacional.** Aprovação da validação da preparação operacional do proprietário do aplicativo e da equipe de operações de TI responsável pelo gerenciamento da carga de trabalho após a implantação.
 - **Aprovação da arquitetura.** Aprovação do proprietário da carga de trabalho e da equipe de adoção da nuvem para validar toda alteração de arquitetura necessária para hospedar cada ativo.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Depois que as abordagens de gerenciamento de alterações tiverem sido estabelecidas, é hora de abordar o pré-requisito final, a [análise da lista de pendências de migração](./migration-backlog-review.md)
 

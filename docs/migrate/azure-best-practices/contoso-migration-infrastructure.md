@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 34d2c96adeb476b3129464566a315c2ada9eab67
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: a5eb582f994aee6869f9bec0a340b2a966cf1413
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092428"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140664"
 ---
-<!-- cspell:ignore CSPs domainname IPAM CIDR Untrust RRAS CONTOSODC sysvol ITIL NSGs ASGs -->
+<!-- cSpell:ignore CSPs domainname IPAM CIDR Untrust RRAS CONTOSODC sysvol ITIL NSGs ASGs -->
 
 # <a name="deploy-a-migration-infrastructure"></a>Implantar uma infraestrutura de migração
 
@@ -73,7 +73,7 @@ A Contoso acompanha um [EA (Contrato Enterprise)](https://azure.microsoft.com/pr
 - Se, por algum motivo, a Contoso exceder seu compromisso e gastar mais, a Microsoft a cobrará pela diferença.
 - Qualquer custo incorrido acima do compromisso será cobrado pelas mesmas taxas que as do contrato da Contoso. Não há penalidades para ultrapassar.
 
-### <a name="manage-subscriptions"></a>Gerenciar Assinaturas
+### <a name="manage-subscriptions"></a>Gerenciar assinaturas
 
 Depois de pagar pelo Azure, a Contoso precisa descobrir como gerenciar as assinaturas do Azure. A Contoso tem um Contrato Enterprise e, portanto, nenhum limite no número de assinaturas do Azure que podem ser configuradas.
 
@@ -221,7 +221,7 @@ Para facilitar a integração, a Contoso usa a [ferramenta Azure AD Connect](htt
 
 5. Em **Pronto para configurar**, a opção **Inicie o processo de sincronização quando a configuração for concluída** é selecionada para iniciar a sincronização imediatamente. Então eles instalam.
 
-Observe que:
+{1&gt;Observe que:&lt;1}
 
 - A Contoso tem uma conexão direta para o Azure. Se seu Active Directory local estiver protegido por proxy, leia este [artigo](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-troubleshoot-connectivity).
 
@@ -522,7 +522,7 @@ A VNET-ASR-CUS é a mesma sub-rede básica que a VNET de produção no Leste dos
 
 #### <a name="configure-peered-connections"></a>Configurar conexões com pares
 
-O hub em cada região será espiado para o hub na outra região e para todas as VNets dentro da região do hub. Isso permite que os hubs se comuniquem e exibam todas as VNets dentro de uma região. Observe que:
+O hub em cada região será espiado para o hub na outra região e para todas as VNets dentro da região do hub. Isso permite que os hubs se comuniquem e exibam todas as VNets dentro de uma região. {1&gt;Observe que:&lt;1}
 
 - Peering cria uma conexão frente e verso. Um do ponto de partida no primeiro VNet e outro no segundo VNet.
 - Em uma implantação híbrida, o tráfego que passa entre pares precisa ser visto a partir da conexão VPN entre o datacenter local e o Azure. Para habilitar isso, existem algumas configurações específicas que devem ser definidas em conexões com pares.
@@ -781,9 +781,9 @@ Os NSGs associados aos ASGs serão configurados com o menor privilégio para gar
 
 **Ação** | **Nome** | **Origem** | **Target (destino)** | **Porta**
 --- | --- | --- | --- | ---
-Allow | AllowInternetToFE | VNET-HUB-EUS1/IB-TrustZone | APP1-FE 80, 443
-Allow | AllowWebToApp | APP1-FE | APP1-APP | 80, 443
-Allow | AllowAppToDB | APP1-APP | APP1-DB | 1433
+Permitir | AllowInternetToFE | VNET-HUB-EUS1/IB-TrustZone | APP1-FE 80, 443
+Permitir | AllowWebToApp | APP1-FE | APP1-APP | 80, 443
+Permitir | AllowAppToDB | APP1-APP | APP1-DB | 1433
 Negar | DenyAllInBound | Qualquer | Qualquer | Qualquer
 
 ### <a name="encrypt-data"></a>Criptografar dados
@@ -801,6 +801,6 @@ Nem todas as etapas tomadas aqui são necessárias para uma migração na nuvem.
 
 Com essa infraestrutura, a Contoso está pronta para prosseguir e experimentar a migração.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Depois de configurar sua infraestrutura do Azure, a Contoso está pronta para começar a migrar cargas de trabalho para a nuvem. Confira a seção [padrões de migração e visão geral de exemplos](./contoso-migration-overview.md#windows-server-workloads) para obter uma seleção de cenários usando essa infraestrutura de exemplo como um destino de migração.

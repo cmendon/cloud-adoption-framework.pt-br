@@ -7,16 +7,18 @@ ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 03920802d2ee483154f789a6f353fd1642ccaf98
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 312be5ae3b716ad8d6aa609749bcbb615f6ef1c5
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79094462"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140415"
 ---
+<!-- cSpell:ignore jenhayes -->
+
 # <a name="centralize-management-operations"></a>Centralizar operações de gerenciamento
 
-Para a maioria das organizações, o uso de um único locatário do Azure Active Directory (Azure AD) para todos os usuários simplifica as operações de gerenciamento e reduz os custos de manutenção. Isso ocorre porque todas as tarefas de gerenciamento podem ser por usuários designados, grupos de usuários ou entidades de serviço dentro desse locatário. 
+Para a maioria das organizações, o uso de um único locatário do Azure Active Directory (Azure AD) para todos os usuários simplifica as operações de gerenciamento e reduz os custos de manutenção. Isso ocorre porque todas as tarefas de gerenciamento podem ser por usuários designados, grupos de usuários ou entidades de serviço dentro desse locatário.
 
 É recomendável que você use apenas um locatário do Azure AD para sua organização, se possível. No entanto, algumas situações podem exigir que uma organização mantenha vários locatários do Azure AD pelos seguintes motivos:
 

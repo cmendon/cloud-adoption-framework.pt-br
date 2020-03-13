@@ -7,14 +7,14 @@ ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: f869716c907aa6c03adfb81a4f698dab42b9e387
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: cf3f64e8fd059ec847591a9f86f41e68aee0fd40
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223636"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140511"
 ---
-<!-- cspell:ignore njray nanra vCPUs Proliant Sysplex IPLs DASDs LPARs ISPF Panvalet -->
+<!-- cSpell:ignore njray nanra vCPUs Proliant Sysplex IPLs DASDs LPARs ISPF Panvalet -->
 
 # <a name="make-the-switch-from-mainframes-to-azure"></a>Fazer a transição dos mainframes para Azure
 
@@ -57,7 +57,7 @@ Os mainframes normalmente aumentam, enquanto os ambientes de nuvem são expandid
 
 Um CF também oferece computação rigidamente acoplada, enquanto os recursos de expansão do Azure são livremente acoplados. A nuvem pode ser ampliada ou reduzida para corresponder às especificações exatas do usuário, com a capacidade de computação, armazenamento e escalabilidade de serviços sob demanda em um modelo de faturamento baseado em uso.
 
-## <a name="backup-and-recovery"></a>Backup e recuperação
+## <a name="backup-and-recovery"></a>Backup e descoberta
 
 Os clientes de mainframe normalmente mantêm sites de recuperação de desastres ou fazer uso ou um provedor de mainframe independentes para contingências de desastres. Sincronização com um site de recuperação de desastres geralmente é feita por meio de cópias offline de dados. Ambas as opções incorrem em custos altos.
 
@@ -86,7 +86,7 @@ Compiladores e ambientes de emulação estão disponíveis em plataformas x86, p
 
 Quando as soluções são desenvolvidas e testadas no Azure e estão prontas para implantação ao mainframe, você precisará copiar o código para o mainframe e compilá-lo ali.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 > [!div class="nextstepaction"]
 > [Migração de aplicativos de mainframe](./application-strategies.md)

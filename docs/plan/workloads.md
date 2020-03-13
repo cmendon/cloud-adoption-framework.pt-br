@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 42f55a866b3ac8f044861ef2bc738e128b3c9f38
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: 9f374bbe149e132fde4c44a8c0ecd9246615bac0
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341905"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140613"
 ---
 # <a name="prioritize-and-define-workloads-for-a-cloud-adoption-plan"></a>Priorizar e definir cargas de trabalho para um plano de adoção de nuvem
 
@@ -22,11 +22,13 @@ Em vez disso, recomendamos que sua equipe se concentre em priorizar minuciosamen
 
 Limitar o plano a 10 cargas de trabalho incentiva a agilidade e o alinhamento das prioridades à medida que os critérios de negócios mudam. Essa abordagem também faz espaço para a equipe de adoção de nuvem aprender e refinar as estimativas. Mais importante, ele remove o planejamento extensivo como uma barreira para uma mudança de negócios efetiva.
 
+<!-- markdownlint-disable MD026 -->
+
 ## <a name="what-is-a-workload"></a>O que é uma carga de trabalho?
 
 No contexto de uma adoção de nuvem, uma carga de trabalho é uma coleção de ativos de ti (servidores, VMs, aplicativos, dados ou dispositivos) que, coletivamente, dá suporte a um processo definido. As cargas de trabalho podem dar suporte a mais de um processo. As cargas de trabalho também podem depender de outros ativos compartilhados ou plataformas maiores. No entanto, uma carga de trabalho deve ter limites definidos em relação aos ativos dependentes e aos processos que dependem da carga de trabalho. Muitas vezes, as cargas de trabalho podem ser visualizadas monitorando o tráfego de rede entre os ativos de ti.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
 
 As entradas estratégicas da lista de pré-requisitos facilitam muito a realização das tarefas a seguir. Para obter ajuda com a coleta dos dados discutidos neste artigo, examine os [pré-requisitos](./prerequisites.md).
 
@@ -63,7 +65,7 @@ Depois que as prioridades iniciais tiverem sido definidas e as cargas de trabalh
 
 ### <a name="business-inputs"></a>Entradas comerciais
 
-| Ponto de dados | DESCRIÇÃO | Entrada |
+| Ponto de dados | Descrição | Entrada |
 |---|---|---|
 | Nome da carga de trabalho | O que essa carga de trabalho é chamada? |         |
 | Descrição da carga de trabalho | Em uma frase, o que essa carga de trabalho faz? |         |
@@ -82,7 +84,7 @@ Depois que as prioridades iniciais tiverem sido definidas e as cargas de trabalh
 
 ### <a name="technical-inputs"></a>Entradas técnicas
 
-| Ponto de dados | DESCRIÇÃO | Entrada |
+| Ponto de dados | Descrição | Entrada |
 |---|---|---|
 | Abordagem de adoção | Essa adoção é um candidato para migração ou inovação? |         |
 | Líder de ops do aplicativo | Liste as partes responsáveis pelo desempenho e pela disponibilidade dessa carga de trabalho. |         |
@@ -102,7 +104,7 @@ Com base nos dados montados, a equipe de estratégia de nuvem e a equipe de ado�
 
 Após uma análise, ambas as equipes devem estar confortáveis com a confirmação das prioridades resultantes. Esse conjunto de prioridades documentadas, validadas e confirmadas é a pendência de adoção de nuvem priorizada.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Para qualquer carga de trabalho na pendência de adoção de nuvem priorizada, a equipe agora está pronta para [alinhar os ativos](./assets.md).
 

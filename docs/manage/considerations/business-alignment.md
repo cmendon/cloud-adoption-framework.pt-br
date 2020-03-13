@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: e06aca53ac70e602d13d2cc23d59d4b56c2cd152
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: ee88c1fc88e5c678f7356aa15b473d0fe61eaa2d
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341429"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140647"
 ---
 # <a name="create-business-alignment-in-cloud-management"></a>Criar alinhamento de negócios no gerenciamento de nuvem
 
@@ -22,7 +22,7 @@ Em ambientes locais, os ativos de ti (aplicativos, máquinas virtuais, hosts de 
 
 A primeira etapa na criação do alinhamento comercial é garantir o alinhamento do termo. O gerenciamento de ti, como a maioria das profissão de engenharia, tem reuniu uma coleção de jargão ou termos altamente técnicos. Esses termos podem levar à confusão para os participantes da empresa e dificultar o mapeamento dos serviços de gerenciamento para o valor comercial.
 
-Felizmente, o processo de desenvolvimento de uma estratégia de adoção de nuvem e plano de adoção de nuvem cria uma oportunidade ideal para remapear esses termos. O processo também cria oportunidades para reconsiderar os compromissos com o gerenciamento operacional, em parceria com a empresa. A série de artigos a seguir orienta você pela nova abordagem em três termos específicos que podem ajudar a melhorar as conversas entre os participantes comerciais: 
+Felizmente, o processo de desenvolvimento de uma estratégia de adoção de nuvem e plano de adoção de nuvem cria uma oportunidade ideal para remapear esses termos. O processo também cria oportunidades para reconsiderar os compromissos com o gerenciamento operacional, em parceria com a empresa. A série de artigos a seguir orienta você pela nova abordagem em três termos específicos que podem ajudar a melhorar as conversas entre os participantes comerciais:
 
 - **[Criticalidade](./criticality.md):** Mapeando cargas de trabalho para processos de negócios. Classificação da importância para concentrar os investimentos.
 - **[Impacto](./impact.md):** Entender o impacto de possíveis interrupções para ajudar na avaliação do retorno sobre o investimento para o gerenciamento de nuvem.
@@ -37,7 +37,7 @@ Para ajudar a capturar decisões que resultam dessa conversa sobre o alinhamento
 
 Como alternativa, essas mesmas cargas de trabalho e ativos associados podem ser marcados diretamente no Azure, se as soluções já estiverem implantadas na nuvem.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Comece a criar o alinhamento comercial definindo a [importância da carga de trabalho](./criticality.md).
 
