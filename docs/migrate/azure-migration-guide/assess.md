@@ -1,6 +1,6 @@
 ---
 title: Avaliar cada carga de trabalho e refinar planos
-description: Esta seção do guia de migração do Azure ajuda você a avaliar o seu ambiente para determinar o que deve ser migrado e quais métodos de migração devem ser considerados.
+description: Use o Cloud Adoption Framework para o Azure para avaliar a adequação do seu ambiente para a migração e saber quais métodos devem ser considerados.
 author: matticusau
 ms.author: mlavery
 ms.date: 02/25/2020
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 40e62a05101e14fcd7507011d521521e58920ffc
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 47cfc7bdbf823ad8a785705e361ba8fa1a44894f
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78225541"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094324"
 ---
 # <a name="assess-each-workload-and-refine-plans"></a>Avaliar cada carga de trabalho e refinar planos
 

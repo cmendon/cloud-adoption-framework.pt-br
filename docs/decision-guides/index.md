@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 66ff53f203a07f5f61ae2ba448f56d6531ffaa94
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 9552ba8b168e79f247916ae86f8e7721282baddb
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892439"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140228"
 ---
 # <a name="architectural-decision-guides"></a>Guias de decisão de arquitetura
 
@@ -37,7 +37,7 @@ Cada uma das categorias a seguir representa uma tecnologia de base de todas as i
 
 [Marcação de Recursos](./resource-tagging/index.md): organize seus recursos baseados em nuvem para dar suporte a modelos de cobrança, abordagens de contabilidade da nuvem e gerenciamento e para otimizar o custo e a utilização de recursos. A marcação de recursos exige um esquema de nomenclatura e de metadados consistente e bem organizado.
 
-[Rede Definida por Software](./software-defined-network/index.md): Implante cargas de trabalho seguras para a nuvem usando a implantação rápida e modificação de recursos de rede virtualizados. Redes definidas por software (SDNs) podem dar suporte a fluxos de trabalho ágeis, isolar os recursos e integrar sistemas baseados em nuvem com sua infraestrutura de TI existente.
+[Rede Definida por Software](./software-defined-network/index.md): Implante cargas de trabalho seguras para a nuvem usando a implantação rápida e modificação de recursos de rede virtualizados. Redes definidas por software podem ser compatíveis com fluxos de trabalho ágeis, isolar os recursos e integrar sistemas baseados em nuvem com sua infraestrutura de TI existente.
 
 [Criptografia](./encryption/index.md): proteja seus dados confidenciais usando criptografia para alinhar-se aos requisitos da política de segurança e conformidade da sua organização.
 

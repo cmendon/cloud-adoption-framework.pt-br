@@ -1,6 +1,6 @@
 ---
-title: Governança, segurança e conformidade no Azure
-description: Saiba como configurar governança, segurança e conformidade para o seu ambiente do Azure.
+title: Governança, segurança e conformidade do Azure
+description: Use o Cloud Adoption Framework para o Azure para saber como configurar a governança, a segurança e a conformidade para o seu ambiente do Azure.
 author: tvuylsteke
 ms.author: kfollis
 ms.date: 09/27/2019
@@ -9,18 +9,22 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: c38edb9a5723d99974f5f472453bf4b88ee07bb3
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 89de72cb85cc4c763d443ae9cc1114b648ab72c4
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799600"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79024083"
 ---
+<!-- cSpell:ignore tvuylsteke >
+
+<!-- markdownlint-disable MD024 MD025 -->
+
 # <a name="governance-security-and-compliance-in-azure"></a>Governança, segurança e conformidade no Azure
 
 Ao estabelecer a política corporativa e planejar suas estratégias de governança, você pode usar ferramentas e serviços como o Azure Policy, o Azure Blueprints e a Central de Segurança do Azure para impor e automatizar as decisões de governança da sua organização. Antes de iniciar seu planejamento de governança, use a [ferramenta de Parâmetro de Comparação de Governança](https://cafbaseline.com) para identificar possíveis lacunas na abordagem de governança de nuvem da sua organização. Para obter mais informações sobre como desenvolver processos de governança, confira [Cloud Adoption Framework para diretrizes de governança do Azure](../../govern/index.md).
 
-# <a name="azure-blueprintstabazureblueprints"></a>[Azure Blueprints](#tab/AzureBlueprints)
+# <a name="azure-blueprints"></a>[Azure Blueprints](#tab/AzureBlueprints)
 
 O Azure Blueprints permite que arquitetos de nuvem e grupos centrais de tecnologia da informação definam um conjunto repetível de recursos do Azure que implementa e adere aos padrões e requisitos de uma organização. O Azure Blueprints permite que as equipes de desenvolvimento criem rapidamente e mantenham novos ambientes e a confiança que eles estão conquistando dentro da conformidade organizacional por meio de um conjunto de componentes internos – como rede – para acelerar o desenvolvimento e a entrega.
 
@@ -41,8 +45,8 @@ Para criar um blueprint:
 1. Na seção **Criar um Blueprint**, selecione **Criar**.
 1. Filtre a lista de blueprints para selecionar o mais apropriado.
 1. Insira o **Nome do blueprint** e selecione o **Local da definição** apropriado.
-1. Clique em **Avançar: Artefatos >>** e examine os artefatos incluídos no blueprint.
-1. Clique em **Salvar rascunho**.
+1. Selecione **Avançar: Artefatos >>** e examine os artefatos incluídos no blueprint.
+1. Selecione **Salvar Rascunho**.
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/GetStarted]" submitText="Create a blueprint" :::
 
@@ -54,8 +58,8 @@ Para criar um blueprint:
 1. Na seção **Criar um Blueprint**, selecione **Criar**.
 1. Filtre a lista de blueprints para selecionar o mais apropriado.
 1. Insira o **Nome do blueprint** e selecione o **Local da definição** apropriado.
-1. Clique em **Avançar: Artefatos >>** e examine os artefatos incluídos no blueprint.
-1. Clique em **Salvar rascunho**.
+1. Selecione **Avançar: Artefatos >>** e examine os artefatos incluídos no blueprint.
+1. Selecione **Salvar Rascunho**.
 
 ::: zone-end
 
@@ -95,7 +99,7 @@ Para obter mais informações, consulte:
 
 ::: zone-end
 
-# <a name="azure-policytabazurepolicy"></a>[Azure Policy](#tab/AzurePolicy)
+# <a name="azure-policy"></a>[Azure Policy](#tab/AzurePolicy)
 
 O Azure Policy é um serviço usado para criar, atribuir e gerenciar políticas. Essas políticas impõem regras sobre seus recursos para que esses recursos permaneçam em conformidade com seus padrões corporativos e contratos de nível de serviço. O Azure Policy examina os recursos para identificar aqueles que não estão em conformidade com as políticas que você implementa. Por exemplo, você pode ter uma política para permitir que apenas um tamanho de VM (máquina virtual ) específico seja executado em seu ambiente. Quando você implementa essa política, ela avalia as VMs existentes em seu ambiente e quaisquer novas VMs que são implantadas. A avaliação da política gera eventos de conformidade para você usar para monitoramento e emissão de relatórios.
 
@@ -129,12 +133,12 @@ Para aplicar uma política a um grupo de recursos:
 
 Para obter mais informações, consulte:
 
-- [Azure Policy](https://docs.microsoft.com/azure/azure-policy)
+- [Azure Policy](https://docs.microsoft.com/azure/governance/policy)
 - [Cloud Adoption Framework: guia de decisão para imposição de política](../../decision-guides/policy-enforcement/index.md)
 
 ::: zone-end
 
-# <a name="azure-security-centertabazuresecuritycenter"></a>[Central de Segurança do Azure](#tab/AzureSecurityCenter)
+# <a name="azure-security-center"></a>[Central de Segurança do Azure](#tab/AzureSecurityCenter)
 
 A Central de Segurança do Azure desempenha um papel importante na sua estratégia de governança. Ela ajuda você a manter o controle da segurança, pois:
 

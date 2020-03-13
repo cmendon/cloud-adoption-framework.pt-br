@@ -1,6 +1,6 @@
 ---
 title: Pré-requisitos da migração para o Azure
-description: Pré-requisitos da migração para o Azure
+description: Use o Cloud Adoption Framework para o Azure para entender como se preparar para a migração do Azure e de quais pré-requisitos você precisa para ter um projeto de migração bem-sucedido.
 author: matticusau
 ms.author: mlavery
 ms.date: 04/04/2019
@@ -9,16 +9,16 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 9baf2c9fdd307125e80fa77d8b2be54bec15b931
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 777b68bcd7faa613681f2d9ebbdf6cffe4accc3f
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806978"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094797"
 ---
 ::: zone target="chromeless"
 
-# <a name="prerequisites"></a>Prerequisites
+# <a name="prerequisites"></a>Pré-requisitos
 
 ::: zone-end
 
@@ -30,7 +30,7 @@ ms.locfileid: "76806978"
 
 Os recursos nesta seção ajudarão a preparar seu ambiente atual para a migração para o Azure.
 
-# <a name="overviewtaboverview"></a>[Visão geral](#tab/Overview)
+# <a name="overview"></a>[Visão geral](#tab/Overview)
 
 Os motivos para migrar para o Azure incluem a eliminação de riscos associados ao hardware herdado, a redução de gastos de capital, a liberação de espaço do datacenter e o rápido retorno sobre o investimento (ROI).
 
@@ -58,7 +58,7 @@ O foco dessa jornada de migração é alcançar a:
 > - [Windows Server 2008 e Windows Server 2008 R2](https://www.microsoft.com/cloud-platform/windows-server-2008).
 > - [SQL Server 2008 e SQL Server 2008 R2](https://www.microsoft.com/sql-server/sql-server-2008).
 
-# <a name="understand-migration-approachestabapproach"></a>[Entender as abordagens de migração](#tab/Approach)
+# <a name="understand-migration-approaches"></a>[Entender as abordagens de migração](#tab/Approach)
 
 A estratégia e as ferramentas que você usa durante a migração de um aplicativo para o Azure dependem muito de suas motivações empresariais, requisitos tecnológicos e linhas do tempo. Além disso, é necessário profundo conhecimento das cargas de trabalho e dos ativos reais (infraestrutura, aplicativos e dados) que estão sendo migrados.
 
@@ -73,7 +73,7 @@ Ao avaliar cargas de trabalho para migração, identifique aplicativos que não 
 - [Guia de decisão de ferramentas de migração do Cloud Adoption Framework](../../decision-guides/migrate-decision-guide/index.md)
 - [Os cinco Rs de racionalização](../../digital-estate/5-rs-of-rationalization.md)
 
-# <a name="planning-checklisttabchecklist"></a>[Lista de verificação de planejamento](#tab/Checklist)
+# <a name="planning-checklist"></a>[Lista de verificação de planejamento](#tab/Checklist)
 
 Antes de iniciar uma migração, será preciso concluir alguns pré-requisitos. Os detalhes exatos dessas atividades variam dependendo do ambiente que está sendo migrado. Em geral, a seguinte lista de verificação é aplicada:
 

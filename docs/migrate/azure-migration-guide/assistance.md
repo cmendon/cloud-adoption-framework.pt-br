@@ -1,6 +1,6 @@
 ---
 title: Como obter assistência
-description: Como obter assistência durante a jornada para o Azure
+description: Saiba como obter assistência durante o processo de migração do Azure. A assistência certa pode ajudar a acelerar seus esforços de migração.
 author: matticusau
 ms.author: mlavery
 ms.date: 04/04/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 479a9433f8768c701aa198e32fe2c9fcc295a61f
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: c7aa485429a8d6a6cdb4d0d18622d6e7cd570e9c
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76803476"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094238"
 ---
 ::: zone target="chromeless"
 
@@ -30,7 +30,7 @@ ms.locfileid: "76803476"
 
 Sabemos que obter o suporte certo no momento exato acelerará seus esforços de migração. Examine as vias de assistência abaixo para atender às suas necessidades.
 
-# <a name="support-planstabsupportplans"></a>[Planos de suporte](#tab/SupportPlans)
+# <a name="support-plans"></a>[Planos de suporte](#tab/SupportPlans)
 
 ## <a name="microsoft-support"></a>Suporte da Microsoft
 
@@ -101,7 +101,7 @@ As seguintes comunidades online fornecem suporte baseado na comunidade:
 
 ::: zone-end
 
-# <a name="partnerstabpartners"></a>[Parceiros](#tab/Partners)
+# <a name="partners"></a>[Parceiros](#tab/Partners)
 
 ## <a name="azure-solutions-partner"></a>Parceiro de Soluções do Azure
 

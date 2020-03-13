@@ -1,6 +1,6 @@
 ---
-title: Especialização de carga de trabalho para gerenciamento de nuvem no Azure
-description: Melhorar as operações de gerenciamento de nuvem específicas da carga de trabalho
+title: Cargas de trabalho especializadas para gerenciamento de nuvem
+description: Use o Cloud Adoption Framework para o Azure para saber mais sobre operações de gerenciamento de nuvem de carga de trabalho especializada.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: ee41e95a8481cd7caeb91d05d4b1420e357aa0f5
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 7108f90ac19e5a566e068e3292d2fab8bd1b7e3d
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808134"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341718"
 ---
 # <a name="workload-specialization-for-cloud-management"></a>Especialização de carga de trabalho para gerenciamento de nuvem
 

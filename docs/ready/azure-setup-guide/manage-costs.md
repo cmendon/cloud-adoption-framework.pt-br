@@ -1,6 +1,6 @@
 ---
-title: Gerenciar custos e cobrança para os seus recursos do Azure
-description: Entenda as faturas e saiba como configurar orçamentos e pagamentos de seus recursos do Azure.
+title: Gerenciar custos e cobrança para os recursos do Azure
+description: Use o Cloud Adoption Framework para o Azure para entender as faturas e saiba como configurar orçamentos e pagamentos de seus recursos do Azure.
 author: dchimes
 ms.author: kfollis
 ms.date: 04/09/2019
@@ -9,13 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 4f0f0d900f75338a33b1873b8d0eac6d91835256
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 0f91ed2c09b2511304a59bc8768507f737ec6c76
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799515"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79024022"
 ---
+<!-- cSpell:ignore dchimes -->
+
 # <a name="manage-costs-and-billing-for-your-azure-resources"></a>Gerenciar custos e cobrança para os seus recursos do Azure
 
 O gerenciamento de custos é o processo de efetivamente planejar e controlar os custos envolvidos em seus negócios. As tarefas de gerenciamento de custos costumam ser executadas por equipes de finanças, gerenciamento e aplicativos. O Gerenciamento de Custos do Azure pode ajudá-lo a planejar com o custo em mente. Também pode ajudá-lo a analisar os custos de maneira eficaz e a tomar medidas para otimizar o gasto com a nuvem.

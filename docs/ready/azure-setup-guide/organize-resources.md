@@ -1,6 +1,6 @@
 ---
-title: Organizar seus recursos do Azure com eficácia
-description: Melhores práticas para organizar de forma eficaz os recursos do Azure para facilitar o gerenciamento.
+title: Organizar recursos do Azure com eficácia
+description: Entenda as melhores práticas de que você precisa para organizar de maneira eficaz os recursos do Azure para facilitar o gerenciamento.
 author: laraaleite
 ms.author: kfollis
 ms.date: 04/09/2019
@@ -9,13 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: eb2564239548f77084fbc38d93003346a07e8e84
-ms.sourcegitcommit: 1de39a4c3954512892f11e3d1330a04e95ce187d
+ms.openlocfilehash: 67e22ff4831d6bca4bb0054b544bf2efba02a93e
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "77567751"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79024021"
 ---
+<!-- cSpell:ignore laraaleite profx fsubscriptions fresource -->
+
 # <a name="organize-your-azure-resources"></a>Organizar seus recursos do Azure
 
 A organização dos seus recursos baseados em nuvem é essencial para proteger, gerenciar e acompanhar os custos relacionados às cargas de trabalho. Para organizar seus recursos, use as hierarquias de gerenciamento na plataforma do Azure, implemente convenções de nomenclatura bem pensadas e aplique a marcação de recursos.
@@ -156,7 +158,7 @@ Você também pode usar marcas para muitos outros fins. Usos comuns incluem:
 
 - **Metadados e documentação:** Os administradores podem facilmente ver os detalhes sobre os recursos com os quais estão trabalhando ao aplicar uma tag, como "ProjectOwner".
 - **Automação:** Talvez você tenha scripts que são executados regularmente que podem realizar uma ação com base em um valor de tag, como "ShutdownTime" ou "DeprovisionDate".
-- **Otimização de custos:** você pode alocar recursos para as equipes e recursos responsáveis pelo custo. No Gerenciamento de Custos do Azure, você pode aplicar a marca do centro de custo como um filtro para relatar os encargos com base no uso de uma equipe ou de um departamento.
+- **Otimização de custos:** No gerenciamento de custos do Azure, você pode aplicar a marca do centro de custo como um filtro para relatar os encargos com base no uso de uma equipe ou de um departamento.
 
 Cada recurso ou grupo de recursos pode ter um máximo de 50 pares de nome e valor de tag. Essa limitação se aplica somente a marcas aplicadas diretamente ao grupo de recursos ou recurso.
 
