@@ -1,18 +1,18 @@
 ---
-title: Mudança de host de um aplicativo de central de serviços em Linux para o Azure e o Banco de Dados do Azure para MySQL
-description: Saiba como a Contoso muda o host de um aplicativo Linux local migrando-o para VMs do Azure e para o Banco de Dados do Azure para MySQL.
+title: Rehospedar um aplicativo do Service Desk do Linux no Azure e no banco de dados do Azure para MySQL
+description: Use a estrutura de adoção de nuvem para o Azure para saber como hospedar novamente um aplicativo Linux local migrando-o para VMs do Azure e banco de dados do Azure para MySQL.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a5043e3d42b843cfb714823fcb476e7bfdc0a2fd
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 89ba67d795f03a424a22fbf834f07f9d45241449
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223009"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311465"
 ---
 <!-- cSpell:ignore OSTICKETWEB OSTICKETMYSQL contosohost contosodc contosovmsacc contosoosticket vcenter cswiz osticket NSGs systemctl -->
 
@@ -83,7 +83,7 @@ Para migrar o banco de dados:
 [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery) | O serviço coordena e gerencia a migração e a recuperação de desastre para VMs do Azure e servidores físicos e de VMs locais. | Durante a replicação para o Azure, são gerados encargos do Armazenamento do Azure. As VMs do Azure são criadas e incorrem em encargos quando ocorre failover. [Saiba mais](https://azure.microsoft.com/pricing/details/site-recovery) sobre encargos e preços.
 [Banco de Dados do Azure para MySQL](https://docs.microsoft.com/azure/mysql) | O banco de dados baseia-se no mecanismo do servidor MySQL de software livre. Ele fornece um banco de dados MySQL comunitário, pronto para empresas e totalmente gerenciado, como um serviço para o desenvolvimento e implantação de aplicativos.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
 
 Veja o que a Contoso precisa para esse cenário.
 
@@ -348,7 +348,7 @@ Os administradores da Contoso migram o banco de dados usando backup e restauraç
 
 Por fim, os administradores da Contoso executam um rápido failover de teste e, em seguida, migram a VM.
 
-### <a name="run-a-test-failover"></a>Execute um teste de failover
+### <a name="run-a-test-failover"></a>executar um failover de teste
 
 A execução de um failover de teste ajuda a verificar se tudo está funcionando como esperado antes da migração.
 
@@ -369,7 +369,7 @@ Para migrar a VM, os administradores da Contoso criam um plano de recuperação 
 
 1. Eles criam um plano e adicionam **OSTICKETWEB** a ele.
 
-    ![Plano de recuperação](./media/contoso-migration-rehost-linux-vm-mysql/recovery-plan.png)
+    ![Plano de Recuperação](./media/contoso-migration-rehost-linux-vm-mysql/recovery-plan.png)
 
 2. Ela executa um failover no plano. Ela seleciona o último ponto de recuperação e especifica que o Site Recovery deve tentar desligar a VM local antes de disparar o failover. Podem acompanhar o progresso do failover na página **Trabalhos**.
 

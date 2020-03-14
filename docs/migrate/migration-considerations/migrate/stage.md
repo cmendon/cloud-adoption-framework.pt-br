@@ -1,18 +1,18 @@
 ---
-title: Entender as atividades de preparo durante uma migração
-description: Entender as atividades de preparo durante uma migração
+title: Atividades de preparo durante uma migração
+description: Use a estrutura de adoção de nuvem para o Azure para entender as atividades de preparo e os resultados associados necessários durante uma migração.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: c8dcc71cd47253bbc59e885a085802d78323c5fd
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 491080353d6cf67009720359257d9f1b8bbfdd6d
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76801980"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311737"
 ---
 # <a name="understand-staging-activities-during-a-migration"></a>Entender as atividades de preparo durante uma migração
 
@@ -27,7 +27,7 @@ Os ativos preparados podem não estar prontos para uso na produção. Há vária
 - **Documentação de configuração.** As alterações feitas em um ativo (durante a correção, replicação ou preparo) têm que ser documentadas para haver prontidão operacional.
 - **Documentação de pendências.** A lista de pendências de migração precisa ser atualizada para refletir a carga de trabalho e os ativos preparados.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Depois que os ativos preparados são testados e documentados, você pode prosseguir para as [atividades de otimização](../optimize/index.md).
 

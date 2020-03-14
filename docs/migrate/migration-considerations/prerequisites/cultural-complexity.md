@@ -1,18 +1,18 @@
 ---
-title: 'Preparação para complexidade cultural: alinhamento de funções e responsabilidades'
-description: Prepare-se para a complexidade cultural alinhando funções e responsabilidades.
+title: Complexidade cultural do alinhamento de funções e responsabilidades
+description: Use a estrutura de adoção de nuvem para o Azure para se preparar para a complexidade cultural alinhando funções e responsabilidades para impulsionar a clareza durante o processo de migração.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 186772796694d6ef60a923c5098760a573d8db6d
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 56956443bc681cc0c7e00ea13babb55a26280192
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76801487"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311788"
 ---
 # <a name="prepare-for-cultural-complexity-aligning-roles-and-responsibilities"></a>Preparação para complexidade cultural: alinhamento de funções e responsabilidades
 
@@ -24,17 +24,17 @@ Em qualquer cenário, é prudente investir na documentação de funções e resp
 
 Em qualquer migração, há algumas funções importantes que são mais bem executadas pela empresa, sempre que possível. Frequentemente, o setor de TI é capaz de concluir as tarefas a seguir. No entanto, envolver membros da empresa pode ajudar a reduzir barreiras posteriormente no processo de adoção. Isso também garante o investimento mútuo dos principais stakeholders durante o processo de migração.
 
-| Processo | Atividade | Description |
+| Processo | Atividade | Descrição |
 |---------|---------|---------|
-| Avalie | Metas empresariais | Defina os resultados dos negócios desejados do esforço de migração. |
-| Avalie | Prioridades | Garanta o alinhamento com as diferentes prioridades empresariais e condições de mercado. |
-| Avalie | Justificativa | Valide suposições que levam a justificativas comerciais em evolução. |
-| Avalie | Risco | Ajude a equipe de adoção da nuvem a entender o impacto dos riscos empresariais tangíveis. |
-| Avalie | Aprovar | Examine e aprove o impacto empresarial das alterações de arquitetura propostas. |
-| Otimize | Alterar plano | Defina um plano para o consumo de alterações dentro da empresa, incluindo períodos de baixa atividade e congelamento de alterações. |
-| Otimize | Testando | Alinhe os usuários avançados capazes de validar o desempenho e a funcionalidade. |
-| Proteja e gerencie | Impacto da interrupção | Auxilie a equipe de adoção da nuvem a quantificar o impacto da interrupção de um processo empresarial. |
-| Proteja e gerencie | Validação do SLA (contrato de nível de serviço) | Auxilie a equipe de adoção da nuvem na definição dos contratos de nível de serviço e das tolerâncias aceitáveis para interrupções empresariais. |
+| Avaliar | Metas empresariais | Defina os resultados dos negócios desejados do esforço de migração. |
+| Avaliar | Prioridades | Garanta o alinhamento com as diferentes prioridades empresariais e condições de mercado. |
+| Avaliar | Justificativa | Valide suposições que levam a justificativas comerciais em evolução. |
+| Avaliar | Risco | Ajude a equipe de adoção da nuvem a entender o impacto dos riscos empresariais tangíveis. |
+| Avaliar | Aprovar | Examine e aprove o impacto empresarial das alterações de arquitetura propostas. |
+| Otimizar | Alterar plano | Defina um plano para o consumo de alterações dentro da empresa, incluindo períodos de baixa atividade e congelamento de alterações. |
+| Otimizar | Testando | Alinhe os usuários avançados capazes de validar o desempenho e a funcionalidade. |
+| Proteger e gerenciar | Impacto da interrupção | Auxilie a equipe de adoção da nuvem a quantificar o impacto da interrupção de um processo empresarial. |
+| Proteger e gerenciar | Validação do SLA (contrato de nível de serviço) | Auxilie a equipe de adoção da nuvem na definição dos contratos de nível de serviço e das tolerâncias aceitáveis para interrupções empresariais. |
 
 No fim, a equipe de adoção da nuvem é responsável por cada uma dessas atividades. No entanto, estabelecer responsabilidades e uma cadência regular com a empresa para a conclusão dessas atividades em um ritmo estabelecido pode melhorar o alinhamento dos stakeholders e a coesão com a empresa.
 
@@ -45,21 +45,21 @@ Cada processo na discussão sobre os princípios de migração da Estrutura de A
 > [!NOTE]
 > Na tabela a seguir, uma parte que pode ser responsabilizada deve iniciar o alinhamento das funções. Essa coluna deve ser personalizada para se ajustar aos processos existentes para levar a uma execução eficiente. Idealmente, uma única pessoa deve ser nomeada como a parte responsável pela conta.
 
-| Processo | Atividade | Description | Parte responsável |
+| Processo | Atividade | Descrição | Parte responsável |
 |---------|---------|---------|---------|
 | Pré-requisito | Propriedade digital | Alinhar o inventário existente a pressuposições básicas, com base nos resultados dos negócios. | equipe de estratégia da nuvem |
 | Pré-requisito | Lista de pendências da migração | Priorizar a sequência de cargas de trabalho a serem migradas. | equipe de estratégia da nuvem |
-| Avalie | Arquitetura | Desafiar suposições iniciais para definir a arquitetura de destino com base nas métricas de uso. | equipe de adoção da nuvem |
-| Avalie | Aprovação | Aprovar a arquitetura proposta. | equipe de estratégia da nuvem |
-| Migre | Acesso à replicação | Acesso a hosts e ativos locais existentes para estabelecer processos de replicação. | equipe de adoção da nuvem |
-| Otimize | Preparado | Validar se o sistema atende aos requisitos de desempenho e custo antes da promoção. | equipe de adoção da nuvem |
-| Otimize | Promover | Permissões para promover uma carga de trabalho para produção e redirecionar o tráfego de produção. | equipe de adoção da nuvem |
-| Proteja e gerencie | Transição de operações | Documentar os sistemas de produção antes das operações de produção. | equipe de adoção da nuvem |
+| Avaliar | Arquitetura | Desafiar suposições iniciais para definir a arquitetura de destino com base nas métricas de uso. | equipe de adoção da nuvem |
+| Avaliar | Aprovação | Aprovar a arquitetura proposta. | equipe de estratégia da nuvem |
+| Migrar | Acesso à replicação | Acesso a hosts e ativos locais existentes para estabelecer processos de replicação. | equipe de adoção da nuvem |
+| Otimizar | Pronto | Validar se o sistema atende aos requisitos de desempenho e custo antes da promoção. | equipe de adoção da nuvem |
+| Otimizar | Promover | Permissões para promover uma carga de trabalho para produção e redirecionar o tráfego de produção. | equipe de adoção da nuvem |
+| Proteger e gerenciar | Transição de operações | Documentar os sistemas de produção antes das operações de produção. | equipe de adoção da nuvem |
 
 > [!CAUTION]
 > Para essas atividades, as permissões e a autorização influenciam muito a parte responsável, que deve ter acesso direto aos sistemas de produção no ambiente existente ou deve ter meios de garantir o acesso por meio de outros atores responsáveis. Determinar essa parte responsável afeta diretamente a estratégia de promoção durante os processos de migração e otimização.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Quando a equipe tem uma compreensão geral das funções e responsabilidades, é hora de começar a preparar os detalhes técnicos da migração. Compreender a [complexidade técnica e o gerenciamento de alterações](./technical-complexity.md) pode ajudar a preparar a equipe de adoção da nuvem para a complexidade técnica da migração alinhando-se a um processo de gerenciamento de alterações incremental.
 

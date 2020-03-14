@@ -7,16 +7,19 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: cb34f026b5161b20fc6e3a20bf4993b6b44ede4f
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: efd387f2f3a1c11d518e8e51d06977efdd07609c
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341567"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312470"
 ---
+<!-- cSpell:ignore VMUUID kusto -->
+
 # <a name="configure-azure-server-management-services-at-scale"></a>Configurar os serviços de gerenciamento de servidor do Azure em escala
 
 Você deve concluir essas duas tarefas para integrar os serviços de gerenciamento do servidor do Azure aos seus servidores:
+
 - Implantar agentes de serviço em seus servidores
 - Habilitar as soluções de gerenciamento
 
@@ -82,7 +85,7 @@ Para servidores locais, você precisa baixar e instalar o [agente de log Analyti
 
 Para habilitar soluções, você precisa configurar o workspace do Log Analytics. As VMs do Azure e os servidores locais integrados receberão as soluções dos espaços de trabalho Log Analytics aos quais estão conectados.
 
-### <a name="update-management"></a>Gerenciamento de atualizações
+### <a name="update-management"></a>Gerenciamento de atualização
 
 As soluções de Gerenciamento de Atualizações, Controle de Alterações e inventário exigem um espaço de trabalho Log Analytics e uma conta de automação. Para garantir que esses recursos estejam configurados corretamente, recomendamos que você integre sua conta de automação. Para obter mais informações, consulte [integrado gerenciamento de atualizações, controle de alterações e soluções de inventário](https://docs.microsoft.com/azure/automation/automation-onboard-solutions-from-automation-account).
 
@@ -131,7 +134,7 @@ Para criar ou modificar a pesquisa salva, siga estas etapas:
     > [!NOTE]
     > O nome do servidor deve corresponder exatamente ao valor na expressão e não deve conter um sufixo de nome de domínio.
 
-1. Clique em **Salvar**. Por padrão, a configuração de escopo é vinculada à pesquisa salva **MicrosoftDefaultComputerGroup** . Ele será atualizado automaticamente.
+1. Selecione **Salvar**. Por padrão, a configuração de escopo é vinculada à pesquisa salva **MicrosoftDefaultComputerGroup** . Ele será atualizado automaticamente.
 
 ### <a name="azure-activity-log"></a>Log de Atividades do Azure
 
@@ -178,7 +181,7 @@ Após a conclusão da criação, a instância de recurso do espaço de trabalho 
 
 ### <a name="azure-monitor-for-vms"></a>Azure Monitor para VMs
 
-Você pode habilitar [Azure monitor para VMs](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-overview) por meio da página de exibição da instância de VM, conforme descrito em [habilitar serviços de gerenciamento em uma única VM para avaliação](./onboard-single-vm.md). Você não deve habilitar soluções diretamente da página de **soluções** da mesma forma que faz para as outras soluções descritas neste artigo. Para implantações em larga escala, pode ser mais fácil usar a [automação](./onboarding-automation.md) para habilitar as soluções corretas no espaço de trabalho. 
+Você pode habilitar [Azure monitor para VMs](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-overview) por meio da página de exibição da instância de VM, conforme descrito em [habilitar serviços de gerenciamento em uma única VM para avaliação](./onboard-single-vm.md). Você não deve habilitar soluções diretamente da página de **soluções** da mesma forma que faz para as outras soluções descritas neste artigo. Para implantações em larga escala, pode ser mais fácil usar a [automação](./onboarding-automation.md) para habilitar as soluções corretas no espaço de trabalho.
 
 ### <a name="azure-security-center"></a>Central de Segurança do Azure
 
@@ -192,9 +195,9 @@ Para habilitar a camada gratuita da central de segurança do Azure, siga estas e
 4. Selecione **Editar configurações** para esse espaço de trabalho.
 5. Selecione **Tipo de preço**.
 6. Escolha a opção **gratuito** .
-7. Clique em **Salvar**.
+7. Selecione **Salvar**.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Saiba como usar a automação para carregar servidores e criar alertas.
 

@@ -1,18 +1,18 @@
 ---
-title: Visão geral dos exemplos de migração de aplicativos para o Azure
-description: Fornece uma visão geral dos exemplos de migração de aplicativos incluídos como parte da seção Migração do Cloud Adoption Framework.
+title: Exemplos de migração de aplicativos para o Azure
+description: Use a estrutura de adoção de nuvem para o Azure para saber como migrar a infraestrutura local para a nuvem Microsoft Azure.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 639d90285c1500a661e872931456f63c188daafc
-ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
+ms.openlocfilehash: ecb6cfc10b88490269b50a5fe6bec7d2c3277d7b
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78337451"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312574"
 ---
 # <a name="application-migration-patterns-and-examples"></a>Exemplos e padrões de migração de aplicativos
 

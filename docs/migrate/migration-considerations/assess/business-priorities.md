@@ -1,18 +1,18 @@
 ---
-title: Manter prioridades empresariais durante um processo de transformação de longo prazo
-description: Mantenha prioridades empresariais durante um processo de transformação de longo prazo.
+title: Prioridades de negócios durante um processo de transformação
+description: Use a estrutura de adoção de nuvem para o Azure para aprender a manter o alinhamento de negócios durante o processo de transformação de longo prazo.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2a48dad8cb7d64b766dc5b9a445aeda4245854e7
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: df41ee9dfe94d0279f8a0c29982e8aff2dd83782
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76802711"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312043"
 ---
 # <a name="business-priorities-maintaining-alignment"></a>Prioridades de negócios: mantendo o alinhamento
 
@@ -48,7 +48,7 @@ Durante a execução do plano de mudança empresarial, a equipe de estratégia d
 
 Quando o mercado muda, a equipe de estratégia de nuvem trabalha com a empresa para entender como responder melhor às alterações. Quando essa reposta requer uma mudança nas prioridades da migração, a lista de pendências de migração é ajustada. Isso faz as cargas de trabalho que anteriormente estavam com prioridade mais baixa subirem.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Com as prioridades empresarial devidamente alinhadas, a equipe de adoção da nuvem pode começar a [avaliar cargas de trabalho](./evaluate.md) com confiança para desenvolver planos de arquitetura e de migração.
 

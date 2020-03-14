@@ -1,6 +1,6 @@
 ---
-title: Refatorar uma implantação do Team Foundation Server para o Azure DevOps Services no Azure
-description: Saiba como a Contoso refatora sua implantação do TFS local migrando-a para o Azure DevOps Services no Azure.
+title: Refatorar Team Foundation Server implantação para Azure DevOps Services
+description: Use a estrutura de adoção de nuvem para o Azure para saber como refatorar sua implantação local do TFS migrando-a para Azure DevOps Services no Azure.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/11/2018
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 003a5674116f7964971710c5c8c67fc51fa03493
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 36a12a676a9bb48584c9914f93642b1ccbcad406
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222877"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311618"
 ---
 <!-- cSpell:ignore contosodevmigration contosomigration onmicrosoft visualstudio sourceconnectionstring CONTOSOTFS DACPAC SQLDB SQLSERVERNAME INSTANCENAME azuredevopsmigration validateonly -->
 

@@ -1,18 +1,18 @@
 ---
-title: Diretrizes para teste de negócios (UAT) durante a migração
-description: Um processo na migração na nuvem que se concentra nas tarefas de migrar cargas de trabalho para a nuvem.
+title: Diretrizes de teste de negócios durante a migração
+description: Saiba como os testes de negócios são usados para solicitar a validação de que o desempenho da solução está em linha com expectativas e não impede os processos de negócios.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4c24ae176d3b8fc8ec4fa504ed406bc32a1c0ab3
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 675eda4aeb2109c21c2e3f47a100a985fd6e2861
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76801946"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311738"
 ---
 # <a name="guidance-for-business-testing-uat-during-migration"></a>Diretrizes para teste de negócios (UAT) durante a migração
 
@@ -49,7 +49,7 @@ A TI serve como um dos destinatários da saída do teste de negócios. Os loops 
 - Identificar os testes automatizados existentes que podem simplificar o teste para os usuários avançados.
 - Para alterações que possam exigir a repetição da implantação ou de testes, estude os processos de testes, defina os parâmetros de comparação e projete a automação para simplificar ainda mais os testes de usuários avançados.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Em conjunto com os testes de negócios, a [otimização dos ativos migrados](./optimize.md) pode refinar os custos e o desempenho da carga de trabalho.
 

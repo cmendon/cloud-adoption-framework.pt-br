@@ -1,6 +1,6 @@
 ---
 title: Scaffold do Azure Enterprise
-description: Descreve um Scaffold corporativo que pode ajudar a garantir um ambiente seguro e gerenciável.
+description: O Azure Enterprise Scaffold agora é a estrutura de adoção Microsoft Cloud para o Azure. Saiba como abordar a necessidade de governança e equilibrá-la com a necessidade de agilidade.
 author: rdendtler
 ms.author: rodend
 ms.date: 09/22/2018
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: 8291b48d2955d623b643c944f4307613bcf22f47
-ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
+ms.openlocfilehash: c545f147ba374fe1150573b060c600269eb628b1
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79023941"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311601"
 ---
 <!-- cSpell:ignore rodend subscope ITSM Hashi -->
 
@@ -342,7 +342,7 @@ O componente final do modelo de referência de andaime do Azure é essencial par
 
 O Azure fornece recursos internos e de terceiros de nossa ampla rede de parceiros que oferecem uma postura de segurança eficaz. Mais importante, a Microsoft fornece as práticas recomendadas e orientações na forma de [VDC (datacenter virtual) do Azure](./networking-vdc.md). À medida que você passa de uma única carga de trabalho para várias cargas de trabalho que usam recursos híbridos, as diretrizes de VDC fornecerão "receitas" para permitir uma rede flexível e que aumentará à medida que suas cargas de trabalho no Azure crescem.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 A governança é essencial para o sucesso do Azure. Este artigo foca na implementação técnica de um andaime empresarial, mas toca apenas no processo mais amplo e nas relações entre os componentes. A governança da política flui de cima para baixo e é determinada por aquilo que a empresa quer alcançar. Naturalmente, a criação de um modelo de governança para o Azure inclui representantes da TI, mas o mais importante é ter uma forte representação dos líderes do grupo de negócios, além de gerenciamento de segurança e risco. No fim, um andaime empresarial é sobre reduzir o risco aos negócios para facilitar a missão e os objetivos de uma organização.
 

@@ -1,18 +1,18 @@
 ---
 title: Preparar um aplicativo migrado para promoção de produção
-description: Um processo na migração na nuvem que se concentra nas tarefas de migrar cargas de trabalho para a nuvem.
+description: Use a estrutura de adoção de nuvem do Azure para entender a validação envolvida na preparação de um aplicativo migrado para a promoção de produção.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: f3aad7a2b7c592478f9d48a50dc96d5fee607dc8
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 4b48a4ceea5d322e4a993cdba474269d73fbc7e3
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76801606"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312009"
 ---
 # <a name="prepare-a-migrated-application-for-production-promotion"></a>Preparar um aplicativo migrado para promoção de produção
 
@@ -44,7 +44,7 @@ Após o plano de mudança empresarial e a prontidão técnica tiverem sido valid
 - **Validação de custo (planejado versus real).** É provável que os testes produzam alterações no dimensionamento e na arquitetura. Verifique se o preço real da implantação ainda se alinha ao plano original.
 - **Comunicar e executar o plano de substituição.** Antes da substituição, comunique a substituição e execute-a.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Após todas as atividades de preparação terem sido concluídas, é hora de [promover a carga de trabalho](./promote.md).
 

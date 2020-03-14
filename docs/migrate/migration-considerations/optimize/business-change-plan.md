@@ -1,18 +1,18 @@
 ---
-title: Diretrizes para desenvolver um plano de alteração do negócio
-description: Um processo na migração na nuvem que se concentra nas tarefas de migrar cargas de trabalho para a nuvem.
+title: Desenvolver um plano de mudança de negócios
+description: Use a estrutura de adoção de nuvem para o Azure para saber como um plano de mudança de negócios pode ajudá-lo a implementar um plano de adoção de usuário mais amplo.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 48e670028e26be5a28abf55c7a0565769e17dacf
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: d1c842c672cc091deaad4e0b7f4ffc89231895c7
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76801963"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312026"
 ---
 # <a name="business-change-plan"></a>Plano de alteração do negócio
 
@@ -57,7 +57,7 @@ Um plano de alteração do negócio vai além da alteração técnica e assume q
 
 O plano de alteração do negócio varia de acordo com a empresa. O objetivo dessas perguntas é ajudar a integrar melhor os negócios às alterações associadas a cada lançamento. Ao examinar cada lançamento não como uma alteração de tecnologia a ser adotada, mas como um plano de alteração do negócio, pode ser mais fácil alcançar os resultados empresariais.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Após documentar e planejar a alteração do negócio, é possível começar os [testes de negócios](./business-test.md).
 

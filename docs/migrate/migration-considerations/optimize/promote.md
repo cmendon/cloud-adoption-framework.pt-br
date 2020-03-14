@@ -1,18 +1,18 @@
 ---
-title: O que é necessário para promover um recurso migrado para produção?
-description: Um processo na migração na nuvem que se concentra nas tarefas de migrar cargas de trabalho para a nuvem.
+title: Requisitos para promover um recurso migrado para produção
+description: Use a estrutura de adoção de nuvem para o Azure para entender as tarefas comuns e os pré-requisitos padrão para promover um recurso migrado para produção.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a357d4d5024d7671d2018276be06532134a1f137
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: e2f0a0d92dfa63e0eb3f438fcc155854dfd61f8c
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76801674"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311805"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -50,7 +50,7 @@ As seguintes alterações técnicas provavelmente precisarão ser concluídas e 
 
 As cargas de trabalho exigirão níveis variados de processos detalhados de análise e promoção. No entanto, o realinhamento da rede serve como a etapa final comum para todas as versões de promoção. Quando todo o resto estiver pronto, atualize os registros DNS ou endereços IP para rotear o tráfego para a carga de trabalho migrada.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 A promoção de uma carga de trabalho sinaliza a conclusão de um lançamento. No entanto, em paralelo com a migração, ativos descontinuados precisam ser [desativados](./decommission.md), removendo-os do serviço.
 

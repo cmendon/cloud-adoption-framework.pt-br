@@ -1,6 +1,6 @@
 ---
-title: Refatorar um aplicativo migrando-o para o Serviço de Aplicativo do Azure e o Banco de Dados SQL do Azure
-description: Saiba como a Contoso hospeda novamente um aplicativo local migrando-o para um aplicativo Web do Serviço de Aplicativo do Azure e do banco de dados do Azure SQL Server.
+title: Migrar um aplicativo para Azure App serviço e banco de dados SQL
+description: Use a estrutura de adoção de nuvem para o Azure para saber como refatorar um aplicativo migrando-o para o serviço de Azure App e o banco de dados SQL do Azure.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/11/2018
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 3667207de8cc31a85e12666c425ffdf0469c1be5
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 86a7dc6a0754ece24c8d18dca847bde0e93b5345
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223066"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311992"
 ---
 <!-- cSpell:ignore WEBVM SQLVM contosohost contosodc vcenter smarthotel SHWEB SHWCF -->
 
@@ -103,7 +103,7 @@ A Contoso avalia seu projeto proposto reunindo uma lista de prós e contras.
 [Serviço de Aplicativo do Azure](https://docs.microsoft.com/azure/app-service/overview) | Crie aplicativos de nuvem avançados usando uma plataforma totalmente gerenciada | Custo com base no tamanho, na localização e na duração do uso. [Saiba mais](https://azure.microsoft.com/pricing/details/app-service/windows).
 [Azure DevOps](https://docs.microsoft.com/azure/azure-portal/tutorial-azureportal-devops) | Fornece um pipeline de CI/CD (integração contínua/implantação contínua) para o desenvolvimento de aplicativos. O pipeline começa com um repositório Git para gerenciar o código do aplicativo, um sistema de build para produzir pacotes e outros artefatos de build e um sistema Release Management para implantar as alterações nos ambientes de desenvolvimento, teste e produção.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
 
 Aqui, a Contoso precisa executar este cenário:
 
@@ -320,7 +320,7 @@ Agora, os administradores da Contoso configuram o Azure DevOps para executar o p
 
 12. No pipeline > **artefatos**, eles selecionam **+ adicionam um artefato**e, em seguida, selecionam para compilar com o pipeline **ContosoSmarthotel360Refactor** .
 
-     ![Build](./media/contoso-migration-refactor-web-app-sql/pipeline12.png)
+     ![{1&gt;Compilação&lt;1}](./media/contoso-migration-refactor-web-app-sql/pipeline12.png)
 
 13. Eles selecionam o raio do artefato verificado, para ativar o gatilho de implantação contínua.
 

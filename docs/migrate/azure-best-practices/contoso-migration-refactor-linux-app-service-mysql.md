@@ -1,18 +1,18 @@
 ---
-title: Refatorar um aplicativo de central de serviços Linux para o Serviço de Aplicativo do Azure e o Banco de Dados do Azure para MySQL
-description: Saiba como a Contoso refatora um aplicativo Linux local migrando-o para o Serviço de Aplicativo do Azure usando o GitHub para camada da Web e o Banco de Dados SQL do Azure.
+title: Refatorar um aplicativo do Linux para Azure App serviço e banco de dados para MySQL
+description: Use a estrutura de adoção de nuvem para o Azure para saber como refatorar um aplicativo de Service Desk do Linux para Azure App serviço e o banco de dados do Azure para MySQL.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/11/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2e47647b06da12b9b595f4330767f629121e00a0
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 3a4ebcb2264ff863200071363b8369d8a76549d3
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807454"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311482"
 ---
 # <a name="refactor-a-linux-app-to-multiple-regions-using-azure-app-service-traffic-manager-and-azure-database-for-mysql"></a>Refatorar um aplicativo do Linux para várias regiões usando o Serviço de Aplicativo do Azure, o Gerenciador de Tráfego e o Banco de Dados do Azure para MySQL
 
@@ -88,7 +88,7 @@ A Contoso concluirá o processo de migração da seguinte maneira:
 [Gerenciador de Tráfego](https://azure.microsoft.com/services/traffic-manager) | Um balanceador carga que usa o DNS para direcionar os usuários ao Azure ou a sites e serviços externos. | O preço é calculado com base no número de consultas DNS recebidas e no número de pontos de extremidade monitorados. | [Saiba mais](https://azure.microsoft.com/pricing/details/traffic-manager).
 [Banco de Dados do Azure para MySQL](https://docs.microsoft.com/azure/mysql) | O banco de dados baseia-se no mecanismo do servidor MySQL de software livre. Ele fornece um banco de dados MySQL comunitário pronto para empresas e totalmente gerenciado, como um serviço para o desenvolvimento e para a implantação de aplicativos. | O preço é calculado com base nos requisitos de computação, de armazenamento e de backup. [Saiba mais](https://azure.microsoft.com/pricing/details/mysql).
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
 
 Aqui está o que a Contoso precisa para executar esse cenário.
 
@@ -302,11 +302,11 @@ Por fim, ela configura a colocação em escala automática do aplicativo. Isso g
 1. No Serviço de Aplicativo **APP-SRV-EUS2**, eles abrem a **Unidade de Escala**.
 2. Ela configurará uma nova configuração de dimensionamento automático com uma única regra que aumentará a contagem de instâncias em um quando o percentual da CPU para a instância atual estiver acima de 70% durante 10 minutos.
 
-    ![Autoescala](./media/contoso-migration-refactor-linux-app-service-mysql/autoscale1.png)
+    ![Autoscale](./media/contoso-migration-refactor-linux-app-service-mysql/autoscale1.png)
 
 3. Ela configura a mesma configuração em **APP-SRV-CUS** para garantir que o mesmo comportamento seja aplicado se o aplicativo realizar failover na região secundária. A única diferença é que eles definem a instância padrão como 1, pois isso é apenas para failovers.
 
-   ![Autoescala](./media/contoso-migration-refactor-linux-app-service-mysql/autoscale2.png)
+   ![Autoscale](./media/contoso-migration-refactor-linux-app-service-mysql/autoscale2.png)
 
 ## <a name="clean-up-after-migration"></a>Limpar após a migração
 

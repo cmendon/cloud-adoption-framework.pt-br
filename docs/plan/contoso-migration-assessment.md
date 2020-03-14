@@ -1,6 +1,6 @@
 ---
-title: avalie as cargas de trabalho locais para migração para o Azure
-description: Saiba como a Contoso avalia os computadores locais para migração para o Azure, usando o Assistente de Migração de Dados e Migrações para Azure.
+title: Avaliar cargas de trabalho locais para a migração do Azure
+description: Conheça um exemplo ilustrativo como avaliar um aplicativo local para migração para o Azure.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 02/25/2020
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 78d33031879a49bd70a6dcfb01be604ca4371e49
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 6fc2992f98c16171173a3313fe19411c05883fa2
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78228412"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312094"
 ---
 <!-- cSpell:ignore WEBVM SQLVM OSTICKETWEB OSTICKETMYSQL CONTOSODC contosohost vcenter prereqs ctypes ctypeslib smarthotelapp -->
 

@@ -8,11 +8,11 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.openlocfilehash: 97d4b52b50f943dfd0e146e84d4e5fc5a1d97711
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79094636"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312613"
 ---
 # <a name="phase-1-prerequisite-planning-for-azure-server-management-services"></a>Fase 1: planejamento de pré-requisitos para os serviços de gerenciamento de servidor do Azure
 
@@ -99,7 +99,7 @@ Para criar um espaço de trabalho Log Analytics usando o portal do Azure, consul
 >
 > Você também pode criar contas Executar como usando o [PowerShell](https://docs.microsoft.com/azure/automation/manage-runas-account#creating-a-run-as-account-using-powershell).
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Saiba como integrar [seus servidores](./onboarding-overview.md) aos serviços de gerenciamento do servidor do Azure.
 

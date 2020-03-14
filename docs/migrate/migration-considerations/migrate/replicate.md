@@ -1,18 +1,18 @@
 ---
-title: Que função a replicação e a sincronização desempenham no processo de migração?
-description: Um processo na migração na nuvem que se concentra nas tarefas de migrar cargas de trabalho para a nuvem.
+title: Replicação e o processo de migração
+description: Entenda a função que a replicação desempenha no processo de migração, além de como planejar os pré-requisitos e os riscos das atividades de replicação.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 5eaea53e65951cb5fee3d36b2eba472e1048feb2
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 31930cfef32d4a02b3892405e2c5b462e0039566
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222243"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312600"
 ---
 <!-- markdownlint-disable MD026 -->
 

@@ -1,18 +1,18 @@
 ---
-title: 'Modelos de promoção: etapa única, preparado ou vôo'
-description: Entender o impacto da promoção em atividades de migração
+title: Tipos de modelo de promoção
+description: Saiba mais sobre três modelos comuns de promoção usados em migrações na nuvem e como sua escolha de modelo afeta as atividades vistas nos processos de migração e otimização.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 9206b90cc9d5ec3a7e8e084b216be713fb24f265
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 6174c142f949052b3396fe4954a5f20f2eba58fd
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76802218"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311839"
 ---
 # <a name="promotion-models-single-step-staged-or-flight"></a>Modelos de promoção: etapa única, preparado ou vôo
 
@@ -78,7 +78,7 @@ Esse modelo é semelhante ao modelo de promoção em fases. No entanto, há uma 
 - A ferramenta de migração escolhida não pode facilitar a replicação em andamento após a migração.
 - Há a necessidade de um meio secundário de replicação de dados para sincronizar plataformas de dados durante o período de tempo do preparo em fases.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Depois que um modelo de promoção é definido e aceito pela equipe de adoção de nuvem, a [correção de ativos](./remediate.md) pode começar.
 

@@ -1,6 +1,6 @@
 ---
-title: Hospede novamente um aplicativo Linux local para VMs do Azure
-description: Saiba como a Contoso muda o host de um aplicativo Linux local migrando-o para VMs do Azure.
+title: Rehospedar um aplicativo Linux local em VMs do Azure
+description: Use a estrutura de adoção de nuvem para o Azure para saber como hospedar novamente um aplicativo Linux local migrando-o para VMs do Azure.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 12d69eee9fa52d6c7aef4b7b71b654808928ace4
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: b44a5d9c8e0447488abd500afeaa70fb87a819b1
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222991"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311941"
 ---
 <!-- cSpell:ignore SQLVM OSTICKETWEB OSTICKETMYSQL contosohost contosodc vcenter WEBVM systemctl NSGs -->
 
@@ -92,7 +92,7 @@ A Contoso migrará da seguinte maneira:
 --- | --- | ---
 [Migração de Servidor das Migrações para Azure](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-linux-vm) | O serviço orquestra e gerencia a migração de seus aplicativos e cargas de trabalho locais, bem como de instâncias de VM do AWS/GCP. | Durante a replicação para o Azure, são gerados encargos do Armazenamento do Azure. As VMs do Azure são criadas e incorrem em encargos quando ocorre failover. [Saiba mais](https://azure.microsoft.com/pricing/details/azure-migrate) sobre encargos e preços.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
 
 Veja o que a Contoso precisa para esse cenário.
 
@@ -205,7 +205,7 @@ Com a descoberta concluída, é possível começar a replicação de VMs do VMwa
 
 Os administradores da Contoso executam um failover de teste rápido e, em seguida, um failover completo para migrar as máquinas virtuais.
 
-### <a name="run-a-test-failover"></a>Execute um teste de failover
+### <a name="run-a-test-failover"></a>executar um failover de teste
 
 1. Em **metas de migração** > **servidores** > **migrações para Azure: migração de servidor**, selecione **testar servidores migrados**.
 

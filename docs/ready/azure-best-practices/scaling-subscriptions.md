@@ -1,22 +1,22 @@
 ---
-title: Dimensionamento com várias assinaturas do Azure
-description: Saiba como dimensionar com várias assinaturas do Azure.
+title: Dimensionamento com assinaturas do Azure
+description: Use a estrutura de adoção de nuvem para o Azure para aprender a desenvolver uma estratégia de dimensionamento com várias assinaturas do Azure.
 author: alexbuckgit
 ms.author: abuck
 ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 6a893ce6f8620b31fcf23d8c3e8581e95035bdcf
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 96564a10bc8dda4ed1966cf5dd41c5ea233f2327
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799787"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312652"
 ---
 # <a name="scale-with-multiple-azure-subscriptions"></a>Dimensionar com várias assinaturas do Azure
 
-As organizações geralmente precisam de mais de uma assinatura do Azure como resultado de limites de recursos e outras considerações de governança. É importante ter uma estratégia para dimensionar suas assinaturas.
+Normalmente, as organizações precisam de várias assinaturas do Azure como resultado de limites de recursos e outras considerações de governança. A definição de uma estratégia para dimensionar suas assinaturas é importante.
 
 ## <a name="production-and-nonproduction-workloads"></a>Cargas de trabalho de produção e não produções
 
@@ -62,7 +62,7 @@ Você pode mover muitos tipos de recursos de uma assinatura para outra ou usar i
 
 ## <a name="manage-multiple-subscriptions"></a>Gerenciar várias assinaturas
 
-Se você tiver apenas algumas assinaturas, gerenciá-las de forma independente é relativamente simples. Mas se você tiver muitas assinaturas, deverá considerar a criação de uma hierarquia de grupo de gerenciamento para simplificar o gerenciamento de suas assinaturas e recursos.
+Se você tiver apenas algumas assinaturas, gerenciá-las de forma independente é relativamente simples. Mas se você tiver muitas assinaturas, crie uma hierarquia de grupo de gerenciamento para simplificar o gerenciamento de suas assinaturas e recursos.
 
 Os grupos de gerenciamento permitem o gerenciamento eficiente de acesso, políticas e conformidade para as assinaturas de uma organização. Cada grupo de gerenciamento é um contêiner para uma ou mais assinaturas.
 
@@ -71,7 +71,7 @@ Os grupos de gerenciamento são organizados em uma única hierarquia. Você defi
 O Azure fornece quatro níveis de escopo de gerenciamento: grupos de gerenciamento, assinatura, grupos de recursos e recursos. Qualquer acesso ou política aplicada em um nível na hierarquia é herdado pelos níveis abaixo dela. Um proprietário de recurso ou proprietário de assinatura não pode alterar uma política herdada. Essa limitação ajuda a melhorar a governança.
 
 > [!NOTE]
-> Observe que a herança de marca não está disponível no momento, mas ficará disponível em breve.
+> Observe que a herança de marca não tem suporte no momento, mas estará disponível em breve.
 
 Ao confiar nesse modelo de herança, você pode organizar as assinaturas em sua hierarquia para que cada uma delas siga as políticas apropriadas e os controles de segurança.
 
@@ -79,11 +79,11 @@ Ao confiar nesse modelo de herança, você pode organizar as assinaturas em sua 
 
 Qualquer acesso ou atribuição de política no grupo de gerenciamento raiz se aplica a todos os recursos no diretório. Considere cuidadosamente quais itens você define nesse escopo. Inclua apenas as atribuições que você deve ter.
 
-Ao definir inicialmente sua hierarquia de grupo de gerenciamento, primeiro você cria o grupo de gerenciamento raiz. Mova todas as assinaturas existentes no diretório para o grupo de gerenciamento raiz. As novas assinaturas sempre são criadas no grupo de gerenciamento raiz. Você pode movê-las posteriormente para outro grupo de gerenciamento raiz.
+Ao definir a hierarquia do grupo de gerenciamento, você primeiro cria o grupo de gerenciamento raiz. Mova todas as assinaturas existentes no diretório para o grupo de gerenciamento raiz. As novas assinaturas sempre são criadas no grupo de gerenciamento raiz. Você pode movê-las posteriormente para outro grupo de gerenciamento raiz.
 
-Quando você move uma assinatura para um grupo de gerenciamento existente, ela herda as políticas e atribuições de função da hierarquia de grupo de gerenciamento acima dela. Depois de estabelecer várias assinaturas para suas cargas de trabalho do Azure, você deve criar assinaturas adicionais para conter os serviços do Azure que outras assinaturas compartilham.
+Quando você move uma assinatura para um grupo de gerenciamento existente, ela herda as políticas e atribuições de função da hierarquia do grupo de gerenciamento acima dela. Depois de estabelecer várias assinaturas para suas cargas de trabalho do Azure, você deve criar assinaturas adicionais para conter os serviços do Azure que outras assinaturas compartilham.
 
-![Exemplo de uma hierarquia do grupo de gerenciamento](../../_images/ready/management-group-hierarchy.png)
+![Exemplo de uma hierarquia de grupo de gerenciamento](../../_images/ready/management-group-hierarchy-v2.png)
 
 Para saber mais, confira [Organizar seus recursos com grupos de gerenciamento do Azure](https://docs.microsoft.com/azure/governance/management-groups).
 
@@ -102,7 +102,7 @@ Para saber mais, confira [Organizar seus recursos com grupos de gerenciamento do
 - [Elevar o acesso para gerenciar todas as assinaturas e grupos de gerenciamento do Azure](https://docs.microsoft.com/azure/role-based-access-control/elevate-access-global-admin).
 - [Mover recursos do Azure para outro grupo de recursos ou assinatura](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-move-resources).
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Examine as [convenções de nomenclatura e de marcação recomendadas](./naming-and-tagging.md) a serem seguidas ao implantar os recursos do Azure.
 

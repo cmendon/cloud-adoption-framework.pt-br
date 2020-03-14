@@ -1,18 +1,18 @@
 ---
-title: 'Preparar-se para a complexidade técnica: gerenciamento de alterações Agile'
-description: Como se preparar para a complexidade técnica – gerenciamento de alterações Agile
+title: Preparar-se para a complexidade do gerenciamento de alterações ágil
+description: Use a estrutura de adoção de nuvem do Azure para preparar arquitetos de nuvem para uma conversa com gerenciamento de projeto para explicar o conceito de gerenciamento de alterações.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4ecd18a226a36497cf3b23669bf17f323c196382
-ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
+ms.openlocfilehash: 3e2b9139fa4774549f68ccf3762234bc755fd458
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79140630"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311822"
 ---
 <!-- cSpell:ignore ITSM TOGAF -->
 

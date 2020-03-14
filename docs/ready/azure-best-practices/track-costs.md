@@ -7,12 +7,12 @@ ms.date: 09/05/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 946183aca25ec2a150d6b1f2896e87ea58ad5ef6
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: b363d43568617d7c58003c2bd278008583870664
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78893371"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312678"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>Controlar os custos em unidades de negócios, ambientes ou projetos
 
@@ -98,6 +98,8 @@ As configurações de escopo e função a seguir criarão a visibilidade necess�
 - [Equipe de governança de nuvem](../../organize/cloud-governance.md). As responsabilidades por gerenciamento de custos, alinhamento de orçamentos e geração de relatórios em todos os esforços de adoção exigem acesso de Colaborador do Gerenciamento de Custos no nível da raiz da hierarquia do grupo de gerenciamento.
 
   - Em um ambiente bem gerenciado, a equipe de governança de nuvem provavelmente já tem um grau mais alto de acesso, tornando desnecessária a atribuição de escopo adicional para o [Colaborador do Gerenciamento de Custos](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor).
+
+<!-- cSpell:ignore automations -->
 
 - [Centro de excelência em nuvem](../../organize/cloud-center-of-excellence.md). A responsabilidade pelo gerenciamento de custos relacionados a serviços compartilhados exige acesso de Colaborador do Gerenciamento de Custos no nível da assinatura. Além disso, essa equipe pode exigir acesso de Colaborador do Gerenciamento de Custos para grupos de recursos ou assinaturas que contêm ativos implantados por automações do CCoE para entender como essas automações afetam os custos.
 

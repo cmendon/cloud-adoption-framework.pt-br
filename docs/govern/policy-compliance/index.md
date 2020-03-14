@@ -9,11 +9,11 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 ms.openlocfilehash: e42cd5f8f551ddb4d68b19eab5e15c28cbe539ad
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709474"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312162"
 ---
 <!-- markdownlint-disable MD026 -->
 

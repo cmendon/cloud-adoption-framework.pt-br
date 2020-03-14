@@ -8,11 +8,11 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.openlocfilehash: d6cf92c2cb08e59196bc9c24aadf1fa2c812db0d
-ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78337547"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312522"
 ---
 # <a name="build-with-customer-empathy"></a>Criar com empatia pelo cliente
 
@@ -105,7 +105,7 @@ Há muitos requisitos legais, de conformidade e do setor que podem exigir uma ab
 
 Alguns dos conceitos neste artigo se baseiam nos tópicos discutidos na [*inicialização de Lean*](http://theleanstartup.com/book) (Eric Ries, coroa Business, 2011).
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Depois de criar uma solução MVP, você pode medir o valor de empatia e o valor de escala. Saiba como [medir o impacto do cliente](./measure.md).
 

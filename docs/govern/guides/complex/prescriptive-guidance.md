@@ -9,11 +9,11 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 ms.openlocfilehash: 74f81e139e7eacc7445321592eab4027a40a8c56
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709202"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312379"
 ---
 # <a name="governance-guide-for-complex-enterprises-best-practices-explained"></a>Guia de governança para empresas complexas: práticas recomendadas explicadas
 
@@ -123,7 +123,7 @@ Se qualquer um dos padrões escolhidos neste guia de governança não se alinhar
 - [Padrões de rede definidos pelo software](../../../decision-guides/software-defined-network/index.md)
 - [Padrões de design de assinatura](../../../decision-guides/subscriptions/index.md)
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Depois que este guia for implementado, cada equipe de adoção da nuvem poderá continuar com uma base sólida sobre governança. Ao mesmo tempo, a equipe de governança de nuvem trabalhará para atualizar continuamente as políticas corporativas e as disciplinas de governança.
 

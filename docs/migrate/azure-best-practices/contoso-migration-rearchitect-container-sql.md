@@ -1,6 +1,6 @@
 ---
 title: Recrie um aplicativo em um contêiner do Azure e no Banco de Dados SQL do Azure
-description: Saiba como a Contoso recria a arquitetura de um aplicativo nos contêineres do Windows do Azure e no Banco de Dados SQL do Azure.
+description: Use a estrutura de adoção de nuvem para o Azure para aprender a rearquitetar um aplicativo local para um contêiner do Azure e um banco de dados SQL do Azure.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/11/2018
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: d41c63d9876a5ead14acee9b39542ab256144920
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 37bf2a4d96cc1f60b351f40f6a2c51c2ea1dcf95
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223120"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311635"
 ---
 <!-- cSpell:ignore reqs contosohost contosodc contosoacreus contososmarthotel smarthotel vcenter WEBVM SQLVM -->
 
@@ -109,7 +109,7 @@ A Contoso avalia o design proposto reunindo uma lista de prós e contras.
 [Azure Service Fabric](https://azure.microsoft.com/services/service-fabric) | Cria e opera aplicativos com disponibilidade sempre ativa, escalonáveis e distribuídos | Custos com base no tamanho, localização e duração dos nós de computação. [Saiba mais](https://azure.microsoft.com/pricing/details/service-fabric).
 [Azure DevOps](https://docs.microsoft.com/azure/azure-portal/tutorial-azureportal-devops) | Fornece um pipeline de CI/CD (integração contínua/implantação contínua) para o desenvolvimento de aplicativos. O pipeline começa com um repositório Git para gerenciar o código do aplicativo, um sistema de build para produzir pacotes e outros artefatos de build e um sistema Release Management para implantar as alterações nos ambientes de desenvolvimento, teste e produção.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
 
 Veja do que a Contoso precisa para executar esse cenário:
 
@@ -466,7 +466,7 @@ Agora, os administradores da Contoso configuram o Azure DevOps Services para rea
 
 1. As informações do certificado coletadas são de entrada na **Impressão digital do certificado do servidor** e **Certificado do cliente**.
 
-    ![Certificado](./media/contoso-migration-rearchitect-container-sql/pipeline10.png)
+    ![Certificate](./media/contoso-migration-rearchitect-container-sql/pipeline10.png)
 
 1. Eles selecionam o pipeline > **Adicionar um artefato**.
 
@@ -474,7 +474,7 @@ Agora, os administradores da Contoso configuram o Azure DevOps Services para rea
 
 1. Eles selecionam o projeto e criam o pipeline usando a versão mais recente.
 
-     ![Build](./media/contoso-migration-rearchitect-container-sql/pipeline12.png)
+     ![{1&gt;Compilação&lt;1}](./media/contoso-migration-rearchitect-container-sql/pipeline12.png)
 
 1. Observe que o raio no artefato está marcado.
 

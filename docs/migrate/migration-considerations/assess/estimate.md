@@ -1,18 +1,18 @@
 ---
 title: Estimar os custos de nuvem antes da migração
-description: Explicação do processo de estimar custos de nuvem antes da migração.
+description: Entenda os fatores que podem afetar as decisões e as atividades de execução, bem como várias opções para estimar os custos de nuvem.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 0618676a995971951a27a5bdba66b7e9b126d7d6
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 4e245937f6990cd6d7d13ffaccae60a2301fcb23
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76802575"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312060"
 ---
 # <a name="estimate-cloud-costs"></a>Estimar os custos de nuvem
 
@@ -34,7 +34,7 @@ Se você já conhece o processo tradicional de aquisição de TI, a estimativa n
 
 Para quem deseja replicar a abordagem de despesas de capital herdada de contabilidade, use as saídas de qualquer abordagem sugerida na seção "[Tamanho da propriedade digital](#digital-estate-size)" acima para obter uma base de custo anual. Em seguida, multiplique esse custo anual pelo ciclo de atualização de hardware típico da empresa. O ciclo de atualização de hardware é a taxa na qual uma empresa substitui o hardware obsoleto, normalmente medido em anos. A taxa de execução anual multiplicada pelo ciclo de atualização de hardware cria uma estrutura de custo semelhante a um padrão de investimento de despesas de capital.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Após estimar custos, a migração pode começar. No entanto, seria prudente examinar as [opções de parceria e de suporte](./partnership-options.md) antes de iniciar qualquer migração.
 

@@ -1,6 +1,6 @@
 ---
 title: Inovação na economia digital
-description: Concentre-se em entender as necessidades do cliente e criar rapidamente inovações em nuvem que formam como seus clientes interagem com seus produtos.
+description: Concentre-se em entender as necessidades do cliente e desenvolver rapidamente inovações de nuvem que moldem a maneira como os clientes interagem com seus produtos.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/27/2019
@@ -8,11 +8,11 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.openlocfilehash: b0d08b4f5ac822acd1d2a2574a9bd3d240175ca1
-ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
-ms.translationtype: MT
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78337471"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312264"
 ---
 # <a name="innovation-in-the-digital-economy"></a>Inovação na economia digital
 
@@ -35,7 +35,7 @@ A seção a seguir descreve a fórmula para inovação e os compromissos necess�
 
 ## <a name="formula-for-innovation"></a>Fórmula para inovação
 
-A inovação bem-sucedida não é um evento de transformação como um Big Bang ou um unicórnio mágico enganoso. O sucesso na inovação é mais um ato de balanceamento, ilustrado por uma equação simples: **inovação = invenção + adoção**.
+A inovação bem-sucedida não é um evento de transformação como um Big Bang ou um unicórnio mágico enganoso. O sucesso na inovação é mais um ato de equilíbrio, ilustrado por uma equação simples: **Inovação = invenção + adoção**.
 
 A inovação acontece na intersecção entre invenção e adoção. A verdadeira inovação é o resultado do ajuste lento de experiências humanas por meio de novas abordagens, novos processos e novas tecnologias. Nessa fórmula, a invenção é a criação de uma nova solução que atende a uma necessidade do cliente. Por outro lado, a adoção é a aplicação da nova solução para moldar interações e comportamentos humanos. Encontrar o equilíbrio certo entre a invenção e a adoção exige iteração, tomada de decisão controlada por dados, aprendizado constante e uma mentalidade voltada ao crescimento. Isso também exige tecnologias que possam acompanhar as inúmeras oportunidades de aprender na sociedade digital de hoje.
 
@@ -63,7 +63,7 @@ A transparência é importante porque medir o impacto do cliente não responde �
 
 Apenas uma promessa é verdadeira em todos os ciclos de inovação &mdash; você não acertará já na primeira tentativa. A medida ajuda você a entender quais ajustes devem ser feitos para obter os resultados desejados. As alterações que levarem aos resultados desejados serão provenientes de iterações do processo de criação/medida/aprendizado. A equipe de adoção de nuvem e a equipe de estratégia de nuvem devem se comprometer com uma mentalidade iterativa antes de adotar uma mentalidade voltada ao crescimento ou uma abordagem de criação > medida > aprendizado.
 
-## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
+## <a name="next-steps"></a>Próximas etapas
 
 Antes de criar a próxima grande invenção, comece com a adoção pelo cliente, compreendendo o [loop de comentários criação/medida/aprendizado](./adoption.md).
 

@@ -1,18 +1,18 @@
 ---
 title: Aprovar alterações de arquitetura antes da migração
-description: Entender a importância da aprovação antes da migração
+description: Saiba como classificar as alterações de arquitetura quando elas forem necessárias e estabelecer as atividades de aprovação adequadas.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3776f468c48e7483d884a0c6cae8654218ac1a94
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 3d674cfe0378613530adb329ae21b9c379742e91
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76802745"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312077"
 ---
 # <a name="approve-architecture-changes-before-migration"></a>Aprovar alterações de arquitetura antes da migração
 
@@ -65,7 +65,7 @@ Antes que a primeira carga de trabalho seja avaliada, a equipe de estratégia da
 
 Quando possível, as alterações técnicas devem ser detectadas e documentadas durante o processo de avaliação. Independentemente dos processos de aprovação, a equipe de adoção da nuvem deve envolver os aprovadores desde o início. Quanto antes começar essa aprovação da alteração, menor será a probabilidade de que um processo de aprovação bloqueie as atividades de migração.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Com a ajuda das melhores práticas, deverá ficar mais fácil integrar as devidas aprovações de baixo risco aos esforços de migração. Depois que as alterações a uma carga de trabalho forem aprovadas, a equipe de adoção da nuvem estará pronta para [migrar as cargas de trabalho](../migrate/index.md).
 

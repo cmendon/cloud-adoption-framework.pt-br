@@ -1,6 +1,6 @@
 ---
-title: Rehospede um aplicativo migrando-o para VMs do Azure e SQL Server grupos de disponibilidade Always On
-description: Saiba como a Contoso hospeda novamente um aplicativo local migrando-o para as VMs do Azure e para o grupo de disponibilidade Always On do SQL Server.
+title: Hospedar novamente no Azure e SQL Server grupos de disponibilidade Always On
+description: Use a estrutura de adoção de nuvem para o Azure para saber como hospedar novamente um aplicativo local migrando-o para VMs do Azure e SQL Server grupos de disponibilidade Always On.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/11/2018
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: b52b1fad33a9868682ddcd7cf905c7f8ab9b3612
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: bc530c3f97b26a519198ef7b9ddc1fce967fbed6
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222952"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311533"
 ---
 # <a name="rehost-an-on-premises-app-with-azure-virtual-machines-and-sql-server-always-on-availability-groups"></a>Rehospede um aplicativo local com máquinas virtuais do Azure e SQL Server grupos de disponibilidade Always On
 

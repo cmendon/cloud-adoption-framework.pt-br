@@ -9,11 +9,11 @@ ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
 ms.openlocfilehash: 14f96dde6558588c092a181aa2b7a2e57220cf5f
-ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78337404"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312418"
 ---
 # <a name="rationalize-the-digital-estate"></a>Racionalizar a propriedade digital
 
@@ -155,7 +155,7 @@ Ao longo do tempo, a combinação da equipe de adoção da nuvem e da equipe de 
 
 Em alguns casos, o modelo financeiro pode ser muito rígido para tomar uma decisão sem racionalização adicional. Nesses casos, talvez você precise de uma abordagem mais tradicional para a racionalização.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 A saída de um esforço de racionalização é uma lista de pendências priorizada de todos os ativos afetados pela transformação escolhida. Essa lista de pendências agora está pronta para servir como base para modelos de custo dos serviços de nuvem.
 

@@ -1,18 +1,18 @@
 ---
 title: Noções básicas sobre opções de parceria e de suporte
-description: Descreve as opções e abordagens para dar suporte aos esforços de migração
+description: Use a estrutura de adoção de nuvem para o Azure para entender as opções e abordagens de parceria para dar suporte aos custos de migração.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 9a525ab1c87f1cbb4c662c6f902e73de93c0204c
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 0504148cd9eddce66645891527baa2ac0e98ea17
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76802456"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311856"
 ---
 # <a name="understand-partnership-options"></a>Entender as opções de parceria
 
@@ -49,7 +49,7 @@ O [FastTrack for Azure](https://azure.microsoft.com/roadmap/fasttrack-for-azure)
 - BCDR (continuidade de negócios e recuperação de desastres)
 - Computação de alto desempenho*
 - Aplicativos nativos de nuvem
-- Operações de Desenvolvimento
+- DevOps
 - Modernização do aplicativo
 - Análises de escala de nuvem**
 - Aplicativos inteligentes
@@ -59,15 +59,15 @@ O [FastTrack for Azure](https://azure.microsoft.com/roadmap/fasttrack-for-azure)
 - Dados distribuídos globalmente
 - IoT***
 
-*Versão prévia limitada nos Estados Unidos, no Canadá, no Reino Unido e na Europa Ocidental
+*Versão prévia limitada nos Estados Unidos, Canadá, Reino Unido e Oeste da Europa
 
-**Versão prévia limitada no Reino Unido e na Europa Ocidental
+**Versão prévia limitada no Reino Unido e no Oeste da Europa
 
 ***Disponível no segundo semestre de 2019
 
 Durante um envolvimento típico do FastTrack for Azure, a Microsoft ajuda a definir a visão empresarial para planejar e desenvolver soluções do Azure com êxito. A equipe avalia as necessidades arquitetônicas e oferece diretrizes, princípios de design, ferramentas e recursos para ajudar a criar, implantar e gerenciar soluções do Azure. A equipe faz a correspondência de parceiros especializados para serviços de implantação na solicitação e faz verificações periódicas para a implantação estar em conformidade e para ajudar a remover bloqueadores.
 
-As principais fases de um compromisso típico do FastTrack for Azure são:
+Os principais estágios de um envolvimento típico do FastTrack for Azure são:
 
 - **Descoberta.** Identificar os principais stakeholders, entender a meta ou a visão dos problemas a serem resolvidos e avaliar as necessidades de arquitetura.
 - **Habilitação de solução.** Aprenda os princípios de design para criar aplicativos, examine a arquitetura de aplicativos e soluções e receba diretrizes e ferramentas para promover o trabalho de PoC (prova de conceito) por meio da produção.
@@ -98,7 +98,7 @@ Obtenha a ajuda de parceiros com soluções do Azure prontas para uso ou persona
 - **[Encontre um Parceiro de Soluções de Nuvem](https://www.microsoft.com/solution-providers/home).** Um CSP certificado pode ajudar a aproveitar ao máximo a nuvem, avaliando as metas empresariais para a adoção da nuvem, identificando a solução de nuvem certa que atenda às necessidades empresariais e que ajude a tornar a empresa mais ágil e eficiente.
 - **[Encontrar um Parceiro de serviço gerenciado](https://www.microsoft.com/solution-providers/search?cacheId=16a3b49b-fef2-449d-bdf0-628008114cca).** Um MSP (parceiro de serviço gerenciado) do Azure ajuda na transição empresarial para o Azure, orientando todos os aspectos do percurso para a nuvem. Da consultoria ao gerenciamento de operações e migrações, os MSPs de nuvem mostram aos clientes todos os benefícios que a adoção da nuvem proporciona. Eles também atuam como uma loja conveniente que fornece suporte comum, provisionamento e experiência de cobrança, tudo com um modelo empresarial PAYG (pago conforme o uso) flexível.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Após a seleção de uma estratégia de parceiro e de suporte, a [lista de pendências de lançamento e de iteração](./release-iteration-backlog.md) pode ser atualizada para refletir as atribuições e os esforços planejados.
 
