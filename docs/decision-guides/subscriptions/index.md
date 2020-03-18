@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 32b1e8933add7f2c786d424e6faabf58f9218ead
-ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
+ms.openlocfilehash: 1420906faadb966585346aeafe0a8e7efa9aaf09
+ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79140681"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79508025"
 ---
 # <a name="subscription-decision-guide"></a>Guia de decisão da assinatura
 
@@ -49,7 +49,7 @@ Uma assinatura única por conta pode ser suficiente para organizações que prec
 
 Quando você estiver pronto para implantar uma carga de trabalho em um ambiente de produção, adicione uma outra assinatura. Isso ajuda você a manter seus dados de produção e outros ativos fora dos ambientes de desenvolvimento/teste. Você também pode aplicar com facilidade dois diferentes conjuntos de políticas aos recursos nas duas assinaturas.
 
-![Padrão de assinatura de produção e não produção](../../_images/ready/basic-subscription-model.png)
+![Padrão de assinatura de produção e não produção](../../_images/ready/initial-subscription-model.png)
 
 ### <a name="workload-separation-pattern"></a>Padrão de separação de carga de trabalho
 
