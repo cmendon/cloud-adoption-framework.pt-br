@@ -1,6 +1,6 @@
 ---
 title: Roteiro
-description: Saiba mais sobre o roteiro para a Estrutura de Adoção do Microsoft Cloud para Azure.
+description: Use o Cloud Adoption Framework para Azure para alinhar estratégias de negócios, cultura e tecnologia a fim de atingir os resultados empresariais desejados.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 layout: LandingPage
-ms.openlocfilehash: 7c808e02b0f1d759fcb37acd0a6b6a24d2087950
-ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
+ms.openlocfilehash: c8bf289019e2200b5689a760e4a633ba901540c1
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79140562"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311567"
 ---
 # <a name="cloud-adoption-framework-roadmap"></a>Roteiro da Cloud Adoption Framework
 
