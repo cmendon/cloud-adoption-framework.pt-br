@@ -8,16 +8,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ce5b1a77396479b2621afab5cac025b983f14469
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 121e2a04eee6f9f977f4bb826fcb7ff712794cd3
+ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223747"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79508042"
 ---
 # <a name="cloud-native-security-baseline-policy"></a>Política de linha de base de segurança nativa de nuvem
 
-A [Linha de Base de Segurança](./index.md) é uma das [Cinco Disciplinas de Governança de Nuvem](../governance-disciplines.md). Essa disciplina se concentra em tópicos gerais de segurança, incluindo a proteção da rede, ativos digitais, dados etc. Conforme descrito no [Guia de revisão de política](../policy-compliance/cloud-policy-review.md), a estrutura de adoção de nuvem inclui três níveis de política de exemplo: a nuvem nativa, a empresa e a conformidade com o princípio de design de nuvem para cada uma das disciplinas. Este artigo discute a política de exemplo nativa de nuvem para a disciplina de linha de base de segurança.
+A [Linha de Base de Segurança](./index.md) é uma das [Cinco Disciplinas de Governança de Nuvem](../governance-disciplines.md). Essa disciplina se concentra em tópicos gerais de segurança, incluindo a proteção da rede, ativos digitais e dados. Conforme descrito no [Guia de revisão de política](../policy-compliance/cloud-policy-review.md), a estrutura de adoção de nuvem inclui três níveis de política de exemplo: a nuvem nativa, a empresa e a conformidade com o princípio de design de nuvem para cada uma das disciplinas. Este artigo discute a política de exemplo nativa de nuvem para a disciplina de linha de base de segurança.
 
 > [!NOTE]
 > A Microsoft não está em nenhuma posição de ditar política corporativa ou de TI. Este artigo ajudará você a se preparar para uma revisão de política interna. Supomos que essa política de exemplo será estendida, validada e testada com a sua política corporativa antes de usá-la. Qualquer uso dessa política de exemplo como está desencorajado.

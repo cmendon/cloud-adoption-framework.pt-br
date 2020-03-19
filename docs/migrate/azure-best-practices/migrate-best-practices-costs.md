@@ -7,12 +7,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 89ac6886756c304d8acae5a4180a9715d336a92e
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: dd8030c884b6c5b66c733080d26f29bb8319740e
+ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311907"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79508399"
 ---
 # <a name="best-practices-for-costing-and-sizing-workloads-migrated-to-azure"></a>Melhores práticas para estimar os custos e dimensionar as cargas de trabalho migradas para o Azure
 
@@ -191,7 +191,7 @@ Usando Instâncias de VM Reservadas do Azure, você paga antecipadamente por uma
 
 É inevitável que você acabe tendo mais de uma assinatura do Azure. Por exemplo, talvez você precise ter uma assinatura adicional para separar os limites de desenvolvimento e produção ou pode ter uma plataforma que exija uma assinatura separada para cada cliente. Um recurso valioso é ter a capacidade de agregar relatórios de dados de todas as assinaturas em uma única plataforma.
 
-Para fazer isso, você pode usar as APIs de Gerenciamento de Custos do Azure. Em seguida, após a agregação de dados em uma única fonte como o SQL do Azure, você poderá usar ferramentas como o Power BI para exibir os dados agregados. Você poderá criar relatórios agregados de assinatura e relatórios granulares. Por exemplo, para usuários que precisam de informações proativas sobre o gerenciamento de custos, você pode criar exibições específicas de custos, com base no departamento, no grupo de recursos, etc. Você não precisa fornecer acesso completo aos dados de cobrança do Azure.
+Para fazer isso, você pode usar as APIs de Gerenciamento de Custos do Azure. Em seguida, após a agregação de dados em uma única fonte como o SQL do Azure, você poderá usar ferramentas como o Power BI para exibir os dados agregados. Você poderá criar relatórios agregados de assinatura e relatórios granulares. Por exemplo, para usuários que precisam de informações proativas sobre o gerenciamento de custos, você pode criar exibições específicas de custos, com base no departamento, no grupo de recursos ou em outras informações. Você não precisa fornecer a eles o acesso completo aos dados de cobrança do Azure.
 
 **Saiba mais:**
 

@@ -7,12 +7,12 @@ ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 1b60f1b9cadb20ae516946fe09299fb3af2f895c
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 3ba4cc99b210784c7503085234c25c1d9a0ae634
+ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171133"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79507991"
 ---
 # <a name="measure-for-customer-impact"></a>Avaliar o impacto sobre o cliente
 
@@ -64,7 +64,7 @@ A primeira medida para definir métricas de aprendizado é a definição de parc
 
 Esses tipos de agrupamentos ajudam a validar as métricas de aprendizado em várias seções cruzadas desses clientes que optam por fazer uma parceria com você durante seus esforços de inovação. Todas as métricas subsequentes devem ser derivadas do agrupamento de clientes definíveis.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 À medida que as métricas de aprendizado se acumulam, a equipe pode começar a [aprender com os clientes](./learn.md).
 

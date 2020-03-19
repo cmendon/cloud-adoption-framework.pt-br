@@ -7,12 +7,12 @@ ms.date: 03/04/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 938250f20725540049bca831ff4c12b975b134a5
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: bb278c284a0f72a530eb4b84ecd3137b997933ac
+ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092396"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79508348"
 ---
 <!-- cSpell:ignore CSAT -->
 
@@ -28,7 +28,7 @@ O balanceamento do portfólio é estratégico por natureza. Como tal, a abordage
 
 Antes de balancear o portfólio, é importante documentar e compartilhar os resultados de negócios que levam ao esforço de migração de nuvem. A tabela a seguir pode ajudar a documentar e compartilhar os resultados empresariais desejados. É importante notar que a maioria das empresas tem buscando vários resultados de cada vez. A importância deste exercício é esclarecer os resultados que estão mais diretamente relacionados ao esforço de migração na nuvem:
 
-|Resultado  |Medido por  |Goal  |Período  |Prioridade do esforço  |
+|Resultado  |Medido por  |Meta  |Período  |Prioridade do esforço  |
 |---------|---------|---------|---------|---------|
 |Reduzir custos de TI     |Orçamento do datacenter         |Reduzir em US$ 2 milhões         |12 meses         |Nº 1         |
 |Saída do datacenter     |Saída dos datacenters         |2 datacenters         |6 meses         |Nº 2         |

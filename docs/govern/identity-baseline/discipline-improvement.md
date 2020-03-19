@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f1ee4e64e86ccb3648badad38d2118be11b76cc7
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: cc8f2396e379180d213bd042d65f36e9eaef2828
+ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709355"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79508110"
 ---
 # <a name="identity-baseline-discipline-improvement"></a>Melhoria da disciplina de Linha de base de identidade
 
@@ -119,7 +119,7 @@ Depois que a transformação for concluída, a governança e as operações deve
 **Atividades potenciais:**
 
 - Realizar auditorias periódicas de políticas de identidade e práticas de conformidade.
-- Garanta que contas de usuário confidenciais (CEO, CFO, VP, etc.) estejam sempre habilitadas para a autenticação multifator e a detecção de logon anômala.
+- Garanta que contas de usuário confidenciais (como contas de executivos corporativos) estejam sempre habilitadas para a autenticação multifator e a detecção de logon anômala.
 - Verificar atores mal-intencionados e violações de dados regularmente, especialmente as relacionadas a fraude de identidade, como aquisições potenciais de conta de administrador.
 - Configurar uma ferramenta de monitoramento e emissão de relatório.
 - Considerar a integração mais de perto com sistemas de segurança e prevenção de fraudes.
@@ -132,7 +132,7 @@ Depois que a transformação for concluída, a governança e as operações deve
 - Periodicamente, produzir um relatório de impacto que mostra as alterações nas métricas criadas pelo sistema e estimar o impacto de negócios da [estratégia de identidade híbrida](../../decision-guides/identity/index.md).
 - Estabelecer monitoramento integrado recomendado pela [Central de Segurança do Azure](https://docs.microsoft.com/azure/security-center/security-center-intro).
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Agora que você entende o conceito de governança de identidade de nuvem, examine a [cadeia de ferramentas da Linha de base de identidade](./toolchain.md) para identificar as ferramentas do Azure e recursos que você precisará ao desenvolver a disciplina de governança da Linha de base de identidade na plataforma do Azure.
 

@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 17796b5ebe081f6e7ff14ba951db4db0d187d630
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 6751de6d448be8119dceaed86339e1c27ccc40f3
+ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709508"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79508093"
 ---
 # <a name="resource-consistency-policy-compliance-processes"></a>Processos de conformidade de política de Consistência de Recursos
 
@@ -59,9 +59,9 @@ Os gatilhos e ações de imposição a seguir fornecem exemplos que você pode c
 - **Recurso subprovisionado detectado.** Recursos detectados usando menos de 80% da capacidade de CPU ou memória devem ser dimensionados automaticamente para baixo ou desprovisionar os recursos para reduzir os custos.
 - **Criação de recursos não marcados.** Qualquer solicitação para criar um recurso sem marcas de metadados necessárias será rejeitada automaticamente.
 - **Interrupção de recurso crítico detectada.** A equipe de TI é notificada sobre todas as interrupções detectadas de interrupções de missão crítica. Se a interrupção não for resolvida imediatamente, a equipe irá escalonar o problema e notificar os proprietários da carga de trabalho e a equipe de governança de nuvem. A equipe de governança de nuvem controlará o problema até a resolução e a orientação da atualização se a revisão da política for necessária para evitar futuros incidentes.
-- **Descompasso de configuração.** Os recursos detectados que não estão em conformidade com as linhas de base estabelecidas devem disparar alertas e ser corrigidos automaticamente usando ferramentas de gerenciamento de configuração como a automação do Azure, chefe, Puppet, Ansible, etc.
+- **Descompasso de configuração.** Os recursos detectados que não estão em conformidade com as linhas de base estabelecidas devem disparar alertas e ser corrigidos automaticamente usando ferramentas de gerenciamento de configuração como a automação do Azure, chefe, Puppet ou Ansible.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Usando o [modelo de Gerenciamento de Nuvem](./template.md), documente os processos e gatilhos que alinham-se ao plano de adoção da nuvem atual.
 

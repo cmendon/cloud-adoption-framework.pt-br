@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 62c47f8d4b3c386129c6a6a9eeb966393573ea16
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 614c43a59d7fab493aa97eca47dcd43a73987fa9
+ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223900"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79508127"
 ---
 <!-- cSpell:ignore netops -->
 
@@ -30,7 +30,7 @@ Esses requisitos são:
 - Suporte para vários **ambientes**. Um ambiente é um agrupamento lógico de recursos, como máquinas virtuais, redes virtuais e serviços de roteamento de tráfego de rede. Esses grupos de recursos têm requisitos de segurança e gerenciamento semelhantes e, normalmente, são usados para uma finalidade específica, como teste ou produção. Neste exemplo, o requisito é para quatro ambientes:
   - Um **ambiente de infraestrutura compartilhada** que inclui recursos compartilhados por cargas de trabalho em outros ambientes. Por exemplo, uma rede virtual com uma sub-rede do gateway que fornece conectividade para locais.
   - Um **ambiente de produção** com as políticas de segurança mais restritivas. Pode incluir cargas de trabalho voltadas para o ambiente interno ou externo.
-  - Um **ambiente de pré-produção** para desenvolvimento e teste de trabalho. Esse ambiente tem políticas de segurança, conformidade e custo que diferem no ambiente de produção. No Azure, isso assume a forma de uma assinatura Desenvolvimento/Teste Enterprise.
+  - Um **ambiente** de não produção para desenvolvimento e teste de trabalho. Esse ambiente tem políticas de segurança, conformidade e custo que diferem no ambiente de produção. No Azure, isso assume a forma de uma assinatura Desenvolvimento/Teste Enterprise.
   - Um **ambiente de área restrita** para prova de conceito e fins educacionais. Esse ambiente é normalmente atribuído por funcionário que participa de atividades de desenvolvimento e tem controles de segurança operacionais e de procedimentos estritos em vigor para evitar dados corporativos do pouso aqui. No Azure, eles assumem a forma de assinaturas do Visual Studio. Essas assinaturas também _não_ devem estar vinculadas ao Azure Active Directory empresarial.
 - Um **modelo de permissões de privilégio mínimo** no qual os usuários não têm permissões por padrão. O modelo deve oferecer suporte ao seguinte:
   - Um único usuário confiável (Tratado como uma conta de serviço) no escopo da assinatura com permissão para atribuir direitos de acesso ao recurso.
@@ -141,7 +141,7 @@ Agora que criamos um modelo de permissões de privilégios mínimos, vamos dar u
 2. **Ambiente de produção:** Vários grupos de recursos que representam várias cargas de trabalho de produção. Esses recursos são usados para hospedar os artefatos de aplicativo voltados para o público e o privado. Esses recursos normalmente têm o controle mais completa e modelos de segurança para proteger os recursos, o código do aplicativo e dados contra acesso não autorizado.
 3. **Ambiente de pré-produção:** Vários grupos de recursos que representam várias cargas de trabalho prontas de não produção. Esses recursos são usados para desenvolvimento e teste esses recursos podem ter um modelo de governança mais relaxado para permitir maior agilidade do desenvolvedor. A segurança nesses grupos deve aumentar o nível mais próximo de "produção" que um processo de desenvolvimento de aplicativos obtém.
 
-Para cada um desses três ambientes, temos um requisito para controlar dados de custo por **proprietário da carga de trabalho**, **ambiente**, ou ambos. Ou seja, você desejará saber o custo contínuo da **infraestrutura compartilhada**, os custos incorridos por indivíduos na pré-produção **e nos ambientes de** **produção** e, finalmente, o custo **geral de ambientes de** **produção e pré-produção** .
+Para cada um desses três ambientes, temos um requisito para controlar dados de custo por **proprietário da carga de trabalho**, **ambiente**, ou ambos. Ou seja, você desejará saber o custo contínuo da **infraestrutura compartilhada**, os custos incorridos por indivíduos tanto em ambientes de **produção** **quanto em** implantações e, finalmente, o custo geral de ambientes de **produção** e não **produtos** .
 
 Você já aprendeu que os recursos estão no escopo em dois níveis: **assinatura** e **grupo de recursos**. Portanto, a primeira decisão é como organizar os ambientes por **assinatura**. Há apenas duas possibilidades: uma única assinatura ou várias assinaturas.
 
