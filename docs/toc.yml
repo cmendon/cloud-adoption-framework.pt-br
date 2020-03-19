@@ -2,6 +2,8 @@ items:
   - name: Cloud Adoption Framework
     href: index.md
     pdf_name: Microsoft Cloud Adoption Framework for Azure
+  - name: Novidades
+    href: getting-started/whats-new.md
   - name: Introdução
     items:
       - name: Inicie uma jornada de migração
@@ -124,7 +126,7 @@ items:
             href: ready/azure-setup-guide/staying-current.md
       - name: '''Primeira zona de aterrissagem'
         items:
-          - name: O que é uma zona de destino
+          - name: O que é uma zona de destino?
             href: ready/landing-zone/index.md
           - name: Escolha sua primeira zona de destino
             href: ready/landing-zone/first-landing-zone.md

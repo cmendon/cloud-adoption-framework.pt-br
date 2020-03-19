@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 475b9e944188384a72cb3b8670a1ff607e7895f6
-ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
+ms.openlocfilehash: 2092d93a8a661495e98e1f6878616278d3fbfb66
+ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79140398"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79508059"
 ---
 <!-- cSpell:ignore catalogsearch northamerica jsmith contactalias catsearchowners businessprocess businessimpact revenueimpact -->
 
@@ -21,7 +21,7 @@ ms.locfileid: "79140398"
 
 Organizar recursos baseados em nuvem é uma das tarefas mais importantes para TI, a menos que você tenha apenas implantações simples. Organizar seus recursos atende a três objetivos principais:
 
-- **Gerenciamento de Recursos:** Suas equipes de TI precisarão localizar rapidamente os recursos associados às cargas de trabalho específicas, ambientes, grupos de propriedade ou outras informações importantes. Os recursos de organização são essenciais para a atribuição de funções organizacionais e permissões de acesso para o gerenciamento de recursos.
+- **Gerenciamento de recursos:** Suas equipes de TI precisarão localizar rapidamente os recursos associados às cargas de trabalho específicas, ambientes, grupos de propriedade ou outras informações importantes. Os recursos de organização são essenciais para a atribuição de funções organizacionais e permissões de acesso para o gerenciamento de recursos.
 - **Automação:** Além de tornar mais fácil para os recursos que a TI gerencia, um esquema organizacional apropriado lhe permite tirar proveito de automação como parte da criação de recursos, monitoramento operacional e criação de processos de DevOps.
 - **Contabilidade:** Tornar os grupos de negócios cientes do consumo de recursos de nuvem requer que a TI entenda quais cargas de trabalho e equipes estão usando quais recursos. Para dar suporte a abordagens, como estatísticas de análise e estorno, os recursos de nuvem precisam ser organizados para refletir o uso e propriedade.
 

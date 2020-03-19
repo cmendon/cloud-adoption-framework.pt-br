@@ -1,5 +1,5 @@
 ---
-title: O que é uma zona de destino
+title: O que é uma zona de destino?
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Saiba como as zonas de aterrissagem fornecem os blocos de construção básicos de qualquer ambiente de adoção da nuvem.
 author: BrianBlanchard
@@ -8,12 +8,12 @@ ms.date: 02/25/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 6db16b50115f2ba145dd4980dc5d57867f438de7
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: fe53435fe09873a619b2860a63e7bf67fe7bca93
+ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78228352"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79508297"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -25,7 +25,7 @@ A infraestrutura como código é uma transição natural durante a maioria dos e
 
 Uma zona de aterrissagem é o bloco de construção básico de qualquer ambiente de adoção da nuvem. O termo _zona de destino_ se refere a um constructo lógico que captura tudo o que deve ser verdadeiro para habilitar a adoção de nuvem desejada.
 
-**Escopo:** Uma zona de destino totalmente funcional considera todos os recursos de plataforma necessários para apoiar as necessidades de adoção do cliente.
+**Escopo:** uma zona de destino totalmente funcional considera todos os recursos de plataforma necessários para dar suporte às necessidades de adoção do cliente.
 
 **Refatoração:** Uma zona de destino totalmente funcional é a entrega final de uma iteração da metodologia de preparação do Cloud Adoption Framework. Durante cada iteração, a base de código que define a zona de destino será refatorada ou expandida. Após a refatoração, a zona de destino pode ser modificada ou reimplantada para permitir novas necessidades de adoção de nuvem.
 
