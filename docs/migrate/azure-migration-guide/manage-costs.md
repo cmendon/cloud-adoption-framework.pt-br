@@ -1,6 +1,6 @@
 ---
 title: Mecanismos de controle de custo focados na migração
-description: Saiba como configurar orçamentos e pagamentos e entender as faturas de seus recursos do Azure.
+description: Use o Cloud Adoption Framework para Azure para saber como configurar orçamentos e pagamentos e como entender faturas para seus recursos do Azure.
 author: bandersmsft
 ms.author: banders
 ms.date: 08/08/2019
@@ -9,13 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 82c801abee32e0399eb124440868bc455034a018
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: b220929fd6348909b8f06f7a537e1052c459d24d
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222651"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312111"
 ---
+<!-- cSpell:ignore bandersmsft -->
+
 # <a name="migration-focused-cost-control-mechanisms"></a>Mecanismos de controle de custo focados na migração
 
 A nuvem apresenta algumas mudanças na forma como trabalhamos, independentemente de nossa função na equipe de tecnologia. O custo é um ótimo exemplo dessa mudança. No passado, apenas o setor de Finanças e a liderança de TI se preocupavam com o custo dos ativos de TI (infraestrutura, aplicativos e dados). A nuvem capacita todos os membros da área de TI a tomar e a agir com base em decisões que dão melhor suporte ao usuário final. No entanto, com esse poder vem a responsabilidade ter consciência do custo ao tomar essas decisões.

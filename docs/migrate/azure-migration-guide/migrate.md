@@ -1,6 +1,6 @@
 ---
 title: Migrar ativos
-description: Inicie a migração para o Azure identificando as ferramentas apropriadas a serem usadas, incluindo ferramentas nativas, ferramentas de terceiros e ferramentas de gerenciamento de projeto.
+description: Inicie a migração para Azure identificando as ferramentas apropriadas a serem usadas, incluindo ferramentas nativas, de terceiros e de gerenciamento de projetos.
 author: matticusau
 ms.author: mlavery
 ms.date: 08/08/2019
@@ -10,11 +10,11 @@ ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
 ms.openlocfilehash: d5be29caa69a2b9a0f1e22cfb6ff704b7e17233c
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
-ms.translationtype: MT
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092482"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312332"
 ---
 <!-- cSpell:ignore Cloudamize agentless uncontained SSMA Carbonite Movere -->
 
@@ -46,7 +46,7 @@ Para executar uma migração usando as Migrações para Azure, siga essas etapas
 1. Pesquise as Migrações para Azure em **Todos os serviços**. Selecione **Migrações para Azure** para continuar.
 1. Selecione **Adicionar uma ferramenta** para iniciar o projeto de migração.
 1. Selecione a assinatura, o grupo de recursos e a região onde a migração será hospedada.
-1. Selecione **selecionar ferramenta de avaliação** > **migrações para Azure: avaliação de servidor** >  **Avançar**.
+1. Clique em **Selecionar ferramenta de avaliação** > **Migrações para Azure: Avaliação de Servidor** >  **Avançar**.
 1. Selecione **Examinar + adicionar ferramentas** e verifique a configuração. Selecione **Adicionar ferramentas** para iniciar o trabalho para criar o projeto de migração e registrar as soluções selecionadas.
 
 ### <a name="learn-more"></a>Saiba mais
@@ -68,15 +68,15 @@ As etapas a seguir descrevem como usar o Site Recovery para a migração:
 1. Se você ainda não criou um cofre de recuperação, conclua o assistente para criar um recurso de **cofre dos Serviços de Recuperação**.
 1. No menu **Recurso**, selecione **Site Recovery > Preparar infraestrutura> Meta de proteção**.
 1. Em **Objetivo de proteção**, selecione o que você deseja migrar.
-    1. **VMware:** Selecione **para o Azure > Sim, com VMware vSphere hipervisor**.
-    1. **Computador físico:** Selecione **para o Azure > não virtualizados/outros**.
-    1. **Hyper-V:** Selecione **para o Azure > Sim, com o Hyper-V**. Se as VMs do Hyper-V são gerenciadas pelo VMM, selecione **Sim**.
+    1. **VMware:** Selecione **Para o Azure > Sim, com o VMware vSphere Hypervisor** .
+    1. **Computador físico:** Selecione **Para o Azure > Não virtualizado/outro** .
+    1. **Hyper-V:** Selecione **Para o Azure > Sim, com o Hyper-V**. Se as VMs do Hyper-V são gerenciadas pelo VMM, selecione **Sim**.
 
 ### <a name="configure-migration-settings"></a>Definir as configurações de migração
 
 1. Configure o ambiente de origem conforme apropriado.
 1. Configure o ambiente de destino.
-    1. Selecione **preparar infraestrutura > destino**e, em seguida, selecione a assinatura do Azure que você deseja usar.
+    1. Selecione **Preparar infraestrutura > Destino** e selecione a assinatura do Azure que deseja usar.
     1. Especifique o modelo de implantação do Gerenciador de Recursos.
     1. A Recuperação de Site verifica se você tem uma ou mais contas de armazenamento e redes do Azure compatíveis.
 1. Configurar uma política de replicação.
@@ -128,7 +128,7 @@ Se esta for a primeira vez usando o Serviço de Migração de Banco de Dados do 
 Depois de registrar o provedor de recursos, você pode criar uma instância do Serviço de Migração de Banco de Dados do Azure.
 
 1. Selecione **+Criar um recurso**  e pesquise no marketplace pelo **Serviço de Migração de Banco de Dados do Azure**.
-1. Conclua o assistente para **Criar serviço de migração** e selecione **criar**.
+1. Conclua o assistente para **Criar Serviço de Migração** e selecione **Criar**.
 
 O serviço agora está pronto para migrar os bancos de dados de fontes compatíveis (por exemplo, SQL Server, MySQL, PostgreSQL ou MongoDb).
 
@@ -145,7 +145,7 @@ Para obter mais informações, consulte:
 - [Visão geral do Serviço de Migração de Banco de Dados do Azure](https://docs.microsoft.com/azure/dms/dms-overview)
 - [Criar uma instância do Serviço de Migração de Banco de Dados do Azure](https://docs.microsoft.com/azure/dms/quickstart-create-data-migration-service-portal)
 - [Migrações para Azure no portal do Azure](https://portal.azure.com/#blade/Microsoft_Azure_ManagementGroups/HierarchyBlade)
-- [Portal do Azure: criar um projeto de migração](https://portal.azure.com/#create/Microsoft.AzureMigrate)
+- [Portal do Azure: Criar um projeto de migração](https://portal.azure.com/#create/Microsoft.AzureMigrate)
 
 ::: zone-end
 
@@ -159,9 +159,9 @@ O Assistente de Migração de Dados (AMD) ajuda você a atualizar para uma plata
 
 Comece a usar o Assistente de Migração de Dados com estas etapas:
 
-1. Baixe e instale o Assistente de Migração de Dados no [centro de download da Microsoft](https://www.microsoft.com/download/details.aspx?id=53595).
-1. Crie uma avaliação selecionando o ícone **novo (+)** e, em seguida, selecione o tipo de projeto de **avaliação** .
-1. Defina o tipo de servidor de origem e de destino e, em seguida, selecione **criar**.
+1. Baixe e instale o Assistente de Migração de Dados do [Centro de Download da Microsoft](https://www.microsoft.com/download/details.aspx?id=53595).
+1. Crie uma avaliação selecionando o ícone **Novo (+)** e selecione o tipo de projeto **Avaliação**.
+1. Defina o tipo de servidor de origem e de destino e selecione **Criar**.
 1. Configure as opções de avaliação conforme necessário (recomende todos os padrões).
 1. Adicione os bancos de dados a serem avaliados.
 1. Selecione **Avançar** para iniciar a avaliação.
@@ -189,9 +189,9 @@ O Assistente para Experimentos de Banco de Dados (DEA) é uma nova solução de 
 
 O Assistente para Experimentos de Banco de Dados contém as seguintes atividades de fluxo de trabalho:
 
-- **Captura:** A primeira etapa de SQL Server teste A/B é capturar um rastreamento no servidor de origem. O servidor de origem é geralmente o servidor de produção.
-- **Reprodução:** A segunda etapa de SQL Server teste a/B é reproduzir o arquivo de rastreamento que foi capturado para seus servidores de destino. A seguir, ele coleta rastreamentos extensos das reproduções da análise.
-- **Análise:** A etapa final é gerar um relatório de análise usando os rastreamentos de reprodução. O relatório de análise pode ajudar você a obter informações sobre as implicações de desempenho da alteração proposta.
+- **Captura:** A captura de um rastreamento no seu servidor de origem é a primeira etapa do teste A/B do SQL Server. O servidor de origem é geralmente o servidor de produção.
+- **Reprodução**: A segunda etapa do teste A/B do SQL Server consiste em reproduzir o arquivo de rastreamento que foi capturado em seus servidores de destino. A seguir, ele coleta rastreamentos extensos das reproduções da análise.
+- **Análise**: A etapa final consiste em gerar um relatório de análise usando os rastreamentos de reprodução. O relatório de análise pode ajudar você a obter informações sobre as implicações de desempenho da alteração proposta.
 
 Para obter mais informações, consulte:
 
@@ -213,7 +213,7 @@ Várias ferramentas de migração de terceiros e serviços ISV podem ajudar voc�
 
 ## <a name="unifycloud"></a>UnifyCloud
 
-O UnifyCloud é um serviço de ISV que fornece avaliação, migração e ferramentas de automação de modernização.
+O UnifyCloud é um serviço de ISV que fornece ferramentas de avaliação, migração e automação de modernização.
 
 [Saiba mais](https://www.unifycloud.com/)
 
@@ -259,10 +259,10 @@ O Azure DevOps é a ferramenta sugerida para gerenciamento de projetos durante u
 
 A Microsoft também oferece as seguintes ferramentas de gerenciamento de projetos, que podem funcionar juntas para fornecer funcionalidades mais amplas:
 
-- [Microsoft Planner](https://tasks.office.com): uma maneira simples e Visual de organizar o trabalho em equipe.
-- [Microsoft Project](https://products.office.com/project/project-and-portfolio-management-software): gerenciamento de projetos e portfólios, gerenciamento de capacidade de recursos, gerenciamento financeiro, cronograma e gerenciamento de agendamento.
-- [Microsoft Teams](https://products.office.com/microsoft-teams): ferramenta de colaboração e comunicação da equipe. Além disso, o Teams é integrado ao Planner e outras ferramentas para aprimorar ainda mais a colaboração.
-- [Azure DevOps](https://dev.azure.com): o modelo de planejamento da estrutura de adoção da nuvem não é necessário para usar o DevOps do Azure. É possível usar o serviço sem o modelo para gerenciar sua infraestrutura como código ou usar os itens de trabalho e quadros para realizar o gerenciamento de projetos. Conforme seus projetos tomam forma, sua organização pode aproveitar as vantagens do CI/CD.
+- [Microsoft Planner](https://tasks.office.com): Uma maneira simples e visual de organizar o trabalho em equipe.
+- [Microsoft Project](https://products.office.com/project/project-and-portfolio-management-software): Gerenciamento de projetos e portfólios, gerenciamento de capacidade de recursos, gerenciamento financeiro, gerenciamento de horários e cronogramas.
+- [Microsoft Teams](https://products.office.com/microsoft-teams): Colaboração em equipe e ferramenta de comunicação. Além disso, o Teams é integrado ao Planner e outras ferramentas para aprimorar ainda mais a colaboração.
+- [Azure DevOps](https://dev.azure.com): o modelo de planejamento do Cloud Adoption Framework não é necessário para usar o Azure DevOps. É possível usar o serviço sem o modelo para gerenciar sua infraestrutura como código ou usar os itens de trabalho e quadros para realizar o gerenciamento de projetos. Conforme seus projetos tomam forma, sua organização pode aproveitar as vantagens do CI/CD.
 
 E essas não são as únicas ferramentas disponíveis. Muitas outras ferramentas de terceiros são amplamente usadas na comunidade de gerenciamento de projetos.
 
@@ -278,8 +278,8 @@ O Microsoft Learn é uma nova abordagem para o aprendizado. A preparação para 
 
 Aqui está um exemplo de um roteiro de aprendizagem personalizado no Microsoft Learn, que complementa a configuração para diretrizes de DevOps no Cloud Adoption Framework.
 
-[Crie aplicativos com o Azure DevOps](https://docs.microsoft.com/learn/paths/build-applications-with-azure-devops/): Colabore com outras pessoas para criar seus aplicativos usando o Azure pipelines e o github. Execute testes automatizados em seu pipeline para validar a qualidade do código. Examine o código-fonte e componentes de terceiros em busca de possíveis vulnerabilidades. Defina vários pipelines que funcionam em conjunto para criar seu aplicativo. Crie aplicativos usando agentes hospedados pela Microsoft e seus próprios agentes de build.
+[Crie aplicativos com o Azure DevOps](https://docs.microsoft.com/learn/paths/build-applications-with-azure-devops/): Colabore com outras pessoas para criar aplicativos usando o Azure Pipelines e o GitHub. Execute testes automatizados em seu pipeline para validar a qualidade do código. Examine o código-fonte e componentes de terceiros em busca de possíveis vulnerabilidades. Defina vários pipelines que funcionam em conjunto para criar seu aplicativo. Crie aplicativos usando agentes hospedados pela Microsoft e seus próprios agentes de build.
 
 # <a name="cost-management"></a>[Gerenciamento de Custos](#tab/ManageCost)
 
-À medida que você migra recursos para o ambiente de nuvem, é importante executar uma análise de custo periódica. Isso ajuda a evitar encargos de uso inesperado, pois o processo de migração pode impor custos sobre requisitos de uso adicionais em seus serviços. Você também pode redimensionar os recursos conforme necessário para balancear o custo e a carga de trabalho (discutido em mais detalhes na seção **[otimizar e transformar](./optimize-and-transform.md)** ).
+À medida que você migra recursos para o ambiente de nuvem, é importante executar uma análise de custo periódica. Isso ajuda a evitar encargos de uso inesperado, pois o processo de migração pode impor custos sobre requisitos de uso adicionais em seus serviços. Você também pode redimensionar recursos conforme necessário para equilibrar custo e carga de trabalho (discutido em mais detalhes na seção **[Otimizar e transformar](./optimize-and-transform.md)** ).
