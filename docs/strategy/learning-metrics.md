@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: b7a6081f37899f11716eca07b7e6a371bcefcc94
-ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
+ms.openlocfilehash: a27ef0d432fc0aad64211e9b2228d4f82387f854
+ms.sourcegitcommit: 5d7e93540a679252f1c7207e62cb2ee7213a6ae9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78337884"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80069803"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -52,9 +52,9 @@ Por outro lado, alguns indicadores positivos geralmente são associados ao apren
 
 Uma métrica ainda mais valiosa é o número de dashboards criados a partir de fontes de dados combinadas. Esse número reflete os processos de negócios de estado atual que são afetados por novas fontes de dados. Ao compartilhar novas fontes de dados de forma aberta, sua empresa pode aproveitar os dados usando ferramentas de relatório como Power BI para produzir informações incrementais e gerar mudanças comerciais.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
-Depois que as métricas de aprendizagem estiverem alinhadas, você estará pronto para começar [a avaliar o espaço digital](../digital-estate/index.md) em relação a essas métricas. O resultado será uma pendência de [transformação ou uma pendência de migração](../migrate/migration-considerations/prerequisites/technical-complexity.md).
+Depois que as métricas de aprendizagem estiverem alinhadas, você estará pronto para começar [a criar o caso comercial](cloud-migration-business-case.md) para fornecer essas métricas. 
 
 > [!div class="nextstepaction"]
-> [Avaliar o espaço digital](../digital-estate/index.md)
+> [Criar o caso comercial na nuvem](cloud-migration-business-case.md)

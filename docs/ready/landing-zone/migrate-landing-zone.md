@@ -8,12 +8,12 @@ ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 2c9b932bd1a9500b7308fa24be65a12e46221a99
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 1727bb9c77298663f30e6205a9a3230ce65be3c1
+ms.sourcegitcommit: 5d7e93540a679252f1c7207e62cb2ee7213a6ae9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78228451"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80069750"
 ---
 <!-- cSpell:ignore vCPUs jumpbox -->
 
@@ -32,7 +32,7 @@ Antes de usar o esquema de zona de aterrissagem de migração na estrutura de ad
 
 Essa zona de aterrissagem inicial inclui as seguintes suposições ou restrições. Se essas pressuposições estiverem alinhadas às suas restrições, você poderá usar o blueprint para criar sua primeira zona de acesso. O blueprint também pode ser estendido para criar um blueprint de zona de acesso que atenda às suas restrições específicas.
 
-- **Limites de assinatura:** Não se espera que esse esforço de adoção exceda [os limites de assinatura](https://docs.microsoft.com/azure/azure-subscription-service-limits). Dois indicadores comuns são um excesso de 25.000 VMs ou 10.000 vCPUs.
+- **Limites de assinatura:** Não se espera que esse esforço de adoção exceda [os limites de assinatura](https://docs.microsoft.com/azure/azure-subscription-service-limits).
 - **Conformidade:** Nenhum requisito de conformidade de terceiros é necessário nessa zona de aterrissagem.
 - **Complexidade da arquitetura:** A complexidade da arquitetura não exige assinaturas de produção adicionais.
 - **Serviços compartilhados:** Não há nenhum serviço compartilhado existente no Azure que exija que essa assinatura seja tratada como um spoke em uma arquitetura de Hub e spoke.

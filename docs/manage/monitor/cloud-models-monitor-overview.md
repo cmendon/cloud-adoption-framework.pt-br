@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 3b6434937816255269bda41c422099a07a25f5bc
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: 5513187c65aebc7ae01825bdafa0f175f277c745
+ms.sourcegitcommit: 5d7e93540a679252f1c7207e62cb2ee7213a6ae9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341820"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80069735"
 ---
 # <a name="cloud-monitoring-guide-monitoring-strategy-for-cloud-deployment-models"></a>Guia de monitoramento de nuvem: estratégia de monitoramento para modelos de implantação de nuvem
 
@@ -50,7 +50,7 @@ Recursos do Azure – PaaS (plataforma como serviço) | Serviços de banco de da
 Recursos do Azure – IaaS (infraestrutura como serviço) | 1. armazenamento do Azure<br/> 2. Aplicativo Azure gateway<br/> 3. grupos de segurança de rede<br/> 4. Gerenciador de tráfego do Azure<br/> 5. máquinas virtuais do Azure<br/> 6. instâncias de contêiner do Azure/serviço kubernetes do Azure | 1. capacidade, disponibilidade e desempenho.<br/> 2. logs de desempenho e diagnóstico (atividade, acesso, desempenho e firewall).<br/> 3. monitore eventos quando as regras são aplicadas e o contador de regras para quantas vezes uma regra é aplicada para negar ou permitir.<br/> 4. monitorar a disponibilidade do status do ponto de extremidade.<br/> 5. Monitore a capacidade, a disponibilidade e o desempenho em um sistema operacional de VM convidada (SO). Mapeie dependências de aplicativo hospedadas em cada VM, incluindo a visibilidade de conexões de rede ativas entre servidores, latência de conexão de entrada e saída e portas em qualquer arquitetura conectada a TCP.<br/> 6. Monitore a capacidade, a disponibilidade e o desempenho das cargas de trabalho em execução em contêineres e instâncias de contêiner. | 1. métricas de armazenamento para armazenamento de BLOBs.<br/> 2. Habilite o log de diagnóstico e configure o streaming para Azure Monitor logs.<br/> 3. Habilite o log de diagnóstico de grupos de segurança de rede e configure o streaming para Azure Monitor logs.<br/> 4. Habilite o log de diagnóstico dos pontos de extremidade do Gerenciador de tráfego e configure o streaming para Azure Monitor logs.<br/> 5. habilitar Azure Monitor para VMs.<br/> 6. habilitar Azure Monitor para contêineres.
 Rede | Comunicação entre sua máquina virtual e um ou mais pontos de extremidade (outra VM, um nome de domínio totalmente qualificado, um identificador de recurso uniforme ou um endereço IPv4). | Monitore a acessibilidade, a latência e as alterações de topologia de rede que ocorrem entre a VM e o ponto de extremidade. | Observador de rede do Azure.
 Assinatura do Azure | Integridade do serviço do Azure e integridade básica do recurso. | <li> Ações administrativas executadas em um serviço ou recurso.<br/><li> A integridade do serviço com um serviço do Azure está em um estado degradado ou indisponível.<br/><li> Problemas de integridade detectados com um recurso do Azure da perspectiva do serviço do Azure.<br/><li> Operações executadas com o dimensionamento automático do Azure indicando uma falha ou exceção. <br/><li> Operações executadas com Azure Policy indicando que ocorreu uma ação permitida ou negada.<br/><li> Registro de alertas gerados pela central de segurança do Azure. | Entregue no log de atividades para monitoramento e alertas usando Azure Resource Manager.
-Locatário do Azure | Azure Active Directory || Habilite o log de diagnóstico e configure o streaming para Azure Monitor logs.
+Locatário do Azure | Active Directory do Azure || Habilite o log de diagnóstico e configure o streaming para Azure Monitor logs.
 
 <!-- markdownlint-enable MD033 -->
 
@@ -182,7 +182,7 @@ Você também pode obter um monitoramento holístico com uma combinação de [re
 
 Se você já investiu em Operations Manager, use o pacote de gerenciamento do Azure Stack para monitorar a disponibilidade e o estado de integridade de implantações de Azure Stack, incluindo regiões, provedores de recursos, atualizações, execuções de atualização, unidades de escala, nós de unidade, infraestrutura funções e suas instâncias (entidades lógicas compostas pelos recursos de hardware). Este pacote de gerenciamento usa as APIs REST de provedor de recursos de integridade e atualização para se comunicar com Azure Stack. Para monitorar servidores físicos e dispositivos de armazenamento, use o pacote de gerenciamento de fornecedores de OEM (por exemplo, fornecido pela Lenovo, Hewlett Packard ou Dell). Operations Manager pode monitorar nativamente os comutadores de rede para coletar estatísticas básicas usando SNMP. O monitoramento das cargas de trabalho de locatário é possível com o pacote de gerenciamento do Azure seguindo duas etapas básicas. Configure a assinatura que você deseja monitorar e, em seguida, adicione os monitores para essa assinatura.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 > [!div class="nextstepaction"]
 > [Coletar os dados certos](./data-collection.md)
